@@ -1,0 +1,25 @@
+{
+  "name": "test-gh-actions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:dev": "npx @11ty/eleventy --input=web",
+    "serve": "npm run build:dev -- --serve --watch",
+    "build": "env NODE_ENV=production npm run build:dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adrm/test-gh-actions.git"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/adrm/test-gh-actions/issues"
+  },
+  "homepage": "https://github.com/adrm/test-gh-actions#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.1"
+  }
+}
