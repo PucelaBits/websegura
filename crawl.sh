@@ -8,8 +8,9 @@ for site in $SITES; do
 done
 
 sleep 60
+rm output/*.json
 
 for site in $SITES; do
   echo "Requesting $site scan results"
-  curl -s -X GET "https://http-observatory.security.mozilla.org/api/v1/analyze?host=$site" > output/${site//./¡}.json
+  curl -s -X GET "https://http-observatory.security.mozilla.org/api/v1/analyze?host=$site" > output/${site//./!}.json
 done
