@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run build:dev -- --serve --watch",
-    "build:dev": "npx @11ty/eleventy --input=web",
+    "build:dev": "npx @11ty/eleventy",
     "build": "env NODE_ENV=production npm run build:dev"
   },
   "repository": {
