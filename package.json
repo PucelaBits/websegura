@@ -1,6 +1,7 @@
 {
-  "name": "test-gh-actions",
+  "name": "websegura",
   "version": "1.0.0",
+  "private": true,
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -11,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/adrm/test-gh-actions.git"
+    "url": "git+https://github.com/PucelaBits/websegura.git"
   },
   "author": "",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/adrm/test-gh-actions/issues"
+    "url": "https://github.com/PucelaBits/websegura/issues"
   },
-  "homepage": "https://github.com/adrm/test-gh-actions#readme",
+  "homepage": "https://github.com/PucelaBits/websegura#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1"
   }
