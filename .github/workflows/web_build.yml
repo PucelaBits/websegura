@@ -30,3 +30,4 @@ jobs:
         with:
           publish_dir: ./_site
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          cname: websegura.pucelabits.org
