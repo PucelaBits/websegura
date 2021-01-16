@@ -69,10 +69,14 @@
                   </tr>
                 </thead>
                 <tbody>
+                  <!-- TODO remove inline styles -->
                   {% for web, json in results %}
                   <tr style="background-color: {{ json.score | color }}">
                     <td>{{ json.grade }}</td>
-                    <td>{{ web | replace("!", ".") }}</td>
+                    <td>
+                      {{ web | replace("!", ".") | replace("www.", "") }}
+                      <i style="font-size: small">(<a href="https://observatory.mozilla.org/analyze/{{ web | replace("!", ".") }}" target="_blank">ver más detalles</a>)</i>
+                    </td>
                   </tr>
                   {% endfor %}
                 </tbody>
