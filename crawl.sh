@@ -7,7 +7,7 @@ for site in $SITES; do
   curl -s -X POST "https://http-observatory.security.mozilla.org/api/v1/analyze?host=$site&rescan=true"
 done
 
-sleep 60
+sleep 60  # XXX polling until mozilla finishes scanning the site might be more elegant
 rm _data/results/*.json
 
 for site in $SITES; do
