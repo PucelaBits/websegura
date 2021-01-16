@@ -20,10 +20,6 @@
 				border: solid _size(border-width) _palette(border);
 				border-left: 0;
 				border-right: 0;
-
-				&:nth-child(2n + 1) {
-					background-color: _palette(border-bg);
-				}
 			}
 		}
 
@@ -45,37 +41,5 @@
 
 		tfoot {
 			border-top: solid (_size(border-width) * 2) _palette(border);
-		}
-
-		&.alt {
-			border-collapse: separate;
-
-			tbody {
-				tr {
-					td {
-						border: solid _size(border-width) _palette(border);
-						border-left-width: 0;
-						border-top-width: 0;
-
-						&:first-child {
-							border-left-width: _size(border-width);
-						}
-					}
-
-					&:first-child {
-						td {
-							border-top-width: _size(border-width);
-						}
-					}
-				}
-			}
-
-			thead {
-				border-bottom: 0;
-			}
-
-			tfoot {
-				border-top: 0;
-			}
 		}
 	}
