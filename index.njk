@@ -74,7 +74,10 @@
                   {% set security = results[web.url | replace(".", "!")]%}
                   <tr style="background-color: {{ security.score | color }}">
                     <td>{{ security.grade }}</td>
-                    <td>{{ web.url }}</td>
+                    <td>
+                      {{ web.url | replace("www.", "") }}
+                      <i style="font-size: small">(<a href="https://observatory.mozilla.org/analyze/{{ web.url }}" target="_blank">ver más detalles</a>)</i>
+                    </td>
                     <td>
                       {% if web.twitter%}
                       <a class="twitter-share-button" href="https://twitter.com/intent/tweet/?text={{ 'Hola @' + web.twitter + '
