@@ -1,0 +1,12 @@
+---
+layout: base
+pagination:
+  data: results.meta
+  size: 1
+  alias: web
+permalink: "web/{{ web.url }}/index.html"
+---
+
+<pre>
+{{ web | dump | safe}}
+</pre>
