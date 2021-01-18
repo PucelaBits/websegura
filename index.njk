@@ -18,7 +18,7 @@ layout: base
           <tr style="background-color: {{ security | color }}">
             <td><abbr title="{{ security | abbr }}">{{ security.grade }}</abbr></td>
             <td>
-              <a href="https://observatory.mozilla.org/analyze/{{ web.url }}" target="_blank" alt="Detalles técnicos" title="Detalles técnicos">{{ web.url | replace("www.", "") }}</a>
+              <a href="https://observatory.mozilla.org/analyze/{{ web.url }}" target="_blank" alt="{{ web.name }}" title="Detalles técnicos de {{ web.name }}">{{ web.url | replace("www.", "") }}</a>
             </td>
             <td>
               {% if web.twitter %}
