@@ -21,7 +21,7 @@ layout: base
               <a href="https://observatory.mozilla.org/analyze/{{ web.url }}" target="_blank" alt="{{ web.name }}" title="Detalles técnicos de {{ web.name }}">{{ web.url | replace("www.", "") }}</a>
             </td>
             <td>
-              {% if web.twitter %}
+              {% if (web.twitter) and (web.score < 50) %}
                 <a class="twitter-share-button" href="https://twitter.com/intent/tweet/?text={{ 'Hola @' + web.twitter + '
 
 🔒 La seguridad de vuestra web y usuarios puede ser comprometida si no actualizáis vuestras conexiones seguras (HTTPS).

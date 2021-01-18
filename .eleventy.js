@@ -46,8 +46,7 @@ module.exports = function (eleventyConfig) {
         abbr = "El sitio es muy inseguro."
         break;
       default:
-        abbr = "Desconocido.";
-        break;
+        return "Desconocido.";
     }
 
     abbr += ` Pasaron ${security.tests_passed} de las ${security.tests_quantity} comprobaciones realizadas`;
