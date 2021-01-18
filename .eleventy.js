@@ -8,13 +8,23 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("images");
 
-  eleventyConfig.addFilter("color", (value) => {
-    if (value < 50) {
-      return "#c60c0c45";
+  eleventyConfig.addFilter("color", (grade) => {
+    if (!grade || grade === "") { // for those cases where crawling fails
+      return "inherit";
     }
-    // TODO complete with all values available in Mozilla Observatory
-    //      and use "grade" (A, B, etc) instead of the numeric "score".
-    return "inherit";
+
+    switch (grade[0]) {
+      case 'A':
+      case 'B':
+        return "#3fad4645";
+      case 'C':
+      case 'D':
+        return "#f0ad4e45"
+      case 'E':
+      case 'F':
+        return "#d9534f45"
+      default: return "inherit";
+    }
   });
 
   eleventyConfig.addFilter("urlEncode", (value) => {

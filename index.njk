@@ -15,7 +15,7 @@ layout: base
       <tbody>
         {% for web in results.meta %}
           {% set security = results[web.url | replace(".", "!")] %}
-          <tr style="background-color: {{ security.score | color }}">
+          <tr style="background-color: {{ security.grade | color }}">
             <td>{{ security.grade }}</td>
             <td>
               <a href="https://observatory.mozilla.org/analyze/{{ web.url }}" target="_blank" alt="Detalles técnicos" title="Detalles técnicos">{{ web.url | replace("www.", "") }}</a>
