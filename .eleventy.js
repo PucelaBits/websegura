@@ -8,12 +8,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("images");
 
-  eleventyConfig.addFilter("color", (grade) => {
-    if (!grade || grade === "") { // for those cases where crawling fails
-      return "inherit";
-    }
-
-    switch (grade[0]) {
+  eleventyConfig.addFilter("color", (security) => {
+    switch (security.grade[0]) {
       case 'A':
       case 'B':
         return "#3fad4645";
@@ -23,8 +19,39 @@ module.exports = function (eleventyConfig) {
       case 'E':
       case 'F':
         return "#d9534f45"
-      default: return "inherit";
+      default:
+        return "inherit";
     }
+  });
+
+  eleventyConfig.addFilter("abbr", (security) => {
+    let abbr = "";
+    switch (security.grade[0]) {
+      case 'A':
+        abbr = "El sitio es muy seguro.";
+        break;
+      case 'B':
+        abbr = "El sitio es seguro.";
+        break;
+      case 'C':
+        abbr = "El sitio podría mejorar su seguridad."
+        break;
+      case 'D':
+        abbr = "El sitio debería mejorar su seguridad."
+        break;
+      case 'E':
+        abbr = "El sitio es inseguro."
+        break;
+      case 'F':
+        abbr = "El sitio es muy inseguro."
+        break;
+      default:
+        abbr = "Desconocido.";
+        break;
+    }
+
+    abbr += ` Pasaron ${security.tests_passed} de las ${security.tests_quantity} comprobaciones realizadas`;
+    return abbr;
   });
 
   eleventyConfig.addFilter("urlEncode", (value) => {
