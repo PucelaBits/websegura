@@ -16,9 +16,9 @@ layout: base
         {% for web in results.meta %}
           {% set security = results[web.url | replace(".", "!")] %}
           <tr style="background-color: {{ security | color }}">
-            <td><abbr title="{{ security | abbr }}">{{ security.grade }}</abbr></td>
+            <td><a href="https://observatory.mozilla.org/analyze/{{ web.url }}" title="{{ security | abbr }}">{{ security.grade }}</a></td>
             <td>
-              <a href="https://observatory.mozilla.org/analyze/{{ web.url }}" target="_blank" alt="{{ web.name }}" title="Detalles técnicos de {{ web.name }}">{{ web.url | replace("www.", "") }}</a>
+              <a href="{{ web.url }}" title="{{ web.name }}">{{ web.url | replace("www.", "") }}</a>
             </td>
             <td>
               {% if (web.twitter) and (security.score < 50) %}
