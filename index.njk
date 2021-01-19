@@ -18,7 +18,7 @@ layout: base
           <tr style="background-color: {{ security | color }}">
             <td><a href="https://observatory.mozilla.org/analyze/{{ web.url }}" title="{{ security | abbr }}">{{ security.grade }}</a></td>
             <td>
-              <a href="{{ web.url }}" title="{{ web.name }}">{{ web.url | replace("www.", "") }}</a>
+              <a href="https://{{ web.url }}" title="{{ web.name }}">{{ web.url | replace("www.", "") }}</a>
             </td>
             <td>
               {% if (web.twitter) and (security.score < 50) %}
