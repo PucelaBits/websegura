@@ -21,7 +21,7 @@ layout: base
               <a href="https://{{ web.url }}" title="{{ web.name }}">{{ web.url | replace("www.", "") }}</a>
             </td>
             <td>
-              {% if (web.twitter) and (security.score < 50) %}
+              {% if (web.twitter) and (security.score < 70) %}
                 <a class="twitter-share-button" href="https://twitter.com/intent/tweet/?text={{ 'Hola @' + web.twitter + '
 
 🔒 La seguridad de vuestra web y usuarios puede ser comprometida si no actualizáis vuestras conexiones seguras (HTTPS).
