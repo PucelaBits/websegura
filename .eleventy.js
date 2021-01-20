@@ -20,7 +20,7 @@ module.exports = function (eleventyConfig) {
       case 'F':
         return "severe"
       default:
-        return "unkown";
+        return "unknown";
     }
   });
 
