@@ -12,15 +12,15 @@ module.exports = function (eleventyConfig) {
     switch (security.grade[0]) {
       case 'A':
       case 'B':
-        return "#3fad4645";
+        return "safe";
       case 'C':
       case 'D':
-        return "#f0ad4e45"
+        return "moderate"
       case 'E':
       case 'F':
-        return "#d9534f45"
+        return "severe"
       default:
-        return "inherit";
+        return "unkown";
     }
   });
 
