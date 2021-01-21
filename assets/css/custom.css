@@ -28,3 +28,12 @@ p.subtitle {
   margin: 2em 0;
   font-size: 1.1em;
 }
+
+header table {
+  table-layout: fixed;
+  word-wrap: break-word;
+}
+
+th#nota {
+  width: 65px;
+}
