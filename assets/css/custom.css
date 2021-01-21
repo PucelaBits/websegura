@@ -29,11 +29,11 @@ p.subtitle {
   font-size: 1.1em;
 }
 
-header table {
+table#resultados {
   table-layout: fixed;
   word-wrap: break-word;
 }
 
-th#nota {
+table#resultados th#nota {
   width: 65px;
 }
