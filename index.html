@@ -3,7 +3,7 @@
 <html>
   <head>
     <title>Web Segura - Observatorio de seguridad web.</title>
-    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; font-src 'self'; img-src 'self'; object-src 'none'; script-src 'self'; style-src 'self'; frame-ancestors 'none'">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; font-src 'self'; img-src 'self'; object-src 'none'; script-src 'self' https://stats.pucelabits.org; style-src 'self'; frame-ancestors 'none'">
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
     <meta property="og:type" content="website">
@@ -18,6 +18,7 @@
     <meta name="twitter:site" content="@pucelabits">
     <link rel="shortcut icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="/assets/css/main.css"/>
+    <script type="text/javascript" src="/assets/js/stats.js" charset="utf-8"></script>
     <noscript><link rel="stylesheet" href="/assets/css/noscript.css"/></noscript>
   </head>
   <body class="is-preload">
@@ -203,7 +204,7 @@
         
           
           <tr class="moderate">
-            <td><a href="https://observatory.mozilla.org/analyze/www.uva.es" title="El sitio debería mejorar su seguridad. Pasaron 7 de las 12 comprobaciones realizadas">D-</a></td>
+            <td><a href="https://observatory.mozilla.org/analyze/www.uva.es" title="El sitio podría mejorar su seguridad. Pasaron 8 de las 12 comprobaciones realizadas">C-</a></td>
             <td>
               <a href="https://www.uva.es" title="Universidad de Valladolid">uva.es</a>
             </td>
