@@ -167,7 +167,7 @@ input, select, textarea {
 	}
 
 	h1 {
-		font-size: 2.75em;
+		font-size: 2em;
 		font-weight: 700;
 		line-height: 1.3;
 		margin: 0 0 1em 0;
@@ -2799,7 +2799,8 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		padding: 8em 0 0.1em 0 ;
+		padding: 2em 0 0.1em 0 ;
+		max-width: 900px;
 	}
 
 		#header .logo {
@@ -3121,7 +3122,9 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		padding: 0em 0 6em 0 ;
+		padding: 0em 0 4em 0 ;
+		max-width: 900px;
+		margin: auto;
 	}
 
 		@media screen and (max-width: 736px) {
