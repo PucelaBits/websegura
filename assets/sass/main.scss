@@ -1,10 +1,10 @@
-@import 'libs/vars';
-@import 'libs/functions';
-@import 'libs/mixins';
-@import 'libs/vendor';
-@import 'libs/breakpoints';
-@import 'libs/html-grid';
-@import 'fontawesome-all.min.css';
+@import "libs/vars";
+@import "libs/functions";
+@import "libs/mixins";
+@import "libs/vendor";
+@import "libs/breakpoints";
+@import "libs/html-grid";
+@import "fontawesome-all.min.css";
 
 /*
 	Phantom by HTML5 UP
@@ -14,40 +14,106 @@
 
 // Breakpoints.
 
-	@include breakpoints((
-		xlarge:   ( 1281px,  1680px ),
-		large:    ( 981px,   1280px ),
-		medium:   ( 737px,   980px  ),
-		small:    ( 481px,   736px  ),
-		xsmall:   ( 361px,   480px  ),
-		xxsmall:  ( null,    360px  )
-	));
+@include breakpoints(
+  (
+    xlarge: (
+      1281px,
+      1680px,
+    ),
+    large: (
+      981px,
+      1280px,
+    ),
+    medium: (
+      737px,
+      980px,
+    ),
+    small: (
+      481px,
+      736px,
+    ),
+    xsmall: (
+      361px,
+      480px,
+    ),
+    xxsmall: (
+      null,
+      360px,
+    ),
+  )
+);
 
 // Base.
 
-	@import 'base/reset';
-	@import 'base/page';
-	@import 'base/typography';
+@import "base/reset";
+@import "base/page";
+@import "base/typography";
 
 // Component.
 
-	@import 'components/row';
-	@import 'components/section';
-	@import 'components/icon';
-	@import 'components/list';
-	@import 'components/actions';
-	@import 'components/icons';
-	@import 'components/form';
-	@import 'components/box';
-	@import 'components/image';
-	@import 'components/table';
-	@import 'components/button';
-	@import 'components/tiles';
+@import "components/row";
+@import "components/section";
+@import "components/icon";
+@import "components/list";
+@import "components/actions";
+@import "components/icons";
+@import "components/form";
+@import "components/box";
+@import "components/image";
+@import "components/table";
+@import "components/button";
+@import "components/tiles";
 
 // Layout.
 
-	@import 'layout/header';
-	@import 'layout/menu';
-	@import 'layout/main';
-	@import 'layout/footer';
-	@import 'layout/wrapper';
+@import "layout/header";
+@import "layout/menu";
+@import "layout/main";
+@import "layout/footer";
+@import "layout/wrapper";
+
+// Custom styles
+
+tr.severe {
+  background-color: #d9534f45;
+}
+
+tr.moderate {
+  background-color: #f0ad4e45;
+}
+
+tr.safe {
+  background-color: #3fad4645;
+}
+
+tr.unknown {
+  background-color: #eee8e8;
+}
+
+span.emoticon {
+  font-size: 2em;
+}
+
+ul.iconify li {
+  list-style: none;
+  margin: 1em 0;
+  line-height: 1.7em;
+}
+
+p.subtitle {
+  margin: 2em 0;
+  font-size: 1.1em;
+}
+
+table#resultados {
+  table-layout: fixed;
+  word-wrap: break-word;
+}
+
+table#resultados th#nota {
+  width: 65px;
+}
+
+table#resultados th#share {
+  width: 30%;
+}
