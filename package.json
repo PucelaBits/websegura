@@ -7,7 +7,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run build:dev -- --serve --watch",
-    "build:dev": "npx @11ty/eleventy",
+    "build:dev": "npm run build:sass && npx @11ty/eleventy",
+    "build:sass": "npx sass --no-source-map assets/sass:assets/css",
     "build": "env NODE_ENV=production npm run build:dev"
   },
   "repository": {
@@ -22,6 +23,6 @@
   "homepage": "https://github.com/PucelaBits/websegura#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
-    "csv-parse": "^4.14.2"
+    "sass": "^1.32.5"
   }
 }
