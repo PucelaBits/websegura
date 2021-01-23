@@ -13,10 +13,12 @@ layout: base
         </tr>
       </thead>
       <tbody>
-        {% for web in results.meta %}
+        {% for web in provincias.valladolid.webs %}
           {% set security = results[web.url | replace(".", "!")] %}
           <tr class="{{ security | color }}">
-            <td><a href="https://observatory.mozilla.org/analyze/{{ web.url }}" title="{{ security | abbr }}">{{ security.grade }}</a></td>
+            <td>
+              <a href="https://observatory.mozilla.org/analyze/{{ web.url }}" title="{{ security | abbr }}">{{ security.grade }}</a>
+            </td>
             <td>
               <a href="https://{{ web.url }}" title="{{ web.name }}">{{ web.url | replace("www.", "") }}</a>
             </td>
@@ -31,14 +33,16 @@ websegura.pucelabits.org
 
 #websegura /vía @PucelaBits' | urlEncode }}" target="_blank" rel="noopener" aria-label="Twitter">
                   <span class="icon brands fa-twitter">
-                  <span>Twitter</span>
-                </a>
-              {% endif %}
-            </td>
-          </tr>
-        {% endfor %}
-      </tbody>
-    </table>
-    <p><a href="https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web">+ Añadir una web nueva</a></p>
-  </div>
-</section>
+                    <span>Twitter</span>
+                  </a>
+                {% endif %}
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      <p>
+        <a href="https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web">+ Añadir una web nueva</a>
+      </p>
+    </div>
+  </section>

@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-SITES=`cat sites.json | jq -r .[].url`
+SITES=`cat _data/provincias/valladolid.json | jq -r .webs[].url`
+echo $SITES;
 for site in $SITES; do
   # see https://github.com/mozilla/http-observatory/blob/master/httpobs/docs/api.md
   echo "Scanning $site using Mozilla HTTP Observatory API"
