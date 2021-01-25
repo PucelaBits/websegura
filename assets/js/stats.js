@@ -13,6 +13,6 @@
 <!-- End Matomo Code -->
 
   var item = document.getElementById("cta");
-  item.onclick = function() {
-  	_paq.push(['trackEvent', 'CTA', 'View results click']);
-  }
+  item.addEventListener("click", function() {
+  	_paq.push(['trackEvent', 'CTA', 'Clic en ver resultados'])
+  });
