@@ -120,15 +120,15 @@ p.subtitle {
   font-size: 1.1em;
 }
 
-table#resultados {
+#resultados table {
   table-layout: fixed;
   word-wrap: break-word;
 }
 
-table#resultados th#nota {
+#resultados table th#nota {
   width: 65px;
 }
 
-table#resultados th#share {
+#resultados table th#share {
   width: 30%;
 }
