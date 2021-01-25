@@ -12,7 +12,6 @@
   })();
 <!-- End Matomo Code -->
 
-  var item = document.getElementById("cta");
-  item.addEventListener("click", function() {
+  document.getElementById("cta").addEventListener("click", function() {
   	_paq.push(['trackEvent', 'CTA', 'Clic en ver resultados'])
   });
