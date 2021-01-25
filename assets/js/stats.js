@@ -11,3 +11,8 @@
     g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
   })();
 <!-- End Matomo Code -->
+
+  var item = document.getElementById("cta");
+  item.onclick = function() {
+  	_paq.push(['trackEvent', 'CTA', 'View results click']);
+  }

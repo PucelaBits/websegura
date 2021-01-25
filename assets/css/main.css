@@ -2267,7 +2267,7 @@ body.is-touch .tiles article .content {
 
 /* Header */
 #header {
-  padding: 4em 0 0.1em 0;
+  padding: 2em 0 0.1em 0;
 }
 #header .logo {
   display: block;
@@ -2692,7 +2692,13 @@ h1 {
   color: cornflowerblue;
 }
 
-header button a {
+header p.button {
+  display: block;
+  max-width: 390px;
+  margin: 3em auto;
+}
+
+header p.button a {
   color: #ff4343;
 }
 
