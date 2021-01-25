@@ -78,7 +78,13 @@ h1 {
   color: rgb(100, 149, 237);
 }
 
-header button a {
+header p.button {
+  display: block;
+  max-width: 390px;
+  margin: 3em auto;
+}
+
+header p.button a {
   color: rgb(255, 67, 67);
 }
 
