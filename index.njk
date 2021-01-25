@@ -1,44 +1,20 @@
 ---
 layout: base
 ---
+{% from "tabla.njk" import tabla %}
 
 <section>
-  <div class="table-wrapper">
-    <table id="resultados">
-      <thead>
-        <tr>
-          <th id="nota">Nota</th>
-          <th id="web">Sitio web</th>
-          <th id="share">¡Házselo saber!</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for web in results.meta %}
-          {% set security = results[web.url | replace(".", "!")] %}
-          <tr class="{{ security | color }}">
-            <td><a href="https://observatory.mozilla.org/analyze/{{ web.url }}" title="{{ security | abbr }}">{{ security.grade }}</a></td>
-            <td>
-              <a href="https://{{ web.url }}" title="{{ web.name }}">{{ web.url | replace("www.", "") }}</a>
-            </td>
-            <td>
-              {% if (web.twitter) and (security.score < 70) %}
-                <a class="twitter-share-button" href="https://twitter.com/intent/tweet/?text={{ 'Hola @' + web.twitter + '
+  <div class="table-wrapper" id="resultados">
+    <h2>Valladolid</h2>
+    {{ tabla(provincias.valladolid.webs, results)}}
+    <p>
+      <a href="https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web">+ Añadir una web nueva</a>
+    </p>
 
-🔒 La seguridad de vuestra web y usuarios puede ser comprometida si no actualizáis vuestras conexiones seguras (HTTPS).
-⚠️ ¡Por favor, revisadlo cuanto antes!
-
-websegura.pucelabits.org
-
-#websegura /vía @PucelaBits' | urlEncode }}" target="_blank" rel="noopener" aria-label="Twitter">
-                  <span class="icon brands fa-twitter">
-                  <span>Twitter</span>
-                </a>
-              {% endif %}
-            </td>
-          </tr>
-        {% endfor %}
-      </tbody>
-    </table>
-    <p><a href="https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web">+ Añadir una web nueva</a></p>
+    <h2>Castilla y León</h2>
+    {{ tabla(comunidades["castilla-y-leon"].webs, results)}}
+    <p>
+      <a href="https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web">+ Añadir una web nueva</a>
+    </p>
   </div>
 </section>

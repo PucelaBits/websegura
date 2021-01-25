@@ -1,0 +1,39 @@
+{% macro tabla(webs, results) %}
+  <table>
+    <thead>
+      <tr>
+        <th id="nota">Nota</th>
+        <th id="web">Sitio web</th>
+        <th id="share">¡Házselo saber!</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for web in webs %}
+        {% set security = results[web.url | replace(".", "!")] %}
+        <tr class="{{ security | color }}">
+          <td>
+            <a href="https://observatory.mozilla.org/analyze/{{ web.url }}" title="{{ security | abbr }}">{{ security.grade }}</a>
+          </td>
+          <td>
+            <a href="https://{{ web.url }}" title="{{ web.name }}">{{ web.url | replace("www.", "") }}</a>
+          </td>
+          <td>
+            {% if (web.twitter) and (security.score < 70) %}
+              <a class="twitter-share-button" href="https://twitter.com/intent/tweet/?text={{ 'Hola @' + web.twitter + '
+
+🔒 La seguridad de vuestra web y usuarios puede ser comprometida si no actualizáis vuestras conexiones seguras (HTTPS).
+⚠️ ¡Por favor, revisadlo cuanto antes!
+
+websegura.pucelabits.org
+
+#websegura /vía @PucelaBits' | urlEncode }}" target="_blank" rel="noopener" aria-label="Twitter">
+                <span class="icon brands fa-twitter">
+                  <span>Twitter</span>
+                </a>
+              {% endif %}
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% endmacro %}

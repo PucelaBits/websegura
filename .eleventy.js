@@ -1,9 +1,5 @@
 const fs = require("fs");
 
-(function updateWebsiteMetadata() {
-  fs.copyFileSync('sites.json', '_data/results/meta.json');
-})();
-
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("images");
