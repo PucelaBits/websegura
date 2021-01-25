@@ -5,7 +5,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("images");
 
   eleventyConfig.addFilter("color", (security) => {
-    switch (security.grade && security.grade[0]) {
+    switch (security && security.grade && security.grade[0]) {
       case 'A':
       case 'B':
         return "safe";
@@ -22,7 +22,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter("abbr", (security) => {
     let abbr = "";
-    switch (security.grade && security.grade[0]) {
+    switch (security && security.grade && security.grade[0]) {
       case 'A':
         abbr = "El sitio es muy seguro.";
         break;
