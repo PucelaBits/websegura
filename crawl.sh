@@ -2,7 +2,9 @@
 
 SITES_VA=`cat _data/provincias/valladolid.json | jq -r .webs[].url`
 SITES_CYL=`cat _data/comunidades/castilla-y-leon.json | jq -r .webs[].url`
-SITES="${SITES_VA}\n${SITES_CYL}"
+SITES="${SITES_VA}
+${SITES_CYL}"
+
 echo "$SITES";
 for site in $SITES; do
   # see https://github.com/mozilla/http-observatory/blob/master/httpobs/docs/api.md
