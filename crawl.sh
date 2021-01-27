@@ -1,11 +1,19 @@
 #!/usr/bin/env bash
 
-SITES_VA=`cat _data/provincias/valladolid.json | jq -r .webs[].url`
-SITES_CYL=`cat _data/comunidades/castilla-y-leon.json | jq -r .webs[].url`
-SITES="${SITES_VA}
-${SITES_CYL}"
+for jsons in _data/provincias/*.json; do
+if [ -f "$jsons" ]; then
+    SITES_PR=`cat ${jsons} | jq -r .webs[].url`
+    SITES="${SITES}\n${SITES_PR}"
+fi
+done
 
-echo "$SITES";
+for jsons in _data/comunidades/*.json; do
+if [ -f "$jsons" ]; then
+    SITES_PR=`cat ${jsons} | jq -r .webs[].url`
+    SITES="${SITES}\n${SITES_PR}"
+fi
+done
+
 for site in $SITES; do
   # see https://github.com/mozilla/http-observatory/blob/master/httpobs/docs/api.md
   echo "Scanning $site using Mozilla HTTP Observatory API"
