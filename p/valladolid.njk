@@ -1,12 +1,13 @@
 ---
 layout: base
 location: Valladolid
+permalink: /p/valladolid/
 ---
 <header>
   <h1>🔭 Observatorio de seguridad web de {{ location }}</h1>
 
   <p id="breadcumbs"><a href="/">España</a> - {{ location }}</p>
-  
+
   <p class="subtitle">Analizamos sitios públicos de {{ location }} para saber si protegen la privacidad y seguridad de sus usuarios.</p>
 
   <p class="button"><a id="cta" href="#resultados">Ver quién no es seguro</a></p>
@@ -18,13 +19,13 @@ location: Valladolid
   <section>
     <div class="table-wrapper" id="resultados">
       <h2>Valladolid</h2>
-      {{ tabla(provincias.valladolid.webs, results)}}
+      {{ tabla(provincias.valladolid.webs, results, path=permalink)}}
       <p>
         <a href="https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web">+ Añadir una web nueva</a>
       </p>
 
       <h2>Castilla y León</h2>
-      {{ tabla(comunidades["castilla-y-leon"].webs, results)}}
+      {{ tabla(comunidades["castilla-y-leon"].webs, results, path=permalink)}}
       <p>
         <a href="https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web">+ Añadir una web nueva</a>
       </p>

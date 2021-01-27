@@ -1,4 +1,4 @@
-{% macro tabla(webs, results) %}
+{% macro tabla(webs, results, path) %}
   <table>
     <thead>
       <tr>
@@ -24,7 +24,7 @@
 🔒 La seguridad de vuestra web y usuarios puede ser comprometida si no actualizáis vuestras conexiones seguras (HTTPS).
 ⚠️ ¡Por favor, revisadlo cuanto antes!
 
-https://websegura.pucelabits.org/?pk_campaign=HazseloSaber&pk_source=twitter
+https://websegura.pucelabits.org'| urlEncode }}{{path}}{{ '?pk_campaign=HazseloSaber&pk_source=twitter
 
 #websegura /vía @PucelaBits' | urlEncode }}" target="_blank" rel="noopener" aria-label="Twitter">
                 <span class="icon brands fa-twitter">

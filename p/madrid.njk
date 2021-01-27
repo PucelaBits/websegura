@@ -1,6 +1,7 @@
 ---
 layout: base
 location: Madrid
+permalink: /p/madrid/
 ---
 <header>
   <h1>🔭 Observatorio de seguridad web de {{ location }}</h1>
@@ -18,13 +19,13 @@ location: Madrid
   <section>
     <div class="table-wrapper" id="resultados">
       <h2>Madrid</h2>
-      {{ tabla(provincias.madrid.webs, results)}}
+      {{ tabla(provincias.madrid.webs, results, path=permalink)}}
       <p>
         <a href="https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web">+ Añadir una web nueva</a>
       </p>
 
       <h2>Comunidad de Madrid</h2>
-      {{ tabla(comunidades["madrid"].webs, results)}}
+      {{ tabla(comunidades["madrid"].webs, results, path=permalink)}}
       <p>
         <a href="https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web">+ Añadir una web nueva</a>
       </p>
