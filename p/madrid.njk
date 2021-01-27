@@ -1,0 +1,20 @@
+---
+layout: base
+---
+{% from "tabla.njk" import tabla %}
+
+<section>
+  <div class="table-wrapper" id="resultados">
+    <h2>Madrid</h2>
+    {{ tabla(provincias.madrid.webs, results)}}
+    <p>
+      <a href="https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web">+ Añadir una web nueva</a>
+    </p>
+
+    <h2>Comunidad de Madrid</h2>
+    {{ tabla(comunidades["madrid"].webs, results)}}
+    <p>
+      <a href="https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web">+ Añadir una web nueva</a>
+    </p>
+  </div>
+</section>
