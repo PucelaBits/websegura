@@ -1,5 +1,13 @@
 #!/usr/bin/env bash
 
+for jsons in _data/general.json; do
+if [ -f "$jsons" ]; then
+    SITES_PR=`cat ${jsons} | jq -r .webs[].url`
+    SITES="${SITES}
+${SITES_PR}"
+fi
+done
+
 for jsons in _data/provincias/*.json; do
 if [ -f "$jsons" ]; then
     SITES_PR=`cat ${jsons} | jq -r .webs[].url`

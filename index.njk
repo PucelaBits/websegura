@@ -11,3 +11,15 @@ location: España
   <p><small>(<a href="https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web">Ayúdanos a añadir otras provincias</a>)</small></p>
 
   {% include "header.njk" %}
+
+  {% from "tabla.njk" import tabla %}
+
+  <section>
+    <div class="table-wrapper" id="resultados">
+      <h2>España</h2>
+      {{ tabla(general.webs, results)}}
+      <p>
+        <a href="https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web">+ Añadir una web nueva</a>
+      </p>
+    </div>
+  </section>
