@@ -1,20 +1,13 @@
 ---
 layout: base
+location: España
 ---
-{% from "tabla.njk" import tabla %}
+<header>
+  <h1>🔭 Observatorio de seguridad web de {{ location }}</h1>
+  <p class="subtitle">Analizamos sitios públicos de {{ location }} para saber si protegen la privacidad y seguridad de sus usuarios.</p>
 
-<section>
-  <div class="table-wrapper" id="resultados">
-    <h2>Valladolid</h2>
-    {{ tabla(provincias.valladolid.webs, results)}}
-    <p>
-      <a href="https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web">+ Añadir una web nueva</a>
-    </p>
+  <p><button><a href="/p/madrid">Madrid</a></button> <button><a href="/p/valladolid">Valladolid</button></p>
 
-    <h2>Castilla y León</h2>
-    {{ tabla(comunidades["castilla-y-leon"].webs, results)}}
-    <p>
-      <a href="https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web">+ Añadir una web nueva</a>
-    </p>
-  </div>
-</section>
+  <p><small>(<a href="https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web">Ayúdanos a añadir otras provincias</a>)</small></p>
+
+  {% include "header.njk" %}

@@ -1,20 +1,32 @@
 ---
 layout: base
+location: Madrid
 ---
-{% from "tabla.njk" import tabla %}
+<header>
+  <h1>🔭 Observatorio de seguridad web de {{ location }}</h1>
 
-<section>
-  <div class="table-wrapper" id="resultados">
-    <h2>Madrid</h2>
-    {{ tabla(provincias.madrid.webs, results)}}
-    <p>
-      <a href="https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web">+ Añadir una web nueva</a>
-    </p>
+  <p id="breadcumbs"><a href="/">España</a> - {{ location }}</p>
 
-    <h2>Comunidad de Madrid</h2>
-    {{ tabla(comunidades["madrid"].webs, results)}}
-    <p>
-      <a href="https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web">+ Añadir una web nueva</a>
-    </p>
-  </div>
-</section>
+  <p class="subtitle">Analizamos sitios públicos de {{ location }} para saber si protegen la privacidad y seguridad de sus usuarios.</p>
+
+  <p class="button"><a id="cta" href="#resultados">Ver quién no es seguro</a></p>
+
+  {% include "header.njk" %}
+
+  {% from "tabla.njk" import tabla %}
+
+  <section>
+    <div class="table-wrapper" id="resultados">
+      <h2>Madrid</h2>
+      {{ tabla(provincias.madrid.webs, results)}}
+      <p>
+        <a href="https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web">+ Añadir una web nueva</a>
+      </p>
+
+      <h2>Comunidad de Madrid</h2>
+      {{ tabla(comunidades["madrid"].webs, results)}}
+      <p>
+        <a href="https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web">+ Añadir una web nueva</a>
+      </p>
+    </div>
+  </section>
