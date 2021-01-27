@@ -6,7 +6,7 @@ Una iniciativa de [PucelaBits](https://pucelabits.org/). Analizamos y mostramos 
 
 ### Añadir una web
 
-Si quieres incluir algún sitio público, puedes crear [un nuevo issue](https://github.com/PucelaBits/websegura/issues/new?assignees=&labels=new-site&template=nuevo-sitio.md&title=%5BNuevo+sitio%5D) o directamente crear un PR editando el fichero de la provincia a la que corresponda en [`_data/provincias`](https://github.com/PucelaBits/websegura/blob/main/_data/provincias).
+Si quieres incluir algún sitio público, puedes crear [un nuevo issue](https://github.com/PucelaBits/websegura/issues/new?assignees=&labels=new-site&template=nuevo-sitio.md&title=%5BNuevo+sitio%5D) o directamente crear un PR editando el fichero de la provincia o comunidad que corresponda en [`_data/`](https://github.com/PucelaBits/websegura/blob/main/_data/).
 
 ### Errores o sugerencias
 
