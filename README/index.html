@@ -11,3 +11,30 @@
 <li><a href="https://gitter.im/PucelaBits/websegura?utm_source=badge&amp;utm_medium=badge&amp;utm_content=badge"><img src="https://badges.gitter.im/Join%20Chat.svg" alt="Chat en gitter https://gitter.im/PucelaBits/websegura"></a></li>
 <li><a href="https://pucelabits.org">PucelaBits</a></li>
 </ul>
+<h2>Desarrollo</h2>
+<p>Si quieres ayudar con el código de la web para mejorarla o añadir nuevas funcionalidades por favor sigue estas instrucciones.</p>
+<h3>Requisitos</h3>
+<p>El framework que usamos es <a href="https://www.11ty.dev/">Eleventy</a>. Necesitarás git, npm, jq, curl, bash.</p>
+<pre><code>sudo apt get install git npm jq curl
+</code></pre>
+<p>Clona el repo</p>
+<pre><code>git clone git@github.com:PucelaBits/websegura.git
+</code></pre>
+<h3>Ejecutar en local</h3>
+<p>Instala dependencias</p>
+<pre><code>cd websegura
+npm install
+</code></pre>
+<p>Ejecuta Eleventy</p>
+<pre><code>npx eleventy --serve
+</code></pre>
+<p>Deberías poder acceder a la web en local en <a href="http://localhost:8080">http://localhost:8080</a></p>
+<h3>Actualizar el análisis de los sitios</h3>
+<p>Si modificas los listados de URLs, puede actualizar el análisis ejecutando (llevará unos minutos)</p>
+<pre><code>bash crawl.sh
+</code></pre>
+<h3>Enviar tus modificaciones</h3>
+<p>🐞 Por favor, <a href="https://github.com/PucelaBits/websegura/issues/new/choose">abre primero un issue</a> para describir el problema que vas a solucionar e indica que vas ponerte con ello.</p>
+<p>⭐️ Si quieres implementar una nueva funcionalidad, por favor, <a href="https://github.com/PucelaBits/websegura/issues/new/choose">crea un nuevo issue</a> antes de hacer nada. Queremos asegurarnos que las nuevas funcionalidades tienen consenso antes de aceptarlas y que alguien trabaje en el código.</p>
+<p>Manda <a href="https://github.com/PucelaBits/websegura/pulls">un pull request</a> siempre con el menor numero de commits posible, referencia en los commits y el PR qué issue estás resolviendo (Fix #numero).</p>
+<p>Si tienes alguna duda, puedes escribirnos en cualquiera de <a href="#habla-con-nosotros">los canales listados más arriba</a>.</p>
