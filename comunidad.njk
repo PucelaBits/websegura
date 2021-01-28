@@ -1,17 +1,17 @@
 ---
 layout: base
 pagination:
-  data: provincias
+  data: comunidades
   size: 1
   resolve: values
   alias: p
-permalink: "p/{{ p.slug }}/"
+permalink: "c/{{ p.slug }}/"
 ---
 
 <header>
   <h1>🔭 Observatorio de seguridad web de {{ p.name }}</h1>
 
-  <p id="breadcumbs"><a href="/">España</a> - <a href="/c/{{ comunidades[p.comunidad].slug }}">{{ comunidades[p.comunidad].name }}</a> - {{ p.name }}</p>
+  <p id="breadcumbs"><a href="/">España</a> - {{ p.name }}</p>
 
   <p class="subtitle">Analizamos sitios públicos de {{ p.name }} para saber si protegen la privacidad y seguridad de sus usuarios.</p>
 
@@ -28,11 +28,12 @@ permalink: "p/{{ p.slug }}/"
       <p>
         <a href="https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web">+ Añadir una web nueva</a>
       </p>
-
-      <h2><a href="/c/{{ comunidades[p.comunidad].slug }}">{{ comunidades[p.comunidad].name }}</a></h2>
-      {{ tabla(comunidades[p.comunidad].webs, results, path=permalink)}}
-      <p>
-        <a href="https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web">+ Añadir una web nueva</a>
-      </p>
     </div>
+
+    <h2>Provincias</h2>
+    <p>
+      {% for p in p.provincias %}
+      <button><a href="/p/{{ provincias[p].slug }}">{{ provincias[p].name }}</a></button>
+      {% endfor %}
+    </p>
   </section>

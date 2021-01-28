@@ -1,16 +1,16 @@
 ---
 layout: base
-location: España
+name: España
 permalink: /
 ---
 <header>
-  <h1>🔭 Observatorio de seguridad web de {{ location }}</h1>
-  <p class="subtitle">Analizamos sitios públicos de {{ location }} para saber si protegen la privacidad y seguridad de sus usuarios.</p>
+  <h1>🔭 Observatorio de seguridad web de {{ name }}</h1>
+  <p class="subtitle">Analizamos sitios públicos de {{ name }} para saber si protegen la privacidad y seguridad de sus usuarios.</p>
 
   <p>
-    <button><a href="/p/barcelona/">Barcelona</button>
+    <button><a href="/p/barcelona/">Barcelona</a></button>
     <button><a href="/p/madrid/">Madrid</a></button>
-    <button><a href="/p/valladolid/">Valladolid</button>
+    <button><a href="/p/valladolid/">Valladolid</a></button>
   </p>
 
   <p><small>(<a href="https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web">Ayúdanos a añadir otras provincias</a>)</small></p>
@@ -21,7 +21,7 @@ permalink: /
 
   <section>
     <div class="table-wrapper" id="resultados">
-      <h2>España</h2>
+      <h2>{{ name }}</h2>
       {{ tabla(general.webs, results, path=permalink) }}
       <p>
         <a href="https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web">+ Añadir una web nueva</a>
