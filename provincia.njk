@@ -1,0 +1,38 @@
+---
+layout: base
+pagination:
+  data: provincias
+  size: 1
+  resolve: values
+  alias: p
+permalink: "p/{{ p.slug }}/"
+---
+
+<header>
+  <h1>🔭 Observatorio de seguridad web de {{ p.name }}</h1>
+
+  <p id="breadcumbs"><a href="/">España</a> - {{ p.name }}</p>
+
+  <p class="subtitle">Analizamos sitios públicos de {{ p.name }} para saber si protegen la privacidad y seguridad de sus usuarios.</p>
+
+  <p class="button"><a id="cta" href="#resultados">Ver quién no es seguro</a></p>
+
+  {% include "header.njk" %}
+
+  {% from "tabla.njk" import tabla %}
+
+  <section>
+    <div class="table-wrapper" id="resultados">
+      <h2>{{ p.name }}</h2>
+      {{ tabla(p.webs, results, path=permalink)}}
+      <p>
+        <a href="https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web">+ Añadir una web nueva</a>
+      </p>
+
+      <h2>{{ comunidades[p.comunidad].name }}</h2>
+      {{ tabla(comunidades[p.comunidad].webs, results, path=permalink)}}
+      <p>
+        <a href="https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web">+ Añadir una web nueva</a>
+      </p>
+    </div>
+  </section>
