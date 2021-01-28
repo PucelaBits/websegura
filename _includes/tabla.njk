@@ -10,6 +10,7 @@
     <tbody>
       {% for web in webs %}
         {% set security = results[web.url | replace(".", "!")] %}
+        {% if security %}
         <tr class="{{ security | color }}">
           <td>
             <a href="https://observatory.mozilla.org/analyze/{{ web.url }}" title="{{ security | abbr }}">{% if security.tests_passed < 5 %}⛔️{% else %}{{ security.grade }}{% endif %}</a>
@@ -33,6 +34,7 @@ https://websegura.pucelabits.org'| urlEncode }}{{path}}{{ '?pk_campaign=HazseloS
               {% endif %}
             </td>
           </tr>
+          {% endif %}
         {% endfor %}
       </tbody>
     </table>
