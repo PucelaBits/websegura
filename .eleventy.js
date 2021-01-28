@@ -5,6 +5,11 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("images");
 
   eleventyConfig.addFilter("color", (security) => {
+
+    if (security.tests_passed < 5) {
+      return "danger";
+    }
+
     switch (security && security.grade && security.grade[0]) {
       case 'A':
       case 'B':
