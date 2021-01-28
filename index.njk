@@ -8,9 +8,9 @@ permalink: /
   <p class="subtitle">Analizamos sitios públicos de {{ name }} para saber si protegen la privacidad y seguridad de sus usuarios.</p>
 
   <p>
-    <button><a href="/p/barcelona/">Barcelona</a></button>
-    <button><a href="/p/madrid/">Madrid</a></button>
-    <button><a href="/p/valladolid/">Valladolid</a></button>
+    {% for p in pages.provincias %}
+    <button><a href="/p/{{ p.slug }}">{{ p.name }}</a></button>
+    {% endfor %}
   </p>
 
   <p><small>(<a href="https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web">Ayúdanos a añadir otras provincias</a>)</small></p>

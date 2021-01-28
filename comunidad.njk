@@ -31,9 +31,9 @@ permalink: "c/{{ p.slug }}/"
     </div>
 
     <h2>Provincias</h2>
-    <p>
-      {% for p in p.provincias %}
-      <button><a href="/p/{{ provincias[p].slug }}">{{ provincias[p].name }}</a></button>
-      {% endfor %}
-    </p>
+    {% for provincia in pages.provincias %}
+      {% if provincia.comunidad == p.slug %}
+      <button><a href="/p/{{ provincia.slug }}">{{ provincia.name }}</a></button>
+      {% endif %}
+    {% endfor %}
   </section>
