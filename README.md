@@ -64,7 +64,6 @@ bash crawl.sh
 ### Añadir una nueva provincia
 
 - Verifica que la comunidad de la provincia existe en ``_data/comunidades``, si no, créala.
-- Añade la información de la provincia al archivo ``_data/pages.json`` (respeta el orden alfabético).
 - Crea el archivo de la provincia en ``_data/provincias`` (usa uno existente como plantilla).
 
 ### Enviar tus modificaciones
