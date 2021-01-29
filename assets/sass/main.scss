@@ -124,6 +124,15 @@ p.subtitle {
   font-size: 1.1em;
 }
 
+p.featured {
+  font-weight: bold;
+  text-align: center;
+}
+
+p.featured .emoticon {
+  display: block;
+}
+
 #resultados table {
   table-layout: fixed;
   word-wrap: break-word;
