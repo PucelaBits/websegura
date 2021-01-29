@@ -39,6 +39,7 @@ permalink: "c/{{ comunidad }}/"
   </div>
 
   <h2>Provincias</h2>
+    <p>
   {% for name, provincia in provincias %}
     {% if provincia.comunidad == comunidad %}
       <button>
@@ -46,4 +47,11 @@ permalink: "c/{{ comunidad }}/"
       </button>
     {% endif %}
   {% endfor %}
+    </p>
+
+  <p>
+      <small>(<a href="https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web">Ayúdanos a añadir otras provincias</a>)</small>
+  </p>
+
+
 </section>
