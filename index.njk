@@ -3,28 +3,35 @@ layout: base
 name: España
 permalink: /
 ---
-<header>
-  <h1>🔭 Observatorio de seguridad web de {{ name }}</h1>
-  <p class="subtitle">Analizamos sitios públicos de {{ name }} para saber si protegen la privacidad y seguridad de sus usuarios.</p>
 
-  <p>
-    {% for p in pages.provincias %}
-    <button><a href="/p/{{ p.slug }}">{{ p.name }}</a></button>
-    {% endfor %}
-  </p>
+<h1>🔭 Observatorio de seguridad web de
+  {{ name }}</h1>
+<p class="subtitle">Analizamos sitios públicos de
+  {{ name }}
+  para saber si protegen la privacidad y seguridad de sus usuarios.</p>
 
-  <p><small>(<a href="https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web">Ayúdanos a añadir otras provincias</a>)</small></p>
+<p>
+  {% for code, p in provincias %}
+    <button>
+      <a href="/p/{{ code }}">{{ p.name }}</a>
+    </button>
+  {% endfor %}
+</p>
 
-  {% include "header.njk" %}
+<p>
+  <small>(<a href="https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web">Ayúdanos a añadir otras provincias</a>)</small>
+</p>
 
-  {% from "tabla.njk" import tabla %}
+{% include "header.njk" %}
 
-  <section>
-    <div class="table-wrapper" id="resultados">
-      <h2>{{ name }}</h2>
-      {{ tabla(general.webs, results, path=page.url) }}
-      <p>
-        <a href="https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web">+ Añadir una web nueva</a>
-      </p>
-    </div>
-  </section>
+{% from "tabla.njk" import tabla %}
+
+<section>
+  <div class="table-wrapper" id="resultados">
+    <h2>{{ name }}</h2>
+    {{ tabla(general.webs, results, path=page.url) }}
+    <p>
+      <a href="https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web">+ Añadir una web nueva</a>
+    </p>
+  </div>
+</section>

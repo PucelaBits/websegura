@@ -1,38 +1,51 @@
 ---
 layout: base
 pagination:
-  data: pages.provincias
+  data: provincias
   size: 1
-  resolve: values
-  alias: p
-permalink: "p/{{ p.slug }}/"
+  alias: provincia
+permalink: "p/{{ provincia }}/"
 ---
 
-<header>
-  <h1>🔭 Observatorio de seguridad web de {{ p.name }}</h1>
+{% set p = provincias[provincia] %}
 
-  <p id="breadcumbs"><a href="/">España</a> - <a href="/c/{{ comunidades[p.comunidad].slug }}">{{ comunidades[p.comunidad].name }}</a> - {{ p.name }}</p>
+<h1>🔭 Observatorio de seguridad web de
+  {{ p.name }}</h1>
 
-  <p class="subtitle">Analizamos sitios públicos de {{ p.name }} para saber si protegen la privacidad y seguridad de sus usuarios.</p>
+<p id="breadcumbs">
+  <a href="/">España</a>
+  -
+  <a href="/c/{{ p.comunidad }}">{{ comunidades[p.comunidad].name }}</a>
+  -
+  {{ p.name }}</p>
 
-  <p class="button"><a id="cta" href="#resultados">Ver quién no es seguro</a></p>
+<p class="subtitle">
+  Analizamos sitios públicos de
+  {{ p.name }}
+  para saber si protegen la privacidad y seguridad de sus usuarios.</p>
 
-  {% include "header.njk" %}
+<p class="button">
+  <a id="cta" href="#resultados">Ver quién no es seguro</a>
+</p>
 
-  {% from "tabla.njk" import tabla %}
+{% include "header.njk" %}
 
-  <section>
-    <div class="table-wrapper" id="resultados">
-      <h2>{{ p.name }}</h2>
-      {{ tabla(provincias[p.slug].webs, results, path=page.url)}}
-      <p>
-        <a href="https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web">+ Añadir una web nueva</a>
-      </p>
+{% from "tabla.njk" import tabla %}
 
-      <h2><a href="/c/{{ comunidades[p.comunidad].slug }}">{{ comunidades[p.comunidad].name }}</a></h2>
-      {{ tabla(comunidades[p.comunidad].webs, results, path=page.url)}}
-      <p>
-        <a href="https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web">+ Añadir una web nueva</a>
-      </p>
-    </div>
-  </section>
+<section>
+  <div class="table-wrapper" id="resultados">
+    <h2>{{ p.name }}</h2>
+    {{ tabla(p.webs, results, path=page.url)}}
+    <p>
+      <a href="https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web">+ Añadir una web nueva</a>
+    </p>
+
+    <h2>
+      <a href="/c/{{ p.comunidad }}">{{ comunidades[p.comunidad].name }}</a>
+    </h2>
+    {{ tabla(comunidades[p.comunidad].webs, results, path=page.url)}}
+    <p>
+      <a href="https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web">+ Añadir una web nueva</a>
+    </p>
+  </div>
+</section>

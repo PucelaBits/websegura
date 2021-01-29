@@ -3,37 +3,47 @@ layout: base
 pagination:
   data: comunidades
   size: 1
-  resolve: values
-  alias: p
-permalink: "c/{{ p.slug }}/"
+  alias: comunidad
+permalink: "c/{{ comunidad }}/"
 ---
 
-<header>
-  <h1>🔭 Observatorio de seguridad web de {{ p.name }}</h1>
+{% set c = comunidades[comunidad] %}
 
-  <p id="breadcumbs"><a href="/">España</a> - {{ p.name }}</p>
+<h1>🔭 Observatorio de seguridad web de
+  {{ c.name }}</h1>
 
-  <p class="subtitle">Analizamos sitios públicos de {{ p.name }} para saber si protegen la privacidad y seguridad de sus usuarios.</p>
+<p id="breadcumbs">
+  <a href="/">España</a>
+  -
+  {{ c.name }}</p>
 
-  <p class="button"><a id="cta" href="#resultados">Ver quién no es seguro</a></p>
+<p class="subtitle">Analizamos sitios públicos de
+  {{ c.name }}
+  para saber si protegen la privacidad y seguridad de sus usuarios.</p>
 
-  {% include "header.njk" %}
+<p class="button">
+  <a id="cta" href="#resultados">Ver quién no es seguro</a>
+</p>
 
-  {% from "tabla.njk" import tabla %}
+{% include "header.njk" %}
 
-  <section>
-    <div class="table-wrapper" id="resultados">
-      <h2>{{ p.name }}</h2>
-      {{ tabla(p.webs, results, path=page.url)}}
-      <p>
-        <a href="https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web">+ Añadir una web nueva</a>
-      </p>
-    </div>
+{% from "tabla.njk" import tabla %}
 
-    <h2>Provincias</h2>
-    {% for provincia in pages.provincias %}
-      {% if provincia.comunidad == p.slug %}
-      <button><a href="/p/{{ provincia.slug }}">{{ provincia.name }}</a></button>
-      {% endif %}
-    {% endfor %}
-  </section>
+<section>
+  <div class="table-wrapper" id="resultados">
+    <h2>{{ c.name }}</h2>
+    {{ tabla(c.webs, results, path=page.url)}}
+    <p>
+      <a href="https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web">+ Añadir una web nueva</a>
+    </p>
+  </div>
+
+  <h2>Provincias</h2>
+  {% for name, provincia in provincias %}
+    {% if provincia.comunidad == comunidad %}
+      <button>
+        <a href="/p/{{ name }}">{{ provincia.name }}</a>
+      </button>
+    {% endif %}
+  {% endfor %}
+</section>
