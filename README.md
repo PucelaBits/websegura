@@ -61,6 +61,12 @@ Si modificas los listados de URLs, puede actualizar el análisis ejecutando (lle
 bash crawl.sh
 ```
 
+### Añadir una nueva provincia
+
+- Verifica que la comunidad de la provincia existe en ``_data/comunidades``, si no, créala.
+- Añade la información de la provincia al archivo ``_data/pages.json`` (respeta el orden alfabético).
+- Crea el archivo de la provincia en ``_data/provincias`` (usa uno existente como plantilla).
+
 ### Enviar tus modificaciones
 
 🐞 Por favor, [abre primero un issue](https://github.com/PucelaBits/websegura/issues/new/choose) para describir el problema que vas a solucionar e indica que vas ponerte con ello.
