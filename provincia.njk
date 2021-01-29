@@ -24,13 +24,13 @@ permalink: "p/{{ p.slug }}/"
   <section>
     <div class="table-wrapper" id="resultados">
       <h2>{{ p.name }}</h2>
-      {{ tabla(provincias[p.slug].webs, results, path=permalink)}}
+      {{ tabla(provincias[p.slug].webs, results, path=page.url)}}
       <p>
         <a href="https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web">+ Añadir una web nueva</a>
       </p>
 
       <h2><a href="/c/{{ comunidades[p.comunidad].slug }}">{{ comunidades[p.comunidad].name }}</a></h2>
-      {{ tabla(comunidades[p.comunidad].webs, results, path=permalink)}}
+      {{ tabla(comunidades[p.comunidad].webs, results, path=page.url)}}
       <p>
         <a href="https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web">+ Añadir una web nueva</a>
       </p>

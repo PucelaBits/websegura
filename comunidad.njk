@@ -24,7 +24,7 @@ permalink: "c/{{ p.slug }}/"
   <section>
     <div class="table-wrapper" id="resultados">
       <h2>{{ p.name }}</h2>
-      {{ tabla(p.webs, results, path=permalink)}}
+      {{ tabla(p.webs, results, path=page.url)}}
       <p>
         <a href="https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web">+ Añadir una web nueva</a>
       </p>
