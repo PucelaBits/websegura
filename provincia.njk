@@ -8,14 +8,15 @@ permalink: "p/{{ provincia }}/"
 ---
 
 {% set p = provincias[provincia] %}
+{% set c = comunidades[p.comunidad] %}
 
 <h1>🔭 Observatorio de seguridad web de
   {{ p.name }}</h1>
 
 <p id="breadcumbs">
-  <a href="/">España</a>
+  <a href="/">España</a>{% if c.webs %}
   -
-  <a href="/c/{{ p.comunidad }}">{{ comunidades[p.comunidad].name }}</a>
+  <a href="/c/{{ p.comunidad }}">{{ comunidades[p.comunidad].name }}</a>{% endif %}
   -
   {{ p.name }}</p>
 
@@ -40,12 +41,14 @@ permalink: "p/{{ provincia }}/"
       <a href="https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web">+ Añadir una web nueva</a>
     </p>
 
+    {% if c.webs %}
     <h2>
-      <a href="/c/{{ p.comunidad }}">{{ comunidades[p.comunidad].name }}</a>
+      <a href="/c/{{ p.comunidad }}">{{ c.name }}</a>
     </h2>
-    {{ tabla(comunidades[p.comunidad].webs, results, path=page.url)}}
+    {{ tabla(c.webs, results, path=page.url)}}
     <p>
       <a href="https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web">+ Añadir una web nueva</a>
     </p>
+    {% endif %}
   </div>
 </section>
