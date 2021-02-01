@@ -152,7 +152,7 @@ p {
 }
 
 h1 {
-  font-size: 2.75em;
+  font-size: 2em;
   font-weight: 700;
   line-height: 1.3;
   margin: 0 0 1em 0;
@@ -2370,7 +2370,7 @@ body.is-touch .tiles article .content {
 }
 @media screen and (max-width: 736px) {
   #header {
-    padding: 4em 0 0.1em 0;
+    padding: 1em 0 0.1em 0;
   }
   #header nav {
     right: 0.5em;
@@ -2678,7 +2678,7 @@ body.is-menu-visible #menu .close {
 /* Wrapper */
 #wrapper > * > .inner {
   width: 100%;
-  max-width: 68em;
+  max-width: 900px;
   margin: 0 auto;
   padding: 0 2.5em;
 }
