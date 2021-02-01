@@ -3,7 +3,7 @@ layout: base
 title: Preguntas frecuentes sobre una web segura
 permalink: "/faq/"
 ---
-# ❔ Preguntas frecuentes sobre una web segura
+# 📌 Preguntas frecuentes sobre una web segura
 
 ## ¿Qué es esta web?
 

@@ -50,7 +50,7 @@ module.exports = function (eleventyConfig) {
         return "Desconocido.";
     }
 
-    abbr += ` Pasaron ${security.tests_passed} de las ${security.tests_quantity} comprobaciones realizadas`;
+    abbr += ` Pasó ${security.tests_passed} de las ${security.tests_quantity} comprobaciones realizadas`;
     return abbr;
   });
 

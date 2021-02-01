@@ -2693,6 +2693,10 @@ h1 {
   text-align: center;
 }
 
+small {
+  font-size: 0.85em;
+}
+
 #main p.button {
   display: block;
   max-width: 390px;
@@ -2764,4 +2768,49 @@ p.tablefooter {
   float: right;
   font-size: 0.8em;
   font-style: italic;
+}
+
+#score {
+  color: #FFF;
+  font-weight: bold;
+  font-size: 80px;
+  width: 128px;
+  border-radius: 12px;
+  display: inline-block;
+  height: 128px;
+  padding: 0;
+  text-align: center;
+  float: right;
+  border: 6px solid;
+}
+
+@media screen and (max-width: 736px) {
+  #score {
+    width: 80px;
+    height: 80px;
+    font-size: 45px;
+  }
+}
+#score.danger {
+  border-color: #801515;
+  background: #aa3939;
+}
+
+#score.severe {
+  border-color: #801515;
+  background: #aa3939;
+}
+
+#score.moderate {
+  border-color: #64482145;
+  background: #f0ad4eb3;
+}
+
+#score.safe {
+  border-color: #2d882d;
+  background: #161;
+}
+
+#score.unknown {
+  background: #eee8e8;
 }

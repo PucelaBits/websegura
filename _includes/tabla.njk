@@ -13,10 +13,10 @@
         {% if security %}
         <tr class="{{ security | color }}">
           <td>
-            <a href="https://observatory.mozilla.org/analyze/{{ web.url }}" title="{{ security | abbr }}">{% if security.tests_passed < 5 %}⛔️{% else %}{{ security.grade }}{% endif %}</a>
+            <a href="/web/{{ web.url | replace(".", "!") }}" title="{{ security | abbr }}">{% if security.tests_passed < 5 %}⛔️{% else %}{{ security.grade }}{% endif %}</a>
           </td>
           <td>
-            <a href="https://{{ web.url }}" title="{{ web.name }}">{{ web.url | replace("www.", "") }}</a>
+            <a href="/web/{{ web.url | replace(".", "!") }}" title="{{ web.name }}">{{ web.url | replace("www.", "") }}</a>
           </td>
           <td>
             {% if (web.twitter) and (security.score < 70) %}

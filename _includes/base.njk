@@ -2,6 +2,8 @@
   {% set title = provincias[provincia].name %}
 {% elif comunidades[comunidad].name %}
   {% set title = comunidades[comunidad].name %}
+{% elif r %}
+  {% set title = r | replace("!", ".") %}
 {% endif %}
 <!DOCTYPE html>
 <!-- Phantom by HTML5 UP html5up.net | @ajlkn Free for personal and commercial use under the CCA 3.0 license (html5up.net/license) -->

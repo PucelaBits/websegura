@@ -1,0 +1,40 @@
+{% macro details(web, results, path, type, parent, location) %}
+
+<h1>{{ web.name }}</h1>
+
+<div id="score" class="{{ results | color }}">{{ results.grade }}</div>
+
+<h2>Resultado del análisis</h2>
+
+<ul>
+  <li><strong>Nombre:</strong> {{ web.name }}</li>
+  <li><strong>URL:</strong> <a href="https://{{ web.url }}">{{ web.url }}</a></li>
+  <li><strong>Twitter:</strong> <a href="https://twitter.com/{{ web.twitter }}">@{{ web.twitter }}</a></li>
+  {% if type %}
+  <li><strong>Ubicación: </strong><a href="/{{ type }}/{{ parent }}">{{ location.name }}</a></li>
+  {% endif %}
+  <li><strong>Puntuación:</strong> {{ results.score }}/100</li>
+</ul>
+
+<p>{{ results | abbr }}.</p>
+
+{% if (web.twitter) and (results.score < 70) %}
+<p><a class="twitter-share-button" href="https://twitter.com/intent/tweet/?text={{ 'Hola @' + web.twitter + '
+
+🔒 La seguridad de vuestra web y usuarios puede ser comprometida si no actualizáis vuestras conexiones seguras (HTTPS).
+⚠️ ¡Por favor, revisadlo cuanto antes!
+
+https://websegura.pucelabits.org'| urlEncode }}{{ path | urlEncode }}{{ '?pk_campaign=HazseloSaber&pk_source=twitter
+
+#websegura /vía @PucelaBits' | urlEncode }}" target="_blank" rel="noopener" aria-label="Twitter">
+    <span class="icon brands fa-twitter">
+      <span><strong>¡Házselo saber en Twitter!</strong></span>
+    </a></p>
+{% endif %}
+
+<p><a href="https://observatory.mozilla.org/analyze/{{ web.url }}">🖥 Leer el informe técnico completo.</a><br />
+<a href="/faq/">📌 Detalles sobre los riesgos de no tener una buena nota.</a></p>
+
+<p><small>🔄 Última actualización: {{ results.end_time }}</small></p>
+
+{% endmacro %}

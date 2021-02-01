@@ -1,12 +1,34 @@
 ---
 layout: base
 pagination:
-  data: provincias.valladolid.webs
+  data: results
   size: 1
-  alias: web
-permalink: "web/{{ web.url }}/index.html"
+  alias: r
+permalink: "web/{{ r }}/"
 ---
 
-<pre>
-{{ web | dump | safe }}
-</pre>
+{% set result = results[r] %}
+{% set url = r | replace("!", ".") %}
+{% from "details.njk" import details %}
+
+{% for name, provincia in provincias %}
+  {% for w in provincia.webs %}
+    {% if w.url == url %}
+        {{ details(w, result, page.url, "p", name, provincia) }}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+
+{% for name, comunidad in comunidades %}
+  {% for w in comunidad.webs %}
+    {% if w.url == url %}
+        {{ details(w, result, page.url, "c", name, comunidad) }}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+
+{% for w in general.webs %}
+  {% if w.url == url %}
+      {{ details(w, result, page.url) }}
+  {% endif %}
+{% endfor %}
