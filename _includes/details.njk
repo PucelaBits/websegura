@@ -5,7 +5,7 @@
 <p id="breadcumbs">
   <a href="/">España</a>{% if type %} - <a href="/{{ type }}/{{ parent }}">{{ location.name }}</a>{% endif %} - {{ web.name }}</p>
 
-<div id="score" class="{{ results | color }}">{{ results.grade }}</div>
+<div id="score" class="{{ results | color }}">{% if results.tests_passed < 5 %}☠️{% else %}{{ results.grade }}{% endif %}</div>
 
 <h2>Resultado del análisis</h2>
 

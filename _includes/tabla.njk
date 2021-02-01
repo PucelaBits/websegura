@@ -13,7 +13,7 @@
         {% if security %}
         <tr class="{{ security | color }}">
           <td>
-            <a href="/w/{{ web.url | replace(".", "!") }}" title="{{ security | abbr }}">{% if security.tests_passed < 5 %}⛔️{% else %}{{ security.grade }}{% endif %}</a>
+            <a href="/w/{{ web.url | replace(".", "!") }}" title="{{ security | abbr }}">{% if security.tests_passed < 5 %}☠️{% else %}{{ security.grade }}{% endif %}</a>
           </td>
           <td>
             <a href="/w/{{ web.url | replace(".", "!") }}" title="{{ web.name }}">{{ web.url | replace("www.", "") }}</a>
