@@ -5,11 +5,16 @@ permalink: "/faq/"
 ---
 # ❔ Preguntas frecuentes sobre una web segura
 
+## ¿Qué es esta web?
+
+Websegura usa el servicio [Mozilla Observatory](https://observatory.mozilla.org/) para analizar y mostrar la nota que tienen las webs de diferentes entidades públicas.
+
+## ¿Qué es una conexión segura (HTTPS)?
 Cuando nos conectamos a una página web, nuestros datos viajan ida y vuelta desde nuestro dispositivo hasta el servidor de la página web por medio de cables y servidores intermedios.
 
 Si la dirección de la web incluye HTTPS, esto quiere decir que estos datos viajan cifrados, pero no todas las webs HTTPS tienen una implementación segura.
 
-## ¿Qué nos asegura este cifrado?
+## ¿Qué nos asegura el cifrado?
 
 🕵 Impide que nadie pueda **interceptar** los datos que introduces (contraseñas, datos bancarios, personales o médicos). Sólo tú y el dueño de la web puede verlos.
 
