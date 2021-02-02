@@ -8,13 +8,14 @@ permalink: "w/{{ r }}/"
 ---
 
 {% set result = results[r] %}
+{% set history = results.history[r] %}
 {% set url = r | replace("!", ".") %}
 {% from "details.njk" import details %}
 
 {% for name, provincia in provincias %}
   {% for w in provincia.webs %}
     {% if w.url == url %}
-        {{ details(w, result, page.url, "p", name, provincia) }}
+        {{ details(w, result, history, page.url, "p", name, provincia) }}
     {% endif %}
   {% endfor %}
 {% endfor %}
@@ -22,13 +23,13 @@ permalink: "w/{{ r }}/"
 {% for name, comunidad in comunidades %}
   {% for w in comunidad.webs %}
     {% if w.url == url %}
-        {{ details(w, result, page.url, "c", name, comunidad) }}
+        {{ details(w, result, history, page.url, "c", name, comunidad) }}
     {% endif %}
   {% endfor %}
 {% endfor %}
 
 {% for w in general.webs %}
   {% if w.url == url %}
-      {{ details(w, result, page.url) }}
+      {{ details(w, result, history, page.url) }}
   {% endif %}
 {% endfor %}

@@ -1,4 +1,4 @@
-{% macro details(web, results, path, type, parent, location) %}
+{% macro details(web, results, history, path, type, parent, location) %}
 
 <h1>{{ web.name }}</h1>
 
@@ -36,6 +36,27 @@ https://websegura.pucelabits.org'| urlEncode }}{{ path | urlEncode }}{{ '?pk_cam
 {% endif %}
 
 <p><a href="https://observatory.mozilla.org/analyze/{{ web.url }}">🖥 Leer el informe técnico completo.</a></p>
+
+<h2>Historial</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th id="nota">Nota</th>
+      <th id="nota">Puntuación</th>
+      <th id="fecha">Fecha</th>
+    </tr>
+  </thead>
+  <tbody>
+      {% for h in history %}
+      <tr class="{{ h | color }}">
+        <td>{{ h.grade }}</td>
+        <td>{{ h.score }}/100</td>
+        <td>{{ h.end_time }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
 
 <p><small>🔄 Última actualización: {{ results.end_time }}</small></p>
 
