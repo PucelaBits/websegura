@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# TODO: Limpiar las URLs que leemos para que no tengan contrabarras o https:
+#       Ya que provocan errores al escribir el archivo en disco.
+
 for jsons in _data/general.json; do
 if [ -f "$jsons" ]; then
     SITES_PR=`cat ${jsons} | jq -r .webs[].url`

@@ -42,7 +42,7 @@ permalink: "c/{{ comunidad }}/"
     <p>
   {% for name, provincia in provincias %}
     {% if provincia.comunidad == comunidad %}
-      <button>
+      <button class="provincia">
         <a href="/p/{{ name }}">{{ provincia.name }}</a>
       </button>
     {% endif %}
