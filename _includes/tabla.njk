@@ -11,6 +11,7 @@
       {% for web in webs | sort(attribute="url") %}
         {% set security = results[web.url | replace(".", "!")] %}
         {% if security %}
+          {% if security.state == 'FINISHED' %}
         <tr class="{{ security | color }}">
           <td>
             <a href="/w/{{ web.url | replace(".", "!") }}" title="{{ security | abbr }}">{% if security.tests_passed < 5 %}☠️{% else %}{{ security.grade }}{% endif %}</a>
@@ -31,9 +32,19 @@ https://websegura.pucelabits.org'| urlEncode }}{{ path }}{{ '?pk_campaign=Hazsel
                 <span class="icon brands fa-twitter">
                   <span>Tuitear</span>
                 </a>
+
               {% endif %}
             </td>
           </tr>
+          {% else %}
+          <tr class="unknown">
+            <td title="Pendiente de análisis">🕐</td>
+            <td>
+              {{ web.url | replace("www.", "") }}
+            </td>
+            <td> </td>
+            </tr>
+          {% endif %}
           {% endif %}
         {% endfor %}
       </tbody>
