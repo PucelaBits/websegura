@@ -1,4 +1,32 @@
 {
-  "error": "recent-scan-not-found",
-  "text": "Recently completed scan for www.renfe.com not found"
+  "algorithm_version": 2,
+  "end_time": "Tue, 02 Feb 2021 01:32:15 GMT",
+  "grade": "F",
+  "hidden": false,
+  "likelihood_indicator": "MEDIUM",
+  "response_headers": {
+    "Accept-Ranges": "bytes",
+    "Cache-Control": "public, max-age=1",
+    "Connection": "keep-alive",
+    "Content-Encoding": "gzip",
+    "Content-Length": "11105",
+    "Content-Type": "text/html;charset=utf-8",
+    "Date": "Tue, 02 Feb 2021 01:32:13 GMT",
+    "ETag": "\"11d2b-5ba500a1c66a4-gzip\"",
+    "Last-Modified": "Tue, 02 Feb 2021 01:03:33 GMT",
+    "Server": "Apache",
+    "Vary": "Accept-Encoding",
+    "X-Content-Type-Options": "nosniff",
+    "X-Dispatcher": "dispatcher1westeurope",
+    "X-Frame-Options": "SAMEORIGIN",
+    "X-Vhost": "publish"
+  },
+  "scan_id": 17551048,
+  "score": 0,
+  "start_time": "Tue, 02 Feb 2021 01:32:10 GMT",
+  "state": "FINISHED",
+  "status_code": 200,
+  "tests_failed": 5,
+  "tests_passed": 7,
+  "tests_quantity": 12
 }

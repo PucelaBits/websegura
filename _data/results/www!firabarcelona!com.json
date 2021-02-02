@@ -1,4 +1,35 @@
 {
-  "error": "recent-scan-not-found",
-  "text": "Recently completed scan for www.firabarcelona.com not found"
+  "algorithm_version": 2,
+  "end_time": "Tue, 02 Feb 2021 01:32:54 GMT",
+  "grade": "C+",
+  "hidden": false,
+  "likelihood_indicator": "MEDIUM",
+  "response_headers": {
+    "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept",
+    "Access-Control-Allow-Methods": "POST, GET, OPTIONS",
+    "Cache-Control": "max-age=1, must-revalidate, max-age=0",
+    "Connection": "keep-alive",
+    "Content-Encoding": "gzip",
+    "Content-Length": "35588",
+    "Content-Type": "text/html; charset=UTF-8",
+    "Date": "Tue, 02 Feb 2021 01:32:29 GMT",
+    "Expires": "Tue, 02 Feb 2021 01:32:29 GMT",
+    "Last-Modified": "Tue, 02 Feb 2021 00:43:28 GMT",
+    "Link": "<https://www.firabarcelona.com/wp-json/>; rel=\"https://api.w.org/\"",
+    "Server": "Apache",
+    "Strict-Transport-Security": "max-age=7200;",
+    "Vary": "Cookie,Accept-Encoding,User-Agent",
+    "X-Content-Type-Options": "nosniff",
+    "X-Frame-Options": "SAMEORIGIN",
+    "X-UA-Compatible": "IE=edge",
+    "X-XSS-Protection": "1; mode=block"
+  },
+  "scan_id": 17551076,
+  "score": 60,
+  "start_time": "Tue, 02 Feb 2021 01:32:18 GMT",
+  "state": "FINISHED",
+  "status_code": 200,
+  "tests_failed": 3,
+  "tests_passed": 9,
+  "tests_quantity": 12
 }

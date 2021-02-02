@@ -1,4 +1,27 @@
 {
-  "error": "recent-scan-not-found",
-  "text": "Recently completed scan for www.madridporeldeporte.org not found"
+  "algorithm_version": 2,
+  "end_time": "Tue, 02 Feb 2021 01:33:09 GMT",
+  "grade": "F",
+  "hidden": false,
+  "likelihood_indicator": "MEDIUM",
+  "response_headers": {
+    "Connection": "Keep-Alive",
+    "Content-Type": "text/html; charset=UTF-8",
+    "Date": "Tue, 02 Feb 2021 01:33:01 GMT",
+    "Keep-Alive": "timeout=3, max=100",
+    "Link": "<https://www.madridporeldeporte.org/wp-json/>; rel=\"https://api.w.org/\", <https://www.madridporeldeporte.org/>; rel=shortlink",
+    "Server": "Apache/2.4.43 (Unix)",
+    "Transfer-Encoding": "chunked",
+    "Vary": "User-Agent",
+    "X-Pingback": "https://www.madridporeldeporte.org/xmlrpc.php",
+    "X-Powered-By": "PHP/7.0.33"
+  },
+  "scan_id": 17551124,
+  "score": 15,
+  "start_time": "Tue, 02 Feb 2021 01:32:31 GMT",
+  "state": "FINISHED",
+  "status_code": 200,
+  "tests_failed": 6,
+  "tests_passed": 6,
+  "tests_quantity": 12
 }

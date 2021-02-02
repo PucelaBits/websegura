@@ -1,4 +1,29 @@
 {
-  "error": "recent-scan-not-found",
-  "text": "Recently completed scan for www.emtmadrid.es not found"
+  "algorithm_version": 2,
+  "end_time": "Tue, 02 Feb 2021 01:32:47 GMT",
+  "grade": "F",
+  "hidden": false,
+  "likelihood_indicator": "MEDIUM",
+  "response_headers": {
+    "Cache-Control": "private, no-store, must-revalidate",
+    "Content-Encoding": "gzip",
+    "Content-Type": "text/html; charset=utf-8",
+    "Date": "Tue, 02 Feb 2021 01:32:30 GMT",
+    "Server": "Microsoft-IIS/8.5",
+    "Set-Cookie": "ASP.NET_SessionId=1jz4zp5angxhvmkswseuiidq; path=/; HttpOnly, CMSCurrentTheme=EMTMadrid; expires=Wed, 03-Feb-2021 01:32:30 GMT; path=/; HttpOnly",
+    "Transfer-Encoding": "chunked",
+    "Vary": "Accept-Encoding",
+    "X-AspNet-Version": "4.0.30319",
+    "X-Frame-Options": "SAMEORIGIN",
+    "X-Powered-By": "ASP.NET",
+    "X-UA-Compatible": "IE=Edge"
+  },
+  "scan_id": 17551079,
+  "score": 0,
+  "start_time": "Tue, 02 Feb 2021 01:32:20 GMT",
+  "state": "FINISHED",
+  "status_code": 200,
+  "tests_failed": 7,
+  "tests_passed": 5,
+  "tests_quantity": 12
 }

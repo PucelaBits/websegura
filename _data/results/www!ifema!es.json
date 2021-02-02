@@ -1,4 +1,32 @@
 {
-  "error": "recent-scan-not-found",
-  "text": "Recently completed scan for www.ifema.es not found"
+  "algorithm_version": 2,
+  "end_time": "Tue, 02 Feb 2021 01:32:36 GMT",
+  "grade": "F",
+  "hidden": false,
+  "likelihood_indicator": "MEDIUM",
+  "response_headers": {
+    "Cache-Control": "no-store",
+    "Connection": "Keep-Alive",
+    "Content-Encoding": "gzip",
+    "Content-Type": "text/html; charset=UTF-8",
+    "Date": "Tue, 02 Feb 2021 01:32:30 GMT",
+    "Keep-Alive": "timeout=5, max=100",
+    "Last-Modified": "Tue, 02 Feb 2021 01:32:30 GMT",
+    "Server": "Apache",
+    "Set-Cookie": "JSESSIONID=tWZgXqHV5un9nchTQP-kw3OWL4y9pYPRyLrySOoKNYlUY253K52B!110952060!1827109106; path=/sites; HttpOnly, BIGipServer~CLIENTES~IFEMA_WEBCENTERSITES=rd11o00000000000000000000ffffc0a8617eo17002; path=/; Httponly",
+    "Transfer-Encoding": "chunked",
+    "Vary": "Accept-Encoding",
+    "X-Content-Type-Options": "nosniff",
+    "X-ORACLE-DMS-ECID": "72d3fc1f-b057-4e36-af84-99d614fd5a1e-000055a3",
+    "X-ORACLE-DMS-RID": "0",
+    "X-XSS-Protection": "1"
+  },
+  "scan_id": 17551082,
+  "score": 0,
+  "start_time": "Tue, 02 Feb 2021 01:32:22 GMT",
+  "state": "FINISHED",
+  "status_code": 200,
+  "tests_failed": 5,
+  "tests_passed": 7,
+  "tests_quantity": 12
 }

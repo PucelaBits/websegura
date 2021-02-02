@@ -1,4 +1,36 @@
 {
-  "error": "recent-scan-not-found",
-  "text": "Recently completed scan for www.mineco.gob.es not found"
+  "algorithm_version": 2,
+  "end_time": "Tue, 02 Feb 2021 01:32:50 GMT",
+  "grade": "F",
+  "hidden": false,
+  "likelihood_indicator": "MEDIUM",
+  "response_headers": {
+    "Cache-Control": "private, max-age=0",
+    "Connection": "keep-alive",
+    "Content-Encoding": "gzip",
+    "Content-Length": "27156",
+    "Content-Type": "text/html; charset=utf-8",
+    "Date": "Tue, 02 Feb 2021 01:32:29 GMT",
+    "Expires": "Mon, 18 Jan 2021 01:32:26 GMT",
+    "Last-Modified": "Tue, 02 Feb 2021 01:32:26 GMT",
+    "MicrosoftSharePointTeamServices": "16.0.0.10353",
+    "SPIisLatency": "0",
+    "SPRequestDuration": "3841",
+    "SPRequestGuid": "b628a79f-be82-b0a1-2011-e533cb5bcc8b",
+    "Vary": "Accept-Encoding",
+    "X-Content-Type-Options": "nosniff",
+    "X-FRAME-OPTIONS": "SAMEORIGIN",
+    "X-MS-InvokeApp": "1; RequireReadOnly",
+    "X-SharePointHealthScore": "0",
+    "X-XSS-Protection": "0, 0",
+    "request-id": "b628a79f-be82-b0a1-2011-e533cb5bcc8b"
+  },
+  "scan_id": 17551064,
+  "score": 0,
+  "start_time": "Tue, 02 Feb 2021 01:32:14 GMT",
+  "state": "FINISHED",
+  "status_code": 200,
+  "tests_failed": 4,
+  "tests_passed": 8,
+  "tests_quantity": 12
 }

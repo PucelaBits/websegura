@@ -1,4 +1,30 @@
 {
-  "error": "recent-scan-not-found",
-  "text": "Recently completed scan for www.madrid.es not found"
+  "algorithm_version": 2,
+  "end_time": "Tue, 02 Feb 2021 01:32:33 GMT",
+  "grade": "B",
+  "hidden": false,
+  "likelihood_indicator": "MEDIUM",
+  "response_headers": {
+    "Cache-Control": "no-cache",
+    "Connection": "keep-alive",
+    "Content-Encoding": "gzip",
+    "Content-Length": "21347",
+    "Content-Type": "text/html;charset=UTF-8",
+    "Date": "Tue, 02 Feb 2021 01:32:29 GMT",
+    "OT-force-Account-Verify": "true",
+    "Strict-Transport-Security": "max-age=15768000",
+    "Vary": "Accept-Encoding",
+    "X-Content-Type-Options": "nosniff",
+    "X-Frame-Options": "SAMEORIGIN",
+    "X-UA-Compatible": "IE=8",
+    "X-XSS-Protection": "1; mode=block"
+  },
+  "scan_id": 17551077,
+  "score": 75,
+  "start_time": "Tue, 02 Feb 2021 01:32:20 GMT",
+  "state": "FINISHED",
+  "status_code": 200,
+  "tests_failed": 1,
+  "tests_passed": 11,
+  "tests_quantity": 12
 }

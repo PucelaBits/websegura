@@ -1,4 +1,30 @@
 {
-  "error": "recent-scan-not-found",
-  "text": "Recently completed scan for www.madrid.org not found"
+  "algorithm_version": 2,
+  "end_time": "Tue, 02 Feb 2021 01:32:35 GMT",
+  "grade": "F",
+  "hidden": false,
+  "likelihood_indicator": "MEDIUM",
+  "response_headers": {
+    "Accept-Ranges": "bytes",
+    "Age": "2323",
+    "Connection": "keep-alive",
+    "Content-Length": "134",
+    "Content-Type": "text/html",
+    "Date": "Tue, 02 Feb 2021 00:53:49 GMT",
+    "ETag": "\"86-593bfdabb8fa1\"",
+    "Last-Modified": "Mon, 30 Sep 2019 07:05:01 GMT",
+    "Server": "Apache",
+    "Via": "1.1 782cf460fc93d8eefdb183b4750900f2.cloudfront.net (CloudFront)",
+    "X-Amz-Cf-Id": "T4awGWh0lBN8kK_VSbr-RLWltbBPb2LwWbQqfs-yC2bJSfW-Lahelg==",
+    "X-Amz-Cf-Pop": "YVR50-C1",
+    "X-Cache": "Hit from cloudfront"
+  },
+  "scan_id": 17551121,
+  "score": 10,
+  "start_time": "Tue, 02 Feb 2021 01:32:30 GMT",
+  "state": "FINISHED",
+  "status_code": 200,
+  "tests_failed": 6,
+  "tests_passed": 6,
+  "tests_quantity": 12
 }

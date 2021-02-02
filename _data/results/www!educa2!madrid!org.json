@@ -1,4 +1,28 @@
 {
-  "error": "recent-scan-not-found",
-  "text": "Recently completed scan for www.educa2.madrid.org not found"
+  "algorithm_version": 2,
+  "end_time": "Tue, 02 Feb 2021 01:32:40 GMT",
+  "grade": "F",
+  "hidden": false,
+  "likelihood_indicator": "MEDIUM",
+  "response_headers": {
+    "Accept-Ranges": "bytes",
+    "Connection": "Keep-Alive",
+    "Content-Encoding": "gzip",
+    "Content-Length": "23542",
+    "Content-Type": "text/html",
+    "Date": "Tue, 02 Feb 2021 01:32:34 GMT",
+    "ETag": "\"571-2505b-5ba472c2acc80\"",
+    "Keep-Alive": "timeout=15, max=99",
+    "Last-Modified": "Mon, 01 Feb 2021 14:28:50 GMT",
+    "Server": "Apache/2.2.15 (Red Hat)",
+    "Vary": "Accept-Encoding,User-Agent"
+  },
+  "scan_id": 17551120,
+  "score": 0,
+  "start_time": "Tue, 02 Feb 2021 01:32:30 GMT",
+  "state": "FINISHED",
+  "status_code": 200,
+  "tests_failed": 7,
+  "tests_passed": 5,
+  "tests_quantity": 12
 }

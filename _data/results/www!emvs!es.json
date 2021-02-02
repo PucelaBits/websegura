@@ -1,4 +1,36 @@
 {
-  "error": "recent-scan-not-found",
-  "text": "Recently completed scan for www.emvs.es not found"
+  "algorithm_version": 2,
+  "end_time": "Tue, 02 Feb 2021 01:32:43 GMT",
+  "grade": "F",
+  "hidden": false,
+  "likelihood_indicator": "MEDIUM",
+  "response_headers": {
+    "Cache-Control": "private",
+    "Content-Encoding": "gzip",
+    "Content-Length": "22455",
+    "Content-Type": "text/html; charset=utf-8",
+    "Date": "Tue, 02 Feb 2021 01:36:27 GMT",
+    "Expires": "Tue, 02 Feb 2021 01:39:25 GMT",
+    "MicrosoftSharePointTeamServices": "15.0.0.4763",
+    "SPIisLatency": "0",
+    "SPRequestDuration": "22",
+    "SPRequestGuid": "f128a79f-2558-4090-e175-8565d54aac4a",
+    "Server": "Microsoft-IIS/8.5",
+    "Vary": "*",
+    "X-AspNet-Version": "4.0.30319",
+    "X-Content-Type-Options": "nosniff",
+    "X-FRAME-OPTIONS": "SAMEORIGIN",
+    "X-MS-InvokeApp": "1; RequireReadOnly",
+    "X-Powered-By": "ASP.NET",
+    "X-SharePointHealthScore": "0",
+    "request-id": "f128a79f-2558-4090-e175-8565d54aac4a"
+  },
+  "scan_id": 17551081,
+  "score": 0,
+  "start_time": "Tue, 02 Feb 2021 01:32:22 GMT",
+  "state": "FINISHED",
+  "status_code": 200,
+  "tests_failed": 4,
+  "tests_passed": 8,
+  "tests_quantity": 12
 }

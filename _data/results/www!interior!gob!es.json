@@ -1,4 +1,27 @@
 {
-  "error": "recent-scan-not-found",
-  "text": "Recently completed scan for www.interior.gob.es not found"
+  "algorithm_version": 2,
+  "end_time": "Tue, 02 Feb 2021 01:32:25 GMT",
+  "grade": "F",
+  "hidden": false,
+  "likelihood_indicator": "MEDIUM",
+  "response_headers": {
+    "Cache-Control": "max-age=300",
+    "Connection": "keep-alive",
+    "Content-Encoding": "deflate",
+    "Content-Type": "text/html;charset=UTF-8",
+    "Date": "Tue, 02 Feb 2021 01:32:15 GMT",
+    "ETag": "19",
+    "Expires": "Tue, 02 Feb 2021 01:37:15 GMT",
+    "Liferay-Portal": "Liferay Portal Community Edition 6.1.1 CE GA2 (Paton / Build 6101 / July 31, 2012)",
+    "Server": "Apache-Coyote/1.1",
+    "Transfer-Encoding": "chunked"
+  },
+  "scan_id": 17551057,
+  "score": 0,
+  "start_time": "Tue, 02 Feb 2021 01:32:13 GMT",
+  "state": "FINISHED",
+  "status_code": 200,
+  "tests_failed": 7,
+  "tests_passed": 5,
+  "tests_quantity": 12
 }

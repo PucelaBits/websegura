@@ -1,4 +1,30 @@
 {
-  "error": "recent-scan-not-found",
-  "text": "Recently completed scan for www.agenciatributaria.es not found"
+  "algorithm_version": 2,
+  "end_time": "Tue, 02 Feb 2021 01:32:21 GMT",
+  "grade": "F",
+  "hidden": false,
+  "likelihood_indicator": "MEDIUM",
+  "response_headers": {
+    "Accept-Ranges": "bytes",
+    "Access-Control-Allow-Credentials": "true",
+    "Access-Control-Allow-Headers": "Content-Type",
+    "Cache-Control": "max-age=3",
+    "Connection": "Keep-Alive",
+    "Content-Length": "36982",
+    "Content-Type": "text/html",
+    "Date": "Tue, 02 Feb 2021 01:32:16 GMT",
+    "ETag": "\"9076-5ba4601384980\"",
+    "Expires": "Tue, 02 Feb 2021 01:32:19 GMT",
+    "Keep-Alive": "timeout=20, max=200",
+    "Last-Modified": "Mon, 01 Feb 2021 13:05:14 GMT",
+    "Server": "Apache"
+  },
+  "scan_id": 17551055,
+  "score": 20,
+  "start_time": "Tue, 02 Feb 2021 01:32:11 GMT",
+  "state": "FINISHED",
+  "status_code": 200,
+  "tests_failed": 5,
+  "tests_passed": 7,
+  "tests_quantity": 12
 }

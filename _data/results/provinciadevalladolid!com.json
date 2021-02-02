@@ -1,4 +1,30 @@
 {
-  "error": "recent-scan-not-found",
-  "text": "Recently completed scan for provinciadevalladolid.com not found"
+  "algorithm_version": 2,
+  "end_time": "Tue, 02 Feb 2021 01:32:42 GMT",
+  "grade": "F",
+  "hidden": false,
+  "likelihood_indicator": "MEDIUM",
+  "response_headers": {
+    "Cache-Control": "must-revalidate, must-revalidate",
+    "Connection": "Keep-Alive",
+    "Content-Encoding": "gzip",
+    "Content-Type": "text/html;charset=UTF-8",
+    "Date": "Tue, 02 Feb 2021 01:32:21 GMT",
+    "ETag": "\"-7136750731612223506000-gzip\"",
+    "Keep-Alive": "timeout=15, max=100",
+    "ProxiaInstanceId": "278951980:2075762888:21",
+    "Server": "Apache",
+    "Set-Cookie": "JSESSIONID=2991D53A89506EC4954361F1FF52B003; Path=/; Secure; HttpOnly",
+    "Transfer-Encoding": "chunked",
+    "Vary": "Accept-Encoding",
+    "X-XSS-Protection": "1; mode=block"
+  },
+  "scan_id": 17551100,
+  "score": 10,
+  "start_time": "Tue, 02 Feb 2021 01:32:26 GMT",
+  "state": "FINISHED",
+  "status_code": 200,
+  "tests_failed": 5,
+  "tests_passed": 7,
+  "tests_quantity": 12
 }

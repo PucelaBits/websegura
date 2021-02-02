@@ -1,4 +1,25 @@
 {
-  "error": "recent-scan-not-found",
-  "text": "Recently completed scan for www.ccyl.es not found"
+  "algorithm_version": 2,
+  "end_time": "Tue, 02 Feb 2021 01:32:38 GMT",
+  "grade": "F",
+  "hidden": false,
+  "likelihood_indicator": "MEDIUM",
+  "response_headers": {
+    "Cache-Control": "private",
+    "Content-Length": "50045",
+    "Content-Type": "text/html; charset=utf-8",
+    "Date": "Tue, 02 Feb 2021 01:32:32 GMT",
+    "Server": "Microsoft-IIS/10.0",
+    "X-AspNet-Version": "4.0.30319",
+    "X-AspNetMvc-Version": "5.2",
+    "X-Powered-By": "ASP.NET"
+  },
+  "scan_id": 17551111,
+  "score": 15,
+  "start_time": "Tue, 02 Feb 2021 01:32:28 GMT",
+  "state": "FINISHED",
+  "status_code": 200,
+  "tests_failed": 6,
+  "tests_passed": 6,
+  "tests_quantity": 12
 }

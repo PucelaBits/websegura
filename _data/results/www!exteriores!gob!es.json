@@ -1,4 +1,31 @@
 {
-  "error": "recent-scan-not-found",
-  "text": "Recently completed scan for www.exteriores.gob.es not found"
+  "algorithm_version": 2,
+  "end_time": "Tue, 02 Feb 2021 01:32:28 GMT",
+  "grade": "F",
+  "hidden": false,
+  "likelihood_indicator": "MEDIUM",
+  "response_headers": {
+    "Cache-Control": "public",
+    "Content-Encoding": "gzip",
+    "Content-Length": "27773",
+    "Content-Type": "text/html; charset=utf-8",
+    "Date": "Tue, 02 Feb 2021 01:32:17 GMT",
+    "Expires": "Tue, 02 Feb 2021 01:36:12 GMT",
+    "MicrosoftSharePointTeamServices": "14.0.0.7260",
+    "SPRequestGuid": "4f3a49b0-1ee8-487a-900f-3c79f52f6ec1",
+    "Server": "Microsoft-IIS/7.5",
+    "Vary": "Accept-Encoding",
+    "X-AspNet-Version": "2.0.50727",
+    "X-MS-InvokeApp": "1; RequireReadOnly",
+    "X-Powered-By": "ASP.NET",
+    "X-SharePointHealthScore": "0"
+  },
+  "scan_id": 17551066,
+  "score": 0,
+  "start_time": "Tue, 02 Feb 2021 01:32:15 GMT",
+  "state": "FINISHED",
+  "status_code": 200,
+  "tests_failed": 7,
+  "tests_passed": 5,
+  "tests_quantity": 12
 }

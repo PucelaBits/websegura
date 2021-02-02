@@ -1,4 +1,28 @@
 {
-  "error": "recent-scan-not-found",
-  "text": "Recently completed scan for www.jcyl.es not found"
+  "algorithm_version": 2,
+  "end_time": "Tue, 02 Feb 2021 01:32:45 GMT",
+  "grade": "F",
+  "hidden": false,
+  "likelihood_indicator": "MEDIUM",
+  "response_headers": {
+    "Cache-Control": "no-store",
+    "Connection": "close",
+    "Content-Type": "text/html;charset=UTF-8",
+    "Date": "Tue, 02 Feb 2021 01:32:05 GMT",
+    "Keep-Alive": "timeout=2, max=100",
+    "Last-Modified": "Tue, 02 Feb 2021 01:32:31 GMT",
+    "Server": "Apache",
+    "Set-Cookie": "JSESSIONID=839E89ADD2852B5BB7DA33A3DD81893E; Path=/web",
+    "X-Content-Type-Options": "nosniff",
+    "X-Frame-Options": "SAMEORIGIN",
+    "X-XSS-Protection": "1; mode=block"
+  },
+  "scan_id": 17551103,
+  "score": 0,
+  "start_time": "Tue, 02 Feb 2021 01:32:27 GMT",
+  "state": "FINISHED",
+  "status_code": 200,
+  "tests_failed": 4,
+  "tests_passed": 8,
+  "tests_quantity": 12
 }

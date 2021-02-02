@@ -1,4 +1,33 @@
 {
-  "error": "recent-scan-not-found",
-  "text": "Recently completed scan for www.congreso.es not found"
+  "algorithm_version": 2,
+  "end_time": "Tue, 02 Feb 2021 01:32:21 GMT",
+  "grade": "F",
+  "hidden": false,
+  "likelihood_indicator": "MEDIUM",
+  "response_headers": {
+    "Cache-Control": "max-age=0, no-cache, no-store",
+    "Connection": "keep-alive",
+    "Content-Encoding": "gzip",
+    "Content-Length": "19700",
+    "Content-Type": "text/html;charset=UTF-8",
+    "Date": "Tue, 02 Feb 2021 01:32:13 GMT",
+    "Expires": "Tue, 02 Feb 2021 01:32:13 GMT",
+    "Liferay-Portal": "Liferay Digital Experience Platform 7.1.10 GA1 (Judson / Build 7110 / July 2, 2018)",
+    "Pragma": "no-cache",
+    "Server": "JBoss-EAP/7",
+    "Set-Cookie": "COOKIE_SUPPORT=true; path=/; secure; HttpOnly; Max-Age=31536000; Expires=Wed, 02-Feb-2022 01:32:12 GMT, GUEST_LANGUAGE_ID=es_ES; path=/; domain=.congreso.es; secure; HttpOnly; Max-Age=31536000; Expires=Wed, 02-Feb-2022 01:32:12 GMT",
+    "Vary": "Accept-Encoding",
+    "X-Content-Type-Options": "nosniff",
+    "X-Frame-Options": "SAMEORIGIN",
+    "X-Powered-By": "Undertow/1, JSP/2.3",
+    "X-XSS-Protection": "1"
+  },
+  "scan_id": 17551044,
+  "score": 15,
+  "start_time": "Tue, 02 Feb 2021 01:32:08 GMT",
+  "state": "FINISHED",
+  "status_code": 200,
+  "tests_failed": 3,
+  "tests_passed": 9,
+  "tests_quantity": 12
 }

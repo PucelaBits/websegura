@@ -1,4 +1,24 @@
 {
-  "error": "recent-scan-not-found",
-  "text": "Recently completed scan for www.ae.jcyl.es not found"
+  "algorithm_version": 2,
+  "end_time": "Tue, 02 Feb 2021 01:32:34 GMT",
+  "grade": "F",
+  "hidden": false,
+  "likelihood_indicator": "MEDIUM",
+  "response_headers": {
+    "Accept-Ranges": "bytes",
+    "Content-Length": "368",
+    "Content-Type": "text/html",
+    "Date": "Tue, 02 Feb 2021 01:32:32 GMT",
+    "Last-Modified": "Wed, 02 Dec 2020 06:48:47 GMT",
+    "Server": "Jboss/version-1.0",
+    "X-Cnection": "close"
+  },
+  "scan_id": 17551110,
+  "score": 20,
+  "start_time": "Tue, 02 Feb 2021 01:32:28 GMT",
+  "state": "FINISHED",
+  "status_code": 200,
+  "tests_failed": 5,
+  "tests_passed": 7,
+  "tests_quantity": 12
 }
