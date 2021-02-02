@@ -48,7 +48,7 @@ https://websegura.pucelabits.org'| urlEncode }}{{ path | urlEncode }}{{ '?pk_cam
     </tr>
   </thead>
   <tbody>
-      {% for h in history %}
+      {% for h in history | sort(reverse=true, attribute="end_time_unix_timestamp") %}
       <tr class="{{ h | color }}">
         <td>{{ h.grade }}</td>
         <td>{{ h.score }}/100</td>

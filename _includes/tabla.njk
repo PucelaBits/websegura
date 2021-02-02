@@ -8,7 +8,7 @@
       </tr>
     </thead>
     <tbody>
-      {% for web in webs %}
+      {% for web in webs | sort(attribute="url") %}
         {% set security = results[web.url | replace(".", "!")] %}
         {% if security %}
         <tr class="{{ security | color }}">
