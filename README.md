@@ -10,12 +10,15 @@ Si quieres incluir algún sitio público, puedes crear [un nuevo issue](https://
 
 ### Errores o sugerencias
 
-[Abre un nuevo issue](https://github.com/PucelaBits/websegura/issues/new/choose) para hacernos saber si hay algún error con la web o tienes alguna idea para mejorar.
+🐞 [Abre un nuevo issue](https://github.com/PucelaBits/websegura/issues/new/choose) para hacernos saber si hay algún error con la web.
+
+💡 Si tienes alguna idea o pregunta para mejorar, podemos [debatirla en los foros](https://github.com/PucelaBits/websegura/discussions).
 
 ### Habla con nosotros
 
 - [Chat en matrix](https://matrix.to/#/#PucelaBits_websegura:gitter.im)
 - [![Chat en gitter https://gitter.im/PucelaBits/websegura](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/PucelaBits/websegura?utm_source=badge&utm_medium=badge&utm_content=badge)
+- [Foros del proyecto](https://github.com/PucelaBits/websegura/discussions)
 - [PucelaBits](https://pucelabits.org)
 
 ## Desarrollo
