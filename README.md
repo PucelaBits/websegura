@@ -61,7 +61,7 @@ Deberías poder acceder a la web en local en [http://localhost:8080](http://loca
 Si modificas los listados de URLs, puede actualizar el análisis ejecutando (llevará unos minutos)
 
 ```
-bash crawl.sh
+npm run crawl
 ```
 
 ### Añadir una nueva provincia

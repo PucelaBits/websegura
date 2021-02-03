@@ -2,20 +2,20 @@
   "name": "websegura",
   "version": "1.0.0",
   "private": true,
-  "description": "",
-  "main": "index.js",
+  "description": "Misc tools to analyze websites and build websegura",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run build:dev -- --serve --watch",
     "build:dev": "npm run build:sass && npx @11ty/eleventy",
     "build:sass": "npx sass --no-source-map assets/sass:assets/css",
-    "build": "env NODE_ENV=production npm run build:dev"
+    "build": "env NODE_ENV=production npm run build:dev",
+    "crawl:analyze": "node utils/analyze.js",
+    "crawl:results": "node utils/results.js",
+    "crawl": "npm run crawl:analyze && sleep 60 && npm run crawl:results"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/PucelaBits/websegura.git"
   },
-  "author": "",
   "license": "AGPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/PucelaBits/websegura/issues"
@@ -23,6 +23,9 @@
   "homepage": "https://github.com/PucelaBits/websegura#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
+    "axios": "^0.21.1",
+    "bottleneck": "^2.19.5",
+    "fast-glob": "^3.2.4",
     "sass": "^1.32.5"
   }
 }
