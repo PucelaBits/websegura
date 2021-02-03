@@ -7,12 +7,19 @@ assignees: ''
 
 ---
 
-Por favor usa la siguiente plantilla para especificar la url, nombre y cuenta en twitter (si existe)
+Por favor usa la siguiente plantilla para especificar la url, nombre y cuenta en twitter (si existe, o del organismo que dependa), puedes añadir múltiples sitios.
 
-Provincia (o comunidad autónoma si es web regional): MiProvincia
+Provincia/Comunidad: MiProvincia/MiComunidad
 
+```
 {
-        "url": "www.laweb.es",
-        "name": "El nombre",
-        "twitter": "NombreDeUsuario"
+    "url": "www.web1.com",
+    "name": "El Nombre 1",
+    "twitter": "usuarioTwitter1"
+},
+{
+    "url": "www.web2.com",
+    "name": "El Nombre2",
+    "twitter": "usuarioTwitter"2
 }
+```
