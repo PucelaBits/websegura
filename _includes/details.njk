@@ -12,7 +12,7 @@
 <ul>
   <li><strong>Nombre:</strong> {{ web.name }}</li>
   <li><strong>URL:</strong> <a href="https://{{ web.url }}">{{ web.url }}</a></li>
-  <li><strong>Twitter:</strong> <a href="https://twitter.com/{{ web.twitter }}">@{{ web.twitter }}</a></li>
+  {% if web.twitter %}<li><strong>Twitter:</strong> <a href="https://twitter.com/{{ web.twitter }}">@{{ web.twitter }}</a></li>{% endif %}
   {% if type %}
   <li><strong>Ubicación: </strong><a href="/{{ type }}/{{ parent }}">{{ location.name }}</a></li>
   {% endif %}
