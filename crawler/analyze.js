@@ -8,24 +8,26 @@
  * https://github.com/mozilla/http-observatory/blob/master/httpobs/docs/api.md
  */
 const axios = require('axios');
-
-const MOZILLA_API_BASE_URL = 'https://http-observatory.security.mozilla.org/api/v1';
-
+const Bottleneck = require('bottleneck');
 const parser = require('./sites-parser');
 
-// TODO use bottleneck to batch/parallelize requests to Mozilla API
-// const bottleneck = require('bottleneck');
-// const limiter = new Bottleneck({maxConcurrent: 10});
+const MOZILLA_API_BASE_URL = 'https://http-observatory.security.mozilla.org/api/v1';
+const MAX_CONCURRENT_REQUESTS = 20;
+
+const limiter = new Bottleneck({maxConcurrent: MAX_CONCURRENT_REQUESTS});
 
 async function analyze() {
   const sites = await parser.parse();
 
-  for (const site of sites) {
-    console.log(`Scanning ${site} using Mozilla HTTP Observatory API`);
-    await axios.post(`${MOZILLA_API_BASE_URL}/analyze?host=${site}&rescan=true`);
-  }
+  const promises = sites.map((site, i) => limiter.schedule(() => {
+    console.log(`${i} Scanning ${site} using Mozilla HTTP Observatory API`);
+    return axios.post(`${MOZILLA_API_BASE_URL}/analyze?host=${site}&rescan=true`);
+  }));
+
+  await Promise.all(promises);
 }
 
-analyze()
-  .then(x => console.log('OK'))
-  .catch(err => console.error(err));
+analyze().catch(err => {
+  console.error(err);
+  process.exit(1);
+});
