@@ -17,7 +17,7 @@ async function parse() {
   const files = glob.sync(['_data/{comunidades,provincias}/*.json', '_data/general.json']);
   return files
     .flatMap(file => JSON.parse(fs.readFileSync(file)).webs.map(x => beautify(x.url)))
-    // .filter(outdated);
+    .filter(outdated);
 }
 
 // Mozilla espera un hostname (sin / final y sin indicar protocolo "http[s]://")
