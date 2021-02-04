@@ -8,8 +8,8 @@
     "build:dev": "npm run build:sass && npx @11ty/eleventy",
     "build:sass": "npx sass --no-source-map assets/sass:assets/css",
     "build": "env NODE_ENV=production npm run build:dev",
-    "crawl:analyze": "node utils/analyze.js",
-    "crawl:results": "node utils/results.js",
+    "crawl:analyze": "node crawler/analyze.js",
+    "crawl:results": "node crawler/results.js",
     "crawl": "npm run crawl:analyze && sleep 60 && npm run crawl:results"
   },
   "repository": {

@@ -1,3 +1,10 @@
+/**
+ * Solicita los resultados (estado actual + histórico) de los sitios web dados de alta en el proyecto.
+ * El análisis se hace utilizando el API de Mozilla.
+ *
+ * Más información en:
+ * https://github.com/mozilla/http-observatory/blob/master/httpobs/docs/api.md
+ */
 const fs = require('fs/promises');
 const axios = require('axios');
 
@@ -6,10 +13,9 @@ const MOZILLA_API_BASE_URL = 'https://http-observatory.security.mozilla.org/api/
 const parser = require('./sites-parser');
 
 // TODO use bottleneck to batch/parallelize requests to Mozilla API
-// TODO request outdated results only
 
 async function results() {
-  const sites = parser.parse();
+  const sites = await parser.parse();
 
   for (const site of sites) {
     const fileName = site.replace(/\./g, '!') + '.json';
