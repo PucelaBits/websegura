@@ -2756,6 +2756,16 @@ p.featured .emoticon {
   display: block;
 }
 
+p.featured .cta-twitter {
+  background-color: #1da1f2;
+  color: #FFF;
+  padding: 4px;
+  border-radius: 3px;
+  display: block;
+  max-width: 600px;
+  margin: auto;
+}
+
 #resultados table {
   table-layout: fixed;
   word-wrap: break-word;
