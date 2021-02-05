@@ -1,9 +1,9 @@
 {% macro details(web, results, history, path, type, parent, location) %}
 
-<h1>{{ web.name }}</h1>
-
 <p id="breadcumbs">
   <a href="/">España</a>{% if type %} - <a href="/{{ type }}/{{ parent }}">{{ location.name }}</a>{% endif %} - {{ web.name }}</p>
+
+<h1>{{ web.name }}</h1>
 
 <div id="score" class="{{ results | color }}">{% if results.tests_passed < 5 %}☠️{% else %}{{ results.grade }}{% endif %}</div>
 

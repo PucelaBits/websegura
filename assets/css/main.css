@@ -110,13 +110,13 @@ body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 body, input, select, textarea {
   color: #585858;
   font-family: Helvetica, sans-serif;
-  font-size: 16pt;
+  font-size: 14pt;
   font-weight: 300;
   line-height: 1.75;
 }
 @media screen and (max-width: 1680px) {
   body, input, select, textarea {
-    font-size: 14pt;
+    font-size: 12pt;
   }
 }
 @media screen and (max-width: 1280px) {
@@ -2268,21 +2268,36 @@ body.is-touch .tiles article .content {
 /* Header */
 #header {
   padding: 2em 0 0.1em 0;
+  border-bottom: solid 5px #f56a6a;
+  margin-bottom: 1em;
+}
+#header .inner {
+  display: flex;
+}
+#header .inner > * {
+  flex: 1;
+  margin-bottom: 0;
+}
+#header .header-icons {
+  text-align: right;
+  cursor: default;
+  list-style: none;
+  padding-left: 0;
+}
+#header .header-icons li {
+  display: inline-block;
+  padding: 0 1em 0 0;
+}
+#header .header-icons li a {
+  color: #00000069;
 }
 #header .logo {
   display: block;
   border-bottom: 0;
-  color: inherit;
-  font-weight: 900;
-  letter-spacing: 0.35em;
-  margin: 0 0 2.5em 0;
+  margin: 0 0 0.5em 0;
   text-decoration: none;
-  text-transform: uppercase;
   display: inline-block;
-}
-#header .logo > * {
-  display: inline-block;
-  vertical-align: middle;
+  font-size: 1.4em;
 }
 #header .logo .symbol {
   margin-right: 0.65em;
@@ -2371,6 +2386,14 @@ body.is-touch .tiles article .content {
 @media screen and (max-width: 736px) {
   #header {
     padding: 1em 0 0.1em 0;
+    text-align: center;
+    margin: 1em;
+  }
+  #header .logo {
+    font-size: 1.1em;
+  }
+  #header .header-icons {
+    display: none;
   }
   #header nav {
     right: 0.5em;

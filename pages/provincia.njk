@@ -10,15 +10,14 @@ permalink: "p/{{ provincia }}/"
 {% set p = provincias[provincia] %}
 {% set c = comunidades[p.comunidad] %}
 
-<h1>🔭 Observatorio de seguridad web de
-  {{ p.name }}</h1>
-
 <p id="breadcumbs">
   <a href="/">España</a>{% if c.webs %}
   -
   <a href="/c/{{ p.comunidad }}">{{ comunidades[p.comunidad].name }}</a>{% endif %}
   -
   {{ p.name }}</p>
+
+<h1>{{ p.name }}</h1>
 
 <p class="subtitle">
   Analizamos sitios públicos de
