@@ -9,12 +9,12 @@
 	body, input, select, textarea {
 		color: _palette(fg);
 		font-family: _font(family);
-		font-size: 16pt;
+		font-size: 14pt;
 		font-weight: _font(weight);
 		line-height: 1.75;
 
 		@include breakpoint('<=xlarge') {
-			font-size: 14pt;
+			font-size: 12pt;
 		}
 
 		@include breakpoint('<=large') {

@@ -8,22 +8,41 @@
 
 	#header {
 		@include padding(2em, 0, (0, 0, -5em, 0));
+		border-bottom: solid 5px #f56a6a;
+		margin-bottom: 1em;
+
+		.inner {
+			display: flex;
+
+			> * {
+		    flex: 1;
+		    margin-bottom: 0;
+			}
+		}
+
+		.header-icons {
+					text-align: right;
+					cursor: default;
+					list-style: none;
+					padding-left: 0;
+
+					li {
+						display: inline-block;
+						padding: 0 1em 0 0;
+
+						a {
+							color: #00000069;
+						}
+					}
+		}
 
 		.logo {
 			display: block;
 			border-bottom: 0;
-			color: inherit;
-			font-weight: _font(weight-bold);
-			letter-spacing: _font(letter-spacing);
-			margin: 0 0 (_size(element-margin) * 1.25) 0;
+			margin: 0 0 (_size(element-margin) * 0.25) 0;
 			text-decoration: none;
-			text-transform: uppercase;
 			display: inline-block;
-
-			> * {
-				display: inline-block;
-				vertical-align: middle;
-			}
+			font-size: 1.4em;
 
 			.symbol {
 				margin-right: 0.65em;
@@ -117,6 +136,16 @@
 
 		@include breakpoint('<=small') {
 			@include padding(1em, 0, (0em, 0, -3em, 0));
+			text-align: center;
+			margin: 1em;
+
+			.logo {
+				font-size: 1.1em;
+			}
+
+			.header-icons {
+				display: none;
+			}
 
 			nav {
 				right: 0.5em;
