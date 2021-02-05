@@ -3,14 +3,22 @@ layout: base
 name: España
 permalink: /
 ---
-
 <h1>🔭 Observatorio de seguridad web de
   {{ name }}</h1>
-<p class="subtitle">Analizamos sitios públicos de
+<p class="subtitle">Analizamos <strong>
+{% for name, result in results %}
+  {% if loop.last %}
+    {{ loop.index }}
+  {% endif %}
+{% endfor %}
+ </strong> sitios públicos de
   {{ name }}
   para saber si protegen la privacidad y seguridad de sus usuarios.</p>
 
 <p>
+  <button class="provincia">
+    <a href="#resultados">Web nacionales</a>
+  </button>
   {% for code, p in provincias %}
     <button class="provincia">
       <a href="/p/{{ code }}">{{ p.name }}</a>
