@@ -51,7 +51,7 @@ permalink: /
 <section>
   <div class="table-wrapper" id="resultados">
     <h2>{{ name }}</h2>
-    {{ tabla(general.webs, results, path=page.url) }}
+    {{ tabla(all | filterByTerritorioId("general"), path=page.url) }}
     <p>
       <a href="https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web">+ Añadir una web nueva</a>
     </p>

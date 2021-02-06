@@ -18,10 +18,10 @@ title: "Ranking: Las mejores y las peores webs"
   <div class="table-wrapper" id="resultados">
     <h2 id="hall-of-fame">🎖 Hall de la fama</h2>
     <p>Estos sitios son seguros y tienen una nota A o B.</p>
-    {{ tabla(all | scoreGt(60), results, path=page.url) }}
+    {{ tabla(all | scoreGt(60), path=page.url) }}
 
     <h2 id="hall-of-shame">🤦‍♂️ Hall de la vergüenza</h2>
     <p>Estos sitios son completamente inseguros, ¡no implementan ninguna medida de seguridad!</p>
-    {{ tabla(all | testsPassedLt(5), results, path=page.url) }}
+    {{ tabla(all | testsPassedLt(5), path=page.url) }}
   </div>
 </section>

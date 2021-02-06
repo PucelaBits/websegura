@@ -37,6 +37,7 @@ const fs = require("fs");
       grade: obj.results.grade,
       score: obj.results.score,
       tests_passed: obj.results.tests_passed,
+      state: obj.results.state,
     }));
 
   fs.writeFileSync("_data/all.json", JSON.stringify(all));
@@ -95,15 +96,17 @@ module.exports = function (eleventyConfig) {
     return abbr;
   });
 
-  eleventyConfig.addFilter("urlEncode", (value) => {
-    return encodeURIComponent(value);
-  });
+  eleventyConfig.addFilter("urlEncode", (value) => encodeURIComponent(value));
 
-  eleventyConfig.addFilter("testsPassedLt", (value, testsPassed) => {
-    return value.filter((v) => v.tests_passed < testsPassed);
-  });
+  eleventyConfig.addFilter("testsPassedLt", (value, testsPassed) =>
+    value.filter((v) => v.tests_passed < testsPassed)
+  );
 
-  eleventyConfig.addFilter("scoreGt", (value, score) => {
-    return value.filter((v) => v.score > score);
-  });
+  eleventyConfig.addFilter("scoreGt", (value, score) =>
+    value.filter((v) => v.score > score)
+  );
+
+  eleventyConfig.addFilter("filterByTerritorioId", (value, territorio_id) =>
+    value.filter((v) => v.territorio_id === territorio_id)
+  );
 };

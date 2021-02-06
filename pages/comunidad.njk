@@ -31,26 +31,25 @@ permalink: "c/{{ comunidad }}/"
 <section>
   <div class="table-wrapper" id="resultados">
     <h2>{{ c.name }}</h2>
-    {{ tabla(c.webs, results, path=page.url)}}
+    {{ tabla(all | filterByTerritorioId(comunidad), path=page.url)}}
     <p>
       <a href="https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web">+ Añadir una web nueva</a>
     </p>
   </div>
 
   <h2>Provincias</h2>
-    <p>
-  {% for name, provincia in provincias %}
-    {% if provincia.comunidad == comunidad %}
-      <button class="provincia">
-        <a href="/p/{{ name }}">{{ provincia.name }}</a>
-      </button>
-    {% endif %}
-  {% endfor %}
-    </p>
-
   <p>
-      <small>(<a href="https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web">Ayúdanos a añadir otras provincias</a>)</small>
+    {% for name, provincia in provincias %}
+      {% if provincia.comunidad == comunidad %}
+        <button class="provincia">
+          <a href="/p/{{ name }}">{{ provincia.name }}</a>
+        </button>
+      {% endif %}
+    {% endfor %}
   </p>
 
+  <p>
+    <small>(<a href="https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web">Ayúdanos a añadir otras provincias</a>)</small>
+  </p>
 
 </section>
