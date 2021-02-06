@@ -25,7 +25,7 @@ const fs = require("fs");
         twitter: w.twitter,
         results: JSON.parse(
           fs.readFileSync(
-            `_data/results/${w.url.replaceAll(".", "!")}.json`,
+            `_data/results/${w.url.replace(new RegExp("\\.", "g"), "!")}.json`,
             "utf8"
           )
         ),
