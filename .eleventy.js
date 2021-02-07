@@ -23,21 +23,35 @@ const fs = require("fs");
         url: w.url,
         name: w.name,
         twitter: w.twitter,
-        results: JSON.parse(
-          fs.readFileSync(
-            `_data/results/${w.url.replace(new RegExp("\\.", "g"), "!")}.json`,
-            "utf8"
-          )
-        ),
       }))
     )
     .flat()
+    .map((obj) => {
+      let results;
+      try {
+        results = JSON.parse(
+          fs.readFileSync(
+            `_data/results/${obj.url.replace(
+              new RegExp("\\.", "g"),
+              "!"
+            )}.json`,
+            "utf8"
+          )
+        );
+      } catch (e) {
+        // Los resultados aún no están disponibles.
+      }
+      return {
+        ...obj,
+        results,
+      };
+    })
     .map((obj) => ({
       ...obj,
-      grade: obj.results.grade,
-      score: obj.results.score,
-      tests_passed: obj.results.tests_passed,
-      state: obj.results.state,
+      grade: obj.results?.grade,
+      score: obj.results?.score ?? 9000, // Si no hay, un número alto para que aparezca al final al ordenar de menos a más seguro.
+      tests_passed: obj.results?.tests_passed,
+      state: obj.results?.state,
     }));
 
   fs.writeFileSync("_data/all.json", JSON.stringify(all));
