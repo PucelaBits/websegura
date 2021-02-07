@@ -116,8 +116,9 @@ module.exports = function (eleventyConfig) {
     value.filter((v) => v.tests_passed < testsPassed)
   );
 
-  eleventyConfig.addFilter("scoreGt", (value, score) =>
-    value.filter((v) => v.score > score)
+  eleventyConfig.addFilter(
+    "scoreGt",
+    (value, score) => value.filter((v) => v.score > score && v.score < 9000) // 9000 es un valor arbitrariamente alto para marcar webs con resultados pendientes.
   );
 
   eleventyConfig.addFilter("filterByTerritorioId", (value, territorio_id) =>
