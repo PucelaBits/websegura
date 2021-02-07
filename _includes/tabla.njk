@@ -10,7 +10,7 @@
     <tbody>
       {% for web in webs | sort(attribute = "score") %}
         {% if web %}
-          {% if web.state == 'FINISHED' %}
+          {% if web.state === 'FINISHED' %}
             <tr class="{{ web | color }}">
               <td>
                 <a href="/w/{{ web.url | replace('.', '!') }}" title="{{ web | abbr }}">
