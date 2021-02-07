@@ -1,23 +1,67 @@
+const glob = require("fast-glob");
+const fs = require("fs");
+
+(function createGlobalDataFile() {
+  const files = glob.sync([
+    "_data/{comunidades,provincias}/*.json",
+    "_data/general.json",
+  ]);
+  let all = files
+    .map((f) => ({
+      file: JSON.parse(fs.readFileSync(f, "utf8")),
+      territorio_id: /^_data.*\/(.*)\.json$/.exec(f)[1],
+    }))
+    .map(({ file, territorio_id }) => ({
+      territorio_id,
+      territorio: file.name,
+      webs: file.webs,
+    }))
+    .map(({ territorio_id, territorio, webs }) =>
+      webs.map((w) => ({
+        territorio_id,
+        territorio,
+        url: w.url,
+        name: w.name,
+        twitter: w.twitter,
+        results: JSON.parse(
+          fs.readFileSync(
+            `_data/results/${w.url.replace(new RegExp("\\.", "g"), "!")}.json`,
+            "utf8"
+          )
+        ),
+      }))
+    )
+    .flat()
+    .map((obj) => ({
+      ...obj,
+      grade: obj.results.grade,
+      score: obj.results.score,
+      tests_passed: obj.results.tests_passed,
+      state: obj.results.state,
+    }));
+
+  fs.writeFileSync("_data/all.json", JSON.stringify(all));
+})();
+
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("images");
 
   eleventyConfig.addFilter("color", (security) => {
-
     if (security.tests_passed < 5) {
       return "danger";
     }
 
     switch (security && security.grade && security.grade[0]) {
-      case 'A':
-      case 'B':
+      case "A":
+      case "B":
         return "safe";
-      case 'C':
-      case 'D':
-        return "moderate"
-      case 'E':
-      case 'F':
-        return "severe"
+      case "C":
+      case "D":
+        return "moderate";
+      case "E":
+      case "F":
+        return "severe";
       default:
         return "unknown";
     }
@@ -26,23 +70,23 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("abbr", (security) => {
     let abbr = "";
     switch (security && security.grade && security.grade[0]) {
-      case 'A':
+      case "A":
         abbr = "El sitio es muy seguro.";
         break;
-      case 'B':
+      case "B":
         abbr = "El sitio es seguro.";
         break;
-      case 'C':
-        abbr = "El sitio podría mejorar su seguridad."
+      case "C":
+        abbr = "El sitio podría mejorar su seguridad.";
         break;
-      case 'D':
-        abbr = "El sitio debería mejorar su seguridad."
+      case "D":
+        abbr = "El sitio debería mejorar su seguridad.";
         break;
-      case 'E':
-        abbr = "El sitio es inseguro."
+      case "E":
+        abbr = "El sitio es inseguro.";
         break;
-      case 'F':
-        abbr = "El sitio es muy inseguro."
+      case "F":
+        abbr = "El sitio es muy inseguro.";
         break;
       default:
         return "Desconocido.";
@@ -52,7 +96,17 @@ module.exports = function (eleventyConfig) {
     return abbr;
   });
 
-  eleventyConfig.addFilter("urlEncode", (value) => {
-    return encodeURIComponent(value);
-  });
+  eleventyConfig.addFilter("urlEncode", (value) => encodeURIComponent(value));
+
+  eleventyConfig.addFilter("testsPassedLt", (value, testsPassed) =>
+    value.filter((v) => v.tests_passed < testsPassed)
+  );
+
+  eleventyConfig.addFilter("scoreGt", (value, score) =>
+    value.filter((v) => v.score > score)
+  );
+
+  eleventyConfig.addFilter("filterByTerritorioId", (value, territorio_id) =>
+    value.filter((v) => v.territorio_id === territorio_id)
+  );
 };

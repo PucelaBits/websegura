@@ -129,7 +129,7 @@ ul.iconify li {
 }
 
 p.subtitle {
-  margin: 2em 0;
+  margin: 2em 0 0.85em 0;
   font-size: 1.1em;
 }
 
@@ -140,6 +140,16 @@ p.featured {
 
 p.featured .emoticon {
   display: block;
+}
+
+p.featured .cta-twitter {
+    background-color: rgb(29, 161, 242);
+    color: #FFF;
+    padding: 4px;
+    border-radius: 3px;
+    display: block;
+    max-width: 600px;
+    margin: auto;
 }
 
 #resultados table {

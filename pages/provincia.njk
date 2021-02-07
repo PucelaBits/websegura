@@ -10,15 +10,16 @@ permalink: "p/{{ provincia }}/"
 {% set p = provincias[provincia] %}
 {% set c = comunidades[p.comunidad] %}
 
-<h1>🔭 Observatorio de seguridad web de
-  {{ p.name }}</h1>
-
 <p id="breadcumbs">
-  <a href="/">España</a>{% if c.webs %}
-  -
-  <a href="/c/{{ p.comunidad }}">{{ comunidades[p.comunidad].name }}</a>{% endif %}
+  <a href="/">España</a>
+  {% if c.webs %}
+    -
+    <a href="/c/{{ p.comunidad }}">{{ comunidades[p.comunidad].name }}</a>
+  {% endif %}
   -
   {{ p.name }}</p>
+
+<h1>{{ p.name }}</h1>
 
 <p class="subtitle">
   Analizamos sitios públicos de
@@ -26,7 +27,7 @@ permalink: "p/{{ provincia }}/"
   para saber si protegen la privacidad y seguridad de sus usuarios.</p>
 
 <p class="button">
-  <a id="cta" href="#resultados">Ver quién no es seguro</a>
+  <a id="cta" href="#cta-featured">Ver quién no es seguro</a>
 </p>
 
 {% include "header.njk" %}
@@ -36,19 +37,19 @@ permalink: "p/{{ provincia }}/"
 <section>
   <div class="table-wrapper" id="resultados">
     <h2>{{ p.name }}</h2>
-    {{ tabla(p.webs, results, path=page.url)}}
+    {{ tabla(all | filterByTerritorioId(provincia), path=page.url)}}
     <p>
       <a href="https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web">+ Añadir una web nueva</a>
     </p>
 
     {% if c.webs %}
-    <h2>
-      <a href="/c/{{ p.comunidad }}">{{ c.name }}</a>
-    </h2>
-    {{ tabla(c.webs, results, path=page.url)}}
-    <p>
-      <a href="https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web">+ Añadir una web nueva</a>
-    </p>
+      <h2>
+        <a href="/c/{{ p.comunidad }}">{{ c.name }}</a>
+      </h2>
+      {{ tabla(all | filterByTerritorioId(p.comunidad), path=page.url)}}
+      <p>
+        <a href="https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web">+ Añadir una web nueva</a>
+      </p>
     {% endif %}
   </div>
 </section>

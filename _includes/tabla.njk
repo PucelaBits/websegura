@@ -1,4 +1,4 @@
-{% macro tabla(webs, results, path) %}
+{% macro tabla(webs, path) %}
   <table>
     <thead>
       <tr>
@@ -8,20 +8,22 @@
       </tr>
     </thead>
     <tbody>
-      {% for web in webs | sort(attribute="url") %}
-        {% set security = results[web.url | replace(".", "!")] %}
-        {% if security %}
-          {% if security.state == 'FINISHED' %}
-        <tr class="{{ security | color }}">
-          <td>
-            <a href="/w/{{ web.url | replace(".", "!") }}" title="{{ security | abbr }}">{% if security.tests_passed < 5 %}☠️{% else %}{{ security.grade }}{% endif %}</a>
-          </td>
-          <td>
-            <a href="/w/{{ web.url | replace(".", "!") }}" title="{{ web.name }}">{{ web.url | replace("www.", "") }}</a>
-          </td>
-          <td>
-            {% if (web.twitter) and (security.score < 70) %}
-              <a class="twitter-share-button" href="https://twitter.com/intent/tweet/?text={{ 'Hola @' + web.twitter + '
+      {% for web in webs | sort(attribute = "score") %}
+        {% if web %}
+          {% if web.state == 'FINISHED' %}
+            <tr class="{{ web | color }}">
+              <td>
+                <a href="/w/{{ web.url | replace('.', '!') }}" title="{{ web | abbr }}">
+                  {% if web.tests_passed < 5 %}☠️{% else %}{{ web.grade }}
+                  {% endif %}
+                </a>
+              </td>
+              <td>
+                <a href="/w/{{ web.url | replace('.', '!') }}" title="{{ web.name }}">{{ web.url | replace("www.", "") }}</a>
+              </td>
+              <td>
+                {% if (web.twitter) and (web.score < 70) %}
+                  <a class="twitter-share-button" href="https://twitter.com/intent/tweet/?text={{ 'Hola @' + web.twitter + '
 
 🔒 La seguridad de vuestra web y usuarios puede ser comprometida si no actualizáis vuestras conexiones seguras (HTTPS).
 ⚠️ ¡Por favor, revisadlo cuanto antes!
@@ -29,22 +31,22 @@
 https://websegura.pucelabits.org'| urlEncode }}{{ path }}{{ '?pk_campaign=HazseloSaber&pk_source=twitter
 
 #websegura /vía @PucelaBits' | urlEncode }}" target="_blank" rel="noopener" aria-label="Twitter">
-                <span class="icon brands fa-twitter">
-                  <span>Tuitear</span>
-                </a>
+                    <span class="icon brands fa-twitter">
+                      <span>Tuitear</span>
+                    </a>
 
-              {% endif %}
-            </td>
-          </tr>
-          {% else %}
-          <tr class="unknown">
-            <td title="Pendiente de análisis">🕐</td>
-            <td>
-              {{ web.url | replace("www.", "") }}
-            </td>
-            <td> </td>
-            </tr>
-          {% endif %}
+                  {% endif %}
+                </td>
+              </tr>
+            {% else %}
+              <tr class="unknown">
+                <td title="Pendiente de análisis">🕐</td>
+                <td>
+                  {{ web.url | replace("www.", "") }}
+                </td>
+                <td></td>
+              </tr>
+            {% endif %}
           {% endif %}
         {% endfor %}
       </tbody>
