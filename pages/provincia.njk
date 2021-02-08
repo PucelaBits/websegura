@@ -26,6 +26,14 @@ permalink: "p/{{ provincia }}/"
   {{ p.name }}
   para saber si protegen la privacidad y seguridad de sus usuarios.</p>
 
+<div class="score-container">
+  <div class="score-bar">
+    <div class="score-progress" data-score="{{ all | filterByTerritorioId(provincia)| safeScore }}"></div>
+  </div>
+
+  <p>El <strong>{{ all | filterByTerritorioId(provincia)| safeScore }}%</strong> de las webs son completamente seguras ({{ all | filterByTerritorioId(provincia) | scoreGt(69) | length}}/{{ all | filterByTerritorioId(provincia) | length}})</p>
+</div>
+
 <p class="button">
   <a id="cta" href="#cta-featured">Ver quién no es seguro</a>
 </p>

@@ -121,6 +121,16 @@ module.exports = function (eleventyConfig) {
     (value, score) => value.filter((v) => v.score > score && v.score < 9000) // 9000 es un valor arbitrariamente alto para marcar webs con resultados pendientes.
   );
 
+  // Devolvemos el safeScore, o % de webs seguras
+  eleventyConfig.addFilter(
+    "safeScore",
+    (value) => {
+        let safe = value.filter((v) => v.score > 69 && v.score < 9000).length
+        let safeScore = (safe * 100)/value.length
+        return safeScore.toFixed(0);
+    }
+  );
+
   eleventyConfig.addFilter("filterByTerritorioId", (value, territorio_id) =>
     value.filter((v) => v.territorio_id === territorio_id)
   );
