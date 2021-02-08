@@ -2770,6 +2770,29 @@ p.subtitle {
   font-size: 1.1em;
 }
 
+.score-container {
+  max-width: 500px;
+  margin: auto;
+}
+.score-container .score-bar {
+  position: relative;
+  height: 10px;
+  width: 100%;
+  border-radius: 5px;
+  background: #f25757;
+}
+.score-container .score-bar .score-progress {
+  position: absolute;
+  height: 10px;
+  background: #34ca96;
+  border-radius: 5px 0 0 5px;
+}
+.score-container p {
+  font-size: 0.85em;
+  text-align: center;
+  margin-top: 1em;
+}
+
 p.featured {
   font-weight: bold;
   text-align: center;

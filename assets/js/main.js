@@ -182,4 +182,7 @@
 
 			});
 
+			// Custom code
+			let progress = $('.score-progress').attr("data-score") + '%';
+			$('.score-progress').css('width', progress);
 })(jQuery);
