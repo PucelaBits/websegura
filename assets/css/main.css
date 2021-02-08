@@ -2720,6 +2720,10 @@ small {
   font-size: 0.85em;
 }
 
+section {
+  margin-bottom: 1em;
+}
+
 #main p.button {
   display: block;
   max-width: 390px;
@@ -2791,6 +2795,13 @@ p.subtitle {
   font-size: 0.85em;
   text-align: center;
   margin-top: 1em;
+}
+
+#ranking-provincial {
+  column-count: 2;
+}
+#ranking-provincial .score-container {
+  margin: 1em 0;
 }
 
 p.centered {
