@@ -31,7 +31,7 @@ permalink: "p/{{ provincia }}/"
     <div class="score-progress" data-score="{{ all | filterByTerritorioId(provincia)| safeScore }}"></div>
   </div>
 
-  <p>El <strong>{{ all | filterByTerritorioId(provincia)| safeScore }}%</strong> de las webs son completamente seguras ({{ all | filterByTerritorioId(provincia) | scoreGt(69) | length}}/{{ all | filterByTerritorioId(provincia) | length}})</p>
+  <p><strong>{{ all | filterByTerritorioId(provincia)| safeScore }}%</strong> de las webs completamente seguras ({{ all | filterByTerritorioId(provincia) | scoreGt(69) | length}}/{{ all | filterByTerritorioId(provincia) | length}})</p>
 </div>
 
 <p class="button">

@@ -14,15 +14,7 @@ permalink: /
   {{ name }}
   para saber si protegen la privacidad y seguridad de sus usuarios.</p>
 
-<div class="score-container">
-  <div class="score-bar">
-    <div class="score-progress" data-score="{{ all | safeScore }}"></div>
-  </div>
-
-  <p>El <strong>{{ all | safeScore }}%</strong> de las webs son completamente seguras</p>
-</div>
-
-<p>🎖️ Sólo
+<p class="centered">🎖️ Sólo
   <a href="/ranking/">
     <strong>
       {{ all | scoreGt(69) | length }}
@@ -36,6 +28,14 @@ permalink: /
     </strong>
     sitios</a>
   no tienen seguridad alguna.</p>
+
+<div class="score-container">
+  <div class="score-bar">
+    <div class="score-progress" data-score="{{ all | safeScore }}"></div>
+  </div>
+
+  <p><strong>{{ all | safeScore }}%</strong> de las webs completamente seguras</p>
+</div>
 
 <p>
   <button class="provincia">
