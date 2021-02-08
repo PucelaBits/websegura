@@ -7,14 +7,28 @@ permalink: "/faq/"
 
 # 📌 Preguntas frecuentes sobre una web segura
 
+- [¿Qué es esta web?](#{{ '¿Qué es esta web?' | slug }})
+- [¿Qué es una conexión segura (HTTPS)?](#{{ '¿Qué es una conexión segura (HTTPS)?' | slug }})
+- [¿Qué nos asegura el cifrado?](#{{ '¿Qué nos asegura el cifrado?' | slug }})
+- [¿Qué significan las notas, por qué son importantes?](#{{ '¿Qué significan las notas, por qué son importantes?' | slug }})
+- [¿Qué tipo de problemas podría haber en webs que no tienen esa nota?](#{{ '¿Qué tipo de problemas podría haber en webs que no tienen esa nota?' | slug }})
+- [¿Debemos exigir webs seguras?](#{{ '¿Debemos exigir webs seguras?' | slug }})
+- [¿Cómo puedo participar en #websegura?](#{{ '¿Cómo puedo participar en #websegura?' | slug }})
+
+<a id="{{ '¿Qué es esta web?' | slug }}"></a>
+
 ## ¿Qué es esta web?
 
 Websegura usa el servicio [Mozilla Observatory](https://observatory.mozilla.org/) para analizar y mostrar la nota que tienen las webs de diferentes entidades públicas.
+
+<a id="{{ '¿Qué es una conexión segura (HTTPS)?' | slug }}"></a>
 
 ## ¿Qué es una conexión segura (HTTPS)?
 Cuando nos conectamos a una página web, nuestros datos viajan ida y vuelta desde nuestro dispositivo hasta el servidor de la página web por medio de cables y servidores intermedios.
 
 Si la dirección de la web incluye HTTPS, esto quiere decir que estos datos viajan cifrados, pero no todas las webs HTTPS tienen una implementación segura.
+
+<a id="{{ '¿Qué nos asegura el cifrado?' | slug }}"></a>
 
 ## ¿Qué nos asegura el cifrado?
 
@@ -30,11 +44,15 @@ De nuevo, sin conexiones seguras, podrían cambiar el contenido, tanto visible c
 
 Además, el protocolo HTTPS te asegura que te estás conectando con la página que deseabas. Es decir, es un certificado de su autenticidad.
 
+<a id="{{ '¿Qué significan las notas, por qué son importantes?' | slug }}"></a>
+
 ## ¿Qué significan las notas, por qué son importantes?
 
 Sin embargo, usar HTTPS, no es suficiente para garantizar la total seguridad de nuestras conexiones, la página debe también implementar ciertas medidas para asegurarse que las conexiones a su web siempre se realizan mediante este protocolo. Las notas que puede obtener una página web son A, B, C, D, E y F.
 
 ⚠**Si la web no tienen una nota A o B**, usan una implementación deficiente, ¡tu privacidad está en riesgo!
+
+<a id="{{ '¿Qué tipo de problemas podría haber en webs que no tienen esa nota?' | slug }}"></a>
 
 ## ¿Qué tipo de problemas podría haber en webs que no tienen esa nota?
 
@@ -58,13 +76,17 @@ Históricamente este código se ha empleado para robar usuarios y contraseñas o
 
 La web podría ser objetivo de ataques externos, como el llamado [_clickjacking_](https://es.wikipedia.org/wiki/Clickjacking), que permite que desde otra web o aplicación (como un juego) en el que una persona tenga que hacer clics, cargue la web atacada por debajo de forma invisible y haga a los visitantes hacer clic sin ellos saberlo.
 
+<a id="{{ '¿Debemos exigir webs seguras?' | slug }}"></a>
+
 ## ¿Debemos exigir webs seguras?
 
 Desde [PucelaBits](https://pucelabits.org/), pensamos que sí. Ahora más que nunca, y de forma creciente, Internet es un vehículo para informarse y participar activamente en la sociedad. Bien sea porque queremos conocer los servicios e infraestructuras de nuestro entorno más cercano o bien porque deseamos usar una web pública para completar un registro, las diversas entidades han de garantizarnos una conexión segura con sus páginas.
 
 De otro modo, las diversas entidades, y sobre todo las entidades públicas, han de comprometerse a que podemos visitar e interactuar con sus espacios en línea sin detrimento de nuestra seguridad como internautas.
 
-## ¿Cómo puedo participar en Web Segura?
+<a id="{{ '¿Cómo puedo participar en #websegura?' | slug }}"></a>
+
+## ¿Cómo puedo participar en #websegura?
 
 Si te interesa nuestro proyecto, tienes varias formas de participar en él:
 
