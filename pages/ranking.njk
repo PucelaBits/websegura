@@ -11,8 +11,13 @@ title: "Ranking: Las mejores y las peores webs"
   -
   {{ title }}</p>
 
-<h1>🏆
-  {{ title }}</h1>
+<h1>🏆 {{ title }}</h1>
+
+<ul>
+  <li><a href="#hall-of-fame">🎖️ Hall de la fama</a></li>
+  <li><a href="#hall-of-shame">☠️ Hall de la vergüenza</a></li>
+  <li><a href="#ranking-provincial">📊 Ranking provincial</a></li>
+</ul>
 
 <section>
   <div class="table-wrapper" id="resultados">
@@ -23,5 +28,17 @@ title: "Ranking: Las mejores y las peores webs"
     <h2 id="hall-of-shame">☠️ Hall de la vergüenza</h2>
     <p>Estos sitios son completamente inseguros, ¡no implementan ninguna medida de seguridad!</p>
     {{ tabla(all | testsPassedLt(5), path=page.url) }}
+  </div>
+
+  <h2>📊 Ranking provincial</h2>
+  <div class="table-wrapper" id="ranking-provincial">
+      {% for code, p in provincias %}
+        <div class="score-container" title="{{ all | filterByTerritorioId(code)| safeScore }}% de las webs completamente seguras">
+          <a href="/p/{{ code }}/">{{ p.name }}</a>
+          <div class="score-bar">
+            <div class="score-progress" data-score="{{ all | filterByTerritorioId(code)| safeScore }}"></div>
+          </div>
+        </div>
+      {% endfor %}
   </div>
 </section>
