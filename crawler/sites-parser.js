@@ -6,6 +6,7 @@ const fs = require('fs');
 const glob = require('fast-glob');
 
 const MAX_TIME_TO_REFRESH_MILLIS = 3 * 24 * 60 * 60 * 1000; // 3 days, can be increased when we have many sites to scan
+const MAX_RESULTS = 100;
 
 /**
  * Obtiene los ficheros global, de comunidades y provincias.
@@ -20,11 +21,14 @@ function getAllUrls() {
 /**
  * Devuelve la URL de las webs que no se han refrescado
  * en los últimos MAX_TIME_TO_REFRESH_MILLIS.
+ * Devuelve MAX_RESULTS como máximo, para evitar saturar el API de Mozilla.
  *
  * For the sake of simplicity, this function is sync for now
  */
-async function parse() {
-  return getAllUrls().filter(outdated);
+async function parse(limit=MAX_RESULTS) {
+  // XXX applying the limit during the filtering phase would
+  //     be more efficient, but js sucks sometimes
+  return getAllUrls().filter(outdated).slice(0, limit);
 }
 
 // Mozilla espera un hostname (sin / final y sin indicar protocolo "http[s]://")
