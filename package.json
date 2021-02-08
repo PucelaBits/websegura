@@ -10,7 +10,8 @@
     "build": "env NODE_ENV=production npm run build:dev",
     "crawl:analyze": "node crawler/analyze.js",
     "crawl:results": "node crawler/results.js",
-    "crawl": "npm run crawl:analyze && sleep 60 && npm run crawl:results"
+    "crawl": "npm run crawl:analyze && sleep 60 && npm run crawl:results",
+    "test": "ava"
   },
   "repository": {
     "type": "git",
@@ -23,9 +24,21 @@
   "homepage": "https://github.com/PucelaBits/websegura#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
+    "array-find-duplicates": "^2.0.1",
+    "ava": "^3.15.0",
     "axios": "^0.21.1",
     "bottleneck": "^2.19.5",
     "fast-glob": "^3.2.4",
     "sass": "^1.32.5"
+  },
+  "ava": {
+    "files": [
+      "tests/**/*.js"
+    ],
+    "cache": true,
+    "concurrency": 5,
+    "failWithoutAssertions": false,
+    "tap": true,
+    "verbose": true
   }
 }
