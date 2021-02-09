@@ -27,7 +27,7 @@ Si quieres ayudar con el código de la web para mejorarla o añadir nuevas funci
 
 ### Requisitos
 
-El framework que usamos es [Eleventy](https://www.11ty.dev/). Necesitarás git, npm, jq, curl, bash.
+El framework que usamos es [Eleventy](https://www.11ty.dev/). Necesitarás git y nodejs 14+.
 
 ```
 sudo apt get install git npm jq curl
