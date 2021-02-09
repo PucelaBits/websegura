@@ -1,0 +1,29 @@
+{
+  "algorithm_version": 2,
+  "end_time": "Tue, 09 Feb 2021 12:26:51 GMT",
+  "grade": "F",
+  "hidden": false,
+  "likelihood_indicator": "MEDIUM",
+  "response_headers": {
+    "Alt-Svc": "h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"",
+    "Cache-Control": "private, max-age=0",
+    "Content-Encoding": "gzip",
+    "Content-Type": "text/html; charset=UTF-8",
+    "Date": "Tue, 09 Feb 2021 12:26:49 GMT",
+    "ETag": "W/\"3b502513f6cf99ac4b965398063bae5afa1a5b731860b7fb8d374a09936e58af\"",
+    "Expires": "Tue, 09 Feb 2021 12:26:49 GMT",
+    "Last-Modified": "Tue, 09 Feb 2021 08:44:10 GMT",
+    "Server": "GSE",
+    "Transfer-Encoding": "chunked",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block"
+  },
+  "scan_id": 17670990,
+  "score": 0,
+  "start_time": "Tue, 09 Feb 2021 12:26:46 GMT",
+  "state": "FINISHED",
+  "status_code": 200,
+  "tests_failed": 5,
+  "tests_passed": 7,
+  "tests_quantity": 12
+}
