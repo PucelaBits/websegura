@@ -1,180 +1,309 @@
 {
-  "name": "España",
-  "webs": [
-    {
-      "url": "www.lamoncloa.gob.es",
-      "name": "La Moncloa",
-      "twitter": "desdelamoncloa"
-    },
-    {
-      "url": "www.congreso.es",
-      "name": "Congreso de los diputados",
-      "twitter": "Congreso_Es"
-    },
-    {
-      "url": "www.senado.es",
-      "name": "Senado",
-      "twitter": "SenadoEsp"
-    },
-    {
-      "url": "www.mscbs.gob.es",
-      "name": "Ministerio de Sanidad, Consumo y Bienestar Social",
-      "twitter": "sanidadgob"
-    },
-    {
-      "url": "www.renfe.com",
-      "name": "Renfe",
-      "twitter": "Renfe"
-    },
-    {
-      "url": "www.rtve.es",
-      "name": "Radio Televisión Española",
-      "twitter": "rtve"
-    },
-    {
-      "url": "www.policia.es",
-      "name": "Policia Nacional",
-      "twitter": "policia"
-    },
-    {
-      "url": "www.guardiacivil.es",
-      "name": "Guardia Civil",
-      "twitter": "guardiacivil"
-    },
-    {
-      "url": "vacunacovid.gob.es",
-      "name": "Vacunación COVID-19",
-      "twitter": "sanidadgob"
-    },
-    {
-      "url": "radarcovid.gob.es",
-      "name": "Radar COVID-19",
-      "twitter": "AppRadarCovid"
-    },
-    {
-      "url": "www.hacienda.gob.es",
-      "name": "Ministerio de hacienda",
-      "twitter": "haciendagob"
-    },
-    {
-      "url": "www.agenciatributaria.es",
-      "name": "Agencia Tributaria",
-      "twitter": "informaticaaeat"
-    },
-    {
-      "url": "www.sepe.es",
-      "name": "Servicio Público de Empleo",
-      "twitter": "empleo_SEPE"
-    },
-    {
-      "url": "sede.sepe.gob.es",
-      "name": "Servicio Público de Empleo (Sede Electrónica)",
-      "twitter": "empleo_SEPE"
-    },
-    {
-      "url": "www.interior.gob.es",
-      "name": "Ministerio de Interior",
-      "twitter": "interiorgob"
-    },
-    {
-      "url": "www.cni.es",
-      "name": "Centro Nacional de Inteligencia",
-      "twitter": "Defensagob"
-    },
-    {
-      "url": "sede.cni.gob.es",
-      "name": "Sede Centro Nacional de Inteligencia",
-      "twitter": "Defensagob"
-    },
-    {
-      "url": "www.ccn-cert.cni.es",
-      "name": "Centro Criptológico Nacional",
-      "twitter": "CcnCert"
-    },
-    {
-      "url": "www.defensa.gob.es",
-      "name": "Ministerio de Defensa",
-      "twitter": "Defensagob"
-    },
-    {
-      "url": "www.ciencia.gob.es",
-      "name": "Ministerio de Ciencia e Innovación",
-      "twitter": "CienciaGob"
-    },
-    {
-      "url": "www.culturaydeporte.gob.es",
-      "name": "Ministerio de Cultura y Deporte",
-      "twitter": "culturagob"
-    },
-    {
-      "url": "www.mineco.gob.es",
-      "name": "Ministerio de Asuntos Económicos y Transformación Digital",
-      "twitter": "_minegob"
-    },
-    {
-      "url": "avancedigital.gob.es",
-      "name": "Secretaría de Estado de Digitalización e Inteligencia Artificial",
-      "twitter": "SEDIAgob"
-    },
-    {
-      "url": "www.mjusticia.gob.es",
-      "name": "Ministerio de Justicia",
-      "twitter": "justiciagob"
-    },
-    {
-      "url": "www.exteriores.gob.es",
-      "name": "Ministerio de Exteriores",
-      "twitter": "MAECgob"
-    },
-    {
-      "url": "www.igualdad.gob.es",
-      "name": "Ministerio de Igualdad",
-      "twitter": "IgualdadGob"
-    },
-    {
-      "url": "www.aepd.es",
-      "name": "Agencia Española de Protección de Datos",
-      "twitter": "AEPD_es"
-    },
-    {
-      "url": "www.fnmt.es",
-      "name": "Fábrica Nacional de Moneda y Timbre",
-      "twitter": "CERESfnmt"
-    },
-    {
-      "url": "www.sede.fnmt.gob.es",
-      "name": "Sede electrónica de la FNMT",
-      "twitter": "CERESfnmt"
-    },
-    {
-      "url": "www.cert.fnmt.es",
-      "name": "Certificados de la FNMT",
-      "twitter": "CERESfnmt"
-    },
-    {
-      "url": "ine.es",
-      "name": "Instituto Nacional de Estadística",
-      "twitter": "es_ine"
-    },
-    {
-      "url": "www.juntaelectoralcentral.es",
-      "name": "Junta Electoral Central",
-      "twitter": "Congreso_Es"
-    },
-    {
-      "url": "www.ign.es",
-      "name": "Instituto Geográfico Nacional",
-      "twitter": "IGNSpain"
-    },
-    {
-      "url": "www.citapreviadnie.es",
-      "name": "Cita previa e-DNI-Pasaporte",
-      "twitter": "policia"
-    },
-    {
-      "url": "www.incibe.es",
-      "name": "Instituto Nacional de Ciberseguridad",
-      "twitter": "INCIBE"
-    }
-  ]
+	"nombre": "España",
+	"webs": [{
+			"url": "www.lamoncloa.gob.es",
+			"name": "La Moncloa",
+			"twitter": "desdelamoncloa"
+		},
+		{
+			"url": "www.congreso.es",
+			"name": "Congreso de los diputados",
+			"twitter": "Congreso_Es"
+		},
+		{
+			"url": "www.senado.es",
+			"name": "Senado",
+			"twitter": "SenadoEsp"
+		},
+		{
+			"url": "www.mscbs.gob.es",
+			"name": "Ministerio de Sanidad, Consumo y Bienestar Social",
+			"twitter": "sanidadgob"
+		},
+		{
+			"url": "www.renfe.com",
+			"name": "Renfe",
+			"twitter": "Renfe"
+		},
+		{
+			"url": "www.rtve.es",
+			"name": "Radio Televisión Española",
+			"twitter": "rtve"
+		},
+		{
+			"url": "www.policia.es",
+			"name": "Policia Nacional",
+			"twitter": "policia"
+		},
+		{
+			"url": "www.guardiacivil.es",
+			"name": "Guardia Civil",
+			"twitter": "guardiacivil"
+		},
+		{
+			"url": "vacunacovid.gob.es",
+			"name": "Vacunación COVID-19",
+			"twitter": "sanidadgob"
+		},
+		{
+			"url": "radarcovid.gob.es",
+			"name": "Radar COVID-19",
+			"twitter": "AppRadarCovid"
+		},
+		{
+			"url": "www.hacienda.gob.es",
+			"name": "Ministerio de hacienda",
+			"twitter": "haciendagob"
+		},
+		{
+			"url": "www.agenciatributaria.es",
+			"name": "Agencia Tributaria",
+			"twitter": "informaticaaeat"
+		},
+		{
+			"url": "www.sepe.es",
+			"name": "Servicio Público de Empleo",
+			"twitter": "empleo_SEPE"
+		},
+		{
+			"url": "sede.sepe.gob.es",
+			"name": "Servicio Público de Empleo (Sede Electrónica)",
+			"twitter": "empleo_SEPE"
+		},
+		{
+			"url": "www.interior.gob.es",
+			"name": "Ministerio de Interior",
+			"twitter": "interiorgob"
+		},
+		{
+			"url": "www.cni.es",
+			"name": "Centro Nacional de Inteligencia",
+			"twitter": "Defensagob"
+		},
+		{
+			"url": "sede.cni.gob.es",
+			"name": "Sede Centro Nacional de Inteligencia",
+			"twitter": "Defensagob"
+		},
+		{
+			"url": "www.ccn-cert.cni.es",
+			"name": "Centro Criptológico Nacional",
+			"twitter": "CcnCert"
+		},
+		{
+			"url": "www.defensa.gob.es",
+			"name": "Ministerio de Defensa",
+			"twitter": "Defensagob"
+		},
+		{
+			"url": "www.ciencia.gob.es",
+			"name": "Ministerio de Ciencia e Innovación",
+			"twitter": "CienciaGob"
+		},
+		{
+			"url": "www.culturaydeporte.gob.es",
+			"name": "Ministerio de Cultura y Deporte",
+			"twitter": "culturagob"
+		},
+		{
+			"url": "www.mineco.gob.es",
+			"name": "Ministerio de Asuntos Económicos y Transformación Digital",
+			"twitter": "_minegob"
+		},
+		{
+			"url": "www.mjusticia.gob.es",
+			"name": "Ministerio de Justicia",
+			"twitter": "justiciagob"
+		},
+		{
+			"url": "www.exteriores.gob.es",
+			"name": "Ministerio de Exteriores",
+			"twitter": "MAECgob"
+		},
+		{
+			"url": "www.igualdad.gob.es",
+			"name": "Ministerio de Igualdad",
+			"twitter": "IgualdadGob"
+		},
+		{
+			"url": "www.aepd.es",
+			"name": "Agencia Española de Protección de Datos",
+			"twitter": "AEPD_es"
+		},
+		{
+			"url": "www.fnmt.es",
+			"name": "Fábrica Nacional de Moneda y Timbre",
+			"twitter": "CERESfnmt"
+		},
+		{
+			"url": "www.sede.fnmt.gob.es",
+			"name": "Sede electrónica de la FNMT",
+			"twitter": "CERESfnmt"
+		},
+		{
+			"url": "www.cert.fnmt.es",
+			"name": "Certificados de la FNMT",
+			"twitter": "CERESfnmt"
+		},
+		{
+			"url": "ine.es",
+			"name": "Instituto Nacional de Estadística",
+			"twitter": "es_ine"
+		},
+		{
+			"url": "www.juntaelectoralcentral.es",
+			"name": "Junta Electoral Central",
+			"twitter": "Congreso_Es"
+		},
+		{
+			"url": "www.ign.es",
+			"name": "Instituto Geográfico Nacional",
+			"twitter": "IGNSpain"
+		},
+		{
+			"url": "correos.es",
+			"name": "Correos",
+			"twitter": "Correos"
+		},
+		{
+			"url": "efe.com",
+			"name": "Agencia EFE",
+			"twitter": "EFEnoticias"
+		},
+		{
+			"url": "aemet.es",
+			"name": "Agencia Estatal de Meteorología (AEMET)",
+			"twitter": "AEMET_Esp"
+		},
+		{
+			"url": "ENAIRE.es",
+			"name": "ENAIRE",
+			"twitter": "ENAIRE"
+		},
+		{
+			"url": "enusa.es",
+			"name": "ENUSA",
+			"twitter": "enusa_sa"
+		},
+		{
+			"url": "enresa.es",
+			"name": "enresa",
+			"twitter": "Enresa"
+		},
+		{
+			"url": "enisa.es",
+			"name": "enisa",
+			"twitter": "enisa"
+		},
+		{
+			"url": "csic.es",
+			"name": "Consejo Superior de Investigaciones Científicas (CSIC)",
+			"twitter": "CSIC"
+		},
+		{
+			"url": "tragsa.es",
+			"name": "Tragsa",
+			"twitter": "Haciendagob"
+		},
+		{
+			"url": "mercasa.es",
+			"name": "Mercasa",
+			"twitter": "Mercasa_mercas"
+		},
+		{
+			"url": "navantia.es",
+			"name": "Navantia",
+			"twitter": "NavantiaOficial"
+		},
+		{
+			"url": "www.cetarsa.es",
+			"name": "Compañía Española de Tabaco en Rama (CETARSA)",
+			"twitter": ""
+		},
+		{
+			"url": "mayasa.es",
+			"name": "MINAS DE ALMADÉN Y ARRAYANES, S.A. (MAYASA)",
+			"twitter": ""
+		},
+		{
+			"url": "saeca.es",
+			"name": "SAECA - Sociedad Anónima Estatal de Caución Agraria",
+			"twitter": ""
+		},
+		{
+			"url": "hunosa.es",
+			"name": "Hulleras del Norte S.A",
+			"twitter": ""
+		},
+		{
+			"url": "ensa.es",
+			"name": "Equipos Nucleares S.A",
+			"twitter": "ENSAonline"
+		},
+		{
+			"url": "sepides.es",
+			"name": "SEPI Desarrollo Empresarial",
+			"twitter": ""
+		},
+		{
+			"url": "www.cofivacasa.com",
+			"name": "cofivacasa",
+			"twitter": ""
+		},
+		{
+			"url": "hipodromodelazarzuela.es",
+			"name": "Hipódromo de La Zarzuela",
+			"twitter": "HipodromoMadrid"
+		},
+		{
+			"url": "agenda2030.gob.es",
+			"name": "Agenda 2030",
+			"twitter": "Agenda2030Gob"
+		},
+		{
+			"url": "www.adifaltavelocidad.es",
+			"name": "Adif alta velocidad",
+			"twitter": "Adif_es"
+		},
+		{
+			"url": "www.idae.es",
+			"name": "Instituto para la Diversificación y Ahorro de la Energía",
+			"twitter": "IDAEenergia"
+		},
+		{
+			"url": "codigotecnico.org",
+			"name": "Código Técnico de la Edificación de España",
+			"twitter": "cte_oficial"
+		},
+		{
+			"url": "www.boe.es",
+			"name": "Agencia Estatal Boletín Oficial del Estado",
+			"twitter": "boegob"
+		},
+		{
+			"url": "www.eugo.es",
+			"name": "EUGO",
+			"twitter": "_minecogob"
+		},
+		{
+			"url": "cenatic.es",
+			"name": "CENATIC",
+			"twitter": "cenatic"
+		},
+		{
+			"url": "red.es",
+			"name": "Red.es",
+			"twitter": "redpuntoes"
+		},
+		{
+			"url": "www.ico.es",
+			"name": "Instituto de Crédito Oficial",
+			"twitter": "ICOgob"
+		},
+		{
+			"url": "injuve.es",
+			"name": "Instituto de la Juventud de España",
+			"twitter": "InjuveSpain"
+		}
+	]
 }
