@@ -46,7 +46,6 @@ function outdated(site) {
     const siteInfo = JSON.parse(fs.readFileSync(path));
     const recent = new Date(siteInfo.start_time).valueOf() > Date.now() - MAX_TIME_TO_REFRESH_MILLIS;
     if (siteInfo.state === 'FINISHED' && recent) {
-      console.log(`Skip ${site} because it was recently scanned`);
       return false;
     }
   } catch (err) {
