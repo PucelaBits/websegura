@@ -1,0 +1,28 @@
+{
+  "algorithm_version": 2,
+  "end_time": "Tue, 09 Feb 2021 20:23:49 GMT",
+  "grade": "F",
+  "hidden": false,
+  "likelihood_indicator": "MEDIUM",
+  "response_headers": {
+    "Alt-Svc": "quic=\":443\"; ma=2592000; v=\"43,46\", h3-Q043=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-25=\":443\"; ma=2592000, h3-27=\":443\"; ma=2592000",
+    "Connection": "Keep-Alive",
+    "Content-Encoding": "gzip",
+    "Content-Length": "18273",
+    "Content-Type": "text/html; charset=UTF-8",
+    "Date": "Tue, 09 Feb 2021 20:23:42 GMT",
+    "Etag": "\"5830-1612528939;gz\"",
+    "Link": "<https://www.castroderei.gal/wp-json/>; rel=\"https://api.w.org/\", <https://www.castroderei.gal/wp-json/wp/v2/pages/205336>; rel=\"alternate\"; type=\"application/json\", <https://www.castroderei.gal/>; rel=shortlink",
+    "Server": "LiteSpeed",
+    "Vary": "Accept-Encoding",
+    "X-LiteSpeed-Cache": "hit"
+  },
+  "scan_id": 17676932,
+  "score": 20,
+  "start_time": "Tue, 09 Feb 2021 20:23:39 GMT",
+  "state": "FINISHED",
+  "status_code": 200,
+  "tests_failed": 5,
+  "tests_passed": 7,
+  "tests_quantity": 12
+}
