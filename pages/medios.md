@@ -11,6 +11,18 @@ En esta página listamos todas las apariciones del proyecto en medios. Si eres u
 
 ---
 
+## [Solo el 1% de las páginas web públicas de España aprueba en ciberseguridad, según un análisis](https://www.europapress.es/portaltic/ciberseguridad/noticia-solo-paginas-web-publicas-espana-aprueba-ciberseguridad-analisis-20210211151254.html)
+
+_11 de febrero 2021 - Europa Press_
+
+![Europa press](/images/medios/europapress.jpg#thumbnail "Europa Press")
+
+> Solo el 1 por ciento de las páginas web de instituciones públicas en España obtiene una nota de aprobado en ciberseguridad, con apenas cinco páginas aprobadas de cerca de 500 sitios analizados en el proyecto #websegura.
+
+[Leer más](https://www.genbeta.com/actualidad/casi-500-webs-organismos-publicos-espanoles-analizadas-solo-5-realmentes-seguras-asi-proyecto-que-pide-seguridad)
+
+---
+
 ## [Casi 500 webs de organismos públicos españoles analizadas y solo 5 realmentes seguras: así es el proyecto que pide más seguridad](https://www.genbeta.com/actualidad/casi-500-webs-organismos-publicos-espanoles-analizadas-solo-5-realmentes-seguras-asi-proyecto-que-pide-seguridad)
 
 _11 de febrero 2021 - Genbeta_
