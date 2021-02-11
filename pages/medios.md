@@ -11,9 +11,21 @@ En esta página listamos todas las apariciones del proyecto en medios. Si eres u
 
 ---
 
+## [Solo el 1% de las páginas web públicas de España aprueba en ciberseguridad, según un análisis](https://www.infobae.com/america/agencias/2021/02/11/portaltic-solo-el-1-de-las-paginas-web-publicas-de-espana-aprueba-en-ciberseguridad-segun-un-analisis/)
+
+_11 de febrero 2021 - Infobae_
+
+![Infobae](/images/medios/as.jpg#thumbnail "inforbae")
+
+> Solo el 1 por ciento de las páginas web de instituciones públicas en España obtiene una nota de aprobado en ciberseguridad, con apenas cinco páginas aprobadas de cerca de 500 sitios analizados en el proyecto #websegura
+
+[Leer más](https://www.infobae.com/america/agencias/2021/02/11/portaltic-solo-el-1-de-las-paginas-web-publicas-de-espana-aprueba-en-ciberseguridad-segun-un-analisis/)
+
+---
+
 ## [El 99% de webs públicas en España suspenden en Ciberseguridad, según un estudio](https://as.com/meristation/2021/02/11/betech/1613068300_186712.html)
 
-_11 de febrero 2021 - Europa Press_
+_11 de febrero 2021 - As.com_
 
 ![As](/images/medios/as.jpg#thumbnail "As")
 
