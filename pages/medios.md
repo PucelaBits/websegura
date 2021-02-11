@@ -15,7 +15,7 @@ En esta página listamos todas las apariciones del proyecto en medios. Si eres u
 
 _11 de febrero 2021 - Infobae_
 
-![Infobae](/images/medios/as.jpg#thumbnail "inforbae")
+![Infobae](/images/medios/infobae.jpg#thumbnail "inforbae")
 
 > Solo el 1 por ciento de las páginas web de instituciones públicas en España obtiene una nota de aprobado en ciberseguridad, con apenas cinco páginas aprobadas de cerca de 500 sitios analizados en el proyecto #websegura
 
