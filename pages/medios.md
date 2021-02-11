@@ -11,6 +11,18 @@ En esta página listamos todas las apariciones del proyecto en medios. Si eres u
 
 ---
 
+## [El 99% de webs públicas en España suspenden en Ciberseguridad, según un estudio](https://as.com/meristation/2021/02/11/betech/1613068300_186712.html)
+
+_11 de febrero 2021 - Europa Press_
+
+![As](/images/medios/as.jpg#thumbnail "As")
+
+> De 476 páginas web de instituciones públicas españolas, sólo aprueba en materia de Ciberseguridad el 1%, un total de 5 webs según un estudio.
+
+[Leer más](https://as.com/meristation/2021/02/11/betech/1613068300_186712.html)
+
+---
+
 ## [Solo el 1% de las páginas web públicas de España aprueba en ciberseguridad, según un análisis](https://www.europapress.es/portaltic/ciberseguridad/noticia-solo-paginas-web-publicas-espana-aprueba-ciberseguridad-analisis-20210211151254.html)
 
 _11 de febrero 2021 - Europa Press_
