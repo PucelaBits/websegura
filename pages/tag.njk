@@ -1,0 +1,17 @@
+---
+layout: base
+pagination:
+  data: tags
+  size: 1
+  alias: tag
+permalink: "listas/{{ tag.name | slug }}"
+---
+
+<h1>{{ tag.name }}</h1>
+<h2>{{ tag.description }}</h2>
+
+{% for site in all %}
+  {% if site.tags and tag.name in site.tags %}
+    {{ site.name }}<br/> <!-- TO BE COMPLETED WITH THE SAME TABLE -->
+  {% endif %}
+{% endfor %}
