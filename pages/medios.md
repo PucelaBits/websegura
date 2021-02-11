@@ -7,7 +7,19 @@ permalink: "/medios/"
 
 # 📰 {{ title }}
 
-En esta página listamos todas las apariciones del proyecto en medios. Si eres un medio y quieres contactar con nosotros puedes hacerlo en _websegura arroba pucelabits.org_ 
+En esta página listamos todas las apariciones del proyecto en medios. Si eres un medio, puedes descargar [nuestro dosier de prensa](/assets/docs/dosier-prensa.pdf) y contactar con nosotros en _websegura arroba pucelabits.org_
+
+---
+
+## [Casi 500 webs de organismos públicos españoles analizadas y solo 5 realmentes seguras: así es el proyecto que pide más seguridad](https://www.genbeta.com/actualidad/casi-500-webs-organismos-publicos-espanoles-analizadas-solo-5-realmentes-seguras-asi-proyecto-que-pide-seguridad)
+
+_11 de febrero 2021 - Genbeta_
+
+![Genbeta](/images/medios/genbeta.jpg#thumbnail "Genbeta")
+
+> Un proyecto colaborativo que anima a toda la ciudadanía a participar busca dar visibilidad a la falta de seguridad que rodea a las webs de organismos públicos
+
+[Leer más](https://www.genbeta.com/actualidad/casi-500-webs-organismos-publicos-espanoles-analizadas-solo-5-realmentes-seguras-asi-proyecto-que-pide-seguridad)
 
 ---
 
