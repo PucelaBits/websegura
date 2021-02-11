@@ -14,6 +14,7 @@ permalink: "/faq/"
 - [¿Qué tipo de problemas podría haber en webs que no tienen esa nota?](#{{ '¿Qué tipo de problemas podría haber en webs que no tienen esa nota?' | slug }})
 - [¿Debemos exigir webs seguras?](#{{ '¿Debemos exigir webs seguras?' | slug }})
 - [¿Cómo puedo participar en #websegura?](#{{ '¿Cómo puedo participar en #websegura?' | slug }})
+- __🎬 [Vídeo-resumen explicativo sobre los peligros](https://twitter.com/PucelaBits/status/1359577471016910855)__
 
 <a id="{{ '¿Qué es esta web?' | slug }}"></a>
 
