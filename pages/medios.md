@@ -7,6 +7,8 @@ permalink: "/medios/"
 
 # 📰 {{ title }}
 
+En esta página listamos todas las apariciones del proyecto en medios. Si eres un medio y quieres contactar con nosotros puedes hacerlo en _websegura arroba pucelabits.org_ 
+
 ---
 
 ## [Un equipo de ingenieros analiza las webs públicas españolas y sólo un 1% son seguras](https://twitter.com/PucelaBits/status/1359577471016910855)
