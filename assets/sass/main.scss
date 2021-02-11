@@ -258,3 +258,10 @@ p.tablefooter {
 #score.unknown {
   background: #eee8e8;
 }
+
+img[src*="#thumbnail"] {
+   width:450px;
+   max-width: 100%;
+   display: block;
+   margin: auto;
+}
