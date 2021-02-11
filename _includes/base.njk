@@ -62,6 +62,8 @@
       <!-- Main -->
       <div id="main">
         <div class="inner">
+          {% from "banner-cta.njk" import banner %}
+          {{ banner("Ministerio de Exteriores", "www.exteriores.gob.es", "MAECgob", "☠️", "/w/www!exteriores!gob!es/")}}
           {{ content | safe }}
         <p><strong>Más información</strong></p>
         <p>

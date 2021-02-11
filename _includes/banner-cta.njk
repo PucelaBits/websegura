@@ -1,0 +1,10 @@
+{% macro banner(name, web, twitter, grade, path) %}
+<p id="banner-cta"><strong class="icon brands fa-twitter"> Web del día:</strong><a id="banner-cta-link" href="https://twitter.com/intent/tweet/?text={{ 'Hola @' + twitter + '
+
+🔒 La seguridad de vuestra web y usuarios puede ser comprometida si no actualizáis vuestras conexiones seguras (HTTPS).
+⚠️ ¡Por favor, revisadlo cuanto antes!
+
+https://websegura.pucelabits.org'| urlEncode }}{{ path }}{{ '?pk_campaign=WebDelDia&pk_source=twitter
+
+#websegura /vía @PucelaBits' | urlEncode }}" target="_blank" rel="noopener" aria-label="Twitter"> Ayúdanos tuiteando para que {{ name }} mejore su seguridad ({{ grade }})</a></p>
+{% endmacro %}
