@@ -1,0 +1,26 @@
+---
+layout: base
+permalink: "/progreso/"
+title: "¿Cómo han mejorado las webs?"
+---
+
+{% from "tabla.njk" import tabla %}
+
+<p id="breadcumbs">
+  <a href="/">España</a>
+  -
+  {{ title }}</p>
+
+<h1>🏆 {{ title }}</h1>
+
+
+  {% for name, result in results.history %}
+    <p>{{ name }}</p>
+    {% for h in result | sort(attribute="end_time_unix_timestamp") %}
+      {% if (h.end_time_unix_timestamp > 1611183600) and (loop.length > 1) %}
+        <li>({{h.end_time}}){{ h.grade }}</li>
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+
+</section>
