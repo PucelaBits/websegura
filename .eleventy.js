@@ -17,12 +17,13 @@ const fs = require("fs");
       webs: file.webs,
     }))
     .map(({ territorio_id, territorio, webs }) =>
-      webs.map((w) => ({
+      webs.map((web) => ({
         territorio_id,
         territorio,
-        url: w.url,
-        name: w.name,
-        twitter: w.twitter,
+        url: web.url,
+        name: web.name,
+        twitter: web.twitter,
+        tags: web.tags
       }))
     )
     .flat()
@@ -31,10 +32,7 @@ const fs = require("fs");
       try {
         results = JSON.parse(
           fs.readFileSync(
-            `_data/results/${obj.url.replace(
-              new RegExp("\\.", "g"),
-              "!"
-            )}.json`,
+            `_data/results/${obj.url.replace(new RegExp("\\.", "g"), "!")}.json`,
             "utf8"
           )
         );
