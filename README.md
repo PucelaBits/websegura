@@ -47,6 +47,12 @@ Instala dependencias
 cd websegura
 npm install
 ```
+Construimos el CSS
+
+```
+npm run-script build
+```
+
 
 Ejecuta Eleventy
 
