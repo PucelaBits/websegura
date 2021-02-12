@@ -2724,6 +2724,10 @@ section {
   margin-bottom: 1em;
 }
 
+hr {
+  clear: both;
+}
+
 #main p.button {
   display: block;
   max-width: 390px;
@@ -2902,8 +2906,15 @@ p.tablefooter {
 }
 
 img[src*="#thumbnail"] {
-  width: 450px;
-  max-width: 100%;
+  width: 250px;
   display: block;
-  margin: auto;
+  float: left;
+  padding-right: 1em;
+}
+@media screen and (max-width: 736px) {
+  img[src*="#thumbnail"] {
+    float: none;
+    margin: auto;
+    width: 100%;
+  }
 }
