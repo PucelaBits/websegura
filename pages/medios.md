@@ -11,7 +11,15 @@ En esta página listamos todas las apariciones del proyecto en medios. Si eres u
 
 ---
 
-![Infobae](/images/medios/infobae.jpg#thumbnail "inforbae")
+![hipertextual](/images/medios/hipertextual.jpg#thumbnail "hipertextual")
+
+#### [¿Son seguras las Webs públicas españolas?](https://hipertextual.com/2021/02/seguridad-webs-publicas-espanolas)
+
+_12 de febrero 2021 - Hipertextual_
+
+---
+
+![Infobae](/images/medios/infobae.jpg#thumbnail "infobae")
 
 #### [Solo el 1% de las páginas web públicas de España aprueba en ciberseguridad, según un análisis](https://www.infobae.com/america/agencias/2021/02/11/portaltic-solo-el-1-de-las-paginas-web-publicas-de-espana-aprueba-en-ciberseguridad-segun-un-analisis/)
 
