@@ -11,12 +11,15 @@
 
 <ul>
   <li><strong>Nombre:</strong> {{ web.name }}</li>
-  <li><strong>URL:</strong> <a href="https://{{ web.url }}">{{ web.url }}</a></li>
+  <li><strong>Dirección:</strong> <a href="https://{{ web.url }}">{{ web.url }}</a></li>
   {% if web.twitter %}<li><strong>Twitter:</strong> <a href="https://twitter.com/{{ web.twitter }}">@{{ web.twitter }}</a></li>{% endif %}
   {% if type %}
-  <li><strong>Ubicación: </strong><a href="/{{ type }}/{{ parent }}">{{ location.name }}</a></li>
+  <li><strong>Ubicación:</strong> <a href="/{{ type }}/{{ parent }}">{{ location.name }}</a></li>
   {% endif %}
   <li><strong>Puntuación:</strong> {{ results.score }}/100</li>
+  {% if web.tags %}
+  <li><strong>Etiquetas:</strong> {% for tag in web.tags %}<a href="/l/{{ tag }}">{{ tag }}</a>{% endfor %}</li>
+  {% endif %}
 </ul>
 
 <p>{{ results | abbr }}.</p>

@@ -4,7 +4,7 @@ pagination:
   data: tags
   size: 1
   alias: tag
-permalink: "l/{{ tag.slug }}/"
+permalink: "l/{{ tag.name | slug }}/"
 ---
 
 <h1>{{ tag.name }}</h1>
