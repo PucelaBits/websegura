@@ -20,7 +20,7 @@ permalink: "/faq/"
 
 ## ¿Qué es esta web?
 
-Websegura usa el servicio [Mozilla Observatory](https://observatory.mozilla.org/) para analizar y mostrar la nota que tienen las webs de diferentes entidades públicas.
+Websegura usa el servicio [Mozilla Observatory](https://observatory.mozilla.org/) para mostrar los análisis y la nota que les da esta herramienta externa a las webs de diferentes entidades públicas de España.
 
 <a id="{{ '¿Qué es una conexión segura (HTTPS)?' | slug }}"></a>
 
@@ -49,7 +49,7 @@ Además, el protocolo HTTPS te asegura que te estás conectando con la página q
 
 ## ¿Qué significan las notas, por qué son importantes?
 
-Sin embargo, usar HTTPS, no es suficiente para garantizar la total seguridad de nuestras conexiones, la página debe también implementar ciertas medidas para asegurarse que las conexiones a su web siempre se realizan mediante este protocolo. Las notas que puede obtener una página web son A, B, C, D, E y F.
+Sin embargo, usar HTTPS, no es suficiente para garantizar la total seguridad de nuestras conexiones, la página debe también implementar ciertas medidas para asegurarse que las conexiones a su web siempre se realizan mediante este protocolo. Las notas que puede obtener una página web son A, B, C, D, E y F. [Información técnica sobre la metodología de las notas](https://github.com/mozilla/http-observatory/blob/master/httpobs/docs/scoring.md).
 
 ⚠**Si la web no tienen una nota A o B**, usan una implementación deficiente, ¡tu privacidad está en riesgo!
 
