@@ -17,6 +17,11 @@ title: "Ranking: Las mejores y las peores webs"
   <li><a href="#hall-of-fame">🎖️ Hall de la fama</a></li>
   <li><a href="#hall-of-shame">☠️ Hall de la vergüenza</a></li>
   <li><a href="#ranking-provincial">📊 Ranking provincial</a></li>
+  <li>🏷️ Rankings temáticos:
+  {% for tag in tags %}
+    <a href="/l/{{ tag.name }}">{{ tag.name }}</a>{% if not loop.last %}, {% endif %}
+  {% endfor %}
+  </li>
 </ul>
 
 <section>
