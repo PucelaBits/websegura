@@ -18,11 +18,18 @@
   {% endif %}
   <li><strong>Puntuación:</strong> {{ results.score }}/100</li>
   {% if web.tags %}
-  <li><strong>Etiquetas:</strong> {% for tag in web.tags %}<a href="/l/{{ tag }}">{{ tag }}</a>{% endfor %}</li>
+  <li>🏷️
+  {% for tag in web.tags %}
+    <a href="/l/{{ tag }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}
+  {% endfor %}
+  </li>
   {% endif %}
 </ul>
 
-<p>{{ results | abbr }}.</p>
+<p>
+{{ results | abbr }}.<br >
+<a href="https://observatory.mozilla.org/analyze/{{ web.url }}">🖥 Leer el informe técnico completo.</a>
+</p>
 
 {% if (web.twitter) and (results.score < 70) %}
 <p><a class="twitter-share-button" href="https://twitter.com/intent/tweet/?text={{ 'Hola @' + web.twitter + '
@@ -37,8 +44,6 @@ https://websegura.pucelabits.org'| urlEncode }}{{ path | urlEncode }}{{ '?pk_cam
       <span><strong>¡Házselo saber en Twitter!</strong></span>
     </a></p>
 {% endif %}
-
-<p><a href="https://observatory.mozilla.org/analyze/{{ web.url }}">🖥 Leer el informe técnico completo.</a></p>
 
 <h2 id="historial">🕐 Historial</h2>
 

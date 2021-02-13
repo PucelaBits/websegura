@@ -4,11 +4,24 @@ pagination:
   data: tags
   size: 1
   alias: tag
+title: "Ranking"
 permalink: "l/{{ tag.name | slug }}/"
 ---
 
 {% from "tabla.njk" import tabla %}
 
-<h2>{{ tag.description }}</h2>
+<p id="breadcumbs">
+  <a href="/">España</a>
+  -
+  <a href="/ranking/">Ranking</a>
+  -
+  Ranking {{ tag.name }}</p>
 
-{{ tabla(all | tagged(tag), path=page.url) }}
+<h1>🏆 Ranking {{ tag.description }}</h1>
+
+<section>
+  <div class="table-wrapper" id="resultados">
+  <h2>{{ tag.description }}</h2>
+  {{ tabla(all | tagged(tag), path=page.url) }}
+  </div>
+</section>

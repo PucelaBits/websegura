@@ -27,6 +27,13 @@ title: "Ranking: Las mejores y las peores webs"
   <li>
     <a href="#ranking-autonomico">📊 Ranking autonomico</a>
   </li>
+  <li>🏷️ Rankings temáticos:
+    {% for tag in tags %}
+      <a href="/l/{{ tag.name }}">{{ tag.name }}</a>
+      {% if not loop.last %},
+      {% endif %}
+    {% endfor %}
+  </li>
 </ul>
 
 <section>
