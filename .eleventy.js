@@ -1,6 +1,10 @@
 const glob = require("fast-glob");
 const fs = require("fs");
 
+// Valor arbitrariamente alto para marcar webs con resultados pendientes
+// y que aparezcan al final al ordenar de menos a más seguro.
+const NO_SCORE = 9000;
+
 (function createGlobalDataFile() {
   const files = glob.sync([
     "_data/{comunidades,provincias}/*.json",
@@ -47,7 +51,7 @@ const fs = require("fs");
     .map((obj) => ({
       ...obj,
       grade: obj.results?.grade,
-      score: obj.results?.score ?? 9000, // Si no hay, un número alto para que aparezca al final al ordenar de menos a más seguro.
+      score: obj.results?.score ?? NO_SCORE,
       tests_passed: obj.results?.tests_passed,
       state: obj.results?.state,
     }));
@@ -115,15 +119,20 @@ module.exports = function (eleventyConfig) {
   );
 
   eleventyConfig.addFilter(
-    "scoreGt",
-    (value, score) => value.filter((v) => v.score > score && v.score < 9000) // 9000 es un valor arbitrariamente alto para marcar webs con resultados pendientes.
+    "scoreGt", (value, score) => value.filter((v) => v.score > score && v.score < NO_SCORE)
+  );
+
+  eleventyConfig.addFilter(
+    "tagged", (value, tag) => value.filter((v) => {
+      return v.tags && v.tags.indexOf(tag.name) >= 0;
+    })
   );
 
   // Devolvemos el safeScore, o % de webs seguras
   eleventyConfig.addFilter(
     "safeScore",
     (value) => {
-        let safe = value.filter((v) => v.score > 69 && v.score < 9000).length
+        let safe = value.filter((v) => v.score > 69 && v.score < NO_SCORE).length
         let safeScore = (safe * 100)/value.length
         return safeScore.toFixed(0);
     }

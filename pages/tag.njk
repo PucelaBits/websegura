@@ -7,11 +7,8 @@ pagination:
 permalink: "l/{{ tag.name | slug }}/"
 ---
 
-<h1>{{ tag.name }}</h1>
+{% from "tabla.njk" import tabla %}
+
 <h2>{{ tag.description }}</h2>
 
-{% for site in all %}
-  {% if site.tags and tag.name in site.tags %}
-    {{ site.name }}<br/> <!-- TO BE COMPLETED WITH THE SAME TABLE -->
-  {% endif %}
-{% endfor %}
+{{ tabla(all | tagged(tag), path=page.url) }}
