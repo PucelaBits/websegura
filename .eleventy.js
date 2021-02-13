@@ -5,18 +5,34 @@ const fs = require("fs");
 // y que aparezcan al final al ordenar de menos a más seguro.
 const NO_SCORE = 9000;
 
+const getSafeScore = (value) => {
+  let safe = value.filter((v) => v.score > 69 && v.score < NO_SCORE).length;
+  let safeScore = (safe * 100) / value.length;
+  return safeScore.toFixed(0);
+};
+
+const filterByTerritorioId = (value, territorio_id) =>
+  value.filter((v) => v.territorio_id === territorio_id);
+
+const filenameToData = (f) => ({
+  file: JSON.parse(fs.readFileSync(f, "utf8")),
+  id: /^_data.*\/(.*)\.json$/.exec(f)[1],
+});
+
 (function createGlobalDataFile() {
-  const files = glob.sync([
-    "_data/{comunidades,provincias}/*.json",
+  const territoriesLevel1 = glob.sync("_data/comunidades/*.json");
+  const territoriesLevel2 = glob.sync("_data/provincias/*.json");
+
+  const files = [
+    ...territoriesLevel1,
+    ...territoriesLevel2,
     "_data/general.json",
-  ]);
-  let all = files
-    .map((f) => ({
-      file: JSON.parse(fs.readFileSync(f, "utf8")),
-      territorio_id: /^_data.*\/(.*)\.json$/.exec(f)[1],
-    }))
-    .map(({ file, territorio_id }) => ({
-      territorio_id,
+  ];
+
+  const all = files
+    .map(filenameToData)
+    .map(({ file, id }) => ({
+      territorio_id: id,
       territorio: file.name,
       webs: file.webs,
     }))
@@ -27,7 +43,7 @@ const NO_SCORE = 9000;
         url: web.url,
         name: web.name,
         twitter: web.twitter,
-        tags: web.tags
+        tags: web.tags,
       }))
     )
     .flat()
@@ -36,7 +52,10 @@ const NO_SCORE = 9000;
       try {
         results = JSON.parse(
           fs.readFileSync(
-            `_data/results/${obj.url.replace(new RegExp("\\.", "g"), "!")}.json`,
+            `_data/results/${obj.url.replace(
+              new RegExp("\\.", "g"),
+              "!"
+            )}.json`,
             "utf8"
           )
         );
@@ -57,6 +76,28 @@ const NO_SCORE = 9000;
     }));
 
   fs.writeFileSync("_data/all.json", JSON.stringify(all));
+
+  const territories = territoriesLevel1
+    .map(filenameToData)
+    .map(({ file, id }) => ({
+      name: file.name,
+      id,
+    }))
+    .map(({ name, id }) => ({
+      name,
+      id,
+      safeScore: getSafeScore(filterByTerritorioId(all, id)),
+      subTerritories: territoriesLevel2
+        .map(filenameToData)
+        .filter(({ file }) => id === file.comunidad)
+        .map(({ file, id }) => ({ id, ...file }))
+        .map(({ name, id }) => ({
+          name,
+          safeScore: getSafeScore(filterByTerritorioId(all, id)),
+        })),
+    }));
+
+  fs.writeFileSync("_data/territories.json", JSON.stringify(territories));
 })();
 
 module.exports = function (eleventyConfig) {
@@ -118,27 +159,25 @@ module.exports = function (eleventyConfig) {
     value.filter((v) => v.tests_passed < testsPassed)
   );
 
-  eleventyConfig.addFilter(
-    "scoreGt", (value, score) => value.filter((v) => v.score > score && v.score < NO_SCORE)
+  eleventyConfig.addFilter("scoreGt", (value, score) =>
+    value.filter((v) => v.score > score && v.score < NO_SCORE)
   );
 
-  eleventyConfig.addFilter(
-    "tagged", (value, tag) => value.filter((v) => {
+  eleventyConfig.addFilter("tagged", (value, tag) =>
+    value.filter((v) => {
       return v.tags && v.tags.indexOf(tag.name) >= 0;
     })
   );
 
-  // Devolvemos el safeScore, o % de webs seguras
-  eleventyConfig.addFilter(
-    "safeScore",
-    (value) => {
-        let safe = value.filter((v) => v.score > 69 && v.score < NO_SCORE).length
-        let safeScore = (safe * 100)/value.length
-        return safeScore.toFixed(0);
-    }
-  );
+  // % de webs seguras
+  eleventyConfig.addFilter("safeScore", getSafeScore);
 
-  eleventyConfig.addFilter("filterByTerritorioId", (value, territorio_id) =>
-    value.filter((v) => v.territorio_id === territorio_id)
+  eleventyConfig.addFilter("filterByTerritorioId", filterByTerritorioId);
+
+  eleventyConfig.addFilter("getSubTerritories", (value) =>
+    value.reduce(
+      (previous, current) => [...previous, ...current.subTerritories],
+      []
+    )
   );
 };
