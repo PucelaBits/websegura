@@ -22,10 +22,12 @@ permalink: "c/{{ comunidad }}/"
 
 <div class="score-container">
   <div class="score-bar">
-    <div class="score-progress" data-score="{{ all | filterByTerritorioId(comunidad)| safeScore }}"></div>
+    <div class="score-progress" data-score="{{ all | filterByTerritorioId(comunidad) | safeScore }}"></div>
   </div>
 
-  <p><strong>{{ all | filterByTerritorioId(comunidad)| safeScore }}%</strong> de las webs completamente seguras ({{ all | filterByTerritorioId(comunidad) | scoreGt(69) | length}}/{{ all | filterByTerritorioId(comunidad) | length}})</p>
+  <p>
+    <strong>{{ all | filterByTerritorioId(comunidad) | safeScore }}%</strong>
+    de las webs completamente seguras ({{ all | filterByTerritorioId(comunidad) | scoreGt(69) | length}}/{{ all | filterByTerritorioId(comunidad) | length}})</p>
 </div>
 
 <p class="button">
