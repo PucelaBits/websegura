@@ -56,8 +56,12 @@ permalink: "c/{{ comunidad }}/"
     {% endfor %}
   </p>
 
+  {% if provincias | length < 50 %}
   <p>
-    <small>(<a href="https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web">Ayúdanos a añadir otras provincias</a>)</small>
+    <small>
+    (<a href="https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web">Ayúdanos a añadir otras provincias, ¡ya sólo faltan {{ 50 - provincias | length }}!</a>)
+    </small>
   </p>
+  {% endif %}
 
 </section>
