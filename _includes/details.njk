@@ -18,7 +18,7 @@
   {% endif %}
   <li><strong>Puntuación:</strong> {{ results.score }}/100</li>
   {% if web.tags %}
-  <li>🏷️
+  <li class="icon-list">🏷️
   {% for tag in web.tags %}
     <a href="/l/{{ tag }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}
   {% endfor %}
