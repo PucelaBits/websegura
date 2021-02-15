@@ -2783,6 +2783,15 @@ ul.iconify li {
   line-height: 1.7em;
 }
 
+li.icon-list {
+  list-style: none;
+  padding-left: 0;
+  margin-left: -1em;
+}
+li.icon-list a {
+  margin-left: 4px;
+}
+
 p.subtitle {
   margin: 2em 0 0.85em 0;
   font-size: 1.1em;
