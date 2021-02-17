@@ -72,6 +72,8 @@ const filenameToData = (f) => ({
       grade: obj.results?.grade,
       score: obj.results?.score ?? NO_SCORE,
       tests_passed: obj.results?.tests_passed,
+      tests_failed: obj.results?.tests_failed,
+      tests_quantity: obj.results?.tests_quantity,
       state: obj.results?.state,
     }));
 
