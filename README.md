@@ -16,10 +16,13 @@ Si quieres incluir algún sitio público, puedes crear [un nuevo issue](https://
 
 ### Habla con nosotros
 
-- [Chat en matrix](https://matrix.to/#/#PucelaBits_websegura:gitter.im)
-- [![Chat en gitter https://gitter.im/PucelaBits/websegura](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/PucelaBits/websegura?utm_source=badge&utm_medium=badge&utm_content=badge)
-- [Foros del proyecto](https://github.com/PucelaBits/websegura/discussions)
-- [PucelaBits](https://pucelabits.org)
+- Salas de chat: [En matrix](https://matrix.to/#/#PucelaBits_websegura:gitter.im) - [![Chat en gitter https://gitter.im/PucelaBits/websegura](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/PucelaBits/websegura?utm_source=badge&utm_medium=badge&utm_content=badge) - [En Telegram](https://t.me/puecelabits_websegura) (enlazadas entre ellas)
+- [Foros del proyecto](https://github.com/PucelaBits/websegura/discussions) - Nuevas ideas y debates.
+- [PucelaBits](https://pucelabits.org) - El sitio principal de nuestro grupo.
+
+### Pautas para la participación
+
+Este repositorio se rige por el [código de conducta y etiqueta de PucelaBits](https://pucelabits.org/pautas-participacion/).
 
 ## Desarrollo
 
