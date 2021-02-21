@@ -5,8 +5,8 @@
 const fs = require('fs');
 const glob = require('fast-glob');
 
-const MAX_TIME_TO_REFRESH_MILLIS = 3 * 24 * 60 * 60 * 1000; // 3 days, can be increased when we have many sites to scan
-const MAX_RESULTS = 100;
+const MAX_TIME_TO_REFRESH_MILLIS = 2 * 24 * 60 * 60 * 1000; // 3 days, can be increased when we have many sites to scan
+const MAX_RESULTS = 200;
 
 /**
  * Obtiene los ficheros global, de comunidades y provincias.
