@@ -1,24 +1,22 @@
 {
   "algorithm_version": 2,
-  "end_time": "Sun, 14 Feb 2021 16:15:32 GMT",
+  "end_time": "Sun, 21 Feb 2021 00:16:53 GMT",
   "grade": "F",
   "hidden": false,
   "likelihood_indicator": "MEDIUM",
   "response_headers": {
-    "Connection": "Keep-Alive",
+    "Connection": "close",
     "Content-Type": "text/html;charset=UTF-8",
-    "Date": "Sun, 14 Feb 2021 16:15:11 GMT",
+    "Date": "Sun, 21 Feb 2021 00:16:30 GMT",
     "Keep-Alive": "timeout=5, max=100",
-    "Set-Cookie": "JSESSIONID=661BD878AD20338B29BCC97737C0BF5D; Path=/; HttpOnly, BIGipServer~sic~bocyl.jcyl.es_80=85280729.20480.0000; path=/; Httponly",
-    "Transfer-Encoding": "chunked",
-    "Vary": "Accept-Encoding"
+    "Set-Cookie": "JSESSIONID=C7215855909E8516FD236B66761D15D8; Path=/; Secure; HttpOnly"
   },
-  "scan_id": 17754946,
-  "score": 0,
-  "start_time": "Sun, 14 Feb 2021 16:14:22 GMT",
+  "scan_id": 17850568,
+  "score": 20,
+  "start_time": "Sun, 21 Feb 2021 00:16:45 GMT",
   "state": "FINISHED",
   "status_code": 200,
-  "tests_failed": 7,
-  "tests_passed": 5,
+  "tests_failed": 5,
+  "tests_passed": 7,
   "tests_quantity": 12
 }
