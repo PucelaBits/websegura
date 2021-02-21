@@ -95,6 +95,7 @@ const filenameToData = (f) => ({
         .map(({ file, id }) => ({ id, ...file }))
         .map(({ name, id }) => ({
           name,
+          id,
           safeScore: getSafeScore(filterByTerritorioId(all, id)),
         })),
     }));
