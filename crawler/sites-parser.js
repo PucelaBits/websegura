@@ -5,9 +5,9 @@
 const fs = require("fs");
 const glob = require("fast-glob");
 
-const MAX_DAYS_TO_REFRESH = 2; // can be increased when we have many sites to scan
+const MAX_DAYS_TO_REFRESH = process.env.CRAWLER_MAX_DAYS_TO_REFRESH || 2; // can be increased when we have many sites to scan
 const MAX_TIME_TO_REFRESH_MILLIS = MAX_DAYS_TO_REFRESH * 24 * 60 * 60 * 1000;
-const MAX_RESULTS = 200;
+const MAX_RESULTS = process.env.CRAWLER_MAX_RESULTS || 200;
 
 /**
  * Obtiene los ficheros global, de comunidades y provincias.
