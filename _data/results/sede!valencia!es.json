@@ -1,23 +1,25 @@
 {
   "algorithm_version": 2,
-  "end_time": "Sun, 21 Feb 2021 13:02:15 GMT",
+  "end_time": "Wed, 24 Feb 2021 17:15:38 GMT",
   "grade": "F",
   "hidden": false,
   "likelihood_indicator": "MEDIUM",
   "response_headers": {
+    "Accept-Ranges": "bytes",
     "Connection": "close",
-    "Content-Type": "text/html;charset=ISO-8859-1",
-    "Date": "Sun, 21 Feb 2021 13:01:56 GMT",
-    "Server": "Apache/2.4.6 (Linux/SUSE)",
-    "Set-Cookie": "JSESSIONID=E172352D6EFDCD079925C8E72477340C.ssede4; Path=/sede; Secure; HttpOnly, org.apache.myfaces.shared_impl.context.flash.FlashImpl.POSTBACKMAP.KEY=-6s7nftuuh",
-    "Transfer-Encoding": "chunked"
+    "Content-Length": "512796",
+    "Content-Type": "text/html",
+    "Date": "Wed, 24 Feb 2021 17:15:22 GMT",
+    "ETag": "\"7d31c-5bb1f6ff10500\"",
+    "Last-Modified": "Fri, 12 Feb 2021 08:29:40 GMT",
+    "Server": "Apache/2.4.6 (Linux/SUSE)"
   },
-  "scan_id": 17859698,
-  "score": 0,
-  "start_time": "Sun, 21 Feb 2021 13:01:49 GMT",
+  "scan_id": 17908064,
+  "score": 15,
+  "start_time": "Wed, 24 Feb 2021 17:15:11 GMT",
   "state": "FINISHED",
-  "status_code": 200,
-  "tests_failed": 7,
-  "tests_passed": 5,
+  "status_code": 503,
+  "tests_failed": 6,
+  "tests_passed": 6,
   "tests_quantity": 12
 }
