@@ -11,6 +11,14 @@ En esta página listamos todas las apariciones del proyecto en medios. Si eres u
 
 ---
 
+![eldiario](/images/medios/eldiario.jpg#thumbnail "eldiario")
+
+#### [Los 'Pepito Grillo' de la ciberseguridad de las webs públicas españolas](https://www.eldiario.es/tecnologia/tres-ingenieros-pepito-grillo-ciberseguridad-webs-publicas-espanolas_1_7252835.html)
+
+_2 de marzo 2021 - elDiario.es_
+
+---
+
 ![hipertextual](/images/medios/hipertextual.jpg#thumbnail "hipertextual")
 
 #### [¿Son seguras las Webs públicas españolas?](https://hipertextual.com/2021/02/seguridad-webs-publicas-espanolas)
