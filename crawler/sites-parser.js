@@ -10,13 +10,25 @@ const MAX_TIME_TO_REFRESH_MILLIS = MAX_DAYS_TO_REFRESH * 24 * 60 * 60 * 1000;
 const MAX_RESULTS = process.env.CRAWLER_MAX_RESULTS || 200;
 
 /**
- * Obtiene los ficheros global, de comunidades y provincias.
+ * Obtiene las rutas a los ficheros global, de comunidades y provincias.
  */
-function getAllUrls() {
+function getAllFiles() {
   const files = glob.sync("_data/{comunidades,provincias}/*.json");
   files.push("_data/general.json");
+  return files;
+}
+
+function pathToObject(path) {
+  return JSON.parse(fs.readFileSync(path));
+}
+
+/**
+ * Obtiene todas las urls especificadas en los ficheros global, de comunidades y provincias.
+ */
+function getAllUrls() {
+  const files = getAllFiles();
   return files.flatMap((file) =>
-    JSON.parse(fs.readFileSync(file)).webs.map((x) => beautify(x.url))
+    pathToObject(file).webs.map((x) => beautify(x.url))
   );
 }
 
@@ -63,4 +75,6 @@ module.exports = {
   parse: parse,
   beautify: beautify,
   getAllUrls: getAllUrls,
+  getAllFiles: getAllFiles,
+  pathToObject: pathToObject,
 };

@@ -1,10 +1,9 @@
 ---
 name: Error o problema
 about: Informa de un error o problema con la web
-title: ''
+title: ""
 labels: bug
-assignees: ''
-
+assignees: ""
 ---
 
 **Describe el problema**
@@ -12,6 +11,7 @@ Descripción corta de cuál es el problema.
 
 **Para reproducirlo**
 Para para reproducir el problema:
+
 1. Ve a '...'
 2. Haz clic en '....'
 3. Haz scroll hasta '....'
