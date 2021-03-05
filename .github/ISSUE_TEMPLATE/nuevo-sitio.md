@@ -3,8 +3,7 @@ name: Nuevo sitio
 about: Añada un nuevo sitio a la lista
 title: "[Nuevo sitio] laurldelsitio.com"
 labels: new-site
-assignees: ''
-
+assignees: ""
 ---
 
 Por favor usa la siguiente plantilla para especificar la url, nombre y cuenta en twitter (si existe, o del organismo que dependa), puedes añadir múltiples sitios.

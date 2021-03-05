@@ -1,10 +1,9 @@
 ---
 name: Nueva funcionalidad
 about: Sugiere una idea para el proyecto
-title: ''
+title: ""
 labels: enhancement
-assignees: ''
-
+assignees: ""
 ---
 
 **¿Está relacionado con un problema? Por favor detallalo.**
