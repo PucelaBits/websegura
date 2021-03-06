@@ -42,7 +42,7 @@ async function results(daysAgo) {
 
     dumpRateLimitInfo(tweets);
 
-    const fileName = yesterdayStart.toISOString();
+    const fileName = start.toISOString();
     await fs.writeFile(`_data/twitter/history/${fileName}`, JSON.stringify(tweets, null, 2));
   } catch (e) {
     console.error('Not able to retrieve and store Twitter API results', e);
