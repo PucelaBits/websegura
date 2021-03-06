@@ -9,7 +9,7 @@ function getTwitterHistoryFiles() {
 
 /**
  * Recorre los ficheros del histórico de Twitter para devolver
- * un mapa de correspondencias entre sitio -> {total_tweets: x}.
+ * un mapa de correspondencias entre sitio -> total_num_tweets
  */
 async function summarize() {
   console.log("Building Twitter summary");
