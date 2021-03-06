@@ -1,0 +1,28 @@
+{
+  "algorithm_version": 2,
+  "end_time": "Sat, 06 Mar 2021 11:49:02 GMT",
+  "grade": "D+",
+  "hidden": false,
+  "likelihood_indicator": "MEDIUM",
+  "response_headers": {
+    "Connection": "keep-alive",
+    "Content-Security-Policy": "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; font-src 'self'; object-src 'self'; media-src 'self'; child-src 'self'",
+    "Content-Type": "text/html",
+    "Date": "Sat, 06 Mar 2021 11:49:01 GMT",
+    "Strict-Transport-Security": "max-age=31536000",
+    "Transfer-Encoding": "chunked",
+    "X-Content-Security-Policy": "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; font-src 'self'; object-src 'self'; media-src 'self'; child-src 'self'",
+    "X-Content-Type-Options": "nosniff",
+    "X-Frame-Options": "SAMEORIGIN",
+    "X-Webkit-CSP": "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; font-src 'self'; object-src 'self'; media-src 'self'; child-src 'self'",
+    "X-XSS-Protection": "1; mode=block"
+  },
+  "scan_id": 18066626,
+  "score": 40,
+  "start_time": "Sat, 06 Mar 2021 11:48:58 GMT",
+  "state": "FINISHED",
+  "status_code": 200,
+  "tests_failed": 3,
+  "tests_passed": 9,
+  "tests_quantity": 12
+}
