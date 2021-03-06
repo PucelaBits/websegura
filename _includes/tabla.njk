@@ -8,7 +8,7 @@
       </tr>
     </thead>
     <tbody>
-      {% for web in webs | sort(attribute = "score") %}
+      {% for web in webs | sort(reverse=true, attribute = "score") %}
         {% if web %}
           {% if web.state === 'FINISHED' %}
             <tr class="{{ web | color }}">
