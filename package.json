@@ -11,6 +11,7 @@
     "crawl:analyze": "node crawler/analyze.js",
     "crawl:results": "node crawler/results.js",
     "crawl": "npm run crawl:analyze && sleep 60 && npm run crawl:results",
+    "twitter:search": "node crawler/twitter.js",
     "test": "ava"
   },
   "repository": {
