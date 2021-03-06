@@ -13,12 +13,10 @@ async function results(daysAgo) {
     bearer_token: process.env.TWITTER_BEARER_TOKEN
   });
 
-  // TODO I'm getting 2021-03-05T23:00:00.000Z instead of 2021-03-06T00:00:00.000Z
-  //      I hate time zones. This needs to be fixed.
   const midnight = new Date();
   midnight.setUTCHours(0,0,0,0);
 
-  const end = new Date(midnight - 1000 * 60 * 60 * daysAgo);
+  const end = new Date(midnight - 1000 * 60 * 60 * 24 * daysAgo);
   const start = new Date(end - 1000 * 60 * 60 * 24);
 
   try {
@@ -42,10 +40,10 @@ async function results(daysAgo) {
 
     dumpRateLimitInfo(tweets);
 
-    const fileName = start.toISOString();
-    await fs.writeFile(`_data/twitter/history/${fileName}`, JSON.stringify(tweets, null, 2));
+    const fileName = end.toISOString();
+    await fs.writeFile(`_data/twitter/history/${fileName}.json`, JSON.stringify(tweets, null, 2));
   } catch (e) {
-    console.error('Not able to retrieve and store Twitter API results', e);
+    console.error('Not able to retrieve and store Twitter API results', e.errors ? JSON.stringify(e.errors) : e);
   }
 }
 
@@ -55,7 +53,11 @@ function dumpRateLimitInfo(response) {
   console.log(`Reset: ${Math.ceil(delta / 1000 / 60)} minutes`);
 }
 
-const HOW_MANY_DAYS_AGO = process.env.HOW_MANY_DAYS_AGO || 1;
+const HOW_MANY_DAYS_AGO = process.env.HOW_MANY_DAYS_AGO || 0; // 0 = last day
+if (HOW_MANY_DAYS_AGO > 7) {
+  console.error("Twitter API does not support searching for tweets older than one week");
+  process.exit(1);
+}
 
 results(HOW_MANY_DAYS_AGO).catch(err => {
   console.error(err);
