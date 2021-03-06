@@ -26,6 +26,9 @@ jobs:
           TWITTER_BEARER_TOKEN: ${{ secrets.TWITTER_BEARER_TOKEN }}
         run: npm run twitter:search
 
+      - name: Update Twitter summary
+        run: npm run twitter:summary
+
       # The resulting commit will not trigger another GitHub Actions Workflow run.
       # This is due to limitations set by GitHub.
       - uses: stefanzweifel/git-auto-commit-action@v4

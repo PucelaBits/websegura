@@ -1,3 +1,9 @@
+/**
+ * Fichero con utilidades para realizar búsquedas en Twitter por hashtag #websegura.
+ * Permite buscar los resultados de un día concreto, estableciendo la variable de entorno HOW_MANY_DAYS_AGO.
+ * Guarda los resultados devueltos por el API de Twitter en crudo en _data/twitter/histroy para poder hacer
+ * un análisis con ellos.
+ */
 const Twitter = require('twitter-lite');
 const fs = require('fs/promises');
 
@@ -6,7 +12,7 @@ if (!process.env.TWITTER_BEARER_TOKEN) {
   process.exit(1);
 }
 
-async function results(daysAgo) {
+async function results(daysAgo = 0) {
   const client = new Twitter({
     version: "2",
     extension: false, // must be set to false for v2 endpoints
