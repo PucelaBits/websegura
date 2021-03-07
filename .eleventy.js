@@ -29,6 +29,10 @@ const filenameToData = (f) => ({
     "_data/general.json",
   ];
 
+  const twitterSummary = JSON.parse(
+    fs.readFileSync(`_data/twitter/summary.json`, "utf8")
+  );
+
   const all = files
     .map(filenameToData)
     .map(({ file, id }) => ({
@@ -43,6 +47,7 @@ const filenameToData = (f) => ({
         url: web.url,
         name: web.name,
         twitter: web.twitter,
+        twitter_mentions: twitterSummary[web.twitter] || 0,
         tags: web.tags,
       }))
     )
