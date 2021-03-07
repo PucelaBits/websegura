@@ -3,6 +3,7 @@ layout: base
 title: Preguntas frecuentes sobre una web segura
 permalink: "/faq/"
 ---
+
 [España](/) - {{ title }}
 
 # 📌 Preguntas frecuentes sobre una web segura
@@ -14,7 +15,7 @@ permalink: "/faq/"
 - [¿Qué tipo de problemas podría haber en webs que no tienen esa nota?](#{{ '¿Qué tipo de problemas podría haber en webs que no tienen esa nota?' | slug }})
 - [¿Debemos exigir webs seguras?](#{{ '¿Debemos exigir webs seguras?' | slug }})
 - [¿Cómo puedo participar en #websegura?](#{{ '¿Cómo puedo participar en #websegura?' | slug }})
-- __🎬 [Vídeo-resumen explicativo sobre los peligros](https://twitter.com/PucelaBits/status/1359577471016910855)__
+- **🎬 [Vídeo-resumen explicativo sobre los peligros](https://twitter.com/PucelaBits/status/1359577471016910855)**
 
 <a id="{{ '¿Qué es esta web?' | slug }}"></a>
 
@@ -25,6 +26,7 @@ Websegura usa el servicio [Mozilla Observatory](https://observatory.mozilla.org/
 <a id="{{ '¿Qué es una conexión segura (HTTPS)?' | slug }}"></a>
 
 ## ¿Qué es una conexión segura (HTTPS)?
+
 Cuando nos conectamos a una página web, nuestros datos viajan ida y vuelta desde nuestro dispositivo hasta el servidor de la página web por medio de cables y servidores intermedios.
 
 Si la dirección de la web incluye HTTPS, esto quiere decir que estos datos viajan cifrados, pero no todas las webs HTTPS tienen una implementación segura.
@@ -91,6 +93,6 @@ De otro modo, las diversas entidades, y sobre todo las entidades públicas, han 
 
 Si te interesa nuestro proyecto, tienes varias formas de participar en él:
 
--	Puedes participar añadiendo nuevas páginas web. [En nuestro GitHub](https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web) tienes todas las instrucciones necesarias.
+- Puedes participar añadiendo nuevas páginas web. [En nuestro GitHub](https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web) tienes todas las instrucciones necesarias.
 - Puedes hacer saber a las diversas entidades que sus páginas web no son seguras. En esta web puedes enviarles mensajes a Twitter con la opción “tuitear” que aparece al lado de cada enlace.
--	Si te gusta crear contenido, puedes utilizar la información que aquí aparece para elaborar piezas informativas que difundan la importancia de tener una web segura.
+- Si te gusta crear contenido, puedes utilizar la información que aquí aparece para elaborar piezas informativas que difundan la importancia de tener una web segura.

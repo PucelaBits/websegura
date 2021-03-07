@@ -6,40 +6,40 @@
 
 /* Table */
 
-	.table-wrapper {
-		-webkit-overflow-scrolling: touch;
-		overflow-x: auto;
-	}
+.table-wrapper {
+  -webkit-overflow-scrolling: touch;
+  overflow-x: auto;
+}
 
-	table {
-		margin: 0 0 _size(element-margin) 0;
-		width: 100%;
+table {
+  margin: 0 0 _size(element-margin) 0;
+  width: 100%;
 
-		tbody {
-			tr {
-				border: solid _size(border-width) _palette(border);
-				border-left: 0;
-				border-right: 0;
-			}
-		}
+  tbody {
+    tr {
+      border: solid _size(border-width) _palette(border);
+      border-left: 0;
+      border-right: 0;
+    }
+  }
 
-		td {
-			padding: 0.75em 0.75em;
-		}
+  td {
+    padding: 0.75em 0.75em;
+  }
 
-		th {
-			color: _palette(fg-bold);
-			font-size: 0.9em;
-			font-weight: _font(weight-bold);
-			padding: 0 0.75em 0.75em 0.75em;
-			text-align: left;
-		}
+  th {
+    color: _palette(fg-bold);
+    font-size: 0.9em;
+    font-weight: _font(weight-bold);
+    padding: 0 0.75em 0.75em 0.75em;
+    text-align: left;
+  }
 
-		thead {
-			border-bottom: solid (_size(border-width) * 2) _palette(border);
-		}
+  thead {
+    border-bottom: solid (_size(border-width) * 2) _palette(border);
+  }
 
-		tfoot {
-			border-top: solid (_size(border-width) * 2) _palette(border);
-		}
-	}
+  tfoot {
+    border-top: solid (_size(border-width) * 2) _palette(border);
+  }
+}

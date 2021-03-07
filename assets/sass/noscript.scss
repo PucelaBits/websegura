@@ -1,9 +1,9 @@
-@import 'libs/vars';
-@import 'libs/functions';
-@import 'libs/mixins';
-@import 'libs/vendor';
-@import 'libs/breakpoints';
-@import 'libs/html-grid';
+@import "libs/vars";
+@import "libs/functions";
+@import "libs/mixins";
+@import "libs/vendor";
+@import "libs/breakpoints";
+@import "libs/html-grid";
 
 /*
 	Phantom by HTML5 UP
@@ -13,11 +13,11 @@
 
 /* Tiles */
 
-	.tiles {
-		body.is-preload & {
-			article {
-				@include vendor('transform', 'none');
-				opacity: 1;
-			}
-		}
-	}
+.tiles {
+  body.is-preload & {
+    article {
+      @include vendor("transform", "none");
+      opacity: 1;
+    }
+  }
+}
