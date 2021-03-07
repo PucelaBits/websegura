@@ -23,6 +23,14 @@ jobs:
 
       - name: Request Twitter stats
         env:
-          TWITTER_API_KEY: ${{ secrets.TWITTER_API_KEY }}
-          TWITTER_API_SECRET: ${{ secrets.TWITTER_API_SECRET }}
+          TWITTER_BEARER_TOKEN: ${{ secrets.TWITTER_BEARER_TOKEN }}
         run: npm run twitter:search
+
+      - name: Update Twitter summary
+        run: npm run twitter:summary
+
+      # The resulting commit will not trigger another GitHub Actions Workflow run.
+      # This is due to limitations set by GitHub.
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Update information about twitter results
