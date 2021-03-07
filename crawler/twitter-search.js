@@ -59,7 +59,7 @@ function dumpRateLimitInfo(response) {
   console.log(`Reset: ${Math.ceil(delta / 1000 / 60)} minutes`);
 }
 
-const HOW_MANY_DAYS_AGO = process.env.HOW_MANY_DAYS_AGO || 0; // 0 = last day
+const HOW_MANY_DAYS_AGO = process.env.HOW_MANY_DAYS_AGO || 1; // 1 = yesterday
 if (HOW_MANY_DAYS_AGO > 7) {
   console.error("Twitter API does not support searching for tweets older than one week");
   process.exit(1);
