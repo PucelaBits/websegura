@@ -1,9 +1,13 @@
 const glob = require("fast-glob");
 const fs = require("fs");
+const { pathToObject } = require("./crawler/sites-parser.js");
 
 // Valor arbitrariamente alto para marcar webs con resultados pendientes
 // y que aparezcan al final al ordenar de menos a más seguro.
 const NO_SCORE = 9000;
+
+// Fecha de lanzamiento de la plataforma en Unix timestamp.
+const UNIX_TIME_RELEASE_DATE = 1611183600;
 
 const getSafeScore = (value) => {
   let safe = value.filter((v) => v.score > 69 && v.score < NO_SCORE).length;
@@ -101,6 +105,29 @@ const filenameToData = (f) => ({
     }));
 
   fs.writeFileSync("_data/territories.json", JSON.stringify(territories));
+})();
+
+(function createProgressFile() {
+  const historyDir = "_data/results/history";
+  let websWithProgress = glob
+    .sync(historyDir + "/*.json")
+    .map((path) => ({ path, file: pathToObject(path) }))
+    .filter(({ file }) => Array.isArray(file))
+    .map(({ path, file }) => ({
+      path,
+      file: file.filter(
+        (check) => check.end_time_unix_timestamp > UNIX_TIME_RELEASE_DATE
+      ),
+    }))
+    .filter(({ file }) => file.length >= 2)
+    .map(({ path, file }) => ({
+      file,
+      path: path.substring(historyDir.length + 1),
+    }));
+
+  for (const { path, file } of websWithProgress) {
+    fs.writeFileSync(`_data/results/progress/${path}`, JSON.stringify(file));
+  }
 })();
 
 module.exports = function (eleventyConfig) {

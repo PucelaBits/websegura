@@ -11,16 +11,24 @@ title: "¿Cómo han mejorado las webs?"
   -
   {{ title }}</p>
 
-<h1>🏆 {{ title }}</h1>
+<h1>🏆
+  {{ title }}</h1>
 
+<p>
+  Aquí registramos todos los cambios en la calificación de la seguridad de las páginas desde que abrimos el observatorio.
+</p>
 
-  {% for name, result in results.history %}
-    <p>{{ name }}</p>
-    {% for h in result | sort(attribute="end_time_unix_timestamp") %}
-      {% if (h.end_time_unix_timestamp > 1611183600) and (loop.length > 1) %}
-        <li>({{h.end_time}}){{ h.grade }}</li>
-      {% endif %}
+{% for name, result in results.progress %}
+  <p>{{ name }}</p>
+  <ul>
+    {% for item in result %}
+      <li>{{item.end_time}}
+        -
+        {{ item.grade }}
+        ({{item.score}})</li>
     {% endfor %}
-  {% endfor %}
+  </ul>
+  <hr/>
+{% endfor %}
 
 </section>
