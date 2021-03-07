@@ -6,21 +6,21 @@
 
 /* Wrapper */
 
-	#wrapper {
-		> * {
-			> .inner {
-				$gutter: _size(gutter);
+#wrapper {
+  > * {
+    > .inner {
+      $gutter: _size(gutter);
 
-				width: 100%;
-				max-width: 900px;
-				margin: 0 auto;
-				padding: 0 $gutter;
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 $gutter;
 
-				@include breakpoint('<=small') {
-					$gutter: _size(gutter) * 0.5;
+      @include breakpoint("<=small") {
+        $gutter: _size(gutter) * 0.5;
 
-					padding: 0 $gutter;
-				}
-			}
-		}
-	}
+        padding: 0 $gutter;
+      }
+    }
+  }
+}
