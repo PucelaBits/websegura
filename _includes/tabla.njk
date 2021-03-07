@@ -31,25 +31,29 @@
 https://websegura.pucelabits.org'| urlEncode }}{{ path }}{{ '?pk_campaign=HazseloSaber&pk_source=twitter
 
 #websegura /vía @PucelaBits' | urlEncode }}" target="_blank" rel="noopener" aria-label="Twitter">
-                    <span class="icon brands fa-twitter">
-                      <span>Tuitear</span>
-                    </a>
-
+                  <span class="icon brands fa-twitter">
+                    <span>Tuitear</span>
+                  </a>
+                  {% if web.twitter_mentions > 0 %}
+                    <span title="Sitio destacado. Súmate a quienes ya han tuiteado">🔥</span>
+                  {% elif web.twitter_mentions > 3 %}
+                    <span title="Súmate a las {{ web.twitter_mentions }} personas que ya han tuiteado">🔥🔥</span>
                   {% endif %}
-                </td>
-              </tr>
-            {% else %}
-              <tr class="unknown">
-                <td title="Pendiente de análisis">🕐</td>
-                <td>
-                  {{ web.url | replace("www.", "") }}
-                </td>
-                <td></td>
-              </tr>
-            {% endif %}
+                {% endif %}
+              </td>
+            </tr>
+          {% else %}
+            <tr class="unknown">
+              <td title="El análisis de seguridad está pendiente">🕐</td>
+              <td>
+                {{ web.url | replace("www.", "") }}
+              </td>
+              <td></td>
+            </tr>
           {% endif %}
-        {% endfor %}
-      </tbody>
-    </table>
-    <p class="tablefooter">(Las notas se actualizan cada 3 días)</p>
-  {% endmacro %}
+        {% endif %}
+      {% endfor %}
+    </tbody>
+  </table>
+  <p class="tablefooter">(Las notas se actualizan cada 3 días)</p>
+{% endmacro %}
