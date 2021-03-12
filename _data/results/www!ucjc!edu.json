@@ -1,7 +1,7 @@
 {
   "algorithm_version": 2,
-  "end_time": "Tue, 09 Mar 2021 00:17:30 GMT",
-  "grade": "F",
+  "end_time": "Fri, 12 Mar 2021 00:20:16 GMT",
+  "grade": "D+",
   "hidden": false,
   "likelihood_indicator": "MEDIUM",
   "response_headers": {
@@ -9,20 +9,24 @@
     "Connection": "keep-alive",
     "Content-Encoding": "gzip",
     "Content-Type": "text/html; charset=UTF-8",
-    "Date": "Tue, 09 Mar 2021 00:16:49 GMT",
+    "Date": "Fri, 12 Mar 2021 00:19:33 GMT",
     "Host-Header": "8441280b0c35cbc1147f8ba998a563a7",
     "Server": "nginx",
+    "Strict-Transport-Security": "max-age=31536000",
     "Transfer-Encoding": "chunked",
     "Vary": "Accept-Encoding, Accept-Encoding,Cookie,User-Agent",
+    "X-Content-Type-Options": "nosniff",
+    "X-Frame-Options": "SAMEORIGIN",
     "X-Httpd": "1",
-    "X-Proxy-Cache": "HIT"
+    "X-Proxy-Cache": "HIT",
+    "X-XSS-Protection": "1; mode=block"
   },
-  "scan_id": 18109894,
-  "score": 0,
-  "start_time": "Tue, 09 Mar 2021 00:16:43 GMT",
+  "scan_id": 18156417,
+  "score": 40,
+  "start_time": "Fri, 12 Mar 2021 00:16:55 GMT",
   "state": "FINISHED",
   "status_code": 200,
-  "tests_failed": 7,
-  "tests_passed": 5,
+  "tests_failed": 3,
+  "tests_passed": 9,
   "tests_quantity": 12
 }
