@@ -73,7 +73,7 @@ La web podría cargar sin querer varios recursos de la web (imágenes, vídeos..
 
 Alguien podría añadir mediante cualquier servicio para introducir información (como los comentarios), código malicioso de terceros que no está alojado en el servidor de la web. Abriendo un vector para atacar a todos los visitantes (este se conoce como [_XSS_](https://es.wikipedia.org/wiki/Cross-site_scripting))
 
-Históricamente este código se ha empleado para robar usuarios y contraseñas o incluso realizar ataques para bloquear completamente una web (es decir, denegación de servicio o [_DDOS_](https://es.wikipedia.org/wiki/Ataque_de_denegaci%C3%B3n_de_servicio)).
+Históricamente este código se ha empleado para robar usuarios y contraseñas o incluso realizar ataques para bloquear completamente una web (es decir, denegación de servicio o [_DoS_](https://es.wikipedia.org/wiki/Ataque_de_denegaci%C3%B3n_de_servicio)).
 
 ### ⚔ Ataques externos
 
