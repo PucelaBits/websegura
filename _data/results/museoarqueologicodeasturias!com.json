@@ -1,26 +1,23 @@
 {
   "algorithm_version": 2,
-  "end_time": "Thu, 11 Mar 2021 00:27:52 GMT",
+  "end_time": "Sun, 14 Mar 2021 00:29:43 GMT",
   "grade": "F",
   "hidden": false,
   "likelihood_indicator": "MEDIUM",
   "response_headers": {
-    "Cache-Control": "store, no-cache, must-revalidate, post-check=0, pre-check=0",
     "Connection": "keep-alive",
-    "Content-Type": "text/html; charset=utf-8",
-    "Date": "Thu, 11 Mar 2021 00:27:49 GMT",
-    "Expires": "Sun, 19 Nov 1978 05:00:00 GMT",
-    "Last-Modified": "Thu, 11 Mar 2021 00:27:49 GMT",
+    "Content-Type": "text/html; charset=UTF-8",
+    "Date": "Sun, 14 Mar 2021 00:29:42 GMT",
     "Server": "nginx",
     "Transfer-Encoding": "chunked",
-    "X-Powered-By": "PHP/5.6.40, PleskLin"
+    "X-Powered-By": "PHP/5.6.40"
   },
-  "scan_id": 18142112,
-  "score": 0,
-  "start_time": "Thu, 11 Mar 2021 00:27:44 GMT",
+  "scan_id": 18200376,
+  "score": 20,
+  "start_time": "Sun, 14 Mar 2021 00:29:38 GMT",
   "state": "FINISHED",
-  "status_code": 200,
-  "tests_failed": 6,
-  "tests_passed": 6,
+  "status_code": 503,
+  "tests_failed": 5,
+  "tests_passed": 7,
   "tests_quantity": 12
 }
