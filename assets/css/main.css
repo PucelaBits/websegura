@@ -3047,3 +3047,7 @@ img[src*="#thumbnail"] {
   min-width: 300px;
   margin: 0 0.5em 1em;
 }
+
+.icon[data-popularity=high] {
+  color: firebrick;
+}
