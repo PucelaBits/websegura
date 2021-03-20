@@ -12,24 +12,30 @@ permalink: "w/{{ r }}/"
 {% set url = r | replace("!", ".") %}
 {% from "details.njk" import details %}
 
+<!--
+TODO iterate over all.json instead of using provincias/comunidades/global
+     that only contain a reduced set of fields (e.g. twitter_mentions is not included),
+     limiting the info that can be shown in the details page.
+-->
+
 {% for name, provincia in provincias %}
-  {% for w in provincia.webs %}
-    {% if w.url == url %}
-      {{ details(w, result, history, page.url, "p", name, provincia) }}
+  {% for web in provincia.webs %}
+    {% if web.url == url %}
+      {{ details(web, result, history, page.url, "p", name, provincia) }}
     {% endif %}
   {% endfor %}
 {% endfor %}
 
 {% for name, comunidad in comunidades %}
-  {% for w in comunidad.webs %}
-    {% if w.url == url %}
-      {{ details(w, result, history, page.url, "c", name, comunidad) }}
+  {% for web in comunidad.webs %}
+    {% if web.url == url %}
+      {{ details(web, result, history, page.url, "c", name, comunidad) }}
     {% endif %}
   {% endfor %}
 {% endfor %}
 
-{% for w in general.webs %}
-  {% if w.url == url %}
-    {{ details(w, result, history, page.url) }}
+{% for web in general.webs %}
+  {% if web.url == url %}
+    {{ details(web, result, history, page.url) }}
   {% endif %}
 {% endfor %}

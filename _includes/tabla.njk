@@ -31,14 +31,9 @@
 https://websegura.pucelabits.org'| urlEncode }}{{ path }}{{ '?pk_campaign=HazseloSaber&pk_source=twitter
 
 #websegura /vía @PucelaBits' | urlEncode }}" target="_blank" rel="noopener" aria-label="Twitter">
-                  <span class="icon brands fa-twitter">
+                  <span class="icon brands fa-twitter" {% if web.twitter_mentions > 0 %}data-popularity="high" title="Sitio destacado. Súmate a quienes ya han tuiteado"{% endif %}>
                     <span>Tuitear</span>
                   </a>
-                  {% if web.twitter_mentions > 0 %}
-                    <span title="Sitio destacado. Súmate a quienes ya han tuiteado">🔥</span>
-                  {% elif web.twitter_mentions > 3 %}
-                    <span title="Súmate a las {{ web.twitter_mentions }} personas que ya han tuiteado">🔥🔥</span>
-                  {% endif %}
                 {% endif %}
               </td>
             </tr>

@@ -300,3 +300,7 @@ img[src*="#thumbnail"] {
     margin: 0 0.5em 1em;
   }
 }
+
+.icon[data-popularity="high"] {
+  color: firebrick;
+}

@@ -1,6 +1,7 @@
 # #websegura
 
-Una iniciativa de [PucelaBits](https://pucelabits.org/). Analizamos y mostramos [seguridad HTTPS de sitios web públicos](https://websegura.pucelabits.org), como medida para visualizar aquellos que pueden suponer un riesgo para sus usuarios.
+Analizamos y mostramos [seguridad HTTPS de sitios web públicos](https://websegura.pucelabits.org), como medida para visualizar aquellos que pueden suponer un riesgo para sus usuarios.
+Una iniciativa de [PucelaBits](https://pucelabits.org/).
 
 ## Participa
 
@@ -36,13 +37,13 @@ El framework que usamos es [Eleventy](https://www.11ty.dev/). Necesitarás `git`
 sudo apt get install git nodejs
 ```
 
-Si quieres ejecutar el script para hacer el análiais de las webs, también necesitarás `jq` y `curl`.
+Si quieres ejecutar el script para hacer el análisis de las webs, también necesitarás `jq` y `curl`.
 
 ```sh
 sudo apt get install jq curl
 ```
 
-Clona el repo
+Clona el repositorio:
 
 ```sh
 git clone git@github.com:PucelaBits/websegura.git
