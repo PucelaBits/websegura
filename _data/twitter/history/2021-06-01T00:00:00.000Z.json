@@ -1,0 +1,82 @@
+{
+  "data": [
+    {
+      "id": "1399414789798039553",
+      "entities": {
+        "annotations": [
+          {
+            "start": 52,
+            "end": 61,
+            "probability": 0.9935,
+            "type": "Place",
+            "normalized_text": "Valladolid"
+          }
+        ],
+        "mentions": [
+          {
+            "start": 3,
+            "end": 14,
+            "username": "PucelaBits"
+          }
+        ]
+      },
+      "text": "RT @PucelaBits: Toca pagar el impuesto de rodaje en Valladolid, pero la web no carga porque usa protocolos inseguros que los navegadores no…"
+    },
+    {
+      "id": "1399266966645489666",
+      "entities": {
+        "hashtags": [
+          {
+            "start": 205,
+            "end": 215,
+            "tag": "websegura"
+          }
+        ],
+        "urls": [
+          {
+            "start": 180,
+            "end": 203,
+            "url": "https://t.co/SeFVkAEk0p",
+            "expanded_url": "https://websegura.pucelabits.org/w/www!puertos!es/?pk_campaign=HazseloSaber&pk_source=twitter",
+            "display_url": "websegura.pucelabits.org/w/www!puertos!…",
+            "images": [
+              {
+                "url": "https://pbs.twimg.com/news_img/1399266968218316803/JKg1a93D?format=png&name=orig",
+                "width": 320,
+                "height": 320
+              },
+              {
+                "url": "https://pbs.twimg.com/news_img/1399266968218316803/JKg1a93D?format=png&name=150x150",
+                "width": 150,
+                "height": 150
+              }
+            ],
+            "status": 200,
+            "title": "www.puertos.es - Observatorio de seguridad web",
+            "description": "¿Cómo de seguras son las webs de nuestros organismos públicos?",
+            "unwound_url": "https://websegura.pucelabits.org/w/www!puertos!es/?pk_campaign=HazseloSaber&pk_source=twitter"
+          }
+        ],
+        "mentions": [
+          {
+            "start": 5,
+            "end": 19,
+            "username": "PuertosEstado"
+          },
+          {
+            "start": 221,
+            "end": 232,
+            "username": "PucelaBits"
+          }
+        ]
+      },
+      "text": "Hola @PuertosEstado\n\n🔒 La seguridad de vuestra web y usuarios puede ser comprometida si no actualizáis vuestras conexiones seguras (HTTPS).\n⚠️ ¡Por favor, revisadlo cuanto antes!\n\nhttps://t.co/SeFVkAEk0p\n\n#websegura /vía @PucelaBits"
+    }
+  ],
+  "meta": {
+    "newest_id": "1399414789798039553",
+    "oldest_id": "1399266966645489666",
+    "result_count": 2
+  },
+  "_headers": {}
+}
