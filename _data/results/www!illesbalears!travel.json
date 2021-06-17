@@ -1,23 +1,26 @@
 {
   "algorithm_version": 2,
-  "end_time": "Tue, 15 Jun 2021 00:05:09 GMT",
+  "end_time": "Thu, 17 Jun 2021 00:11:57 GMT",
   "grade": "F",
   "hidden": false,
   "likelihood_indicator": "MEDIUM",
   "response_headers": {
     "Connection": "keep-alive",
-    "Content-Length": "122",
-    "Content-Type": "text/html",
-    "Date": "Tue, 15 Jun 2021 00:05:08 GMT",
-    "Server": "awselb/2.0",
-    "Set-Cookie": "AWSALB=3wFH/Yldd9o5rgD1NDU+BOOYLCppG49cfMdRpWf2n8/swgENLzxKMyUh0PxXTkkJrzCsR5Hb9nFr5k8iGKgiJo3zIm6/I6kP1MybPeuRlKRsmKbqN5w6RT8XkYhe; Expires=Tue, 22 Jun 2021 00:05:08 GMT; Path=/, AWSALBCORS=3wFH/Yldd9o5rgD1NDU+BOOYLCppG49cfMdRpWf2n8/swgENLzxKMyUh0PxXTkkJrzCsR5Hb9nFr5k8iGKgiJo3zIm6/I6kP1MybPeuRlKRsmKbqN5w6RT8XkYhe; Expires=Tue, 22 Jun 2021 00:05:08 GMT; Path=/; SameSite=None; Secure"
+    "Content-Encoding": "gzip",
+    "Content-Type": "text/html; charset=utf-8",
+    "Date": "Thu, 17 Jun 2021 00:11:47 GMT",
+    "ETag": "W/\"1b973-sxX5t6BOHpaNzUNkVx1GXV46kEk\"",
+    "Set-Cookie": "AWSALB=KnLnUVLrHooICh4RVJ8bNhAnTy2jYmiwNVHLwaFwNVFKyUGjZexSGO551oN6x/JVowd8qgfmJ++AaS+0W65dn0yaFSE9nMRjtByiBpG9tw7pur+Hd0KJbGz3kcY4; Expires=Thu, 24 Jun 2021 00:11:46 GMT; Path=/, AWSALBCORS=KnLnUVLrHooICh4RVJ8bNhAnTy2jYmiwNVHLwaFwNVFKyUGjZexSGO551oN6x/JVowd8qgfmJ++AaS+0W65dn0yaFSE9nMRjtByiBpG9tw7pur+Hd0KJbGz3kcY4; Expires=Thu, 24 Jun 2021 00:11:46 GMT; Path=/; SameSite=None; Secure",
+    "Transfer-Encoding": "chunked",
+    "Vary": "Accept-Encoding",
+    "X-Powered-By": "Express"
   },
-  "scan_id": 19659041,
+  "scan_id": 19689194,
   "score": 0,
-  "start_time": "Tue, 15 Jun 2021 00:05:06 GMT",
+  "start_time": "Thu, 17 Jun 2021 00:11:41 GMT",
   "state": "FINISHED",
-  "status_code": 502,
-  "tests_failed": 6,
-  "tests_passed": 6,
+  "status_code": 200,
+  "tests_failed": 7,
+  "tests_passed": 5,
   "tests_quantity": 12
 }
