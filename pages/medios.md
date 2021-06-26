@@ -12,6 +12,14 @@ En esta página listamos todas las apariciones del proyecto en medios. Si eres u
 
 ---
 
+![omicrono](/images/medios/omicrono.jpg#thumbnail "omicrono")
+
+#### [Esta web de Valladolid alerta de la ciberseguridad de las instituciones para evitar otro 'caso SEPE'](https://www.elespanol.com/omicrono/tecnologia/20210626/valladolid-alerta-ciberseguridad-instituciones-evitar-caso-sepe/591691507_0.html)
+
+_26 de junio 2021 - omicrono - El Español_
+
+---
+
 ![eldiario](/images/medios/eldiario.jpg#thumbnail "eldiario")
 
 #### [Los 'Pepito Grillo' de la ciberseguridad de las webs públicas españolas](https://www.eldiario.es/tecnologia/tres-ingenieros-pepito-grillo-ciberseguridad-webs-publicas-espanolas_1_7252835.html)
