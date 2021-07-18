@@ -12,6 +12,14 @@ En esta página listamos todas las apariciones del proyecto en medios. Si eres u
 
 ---
 
+![omicrono](/images/medios/omincrono2.jpg#thumbnail "omicrono")
+
+#### [De Casa Real al Tribunal Constitucional: el 97% de las webs institucionales no son seguras](https://www.elespanol.com/omicrono/tecnologia/20210718/casa-real-tribunal-constitucional-institucionales-no-seguras/596941786_0.html)
+
+_18 de julio 2021 - omicrono - El Español_
+
+---
+
 ![omicrono](/images/medios/omicrono.jpg#thumbnail "omicrono")
 
 #### [Esta web de Valladolid alerta de la ciberseguridad de las instituciones para evitar otro 'caso SEPE'](https://www.elespanol.com/omicrono/tecnologia/20210626/valladolid-alerta-ciberseguridad-instituciones-evitar-caso-sepe/591691507_0.html)
