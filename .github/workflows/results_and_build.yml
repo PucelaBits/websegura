@@ -2,7 +2,7 @@ name: results_and_build
 
 on:
   schedule:
-    - cron: "0 2 * * *" # must run after analyze.yml
+    - cron: "0 3 * * *" # must run after analyze.yml & analyze-dmarc.yml
 
   push:
     branches:

@@ -1,0 +1,38 @@
+name: analyze
+
+on:
+  # Run it weekly because this workflow is time-consuming and we'd run out of credits.
+  # Run on push is disabled for the same reason.
+  schedule:
+    - cron: "0 1 * * SUN"
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-python@v2
+        with:
+          python-version: "3.9"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install checkdmarc==4.4.1
+
+      # Use the standalone checkdmarc tool.
+      # Using the API would be more flexible, but this is easier to implement for now.
+      - name: Check DMARC information about public sites
+        run: |
+          checkdmarc --skip-tls --timeout 1 -o _data/results/dmarc/summary.json $(find {_data/general.json,_data/{comunidades,provincias}/*.json} | xargs cat | jq -r .webs[].url)
+
+      # The resulting commit will not trigger another GitHub Actions Workflow run.
+      # This is due to limitations set by GitHub.
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Update DMARC information about public sites
