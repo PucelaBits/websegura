@@ -1,4 +1,4 @@
-name: analyze
+name: analyze-dmarc
 
 on:
   # Run it weekly because this workflow is time-consuming and we'd run out of credits.
@@ -29,7 +29,8 @@ jobs:
       # Using the API would be more flexible, but this is easier to implement for now.
       - name: Check DMARC information about public sites
         run: |
-          checkdmarc --skip-tls --timeout 1 -o _data/results/dmarc/summary.json $(find {_data/general.json,_data/{comunidades,provincias}/*.json} | xargs cat | jq -r .webs[].url)
+          SITES=$(find {_data/general.json,_data/{comunidades,provincias}/*.json} | xargs cat | jq -r .webs[].url)
+          checkdmarc --skip-tls --timeout 1 -o _data/results/dmarc/summary.json ${SITES}
 
       # The resulting commit will not trigger another GitHub Actions Workflow run.
       # This is due to limitations set by GitHub.
