@@ -24,6 +24,14 @@
   <li><strong>Ubicación:</strong> <a href="/{{ type }}/{{ parent }}">{{ location.name }}</a></li>
   {% endif %}
   <li><strong>Puntuación:</strong> {{ results.score }}/100</li>
+  <li>
+    <strong>Email:</strong>
+    {% if web.url | dmarc_secure %}
+      Seguro
+    {% else %}
+      <a href="https://dmarcguide.globalcyberalliance.org/#/tool-select?d={{ web.url }}&r=s&s=none&lang=es">Vulnerable a suplantación de identidad de emails</a>
+    {% endif %}
+  </li>
   {% if web.tags %}
   <li class="icon-list">🏷️
   {% for tag in web.tags %}

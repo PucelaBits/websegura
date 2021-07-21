@@ -14,7 +14,9 @@
             <tr class="{{ web | color }}">
               <td>
                 <a href="/w/{{ web.url | replace('.', '!') }}" title="{{ web | abbr }}">
-                  {% if web.tests_passed < 5 %}☠️{% else %}{{ web.grade }}
+                  {% if web.tests_passed < 5 %}☠️{% else %}{{ web.grade }}{% endif %}
+                  {% if not web.url | dmarc_secure %}
+                    <span title="Vulnerable a suplantación de identidad de emails">✉️</span>
                   {% endif %}
                 </a>
               </td>
