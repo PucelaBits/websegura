@@ -25,12 +25,12 @@ jobs:
           python -m pip install --upgrade pip
           pip install checkdmarc==4.4.1
 
-      # Use the standalone checkdmarc tool.
+      # Use the standalone checkdmarc tool, index results by domain for faster lookup.
       # Using the API would be more flexible, but this is easier to implement for now.
       - name: Check DMARC information about public sites
         run: |
           SITES=$(find {_data/general.json,_data/{comunidades,provincias}/*.json} | xargs cat | jq -r .webs[].url)
-          checkdmarc --skip-tls --timeout 1 ${SITES} > _data/results/dmarc/summary.json
+          checkdmarc --skip-tls --timeout 1 ${SITES} | jq 'INDEX(.domain)' > _data/results/dmarc/summary.json
 
       # The resulting commit will not trigger another GitHub Actions Workflow run.
       # This is due to limitations set by GitHub.
