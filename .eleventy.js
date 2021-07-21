@@ -204,6 +204,14 @@ module.exports = function (eleventyConfig) {
     })
   );
 
+  const dmarcSummary = JSON.parse(
+    fs.readFileSync(`_data/results/dmarc/summary.json`, "utf8")
+  );
+  eleventyConfig.addFilter("dmarc_secure", (url) => {
+    const dmarc_info = dmarcSummary[url];
+    return dmarc_info.spf.valid === true && dmarc_info.dmarc.valid === true;
+  });
+
   // % de webs seguras
   eleventyConfig.addFilter("safeScore", getSafeScore);
 
