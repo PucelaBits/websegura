@@ -12,6 +12,7 @@ permalink: "/faq/"
 - [¿Qué es una conexión segura (HTTPS)?](#{{ '¿Qué es una conexión segura (HTTPS)?' | slug }})
 - [¿Qué nos asegura el cifrado?](#{{ '¿Qué nos asegura el cifrado?' | slug }})
 - [¿Qué significan las notas, por qué son importantes?](#{{ '¿Qué significan las notas, por qué son importantes?' | slug }})
+- [¿Qué significa que los emails son vulnerables a suplantación de identidad?](#{{ '¿Qué significa que los emails son vulnerables a suplantación de identidad?' | slug }})
 - [¿Qué tipo de problemas podría haber en webs que no tienen esa nota?](#{{ '¿Qué tipo de problemas podría haber en webs que no tienen esa nota?' | slug }})
 - [¿Debemos exigir webs seguras?](#{{ '¿Debemos exigir webs seguras?' | slug }})
 - [¿Cómo puedo participar en #websegura?](#{{ '¿Cómo puedo participar en #websegura?' | slug }})
@@ -54,6 +55,16 @@ Además, el protocolo HTTPS te asegura que te estás conectando con la página q
 Sin embargo, usar HTTPS, no es suficiente para garantizar la total seguridad de nuestras conexiones, la página debe también implementar ciertas medidas para asegurarse que las conexiones a su web siempre se realizan mediante este protocolo. Las notas que puede obtener una página web son A, B, C, D, E y F. [Información técnica sobre la metodología de las notas](https://github.com/mozilla/http-observatory/blob/master/httpobs/docs/scoring.md).
 
 ⚠**Si la web no tienen una nota A o B**, usan una implementación deficiente, ¡tu privacidad está en riesgo!
+
+<a id="{{ '¿Qué significa que los emails son vulnerables a suplantación de identidad?' | slug }}"></a>
+
+## ¿Qué significa que los emails son vulnerables a suplantación de identidad?
+
+Recientemente hemos empezado también a analizar la seguridad de los emails de estos dominios de instituciones públicas, verificando si por una mala configuración son vulnerables a suplantación de identidad (si no implementan [SPF](https://es.wikipedia.org/wiki/Sender_Policy_Framework) y [DMARC](https://es.wikipedia.org/wiki/DMARC))
+
+Esto es, que cualquiera pueda enviarnos un email haciéndose pasar por nombre@lawebinstitucional.com sin que podamos detectarlo.
+
+De esta forma los ciudadanos y los trabajadores públicos pueden ser objeto muy fácil de engaños (phising) para realizar acciones que les perjudiquen, incluido robo de datos o instalación de software malicioso para secuestrar sus datos.
 
 <a id="{{ '¿Qué tipo de problemas podría haber en webs que no tienen esa nota?' | slug }}"></a>
 

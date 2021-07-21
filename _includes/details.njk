@@ -7,6 +7,13 @@
 
 <div id="score" class="{{ results | color }}">{% if results.tests_passed < 5 %}☠️{% else %}{{ results.grade }}{% endif %}</div>
 
+{% if not web.url | dmarc_secure %}
+  <div class="phising-box" title="Vulnerable a suplantación de identidad de emails">
+    <a href="/faq/#que-significa-que-los-emails-son-vulnerables-a-suplantacion-de-identidad"><img src="/images/phising.png"></a>
+    <p>Emails vulnerables</p>
+  </div>
+{% endif %}
+
 <h2>🔎 Resultado del análisis</h2>
 
 <ul>
@@ -24,14 +31,7 @@
   <li><strong>Ubicación:</strong> <a href="/{{ type }}/{{ parent }}">{{ location.name }}</a></li>
   {% endif %}
   <li><strong>Puntuación:</strong> {{ results.score }}/100</li>
-  <li>
-    <strong>Email:</strong>
-    {% if web.url | dmarc_secure %}
-      Seguro
-    {% else %}
-      <a href="https://dmarcguide.globalcyberalliance.org/#/tool-select?d={{ web.url }}&r=s&s=none&lang=es">Vulnerable a suplantación de identidad de emails</a>
-    {% endif %}
-  </li>
+
   {% if web.tags %}
   <li class="icon-list">🏷️
   {% for tag in web.tags %}
@@ -41,10 +41,13 @@
   {% endif %}
 </ul>
 
-<p>
-{{ results | abbr }}.<br >
-<a href="https://observatory.mozilla.org/analyze/{{ web.url }}">🖥 Leer el informe técnico completo.</a>
-</p>
+<p>{{ results | abbr }}.<br>
+Los emails de este sitio son {% if web.url | dmarc_secure %}seguros{% else %}<strong>vulnerables</strong>{% endif %} frente a suplantación de identidad.</p>
+
+<ul class="iconify">
+  <li><a href="https://observatory.mozilla.org/analyze/{{ web.url }}">🖥 Informe técnico del análisis de la web</a></li>
+  <li><a href="https://dmarcguide.globalcyberalliance.org/#/tool-select?d={{ web.url }}&r=s&s=none&lang=es"> ✉️ Informe técnico del análisis del email</a></li>
+</ul>
 
 {% if (web.twitter) and (results.score < 70) %}
 <p><a class="twitter-share-button" href="https://twitter.com/intent/tweet/?text={{ 'Hola @' + web.twitter + '
