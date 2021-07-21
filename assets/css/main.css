@@ -2888,8 +2888,35 @@ tr.unknown {
   background-color: #eee8e8;
 }
 
+span.phising img {
+  height: 16px;
+}
+
+div.phising-box {
+  width: 128px;
+  float: right;
+  clear: both;
+  margin: 1em 0;
+  font-size: 0.8em;
+  text-align: center;
+}
+div.phising-box img {
+  height: 128px;
+}
+@media screen and (max-width: 736px) {
+  div.phising-box {
+    width: 80px;
+  }
+  div.phising-box img {
+    height: 80px;
+  }
+}
+
 span.emoticon {
   font-size: 2em;
+}
+span.emoticon img {
+  height: 30px;
 }
 
 ul.iconify li {
@@ -2964,7 +2991,7 @@ p.featured .cta-twitter {
 }
 
 #resultados table th#nota {
-  width: 65px;
+  width: 75px;
 }
 
 #resultados table th#share {
