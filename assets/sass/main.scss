@@ -296,6 +296,7 @@ p.tablefooter {
   text-align: center;
   float: right;
   border: 6px solid;
+  margin-bottom: 0.5em;
 }
 
 @include breakpoint("<=small") {
