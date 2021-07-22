@@ -12,6 +12,22 @@ En esta página listamos todas las apariciones del proyecto en medios. Si eres u
 
 ---
 
+![hipertextual](/images/medios/hipertextual2.jpg#thumbnail "hipertextual")
+
+#### [Correos y Hacienda tienen un serio problema con el phishing o suplantación de identidad](https://hipertextual.com/2021/07/phishing-suplantacion-identidad-correos-hacienda)
+
+_22 de julio 2021 - Hipertextual_
+
+---
+
+![businessinsider](/images/medios/businessinsider.jpg#thumbnail "businessinsider")
+
+#### [El 97% de las webs institucionales españolas no son seguras y 12 ministerios tienen la peor puntuación en cuanto a seguridad](https://www.businessinsider.es/estas-son-webs-institucionales-espanolas-menos-seguras-901479)
+
+_21 de julio 2021 - Business Insider_
+
+---
+
 ![omicrono](/images/medios/omincrono2.jpg#thumbnail "omicrono")
 
 #### [De Casa Real al Tribunal Constitucional: el 97% de las webs institucionales no son seguras](https://www.elespanol.com/omicrono/tecnologia/20210718/casa-real-tribunal-constitucional-institucionales-no-seguras/596941786_0.html)
