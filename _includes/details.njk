@@ -42,7 +42,7 @@
 </ul>
 
 <p>{{ results | abbr }}.<br>
-Los emails de este sitio son {% if web.url | dmarc_secure %}seguros{% else %}<strong>vulnerables</strong>{% endif %} frente a suplantación de identidad.</p>
+Los emails de este sitio son {% if web.url | dmarc_secure %}seguros{% else %}<strong>vulnerables</strong>{% endif %} frente a <a href="/faq/#que-significa-que-los-emails-son-vulnerables-a-suplantacion-de-identidad">suplantación de identidad</a>.</p>
 
 <ul class="iconify">
   <li><a href="https://observatory.mozilla.org/analyze/{{ web.url }}">🖥 Informe técnico del análisis de la web</a></li>

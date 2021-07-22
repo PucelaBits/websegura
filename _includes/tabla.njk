@@ -54,3 +54,35 @@ https://websegura.pucelabits.org'| urlEncode }}{{ path }}{{ '?pk_campaign=Hazsel
   </table>
   <p class="tablefooter">(Las notas se actualizan cada 3 días)</p>
 {% endmacro %}
+
+{% macro tablaEmail(webs, path) %}
+  <table>
+    <thead>
+      <tr>
+        <th id="nota">Info</th>
+        <th id="web">Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for web in webs %}
+        {% if web %}
+            <tr class="{% if web.domain | dmarc_secure %}safe{% else %}danger{% endif %}">
+              <td>
+                <a href="/w/{{ web.domain | replace('.', '!') }}">
+                  {% if not web.domain | dmarc_secure %}
+                    <span class="phising" title="Vulnerable a suplantación de identidad de emails"><img src="/images/phising.png"></span>
+                  {% else %}
+                    <span title="Seguro frente a suplantación de identidad de emails">✉️</span>
+                  {% endif %}
+                </a>
+              </td>
+              <td>
+                <a href="/w/{{ web.domain | replace('.', '!') }}" title="{{ web.domain }}">@{{ web.domain | replace("www.", "") | replace("http:", "") | replace("https:", "") | replace("/", "")}}</a>
+              </td>
+            </tr>
+        {% endif %}
+      {% endfor %}
+    </tbody>
+  </table>
+  <p class="tablefooter">(Los análisis se actualizan cada 6 días)</p>
+{% endmacro %}

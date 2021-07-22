@@ -26,7 +26,9 @@ title: "#websegura"
       {{ all | testsPassedLt(5) | length }}
     </strong>
     sitios</a>
-  no tienen seguridad alguna.</p>
+  no tienen seguridad alguna.<br/>
+ <span class="phising"><img src="images/phising.png"></span> <a href="/analisis-email/"><strong>{{ results.dmarc.summary | isDmarcValid(false) | length }}</strong> emails</a> son vulnerables a suplantación de identidad.
+  </p>
 
 <div class="score-container">
   <div class="score-bar">
@@ -34,6 +36,14 @@ title: "#websegura"
   </div>
 
   <p><strong>{{ all | safeScore }}%</strong> de las webs completamente seguras</p>
+</div>
+
+<div class="score-container">
+  <div class="score-bar">
+    <div class="score-progress" data-score="{{ results.dmarc.summary | emailScore }}"></div>
+  </div>
+
+  <p><strong>{{ results.dmarc.summary | emailScore }}%</strong> de los emails protegidos</p>
 </div>
 
 <p>

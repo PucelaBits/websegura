@@ -1,0 +1,64 @@
+---
+layout: base
+permalink: "/analisis-email/"
+title: "#emailseguro: Observatorio de seguridad de email"
+---
+
+{% from "tabla.njk" import tablaEmail %}
+
+<p id="breadcumbs">
+  <a href="/">España</a>
+  -
+  {{ title }}</p>
+
+<h1>✉️
+  #emailseguro</h1>
+
+<p class="subtitle">Analizamos
+  <strong>
+    {{ results.dmarc.summary | length }}
+  </strong>
+  emails públicos para saber si están protegidos frente a <a href="/faq/#que-significa-que-los-emails-son-vulnerables-a-suplantacion-de-identidad">suplantación de identidad</a>.</p>
+
+<p class="centered">🎖️ Sólo
+  <a href="#hall-of-fame">
+    <strong>
+      {{ results.dmarc.summary | isDmarcValid(true) | length }}
+    </strong>
+    emails</a>
+  son seguros frente a suplatación de identidad.<br/>
+  <span class="phising"><img src="/images/phising.png"></span>
+  <a href="#hall-of-shame">
+    <strong>
+      {{ results.dmarc.summary | isDmarcValid(false) | length }}
+    </strong>
+    emails</a>
+  son vulnerables frente a suplantación de identidad.
+  </p>
+
+<div class="score-container">
+  <div class="score-bar">
+    <div class="score-progress" data-score="{{ results.dmarc.summary | emailScore }}"></div>
+  </div>
+
+  <p><strong>{{ results.dmarc.summary | emailScore }}%</strong> de los emails protegidos</p>
+</div>
+
+<section>
+  <div class="table-wrapper" id="resultados">
+    <h2 id="hall-of-fame">🎖️ Hall de la fama</h2>
+    <p>Estos correos tienen protección contra <a href="/faq/#que-significa-que-los-emails-son-vulnerables-a-suplantacion-de-identidad">suplantación de identidad</a>.</p>
+    {{ tablaEmail(results.dmarc.summary | isDmarcValid(true), path=page.url) }}
+    <p>
+      <a href="https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web">+ Añadir un dominio nuevo</a>
+    </p>
+
+    <h2 id="hall-of-shame">☠️ Hall de la vergüenza</h2>
+    <p>Estos correos <strong>son vulnerables</strong> a <a href="/faq/#que-significa-que-los-emails-son-vulnerables-a-suplantacion-de-identidad">suplantación de identidad</a></p>
+    {{ tablaEmail(results.dmarc.summary | isDmarcValid(false), path=page.url) }}
+    <p>
+      <a href="https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web">+ Añadir un dominio nuevo</a>
+    </p>
+  </div>
+
+</section>

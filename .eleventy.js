@@ -15,6 +15,12 @@ const getSafeScore = (value) => {
   return safeScore.toFixed(0);
 };
 
+const getEmailScore = (value) => {
+  let safe = Object.values(value).filter((v) => v.spf.valid === true && v.dmarc.valid === true).length;
+  let EmailScore = (safe * 100) / Object.values(value).length;
+  return EmailScore.toFixed(0);
+};
+
 const filterByTerritorioId = (value, territorio_id) =>
   value.filter((v) => v.territorio_id === territorio_id);
 
@@ -204,9 +210,18 @@ module.exports = function (eleventyConfig) {
     })
   );
 
+  // Filters values with DMARC and SPF with specific valid option (true or false)
+  // Only values where SPF AND DMARC is valid, are considered valid
+  // Values where SPF OR DMARC is not valid, are considered invalid
+  // FIXME: For some reason the results.dmarc.summaty is an Object not and Array
+  eleventyConfig.addFilter("isDmarcValid", (value, valid) => (valid) ?
+    Object.values(value).filter((v) => v.spf.valid === valid && v.dmarc.valid === valid) : Object.values(value).filter((v) => v.spf.valid === valid || v.dmarc.valid === valid)
+  );
+
   const dmarcSummary = JSON.parse(
     fs.readFileSync(`_data/results/dmarc/summary.json`, "utf8")
   );
+
   eleventyConfig.addFilter("dmarc_secure", (url) => {
     const dmarc_info = dmarcSummary[url];
     return dmarc_info.spf.valid === true && dmarc_info.dmarc.valid === true;
@@ -214,6 +229,8 @@ module.exports = function (eleventyConfig) {
 
   // % de webs seguras
   eleventyConfig.addFilter("safeScore", getSafeScore);
+  // % de emails protegidos
+  eleventyConfig.addFilter("emailScore", getEmailScore);
 
   eleventyConfig.addFilter("filterByTerritorioId", filterByTerritorioId);
 
