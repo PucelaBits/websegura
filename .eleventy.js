@@ -16,7 +16,7 @@ const getSafeScore = (value) => {
 };
 
 const getEmailScore = (value) => {
-  let safe = Object.values(value).filter((v) => v.spf.valid === true && v.dmarc.valid === true && !v.dmarc.record.includes('p=none')).length;
+  let safe = Object.values(value).filter((v) => v.spf.valid === true && v.dmarc.valid === true && v.dmarc.record.includes('p=reject')).length;
   let EmailScore = (safe * 100) / Object.values(value).length;
   return EmailScore.toFixed(0);
 };
@@ -213,10 +213,10 @@ module.exports = function (eleventyConfig) {
   // Filters values with DMARC and SPF with specific valid option (true or false)
   // Only values where SPF AND DMARC is valid, are considered valid
   // Values where SPF OR DMARC is not valid, are considered invalid
-  // Policy p=none is considered invalid/insecure
+  // Only policy p=reject is considered valid/secure
   // FIXME: For some reason the results.dmarc.summaty is an Object not and Array
   eleventyConfig.addFilter("isDmarcValid", (value, valid) => (valid) ?
-    Object.values(value).filter((v) => v.spf.valid === valid && v.dmarc.valid === valid && !v.dmarc.record.includes('p=none')) : Object.values(value).filter((v) => v.spf.valid === valid || v.dmarc.valid === valid)
+    Object.values(value).filter((v) => v.spf.valid === valid && v.dmarc.valid === valid && v.dmarc.record.includes('p=reject')) : Object.values(value).filter((v) => v.spf.valid === valid || v.dmarc.valid === valid || !v.dmarc.record.includes('p=reject'))
   );
 
   const dmarcSummary = JSON.parse(
@@ -225,7 +225,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter("dmarc_secure", (url) => {
     const dmarc_info = dmarcSummary[url];
-    return dmarc_info.spf.valid === true && dmarc_info.dmarc.valid === true && !dmarc_info.dmarc.record.includes('p=none');
+    return dmarc_info.spf.valid === true && dmarc_info.dmarc.valid === true && dmarc_info.dmarc.record.includes('p=reject');
   });
 
   eleventyConfig.addFilter("dnssec", (url) => {

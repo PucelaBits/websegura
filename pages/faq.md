@@ -61,7 +61,7 @@ Sin embargo, usar HTTPS, no es suficiente para garantizar la total seguridad de 
 
 ## ¿Qué significa que los emails son vulnerables a suplantación de identidad?
 
-Recientemente hemos empezado también a analizar la seguridad de los emails de estos dominios de instituciones públicas, verificando si por una mala configuración son vulnerables a suplantación de identidad (si no implementan [SPF](https://es.wikipedia.org/wiki/Sender_Policy_Framework) y [DMARC](https://es.wikipedia.org/wiki/DMARC))
+Recientemente hemos empezado también a analizar la seguridad de los emails de estos dominios de instituciones públicas, verificando si por una mala configuración son vulnerables a suplantación de identidad (si no implementan [SPF](https://es.wikipedia.org/wiki/Sender_Policy_Framework) y [DMARC](https://es.wikipedia.org/wiki/DMARC) rechazando todos los correos suplantados)
 
 Esto es, que cualquiera pueda enviarnos un email haciéndose pasar por nombre@lawebinstitucional.com sin que podamos detectarlo.
 
