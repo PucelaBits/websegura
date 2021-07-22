@@ -14,7 +14,7 @@
   </div>
 {% endif %}
 
-{% if not web.url | dmarc_secure %}
+{% if not web.url | dnssec %}
   <div class="dnssec-box" title="Vulnerable a suplantación de identidad de dominio">
     <a href="/faq/#que-significa-que-el-dominio-es-vulnerable-a-suplantacion">🌐</a>
     <p>Dominio vulnerable</p>
@@ -51,7 +51,7 @@
 <ul>
 <li> {{ results | abbr }}.</li>
 <li> Los emails de este sitio son {% if web.url | dmarc_secure %}seguros{% else %}<strong>vulnerables</strong>{% endif %} frente a <a href="/faq/#que-significa-que-los-emails-son-vulnerables-a-suplantacion-de-identidad">suplantación de identidad</a>.</li>
-<li> <a href="/faq/#que-significa-que-el-dominio-es-vulnerable-a-suplantacion">Suplantación de dominio</a>: {% if web.url | dmarc_secure %}Segura{% else %}<strong>Vulnerable</strong>{% endif %}</li>
+<li> <a href="/faq/#que-significa-que-el-dominio-es-vulnerable-a-suplantacion">Suplantación de dominio</a>: {% if web.url | dnssec %}Segura{% else %}<strong>Vulnerable</strong>{% endif %}</li>
 </ul>
 
 <ul class="iconify">
