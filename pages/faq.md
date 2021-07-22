@@ -22,7 +22,7 @@ permalink: "/faq/"
 
 ## ¿Qué es esta web?
 
-Websegura usa el servicio [Mozilla Observatory](https://observatory.mozilla.org/) para mostrar los análisis y la nota que les da esta herramienta externa a las webs de diferentes entidades públicas de España.
+Websegura usa el servicio [Mozilla Observatory](https://observatory.mozilla.org/) para mostrar los análisis y la nota que les da esta herramienta externa a las webs de diferentes entidades públicas de España. También usamos la herramienta libre [checkdmarc](https://github.com/domainaware/checkdmarc) para comprobar si los emails de estos dominios están protegidos frente a suplantación de identidad.
 
 <a id="{{ '¿Qué es una conexión segura (HTTPS)?' | slug }}"></a>
 
