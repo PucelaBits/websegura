@@ -2903,6 +2903,9 @@ div.phising-box {
 div.phising-box img {
   height: 128px;
 }
+div.phising-box p {
+  margin: 0;
+}
 @media screen and (max-width: 736px) {
   div.phising-box {
     width: 80px;
@@ -2912,11 +2915,36 @@ div.phising-box img {
   }
 }
 
+div.dnssec-box {
+  width: 128px;
+  float: right;
+  clear: both;
+  margin: 1em 0;
+  font-size: 0.8em;
+  text-align: center;
+}
+div.dnssec-box a {
+  font-size: 110px;
+  line-height: 110px;
+}
+div.dnssec-box p {
+  margin: 0;
+}
+@media screen and (max-width: 736px) {
+  div.dnssec-box {
+    width: 80px;
+  }
+  div.dnssec-box a {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
 span.emoticon {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 span.emoticon img {
-  height: 30px;
+  height: 25px;
 }
 
 ul.iconify li {
