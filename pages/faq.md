@@ -13,6 +13,7 @@ permalink: "/faq/"
 - [¿Qué nos asegura el cifrado?](#{{ '¿Qué nos asegura el cifrado?' | slug }})
 - [¿Qué significan las notas, por qué son importantes?](#{{ '¿Qué significan las notas, por qué son importantes?' | slug }})
 - [¿Qué significa que los emails son vulnerables a suplantación de identidad?](#{{ '¿Qué significa que los emails son vulnerables a suplantación de identidad?' | slug }})
+- [¿Qué significa que el dominio es vulnerable a suplantación?](#{{ '¿Qué significa que el dominio es vulnerable a suplantación?' | slug }})
 - [¿Qué tipo de problemas podría haber en webs que no tienen esa nota?](#{{ '¿Qué tipo de problemas podría haber en webs que no tienen esa nota?' | slug }})
 - [¿Debemos exigir webs seguras?](#{{ '¿Debemos exigir webs seguras?' | slug }})
 - [¿Cómo puedo participar en #websegura?](#{{ '¿Cómo puedo participar en #websegura?' | slug }})
@@ -65,6 +66,14 @@ Recientemente hemos empezado también a analizar la seguridad de los emails de e
 Esto es, que cualquiera pueda enviarnos un email haciéndose pasar por nombre@lawebinstitucional.com sin que podamos detectarlo.
 
 De esta forma los ciudadanos y los trabajadores públicos pueden ser objeto muy fácil de engaños (phising) para realizar acciones que les perjudiquen, incluido robo de datos o instalación de software malicioso para secuestrar sus datos.
+
+<a id="{{ '¿Qué significa que el dominio es vulnerable a suplantación?' | slug }}"></a>
+
+## ¿Qué significa que el dominio es vulnerable a suplantación?
+
+Si un dominio no está protegido por [DNSSEC](https://www.incibe.es/protege-tu-empresa/blog/dnssec-asegurando-integridad-y-autenticidad-tu-dominio-web) para proteger su integridad y autenticidad, podría ser víctima de redirección o suplantación por otro. Esta protección asegura que sólo el dueño del dominio puede definir dónde están ubicados los servidores de la web y el correo.
+
+Un ciudadano podría ser redirigido a una página que parece ser la misma que la que intenta visitar pero ser una versión "clonada" por un actor malicioso para robar sus datos u ofrecerle información falsa.
 
 <a id="{{ '¿Qué tipo de problemas podría haber en webs que no tienen esa nota?' | slug }}"></a>
 

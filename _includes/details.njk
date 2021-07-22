@@ -14,6 +14,13 @@
   </div>
 {% endif %}
 
+{% if not web.url | dmarc_secure %}
+  <div class="dnssec-box" title="Vulnerable a suplantación de identidad de dominio">
+    <a href="/faq/#que-significa-que-el-dominio-es-vulnerable-a-suplantacion">🌐</a>
+    <p>Dominio vulnerable</p>
+    </div>
+{% endif %}
+
 <h2>🔎 Resultado del análisis</h2>
 
 <ul>
@@ -41,12 +48,16 @@
   {% endif %}
 </ul>
 
-<p>{{ results | abbr }}.<br>
-Los emails de este sitio son {% if web.url | dmarc_secure %}seguros{% else %}<strong>vulnerables</strong>{% endif %} frente a <a href="/faq/#que-significa-que-los-emails-son-vulnerables-a-suplantacion-de-identidad">suplantación de identidad</a>.</p>
+<ul>
+<li> {{ results | abbr }}.</li>
+<li> Los emails de este sitio son {% if web.url | dmarc_secure %}seguros{% else %}<strong>vulnerables</strong>{% endif %} frente a <a href="/faq/#que-significa-que-los-emails-son-vulnerables-a-suplantacion-de-identidad">suplantación de identidad</a>.</li>
+<li> <a href="/faq/#que-significa-que-el-dominio-es-vulnerable-a-suplantacion">Suplantación de dominio</a>: {% if web.url | dmarc_secure %}Segura{% else %}<strong>Vulnerable</strong>{% endif %}</li>
+</ul>
 
 <ul class="iconify">
   <li><a href="https://observatory.mozilla.org/analyze/{{ web.url }}">🖥 Informe técnico del análisis de la web</a></li>
   <li><a href="https://dmarcguide.globalcyberalliance.org/#/tool-select?d={{ web.url }}&r=s&s=none&lang=es"> ✉️ Informe técnico del análisis del email</a></li>
+  <li><a href="https://dnssec-analyzer.verisignlabs.com/{{ web.url }}">🌐 Informe técnico de la seguridad del nombre de dominio</a></li>
 </ul>
 
 {% if (web.twitter) and (results.score < 70) %}

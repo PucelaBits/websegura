@@ -169,22 +169,22 @@ module.exports = function (eleventyConfig) {
     let abbr = "";
     switch (security && security.grade && security.grade[0]) {
       case "A":
-        abbr = "El sitio es muy seguro.";
+        abbr = "La web es muy segura.";
         break;
       case "B":
-        abbr = "El sitio es seguro.";
+        abbr = "La web es segura.";
         break;
       case "C":
-        abbr = "El sitio podría mejorar su seguridad.";
+        abbr = "La web podría mejorar su seguridad.";
         break;
       case "D":
-        abbr = "El sitio debería mejorar su seguridad.";
+        abbr = "La web debería mejorar su seguridad.";
         break;
       case "E":
-        abbr = "El sitio es inseguro.";
+        abbr = "La web es insegura.";
         break;
       case "F":
-        abbr = "El sitio es muy inseguro.";
+        abbr = "La web es muy insegura.";
         break;
       default:
         return "Desconocido.";
@@ -225,6 +225,11 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("dmarc_secure", (url) => {
     const dmarc_info = dmarcSummary[url];
     return dmarc_info.spf.valid === true && dmarc_info.dmarc.valid === true;
+  });
+
+  eleventyConfig.addFilter("dnssec", (url) => {
+    const dmarc_info = dmarcSummary[url];
+    return dmarc_info.dnssec;
   });
 
   // % de webs seguras

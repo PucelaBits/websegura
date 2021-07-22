@@ -154,6 +154,8 @@ div.phising-box {
     height: 128px;
   }
 
+  p { margin: 0; }
+
   @include breakpoint("<=small") {
   width: 80px;
   img {
@@ -162,10 +164,34 @@ div.phising-box {
   }
 }
 
+div.dnssec-box {
+  width: 128px;
+  float: right;
+  clear: both;
+  margin: 1em 0;
+  font-size: 0.8em;
+  text-align: center;
+
+  a {
+    font-size: 110px;
+    line-height: 110px;
+  }
+
+  p { margin: 0; }
+
+  @include breakpoint("<=small") {
+  width: 80px;
+  a {
+      font-size: 60px;
+      line-height: 60px;
+    }
+  }
+}
+
 span.emoticon {
-  font-size: 2em;
+  font-size: 1.5em;
   img {
-    height: 30px;
+    height: 25px;
   }
 }
 
