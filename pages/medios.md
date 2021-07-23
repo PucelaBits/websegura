@@ -12,6 +12,22 @@ En esta página listamos todas las apariciones del proyecto en medios. Si eres u
 
 ---
 
+![eldiario](/images/medios/eldiario2.jpg#thumbnail "eldiario")
+
+#### [El 97% de los emails que usan los funcionarios está desprotegido frente a robos de identidad ](https://www.eldiario.es/tecnologia/97-emails-funcionarios-desprotegido-frente-robos-identidad_1_8160330.html)
+
+_23 de julio 2021 - elDiario.es_
+
+---
+
+![businessinsider](/images/medios/businessinsider2.jpg#thumbnail "businessinsider")
+
+#### [Alerta 'phishing': solo 1 de 772 correos electrónicos de organismos públicos está protegido contra la suplantación de identidad](https://www.businessinsider.es/menos-4-emails-organismos-publicos-protegido-pshishing-903263)
+
+_22 de julio 2021 - Business Insider_
+
+---
+
 ![hipertextual](/images/medios/hipertextual2.jpg#thumbnail "hipertextual")
 
 #### [Correos y Hacienda tienen un serio problema con el phishing o suplantación de identidad](https://hipertextual.com/2021/07/phishing-suplantacion-identidad-correos-hacienda)
