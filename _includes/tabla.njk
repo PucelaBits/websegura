@@ -15,7 +15,7 @@
               <td>
                 <a href="/w/{{ web.url | replace('.', '!') }}" title="{{ web | abbr }}">
                   {% if not web.url | dmarc_secure %}
-                    <span class="phising" title="Vulnerable a suplantación de identidad de emails"><img src="/images/phising.png"></span>
+                    <span class="phishing" title="Vulnerable a suplantación de identidad de emails"><img src="/images/phishing.png"></span>
                   {% endif %}
                   {% if web.tests_passed < 5 %}☠️{% else %}{{ web.grade }}{% endif %}
                 </a>
@@ -70,7 +70,7 @@ https://websegura.pucelabits.org'| urlEncode }}{{ path }}{{ '?pk_campaign=Hazsel
               <td>
                 <a href="/w/{{ web.domain | replace('.', '!') }}">
                   {% if not web.domain | dmarc_secure %}
-                    <span class="phising" title="Vulnerable a suplantación de identidad de emails"><img src="/images/phising.png"></span>
+                    <span class="phishing" title="Vulnerable a suplantación de identidad de emails"><img src="/images/phishing.png"></span>
                   {% else %}
                     <span title="Seguro frente a suplantación de identidad de emails">✉️</span>
                   {% endif %}

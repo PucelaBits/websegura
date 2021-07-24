@@ -65,7 +65,7 @@ Recientemente hemos empezado también a analizar la seguridad de los emails de e
 
 Esto es, que cualquiera pueda enviarnos un email haciéndose pasar por nombre@lawebinstitucional.com sin que podamos detectarlo.
 
-De esta forma los ciudadanos y los trabajadores públicos pueden ser objeto muy fácil de engaños (phising) para realizar acciones que les perjudiquen, incluido robo de datos o instalación de software malicioso para secuestrar sus datos.
+De esta forma los ciudadanos y los trabajadores públicos pueden ser objeto muy fácil de engaños (phishing) para realizar acciones que les perjudiquen, incluido robo de datos o instalación de software malicioso para secuestrar sus datos.
 
 <a id="{{ '¿Qué significa que el dominio es vulnerable a suplantación?' | slug }}"></a>
 

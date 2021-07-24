@@ -8,8 +8,8 @@
 <div id="score" class="{{ results | color }}">{% if results.tests_passed < 5 %}☠️{% else %}{{ results.grade }}{% endif %}</div>
 
 {% if not web.url | dmarc_secure %}
-  <div class="phising-box" title="Vulnerable a suplantación de identidad de emails">
-    <a href="/faq/#que-significa-que-los-emails-son-vulnerables-a-suplantacion-de-identidad"><img src="/images/phising.png"></a>
+  <div class="phishing-box" title="Vulnerable a suplantación de identidad de emails">
+    <a href="/faq/#que-significa-que-los-emails-son-vulnerables-a-suplantacion-de-identidad"><img src="/images/phishing.png"></a>
     <p>Emails vulnerables</p>
   </div>
 {% endif %}
