@@ -31,8 +31,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "minerva.ttd.net",
-        "artemis.ttd.net"
+        "artemis.ttd.net",
+        "minerva.ttd.net"
       ],
       "warnings": []
     },
@@ -73,8 +73,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "artemis.ttd.net",
-        "minerva.ttd.net"
+        "minerva.ttd.net",
+        "artemis.ttd.net"
       ],
       "warnings": []
     },
@@ -231,8 +231,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "minerva.ttd.net",
-        "artemis.ttd.net"
+        "artemis.ttd.net",
+        "minerva.ttd.net"
       ],
       "warnings": []
     },
@@ -326,14 +326,58 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "dns2.diputaciondepalencia.es",
-        "dns1.diputaciondepalencia.es"
+        "dns1.diputaciondepalencia.es",
+        "dns2.diputaciondepalencia.es"
       ],
       "warnings": []
     },
     "mx": {
-      "hosts": [],
-      "error": "The DNS operation timed out after 1.1 seconds"
+      "hosts": [
+        {
+          "preference": 1,
+          "hostname": "aspmx.l.google.com",
+          "addresses": [
+            "173.194.68.26",
+            "2607:f8b0:400d:c07::1b"
+          ]
+        },
+        {
+          "preference": 5,
+          "hostname": "alt1.aspmx.l.google.com",
+          "addresses": [
+            "2800:3f0:4003:c00::1a",
+            "64.233.186.26"
+          ]
+        },
+        {
+          "preference": 5,
+          "hostname": "alt2.aspmx.l.google.com",
+          "addresses": [
+            "209.85.202.26",
+            "2a00:1450:400b:c00::1a"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "aspmx2.googlemail.com",
+          "addresses": [
+            "2800:3f0:4003:c00::1b",
+            "64.233.186.26"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "aspmx3.googlemail.com",
+          "addresses": [
+            "209.85.202.27",
+            "2a00:1450:400b:c00::1b"
+          ]
+        }
+      ],
+      "warnings": [
+        "2800:3f0:4003:c00::1a does not have any reverse DNS (PTR) records",
+        "2800:3f0:4003:c00::1b does not have any reverse DNS (PTR) records"
+      ]
     },
     "spf": {
       "record": "v=spf1 include:_spf.google.com ~all",
@@ -541,8 +585,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "dns.mad.idec.net",
-        "dns.lpa.idec.net"
+        "dns.lpa.idec.net",
+        "dns.mad.idec.net"
       ],
       "warnings": []
     },
@@ -989,8 +1033,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "nsv2.plaindns.net",
-        "nsv1.plaindns.net"
+        "nsv1.plaindns.net",
+        "nsv2.plaindns.net"
       ],
       "warnings": []
     },
@@ -1089,16 +1133,52 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns1075.ui-dns.biz",
-        "ns1075.ui-dns.com",
+        "ns1075.ui-dns.de",
         "ns1075.ui-dns.org",
-        "ns1075.ui-dns.de"
+        "ns1075.ui-dns.com",
+        "ns1075.ui-dns.biz"
       ],
       "warnings": []
     },
     "mx": {
-      "hosts": [],
-      "error": "The DNS operation timed out after 1.1 seconds"
+      "hosts": [
+        {
+          "preference": 1,
+          "hostname": "aspmx.l.google.com",
+          "addresses": [
+            "173.194.68.26",
+            "2607:f8b0:400d:c07::1b"
+          ]
+        },
+        {
+          "preference": 5,
+          "hostname": "alt1.aspmx.l.google.com",
+          "addresses": [
+            "2800:3f0:4003:c00::1a",
+            "64.233.186.26"
+          ]
+        },
+        {
+          "preference": 5,
+          "hostname": "alt2.aspmx.l.google.com",
+          "addresses": [
+            "209.85.202.26",
+            "2a00:1450:400b:c00::1a"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "aspmx2.googlemail.com",
+          "addresses": [
+            "2800:3f0:4003:c00::1b",
+            "64.233.186.26"
+          ]
+        }
+      ],
+      "warnings": [
+        "2800:3f0:4003:c00::1a does not have any reverse DNS (PTR) records",
+        "2800:3f0:4003:c00::1b does not have any reverse DNS (PTR) records"
+      ]
     },
     "spf": {
       "record": null,
@@ -1174,9 +1254,9 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns3.dnsxperta.com",
         "ns2.dnsxperta.com",
-        "ns1.dnsxperta.com"
+        "ns1.dnsxperta.com",
+        "ns3.dnsxperta.com"
       ],
       "warnings": []
     },
@@ -1479,9 +1559,9 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns1.dnsxperta.com",
+        "ns2.dnsxperta.com",
         "ns3.dnsxperta.com",
-        "ns2.dnsxperta.com"
+        "ns1.dnsxperta.com"
       ],
       "warnings": []
     },
@@ -1517,8 +1597,8 @@
     "ns": {
       "hostnames": [
         "ns3.dnsxperta.com",
-        "ns2.dnsxperta.com",
-        "ns1.dnsxperta.com"
+        "ns1.dnsxperta.com",
+        "ns2.dnsxperta.com"
       ],
       "warnings": []
     },
@@ -1546,9 +1626,9 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns1.dnsxperta.com",
         "ns2.dnsxperta.com",
-        "ns3.dnsxperta.com"
+        "ns3.dnsxperta.com",
+        "ns1.dnsxperta.com"
       ],
       "warnings": []
     },
@@ -1829,9 +1909,9 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
+        "ns2.dnsxperta.com",
         "ns1.dnsxperta.com",
-        "ns3.dnsxperta.com",
-        "ns2.dnsxperta.com"
+        "ns3.dnsxperta.com"
       ],
       "warnings": []
     },
@@ -1911,8 +1991,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns2.dnsxperta.com",
         "ns3.dnsxperta.com",
+        "ns2.dnsxperta.com",
         "ns1.dnsxperta.com"
       ],
       "warnings": []
@@ -2081,8 +2161,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns.redunda.com",
-        "ns2.redunda.com"
+        "ns2.redunda.com",
+        "ns.redunda.com"
       ],
       "warnings": []
     },
@@ -2158,7 +2238,7 @@
       "record": null,
       "valid": false,
       "location": null,
-      "error": "The DNS operation timed out after 1.1 seconds"
+      "error": "A DMARC record does not exist for this domain or its base domain"
     }
   },
   "bon.navarra.es": {
@@ -2193,8 +2273,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns3.dnsxperta.com",
         "ns2.dnsxperta.com",
+        "ns3.dnsxperta.com",
         "ns1.dnsxperta.com"
       ],
       "warnings": []
@@ -2266,7 +2346,7 @@
       "record": null,
       "valid": false,
       "location": null,
-      "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.bonreposimirambell.es\n\nv=spf1 include:dnsxperta.com -all\n\nMS=ms69461387\n\nMS=E85AFC60C08B4C91A7BAC93144E8F1F1743780DC"
+      "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.bonreposimirambell.es\n\nMS=ms69461387\n\nv=spf1 include:dnsxperta.com -all\n\nMS=E85AFC60C08B4C91A7BAC93144E8F1F1743780DC"
     }
   },
   "bop.sede.diputaciondevalladolid.es": {
@@ -2360,7 +2440,7 @@
       "record": null,
       "valid": false,
       "location": null,
-      "error": "A DMARC record does not exist for this domain or its base domain"
+      "error": "The DNS operation timed out after 1.1 seconds"
     }
   },
   "bv.gva.es": {
@@ -2899,9 +2979,9 @@
     "ns": {
       "hostnames": [
         "ns-es.1and1-dns.org",
-        "ns-es.1and1-dns.biz",
+        "ns-es.1and1-dns.es",
         "ns-es.1and1-dns.com",
-        "ns-es.1and1-dns.es"
+        "ns-es.1and1-dns.biz"
       ],
       "warnings": []
     },
@@ -2987,8 +3067,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns2.dnsxperta.com",
         "ns3.dnsxperta.com",
+        "ns2.dnsxperta.com",
         "ns1.dnsxperta.com"
       ],
       "warnings": []
@@ -3069,8 +3149,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "dns1.catarroja.es",
-        "dns2.catarroja.es"
+        "dns2.catarroja.es",
+        "dns1.catarroja.es"
       ],
       "warnings": []
     },
@@ -3297,10 +3377,10 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns-1939.awsdns-50.co.uk",
         "ns-1043.awsdns-02.org",
+        "ns-266.awsdns-33.com",
         "ns-675.awsdns-20.net",
-        "ns-266.awsdns-33.com"
+        "ns-1939.awsdns-50.co.uk"
       ],
       "warnings": []
     },
@@ -3501,7 +3581,7 @@
           "preference": 10,
           "hostname": "cersasme-es01c.mail.protection.outlook.com",
           "addresses": [
-            "104.47.17.74",
+            "104.47.17.138",
             "104.47.18.74"
           ]
         }
@@ -3633,9 +3713,9 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
+        "machuca.cervantes.es",
         "sun.rediris.es",
         "chico.rediris.es",
-        "machuca.cervantes.es",
         "dns.cervantes.es"
       ],
       "warnings": []
@@ -3686,8 +3766,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns1.dnsxperta.com",
         "ns3.dnsxperta.com",
+        "ns1.dnsxperta.com",
         "ns2.dnsxperta.com"
       ],
       "warnings": []
@@ -3931,14 +4011,59 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "elinore.ns.cloudflare.com",
-        "charles.ns.cloudflare.com"
+        "charles.ns.cloudflare.com",
+        "elinore.ns.cloudflare.com"
       ],
       "warnings": []
     },
     "mx": {
-      "hosts": [],
-      "error": "The DNS operation timed out after 1.1 seconds"
+      "hosts": [
+        {
+          "preference": 1,
+          "hostname": "aspmx.l.google.com",
+          "addresses": [
+            "173.194.68.26",
+            "2607:f8b0:400d:c07::1b"
+          ]
+        },
+        {
+          "preference": 5,
+          "hostname": "alt1.aspmx.l.google.com",
+          "addresses": [
+            "2800:3f0:4003:c00::1a",
+            "64.233.186.26"
+          ]
+        },
+        {
+          "preference": 5,
+          "hostname": "alt2.aspmx.l.google.com",
+          "addresses": [
+            "209.85.202.26",
+            "2a00:1450:400b:c00::1a"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "alt3.aspmx.l.google.com",
+          "addresses": [
+            "2a00:1450:400c:c0b::1b",
+            "64.233.184.27"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "alt4.aspmx.l.google.com",
+          "addresses": [
+            "142.250.27.26",
+            "2a00:1450:4025:401::1b"
+          ]
+        }
+      ],
+      "warnings": [
+        "2800:3f0:4003:c00::1a does not have any reverse DNS (PTR) records",
+        "142.250.27.26 does not have any reverse DNS (PTR) records",
+        "2a00:1450:4025:401::1b does not have any reverse DNS (PTR) records"
+      ]
     },
     "spf": {
       "record": "v=spf1 include:_spf.google.com ~all",
@@ -4134,7 +4259,7 @@
       }
     },
     "dmarc": {
-      "record": "v=DMARC1; p=quarantine; sp=quarantine; adkim=r; aspf=r; rua=mailto:webmaster@cjcanarias.es",
+      "record": "v=DMARC1; p=reject; sp=reject; adkim=r; aspf=r; rua=mailto:webmaster@cjcanarias.es; ruf=mailto:webmaster@cjcanarias.es",
       "valid": true,
       "location": "cjcanarias.es",
       "warnings": [],
@@ -4144,11 +4269,11 @@
           "explicit": true
         },
         "p": {
-          "value": "quarantine",
+          "value": "reject",
           "explicit": true
         },
         "sp": {
-          "value": "quarantine",
+          "value": "reject",
           "explicit": true
         },
         "adkim": {
@@ -4160,6 +4285,16 @@
           "explicit": true
         },
         "rua": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "webmaster@cjcanarias.es",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "ruf": {
           "value": [
             {
               "scheme": "mailto",
@@ -4210,7 +4345,7 @@
           "hostname": "cjcm-es.mail.protection.outlook.com",
           "addresses": [
             "104.47.10.36",
-            "104.47.8.36"
+            "104.47.9.36"
           ]
         }
       ],
@@ -4342,9 +4477,9 @@
     "ns": {
       "hostnames": [
         "ns1109.ui-dns.de",
+        "ns1019.ui-dns.biz",
         "ns1102.ui-dns.org",
-        "ns1031.ui-dns.com",
-        "ns1019.ui-dns.biz"
+        "ns1031.ui-dns.com"
       ],
       "warnings": []
     },
@@ -4415,7 +4550,7 @@
     "spf": {
       "record": null,
       "valid": false,
-      "error": "All nameservers failed to answer the query cnmc.es. IN TXT: Server 127.0.0.53 UDP port 53 answered SERVFAIL"
+      "error": "The DNS operation timed out after 1.1 seconds"
     },
     "dmarc": {
       "record": null,
@@ -4430,8 +4565,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "sabina.cti.csic.es",
-        "olmo.csic.es"
+        "olmo.csic.es",
+        "sabina.cti.csic.es"
       ],
       "warnings": []
     },
@@ -4504,10 +4639,10 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
+        "ns1112.ui-dns.de",
         "ns1112.ui-dns.org",
         "ns1112.ui-dns.com",
-        "ns1112.ui-dns.biz",
-        "ns1112.ui-dns.de"
+        "ns1112.ui-dns.biz"
       ],
       "warnings": []
     },
@@ -4548,10 +4683,10 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns.dinahosting.com",
-        "ns2.dinahosting.com",
         "ns4.dinahosting.com",
-        "ns3.dinahosting.com"
+        "ns3.dinahosting.com",
+        "ns2.dinahosting.com",
+        "ns.dinahosting.com"
       ],
       "warnings": []
     },
@@ -4580,15 +4715,59 @@
     "ns": {
       "hostnames": [
         "ns4.dinahosting.com",
-        "ns2.dinahosting.com",
         "ns3.dinahosting.com",
+        "ns2.dinahosting.com",
         "ns.dinahosting.com"
       ],
       "warnings": []
     },
     "mx": {
-      "hosts": [],
-      "error": "The DNS operation timed out after 1.1 seconds"
+      "hosts": [
+        {
+          "preference": 10,
+          "hostname": "aspmx.l.google.com",
+          "addresses": [
+            "173.194.68.26",
+            "2607:f8b0:400d:c07::1b"
+          ]
+        },
+        {
+          "preference": 20,
+          "hostname": "alt1.aspmx.l.google.com",
+          "addresses": [
+            "2800:3f0:4003:c00::1a",
+            "64.233.186.26"
+          ]
+        },
+        {
+          "preference": 30,
+          "hostname": "alt2.aspmx.l.google.com",
+          "addresses": [
+            "209.85.202.26",
+            "2a00:1450:400b:c00::1a"
+          ]
+        },
+        {
+          "preference": 40,
+          "hostname": "aspmx2.googlemail.com",
+          "addresses": [
+            "2800:3f0:4003:c00::1b",
+            "64.233.186.26"
+          ]
+        },
+        {
+          "preference": 50,
+          "hostname": "aspmx3.googlemail.com",
+          "addresses": [
+            "209.85.202.27",
+            "2a00:1450:400b:c00::1b"
+          ]
+        }
+      ],
+      "warnings": [
+        "2800:3f0:4003:c00::1a does not have any reverse DNS (PTR) records",
+        "2800:3f0:4003:c00::1b does not have any reverse DNS (PTR) records"
+      ]
     },
     "spf": {
       "record": "v=spf1 include:_spf.google.com ip4:31.200.242.203 ~all",
@@ -4802,15 +4981,51 @@
     "ns": {
       "hostnames": [
         "ns1107.ui-dns.org",
-        "ns1107.ui-dns.biz",
         "ns1107.ui-dns.com",
+        "ns1107.ui-dns.biz",
         "ns1107.ui-dns.de"
       ],
       "warnings": []
     },
     "mx": {
-      "hosts": [],
-      "error": "The DNS operation timed out after 1.1 seconds"
+      "hosts": [
+        {
+          "preference": 1,
+          "hostname": "aspmx.l.google.com",
+          "addresses": [
+            "173.194.68.26",
+            "2607:f8b0:400d:c07::1b"
+          ]
+        },
+        {
+          "preference": 5,
+          "hostname": "alt1.aspmx.l.google.com",
+          "addresses": [
+            "2800:3f0:4003:c00::1a",
+            "64.233.186.26"
+          ]
+        },
+        {
+          "preference": 5,
+          "hostname": "alt2.aspmx.l.google.com",
+          "addresses": [
+            "209.85.202.26",
+            "2a00:1450:400b:c00::1a"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "aspmx2.googlemail.com",
+          "addresses": [
+            "2800:3f0:4003:c00::1b",
+            "64.233.186.26"
+          ]
+        }
+      ],
+      "warnings": [
+        "2800:3f0:4003:c00::1a does not have any reverse DNS (PTR) records",
+        "2800:3f0:4003:c00::1b does not have any reverse DNS (PTR) records"
+      ]
     },
     "spf": {
       "record": null,
@@ -4830,8 +5045,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "artemis.ttd.net",
-        "minerva.ttd.net"
+        "minerva.ttd.net",
+        "artemis.ttd.net"
       ],
       "warnings": []
     },
@@ -4840,12 +5055,13 @@
         {
           "preference": 1,
           "hostname": "cooperacionespanola-es.mail.protection.outlook.com",
-          "addresses": []
+          "addresses": [
+            "104.47.12.36",
+            "104.47.14.36"
+          ]
         }
       ],
-      "warnings": [
-        "The DNS operation timed out after 1.1 seconds"
-      ]
+      "warnings": []
     },
     "spf": {
       "record": "v=spf1 include:spf.protection.outlook.com -all",
@@ -4972,9 +5188,9 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns2.dnsxperta.com",
         "ns3.dnsxperta.com",
-        "ns1.dnsxperta.com"
+        "ns1.dnsxperta.com",
+        "ns2.dnsxperta.com"
       ],
       "warnings": []
     },
@@ -5122,8 +5338,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns3.dnsxperta.com",
         "ns1.dnsxperta.com",
+        "ns3.dnsxperta.com",
         "ns2.dnsxperta.com"
       ],
       "warnings": []
@@ -5531,9 +5747,9 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns3.cdmon.net",
-        "ns4.cdmondns-01.org",
         "ns5.cdmondns-01.com",
+        "ns4.cdmondns-01.org",
+        "ns3.cdmon.net",
         "ns2.cdmon.net",
         "ns1.cdmon.net"
       ],
@@ -5671,8 +5887,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "dns10.ovh.net",
-        "ns10.ovh.net"
+        "ns10.ovh.net",
+        "dns10.ovh.net"
       ],
       "warnings": []
     },
@@ -5683,7 +5899,7 @@
           "hostname": "distritodigitalcv-es.mail.protection.outlook.com",
           "addresses": [
             "104.47.12.36",
-            "104.47.14.36"
+            "104.47.13.36"
           ]
         }
       ],
@@ -5974,10 +6190,10 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns-931.awsdns-52.net",
-        "ns-206.awsdns-25.com",
         "ns-1810.awsdns-34.co.uk",
-        "ns-1226.awsdns-25.org"
+        "ns-1226.awsdns-25.org",
+        "ns-931.awsdns-52.net",
+        "ns-206.awsdns-25.com"
       ],
       "warnings": []
     },
@@ -6065,14 +6281,58 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "dns2.diputaciondepalencia.es",
-        "dns1.diputaciondepalencia.es"
+        "dns1.diputaciondepalencia.es",
+        "dns2.diputaciondepalencia.es"
       ],
       "warnings": []
     },
     "mx": {
-      "hosts": [],
-      "error": "The DNS operation timed out after 1.1 seconds"
+      "hosts": [
+        {
+          "preference": 1,
+          "hostname": "aspmx.l.google.com",
+          "addresses": [
+            "173.194.68.26",
+            "2607:f8b0:400d:c07::1b"
+          ]
+        },
+        {
+          "preference": 5,
+          "hostname": "alt1.aspmx.l.google.com",
+          "addresses": [
+            "2800:3f0:4003:c00::1a",
+            "64.233.186.26"
+          ]
+        },
+        {
+          "preference": 5,
+          "hostname": "alt2.aspmx.l.google.com",
+          "addresses": [
+            "209.85.202.26",
+            "2a00:1450:400b:c00::1a"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "aspmx2.googlemail.com",
+          "addresses": [
+            "2800:3f0:4003:c00::1b",
+            "64.233.186.26"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "aspmx3.googlemail.com",
+          "addresses": [
+            "209.85.202.27",
+            "2a00:1450:400b:c00::1b"
+          ]
+        }
+      ],
+      "warnings": [
+        "2800:3f0:4003:c00::1a does not have any reverse DNS (PTR) records",
+        "2800:3f0:4003:c00::1b does not have any reverse DNS (PTR) records"
+      ]
     },
     "spf": {
       "record": "v=spf1 include:_spf.google.com ~all",
@@ -6327,8 +6587,70 @@
       "warnings": []
     },
     "mx": {
-      "hosts": [],
-      "error": "The DNS operation timed out after 1.1 seconds"
+      "hosts": [
+        {
+          "preference": 10,
+          "hostname": "aspmx.l.google.com",
+          "addresses": [
+            "173.194.68.26",
+            "2607:f8b0:400d:c07::1b"
+          ]
+        },
+        {
+          "preference": 20,
+          "hostname": "alt1.aspmx.l.google.com",
+          "addresses": [
+            "2800:3f0:4003:c00::1a",
+            "64.233.186.26"
+          ]
+        },
+        {
+          "preference": 20,
+          "hostname": "alt2.aspmx.l.google.com",
+          "addresses": [
+            "209.85.202.26",
+            "2a00:1450:400b:c00::1a"
+          ]
+        },
+        {
+          "preference": 30,
+          "hostname": "aspmx2.googlemail.com",
+          "addresses": [
+            "2800:3f0:4003:c00::1b",
+            "64.233.186.26"
+          ]
+        },
+        {
+          "preference": 30,
+          "hostname": "aspmx3.googlemail.com",
+          "addresses": [
+            "209.85.202.27",
+            "2a00:1450:400b:c00::1b"
+          ]
+        },
+        {
+          "preference": 30,
+          "hostname": "aspmx4.googlemail.com",
+          "addresses": [
+            "2a00:1450:400c:c0b::1b",
+            "64.233.184.27"
+          ]
+        },
+        {
+          "preference": 30,
+          "hostname": "aspmx5.googlemail.com",
+          "addresses": [
+            "142.250.27.27",
+            "2a00:1450:4025:401::1b"
+          ]
+        }
+      ],
+      "warnings": [
+        "2800:3f0:4003:c00::1a does not have any reverse DNS (PTR) records",
+        "2800:3f0:4003:c00::1b does not have any reverse DNS (PTR) records",
+        "142.250.27.27 does not have any reverse DNS (PTR) records",
+        "2a00:1450:4025:401::1b does not have any reverse DNS (PTR) records"
+      ]
     },
     "spf": {
       "record": "v=spf1 include:_spf.google.com ~all",
@@ -6562,8 +6884,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "dns.mad.idec.net",
-        "dns.lpa.idec.net"
+        "dns.lpa.idec.net",
+        "dns.mad.idec.net"
       ],
       "warnings": []
     },
@@ -6670,8 +6992,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns3.dnsxperta.com",
         "ns2.dnsxperta.com",
+        "ns3.dnsxperta.com",
         "ns1.dnsxperta.com"
       ],
       "warnings": []
@@ -6796,9 +7118,9 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns2.dnsxperta.com",
+        "ns3.dnsxperta.com",
         "ns1.dnsxperta.com",
-        "ns3.dnsxperta.com"
+        "ns2.dnsxperta.com"
       ],
       "warnings": []
     },
@@ -7009,8 +7331,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "burt.ns.cloudflare.com",
-        "lana.ns.cloudflare.com"
+        "lana.ns.cloudflare.com",
+        "burt.ns.cloudflare.com"
       ],
       "warnings": []
     },
@@ -7104,8 +7426,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "dns2.hostinet.com",
-        "dns1.hostinet.com"
+        "dns1.hostinet.com",
+        "dns2.hostinet.com"
       ],
       "warnings": []
     },
@@ -7142,8 +7464,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns1.evolutio.es",
-        "ns2.evolutio.es"
+        "ns2.evolutio.es",
+        "ns1.evolutio.es"
       ],
       "warnings": []
     },
@@ -7342,8 +7664,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns1.sarenet.es",
-        "ns2.sarenet.es"
+        "ns2.sarenet.es",
+        "ns1.sarenet.es"
       ],
       "warnings": []
     },
@@ -7353,7 +7675,7 @@
           "preference": 1,
           "hostname": "ensa-es.mail.protection.outlook.com",
           "addresses": [
-            "104.47.13.36",
+            "104.47.12.36",
             "104.47.14.36"
           ]
         }
@@ -7378,14 +7700,43 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "nia.ns.cloudflare.com",
-        "lex.ns.cloudflare.com"
+        "lex.ns.cloudflare.com",
+        "nia.ns.cloudflare.com"
       ],
       "warnings": []
     },
     "mx": {
-      "hosts": [],
-      "error": "The DNS operation timed out after 1.1 seconds"
+      "hosts": [
+        {
+          "preference": 1,
+          "hostname": "mx0.mail.ovh.net",
+          "addresses": [
+            "178.33.252.245"
+          ]
+        },
+        {
+          "preference": 5,
+          "hostname": "mx1.mail.ovh.net",
+          "addresses": [
+            "188.165.36.237"
+          ]
+        },
+        {
+          "preference": 50,
+          "hostname": "mx2.mail.ovh.net",
+          "addresses": [
+            "87.98.160.167"
+          ]
+        },
+        {
+          "preference": 100,
+          "hostname": "mx3.mail.ovh.net",
+          "addresses": [
+            "91.121.53.175"
+          ]
+        }
+      ],
+      "warnings": []
     },
     "spf": {
       "record": "v=spf1 include:mx.ovh.com include:amazonses.com ~all",
@@ -7513,8 +7864,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "dns1.nominalia.com",
-        "dns2.nominalia.com"
+        "dns2.nominalia.com",
+        "dns1.nominalia.com"
       ],
       "warnings": []
     },
@@ -7525,7 +7876,7 @@
           "hostname": "enusa-es.mail.protection.outlook.com",
           "addresses": [
             "104.47.12.36",
-            "104.47.14.36"
+            "104.47.13.36"
           ]
         }
       ],
@@ -7661,16 +8012,60 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns-1799.awsdns-32.co.uk",
         "ns-1185.awsdns-20.org",
+        "ns-79.awsdns-09.com",
         "ns-932.awsdns-52.net",
-        "ns-79.awsdns-09.com"
+        "ns-1799.awsdns-32.co.uk"
       ],
       "warnings": []
     },
     "mx": {
-      "hosts": [],
-      "error": "The DNS operation timed out after 1.1 seconds"
+      "hosts": [
+        {
+          "preference": 1,
+          "hostname": "aspmx.l.google.com",
+          "addresses": [
+            "173.194.68.26",
+            "2607:f8b0:400d:c07::1b"
+          ]
+        },
+        {
+          "preference": 5,
+          "hostname": "alt1.aspmx.l.google.com",
+          "addresses": [
+            "2800:3f0:4003:c00::1a",
+            "64.233.186.26"
+          ]
+        },
+        {
+          "preference": 5,
+          "hostname": "alt2.aspmx.l.google.com",
+          "addresses": [
+            "209.85.202.26",
+            "2a00:1450:400b:c00::1a"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "aspmx2.googlemail.com",
+          "addresses": [
+            "2800:3f0:4003:c00::1b",
+            "64.233.186.26"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "aspmx3.googlemail.com",
+          "addresses": [
+            "209.85.202.27",
+            "2a00:1450:400b:c00::1b"
+          ]
+        }
+      ],
+      "warnings": [
+        "2800:3f0:4003:c00::1a does not have any reverse DNS (PTR) records",
+        "2800:3f0:4003:c00::1b does not have any reverse DNS (PTR) records"
+      ]
     },
     "spf": {
       "record": null,
@@ -8018,8 +8413,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns5231.webempresa.eu",
-        "ns5232.webempresa.eu"
+        "ns5232.webempresa.eu",
+        "ns5231.webempresa.eu"
       ],
       "warnings": []
     },
@@ -8197,9 +8592,9 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns1.dnsxperta.com",
         "ns3.dnsxperta.com",
-        "ns2.dnsxperta.com"
+        "ns2.dnsxperta.com",
+        "ns1.dnsxperta.com"
       ],
       "warnings": []
     },
@@ -8279,8 +8674,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns03.ns-cloud4b.net",
         "ns06.ns-cloud4b.com",
+        "ns03.ns-cloud4b.net",
         "ns05.ns-cloud4b.org"
       ],
       "warnings": []
@@ -8291,8 +8686,8 @@
           "preference": 0,
           "hostname": "fecyt-es.mail.protection.outlook.com",
           "addresses": [
-            "104.47.10.36",
-            "104.47.8.36"
+            "104.47.8.36",
+            "104.47.9.36"
           ]
         }
       ],
@@ -8459,10 +8854,10 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns.dinahosting.com",
         "ns4.dinahosting.com",
         "ns3.dinahosting.com",
-        "ns2.dinahosting.com"
+        "ns2.dinahosting.com",
+        "ns.dinahosting.com"
       ],
       "warnings": []
     },
@@ -8509,7 +8904,7 @@
           "hostname": "mx.spamexperts.com",
           "addresses": [
             "2001:550:2:78::ca:100",
-            "38.109.53.20"
+            "38.89.254.156"
           ]
         },
         {
@@ -8786,8 +9181,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns2.dnsxperta.com",
         "ns3.dnsxperta.com",
+        "ns2.dnsxperta.com",
         "ns1.dnsxperta.com"
       ],
       "warnings": []
@@ -8824,9 +9219,9 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns2.dnsxperta.com",
         "ns3.dnsxperta.com",
-        "ns1.dnsxperta.com"
+        "ns1.dnsxperta.com",
+        "ns2.dnsxperta.com"
       ],
       "warnings": []
     },
@@ -9506,8 +9901,8 @@
     "ns": {
       "hostnames": [
         "ns3.interdomain.es",
-        "ns1.interdomain.net",
-        "ns2.interdomain.net"
+        "ns2.interdomain.net",
+        "ns1.interdomain.net"
       ],
       "warnings": []
     },
@@ -9584,10 +9979,10 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns4.bdm.microsoftonline.com",
-        "ns3.bdm.microsoftonline.com",
         "ns2.bdm.microsoftonline.com",
-        "ns1.bdm.microsoftonline.com"
+        "ns1.bdm.microsoftonline.com",
+        "ns4.bdm.microsoftonline.com",
+        "ns3.bdm.microsoftonline.com"
       ],
       "warnings": []
     },
@@ -9597,8 +9992,8 @@
           "preference": 0,
           "hostname": "ib3-org.mail.protection.outlook.com",
           "addresses": [
-            "104.47.18.138",
-            "104.47.18.202"
+            "104.47.18.202",
+            "104.47.22.138"
           ]
         }
       ],
@@ -9776,8 +10171,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns2.srv-acens.com",
-        "ns1.srv-acens.com"
+        "ns1.srv-acens.com",
+        "ns2.srv-acens.com"
       ],
       "warnings": []
     },
@@ -9870,8 +10265,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "artemis.ttd.net",
         "cramer.ine.es",
+        "artemis.ttd.net",
         "fourier.ine.es"
       ],
       "warnings": []
@@ -10031,8 +10426,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "crdserver.msc.es",
-        "mailhost.msc.es"
+        "mailhost.msc.es",
+        "crdserver.msc.es"
       ],
       "warnings": []
     },
@@ -10079,8 +10474,53 @@
       "warnings": []
     },
     "mx": {
-      "hosts": [],
-      "error": "The DNS operation timed out after 1.1 seconds"
+      "hosts": [
+        {
+          "preference": 1,
+          "hostname": "aspmx.l.google.com",
+          "addresses": [
+            "173.194.68.26",
+            "2607:f8b0:400d:c07::1b"
+          ]
+        },
+        {
+          "preference": 5,
+          "hostname": "alt1.aspmx.l.google.com",
+          "addresses": [
+            "2800:3f0:4003:c00::1a",
+            "64.233.186.26"
+          ]
+        },
+        {
+          "preference": 5,
+          "hostname": "alt2.aspmx.l.google.com",
+          "addresses": [
+            "209.85.202.26",
+            "2a00:1450:400b:c00::1a"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "alt3.aspmx.l.google.com",
+          "addresses": [
+            "2a00:1450:400c:c0b::1b",
+            "64.233.184.27"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "alt4.aspmx.l.google.com",
+          "addresses": [
+            "142.250.27.26",
+            "2a00:1450:4025:401::1b"
+          ]
+        }
+      ],
+      "warnings": [
+        "2800:3f0:4003:c00::1a does not have any reverse DNS (PTR) records",
+        "142.250.27.26 does not have any reverse DNS (PTR) records",
+        "2a00:1450:4025:401::1b does not have any reverse DNS (PTR) records"
+      ]
     },
     "spf": {
       "record": "v=spf1 include:_google.com~all",
@@ -10189,8 +10629,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "minerva.ttd.net",
-        "artemis.ttd.net"
+        "artemis.ttd.net",
+        "minerva.ttd.net"
       ],
       "warnings": []
     },
@@ -10226,8 +10666,8 @@
     "ns": {
       "hostnames": [
         "ns06.ns-cloud4b.com",
-        "ns05.ns-cloud4b.org",
-        "ns03.ns-cloud4b.net"
+        "ns03.ns-cloud4b.net",
+        "ns05.ns-cloud4b.org"
       ],
       "warnings": []
     },
@@ -10277,8 +10717,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "milano.icex.es",
-        "halcon.icex.es"
+        "halcon.icex.es",
+        "milano.icex.es"
       ],
       "warnings": []
     },
@@ -10541,8 +10981,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns2.dnsxperta.com",
         "ns1.dnsxperta.com",
+        "ns2.dnsxperta.com",
         "ns3.dnsxperta.com"
       ],
       "warnings": []
@@ -10578,8 +11018,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns3.dnsxperta.com",
         "ns1.dnsxperta.com",
+        "ns3.dnsxperta.com",
         "ns2.dnsxperta.com"
       ],
       "warnings": []
@@ -10590,8 +11030,8 @@
           "preference": 0,
           "hostname": "lafontdencarros-es.mail.protection.outlook.com",
           "addresses": [
-            "104.47.10.36",
-            "104.47.8.36"
+            "104.47.8.36",
+            "104.47.9.36"
           ]
         },
         {
@@ -10735,8 +11175,60 @@
       "warnings": []
     },
     "mx": {
-      "hosts": [],
-      "error": "The DNS operation timed out after 1.1 seconds"
+      "hosts": [
+        {
+          "preference": 0,
+          "hostname": "aspmx.l.google.com",
+          "addresses": [
+            "173.194.68.26",
+            "2607:f8b0:400d:c07::1b"
+          ]
+        },
+        {
+          "preference": 5,
+          "hostname": "alt1.aspmx.l.google.com",
+          "addresses": [
+            "2800:3f0:4003:c00::1a",
+            "64.233.186.26"
+          ]
+        },
+        {
+          "preference": 5,
+          "hostname": "alt2.aspmx.l.google.com",
+          "addresses": [
+            "209.85.202.26",
+            "2a00:1450:400b:c00::1a"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "alt3.aspmx.l.google.com",
+          "addresses": [
+            "2a00:1450:400c:c0b::1b",
+            "64.233.184.27"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "alt4.aspmx.l.google.com",
+          "addresses": [
+            "142.250.27.26",
+            "2a00:1450:4025:401::1b"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "mail.lagomera.travel",
+          "addresses": [
+            "212.89.16.163"
+          ]
+        }
+      ],
+      "warnings": [
+        "2800:3f0:4003:c00::1a does not have any reverse DNS (PTR) records",
+        "142.250.27.26 does not have any reverse DNS (PTR) records",
+        "2a00:1450:4025:401::1b does not have any reverse DNS (PTR) records"
+      ]
     },
     "spf": {
       "record": "v=spf1 include:_spf.google.com ~all",
@@ -10988,9 +11480,9 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
+        "ns3.dnsxperta.com",
         "ns2.dnsxperta.com",
-        "ns1.dnsxperta.com",
-        "ns3.dnsxperta.com"
+        "ns1.dnsxperta.com"
       ],
       "warnings": []
     },
@@ -11123,8 +11615,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns10.servicio-online.net",
         "ns12.servicio-online.net",
+        "ns10.servicio-online.net",
         "ns11.servicio-online.net"
       ],
       "warnings": []
@@ -11267,8 +11759,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns2.dnsxperta.com",
         "ns3.dnsxperta.com",
+        "ns2.dnsxperta.com",
         "ns1.dnsxperta.com"
       ],
       "warnings": []
@@ -11436,25 +11928,46 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "cardns1.larioja.org",
+        "cardns3.riojasalud.es",
         "cardns2.larioja.org",
-        "cardns3.riojasalud.es"
+        "cardns1.larioja.org"
       ],
       "warnings": []
     },
     "mx": {
-      "hosts": [],
-      "error": "The DNS operation timed out after 1.1 seconds"
+      "hosts": [
+        {
+          "preference": 20,
+          "hostname": "mx1.riojasalud.es",
+          "addresses": [
+            "193.145.4.9"
+          ]
+        },
+        {
+          "preference": 20,
+          "hostname": "mx2.riojasalud.es",
+          "addresses": [
+            "195.55.164.16"
+          ]
+        }
+      ],
+      "warnings": []
     },
     "spf": {
       "record": "v=spf1 mx ip4:193.145.4.9 ip4:193.145.4.10 ip4:195.55.164.16 -all",
       "valid": true,
       "dns_lookups": 1,
-      "warnings": [
-        "The DNS operation timed out after 1.1 seconds"
-      ],
+      "warnings": [],
       "parsed": {
         "pass": [
+          {
+            "value": "mx1.riojasalud.es",
+            "mechanism": "mx"
+          },
+          {
+            "value": "mx2.riojasalud.es",
+            "mechanism": "mx"
+          },
           {
             "value": "193.145.4.9",
             "mechanism": "ip4"
@@ -11481,9 +11994,7 @@
       "record": "v=DMARC1; p=quarantine; rua=mailto:postmaster@larioja.org; adkim=s; aspf=s;",
       "valid": true,
       "location": "larioja.org",
-      "warnings": [
-        "Failed to retrieve MX records for the domain of rua email address postmaster@larioja.org - The DNS operation timed out after 1.1 seconds"
-      ],
+      "warnings": [],
       "tags": {
         "v": {
           "value": "DMARC1",
@@ -11494,7 +12005,13 @@
           "explicit": true
         },
         "rua": {
-          "value": "mailto:postmaster@larioja.org",
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "postmaster@larioja.org",
+              "size_limit": null
+            }
+          ],
           "explicit": true
         },
         "adkim": {
@@ -11538,9 +12055,9 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns3.dnsxperta.com",
         "ns1.dnsxperta.com",
-        "ns2.dnsxperta.com"
+        "ns2.dnsxperta.com",
+        "ns3.dnsxperta.com"
       ],
       "warnings": []
     },
@@ -11620,8 +12137,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "tirant.gva.es",
-        "ninot.gva.es"
+        "ninot.gva.es",
+        "tirant.gva.es"
       ],
       "warnings": []
     },
@@ -11659,8 +12176,8 @@
     "ns": {
       "hostnames": [
         "ns1.dnsxperta.com",
-        "ns2.dnsxperta.com",
-        "ns3.dnsxperta.com"
+        "ns3.dnsxperta.com",
+        "ns2.dnsxperta.com"
       ],
       "warnings": []
     },
@@ -11810,8 +12327,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns3.dnsxperta.com",
         "ns2.dnsxperta.com",
+        "ns3.dnsxperta.com",
         "ns1.dnsxperta.com"
       ],
       "warnings": []
@@ -11847,9 +12364,9 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns1.dnsxperta.com",
         "ns2.dnsxperta.com",
-        "ns3.dnsxperta.com"
+        "ns3.dnsxperta.com",
+        "ns1.dnsxperta.com"
       ],
       "warnings": []
     },
@@ -11884,8 +12401,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "146.255.96.10.ns2.dnsgigas.es",
-        "146.255.96.10.dnsgigas.es"
+        "146.255.96.10.dnsgigas.es",
+        "146.255.96.10.ns2.dnsgigas.es"
       ],
       "warnings": []
     },
@@ -11930,7 +12447,7 @@
           "preference": 0,
           "hostname": "mancohortasud-es.mail.protection.outlook.com",
           "addresses": [
-            "104.47.8.36",
+            "104.47.10.36",
             "104.47.9.36"
           ]
         },
@@ -12256,9 +12773,9 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns3.dnsxperta.com",
+        "ns1.dnsxperta.com",
         "ns2.dnsxperta.com",
-        "ns1.dnsxperta.com"
+        "ns3.dnsxperta.com"
       ],
       "warnings": []
     },
@@ -12320,15 +12837,34 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
+        "ns3.dnsxperta.com",
         "ns2.dnsxperta.com",
-        "ns1.dnsxperta.com",
-        "ns3.dnsxperta.com"
+        "ns1.dnsxperta.com"
       ],
       "warnings": []
     },
     "mx": {
-      "hosts": [],
-      "error": "The DNS operation timed out after 1.1 seconds"
+      "hosts": [
+        {
+          "preference": 10,
+          "hostname": "aspmx.l.google.com",
+          "addresses": [
+            "173.194.68.26",
+            "2607:f8b0:400d:c07::1b"
+          ]
+        },
+        {
+          "preference": 20,
+          "hostname": "alt1.aspmx.l.google.com",
+          "addresses": [
+            "2800:3f0:4003:c00::1a",
+            "64.233.186.26"
+          ]
+        }
+      ],
+      "warnings": [
+        "2800:3f0:4003:c00::1a does not have any reverse DNS (PTR) records"
+      ]
     },
     "spf": {
       "record": null,
@@ -12348,8 +12884,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns1.hostingsage.com",
-        "ns2.hostingsage.com"
+        "ns2.hostingsage.com",
+        "ns1.hostingsage.com"
       ],
       "warnings": []
     },
@@ -12414,9 +12950,9 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
+        "ns1.dnsxperta.com",
         "ns3.dnsxperta.com",
-        "ns2.dnsxperta.com",
-        "ns1.dnsxperta.com"
+        "ns2.dnsxperta.com"
       ],
       "warnings": []
     },
@@ -12501,8 +13037,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "nsv1.plaindns.net",
-        "nsv2.plaindns.net"
+        "nsv2.plaindns.net",
+        "nsv1.plaindns.net"
       ],
       "warnings": []
     },
@@ -12588,8 +13124,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns2.dondominio.com",
-        "ns6.dondominio.com"
+        "ns6.dondominio.com",
+        "ns2.dondominio.com"
       ],
       "warnings": []
     },
@@ -12946,10 +13482,10 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
+        "ns-1098.awsdns-09.org",
         "ns-780.awsdns-33.net",
         "ns-2004.awsdns-58.co.uk",
-        "ns-158.awsdns-19.com",
-        "ns-1098.awsdns-09.org"
+        "ns-158.awsdns-19.com"
       ],
       "warnings": []
     },
@@ -13140,8 +13676,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns1.dnsxperta.com",
         "ns3.dnsxperta.com",
+        "ns1.dnsxperta.com",
         "ns2.dnsxperta.com"
       ],
       "warnings": []
@@ -13293,8 +13829,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ninot.gva.es",
-        "tirant.gva.es"
+        "tirant.gva.es",
+        "ninot.gva.es"
       ],
       "warnings": []
     },
@@ -13359,9 +13895,9 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns3.digitalocean.com",
         "ns2.digitalocean.com",
-        "ns1.digitalocean.com"
+        "ns1.digitalocean.com",
+        "ns3.digitalocean.com"
       ],
       "warnings": []
     },
@@ -13551,8 +14087,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "tirant.gva.es",
-        "ninot.gva.es"
+        "ninot.gva.es",
+        "tirant.gva.es"
       ],
       "warnings": []
     },
@@ -13618,8 +14154,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "minerva.ttd.net",
-        "artemis.ttd.net"
+        "artemis.ttd.net",
+        "minerva.ttd.net"
       ],
       "warnings": []
     },
@@ -13788,19 +14324,28 @@
           "hostname": "ocoval-es.mail.protection.outlook.com",
           "addresses": [
             "104.47.17.138",
-            "104.47.17.74"
+            "104.47.18.74"
           ]
         }
       ],
       "warnings": []
     },
     "spf": {
-      "record": "v=spf1 include:spf.protection.outlook.com -all",
+      "record": "v=spf1 ip4:84.246.214.14 ip4:84.246.215.14 include:spf.protection.outlook.com -all",
       "valid": true,
       "dns_lookups": 2,
       "warnings": [],
       "parsed": {
-        "pass": [],
+        "pass": [
+          {
+            "value": "84.246.214.14",
+            "mechanism": "ip4"
+          },
+          {
+            "value": "84.246.215.14",
+            "mechanism": "ip4"
+          }
+        ],
         "neutral": [],
         "softfail": [],
         "fail": [],
@@ -13919,8 +14464,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "earl.ns.cloudflare.com",
-        "lola.ns.cloudflare.com"
+        "lola.ns.cloudflare.com",
+        "earl.ns.cloudflare.com"
       ],
       "warnings": []
     },
@@ -13992,8 +14537,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns3.dnsxperta.com",
         "ns2.dnsxperta.com",
+        "ns3.dnsxperta.com",
         "ns1.dnsxperta.com"
       ],
       "warnings": []
@@ -14083,10 +14628,10 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns5.cdmondns-01.com",
-        "ns4.cdmondns-01.org",
-        "ns3.cdmon.net",
         "ns2.cdmon.net",
+        "ns4.cdmondns-01.org",
+        "ns5.cdmondns-01.com",
+        "ns3.cdmon.net",
         "ns1.cdmon.net"
       ],
       "warnings": []
@@ -14252,9 +14797,9 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
+        "ns2.dnsxperta.com",
         "ns1.dnsxperta.com",
-        "ns3.dnsxperta.com",
-        "ns2.dnsxperta.com"
+        "ns3.dnsxperta.com"
       ],
       "warnings": []
     },
@@ -14425,7 +14970,7 @@
       "record": null,
       "valid": false,
       "location": null,
-      "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.picassent.es\n\nv=spf1 include:dnsxperta.com include:spf.protection.outlook.com ip4:82.223.190.0/24 -all\n\nMS=ms83749994"
+      "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.picassent.es\n\nMS=ms83749994\n\nv=spf1 include:dnsxperta.com include:spf.protection.outlook.com ip4:82.223.190.0/24 -all"
     }
   },
   "plancabanyal.es": {
@@ -14434,8 +14979,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "dns11.servidoresdns.net",
-        "dns12.servidoresdns.net"
+        "dns12.servidoresdns.net",
+        "dns11.servidoresdns.net"
       ],
       "warnings": []
     },
@@ -14964,10 +15509,10 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns-1453.awsdns-53.org",
         "ns-898.awsdns-48.net",
         "ns-446.awsdns-55.com",
-        "ns-1734.awsdns-24.co.uk"
+        "ns-1734.awsdns-24.co.uk",
+        "ns-1453.awsdns-53.org"
       ],
       "warnings": []
     },
@@ -14994,11 +15539,8 @@
     "base_domain": "rafelbunyol.es",
     "dnssec": false,
     "ns": {
-      "hostnames": [
-        "sdns1.ovh.net",
-        "kvm4.srvdr.com"
-      ],
-      "warnings": []
+      "hostnames": [],
+      "error": "The DNS operation timed out after 1.1 seconds"
     },
     "mx": {
       "hosts": [
@@ -15341,62 +15883,10 @@
       }
     },
     "dmarc": {
-      "record": "v=DMARC1; p=reject; pct=100; rua=mailto:dmarc@rafelbunyol.es",
-      "valid": true,
-      "location": "rafelbunyol.es",
-      "warnings": [],
-      "tags": {
-        "v": {
-          "value": "DMARC1",
-          "explicit": true
-        },
-        "p": {
-          "value": "reject",
-          "explicit": true
-        },
-        "pct": {
-          "value": 100,
-          "explicit": true
-        },
-        "rua": {
-          "value": [
-            {
-              "scheme": "mailto",
-              "address": "dmarc@rafelbunyol.es",
-              "size_limit": null
-            }
-          ],
-          "explicit": true
-        },
-        "adkim": {
-          "value": "r",
-          "explicit": false
-        },
-        "aspf": {
-          "value": "r",
-          "explicit": false
-        },
-        "fo": {
-          "value": [
-            "0"
-          ],
-          "explicit": false
-        },
-        "rf": {
-          "value": [
-            "afrf"
-          ],
-          "explicit": false
-        },
-        "ri": {
-          "value": 86400,
-          "explicit": false
-        },
-        "sp": {
-          "value": "reject",
-          "explicit": false
-        }
-      }
+      "record": null,
+      "valid": false,
+      "location": null,
+      "error": "The DNS operation timed out after 1.1 seconds"
     }
   },
   "red.es": {
@@ -15405,10 +15895,10 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns-1854.awsdns-39.co.uk",
-        "ns-1400.awsdns-47.org",
         "ns-830.awsdns-39.net",
-        "ns-177.awsdns-22.com"
+        "ns-1854.awsdns-39.co.uk",
+        "ns-177.awsdns-22.com",
+        "ns-1400.awsdns-47.org"
       ],
       "warnings": []
     },
@@ -15421,11 +15911,14 @@
             "104.47.4.36",
             "104.47.6.36",
             "2a01:111:f400:7e05::10",
-            "2a01:111:f400:7e06::10"
+            "2a01:111:f400:7e1e::10"
           ]
         }
       ],
-      "warnings": []
+      "warnings": [
+        "The domain mail-am5eur020010.inbound.protection.outlook.com does not exist",
+        "The reverse DNS of 2a01:111:f400:7e1e::10 is mail-am5eur020010.inbound.protection.outlook.com, but the A/AAAA DNS records for mail-am5eur020010.inbound.protection.outlook.com do not resolve to 2a01:111:f400:7e1e::10"
+      ]
     },
     "spf": {
       "record": "v=spf1 ip4:194.69.254.0/24 include:spf.protection.outlook.com include:spf.sendinblue.com include:spf.mandrillapp.com -all",
@@ -15731,9 +16224,9 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns1.dnsxperta.com",
+        "ns3.dnsxperta.com",
         "ns2.dnsxperta.com",
-        "ns3.dnsxperta.com"
+        "ns1.dnsxperta.com"
       ],
       "warnings": []
     },
@@ -15984,8 +16477,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "opsns01.bsc.es",
-        "capdecreus.bsc.es"
+        "capdecreus.bsc.es",
+        "opsns01.bsc.es"
       ],
       "warnings": []
     },
@@ -16089,9 +16582,9 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
+        "ns2.dnsxperta.com",
         "ns1.dnsxperta.com",
-        "ns3.dnsxperta.com",
-        "ns2.dnsxperta.com"
+        "ns3.dnsxperta.com"
       ],
       "warnings": []
     },
@@ -16126,10 +16619,10 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns1093.ui-dns.org",
-        "ns1093.ui-dns.biz",
+        "ns1093.ui-dns.com",
         "ns1093.ui-dns.de",
-        "ns1093.ui-dns.com"
+        "ns1093.ui-dns.org",
+        "ns1093.ui-dns.biz"
       ],
       "warnings": []
     },
@@ -16634,10 +17127,10 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns3.gestiondecuenta.com",
-        "ns4.gestiondecuenta.com",
+        "ns2.gestiondecuenta.com",
         "ns.gestiondecuenta.com",
-        "ns2.gestiondecuenta.com"
+        "ns3.gestiondecuenta.com",
+        "ns4.gestiondecuenta.com"
       ],
       "warnings": []
     },
@@ -16753,8 +17246,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns1.dnsxperta.com",
         "ns3.dnsxperta.com",
+        "ns1.dnsxperta.com",
         "ns2.dnsxperta.com"
       ],
       "warnings": []
@@ -16783,10 +17276,10 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns3.gestiondecuenta.com",
         "ns4.gestiondecuenta.com",
         "ns.gestiondecuenta.com",
-        "ns2.gestiondecuenta.com"
+        "ns2.gestiondecuenta.com",
+        "ns3.gestiondecuenta.com"
       ],
       "warnings": []
     },
@@ -16845,6 +17338,85 @@
       "valid": false,
       "location": null,
       "error": "A DMARC record does not exist for this domain or its base domain"
+    }
+  },
+  "sede.agenciatributaria.gob.es": {
+    "domain": "sede.agenciatributaria.gob.es",
+    "base_domain": "agenciatributaria.gob.es",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [],
+      "warnings": [
+        "No MX records found. Is the domain parked?"
+      ]
+    },
+    "spf": {
+      "record": null,
+      "valid": false,
+      "error": "sede.agenciatributaria.gob.es does not have a SPF TXT record"
+    },
+    "dmarc": {
+      "record": "v=DMARC1; p=reject; fo=1; ri=3600; rua=mailto:informesdmarc@correo.aeat.es; ruf=mailto:informesdmarc@correo.aeat.es",
+      "valid": true,
+      "location": "agenciatributaria.gob.es",
+      "warnings": [
+        "correo.aeat.es does not indicate that it accepts DMARC reports about agenciatributaria.gob.es - Authorization record not found: agenciatributaria.gob.es._report._dmarc.correo.aeat.es IN TXT \"v=DMARC1\"",
+        "correo.aeat.es does not indicate that it accepts DMARC reports about agenciatributaria.gob.es - Authorization record not found: agenciatributaria.gob.es._report._dmarc.correo.aeat.es IN TXT \"v=DMARC1\""
+      ],
+      "tags": {
+        "v": {
+          "value": "DMARC1",
+          "explicit": true
+        },
+        "p": {
+          "value": "reject",
+          "explicit": true
+        },
+        "fo": {
+          "value": [
+            "1"
+          ],
+          "explicit": true
+        },
+        "ri": {
+          "value": 3600,
+          "explicit": true
+        },
+        "rua": {
+          "value": "mailto:informesdmarc@correo.aeat.es",
+          "explicit": true
+        },
+        "ruf": {
+          "value": "mailto:informesdmarc@correo.aeat.es",
+          "explicit": true
+        },
+        "adkim": {
+          "value": "r",
+          "explicit": false
+        },
+        "aspf": {
+          "value": "r",
+          "explicit": false
+        },
+        "pct": {
+          "value": 100,
+          "explicit": false
+        },
+        "rf": {
+          "value": [
+            "afrf"
+          ],
+          "explicit": false
+        },
+        "sp": {
+          "value": "reject",
+          "explicit": false
+        }
+      }
     }
   },
   "sede.aytoburgos.es": {
@@ -17540,15 +18112,15 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns07.ns-cloud4b.org",
         "ns08.ns-cloud4b.com",
-        "ns06.ns-cloud4b.net"
+        "ns06.ns-cloud4b.net",
+        "ns07.ns-cloud4b.org"
       ],
       "warnings": []
     },
     "mx": {
       "hosts": [],
-      "error": "The DNS operation timed out after 1.1 seconds"
+      "error": "All nameservers failed to answer the query 100.175.64.217.in-addr.arpa. IN PTR: Server 127.0.0.53 UDP port 53 answered SERVFAIL"
     },
     "spf": {
       "record": "v=spf1 +a +mx include:emailservice.cpd.as -all",
@@ -17748,9 +18320,9 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns3.dnsxperta.com",
         "ns1.dnsxperta.com",
-        "ns2.dnsxperta.com"
+        "ns2.dnsxperta.com",
+        "ns3.dnsxperta.com"
       ],
       "warnings": []
     },
@@ -17791,8 +18363,52 @@
       "warnings": []
     },
     "mx": {
-      "hosts": [],
-      "error": "The DNS operation timed out after 1.1 seconds"
+      "hosts": [
+        {
+          "preference": 1,
+          "hostname": "aspmx.l.google.com",
+          "addresses": [
+            "2607:f8b0:400d:c07::1b",
+            "74.125.192.26"
+          ]
+        },
+        {
+          "preference": 5,
+          "hostname": "alt1.aspmx.l.google.com",
+          "addresses": [
+            "2800:3f0:4003:c00::1b",
+            "64.233.186.27"
+          ]
+        },
+        {
+          "preference": 5,
+          "hostname": "alt2.aspmx.l.google.com",
+          "addresses": [
+            "209.85.202.27",
+            "2a00:1450:400b:c00::1b"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "aspmx2.googlemail.com",
+          "addresses": [
+            "2800:3f0:4003:c00::1a",
+            "64.233.186.27"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "aspmx3.googlemail.com",
+          "addresses": [
+            "209.85.202.26",
+            "2a00:1450:400b:c00::1a"
+          ]
+        }
+      ],
+      "warnings": [
+        "2800:3f0:4003:c00::1b does not have any reverse DNS (PTR) records",
+        "2800:3f0:4003:c00::1a does not have any reverse DNS (PTR) records"
+      ]
     },
     "spf": {
       "record": null,
@@ -17812,9 +18428,9 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns3.dnsxperta.com",
         "ns1.dnsxperta.com",
-        "ns2.dnsxperta.com"
+        "ns2.dnsxperta.com",
+        "ns3.dnsxperta.com"
       ],
       "warnings": []
     },
@@ -17917,9 +18533,9 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
+        "ns3.dnsxperta.com",
         "ns2.dnsxperta.com",
-        "ns1.dnsxperta.com",
-        "ns3.dnsxperta.com"
+        "ns1.dnsxperta.com"
       ],
       "warnings": []
     },
@@ -17999,9 +18615,9 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
+        "ns05.ns-cloud4b.org",
         "ns03.ns-cloud4b.net",
-        "ns06.ns-cloud4b.com",
-        "ns05.ns-cloud4b.org"
+        "ns06.ns-cloud4b.com"
       ],
       "warnings": []
     },
@@ -18153,8 +18769,53 @@
       "warnings": []
     },
     "mx": {
-      "hosts": [],
-      "error": "The DNS operation timed out after 1.1 seconds"
+      "hosts": [
+        {
+          "preference": 1,
+          "hostname": "aspmx.l.google.com",
+          "addresses": [
+            "2607:f8b0:400d:c07::1b",
+            "74.125.192.26"
+          ]
+        },
+        {
+          "preference": 5,
+          "hostname": "alt1.aspmx.l.google.com",
+          "addresses": [
+            "2800:3f0:4003:c00::1b",
+            "64.233.186.27"
+          ]
+        },
+        {
+          "preference": 5,
+          "hostname": "alt2.aspmx.l.google.com",
+          "addresses": [
+            "209.85.202.27",
+            "2a00:1450:400b:c00::1b"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "alt3.aspmx.l.google.com",
+          "addresses": [
+            "2a00:1450:400c:c0b::1a",
+            "64.233.184.27"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "alt4.aspmx.l.google.com",
+          "addresses": [
+            "142.250.27.26",
+            "2a00:1450:4025:401::1b"
+          ]
+        }
+      ],
+      "warnings": [
+        "2800:3f0:4003:c00::1b does not have any reverse DNS (PTR) records",
+        "142.250.27.26 does not have any reverse DNS (PTR) records",
+        "2a00:1450:4025:401::1b does not have any reverse DNS (PTR) records"
+      ]
     },
     "spf": {
       "record": "v=spf1 ip4:107.6.151.134 +a +mx include:relay.mailchannels.net include:_spf.google.com ~all",
@@ -18586,8 +19247,8 @@
     "ns": {
       "hostnames": [
         "ns3.dnsxperta.com",
-        "ns1.dnsxperta.com",
-        "ns2.dnsxperta.com"
+        "ns2.dnsxperta.com",
+        "ns1.dnsxperta.com"
       ],
       "warnings": []
     },
@@ -18623,9 +19284,9 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns1.dnsxperta.com",
         "ns3.dnsxperta.com",
-        "ns2.dnsxperta.com"
+        "ns2.dnsxperta.com",
+        "ns1.dnsxperta.com"
       ],
       "warnings": []
     },
@@ -18635,8 +19296,8 @@
           "preference": 10,
           "hostname": "mx.spamexperts.com",
           "addresses": [
-            "2001:550:2:9::280:100",
-            "38.111.198.185"
+            "2001:550:2:78::ca:100",
+            "38.109.53.20"
           ]
         },
         {
@@ -18962,9 +19623,9 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
+        "ns3.dnsxperta.com",
         "ns2.dnsxperta.com",
-        "ns1.dnsxperta.com",
-        "ns3.dnsxperta.com"
+        "ns1.dnsxperta.com"
       ],
       "warnings": []
     },
@@ -19081,8 +19742,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "dns2.nominalia.com",
-        "dns1.nominalia.com"
+        "dns1.nominalia.com",
+        "dns2.nominalia.com"
       ],
       "warnings": []
     },
@@ -19092,8 +19753,8 @@
           "preference": 0,
           "hostname": "teguise-es.mail.protection.outlook.com",
           "addresses": [
-            "104.47.13.36",
-            "104.47.14.36"
+            "104.47.12.36",
+            "104.47.13.36"
           ]
         }
       ],
@@ -19212,10 +19873,72 @@
       }
     },
     "dmarc": {
-      "record": null,
-      "valid": false,
-      "location": null,
-      "error": "A DMARC record does not exist for this domain or its base domain"
+      "record": "v=DMARC1; p=none; rua=mailto:eperez@teguise.es; ruf=mailto:eperez@teguise.es; sp=none; ri=86400",
+      "valid": true,
+      "location": "teguise.es",
+      "warnings": [],
+      "tags": {
+        "v": {
+          "value": "DMARC1",
+          "explicit": true
+        },
+        "p": {
+          "value": "none",
+          "explicit": true
+        },
+        "rua": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "eperez@teguise.es",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "ruf": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "eperez@teguise.es",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "sp": {
+          "value": "none",
+          "explicit": true
+        },
+        "ri": {
+          "value": 86400,
+          "explicit": true
+        },
+        "adkim": {
+          "value": "r",
+          "explicit": false
+        },
+        "aspf": {
+          "value": "r",
+          "explicit": false
+        },
+        "fo": {
+          "value": [
+            "0"
+          ],
+          "explicit": false
+        },
+        "pct": {
+          "value": 100,
+          "explicit": false
+        },
+        "rf": {
+          "value": [
+            "afrf"
+          ],
+          "explicit": false
+        }
+      }
     }
   },
   "tejeda.eu": {
@@ -19225,9 +19948,9 @@
     "ns": {
       "hostnames": [
         "ns4.dinahosting.com",
-        "ns3.dinahosting.com",
+        "ns.dinahosting.com",
         "ns2.dinahosting.com",
-        "ns.dinahosting.com"
+        "ns3.dinahosting.com"
       ],
       "warnings": []
     },
@@ -19281,8 +20004,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns2.gestiondecuenta.com",
-        "ns.gestiondecuenta.com"
+        "ns.gestiondecuenta.com",
+        "ns2.gestiondecuenta.com"
       ],
       "warnings": []
     },
@@ -19554,8 +20277,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "artemis.ttd.net",
-        "dns1.tragsa.es"
+        "dns1.tragsa.es",
+        "artemis.ttd.net"
       ],
       "warnings": []
     },
@@ -19664,7 +20387,9 @@
     },
     "mx": {
       "hosts": [],
-      "error": "The DNS operation timed out after 1.1 seconds"
+      "warnings": [
+        "No MX records found. Is the domain parked?"
+      ]
     },
     "spf": {
       "record": null,
@@ -19672,10 +20397,63 @@
       "error": "transparencia.arandadeduero.es does not have a SPF TXT record"
     },
     "dmarc": {
-      "record": null,
-      "valid": false,
-      "location": null,
-      "error": "The DNS operation timed out after 1.1 seconds"
+      "record": "v=DMARC1; p=quarantine; rua=mailto:postmaster@viavox.com; ruf=mailto:postmaster@viavox.com;",
+      "valid": true,
+      "location": "arandadeduero.es",
+      "warnings": [
+        "viavox.com does not indicate that it accepts DMARC reports about arandadeduero.es - Authorization record not found: arandadeduero.es._report._dmarc.viavox.com IN TXT \"v=DMARC1\"",
+        "viavox.com does not indicate that it accepts DMARC reports about arandadeduero.es - Authorization record not found: arandadeduero.es._report._dmarc.viavox.com IN TXT \"v=DMARC1\""
+      ],
+      "tags": {
+        "v": {
+          "value": "DMARC1",
+          "explicit": true
+        },
+        "p": {
+          "value": "quarantine",
+          "explicit": true
+        },
+        "rua": {
+          "value": "mailto:postmaster@viavox.com",
+          "explicit": true
+        },
+        "ruf": {
+          "value": "mailto:postmaster@viavox.com",
+          "explicit": true
+        },
+        "adkim": {
+          "value": "r",
+          "explicit": false
+        },
+        "aspf": {
+          "value": "r",
+          "explicit": false
+        },
+        "fo": {
+          "value": [
+            "0"
+          ],
+          "explicit": false
+        },
+        "pct": {
+          "value": 100,
+          "explicit": false
+        },
+        "rf": {
+          "value": [
+            "afrf"
+          ],
+          "explicit": false
+        },
+        "ri": {
+          "value": 86400,
+          "explicit": false
+        },
+        "sp": {
+          "value": "quarantine",
+          "explicit": false
+        }
+      }
     }
   },
   "transparenciacanarias.org": {
@@ -19926,9 +20704,9 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns3.dnsxperta.com",
+        "ns2.dnsxperta.com",
         "ns1.dnsxperta.com",
-        "ns2.dnsxperta.com"
+        "ns3.dnsxperta.com"
       ],
       "warnings": []
     },
@@ -20034,10 +20812,10 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns-es.1and1-dns.biz",
-        "ns-es.1and1-dns.es",
         "ns-es.1and1-dns.org",
-        "ns-es.1and1-dns.com"
+        "ns-es.1and1-dns.com",
+        "ns-es.1and1-dns.biz",
+        "ns-es.1and1-dns.es"
       ],
       "warnings": []
     },
@@ -20455,10 +21233,10 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "dns1.mpr.es",
-        "dns2.mpr.es",
         "chico.rediris.es",
-        "sun.rediris.es"
+        "sun.rediris.es",
+        "dns1.mpr.es",
+        "dns2.mpr.es"
       ],
       "warnings": []
     },
@@ -20512,9 +21290,9 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns3.dnsxperta.com",
         "ns2.dnsxperta.com",
-        "ns1.dnsxperta.com"
+        "ns1.dnsxperta.com",
+        "ns3.dnsxperta.com"
       ],
       "warnings": []
     },
@@ -20594,16 +21372,78 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns3.dinahosting.com",
         "ns.dinahosting.com",
-        "ns4.dinahosting.com",
-        "ns2.dinahosting.com"
+        "ns2.dinahosting.com",
+        "ns3.dinahosting.com",
+        "ns4.dinahosting.com"
       ],
       "warnings": []
     },
     "mx": {
-      "hosts": [],
-      "error": "The DNS operation timed out after 1.1 seconds"
+      "hosts": [
+        {
+          "preference": 10,
+          "hostname": "aspmx.l.google.com",
+          "addresses": [
+            "2607:f8b0:400d:c07::1b",
+            "74.125.192.26"
+          ]
+        },
+        {
+          "preference": 20,
+          "hostname": "alt1.aspmx.l.google.com",
+          "addresses": [
+            "2800:3f0:4003:c00::1a",
+            "64.233.186.27"
+          ]
+        },
+        {
+          "preference": 30,
+          "hostname": "aspmx3.googlemail.com",
+          "addresses": [
+            "209.85.202.26",
+            "2a00:1450:400b:c00::1a"
+          ]
+        },
+        {
+          "preference": 40,
+          "hostname": "alt2.aspmx.l.google.com",
+          "addresses": [
+            "209.85.202.27",
+            "2a00:1450:400b:c00::1b"
+          ]
+        },
+        {
+          "preference": 50,
+          "hostname": "aspmx4.googlemail.com",
+          "addresses": [
+            "2a00:1450:400c:c0b::1b",
+            "64.233.184.27"
+          ]
+        },
+        {
+          "preference": 60,
+          "hostname": "aspmx2.googlemail.com",
+          "addresses": [
+            "2800:3f0:4003:c00::1a",
+            "64.233.186.27"
+          ]
+        },
+        {
+          "preference": 70,
+          "hostname": "aspmx5.googlemail.com",
+          "addresses": [
+            "142.250.27.27",
+            "2a00:1450:4025:401::1b"
+          ]
+        }
+      ],
+      "warnings": [
+        "2800:3f0:4003:c00::1a does not have any reverse DNS (PTR) records",
+        "2800:3f0:4003:c00::1a does not have any reverse DNS (PTR) records",
+        "142.250.27.27 does not have any reverse DNS (PTR) records",
+        "2a00:1450:4025:401::1b does not have any reverse DNS (PTR) records"
+      ]
     },
     "spf": {
       "record": "v=spf1 include:_spf.google.com ~all",
@@ -20811,9 +21651,9 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
+        "ns1.dnsxperta.com",
         "ns3.dnsxperta.com",
-        "ns2.dnsxperta.com",
-        "ns1.dnsxperta.com"
+        "ns2.dnsxperta.com"
       ],
       "warnings": []
     },
@@ -20855,9 +21695,9 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
+        "ns1.dnsxperta.com",
         "ns3.dnsxperta.com",
-        "ns2.dnsxperta.com",
-        "ns1.dnsxperta.com"
+        "ns2.dnsxperta.com"
       ],
       "warnings": []
     },
@@ -20884,7 +21724,7 @@
       "record": null,
       "valid": false,
       "location": null,
-      "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.villardelarzobispo.es\n\nMS=ms92005695\n\nv=spf1 include:dnsxperta.com ip4:213.4. 82.254 -all"
+      "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.villardelarzobispo.es\n\nv=spf1 include:dnsxperta.com ip4:213.4. 82.254 -all\n\nMS=ms92005695"
     }
   },
   "vinalesa.es": {
@@ -21090,19 +21930,11 @@
       "parsed": {
         "pass": [
           {
-            "value": "176.34.88.65",
-            "mechanism": "a"
-          },
-          {
             "value": "18.200.146.94",
             "mechanism": "a"
           },
           {
-            "value": "3.248.133.179",
-            "mechanism": "a"
-          },
-          {
-            "value": "34.249.252.185",
+            "value": "18.202.104.144",
             "mechanism": "a"
           },
           {
@@ -21114,11 +21946,19 @@
             "mechanism": "a"
           },
           {
-            "value": "52.17.222.167",
+            "value": "34.253.65.168",
             "mechanism": "a"
           },
           {
-            "value": "54.220.244.251",
+            "value": "52.19.1.221",
+            "mechanism": "a"
+          },
+          {
+            "value": "52.210.89.119",
+            "mechanism": "a"
+          },
+          {
+            "value": "52.30.172.35",
             "mechanism": "a"
           }
         ],
@@ -21601,7 +22441,7 @@
     },
     "mx": {
       "hosts": [],
-      "error": "The DNS operation timed out after 1.1 seconds"
+      "error": "The domain www.accv.es does not exist"
     },
     "spf": {
       "record": null,
@@ -21658,7 +22498,7 @@
     "spf": {
       "record": null,
       "valid": false,
-      "error": "The DNS operation timed out after 1.1 seconds"
+      "error": "www.ader.es does not have a SPF TXT record"
     },
     "dmarc": {
       "record": null,
@@ -21859,6 +22699,85 @@
       "warnings": [
         "correo.aeat.es does not indicate that it accepts DMARC reports about agenciatributaria.es - Authorization record not found: agenciatributaria.es._report._dmarc.correo.aeat.es IN TXT \"v=DMARC1\"",
         "correo.aeat.es does not indicate that it accepts DMARC reports about agenciatributaria.es - Authorization record not found: agenciatributaria.es._report._dmarc.correo.aeat.es IN TXT \"v=DMARC1\""
+      ],
+      "tags": {
+        "v": {
+          "value": "DMARC1",
+          "explicit": true
+        },
+        "p": {
+          "value": "reject",
+          "explicit": true
+        },
+        "fo": {
+          "value": [
+            "1"
+          ],
+          "explicit": true
+        },
+        "ri": {
+          "value": 3600,
+          "explicit": true
+        },
+        "rua": {
+          "value": "mailto:informesdmarc@correo.aeat.es",
+          "explicit": true
+        },
+        "ruf": {
+          "value": "mailto:informesdmarc@correo.aeat.es",
+          "explicit": true
+        },
+        "adkim": {
+          "value": "r",
+          "explicit": false
+        },
+        "aspf": {
+          "value": "r",
+          "explicit": false
+        },
+        "pct": {
+          "value": 100,
+          "explicit": false
+        },
+        "rf": {
+          "value": [
+            "afrf"
+          ],
+          "explicit": false
+        },
+        "sp": {
+          "value": "reject",
+          "explicit": false
+        }
+      }
+    }
+  },
+  "www.agenciatributaria.gob.es": {
+    "domain": "www.agenciatributaria.gob.es",
+    "base_domain": "agenciatributaria.gob.es",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [],
+      "warnings": [
+        "No MX records found. Is the domain parked?"
+      ]
+    },
+    "spf": {
+      "record": null,
+      "valid": false,
+      "error": "www.agenciatributaria.gob.es does not have a SPF TXT record"
+    },
+    "dmarc": {
+      "record": "v=DMARC1; p=reject; fo=1; ri=3600; rua=mailto:informesdmarc@correo.aeat.es; ruf=mailto:informesdmarc@correo.aeat.es",
+      "valid": true,
+      "location": "agenciatributaria.gob.es",
+      "warnings": [
+        "correo.aeat.es does not indicate that it accepts DMARC reports about agenciatributaria.gob.es - Authorization record not found: agenciatributaria.gob.es._report._dmarc.correo.aeat.es IN TXT \"v=DMARC1\"",
+        "correo.aeat.es does not indicate that it accepts DMARC reports about agenciatributaria.gob.es - Authorization record not found: agenciatributaria.gob.es._report._dmarc.correo.aeat.es IN TXT \"v=DMARC1\""
       ],
       "tags": {
         "v": {
@@ -22133,9 +23052,9 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns1.dnsxperta.com",
+        "ns3.dnsxperta.com",
         "ns2.dnsxperta.com",
-        "ns3.dnsxperta.com"
+        "ns1.dnsxperta.com"
       ],
       "warnings": []
     },
@@ -22197,8 +23116,8 @@
     "ns": {
       "hostnames": [
         "ns3.dnsxperta.com",
-        "ns2.dnsxperta.com",
-        "ns1.dnsxperta.com"
+        "ns1.dnsxperta.com",
+        "ns2.dnsxperta.com"
       ],
       "warnings": []
     },
@@ -22331,8 +23250,8 @@
     "ns": {
       "hostnames": [
         "ns1.dnsxperta.com",
-        "ns2.dnsxperta.com",
-        "ns3.dnsxperta.com"
+        "ns3.dnsxperta.com",
+        "ns2.dnsxperta.com"
       ],
       "warnings": []
     },
@@ -22412,9 +23331,9 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns1.dnsxperta.com",
         "ns2.dnsxperta.com",
-        "ns3.dnsxperta.com"
+        "ns3.dnsxperta.com",
+        "ns1.dnsxperta.com"
       ],
       "warnings": []
     },
@@ -22547,8 +23466,8 @@
     "ns": {
       "hostnames": [
         "ns3.dnsxperta.com",
-        "ns2.dnsxperta.com",
-        "ns1.dnsxperta.com"
+        "ns1.dnsxperta.com",
+        "ns2.dnsxperta.com"
       ],
       "warnings": []
     },
@@ -22868,76 +23787,75 @@
       "warnings": []
     },
     "mx": {
-      "hosts": [],
-      "error": "The DNS operation timed out after 1.1 seconds"
-    },
-    "spf": {
-      "record": null,
-      "valid": false,
-      "error": "The DNS operation timed out after 1.1 seconds"
-    },
-    "dmarc": {
-      "record": null,
-      "valid": false,
-      "location": null,
-      "error": "The DNS operation timed out after 1.1 seconds"
-    }
-  },
-  "www.alora.es": {
-    "domain": "www.alora.es",
-    "base_domain": "alora.es",
-    "dnssec": false,
-    "ns": {
-      "hostnames": [],
-      "warnings": []
-    },
-    "mx": {
-      "hosts": [],
-      "warnings": [
-        "No MX records found. Is the domain parked?"
-      ]
-    },
-    "spf": {
-      "record": null,
-      "valid": false,
-      "error": "www.alora.es does not have a SPF TXT record"
-    },
-    "dmarc": {
-      "record": null,
-      "valid": false,
-      "location": null,
-      "error": "A DMARC record does not exist for this domain or its base domain"
-    }
-  },
-  "www.alpuente.es": {
-    "domain": "www.alpuente.es",
-    "base_domain": "alpuente.es",
-    "dnssec": false,
-    "ns": {
-      "hostnames": [
-        "ns2.dnsxperta.com",
-        "ns3.dnsxperta.com",
-        "ns1.dnsxperta.com"
-      ],
-      "warnings": []
-    },
-    "mx": {
       "hosts": [
         {
-          "preference": 100,
-          "hostname": "mx1.dnsxperta.com",
+          "preference": 10,
+          "hostname": "aspmx.l.google.com",
           "addresses": [
-            "217.13.80.229",
-            "83.147.63.42"
+            "2607:f8b0:400d:c07::1b",
+            "74.125.192.26"
+          ]
+        },
+        {
+          "preference": 20,
+          "hostname": "alt1.aspmx.l.google.com",
+          "addresses": [
+            "2800:3f0:4003:c00::1b",
+            "64.233.186.27"
+          ]
+        },
+        {
+          "preference": 20,
+          "hostname": "alt2.aspmx.l.google.com",
+          "addresses": [
+            "209.85.202.26",
+            "2a00:1450:400b:c00::1b"
+          ]
+        },
+        {
+          "preference": 30,
+          "hostname": "aspmx2.googlemail.com",
+          "addresses": [
+            "2800:3f0:4003:c00::1a",
+            "64.233.186.27"
+          ]
+        },
+        {
+          "preference": 30,
+          "hostname": "aspmx3.googlemail.com",
+          "addresses": [
+            "209.85.202.26",
+            "2a00:1450:400b:c00::1a"
+          ]
+        },
+        {
+          "preference": 30,
+          "hostname": "aspmx4.googlemail.com",
+          "addresses": [
+            "2a00:1450:400c:c0b::1b",
+            "64.233.184.26"
+          ]
+        },
+        {
+          "preference": 30,
+          "hostname": "aspmx5.googlemail.com",
+          "addresses": [
+            "142.250.27.26",
+            "2a00:1450:4025:401::1a"
           ]
         }
       ],
-      "warnings": []
+      "warnings": [
+        "2800:3f0:4003:c00::1b does not have any reverse DNS (PTR) records",
+        "2800:3f0:4003:c00::1a does not have any reverse DNS (PTR) records",
+        "142.250.27.26 does not have any reverse DNS (PTR) records",
+        "2a00:1450:4025:401::1a does not have any reverse DNS (PTR) records"
+      ]
     },
     "spf": {
-      "record": "v=spf1 include:dnsxperta.com -all",
+      "record": "v=spf1 include:_spf.google.com ~all",
       "valid": true,
-      "dns_lookups": 1,
+      "dns_lookups": 4,
       "warnings": [],
       "parsed": {
         "pass": [],
@@ -22945,425 +23863,6 @@
         "softfail": [],
         "fail": [],
         "include": [
-          {
-            "domain": "dnsxperta.com",
-            "record": "v=spf1 ip4:217.13.80.0/20 ip4:194.143.202.166/28 ip4:194.143.202.194/28 ip4:83.147.63.0/24 -all",
-            "dns_lookups": 0,
-            "parsed": {
-              "pass": [
-                {
-                  "value": "217.13.80.0/20",
-                  "mechanism": "ip4"
-                },
-                {
-                  "value": "194.143.202.166/28",
-                  "mechanism": "ip4"
-                },
-                {
-                  "value": "194.143.202.194/28",
-                  "mechanism": "ip4"
-                },
-                {
-                  "value": "83.147.63.0/24",
-                  "mechanism": "ip4"
-                }
-              ],
-              "neutral": [],
-              "softfail": [],
-              "fail": [],
-              "include": [],
-              "redirect": null,
-              "exp": null,
-              "all": "fail"
-            },
-            "warnings": []
-          }
-        ],
-        "redirect": null,
-        "exp": null,
-        "all": "fail"
-      }
-    },
-    "dmarc": {
-      "record": null,
-      "valid": false,
-      "location": null,
-      "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.www.alpuente.es\n\nv=spf1 include:dnsxperta.com -all"
-    }
-  },
-  "www.amieva.es": {
-    "domain": "www.amieva.es",
-    "base_domain": "amieva.es",
-    "dnssec": false,
-    "ns": {
-      "hostnames": [],
-      "warnings": []
-    },
-    "mx": {
-      "hosts": [],
-      "warnings": [
-        "No MX records found. Is the domain parked?"
-      ]
-    },
-    "spf": {
-      "record": null,
-      "valid": false,
-      "error": "www.amieva.es does not have a SPF TXT record"
-    },
-    "dmarc": {
-      "record": null,
-      "valid": false,
-      "location": null,
-      "error": "A DMARC record does not exist for this domain or its base domain"
-    }
-  },
-  "www.andalucia.org": {
-    "domain": "www.andalucia.org",
-    "base_domain": "andalucia.org",
-    "dnssec": false,
-    "ns": {
-      "hostnames": [],
-      "warnings": []
-    },
-    "mx": {
-      "hosts": [],
-      "warnings": [
-        "No MX records found. Is the domain parked?"
-      ]
-    },
-    "spf": {
-      "record": null,
-      "valid": false,
-      "error": "www.andalucia.org does not have a SPF TXT record"
-    },
-    "dmarc": {
-      "record": null,
-      "valid": false,
-      "location": null,
-      "error": "A DMARC record does not exist for this domain or its base domain"
-    }
-  },
-  "www.andilla.es": {
-    "domain": "www.andilla.es",
-    "base_domain": "andilla.es",
-    "dnssec": false,
-    "ns": {
-      "hostnames": [
-        "ns2.dnsxperta.com",
-        "ns3.dnsxperta.com",
-        "ns1.dnsxperta.com"
-      ],
-      "warnings": []
-    },
-    "mx": {
-      "hosts": [
-        {
-          "preference": 100,
-          "hostname": "mx1.dnsxperta.com",
-          "addresses": [
-            "217.13.80.229",
-            "83.147.63.42"
-          ]
-        }
-      ],
-      "warnings": []
-    },
-    "spf": {
-      "record": null,
-      "valid": false,
-      "error": "www.andilla.es does not have a SPF TXT record"
-    },
-    "dmarc": {
-      "record": null,
-      "valid": false,
-      "location": null,
-      "error": "A DMARC record does not exist for this domain or its base domain"
-    }
-  },
-  "www.animsa.es": {
-    "domain": "www.animsa.es",
-    "base_domain": "animsa.es",
-    "dnssec": false,
-    "ns": {
-      "hostnames": [],
-      "warnings": []
-    },
-    "mx": {
-      "hosts": [],
-      "warnings": [
-        "No MX records found. Is the domain parked?"
-      ]
-    },
-    "spf": {
-      "record": null,
-      "valid": false,
-      "error": "www.animsa.es does not have a SPF TXT record"
-    },
-    "dmarc": {
-      "record": null,
-      "valid": false,
-      "location": null,
-      "error": "A DMARC record does not exist for this domain or its base domain"
-    }
-  },
-  "www.ansoain.es": {
-    "domain": "www.ansoain.es",
-    "base_domain": "ansoain.es",
-    "dnssec": false,
-    "ns": {
-      "hostnames": [],
-      "warnings": []
-    },
-    "mx": {
-      "hosts": [],
-      "warnings": [
-        "No MX records found. Is the domain parked?"
-      ]
-    },
-    "spf": {
-      "record": null,
-      "valid": false,
-      "error": "www.ansoain.es does not have a SPF TXT record"
-    },
-    "dmarc": {
-      "record": null,
-      "valid": false,
-      "location": null,
-      "error": "A DMARC record does not exist for this domain or its base domain"
-    }
-  },
-  "www.antella.es": {
-    "domain": "www.antella.es",
-    "base_domain": "antella.es",
-    "dnssec": false,
-    "ns": {
-      "hostnames": [
-        "ns3.dnsxperta.com",
-        "ns1.dnsxperta.com",
-        "ns2.dnsxperta.com"
-      ],
-      "warnings": []
-    },
-    "mx": {
-      "hosts": [
-        {
-          "preference": 100,
-          "hostname": "mx1.dnsxperta.com",
-          "addresses": [
-            "217.13.80.229",
-            "83.147.63.42"
-          ]
-        }
-      ],
-      "warnings": []
-    },
-    "spf": {
-      "record": "v=spf1 include:dnsxperta.com -all",
-      "valid": true,
-      "dns_lookups": 1,
-      "warnings": [],
-      "parsed": {
-        "pass": [],
-        "neutral": [],
-        "softfail": [],
-        "fail": [],
-        "include": [
-          {
-            "domain": "dnsxperta.com",
-            "record": "v=spf1 ip4:217.13.80.0/20 ip4:194.143.202.166/28 ip4:194.143.202.194/28 ip4:83.147.63.0/24 -all",
-            "dns_lookups": 0,
-            "parsed": {
-              "pass": [
-                {
-                  "value": "217.13.80.0/20",
-                  "mechanism": "ip4"
-                },
-                {
-                  "value": "194.143.202.166/28",
-                  "mechanism": "ip4"
-                },
-                {
-                  "value": "194.143.202.194/28",
-                  "mechanism": "ip4"
-                },
-                {
-                  "value": "83.147.63.0/24",
-                  "mechanism": "ip4"
-                }
-              ],
-              "neutral": [],
-              "softfail": [],
-              "fail": [],
-              "include": [],
-              "redirect": null,
-              "exp": null,
-              "all": "fail"
-            },
-            "warnings": []
-          }
-        ],
-        "redirect": null,
-        "exp": null,
-        "all": "fail"
-      }
-    },
-    "dmarc": {
-      "record": null,
-      "valid": false,
-      "location": null,
-      "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.www.antella.es\n\nv=spf1 include:dnsxperta.com -all"
-    }
-  },
-  "www.antequera.es": {
-    "domain": "www.antequera.es",
-    "base_domain": "antequera.es",
-    "dnssec": false,
-    "ns": {
-      "hostnames": [],
-      "warnings": []
-    },
-    "mx": {
-      "hosts": [],
-      "warnings": [
-        "No MX records found. Is the domain parked?"
-      ]
-    },
-    "spf": {
-      "record": null,
-      "valid": false,
-      "error": "www.antequera.es does not have a SPF TXT record"
-    },
-    "dmarc": {
-      "record": null,
-      "valid": false,
-      "location": null,
-      "error": "A DMARC record does not exist for this domain or its base domain"
-    }
-  },
-  "www.aquavall.es": {
-    "domain": "www.aquavall.es",
-    "base_domain": "aquavall.es",
-    "dnssec": false,
-    "ns": {
-      "hostnames": [
-        "ns481.webempresa.eu",
-        "ns482.webempresa.eu"
-      ],
-      "warnings": []
-    },
-    "mx": {
-      "hosts": [],
-      "error": "The DNS operation timed out after 1.1 seconds"
-    },
-    "spf": {
-      "record": "v=spf1 ip4:146.59.148.107 ip4:178.33.167.48 include:_spf.webempresa.eu ip4:151.80.24.226 +a +mx +include:_spf.google.com ~all",
-      "valid": true,
-      "dns_lookups": 7,
-      "warnings": [],
-      "parsed": {
-        "pass": [
-          {
-            "value": "146.59.148.107",
-            "mechanism": "ip4"
-          },
-          {
-            "value": "178.33.167.48",
-            "mechanism": "ip4"
-          },
-          {
-            "value": "151.80.24.226",
-            "mechanism": "ip4"
-          },
-          {
-            "value": "178.33.167.48",
-            "mechanism": "a"
-          },
-          {
-            "value": "aspmx.l.google.com",
-            "mechanism": "mx"
-          },
-          {
-            "value": "alt1.aspmx.l.google.com",
-            "mechanism": "mx"
-          },
-          {
-            "value": "alt2.aspmx.l.google.com",
-            "mechanism": "mx"
-          },
-          {
-            "value": "alt3.aspmx.l.google.com",
-            "mechanism": "mx"
-          },
-          {
-            "value": "alt4.aspmx.l.google.com",
-            "mechanism": "mx"
-          }
-        ],
-        "neutral": [],
-        "softfail": [],
-        "fail": [],
-        "include": [
-          {
-            "domain": "_spf.webempresa.eu",
-            "record": "v=spf1 ip4:54.37.172.205/32 ip4:87.98.227.61/32 ip4:178.33.113.178/32 ip4:178.33.119.38/32 ip4:87.98.229.233/32 ip4:5.39.109.72/32 ip4:178.32.150.70/32 ip4:5.196.253.55/32 ip4:178.33.116.19/32 ip4:188.165.126.169/32 ip4:51.68.67.124/32 ~all",
-            "dns_lookups": 0,
-            "parsed": {
-              "pass": [
-                {
-                  "value": "54.37.172.205/32",
-                  "mechanism": "ip4"
-                },
-                {
-                  "value": "87.98.227.61/32",
-                  "mechanism": "ip4"
-                },
-                {
-                  "value": "178.33.113.178/32",
-                  "mechanism": "ip4"
-                },
-                {
-                  "value": "178.33.119.38/32",
-                  "mechanism": "ip4"
-                },
-                {
-                  "value": "87.98.229.233/32",
-                  "mechanism": "ip4"
-                },
-                {
-                  "value": "5.39.109.72/32",
-                  "mechanism": "ip4"
-                },
-                {
-                  "value": "178.32.150.70/32",
-                  "mechanism": "ip4"
-                },
-                {
-                  "value": "5.196.253.55/32",
-                  "mechanism": "ip4"
-                },
-                {
-                  "value": "178.33.116.19/32",
-                  "mechanism": "ip4"
-                },
-                {
-                  "value": "188.165.126.169/32",
-                  "mechanism": "ip4"
-                },
-                {
-                  "value": "51.68.67.124/32",
-                  "mechanism": "ip4"
-                }
-              ],
-              "neutral": [],
-              "softfail": [],
-              "fail": [],
-              "include": [],
-              "redirect": null,
-              "exp": null,
-              "all": "softfail"
-            },
-            "warnings": []
-          },
           {
             "domain": "_spf.google.com",
             "record": "v=spf1 include:_netblocks.google.com include:_netblocks2.google.com include:_netblocks3.google.com ~all",
@@ -23547,6 +24046,479 @@
       }
     },
     "dmarc": {
+      "record": "v=DMARC1; p=none",
+      "valid": true,
+      "location": "aller.es",
+      "warnings": [
+        "rua tag (destination for aggregate reports) not found"
+      ],
+      "tags": {
+        "v": {
+          "value": "DMARC1",
+          "explicit": true
+        },
+        "p": {
+          "value": "none",
+          "explicit": true
+        },
+        "adkim": {
+          "value": "r",
+          "explicit": false
+        },
+        "aspf": {
+          "value": "r",
+          "explicit": false
+        },
+        "fo": {
+          "value": [
+            "0"
+          ],
+          "explicit": false
+        },
+        "pct": {
+          "value": 100,
+          "explicit": false
+        },
+        "rf": {
+          "value": [
+            "afrf"
+          ],
+          "explicit": false
+        },
+        "ri": {
+          "value": 86400,
+          "explicit": false
+        },
+        "sp": {
+          "value": "none",
+          "explicit": false
+        }
+      }
+    }
+  },
+  "www.alora.es": {
+    "domain": "www.alora.es",
+    "base_domain": "alora.es",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [],
+      "warnings": [
+        "No MX records found. Is the domain parked?"
+      ]
+    },
+    "spf": {
+      "record": null,
+      "valid": false,
+      "error": "www.alora.es does not have a SPF TXT record"
+    },
+    "dmarc": {
+      "record": null,
+      "valid": false,
+      "location": null,
+      "error": "A DMARC record does not exist for this domain or its base domain"
+    }
+  },
+  "www.alpuente.es": {
+    "domain": "www.alpuente.es",
+    "base_domain": "alpuente.es",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "ns1.dnsxperta.com",
+        "ns3.dnsxperta.com",
+        "ns2.dnsxperta.com"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [
+        {
+          "preference": 100,
+          "hostname": "mx1.dnsxperta.com",
+          "addresses": [
+            "217.13.80.229",
+            "83.147.63.42"
+          ]
+        }
+      ],
+      "warnings": []
+    },
+    "spf": {
+      "record": "v=spf1 include:dnsxperta.com -all",
+      "valid": true,
+      "dns_lookups": 1,
+      "warnings": [],
+      "parsed": {
+        "pass": [],
+        "neutral": [],
+        "softfail": [],
+        "fail": [],
+        "include": [
+          {
+            "domain": "dnsxperta.com",
+            "record": "v=spf1 ip4:217.13.80.0/20 ip4:194.143.202.166/28 ip4:194.143.202.194/28 ip4:83.147.63.0/24 -all",
+            "dns_lookups": 0,
+            "parsed": {
+              "pass": [
+                {
+                  "value": "217.13.80.0/20",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "194.143.202.166/28",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "194.143.202.194/28",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "83.147.63.0/24",
+                  "mechanism": "ip4"
+                }
+              ],
+              "neutral": [],
+              "softfail": [],
+              "fail": [],
+              "include": [],
+              "redirect": null,
+              "exp": null,
+              "all": "fail"
+            },
+            "warnings": []
+          }
+        ],
+        "redirect": null,
+        "exp": null,
+        "all": "fail"
+      }
+    },
+    "dmarc": {
+      "record": null,
+      "valid": false,
+      "location": null,
+      "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.www.alpuente.es\n\nv=spf1 include:dnsxperta.com -all"
+    }
+  },
+  "www.amieva.es": {
+    "domain": "www.amieva.es",
+    "base_domain": "amieva.es",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [],
+      "warnings": [
+        "No MX records found. Is the domain parked?"
+      ]
+    },
+    "spf": {
+      "record": null,
+      "valid": false,
+      "error": "www.amieva.es does not have a SPF TXT record"
+    },
+    "dmarc": {
+      "record": null,
+      "valid": false,
+      "location": null,
+      "error": "A DMARC record does not exist for this domain or its base domain"
+    }
+  },
+  "www.andalucia.org": {
+    "domain": "www.andalucia.org",
+    "base_domain": "andalucia.org",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [],
+      "warnings": [
+        "No MX records found. Is the domain parked?"
+      ]
+    },
+    "spf": {
+      "record": null,
+      "valid": false,
+      "error": "www.andalucia.org does not have a SPF TXT record"
+    },
+    "dmarc": {
+      "record": null,
+      "valid": false,
+      "location": null,
+      "error": "A DMARC record does not exist for this domain or its base domain"
+    }
+  },
+  "www.andilla.es": {
+    "domain": "www.andilla.es",
+    "base_domain": "andilla.es",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "ns3.dnsxperta.com",
+        "ns1.dnsxperta.com",
+        "ns2.dnsxperta.com"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [
+        {
+          "preference": 100,
+          "hostname": "mx1.dnsxperta.com",
+          "addresses": [
+            "217.13.80.229",
+            "83.147.63.42"
+          ]
+        }
+      ],
+      "warnings": []
+    },
+    "spf": {
+      "record": null,
+      "valid": false,
+      "error": "www.andilla.es does not have a SPF TXT record"
+    },
+    "dmarc": {
+      "record": null,
+      "valid": false,
+      "location": null,
+      "error": "A DMARC record does not exist for this domain or its base domain"
+    }
+  },
+  "www.animsa.es": {
+    "domain": "www.animsa.es",
+    "base_domain": "animsa.es",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [],
+      "warnings": [
+        "No MX records found. Is the domain parked?"
+      ]
+    },
+    "spf": {
+      "record": null,
+      "valid": false,
+      "error": "www.animsa.es does not have a SPF TXT record"
+    },
+    "dmarc": {
+      "record": null,
+      "valid": false,
+      "location": null,
+      "error": "A DMARC record does not exist for this domain or its base domain"
+    }
+  },
+  "www.ansoain.es": {
+    "domain": "www.ansoain.es",
+    "base_domain": "ansoain.es",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [],
+      "warnings": [
+        "No MX records found. Is the domain parked?"
+      ]
+    },
+    "spf": {
+      "record": null,
+      "valid": false,
+      "error": "www.ansoain.es does not have a SPF TXT record"
+    },
+    "dmarc": {
+      "record": null,
+      "valid": false,
+      "location": null,
+      "error": "A DMARC record does not exist for this domain or its base domain"
+    }
+  },
+  "www.antella.es": {
+    "domain": "www.antella.es",
+    "base_domain": "antella.es",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "ns3.dnsxperta.com",
+        "ns2.dnsxperta.com",
+        "ns1.dnsxperta.com"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [
+        {
+          "preference": 100,
+          "hostname": "mx1.dnsxperta.com",
+          "addresses": [
+            "217.13.80.229",
+            "83.147.63.42"
+          ]
+        }
+      ],
+      "warnings": []
+    },
+    "spf": {
+      "record": "v=spf1 include:dnsxperta.com -all",
+      "valid": true,
+      "dns_lookups": 1,
+      "warnings": [],
+      "parsed": {
+        "pass": [],
+        "neutral": [],
+        "softfail": [],
+        "fail": [],
+        "include": [
+          {
+            "domain": "dnsxperta.com",
+            "record": "v=spf1 ip4:217.13.80.0/20 ip4:194.143.202.166/28 ip4:194.143.202.194/28 ip4:83.147.63.0/24 -all",
+            "dns_lookups": 0,
+            "parsed": {
+              "pass": [
+                {
+                  "value": "217.13.80.0/20",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "194.143.202.166/28",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "194.143.202.194/28",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "83.147.63.0/24",
+                  "mechanism": "ip4"
+                }
+              ],
+              "neutral": [],
+              "softfail": [],
+              "fail": [],
+              "include": [],
+              "redirect": null,
+              "exp": null,
+              "all": "fail"
+            },
+            "warnings": []
+          }
+        ],
+        "redirect": null,
+        "exp": null,
+        "all": "fail"
+      }
+    },
+    "dmarc": {
+      "record": null,
+      "valid": false,
+      "location": null,
+      "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.www.antella.es\n\nv=spf1 include:dnsxperta.com -all"
+    }
+  },
+  "www.antequera.es": {
+    "domain": "www.antequera.es",
+    "base_domain": "antequera.es",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [],
+      "warnings": [
+        "No MX records found. Is the domain parked?"
+      ]
+    },
+    "spf": {
+      "record": null,
+      "valid": false,
+      "error": "www.antequera.es does not have a SPF TXT record"
+    },
+    "dmarc": {
+      "record": null,
+      "valid": false,
+      "location": null,
+      "error": "A DMARC record does not exist for this domain or its base domain"
+    }
+  },
+  "www.aquavall.es": {
+    "domain": "www.aquavall.es",
+    "base_domain": "aquavall.es",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "ns482.webempresa.eu",
+        "ns481.webempresa.eu"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [
+        {
+          "preference": 1,
+          "hostname": "aspmx.l.google.com",
+          "addresses": [
+            "2607:f8b0:400d:c07::1b",
+            "74.125.192.26"
+          ]
+        },
+        {
+          "preference": 5,
+          "hostname": "alt1.aspmx.l.google.com",
+          "addresses": [
+            "2800:3f0:4003:c00::1b",
+            "64.233.186.27"
+          ]
+        },
+        {
+          "preference": 5,
+          "hostname": "alt2.aspmx.l.google.com",
+          "addresses": [
+            "209.85.202.26",
+            "2a00:1450:400b:c00::1b"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "alt3.aspmx.l.google.com",
+          "addresses": [
+            "2a00:1450:400c:c0b::1a",
+            "64.233.184.27"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "alt4.aspmx.l.google.com",
+          "addresses": [
+            "142.250.27.26",
+            "2a00:1450:4025:401::1a"
+          ]
+        }
+      ],
+      "warnings": [
+        "2800:3f0:4003:c00::1b does not have any reverse DNS (PTR) records",
+        "142.250.27.26 does not have any reverse DNS (PTR) records",
+        "2a00:1450:4025:401::1a does not have any reverse DNS (PTR) records"
+      ]
+    },
+    "spf": {
+      "record": null,
+      "valid": false,
+      "error": "The DNS operation timed out after 1.1 seconds"
+    },
+    "dmarc": {
       "record": null,
       "valid": false,
       "location": null,
@@ -23674,7 +24646,7 @@
     "spf": {
       "record": null,
       "valid": false,
-      "error": "The DNS operation timed out after 1.1 seconds"
+      "error": "www.arandadeduero.es does not have a SPF TXT record"
     },
     "dmarc": {
       "record": "v=DMARC1; p=quarantine; rua=mailto:postmaster@viavox.com; ruf=mailto:postmaster@viavox.com;",
@@ -23882,8 +24854,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "dns1.interdominios.com",
-        "dns2.interdominios.com"
+        "dns2.interdominios.com",
+        "dns1.interdominios.com"
       ],
       "warnings": []
     },
@@ -23894,7 +24866,7 @@
           "hostname": "artenara-es.mail.protection.outlook.com",
           "addresses": [
             "104.47.17.138",
-            "104.47.17.74"
+            "104.47.18.74"
           ]
         }
       ],
@@ -24435,8 +25407,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns6.grupoduo.net",
-        "ns5.grupoduo.net"
+        "ns5.grupoduo.net",
+        "ns6.grupoduo.net"
       ],
       "warnings": []
     },
@@ -25129,7 +26101,9 @@
     },
     "mx": {
       "hosts": [],
-      "error": "The DNS operation timed out after 1.1 seconds"
+      "warnings": [
+        "No MX records found. Is the domain parked?"
+      ]
     },
     "spf": {
       "record": null,
@@ -25137,10 +26111,63 @@
       "error": "www.ayto-riberadearriba.es does not have a SPF TXT record"
     },
     "dmarc": {
-      "record": null,
-      "valid": false,
-      "location": null,
-      "error": "The DNS operation timed out after 1.1 seconds"
+      "record": "v=DMARC1; p=none; rua=mailto:info@greencom.net; ruf=mailto:info@greencom.net",
+      "valid": true,
+      "location": "ayto-riberadearriba.es",
+      "warnings": [
+        "greencom.net does not indicate that it accepts DMARC reports about ayto-riberadearriba.es - Authorization record not found: ayto-riberadearriba.es._report._dmarc.greencom.net IN TXT \"v=DMARC1\"",
+        "greencom.net does not indicate that it accepts DMARC reports about ayto-riberadearriba.es - Authorization record not found: ayto-riberadearriba.es._report._dmarc.greencom.net IN TXT \"v=DMARC1\""
+      ],
+      "tags": {
+        "v": {
+          "value": "DMARC1",
+          "explicit": true
+        },
+        "p": {
+          "value": "none",
+          "explicit": true
+        },
+        "rua": {
+          "value": "mailto:info@greencom.net",
+          "explicit": true
+        },
+        "ruf": {
+          "value": "mailto:info@greencom.net",
+          "explicit": true
+        },
+        "adkim": {
+          "value": "r",
+          "explicit": false
+        },
+        "aspf": {
+          "value": "r",
+          "explicit": false
+        },
+        "fo": {
+          "value": [
+            "0"
+          ],
+          "explicit": false
+        },
+        "pct": {
+          "value": 100,
+          "explicit": false
+        },
+        "rf": {
+          "value": [
+            "afrf"
+          ],
+          "explicit": false
+        },
+        "ri": {
+          "value": 86400,
+          "explicit": false
+        },
+        "sp": {
+          "value": "none",
+          "explicit": false
+        }
+      }
     }
   },
   "www.ayto-salas.es": {
@@ -25201,8 +26228,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns1.infofuturo.net",
-        "ns2.infofuturo.net"
+        "ns10.infofuturo.net",
+        "ns11.infofuturo.net"
       ],
       "warnings": []
     },
@@ -25212,7 +26239,7 @@
           "preference": 0,
           "hostname": "correo.ayto-sobrescobio.es",
           "addresses": [
-            "37.153.90.156"
+            "37.153.90.139"
           ]
         }
       ],
@@ -25236,8 +26263,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "dns1.nominalia.com",
-        "dns2.nominalia.com"
+        "dns2.nominalia.com",
+        "dns1.nominalia.com"
       ],
       "warnings": []
     },
@@ -25786,8 +26813,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "dns2.hostinet.com",
-        "dns1.hostinet.com"
+        "dns1.hostinet.com",
+        "dns2.hostinet.com"
       ],
       "warnings": []
     },
@@ -25847,8 +26874,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns1.virtualns.net",
-        "ns2.virtualns.net"
+        "ns2.virtualns.net",
+        "ns1.virtualns.net"
       ],
       "warnings": []
     },
@@ -25874,9 +26901,9 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns3.almazena.com",
+        "ns2.almazena.com",
         "ns1.almazena.com",
-        "ns2.almazena.com"
+        "ns3.almazena.com"
       ],
       "warnings": []
     },
@@ -26142,8 +27169,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "dns185227.phdns22.es",
-        "ns185227.phdns22.es"
+        "ns185227.phdns22.es",
+        "dns185227.phdns22.es"
       ],
       "warnings": []
     },
@@ -26561,8 +27588,8 @@
     "ns": {
       "hostnames": [
         "ns2.dnsxperta.com",
-        "ns1.dnsxperta.com",
-        "ns3.dnsxperta.com"
+        "ns3.dnsxperta.com",
+        "ns1.dnsxperta.com"
       ],
       "warnings": []
     },
@@ -26597,8 +27624,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "dns2.nominalia.com",
-        "dns1.nominalia.com"
+        "dns1.nominalia.com",
+        "dns2.nominalia.com"
       ],
       "warnings": []
     },
@@ -26781,9 +27808,9 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns2.dnsxperta.com",
         "ns1.dnsxperta.com",
-        "ns3.dnsxperta.com"
+        "ns3.dnsxperta.com",
+        "ns2.dnsxperta.com"
       ],
       "warnings": []
     },
@@ -27029,8 +28056,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "dns1.serv330125.servidoresdns.net",
-        "dns2.serv330125.servidoresdns.net"
+        "dns2.serv330125.servidoresdns.net",
+        "dns1.serv330125.servidoresdns.net"
       ],
       "warnings": []
     },
@@ -27471,9 +28498,9 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns07.ns-cloud4b.org",
+        "ns06.ns-cloud4b.net",
         "ns08.ns-cloud4b.com",
-        "ns06.ns-cloud4b.net"
+        "ns07.ns-cloud4b.org"
       ],
       "warnings": []
     },
@@ -27484,7 +28511,7 @@
           "hostname": "camara-es.mail.protection.outlook.com",
           "addresses": [
             "104.47.4.36",
-            "104.47.5.36"
+            "104.47.6.36"
           ]
         }
       ],
@@ -27622,8 +28649,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "dns2.nominalia.com",
-        "dns1.nominalia.com"
+        "dns1.nominalia.com",
+        "dns2.nominalia.com"
       ],
       "warnings": []
     },
@@ -27797,9 +28824,9 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns2.hostingfacyl.com",
         "ns3.hostingfacyl.com",
-        "ns1.hostingfacyl.com"
+        "ns1.hostingfacyl.com",
+        "ns2.hostingfacyl.com"
       ],
       "warnings": []
     },
@@ -28494,15 +29521,74 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns2.losdns.net",
         "ns3.losdns.net",
-        "ns1.losdns.net"
+        "ns1.losdns.net",
+        "ns2.losdns.net"
       ],
       "warnings": []
     },
     "mx": {
-      "hosts": [],
-      "error": "The DNS operation timed out after 1.1 seconds"
+      "hosts": [
+        {
+          "preference": 1,
+          "hostname": "aspmx.l.google.com",
+          "addresses": [
+            "173.194.68.27",
+            "2607:f8b0:400d:c07::1b"
+          ]
+        },
+        {
+          "preference": 5,
+          "hostname": "alt1.aspmx.l.google.com",
+          "addresses": [
+            "2800:3f0:4003:c00::1b",
+            "64.233.186.27"
+          ]
+        },
+        {
+          "preference": 5,
+          "hostname": "alt2.aspmx.l.google.com",
+          "addresses": [
+            "209.85.202.26",
+            "2a00:1450:400b:c00::1b"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "alt3.aspmx.l.google.com",
+          "addresses": [
+            "2a00:1450:400c:c0b::1a",
+            "64.233.184.27"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "alt4.aspmx.l.google.com",
+          "addresses": [
+            "142.250.27.26",
+            "2a00:1450:4025:401::1a"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "correo.cbe.es",
+          "addresses": [
+            "91.142.211.119"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "mail.cbe.es",
+          "addresses": [
+            "91.142.211.119"
+          ]
+        }
+      ],
+      "warnings": [
+        "2800:3f0:4003:c00::1b does not have any reverse DNS (PTR) records",
+        "142.250.27.26 does not have any reverse DNS (PTR) records",
+        "2a00:1450:4025:401::1a does not have any reverse DNS (PTR) records"
+      ]
     },
     "spf": {
       "record": "v=spf1 include:_spf.google.com ~all",
@@ -29050,14 +30136,43 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "dns1.ipcomsistemas.net",
-        "dns2.ipcomsistemas.net"
+        "dns2.ipcomsistemas.net",
+        "dns1.ipcomsistemas.net"
       ],
       "warnings": []
     },
     "mx": {
-      "hosts": [],
-      "error": "The DNS operation timed out after 1.1 seconds"
+      "hosts": [
+        {
+          "preference": 10,
+          "hostname": "mx01.hornetsecurity.com",
+          "addresses": [
+            "94.100.132.8"
+          ]
+        },
+        {
+          "preference": 20,
+          "hostname": "mx02.hornetsecurity.com",
+          "addresses": [
+            "94.100.136.8"
+          ]
+        },
+        {
+          "preference": 30,
+          "hostname": "mx03.hornetsecurity.com",
+          "addresses": [
+            "94.100.134.8"
+          ]
+        },
+        {
+          "preference": 40,
+          "hostname": "mx04.hornetsecurity.com",
+          "addresses": [
+            "94.100.136.7"
+          ]
+        }
+      ],
+      "warnings": []
     },
     "spf": {
       "record": "v=spf1 include:spf.hornetsecurity.com ip4:88.151.16.0/22 -all",
@@ -29311,28 +30426,43 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns1.stinet.net",
-        "ns3.stinet.net",
-        "ns2.cescyl.es",
+        "ns2.stinet.net",
         "ns1.cescyl.es",
-        "ns2.stinet.net"
+        "ns3.stinet.net",
+        "ns1.stinet.net",
+        "ns2.cescyl.es"
       ],
       "warnings": []
     },
     "mx": {
-      "hosts": [],
-      "error": "The DNS operation timed out after 1.1 seconds"
+      "hosts": [
+        {
+          "preference": 5,
+          "hostname": "i-mail.cescyl.es",
+          "addresses": [
+            "195.55.85.205"
+          ]
+        }
+      ],
+      "warnings": [
+        "195.55.85.205 does not have any reverse DNS (PTR) records"
+      ]
     },
     "spf": {
       "record": "v=spf1 a mx ip4:84.124.4.210 ip4:84.124.4.211 ip4:84.124.24.70 ip4:84.124.24.71 ip4:84.124.4.216 ip4:84.124.24.89/29 ip4:212.95.221.225 ip4:213.201.115.156 ip4:213.201.115.187 ip4:213.201.115.188 ip4:213.4.82.254 -all",
       "valid": true,
       "dns_lookups": 2,
-      "warnings": [
-        "The DNS operation timed out after 1.1 seconds",
-        "The DNS operation timed out after 1.1 seconds"
-      ],
+      "warnings": [],
       "parsed": {
         "pass": [
+          {
+            "value": "213.201.115.198",
+            "mechanism": "a"
+          },
+          {
+            "value": "i-mail.cescyl.es",
+            "mechanism": "mx"
+          },
           {
             "value": "84.124.4.210",
             "mechanism": "ip4"
@@ -29399,31 +30529,124 @@
     "base_domain": "cetarsa.es",
     "dnssec": false,
     "ns": {
-      "hostnames": [],
-      "error": "The DNS operation timed out after 1.1 seconds"
+      "hostnames": [
+        "dns1.servidoresdns10.com",
+        "dns2.servidoresdns10.com"
+      ],
+      "warnings": []
     },
     "mx": {
       "hosts": [
         {
           "preference": 10,
           "hostname": "correo.cetarsa.es",
-          "addresses": []
+          "addresses": [
+            "194.179.96.130"
+          ]
         }
       ],
-      "warnings": [
-        "The DNS operation timed out after 1.1 seconds"
-      ]
+      "warnings": []
     },
     "spf": {
-      "record": null,
-      "valid": false,
-      "error": "The DNS operation timed out after 1.1 seconds"
+      "record": "v=spf1 mx a ip4:194.179.96.130 a:cetarsa.es include:spf.abansys.com ~all",
+      "valid": true,
+      "dns_lookups": 4,
+      "warnings": [],
+      "parsed": {
+        "pass": [
+          {
+            "value": "correo.cetarsa.es",
+            "mechanism": "mx"
+          },
+          {
+            "value": "86.109.162.32",
+            "mechanism": "a"
+          },
+          {
+            "value": "194.179.96.130",
+            "mechanism": "ip4"
+          },
+          {
+            "value": "86.109.162.32",
+            "mechanism": "a"
+          }
+        ],
+        "neutral": [],
+        "softfail": [],
+        "fail": [],
+        "include": [
+          {
+            "domain": "spf.abansys.com",
+            "record": "v=spf1 ip4:86.109.160.0/24 ip4:86.109.162.0/24 ip4:86.109.161.0/24 ip4:86.109.163.0/24 ip4:86.109.165.0/24 ip4:86.109.166.0/24 ip4:86.109.167.0/24 ip4:86.109.177.0/24 ip4:86.109.178.0/24 ip4:86.109.179.0/24 ip4:86.109.180.0/24 -all",
+            "dns_lookups": 0,
+            "parsed": {
+              "pass": [
+                {
+                  "value": "86.109.160.0/24",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "86.109.162.0/24",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "86.109.161.0/24",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "86.109.163.0/24",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "86.109.165.0/24",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "86.109.166.0/24",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "86.109.167.0/24",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "86.109.177.0/24",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "86.109.178.0/24",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "86.109.179.0/24",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "86.109.180.0/24",
+                  "mechanism": "ip4"
+                }
+              ],
+              "neutral": [],
+              "softfail": [],
+              "fail": [],
+              "include": [],
+              "redirect": null,
+              "exp": null,
+              "all": "fail"
+            },
+            "warnings": []
+          }
+        ],
+        "redirect": null,
+        "exp": null,
+        "all": "softfail"
+      }
     },
     "dmarc": {
       "record": null,
       "valid": false,
       "location": null,
-      "error": "The DNS operation timed out after 1.1 seconds"
+      "error": "A DMARC record does not exist for this domain or its base domain"
     }
   },
   "www.chera.es": {
@@ -29433,8 +30656,8 @@
     "ns": {
       "hostnames": [
         "ns2.dnsxperta.com",
-        "ns3.dnsxperta.com",
-        "ns1.dnsxperta.com"
+        "ns1.dnsxperta.com",
+        "ns3.dnsxperta.com"
       ],
       "warnings": []
     },
@@ -29514,8 +30737,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns2.redunda.com",
-        "ns.redunda.com"
+        "ns.redunda.com",
+        "ns2.redunda.com"
       ],
       "warnings": []
     },
@@ -29555,9 +30778,7 @@
     },
     "mx": {
       "hosts": [],
-      "warnings": [
-        "No MX records found. Is the domain parked?"
-      ]
+      "error": "The DNS operation timed out after 1.1 seconds"
     },
     "spf": {
       "record": null,
@@ -29708,8 +30929,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "dns2.citapreviadnie.es",
-        "dns.citapreviadnie.es"
+        "dns.citapreviadnie.es",
+        "dns2.citapreviadnie.es"
       ],
       "warnings": []
     },
@@ -29811,9 +31032,7 @@
     },
     "mx": {
       "hosts": [],
-      "warnings": [
-        "No MX records found. Is the domain parked?"
-      ]
+      "error": "The DNS operation timed out after 1.1 seconds"
     },
     "spf": {
       "record": null,
@@ -29833,14 +31052,43 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "dns2.ilimit.net",
-        "housing2-220.ilimit.es"
+        "housing2-220.ilimit.es",
+        "dns2.ilimit.net"
       ],
       "warnings": []
     },
     "mx": {
-      "hosts": [],
-      "error": "The DNS operation timed out after 1.1 seconds"
+      "hosts": [
+        {
+          "preference": 10,
+          "hostname": "mx01.hornetsecurity.com",
+          "addresses": [
+            "94.100.132.8"
+          ]
+        },
+        {
+          "preference": 20,
+          "hostname": "mx02.hornetsecurity.com",
+          "addresses": [
+            "94.100.136.8"
+          ]
+        },
+        {
+          "preference": 30,
+          "hostname": "mx03.hornetsecurity.com",
+          "addresses": [
+            "94.100.134.8"
+          ]
+        },
+        {
+          "preference": 40,
+          "hostname": "mx04.hornetsecurity.com",
+          "addresses": [
+            "94.100.136.7"
+          ]
+        }
+      ],
+      "warnings": []
     },
     "spf": {
       "record": "v=spf1 include:spf.protection.outlook.com include:spf.hornetsecurity.com +ip4:80.94.2.220 +ip4:2.139.238.122  ~all",
@@ -30843,7 +32091,7 @@
       "error": "www.consejoescolardecanarias.org does not have a SPF TXT record"
     },
     "dmarc": {
-      "record": "v=DMARC1;p=quarantine;rua=mailto:webmaster@consejoescolardecanarias.org;sp=quarantine;aspf=r;",
+      "record": "v=DMARC1;p=reject;rua=mailto:webmaster@consejoescolardecanarias.org;sp=reject;aspf=r;ruf=mailto:webmaster@consejoescolardecanarias.org",
       "valid": true,
       "location": "consejoescolardecanarias.org",
       "warnings": [],
@@ -30853,7 +32101,7 @@
           "explicit": true
         },
         "p": {
-          "value": "quarantine",
+          "value": "reject",
           "explicit": true
         },
         "rua": {
@@ -30867,11 +32115,21 @@
           "explicit": true
         },
         "sp": {
-          "value": "quarantine",
+          "value": "reject",
           "explicit": true
         },
         "aspf": {
           "value": "r",
+          "explicit": true
+        },
+        "ruf": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "webmaster@consejoescolardecanarias.org",
+              "size_limit": null
+            }
+          ],
           "explicit": true
         },
         "adkim": {
@@ -31029,8 +32287,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns1.consellinsulardeformentera.net",
-        "ns2.consellinsulardeformentera.net"
+        "ns2.consellinsulardeformentera.net",
+        "ns1.consellinsulardeformentera.net"
       ],
       "warnings": []
     },
@@ -31088,8 +32346,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns3.dnsxperta.com",
         "ns2.dnsxperta.com",
+        "ns3.dnsxperta.com",
         "ns1.dnsxperta.com"
       ],
       "warnings": []
@@ -31332,8 +32590,61 @@
       "warnings": []
     },
     "mx": {
-      "hosts": [],
-      "error": "The DNS operation timed out after 1.1 seconds"
+      "hosts": [
+        {
+          "preference": 10,
+          "hostname": "mail.madrid.org",
+          "addresses": [
+            "195.77.128.11"
+          ]
+        },
+        {
+          "preference": 20,
+          "hostname": "aspmx.l.google.com",
+          "addresses": [
+            "173.194.68.27",
+            "2607:f8b0:400d:c07::1b"
+          ]
+        },
+        {
+          "preference": 30,
+          "hostname": "alt1.aspmx.l.google.com",
+          "addresses": [
+            "2800:3f0:4003:c00::1b",
+            "64.233.186.27"
+          ]
+        },
+        {
+          "preference": 30,
+          "hostname": "alt2.aspmx.l.google.com",
+          "addresses": [
+            "209.85.202.26",
+            "2a00:1450:400b:c00::1b"
+          ]
+        },
+        {
+          "preference": 40,
+          "hostname": "aspmx2.googlemail.com",
+          "addresses": [
+            "2800:3f0:4003:c00::1b",
+            "64.233.186.26"
+          ]
+        },
+        {
+          "preference": 40,
+          "hostname": "aspmx3.googlemail.com",
+          "addresses": [
+            "209.85.202.26",
+            "2a00:1450:400b:c00::1b"
+          ]
+        }
+      ],
+      "warnings": [
+        "The domain mail.comadrid.es does not exist",
+        "The reverse DNS of 195.77.128.11 is mail.comadrid.es, but the A/AAAA DNS records for mail.comadrid.es do not resolve to 195.77.128.11",
+        "2800:3f0:4003:c00::1b does not have any reverse DNS (PTR) records",
+        "2800:3f0:4003:c00::1b does not have any reverse DNS (PTR) records"
+      ]
     },
     "spf": {
       "record": "v=spf1 ip4:195.77.128.128/25 ip4:195.77.128.55/32 include:spf.protection.outlook.com ~all",
@@ -31460,7 +32771,7 @@
       "record": null,
       "valid": false,
       "location": null,
-      "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.www.crtm.es\n\nL090252200000122.5e8702105b1e27.47306172\n\nv=spf1 ip4:195.77.128.128/25 ip4:195.77.128.55/32 include:spf.protection.outlook.com ~all\n\n_globalsign-domain-verification=QKHR-Lv3vmn3f_gunubfg6Z_A1P2wD0heXmHAWxu08\n\nMS=ms88099830\n\ngoogle-site-verification=0sHXIq...fSpZ6axYXAOXo6IQroLLUVlzaj664aw"
+      "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.www.crtm.es\n\nv=spf1 ip4:195.77.128.128/25 ip4:195.77.128.55/32 include:spf.protection.outlook.com ~all\n\n_globalsign-domain-verification=QKHR-Lv3vmn3f_gunubfg6Z_A1P2wD0heXmHAWxu08\n\nMS=ms88099830\n\ngoogle-site-verification=0sHXIq...fSpZ6axYXAOXo6IQroLLUVlzaj664aw\n\nL090252200000122.5e8702105b1e27.47306172"
     }
   },
   "www.crtvg.es": {
@@ -31888,8 +33199,8 @@
     "ns": {
       "hostnames": [
         "dns2.guebs.com",
-        "dns4.guebs.com",
-        "dns3.guebs.com"
+        "dns3.guebs.com",
+        "dns4.guebs.com"
       ],
       "warnings": []
     },
@@ -32768,22 +34079,86 @@
     "dnssec": false,
     "ns": {
       "hostnames": [],
-      "error": "The DNS operation timed out after 1.1 seconds"
+      "warnings": []
     },
     "mx": {
       "hosts": [],
-      "error": "The DNS operation timed out after 1.1 seconds"
+      "warnings": [
+        "No MX records found. Is the domain parked?"
+      ]
     },
     "spf": {
       "record": null,
       "valid": false,
-      "error": "The DNS operation timed out after 1.1 seconds"
+      "error": "www.dpz.es does not have a SPF TXT record"
     },
     "dmarc": {
-      "record": null,
-      "valid": false,
-      "location": null,
-      "error": "The DNS operation timed out after 1.1 seconds"
+      "record": "v=DMARC1; p=quarantine; rua=mailto:admin@dpz.es; ruf=mailto:admin@dpz.es; sp=quarantine",
+      "valid": true,
+      "location": "dpz.es",
+      "warnings": [],
+      "tags": {
+        "v": {
+          "value": "DMARC1",
+          "explicit": true
+        },
+        "p": {
+          "value": "quarantine",
+          "explicit": true
+        },
+        "rua": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "admin@dpz.es",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "ruf": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "admin@dpz.es",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "sp": {
+          "value": "quarantine",
+          "explicit": true
+        },
+        "adkim": {
+          "value": "r",
+          "explicit": false
+        },
+        "aspf": {
+          "value": "r",
+          "explicit": false
+        },
+        "fo": {
+          "value": [
+            "0"
+          ],
+          "explicit": false
+        },
+        "pct": {
+          "value": 100,
+          "explicit": false
+        },
+        "rf": {
+          "value": [
+            "afrf"
+          ],
+          "explicit": false
+        },
+        "ri": {
+          "value": 86400,
+          "explicit": false
+        }
+      }
     }
   },
   "www.ecomuseominero.es": {
@@ -32792,8 +34167,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns07.ns-cloud4b.org",
         "ns06.ns-cloud4b.net",
+        "ns07.ns-cloud4b.org",
         "ns08.ns-cloud4b.com"
       ],
       "warnings": []
@@ -32822,14 +34197,11 @@
       "valid": true,
       "dns_lookups": 5,
       "warnings": [
+        "The DNS operation timed out after 1.1 seconds",
         "Duplicate include: spf.hornetsecurity.com"
       ],
       "parsed": {
         "pass": [
-          {
-            "value": "195.55.193.8",
-            "mechanism": "a"
-          },
           {
             "value": "mx30.asaccomunicaciones.es",
             "mechanism": "mx"
@@ -33533,8 +34905,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "dns01.emvs.es",
-        "dns02.emvs.es"
+        "dns02.emvs.es",
+        "dns01.emvs.es"
       ],
       "warnings": []
     },
@@ -33543,17 +34915,21 @@
         {
           "preference": 10,
           "hostname": "mail.emvs.es",
-          "addresses": []
+          "addresses": [
+            "195.235.203.138"
+          ]
         },
         {
           "preference": 20,
           "hostname": "mail2.emvs.es",
-          "addresses": []
+          "addresses": [
+            "195.235.203.156"
+          ]
         }
       ],
       "warnings": [
-        "The DNS operation timed out after 1.1 seconds",
-        "The DNS operation timed out after 1.1 seconds"
+        "The domain 156.red-195-235-203.customer.static.ccgg.telefonica.net does not exist",
+        "The reverse DNS of 195.235.203.156 is 156.red-195-235-203.customer.static.ccgg.telefonica.net, but the A/AAAA DNS records for 156.red-195-235-203.customer.static.ccgg.telefonica.net do not resolve to 195.235.203.156"
       ]
     },
     "spf": {
@@ -33593,7 +34969,7 @@
       "record": null,
       "valid": false,
       "location": null,
-      "error": "The DNS operation timed out after 1.1 seconds"
+      "error": "A DMARC record does not exist for this domain or its base domain"
     }
   },
   "www.emvtoledo.es": {
@@ -33810,8 +35186,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns1.ejie.es",
-        "ns2.ejie.es"
+        "ns2.ejie.es",
+        "ns1.ejie.es"
       ],
       "warnings": []
     },
@@ -33945,8 +35321,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns.redunda.com",
-        "ns2.redunda.com"
+        "ns2.redunda.com",
+        "ns.redunda.com"
       ],
       "warnings": []
     },
@@ -34043,8 +35419,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns16.ovh.net",
-        "dns16.ovh.net"
+        "dns16.ovh.net",
+        "ns16.ovh.net"
       ],
       "warnings": []
     },
@@ -34274,9 +35650,9 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
+        "aspe.efor.es",
         "dns.efor.es",
-        "dns2.efor.es",
-        "aspe.efor.es"
+        "dns2.efor.es"
       ],
       "warnings": []
     },
@@ -34738,10 +36114,10 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns4.hostinger.es",
         "ns1.hostinger.es",
         "ns3.hostinger.es",
-        "ns2.hostinger.es"
+        "ns2.hostinger.es",
+        "ns4.hostinger.es"
       ],
       "warnings": []
     },
@@ -34766,9 +36142,9 @@
         "The reverse DNS of 204.141.43.44 is mx2.zoho.com, but the A/AAAA DNS records for mx2.zoho.com do not resolve to 204.141.43.44",
         "The reverse DNS of 204.141.43.44 is mx2.zohomail.com, but the A/AAAA DNS records for mx2.zohomail.com do not resolve to 204.141.43.44",
         "The reverse DNS of 136.143.183.44 is mx.zoho.com, but the A/AAAA DNS records for mx.zoho.com do not resolve to 136.143.183.44",
+        "The reverse DNS of 136.143.183.44 is mx.zohomail.com, but the A/AAAA DNS records for mx.zohomail.com do not resolve to 136.143.183.44",
         "The reverse DNS of 136.143.183.44 is mx3.zoho.com, but the A/AAAA DNS records for mx3.zoho.com do not resolve to 136.143.183.44",
-        "The reverse DNS of 136.143.183.44 is mx3.zohomail.com, but the A/AAAA DNS records for mx3.zohomail.com do not resolve to 136.143.183.44",
-        "The reverse DNS of 136.143.183.44 is mx.zohomail.com, but the A/AAAA DNS records for mx.zohomail.com do not resolve to 136.143.183.44"
+        "The reverse DNS of 136.143.183.44 is mx3.zohomail.com, but the A/AAAA DNS records for mx3.zohomail.com do not resolve to 136.143.183.44"
       ]
     },
     "spf": {
@@ -34815,8 +36191,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "dns2.nominalia.com",
-        "dns1.nominalia.com"
+        "dns1.nominalia.com",
+        "dns2.nominalia.com"
       ],
       "warnings": []
     },
@@ -34850,9 +36226,9 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "picula.funep.es",
         "chico.rediris.es",
-        "sun.rediris.es"
+        "sun.rediris.es",
+        "picula.funep.es"
       ],
       "warnings": []
     },
@@ -34969,8 +36345,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns1.dnsxperta.com",
         "ns2.dnsxperta.com",
+        "ns1.dnsxperta.com",
         "ns3.dnsxperta.com"
       ],
       "warnings": []
@@ -35260,12 +36636,10 @@
       "error": "www.gobiernodecanarias.org does not have a SPF TXT record"
     },
     "dmarc": {
-      "record": "v=DMARC1; p=none; sp=none; adkim=r; aspf=r",
+      "record": "v=DMARC1; p=none; sp=none; adkim=r; aspf=r; rua=mailto:dmarc-rua.tic@gobiernodecanarias.org; ruf=mailto:dmarc-ruf.tic@gobiernodecanarias.org; fo=1;",
       "valid": true,
       "location": "gobiernodecanarias.org",
-      "warnings": [
-        "rua tag (destination for aggregate reports) not found"
-      ],
+      "warnings": [],
       "tags": {
         "v": {
           "value": "DMARC1",
@@ -35287,11 +36661,31 @@
           "value": "r",
           "explicit": true
         },
+        "rua": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarc-rua.tic@gobiernodecanarias.org",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "ruf": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarc-ruf.tic@gobiernodecanarias.org",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
         "fo": {
           "value": [
-            "0"
+            "1"
           ],
-          "explicit": false
+          "explicit": true
         },
         "pct": {
           "value": 100,
@@ -36427,8 +37821,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "dns1.serv330125.servidoresdns.net",
-        "dns2.serv330125.servidoresdns.net"
+        "dns2.serv330125.servidoresdns.net",
+        "dns1.serv330125.servidoresdns.net"
       ],
       "warnings": []
     },
@@ -37316,11 +38710,8 @@
     "base_domain": "joventut-valencia.es",
     "dnssec": false,
     "ns": {
-      "hostnames": [
-        "cl2020060918001.dnssw.net",
-        "pro.joventut-valencia.es"
-      ],
-      "warnings": []
+      "hostnames": [],
+      "error": "The DNS operation timed out after 1.1 seconds"
     },
     "mx": {
       "hosts": [],
@@ -37344,9 +38735,9 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
+        "dns2.zonadns.com",
         "dns3.zonadns.com",
-        "dns1.zonadns.com",
-        "dns2.zonadns.com"
+        "dns1.zonadns.com"
       ],
       "warnings": []
     },
@@ -37899,8 +39290,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns2.dnsxperta.com",
         "ns1.dnsxperta.com",
+        "ns2.dnsxperta.com",
         "ns3.dnsxperta.com"
       ],
       "warnings": []
@@ -37942,8 +39333,61 @@
       "warnings": []
     },
     "mx": {
-      "hosts": [],
-      "error": "The DNS operation timed out after 1.1 seconds"
+      "hosts": [
+        {
+          "preference": 10,
+          "hostname": "aspmx.l.google.com",
+          "addresses": [
+            "173.194.208.26",
+            "2607:f8b0:400d:c0f::1b"
+          ]
+        },
+        {
+          "preference": 20,
+          "hostname": "alt1.aspmx.l.google.com",
+          "addresses": [
+            "2800:3f0:4003:c00::1b",
+            "64.233.186.26"
+          ]
+        },
+        {
+          "preference": 25,
+          "hostname": "mail.lagomera.es",
+          "addresses": [
+            "212.89.16.163"
+          ]
+        },
+        {
+          "preference": 30,
+          "hostname": "alt3.aspmx.l.google.com",
+          "addresses": [
+            "2a00:1450:400c:c0b::1a",
+            "64.233.184.27"
+          ]
+        },
+        {
+          "preference": 40,
+          "hostname": "alt4.aspmx.l.google.com",
+          "addresses": [
+            "142.250.27.26",
+            "2a00:1450:4025:401::1a"
+          ]
+        },
+        {
+          "preference": 50,
+          "hostname": "alt2.aspmx.l.google.com",
+          "addresses": [
+            "209.85.202.26",
+            "2a00:1450:400b:c00::1a"
+          ]
+        }
+      ],
+      "warnings": [
+        "2607:f8b0:400d:c0f::1b does not have any reverse DNS (PTR) records",
+        "2800:3f0:4003:c00::1b does not have any reverse DNS (PTR) records",
+        "142.250.27.26 does not have any reverse DNS (PTR) records",
+        "2a00:1450:4025:401::1a does not have any reverse DNS (PTR) records"
+      ]
     },
     "spf": {
       "record": "v=spf1 include:_spf.google.com ~all",
@@ -38444,7 +39888,7 @@
       "record": "v=spf1 +a +mx +include:dv4.digival.org -all",
       "valid": false,
       "warnings": [],
-      "error": "The DNS operation timed out after 1.1 seconds"
+      "error": "dv4.digival.org does not have a SPF TXT record"
     },
     "dmarc": {
       "record": null,
@@ -38459,8 +39903,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns1.dnsxperta.com",
         "ns2.dnsxperta.com",
+        "ns1.dnsxperta.com",
         "ns3.dnsxperta.com"
       ],
       "warnings": []
@@ -39128,14 +40572,60 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns10.ovh.net",
-        "dns10.ovh.net"
+        "dns10.ovh.net",
+        "ns10.ovh.net"
       ],
       "warnings": []
     },
     "mx": {
-      "hosts": [],
-      "error": "The DNS operation timed out after 1.1 seconds"
+      "hosts": [
+        {
+          "preference": 1,
+          "hostname": "aspmx.l.google.com",
+          "addresses": [
+            "173.194.208.26",
+            "2607:f8b0:400d:c0f::1b"
+          ]
+        },
+        {
+          "preference": 5,
+          "hostname": "alt1.aspmx.l.google.com",
+          "addresses": [
+            "2800:3f0:4003:c00::1b",
+            "64.233.186.26"
+          ]
+        },
+        {
+          "preference": 5,
+          "hostname": "alt2.aspmx.l.google.com",
+          "addresses": [
+            "209.85.202.26",
+            "2a00:1450:400b:c00::1a"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "alt3.aspmx.l.google.com",
+          "addresses": [
+            "2a00:1450:400c:c0b::1a",
+            "64.233.184.27"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "alt4.aspmx.l.google.com",
+          "addresses": [
+            "142.250.27.26",
+            "2a00:1450:4025:401::1a"
+          ]
+        }
+      ],
+      "warnings": [
+        "2607:f8b0:400d:c0f::1b does not have any reverse DNS (PTR) records",
+        "2800:3f0:4003:c00::1b does not have any reverse DNS (PTR) records",
+        "142.250.27.26 does not have any reverse DNS (PTR) records",
+        "2a00:1450:4025:401::1a does not have any reverse DNS (PTR) records"
+      ]
     },
     "spf": {
       "record": "v=spf1 ip4:213.201.84.215/32 ip4:213.201.84.218/32 a mx include:_spf.google.com ~all",
@@ -39376,9 +40866,9 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
+        "ns1.dnsxperta.com",
         "ns3.dnsxperta.com",
-        "ns2.dnsxperta.com",
-        "ns1.dnsxperta.com"
+        "ns2.dnsxperta.com"
       ],
       "warnings": []
     },
@@ -39536,9 +41026,9 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns1.dnsxperta.com",
         "ns2.dnsxperta.com",
-        "ns3.dnsxperta.com"
+        "ns3.dnsxperta.com",
+        "ns1.dnsxperta.com"
       ],
       "warnings": []
     },
@@ -40409,8 +41899,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "dns01.ono.com",
-        "dns02.ono.com"
+        "dns02.ono.com",
+        "dns01.ono.com"
       ],
       "warnings": []
     },
@@ -40420,8 +41910,8 @@
           "preference": 0,
           "hostname": "museocienciavalladolid-es.mail.protection.outlook.com",
           "addresses": [
-            "104.47.12.36",
-            "104.47.13.36"
+            "104.47.13.36",
+            "104.47.14.36"
           ]
         }
       ],
@@ -40711,37 +42201,8 @@
       "warnings": []
     },
     "mx": {
-      "hosts": [
-        {
-          "preference": 10,
-          "hostname": "mx01.hornetsecurity.com",
-          "addresses": [
-            "94.100.132.8"
-          ]
-        },
-        {
-          "preference": 20,
-          "hostname": "mx02.hornetsecurity.com",
-          "addresses": [
-            "94.100.136.8"
-          ]
-        },
-        {
-          "preference": 30,
-          "hostname": "mx03.hornetsecurity.com",
-          "addresses": [
-            "94.100.134.8"
-          ]
-        },
-        {
-          "preference": 40,
-          "hostname": "mx04.hornetsecurity.com",
-          "addresses": [
-            "94.100.136.7"
-          ]
-        }
-      ],
-      "warnings": []
+      "hosts": [],
+      "error": "The DNS operation timed out after 1.1 seconds"
     },
     "spf": {
       "record": "v=spf1 include:spf.hornetsecurity.com ip4:88.151.16.0/22 -all",
@@ -40856,8 +42317,8 @@
     "ns": {
       "hostnames": [
         "ns3.acens.net",
-        "ns7.acens.net",
-        "ns4.acens.net"
+        "ns4.acens.net",
+        "ns7.acens.net"
       ],
       "warnings": []
     },
@@ -40924,8 +42385,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "dns2.nominalia.com",
-        "dns1.nominalia.com"
+        "dns1.nominalia.com",
+        "dns2.nominalia.com"
       ],
       "warnings": []
     },
@@ -41262,10 +42723,10 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns2.gestiondecuenta.com",
-        "ns4.gestiondecuenta.com",
+        "ns3.gestiondecuenta.com",
         "ns.gestiondecuenta.com",
-        "ns3.gestiondecuenta.com"
+        "ns2.gestiondecuenta.com",
+        "ns4.gestiondecuenta.com"
       ],
       "warnings": []
     },
@@ -41560,14 +43021,77 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "dns1.nominalia.com",
-        "dns2.nominalia.com"
+        "dns2.nominalia.com",
+        "dns1.nominalia.com"
       ],
       "warnings": []
     },
     "mx": {
-      "hosts": [],
-      "error": "The DNS operation timed out after 1.1 seconds"
+      "hosts": [
+        {
+          "preference": 1,
+          "hostname": "aspmx.l.google.com",
+          "addresses": [
+            "173.194.208.26",
+            "2607:f8b0:400d:c0f::1b"
+          ]
+        },
+        {
+          "preference": 5,
+          "hostname": "alt1.aspmx.l.google.com",
+          "addresses": [
+            "2800:3f0:4003:c00::1b",
+            "64.233.186.26"
+          ]
+        },
+        {
+          "preference": 5,
+          "hostname": "alt2.aspmx.l.google.com",
+          "addresses": [
+            "209.85.202.26",
+            "2a00:1450:400b:c00::1a"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "aspmx2.googlemail.com",
+          "addresses": [
+            "2800:3f0:4003:c00::1a",
+            "64.233.186.26"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "aspmx3.googlemail.com",
+          "addresses": [
+            "209.85.202.26",
+            "2a00:1450:400b:c00::1a"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "aspmx4.googlemail.com",
+          "addresses": [
+            "2a00:1450:400c:c0b::1b",
+            "64.233.184.27"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "aspmx5.googlemail.com",
+          "addresses": [
+            "142.250.27.27",
+            "2a00:1450:4025:401::1b"
+          ]
+        }
+      ],
+      "warnings": [
+        "2607:f8b0:400d:c0f::1b does not have any reverse DNS (PTR) records",
+        "2800:3f0:4003:c00::1b does not have any reverse DNS (PTR) records",
+        "2800:3f0:4003:c00::1a does not have any reverse DNS (PTR) records",
+        "142.250.27.27 does not have any reverse DNS (PTR) records",
+        "2a00:1450:4025:401::1b does not have any reverse DNS (PTR) records"
+      ]
     },
     "spf": {
       "record": "v=spf1 include:aspmx.googlemail.com ~all",
@@ -41816,8 +43340,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns1.civicloud.net",
-        "ns2.civicloud.net"
+        "ns2.civicloud.net",
+        "ns1.civicloud.net"
       ],
       "warnings": []
     },
@@ -41827,7 +43351,7 @@
           "preference": 0,
           "hostname": "palcongresvlc-com02e.mail.protection.outlook.com",
           "addresses": [
-            "104.47.12.36",
+            "104.47.13.36",
             "104.47.14.36"
           ]
         }
@@ -42409,8 +43933,8 @@
           "preference": 10,
           "hostname": "parlamentib-es.mail.protection.outlook.com",
           "addresses": [
-            "104.47.10.36",
-            "104.47.8.36"
+            "104.47.8.36",
+            "104.47.9.36"
           ]
         }
       ],
@@ -42812,8 +44336,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "dns2.serv330125.servidoresdns.net",
-        "dns1.serv330125.servidoresdns.net"
+        "dns1.serv330125.servidoresdns.net",
+        "dns2.serv330125.servidoresdns.net"
       ],
       "warnings": []
     },
@@ -43020,9 +44544,9 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "dns2.policia.es",
         "ineco.nic.es",
-        "dns.policia.es"
+        "dns.policia.es",
+        "dns2.policia.es"
       ],
       "warnings": []
     },
@@ -43146,8 +44670,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "dns1.ipcomsistemas.net",
-        "dns2.ipcomsistemas.net"
+        "dns2.ipcomsistemas.net",
+        "dns1.ipcomsistemas.net"
       ],
       "warnings": []
     },
@@ -43329,8 +44853,16 @@
       "warnings": []
     },
     "mx": {
-      "hosts": [],
-      "error": "The DNS operation timed out after 1.1 seconds"
+      "hosts": [
+        {
+          "preference": 10,
+          "hostname": "netr.portel.com",
+          "addresses": [
+            "195.53.242.101"
+          ]
+        }
+      ],
+      "warnings": []
     },
     "spf": {
       "record": null,
@@ -43376,9 +44908,9 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns03.ns-cloud4b.net",
+        "ns05.ns-cloud4b.org",
         "ns06.ns-cloud4b.com",
-        "ns05.ns-cloud4b.org"
+        "ns03.ns-cloud4b.net"
       ],
       "warnings": []
     },
@@ -43389,7 +44921,7 @@
           "hostname": "puertogijon-es.mail.protection.outlook.com",
           "addresses": [
             "104.47.10.36",
-            "104.47.8.36"
+            "104.47.9.36"
           ]
         }
       ],
@@ -43738,7 +45270,7 @@
     "dnssec": false,
     "ns": {
       "hostnames": [],
-      "error": "The DNS operation timed out after 1.1 seconds"
+      "warnings": []
     },
     "mx": {
       "hosts": [],
@@ -43755,7 +45287,7 @@
       "record": null,
       "valid": false,
       "location": null,
-      "error": "The DNS operation timed out after 1.1 seconds"
+      "error": "A DMARC record does not exist for this domain or its base domain"
     }
   },
   "www.riojasalud.es": {
@@ -44034,8 +45566,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns2.infofuturo.net",
-        "ns1.infofuturo.net"
+        "ns1.infofuturo.net",
+        "ns2.infofuturo.net"
       ],
       "warnings": []
     },
@@ -44492,7 +46024,9 @@
     },
     "mx": {
       "hosts": [],
-      "error": "The DNS operation timed out after 1.1 seconds"
+      "warnings": [
+        "No MX records found. Is the domain parked?"
+      ]
     },
     "spf": {
       "record": null,
@@ -44555,7 +46089,7 @@
       "record": null,
       "valid": false,
       "location": null,
-      "error": "The DNS operation timed out after 1.1 seconds"
+      "error": "A DMARC record does not exist for this domain or its base domain"
     }
   },
   "www.segittur.es": {
@@ -45168,7 +46702,7 @@
     "dnssec": false,
     "ns": {
       "hostnames": [],
-      "error": "The DNS operation timed out after 1.1 seconds"
+      "warnings": []
     },
     "mx": {
       "hosts": [],
@@ -45185,7 +46719,7 @@
       "record": null,
       "valid": false,
       "location": null,
-      "error": "The DNS operation timed out after 1.1 seconds"
+      "error": "A DMARC record does not exist for this domain or its base domain"
     }
   },
   "www.soria.es": {
@@ -45813,9 +47347,7 @@
     "base_domain": "tramalacant.es",
     "dnssec": false,
     "ns": {
-      "hostnames": [
-        "lp.gva.es"
-      ],
+      "hostnames": [],
       "warnings": []
     },
     "mx": {
@@ -45874,12 +47406,14 @@
     },
     "mx": {
       "hosts": [],
-      "error": "The DNS operation timed out after 1.1 seconds"
+      "warnings": [
+        "No MX records found. Is the domain parked?"
+      ]
     },
     "spf": {
       "record": null,
       "valid": false,
-      "error": "The DNS operation timed out after 1.1 seconds"
+      "error": "www.tranviasdezaragoza.es does not have a SPF TXT record"
     },
     "dmarc": {
       "record": null,
@@ -46121,8 +47655,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "dns1.nominalia.com",
-        "dns2.nominalia.com"
+        "dns2.nominalia.com",
+        "dns1.nominalia.com"
       ],
       "warnings": []
     },
@@ -46275,8 +47809,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns1.jccm.es",
-        "ns2.jccm.es"
+        "ns2.jccm.es",
+        "ns1.jccm.es"
       ],
       "warnings": []
     },
@@ -46428,14 +47962,92 @@
       "error": "A DMARC record does not exist for this domain or its base domain"
     }
   },
+  "www.uab.cat": {
+    "domain": "www.uab.cat",
+    "base_domain": "uab.cat",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [],
+      "warnings": [
+        "No MX records found. Is the domain parked?"
+      ]
+    },
+    "spf": {
+      "record": null,
+      "valid": false,
+      "error": "www.uab.cat does not have a SPF TXT record"
+    },
+    "dmarc": {
+      "record": "v=DMARC1; p=none; rua=mailto:dmarc_agg@vali.email;",
+      "valid": true,
+      "location": "uab.cat",
+      "warnings": [],
+      "tags": {
+        "v": {
+          "value": "DMARC1",
+          "explicit": true
+        },
+        "p": {
+          "value": "none",
+          "explicit": true
+        },
+        "rua": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarc_agg@vali.email",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "adkim": {
+          "value": "r",
+          "explicit": false
+        },
+        "aspf": {
+          "value": "r",
+          "explicit": false
+        },
+        "fo": {
+          "value": [
+            "0"
+          ],
+          "explicit": false
+        },
+        "pct": {
+          "value": 100,
+          "explicit": false
+        },
+        "rf": {
+          "value": [
+            "afrf"
+          ],
+          "explicit": false
+        },
+        "ri": {
+          "value": 86400,
+          "explicit": false
+        },
+        "sp": {
+          "value": "none",
+          "explicit": false
+        }
+      }
+    }
+  },
   "www.ucjc.edu": {
     "domain": "www.ucjc.edu",
     "base_domain": "ucjc.edu",
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "sec2.rcode0.net",
-        "sec1.rcode0.net"
+        "sec1.rcode0.net",
+        "sec2.rcode0.net"
       ],
       "warnings": []
     },
@@ -46446,7 +48058,7 @@
           "hostname": "ucjc-edu.mail.protection.outlook.com",
           "addresses": [
             "104.47.4.36",
-            "104.47.6.36"
+            "104.47.5.36"
           ]
         }
       ],
@@ -46972,8 +48584,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "dns2.nominalia.com",
-        "dns1.nominalia.com"
+        "dns1.nominalia.com",
+        "dns2.nominalia.com"
       ],
       "warnings": []
     },
@@ -47007,8 +48619,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "dns2.nominalia.com",
-        "dns1.nominalia.com"
+        "dns1.nominalia.com",
+        "dns2.nominalia.com"
       ],
       "warnings": []
     },
@@ -47059,7 +48671,7 @@
       "record": null,
       "valid": false,
       "location": null,
-      "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.velezmalaga.es\n\nVLOPS5720\n\nv=spf1 mx include:malaga.es include:spf.qsemail.net ~all"
+      "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.velezmalaga.es\n\nv=spf1 mx include:malaga.es include:spf.qsemail.net ~all\n\nVLOPS5720"
     }
   },
   "www.villademoya.es": {
@@ -47071,8 +48683,71 @@
       "warnings": []
     },
     "mx": {
-      "hosts": [],
-      "error": "The DNS operation timed out after 1.1 seconds"
+      "hosts": [
+        {
+          "preference": 10,
+          "hostname": "aspmx.l.google.com",
+          "addresses": [
+            "2607:f8b0:400d:c0f::1b",
+            "74.125.192.26"
+          ]
+        },
+        {
+          "preference": 20,
+          "hostname": "alt1.aspmx.l.google.com",
+          "addresses": [
+            "2800:3f0:4003:c00::1b",
+            "64.233.186.26"
+          ]
+        },
+        {
+          "preference": 20,
+          "hostname": "alt2.aspmx.l.google.com",
+          "addresses": [
+            "209.85.202.27",
+            "2a00:1450:400b:c00::1b"
+          ]
+        },
+        {
+          "preference": 30,
+          "hostname": "aspmx2.googlemail.com",
+          "addresses": [
+            "2800:3f0:4003:c00::1a",
+            "64.233.186.26"
+          ]
+        },
+        {
+          "preference": 30,
+          "hostname": "aspmx3.googlemail.com",
+          "addresses": [
+            "209.85.202.26",
+            "2a00:1450:400b:c00::1a"
+          ]
+        },
+        {
+          "preference": 30,
+          "hostname": "aspmx4.googlemail.com",
+          "addresses": [
+            "2a00:1450:400c:c0b::1b",
+            "64.233.184.27"
+          ]
+        },
+        {
+          "preference": 30,
+          "hostname": "aspmx5.googlemail.com",
+          "addresses": [
+            "142.250.27.27",
+            "2a00:1450:4025:401::1b"
+          ]
+        }
+      ],
+      "warnings": [
+        "2607:f8b0:400d:c0f::1b does not have any reverse DNS (PTR) records",
+        "2800:3f0:4003:c00::1b does not have any reverse DNS (PTR) records",
+        "2800:3f0:4003:c00::1a does not have any reverse DNS (PTR) records",
+        "142.250.27.27 does not have any reverse DNS (PTR) records",
+        "2a00:1450:4025:401::1b does not have any reverse DNS (PTR) records"
+      ]
     },
     "spf": {
       "record": null,
@@ -47199,8 +48874,8 @@
     "ns": {
       "hostnames": [
         "ns2.dnsxperta.com",
-        "ns1.dnsxperta.com",
-        "ns3.dnsxperta.com"
+        "ns3.dnsxperta.com",
+        "ns1.dnsxperta.com"
       ],
       "warnings": []
     },
@@ -47332,8 +49007,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "dns1.serv330125.servidoresdns.net",
-        "dns2.serv330125.servidoresdns.net"
+        "dns2.serv330125.servidoresdns.net",
+        "dns1.serv330125.servidoresdns.net"
       ],
       "warnings": []
     },
@@ -47514,8 +49189,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns2.7i-misdns.net",
-        "ns1.7i-misdns.net"
+        "ns1.7i-misdns.net",
+        "ns2.7i-misdns.net"
       ],
       "warnings": []
     },
@@ -47918,9 +49593,9 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns1.dnsxperta.com",
         "ns3.dnsxperta.com",
-        "ns2.dnsxperta.com"
+        "ns2.dnsxperta.com",
+        "ns1.dnsxperta.com"
       ],
       "warnings": []
     },
@@ -48192,8 +49867,8 @@
     "dnssec": false,
     "ns": {
       "hostnames": [
-        "ns1.dondominio.com",
-        "ns2.dondominio.com"
+        "ns2.dondominio.com",
+        "ns1.dondominio.com"
       ],
       "warnings": []
     },
