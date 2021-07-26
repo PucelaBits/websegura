@@ -30,7 +30,7 @@ jobs:
       - name: Check DMARC information about public sites
         run: |
           SITES=$(find {_data/general.json,_data/{comunidades,provincias}/*.json} | xargs cat | jq -r .webs[].url | sed 's/www.//g')
-          checkdmarc --skip-tls --timeout 1 ${SITES} | jq 'INDEX(.domain)' > _data/results/dmarc/summary.json
+          checkdmarc --skip-tls --timeout 3 ${SITES} | jq 'INDEX(.domain)' > _data/results/dmarc/summary.json
 
       # The resulting commit will not trigger another GitHub Actions Workflow run.
       # This is due to limitations set by GitHub.
