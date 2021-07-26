@@ -1,0 +1,81 @@
+{
+  "domain": "base.cat",
+  "base_domain": "base.cat",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "dns1.nominalia.com",
+      "dns2.nominalia.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "correu.base.cat",
+        "addresses": [
+          "90.160.63.9"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mx1.tinet.org",
+        "addresses": [
+          "195.77.216.146"
+        ]
+      },
+      {
+        "preference": 30,
+        "hostname": "mx1.dipta.cat",
+        "addresses": [
+          "195.76.233.59"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 a mx ip4:90.160.60.248/32 -all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "90.160.63.5",
+          "mechanism": "a"
+        },
+        {
+          "value": "correu.base.cat",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mx1.tinet.org",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mx1.dipta.cat",
+          "mechanism": "mx"
+        },
+        {
+          "value": "90.160.60.248/32",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

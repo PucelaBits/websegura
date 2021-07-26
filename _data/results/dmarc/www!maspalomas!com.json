@@ -1,0 +1,113 @@
+{
+  "domain": "maspalomas.com",
+  "base_domain": "maspalomas.com",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "nsjc8hos01.telefonica-data.com",
+      "nsalchos01.telefonica-data.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "correo.maspalomas.com",
+        "addresses": [
+          "195.76.51.99"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 mx a ip4:195.76.51.99 a:correo.maspalomas.com -all",
+    "valid": true,
+    "dns_lookups": 3,
+    "warnings": [
+      "maspalomas.com does not have any A/AAAA records"
+    ],
+    "parsed": {
+      "pass": [
+        {
+          "value": "correo.maspalomas.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "195.76.51.99",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "195.76.51.99",
+          "mechanism": "a"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": "v=DMARC1; p=quarantine; rua=mailto:mailauth-reports@maspalomas.com",
+    "valid": true,
+    "location": "maspalomas.com",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "mailauth-reports@maspalomas.com",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "quarantine",
+        "explicit": false
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "domain": "parcan.es",
+  "base_domain": "parcan.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "artemis.ttd.net",
+      "minerva.ttd.net"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
+  },
+  "spf": {
+    "record": "v=spf1 mx mx:parcan.es ~all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "correo.parcan.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "correo.parcan.es",
+          "mechanism": "mx"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

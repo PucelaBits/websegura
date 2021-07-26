@@ -1,0 +1,123 @@
+{
+  "domain": "diputadodelcomun.org",
+  "base_domain": "diputadodelcomun.org",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "dns26.servidoresdns.net",
+      "dns25.servidoresdns.net"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "poster1i.iberlayer.com",
+        "addresses": [
+          "130.117.89.12",
+          "130.117.89.26",
+          "130.117.89.4",
+          "130.117.89.5",
+          "130.117.89.6"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "poster4i.iberlayer.com",
+        "addresses": [
+          "80.169.225.36",
+          "80.169.225.37",
+          "80.169.225.38",
+          "80.169.225.44"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 ip4:62.82.138.99 include:iberlayer.com -all",
+    "valid": true,
+    "dns_lookups": 1,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "62.82.138.99",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "iberlayer.com",
+          "record": "v=spf1 ip4:130.117.89.0/27 ip4:80.169.225.32/27 ip4:185.136.218.5/32 ip4:185.136.218.6/32 ip4:185.136.218.7/32 ip4:185.136.218.8/32 ip4:185.136.219.26/32 ip4:185.136.219.27/32 ip4:185.136.219.28/32 ip4:185.136.219.29/32 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "130.117.89.0/27",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "80.169.225.32/27",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.136.218.5/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.136.218.6/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.136.218.7/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.136.218.8/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.136.219.26/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.136.219.27/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.136.219.28/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.136.219.29/32",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

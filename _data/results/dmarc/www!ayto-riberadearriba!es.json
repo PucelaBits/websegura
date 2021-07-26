@@ -1,0 +1,118 @@
+{
+  "domain": "ayto-riberadearriba.es",
+  "base_domain": "ayto-riberadearriba.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "gaudiosa.greencom.net",
+      "fruela.greencom.net"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "fruela.greencom.net",
+        "addresses": [
+          "212.89.6.11"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 a mx ptr ip4:212.89.6.11 ~all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [
+      "The ptr mechanism should not be used - https://tools.ietf.org/html/rfc7208#section-5.5"
+    ],
+    "parsed": {
+      "pass": [
+        {
+          "value": "212.89.23.93",
+          "mechanism": "a"
+        },
+        {
+          "value": "fruela.greencom.net",
+          "mechanism": "mx"
+        },
+        {
+          "value": "",
+          "mechanism": "ptr"
+        },
+        {
+          "value": "212.89.6.11",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
+  },
+  "dmarc": {
+    "record": "v=DMARC1; p=none; rua=mailto:info@greencom.net; ruf=mailto:info@greencom.net",
+    "valid": true,
+    "location": "ayto-riberadearriba.es",
+    "warnings": [
+      "greencom.net does not indicate that it accepts DMARC reports about ayto-riberadearriba.es - Authorization record not found: ayto-riberadearriba.es._report._dmarc.greencom.net IN TXT \"v=DMARC1\"",
+      "greencom.net does not indicate that it accepts DMARC reports about ayto-riberadearriba.es - Authorization record not found: ayto-riberadearriba.es._report._dmarc.greencom.net IN TXT \"v=DMARC1\""
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "rua": {
+        "value": "mailto:info@greencom.net",
+        "explicit": true
+      },
+      "ruf": {
+        "value": "mailto:info@greencom.net",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
+  }
+}

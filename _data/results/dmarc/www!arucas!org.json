@@ -1,0 +1,38 @@
+{
+  "domain": "arucas.org",
+  "base_domain": "arucas.org",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "dns9.servidoresdns.net",
+      "dns10.servidoresdns.net"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "aspmx.l.google.com",
+        "addresses": [
+          "2607:f8b0:400e:c08::1b",
+          "74.125.142.27"
+        ]
+      }
+    ],
+    "warnings": [
+      "2607:f8b0:400e:c08::1b does not have any reverse DNS (PTR) records"
+    ]
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "arucas.org does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

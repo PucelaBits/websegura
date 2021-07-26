@@ -1,0 +1,59 @@
+{
+  "domain": "aytolalcudiadecrespins.es",
+  "base_domain": "aytolalcudiadecrespins.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "dns2.alojared.com",
+      "dns1.alojared.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.aytolalcudiadecrespins.es",
+        "addresses": [
+          "164.132.155.176"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 a mx ip4:46.105.117.210 -all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "164.132.155.176",
+          "mechanism": "a"
+        },
+        {
+          "value": "mail.aytolalcudiadecrespins.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "46.105.117.210",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

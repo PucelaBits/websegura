@@ -1,0 +1,35 @@
+{
+  "domain": "puertodelrosario.org",
+  "base_domain": "puertodelrosario.org",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "dns3.servidoresdns.net",
+      "dns4.servidoresdns.net"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.puertodelrosario.org",
+        "addresses": [
+          "195.53.124.16"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "puertodelrosario.org does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

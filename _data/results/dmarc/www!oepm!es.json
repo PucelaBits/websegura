@@ -1,0 +1,62 @@
+{
+  "domain": "oepm.es",
+  "base_domain": "oepm.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "minerva.ttd.net",
+      "artemis.ttd.net"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "estrella.oepm.es",
+        "addresses": [
+          "192.187.18.186"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mail.oepm.es",
+        "addresses": [
+          "192.187.18.139"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 mx -all",
+    "valid": true,
+    "dns_lookups": 1,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "estrella.oepm.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mail.oepm.es",
+          "mechanism": "mx"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

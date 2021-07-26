@@ -1,0 +1,66 @@
+{
+  "domain": "mayasa.es",
+  "base_domain": "mayasa.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns2.hostingsage.com",
+      "ns1.hostingsage.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx4.spamtador.com",
+        "addresses": [
+          "188.93.79.151"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mx5.spamtador.com",
+        "addresses": [
+          "188.93.79.152"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 ip4:188.93.72.15 ip4:188.93.72.74 ip4:188.93.72.88 ~all",
+    "valid": true,
+    "dns_lookups": 0,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "188.93.72.15",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "188.93.72.74",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "188.93.72.88",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

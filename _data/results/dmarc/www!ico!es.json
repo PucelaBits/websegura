@@ -1,0 +1,172 @@
+{
+  "domain": "ico.es",
+  "base_domain": "ico.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "dns2.comtenidos.com",
+      "icodns.ico.es"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.ico.es",
+        "addresses": [
+          "90.160.63.202"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mail2.ico.es",
+        "addresses": [
+          "90.160.63.197"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 mx ip4:90.160.63.192/26 ?include:_pmta2.antevenio.com ~all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "mail.ico.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mail2.ico.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "90.160.63.192/26",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "_pmta2.antevenio.com",
+          "record": "v=spf1 ip4:62.97.141.0/24 ip4:62.97.140.0/24 ip4:62.97.130.0/25 ip4:62.97.133.0/28 ip4:212.101.74.32/28 ip4:212.101.90.80/28 ip4:108.168.215.128/29 ip4:212.101.77.132 ip4:108.168.215.128/29 ip4:75.126.177.160/27 ip4:185.214.212.0/22 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "62.97.141.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "62.97.140.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "62.97.130.0/25",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "62.97.133.0/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "212.101.74.32/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "212.101.90.80/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "108.168.215.128/29",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "212.101.77.132",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "108.168.215.128/29",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "75.126.177.160/27",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.214.212.0/22",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
+  },
+  "dmarc": {
+    "record": "v=DMARC1; p=none;",
+    "valid": true,
+    "location": "ico.es",
+    "warnings": [
+      "rua tag (destination for aggregate reports) not found"
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
+  }
+}

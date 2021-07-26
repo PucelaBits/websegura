@@ -1,0 +1,156 @@
+{
+  "domain": "dacoruna.gal",
+  "base_domain": "dacoruna.gal",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "dns1.dacoruna.gal",
+      "dns1.dicoruna.es",
+      "dns.dicoruna.es",
+      "dns.dacoruna.gal",
+      "ns2.xunta.es",
+      "ns1.xunta.es",
+      "nso.nic.es"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "smtp.dicoruna.es",
+        "addresses": [
+          "85.91.67.3"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 a mx include:_spf.dacoruna.gal -all",
+    "valid": true,
+    "dns_lookups": 7,
+    "warnings": [
+      "smtp.dacoruna.gal does not have any MX records",
+      "smtp.dicoruna.es does not have any MX records"
+    ],
+    "parsed": {
+      "pass": [
+        {
+          "value": "85.91.67.124",
+          "mechanism": "a"
+        },
+        {
+          "value": "smtp.dicoruna.es",
+          "mechanism": "mx"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "_spf.dacoruna.gal",
+          "record": "v=spf1 mx:smtp.dacoruna.gal mx:smtp.dicoruna.es a:correo.dacoruna.gal a:correo.dicoruna.es -all",
+          "dns_lookups": 4,
+          "parsed": {
+            "pass": [
+              {
+                "value": "85.91.67.132",
+                "mechanism": "a"
+              },
+              {
+                "value": "85.91.67.14",
+                "mechanism": "a"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": [
+            "smtp.dacoruna.gal does not have any MX records",
+            "smtp.dicoruna.es does not have any MX records"
+          ]
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": "v=DMARC1; p=quarantine; pct=1; sp=none; adkim=r; aspf=r; rua=mailto:dmarc@dacoruna.gal; ruf=mailto:dmarc@dacoruna.gal; ",
+    "valid": true,
+    "location": "dacoruna.gal",
+    "warnings": [
+      "pct value is less than 100. This leads to inconsistent and unpredictable policy enforcement. Consider using p=none to monitor results instead"
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "pct": {
+        "value": 1,
+        "explicit": true
+      },
+      "sp": {
+        "value": "none",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": true
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc@dacoruna.gal",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc@dacoruna.gal",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      }
+    }
+  }
+}

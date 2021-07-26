@@ -1,0 +1,99 @@
+{
+  "domain": "ayuntamientodeharia.com",
+  "base_domain": "ayuntamientodeharia.com",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ferrylane.rzone.de",
+      "shamlegger.rzone.de"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
+  },
+  "spf": {
+    "record": "v=spf1 mx a redirect=_spf.strato.com ip4:81.169.145.133 ip4:81.169.145.132 ~all",
+    "valid": true,
+    "dns_lookups": 3,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "smtp.rzone.de",
+          "mechanism": "mx"
+        },
+        {
+          "value": "2a01:238:20a:202:1172::",
+          "mechanism": "a"
+        },
+        {
+          "value": "81.169.145.172",
+          "mechanism": "a"
+        },
+        {
+          "value": "81.169.145.133",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "81.169.145.132",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": {
+        "domain": "_spf.strato.com",
+        "record": "v=spf1 ip4:81.169.146.128/25 ip4:85.215.255.0/24 ip6:2a01:238:20a:202::0/64 ip6:2a01:238:400::0/48 ip4:81.169.144.153 ip6:2a01:238:20a:202:50ff::153 -all",
+        "dns_lookups": 0,
+        "parsed": {
+          "pass": [
+            {
+              "value": "81.169.146.128/25",
+              "mechanism": "ip4"
+            },
+            {
+              "value": "85.215.255.0/24",
+              "mechanism": "ip4"
+            },
+            {
+              "value": "2a01:238:20a:202::0/64",
+              "mechanism": "ip6"
+            },
+            {
+              "value": "2a01:238:400::0/48",
+              "mechanism": "ip6"
+            },
+            {
+              "value": "81.169.144.153",
+              "mechanism": "ip4"
+            },
+            {
+              "value": "2a01:238:20a:202:50ff::153",
+              "mechanism": "ip6"
+            }
+          ],
+          "neutral": [],
+          "softfail": [],
+          "fail": [],
+          "include": [],
+          "redirect": null,
+          "exp": null,
+          "all": "fail"
+        },
+        "warnings": []
+      },
+      "exp": null,
+      "all": "softfail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

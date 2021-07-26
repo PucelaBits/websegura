@@ -1,0 +1,86 @@
+{
+  "domain": "bombersdv.es",
+  "base_domain": "bombersdv.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns.redunda.com",
+      "ns2.redunda.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 5,
+        "hostname": "gollum.gva.es",
+        "addresses": [
+          "193.145.200.16",
+          "193.145.206.215",
+          "195.77.18.230",
+          "195.77.22.16"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 ip4:193.145.205.216/24 ip4:193.145.206.211/24  ip4:193.145.206.0/25 ip4:195.77.17.0/24 ip4:195.77.18.0/24 ip4:195.77.22.20/24 ip4:193.145.200.20/24 mx:bombersdv.es mx:bombers.dva.gva.es -all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "193.145.205.216/24",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "193.145.206.211/24",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "193.145.206.0/25",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "195.77.17.0/24",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "195.77.18.0/24",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "195.77.22.20/24",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "193.145.200.20/24",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "gollum.gva.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "gollum.gva.es",
+          "mechanism": "mx"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

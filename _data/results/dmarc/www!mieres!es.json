@@ -1,0 +1,35 @@
+{
+  "domain": "mieres.es",
+  "base_domain": "mieres.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "mortadelo.telecable.es",
+      "otilio-pub.telecable.es"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "zorba.ayto-mieres.es",
+        "addresses": [
+          "212.89.6.110"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "mieres.es does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

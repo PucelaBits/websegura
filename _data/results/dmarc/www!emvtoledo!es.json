@@ -1,0 +1,29 @@
+{
+  "domain": "emvtoledo.es",
+  "base_domain": "emvtoledo.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns1064.ui-dns.org",
+      "ns1064.ui-dns.biz",
+      "ns1064.ui-dns.de",
+      "ns1064.ui-dns.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [],
+    "error": "All nameservers failed to answer the query 27.115.250.142.in-addr.arpa. IN PTR: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "emvtoledo.es does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

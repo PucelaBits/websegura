@@ -1,0 +1,38 @@
+{
+  "domain": "amieva.es",
+  "base_domain": "amieva.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns2.cdmon.net",
+      "ns4.cdmondns-01.org",
+      "ns3.cdmon.net",
+      "ns1.cdmon.net",
+      "ns5.cdmondns-01.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.amieva.es",
+        "addresses": [
+          "134.0.13.151"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "amieva.es does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

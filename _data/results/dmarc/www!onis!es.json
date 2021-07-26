@@ -1,0 +1,57 @@
+{
+  "domain": "onis.es",
+  "base_domain": "onis.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns3.gestiondecuenta.com",
+      "ns2.gestiondecuenta.com",
+      "ns.gestiondecuenta.com",
+      "ns4.gestiondecuenta.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.onis.es",
+        "addresses": [
+          "82.98.154.3"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 a mx ~all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "212.89.23.105",
+          "mechanism": "a"
+        },
+        {
+          "value": "mail.onis.es",
+          "mechanism": "mx"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

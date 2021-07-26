@@ -1,0 +1,44 @@
+{
+  "domain": "elpuigturistico.net",
+  "base_domain": "elpuigturistico.net",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns1045.ui-dns.org",
+      "ns1045.ui-dns.com",
+      "ns1045.ui-dns.de",
+      "ns1045.ui-dns.biz"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx00.ionos.es",
+        "addresses": [
+          "212.227.15.41"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mx01.ionos.es",
+        "addresses": [
+          "217.72.192.67"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "elpuigturistico.net does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

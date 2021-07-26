@@ -1,0 +1,76 @@
+{
+  "domain": "2.ava.es",
+  "base_domain": "ava.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [],
+    "error": "The domain 2.ava.es does not exist"
+  },
+  "mx": {
+    "hosts": [],
+    "error": "The domain 2.ava.es does not exist"
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "The domain 2.ava.es does not exist"
+  },
+  "dmarc": {
+    "record": "v=DMARC1; p=none; rua=mailto:ue@ava.es",
+    "valid": true,
+    "location": "ava.es",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "ue@ava.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "domain": "mcp.es",
+  "base_domain": "mcp.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "dns2.serv513734.servidoresdns.net",
+      "dns1.serv513734.servidoresdns.net"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
+  },
+  "spf": {
+    "record": "v=spf1 a mx include:spf.acumbamail.com a:smtp.mcp.es a:mail.mcp.es ip4:194.179.77.241 ~all",
+    "valid": true,
+    "dns_lookups": 5,
+    "warnings": [
+      "The domain smtp.mcp.es does not exist"
+    ],
+    "parsed": {
+      "pass": [
+        {
+          "value": "46.137.165.193",
+          "mechanism": "a"
+        },
+        {
+          "value": "mail.mcp.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "as.solsenet.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "pruebamx.mcp.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "194.179.77.231",
+          "mechanism": "a"
+        },
+        {
+          "value": "194.179.77.241",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "spf.acumbamail.com",
+          "record": "v=spf1 ip4:176.28.104.1/24 ip4:185.2.150.1/24 ip4:185.103.37.224/28 ip4:5.57.226.1/24 ip4:5.57.227.80/28 ip4:185.99.184.146/31 ip4:5.57.227.112/28 ip4:185.99.184.144/28  ~all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "176.28.104.1/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.2.150.1/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.103.37.224/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "5.57.226.1/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "5.57.227.80/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.99.184.146/31",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "5.57.227.112/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.99.184.144/28",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

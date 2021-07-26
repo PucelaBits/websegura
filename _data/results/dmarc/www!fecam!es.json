@@ -1,0 +1,72 @@
+{
+  "domain": "fecam.es",
+  "base_domain": "fecam.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "dns.lpa.idec.net",
+      "dns.mad.idec.net"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 5,
+        "hostname": "mail.fecam.es",
+        "addresses": [
+          "212.64.170.85"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mxdomain.mad.idec.net",
+        "addresses": [
+          "212.64.169.11"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 ip4:212.64.170.195 ip4:212.64.170.94 ip4:212.64.170.85 a:fecam.es ~all",
+    "valid": true,
+    "dns_lookups": 1,
+    "warnings": [
+      "SPF type DNS records found. Use of DNS Type SPF has been removed in the standards track version of SPF, RFC 7208. These records should be removed and replaced with TXT records: v=spf1 ip4:212.64.170.195 ip4:212.64.170.94 ip4:212.64.170.85 a:fecam.es ~all"
+    ],
+    "parsed": {
+      "pass": [
+        {
+          "value": "212.64.170.195",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "212.64.170.94",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "212.64.170.85",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "212.64.170.195",
+          "mechanism": "a"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

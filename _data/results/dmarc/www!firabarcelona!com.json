@@ -1,0 +1,102 @@
+{
+  "domain": "firabarcelona.com",
+  "base_domain": "firabarcelona.com",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns-1125.awsdns-12.org",
+      "ns-1655.awsdns-14.co.uk",
+      "ns-230.awsdns-28.com",
+      "ns-887.awsdns-46.net"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 0,
+        "hostname": "firabarcelona-com.mail.protection.outlook.com",
+        "addresses": [
+          "104.47.1.36",
+          "104.47.2.36"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 ip4:82.223.209.146/32 ip4:195.47.206.154/32 ip4:95.215.120.0/22 include:spf.mittum.com include:spf.protection.outlook.com include:_spf.evicertia.com include:_spf.inbenta.com include:spf.mandrillapp.com include:servers.mcsv.net include:amazonses.com -all",
+    "valid": false,
+    "warnings": [],
+    "error": "Parsing the SPF record requires 13/10 maximum DNS lookups - https://tools.ietf.org/html/rfc7208#section-4.6.4",
+    "dns_lookups": 13
+  },
+  "dmarc": {
+    "record": "v=DMARC1; p=none; pct=100; rua=mailto:abuse@firabarcelona.com; ruf=mailto:postmaster@firabarcelona.com; fo=1",
+    "valid": true,
+    "location": "firabarcelona.com",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "pct": {
+        "value": 100,
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "abuse@firabarcelona.com",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "postmaster@firabarcelona.com",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "1"
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
+  }
+}

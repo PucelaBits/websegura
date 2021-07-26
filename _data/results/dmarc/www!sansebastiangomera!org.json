@@ -1,0 +1,81 @@
+{
+  "domain": "sansebastiangomera.org",
+  "base_domain": "sansebastiangomera.org",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "aragorn.ns.cloudflare.com",
+      "zita.ns.cloudflare.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 1,
+        "hostname": "mx1.mail.ovh.net",
+        "addresses": [
+          "188.165.36.237"
+        ]
+      },
+      {
+        "preference": 2,
+        "hostname": "mx2.mail.ovh.net",
+        "addresses": [
+          "87.98.160.167"
+        ]
+      },
+      {
+        "preference": 100,
+        "hostname": "mx3.mail.ovh.net",
+        "addresses": [
+          "91.121.53.175"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 +a +mx +ip4:145.239.70.25 ~all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "145.239.70.25",
+          "mechanism": "a"
+        },
+        {
+          "value": "mx1.mail.ovh.net",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mx2.mail.ovh.net",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mx3.mail.ovh.net",
+          "mechanism": "mx"
+        },
+        {
+          "value": "145.239.70.25",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

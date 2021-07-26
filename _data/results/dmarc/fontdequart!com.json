@@ -1,0 +1,38 @@
+{
+  "domain": "fontdequart.com",
+  "base_domain": "fontdequart.com",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns3.cdmon.net",
+      "ns5.cdmondns-01.com",
+      "ns4.cdmondns-01.org",
+      "ns2.cdmon.net",
+      "ns1.cdmon.net"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.fontdequart.com",
+        "addresses": [
+          "134.0.9.152"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "fontdequart.com does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

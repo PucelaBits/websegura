@@ -1,0 +1,313 @@
+{
+  "domain": "aquavall.es",
+  "base_domain": "aquavall.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns482.webempresa.eu",
+      "ns481.webempresa.eu"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [],
+    "error": "All nameservers failed to answer the query 26.115.250.142.in-addr.arpa. IN PTR: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+  },
+  "spf": {
+    "record": "v=spf1 ip4:146.59.148.107 ip4:178.33.167.48 include:_spf.webempresa.eu ip4:151.80.24.226 +a +mx +include:_spf.google.com ~all",
+    "valid": true,
+    "dns_lookups": 7,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "146.59.148.107",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "178.33.167.48",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "151.80.24.226",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "178.33.167.48",
+          "mechanism": "a"
+        },
+        {
+          "value": "aspmx.l.google.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "alt1.aspmx.l.google.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "alt2.aspmx.l.google.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "alt3.aspmx.l.google.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "alt4.aspmx.l.google.com",
+          "mechanism": "mx"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "_spf.webempresa.eu",
+          "record": "v=spf1 ip4:54.37.172.205/32 ip4:87.98.227.61/32 ip4:178.33.113.178/32 ip4:178.33.119.38/32 ip4:87.98.229.233/32 ip4:5.39.109.72/32 ip4:178.32.150.70/32 ip4:5.196.253.55/32 ip4:178.33.116.19/32 ip4:188.165.126.169/32 ip4:51.68.67.124/32 ~all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "54.37.172.205/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "87.98.227.61/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "178.33.113.178/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "178.33.119.38/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "87.98.229.233/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "5.39.109.72/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "178.32.150.70/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "5.196.253.55/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "178.33.116.19/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "188.165.126.169/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "51.68.67.124/32",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "_spf.google.com",
+          "record": "v=spf1 include:_netblocks.google.com include:_netblocks2.google.com include:_netblocks3.google.com ~all",
+          "dns_lookups": 3,
+          "parsed": {
+            "pass": [],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [
+              {
+                "domain": "_netblocks.google.com",
+                "record": "v=spf1 ip4:35.190.247.0/24 ip4:64.233.160.0/19 ip4:66.102.0.0/20 ip4:66.249.80.0/20 ip4:72.14.192.0/18 ip4:74.125.0.0/16 ip4:108.177.8.0/21 ip4:173.194.0.0/16 ip4:209.85.128.0/17 ip4:216.58.192.0/19 ip4:216.239.32.0/19 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "35.190.247.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "64.233.160.0/19",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "66.102.0.0/20",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "66.249.80.0/20",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "72.14.192.0/18",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "74.125.0.0/16",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "108.177.8.0/21",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "173.194.0.0/16",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "209.85.128.0/17",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "216.58.192.0/19",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "216.239.32.0/19",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              },
+              {
+                "domain": "_netblocks2.google.com",
+                "record": "v=spf1 ip6:2001:4860:4000::/36 ip6:2404:6800:4000::/36 ip6:2607:f8b0:4000::/36 ip6:2800:3f0:4000::/36 ip6:2a00:1450:4000::/36 ip6:2c0f:fb50:4000::/36 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "2001:4860:4000::/36",
+                      "mechanism": "ip6"
+                    },
+                    {
+                      "value": "2404:6800:4000::/36",
+                      "mechanism": "ip6"
+                    },
+                    {
+                      "value": "2607:f8b0:4000::/36",
+                      "mechanism": "ip6"
+                    },
+                    {
+                      "value": "2800:3f0:4000::/36",
+                      "mechanism": "ip6"
+                    },
+                    {
+                      "value": "2a00:1450:4000::/36",
+                      "mechanism": "ip6"
+                    },
+                    {
+                      "value": "2c0f:fb50:4000::/36",
+                      "mechanism": "ip6"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              },
+              {
+                "domain": "_netblocks3.google.com",
+                "record": "v=spf1 ip4:172.217.0.0/19 ip4:172.217.32.0/20 ip4:172.217.128.0/19 ip4:172.217.160.0/20 ip4:172.217.192.0/19 ip4:172.253.56.0/21 ip4:172.253.112.0/20 ip4:108.177.96.0/19 ip4:35.191.0.0/16 ip4:130.211.0.0/22 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "172.217.0.0/19",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "172.217.32.0/20",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "172.217.128.0/19",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "172.217.160.0/20",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "172.217.192.0/19",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "172.253.56.0/21",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "172.253.112.0/20",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "108.177.96.0/19",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "35.191.0.0/16",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "130.211.0.0/22",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              }
+            ],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

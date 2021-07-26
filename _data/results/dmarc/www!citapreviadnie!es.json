@@ -1,0 +1,73 @@
+{
+  "domain": "citapreviadnie.es",
+  "base_domain": "citapreviadnie.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "dns.citapreviadnie.es",
+      "dns2.citapreviadnie.es"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "correo.citapreviadnie.es",
+        "addresses": [
+          "195.55.116.96"
+        ]
+      },
+      {
+        "preference": 50,
+        "hostname": "correo11.citapreviadnie.es",
+        "addresses": [
+          "195.55.116.96"
+        ]
+      },
+      {
+        "preference": 70,
+        "hostname": "correo22.citapreviadnie.es",
+        "addresses": [
+          "195.55.116.96"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 mx -all",
+    "valid": true,
+    "dns_lookups": 1,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "correo.citapreviadnie.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "correo11.citapreviadnie.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "correo22.citapreviadnie.es",
+          "mechanism": "mx"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

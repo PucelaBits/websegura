@@ -1,0 +1,60 @@
+{
+  "domain": "diputaciondevalladolid.es",
+  "base_domain": "diputaciondevalladolid.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "dns02.ono.com",
+      "dns01.ono.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [],
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
+  },
+  "spf": {
+    "record": "v=spf1 +a +mx +ip4:217.130.24.0/24 +ip4:85.214.76.153/32  +ptr:xolido.com -all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [
+      "diputaciondevalladolid.es does not have any MX records",
+      "The ptr mechanism should not be used - https://tools.ietf.org/html/rfc7208#section-5.5"
+    ],
+    "parsed": {
+      "pass": [
+        {
+          "value": "89.6.103.17",
+          "mechanism": "a"
+        },
+        {
+          "value": "217.130.24.0/24",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "85.214.76.153/32",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "xolido.com",
+          "mechanism": "ptr"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

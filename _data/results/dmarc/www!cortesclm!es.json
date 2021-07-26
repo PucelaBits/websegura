@@ -1,0 +1,65 @@
+{
+  "domain": "cortesclm.es",
+  "base_domain": "cortesclm.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "dns6.cim.es",
+      "dns5.cim.es"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 1,
+        "hostname": "mx1.cim.es",
+        "addresses": [
+          "89.17.211.117"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 mx a:mail.cortesclm.es mx ip4:89.17.211.96/27 ip4:195.77.144.160/28 ~all",
+    "valid": true,
+    "dns_lookups": 3,
+    "warnings": [
+      "The domain mail.cortesclm.es does not exist"
+    ],
+    "parsed": {
+      "pass": [
+        {
+          "value": "mx1.cim.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mx1.cim.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "89.17.211.96/27",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "195.77.144.160/28",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

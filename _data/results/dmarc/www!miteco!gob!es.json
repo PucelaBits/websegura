@@ -1,0 +1,30 @@
+{
+  "domain": "miteco.gob.es",
+  "base_domain": "miteco.gob.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "dns1.magrama.es",
+      "dns2.magrama.es",
+      "artemis.ttd.net"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [],
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "'utf-8' codec can't decode byte 0x96 in position 34: invalid start byte"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

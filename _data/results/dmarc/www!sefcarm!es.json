@@ -1,0 +1,30 @@
+{
+  "domain": "sefcarm.es",
+  "base_domain": "sefcarm.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns2e.carm.es",
+      "ns1e.carm.es",
+      "rafi.f-integra.org"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [],
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "sefcarm.es does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

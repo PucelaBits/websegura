@@ -1,0 +1,247 @@
+{
+  "domain": "castroderei.gal",
+  "base_domain": "castroderei.gal",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns2.imglohosting.com",
+      "ns1.imglohosting.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 0,
+        "hostname": "mail.castroderei.gal",
+        "addresses": [
+          "146.59.163.116"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 ip4:51.68.36.3 include:correo00.imglohosting.com include:hl901.imglohosting.com +a +mx +ip4:5.39.27.158 +include:spf.raiolanetworks.com +ip4:91.134.184.232 ~all",
+    "valid": true,
+    "dns_lookups": 7,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "51.68.36.3",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "146.59.163.116",
+          "mechanism": "a"
+        },
+        {
+          "value": "mail.castroderei.gal",
+          "mechanism": "mx"
+        },
+        {
+          "value": "5.39.27.158",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "91.134.184.232",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "correo00.imglohosting.com",
+          "record": "v=spf1 ip4:54.38.228.194 ~all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "54.38.228.194",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "hl901.imglohosting.com",
+          "record": "v=spf1a~all",
+          "dns_lookups": 1,
+          "parsed": {
+            "pass": [
+              {
+                "value": "146.59.163.116",
+                "mechanism": "a"
+              },
+              {
+                "value": "51.68.36.3",
+                "mechanism": "a"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "spf.raiolanetworks.com",
+          "record": "v=spf1 +a:spf.raiolanetworks.com ~all",
+          "dns_lookups": 1,
+          "parsed": {
+            "pass": [
+              {
+                "value": "145.239.129.166",
+                "mechanism": "a"
+              },
+              {
+                "value": "149.202.98.105",
+                "mechanism": "a"
+              },
+              {
+                "value": "149.202.98.106",
+                "mechanism": "a"
+              },
+              {
+                "value": "151.80.16.24",
+                "mechanism": "a"
+              },
+              {
+                "value": "151.80.177.216",
+                "mechanism": "a"
+              },
+              {
+                "value": "178.33.177.121",
+                "mechanism": "a"
+              },
+              {
+                "value": "178.33.177.123",
+                "mechanism": "a"
+              },
+              {
+                "value": "178.33.177.124",
+                "mechanism": "a"
+              },
+              {
+                "value": "193.70.65.184",
+                "mechanism": "a"
+              },
+              {
+                "value": "217.182.121.195",
+                "mechanism": "a"
+              },
+              {
+                "value": "217.182.121.196",
+                "mechanism": "a"
+              },
+              {
+                "value": "217.182.121.197",
+                "mechanism": "a"
+              },
+              {
+                "value": "5.135.120.86",
+                "mechanism": "a"
+              },
+              {
+                "value": "5.196.170.73",
+                "mechanism": "a"
+              },
+              {
+                "value": "51.83.52.234",
+                "mechanism": "a"
+              },
+              {
+                "value": "79.137.45.64",
+                "mechanism": "a"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
+  },
+  "dmarc": {
+    "record": "v=DMARC1; p=none; sp=none; rf=afrf; pct=100; ri=86400;rua=mailto:dmarc@castroderei.gal",
+    "valid": true,
+    "location": "castroderei.gal",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "sp": {
+        "value": "none",
+        "explicit": true
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": true
+      },
+      "pct": {
+        "value": 100,
+        "explicit": true
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc@castroderei.gal",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      }
+    }
+  }
+}

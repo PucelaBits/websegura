@@ -1,0 +1,38 @@
+{
+  "domain": "enisa.es",
+  "base_domain": "enisa.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "dns1.hostinet.com",
+      "dns2.hostinet.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 0,
+        "hostname": "enisa-es.mail.protection.outlook.com",
+        "addresses": [
+          "104.47.4.36",
+          "104.47.6.36"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 include:spf.protection.outlook.com mx include:_spf.evicertia.com mx include:trackglobe.com -all",
+    "valid": false,
+    "warnings": [],
+    "error": "Parsing the SPF record requires 14/10 maximum DNS lookups - https://tools.ietf.org/html/rfc7208#section-4.6.4",
+    "dns_lookups": 14
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

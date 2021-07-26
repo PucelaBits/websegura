@@ -1,0 +1,62 @@
+{
+  "domain": "tribunalconstitucional.es",
+  "base_domain": "tribunalconstitucional.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns1.servihosting.com",
+      "ns2.servihosting.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.tribunalconstitucional.es",
+        "addresses": [
+          "178.156.125.145"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "correo.tribunalconstitucional.es",
+        "addresses": [
+          "178.156.125.146"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 mx -all",
+    "valid": true,
+    "dns_lookups": 1,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "mail.tribunalconstitucional.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "correo.tribunalconstitucional.es",
+          "mechanism": "mx"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "domain": "becascooperacionespanola.es",
+  "base_domain": "becascooperacionespanola.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "dns49.servidoresdns.net",
+      "dns50.servidoresdns.net"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [],
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "becascooperacionespanola.es does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

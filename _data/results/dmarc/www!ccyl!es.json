@@ -1,0 +1,56 @@
+{
+  "domain": "ccyl.es",
+  "base_domain": "ccyl.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "esifw1.tsai.es",
+      "esifw2.tsai.es"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
+  },
+  "spf": {
+    "record": "v=spf1 +mx +a:mail.ccyl.es ~ip4:194.179.106.0/24 -all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "mail.ccyl.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "194.179.106.101",
+          "mechanism": "a"
+        },
+        {
+          "value": "194.179.106.102",
+          "mechanism": "a"
+        }
+      ],
+      "neutral": [],
+      "softfail": [
+        {
+          "value": "194.179.106.0/24",
+          "mechanism": "ip4"
+        }
+      ],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

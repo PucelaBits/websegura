@@ -1,0 +1,63 @@
+{
+  "domain": "dipta.cat",
+  "base_domain": "dipta.cat",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "nil.fut.es",
+      "damia.altanet.org"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
+  },
+  "spf": {
+    "record": "v=spf1 ip4:195.77.216.146 ip4:195.77.216.147 ip4:195.76.233.59 a mx ?all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "195.77.216.146",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "195.77.216.147",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "195.76.233.59",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "195.76.233.36",
+          "mechanism": "a"
+        },
+        {
+          "value": "mx1.dipta.cat",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mx1.tinet.org",
+          "mechanism": "mx"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "neutral"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

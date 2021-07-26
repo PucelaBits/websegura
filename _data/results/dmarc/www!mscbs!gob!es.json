@@ -1,0 +1,97 @@
+{
+  "domain": "mscbs.gob.es",
+  "base_domain": "mscbs.gob.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "mailhost.msc.es",
+      "crdserver.msc.es"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [],
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
+  },
+  "spf": {
+    "record": "v=spf1 ip4:195.64.186.0/24 ip4:91.230.250.0/24 -all",
+    "valid": true,
+    "dns_lookups": 0,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "195.64.186.0/24",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "91.230.250.0/24",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": "v=DMARC1; p=reject; rua=mailto:postmaster@msc.es; pct=100; adkim=s; aspf=s",
+    "valid": true,
+    "location": "mscbs.gob.es",
+    "warnings": [
+      "msc.es does not indicate that it accepts DMARC reports about mscbs.gob.es - Authorization record not found: mscbs.gob.es._report._dmarc.msc.es IN TXT \"v=DMARC1\""
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "reject",
+        "explicit": true
+      },
+      "rua": {
+        "value": "mailto:postmaster@msc.es",
+        "explicit": true
+      },
+      "pct": {
+        "value": 100,
+        "explicit": true
+      },
+      "adkim": {
+        "value": "s",
+        "explicit": true
+      },
+      "aspf": {
+        "value": "s",
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "reject",
+        "explicit": false
+      }
+    }
+  }
+}

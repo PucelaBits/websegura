@@ -1,0 +1,74 @@
+{
+  "domain": "policia.es",
+  "base_domain": "policia.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "dns.policia.es",
+      "dns2.policia.es",
+      "ineco.nic.es"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "correo.policia.es",
+        "addresses": [
+          "195.55.116.96"
+        ]
+      },
+      {
+        "preference": 50,
+        "hostname": "correo11.policia.es",
+        "addresses": [
+          "195.55.116.96"
+        ]
+      },
+      {
+        "preference": 70,
+        "hostname": "correo22.policia.es",
+        "addresses": [
+          "195.55.116.96"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 mx -all",
+    "valid": true,
+    "dns_lookups": 1,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "correo.policia.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "correo11.policia.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "correo22.policia.es",
+          "mechanism": "mx"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

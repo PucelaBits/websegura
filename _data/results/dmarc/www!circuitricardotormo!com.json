@@ -1,0 +1,119 @@
+{
+  "domain": "circuitricardotormo.com",
+  "base_domain": "circuitricardotormo.com",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns-1251.awsdns-28.org",
+      "ns-175.awsdns-21.com",
+      "ns-1875.awsdns-42.co.uk",
+      "ns-526.awsdns-01.net"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.circuitvalencia.com",
+        "addresses": [
+          "194.224.2.180"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mail2.circuitvalencia.com",
+        "addresses": [
+          "212.170.152.110"
+        ]
+      },
+      {
+        "preference": 30,
+        "hostname": "mail3.circuitvalencia.com",
+        "addresses": [
+          "212.170.152.117"
+        ]
+      }
+    ],
+    "warnings": [
+      "The reverse DNS of 212.170.152.110 is mail.circuitvalencia.com, but the A/AAAA DNS records for mail.circuitvalencia.com do not resolve to 212.170.152.110",
+      "The domain 117.red-212-170-152.customer.static.ccgg.telefonica.net does not exist",
+      "The reverse DNS of 212.170.152.117 is 117.red-212-170-152.customer.static.ccgg.telefonica.net, but the A/AAAA DNS records for 117.red-212-170-152.customer.static.ccgg.telefonica.net do not resolve to 212.170.152.117"
+    ]
+  },
+  "spf": {
+    "record": "v=spf1 mx ip4:194.224.2.180 ip4:217.127.33.86 ip4:95.128.153.25 ip4:212.101.67.25 ip4:212.170.152.71 ip4:194.224.2.180 a:amazonses.com -all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "mail.circuitvalencia.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mail2.circuitvalencia.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mail3.circuitvalencia.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "194.224.2.180",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "217.127.33.86",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "95.128.153.25",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "212.101.67.25",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "212.170.152.71",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "194.224.2.180",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "99.86.37.107",
+          "mechanism": "a"
+        },
+        {
+          "value": "99.86.37.125",
+          "mechanism": "a"
+        },
+        {
+          "value": "99.86.37.43",
+          "mechanism": "a"
+        },
+        {
+          "value": "99.86.37.89",
+          "mechanism": "a"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

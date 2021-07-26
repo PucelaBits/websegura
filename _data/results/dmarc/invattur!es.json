@@ -1,0 +1,52 @@
+{
+  "domain": "invattur.es",
+  "base_domain": "invattur.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns06.ns-cloud4b.com",
+      "ns03.ns-cloud4b.net",
+      "ns05.ns-cloud4b.org"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "smtp.invattur.es",
+        "addresses": [
+          "154.58.16.140"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 mx -all",
+    "valid": true,
+    "dns_lookups": 1,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "smtp.invattur.es",
+          "mechanism": "mx"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

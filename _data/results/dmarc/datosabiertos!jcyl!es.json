@@ -1,0 +1,26 @@
+{
+  "domain": "datosabiertos.jcyl.es",
+  "base_domain": "jcyl.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [],
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "datosabiertos.jcyl.es does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "The DNS operation timed out after 3.1 seconds"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "domain": "lorcaturismo.es",
+  "base_domain": "lorcaturismo.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "beta.lobocom.es",
+      "alfa.lobocom.es",
+      "ns3.lobocom.es"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "lorcaturismo.es",
+        "addresses": [
+          "213.0.108.7"
+        ]
+      }
+    ],
+    "warnings": [
+      "The domain red213-7.lorca.es does not exist",
+      "The reverse DNS of 213.0.108.7 is red213-7.lorca.es, but the A/AAAA DNS records for red213-7.lorca.es do not resolve to 213.0.108.7"
+    ]
+  },
+  "spf": {
+    "record": "v=spf1 a mx ptr -all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [
+      "The ptr mechanism should not be used - https://tools.ietf.org/html/rfc7208#section-5.5"
+    ],
+    "parsed": {
+      "pass": [
+        {
+          "value": "213.0.108.7",
+          "mechanism": "a"
+        },
+        {
+          "value": "lorcaturismo.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "",
+          "mechanism": "ptr"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

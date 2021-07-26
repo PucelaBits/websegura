@@ -1,0 +1,35 @@
+{
+  "domain": "aytoteverga.org",
+  "base_domain": "aytoteverga.org",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "escorpio.iteasoluciones.es",
+      "tauro.iteasoluciones.es"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "tauro.iteasoluciones.es",
+        "addresses": [
+          "37.187.129.54"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "aytoteverga.org does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

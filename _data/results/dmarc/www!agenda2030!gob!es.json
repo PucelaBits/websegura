@@ -1,0 +1,29 @@
+{
+  "domain": "agenda2030.gob.es",
+  "base_domain": "agenda2030.gob.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "crdserver.msc.es",
+      "mailhost.msc.es"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [],
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "agenda2030.gob.es does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

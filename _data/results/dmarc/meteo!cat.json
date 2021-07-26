@@ -1,0 +1,51 @@
+{
+  "domain": "meteo.cat",
+  "base_domain": "meteo.cat",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns-1098.awsdns-09.org",
+      "ns-158.awsdns-19.com",
+      "ns-2004.awsdns-58.co.uk",
+      "ns-780.awsdns-33.net"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "smtp1.gencat.cat",
+        "addresses": [
+          "83.247.135.20"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "smtp2.gencat.cat",
+        "addresses": [
+          "83.247.135.21"
+        ]
+      },
+      {
+        "preference": 30,
+        "hostname": "smtp3.gencat.cat",
+        "addresses": [
+          "83.247.135.22"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "meteo.cat does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

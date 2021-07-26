@@ -1,0 +1,37 @@
+{
+  "domain": "coin.es",
+  "base_domain": "coin.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "dns2.canaldominios.com",
+      "dns4.canaldominios.com",
+      "dns1.canaldominios.com",
+      "dns3.canaldominios.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx.coin.es",
+        "addresses": [
+          "217.116.0.227"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "'utf-8' codec can't decode byte 0x96 in position 10: invalid start byte"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

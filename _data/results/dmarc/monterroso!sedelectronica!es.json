@@ -1,0 +1,45 @@
+{
+  "domain": "monterroso.sedelectronica.es",
+  "base_domain": "sedelectronica.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "in1-smtp.messagingengine.com",
+        "addresses": [
+          "66.111.4.70",
+          "66.111.4.71",
+          "66.111.4.72",
+          "66.111.4.73",
+          "66.111.4.74",
+          "66.111.4.75"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "in2-smtp.messagingengine.com",
+        "addresses": [
+          "64.147.123.51",
+          "64.147.123.52"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "monterroso.sedelectronica.es does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.monterroso.sedelectronica.es\n\nesfirma-domain-verification=33da9c11-811b-4e47-8591-eab6779b533a"
+  }
+}

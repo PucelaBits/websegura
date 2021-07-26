@@ -1,0 +1,37 @@
+{
+  "domain": "focuspyme.es",
+  "base_domain": "focuspyme.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns.dinahosting.com",
+      "ns4.dinahosting.com",
+      "ns2.dinahosting.com",
+      "ns3.dinahosting.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.focuspyme.es",
+        "addresses": [
+          "185.31.236.37"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "focuspyme.es does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

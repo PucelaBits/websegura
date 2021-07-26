@@ -1,0 +1,57 @@
+{
+  "domain": "murciasalud.es",
+  "base_domain": "murciasalud.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns2e.carm.es",
+      "ns1e.carm.es",
+      "dns01.ono.com",
+      "rafi.f-integra.org"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx.redctnet.es",
+        "addresses": [
+          "80.73.144.108"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 ip4:80.73.144.108 ip4:80.73.148.250 -all",
+    "valid": true,
+    "dns_lookups": 0,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "80.73.144.108",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "80.73.148.250",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

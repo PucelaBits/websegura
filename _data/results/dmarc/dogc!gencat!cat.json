@@ -1,0 +1,98 @@
+{
+  "domain": "dogc.gencat.cat",
+  "base_domain": "gencat.cat",
+  "dnssec": true,
+  "ns": {
+    "hostnames": [],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [],
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "dogc.gencat.cat does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": "v=DMARC1; p=none; sp=none; fo=1; ri=3600; rua=mailto:catalunya@rua.dmp.cisco.com,mailto:abuse@gencat.cat; ruf=mailto:catalunya@ruf.dmp.cisco.com,mailto:abuse@gencat.cat",
+    "valid": true,
+    "location": "gencat.cat",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "sp": {
+        "value": "none",
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "1"
+        ],
+        "explicit": true
+      },
+      "ri": {
+        "value": 3600,
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "catalunya@rua.dmp.cisco.com",
+            "size_limit": null
+          },
+          {
+            "scheme": "mailto",
+            "address": "abuse@gencat.cat",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "catalunya@ruf.dmp.cisco.com",
+            "size_limit": null
+          },
+          {
+            "scheme": "mailto",
+            "address": "abuse@gencat.cat",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      }
+    }
+  }
+}

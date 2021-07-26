@@ -1,0 +1,122 @@
+{
+  "domain": "tourspain.es",
+  "base_domain": "tourspain.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "dns.serviciosmin.gob.es",
+      "sun.rediris.es",
+      "chico.rediris.es"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [],
+    "error": "All nameservers failed to answer the query 230.123.146.193.in-addr.arpa. IN PTR: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+  },
+  "spf": {
+    "record": "v=spf1 ip4:193.146.123.231/32 ip4:193.146.123.235/32 include:marketing.dynamics.com ~all",
+    "valid": true,
+    "dns_lookups": 1,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "193.146.123.231/32",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "193.146.123.235/32",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "marketing.dynamics.com",
+          "record": "v=spf1 ip4:13.66.138.128/25 ip4:13.69.226.128/25 ip4:13.71.171.0/24 ip4:13.74.106.128/25 ip4:13.75.35.0/24 ip4:13.77.51.0/24 ip4:13.78.107.0/24 ip4:40.78.242.0/25 ip4:40.79.138.192/26 ip4:51.140.147.0/24 ip4:65.52.252.128/27 ip4:102.133.251.96/27 ip4:104.211.80.0/24 ip4:191.233.202.0/24 ~all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "13.66.138.128/25",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "13.69.226.128/25",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "13.71.171.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "13.74.106.128/25",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "13.75.35.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "13.77.51.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "13.78.107.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "40.78.242.0/25",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "40.79.138.192/26",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "51.140.147.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "65.52.252.128/27",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "102.133.251.96/27",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "104.211.80.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "191.233.202.0/24",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

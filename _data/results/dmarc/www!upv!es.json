@@ -1,0 +1,102 @@
+{
+  "domain": "upv.es",
+  "base_domain": "upv.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "vega.cc.upv.es",
+      "sun.rediris.es",
+      "mirzam.ccc.upv.es",
+      "chico.rediris.es"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 7,
+        "hostname": "mxv.cc.upv.es",
+        "addresses": [
+          "158.42.248.114"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mx2.cc.upv.es",
+        "addresses": [
+          "158.42.250.62"
+        ]
+      },
+      {
+        "preference": 40,
+        "hostname": "mx4.cc.upv.es",
+        "addresses": [
+          "158.42.250.194"
+        ]
+      },
+      {
+        "preference": 50,
+        "hostname": "vega.cc.upv.es",
+        "addresses": [
+          "158.42.4.1"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 a:smtpsal1.cc.upv.es a:smtpsal2.cc.upv.es a:smtpsal3.cc.upv.es a:smtpsal4.cc.upv.es a:smtpsalv.cc.upv.es a:smtpsalr.cc.upv.es a:smtpxv.cc.upv.es a:smtpxr.cc.upv.es ~all",
+    "valid": true,
+    "dns_lookups": 8,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "158.42.249.61",
+          "mechanism": "a"
+        },
+        {
+          "value": "158.42.249.62",
+          "mechanism": "a"
+        },
+        {
+          "value": "158.42.249.12",
+          "mechanism": "a"
+        },
+        {
+          "value": "158.42.249.24",
+          "mechanism": "a"
+        },
+        {
+          "value": "158.42.249.11",
+          "mechanism": "a"
+        },
+        {
+          "value": "158.42.249.35",
+          "mechanism": "a"
+        },
+        {
+          "value": "158.42.249.46",
+          "mechanism": "a"
+        },
+        {
+          "value": "158.42.249.47",
+          "mechanism": "a"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

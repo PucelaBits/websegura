@@ -1,0 +1,118 @@
+{
+  "domain": "idae.es",
+  "base_domain": "idae.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "artemis.ttd.net",
+      "minerva.ttd.net"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [],
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
+  },
+  "spf": {
+    "record": "v=spf1 a mx ip4:213.0.86.147 ~all include:mail.idae.es ~all include:mail.zendesk.com ~all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [
+      "Any text after the all mechanism is ignored",
+      "idae.es does not have any MX records"
+    ],
+    "parsed": {
+      "pass": [
+        {
+          "value": "154.58.18.139",
+          "mechanism": "a"
+        },
+        {
+          "value": "213.0.86.147",
+          "mechanism": "a"
+        },
+        {
+          "value": "213.0.86.147",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
+  },
+  "dmarc": {
+    "record": "v=DMARC1; p=none; rua=mailto:dmarc@idae.es; ruf=mailto:dmarc@idae.es; fo=1",
+    "valid": true,
+    "location": "idae.es",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc@idae.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc@idae.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "1"
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
+  }
+}

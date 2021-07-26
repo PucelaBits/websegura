@@ -1,0 +1,37 @@
+{
+  "domain": "ecomuseodebicorp.com",
+  "base_domain": "ecomuseodebicorp.com",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns1200.websitewelcome.com",
+      "ns1199.websitewelcome.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 0,
+        "hostname": "ecomuseodebicorp.com",
+        "addresses": [
+          "192.185.167.231"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 ip4:184.173.239.120 a mx include:websitewelcome.com ~all",
+    "valid": false,
+    "warnings": [],
+    "error": "Parsing the SPF record requires 12/10 maximum DNS lookups - https://tools.ietf.org/html/rfc7208#section-4.6.4",
+    "dns_lookups": 12
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "domain": "larioja.org",
+  "base_domain": "larioja.org",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "cardns3.riojasalud.es",
+      "cardns2.larioja.org",
+      "cardns1.larioja.org"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
+  },
+  "spf": {
+    "record": "v=spf1 mx ip4:193.145.4.9 ip4:193.145.4.10 ip4:195.55.164.16 -all",
+    "valid": true,
+    "dns_lookups": 1,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "mx1.riojasalud.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mx2.riojasalud.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "193.145.4.9",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "193.145.4.10",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "195.55.164.16",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": "v=DMARC1; p=quarantine; rua=mailto:postmaster@larioja.org; adkim=s; aspf=s;",
+    "valid": true,
+    "location": "larioja.org",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "postmaster@larioja.org",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "s",
+        "explicit": true
+      },
+      "aspf": {
+        "value": "s",
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "quarantine",
+        "explicit": false
+      }
+    }
+  }
+}

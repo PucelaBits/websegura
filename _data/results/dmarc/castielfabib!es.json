@@ -1,0 +1,44 @@
+{
+  "domain": "castielfabib.es",
+  "base_domain": "castielfabib.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns-es.1and1-dns.org",
+      "ns-es.1and1-dns.biz",
+      "ns-es.1and1-dns.com",
+      "ns-es.1and1-dns.es"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx00.1and1.es",
+        "addresses": [
+          "212.227.15.41"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mx01.1and1.es",
+        "addresses": [
+          "217.72.192.67"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "castielfabib.es does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

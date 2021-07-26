@@ -1,0 +1,156 @@
+{
+  "domain": "conselldeivissa.es",
+  "base_domain": "conselldeivissa.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "dns2.xpress.es",
+      "dns1.xpress.es"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx1.hc348-91.eu.iphmx.com",
+        "addresses": [
+          "207.54.71.192",
+          "207.54.72.118"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mx2.hc348-91.eu.iphmx.com",
+        "addresses": [
+          "207.54.71.192",
+          "207.54.72.118"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 ip4:2.139.232.242 a mx ip4:213.4.20.215 include:spf.ipzmarketing.com exists:%{i}.spf.hc348-91.eu.iphmx.com ~all",
+    "valid": true,
+    "dns_lookups": 4,
+    "warnings": [
+      "conselldeivissa.es does not have any A/AAAA records"
+    ],
+    "parsed": {
+      "pass": [
+        {
+          "value": "2.139.232.242",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "mx1.hc348-91.eu.iphmx.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mx2.hc348-91.eu.iphmx.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "213.4.20.215",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "%{i}.spf.hc348-91.eu.iphmx.com",
+          "mechanism": "exists"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "spf.ipzmarketing.com",
+          "record": "v=spf1 ip4:93.159.208.0/21 ip4:185.103.8.0/22 ip4:5.56.22.0/24 ip4:82.199.156.0/24 ~all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "93.159.208.0/21",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.103.8.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "5.56.22.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "82.199.156.0/24",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
+  },
+  "dmarc": {
+    "record": "v=DMARC1; p=none;",
+    "valid": true,
+    "location": "conselldeivissa.es",
+    "warnings": [
+      "rua tag (destination for aggregate reports) not found"
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
+  }
+}

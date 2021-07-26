@@ -1,0 +1,109 @@
+{
+  "domain": "nerja.es",
+  "base_domain": "nerja.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns1.srv-acens.com",
+      "ns2.srv-acens.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx.nerja.es",
+        "addresses": [
+          "217.116.0.227"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 include:spf.dominioabsoluto.net +a +mx ip4:94.247.31.162 -all",
+    "valid": true,
+    "dns_lookups": 3,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "77.231.98.152",
+          "mechanism": "a"
+        },
+        {
+          "value": "mx.nerja.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "94.247.31.162",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "spf.dominioabsoluto.net",
+          "record": "v=spf1 ip4:217.116.26.0/24 ip4:217.116.0.0/24 ip4:217.116.1.0/24 ip4:77.240.117.0/24 ip4:109.70.32.0/21 ip4:82.194.64.0/19 ip4:86.109.99.243 ip4:86.109.99.247 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "217.116.26.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "217.116.0.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "217.116.1.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "77.240.117.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "109.70.32.0/21",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "82.194.64.0/19",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "86.109.99.243",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "86.109.99.247",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

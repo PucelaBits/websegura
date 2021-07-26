@@ -1,0 +1,39 @@
+{
+  "domain": "illesbalears.travel",
+  "base_domain": "illesbalears.travel",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns12.dnsmadeeasy.com",
+      "ns11.dnsmadeeasy.com",
+      "ns10.dnsmadeeasy.com",
+      "ns15.dnsmadeeasy.com",
+      "ns14.dnsmadeeasy.com",
+      "ns13.dnsmadeeasy.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.illesbalears.travel",
+        "addresses": [
+          "52.208.247.234"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "illesbalears.travel does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

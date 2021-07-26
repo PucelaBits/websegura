@@ -1,0 +1,70 @@
+{
+  "domain": "scf.cat",
+  "base_domain": "scf.cat",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns2.gestiondecuenta.com",
+      "ns3.gestiondecuenta.com",
+      "ns4.gestiondecuenta.com",
+      "ns.gestiondecuenta.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.scf.cat",
+        "addresses": [
+          "194.107.136.90"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mail2.scf.cat",
+        "addresses": [
+          "81.43.101.123"
+        ]
+      }
+    ],
+    "warnings": [
+      "194.107.136.90 does not have any reverse DNS (PTR) records"
+    ]
+  },
+  "spf": {
+    "record": "v=spf1 a mx ~all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "82.98.139.231",
+          "mechanism": "a"
+        },
+        {
+          "value": "mail.scf.cat",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mail2.scf.cat",
+          "mechanism": "mx"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

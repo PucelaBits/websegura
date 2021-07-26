@@ -1,0 +1,125 @@
+{
+  "domain": "doshermanas.es",
+  "base_domain": "doshermanas.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns3.dns-servicios.es",
+      "ns4.dns-servicios.es"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx.doshermanas.es",
+        "addresses": [
+          "217.116.0.227"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 a mx a:mx.doshermanas.es ip4:217.116.26.0/24 ~all",
+    "valid": true,
+    "dns_lookups": 3,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "195.77.168.23",
+          "mechanism": "a"
+        },
+        {
+          "value": "mx.doshermanas.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "217.116.0.227",
+          "mechanism": "a"
+        },
+        {
+          "value": "217.116.26.0/24",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
+  },
+  "dmarc": {
+    "record": "v=DMARC1; p=none; rua=mailto:hermes@doshermanas.es; ruf=mailto:hermes@doshermanas.es;",
+    "valid": true,
+    "location": "doshermanas.es",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "hermes@doshermanas.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "hermes@doshermanas.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
+  }
+}

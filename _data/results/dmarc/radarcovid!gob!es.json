@@ -1,0 +1,31 @@
+{
+  "domain": "radarcovid.gob.es",
+  "base_domain": "radarcovid.gob.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns-1453.awsdns-53.org",
+      "ns-1734.awsdns-24.co.uk",
+      "ns-446.awsdns-55.com",
+      "ns-898.awsdns-48.net"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [],
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "radarcovid.gob.es does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

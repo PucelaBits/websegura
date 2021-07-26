@@ -1,0 +1,97 @@
+{
+  "domain": "res.es",
+  "base_domain": "res.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "opsns01.bsc.es",
+      "capdecreus.bsc.es"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
+  },
+  "spf": {
+    "record": "v=spf1 mx ip4:84.88.52.32/27 ip6:2001:40b0:7c00::71:34/112 ~all",
+    "valid": true,
+    "dns_lookups": 1,
+    "warnings": [
+      "SPF type DNS records found. Use of DNS Type SPF has been removed in the standards track version of SPF, RFC 7208. These records should be removed and replaced with TXT records: v=spf1 mx ip4:84.88.52.32/27 ip6:2001:40b0:7c00::71:34/112 ~all"
+    ],
+    "parsed": {
+      "pass": [
+        {
+          "value": "mao.bsc.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "84.88.52.32/27",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "2001:40b0:7c00::71:34/112",
+          "mechanism": "ip6"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
+  },
+  "dmarc": {
+    "record": "v=DMARC1; p=none; adkim=r; aspf=r",
+    "valid": true,
+    "location": "res.es",
+    "warnings": [
+      "rua tag (destination for aggregate reports) not found"
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": true
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "domain": "cibm-valencia.com",
+  "base_domain": "cibm-valencia.com",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns2.redunda.com",
+      "ns.redunda.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "cibm-valencia.com does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

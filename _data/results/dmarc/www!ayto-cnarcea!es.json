@@ -1,0 +1,58 @@
+{
+  "domain": "ayto-cnarcea.es",
+  "base_domain": "ayto-cnarcea.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns5.cdmondns-01.com",
+      "ns1.cdmon.net",
+      "ns2.cdmon.net",
+      "ns3.cdmon.net",
+      "ns4.cdmondns-01.org"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx.sentidocomun.es",
+        "addresses": [
+          "54.217.206.198"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 mx ip4:82.223.148.203 ~all",
+    "valid": true,
+    "dns_lookups": 1,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "mx.sentidocomun.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "82.223.148.203",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

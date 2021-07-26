@@ -1,0 +1,27 @@
+{
+  "domain": "madridporeldeporte.org",
+  "base_domain": "madridporeldeporte.org",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "shades18.rzone.de",
+      "docks19.rzone.de"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "madridporeldeporte.org does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

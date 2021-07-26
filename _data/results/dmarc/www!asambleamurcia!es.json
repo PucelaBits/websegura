@@ -1,0 +1,57 @@
+{
+  "domain": "asambleamurcia.es",
+  "base_domain": "asambleamurcia.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "nso.nic.es",
+      "dns.asambleamurcia.es"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 1,
+        "hostname": "smtp.asambleamurcia.es",
+        "addresses": [
+          "195.55.193.109"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 mx ptr ~all",
+    "valid": true,
+    "dns_lookups": 1,
+    "warnings": [
+      "The ptr mechanism should not be used - https://tools.ietf.org/html/rfc7208#section-5.5"
+    ],
+    "parsed": {
+      "pass": [
+        {
+          "value": "smtp.asambleamurcia.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "",
+          "mechanism": "ptr"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

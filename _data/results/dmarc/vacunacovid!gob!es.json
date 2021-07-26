@@ -1,0 +1,31 @@
+{
+  "domain": "vacunacovid.gob.es",
+  "base_domain": "vacunacovid.gob.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "dns1.mpr.es",
+      "chico.rediris.es",
+      "sun.rediris.es",
+      "dns2.mpr.es"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [],
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "vacunacovid.gob.es does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

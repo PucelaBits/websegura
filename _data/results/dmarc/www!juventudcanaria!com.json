@@ -1,0 +1,37 @@
+{
+  "domain": "juventudcanaria.com",
+  "base_domain": "juventudcanaria.com",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "acatife.gobiernodecanarias.org",
+      "seti.gobiernodecanarias.org"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx00.dns-servicios.com",
+        "addresses": [
+          "82.194.66.163",
+          "82.194.66.207",
+          "82.194.66.208"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "juventudcanaria.com does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

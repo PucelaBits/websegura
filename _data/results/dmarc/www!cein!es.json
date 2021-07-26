@@ -1,0 +1,63 @@
+{
+  "domain": "cein.es",
+  "base_domain": "cein.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "dns2.navarra.es",
+      "dns1.nasertic.es",
+      "dns1.navarra.es"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "smtp5.navarra.es",
+        "addresses": [
+          "176.12.85.140"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "smtp6.navarra.es",
+        "addresses": [
+          "176.12.85.141"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 mx -all",
+    "valid": true,
+    "dns_lookups": 1,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "smtp5.navarra.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "smtp6.navarra.es",
+          "mechanism": "mx"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "domain": "dgt.es",
+  "base_domain": "dgt.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns0.ntt.eu",
+      "ns1.ntt.eu"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx01.dgt.es",
+        "addresses": [
+          "195.76.181.21"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mx02.dgt.es",
+        "addresses": [
+          "195.76.181.22"
+        ]
+      }
+    ],
+    "warnings": [
+      "The DNS operation timed out after 2.1 seconds",
+      "The reverse DNS of 195.76.181.21 is mx01.dgt.es, but the A/AAAA DNS records for mx01.dgt.es do not resolve to 195.76.181.21"
+    ]
+  },
+  "spf": {
+    "record": "v=spf1 mx ~all",
+    "valid": true,
+    "dns_lookups": 1,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "mx01.dgt.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mx02.dgt.es",
+          "mechanism": "mx"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

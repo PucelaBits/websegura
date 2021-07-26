@@ -1,0 +1,37 @@
+{
+  "domain": "quiros.es",
+  "base_domain": "quiros.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns4.gestiondecuenta.com",
+      "ns.gestiondecuenta.com",
+      "ns2.gestiondecuenta.com",
+      "ns3.gestiondecuenta.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.quiros.es",
+        "addresses": [
+          "82.98.132.60"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "quiros.es does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

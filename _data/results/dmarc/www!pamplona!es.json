@@ -1,0 +1,74 @@
+{
+  "domain": "pamplona.es",
+  "base_domain": "pamplona.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "dns1.hostinet.com",
+      "dns2.hostinet.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "correo.pamplona.es",
+        "addresses": [
+          "77.225.12.100"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "correo2.pamplona.es",
+        "addresses": [
+          "77.225.12.99"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 +a +mx +ip4:77.225.12.99 +ip4:77.225.12.100 ~all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "77.225.12.101",
+          "mechanism": "a"
+        },
+        {
+          "value": "correo.pamplona.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "correo2.pamplona.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "77.225.12.99",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "77.225.12.100",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

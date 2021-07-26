@@ -1,0 +1,27 @@
+{
+  "domain": "cabildodelapalma.es",
+  "base_domain": "cabildodelapalma.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "dns13.servidoresdns.net",
+      "dns14.servidoresdns.net"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [],
+    "error": "All nameservers failed to answer the query 27.115.250.142.in-addr.arpa. IN PTR: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "cabildodelapalma.es does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "domain": "ayto-navia.es",
+  "base_domain": "ayto-navia.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "alfa.ns.active24.cz",
+      "beta.ns.active24.cz",
+      "gama.ns.active24.sk"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx1.active24.com",
+        "addresses": [
+          "2a02:4a8:ac24:101::97:102",
+          "2a02:4a8:ac24:101::97:111",
+          "2a02:4a8:ac24:101::97:116",
+          "2a02:4a8:ac24:101::97:4",
+          "81.95.97.102",
+          "81.95.97.111",
+          "81.95.97.116",
+          "81.95.97.4"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mx2.active24.com",
+        "addresses": [
+          "81.0.238.28"
+        ]
+      }
+    ],
+    "warnings": [
+      "The reverse DNS of 2a02:4a8:ac24:101::97:4 is in.smtp.cz, but the A/AAAA DNS records for in.smtp.cz do not resolve to 2a02:4a8:ac24:101::97:4",
+      "The reverse DNS of 81.95.97.4 is in.smtp.cz, but the A/AAAA DNS records for in.smtp.cz do not resolve to 81.95.97.4"
+    ]
+  },
+  "spf": {
+    "record": "v=spf1 a include:spf.smtp.cz ~all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "212.89.23.119",
+          "mechanism": "a"
+        },
+        {
+          "value": "2a02:4a8:ac24:112::100:141",
+          "mechanism": "a"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "spf.smtp.cz",
+          "record": "v=spf1 ip4:81.95.97.0/25 ip4:81.95.105.128/26 ip4:185.12.196.0/24 ip6:2a02:4a8:ac24:101::/64 ip6:2a02:4a8:ac24:126::/64 ip6:2a02:4a8:ac24:130::/64",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "81.95.97.0/25",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "81.95.105.128/26",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.12.196.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "2a02:4a8:ac24:101::/64",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a02:4a8:ac24:126::/64",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a02:4a8:ac24:130::/64",
+                "mechanism": "ip6"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "neutral"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

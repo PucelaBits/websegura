@@ -1,0 +1,37 @@
+{
+  "domain": "alcasser.es",
+  "base_domain": "alcasser.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns2.dnsxperta.com",
+      "ns1.dnsxperta.com",
+      "ns3.dnsxperta.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 100,
+        "hostname": "mx1.dnsxperta.com",
+        "addresses": [
+          "217.13.80.229",
+          "83.147.63.42"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "alcasser.es does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.alcasser.es\n\nXv=spf1 ip4:213.4.82.254 ip4:213.4.82.201 include:dnsxperta.com -all"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "domain": "bv.gva.es",
+  "base_domain": "gva.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [],
+    "error": "All nameservers failed to answer the query bv.gva.es. IN NS: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+  },
+  "mx": {
+    "hosts": [],
+    "error": "All nameservers failed to answer the query bv.gva.es. IN MX: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "All nameservers failed to answer the query bv.gva.es. IN TXT: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

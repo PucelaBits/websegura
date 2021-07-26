@@ -1,0 +1,108 @@
+{
+  "domain": "investinspain.org",
+  "base_domain": "investinspain.org",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "halcon.icex.es",
+      "milano.icex.es"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [],
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
+  },
+  "spf": {
+    "record": "v=spf1 mx include:spf.spamina.com -all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [
+      "investinspain.org does not have any MX records"
+    ],
+    "parsed": {
+      "pass": [],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "spf.spamina.com",
+          "record": "v=spf1 ip4:92.54.22.0/24 ip4:92.54.27.0/24 ip4:92.54.39.0/24 ip4:80.67.107.0/24 ip4:80.67.109.0/24 ip4:83.246.65.0/24 ip4:185.140.204.0/22 ip4:94.100.128.0/20 ip4:81.20.94.0/24 ip4:173.45.18.0/24 ip4:52.62.123.207/32 ip4:52.62.108.212/32 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "92.54.22.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "92.54.27.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "92.54.39.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "80.67.107.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "80.67.109.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "83.246.65.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.140.204.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "94.100.128.0/20",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "81.20.94.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "173.45.18.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.62.123.207/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.62.108.212/32",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

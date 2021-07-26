@@ -1,0 +1,57 @@
+{
+  "domain": "ingenio.es",
+  "base_domain": "ingenio.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns2.dinahosting.com",
+      "ns3.dinahosting.com",
+      "ns4.dinahosting.com",
+      "ns.dinahosting.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.ingenio.es",
+        "addresses": [
+          "82.98.157.90"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 a mx ~all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "82.98.157.90",
+          "mechanism": "a"
+        },
+        {
+          "value": "mail.ingenio.es",
+          "mechanism": "mx"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

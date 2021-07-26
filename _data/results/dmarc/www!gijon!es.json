@@ -1,0 +1,51 @@
+{
+  "domain": "gijon.es",
+  "base_domain": "gijon.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "artemis.ttd.net",
+      "minerva.ttd.net"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 20,
+        "hostname": "smtp01.gijon.es",
+        "addresses": [
+          "195.235.57.14"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 mx  -all",
+    "valid": true,
+    "dns_lookups": 1,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "smtp01.gijon.es",
+          "mechanism": "mx"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": "v=DMARC1; p=none; rua=mailto:dmarc@gijon.es; ruf=mailto:dmarc@gijon.es; fo=0:1:d:s; pct=100;",
+    "valid": false,
+    "location": "gijon.es",
+    "error": "fo DMARC tag options 0 and 1 are mutually exclusive"
+  }
+}

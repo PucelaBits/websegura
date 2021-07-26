@@ -1,0 +1,60 @@
+{
+  "domain": "juntacentralvicentina.org",
+  "base_domain": "juntacentralvicentina.org",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "dns3.zonadns.com",
+      "dns1.zonadns.com",
+      "dns2.zonadns.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.juntacentralvicentina.org",
+        "addresses": [
+          "193.42.143.170"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 a mx ip4:193.42.143.170 ~all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "193.42.143.170",
+          "mechanism": "a"
+        },
+        {
+          "value": "mail.juntacentralvicentina.org",
+          "mechanism": "mx"
+        },
+        {
+          "value": "193.42.143.170",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "domain": "uv.es",
+  "base_domain": "uv.es",
+  "dnssec": true,
+  "ns": {
+    "hostnames": [
+      "sun.rediris.es",
+      "gong.ci.uv.es",
+      "chico.rediris.es",
+      "peque.ci.uv.es",
+      "shackleton.red.uv.es"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 20,
+        "hostname": "mx01.puc.rediris.es",
+        "addresses": [
+          "130.206.19.130",
+          "130.206.19.162",
+          "2001:720:418:ca10::2",
+          "2001:720:418:ca11::2"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mx02.puc.rediris.es",
+        "addresses": [
+          "130.206.19.130",
+          "130.206.19.162",
+          "2001:720:418:ca10::2",
+          "2001:720:418:ca11::2"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 a:postin.uv.es a:postin.ipv6.uv.es a:postilla.uv.es a:postilla.ipv6.uv.es a:hal.ific.uv.es a:ifmx.ific.uv.es a:glup.irobot.uv.es -all",
+    "valid": true,
+    "dns_lookups": 7,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "147.156.1.90",
+          "mechanism": "a"
+        },
+        {
+          "value": "2001:720:1014:1::90",
+          "mechanism": "a"
+        },
+        {
+          "value": "2001:720:1014:1::90",
+          "mechanism": "a"
+        },
+        {
+          "value": "147.156.1.69",
+          "mechanism": "a"
+        },
+        {
+          "value": "2001:720:1014:1::1:69",
+          "mechanism": "a"
+        },
+        {
+          "value": "2001:720:1014:1::1:69",
+          "mechanism": "a"
+        },
+        {
+          "value": "147.156.163.23",
+          "mechanism": "a"
+        },
+        {
+          "value": "147.156.53.55",
+          "mechanism": "a"
+        },
+        {
+          "value": "147.156.222.65",
+          "mechanism": "a"
+        },
+        {
+          "value": "2001:720:1014:222::3",
+          "mechanism": "a"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

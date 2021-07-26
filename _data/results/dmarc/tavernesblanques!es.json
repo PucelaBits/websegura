@@ -1,0 +1,37 @@
+{
+  "domain": "tavernesblanques.es",
+  "base_domain": "tavernesblanques.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns3.dnsxperta.com",
+      "ns2.dnsxperta.com",
+      "ns1.dnsxperta.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 100,
+        "hostname": "mx1.dnsxperta.com",
+        "addresses": [
+          "217.13.80.229",
+          "83.147.63.42"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "tavernesblanques.es does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

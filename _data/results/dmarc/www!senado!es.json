@@ -1,0 +1,66 @@
+{
+  "domain": "senado.es",
+  "base_domain": "senado.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "a10-65.akam.net",
+      "a4-65.akam.net",
+      "a11-67.akam.net",
+      "a8-66.akam.net",
+      "a7-65.akam.net",
+      "a1-103.akam.net"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "correo.senado.es",
+        "addresses": [
+          "193.146.129.80"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "correo3.senado.es",
+        "addresses": [
+          "213.27.192.147"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 ip4:193.146.129.103 ip4:213.27.192.203 -all",
+    "valid": true,
+    "dns_lookups": 0,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "193.146.129.103",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "213.27.192.203",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

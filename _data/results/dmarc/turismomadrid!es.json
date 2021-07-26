@@ -1,0 +1,29 @@
+{
+  "domain": "turismomadrid.es",
+  "base_domain": "turismomadrid.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "olimpia.madrid.org",
+      "icmcom.madrid.org"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [],
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "turismomadrid.es does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

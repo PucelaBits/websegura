@@ -1,0 +1,44 @@
+{
+  "domain": "juntadeandalucia.es",
+  "base_domain": "juntadeandalucia.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns1.juntadeandalucia.es",
+      "ns.juntadeandalucia.es",
+      "ns3.juntadeandalucia.es",
+      "ns4.juntadeandalucia.es"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx.juntadeandalucia.es",
+        "addresses": [
+          "217.12.25.231"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mx2.juntadeandalucia.es",
+        "addresses": [
+          "217.12.25.241"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "'utf-8' codec can't decode byte 0xed in position 14: invalid continuation byte"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

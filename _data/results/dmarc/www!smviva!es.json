@@ -1,0 +1,44 @@
+{
+  "domain": "smviva.es",
+  "base_domain": "smviva.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns1116.ui-dns.org",
+      "ns1080.ui-dns.de",
+      "ns1062.ui-dns.biz",
+      "ns1070.ui-dns.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx00.ionos.es",
+        "addresses": [
+          "212.227.15.41"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mx01.ionos.es",
+        "addresses": [
+          "217.72.192.67"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "smviva.es does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

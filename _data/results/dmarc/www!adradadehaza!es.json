@@ -1,0 +1,31 @@
+{
+  "domain": "adradadehaza.es",
+  "base_domain": "adradadehaza.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns3.nerion.com",
+      "ns4.nerion.com",
+      "ns2.nerion.com",
+      "ns1.nerion.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [],
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "adradadehaza.es does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

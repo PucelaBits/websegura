@@ -1,0 +1,27 @@
+{
+  "domain": "campisur.es",
+  "base_domain": "campisur.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "proxy.eprinsa.es",
+      "proxy2.eprinsa.es"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [],
+    "error": "All nameservers failed to answer the query 26.115.250.142.in-addr.arpa. IN PTR: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "campisur.es does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

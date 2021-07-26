@@ -1,0 +1,91 @@
+{
+  "domain": "dominios.es",
+  "base_domain": "dominios.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns-1226.awsdns-25.org",
+      "ns-1810.awsdns-34.co.uk",
+      "ns-206.awsdns-25.com",
+      "ns-931.awsdns-52.net"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 0,
+        "hostname": "dominios-es.mail.protection.outlook.com",
+        "addresses": [
+          "104.47.5.36",
+          "104.47.6.36"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 MS=ms78806188 ip4:194.69.254.0/24 include:spf.protection.outlook.com -all",
+    "valid": false,
+    "warnings": [],
+    "error": "dominios.es: Expected end_of_statement or mechanism at position 7 in: v=spf1 MS=ms78806188 ip4:194.69.254.0/24 include:spf.protection.outlook.com -all"
+  },
+  "dmarc": {
+    "record": "v=DMARC1; p=none; fo=0; rua=mailto:abuse@dominios.es",
+    "valid": true,
+    "location": "dominios.es",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "abuse@dominios.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
+  }
+}

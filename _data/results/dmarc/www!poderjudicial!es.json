@@ -1,0 +1,94 @@
+{
+  "domain": "poderjudicial.es",
+  "base_domain": "poderjudicial.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "cdj11.cgpj.es",
+      "artemis.ttd.net"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mailip1.poderjudicial.es",
+        "addresses": [
+          "195.55.151.37"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mailip2.poderjudicial.es",
+        "addresses": [
+          "195.55.151.39"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 mx a:mail.pnj.cgpj.es a:mailip1.poderjudicial.es a:mailip2.poderjudicial.es a:correo.escuela.poderjudicial.es ip4:195.55.151.37 ip4:195.55.151.39 ip4:194.224.99.240 ip4:195.55.151.99 -all",
+    "valid": true,
+    "dns_lookups": 5,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "mailip1.poderjudicial.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mailip2.poderjudicial.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "194.224.99.240",
+          "mechanism": "a"
+        },
+        {
+          "value": "195.55.151.37",
+          "mechanism": "a"
+        },
+        {
+          "value": "195.55.151.39",
+          "mechanism": "a"
+        },
+        {
+          "value": "195.55.151.99",
+          "mechanism": "a"
+        },
+        {
+          "value": "195.55.151.37",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "195.55.151.39",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "194.224.99.240",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "195.55.151.99",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

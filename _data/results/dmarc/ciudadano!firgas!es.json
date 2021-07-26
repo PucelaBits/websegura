@@ -1,0 +1,72 @@
+{
+  "domain": "ciudadano.firgas.es",
+  "base_domain": "firgas.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [],
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
+  },
+  "spf": {
+    "record": "v=spf1 ip4:95.168.169.96 ip4:95.168.169.97 ip4:37.48.92.140 ip4:37.48.92.146 +a +mx +ip4:81.171.28.98 +ip4:5.79.71.84 +ip4:37.48.92.141 -all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [
+      "ciudadano.firgas.es does not have any MX records"
+    ],
+    "parsed": {
+      "pass": [
+        {
+          "value": "95.168.169.96",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "95.168.169.97",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "37.48.92.140",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "37.48.92.146",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "95.168.169.96",
+          "mechanism": "a"
+        },
+        {
+          "value": "81.171.28.98",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "5.79.71.84",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "37.48.92.141",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

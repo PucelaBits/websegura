@@ -1,0 +1,35 @@
+{
+  "domain": "santirsodeabres.es",
+  "base_domain": "santirsodeabres.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "dns2.nominalia.com",
+      "dns1.nominalia.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.nominalia.com",
+        "addresses": [
+          "195.110.124.132"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "santirsodeabres.es does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

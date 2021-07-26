@@ -1,0 +1,158 @@
+{
+  "domain": "semanasantamarinera.org",
+  "base_domain": "semanasantamarinera.org",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns.redunda.com",
+      "ns2.redunda.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx.redunda.com",
+        "addresses": [
+          "84.246.208.51",
+          "84.246.208.52",
+          "84.246.208.53",
+          "84.246.208.54",
+          "84.246.208.55",
+          "84.246.208.56",
+          "84.246.208.57",
+          "84.246.208.58"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mx2.redunda.com",
+        "addresses": [
+          "84.246.208.51",
+          "84.246.208.52",
+          "84.246.208.53",
+          "84.246.208.54",
+          "84.246.208.55",
+          "84.246.208.56",
+          "84.246.208.57",
+          "84.246.208.58"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 include:espadan.infortelecom.net +a +mx a:mail.semanasantamarinera.org ip4:84.246.209.46 -all",
+    "valid": true,
+    "dns_lookups": 6,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "84.246.209.45",
+          "mechanism": "a"
+        },
+        {
+          "value": "mx.redunda.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mx2.redunda.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "84.246.209.45",
+          "mechanism": "a"
+        },
+        {
+          "value": "84.246.209.46",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "espadan.infortelecom.net",
+          "record": "v=spf1 a a:relay1.redunda.com ip4:84.246.209.45 ip4:84.246.214.205 ip4:84.246.209.46 ip4:84.246.209.220 ip4:84.246.209.116 ip4:84.246.209.118 ip4:84.246.209.114 ip4:84.246.209.119 ip4:84.246.209.91 ip4:84.246.209.49 -all",
+          "dns_lookups": 2,
+          "parsed": {
+            "pass": [
+              {
+                "value": "84.246.209.45",
+                "mechanism": "a"
+              },
+              {
+                "value": "84.246.209.46",
+                "mechanism": "a"
+              },
+              {
+                "value": "84.246.210.12",
+                "mechanism": "a"
+              },
+              {
+                "value": "84.246.209.45",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "84.246.214.205",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "84.246.209.46",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "84.246.209.220",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "84.246.209.116",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "84.246.209.118",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "84.246.209.114",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "84.246.209.119",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "84.246.209.91",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "84.246.209.49",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

@@ -1,0 +1,340 @@
+{
+  "domain": "rtvc.es",
+  "base_domain": "rtvc.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "aldo.ns.cloudflare.com",
+      "lina.ns.cloudflare.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx10.mailspamprotection.com",
+        "addresses": [
+          "146.66.121.105",
+          "146.66.121.211",
+          "146.66.121.212",
+          "146.66.121.215",
+          "146.66.121.216",
+          "146.66.121.217",
+          "146.66.121.218",
+          "146.66.121.69",
+          "146.66.121.82",
+          "35.192.135.139",
+          "35.208.121.216",
+          "35.208.244.18"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mx20.mailspamprotection.com",
+        "addresses": [
+          "146.66.121.160",
+          "146.66.121.164",
+          "146.66.121.17",
+          "146.66.121.213",
+          "146.66.121.83",
+          "146.66.121.87",
+          "146.66.121.88",
+          "34.70.37.227",
+          "35.192.5.156",
+          "35.206.105.37",
+          "35.206.93.214",
+          "35.223.167.9"
+        ]
+      },
+      {
+        "preference": 30,
+        "hostname": "mx30.mailspamprotection.com",
+        "addresses": [
+          "146.66.121.161",
+          "146.66.121.162",
+          "146.66.121.165",
+          "146.66.121.166",
+          "146.66.121.214",
+          "146.66.121.219",
+          "146.66.121.80",
+          "146.66.121.9",
+          "34.69.117.62",
+          "35.206.120.11",
+          "35.208.10.124",
+          "35.238.96.225"
+        ]
+      }
+    ],
+    "warnings": [
+      "The DNS operation timed out after 2.1 seconds",
+      "The reverse DNS of 146.66.121.105 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 146.66.121.105",
+      "The DNS operation timed out after 2.1 seconds",
+      "The reverse DNS of 146.66.121.211 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 146.66.121.211",
+      "The DNS operation timed out after 2.1 seconds",
+      "The reverse DNS of 146.66.121.212 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 146.66.121.212",
+      "The DNS operation timed out after 2.1 seconds",
+      "The reverse DNS of 146.66.121.215 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 146.66.121.215",
+      "The DNS operation timed out after 2.1 seconds",
+      "The reverse DNS of 146.66.121.216 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 146.66.121.216",
+      "The DNS operation timed out after 2.1 seconds",
+      "The reverse DNS of 146.66.121.217 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 146.66.121.217",
+      "The DNS operation timed out after 2.1 seconds",
+      "The reverse DNS of 146.66.121.218 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 146.66.121.218",
+      "The DNS operation timed out after 2.1 seconds",
+      "The reverse DNS of 146.66.121.69 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 146.66.121.69",
+      "All nameservers failed to answer the query delivery.mailspamprotection.com. IN A: Server 127.0.0.53 UDP port 53 answered SERVFAIL",
+      "The reverse DNS of 146.66.121.82 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 146.66.121.82",
+      "The DNS operation timed out after 2.1 seconds",
+      "The reverse DNS of 146.66.121.160 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 146.66.121.160",
+      "The DNS operation timed out after 2.1 seconds",
+      "The reverse DNS of 146.66.121.164 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 146.66.121.164",
+      "The DNS operation timed out after 2.1 seconds",
+      "The reverse DNS of 146.66.121.17 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 146.66.121.17",
+      "The DNS operation timed out after 2.1 seconds",
+      "The reverse DNS of 146.66.121.213 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 146.66.121.213",
+      "All nameservers failed to answer the query delivery.mailspamprotection.com. IN A: Server 127.0.0.53 UDP port 53 answered SERVFAIL",
+      "The reverse DNS of 146.66.121.83 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 146.66.121.83",
+      "The DNS operation timed out after 2.1 seconds",
+      "The reverse DNS of 146.66.121.87 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 146.66.121.87",
+      "The DNS operation timed out after 2.1 seconds",
+      "The reverse DNS of 146.66.121.88 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 146.66.121.88",
+      "The DNS operation timed out after 2.1 seconds",
+      "The reverse DNS of 146.66.121.161 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 146.66.121.161",
+      "All nameservers failed to answer the query delivery.mailspamprotection.com. IN A: Server 127.0.0.53 UDP port 53 answered SERVFAIL",
+      "The reverse DNS of 146.66.121.162 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 146.66.121.162",
+      "The DNS operation timed out after 2.1 seconds",
+      "The reverse DNS of 146.66.121.165 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 146.66.121.165",
+      "The DNS operation timed out after 2.1 seconds",
+      "The reverse DNS of 146.66.121.166 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 146.66.121.166",
+      "The DNS operation timed out after 2.1 seconds",
+      "The reverse DNS of 146.66.121.214 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 146.66.121.214",
+      "The DNS operation timed out after 2.1 seconds",
+      "The reverse DNS of 146.66.121.219 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 146.66.121.219",
+      "All nameservers failed to answer the query delivery.mailspamprotection.com. IN A: Server 127.0.0.53 UDP port 53 answered SERVFAIL",
+      "The reverse DNS of 146.66.121.80 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 146.66.121.80",
+      "The DNS operation timed out after 2.1 seconds",
+      "The reverse DNS of 146.66.121.9 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 146.66.121.9"
+    ]
+  },
+  "spf": {
+    "record": "v=spf1 +a +mx +ip4:35.214.246.15 include:_spf.mailspamprotection.com ~all",
+    "valid": true,
+    "dns_lookups": 6,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "104.21.5.233",
+          "mechanism": "a"
+        },
+        {
+          "value": "172.67.154.190",
+          "mechanism": "a"
+        },
+        {
+          "value": "2606:4700:3032::ac43:9abe",
+          "mechanism": "a"
+        },
+        {
+          "value": "2606:4700:3036::6815:5e9",
+          "mechanism": "a"
+        },
+        {
+          "value": "mx10.mailspamprotection.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mx20.mailspamprotection.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mx30.mailspamprotection.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "35.214.246.15",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "_spf.mailspamprotection.com",
+          "record": "v=spf1 include:_nb1.mailspamprotection.com include:_nb2.mailspamprotection.com include:_nb3.mailspamprotection.com ~all",
+          "dns_lookups": 3,
+          "parsed": {
+            "pass": [],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [
+              {
+                "domain": "_nb1.mailspamprotection.com",
+                "record": "v=spf1 ip4:104.154.162.117 ip4:104.197.223.236 ip4:34.66.115.54 ip4:34.69.117.62 ip4:34.70.123.227 ip4:34.70.37.227 ip4:35.184.95.72 ip4:35.192.135.139 ip4:35.192.5.156 ip4:35.202.176.239 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "104.154.162.117",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "104.197.223.236",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "34.66.115.54",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "34.69.117.62",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "34.70.123.227",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "34.70.37.227",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "35.184.95.72",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "35.192.135.139",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "35.192.5.156",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "35.202.176.239",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              },
+              {
+                "domain": "_nb2.mailspamprotection.com",
+                "record": "v=spf1 ip4:35.208.121.216 ip4:35.206.105.37 ip4:35.208.244.18 ip4:35.208.10.124 ip4:35.206.93.214 ip4:35.222.126.238 ip4:35.223.167.9 ip4:35.225.203.128 ip4:35.232.122.203 ip4:35.232.58.54 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "35.208.121.216",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "35.206.105.37",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "35.208.244.18",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "35.208.10.124",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "35.206.93.214",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "35.222.126.238",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "35.223.167.9",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "35.225.203.128",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "35.232.122.203",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "35.232.58.54",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              },
+              {
+                "domain": "_nb3.mailspamprotection.com",
+                "record": "v=spf1 ip4:35.238.96.225 ip4:146.66.121.0/24 ip4:146.66.122.0/24 ip4:35.206.120.11 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "35.238.96.225",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "146.66.121.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "146.66.122.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "35.206.120.11",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              }
+            ],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

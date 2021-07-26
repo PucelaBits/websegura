@@ -1,0 +1,51 @@
+{
+  "domain": "granadatur.com",
+  "base_domain": "granadatur.com",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns2.granadatur.com",
+      "ns1.granadatur.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
+  },
+  "spf": {
+    "record": "v=spf1 +a +mx +ip4:217.18.160.0/20 -all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "85.62.209.68",
+          "mechanism": "a"
+        },
+        {
+          "value": "mail.granadatur.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "217.18.160.0/20",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

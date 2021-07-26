@@ -1,0 +1,95 @@
+{
+  "domain": "aemet.es",
+  "base_domain": "aemet.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "minerva.ttd.net",
+      "artemis.ttd.net"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 5,
+        "hostname": "mail1.correo.gob.es",
+        "addresses": [
+          "185.73.174.71"
+        ]
+      },
+      {
+        "preference": 5,
+        "hostname": "mail2.correo.gob.es",
+        "addresses": [
+          "185.73.174.72"
+        ]
+      }
+    ],
+    "warnings": [
+      "The domain 71.red-185-73-174.customer.static.ccgg.telefonica.net does not exist",
+      "The reverse DNS of 185.73.174.71 is 71.red-185-73-174.customer.static.ccgg.telefonica.net, but the A/AAAA DNS records for 71.red-185-73-174.customer.static.ccgg.telefonica.net do not resolve to 185.73.174.71",
+      "The domain 72.red-185-73-174.customer.static.ccgg.telefonica.net does not exist",
+      "The reverse DNS of 185.73.174.72 is 72.red-185-73-174.customer.static.ccgg.telefonica.net, but the A/AAAA DNS records for 72.red-185-73-174.customer.static.ccgg.telefonica.net do not resolve to 185.73.174.72"
+    ]
+  },
+  "spf": {
+    "record": "v=spf1 a:spf.correo.gob.es -all",
+    "valid": true,
+    "dns_lookups": 1,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "185.73.174.101",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.174.102",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.174.103",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.174.220",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.174.91",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.174.92",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.174.97",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.174.98",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.174.99",
+          "mechanism": "a"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

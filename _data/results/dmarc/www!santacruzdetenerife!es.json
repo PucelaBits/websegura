@@ -1,0 +1,120 @@
+{
+  "domain": "santacruzdetenerife.es",
+  "base_domain": "santacruzdetenerife.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "dns02.santacruzdetenerife.es",
+      "dns01.santacruzdetenerife.es"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx-01-eu-central-1.prod.hydra.sophos.com",
+        "addresses": [
+          "18.194.102.147",
+          "52.58.154.181"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mx-02-eu-central-1.prod.hydra.sophos.com",
+        "addresses": [
+          "18.194.102.147",
+          "52.58.154.181"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 mx:santacruzdetenerife.es ip4:195.76.166.0/24 -all",
+    "valid": true,
+    "dns_lookups": 1,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "mx-01-eu-central-1.prod.hydra.sophos.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mx-02-eu-central-1.prod.hydra.sophos.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "195.76.166.0/24",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": "v=DMARC1; p=none; rua=mailto:dmarcreports@santacruzdetenerife.es",
+    "valid": true,
+    "location": "santacruzdetenerife.es",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarcreports@santacruzdetenerife.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
+  }
+}

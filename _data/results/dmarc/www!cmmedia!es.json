@@ -1,0 +1,116 @@
+{
+  "domain": "cmmedia.es",
+  "base_domain": "cmmedia.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "beau.ns.cloudflare.com",
+      "roxy.ns.cloudflare.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx1.hc550-23.c3s2.iphmx.com",
+        "addresses": [
+          "216.71.156.65",
+          "68.232.156.58"
+        ]
+      },
+      {
+        "preference": 15,
+        "hostname": "mx2.hc550-23.c3s2.iphmx.com",
+        "addresses": [
+          "216.71.156.65",
+          "68.232.156.58"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 mx -all",
+    "valid": true,
+    "dns_lookups": 1,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "mx1.hc550-23.c3s2.iphmx.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mx2.hc550-23.c3s2.iphmx.com",
+          "mechanism": "mx"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": "v=DMARC1; p=quarantine; sp=quarantine; rua=mailto:postmaster@cmmedia.es!50m; rf=afrf; pct=100; ri=86400",
+    "valid": true,
+    "location": "cmmedia.es",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "sp": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "postmaster@cmmedia.es",
+            "size_limit": "50m"
+          }
+        ],
+        "explicit": true
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": true
+      },
+      "pct": {
+        "value": 100,
+        "explicit": true
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      }
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "domain": "tragsa.es",
+  "base_domain": "tragsa.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "dns.tragsa.es",
+      "artemis.ttd.net"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
+  },
+  "spf": {
+    "record": "v=spf1 mx:tragsa.es a:mail00.tragsa.es a:antispam00.tragsa.es a:mailrelay01.tragsa.es a:mail20.tragsa.es a:mailsrv30.tragsa.es ip4:195.77.152.0/24 -all",
+    "valid": true,
+    "dns_lookups": 6,
+    "warnings": [
+      "The domain mailsrv30.tragsa.es does not exist"
+    ],
+    "parsed": {
+      "pass": [
+        {
+          "value": "antispam31.tragsa.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "antispam32.tragsa.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "antispam33.tragsa.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mailhost-antispam.ttd.net",
+          "mechanism": "mx"
+        },
+        {
+          "value": "195.77.152.24",
+          "mechanism": "a"
+        },
+        {
+          "value": "195.77.152.23",
+          "mechanism": "a"
+        },
+        {
+          "value": "195.77.152.37",
+          "mechanism": "a"
+        },
+        {
+          "value": "195.77.152.35",
+          "mechanism": "a"
+        },
+        {
+          "value": "195.77.152.0/24",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

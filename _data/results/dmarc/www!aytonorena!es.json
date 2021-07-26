@@ -1,0 +1,57 @@
+{
+  "domain": "aytonorena.es",
+  "base_domain": "aytonorena.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "dns01.cpd.as",
+      "dns02.cpd.as"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx19a.antispameurope.com",
+        "addresses": [
+          "83.246.65.85",
+          "94.100.132.100"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mx19b.antispameurope.com",
+        "addresses": [
+          "83.246.65.85"
+        ]
+      },
+      {
+        "preference": 30,
+        "hostname": "mx19c.antispameurope.com",
+        "addresses": [
+          "94.100.132.100"
+        ]
+      },
+      {
+        "preference": 40,
+        "hostname": "mx19d.antispameurope.com",
+        "addresses": [
+          "83.246.65.85"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "aytonorena.es does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

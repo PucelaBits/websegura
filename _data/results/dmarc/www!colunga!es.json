@@ -1,0 +1,66 @@
+{
+  "domain": "colunga.es",
+  "base_domain": "colunga.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns2.cdmon.net",
+      "ns3.cdmon.net",
+      "ns1.cdmon.net",
+      "ns4.cdmondns-01.org",
+      "ns5.cdmondns-01.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx.sentidocomun.es",
+        "addresses": [
+          "54.217.206.198"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 a mx ip4:82.223.148.203 ip4:54.217.206.198 ~all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "212.89.23.77",
+          "mechanism": "a"
+        },
+        {
+          "value": "mx.sentidocomun.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "82.223.148.203",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "54.217.206.198",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

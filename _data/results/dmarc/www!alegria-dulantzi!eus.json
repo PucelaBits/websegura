@@ -1,0 +1,27 @@
+{
+  "domain": "alegria-dulantzi.eus",
+  "base_domain": "alegria-dulantzi.eus",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns1.dominioabsoluto.com",
+      "ns2.dominioabsoluto.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "alegria-dulantzi.eus has multiple SPF TXT records"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

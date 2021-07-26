@@ -1,0 +1,30 @@
+{
+  "domain": "corvera.es",
+  "base_domain": "corvera.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns08.ns-cloud4b.com",
+      "ns06.ns-cloud4b.net",
+      "ns07.ns-cloud4b.org"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [],
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "corvera.es does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

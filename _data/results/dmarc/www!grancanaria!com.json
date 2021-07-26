@@ -1,0 +1,67 @@
+{
+  "domain": "grancanaria.com",
+  "base_domain": "grancanaria.com",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns8.a0.impervasecuredns.net",
+      "ns13.a1.impervasecuredns.net"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "smtp.grancanaria.com",
+        "addresses": [
+          "212.64.178.10"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 mx a:smtp.grancanaria.com ip4:212.64.178.10 ip4:213.60.255.116 ip4:213.60.255.178 -all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "smtp.grancanaria.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "212.64.178.10",
+          "mechanism": "a"
+        },
+        {
+          "value": "212.64.178.10",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "213.60.255.116",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "213.60.255.178",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

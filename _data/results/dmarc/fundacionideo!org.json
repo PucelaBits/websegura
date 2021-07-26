@@ -1,0 +1,42 @@
+{
+  "domain": "fundacionideo.org",
+  "base_domain": "fundacionideo.org",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "josh.ns.cloudflare.com",
+      "uma.ns.cloudflare.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx00.1and1.es",
+        "addresses": [
+          "212.227.15.41"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mx01.1and1.es",
+        "addresses": [
+          "217.72.192.67"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "fundacionideo.org does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

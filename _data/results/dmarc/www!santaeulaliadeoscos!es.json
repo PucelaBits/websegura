@@ -1,0 +1,80 @@
+{
+  "domain": "santaeulaliadeoscos.es",
+  "base_domain": "santaeulaliadeoscos.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "mortadelo.telecable.es",
+      "otilio-pub.telecable.es"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx1.telecable.es",
+        "addresses": [
+          "2001:550:2:9::280:100",
+          "38.111.198.185"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mx2.telecable.es",
+        "addresses": [
+          "2001:550:2:61::2fc:100",
+          "38.89.254.156"
+        ]
+      },
+      {
+        "preference": 30,
+        "hostname": "mx3.telecable.es",
+        "addresses": [
+          "2001:550:2:78::ca:100",
+          "38.109.53.20"
+        ]
+      },
+      {
+        "preference": 40,
+        "hostname": "mx4.telecable.es",
+        "addresses": [
+          "2001:550:2:9::280:100",
+          "38.111.198.185"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 a:4559.submission.antispamcloud.com ~all",
+    "valid": true,
+    "dns_lookups": 1,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "148.251.71.15",
+          "mechanism": "a"
+        },
+        {
+          "value": "95.211.2.202",
+          "mechanism": "a"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

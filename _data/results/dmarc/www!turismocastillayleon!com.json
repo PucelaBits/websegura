@@ -1,0 +1,31 @@
+{
+  "domain": "turismocastillayleon.com",
+  "base_domain": "turismocastillayleon.com",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns2.f5cloudservices.com",
+      "ns1.f5cloudservices.com",
+      "dns2.jcyl.es",
+      "dns1.jcyl.es"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [],
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "turismocastillayleon.com does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

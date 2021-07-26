@@ -1,0 +1,38 @@
+{
+  "domain": "villaviciosa.es",
+  "base_domain": "villaviciosa.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns4.cdmondns-01.org",
+      "ns3.cdmon.net",
+      "ns1.cdmon.net",
+      "ns5.cdmondns-01.com",
+      "ns2.cdmon.net"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx.sentidocomun.es",
+        "addresses": [
+          "54.217.206.198"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "villaviciosa.es does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

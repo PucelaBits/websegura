@@ -1,0 +1,35 @@
+{
+  "domain": "madridsalud.es",
+  "base_domain": "madridsalud.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "dns1.madridsalud.org",
+      "dns2.madridsalud.org"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.madridsalud.es",
+        "addresses": [
+          "146.255.96.10"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "madridsalud.es has multiple SPF TXT records"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

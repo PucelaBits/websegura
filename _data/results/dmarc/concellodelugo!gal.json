@@ -1,0 +1,31 @@
+{
+  "domain": "concellodelugo.gal",
+  "base_domain": "concellodelugo.gal",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns3.dinahosting.com",
+      "ns2.dinahosting.com",
+      "ns4.dinahosting.com",
+      "ns.dinahosting.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [],
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "concellodelugo.gal does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

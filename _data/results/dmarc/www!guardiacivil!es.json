@@ -1,0 +1,155 @@
+{
+  "domain": "guardiacivil.es",
+  "base_domain": "guardiacivil.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "dns1.guardiacivil.es",
+      "artemis.ttd.net",
+      "dns2.guardiacivil.es"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mxa-00692d01.gslb.pphosted.com",
+        "addresses": [
+          "143.55.144.83"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mxb-00692d01.gslb.pphosted.com",
+        "addresses": [
+          "205.220.185.135"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mailgw1.guardiacivil.es",
+        "addresses": [
+          "194.179.107.37"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mailgw2.guardiacivil.es",
+        "addresses": [
+          "194.179.107.17"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 mx ip4:194.179.107.37 ip4:194.179.107.17 ~all",
+    "valid": true,
+    "dns_lookups": 1,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "mxa-00692d01.gslb.pphosted.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mxb-00692d01.gslb.pphosted.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mailgw1.guardiacivil.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mailgw2.guardiacivil.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "194.179.107.37",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "194.179.107.17",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
+  },
+  "dmarc": {
+    "record": "v=DMARC1; p=none; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com",
+    "valid": true,
+    "location": "guardiacivil.es",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "1"
+        ],
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc_rua@emaildefense.proofpoint.com",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc_ruf@emaildefense.proofpoint.com",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
+  }
+}

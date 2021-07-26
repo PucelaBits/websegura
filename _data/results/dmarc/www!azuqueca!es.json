@@ -1,0 +1,44 @@
+{
+  "domain": "azuqueca.es",
+  "base_domain": "azuqueca.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns1081.ui-dns.com",
+      "ns1081.ui-dns.org",
+      "ns1081.ui-dns.biz",
+      "ns1081.ui-dns.de"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx00.1and1.es",
+        "addresses": [
+          "212.227.15.41"
+        ]
+      },
+      {
+        "preference": 11,
+        "hostname": "mx01.1and1.es",
+        "addresses": [
+          "217.72.192.67"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "azuqueca.es does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.azuqueca.es\n\n24367680"
+  }
+}

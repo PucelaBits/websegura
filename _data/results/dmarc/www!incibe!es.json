@@ -1,0 +1,127 @@
+{
+  "domain": "incibe.es",
+  "base_domain": "incibe.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns5.cdmondns-01.com",
+      "ns3.cdmon.net",
+      "ns2.cdmon.net",
+      "ns1.cdmon.net",
+      "ns4.cdmondns-01.org"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "correo.incibe.es",
+        "addresses": [
+          "195.53.165.148"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "correo2.incibe.es",
+        "addresses": [
+          "193.146.253.148"
+        ]
+      }
+    ],
+    "warnings": [
+      "193.146.253.148 does not have any reverse DNS (PTR) records"
+    ]
+  },
+  "spf": {
+    "record": "v=spf1 mx a:correo.inteco.es a:correo2.inteco.es -all",
+    "valid": true,
+    "dns_lookups": 3,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "correo.incibe.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "correo2.incibe.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "195.53.165.57",
+          "mechanism": "a"
+        },
+        {
+          "value": "195.53.165.57",
+          "mechanism": "a"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": "v=DMARC1;p=none;rua=mailto:dmarc@incibe.es",
+    "valid": true,
+    "location": "incibe.es",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc@incibe.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
+  }
+}

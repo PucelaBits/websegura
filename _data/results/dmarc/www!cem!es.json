@@ -1,0 +1,88 @@
+{
+  "domain": "cem.es",
+  "base_domain": "cem.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "dns.serviciosmin.gob.es",
+      "sun.rediris.es",
+      "chico.rediris.es",
+      "sunrelay.rediris.es"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mailin.minetad.es",
+        "addresses": [
+          "193.146.123.230"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mailin1.minetad.es",
+        "addresses": [
+          "193.146.123.234"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 mx a:mailout.minetad.es a:mailout1.minetad.es a:mta90.minetad.es ip4:193.146.1.50/32 ip4:193.146.123.231/32 ip4:193.146.123.235/32 ~all",
+    "valid": true,
+    "dns_lookups": 4,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "mailin.minetad.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mailin1.minetad.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "193.146.123.231",
+          "mechanism": "a"
+        },
+        {
+          "value": "193.146.123.235",
+          "mechanism": "a"
+        },
+        {
+          "value": "193.146.1.50",
+          "mechanism": "a"
+        },
+        {
+          "value": "193.146.1.50/32",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "193.146.123.231/32",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "193.146.123.235/32",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "domain": "burgosalimenta.com",
+  "base_domain": "burgosalimenta.com",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "tapia.csa.es",
+      "dns1.csanet.io",
+      "buniel.csa.es",
+      "clunia.csa.es"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "atapuerca.csa.es",
+        "addresses": [
+          "5.40.65.234"
+        ]
+      },
+      {
+        "preference": 80,
+        "hostname": "silos.csa.es",
+        "addresses": [
+          "5.40.65.34"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "burgosalimenta.com does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

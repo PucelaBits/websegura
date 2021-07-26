@@ -1,0 +1,37 @@
+{
+  "domain": "centroniemeyer.es",
+  "base_domain": "centroniemeyer.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns.gestiondecuenta.com",
+      "ns3.gestiondecuenta.com",
+      "ns4.gestiondecuenta.com",
+      "ns2.gestiondecuenta.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.centroniemeyer.es",
+        "addresses": [
+          "82.98.136.74"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "centroniemeyer.es does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

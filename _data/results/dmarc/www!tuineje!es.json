@@ -1,0 +1,146 @@
+{
+  "domain": "tuineje.es",
+  "base_domain": "tuineje.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "dns.tuineje.es",
+      "sdns2.ovh.net"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.tuineje.es",
+        "addresses": [
+          "188.165.207.97"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "correo.tuineje.es",
+        "addresses": [
+          "188.165.207.97"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 a:tuineje.es mx ptr:tuineje.es mx ip4:188.165.207.97 ~all",
+    "valid": true,
+    "dns_lookups": 3,
+    "warnings": [
+      "The ptr mechanism should not be used - https://tools.ietf.org/html/rfc7208#section-5.5"
+    ],
+    "parsed": {
+      "pass": [
+        {
+          "value": "188.165.207.97",
+          "mechanism": "a"
+        },
+        {
+          "value": "mail.tuineje.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "correo.tuineje.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "tuineje.es",
+          "mechanism": "ptr"
+        },
+        {
+          "value": "mail.tuineje.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "correo.tuineje.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "188.165.207.97",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
+  },
+  "dmarc": {
+    "record": "v=DMARC1; p=quarantine; rua=mailto:dmarc@tuineje.es; ruf=mailto:dmarc@tuineje.es; adkim=r; aspf=r; rf=afrf; sp=quarantine",
+    "valid": true,
+    "location": "tuineje.es",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc@tuineje.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc@tuineje.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": true
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": true
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": true
+      },
+      "sp": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      }
+    }
+  }
+}

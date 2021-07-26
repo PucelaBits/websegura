@@ -1,0 +1,100 @@
+{
+  "domain": "ige.eu",
+  "base_domain": "ige.eu",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns.mundo-r.com",
+      "ns-cor.net.mundo-r.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mxr.mundo-r.com",
+        "addresses": [
+          "212.51.32.239"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mxr2.mundo-r.com",
+        "addresses": [
+          "212.51.32.239"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 ip4:212.51.62.160/27 ip4:91.117.126.128/25 include:mundo-r.com -all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "212.51.62.160/27",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "91.117.126.128/25",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "mundo-r.com",
+          "record": "v=spf1 mx ip4:212.51.32.0/23 ip4:213.60.252.118 ip4:212.142.145.31 ip4:212.142.145.32 -all",
+          "dns_lookups": 1,
+          "parsed": {
+            "pass": [
+              {
+                "value": "mxl.mundo-r.com",
+                "mechanism": "mx"
+              },
+              {
+                "value": "212.51.32.0/23",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "213.60.252.118",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "212.142.145.31",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "212.142.145.32",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

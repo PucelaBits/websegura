@@ -1,0 +1,125 @@
+{
+  "domain": "lamutant.com",
+  "base_domain": "lamutant.com",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns50212.webempresa.eu",
+      "ns50211.webempresa.eu"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 0,
+        "hostname": "lamutant.com",
+        "addresses": [
+          "54.36.77.111"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 ip4:51.91.83.222 ip4:54.36.77.111 include:_spf.webempresa.eu +a +mx ~all",
+    "valid": true,
+    "dns_lookups": 3,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "51.91.83.222",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "54.36.77.111",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "54.36.77.111",
+          "mechanism": "a"
+        },
+        {
+          "value": "lamutant.com",
+          "mechanism": "mx"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "_spf.webempresa.eu",
+          "record": "v=spf1 ip4:54.37.172.205/32 ip4:87.98.227.61/32 ip4:178.33.113.178/32 ip4:178.33.119.38/32 ip4:87.98.229.233/32 ip4:5.39.109.72/32 ip4:178.32.150.70/32 ip4:5.196.253.55/32 ip4:178.33.116.19/32 ip4:188.165.126.169/32 ip4:51.68.67.124/32 ~all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "54.37.172.205/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "87.98.227.61/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "178.33.113.178/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "178.33.119.38/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "87.98.229.233/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "5.39.109.72/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "178.32.150.70/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "5.196.253.55/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "178.33.116.19/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "188.165.126.169/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "51.68.67.124/32",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

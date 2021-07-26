@@ -1,0 +1,95 @@
+{
+  "domain": "emprenemjunts.es",
+  "base_domain": "emprenemjunts.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "burt.ns.cloudflare.com",
+      "lana.ns.cloudflare.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.emprenemjunts.es",
+        "addresses": [
+          "185.31.236.37"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 a mx ptr ip4:213.162.208.247 ip4:185.31.236.43 ip4:185.31.236.37 mx:mail.emprenemjunts.es mx:pegaso.emprenemjunts.es -all",
+    "valid": true,
+    "dns_lookups": 4,
+    "warnings": [
+      "The ptr mechanism should not be used - https://tools.ietf.org/html/rfc7208#section-5.5",
+      "mail.emprenemjunts.es does not have any MX records",
+      "pegaso.emprenemjunts.es does not have any MX records"
+    ],
+    "parsed": {
+      "pass": [
+        {
+          "value": "104.26.0.156",
+          "mechanism": "a"
+        },
+        {
+          "value": "104.26.1.156",
+          "mechanism": "a"
+        },
+        {
+          "value": "172.67.71.111",
+          "mechanism": "a"
+        },
+        {
+          "value": "2606:4700:20::681a:19c",
+          "mechanism": "a"
+        },
+        {
+          "value": "2606:4700:20::681a:9c",
+          "mechanism": "a"
+        },
+        {
+          "value": "2606:4700:20::ac43:476f",
+          "mechanism": "a"
+        },
+        {
+          "value": "mail.emprenemjunts.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "",
+          "mechanism": "ptr"
+        },
+        {
+          "value": "213.162.208.247",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "185.31.236.43",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "185.31.236.37",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

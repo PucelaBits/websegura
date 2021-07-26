@@ -1,0 +1,27 @@
+{
+  "domain": "acuentascanarias.org",
+  "base_domain": "acuentascanarias.org",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns62.worldnic.com",
+      "ns61.worldnic.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "acuentascanarias.org does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

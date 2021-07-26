@@ -1,0 +1,89 @@
+{
+  "domain": "datos.gob.es",
+  "base_domain": "datos.gob.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns2.red.es",
+      "ns1.red.es"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "datos-gob-es.mail.protection.outlook.com",
+        "addresses": [
+          "104.47.5.36",
+          "104.47.6.36"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 MS=ms80108025 include:spf.red.es include:spf.protection.outlook.com include:spf.sendinblue.com -all",
+    "valid": false,
+    "warnings": [],
+    "error": "datos.gob.es: Expected end_of_statement or mechanism at position 7 in: v=spf1 MS=ms80108025 include:spf.red.es include:spf.protection.outlook.com include:spf.sendinblue.com -all"
+  },
+  "dmarc": {
+    "record": "v=DMARC1; p=none; fo=0; rua=mailto:abuse@datos.gob.es",
+    "valid": true,
+    "location": "datos.gob.es",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "abuse@datos.gob.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
+  }
+}

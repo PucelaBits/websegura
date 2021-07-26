@@ -1,0 +1,63 @@
+{
+  "domain": "navarra.es",
+  "base_domain": "navarra.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "dns1.navarra.es",
+      "dns2.navarra.es",
+      "dns1.nasertic.es"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "smtp2.navarra.es",
+        "addresses": [
+          "176.12.85.138"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "smtp3.navarra.es",
+        "addresses": [
+          "176.12.85.139"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 mx -all",
+    "valid": true,
+    "dns_lookups": 1,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "smtp2.navarra.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "smtp3.navarra.es",
+          "mechanism": "mx"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

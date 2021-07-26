@@ -1,0 +1,369 @@
+{
+  "domain": "madrid.es",
+  "base_domain": "madrid.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "minerva.ttd.net",
+      "artemis.ttd.net"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 1,
+        "hostname": "madrid-es.mail.protection.outlook.com",
+        "addresses": [
+          "104.47.18.138",
+          "104.47.22.138"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 ip4:195.55.79.61 ip4:195.55.79.62 ip4:195.55.79.41 ip4:195.55.79.42 ip4:195.55.79.43 ip4:195.55.79.44 ip4:195.55.79.73 ip4:195.55.79.74 ip4:195.55.79.75 ip4:195.55.79.49 ip4:195.55.79.148 ip4:195.55.79.71 include:spf.protection.outlook.com ip4:195.55.79.72 include:spf.augure.com ~all",
+    "valid": true,
+    "dns_lookups": 4,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "195.55.79.61",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "195.55.79.62",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "195.55.79.41",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "195.55.79.42",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "195.55.79.43",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "195.55.79.44",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "195.55.79.73",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "195.55.79.74",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "195.55.79.75",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "195.55.79.49",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "195.55.79.148",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "195.55.79.71",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "195.55.79.72",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "spf.protection.outlook.com",
+          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/48 include:spfd.protection.outlook.com -all",
+          "dns_lookups": 1,
+          "parsed": {
+            "pass": [
+              {
+                "value": "40.92.0.0/15",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "40.107.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.100.0.0/14",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "104.47.0.0/17",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "2a01:111:f400::/48",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403::/48",
+                "mechanism": "ip6"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [
+              {
+                "domain": "spfd.protection.outlook.com",
+                "record": "v=spf1 ip4:51.4.72.0/24 ip4:51.5.72.0/24 ip4:51.5.80.0/27 ip4:20.47.149.138/32 ip4:51.4.80.0/27 ip6:2a01:4180:4051:0800::/64 ip6:2a01:4180:4050:0800::/64 ip6:2a01:4180:4051:0400::/64 ip6:2a01:4180:4050:0400::/64 -all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "51.4.72.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "51.5.72.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "51.5.80.0/27",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "20.47.149.138/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "51.4.80.0/27",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "2a01:4180:4051:0800::/64",
+                      "mechanism": "ip6"
+                    },
+                    {
+                      "value": "2a01:4180:4050:0800::/64",
+                      "mechanism": "ip6"
+                    },
+                    {
+                      "value": "2a01:4180:4051:0400::/64",
+                      "mechanism": "ip6"
+                    },
+                    {
+                      "value": "2a01:4180:4050:0400::/64",
+                      "mechanism": "ip6"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "fail"
+                },
+                "warnings": []
+              }
+            ],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "spf.augure.com",
+          "record": "v=spf1 ip4:83.169.91.111 ip4:83.169.91.112 ip4:83.169.91.142 ip4:83.169.91.143 ip4:83.169.91.144 ip4:83.169.91.145 ip4:83.169.91.146 ip4:83.169.91.147 ip4:83.169.91.148 include:spf2.augure.com ~all",
+          "dns_lookups": 1,
+          "parsed": {
+            "pass": [
+              {
+                "value": "83.169.91.111",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "83.169.91.112",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "83.169.91.142",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "83.169.91.143",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "83.169.91.144",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "83.169.91.145",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "83.169.91.146",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "83.169.91.147",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "83.169.91.148",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [
+              {
+                "domain": "spf2.augure.com",
+                "record": "v=spf1 ip4:141.94.7.30 ip4:141.94.7.31 ip4:141.94.7.32 ip4:141.94.7.33 ip4:141.94.7.34 ip4:141.94.7.35 ip4:141.94.7.36 ip4:141.94.7.37 ip4:141.94.7.38 ip4:141.94.7.39 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "141.94.7.30",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "141.94.7.31",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "141.94.7.32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "141.94.7.33",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "141.94.7.34",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "141.94.7.35",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "141.94.7.36",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "141.94.7.37",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "141.94.7.38",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "141.94.7.39",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              }
+            ],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
+  },
+  "dmarc": {
+    "record": "v=DMARC1; p=none; rua=mailto:informesdmarc@madrid.es; ruf=mailto:informesdmarc@madrid.es; fo=1",
+    "valid": true,
+    "location": "madrid.es",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "informesdmarc@madrid.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "informesdmarc@madrid.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "1"
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
+  }
+}

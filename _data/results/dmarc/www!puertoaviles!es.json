@@ -1,0 +1,28 @@
+{
+  "domain": "puertoaviles.es",
+  "base_domain": "puertoaviles.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns09.ns-cloud4b.com",
+      "ns07.ns-cloud4b.org",
+      "ns06.ns-cloud4b.net"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "puertoaviles.es does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

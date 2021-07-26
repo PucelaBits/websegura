@@ -1,0 +1,36 @@
+{
+  "domain": "mirandadeebro.es",
+  "base_domain": "mirandadeebro.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns2.nds.es",
+      "ns1.nds.es"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.mirandadeebro.es",
+        "addresses": [
+          "185.253.153.139"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 ip4:185.253.153.139 ip4:178.33.237.180 ip4:188.165.134.220 a mx ip4:46.24.0.159 ip4:212.145.237.149 ip4:217.130.101.165 ip4:46.24.70.228 ip4:46.24.70.229 ip4:46.24.70.230 ip4:46.24.70.231 include:gamma.nds.es -all",
+    "valid": false,
+    "warnings": [],
+    "error": "server1.isp.partnertec.es does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

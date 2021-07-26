@@ -1,0 +1,128 @@
+{
+  "domain": "parlamentodegalicia.es",
+  "base_domain": "parlamentodegalicia.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "artemis.ttd.net",
+      "minerva.ttd.net"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 20,
+        "hostname": "mx.parlamentodegalicia.es",
+        "addresses": [
+          "213.0.85.241"
+        ]
+      },
+      {
+        "preference": 30,
+        "hostname": "correo.parlamentodegalicia.es",
+        "addresses": [
+          "213.0.85.240"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 mx ip4:213.0.85.241/32 -all",
+    "valid": true,
+    "dns_lookups": 1,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "mx.parlamentodegalicia.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "correo.parlamentodegalicia.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "213.0.85.241/32",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": "v=DMARC1; p=none; ruf=mailto:dmarc@parlamentodegalicia.es; rua=mailto:dmarc@parlamentodegalicia.es",
+    "valid": true,
+    "location": "parlamentodegalicia.es",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc@parlamentodegalicia.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc@parlamentodegalicia.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
+  }
+}

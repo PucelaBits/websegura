@@ -1,0 +1,394 @@
+{
+  "domain": "casabermeja.es",
+  "base_domain": "casabermeja.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "dns.malaga.es",
+      "dns2.malaga.es",
+      "dns3.malaga.es",
+      "dns4.malaga.es"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx.spamexperts.com",
+        "addresses": [
+          "2001:550:2:9::280:100",
+          "38.111.198.185"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "fallbackmx.spamexperts.eu",
+        "addresses": [
+          "2001:550:2:61::2fc:100",
+          "2001:550:2:78::ca:100",
+          "2001:550:2:9::280:100",
+          "38.109.53.20",
+          "38.111.198.185",
+          "38.89.254.156"
+        ]
+      },
+      {
+        "preference": 30,
+        "hostname": "lastmx.spamexperts.net",
+        "addresses": [
+          "2001:550:2:61::2fc:100",
+          "2001:550:2:78::ca:100",
+          "2001:550:2:9::280:100",
+          "38.109.53.20",
+          "38.111.198.185",
+          "38.89.254.156"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 include:spf2.malaga.es include:spf.antispamcloud.com -all",
+    "valid": true,
+    "dns_lookups": 5,
+    "warnings": [],
+    "parsed": {
+      "pass": [],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "spf2.malaga.es",
+          "record": "v=spf1 ip4:195.57.124.64/26 ip4:89.140.206.160/28 ip4:82.159.164.0/24 ip4:82.159.165.220 ip4:82.159.165.221 ip4:82.159.165.222 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "195.57.124.64/26",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "89.140.206.160/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "82.159.164.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "82.159.165.220",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "82.159.165.221",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "82.159.165.222",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "spf.antispamcloud.com",
+          "record": "v=spf1 ip4:185.201.16.0/22 a:spfips.antispamcloud.com a:release.antispamcloud.com include:spf2.antispamcloud.com -all",
+          "dns_lookups": 3,
+          "parsed": {
+            "pass": [
+              {
+                "value": "185.201.16.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "138.201.61.140",
+                "mechanism": "a"
+              },
+              {
+                "value": "138.201.61.180",
+                "mechanism": "a"
+              },
+              {
+                "value": "138.201.61.182",
+                "mechanism": "a"
+              },
+              {
+                "value": "138.201.61.187",
+                "mechanism": "a"
+              },
+              {
+                "value": "198.7.58.154",
+                "mechanism": "a"
+              },
+              {
+                "value": "199.115.117.10",
+                "mechanism": "a"
+              },
+              {
+                "value": "199.115.117.11",
+                "mechanism": "a"
+              },
+              {
+                "value": "199.115.117.7",
+                "mechanism": "a"
+              },
+              {
+                "value": "2001:1af8:4500:a034:101::2",
+                "mechanism": "a"
+              },
+              {
+                "value": "207.244.64.180",
+                "mechanism": "a"
+              },
+              {
+                "value": "207.244.64.182",
+                "mechanism": "a"
+              },
+              {
+                "value": "209.126.110.250",
+                "mechanism": "a"
+              },
+              {
+                "value": "209.126.121.72",
+                "mechanism": "a"
+              },
+              {
+                "value": "209.126.121.73",
+                "mechanism": "a"
+              },
+              {
+                "value": "37.58.58.55",
+                "mechanism": "a"
+              },
+              {
+                "value": "46.165.223.16",
+                "mechanism": "a"
+              },
+              {
+                "value": "46.165.232.175",
+                "mechanism": "a"
+              },
+              {
+                "value": "46.165.233.176",
+                "mechanism": "a"
+              },
+              {
+                "value": "94.75.192.139",
+                "mechanism": "a"
+              },
+              {
+                "value": "94.75.244.176",
+                "mechanism": "a"
+              },
+              {
+                "value": "94.75.244.183",
+                "mechanism": "a"
+              },
+              {
+                "value": "94.75.244.184",
+                "mechanism": "a"
+              },
+              {
+                "value": "95.211.160.147",
+                "mechanism": "a"
+              },
+              {
+                "value": "95.211.2.203",
+                "mechanism": "a"
+              },
+              {
+                "value": "95.211.233.209",
+                "mechanism": "a"
+              },
+              {
+                "value": "95.211.233.247",
+                "mechanism": "a"
+              },
+              {
+                "value": "130.117.249.148",
+                "mechanism": "a"
+              },
+              {
+                "value": "130.117.249.150",
+                "mechanism": "a"
+              },
+              {
+                "value": "138.201.138.133",
+                "mechanism": "a"
+              },
+              {
+                "value": "138.201.140.156",
+                "mechanism": "a"
+              },
+              {
+                "value": "138.201.192.37",
+                "mechanism": "a"
+              },
+              {
+                "value": "138.201.192.38",
+                "mechanism": "a"
+              },
+              {
+                "value": "138.201.61.103",
+                "mechanism": "a"
+              },
+              {
+                "value": "149.13.73.60",
+                "mechanism": "a"
+              },
+              {
+                "value": "149.13.75.38",
+                "mechanism": "a"
+              },
+              {
+                "value": "162.210.192.149",
+                "mechanism": "a"
+              },
+              {
+                "value": "2604:9a00:2100:a043:16::1",
+                "mechanism": "a"
+              },
+              {
+                "value": "2a01:4f8:13b:3001::2",
+                "mechanism": "a"
+              },
+              {
+                "value": "2a01:4f8:13b:308b::2",
+                "mechanism": "a"
+              },
+              {
+                "value": "2a01:4f8:140:4289::2",
+                "mechanism": "a"
+              },
+              {
+                "value": "2a01:4f8:140:42a7::2",
+                "mechanism": "a"
+              },
+              {
+                "value": "2a01:4f8:172:1666::2",
+                "mechanism": "a"
+              },
+              {
+                "value": "2a01:4f8:172:3582::2",
+                "mechanism": "a"
+              },
+              {
+                "value": "2a01:4f8:172:379b::2",
+                "mechanism": "a"
+              },
+              {
+                "value": "2a01:4f8:172:39e5::2",
+                "mechanism": "a"
+              },
+              {
+                "value": "2a01:4f8:172:39e6::2",
+                "mechanism": "a"
+              },
+              {
+                "value": "38.109.53.39",
+                "mechanism": "a"
+              },
+              {
+                "value": "88.198.67.41",
+                "mechanism": "a"
+              },
+              {
+                "value": "88.198.67.44",
+                "mechanism": "a"
+              },
+              {
+                "value": "94.130.139.116",
+                "mechanism": "a"
+              },
+              {
+                "value": "94.130.140.62",
+                "mechanism": "a"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [
+              {
+                "domain": "spf2.antispamcloud.com",
+                "record": "v=spf1 ip4:138.201.146.160/28 ip4:138.201.61.176/28 ip4:148.251.71.0/27 ip4:207.244.64.160/27 ip4:209.126.121.13/25 ip4:46.165.232.171/27 ip4:95.211.112.131/27 ip4:95.211.2.192/27 ip4:207.244.83.248/30 -all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "138.201.146.160/28",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "138.201.61.176/28",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "148.251.71.0/27",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "207.244.64.160/27",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "209.126.121.13/25",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "46.165.232.171/27",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "95.211.112.131/27",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "95.211.2.192/27",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "207.244.83.248/30",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "fail"
+                },
+                "warnings": []
+              }
+            ],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "domain": "etnoriente.com",
+  "base_domain": "etnoriente.com",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns1030.ui-dns.de",
+      "ns1054.ui-dns.biz",
+      "ns1091.ui-dns.com",
+      "ns1024.ui-dns.org"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx00.ionos.es",
+        "addresses": [
+          "212.227.15.41"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mx01.ionos.es",
+        "addresses": [
+          "217.72.192.67"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "etnoriente.com does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

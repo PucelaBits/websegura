@@ -1,0 +1,101 @@
+{
+  "domain": "elpuig.es",
+  "base_domain": "elpuig.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "dns3.prored.es",
+      "sole.prored.es",
+      "amparo.prored.es"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "elpuig.prored.es",
+        "addresses": [
+          "83.136.188.48"
+        ]
+      },
+      {
+        "preference": 100,
+        "hostname": "correo.prored.es",
+        "addresses": [
+          "5.35.200.131"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 mx include:prored.es -all",
+    "valid": true,
+    "dns_lookups": 3,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "elpuig.prored.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "correo.prored.es",
+          "mechanism": "mx"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "prored.es",
+          "record": "v=spf1 a:prored.es ip4:83.136.184.0/21 ip4:5.35.200.0/21 ip4:217.160.143.52/32 ip4:31.200.246.14 -all",
+          "dns_lookups": 1,
+          "parsed": {
+            "pass": [
+              {
+                "value": "5.35.200.136",
+                "mechanism": "a"
+              },
+              {
+                "value": "83.136.184.0/21",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "5.35.200.0/21",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "217.160.143.52/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "31.200.246.14",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.elpuig.es\n\ngoogle-site-verification=sxdCQ69pfxv6_pDK7zt97TizK6bqK-zL9xa1Y6AzZ18\n\nv=spf1 mx include:prored.es -all"
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "domain": "gobiernodecanarias.org",
+  "base_domain": "gobiernodecanarias.org",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "seti.gobiernodecanarias.org",
+      "acatife.gobiernodecanarias.org"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "smtp-lp.gobiernodecanarias.org",
+        "addresses": [
+          "93.188.136.122"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "smtp-tf.gobiernodecanarias.org",
+        "addresses": [
+          "93.188.137.42"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 mx a:correo.gobiernodecanarias.org a:correomasivo.gobiernodecanarias.org -all",
+    "valid": true,
+    "dns_lookups": 3,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "smtp-lp.gobiernodecanarias.org",
+          "mechanism": "mx"
+        },
+        {
+          "value": "smtp-tf.gobiernodecanarias.org",
+          "mechanism": "mx"
+        },
+        {
+          "value": "93.188.136.122",
+          "mechanism": "a"
+        },
+        {
+          "value": "93.188.137.42",
+          "mechanism": "a"
+        },
+        {
+          "value": "93.188.136.128",
+          "mechanism": "a"
+        },
+        {
+          "value": "93.188.137.128",
+          "mechanism": "a"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": "v=DMARC1; p=none; sp=none; adkim=r; aspf=r; rua=mailto:dmarc-rua.tic@gobiernodecanarias.org; ruf=mailto:dmarc-ruf.tic@gobiernodecanarias.org; fo=1;",
+    "valid": true,
+    "location": "gobiernodecanarias.org",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "sp": {
+        "value": "none",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": true
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc-rua.tic@gobiernodecanarias.org",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc-ruf.tic@gobiernodecanarias.org",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "1"
+        ],
+        "explicit": true
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      }
+    }
+  }
+}

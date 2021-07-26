@@ -1,0 +1,124 @@
+{
+  "domain": "culturadeproximitat.com",
+  "base_domain": "culturadeproximitat.com",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ram.ns.cloudflare.com",
+      "stephane.ns.cloudflare.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 5,
+        "hostname": "mx1.filterantispam.com",
+        "addresses": []
+      },
+      {
+        "preference": 5,
+        "hostname": "mx2.filterantispam.com",
+        "addresses": []
+      },
+      {
+        "preference": 10,
+        "hostname": "dc-daf0fbe7c46c.culturadeproximitat.com",
+        "addresses": [
+          "134.0.12.251"
+        ]
+      }
+    ],
+    "warnings": [
+      "All nameservers failed to answer the query mx1.filterantispam.com. IN A: Server 1.0.0.1 UDP port 53 answered SERVFAIL",
+      "All nameservers failed to answer the query mx2.filterantispam.com. IN A: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    ]
+  },
+  "spf": {
+    "record": "v=spf1 include:_spf.srv.cat ~all",
+    "valid": true,
+    "dns_lookups": 3,
+    "warnings": [
+      "_netblocks.srv.cat does not have any A/AAAA records"
+    ],
+    "parsed": {
+      "pass": [],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "_spf.srv.cat",
+          "record": "v=spf1 include:_netblocks.srv.cat ~all",
+          "dns_lookups": 2,
+          "parsed": {
+            "pass": [],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [
+              {
+                "domain": "_netblocks.srv.cat",
+                "record": "v=spf1 a ip4:46.16.56.0/21 ip4:134.0.8.0/21 ip4:185.22.200.0/22 ip4:185.34.192.0/22 ip4:185.42.104.0/22 ip4:185.66.40.0/22 ~all",
+                "dns_lookups": 1,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "46.16.56.0/21",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "134.0.8.0/21",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.22.200.0/22",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.34.192.0/22",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.42.104.0/22",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.66.40.0/22",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": [
+                  "_netblocks.srv.cat does not have any A/AAAA records"
+                ]
+              }
+            ],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": [
+            "_netblocks.srv.cat does not have any A/AAAA records"
+          ]
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "domain": "cendeadegalar.es",
+  "base_domain": "cendeadegalar.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "dns1.hostinet.com",
+      "dns2.hostinet.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "correo.cendeadegalar.es",
+        "addresses": [
+          "195.53.90.200"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 +a +mx +ip4:212.21.227.10 +ip4:195.53.90.200 ~all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "195.53.90.36",
+          "mechanism": "a"
+        },
+        {
+          "value": "correo.cendeadegalar.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "212.21.227.10",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "195.53.90.200",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

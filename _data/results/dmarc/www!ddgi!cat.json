@@ -1,0 +1,64 @@
+{
+  "domain": "ddgi.cat",
+  "base_domain": "ddgi.cat",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "dns1.ddgi.cat",
+      "dns2.ddgi.cat",
+      "dns2.grn.es"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
+  },
+  "spf": {
+    "record": "v=spf1 mx ip4:195.93.170.5 ip4:213.151.119.70 ip4:213.151.119.116 ip4:85.112.5.50 ~all",
+    "valid": true,
+    "dns_lookups": 1,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "mx1.ddgi.cat",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mx2.ddgi.cat",
+          "mechanism": "mx"
+        },
+        {
+          "value": "195.93.170.5",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "213.151.119.70",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "213.151.119.116",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "85.112.5.50",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

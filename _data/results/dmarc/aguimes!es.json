@@ -1,0 +1,42 @@
+{
+  "domain": "aguimes.es",
+  "base_domain": "aguimes.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "dns.lpa.idec.net",
+      "dns.mad.idec.net"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "smtp-02.servidoresdns.net",
+        "addresses": [
+          "217.76.128.139"
+        ]
+      },
+      {
+        "preference": 15,
+        "hostname": "smtp.aguimes.es",
+        "addresses": [
+          "195.77.245.218"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "aguimes.es does not have a SPF TXT record. SPF type DNS records found. Use of DNS Type SPF has been removed in the standards track version of SPF, RFC 7208. These records should be removed and replaced with TXT records: spf.mtaroutes.com"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

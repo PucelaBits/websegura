@@ -1,0 +1,28 @@
+{
+  "domain": "massamagrell.es",
+  "base_domain": "massamagrell.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns2.dnsxperta.com",
+      "ns3.dnsxperta.com",
+      "ns1.dnsxperta.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [],
+    "error": "All nameservers failed to answer the query a.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.0.c.0.e.0.0.4.0.b.8.f.7.0.6.2.ip6.arpa. IN PTR: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "massamagrell.es does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

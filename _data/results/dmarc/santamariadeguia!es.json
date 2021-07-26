@@ -1,0 +1,119 @@
+{
+  "domain": "santamariadeguia.es",
+  "base_domain": "santamariadeguia.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns4.gestiondecuenta.com",
+      "ns.gestiondecuenta.com",
+      "ns3.gestiondecuenta.com",
+      "ns2.gestiondecuenta.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "correo.santamariadeguia.es",
+        "addresses": [
+          "164.138.200.56"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 a mx ip4:213.4.82.254 ip4:164.138.200.148 -all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "164.138.200.148",
+          "mechanism": "a"
+        },
+        {
+          "value": "correo.santamariadeguia.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "213.4.82.254",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "164.138.200.148",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": "v=DMARC1; p=quarantine; rua=mailto:abuse@santamariadeguia.es; pct=5; sp=none",
+    "valid": true,
+    "location": "santamariadeguia.es",
+    "warnings": [
+      "pct value is less than 100. This leads to inconsistent and unpredictable policy enforcement. Consider using p=none to monitor results instead"
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "abuse@santamariadeguia.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "pct": {
+        "value": 5,
+        "explicit": true
+      },
+      "sp": {
+        "value": "none",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      }
+    }
+  }
+}

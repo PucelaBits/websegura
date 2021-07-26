@@ -1,0 +1,63 @@
+{
+  "domain": "csic.es",
+  "base_domain": "csic.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "sun.rediris.es",
+      "olmo.csic.es",
+      "chico.rediris.es",
+      "sabina.cti.csic.es"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx.csic.es",
+        "addresses": [
+          "161.111.10.17"
+        ]
+      }
+    ],
+    "warnings": [
+      "The reverse DNS of 161.111.10.17 is smtpin.csic.es, but the A/AAAA DNS records for smtpin.csic.es do not resolve to 161.111.10.17"
+    ]
+  },
+  "spf": {
+    "record": "v=spf1 mx ip4:161.111.10.57 ip4:161.111.10.60 -all",
+    "valid": true,
+    "dns_lookups": 1,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "mx.csic.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "161.111.10.57",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "161.111.10.60",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

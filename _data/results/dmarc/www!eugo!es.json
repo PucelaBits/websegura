@@ -1,0 +1,30 @@
+{
+  "domain": "eugo.es",
+  "base_domain": "eugo.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "dns2.eugo.es",
+      "nso.nic.es",
+      "dns1.eugo.es"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [],
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "eugo.es does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

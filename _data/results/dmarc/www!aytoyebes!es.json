@@ -1,0 +1,38 @@
+{
+  "domain": "aytoyebes.es",
+  "base_domain": "aytoyebes.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns1.almazena.com",
+      "ns3.almazena.com",
+      "ns2.almazena.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 0,
+        "hostname": "aytoyebes.es",
+        "addresses": [
+          "185.5.126.59"
+        ]
+      }
+    ],
+    "warnings": [
+      "185.5.126.59 does not have any reverse DNS (PTR) records"
+    ]
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "aytoyebes.es does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

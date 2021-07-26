@@ -1,0 +1,108 @@
+{
+  "domain": "arandadeduero.es",
+  "base_domain": "arandadeduero.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns2.viavoxinteractive.com",
+      "ns1.viavoxinteractive.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.arandadeduero.es",
+        "addresses": [
+          "34.241.94.54"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 mx ip4:84.124.18.70 -all",
+    "valid": true,
+    "dns_lookups": 1,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "mail.arandadeduero.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "84.124.18.70",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": "v=DMARC1; p=quarantine; rua=mailto:postmaster@viavox.com; ruf=mailto:postmaster@viavox.com;",
+    "valid": true,
+    "location": "arandadeduero.es",
+    "warnings": [
+      "viavox.com does not indicate that it accepts DMARC reports about arandadeduero.es - Authorization record not found: arandadeduero.es._report._dmarc.viavox.com IN TXT \"v=DMARC1\"",
+      "viavox.com does not indicate that it accepts DMARC reports about arandadeduero.es - Authorization record not found: arandadeduero.es._report._dmarc.viavox.com IN TXT \"v=DMARC1\""
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "rua": {
+        "value": "mailto:postmaster@viavox.com",
+        "explicit": true
+      },
+      "ruf": {
+        "value": "mailto:postmaster@viavox.com",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "quarantine",
+        "explicit": false
+      }
+    }
+  }
+}

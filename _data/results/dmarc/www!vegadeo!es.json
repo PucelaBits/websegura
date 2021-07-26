@@ -1,0 +1,35 @@
+{
+  "domain": "vegadeo.es",
+  "base_domain": "vegadeo.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "dns1.nominalia.com",
+      "dns2.nominalia.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.nominalia.com",
+        "addresses": [
+          "195.110.124.132"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "vegadeo.es does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

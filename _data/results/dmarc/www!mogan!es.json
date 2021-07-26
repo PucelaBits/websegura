@@ -1,0 +1,64 @@
+{
+  "domain": "mogan.es",
+  "base_domain": "mogan.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns12.servicio-online.net",
+      "ns11.servicio-online.net",
+      "ns10.servicio-online.net"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "inf1.mogan.es",
+        "addresses": [
+          "213.0.98.20"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 mx a ip4:213.0.98.20 a:inf1.mogan.es -all",
+    "valid": true,
+    "dns_lookups": 3,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "inf1.mogan.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "95.85.35.19",
+          "mechanism": "a"
+        },
+        {
+          "value": "213.0.98.20",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "213.0.98.20",
+          "mechanism": "a"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

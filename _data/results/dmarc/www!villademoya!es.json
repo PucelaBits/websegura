@@ -1,0 +1,78 @@
+{
+  "domain": "villademoya.es",
+  "base_domain": "villademoya.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns106.ovh.net",
+      "dns106.ovh.net"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [],
+    "error": "All nameservers failed to answer the query 26.115.250.142.in-addr.arpa. IN PTR: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+  },
+  "spf": {
+    "record": "v=spf1 include:mx.ovh.com ~all",
+    "valid": true,
+    "dns_lookups": 1,
+    "warnings": [
+      "The ptr mechanism should not be used - https://tools.ietf.org/html/rfc7208#section-5.5",
+      "The ptr mechanism should not be used - https://tools.ietf.org/html/rfc7208#section-5.5"
+    ],
+    "parsed": {
+      "pass": [],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "mx.ovh.com",
+          "record": "v=spf1 ptr:mail-out.ovh.net ptr:mail.ovh.net ip4:8.33.137.105/32 ip4:192.99.77.81/32 ?all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "mail-out.ovh.net",
+                "mechanism": "ptr"
+              },
+              {
+                "value": "mail.ovh.net",
+                "mechanism": "ptr"
+              },
+              {
+                "value": "8.33.137.105/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "192.99.77.81/32",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "neutral"
+          },
+          "warnings": [
+            "The ptr mechanism should not be used - https://tools.ietf.org/html/rfc7208#section-5.5",
+            "The ptr mechanism should not be used - https://tools.ietf.org/html/rfc7208#section-5.5"
+          ]
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

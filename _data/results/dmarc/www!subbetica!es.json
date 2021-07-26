@@ -1,0 +1,37 @@
+{
+  "domain": "subbetica.es",
+  "base_domain": "subbetica.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns1.merkaweb.com",
+      "ns2.merkaweb.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 0,
+        "hostname": "subbetica.es",
+        "addresses": [
+          "185.92.244.178"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 +a +mx +ip4:185.92.244.178 +ip4:89.187.85.5 +ip4:89.187.86.111 +include:spf.profesionalhosting.com ~all",
+    "valid": false,
+    "warnings": [],
+    "error": "Parsing the SPF record requires 11/10 maximum DNS lookups - https://tools.ietf.org/html/rfc7208#section-4.6.4",
+    "dns_lookups": 11
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

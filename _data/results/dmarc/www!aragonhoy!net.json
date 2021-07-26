@@ -1,0 +1,37 @@
+{
+  "domain": "aragonhoy.net",
+  "base_domain": "aragonhoy.net",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "codos.aragon.es",
+      "calatayud.aragon.es"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.aragonhoy.net",
+        "addresses": [
+          "217.75.226.249"
+        ]
+      }
+    ],
+    "warnings": [
+      "217.75.226.249 does not have any reverse DNS (PTR) records"
+    ]
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "aragonhoy.net does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

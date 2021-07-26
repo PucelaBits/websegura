@@ -1,0 +1,73 @@
+{
+  "domain": "lorca.es",
+  "base_domain": "lorca.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "dns1.leader-network.com",
+      "dns.leader-network.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "correo.lorca.es",
+        "addresses": [
+          "213.0.108.5"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "correo2.lorca.es",
+        "addresses": [
+          "213.0.108.5"
+        ]
+      },
+      {
+        "preference": 30,
+        "hostname": "mx.leader-network.com",
+        "addresses": [
+          "194.140.143.69"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 mx -all",
+    "valid": true,
+    "dns_lookups": 1,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "correo.lorca.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "correo2.lorca.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mx.leader-network.com",
+          "mechanism": "mx"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

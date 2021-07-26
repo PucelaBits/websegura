@@ -1,0 +1,41 @@
+{
+  "domain": "conselldemallorca.cat",
+  "base_domain": "conselldemallorca.cat",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "saluet.conselldemallorca.net",
+      "gubia.conselldemallorca.net"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 30,
+        "hostname": "saluetw.conselldemallorca.cat",
+        "addresses": []
+      },
+      {
+        "preference": 50,
+        "hostname": "saluetw2.conselldemallorca.cat",
+        "addresses": []
+      }
+    ],
+    "warnings": [
+      "The domain saluetw.conselldemallorca.cat does not exist",
+      "The domain saluetw2.conselldemallorca.cat does not exist"
+    ]
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "conselldemallorca.cat does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

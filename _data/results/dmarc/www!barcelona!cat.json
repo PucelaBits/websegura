@@ -1,0 +1,28 @@
+{
+  "domain": "barcelona.cat",
+  "base_domain": "barcelona.cat",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns3bcn.entorno.es",
+      "ns1.bcn.cat",
+      "ns2.bcn.cat"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "barcelona.cat does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

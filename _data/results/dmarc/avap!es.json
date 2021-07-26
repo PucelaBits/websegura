@@ -1,0 +1,36 @@
+{
+  "domain": "avap.es",
+  "base_domain": "avap.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "lady.ns.cloudflare.com",
+      "newt.ns.cloudflare.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 0,
+        "hostname": "mail.avap.es",
+        "addresses": [
+          "51.83.41.202"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 include:avap.ip-zone.com ip4:51.83.41.202 a mx a:gcloud11.gsitdns.com include:spf.protection.outlook.com -all",
+    "valid": false,
+    "warnings": [],
+    "error": "avap.ip-zone.com does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

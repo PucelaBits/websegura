@@ -1,0 +1,98 @@
+{
+  "domain": "fallas.com",
+  "base_domain": "fallas.com",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns.redunda.com",
+      "ns2.redunda.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.fallas.com",
+        "addresses": [
+          "213.201.83.247"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 a mx ip4:213.201.83.247 a:mail.fallas.com mx:mail.fallas.com include:fallas.ip-zone.com -all",
+    "valid": false,
+    "warnings": [],
+    "error": "fallas.ip-zone.com does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": "v=DMARC1;p=none;pct=100;rua=mailto:mailer@fallas.com;ruf=mailto:mailer@fallas.com",
+    "valid": true,
+    "location": "fallas.com",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "pct": {
+        "value": 100,
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "mailer@fallas.com",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "mailer@fallas.com",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
+  }
+}

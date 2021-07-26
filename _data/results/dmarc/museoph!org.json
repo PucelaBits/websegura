@@ -1,0 +1,154 @@
+{
+  "domain": "museoph.org",
+  "base_domain": "museoph.org",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns3.digitalocean.com",
+      "ns1.digitalocean.com",
+      "ns2.digitalocean.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.museoph.org",
+        "addresses": [
+          "82.98.162.131"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 +a +mx +a:madrid.alpexhosting.com include:spf.acumbamail.com -all",
+    "valid": true,
+    "dns_lookups": 4,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "82.98.162.131",
+          "mechanism": "a"
+        },
+        {
+          "value": "mail.museoph.org",
+          "mechanism": "mx"
+        },
+        {
+          "value": "82.98.162.131",
+          "mechanism": "a"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "spf.acumbamail.com",
+          "record": "v=spf1 ip4:176.28.104.1/24 ip4:185.2.150.1/24 ip4:185.103.37.224/28 ip4:5.57.226.1/24 ip4:5.57.227.80/28 ip4:185.99.184.146/31 ip4:5.57.227.112/28 ip4:185.99.184.144/28  ~all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "176.28.104.1/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.2.150.1/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.103.37.224/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "5.57.226.1/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "5.57.227.80/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.99.184.146/31",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "5.57.227.112/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.99.184.144/28",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": "v=DMARC1; p=none",
+    "valid": true,
+    "location": "museoph.org",
+    "warnings": [
+      "rua tag (destination for aggregate reports) not found"
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
+  }
+}

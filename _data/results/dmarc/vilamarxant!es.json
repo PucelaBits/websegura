@@ -1,0 +1,44 @@
+{
+  "domain": "vilamarxant.es",
+  "base_domain": "vilamarxant.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns2.dnsxperta.com",
+      "ns1.dnsxperta.com",
+      "ns3.dnsxperta.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 100,
+        "hostname": "mx1.dnsxperta.com",
+        "addresses": [
+          "217.13.80.229",
+          "83.147.63.42"
+        ]
+      },
+      {
+        "preference": 101,
+        "hostname": "ms95502255.msv1.invalid",
+        "addresses": []
+      }
+    ],
+    "warnings": [
+      "The domain ms95502255.msv1.invalid does not exist. Consider using a TXT record to validate domain ownership in Office 365 instead."
+    ]
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "vilamarxant.es does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.vilamarxant.es\n\nMS=ms95502255"
+  }
+}

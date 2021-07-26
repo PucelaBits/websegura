@@ -1,0 +1,74 @@
+{
+  "domain": "caib.es",
+  "base_domain": "caib.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "sintlin2.caib.es",
+      "sintlin1.caib.es"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 5,
+        "hostname": "rmail1.caib.es",
+        "addresses": [
+          "85.119.193.3"
+        ]
+      },
+      {
+        "preference": 5,
+        "hostname": "rmail2.caib.es",
+        "addresses": [
+          "85.119.193.4"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 mx ip4:85.119.193.2 ip4:85.119.198.6 ip4:85.119.198.16 -all",
+    "valid": true,
+    "dns_lookups": 1,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "rmail1.caib.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "rmail2.caib.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "85.119.193.2",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "85.119.198.6",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "85.119.198.16",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

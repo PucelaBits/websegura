@@ -1,0 +1,38 @@
+{
+  "domain": "museotaurinovalencia.com",
+  "base_domain": "museotaurinovalencia.com",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ninot.gva.es",
+      "tirant.gva.es"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 4,
+        "hostname": "gollum.gva.es",
+        "addresses": [
+          "193.145.200.16",
+          "193.145.206.215",
+          "195.77.18.230",
+          "195.77.22.16"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "museotaurinovalencia.com does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

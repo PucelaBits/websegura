@@ -1,0 +1,241 @@
+{
+  "domain": "ayto-caceres.es",
+  "base_domain": "ayto-caceres.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns06.ns-cloud4b.com",
+      "ns05.ns-cloud4b.org",
+      "ns03.ns-cloud4b.net"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 5,
+        "hostname": "mx30.asaccomunicaciones.es",
+        "addresses": [
+          "94.100.134.100"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mx40.asaccomunicaciones.es",
+        "addresses": [
+          "83.246.65.85"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 +a +mx include:emailservice.cpd.as -all",
+    "valid": true,
+    "dns_lookups": 4,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "195.57.71.79",
+          "mechanism": "a"
+        },
+        {
+          "value": "mx30.asaccomunicaciones.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mx40.asaccomunicaciones.es",
+          "mechanism": "mx"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "emailservice.cpd.as",
+          "record": "v=spf1 ip4:154.58.16.0/22 ip4:185.79.128.0/22 ip4:213.99.28.0/24 ip4:46.24.172.0/25 include:spf.hornetsecurity.com ~all",
+          "dns_lookups": 1,
+          "parsed": {
+            "pass": [
+              {
+                "value": "154.58.16.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.79.128.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "213.99.28.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "46.24.172.0/25",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [
+              {
+                "domain": "spf.hornetsecurity.com",
+                "record": "v=spf1 ip4:83.246.65.0/24 ip4:185.140.204.0/22 ip4:94.100.128.0/20 ip4:81.20.94.0/24 ip4:173.45.18.0/24 ip4:52.62.123.207/32 ip4:52.62.108.212/32 ip4:129.232.203.80/28 ip4:209.172.38.64/27 ip4:108.163.133.224/27 ip4:199.27.221.76 ip4:216.46.11.238 ip4:216.46.11.244 ip4:199.27.221.81 ip4:199.27.221.82 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "83.246.65.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.140.204.0/22",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "94.100.128.0/20",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "81.20.94.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "173.45.18.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "52.62.123.207/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "52.62.108.212/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "129.232.203.80/28",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "209.172.38.64/27",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "108.163.133.224/27",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "199.27.221.76",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "216.46.11.238",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "216.46.11.244",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "199.27.221.81",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "199.27.221.82",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              }
+            ],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": "v=DMARC1; p=reject; rua=mailto:dmarc@ayto-caceres.es; ruf=mailto:dmarc@ayto-caceres.es; fo=1; adkim=s; aspf=s; pct=100; rf=afrf; ri=86400; sp=reject",
+    "valid": true,
+    "location": "ayto-caceres.es",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "reject",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc@ayto-caceres.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc@ayto-caceres.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "1"
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "s",
+        "explicit": true
+      },
+      "aspf": {
+        "value": "s",
+        "explicit": true
+      },
+      "pct": {
+        "value": 100,
+        "explicit": true
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": true
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": true
+      },
+      "sp": {
+        "value": "reject",
+        "explicit": true
+      }
+    }
+  }
+}

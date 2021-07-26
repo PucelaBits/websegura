@@ -1,0 +1,29 @@
+{
+  "domain": "irj.es",
+  "base_domain": "irj.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns1.cibir.es",
+      "ns2.cibir.es"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [],
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "irj.es does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

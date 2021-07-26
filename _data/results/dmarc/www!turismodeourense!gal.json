@@ -1,0 +1,29 @@
+{
+  "domain": "turismodeourense.gal",
+  "base_domain": "turismodeourense.gal",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "dns28.servidoresdns.net",
+      "dns27.servidoresdns.net"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [],
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "turismodeourense.gal does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

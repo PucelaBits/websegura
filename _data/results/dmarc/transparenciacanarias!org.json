@@ -1,0 +1,154 @@
+{
+  "domain": "transparenciacanarias.org",
+  "base_domain": "transparenciacanarias.org",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "dns1.nominalia.com",
+      "dns2.nominalia.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.nominalia.com",
+        "addresses": [
+          "195.110.124.132"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 include:spf.webapps.net ~all",
+    "valid": true,
+    "dns_lookups": 3,
+    "warnings": [],
+    "parsed": {
+      "pass": [],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "spf.webapps.net",
+          "record": "v=spf1 include:spf1.webapps.net include:spf2.webapps.net ~all",
+          "dns_lookups": 2,
+          "parsed": {
+            "pass": [],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [
+              {
+                "domain": "spf1.webapps.net",
+                "record": "v=spf1 ip4:81.88.48.32/27 ip4:81.88.50.224/27 ip4:81.88.54.64/27 ip4:81.88.55.96/27 ip4:81.88.56.0/27 ip4:81.88.62.160/27 ip4:81.88.63.128/27 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "81.88.48.32/27",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "81.88.50.224/27",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "81.88.54.64/27",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "81.88.55.96/27",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "81.88.56.0/27",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "81.88.62.160/27",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "81.88.63.128/27",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              },
+              {
+                "domain": "spf2.webapps.net",
+                "record": "v=spf1 ip4:195.110.101.32/27 ip4:195.110.122.160/27 ip4:195.110.123.0/27 ip4:185.2.4.0/22 ip4:81.88.49.224/27 ip4:195.7.249.29 ip4:81.88.52.0/24 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "195.110.101.32/27",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "195.110.122.160/27",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "195.110.123.0/27",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.2.4.0/22",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "81.88.49.224/27",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "195.7.249.29",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "81.88.52.0/24",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              }
+            ],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

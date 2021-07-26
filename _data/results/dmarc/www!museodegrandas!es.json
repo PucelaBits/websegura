@@ -1,0 +1,37 @@
+{
+  "domain": "museodegrandas.es",
+  "base_domain": "museodegrandas.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "dns1.canaldominios.com",
+      "dns4.canaldominios.com",
+      "dns3.canaldominios.com",
+      "dns2.canaldominios.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.museodegrandas.es",
+        "addresses": [
+          "82.98.149.3"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "museodegrandas.es does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

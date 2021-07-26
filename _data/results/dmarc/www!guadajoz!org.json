@@ -1,0 +1,125 @@
+{
+  "domain": "guadajoz.org",
+  "base_domain": "guadajoz.org",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns891.webempresa.eu",
+      "ns892.webempresa.eu"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 0,
+        "hostname": "guadajoz.org",
+        "addresses": [
+          "94.23.87.86"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 ip4:51.91.72.80 ip4:94.23.87.86 include:_spf.webempresa.eu +a +mx ~all",
+    "valid": true,
+    "dns_lookups": 3,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "51.91.72.80",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "94.23.87.86",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "94.23.87.86",
+          "mechanism": "a"
+        },
+        {
+          "value": "guadajoz.org",
+          "mechanism": "mx"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "_spf.webempresa.eu",
+          "record": "v=spf1 ip4:54.37.172.205/32 ip4:87.98.227.61/32 ip4:178.33.113.178/32 ip4:178.33.119.38/32 ip4:87.98.229.233/32 ip4:5.39.109.72/32 ip4:178.32.150.70/32 ip4:5.196.253.55/32 ip4:178.33.116.19/32 ip4:188.165.126.169/32 ip4:51.68.67.124/32 ~all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "54.37.172.205/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "87.98.227.61/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "178.33.113.178/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "178.33.119.38/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "87.98.229.233/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "5.39.109.72/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "178.32.150.70/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "5.196.253.55/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "178.33.116.19/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "188.165.126.169/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "51.68.67.124/32",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}
