@@ -23,14 +23,14 @@ title: "#emailseguro: Observatorio de seguridad de email"
 <p class="centered">🎖️ Sólo
   <a href="#hall-of-fame">
     <strong>
-      {{ collections.dmarcSummary | isDmarcValid(true) | length }}
+      {{ all | dmarc_valid | length }}
     </strong>
     emails</a>
   son seguros frente a suplantación de identidad.<br/>
   <span class="phishing"><img src="/images/phishing.png"></span>
   <a href="#hall-of-shame">
     <strong>
-      {{ collections.dmarcSummary | isDmarcValid(false) | length }}
+      {{ all | dmarc_valid(false) | length }}
     </strong>
     emails</a>
   son vulnerables frente a suplantación de identidad.
@@ -48,17 +48,16 @@ title: "#emailseguro: Observatorio de seguridad de email"
   <div class="table-wrapper" id="resultados">
     <h2 id="hall-of-fame">🎖️ Hall de la fama</h2>
     <p>Estos correos tienen protección contra <a href="/faq/#que-significa-que-los-emails-son-vulnerables-a-suplantacion-de-identidad">suplantación de identidad</a>.</p>
-    {{ tablaEmail(collections.dmarcSummary | isDmarcValid(true), path=page.url) }}
+    {{ tablaEmail(all | dmarc_valid, path=page.url) }}
     <p>
       <a href="https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web">+ Añadir un dominio nuevo</a>
     </p>
 
     <h2 id="hall-of-shame">☠️ Hall de la vergüenza</h2>
     <p>Estos correos <strong>son vulnerables</strong> a <a href="/faq/#que-significa-que-los-emails-son-vulnerables-a-suplantacion-de-identidad">suplantación de identidad</a></p>
-    {{ tablaEmail(collections.dmarcSummary | isDmarcValid(false), path=page.url) }}
+    {{ tablaEmail(all | dmarc_valid(false), path=page.url) }}
     <p>
       <a href="https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web">+ Añadir un dominio nuevo</a>
     </p>
   </div>
-
 </section>
