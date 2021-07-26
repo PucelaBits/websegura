@@ -16,21 +16,21 @@ title: "#emailseguro: Observatorio de seguridad de email"
 
 <p class="subtitle">Analizamos
   <strong>
-    {{ results.dmarc.summary | length }}
+    {{ collections.dmarcSummary | length }}
   </strong>
   emails públicos para saber si están protegidos frente a <a href="/faq/#que-significa-que-los-emails-son-vulnerables-a-suplantacion-de-identidad">suplantación de identidad</a>.</p>
 
 <p class="centered">🎖️ Sólo
   <a href="#hall-of-fame">
     <strong>
-      {{ results.dmarc.summary | isDmarcValid(true) | length }}
+      {{ collections.dmarcSummary | isDmarcValid(true) | length }}
     </strong>
     emails</a>
-  son seguros frente a suplatación de identidad.<br/>
+  son seguros frente a suplantación de identidad.<br/>
   <span class="phishing"><img src="/images/phishing.png"></span>
   <a href="#hall-of-shame">
     <strong>
-      {{ results.dmarc.summary | isDmarcValid(false) | length }}
+      {{ collections.dmarcSummary | isDmarcValid(false) | length }}
     </strong>
     emails</a>
   son vulnerables frente a suplantación de identidad.
@@ -38,24 +38,24 @@ title: "#emailseguro: Observatorio de seguridad de email"
 
 <div class="score-container">
   <div class="score-bar">
-    <div class="score-progress" data-score="{{ results.dmarc.summary | emailScore }}"></div>
+    <div class="score-progress" data-score="{{ collections.dmarcSummary | emailScore }}"></div>
   </div>
 
-  <p><strong>{{ results.dmarc.summary | emailScore }}%</strong> de los emails protegidos</p>
+  <p><strong>{{ collections.dmarcSummary | emailScore }}%</strong> de los emails protegidos</p>
 </div>
 
 <section>
   <div class="table-wrapper" id="resultados">
     <h2 id="hall-of-fame">🎖️ Hall de la fama</h2>
     <p>Estos correos tienen protección contra <a href="/faq/#que-significa-que-los-emails-son-vulnerables-a-suplantacion-de-identidad">suplantación de identidad</a>.</p>
-    {{ tablaEmail(results.dmarc.summary | isDmarcValid(true), path=page.url) }}
+    {{ tablaEmail(collections.dmarcSummary | isDmarcValid(true), path=page.url) }}
     <p>
       <a href="https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web">+ Añadir un dominio nuevo</a>
     </p>
 
     <h2 id="hall-of-shame">☠️ Hall de la vergüenza</h2>
     <p>Estos correos <strong>son vulnerables</strong> a <a href="/faq/#que-significa-que-los-emails-son-vulnerables-a-suplantacion-de-identidad">suplantación de identidad</a></p>
-    {{ tablaEmail(results.dmarc.summary | isDmarcValid(false), path=page.url) }}
+    {{ tablaEmail(collections.dmarcSummary | isDmarcValid(false), path=page.url) }}
     <p>
       <a href="https://github.com/PucelaBits/websegura#a%C3%B1adir-una-web">+ Añadir un dominio nuevo</a>
     </p>

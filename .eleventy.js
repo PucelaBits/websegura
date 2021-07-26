@@ -66,13 +66,7 @@ const filenameToData = (f) => ({
       let results;
       try {
         results = JSON.parse(
-          fs.readFileSync(
-            `_data/results/${obj.url.replace(
-              new RegExp("\\.", "g"),
-              "!"
-            )}.json`,
-            "utf8"
-          )
+          fs.readFileSync(`_data/results/${obj.url.replace(/\./g, "!")}.json`, "utf8")
         );
       } catch (e) {
         // Los resultados aún no están disponibles.
@@ -140,6 +134,20 @@ const filenameToData = (f) => ({
     fs.writeFileSync(`_data/results/progress/${path}`, JSON.stringify(file));
   }
 })();
+
+function createEmailSummaryFile() {
+  const result = {};
+  const sites = glob.sync("_data/results/dmarc/*.json");
+  for (const site of sites) {
+    const siteData = fs.readFileSync(site, "utf8");
+    if (siteData.length > 0) { // sites where dmarc analysis was not possible are empty
+      const siteName = /^_data\/results\/dmarc\/(.*)\.json$/.exec(site)[1].replace(/!/g, ".");
+      const siteData = JSON.parse(fs.readFileSync(site, "utf8"));
+      result[siteName] = siteData;
+    }
+  }
+  return result;
+};
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("assets");
@@ -223,9 +231,9 @@ module.exports = function (eleventyConfig) {
     return Object.values(value).filter(filter);
   });
 
-  const dmarcSummary = JSON.parse(
-    fs.readFileSync(`_data/results/dmarc/summary.json`, "utf8")
-  );
+  const dmarcSummary = createEmailSummaryFile();
+  // make the dmarc summary available to the templates instead of writing it to disk
+  eleventyConfig.addCollection("dmarcSummary", (collectionApi) => dmarcSummary);
 
   eleventyConfig.addFilter("dmarc_secure", (url) => {
     const dmarc_info = dmarcSummary[url];
@@ -241,6 +249,10 @@ module.exports = function (eleventyConfig) {
     if (dmarc_info) {
       return dmarc_info.dnssec;
     }
+  });
+
+  eleventyConfig.addFilter("canonical", (url) => {
+    return url.replace(/^www\./, "");
   });
 
   // % de webs seguras

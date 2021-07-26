@@ -27,7 +27,7 @@ title: "#websegura"
     </strong>
     sitios</a>
   no tienen seguridad alguna.<br/>
- <span class="phishing"><img src="images/phishing.png"></span> <a href="/analisis-email/"><strong>{{ results.dmarc.summary | isDmarcValid(false) | length }}</strong> emails</a> son vulnerables a suplantación de identidad.
+  <span class="phishing"><img src="images/phishing.png"></span> <a href="/analisis-email/"><strong>{{ collections.dmarcSummary | isDmarcValid(false) | length }}</strong> emails</a> son vulnerables a suplantación de identidad.
   </p>
 
 <div class="score-container">
@@ -40,10 +40,10 @@ title: "#websegura"
 
 <div class="score-container">
   <div class="score-bar">
-    <div class="score-progress" data-score="{{ results.dmarc.summary | emailScore }}"></div>
+    <div class="score-progress" data-score="{{ collections.dmarcSummary | emailScore }}"></div>
   </div>
 
-  <p><strong>{{ results.dmarc.summary | emailScore }}%</strong> de los emails protegidos</p>
+  <p><strong>{{ collections.dmarcSummary | emailScore }}%</strong> de los emails protegidos</p>
 </div>
 
 <p>
