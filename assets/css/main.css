@@ -2888,11 +2888,11 @@ tr.unknown {
   background-color: #eee8e8;
 }
 
-span.phising img {
+span.phishing img {
   height: 16px;
 }
 
-div.phising-box {
+div.phishing-box {
   width: 128px;
   float: right;
   clear: both;
@@ -2900,17 +2900,17 @@ div.phising-box {
   font-size: 0.8em;
   text-align: center;
 }
-div.phising-box img {
+div.phishing-box img {
   height: 128px;
 }
-div.phising-box p {
+div.phishing-box p {
   margin: 0;
 }
 @media screen and (max-width: 736px) {
-  div.phising-box {
+  div.phishing-box {
     width: 80px;
   }
-  div.phising-box img {
+  div.phishing-box img {
     height: 80px;
   }
 }
