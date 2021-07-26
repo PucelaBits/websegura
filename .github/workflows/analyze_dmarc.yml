@@ -29,8 +29,15 @@ jobs:
       # Using the API would be more flexible, but this is easier to implement for now.
       - name: Check DMARC information about public sites
         run: |
-          SITES=$(find {_data/general.json,_data/{comunidades,provincias}/*.json} | xargs cat | jq -r .webs[].url | sed 's/www.//g')
-          checkdmarc --skip-tls --timeout 3 ${SITES} | jq 'INDEX(.domain)' > _data/results/dmarc/summary.json
+          SITES=$(find {_data/general.json,_data/{comunidades,provincias}/*.json} | xargs cat | jq -r .webs[].url)
+          for site in $SITES;
+          do
+            CANONICAL_SITE=$(echo $site | sed 's/^www.//g')
+            ESCAPED_SITE=$(echo $site | sed 's/\./!/g')
+            OUTPUT_FILE="_data/results/dmarc/$ESCAPED_SITE.json"
+            echo "Checking $site to $OUTPUT_FILE"
+            checkdmarc --skip-tls --nameserver=1.0.0.1 --timeout 3 ${CANONICAL_SITE} > $OUTPUT_FILE
+          done
 
       # The resulting commit will not trigger another GitHub Actions Workflow run.
       # This is due to limitations set by GitHub.

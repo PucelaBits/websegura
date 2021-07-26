@@ -66,13 +66,7 @@ const filenameToData = (f) => ({
       let results;
       try {
         results = JSON.parse(
-          fs.readFileSync(
-            `_data/results/${obj.url.replace(
-              new RegExp("\\.", "g"),
-              "!"
-            )}.json`,
-            "utf8"
-          )
+          fs.readFileSync(`_data/results/${obj.url.replace(/\./g, "!")}.json`, "utf8")
         );
       } catch (e) {
         // Los resultados aún no están disponibles.
@@ -140,6 +134,20 @@ const filenameToData = (f) => ({
     fs.writeFileSync(`_data/results/progress/${path}`, JSON.stringify(file));
   }
 })();
+
+function createEmailSummaryFile() {
+  const result = {};
+  const sites = glob.sync("_data/results/dmarc/*.json");
+  for (const site of sites) {
+    const siteData = fs.readFileSync(site, "utf8");
+    if (siteData.length > 0) { // sites where dmarc analysis was not possible are empty
+      const siteName = /^_data\/results\/dmarc\/(.*)\.json$/.exec(site)[1].replace(/!/g, ".");
+      const siteData = JSON.parse(fs.readFileSync(site, "utf8"));
+      result[siteName] = siteData;
+    }
+  }
+  return result;
+};
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("assets");
@@ -210,22 +218,22 @@ module.exports = function (eleventyConfig) {
     })
   );
 
+  const dmarcSummary = createEmailSummaryFile();
+  // make the dmarc summary available to the templates instead of writing it to disk
+  eleventyConfig.addCollection("dmarcSummary", () => dmarcSummary);
+
   // Filters values with DMARC and SPF with specific valid option (true or false)
   // Only values where SPF AND DMARC is valid, are considered valid
   // Values where SPF OR DMARC is not valid, are considered invalid
   // Only policy p=reject is considered valid/secure
-  // FIXME: For some reason the results.dmarc.summary is an Object not and Array
-  eleventyConfig.addFilter("isDmarcValid", (value, valid) => {
-    const filter = valid
-        ? (v) => v.spf.valid === valid && v.dmarc.valid === valid && v.dmarc.record.includes('p=reject')
-        : (v) => v.spf.valid === valid || v.dmarc.valid === valid || !v.dmarc.record.includes('p=reject');
+  eleventyConfig.addFilter("dmarc_valid", (value, valid=true) => {
+    const dmarcFilter = valid
+        ? (web) => { const v = dmarcSummary[web.url]; return v.spf.valid === valid && v.dmarc.valid === valid && v.dmarc.record.includes('p=reject') }
+        : (web) => { const v = dmarcSummary[web.url]; return v.spf.valid === valid || v.dmarc.valid === valid || !v.dmarc.record.includes('p=reject') };
 
-    return Object.values(value).filter(filter);
+    return value.filter(web => dmarcSummary[web.url])
+                .filter(dmarcFilter);
   });
-
-  const dmarcSummary = JSON.parse(
-    fs.readFileSync(`_data/results/dmarc/summary.json`, "utf8")
-  );
 
   eleventyConfig.addFilter("dmarc_secure", (url) => {
     const dmarc_info = dmarcSummary[url];
@@ -243,8 +251,16 @@ module.exports = function (eleventyConfig) {
     }
   });
 
+  eleventyConfig.addFilter("canonical", (url) => {
+    return url.replace(/^www\./, "")
+              .replace("http:", "")
+              .replace("https:", "")
+              .replace("/", "");
+  });
+
   // % de webs seguras
   eleventyConfig.addFilter("safeScore", getSafeScore);
+
   // % de emails protegidos
   eleventyConfig.addFilter("emailScore", getEmailScore);
 

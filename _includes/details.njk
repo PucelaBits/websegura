@@ -60,8 +60,8 @@
 
 <ul class="iconify">
   <li><a href="https://observatory.mozilla.org/analyze/{{ web.url }}">🖥 Informe técnico del análisis de la web</a></li>
-  <li><a href="https://dmarcguide.globalcyberalliance.org/#/tool-select?d={{ web.url | replace('www.', '') }}&r=s&s=none&lang=es"> ✉️ Informe técnico del análisis del email</a></li>
-  <li><a href="https://dnssec-analyzer.verisignlabs.com/{{ web.url | replace('www.', '') }}">🌐 Informe técnico de la seguridad del nombre de dominio</a></li>
+  <li><a href="https://dmarcguide.globalcyberalliance.org/#/tool-select?d={{ web.url | canonical }}&r=s&s=none&lang=es"> ✉️ Informe técnico del análisis del email</a></li>
+  <li><a href="https://dnssec-analyzer.verisignlabs.com/{{ web.url | canonical }}">🌐 Informe técnico de la seguridad del nombre de dominio</a></li>
 </ul>
 
 {% if (web.twitter) and (results.score < 70) %}
