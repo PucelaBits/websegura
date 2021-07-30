@@ -1,0 +1,113 @@
+{
+  "data": [
+    {
+      "text": "RT @suments: Empezamos con el estudio de @PucelaBits, #websegura:\n\nSólo un 3% de las webs institucionales en España son seguras 🤦\n\nhttps://…",
+      "id": "1420330281798717441",
+      "entities": {
+        "hashtags": [
+          {
+            "start": 54,
+            "end": 64,
+            "tag": "websegura"
+          }
+        ],
+        "annotations": [
+          {
+            "start": 109,
+            "end": 114,
+            "probability": 0.9896,
+            "type": "Place",
+            "normalized_text": "España"
+          }
+        ],
+        "mentions": [
+          {
+            "start": 3,
+            "end": 11,
+            "username": "suments",
+            "id": "1318191394494840835"
+          },
+          {
+            "start": 41,
+            "end": 52,
+            "username": "PucelaBits",
+            "id": "3836793693"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Empezamos con el estudio de @PucelaBits, #websegura:\n\nSólo un 3% de las webs institucionales en España son seguras 🤦\n\nhttps://t.co/xrXWdxlvrO\n\nPor @MartnDaniel en @BusinessInsider",
+      "entities": {
+        "urls": [
+          {
+            "start": 118,
+            "end": 141,
+            "url": "https://t.co/xrXWdxlvrO",
+            "expanded_url": "https://www.businessinsider.es/estas-son-webs-institucionales-espanolas-menos-seguras-901479",
+            "display_url": "businessinsider.es/estas-son-webs…",
+            "images": [
+              {
+                "url": "https://pbs.twimg.com/news_img/1420304054702465026/ro1gbEkO?format=jpg&name=orig",
+                "width": 1200,
+                "height": 840
+              },
+              {
+                "url": "https://pbs.twimg.com/news_img/1420304054702465026/ro1gbEkO?format=jpg&name=150x150",
+                "width": 150,
+                "height": 150
+              }
+            ],
+            "status": 200,
+            "title": "El 97% de las webs institucionales españolas no son seguras y 12 ministerios tienen la peor puntuación en cuanto a seguridad",
+            "description": "El Observatorio de Seguridad Web alerta sobre la baja protección de numerosas páginas webs institucionales, que se exponen a ataques como los sufridos por el SEPE.",
+            "unwound_url": "https://www.businessinsider.es/estas-son-webs-institucionales-espanolas-menos-seguras-901479"
+          }
+        ],
+        "hashtags": [
+          {
+            "start": 41,
+            "end": 51,
+            "tag": "websegura"
+          }
+        ],
+        "annotations": [
+          {
+            "start": 96,
+            "end": 101,
+            "probability": 0.9894,
+            "type": "Place",
+            "normalized_text": "España"
+          }
+        ],
+        "mentions": [
+          {
+            "start": 28,
+            "end": 39,
+            "username": "PucelaBits",
+            "id": "3836793693"
+          },
+          {
+            "start": 147,
+            "end": 159,
+            "username": "MartnDaniel",
+            "id": "397297019"
+          },
+          {
+            "start": 163,
+            "end": 179,
+            "username": "BusinessInsider",
+            "id": "20562637"
+          }
+        ]
+      },
+      "id": "1420304050747330560"
+    }
+  ],
+  "meta": {
+    "newest_id": "1420330281798717441",
+    "oldest_id": "1420304050747330560",
+    "result_count": 2
+  },
+  "_headers": {}
+}
