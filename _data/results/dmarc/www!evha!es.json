@@ -15,7 +15,7 @@
         "preference": 0,
         "hostname": "evha-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.18.202",
+          "104.47.18.138",
           "104.47.22.138"
         ]
       }
@@ -23,12 +23,93 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:spf.protection.outlook.com -all",
+    "record": "v=spf1 ip4:193.145.205.216/29 ip4:193.145.205.72/29 ip4:193.145.206.0/25 ip4:193.144.104.23 ip4:195.77.17.0/24 ip4:195.77.18.0/24 ip4:195.77.19.0/24 ip4:193.145.207.0/24 include:spf.protection.outlook.com a:mx11.gva.es a:mx12.gva.es a:mx13.gva.es a:mx21.gva.es a:mx22.gva.es a:mx23.gva.es -all",
     "valid": true,
-    "dns_lookups": 2,
+    "dns_lookups": 8,
     "warnings": [],
     "parsed": {
-      "pass": [],
+      "pass": [
+        {
+          "value": "193.145.205.216/29",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "193.145.205.72/29",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "193.145.206.0/25",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "193.144.104.23",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "195.77.17.0/24",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "195.77.18.0/24",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "195.77.19.0/24",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "193.145.207.0/24",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "193.145.206.211",
+          "mechanism": "a"
+        },
+        {
+          "value": "195.77.18.227",
+          "mechanism": "a"
+        },
+        {
+          "value": "193.145.206.212",
+          "mechanism": "a"
+        },
+        {
+          "value": "195.77.18.228",
+          "mechanism": "a"
+        },
+        {
+          "value": "193.145.206.213",
+          "mechanism": "a"
+        },
+        {
+          "value": "195.77.18.229",
+          "mechanism": "a"
+        },
+        {
+          "value": "193.145.206.121",
+          "mechanism": "a"
+        },
+        {
+          "value": "195.77.19.34",
+          "mechanism": "a"
+        },
+        {
+          "value": "193.145.206.123",
+          "mechanism": "a"
+        },
+        {
+          "value": "195.77.19.35",
+          "mechanism": "a"
+        },
+        {
+          "value": "193.145.206.126",
+          "mechanism": "a"
+        },
+        {
+          "value": "195.77.19.36",
+          "mechanism": "a"
+        }
+      ],
       "neutral": [],
       "softfail": [],
       "fail": [],

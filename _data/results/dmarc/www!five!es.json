@@ -5,16 +5,16 @@
   "ns": {
     "hostnames": [
       "ns3.cdmon.net",
-      "ns5.cdmondns-01.com",
       "ns4.cdmondns-01.org",
+      "ns1.cdmon.net",
       "ns2.cdmon.net",
-      "ns1.cdmon.net"
+      "ns5.cdmondns-01.com"
     ],
     "warnings": []
   },
   "mx": {
     "hosts": [],
-    "error": "All nameservers failed to answer the query 27.115.250.142.in-addr.arpa. IN PTR: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "error": "All nameservers failed to answer the query 27.197.217.172.in-addr.arpa. IN PTR: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
   },
   "spf": {
     "record": "v=spf1 include:_spf.google.com ~all",

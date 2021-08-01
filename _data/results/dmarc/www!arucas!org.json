@@ -4,25 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns9.servidoresdns.net",
-      "dns10.servidoresdns.net"
+      "dns10.servidoresdns.net",
+      "dns9.servidoresdns.net"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "aspmx.l.google.com",
-        "addresses": [
-          "2607:f8b0:400e:c08::1b",
-          "74.125.142.27"
-        ]
-      }
-    ],
-    "warnings": [
-      "2607:f8b0:400e:c08::1b does not have any reverse DNS (PTR) records"
-    ]
+    "hosts": [],
+    "error": "All nameservers failed to answer the query 26.222.217.172.in-addr.arpa. IN PTR: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
   },
   "spf": {
     "record": null,

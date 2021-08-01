@@ -1,28 +1,36 @@
 {
-  "domain": "fallas.com",
-  "base_domain": "fallas.com",
+  "domain": "cacabelos.org",
+  "base_domain": "cacabelos.org",
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns.redunda.com",
-      "ns2.redunda.com"
+      "dns32.servidoresdns.net",
+      "dns31.servidoresdns.net"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx.serviciodecorreo.es",
+        "addresses": [
+          "82.223.190.100"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
-    "record": "v=spf1 a mx ip4:213.201.83.247 a:mail.fallas.com mx:mail.fallas.com include:fallas.ip-zone.com -all",
+    "record": "v=spf1 include:_spf.serviciodecorreo.es include:mr-01.gestiona.espublico.com ~all",
     "valid": false,
     "warnings": [],
-    "error": "fallas.ip-zone.com does not have a SPF TXT record"
+    "error": "mr-01.gestiona.espublico.com does not have a SPF TXT record"
   },
   "dmarc": {
-    "record": "v=DMARC1;p=none;pct=100;rua=mailto:mailer@fallas.com;ruf=mailto:mailer@fallas.com",
+    "record": "v=DMARC1; p=reject; rua=mailto:lwsd2nzb@ag.eu.dmarcian.com; ruf=mailto:informatica@cacabelos.org",
     "valid": true,
-    "location": "fallas.com",
+    "location": "cacabelos.org",
     "warnings": [],
     "tags": {
       "v": {
@@ -30,18 +38,14 @@
         "explicit": true
       },
       "p": {
-        "value": "none",
-        "explicit": true
-      },
-      "pct": {
-        "value": 100,
+        "value": "reject",
         "explicit": true
       },
       "rua": {
         "value": [
           {
             "scheme": "mailto",
-            "address": "mailer@fallas.com",
+            "address": "lwsd2nzb@ag.eu.dmarcian.com",
             "size_limit": null
           }
         ],
@@ -51,7 +55,7 @@
         "value": [
           {
             "scheme": "mailto",
-            "address": "mailer@fallas.com",
+            "address": "informatica@cacabelos.org",
             "size_limit": null
           }
         ],
@@ -71,6 +75,10 @@
         ],
         "explicit": false
       },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
       "rf": {
         "value": [
           "afrf"
@@ -82,7 +90,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "none",
+        "value": "reject",
         "explicit": false
       }
     }

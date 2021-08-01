@@ -3,12 +3,15 @@
   "base_domain": "aller.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hostnames": [
+      "ns2.aller.es",
+      "ns1.aller.es"
+    ],
+    "warnings": []
   },
   "mx": {
     "hosts": [],
-    "error": "All nameservers failed to answer the query 27.115.250.142.in-addr.arpa. IN PTR: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 include:_spf.google.com ~all",

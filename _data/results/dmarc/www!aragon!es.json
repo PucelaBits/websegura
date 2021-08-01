@@ -10,8 +10,16 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "correoweb.aragon.es",
+        "addresses": [
+          "188.244.81.20"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:188.244.81.16/28 include:servers.mcsv.net ~all",

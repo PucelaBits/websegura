@@ -4,29 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.ineco.es",
-      "ns1.ineco.es"
+      "ns1.ineco.es",
+      "ns2.ineco.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 20,
-        "hostname": "smtp1.ineco.es",
-        "addresses": [
-          "193.201.107.41"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "smtp2.ineco.es",
-        "addresses": [
-          "193.201.107.42"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 mx ip4:193.201.107.0/24 a:smtp1.ineco.es a:smtp2.ineco.es include:spf.protection.outlook.com ~all",

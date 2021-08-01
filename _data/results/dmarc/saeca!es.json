@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns0.intervia.com",
+      "ns1.intervia.com",
       "ns2.intervia.com",
-      "ns1.intervia.com"
+      "ns0.intervia.com"
     ],
     "warnings": []
   },
@@ -20,10 +20,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The DNS operation timed out after 2.1 seconds",
-      "The reverse DNS of 95.211.205.16 is mail.intervia.com, but the A/AAAA DNS records for mail.intervia.com do not resolve to 95.211.205.16"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:95.211.205.16 ip4:95.211.136.209 ip4:37.48.64.153 ip4:37.48.116.53 ip4:88.2.101.45 mx -all",

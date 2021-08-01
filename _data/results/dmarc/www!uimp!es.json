@@ -11,8 +11,53 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query 27.115.250.142.in-addr.arpa. IN PTR: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 1,
+        "hostname": "aspmx.l.google.com",
+        "addresses": [
+          "173.194.204.27",
+          "2607:f8b0:400d:c01::1a"
+        ]
+      },
+      {
+        "preference": 5,
+        "hostname": "alt1.aspmx.l.google.com",
+        "addresses": [
+          "2800:3f0:4003:c00::1b",
+          "64.233.186.26"
+        ]
+      },
+      {
+        "preference": 5,
+        "hostname": "alt2.aspmx.l.google.com",
+        "addresses": [
+          "209.85.202.26",
+          "2a00:1450:400b:c00::1a"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "alt3.aspmx.l.google.com",
+        "addresses": [
+          "2a00:1450:400c:c0b::1b",
+          "64.233.184.26"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "alt4.aspmx.l.google.com",
+        "addresses": [
+          "142.250.27.26",
+          "2a00:1450:4025:401::1b"
+        ]
+      }
+    ],
+    "warnings": [
+      "2800:3f0:4003:c00::1b does not have any reverse DNS (PTR) records",
+      "142.250.27.26 does not have any reverse DNS (PTR) records",
+      "2a00:1450:4025:401::1b does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:uimp.ip-zone.com include:_spf.google.com a mx -all",
@@ -67,30 +112,17 @@
             "include": [
               {
                 "domain": "spf.dyd.es",
-                "record": "v=spf1 ip4:5.56.22.0/24 ip4:82.199.156.0/24 ip4:185.103.8.0/24 include:spf.ipzmarketing.com ~all",
+                "record": "v=spf1 include:spf.ipzmarketing.com ~all",
                 "dns_lookups": 1,
                 "parsed": {
-                  "pass": [
-                    {
-                      "value": "5.56.22.0/24",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "82.199.156.0/24",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "185.103.8.0/24",
-                      "mechanism": "ip4"
-                    }
-                  ],
+                  "pass": [],
                   "neutral": [],
                   "softfail": [],
                   "fail": [],
                   "include": [
                     {
                       "domain": "spf.ipzmarketing.com",
-                      "record": "v=spf1 ip4:93.159.208.0/21 ip4:185.103.8.0/22 ip4:5.56.22.0/24 ip4:82.199.156.0/24 ~all",
+                      "record": "v=spf1 ip4:93.159.208.0/21 ip4:185.103.8.0/22 ip4:5.56.22.0/24 ip4:82.199.156.0/24 ip4:45.144.212.0/24 ~all",
                       "dns_lookups": 0,
                       "parsed": {
                         "pass": [
@@ -108,6 +140,10 @@
                           },
                           {
                             "value": "82.199.156.0/24",
+                            "mechanism": "ip4"
+                          },
+                          {
+                            "value": "45.144.212.0/24",
                             "mechanism": "ip4"
                           }
                         ],

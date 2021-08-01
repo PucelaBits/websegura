@@ -11,33 +11,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mx1.active24.com",
-        "addresses": [
-          "2a02:4a8:ac24:101::97:102",
-          "2a02:4a8:ac24:101::97:111",
-          "2a02:4a8:ac24:101::97:116",
-          "2a02:4a8:ac24:101::97:4",
-          "81.95.97.102",
-          "81.95.97.111",
-          "81.95.97.116",
-          "81.95.97.4"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mx2.active24.com",
-        "addresses": [
-          "81.0.238.28"
-        ]
-      }
-    ],
-    "warnings": [
-      "The reverse DNS of 2a02:4a8:ac24:101::97:4 is in.smtp.cz, but the A/AAAA DNS records for in.smtp.cz do not resolve to 2a02:4a8:ac24:101::97:4",
-      "The reverse DNS of 81.95.97.4 is in.smtp.cz, but the A/AAAA DNS records for in.smtp.cz do not resolve to 81.95.97.4"
-    ]
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 a include:spf.smtp.cz ~all",

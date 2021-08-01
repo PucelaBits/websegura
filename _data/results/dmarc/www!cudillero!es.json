@@ -3,39 +3,26 @@
   "base_domain": "cudillero.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hostnames": [
+      "ns2.asegi.es",
+      "ns1.asegi.es"
+    ],
+    "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mail.cudillero.es",
-        "addresses": [
-          "194.53.148.173"
-        ]
-      }
-    ],
-    "warnings": [
-      "The DNS operation timed out after 2.1 seconds",
-      "The reverse DNS of 194.53.148.173 is servidor4.asegi.es, but the A/AAAA DNS records for servidor4.asegi.es do not resolve to 194.53.148.173"
-    ]
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 mx a ip6:2a01:b5c0:0:2::168/64 ~all",
     "valid": true,
     "dns_lookups": 2,
-    "warnings": [],
+    "warnings": [
+      "The DNS operation timed out after 3.1 seconds",
+      "The DNS operation timed out after 3.1 seconds"
+    ],
     "parsed": {
       "pass": [
-        {
-          "value": "mail.cudillero.es",
-          "mechanism": "mx"
-        },
-        {
-          "value": "212.89.23.126",
-          "mechanism": "a"
-        },
         {
           "value": "2a01:b5c0:0:2::168/64",
           "mechanism": "ip6"

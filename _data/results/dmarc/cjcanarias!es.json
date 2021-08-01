@@ -10,8 +10,53 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query 27.115.250.142.in-addr.arpa. IN PTR: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 1,
+        "hostname": "aspmx.l.google.com",
+        "addresses": [
+          "173.194.175.27",
+          "2607:f8b0:400d:c03::1b"
+        ]
+      },
+      {
+        "preference": 5,
+        "hostname": "alt1.aspmx.l.google.com",
+        "addresses": [
+          "2800:3f0:4003:c00::1b",
+          "64.233.186.27"
+        ]
+      },
+      {
+        "preference": 5,
+        "hostname": "alt2.aspmx.l.google.com",
+        "addresses": [
+          "209.85.202.26",
+          "2a00:1450:400b:c00::1a"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "alt3.aspmx.l.google.com",
+        "addresses": [
+          "2a00:1450:400c:c0b::1b",
+          "64.233.184.26"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "alt4.aspmx.l.google.com",
+        "addresses": [
+          "142.250.27.26",
+          "2a00:1450:4025:401::1a"
+        ]
+      }
+    ],
+    "warnings": [
+      "2800:3f0:4003:c00::1b does not have any reverse DNS (PTR) records",
+      "142.250.27.26 does not have any reverse DNS (PTR) records",
+      "2a00:1450:4025:401::1a does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:_spf.google.com ~all",

@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns10.servidoresdns.net",
-      "dns9.servidoresdns.net"
+      "dns9.servidoresdns.net",
+      "dns10.servidoresdns.net"
     ],
     "warnings": []
   },
@@ -38,7 +38,7 @@
     ]
   },
   "spf": {
-    "record": "v=spf1 ip4:212.170.29.98 ip4:80.25.3.226 ip4:88.2.147.36 ip4:83.230.226.59 mx -all",
+    "record": "v=spf1 ip4:212.170.29.98 ip4:194.179.96.231 ip4:217.127.127.39 mx -all",
     "valid": true,
     "dns_lookups": 1,
     "warnings": [],
@@ -49,15 +49,11 @@
           "mechanism": "ip4"
         },
         {
-          "value": "80.25.3.226",
+          "value": "194.179.96.231",
           "mechanism": "ip4"
         },
         {
-          "value": "88.2.147.36",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "83.230.226.59",
+          "value": "217.127.127.39",
           "mechanism": "ip4"
         },
         {

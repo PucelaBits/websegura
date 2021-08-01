@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns07.ns-cloud4b.org",
       "ns08.ns-cloud4b.com",
-      "ns06.ns-cloud4b.net",
-      "ns07.ns-cloud4b.org"
+      "ns06.ns-cloud4b.net"
     ],
     "warnings": []
   },
@@ -80,7 +80,7 @@
         },
         {
           "domain": "emailservice.cpd.as",
-          "record": "v=spf1 ip4:154.58.16.0/22 ip4:185.79.128.0/22 ip4:213.99.28.0/24 ip4:46.24.172.0/25 include:spf.hornetsecurity.com ~all",
+          "record": "v=spf1 ip4:154.58.16.0/22 ip4:185.79.128.0/22 ip4:213.99.28.0/24 ip4:46.24.172.0/25 include:spf.hornetsecurity.com -all",
           "dns_lookups": 1,
           "parsed": {
             "pass": [
@@ -185,7 +185,7 @@
             ],
             "redirect": null,
             "exp": null,
-            "all": "softfail"
+            "all": "fail"
           },
           "warnings": []
         }

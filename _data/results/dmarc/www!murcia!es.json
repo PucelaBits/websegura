@@ -4,32 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.murcia.es",
-      "dns1.murcia.es"
+      "dns1.murcia.es",
+      "dns2.murcia.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "correo.murcia.es",
-        "addresses": [
-          "81.46.205.179"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "correo2.murcia.es",
-        "addresses": [
-          "81.46.205.178"
-        ]
-      }
-    ],
-    "warnings": [
-      "The domain 81-46-205-178.redes.acens.net does not exist",
-      "The reverse DNS of 81.46.205.178 is 81-46-205-178.redes.acens.net, but the A/AAAA DNS records for 81-46-205-178.redes.acens.net do not resolve to 81.46.205.178"
-    ]
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": null,
