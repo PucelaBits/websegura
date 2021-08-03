@@ -12,6 +12,14 @@ En esta página listamos todas las apariciones del proyecto en medios. Si eres u
 
 ---
 
+![20minutos](/images/medios/20minutos.jpg#thumbnail "20minutos")
+
+#### [El 98% de los emails de los organismos públicos son vulnerables ante posibles suplantaciones de identidad](https://www.20minutos.es/tecnologia/ciberseguridad/el-98-de-los-emails-de-los-organismos-pubicos-son-vulnerables-ante-posibles-suplantaciones-de-identidad-4783217/)
+
+_2 de agosto 2021 - 20minutos_
+
+---
+
 ![eldiario](/images/medios/eldiario2.jpg#thumbnail "eldiario")
 
 #### [El 97% de los emails que usan los funcionarios está desprotegido frente a robos de identidad ](https://www.eldiario.es/tecnologia/97-emails-funcionarios-desprotegido-frente-robos-identidad_1_8160330.html)
