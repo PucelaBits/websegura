@@ -26,7 +26,7 @@
               {% if (web.twitter) and (web.score < 70) %}
                 <a class="twitter-share-button" href="https://twitter.com/intent/tweet/?text={{ 'Hola @' + web.twitter + '
 
-🔒 La seguridad de vuestra web y usuarios puede ser comprometida si no actualizáis vuestras conexiones seguras (HTTPS).
+🔒 La seguridad de vuestra web' | urlEncode}}{% if not web.url | dmarc_secure %}{{', correos '}}{% endif %}{{' y usuarios puede ser comprometida si no actualizáis vuestras conexiones seguras (HTTPS).
 ⚠️ ¡Por favor, revisadlo cuanto antes!
 
 https://websegura.pucelabits.org'| urlEncode }}{{ path }}{{ '?pk_campaign=HazseloSaber&pk_source=twitter
@@ -35,6 +35,21 @@ https://websegura.pucelabits.org'| urlEncode }}{{ path }}{{ '?pk_campaign=Hazsel
                 <span class="icon brands fa-twitter" {% if web.twitter_mentions > 0 %}data-popularity="high" title="Sitio destacado. Súmate a quienes ya han tuiteado"{% endif %}>
                   <span>Tuitear</span>
                 </a>
+              {% endif %}
+              {% if (web.twitter) and (web.score >= 70) %}
+              {% if not web.url | dmarc_secure %}
+                <a class="twitter-share-button" href="https://twitter.com/intent/tweet/?text={{ 'Hola @' + web.twitter + '
+
+✉️ Los emails @'| urlEncode }}{{ web.url | canonical }}{{' son vulnerables a suplantación de identidad, cualquiera puede hacerse pasar por vosotros sin ser detectado.
+⚠️ ¡Por favor, revisadlo cuanto antes!
+
+https://websegura.pucelabits.org'| urlEncode }}{{ path }}{{ '?pk_campaign=HazseloSaber&pk_source=twitter
+
+#emailseguro /vía @PucelaBits' | urlEncode }}" target="_blank" rel="noopener" aria-label="Twitter">
+                <span class="icon brands fa-twitter" {% if web.twitter_mentions > 0 %}data-popularity="high" title="Sitio destacado. Súmate a quienes ya han tuiteado"{% endif %}>
+                  <span>Tuitear</span>
+                </a>
+              {% endif %}
               {% endif %}
             </td>
           </tr>
