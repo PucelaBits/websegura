@@ -59,6 +59,7 @@ https://websegura.pucelabits.org'| urlEncode }}{{ path }}{{ '?pk_campaign=Hazsel
       <tr>
         <th id="nota">Info</th>
         <th id="web">Email</th>
+        <th id="share">¡Házselo saber!</th>
       </tr>
     </thead>
     <tbody>
@@ -75,6 +76,21 @@ https://websegura.pucelabits.org'| urlEncode }}{{ path }}{{ '?pk_campaign=Hazsel
           </td>
           <td>
             <a href="/w/{{ web.url | replace('.', '!') }}" title="{{ web.url }}">@{{ web.url | canonical }}</a>
+          </td>
+          <td>
+            {% if not web.url | dmarc_secure %}
+              <a class="twitter-share-button" href="https://twitter.com/intent/tweet/?text={{ 'Hola @' + web.twitter + '
+
+✉️ Los emails @'| urlEncode }}{{ web.url | canonical }}{{' son vulnerables a suplantación de identidad, cualquiera puede hacerse pasar por vosotros sin ser detectado.
+⚠️ ¡Por favor, revisadlo cuanto antes!
+
+https://websegura.pucelabits.org'| urlEncode }}/w/{{ web.url | replace('.', '!') }}{{ '?pk_campaign=HazseloSaberEmail&pk_source=twitter
+
+#emailseguro /vía @PucelaBits' | urlEncode }}" target="_blank" rel="noopener" aria-label="Twitter">
+              <span class="icon brands fa-twitter">
+                <span>Tuitear</span>
+              </a>
+            {% endif %}
           </td>
         </tr>
       {% endfor %}
