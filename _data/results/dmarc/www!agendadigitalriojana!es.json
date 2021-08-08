@@ -4,11 +4,11 @@
   "dnssec": false,
   "ns": {
     "hostnames": [],
-    "error": "All nameservers failed to answer the query agendadigitalriojana.es. IN NS: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "mx": {
     "hosts": [],
-    "error": "All nameservers failed to answer the query agendadigitalriojana.es. IN MX: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": null,
@@ -19,6 +19,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "All nameservers failed to answer the query _dmarc.agendadigitalriojana.es. IN TXT: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "error": "The DNS operation timed out after 3.1 seconds"
   }
 }

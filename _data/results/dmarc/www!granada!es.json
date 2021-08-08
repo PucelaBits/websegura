@@ -4,34 +4,15 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns",
       "ns2.granada.org",
-      "ns.granada.org",
-      "ns"
+      "ns.granada.org"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 1,
-        "hostname": "aspmx.l.google.com",
-        "addresses": [
-          "2607:f8b0:400d:c0d::1a",
-          "74.125.192.26"
-        ]
-      },
-      {
-        "preference": 5,
-        "hostname": "alt1.aspmx.l.google.com",
-        "addresses": [
-          "2800:3f0:4003:c00::1b",
-          "64.233.186.27"
-        ]
-      }
-    ],
-    "warnings": [
-      "2800:3f0:4003:c00::1b does not have any reverse DNS (PTR) records"
-    ]
+    "hosts": [],
+    "error": "All nameservers failed to answer the query 26.115.250.142.in-addr.arpa. IN PTR: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
   },
   "spf": {
     "record": null,

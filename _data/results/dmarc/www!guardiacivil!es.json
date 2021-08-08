@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "dns1.guardiacivil.es",
       "artemis.ttd.net",
-      "dns2.guardiacivil.es",
-      "dns1.guardiacivil.es"
+      "dns2.guardiacivil.es"
     ],
     "warnings": []
   },
@@ -21,14 +21,6 @@
     "warnings": [],
     "parsed": {
       "pass": [
-        {
-          "value": "mxa-00692d01.gslb.pphosted.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "mxb-00692d01.gslb.pphosted.com",
-          "mechanism": "mx"
-        },
         {
           "value": "mailgw1.guardiacivil.es",
           "mechanism": "mx"
@@ -56,71 +48,9 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com",
-    "valid": true,
-    "location": "guardiacivil.es",
-    "warnings": [],
-    "tags": {
-      "v": {
-        "value": "DMARC1",
-        "explicit": true
-      },
-      "p": {
-        "value": "none",
-        "explicit": true
-      },
-      "fo": {
-        "value": [
-          "1"
-        ],
-        "explicit": true
-      },
-      "rua": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "dmarc_rua@emaildefense.proofpoint.com",
-            "size_limit": null
-          }
-        ],
-        "explicit": true
-      },
-      "ruf": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "dmarc_ruf@emaildefense.proofpoint.com",
-            "size_limit": null
-          }
-        ],
-        "explicit": true
-      },
-      "adkim": {
-        "value": "r",
-        "explicit": false
-      },
-      "aspf": {
-        "value": "r",
-        "explicit": false
-      },
-      "pct": {
-        "value": 100,
-        "explicit": false
-      },
-      "rf": {
-        "value": [
-          "afrf"
-        ],
-        "explicit": false
-      },
-      "ri": {
-        "value": 86400,
-        "explicit": false
-      },
-      "sp": {
-        "value": "none",
-        "explicit": false
-      }
-    }
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.guardiacivil.es\n\n19647547"
   }
 }

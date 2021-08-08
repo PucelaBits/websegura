@@ -4,29 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.neodigit.net",
-      "ns2.neodigit.net"
+      "ns2.neodigit.net",
+      "ns1.neodigit.net"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "bmx01.neodigit.net",
-        "addresses": [
-          "31.47.72.161"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "bmx02.neodigit.net",
-        "addresses": [
-          "31.47.72.162"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 a mx include:host0v1b25-a115.neodigit.net -all",

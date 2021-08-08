@@ -3,17 +3,67 @@
   "base_domain": "isdefe.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "All nameservers failed to answer the query isdefe.es. IN NS: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "hostnames": [
+      "ns2.isdefe.es",
+      "ns1.isdefe.es"
+    ],
+    "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "cust13082-1.in.mailcontrol.com",
+        "addresses": [
+          "85.115.60.190"
+        ]
+      },
+      {
+        "preference": 30,
+        "hostname": "cust13082-2.in.mailcontrol.com",
+        "addresses": [
+          "85.115.54.190"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "record": "v=spf1 mx a:mail1.isdefe.es a:mail6.isdefe.es a:mail33.isdefe.es -all",
+    "valid": true,
+    "dns_lookups": 4,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "cust13082-1.in.mailcontrol.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "cust13082-2.in.mailcontrol.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "194.15.213.239",
+          "mechanism": "a"
+        },
+        {
+          "value": "194.15.213.252",
+          "mechanism": "a"
+        },
+        {
+          "value": "194.15.213.240",
+          "mechanism": "a"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
     "record": "v=DMARC1; p=none; pct=100; fo=1; rua=mailto:sistemas@isdefe.es",

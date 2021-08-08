@@ -13,7 +13,7 @@
   },
   "mx": {
     "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "error": "All nameservers failed to answer the query 27.115.250.142.in-addr.arpa. IN PTR: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
   },
   "spf": {
     "record": "v=spf1 +a +mx ip4:195.235.115.46/32 +ip4:92.43.19.148 +ip4:92.43.18.128/26 +ip4:176.28.99.27/32 +include:_spf.google.com include:sparkpostmail.com include:servers.mcsv.net include:amazonses.com -all",
@@ -23,11 +23,11 @@
     "parsed": {
       "pass": [
         {
-          "value": "52.209.111.16",
+          "value": "34.251.164.132",
           "mechanism": "a"
         },
         {
-          "value": "54.154.201.167",
+          "value": "99.81.227.50",
           "mechanism": "a"
         },
         {

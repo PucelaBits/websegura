@@ -4,14 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns3.servidoresdns.net",
-      "dns4.servidoresdns.net"
+      "dns4.servidoresdns.net",
+      "dns3.servidoresdns.net"
     ],
     "warnings": []
   },
   "mx": {
     "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "error": "All nameservers failed to answer the query 26.115.250.142.in-addr.arpa. IN PTR: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
   },
   "spf": {
     "record": "v=spf1 a include:_spf.google.com ~all",

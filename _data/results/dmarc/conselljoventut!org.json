@@ -4,16 +4,16 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.dinahosting.com",
-      "ns3.dinahosting.com",
       "ns.dinahosting.com",
-      "ns4.dinahosting.com"
+      "ns4.dinahosting.com",
+      "ns2.dinahosting.com",
+      "ns3.dinahosting.com"
     ],
     "warnings": []
   },
   "mx": {
     "hosts": [],
-    "error": "All nameservers failed to answer the query 27.197.217.172.in-addr.arpa. IN PTR: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "error": "All nameservers failed to answer the query 27.115.250.142.in-addr.arpa. IN PTR: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
   },
   "spf": {
     "record": "v=spf1 include:_spf.google.com ip4:31.200.242.203 ~all",

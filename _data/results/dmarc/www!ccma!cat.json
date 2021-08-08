@@ -12,8 +12,23 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "smtp1.ccma.cat",
+        "addresses": [
+          "193.104.51.122"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "smtp2.ccma.cat",
+        "addresses": [
+          "193.104.51.123"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx a ip4:193.104.51.0/24 ip4:193.47.145.126/26 ip4:213.0.81.160/29 ip4:62.97.117.0/27 ip4:62.97.120.205 ip4:213.27.151.167 ip4:91.121.92.208 ip4:144.76.18.140 ip4:195.25.64.22  include:spf.protection.outlook.com -all",
@@ -31,11 +46,11 @@
           "mechanism": "mx"
         },
         {
-          "value": "52.58.199.111",
+          "value": "52.57.233.42",
           "mechanism": "a"
         },
         {
-          "value": "52.59.131.94",
+          "value": "52.58.199.111",
           "mechanism": "a"
         },
         {

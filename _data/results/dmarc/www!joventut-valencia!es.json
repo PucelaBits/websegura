@@ -10,8 +10,19 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 0,
+        "hostname": "joventut-valencia.es",
+        "addresses": [
+          "185.61.124.243"
+        ]
+      }
+    ],
+    "warnings": [
+      "The DNS operation timed out after 2.1 seconds",
+      "The reverse DNS of 185.61.124.243 is CL2020060918001.dnssw.net, but the A/AAAA DNS records for CL2020060918001.dnssw.net do not resolve to 185.61.124.243"
+    ]
   },
   "spf": {
     "record": "v=spf1 ip4:185.61.124.243 +a +mx ~all",

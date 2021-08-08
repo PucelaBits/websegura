@@ -5,9 +5,9 @@
   "ns": {
     "hostnames": [
       "dns.uab.es",
+      "ns1.csuc.cat",
       "dns1.uab.es",
-      "ns2.csuc.cat",
-      "ns1.csuc.cat"
+      "ns2.csuc.cat"
     ],
     "warnings": []
   },
@@ -17,12 +17,15 @@
         "preference": 0,
         "hostname": "uab-cat.mail.protection.outlook.com",
         "addresses": [
-          "104.47.4.36",
-          "104.47.5.36"
+          "104.47.5.36",
+          "104.47.6.36"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The DNS operation timed out after 2.1 seconds",
+      "The reverse DNS of 104.47.6.36 is mail-ve1eur020036.inbound.protection.outlook.com, but the A/AAAA DNS records for mail-ve1eur020036.inbound.protection.outlook.com do not resolve to 104.47.6.36"
+    ]
   },
   "spf": {
     "record": "v=spf1 ip4:158.109.168.128/27 ip4:158.109.168.91 ip4:158.109.168.113 ip4:84.88.0.6 ip4:84.88.0.7 ip4:84.88.0.8 ip4:84.88.0.9 ip4:158.109.168.72/29 include:spf.protection.outlook.com include:spf.ipzmarketing.com include:spf.sendinblue.com ~all",

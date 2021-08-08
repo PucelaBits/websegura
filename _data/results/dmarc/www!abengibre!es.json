@@ -4,14 +4,22 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.dipualba.es",
-      "dns1.dipualba.es"
+      "dns1.dipualba.es",
+      "dns2.dipualba.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx.dipualba.es",
+        "addresses": [
+          "195.235.95.25"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": null,

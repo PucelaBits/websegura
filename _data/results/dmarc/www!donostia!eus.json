@@ -5,15 +5,30 @@
   "ns": {
     "hostnames": [
       "ns.dinahosting.com",
-      "ns3.dinahosting.com",
       "ns2.dinahosting.com",
+      "ns3.dinahosting.com",
       "ns4.dinahosting.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.donostia.eus",
+        "addresses": [
+          "82.130.212.7"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mail2.donostia.eus",
+        "addresses": [
+          "82.130.212.18"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx ip4:82.130.212.3 include:8819695.spf05.hubspotemail.net -all",

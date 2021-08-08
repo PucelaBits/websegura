@@ -3,20 +3,15 @@
   "base_domain": "utrera.org",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "b-ns.primari.net",
-      "a-ns.primari.net"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "mx": {
     "hosts": [
       {
         "preference": 10,
         "hostname": "correo.utrera.org",
-        "addresses": [
-          "195.53.27.99"
-        ]
+        "addresses": []
       },
       {
         "preference": 10,
@@ -27,8 +22,7 @@
       }
     ],
     "warnings": [
-      "The DNS operation timed out after 2.1 seconds",
-      "The reverse DNS of 195.53.27.99 is smail.utrera.org, but the A/AAAA DNS records for smail.utrera.org do not resolve to 195.53.27.99",
+      "The DNS operation timed out after 3.1 seconds",
       "The DNS operation timed out after 2.1 seconds",
       "The reverse DNS of 195.53.27.99 is smail.utrera.org, but the A/AAAA DNS records for smail.utrera.org do not resolve to 195.53.27.99"
     ]
@@ -250,9 +244,61 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.utrera.org\n\nglobalsign-domain-verification=gKGqbdZdpz2hAfeCKZVgE4urJMMAXJHV8p2OiqApcV"
+    "record": "v=DMARC1;p=reject;pct=100;rua=mailto:dmarc@utrera.org",
+    "valid": true,
+    "location": "utrera.org",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "reject",
+        "explicit": true
+      },
+      "pct": {
+        "value": 100,
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc@utrera.org",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "reject",
+        "explicit": false
+      }
+    }
   }
 }

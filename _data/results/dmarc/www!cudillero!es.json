@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.asegi.es",
-      "ns1.asegi.es"
+      "ns1.asegi.es",
+      "ns2.asegi.es"
     ],
     "warnings": []
   },
@@ -18,11 +18,14 @@
     "valid": true,
     "dns_lookups": 2,
     "warnings": [
-      "The DNS operation timed out after 3.1 seconds",
       "The DNS operation timed out after 3.1 seconds"
     ],
     "parsed": {
       "pass": [
+        {
+          "value": "mail.cudillero.es",
+          "mechanism": "mx"
+        },
         {
           "value": "2a01:b5c0:0:2::168/64",
           "mechanism": "ip6"

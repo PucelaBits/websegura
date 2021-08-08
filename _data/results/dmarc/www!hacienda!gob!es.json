@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "artemis.ttd.net",
       "dns.hacienda.gob.es",
+      "artemis.ttd.net",
       "dns2.hacienda.gob.es"
     ],
     "warnings": []
@@ -18,10 +18,7 @@
     "record": "v=spf1 mx a:smtp1.hacienda.gob.es a:smtp2.hacienda.gob.es a:smtp3.hacienda.gob.es a:smtp4.hacienda.gob.es include:spf.protection.outlook.com -all",
     "valid": true,
     "dns_lookups": 7,
-    "warnings": [
-      "All nameservers failed to answer the query smtp1.hacienda.gob.es. IN A: Server 1.0.0.1 UDP port 53 answered SERVFAIL",
-      "All nameservers failed to answer the query smtp2.hacienda.gob.es. IN AAAA: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
-    ],
+    "warnings": [],
     "parsed": {
       "pass": [
         {
@@ -39,6 +36,14 @@
         {
           "value": "smtp4.hacienda.gob.es",
           "mechanism": "mx"
+        },
+        {
+          "value": "193.203.200.132",
+          "mechanism": "a"
+        },
+        {
+          "value": "193.203.200.244",
+          "mechanism": "a"
         },
         {
           "value": "193.203.200.132",

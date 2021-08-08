@@ -6,14 +6,14 @@
     "hostnames": [
       "ns1032.ui-dns.de",
       "ns1032.ui-dns.org",
-      "ns1032.ui-dns.com",
-      "ns1032.ui-dns.biz"
+      "ns1032.ui-dns.biz",
+      "ns1032.ui-dns.com"
     ],
     "warnings": []
   },
   "mx": {
     "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "error": "All nameservers failed to answer the query 26.115.250.142.in-addr.arpa. IN PTR: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
   },
   "spf": {
     "record": null,
