@@ -4,29 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "nsjc8hos01.telefonica-data.com",
-      "nsalchos01.telefonica-data.com"
+      "nsalchos01.telefonica-data.com",
+      "nsjc8hos01.telefonica-data.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mx1.correo.aeat.es",
-        "addresses": [
-          "195.77.198.96"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "mx2.correo.aeat.es",
-        "addresses": [
-          "195.77.198.97"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": null,

@@ -22,10 +22,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The DNS operation timed out after 2.1 seconds",
-      "The reverse DNS of 104.47.6.36 is mail-ve1eur020036.inbound.protection.outlook.com, but the A/AAAA DNS records for mail-ve1eur020036.inbound.protection.outlook.com do not resolve to 104.47.6.36"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:158.109.168.128/27 ip4:158.109.168.91 ip4:158.109.168.113 ip4:84.88.0.6 ip4:84.88.0.7 ip4:84.88.0.8 ip4:84.88.0.9 ip4:158.109.168.72/29 include:spf.protection.outlook.com include:spf.ipzmarketing.com include:spf.sendinblue.com ~all",
@@ -168,7 +165,7 @@
         },
         {
           "domain": "spf.ipzmarketing.com",
-          "record": "v=spf1 ip4:93.159.208.0/21 ip4:185.103.8.0/22 ip4:5.56.22.0/24 ip4:82.199.156.0/24 ip4:45.144.212.0/24 ~all",
+          "record": "v=spf1 ip4:93.159.208.0/21 ip4:185.103.8.0/22 ip4:5.56.22.0/24 ip4:82.199.156.0/24 ~all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -186,10 +183,6 @@
               },
               {
                 "value": "82.199.156.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "45.144.212.0/24",
                 "mechanism": "ip4"
               }
             ],

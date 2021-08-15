@@ -36,7 +36,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 +a +mx +ip4:145.239.70.25 ~all",
+    "record": "v=spf1 +a +mx +ip4:51.91.48.71 ~all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
@@ -71,7 +71,7 @@
           "mechanism": "mx"
         },
         {
-          "value": "145.239.70.25",
+          "value": "51.91.48.71",
           "mechanism": "ip4"
         }
       ],

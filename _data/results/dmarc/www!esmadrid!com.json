@@ -4,15 +4,15 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns08.ns-cloud4b.com",
       "ns06.ns-cloud4b.net",
-      "ns07.ns-cloud4b.org",
-      "ns08.ns-cloud4b.com"
+      "ns07.ns-cloud4b.org"
     ],
     "warnings": []
   },
   "mx": {
     "hosts": [],
-    "error": "All nameservers failed to answer the query 26.115.250.142.in-addr.arpa. IN PTR: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "error": "All nameservers failed to answer the query 27.197.217.172.in-addr.arpa. IN PTR: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
   },
   "spf": {
     "record": "v=spf1 ip4:195.53.119.133 include:_spf.google.com include:_spf.simpleviewinc.com include:teenvio.com ~all",

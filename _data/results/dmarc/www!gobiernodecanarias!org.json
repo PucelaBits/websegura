@@ -4,14 +4,29 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "seti.gobiernodecanarias.org",
-      "acatife.gobiernodecanarias.org"
+      "acatife.gobiernodecanarias.org",
+      "seti.gobiernodecanarias.org"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "smtp-lp.gobiernodecanarias.org",
+        "addresses": [
+          "93.188.136.122"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "smtp-tf.gobiernodecanarias.org",
+        "addresses": [
+          "93.188.137.42"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx a:correo.gobiernodecanarias.org a:correomasivo.gobiernodecanarias.org -all",

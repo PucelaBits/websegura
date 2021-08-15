@@ -53,7 +53,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; rua=mailto:mailauth-reports@maspalomas.com",
+    "record": "v=DMARC1; p=quarantine; rua=mailto:mailauth-reports@maspalomas.com; sp=none; ri=86400",
     "valid": true,
     "location": "maspalomas.com",
     "warnings": [],
@@ -74,6 +74,14 @@
             "size_limit": null
           }
         ],
+        "explicit": true
+      },
+      "sp": {
+        "value": "none",
+        "explicit": true
+      },
+      "ri": {
+        "value": 86400,
         "explicit": true
       },
       "adkim": {
@@ -98,14 +106,6 @@
         "value": [
           "afrf"
         ],
-        "explicit": false
-      },
-      "ri": {
-        "value": 86400,
-        "explicit": false
-      },
-      "sp": {
-        "value": "quarantine",
         "explicit": false
       }
     }

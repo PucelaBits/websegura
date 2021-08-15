@@ -12,8 +12,41 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx.spamexperts.com",
+        "addresses": [
+          "2001:550:2:78::ca:100",
+          "38.109.53.20"
+        ]
+      },
+      {
+        "preference": 50,
+        "hostname": "fallbackmx.spamexperts.eu",
+        "addresses": [
+          "2001:550:2:61::2fc:100",
+          "2001:550:2:78::ca:100",
+          "2001:550:2:9::280:100",
+          "38.109.53.20",
+          "38.111.198.185",
+          "38.89.254.156"
+        ]
+      },
+      {
+        "preference": 100,
+        "hostname": "lastmx.spamexperts.net",
+        "addresses": [
+          "2001:550:2:61::2fc:100",
+          "2001:550:2:78::ca:100",
+          "2001:550:2:9::280:100",
+          "38.109.53.20",
+          "38.111.198.185",
+          "38.89.254.156"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.malaga.es include:spf.qsemail.net include:spf.acumbamail.com ~all",
@@ -875,6 +908,42 @@
               },
               {
                 "value": "193.200.214.119",
+                "mechanism": "a"
+              },
+              {
+                "value": "197.98.47.217",
+                "mechanism": "a"
+              },
+              {
+                "value": "197.98.47.227",
+                "mechanism": "a"
+              },
+              {
+                "value": "197.98.47.228",
+                "mechanism": "a"
+              },
+              {
+                "value": "197.98.47.230",
+                "mechanism": "a"
+              },
+              {
+                "value": "197.98.47.231",
+                "mechanism": "a"
+              },
+              {
+                "value": "197.98.47.233",
+                "mechanism": "a"
+              },
+              {
+                "value": "197.98.47.234",
+                "mechanism": "a"
+              },
+              {
+                "value": "197.98.47.236",
+                "mechanism": "a"
+              },
+              {
+                "value": "197.98.47.237",
                 "mechanism": "a"
               },
               {

@@ -3,8 +3,11 @@
   "base_domain": "utrera.org",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hostnames": [
+      "a-ns.primari.net",
+      "b-ns.primari.net"
+    ],
+    "warnings": []
   },
   "mx": {
     "hosts": [
@@ -32,6 +35,7 @@
     "valid": true,
     "dns_lookups": 7,
     "warnings": [
+      "The DNS operation timed out after 3.1 seconds",
       "The domain mainserver.aytoutrpdc.org does not exist"
     ],
     "parsed": {
@@ -47,10 +51,6 @@
         {
           "value": "195.53.27.99",
           "mechanism": "ip4"
-        },
-        {
-          "value": "195.53.27.99",
-          "mechanism": "a"
         },
         {
           "value": "195.53.27.100",

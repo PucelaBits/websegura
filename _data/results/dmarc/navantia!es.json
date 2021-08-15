@@ -10,8 +10,23 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 15,
+        "hostname": "mail.navantia.es",
+        "addresses": [
+          "195.235.188.81"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mailizar.navantia.es",
+        "addresses": [
+          "195.235.188.81"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:195.235.188.81 ip4:195.235.188.141 include:spf.protection.outlook.com ~all",

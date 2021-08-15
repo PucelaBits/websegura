@@ -10,8 +10,24 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 0,
+        "hostname": "mancohortasud-es.mail.protection.outlook.com",
+        "addresses": [
+          "104.47.10.36",
+          "104.47.9.36"
+        ]
+      },
+      {
+        "preference": 0,
+        "hostname": "mancohortasud.es",
+        "addresses": [
+          "79.148.248.32"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com ip4:185.5.236.0/23 -all",

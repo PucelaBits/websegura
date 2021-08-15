@@ -4,15 +4,15 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns3.dnsxperta.com",
+      "ns2.dnsxperta.com",
       "ns1.dnsxperta.com",
-      "ns2.dnsxperta.com"
+      "ns3.dnsxperta.com"
     ],
     "warnings": []
   },
   "mx": {
     "hosts": [],
-    "error": "All nameservers failed to answer the query 26.115.250.142.in-addr.arpa. IN PTR: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": null,

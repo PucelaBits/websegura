@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ninot.gva.es",
-      "tirant.gva.es"
+      "tirant.gva.es",
+      "ninot.gva.es"
     ],
     "warnings": []
   },
@@ -157,7 +157,7 @@
                   "include": [
                     {
                       "domain": "spf.ipzmarketing.com",
-                      "record": "v=spf1 ip4:93.159.208.0/21 ip4:185.103.8.0/22 ip4:5.56.22.0/24 ip4:82.199.156.0/24 ip4:45.144.212.0/24 ~all",
+                      "record": "v=spf1 ip4:93.159.208.0/21 ip4:185.103.8.0/22 ip4:5.56.22.0/24 ip4:82.199.156.0/24 ~all",
                       "dns_lookups": 0,
                       "parsed": {
                         "pass": [
@@ -175,10 +175,6 @@
                           },
                           {
                             "value": "82.199.156.0/24",
-                            "mechanism": "ip4"
-                          },
-                          {
-                            "value": "45.144.212.0/24",
                             "mechanism": "ip4"
                           }
                         ],

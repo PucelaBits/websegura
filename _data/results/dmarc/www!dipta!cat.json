@@ -10,8 +10,23 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx1.dipta.cat",
+        "addresses": [
+          "195.76.233.59"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mx1.tinet.org",
+        "addresses": [
+          "195.77.216.146"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:195.77.216.146 ip4:195.77.216.147 ip4:195.76.233.59 a mx ?all",

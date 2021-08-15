@@ -4,14 +4,22 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.abansys.net",
-      "dns2.abansys.net"
+      "dns2.abansys.net",
+      "dns1.abansys.net"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.degania.org",
+        "addresses": [
+          "86.109.178.134"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.abansys.com -all",

@@ -4,14 +4,22 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.nds.es",
-      "ns1.nds.es"
+      "ns1.nds.es",
+      "ns2.nds.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.mirandadeebro.es",
+        "addresses": [
+          "185.253.153.139"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:185.253.153.139 ip4:178.33.237.180 ip4:188.165.134.220 a mx ip4:46.24.0.159 ip4:212.145.237.149 ip4:217.130.101.165 ip4:46.24.70.228 ip4:46.24.70.229 ip4:46.24.70.230 ip4:46.24.70.231 include:gamma.nds.es -all",
