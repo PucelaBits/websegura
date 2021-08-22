@@ -11,27 +11,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mx1-eu1.ppe-hosted.com",
-        "addresses": [
-          "185.132.181.16",
-          "62.209.50.26",
-          "91.209.104.155"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "mx2-eu1.ppe-hosted.com",
-        "addresses": [
-          "185.132.181.17",
-          "62.209.50.27",
-          "91.209.104.156"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 ip4:79.170.8.205 a:dispatch-eu.ppe-hosted.com include:spf.protection.outlook.com ~all",

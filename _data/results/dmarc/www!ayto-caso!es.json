@@ -4,22 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns6.grupoduo.net",
-      "ns5.grupoduo.net"
+      "ns5.grupoduo.net",
+      "ns6.grupoduo.net"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mail.ayto-caso.es",
-        "addresses": [
-          "212.89.13.125"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 mx a ip4:212.89.13.125  -all",

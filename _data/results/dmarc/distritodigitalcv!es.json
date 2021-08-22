@@ -16,7 +16,7 @@
         "hostname": "distritodigitalcv-es.mail.protection.outlook.com",
         "addresses": [
           "104.47.12.36",
-          "104.47.13.36"
+          "104.47.14.36"
         ]
       }
     ],
@@ -64,7 +64,7 @@
         },
         {
           "domain": "eu.transmail.net",
-          "record": "v=spf1 ip4:31.186.226.0/24 ip4:185.20.211.0/24 ip4:185.172.199.128/26 ip4:185.172.199.192/27  ~all",
+          "record": "v=spf1 ip4:31.186.226.0/24 ip4:185.20.211.0/24 ip4:185.172.199.128/26 ip4:185.172.199.192/27 ip4:185.172.199.56/29 ~all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -82,6 +82,10 @@
               },
               {
                 "value": "185.172.199.192/27",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.172.199.56/29",
                 "mechanism": "ip4"
               }
             ],

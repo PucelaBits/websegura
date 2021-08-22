@@ -5,14 +5,34 @@
   "ns": {
     "hostnames": [
       "ns2.dnsxperta.com",
-      "ns1.dnsxperta.com",
-      "ns3.dnsxperta.com"
+      "ns3.dnsxperta.com",
+      "ns1.dnsxperta.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "aspmx.l.google.com",
+        "addresses": [
+          "173.194.68.27",
+          "2607:f8b0:400d:c0f::1b"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "alt1.aspmx.l.google.com",
+        "addresses": [
+          "2800:3f0:4003:c00::1b",
+          "64.233.186.27"
+        ]
+      }
+    ],
+    "warnings": [
+      "2607:f8b0:400d:c0f::1b does not have any reverse DNS (PTR) records",
+      "2800:3f0:4003:c00::1b does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
     "record": null,

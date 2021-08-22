@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.parlamentodenavarra.es",
-      "ns2.parlamentodenavarra.es"
+      "ns2.parlamentodenavarra.es",
+      "ns1.parlamentodenavarra.es"
     ],
     "warnings": []
   },
@@ -14,7 +14,7 @@
     "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
-    "record": "v=spf1 mx a:correo.parlamentodenavarra.es include:spf.hornetsecurity.com include:spf.protection.outlook.com -all",
+    "record": "v=spf1 mx a:correo.parlamentodenavarra.es include:spf.hornetsecurity.com include:spf.protection.outlook.com ip4:195.76.224.1 -all",
     "valid": true,
     "dns_lookups": 5,
     "warnings": [],
@@ -39,6 +39,10 @@
         {
           "value": "195.76.224.1",
           "mechanism": "a"
+        },
+        {
+          "value": "195.76.224.1",
+          "mechanism": "ip4"
         }
       ],
       "neutral": [],

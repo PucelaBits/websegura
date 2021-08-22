@@ -4,14 +4,23 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ferrylane.rzone.de",
-      "shamlegger.rzone.de"
+      "shamlegger.rzone.de",
+      "ferrylane.rzone.de"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 5,
+        "hostname": "smtp.rzone.de",
+        "addresses": [
+          "2a01:238:20a:202:50f0::2097",
+          "81.169.145.98"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx a redirect=_spf.strato.com ip4:81.169.145.133 ip4:81.169.145.132 ~all",

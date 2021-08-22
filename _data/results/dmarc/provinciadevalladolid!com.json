@@ -4,30 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns01.ono.com",
-      "dns02.ono.com"
+      "dns02.ono.com",
+      "dns01.ono.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 5,
-        "hostname": "correo1.dipvalladolid.es",
-        "addresses": [
-          "89.6.103.180"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "provinciadevalladolid-com.mail.protection.outlook.com",
-        "addresses": [
-          "104.47.12.36",
-          "104.47.14.36"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com -all",
