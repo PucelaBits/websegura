@@ -4,30 +4,15 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.ddgi.cat",
       "dns2.ddgi.cat",
+      "dns1.ddgi.cat",
       "dns2.grn.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mx1.ddgi.cat",
-        "addresses": [
-          "195.93.170.15"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mx2.ddgi.cat",
-        "addresses": [
-          "195.93.170.40"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 mx ip4:195.93.170.5 ip4:213.151.119.70 ip4:213.151.119.116 ip4:85.112.5.50 ~all",

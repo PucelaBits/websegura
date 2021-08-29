@@ -4,14 +4,62 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "servdns3.silme.es",
-      "silmail.silme.es"
+      "silmail.silme.es",
+      "servdns3.silme.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query 26.222.217.172.in-addr.arpa. IN PTR: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 1,
+        "hostname": "aspmx.l.google.com",
+        "addresses": [
+          "142.250.152.26",
+          "2607:f8b0:4001:c20::1b"
+        ]
+      },
+      {
+        "preference": 5,
+        "hostname": "alt1.aspmx.l.google.com",
+        "addresses": [
+          "173.194.77.26",
+          "2607:f8b0:4023:401::1a"
+        ]
+      },
+      {
+        "preference": 5,
+        "hostname": "alt2.aspmx.l.google.com",
+        "addresses": [
+          "173.194.219.27",
+          "2607:f8b0:4002:c03::1b"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "alt3.aspmx.l.google.com",
+        "addresses": [
+          "142.250.112.27",
+          "2607:f8b0:4023:1402::1a"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "alt4.aspmx.l.google.com",
+        "addresses": [
+          "172.217.197.26",
+          "2607:f8b0:400d:c0f::1a"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "correuweb.silme.es",
+        "addresses": [
+          "185.68.189.17"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:88.87.207.210  ip4:88.87.207.202/32 ip4:185.68.189.2/32 ip4:195.57.252.186/32 ip4:185.68.189.17/32 ip4:185.68.189.2/32 include:smtp.tgi.cat include:_spf.google.com ~all",

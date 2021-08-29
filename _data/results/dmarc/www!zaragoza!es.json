@@ -4,14 +4,32 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.zaragoza.es",
-      "dns.zaragoza.es"
+      "dns.zaragoza.es",
+      "dns2.zaragoza.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.zaragoza.es",
+        "addresses": [
+          "194.224.70.81"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mail2.zaragoza.es",
+        "addresses": [
+          "194.224.70.72"
+        ]
+      }
+    ],
+    "warnings": [
+      "The DNS operation timed out after 2.1 seconds",
+      "The reverse DNS of 194.224.70.72 is mail2.zaragoza.es, but the A/AAAA DNS records for mail2.zaragoza.es do not resolve to 194.224.70.72"
+    ]
   },
   "spf": {
     "record": "v=spf1 ip4:194.224.70.71 ip4:194.224.70.72 ip4:194.224.70.88 ip4:188.244.91.7 -all",

@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.madridsalud.org",
-      "dns1.madridsalud.org"
+      "dns1.madridsalud.org",
+      "dns2.madridsalud.org"
     ],
     "warnings": []
   },
@@ -19,7 +19,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The DNS operation timed out after 2.1 seconds",
+      "The reverse DNS of 146.255.96.10 is mail.madridsalud.es, but the A/AAAA DNS records for mail.madridsalud.es do not resolve to 146.255.96.10"
+    ]
   },
   "spf": {
     "record": null,

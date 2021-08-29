@@ -4,14 +4,55 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns481.webempresa.eu",
-      "ns482.webempresa.eu"
+      "ns482.webempresa.eu",
+      "ns481.webempresa.eu"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query 27.197.217.172.in-addr.arpa. IN PTR: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 1,
+        "hostname": "aspmx.l.google.com",
+        "addresses": [
+          "108.177.111.27",
+          "2607:f8b0:4001:c0c::1a"
+        ]
+      },
+      {
+        "preference": 5,
+        "hostname": "alt1.aspmx.l.google.com",
+        "addresses": [
+          "173.194.77.27",
+          "2607:f8b0:4023:401::1b"
+        ]
+      },
+      {
+        "preference": 5,
+        "hostname": "alt2.aspmx.l.google.com",
+        "addresses": [
+          "173.194.219.26",
+          "2607:f8b0:4002:c03::1a"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "alt3.aspmx.l.google.com",
+        "addresses": [
+          "142.250.112.26",
+          "2607:f8b0:4023:1402::1b"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "alt4.aspmx.l.google.com",
+        "addresses": [
+          "172.217.197.26",
+          "2607:f8b0:400d:c0f::1a"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:146.59.148.107 ip4:178.33.167.48 include:_spf.webempresa.eu ip4:151.80.24.226 +a +mx +include:_spf.google.com ~all",

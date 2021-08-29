@@ -4,36 +4,23 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns3.prored.es",
+      "sole.prored.es",
       "amparo.prored.es",
-      "sole.prored.es"
+      "dns3.prored.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "elpuig.prored.es",
-        "addresses": [
-          "83.136.188.48"
-        ]
-      },
-      {
-        "preference": 100,
-        "hostname": "correo.prored.es",
-        "addresses": [
-          "5.35.200.131"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 mx include:prored.es -all",
     "valid": true,
     "dns_lookups": 3,
-    "warnings": [],
+    "warnings": [
+      "The DNS operation timed out after 3.1 seconds"
+    ],
     "parsed": {
       "pass": [
         {
@@ -55,10 +42,6 @@
           "dns_lookups": 1,
           "parsed": {
             "pass": [
-              {
-                "value": "5.35.200.136",
-                "mechanism": "a"
-              },
               {
                 "value": "83.136.184.0/21",
                 "mechanism": "ip4"
@@ -84,7 +67,9 @@
             "exp": null,
             "all": "fail"
           },
-          "warnings": []
+          "warnings": [
+            "The DNS operation timed out after 3.1 seconds"
+          ]
         }
       ],
       "redirect": null,
@@ -96,6 +81,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.elpuig.es\n\ngoogle-site-verification=sxdCQ69pfxv6_pDK7zt97TizK6bqK-zL9xa1Y6AzZ18\n\nv=spf1 mx include:prored.es -all"
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.elpuig.es\n\nv=spf1 mx include:prored.es -all\n\ngoogle-site-verification=sxdCQ69pfxv6_pDK7zt97TizK6bqK-zL9xa1Y6AzZ18"
   }
 }

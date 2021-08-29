@@ -10,23 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mx.tenerife.es",
-        "addresses": [
-          "212.170.134.61"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "mx1.tenerife.es",
-        "addresses": [
-          "212.170.134.62"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 a mx  ip4:212.170.134.61/32 ip4:212.170.134.62/32 ip4:212.170.134.63/32 ip4:212.170.134.64/32 include:_spf.google.com include:spf.protection.outlook.com ~all",

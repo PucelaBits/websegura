@@ -17,7 +17,7 @@
         "preference": 0,
         "hostname": "firabarcelona-com.mail.protection.outlook.com",
         "addresses": [
-          "104.47.0.36",
+          "104.47.1.36",
           "104.47.2.36"
         ]
       }
@@ -28,8 +28,7 @@
     "record": "v=spf1 ip4:82.223.209.146/32 ip4:195.47.206.154/32 ip4:95.215.120.0/22 include:spf.mittum.com include:spf.protection.outlook.com include:_spf.evicertia.com include:_spf.inbenta.com include:spf.mandrillapp.com include:servers.mcsv.net include:amazonses.com -all",
     "valid": false,
     "warnings": [],
-    "error": "Parsing the SPF record requires 13/10 maximum DNS lookups - https://tools.ietf.org/html/rfc7208#section-4.6.4",
-    "dns_lookups": 13
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "dmarc": {
     "record": "v=DMARC1; p=none; pct=100; rua=mailto:abuse@firabarcelona.com; ruf=mailto:postmaster@firabarcelona.com; fo=1",

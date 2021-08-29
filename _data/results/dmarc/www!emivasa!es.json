@@ -33,8 +33,8 @@
         "preference": 20,
         "hostname": "emivasa-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.12.36",
-          "104.47.13.36"
+          "104.47.13.36",
+          "104.47.14.36"
         ]
       }
     ],
@@ -215,7 +215,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; rua=mailto:089563e46395014@rep.dmarcanalyzer.com; ruf=mailto:089563e46395014@for.dmarcanalyzer.com; fo=1;",
+    "record": "v=DMARC1; p=none; rua=mailto:123604d72a42667@rep.dmarcanalyzer.com; ruf=mailto:123604d72a42667@for.dmarcanalyzer.com; fo=1;",
     "valid": true,
     "location": "emivasa.es",
     "warnings": [],
@@ -232,7 +232,7 @@
         "value": [
           {
             "scheme": "mailto",
-            "address": "089563e46395014@rep.dmarcanalyzer.com",
+            "address": "123604d72a42667@rep.dmarcanalyzer.com",
             "size_limit": null
           }
         ],
@@ -242,7 +242,7 @@
         "value": [
           {
             "scheme": "mailto",
-            "address": "089563e46395014@for.dmarcanalyzer.com",
+            "address": "123604d72a42667@for.dmarcanalyzer.com",
             "size_limit": null
           }
         ],

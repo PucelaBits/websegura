@@ -4,14 +4,71 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.nominalia.com",
-      "dns2.nominalia.com"
+      "dns2.nominalia.com",
+      "dns1.nominalia.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query 27.197.217.172.in-addr.arpa. IN PTR: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 1,
+        "hostname": "aspmx.l.google.com",
+        "addresses": [
+          "142.250.125.27",
+          "2607:f8b0:4001:c03::1a"
+        ]
+      },
+      {
+        "preference": 5,
+        "hostname": "alt1.aspmx.l.google.com",
+        "addresses": [
+          "173.194.77.27",
+          "2607:f8b0:4023:401::1b"
+        ]
+      },
+      {
+        "preference": 5,
+        "hostname": "alt2.aspmx.l.google.com",
+        "addresses": [
+          "173.194.219.26",
+          "2607:f8b0:4002:c03::1a"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "aspmx2.googlemail.com",
+        "addresses": [
+          "173.194.77.26",
+          "2607:f8b0:4023:401::1b"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "aspmx3.googlemail.com",
+        "addresses": [
+          "173.194.219.27",
+          "2607:f8b0:4002:c03::1b"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "aspmx4.googlemail.com",
+        "addresses": [
+          "142.250.112.26",
+          "2607:f8b0:4023:1402::1b"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "aspmx5.googlemail.com",
+        "addresses": [
+          "172.217.197.27",
+          "2607:f8b0:400d:c0f::1a"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:aspmx.googlemail.com ~all",

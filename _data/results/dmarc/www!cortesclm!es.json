@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns6.cim.es",
-      "dns5.cim.es"
+      "dns5.cim.es",
+      "dns6.cim.es"
     ],
     "warnings": []
   },
@@ -19,7 +19,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The DNS operation timed out after 2.1 seconds",
+      "The reverse DNS of 89.17.211.117 is m223.cim.es, but the A/AAAA DNS records for m223.cim.es do not resolve to 89.17.211.117"
+    ]
   },
   "spf": {
     "record": "v=spf1 mx a:mail.cortesclm.es mx ip4:89.17.211.96/27 ip4:195.77.144.160/28 ~all",

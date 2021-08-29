@@ -5,11 +5,11 @@
   "ns": {
     "hostnames": [
       "ns2.ssib.es",
-      "ns1.ibsalut.es",
-      "dns1.ibsalut.es",
-      "dns2.ibsalut.es",
       "ns1.ssib.es",
-      "ns2.ibsalut.es"
+      "dns2.ibsalut.es",
+      "dns1.ibsalut.es",
+      "ns2.ibsalut.es",
+      "ns1.ibsalut.es"
     ],
     "warnings": []
   },
@@ -57,7 +57,7 @@
       "include": [
         {
           "domain": "spf.tmes.trendmicro.com",
-          "record": "v=spf1 ip4:18.208.22.64/26 ip4:18.208.22.128/25 ip4:18.185.115.128/26 ip4:18.185.115.0/25 ip4:13.238.202.0/25 ip4:13.238.202.128/26 ip4:18.176.203.128/26 ip4:18.176.203.192/26 ip4:18.177.156.0/26 ip4:18.177.156.64/26 include:spfb.tmes.trendmicro.com  ~all",
+          "record": "v=spf1 ip4:18.208.22.64/26 ip4:18.208.22.128/25 ip4:18.185.115.128/26 ip4:18.185.115.0/25 ip4:13.238.202.0/25 ip4:13.238.202.128/26 ip4:18.176.203.128/25 ip4:13.213.174.128/25 ip4:18.177.156.0/25 ip4:13.213.220.0/25 include:spfb.tmes.trendmicro.com ~all",
           "dns_lookups": 1,
           "parsed": {
             "pass": [
@@ -86,19 +86,19 @@
                 "mechanism": "ip4"
               },
               {
-                "value": "18.176.203.128/26",
+                "value": "18.176.203.128/25",
                 "mechanism": "ip4"
               },
               {
-                "value": "18.176.203.192/26",
+                "value": "13.213.174.128/25",
                 "mechanism": "ip4"
               },
               {
-                "value": "18.177.156.0/26",
+                "value": "18.177.156.0/25",
                 "mechanism": "ip4"
               },
               {
-                "value": "18.177.156.64/26",
+                "value": "13.213.220.0/25",
                 "mechanism": "ip4"
               }
             ],

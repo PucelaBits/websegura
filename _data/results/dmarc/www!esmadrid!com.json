@@ -5,14 +5,55 @@
   "ns": {
     "hostnames": [
       "ns07.ns-cloud4b.org",
-      "ns06.ns-cloud4b.net",
-      "ns08.ns-cloud4b.com"
+      "ns08.ns-cloud4b.com",
+      "ns06.ns-cloud4b.net"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query 27.222.217.172.in-addr.arpa. IN PTR: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 0,
+        "hostname": "aspmx.l.google.com",
+        "addresses": [
+          "108.177.112.27",
+          "2607:f8b0:4001:c56::1b"
+        ]
+      },
+      {
+        "preference": 5,
+        "hostname": "alt1.aspmx.l.google.com",
+        "addresses": [
+          "173.194.77.27",
+          "2607:f8b0:4023:401::1a"
+        ]
+      },
+      {
+        "preference": 5,
+        "hostname": "alt2.aspmx.l.google.com",
+        "addresses": [
+          "173.194.219.27",
+          "2607:f8b0:4002:c03::1b"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "aspmx2.googlemail.com",
+        "addresses": [
+          "173.194.77.27",
+          "2607:f8b0:4023:401::1b"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "aspmx3.googlemail.com",
+        "addresses": [
+          "173.194.219.26",
+          "2607:f8b0:4002:c03::1b"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:195.53.119.133 include:_spf.google.com include:_spf.simpleviewinc.com include:teenvio.com ~all",

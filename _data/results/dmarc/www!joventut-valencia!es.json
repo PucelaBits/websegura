@@ -4,22 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "cl2020060918001.dnssw.net",
-      "pro.joventut-valencia.es"
+      "pro.joventut-valencia.es",
+      "cl2020060918001.dnssw.net"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 0,
-        "hostname": "joventut-valencia.es",
-        "addresses": [
-          "185.61.124.243"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 ip4:185.61.124.243 +a +mx ~all",

@@ -5,22 +5,14 @@
   "ns": {
     "hostnames": [
       "ns2.interdomain.net",
-      "ns1.interdomain.net",
-      "ns3.interdomain.es"
+      "ns3.interdomain.es",
+      "ns1.interdomain.net"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "correo.ayto-laviana.es",
-        "addresses": [
-          "185.54.195.145"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 +mx ip4:185.54.195.145 ip4:185.54.195.146 ip4:185.54.195.147 ip4:185.54.195.149 -all",

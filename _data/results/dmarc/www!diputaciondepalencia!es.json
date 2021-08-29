@@ -4,14 +4,55 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.diputaciondepalencia.es",
-      "dns2.diputaciondepalencia.es"
+      "dns2.diputaciondepalencia.es",
+      "dns1.diputaciondepalencia.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query 27.197.217.172.in-addr.arpa. IN PTR: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "aspmx.l.google.com",
+        "addresses": [
+          "108.177.111.27",
+          "2607:f8b0:4001:c23::1a"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "alt1.aspmx.l.google.com",
+        "addresses": [
+          "173.194.77.27",
+          "2607:f8b0:4023:401::1b"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "alt2.aspmx.l.google.com",
+        "addresses": [
+          "173.194.219.27",
+          "2607:f8b0:4002:c03::1b"
+        ]
+      },
+      {
+        "preference": 30,
+        "hostname": "aspmx2.googlemail.com",
+        "addresses": [
+          "173.194.77.26",
+          "2607:f8b0:4023:401::1b"
+        ]
+      },
+      {
+        "preference": 30,
+        "hostname": "aspmx3.googlemail.com",
+        "addresses": [
+          "173.194.219.26",
+          "2607:f8b0:4002:c03::1b"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:_spf.google.com ~all include:servers.mcsv.net ~all",

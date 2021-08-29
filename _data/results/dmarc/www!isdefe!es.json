@@ -16,57 +16,9 @@
     "error": "The DNS operation timed out after 3.1 seconds"
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; pct=100; fo=1; rua=mailto:sistemas@isdefe.es",
-    "valid": true,
-    "location": "isdefe.es",
-    "warnings": [
-      "Failed to retrieve MX records for the domain of rua email address sistemas@isdefe.es - The DNS operation timed out after 3.1 seconds"
-    ],
-    "tags": {
-      "v": {
-        "value": "DMARC1",
-        "explicit": true
-      },
-      "p": {
-        "value": "none",
-        "explicit": true
-      },
-      "pct": {
-        "value": 100,
-        "explicit": true
-      },
-      "fo": {
-        "value": [
-          "1"
-        ],
-        "explicit": true
-      },
-      "rua": {
-        "value": "mailto:sistemas@isdefe.es",
-        "explicit": true
-      },
-      "adkim": {
-        "value": "r",
-        "explicit": false
-      },
-      "aspf": {
-        "value": "r",
-        "explicit": false
-      },
-      "rf": {
-        "value": [
-          "afrf"
-        ],
-        "explicit": false
-      },
-      "ri": {
-        "value": 86400,
-        "explicit": false
-      },
-      "sp": {
-        "value": "none",
-        "explicit": false
-      }
-    }
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "The DNS operation timed out after 3.1 seconds"
   }
 }

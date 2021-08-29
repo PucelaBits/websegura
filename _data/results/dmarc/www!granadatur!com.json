@@ -4,14 +4,22 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.granadatur.com",
-      "ns2.granadatur.com"
+      "ns2.granadatur.com",
+      "ns1.granadatur.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.granadatur.com",
+        "addresses": [
+          "217.18.166.184"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 +a +mx +ip4:217.18.160.0/20 -all",

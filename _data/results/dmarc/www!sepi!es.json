@@ -5,29 +5,14 @@
   "ns": {
     "hostnames": [
       "ns06.ns-cloud4b.net",
-      "ns08.ns-cloud4b.com",
-      "ns07.ns-cloud4b.org"
+      "ns07.ns-cloud4b.org",
+      "ns08.ns-cloud4b.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "smtp1.sepi.es",
-        "addresses": [
-          "94.100.132.100"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "smtp2.sepi.es",
-        "addresses": [
-          "83.246.65.100"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 ip4:93.159.211.185 ip4:194.140.77.185 ip4:194.140.77.186 ip4:154.58.19.206 include:sepi.ip-zone.com include:emailservice.cpd.as -all",

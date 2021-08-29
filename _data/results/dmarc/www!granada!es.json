@@ -4,15 +4,32 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns",
       "ns2.granada.org",
-      "ns.granada.org"
+      "ns.granada.org",
+      "ns"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query 27.197.217.172.in-addr.arpa. IN PTR: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 1,
+        "hostname": "aspmx.l.google.com",
+        "addresses": [
+          "209.85.200.26",
+          "2607:f8b0:4001:c0a::1a"
+        ]
+      },
+      {
+        "preference": 5,
+        "hostname": "alt1.aspmx.l.google.com",
+        "addresses": [
+          "173.194.77.26",
+          "2607:f8b0:4023:401::1a"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": null,

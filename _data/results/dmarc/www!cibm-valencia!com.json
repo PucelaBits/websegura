@@ -10,18 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mail.cibm-valencia.com",
-        "addresses": [
-          "213.27.202.36"
-        ]
-      }
-    ],
-    "warnings": [
-      "The reverse DNS of 213.27.202.36 is mail5.servidoreswindows.net, but the A/AAAA DNS records for mail5.servidoreswindows.net do not resolve to 213.27.202.36"
-    ]
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": null,

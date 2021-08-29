@@ -4,15 +4,23 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "nso.nic.es",
+      "tania.diputoledo.es",
       "alula.diputoledo.es",
-      "tania.diputoledo.es"
+      "nso.nic.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "correo.diputoledo.es",
+        "addresses": [
+          "217.124.228.11"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 +a +mx +ip4:217.124.228.11 ~all",

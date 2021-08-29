@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "b-ns.primari.net",
-      "a-ns.primari.net"
+      "a-ns.primari.net",
+      "b-ns.primari.net"
     ],
     "warnings": []
   },
@@ -29,12 +29,10 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx ip4:195.53.27.99 a:smail.utrera.org include:_spf.google.com ip4:195.53.27.100 a:mainserver.aytoutrpdc.org ~all",
+    "record": "v=spf1 mx ip4:195.53.27.99 a:smail.utrera.org include:_spf.google.com ~all",
     "valid": true,
-    "dns_lookups": 7,
-    "warnings": [
-      "The domain mainserver.aytoutrpdc.org does not exist"
-    ],
+    "dns_lookups": 6,
+    "warnings": [],
     "parsed": {
       "pass": [
         {
@@ -52,10 +50,6 @@
         {
           "value": "195.53.27.99",
           "mechanism": "a"
-        },
-        {
-          "value": "195.53.27.100",
-          "mechanism": "ip4"
         }
       ],
       "neutral": [],

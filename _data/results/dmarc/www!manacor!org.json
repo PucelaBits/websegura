@@ -15,47 +15,46 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "209.85.232.26",
-          "2607:f8b0:400d:c02::1b"
+          "108.177.120.27",
+          "2607:f8b0:4001:c0a::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "2800:3f0:4003:c00::1b",
-          "64.233.186.27"
+          "173.194.77.26",
+          "2607:f8b0:4023:401::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "209.85.202.26",
-          "2a00:1450:400b:c00::1b"
+          "173.194.219.27",
+          "2607:f8b0:4002:c03::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "2a00:1450:400c:c0b::1a",
-          "64.233.184.26"
+          "142.250.112.26",
+          "2607:f8b0:4023:1402::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "142.250.27.26",
-          "2a00:1450:4025:401::1a"
+          "172.217.197.26",
+          "2607:f8b0:400d:c0f::1a"
         ]
       }
     ],
     "warnings": [
-      "2800:3f0:4003:c00::1b does not have any reverse DNS (PTR) records",
-      "142.250.27.26 does not have any reverse DNS (PTR) records",
-      "2a00:1450:4025:401::1a does not have any reverse DNS (PTR) records"
+      "The DNS operation timed out after 2.1 seconds",
+      "The reverse DNS of 2607:f8b0:4002:c03::1a is ya-in-x1a.1e100.net, but the A/AAAA DNS records for ya-in-x1a.1e100.net do not resolve to 2607:f8b0:4002:c03::1a"
     ]
   },
   "spf": {

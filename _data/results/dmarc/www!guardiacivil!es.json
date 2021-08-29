@@ -4,30 +4,15 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.guardiacivil.es",
       "dns1.guardiacivil.es",
-      "artemis.ttd.net"
+      "artemis.ttd.net",
+      "dns2.guardiacivil.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mailgw1.guardiacivil.es",
-        "addresses": [
-          "194.179.107.37"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "mailgw2.guardiacivil.es",
-        "addresses": [
-          "194.179.107.17"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 mx ip4:194.179.107.37 ip4:194.179.107.17 ~all",

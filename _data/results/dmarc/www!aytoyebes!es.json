@@ -5,24 +5,14 @@
   "ns": {
     "hostnames": [
       "ns2.almazena.com",
-      "ns1.almazena.com",
-      "ns3.almazena.com"
+      "ns3.almazena.com",
+      "ns1.almazena.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 0,
-        "hostname": "aytoyebes.es",
-        "addresses": [
-          "185.5.126.59"
-        ]
-      }
-    ],
-    "warnings": [
-      "185.5.126.59 does not have any reverse DNS (PTR) records"
-    ]
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": null,

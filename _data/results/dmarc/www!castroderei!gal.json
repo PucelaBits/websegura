@@ -76,7 +76,7 @@
         },
         {
           "domain": "hl901.imglohosting.com",
-          "record": "v=spf1a~all",
+          "record": "v=spf1 a ~all",
           "dns_lookups": 1,
           "parsed": {
             "pass": [
