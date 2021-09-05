@@ -25,15 +25,12 @@
         "preference": 20,
         "hostname": "cluster4a.eu.messagelabs.com",
         "addresses": [
-          "18.197.48.43",
-          "3.125.67.222"
+          "18.193.218.215",
+          "18.198.45.140"
         ]
       }
     ],
-    "warnings": [
-      "The DNS operation timed out after 2.1 seconds",
-      "The reverse DNS of 85.158.142.199 is mail244.messagelabs.com, but the A/AAAA DNS records for mail244.messagelabs.com do not resolve to 85.158.142.199"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.messagelabs.com a:smtp1.bilbao.eus a:smtp2.bilbao.eus ~all",

@@ -4,23 +4,15 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns4.guebs.com",
       "dns3.guebs.com",
+      "dns4.guebs.com",
       "dns2.guebs.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 0,
-        "hostname": "mail.defensornavarra.com",
-        "addresses": [
-          "194.62.97.134"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 +a include:_spf.guebs.net +mx ip4:194.62.97.134 ~all",

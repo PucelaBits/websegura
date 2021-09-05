@@ -9,16 +9,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "antispam.asturhosting.com",
-        "addresses": [
-          "82.223.89.64"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com include:_spf.asturservers.com a:212.89.4.66 +mx ~all",
@@ -184,6 +176,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "error": "The DNS operation timed out after 3.1 seconds"
   }
 }

@@ -15,40 +15,40 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "172.253.114.26",
-          "2607:f8b0:4001:c18::1a"
+          "142.250.107.27",
+          "2607:f8b0:400e:c09::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "173.194.77.27",
-          "2607:f8b0:4023:401::1b"
+          "142.250.115.27",
+          "2607:f8b0:4023:1004::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "173.194.219.27",
-          "2607:f8b0:4002:c03::1b"
+          "2607:f8b0:4003:c15::1b",
+          "64.233.171.26"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "142.250.112.27",
-          "2607:f8b0:4023:1402::1b"
+          "142.250.152.26",
+          "2607:f8b0:4001:c56::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "172.217.197.27",
-          "2607:f8b0:400d:c0f::1a"
+          "172.253.113.27",
+          "2607:f8b0:4023:1::1a"
         ]
       }
     ],
@@ -57,7 +57,7 @@
   "spf": {
     "record": "v=spf1 ip4:107.6.151.134 +a +mx include:relay.mailchannels.net include:_spf.google.com ~all",
     "valid": true,
-    "dns_lookups": 10,
+    "dns_lookups": 7,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -96,122 +96,51 @@
       "include": [
         {
           "domain": "relay.mailchannels.net",
-          "record": "v=spf1 include:spf1.mailchannels.net include:spf2.mailchannels.net include:spf3.mailchannels.net ~all",
-          "dns_lookups": 3,
+          "record": "v=spf1 ip4:23.83.208.0/20 ip4:46.232.183.0/24 ip4:199.10.31.235/32 ip4:199.10.31.236/32 ip4:172.255.62.10/32 ip4:172.255.62.11/32 ip4:54.245.125.39/32 ip4:103.18.109.138/32 ip4:54.214.232.113/32 ~all",
+          "dns_lookups": 0,
           "parsed": {
-            "pass": [],
+            "pass": [
+              {
+                "value": "23.83.208.0/20",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "46.232.183.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "199.10.31.235/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "199.10.31.236/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "172.255.62.10/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "172.255.62.11/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "54.245.125.39/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "103.18.109.138/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "54.214.232.113/32",
+                "mechanism": "ip4"
+              }
+            ],
             "neutral": [],
             "softfail": [],
             "fail": [],
-            "include": [
-              {
-                "domain": "spf1.mailchannels.net",
-                "record": "v=spf1 ip4:46.232.183.0/24 ip4:23.83.208.0/20 ip4:177.153.0.128/25 ip4:191.252.57.0/25 ~all",
-                "dns_lookups": 0,
-                "parsed": {
-                  "pass": [
-                    {
-                      "value": "46.232.183.0/24",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "23.83.208.0/20",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "177.153.0.128/25",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "191.252.57.0/25",
-                      "mechanism": "ip4"
-                    }
-                  ],
-                  "neutral": [],
-                  "softfail": [],
-                  "fail": [],
-                  "include": [],
-                  "redirect": null,
-                  "exp": null,
-                  "all": "softfail"
-                },
-                "warnings": []
-              },
-              {
-                "domain": "spf2.mailchannels.net",
-                "record": "v=spf1 ip4:199.10.31.235/32 ip4:199.10.31.236/32 ip4:172.255.62.10/32 ip4:172.255.62.11/32 ip4:103.18.109.138/32 ip4:177.153.0.130/32 ip4:54.214.232.113/32 ip4:54.245.125.39/32 ~all",
-                "dns_lookups": 0,
-                "parsed": {
-                  "pass": [
-                    {
-                      "value": "199.10.31.235/32",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "199.10.31.236/32",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "172.255.62.10/32",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "172.255.62.11/32",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "103.18.109.138/32",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "177.153.0.130/32",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "54.214.232.113/32",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "54.245.125.39/32",
-                      "mechanism": "ip4"
-                    }
-                  ],
-                  "neutral": [],
-                  "softfail": [],
-                  "fail": [],
-                  "include": [],
-                  "redirect": null,
-                  "exp": null,
-                  "all": "softfail"
-                },
-                "warnings": []
-              },
-              {
-                "domain": "spf3.mailchannels.net",
-                "record": "v=spf1 ip4:52.34.31.144/32 ip4:34.219.98.66/32 ~all",
-                "dns_lookups": 0,
-                "parsed": {
-                  "pass": [
-                    {
-                      "value": "52.34.31.144/32",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "34.219.98.66/32",
-                      "mechanism": "ip4"
-                    }
-                  ],
-                  "neutral": [],
-                  "softfail": [],
-                  "fail": [],
-                  "include": [],
-                  "redirect": null,
-                  "exp": null,
-                  "all": "softfail"
-                },
-                "warnings": []
-              }
-            ],
+            "include": [],
             "redirect": null,
             "exp": null,
             "all": "softfail"

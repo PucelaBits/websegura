@@ -4,23 +4,15 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns09.ns-cloud4b.com",
       "ns07.ns-cloud4b.org",
-      "ns06.ns-cloud4b.net"
+      "ns06.ns-cloud4b.net",
+      "ns09.ns-cloud4b.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "netr.portel.com",
-        "addresses": [
-          "195.53.242.101"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": null,

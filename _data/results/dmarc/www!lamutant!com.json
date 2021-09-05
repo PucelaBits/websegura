@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns50212.webempresa.eu",
-      "ns50211.webempresa.eu"
+      "ns50211.webempresa.eu",
+      "ns50212.webempresa.eu"
     ],
     "warnings": []
   },
@@ -19,10 +19,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The DNS operation timed out after 2.1 seconds",
-      "The reverse DNS of 54.36.77.111 is ns50211.webempresa.eu, but the A/AAAA DNS records for ns50211.webempresa.eu do not resolve to 54.36.77.111"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:51.91.83.222 ip4:54.36.77.111 include:_spf.webempresa.eu +a +mx ~all",

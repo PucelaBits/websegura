@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.t-systems.es",
+      "ns2.t-systems.es",
       "ns.mcx.es",
-      "ns2.t-systems.es"
+      "ns1.t-systems.es"
     ],
     "warnings": []
   },
@@ -25,6 +25,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "error": "A DMARC record does not exist for this domain or its base domain"
   }
 }

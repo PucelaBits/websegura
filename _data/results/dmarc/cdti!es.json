@@ -17,7 +17,7 @@
         "preference": 10,
         "hostname": "cdti-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.4.36",
+          "104.47.5.36",
           "104.47.6.36"
         ]
       }
@@ -157,6 +157,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.cdti.es\n\nglobalsign-domain-verification=uV82P1qPVO4hngoQfpfCHaGcWlJe0DSDWMuGIpFmTX"
   }
 }

@@ -14,7 +14,7 @@
     "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
-    "record": "v=spf1 ip4:81.201.101.195 include:spf.protection.outlook.com include:spf.mandrillapp.com -all",
+    "record": "v=spf1 ip4:81.201.101.195 ip4:154.52.0.195 ip4:195.76.48.66 ip4:195.76.48.76 include:spf.protection.outlook.com include:spf.mandrillapp.com -all",
     "valid": true,
     "dns_lookups": 3,
     "warnings": [],
@@ -22,6 +22,18 @@
       "pass": [
         {
           "value": "81.201.101.195",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "154.52.0.195",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "195.76.48.66",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "195.76.48.76",
           "mechanism": "ip4"
         }
       ],

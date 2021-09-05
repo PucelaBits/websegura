@@ -4,46 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.ipcomsistemas.net",
-      "dns1.ipcomsistemas.net"
+      "dns1.ipcomsistemas.net",
+      "dns2.ipcomsistemas.net"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mx01.hornetsecurity.com",
-        "addresses": [
-          "94.100.132.8"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mx02.hornetsecurity.com",
-        "addresses": [
-          "94.100.136.8"
-        ]
-      },
-      {
-        "preference": 30,
-        "hostname": "mx03.hornetsecurity.com",
-        "addresses": [
-          "94.100.134.8"
-        ]
-      },
-      {
-        "preference": 40,
-        "hostname": "mx04.hornetsecurity.com",
-        "addresses": [
-          "94.100.136.7"
-        ]
-      }
-    ],
-    "warnings": [
-      "The DNS operation timed out after 2.1 seconds",
-      "The reverse DNS of 94.100.132.8 is mx01.hornetsecurity.com, but the A/AAAA DNS records for mx01.hornetsecurity.com do not resolve to 94.100.132.8"
-    ]
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 include:spf.hornetsecurity.com ip4:88.151.16.0/22 -all",

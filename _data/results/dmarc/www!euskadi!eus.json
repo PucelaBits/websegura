@@ -10,17 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "euskadi-eus.mail.protection.outlook.com",
-        "addresses": [
-          "104.47.5.36",
-          "104.47.6.36"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "All nameservers failed to answer the query euskadi.eus. IN MX: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
   },
   "spf": {
     "record": "v=spf1 include:servers.mcsv.net include:euskadi.ip-zone.com include:eu.zcsend.net include:_spf1.shmail.fr include:_spf2.shmail.fr ip4:212.142.249.0/24 ip4:212.55.29.0/24 ip4:195.53.88.0/24 ip4:62.99.63.0/24 ip4:217.124.154.0/24 ip4:185.161.119.32/27 include:spf.protection.outlook.com -all",
@@ -114,7 +105,7 @@
                   "include": [
                     {
                       "domain": "spf.ipzmarketing.com",
-                      "record": "v=spf1 ip4:93.159.208.0/21 ip4:185.103.8.0/22 ip4:5.56.22.0/24 ip4:82.199.156.0/24 ~all",
+                      "record": "v=spf1 ip4:93.159.208.0/21 ip4:185.103.8.0/22 ip4:5.56.22.0/24 ip4:82.199.156.0/24 ip4:212.192.13.0/24 ~all",
                       "dns_lookups": 0,
                       "parsed": {
                         "pass": [
@@ -132,6 +123,10 @@
                           },
                           {
                             "value": "82.199.156.0/24",
+                            "mechanism": "ip4"
+                          },
+                          {
+                            "value": "212.192.13.0/24",
                             "mechanism": "ip4"
                           }
                         ],

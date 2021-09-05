@@ -7,35 +7,24 @@
     "error": "The DNS operation timed out after 3.1 seconds"
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.cudillero.es",
+        "addresses": [
+          "194.53.148.173"
+        ]
+      }
+    ],
+    "warnings": [
+      "The DNS operation timed out after 2.1 seconds",
+      "The reverse DNS of 194.53.148.173 is servidor4.asegi.es, but the A/AAAA DNS records for servidor4.asegi.es do not resolve to 194.53.148.173"
+    ]
   },
   "spf": {
-    "record": "v=spf1 mx a ip6:2a01:b5c0:0:2::168/64 ~all",
-    "valid": true,
-    "dns_lookups": 2,
-    "warnings": [
-      "The DNS operation timed out after 3.1 seconds"
-    ],
-    "parsed": {
-      "pass": [
-        {
-          "value": "mail.cudillero.es",
-          "mechanism": "mx"
-        },
-        {
-          "value": "2a01:b5c0:0:2::168/64",
-          "mechanism": "ip6"
-        }
-      ],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [],
-      "redirect": null,
-      "exp": null,
-      "all": "softfail"
-    }
+    "record": null,
+    "valid": false,
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "dmarc": {
     "record": null,

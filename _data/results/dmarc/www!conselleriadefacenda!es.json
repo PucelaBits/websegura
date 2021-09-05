@@ -26,10 +26,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The DNS operation timed out after 2.1 seconds",
-      "The reverse DNS of 212.51.32.239 is mxr.mundo-r.com, but the A/AAAA DNS records for mxr.mundo-r.com do not resolve to 212.51.32.239"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:212.51.62.160/27 ip4:91.117.126.128/25 include:mundo-r.com -all",

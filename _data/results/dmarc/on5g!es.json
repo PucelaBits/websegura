@@ -4,11 +4,11 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns4.cdmondns-01.org",
-      "ns2.cdmon.net",
       "ns5.cdmondns-01.com",
-      "ns1.cdmon.net",
-      "ns3.cdmon.net"
+      "ns2.cdmon.net",
+      "ns3.cdmon.net",
+      "ns4.cdmondns-01.org",
+      "ns1.cdmon.net"
     ],
     "warnings": []
   },
@@ -18,7 +18,7 @@
         "preference": 0,
         "hostname": "on5g-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.4.36",
+          "104.47.5.36",
           "104.47.6.36"
         ]
       }
@@ -141,6 +141,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.on5g.es\n\nv=spf1 include:spf.protection.outlook.com -all\n\nu0022vu003Dspf1u0020includeu003Au005Fspfu002Esrvu002Ecatu0020includeu003Au005Fspfu002Egoogleu002Ecomu0020u007Eallu0022u007Cu007Cu0022googleu002Dsiteu002Dverificationu003DgQSFiB9jqPX3yu002DVKqhf1wiVtP7GVk4dGL8ctbFuCTlAu0022u007Cu007Cu0022MSu003Dms63453700u0022\n\nSFMC-YFmPcIzaeiRNC4ktUhkChdVPWxM-r0BVztSn-XnC"
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.on5g.es\n\nu0022vu003Dspf1u0020includeu003Au005Fspfu002Esrvu002Ecatu0020includeu003Au005Fspfu002Egoogleu002Ecomu0020u007Eallu0022u007Cu007Cu0022googleu002Dsiteu002Dverificationu003DgQSFiB9jqPX3yu002DVKqhf1wiVtP7GVk4dGL8ctbFuCTlAu0022u007Cu007Cu0022MSu003Dms63453700u0022\n\nSFMC-YFmPcIzaeiRNC4ktUhkChdVPWxM-r0BVztSn-XnC\n\nv=spf1 include:spf.protection.outlook.com -all"
   }
 }

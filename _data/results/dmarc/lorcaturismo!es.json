@@ -11,8 +11,19 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "lorcaturismo.es",
+        "addresses": [
+          "213.0.108.7"
+        ]
+      }
+    ],
+    "warnings": [
+      "The domain red213-7.lorca.es does not exist",
+      "The reverse DNS of 213.0.108.7 is red213-7.lorca.es, but the A/AAAA DNS records for red213-7.lorca.es do not resolve to 213.0.108.7"
+    ]
   },
   "spf": {
     "record": "v=spf1 a mx ptr -all",
@@ -49,6 +60,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "error": "A DMARC record does not exist for this domain or its base domain"
   }
 }

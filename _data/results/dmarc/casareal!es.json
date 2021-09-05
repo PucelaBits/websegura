@@ -10,8 +10,37 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 1,
+        "hostname": "mx01.hornetsecurity.com",
+        "addresses": [
+          "94.100.132.8"
+        ]
+      },
+      {
+        "preference": 2,
+        "hostname": "mx02.hornetsecurity.com",
+        "addresses": [
+          "94.100.136.8"
+        ]
+      },
+      {
+        "preference": 3,
+        "hostname": "mx03.hornetsecurity.com",
+        "addresses": [
+          "94.100.134.8"
+        ]
+      },
+      {
+        "preference": 4,
+        "hostname": "mx04.hornetsecurity.com",
+        "addresses": [
+          "94.100.136.7"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com ip4:217.124.155.49/32 ip4:194.179.47.226/32 include:spf.hornetsecurity.com ~all",

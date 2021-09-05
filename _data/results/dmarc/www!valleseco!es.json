@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1080.ui-dns.de",
+      "ns1080.ui-dns.com",
       "ns1080.ui-dns.org",
       "ns1080.ui-dns.biz",
-      "ns1080.ui-dns.com"
+      "ns1080.ui-dns.de"
     ],
     "warnings": []
   },
@@ -17,14 +17,17 @@
         "preference": 10,
         "hostname": "mx1-eu.mtaroutes.com",
         "addresses": [
-          "130.117.54.106",
-          "2001:978:2:19::e:100"
+          "130.117.53.188",
+          "2001:978:2:7::162:100"
         ]
       },
       {
         "preference": 20,
         "hostname": "mx2-eu.mtaroutes.com",
-        "addresses": []
+        "addresses": [
+          "149.13.75.27",
+          "2001:978:2:7::162:100"
+        ]
       },
       {
         "preference": 30,
@@ -41,9 +44,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The DNS operation timed out after 3.1 seconds"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx ip4:80.28.208.248 a:mail.valleseco.es a:mail0.valleseco.es -all",

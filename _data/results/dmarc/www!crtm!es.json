@@ -11,7 +11,7 @@
   },
   "mx": {
     "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "error": "All nameservers failed to answer the query 11.128.77.195.in-addr.arpa. IN PTR: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
   },
   "spf": {
     "record": "v=spf1 ip4:195.77.128.128/25 ip4:195.77.128.55/32 include:spf.protection.outlook.com ~all",

@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "artemis.ttd.net",
       "offcorrmad.uimp.es",
-      "suimpdnsmad01.uimp.es",
-      "artemis.ttd.net"
+      "suimpdnsmad01.uimp.es"
     ],
     "warnings": []
   },
@@ -16,40 +16,40 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "172.217.214.26",
-          "2607:f8b0:4001:c5a::1a"
+          "2607:f8b0:400e:c08::1b",
+          "74.125.195.27"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "173.194.77.27",
-          "2607:f8b0:4023:401::1a"
+          "142.250.115.26",
+          "2607:f8b0:4023:1004::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "173.194.219.27",
-          "2607:f8b0:4002:c03::1b"
+          "2607:f8b0:4003:c15::1a",
+          "64.233.171.27"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "142.250.112.27",
-          "2607:f8b0:4023:1402::1b"
+          "142.250.152.27",
+          "2607:f8b0:4001:c56::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "172.217.197.27",
-          "2607:f8b0:400d:c0f::1b"
+          "172.253.113.27",
+          "2607:f8b0:4023:1::1a"
         ]
       }
     ],
@@ -118,7 +118,7 @@
                   "include": [
                     {
                       "domain": "spf.ipzmarketing.com",
-                      "record": "v=spf1 ip4:93.159.208.0/21 ip4:185.103.8.0/22 ip4:5.56.22.0/24 ip4:82.199.156.0/24 ~all",
+                      "record": "v=spf1 ip4:93.159.208.0/21 ip4:185.103.8.0/22 ip4:5.56.22.0/24 ip4:82.199.156.0/24 ip4:212.192.13.0/24 ~all",
                       "dns_lookups": 0,
                       "parsed": {
                         "pass": [
@@ -136,6 +136,10 @@
                           },
                           {
                             "value": "82.199.156.0/24",
+                            "mechanism": "ip4"
+                          },
+                          {
+                            "value": "212.192.13.0/24",
                             "mechanism": "ip4"
                           }
                         ],

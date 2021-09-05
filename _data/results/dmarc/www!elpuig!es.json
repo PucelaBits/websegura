@@ -4,23 +4,36 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "sole.prored.es",
-      "amparo.prored.es",
-      "dns3.prored.es"
+      "ns1.dnsxperta.com",
+      "ns2.dnsxperta.com",
+      "ns3.dnsxperta.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "elpuig.prored.es",
+        "addresses": [
+          "83.136.188.48"
+        ]
+      },
+      {
+        "preference": 100,
+        "hostname": "correo.prored.es",
+        "addresses": [
+          "5.35.200.131"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx include:prored.es -all",
     "valid": true,
     "dns_lookups": 3,
-    "warnings": [
-      "The DNS operation timed out after 3.1 seconds"
-    ],
+    "warnings": [],
     "parsed": {
       "pass": [
         {
@@ -42,6 +55,10 @@
           "dns_lookups": 1,
           "parsed": {
             "pass": [
+              {
+                "value": "5.35.200.136",
+                "mechanism": "a"
+              },
               {
                 "value": "83.136.184.0/21",
                 "mechanism": "ip4"
@@ -67,9 +84,7 @@
             "exp": null,
             "all": "fail"
           },
-          "warnings": [
-            "The DNS operation timed out after 3.1 seconds"
-          ]
+          "warnings": []
         }
       ],
       "redirect": null,

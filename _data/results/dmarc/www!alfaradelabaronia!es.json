@@ -3,8 +3,12 @@
   "base_domain": "alfaradelabaronia.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hostnames": [
+      "ns1.dnsxperta.com",
+      "ns3.dnsxperta.com",
+      "ns2.dnsxperta.com"
+    ],
+    "warnings": []
   },
   "mx": {
     "hosts": [

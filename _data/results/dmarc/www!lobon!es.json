@@ -4,45 +4,16 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ineco.nic.es",
       "proxy.dip-badajoz.es",
       "isabel.dip-badajoz.es",
-      "artemis.ttd.net",
-      "ineco.nic.es"
+      "artemis.ttd.net"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 100,
-        "hostname": "sdb-mta03.dip-badajoz.es",
-        "addresses": [
-          "195.57.11.113"
-        ]
-      },
-      {
-        "preference": 100,
-        "hostname": "sdb-mta04.dip-badajoz.es",
-        "addresses": [
-          "195.57.11.114"
-        ]
-      },
-      {
-        "preference": 500,
-        "hostname": "sdb-mta01.dip-badajoz.es",
-        "addresses": [
-          "195.57.11.111"
-        ]
-      },
-      {
-        "preference": 500,
-        "hostname": "sdb-mta02.dip-badajoz.es",
-        "addresses": [
-          "195.57.11.112"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": null,
