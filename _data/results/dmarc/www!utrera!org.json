@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "a-ns.primari.net",
-      "b-ns.primari.net"
+      "b-ns.primari.net",
+      "a-ns.primari.net"
     ],
     "warnings": []
   },
@@ -15,40 +15,40 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "2607:f8b0:400e:c08::1a",
-          "74.125.142.26"
+          "173.194.194.27",
+          "2607:f8b0:4001:c07::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "142.250.115.27",
-          "2607:f8b0:4023:1004::1a"
+          "173.194.77.26",
+          "2607:f8b0:4023:401::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "2607:f8b0:4003:c15::1b",
-          "64.233.171.27"
+          "173.194.219.27",
+          "2607:f8b0:4002:c03::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "142.250.152.26",
-          "2607:f8b0:4001:c56::1a"
+          "142.250.112.27",
+          "2607:f8b0:4023:1402::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "172.253.113.27",
-          "2607:f8b0:4023:1::1b"
+          "172.217.197.26",
+          "2607:f8b0:400d:c0f::1a"
         ]
       }
     ],
@@ -277,7 +277,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1;p=quarantine;pct=100;rua=mailto:dmarc@utrera.org",
+    "record": "v=DMARC1;p=none;rua=mailto:dmarc@utrera.org",
     "valid": true,
     "location": "utrera.org",
     "warnings": [],
@@ -287,11 +287,7 @@
         "explicit": true
       },
       "p": {
-        "value": "quarantine",
-        "explicit": true
-      },
-      "pct": {
-        "value": 100,
+        "value": "none",
         "explicit": true
       },
       "rua": {
@@ -318,6 +314,10 @@
         ],
         "explicit": false
       },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
       "rf": {
         "value": [
           "afrf"
@@ -329,7 +329,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "quarantine",
+        "value": "none",
         "explicit": false
       }
     }

@@ -15,7 +15,7 @@
         "preference": 1,
         "hostname": "madrid-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.18.202",
+          "104.47.18.138",
           "104.47.22.138"
         ]
       }
@@ -25,7 +25,7 @@
   "spf": {
     "record": "v=spf1 ip4:195.55.79.61 ip4:195.55.79.62 ip4:195.55.79.41 ip4:195.55.79.42 ip4:195.55.79.43 ip4:195.55.79.44 ip4:195.55.79.73 ip4:195.55.79.74 ip4:195.55.79.75 ip4:195.55.79.49 ip4:195.55.79.148 ip4:195.55.79.71 include:spf.protection.outlook.com ip4:195.55.79.72 include:spf.augure.com ~all",
     "valid": true,
-    "dns_lookups": 4,
+    "dns_lookups": 3,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -183,8 +183,8 @@
         },
         {
           "domain": "spf.augure.com",
-          "record": "v=spf1 ip4:83.169.91.111 ip4:83.169.91.112 ip4:83.169.91.142 ip4:83.169.91.143 ip4:83.169.91.144 ip4:83.169.91.145 ip4:83.169.91.146 ip4:83.169.91.147 ip4:83.169.91.148 include:spf2.augure.com ~all",
-          "dns_lookups": 1,
+          "record": "v=spf1 ip4:83.169.91.111 ip4:83.169.91.112 ip4:83.169.91.142 ip4:83.169.91.143 ip4:83.169.91.144 ip4:83.169.91.145 ip4:83.169.91.146 ip4:83.169.91.147 ip4:83.169.91.148 ip4:141.94.7.30 ip4:141.94.7.31 ip4:141.94.7.32/27 ~all",
+          "dns_lookups": 0,
           "parsed": {
             "pass": [
               {
@@ -222,70 +222,24 @@
               {
                 "value": "83.169.91.148",
                 "mechanism": "ip4"
+              },
+              {
+                "value": "141.94.7.30",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "141.94.7.31",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "141.94.7.32/27",
+                "mechanism": "ip4"
               }
             ],
             "neutral": [],
             "softfail": [],
             "fail": [],
-            "include": [
-              {
-                "domain": "spf2.augure.com",
-                "record": "v=spf1 ip4:141.94.7.30 ip4:141.94.7.31 ip4:141.94.7.32 ip4:141.94.7.33 ip4:141.94.7.34 ip4:141.94.7.35 ip4:141.94.7.36 ip4:141.94.7.37 ip4:141.94.7.38 ip4:141.94.7.39 ~all",
-                "dns_lookups": 0,
-                "parsed": {
-                  "pass": [
-                    {
-                      "value": "141.94.7.30",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "141.94.7.31",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "141.94.7.32",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "141.94.7.33",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "141.94.7.34",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "141.94.7.35",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "141.94.7.36",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "141.94.7.37",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "141.94.7.38",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "141.94.7.39",
-                      "mechanism": "ip4"
-                    }
-                  ],
-                  "neutral": [],
-                  "softfail": [],
-                  "fail": [],
-                  "include": [],
-                  "redirect": null,
-                  "exp": null,
-                  "all": "softfail"
-                },
-                "warnings": []
-              }
-            ],
+            "include": [],
             "redirect": null,
             "exp": null,
             "all": "softfail"

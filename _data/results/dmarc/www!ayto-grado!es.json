@@ -4,23 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.cyberastur.com",
-      "ns2.cyberastur.com"
+      "ns2.cyberastur.com",
+      "ns1.cyberastur.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 100,
-        "hostname": "mx1.dnsxperta.com",
-        "addresses": [
-          "217.13.80.229",
-          "83.147.63.42"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 include:dnsxperta.com -all",

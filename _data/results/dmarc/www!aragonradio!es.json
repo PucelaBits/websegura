@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns-d.eurodns.biz",
-      "ns2.entornodns.com",
       "ns-c.eurodns.eu",
+      "ns2.entornodns.com",
+      "ns-d.eurodns.biz",
       "ns1.entornodns.com"
     ],
     "warnings": []
@@ -34,11 +34,14 @@
         "hostname": "aragonradio-es.mail.protection.outlook.com",
         "addresses": [
           "104.47.4.36",
-          "104.47.6.36"
+          "104.47.5.36"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The DNS operation timed out after 2.1 seconds",
+      "The reverse DNS of 207.54.72.179 is esa2.hc384-90.eu.iphmx.com, but the A/AAAA DNS records for esa2.hc384-90.eu.iphmx.com do not resolve to 207.54.72.179"
+    ]
   },
   "spf": {
     "record": "v=spf1 ip4:212.47.235.149 include:spf.protection.outlook.com include:emsd1.com -all",

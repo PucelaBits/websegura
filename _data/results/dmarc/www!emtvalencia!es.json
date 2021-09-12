@@ -4,14 +4,36 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns.leader-network.com",
-      "dns1.leader-network.com"
+      "dns1.leader-network.com",
+      "dns.leader-network.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "correo1.emtvalencia.es",
+        "addresses": [
+          "195.53.78.101"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "correo2.emtvalencia.es",
+        "addresses": [
+          "195.53.78.102"
+        ]
+      },
+      {
+        "preference": 32767,
+        "hostname": "e6c3bc8e98851ec39f2f221f1c37c926f61f7976.msv1.invalid",
+        "addresses": []
+      }
+    ],
+    "warnings": [
+      "The domain e6c3bc8e98851ec39f2f221f1c37c926f61f7976.msv1.invalid does not exist. Consider using a TXT record to validate domain ownership in Office 365 instead."
+    ]
   },
   "spf": {
     "record": "v=spf1 mx ip4:195.55.76.77 ip4:185.79.131.202 ip4:185.79.131.206 ip4:195.53.78.101 ip4:195.53.78.102 -all",

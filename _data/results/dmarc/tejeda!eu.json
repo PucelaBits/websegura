@@ -5,23 +5,15 @@
   "ns": {
     "hostnames": [
       "ns.dinahosting.com",
-      "ns2.dinahosting.com",
+      "ns4.dinahosting.com",
       "ns3.dinahosting.com",
-      "ns4.dinahosting.com"
+      "ns2.dinahosting.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mail.tejeda.eu",
-        "addresses": [
-          "82.98.178.140"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 a mx ~all",

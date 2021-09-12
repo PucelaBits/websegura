@@ -4,36 +4,15 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "sun.rediris.es",
       "chico.rediris.es",
-      "ds3100.uib.es"
+      "ds3100.uib.es",
+      "sun.rediris.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 20,
-        "hostname": "mx01.puc.rediris.es",
-        "addresses": [
-          "130.206.19.130",
-          "130.206.19.162",
-          "2001:720:418:ca10::2",
-          "2001:720:418:ca11::2"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mx02.puc.rediris.es",
-        "addresses": [
-          "130.206.19.130",
-          "130.206.19.162",
-          "2001:720:418:ca10::2",
-          "2001:720:418:ca11::2"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 ip4:130.206.30.205 ip4:130.206.30.206 ip4:130.206.30.225 ip4:130.206.30.226 ip4:130.206.31.249 ip4:130.206.30.210 ip4:130.206.30.227 ip4:10.80.82.41 ip4:10.80.82.42 include:spf.puc.rediris.es include:spf.protection.outlook.com -all",

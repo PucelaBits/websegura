@@ -4,12 +4,12 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "newton.efe.com",
       "ns1-04.azure-dns.com",
       "ns2-04.azure-dns.net",
       "ns3-04.azure-dns.org",
       "ns4-04.azure-dns.info",
-      "mariecurie.efe.com",
-      "newton.efe.com"
+      "mariecurie.efe.com"
     ],
     "warnings": []
   },
@@ -19,48 +19,48 @@
         "preference": 10,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "2607:f8b0:400e:c02::1a",
-          "74.125.20.27"
+          "172.253.114.27",
+          "2607:f8b0:4001:c19::1a"
         ]
       },
       {
         "preference": 20,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "2607:f8b0:4003:c15::1a",
-          "64.233.171.26"
+          "173.194.219.26",
+          "2607:f8b0:4002:c03::1a"
         ]
       },
       {
         "preference": 30,
         "hostname": "aspmx2.googlemail.com",
         "addresses": [
-          "142.250.115.27",
-          "2607:f8b0:4023:1004::1b"
+          "173.194.77.27",
+          "2607:f8b0:4023:401::1b"
         ]
       },
       {
         "preference": 30,
         "hostname": "aspmx3.googlemail.com",
         "addresses": [
-          "2607:f8b0:4003:c15::1a",
-          "64.233.171.27"
+          "173.194.219.27",
+          "2607:f8b0:4002:c03::1a"
         ]
       },
       {
         "preference": 30,
         "hostname": "aspmx4.googlemail.com",
         "addresses": [
-          "142.250.152.27",
-          "2607:f8b0:4001:c56::1b"
+          "142.250.112.26",
+          "2607:f8b0:4023:1402::1a"
         ]
       },
       {
         "preference": 30,
         "hostname": "aspmx5.googlemail.com",
         "addresses": [
-          "172.253.113.27",
-          "2607:f8b0:4023:1::1a"
+          "172.217.197.26",
+          "2607:f8b0:400d:c0f::1b"
         ]
       }
     ],

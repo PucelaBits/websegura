@@ -4,16 +4,24 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns.gestiondecuenta.com",
-      "ns4.gestiondecuenta.com",
       "ns3.gestiondecuenta.com",
-      "ns2.gestiondecuenta.com"
+      "ns2.gestiondecuenta.com",
+      "ns4.gestiondecuenta.com",
+      "ns.gestiondecuenta.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.comercioruralburgos.com",
+        "addresses": [
+          "82.98.155.31"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": null,

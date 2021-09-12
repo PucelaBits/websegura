@@ -4,14 +4,23 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.itbatera.euskadi.eus",
-      "ns1.itbatera.euskadi.eus"
+      "ns1.itbatera.euskadi.eus",
+      "ns2.itbatera.euskadi.eus"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query euskadi.eus. IN MX: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "euskadi-eus.mail.protection.outlook.com",
+        "addresses": [
+          "104.47.4.36",
+          "104.47.5.36"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:servers.mcsv.net include:euskadi.ip-zone.com include:eu.zcsend.net include:_spf1.shmail.fr include:_spf2.shmail.fr ip4:212.142.249.0/24 ip4:212.55.29.0/24 ip4:195.53.88.0/24 ip4:62.99.63.0/24 ip4:217.124.154.0/24 ip4:185.161.119.32/27 include:spf.protection.outlook.com -all",

@@ -4,22 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.7i-misdns.net",
-      "ns1.7i-misdns.net"
+      "ns1.7i-misdns.net",
+      "ns2.7i-misdns.net"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 5,
-        "hostname": "mail.visitlapalma.es",
-        "addresses": [
-          "116.202.214.20"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 mx a ip4:116.202.0.0/15 mx include:visitlapalma.es -all",

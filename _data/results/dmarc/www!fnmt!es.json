@@ -10,16 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "correo.fnmt.es",
-        "addresses": [
-          "195.235.252.91"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 ip4:195.235.252.89 ip4:195.235.252.92 ip4:193.104.0.132 ip4:82.223.79.172 include:spf.ivcert.net include:atento.es mx ~all",
@@ -55,7 +47,7 @@
       "include": [
         {
           "domain": "spf.ivcert.net",
-          "record": "v=spf1 ip4:213.162.210.64/26 ip4:178.255.224.45 -all",
+          "record": "v=spf1 ip4:213.162.210.64/26 ip4:178.255.224.45 ip4:82.223.79.172 -all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -65,6 +57,10 @@
               },
               {
                 "value": "178.255.224.45",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "82.223.79.172",
                 "mechanism": "ip4"
               }
             ],

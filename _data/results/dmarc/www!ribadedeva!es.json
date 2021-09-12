@@ -4,15 +4,27 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns4.noc.softec-internet.com",
       "ns2.noc.softec-internet.com",
-      "ns1.noc.softec-internet.com"
+      "ns1.noc.softec-internet.com",
+      "ns4.noc.softec-internet.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "smtp.noc.softec-internet.com",
+        "addresses": [
+          "188.95.112.37",
+          "188.95.113.37"
+        ]
+      }
+    ],
+    "warnings": [
+      "The DNS operation timed out after 2.1 seconds",
+      "The reverse DNS of 188.95.112.37 is smtp.noc.softec-internet.com, but the A/AAAA DNS records for smtp.noc.softec-internet.com do not resolve to 188.95.112.37"
+    ]
   },
   "spf": {
     "record": "v=spf1 a mx a:smtp.noc.softec-internet.com a:1403.submission.antispamcloud.com a:release.antispamcloud.com -all",

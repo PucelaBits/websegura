@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "ns1.dnsxperta.com",
-      "ns3.dnsxperta.com",
-      "ns2.dnsxperta.com"
+      "ns2.dnsxperta.com",
+      "ns3.dnsxperta.com"
     ],
     "warnings": []
   },
@@ -24,12 +24,25 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:dnsxperta.com include:gva.es -all",
+    "record": "v=spf1 include:dnsxperta.com include:gva.es ip4:194.143.202.165 ip4:217.13.93.122 ip4:87.235.191.222 ~all",
     "valid": true,
     "dns_lookups": 10,
     "warnings": [],
     "parsed": {
-      "pass": [],
+      "pass": [
+        {
+          "value": "194.143.202.165",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "217.13.93.122",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "87.235.191.222",
+          "mechanism": "ip4"
+        }
+      ],
       "neutral": [],
       "softfail": [],
       "fail": [],
@@ -263,13 +276,13 @@
       ],
       "redirect": null,
       "exp": null,
-      "all": "fail"
+      "all": "softfail"
     }
   },
   "dmarc": {
     "record": null,
     "valid": false,
     "location": null,
-    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.sueca.es\n\nv=spf1 include:dnsxperta.com include:gva.es -all"
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.sueca.es\n\nv=spf1 include:dnsxperta.com include:gva.es ip4:194.143.202.165 ip4:217.13.93.122 ip4:87.235.191.222 ~all"
   }
 }
