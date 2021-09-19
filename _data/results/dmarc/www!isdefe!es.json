@@ -3,11 +3,8 @@
   "base_domain": "isdefe.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "ns1.isdefe.es",
-      "ns2.isdefe.es"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "mx": {
     "hosts": [],

@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.guardiacivil.es",
       "dns2.guardiacivil.es",
+      "dns1.guardiacivil.es",
       "artemis.ttd.net"
     ],
     "warnings": []
@@ -27,10 +27,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The DNS operation timed out after 2.1 seconds",
-      "The reverse DNS of 194.179.107.37 is mail1.guardiacivil.org, but the A/AAAA DNS records for mail1.guardiacivil.org do not resolve to 194.179.107.37"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx ip4:194.179.107.37 ip4:194.179.107.17 ~all",

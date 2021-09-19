@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns-c.eurodns.eu",
       "ns2.entornodns.com",
-      "ns-d.eurodns.biz",
-      "ns1.entornodns.com"
+      "ns1.entornodns.com",
+      "ns-c.eurodns.eu",
+      "ns-d.eurodns.biz"
     ],
     "warnings": []
   },
@@ -38,10 +38,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The DNS operation timed out after 2.1 seconds",
-      "The reverse DNS of 207.54.72.179 is esa2.hc384-90.eu.iphmx.com, but the A/AAAA DNS records for esa2.hc384-90.eu.iphmx.com do not resolve to 207.54.72.179"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:212.47.235.149 include:spf.protection.outlook.com include:emsd1.com -all",

@@ -5,32 +5,17 @@
   "ns": {
     "hostnames": [
       "a4-65.akam.net",
+      "a10-65.akam.net",
       "a1-103.akam.net",
       "a7-65.akam.net",
       "a8-66.akam.net",
-      "a10-65.akam.net",
       "a11-67.akam.net"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "correo.senado.es",
-        "addresses": [
-          "193.146.129.80"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "correo3.senado.es",
-        "addresses": [
-          "213.27.192.147"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 ip4:193.146.129.103 ip4:213.27.192.203 -all",

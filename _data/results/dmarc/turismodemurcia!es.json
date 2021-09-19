@@ -5,15 +5,30 @@
   "ns": {
     "hostnames": [
       "ns-es.1and1-dns.es",
-      "ns-es.1and1-dns.biz",
+      "ns-es.1and1-dns.org",
       "ns-es.1and1-dns.com",
-      "ns-es.1and1-dns.org"
+      "ns-es.1and1-dns.biz"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx00.ionos.es",
+        "addresses": [
+          "212.227.15.41"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mx01.ionos.es",
+        "addresses": [
+          "217.72.192.67"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:_spf.perfora.net include:_spf.kundenserver.de ~all",

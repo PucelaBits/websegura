@@ -4,17 +4,32 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "buniel.csa.es",
+      "tapia.csa.es",
+      "dns1.csanet.io",
       "clunia.csa.es",
       "nso.nic.es",
-      "dns1.csanet.io",
-      "tapia.csa.es"
+      "buniel.csa.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "atapuerca.csa.es",
+        "addresses": [
+          "5.40.65.234"
+        ]
+      },
+      {
+        "preference": 80,
+        "hostname": "silos.csa.es",
+        "addresses": [
+          "5.40.65.34"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": null,
