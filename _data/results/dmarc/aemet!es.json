@@ -10,8 +10,28 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 5,
+        "hostname": "mail1.correo.gob.es",
+        "addresses": [
+          "185.73.174.71"
+        ]
+      },
+      {
+        "preference": 5,
+        "hostname": "mail2.correo.gob.es",
+        "addresses": [
+          "185.73.174.72"
+        ]
+      }
+    ],
+    "warnings": [
+      "The domain 71.red-185-73-174.customer.static.ccgg.telefonica.net does not exist",
+      "The reverse DNS of 185.73.174.71 is 71.red-185-73-174.customer.static.ccgg.telefonica.net, but the A/AAAA DNS records for 71.red-185-73-174.customer.static.ccgg.telefonica.net do not resolve to 185.73.174.71",
+      "The domain 72.red-185-73-174.customer.static.ccgg.telefonica.net does not exist",
+      "The reverse DNS of 185.73.174.72 is 72.red-185-73-174.customer.static.ccgg.telefonica.net, but the A/AAAA DNS records for 72.red-185-73-174.customer.static.ccgg.telefonica.net do not resolve to 185.73.174.72"
+    ]
   },
   "spf": {
     "record": "v=spf1 a:spf.correo.gob.es -all",

@@ -10,23 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mx01.dgt.es",
-        "addresses": [
-          "195.76.181.21"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "mx02.dgt.es",
-        "addresses": [
-          "195.76.181.22"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 mx ~all",

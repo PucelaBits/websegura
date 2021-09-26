@@ -3,20 +3,15 @@
   "base_domain": "agenciatributaria.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "ns1.telefonica-data.com",
-      "ns2.telefonica-data.com"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "mx": {
     "hosts": [
       {
         "preference": 10,
         "hostname": "mx1.correo.aeat.es",
-        "addresses": [
-          "195.77.198.96"
-        ]
+        "addresses": []
       },
       {
         "preference": 10,
@@ -26,7 +21,9 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The DNS operation timed out after 3.1 seconds"
+    ]
   },
   "spf": {
     "record": "v=spf1 ip4:195.77.198.96/32 ip4:195.77.198.97/32 -all",

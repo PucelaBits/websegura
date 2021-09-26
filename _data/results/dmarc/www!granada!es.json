@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns",
       "ns2.granada.org",
-      "ns.granada.org",
-      "ns"
+      "ns.granada.org"
     ],
     "warnings": []
   },
@@ -16,15 +16,15 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "2607:f8b0:4001:c05::1b",
-          "74.125.201.26"
+          "108.177.121.27",
+          "2607:f8b0:4001:c5a::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "173.194.77.26",
+          "173.194.77.27",
           "2607:f8b0:4023:401::1a"
         ]
       }

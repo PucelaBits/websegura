@@ -4,33 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns185227.phdns22.es",
-      "dns185227.phdns22.es"
+      "dns185227.phdns22.es",
+      "ns185227.phdns22.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 0,
-        "hostname": "mx20.profesionalhosting.com",
-        "addresses": [
-          "185.18.197.69",
-          "212.63.111.240",
-          "95.85.44.99"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "mx10.profesionalhosting.com",
-        "addresses": [
-          "185.18.197.200",
-          "212.63.111.240",
-          "95.85.44.99"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 ip4:45.13.185.227 include:spf.profesionalhosting.com -all",

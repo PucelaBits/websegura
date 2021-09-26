@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns07.ns-cloud4b.org",
+      "ns08.ns-cloud4b.com",
       "ns06.ns-cloud4b.net",
-      "ns08.ns-cloud4b.com"
+      "ns07.ns-cloud4b.org"
     ],
     "warnings": []
   },
@@ -16,15 +16,15 @@
         "preference": 0,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "2607:f8b0:4001:c18::1a",
-          "74.125.70.27"
+          "2607:f8b0:4001:c1b::1a",
+          "74.125.202.26"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "173.194.77.27",
+          "173.194.77.26",
           "2607:f8b0:4023:401::1a"
         ]
       },
@@ -32,24 +32,24 @@
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "142.250.112.27",
-          "2607:f8b0:4023:1402::1a"
+          "2607:f8b0:4002:c09::1a",
+          "64.233.185.26"
         ]
       },
       {
         "preference": 10,
         "hostname": "aspmx2.googlemail.com",
         "addresses": [
-          "173.194.77.27",
-          "2607:f8b0:4023:401::1a"
+          "173.194.77.26",
+          "2607:f8b0:4023:401::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "aspmx3.googlemail.com",
         "addresses": [
-          "142.250.112.27",
-          "2607:f8b0:4023:1402::1b"
+          "2607:f8b0:4002:c09::1b",
+          "64.233.185.27"
         ]
       }
     ],

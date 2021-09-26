@@ -4,24 +4,16 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.gestiondecuenta.com",
       "ns.gestiondecuenta.com",
       "ns4.gestiondecuenta.com",
-      "ns3.gestiondecuenta.com"
+      "ns3.gestiondecuenta.com",
+      "ns2.gestiondecuenta.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mail.onis.es",
-        "addresses": [
-          "82.98.154.3"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 a mx ~all",

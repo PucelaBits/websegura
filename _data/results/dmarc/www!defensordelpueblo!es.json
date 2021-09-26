@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "ns2.interdomain.net",
-      "ns3.interdomain.es",
-      "ns1.interdomain.net"
+      "ns1.interdomain.net",
+      "ns3.interdomain.es"
     ],
     "warnings": []
   },
@@ -21,10 +21,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The DNS operation timed out after 2.1 seconds",
-      "The reverse DNS of 23.90.104.202 is esa1.hc583-29.eu.iphmx.com, but the A/AAAA DNS records for esa1.hc583-29.eu.iphmx.com do not resolve to 23.90.104.202"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:212.51.32.128/25 mx include:_pmta2.antevenio.com include:spf.mail-cert.com include:spf.protection.outlook.com exists:%{i}.spf.hc583-29.eu.iphmx.com ~all",

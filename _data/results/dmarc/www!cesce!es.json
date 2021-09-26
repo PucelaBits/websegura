@@ -3,68 +3,22 @@
   "base_domain": "cesce.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "ns5.grupocesce.es",
-      "ns4.grupocesce.es"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 1,
-        "hostname": "aspmx.l.google.com",
-        "addresses": [
-          "142.250.136.27",
-          "2607:f8b0:4001:c02::1b"
-        ]
-      },
-      {
-        "preference": 5,
-        "hostname": "alt1.aspmx.l.google.com",
-        "addresses": [
-          "173.194.77.26",
-          "2607:f8b0:4023:401::1b"
-        ]
-      },
-      {
-        "preference": 5,
-        "hostname": "alt2.aspmx.l.google.com",
-        "addresses": [
-          "142.250.112.27",
-          "2607:f8b0:4023:1402::1a"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "aspmx2.googlemail.com",
-        "addresses": [
-          "173.194.77.26",
-          "2607:f8b0:4023:401::1b"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "aspmx3.googlemail.com",
-        "addresses": [
-          "142.250.112.27",
-          "2607:f8b0:4023:1402::1a"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
-    "record": "v=spf1 include:spf1.cesce.es ip4:195.53.154.168/29 ip4:195.53.197.128/25 ip4:195.53.197.153 ip4:185.20.116.0/22 ip4:194.140.17.67 ip4:194.140.17.70 include:_spf.google.com include:sendgrid.net include:aspmx.pardot.com -all",
+    "record": null,
     "valid": false,
-    "warnings": [],
-    "error": "Parsing the SPF record requires 11/10 maximum DNS lookups - https://tools.ietf.org/html/rfc7208#section-4.6.4",
-    "dns_lookups": 11
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "dmarc": {
     "record": null,
     "valid": false,
     "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "error": "The DNS operation timed out after 3.1 seconds"
   }
 }
