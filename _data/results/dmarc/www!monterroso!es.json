@@ -10,16 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mail.monterroso.es",
-        "addresses": [
-          "94.23.86.245"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 a mx ptr ~all",

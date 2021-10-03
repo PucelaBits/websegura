@@ -4,14 +4,25 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ninot.gva.es",
-      "tirant.gva.es"
+      "tirant.gva.es",
+      "ninot.gva.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 4,
+        "hostname": "gollum.gva.es",
+        "addresses": [
+          "193.145.200.16",
+          "193.145.206.215",
+          "195.77.18.230",
+          "195.77.22.16"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": null,

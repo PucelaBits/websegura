@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.ams38.siteground.eu",
-      "ns2.ams38.siteground.eu"
+      "ns2.ams38.siteground.eu",
+      "ns1.ams38.siteground.eu"
     ],
     "warnings": []
   },
@@ -43,7 +43,7 @@
           "34.70.37.227",
           "35.192.5.156",
           "35.206.105.37",
-          "35.206.93.214",
+          "35.209.67.207",
           "35.223.167.9"
         ]
       },
@@ -85,7 +85,7 @@
       "The reverse DNS of 146.66.121.69 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 146.66.121.69",
       "The DNS operation timed out after 2.1 seconds",
       "The reverse DNS of 146.66.121.82 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 146.66.121.82",
-      "All nameservers failed to answer the query delivery.mailspamprotection.com. IN A: Server 127.0.0.53 UDP port 53 answered SERVFAIL",
+      "The DNS operation timed out after 2.1 seconds",
       "The reverse DNS of 146.66.121.160 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 146.66.121.160",
       "The DNS operation timed out after 2.1 seconds",
       "The reverse DNS of 146.66.121.164 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 146.66.121.164",
@@ -93,9 +93,9 @@
       "The reverse DNS of 146.66.121.17 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 146.66.121.17",
       "The DNS operation timed out after 2.1 seconds",
       "The reverse DNS of 146.66.121.213 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 146.66.121.213",
-      "The DNS operation timed out after 2.1 seconds",
-      "The reverse DNS of 146.66.121.83 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 146.66.121.83",
       "All nameservers failed to answer the query delivery.mailspamprotection.com. IN A: Server 127.0.0.53 UDP port 53 answered SERVFAIL",
+      "The reverse DNS of 146.66.121.83 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 146.66.121.83",
+      "The DNS operation timed out after 2.1 seconds",
       "The reverse DNS of 146.66.121.87 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 146.66.121.87",
       "The DNS operation timed out after 2.1 seconds",
       "The reverse DNS of 146.66.121.88 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 146.66.121.88",
@@ -105,7 +105,7 @@
       "The reverse DNS of 146.66.121.162 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 146.66.121.162",
       "The DNS operation timed out after 2.1 seconds",
       "The reverse DNS of 146.66.121.165 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 146.66.121.165",
-      "All nameservers failed to answer the query delivery.mailspamprotection.com. IN A: Server 127.0.0.53 UDP port 53 answered SERVFAIL",
+      "The DNS operation timed out after 2.1 seconds",
       "The reverse DNS of 146.66.121.166 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 146.66.121.166",
       "The DNS operation timed out after 2.1 seconds",
       "The reverse DNS of 146.66.121.214 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 146.66.121.214",
@@ -218,7 +218,7 @@
               },
               {
                 "domain": "_nb2.mailspamprotection.com",
-                "record": "v=spf1 ip4:35.208.121.216 ip4:35.206.105.37 ip4:35.208.244.18 ip4:35.208.10.124 ip4:35.206.93.214 ip4:35.222.126.238 ip4:35.223.167.9 ip4:35.225.203.128 ip4:35.232.122.203 ip4:35.232.58.54 ~all",
+                "record": "v=spf1 ip4:35.208.121.216 ip4:35.206.105.37 ip4:35.208.244.18 ip4:35.208.10.124 ip4:35.209.67.207 ip4:35.222.126.238 ip4:35.223.167.9 ip4:35.225.203.128 ip4:35.232.122.203 ip4:35.232.58.54 ~all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
@@ -239,7 +239,7 @@
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "35.206.93.214",
+                      "value": "35.209.67.207",
                       "mechanism": "ip4"
                     },
                     {

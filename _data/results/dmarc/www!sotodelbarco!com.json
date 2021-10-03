@@ -4,25 +4,17 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns3.cdmon.net",
-      "ns2.cdmon.net",
-      "ns4.cdmondns-01.org",
       "ns1.cdmon.net",
-      "ns5.cdmondns-01.com"
+      "ns4.cdmondns-01.org",
+      "ns5.cdmondns-01.com",
+      "ns2.cdmon.net",
+      "ns3.cdmon.net"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mail.sotodelbarco.com",
-        "addresses": [
-          "185.34.192.31"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": null,

@@ -4,24 +4,15 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns06.ns-cloud4b.com",
       "ns05.ns-cloud4b.org",
-      "ns03.ns-cloud4b.net"
+      "ns03.ns-cloud4b.net",
+      "ns06.ns-cloud4b.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "puertogijon-es.mail.protection.outlook.com",
-        "addresses": [
-          "104.47.10.36",
-          "104.47.8.36"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "All nameservers failed to answer the query 36.8.47.104.in-addr.arpa. IN PTR: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
   },
   "spf": {
     "record": "v=spf1 ip4:213.0.96.226 ip4:195.53.242.107 include:protection.outlook.com ~all",

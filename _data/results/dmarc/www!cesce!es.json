@@ -3,22 +3,68 @@
   "base_domain": "cesce.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hostnames": [
+      "ns5.grupocesce.es",
+      "ns4.grupocesce.es"
+    ],
+    "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 1,
+        "hostname": "aspmx.l.google.com",
+        "addresses": [
+          "2607:f8b0:400e:c09::1b",
+          "74.125.195.26"
+        ]
+      },
+      {
+        "preference": 5,
+        "hostname": "alt1.aspmx.l.google.com",
+        "addresses": [
+          "142.250.115.27",
+          "2607:f8b0:4023:1004::1a"
+        ]
+      },
+      {
+        "preference": 5,
+        "hostname": "alt2.aspmx.l.google.com",
+        "addresses": [
+          "2607:f8b0:4003:c15::1a",
+          "64.233.171.27"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "aspmx2.googlemail.com",
+        "addresses": [
+          "142.250.115.26",
+          "2607:f8b0:4023:1004::1b"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "aspmx3.googlemail.com",
+        "addresses": [
+          "2607:f8b0:4003:c15::1a",
+          "64.233.171.26"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
-    "record": null,
+    "record": "v=spf1 include:spf1.cesce.es ip4:195.53.154.168/29 ip4:195.53.197.128/25 ip4:195.53.197.153 ip4:185.20.116.0/22 ip4:194.140.17.67 ip4:194.140.17.70 include:_spf.google.com include:sendgrid.net include:aspmx.pardot.com -all",
     "valid": false,
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "warnings": [],
+    "error": "Parsing the SPF record requires 11/10 maximum DNS lookups - https://tools.ietf.org/html/rfc7208#section-4.6.4",
+    "dns_lookups": 11
   },
   "dmarc": {
     "record": null,
     "valid": false,
     "location": null,
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "error": "A DMARC record does not exist for this domain or its base domain"
   }
 }

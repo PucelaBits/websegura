@@ -10,8 +10,23 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "correo.utrera.org",
+        "addresses": [
+          "195.53.27.99"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "smail.utrera.org",
+        "addresses": [
+          "195.53.27.99"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx ip4:195.53.27.99 a:smail.utrera.org include:_spf.google.com ~all",
@@ -21,23 +36,11 @@
     "parsed": {
       "pass": [
         {
-          "value": "aspmx.l.google.com",
+          "value": "correo.utrera.org",
           "mechanism": "mx"
         },
         {
-          "value": "alt1.aspmx.l.google.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "alt2.aspmx.l.google.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "alt3.aspmx.l.google.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "alt4.aspmx.l.google.com",
+          "value": "smail.utrera.org",
           "mechanism": "mx"
         },
         {

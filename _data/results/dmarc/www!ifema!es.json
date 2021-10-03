@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.altia.es",
-      "ns2.altia.es"
+      "ns2.altia.es",
+      "ns1.altia.es"
     ],
     "warnings": []
   },
@@ -13,9 +13,18 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "mail.ifema.es",
+        "hostname": "mx1.hc1008-19.eu.iphmx.com",
         "addresses": [
-          "195.69.253.2"
+          "23.90.117.155",
+          "23.90.119.37"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mx2.hc1008-19.eu.iphmx.com",
+        "addresses": [
+          "23.90.117.155",
+          "23.90.119.37"
         ]
       }
     ],
@@ -53,7 +62,11 @@
           "mechanism": "ip4"
         },
         {
-          "value": "mail.ifema.es",
+          "value": "mx1.hc1008-19.eu.iphmx.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mx2.hc1008-19.eu.iphmx.com",
           "mechanism": "mx"
         }
       ],
@@ -281,16 +294,12 @@
         },
         {
           "domain": "spf.emailsignatures365.com",
-          "record": "v=spf1 ip4:23.96.254.246 ip4:94.245.94.31 ip4:65.52.215.36 ip4:13.81.10.179 ip4:40.126.245.16 ip4:13.75.218.232 ip4:51.140.81.164 ip4:52.166.56.231 ip4:51.116.232.68 ip4:23.100.56.64 ip4:40.86.247.52 ip4:40.86.165.91 ip4:20.58.22.103 -all",
+          "record": "v=spf1 ip4:23.96.254.246 ip4:65.52.215.36 ip4:13.81.10.179 ip4:40.126.245.16 ip4:13.75.218.232 ip4:51.116.232.68 ip4:23.100.56.64 ip4:40.86.247.52 ip4:40.86.165.91 ip4:20.58.22.103 ip4:13.74.137.176 ip4:20.93.157.195 ip4:20.79.220.33 -all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
               {
                 "value": "23.96.254.246",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "94.245.94.31",
                 "mechanism": "ip4"
               },
               {
@@ -307,14 +316,6 @@
               },
               {
                 "value": "13.75.218.232",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "51.140.81.164",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "52.166.56.231",
                 "mechanism": "ip4"
               },
               {
@@ -335,6 +336,18 @@
               },
               {
                 "value": "20.58.22.103",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "13.74.137.176",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "20.93.157.195",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "20.79.220.33",
                 "mechanism": "ip4"
               }
             ],

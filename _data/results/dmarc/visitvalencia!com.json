@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns3.prored.es",
       "dns2.prored.es",
+      "dns3.prored.es",
       "dns1.prored.es"
     ],
     "warnings": []
@@ -31,7 +31,11 @@
     "parsed": {
       "pass": [
         {
-          "value": "108.128.180.42",
+          "value": "108.128.210.43",
+          "mechanism": "a"
+        },
+        {
+          "value": "108.128.39.205",
           "mechanism": "a"
         },
         {
@@ -39,19 +43,15 @@
           "mechanism": "a"
         },
         {
+          "value": "34.251.176.5",
+          "mechanism": "a"
+        },
+        {
           "value": "34.252.202.87",
           "mechanism": "a"
         },
         {
-          "value": "34.252.88.191",
-          "mechanism": "a"
-        },
-        {
           "value": "52.18.117.107",
-          "mechanism": "a"
-        },
-        {
-          "value": "52.213.95.224",
           "mechanism": "a"
         },
         {

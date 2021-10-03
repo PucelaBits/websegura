@@ -47,21 +47,14 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 a:4559.submission.antispamcloud.com ~all",
+    "record": "v=spf1 a:spf.antispamcloud.com ~all",
     "valid": true,
     "dns_lookups": 1,
-    "warnings": [],
+    "warnings": [
+      "spf.antispamcloud.com does not have any A/AAAA records"
+    ],
     "parsed": {
-      "pass": [
-        {
-          "value": "148.251.71.15",
-          "mechanism": "a"
-        },
-        {
-          "value": "95.211.2.202",
-          "mechanism": "a"
-        }
-      ],
+      "pass": [],
       "neutral": [],
       "softfail": [],
       "fail": [],

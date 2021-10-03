@@ -12,19 +12,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mx.redctnet.es",
-        "addresses": [
-          "80.73.144.108"
-        ]
-      }
-    ],
-    "warnings": [
-      "The DNS operation timed out after 2.1 seconds",
-      "The reverse DNS of 80.73.144.108 is mx.redctnet.com, but the A/AAAA DNS records for mx.redctnet.com do not resolve to 80.73.144.108"
-    ]
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 ip4:80.73.144.108 ip4:80.73.148.250 -all",

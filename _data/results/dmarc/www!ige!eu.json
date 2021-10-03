@@ -10,8 +10,23 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mxr.mundo-r.com",
+        "addresses": [
+          "212.51.32.239"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mxr2.mundo-r.com",
+        "addresses": [
+          "212.51.32.239"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:212.51.62.160/27 ip4:91.117.126.128/25 include:mundo-r.com -all",

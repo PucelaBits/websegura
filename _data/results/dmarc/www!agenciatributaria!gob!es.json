@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "nsalchos01.telefonica-data.com",
-      "nsjc8hos01.telefonica-data.com"
+      "nsjc8hos01.telefonica-data.com",
+      "nsalchos01.telefonica-data.com"
     ],
     "warnings": []
   },
@@ -26,12 +26,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The DNS operation timed out after 2.1 seconds",
-      "The reverse DNS of 195.77.198.96 is mx1.correo.aeat.es, but the A/AAAA DNS records for mx1.correo.aeat.es do not resolve to 195.77.198.96",
-      "The DNS operation timed out after 2.1 seconds",
-      "The reverse DNS of 195.77.198.97 is mx2.correo.aeat.es, but the A/AAAA DNS records for mx2.correo.aeat.es do not resolve to 195.77.198.97"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": null,
