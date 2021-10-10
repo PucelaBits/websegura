@@ -4,21 +4,21 @@
   "dnssec": false,
   "ns": {
     "hostnames": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "error": "The domain agendadigitalriojana.es does not exist"
   },
   "mx": {
     "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "error": "The domain agendadigitalriojana.es does not exist"
   },
   "spf": {
     "record": null,
     "valid": false,
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "error": "The domain agendadigitalriojana.es does not exist"
   },
   "dmarc": {
     "record": null,
     "valid": false,
     "location": null,
-    "error": "All nameservers failed to answer the query _dmarc.agendadigitalriojana.es. IN TXT: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "error": "A DMARC record does not exist for this domain or its base domain"
   }
 }

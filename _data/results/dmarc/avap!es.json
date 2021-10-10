@@ -10,8 +10,16 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 0,
+        "hostname": "mail.avap.es",
+        "addresses": [
+          "51.83.41.202"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:avap.ip-zone.com ip4:51.83.41.202 a mx a:gcloud11.gsitdns.com include:spf.protection.outlook.com -all",

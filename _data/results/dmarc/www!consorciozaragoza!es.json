@@ -4,24 +4,16 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.canaldominios.com",
-      "dns3.canaldominios.com",
+      "dns4.canaldominios.com",
       "dns1.canaldominios.com",
-      "dns4.canaldominios.com"
+      "dns3.canaldominios.com",
+      "dns2.canaldominios.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "proxmox.consorciozaragoza.es",
-        "addresses": [
-          "2.139.174.72"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 ip4:2.139.172.72 a mx a:consorciozaragoza.es ~all",

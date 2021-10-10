@@ -4,30 +4,15 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns06.ns-cloud4b.com",
+      "ns03.ns-cloud4b.net",
       "ns05.ns-cloud4b.org",
-      "ns03.ns-cloud4b.net"
+      "ns06.ns-cloud4b.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mx10.oviedo.es",
-        "addresses": [
-          "94.100.134.100"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mx20.oviedo.es",
-        "addresses": [
-          "94.100.132.100"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 ip4:154.58.19.132 include:emailservice.cpd.as -all",

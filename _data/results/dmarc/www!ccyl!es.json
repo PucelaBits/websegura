@@ -4,14 +4,23 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "esifw1.tsai.es",
-      "esifw2.tsai.es"
+      "esifw2.tsai.es",
+      "esifw1.tsai.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 100,
+        "hostname": "mail.ccyl.es",
+        "addresses": [
+          "194.179.106.101",
+          "194.179.106.102"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 +mx +a:mail.ccyl.es ~ip4:194.179.106.0/24 -all",

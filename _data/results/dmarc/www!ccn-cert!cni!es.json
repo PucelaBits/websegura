@@ -7,8 +7,23 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx1.ccn-cert.es",
+        "addresses": [
+          "212.170.35.115"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mx2.ccn-cert.es",
+        "addresses": [
+          "212.170.35.116"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:212.170.35.96/27 -all",

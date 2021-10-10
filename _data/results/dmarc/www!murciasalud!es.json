@@ -4,16 +4,24 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2e.carm.es",
-      "dns01.ono.com",
       "ns1e.carm.es",
-      "rafi.f-integra.org"
+      "ns2e.carm.es",
+      "rafi.f-integra.org",
+      "dns01.ono.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx.redctnet.es",
+        "addresses": [
+          "80.73.144.108"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:80.73.144.108 ip4:80.73.148.250 -all",

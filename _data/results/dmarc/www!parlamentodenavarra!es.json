@@ -43,10 +43,12 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx a:correo.parlamentodenavarra.es include:spf.hornetsecurity.com include:spf.protection.outlook.com ip4:195.76.224.1 -all",
+    "record": "v=spf1 mx a:correo.parlamentodenavarra.es include:spf.hornetsecurity.com include:spf.protection.outlook.com ip4:195.76.224.1 -all 29114606",
     "valid": true,
     "dns_lookups": 5,
-    "warnings": [],
+    "warnings": [
+      "Any text after the all mechanism is ignored"
+    ],
     "parsed": {
       "pass": [
         {

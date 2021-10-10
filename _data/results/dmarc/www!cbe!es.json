@@ -4,70 +4,15 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.losdns.net",
       "ns1.losdns.net",
+      "ns2.losdns.net",
       "ns3.losdns.net"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 1,
-        "hostname": "aspmx.l.google.com",
-        "addresses": [
-          "2607:f8b0:400e:c08::1b",
-          "74.125.195.26"
-        ]
-      },
-      {
-        "preference": 5,
-        "hostname": "alt1.aspmx.l.google.com",
-        "addresses": [
-          "142.250.115.26",
-          "2607:f8b0:4023:1004::1b"
-        ]
-      },
-      {
-        "preference": 5,
-        "hostname": "alt2.aspmx.l.google.com",
-        "addresses": [
-          "2607:f8b0:4003:c15::1a",
-          "64.233.171.27"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "alt3.aspmx.l.google.com",
-        "addresses": [
-          "142.250.152.26",
-          "2607:f8b0:4001:c56::1a"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "alt4.aspmx.l.google.com",
-        "addresses": [
-          "172.253.113.26",
-          "2607:f8b0:4023:1::1a"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "correo.cbe.es",
-        "addresses": [
-          "91.142.211.119"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "mail.cbe.es",
-        "addresses": [
-          "91.142.211.119"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 include:_spf.google.com ~all",

@@ -10,19 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 5,
-        "hostname": "gollum.gva.es",
-        "addresses": [
-          "193.145.200.16",
-          "193.145.206.215",
-          "195.77.18.230",
-          "195.77.22.16"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 ip4:193.145.205.216/24 ip4:193.145.206.211/24  ip4:193.145.206.0/25 ip4:195.77.17.0/24 ip4:195.77.18.0/24 ip4:195.77.22.20/24 ip4:193.145.200.20/24 mx:bombersdv.es mx:bombers.dva.gva.es -all",

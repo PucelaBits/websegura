@@ -15,7 +15,7 @@
         "preference": 1,
         "hostname": "madrid-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.18.138",
+          "104.47.18.202",
           "104.47.22.138"
         ]
       }
@@ -183,46 +183,10 @@
         },
         {
           "domain": "spf.augure.com",
-          "record": "v=spf1 ip4:83.169.91.111 ip4:83.169.91.112 ip4:83.169.91.142 ip4:83.169.91.143 ip4:83.169.91.144 ip4:83.169.91.145 ip4:83.169.91.146 ip4:83.169.91.147 ip4:83.169.91.148 ip4:141.94.7.30 ip4:141.94.7.31 ip4:141.94.7.32/27 include:engage.augure.com ~all",
+          "record": "v=spf1 ip4:141.94.7.30 ip4:141.94.7.31 ip4:141.94.7.32/27 include:engage.augure.com ~all",
           "dns_lookups": 1,
           "parsed": {
             "pass": [
-              {
-                "value": "83.169.91.111",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "83.169.91.112",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "83.169.91.142",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "83.169.91.143",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "83.169.91.144",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "83.169.91.145",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "83.169.91.146",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "83.169.91.147",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "83.169.91.148",
-                "mechanism": "ip4"
-              },
               {
                 "value": "141.94.7.30",
                 "mechanism": "ip4"

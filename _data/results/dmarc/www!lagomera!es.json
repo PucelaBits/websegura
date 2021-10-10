@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.lagomera.es",
-      "ns2.lagomera.es"
+      "ns2.lagomera.es",
+      "ns1.lagomera.es"
     ],
     "warnings": []
   },
@@ -15,16 +15,16 @@
         "preference": 10,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "2607:f8b0:400e:c07::1b",
-          "74.125.142.27"
+          "2607:f8b0:400e:c03::1a",
+          "74.125.142.26"
         ]
       },
       {
         "preference": 20,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "142.250.115.26",
-          "2607:f8b0:4023:1004::1b"
+          "142.250.115.27",
+          "2607:f8b0:4023:1004::1a"
         ]
       },
       {
@@ -38,7 +38,7 @@
         "preference": 30,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "142.250.152.27",
+          "142.250.152.26",
           "2607:f8b0:4001:c56::1b"
         ]
       },
@@ -46,16 +46,16 @@
         "preference": 40,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "172.253.113.27",
-          "2607:f8b0:4023:1::1b"
+          "172.253.113.26",
+          "2607:f8b0:4023:1::1a"
         ]
       },
       {
         "preference": 50,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "2607:f8b0:4003:c15::1a",
-          "64.233.171.26"
+          "2607:f8b0:4003:c15::1b",
+          "64.233.171.27"
         ]
       }
     ],

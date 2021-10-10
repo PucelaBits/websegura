@@ -3,8 +3,11 @@
   "base_domain": "gsccanarias.com",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hostnames": [
+      "ns1.dns-servicios.es",
+      "ns2.dns-servicios.es"
+    ],
+    "warnings": []
   },
   "mx": {
     "hosts": [

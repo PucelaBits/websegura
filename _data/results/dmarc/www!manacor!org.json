@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns10.ovh.net",
-      "ns10.ovh.net"
+      "ns10.ovh.net",
+      "dns10.ovh.net"
     ],
     "warnings": []
   },
@@ -15,8 +15,8 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "2607:f8b0:400e:c03::1a",
-          "74.125.195.27"
+          "2607:f8b0:400e:c08::1b",
+          "74.125.199.26"
         ]
       },
       {
@@ -31,7 +31,7 @@
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "2607:f8b0:4003:c15::1a",
+          "2607:f8b0:4003:c15::1b",
           "64.233.171.26"
         ]
       },
@@ -40,15 +40,15 @@
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
           "142.250.152.27",
-          "2607:f8b0:4001:c56::1b"
+          "2607:f8b0:4001:c56::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "172.253.113.26",
-          "2607:f8b0:4023:1::1a"
+          "172.253.113.27",
+          "2607:f8b0:4023:1::1b"
         ]
       }
     ],
