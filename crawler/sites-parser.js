@@ -35,14 +35,13 @@ function getAllUrls() {
 /**
  * Devuelve la URL de las webs que no se han refrescado
  * en los últimos MAX_TIME_TO_REFRESH_MILLIS.
- * Devuelve MAX_RESULTS como máximo, para evitar saturar el API de Mozilla.
+ * Para evitar saturar el API de Mozilla se devuelve MAX_RESULTS como máximo, ordenados al azar.
  *
  * For the sake of simplicity, this function is sync for now
  */
 async function parse(limit = MAX_RESULTS) {
-  // XXX applying the limit during the filtering phase would
-  //     be more efficient, but js sucks sometimes
-  return getAllUrls().filter(outdated).slice(0, limit);
+  const all = getAllUrls().filter(outdated);
+  return shuffle(all, limit);
 }
 
 // Mozilla espera un hostname (sin / final y sin indicar protocolo "http[s]://")
@@ -50,6 +49,16 @@ function beautify(url) {
   url = url.replace("http://", "");
   url = url.replace("https://", "");
   return new URL(`https://${url}`).hostname;
+}
+
+function shuffle(array, len = array.length) {
+  // code from https://stackoverflow.com/a/68945021/12388
+  for (let i = array.length - 1; i > 0; i--) {
+      let j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+  }
+
+  return array.slice(0, len);
 }
 
 function outdated(site) {
