@@ -40,7 +40,9 @@ function getAllUrls() {
  * For the sake of simplicity, this function is sync for now
  */
 async function parse(limit = MAX_RESULTS) {
-  const all = getAllUrls().filter(outdated).slice(0, limit);
+  const all = getAllUrls().filter(outdated);
+  console.log(`Outdated sites found = ${all.lenght} (limit = ${limit})`);
+  return all.slice(0, limit);
 }
 
 // Mozilla espera un hostname (sin / final y sin indicar protocolo "http[s]://")
@@ -61,8 +63,7 @@ function outdated(site) {
     const recent =
       new Date(siteInfo.start_time).valueOf() >
       Date.now() - MAX_TIME_TO_REFRESH_MILLIS;
-    console.log('\tstate = ' + siteInfo.state);
-    console.log('\tis recent = ' + recent + ' ' + siteInfo.start_time);
+    console.log('\tstate = ' + siteInfo.state + ' is recent = ' + recent + ' ' + siteInfo.start_time);
     if (siteInfo.state === "FINISHED" && recent) {
       console.log('\tNo need to analyze it');
       return false;
