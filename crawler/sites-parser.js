@@ -7,7 +7,7 @@ const glob = require("fast-glob");
 
 const MAX_DAYS_TO_REFRESH = process.env.CRAWLER_MAX_DAYS_TO_REFRESH || 2; // can be increased when we have many sites to scan
 const MAX_TIME_TO_REFRESH_MILLIS = MAX_DAYS_TO_REFRESH * 24 * 60 * 60 * 1000;
-const MAX_RESULTS = process.env.CRAWLER_MAX_RESULTS || 200;
+const MAX_RESULTS = process.env.CRAWLER_MAX_RESULTS || 400;
 
 /**
  * Obtiene las rutas a los ficheros global, de comunidades y provincias.
@@ -40,8 +40,7 @@ function getAllUrls() {
  * For the sake of simplicity, this function is sync for now
  */
 async function parse(limit = MAX_RESULTS) {
-  const all = getAllUrls().filter(outdated);
-  return shuffle(all, limit);
+  const all = getAllUrls().filter(outdated).slice(0, limit);
 }
 
 // Mozilla espera un hostname (sin / final y sin indicar protocolo "http[s]://")
@@ -51,29 +50,25 @@ function beautify(url) {
   return new URL(`https://${url}`).hostname;
 }
 
-function shuffle(array, len = array.length) {
-  // code from https://stackoverflow.com/a/68945021/12388
-  for (let i = array.length - 1; i > 0; i--) {
-      let j = Math.floor(Math.random() * (i + 1));
-      [array[i], array[j]] = [array[j], array[i]];
-  }
-
-  return array.slice(0, len);
-}
-
 function outdated(site) {
   const fileName = site.replace(/\./g, "!") + ".json";
   const path = `_data/results/${fileName}`;
 
   try {
+    // TODO remove these console logs, they are only here to help us debug an issue
+    console.log(`Check ${path}`);
     const siteInfo = JSON.parse(fs.readFileSync(path));
     const recent =
       new Date(siteInfo.start_time).valueOf() >
       Date.now() - MAX_TIME_TO_REFRESH_MILLIS;
+    console.log('\tstate = ' + stateInfo.state);
+    console.log('\tis recent = ' + recent + ' ' + siteInfo.start_time);
     if (siteInfo.state === "FINISHED" && recent) {
+      console.log('\tNo need to analyze it');
       return false;
     }
   } catch (err) {
+    console.log('\tERROR', err);
     // file not found (err.code === ENOENT) or an unexpected error, refresh the analysis
   }
 
