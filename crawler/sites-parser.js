@@ -41,7 +41,7 @@ function getAllUrls() {
  */
 async function parse(limit = MAX_RESULTS) {
   const all = getAllUrls().filter(outdated);
-  console.log(`Outdated sites found = ${all.lenght} (limit = ${limit})`);
+  console.log(`Outdated sites found = ${all.length} (limit = ${limit})`);
   return all.slice(0, limit);
 }
 
