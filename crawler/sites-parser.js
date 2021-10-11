@@ -61,7 +61,7 @@ function outdated(site) {
     const recent =
       new Date(siteInfo.start_time).valueOf() >
       Date.now() - MAX_TIME_TO_REFRESH_MILLIS;
-    console.log('\tstate = ' + stateInfo.state);
+    console.log('\tstate = ' + siteInfo.state);
     console.log('\tis recent = ' + recent + ' ' + siteInfo.start_time);
     if (siteInfo.state === "FINISHED" && recent) {
       console.log('\tNo need to analyze it');
