@@ -40,9 +40,28 @@ function getAllUrls() {
  * For the sake of simplicity, this function is sync for now
  */
 async function parse(limit = MAX_RESULTS) {
-  const all = getAllUrls().filter(outdated);
+  const all = getAllUrls()
+    .filter(outdated)
+    .sort((a, b) => {
+      // XXX this parsing code is kind of duplicated in the outdated function
+      //     we should find a way to avoid parsing the same file multiple times
+      const aFileName = a.replace(/\./g, "!") + ".json";
+      const aPath = `_data/results/${aFileName}`;
+      const aSiteInfo = JSON.parse(fs.readFileSync(aPath));
+      const aStartTime = new Date(aSiteInfo.start_time).valueOf();
+
+      const bFileName = b.replace(/\./g, "!") + ".json";
+      const bPath = `_data/results/${bFileName}`;
+      const bSiteInfo = JSON.parse(fs.readFileSync(bPath));
+      const bStartTime = new Date(bSiteInfo.start_time).valueOf();
+
+      // sorting oldest pages first guarantee that they will have a chance to be processed
+      return aStartTime < bStartTime;
+    })
+    .slice(0, limit);
+
   console.log(`Outdated sites found = ${all.length} (limit = ${limit})`);
-  return all.slice(0, limit);
+  return all;
 }
 
 // Mozilla espera un hostname (sin / final y sin indicar protocolo "http[s]://")
@@ -57,7 +76,7 @@ function outdated(site) {
   const path = `_data/results/${fileName}`;
 
   try {
-    // TODO remove these console logs, they are only here to help us debug an issue
+    // XXX remove these console logs, they are only here to help us debug an issue
     console.log(`Check ${path}`);
     const siteInfo = JSON.parse(fs.readFileSync(path));
     const recent =
