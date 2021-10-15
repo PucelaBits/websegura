@@ -43,20 +43,22 @@ async function parse(limit = MAX_RESULTS) {
   const all = getAllUrls()
     .filter(outdated)
     .sort((a, b) => {
-      // XXX this parsing code is kind of duplicated in the outdated function
-      //     we should find a way to avoid parsing the same file multiple times
-      const aFileName = a.replace(/\./g, "!") + ".json";
-      const aPath = `_data/results/${aFileName}`;
-      const aSiteInfo = JSON.parse(fs.readFileSync(aPath));
-      const aStartTime = new Date(aSiteInfo.start_time).valueOf();
+      const aInfo = siteInfo(a);
+      const bInfo = siteInfo(b);
 
-      const bFileName = b.replace(/\./g, "!") + ".json";
-      const bPath = `_data/results/${bFileName}`;
-      const bSiteInfo = JSON.parse(fs.readFileSync(bPath));
-      const bStartTime = new Date(bSiteInfo.start_time).valueOf();
-
-      // sorting oldest pages first guarantee that they will have a chance to be processed
-      return aStartTime < bStartTime;
+      // Sorting oldest pages first guarantee they have a chance
+      // to be processed in the next run.
+      if (aInfo && bInfo) {
+        const aStartTime = new Date(aInfo.start_time).valueOf();
+        const bStartTime = new Date(bInfo.start_time).valueOf();
+        return aStartTime - bStartTime;
+      } else if (aInfo) {
+        return 1;
+      } else if (bInfo) {
+        return -1;
+      } else {
+        return 0;
+      }
     })
     .slice(0, limit);
 
@@ -71,25 +73,37 @@ function beautify(url) {
   return new URL(`https://${url}`).hostname;
 }
 
-function outdated(site) {
+function filePath(site) {
   const fileName = site.replace(/\./g, "!") + ".json";
-  const path = `_data/results/${fileName}`;
+  return`_data/results/${fileName}`;
+}
 
+// XXX memoize or cache somehow to improve performance
+function siteInfo(site) {
   try {
-    // XXX remove these console logs, they are only here to help us debug an issue
-    console.log(`Check ${path}`);
-    const siteInfo = JSON.parse(fs.readFileSync(path));
+    const path = filePath(site);
+    return JSON.parse(fs.readFileSync(path));
+  } catch (err) {
+    console.log('\tWARN', err.message);
+    // file not found (err.code === ENOENT) or an unexpected error, refresh the analysis
+  }
+}
+
+function outdated(site) {
+  // XXX remove these console logs, they are only here to help us debug an issue
+  console.log(`Check ${site}`);
+
+  const info = siteInfo(site);
+  if (info) {
     const recent =
-      new Date(siteInfo.start_time).valueOf() >
+      new Date(info.start_time).valueOf() >
       Date.now() - MAX_TIME_TO_REFRESH_MILLIS;
-    console.log('\tstate = ' + siteInfo.state + ' is recent = ' + recent + ' ' + siteInfo.start_time);
-    if (siteInfo.state === "FINISHED" && recent) {
+
+    console.log('\tstate = ' + info.state + ' ' + info.start_time);
+    if (info.state === "FINISHED" && recent) {
       console.log('\tNo need to analyze it');
       return false;
     }
-  } catch (err) {
-    console.log('\tERROR', err);
-    // file not found (err.code === ENOENT) or an unexpected error, refresh the analysis
   }
 
   return true;
