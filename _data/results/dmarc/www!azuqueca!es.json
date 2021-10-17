@@ -4,16 +4,16 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1081.ui-dns.biz",
-      "ns1081.ui-dns.org",
-      "ns1081.ui-dns.com",
-      "ns1081.ui-dns.de"
+      "ns.redunda.com",
+      "ns2.redunda.com"
     ],
     "warnings": []
   },
   "mx": {
     "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
   },
   "spf": {
     "record": null,
@@ -24,6 +24,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.azuqueca.es\n\n24367680"
+    "error": "A DMARC record does not exist for this domain or its base domain"
   }
 }

@@ -10,8 +10,16 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 1,
+        "hostname": "mx1.cim.es",
+        "addresses": [
+          "89.17.211.117"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx a:mail.cortesclm.es mx ip4:89.17.211.96/27 ip4:195.77.144.160/28 ~all",

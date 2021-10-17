@@ -5,23 +5,15 @@
   "ns": {
     "hostnames": [
       "ns.dinahosting.com",
-      "ns3.dinahosting.com",
       "ns4.dinahosting.com",
-      "ns2.dinahosting.com"
+      "ns2.dinahosting.com",
+      "ns3.dinahosting.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mail.ayuntamientodecoana.com",
-        "addresses": [
-          "82.98.160.206"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": null,

@@ -5,23 +5,15 @@
   "ns": {
     "hostnames": [
       "ns2.dinahosting.com",
-      "ns.dinahosting.com",
+      "ns3.dinahosting.com",
       "ns4.dinahosting.com",
-      "ns3.dinahosting.com"
+      "ns.dinahosting.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mail.focuspyme.es",
-        "addresses": [
-          "185.31.236.37"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": null,

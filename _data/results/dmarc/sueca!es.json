@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "ns2.dnsxperta.com",
-      "ns1.dnsxperta.com",
-      "ns3.dnsxperta.com"
+      "ns3.dnsxperta.com",
+      "ns1.dnsxperta.com"
     ],
     "warnings": []
   },
@@ -82,34 +82,10 @@
         },
         {
           "domain": "gva.es",
-          "record": "v=spf1 ip4:193.145.205.216/29  ip4:193.145.205.72/29 ip4:193.145.206.0/25 ip4:193.144.104.23 ip4:195.77.17.0/24 ip4:195.77.18.0/24 ip4:195.77.19.0/24 ip4:193.145.207.0/24 include:spf.protection.outlook.com a:mx11.gva.es a:mx12.gva.es a:mx13.gva.es a:mx21.gva.es a:mx22.gva.es a:mx23.gva.es -all",
+          "record": "v=spf1 ip4:195.77.19.0/24 ip4:193.145.207.0/24 include:spf.protection.outlook.com a:mx11.gva.es a:mx12.gva.es a:mx13.gva.es a:mx21.gva.es a:mx22.gva.es a:mx23.gva.es -all",
           "dns_lookups": 8,
           "parsed": {
             "pass": [
-              {
-                "value": "193.145.205.216/29",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "193.145.205.72/29",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "193.145.206.0/25",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "193.144.104.23",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "195.77.17.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "195.77.18.0/24",
-                "mechanism": "ip4"
-              },
               {
                 "value": "195.77.19.0/24",
                 "mechanism": "ip4"

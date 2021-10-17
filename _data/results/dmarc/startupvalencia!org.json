@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "europe2712.banahosting.com",
-      "europe2713.banahosting.com"
+      "europe2713.banahosting.com",
+      "europe2712.banahosting.com"
     ],
     "warnings": []
   },
@@ -15,8 +15,8 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "2607:f8b0:400e:c0d::1b",
-          "74.125.142.27"
+          "142.250.99.27",
+          "2607:f8b0:400e:c00::1a"
         ]
       },
       {
@@ -24,7 +24,7 @@
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
           "142.250.115.26",
-          "2607:f8b0:4023:1004::1a"
+          "2607:f8b0:4023:1004::1b"
         ]
       },
       {
@@ -39,8 +39,8 @@
         "preference": 10,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "142.250.152.27",
-          "2607:f8b0:4001:c56::1b"
+          "142.250.152.26",
+          "2607:f8b0:4001:c56::1a"
         ]
       },
       {
@@ -48,7 +48,7 @@
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
           "172.253.113.26",
-          "2607:f8b0:4023:1::1b"
+          "2607:f8b0:4023:1::1a"
         ]
       }
     ],

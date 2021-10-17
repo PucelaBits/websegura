@@ -15,7 +15,7 @@
         "preference": 10,
         "hostname": "eitb-eus.mail.protection.outlook.com",
         "addresses": [
-          "104.47.13.36",
+          "104.47.12.36",
           "104.47.14.36"
         ]
       }
@@ -176,12 +176,10 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=reject; sp=quarantine; pct=100; adkim=s; aspf=s",
+    "record": "v=DMARC1; p=reject; sp=reject; pct=100; adkim=s; aspf=s; rua=mailto:postmaster@eitb.eus;fo=1",
     "valid": true,
     "location": "eitb.eus",
-    "warnings": [
-      "rua tag (destination for aggregate reports) not found"
-    ],
+    "warnings": [],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -192,7 +190,7 @@
         "explicit": true
       },
       "sp": {
-        "value": "quarantine",
+        "value": "reject",
         "explicit": true
       },
       "pct": {
@@ -207,11 +205,21 @@
         "value": "s",
         "explicit": true
       },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "postmaster@eitb.eus",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
       "fo": {
         "value": [
-          "0"
+          "1"
         ],
-        "explicit": false
+        "explicit": true
       },
       "rf": {
         "value": [

@@ -4,15 +4,23 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.noc.softec-internet.com",
+      "ns2.noc.softec-internet.com",
       "ns4.noc.softec-internet.com",
-      "ns2.noc.softec-internet.com"
+      "ns1.noc.softec-internet.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.ribadedeva.es",
+        "addresses": [
+          "5.175.44.20"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 a mx a:smtp.noc.softec-internet.com a:1403.submission.antispamcloud.com a:release.antispamcloud.com -all",
@@ -26,7 +34,7 @@
           "mechanism": "a"
         },
         {
-          "value": "smtp.noc.softec-internet.com",
+          "value": "mail.ribadedeva.es",
           "mechanism": "mx"
         },
         {

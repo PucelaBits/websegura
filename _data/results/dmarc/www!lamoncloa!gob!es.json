@@ -4,31 +4,16 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.mpr.es",
-      "sun.rediris.es",
       "chico.rediris.es",
-      "dns2.mpr.es"
+      "dns2.mpr.es",
+      "sun.rediris.es",
+      "dns1.mpr.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 20,
-        "hostname": "mail1.mpr.es",
-        "addresses": [
-          "212.128.108.16"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mail2.mpr.es",
-        "addresses": [
-          "212.128.108.19"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 ip4:212.128.108.45  ip4:212.128.108.46  -all",

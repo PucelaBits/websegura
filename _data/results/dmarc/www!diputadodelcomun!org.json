@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns25.servidoresdns.net",
-      "dns26.servidoresdns.net"
+      "dns26.servidoresdns.net",
+      "dns25.servidoresdns.net"
     ],
     "warnings": []
   },
@@ -33,20 +33,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The DNS operation timed out after 2.1 seconds",
-      "The reverse DNS of 130.117.89.26 is orcus.iberlayer.com, but the A/AAAA DNS records for orcus.iberlayer.com do not resolve to 130.117.89.26",
-      "The DNS operation timed out after 2.1 seconds",
-      "The reverse DNS of 130.117.89.4 is mercurio.iberlayer.com, but the A/AAAA DNS records for mercurio.iberlayer.com do not resolve to 130.117.89.4",
-      "The DNS operation timed out after 2.1 seconds",
-      "The reverse DNS of 130.117.89.5 is venus.iberlayer.com, but the A/AAAA DNS records for venus.iberlayer.com do not resolve to 130.117.89.5",
-      "The DNS operation timed out after 2.1 seconds",
-      "The reverse DNS of 80.169.225.36 is luna.iberlayer.com, but the A/AAAA DNS records for luna.iberlayer.com do not resolve to 80.169.225.36",
-      "The DNS operation timed out after 2.1 seconds",
-      "The reverse DNS of 80.169.225.37 is fobos.iberlayer.com, but the A/AAAA DNS records for fobos.iberlayer.com do not resolve to 80.169.225.37",
-      "The DNS operation timed out after 2.1 seconds",
-      "The reverse DNS of 80.169.225.44 is hiperion.iberlayer.com, but the A/AAAA DNS records for hiperion.iberlayer.com do not resolve to 80.169.225.44"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:62.82.138.99 include:iberlayer.com -all",

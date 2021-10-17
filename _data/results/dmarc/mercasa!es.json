@@ -4,38 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns6.dondominio.com",
-      "ns2.dondominio.com"
+      "ns2.dondominio.com",
+      "ns6.dondominio.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 1,
-        "hostname": "mercasa.in.tmes.trendmicro.eu",
-        "addresses": [
-          "18.185.115.145",
-          "18.185.115.146",
-          "18.185.115.147"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "mx1.mercasa.es",
-        "addresses": [
-          "2.139.205.222"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mx2.mercasa.es",
-        "addresses": [
-          "212.170.103.172"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 mx include:spf.tmes.trendmicro.com include:factoriadeinnovacion.com include:spf.protection.outlook.com -all",

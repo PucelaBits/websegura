@@ -11,8 +11,23 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 30,
+        "hostname": "mx30.asaccomunicaciones.es",
+        "addresses": [
+          "94.100.134.100"
+        ]
+      },
+      {
+        "preference": 40,
+        "hostname": "mx40.asaccomunicaciones.es",
+        "addresses": [
+          "83.246.65.85"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 +a +mx include:emailservice.cpd.as include:spf.hornetsecurity.com -all",

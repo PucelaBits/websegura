@@ -4,30 +4,15 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns2.dnsxperta.com",
       "ns3.dnsxperta.com",
-      "ns1.dnsxperta.com",
-      "ns2.dnsxperta.com"
+      "ns1.dnsxperta.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "elpuig.prored.es",
-        "addresses": [
-          "83.136.188.48"
-        ]
-      },
-      {
-        "preference": 100,
-        "hostname": "correo.prored.es",
-        "addresses": [
-          "5.35.200.131"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 mx include:prored.es -all",

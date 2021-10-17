@@ -10,8 +10,18 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "correodepalencia.es",
+        "addresses": [
+          "85.62.54.231"
+        ]
+      }
+    ],
+    "warnings": [
+      "85.62.54.231 does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:_spf.google.com ~all",
