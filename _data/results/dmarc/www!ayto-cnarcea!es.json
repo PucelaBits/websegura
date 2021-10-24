@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.cdmon.net",
-      "ns3.cdmon.net",
-      "ns2.cdmon.net",
       "ns4.cdmondns-01.org",
+      "ns1.cdmon.net",
+      "ns2.cdmon.net",
+      "ns3.cdmon.net",
       "ns5.cdmondns-01.com"
     ],
     "warnings": []
@@ -25,9 +25,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx ip4:82.223.148.203 ~all",
+    "record": "v=spf1 mx a include:spf.sentidocomun.es -all",
     "valid": true,
-    "dns_lookups": 1,
+    "dns_lookups": 3,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -36,17 +36,47 @@
           "mechanism": "mx"
         },
         {
-          "value": "82.223.148.203",
-          "mechanism": "ip4"
+          "value": "212.89.23.97",
+          "mechanism": "a"
         }
       ],
       "neutral": [],
       "softfail": [],
       "fail": [],
-      "include": [],
+      "include": [
+        {
+          "domain": "spf.sentidocomun.es",
+          "record": "v=spf1 ip4:154.58.16.69 ip4:154.58.16.49 ip4:54.217.206.198 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "154.58.16.69",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "154.58.16.49",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "54.217.206.198",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        }
+      ],
       "redirect": null,
       "exp": null,
-      "all": "softfail"
+      "all": "fail"
     }
   },
   "dmarc": {

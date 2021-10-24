@@ -5,15 +5,38 @@
   "ns": {
     "hostnames": [
       "ns2.coruna.es",
-      "ns3.coruna.es",
       "ns4.coruna.es",
-      "ns1.coruna.es"
+      "ns1.coruna.es",
+      "ns3.coruna.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx1.coruna.es",
+        "addresses": [
+          "212.51.63.11"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mx2.coruna.es",
+        "addresses": [
+          "212.51.63.12"
+        ]
+      },
+      {
+        "preference": 30,
+        "hostname": "mx3.coruna.es",
+        "addresses": [
+          "77.226.244.90",
+          "91.117.119.79"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx a:oxi.coruna.es a:bakdmz.coruna.es -all",

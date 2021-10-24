@@ -4,30 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "mortadelo.telecable.es",
-      "otilio-pub.telecable.es"
+      "otilio-pub.telecable.es",
+      "mortadelo.telecable.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 0,
-        "hostname": "aytoribadesella-es01b.mail.protection.outlook.com",
-        "addresses": [
-          "104.47.1.36",
-          "104.47.2.36"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "mail.ayto-ribadesella.es",
-        "addresses": [
-          "77.235.50.16"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com -all",

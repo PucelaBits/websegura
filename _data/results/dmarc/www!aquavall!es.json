@@ -10,49 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 1,
-        "hostname": "aspmx.l.google.com",
-        "addresses": [
-          "2607:f8b0:400e:c09::1b",
-          "74.125.20.27"
-        ]
-      },
-      {
-        "preference": 5,
-        "hostname": "alt1.aspmx.l.google.com",
-        "addresses": [
-          "142.250.115.27",
-          "2607:f8b0:4023:1004::1a"
-        ]
-      },
-      {
-        "preference": 5,
-        "hostname": "alt2.aspmx.l.google.com",
-        "addresses": [
-          "2607:f8b0:4003:c15::1a",
-          "64.233.171.27"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "alt3.aspmx.l.google.com",
-        "addresses": [
-          "142.250.152.26",
-          "2607:f8b0:4001:c56::1b"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "alt4.aspmx.l.google.com",
-        "addresses": [
-          "172.253.113.27",
-          "2607:f8b0:4023:1::1b"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 ip4:146.59.148.107 ip4:178.33.167.48 include:_spf.webempresa.eu ip4:151.80.24.226 +a +mx +include:_spf.google.com ~all",

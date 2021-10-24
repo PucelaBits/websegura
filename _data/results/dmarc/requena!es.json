@@ -4,49 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.dnsxperta.com",
-      "ns2.dnsxperta.com"
+      "ns2.dnsxperta.com",
+      "ns1.dnsxperta.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mx.spamexperts.com",
-        "addresses": [
-          "2001:550:2:61::2fc:100",
-          "38.89.254.156"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "fallbackmx.spamexperts.eu",
-        "addresses": [
-          "2001:550:2:61::2fc:100",
-          "2001:550:2:78::ca:100",
-          "2001:550:2:9::280:100",
-          "38.109.53.20",
-          "38.111.198.185",
-          "38.89.254.156"
-        ]
-      },
-      {
-        "preference": 30,
-        "hostname": "lastmx.spamexperts.net",
-        "addresses": [
-          "130.117.53.188",
-          "149.13.75.27",
-          "2001:550:2:61::2fc:100",
-          "2001:550:2:9::280:100",
-          "2001:978:2:2c::137:100",
-          "2001:978:2:7::162:100",
-          "38.111.198.185",
-          "38.89.254.156"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 include:spf.antispamcloud.com a:delivery.antispamcloud.com ~all",
@@ -55,6 +20,30 @@
     "warnings": [],
     "parsed": {
       "pass": [
+        {
+          "value": "154.61.86.40",
+          "mechanism": "a"
+        },
+        {
+          "value": "154.61.86.47",
+          "mechanism": "a"
+        },
+        {
+          "value": "154.61.86.49",
+          "mechanism": "a"
+        },
+        {
+          "value": "154.61.86.53",
+          "mechanism": "a"
+        },
+        {
+          "value": "154.61.86.54",
+          "mechanism": "a"
+        },
+        {
+          "value": "154.61.86.55",
+          "mechanism": "a"
+        },
         {
           "value": "185.201.16.200",
           "mechanism": "a"

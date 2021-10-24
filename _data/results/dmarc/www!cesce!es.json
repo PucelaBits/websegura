@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns5.grupocesce.es",
-      "ns4.grupocesce.es"
+      "ns4.grupocesce.es",
+      "ns5.grupocesce.es"
     ],
     "warnings": []
   },
@@ -15,40 +15,40 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "2607:f8b0:400e:c07::1b",
-          "74.125.142.26"
+          "2607:f8b0:400e:c08::1b",
+          "74.125.199.27"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "142.250.115.26",
-          "2607:f8b0:4023:1004::1a"
+          "2607:f8b0:4003:c15::1b",
+          "64.233.171.26"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "2607:f8b0:4003:c15::1a",
-          "64.233.171.27"
+          "142.250.152.27",
+          "2607:f8b0:4001:c56::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "aspmx2.googlemail.com",
         "addresses": [
-          "142.250.115.26",
-          "2607:f8b0:4023:1004::1a"
+          "2607:f8b0:4003:c15::1b",
+          "64.233.171.27"
         ]
       },
       {
         "preference": 10,
         "hostname": "aspmx3.googlemail.com",
         "addresses": [
-          "2607:f8b0:4003:c15::1b",
-          "64.233.171.26"
+          "142.250.152.26",
+          "2607:f8b0:4001:c56::1a"
         ]
       }
     ],
@@ -62,9 +62,61 @@
     "dns_lookups": 11
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=none; rua=mailto:dmarc-reports@cesce.es",
+    "valid": true,
+    "location": "cesce.es",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc-reports@cesce.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }

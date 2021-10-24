@@ -4,30 +4,15 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns4.acens.net",
       "ns7.acens.net",
-      "ns3.acens.net",
-      "ns4.acens.net"
+      "ns3.acens.net"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mail.museominadearnao.es",
-        "addresses": [
-          "195.55.127.94"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mail2.museominadearnao.es",
-        "addresses": [
-          "195.55.127.94"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": null,

@@ -7,8 +7,8 @@
       "ns3.stinet.net",
       "ns2.cescyl.es",
       "ns2.stinet.net",
-      "ns1.stinet.net",
-      "ns1.cescyl.es"
+      "ns1.cescyl.es",
+      "ns1.stinet.net"
     ],
     "warnings": []
   },
@@ -17,13 +17,11 @@
       {
         "preference": 5,
         "hostname": "i-mail.cescyl.es",
-        "addresses": [
-          "195.55.85.205"
-        ]
+        "addresses": []
       }
     ],
     "warnings": [
-      "195.55.85.205 does not have any reverse DNS (PTR) records"
+      "The DNS operation timed out after 3.1 seconds"
     ]
   },
   "spf": {

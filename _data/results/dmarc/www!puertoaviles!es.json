@@ -5,14 +5,22 @@
   "ns": {
     "hostnames": [
       "ns09.ns-cloud4b.com",
-      "ns06.ns-cloud4b.net",
-      "ns07.ns-cloud4b.org"
+      "ns07.ns-cloud4b.org",
+      "ns06.ns-cloud4b.net"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "netr.portel.com",
+        "addresses": [
+          "195.53.242.101"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": null,

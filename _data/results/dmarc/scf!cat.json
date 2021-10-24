@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.gestiondecuenta.com",
       "ns3.gestiondecuenta.com",
       "ns4.gestiondecuenta.com",
+      "ns2.gestiondecuenta.com",
       "ns.gestiondecuenta.com"
     ],
     "warnings": []
@@ -29,7 +29,8 @@
       }
     ],
     "warnings": [
-      "194.107.136.90 does not have any reverse DNS (PTR) records"
+      "194.107.136.90 does not have any reverse DNS (PTR) records",
+      "The reverse DNS of 81.43.101.123 is bustia.scf.cat, but the A/AAAA DNS records for bustia.scf.cat do not resolve to 81.43.101.123"
     ]
   },
   "spf": {
