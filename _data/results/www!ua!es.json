@@ -1,16 +1,16 @@
 {
   "algorithm_version": 2,
-  "end_time": "Fri, 22 Oct 2021 00:06:41 GMT",
-  "grade": "B",
+  "end_time": "Mon, 25 Oct 2021 00:06:52 GMT",
+  "grade": "D+",
   "hidden": false,
   "likelihood_indicator": "MEDIUM",
   "response_headers": {
     "Connection": "Keep-Alive",
     "Content-Encoding": "gzip",
-    "Content-Length": "20098",
+    "Content-Length": "20136",
     "Content-Security-Policy": "default-src https: blob: 'unsafe-inline' 'unsafe-eval'; img-src data: https:",
     "Content-Type": "text/html; charset=UTF-8",
-    "Date": "Fri, 22 Oct 2021 00:06:36 GMT",
+    "Date": "Mon, 25 Oct 2021 00:06:34 GMT",
     "Feature-Policy": "microphone 'self'; payment 'none'; sync-xhr 'self'",
     "Keep-Alive": "timeout=5, max=100",
     "Referrer-Policy": "same-origin",
@@ -21,12 +21,12 @@
     "X-Frame-Options": "SAMEORIGIN",
     "X-XSS-Protection": "1; mode=block"
   },
-  "scan_id": 22189550,
-  "score": 70,
-  "start_time": "Fri, 22 Oct 2021 00:06:31 GMT",
+  "scan_id": 22234669,
+  "score": 40,
+  "start_time": "Mon, 25 Oct 2021 00:06:28 GMT",
   "state": "FINISHED",
   "status_code": 200,
-  "tests_failed": 2,
-  "tests_passed": 10,
+  "tests_failed": 3,
+  "tests_passed": 9,
   "tests_quantity": 12
 }
