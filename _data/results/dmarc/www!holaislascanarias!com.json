@@ -4,73 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns.mad.idec.net",
-      "dns.lpa.idec.net"
+      "dns.lpa.idec.net",
+      "dns.mad.idec.net"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 1,
-        "hostname": "holaislascanarias-com.mail.protection.outlook.com",
-        "addresses": [
-          "104.47.10.36",
-          "104.47.9.36"
-        ]
-      },
-      {
-        "preference": 2,
-        "hostname": "mx.idecnet.com",
-        "addresses": [
-          "212.64.169.75",
-          "212.64.169.76"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "mx1.idecnet.com",
-        "addresses": [
-          "212.64.169.76"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mx2.idecnet.com",
-        "addresses": [
-          "212.64.169.75"
-        ]
-      },
-      {
-        "preference": 30,
-        "hostname": "mx3.idecnet.com",
-        "addresses": [
-          "212.64.169.76"
-        ]
-      },
-      {
-        "preference": 40,
-        "hostname": "mx4.idecnet.com",
-        "addresses": [
-          "212.64.169.76"
-        ]
-      },
-      {
-        "preference": 50,
-        "hostname": "mx5.idecnet.com",
-        "addresses": [
-          "212.64.169.75"
-        ]
-      },
-      {
-        "preference": 60,
-        "hostname": "mx6.idecnet.com",
-        "addresses": [
-          "212.64.169.76"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com -all",

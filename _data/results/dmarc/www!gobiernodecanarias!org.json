@@ -4,29 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "seti.gobiernodecanarias.org",
-      "acatife.gobiernodecanarias.org"
+      "acatife.gobiernodecanarias.org",
+      "seti.gobiernodecanarias.org"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "smtp-lp.gobiernodecanarias.org",
-        "addresses": [
-          "93.188.136.122"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "smtp-tf.gobiernodecanarias.org",
-        "addresses": [
-          "93.188.137.42"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 mx a:correo.gobiernodecanarias.org a:correomasivo.gobiernodecanarias.org -all",
@@ -70,7 +55,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; sp=quarantine; adkim=r; aspf=r; rua=mailto:dmarc-rua.tic@gobiernodecanarias.org; ruf=mailto:dmarc-ruf.tic@gobiernodecanarias.org; fo=1;",
+    "record": "v=DMARC1; p=reject; sp=reject; adkim=r; aspf=r; rua=mailto:dmarc-rua.tic@gobiernodecanarias.org; ruf=mailto:dmarc-ruf.tic@gobiernodecanarias.org; fo=1;",
     "valid": true,
     "location": "gobiernodecanarias.org",
     "warnings": [],
@@ -80,11 +65,11 @@
         "explicit": true
       },
       "p": {
-        "value": "quarantine",
+        "value": "reject",
         "explicit": true
       },
       "sp": {
-        "value": "quarantine",
+        "value": "reject",
         "explicit": true
       },
       "adkim": {

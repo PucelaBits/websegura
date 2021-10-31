@@ -1,23 +1,21 @@
 {
-  "domain": "granada.es",
-  "base_domain": "granada.es",
+  "domain": "auvasa.e-pase.es",
+  "base_domain": "e-pase.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "ns.granada.org",
-      "ns",
-      "ns2.granada.org"
-    ],
+    "hostnames": [],
     "warnings": []
   },
   "mx": {
     "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
   },
   "spf": {
     "record": null,
     "valid": false,
-    "error": "granada.es does not have a SPF TXT record"
+    "error": "auvasa.e-pase.es does not have a SPF TXT record"
   },
   "dmarc": {
     "record": null,

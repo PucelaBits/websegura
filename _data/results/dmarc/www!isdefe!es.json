@@ -3,109 +3,22 @@
   "base_domain": "isdefe.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "ns1.isdefe.es",
-      "ns2.isdefe.es"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "mx": {
     "hosts": [],
     "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
-    "record": "v=spf1 mx a:mail1.isdefe.es a:mail6.isdefe.es a:mail33.isdefe.es -all",
-    "valid": true,
-    "dns_lookups": 4,
-    "warnings": [],
-    "parsed": {
-      "pass": [
-        {
-          "value": "cust13082-1.in.mailcontrol.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "cust13082-2.in.mailcontrol.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "194.15.213.239",
-          "mechanism": "a"
-        },
-        {
-          "value": "194.15.213.252",
-          "mechanism": "a"
-        },
-        {
-          "value": "194.15.213.240",
-          "mechanism": "a"
-        }
-      ],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [],
-      "redirect": null,
-      "exp": null,
-      "all": "fail"
-    }
+    "record": null,
+    "valid": false,
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; pct=100; fo=1; rua=mailto:sistemas@isdefe.es",
-    "valid": true,
-    "location": "isdefe.es",
-    "warnings": [],
-    "tags": {
-      "v": {
-        "value": "DMARC1",
-        "explicit": true
-      },
-      "p": {
-        "value": "none",
-        "explicit": true
-      },
-      "pct": {
-        "value": 100,
-        "explicit": true
-      },
-      "fo": {
-        "value": [
-          "1"
-        ],
-        "explicit": true
-      },
-      "rua": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "sistemas@isdefe.es",
-            "size_limit": null
-          }
-        ],
-        "explicit": true
-      },
-      "adkim": {
-        "value": "r",
-        "explicit": false
-      },
-      "aspf": {
-        "value": "r",
-        "explicit": false
-      },
-      "rf": {
-        "value": [
-          "afrf"
-        ],
-        "explicit": false
-      },
-      "ri": {
-        "value": 86400,
-        "explicit": false
-      },
-      "sp": {
-        "value": "none",
-        "explicit": false
-      }
-    }
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "The DNS operation timed out after 3.1 seconds"
   }
 }

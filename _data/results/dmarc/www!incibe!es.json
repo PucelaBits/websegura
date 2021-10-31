@@ -4,34 +4,17 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.cdmon.net",
-      "ns4.cdmondns-01.org",
-      "ns5.cdmondns-01.com",
       "ns3.cdmon.net",
+      "ns4.cdmondns-01.org",
+      "ns2.cdmon.net",
+      "ns5.cdmondns-01.com",
       "ns1.cdmon.net"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "correo.incibe.es",
-        "addresses": [
-          "195.53.165.148"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "correo2.incibe.es",
-        "addresses": [
-          "193.146.253.148"
-        ]
-      }
-    ],
-    "warnings": [
-      "193.146.253.148 does not have any reverse DNS (PTR) records"
-    ]
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 mx a:correo.inteco.es a:correo2.inteco.es -all",

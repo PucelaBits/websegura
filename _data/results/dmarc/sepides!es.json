@@ -4,15 +4,15 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns06.ns-cloud4b.net",
       "ns08.ns-cloud4b.com",
-      "ns07.ns-cloud4b.org"
+      "ns07.ns-cloud4b.org",
+      "ns06.ns-cloud4b.net"
     ],
     "warnings": []
   },
   "mx": {
     "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "error": "All nameservers failed to answer the query 100.175.64.217.in-addr.arpa. IN PTR: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
   },
   "spf": {
     "record": "v=spf1 +a +mx include:emailservice.cpd.as -all",

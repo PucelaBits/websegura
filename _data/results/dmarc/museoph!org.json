@@ -5,14 +5,22 @@
   "ns": {
     "hostnames": [
       "ns3.digitalocean.com",
-      "ns1.digitalocean.com",
-      "ns2.digitalocean.com"
+      "ns2.digitalocean.com",
+      "ns1.digitalocean.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.museoph.org",
+        "addresses": [
+          "82.98.162.131"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 +a +mx +a:madrid.alpexhosting.com include:spf.acumbamail.com -all",

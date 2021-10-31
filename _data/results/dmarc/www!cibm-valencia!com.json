@@ -4,14 +4,24 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns.redunda.com",
-      "ns2.redunda.com"
+      "ns2.redunda.com",
+      "ns.redunda.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.cibm-valencia.com",
+        "addresses": [
+          "213.27.202.36"
+        ]
+      }
+    ],
+    "warnings": [
+      "The reverse DNS of 213.27.202.36 is mail5.servidoreswindows.net, but the A/AAAA DNS records for mail5.servidoreswindows.net do not resolve to 213.27.202.36"
+    ]
   },
   "spf": {
     "record": null,

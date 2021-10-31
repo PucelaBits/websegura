@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "cdj11.cgpj.es",
-      "artemis.ttd.net"
+      "artemis.ttd.net",
+      "cdj11.cgpj.es"
     ],
     "warnings": []
   },
@@ -29,7 +29,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx a:mail.pnj.cgpj.es a:mailip1.poderjudicial.es a:mailip2.poderjudicial.es a:correo.escuela.poderjudicial.es ip4:195.55.151.37 ip4:195.55.151.39 ip4:194.224.99.240 ip4:195.55.151.99 -all",
+    "record": "v=spf1 mx a:mail.pnj.cgpj.es a:mailip1.poderjudicial.es a:mailip2.poderjudicial.es a:correo.escuela.poderjudicial.es ip4:195.55.151.37 ip4:195.55.151.39 ip4:62.37.233.240  ip4:195.55.151.99 -all",
     "valid": true,
     "dns_lookups": 5,
     "warnings": [],
@@ -68,7 +68,7 @@
           "mechanism": "ip4"
         },
         {
-          "value": "194.224.99.240",
+          "value": "62.37.233.240",
           "mechanism": "ip4"
         },
         {

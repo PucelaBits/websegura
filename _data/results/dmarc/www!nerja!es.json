@@ -3,11 +3,8 @@
   "base_domain": "nerja.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "ns2.srv-acens.com",
-      "ns1.srv-acens.com"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "mx": {
     "hosts": [
