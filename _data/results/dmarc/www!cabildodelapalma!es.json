@@ -10,56 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "aspmx.l.google.com",
-        "addresses": [
-          "142.250.115.26",
-          "2607:f8b0:4023:1004::1b"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "alt1.aspmx.l.google.com",
-        "addresses": [
-          "173.194.77.27",
-          "2607:f8b0:4023:401::1b"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "alt2.aspmx.l.google.com",
-        "addresses": [
-          "172.253.113.26",
-          "2607:f8b0:4023:1::1a"
-        ]
-      },
-      {
-        "preference": 30,
-        "hostname": "alt3.aspmx.l.google.com",
-        "addresses": [
-          "173.194.77.26",
-          "2607:f8b0:4023:1402::1b"
-        ]
-      },
-      {
-        "preference": 30,
-        "hostname": "alt4.aspmx.l.google.com",
-        "addresses": [
-          "173.194.219.26",
-          "2607:f8b0:400d:c07::1a"
-        ]
-      },
-      {
-        "preference": 40,
-        "hostname": "fd74xvjn6iyddr2vmlahveq636i6thbr56ve3wp4n4zjgi7qracq.mx-verification.google.com",
-        "addresses": []
-      }
-    ],
-    "warnings": [
-      "The domain fd74xvjn6iyddr2vmlahveq636i6thbr56ve3wp4n4zjgi7qracq.mx-verification.google.com does not exist"
-    ]
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": null,

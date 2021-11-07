@@ -13,20 +13,39 @@
     "hosts": [
       {
         "preference": 10,
+        "hostname": "srvsmtp03.mites.gob.es",
+        "addresses": [
+          "192.148.211.63"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "srvsmtp04.mites.gob.es",
+        "addresses": [
+          "192.148.211.64"
+        ]
+      },
+      {
+        "preference": 100,
         "hostname": "srvsmtp01.mites.gob.es",
         "addresses": [
           "192.148.211.61"
         ]
       },
       {
-        "preference": 10,
+        "preference": 100,
         "hostname": "srvsmtp02.mites.gob.es",
         "addresses": [
           "192.148.211.62"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The domain 63.red-192-148-211.customer.static.ccgg.telefonica.net does not exist",
+      "The reverse DNS of 192.148.211.63 is 63.red-192-148-211.customer.static.ccgg.telefonica.net, but the A/AAAA DNS records for 63.red-192-148-211.customer.static.ccgg.telefonica.net do not resolve to 192.148.211.63",
+      "The domain 64.red-192-148-211.customer.static.ccgg.telefonica.net does not exist",
+      "The reverse DNS of 192.148.211.64 is 64.red-192-148-211.customer.static.ccgg.telefonica.net, but the A/AAAA DNS records for 64.red-192-148-211.customer.static.ccgg.telefonica.net do not resolve to 192.148.211.64"
+    ]
   },
   "spf": {
     "record": "v=spf1 mx a:srvsmtp01.mites.gob.es a:srvsmtp02.mites.gob.es include:spf.protection.outlook.com -all",
@@ -35,6 +54,14 @@
     "warnings": [],
     "parsed": {
       "pass": [
+        {
+          "value": "srvsmtp03.mites.gob.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "srvsmtp04.mites.gob.es",
+          "mechanism": "mx"
+        },
         {
           "value": "srvsmtp01.mites.gob.es",
           "mechanism": "mx"

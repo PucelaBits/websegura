@@ -4,14 +4,22 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.servidoresdns10.com",
-      "dns1.servidoresdns10.com"
+      "dns1.servidoresdns10.com",
+      "dns2.servidoresdns10.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "correo.cetarsa.es",
+        "addresses": [
+          "194.179.96.130"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx a ip4:194.179.96.130 a:cetarsa.es include:spf.abansys.com ~all",

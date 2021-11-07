@@ -11,8 +11,25 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 1,
+        "hostname": "aspmx.l.google.com",
+        "addresses": [
+          "108.177.120.26",
+          "2607:f8b0:4001:c20::1a"
+        ]
+      },
+      {
+        "preference": 5,
+        "hostname": "alt1.aspmx.l.google.com",
+        "addresses": [
+          "173.194.77.27",
+          "2607:f8b0:4023:401::1b"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": null,

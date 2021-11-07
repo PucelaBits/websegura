@@ -10,8 +10,37 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 2,
+        "hostname": "antispam31.tragsa.es",
+        "addresses": [
+          "195.77.152.112"
+        ]
+      },
+      {
+        "preference": 2,
+        "hostname": "antispam32.tragsa.es",
+        "addresses": [
+          "195.77.152.113"
+        ]
+      },
+      {
+        "preference": 2,
+        "hostname": "antispam33.tragsa.es",
+        "addresses": [
+          "195.77.152.114"
+        ]
+      },
+      {
+        "preference": 50,
+        "hostname": "mailhost-antispam.ttd.net",
+        "addresses": [
+          "213.0.184.65"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx:tragsa.es a:mail00.tragsa.es a:mailrelay01.tragsa.es a:mail20.tragsa.es a:mailsrv30.tragsa.es ip4:195.77.152.0/24 -all",

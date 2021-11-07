@@ -29,7 +29,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:195.77.216.146 ip4:195.77.216.147 ip4:195.76.233.59 a mx ?all",
+    "record": "v=spf1 ip4:195.77.216.146 ip4:195.76.233.59 a mx ?all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
@@ -37,10 +37,6 @@
       "pass": [
         {
           "value": "195.77.216.146",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "195.77.216.147",
           "mechanism": "ip4"
         },
         {

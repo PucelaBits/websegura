@@ -10,30 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 1,
-        "hostname": "mx1.ovh.net",
-        "addresses": [
-          "188.165.47.122"
-        ]
-      },
-      {
-        "preference": 5,
-        "hostname": "mx2.ovh.net",
-        "addresses": [
-          "87.98.132.45"
-        ]
-      },
-      {
-        "preference": 100,
-        "hostname": "mxb.ovh.net",
-        "addresses": [
-          "46.105.45.21"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 include:mx.ovh.com ~all",

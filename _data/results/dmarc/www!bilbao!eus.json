@@ -10,27 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "cluster4.eu.messagelabs.com",
-        "addresses": [
-          "46.226.52.100",
-          "46.226.52.196",
-          "85.158.142.100",
-          "85.158.142.199"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "cluster4a.eu.messagelabs.com",
-        "addresses": [
-          "3.68.248.205",
-          "35.157.88.113"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 include:spf.messagelabs.com a:smtp1.bilbao.eus a:smtp2.bilbao.eus ~all",

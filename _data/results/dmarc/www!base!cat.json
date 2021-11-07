@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.nominalia.com",
-      "dns2.nominalia.com"
+      "dns2.nominalia.com",
+      "dns1.nominalia.com"
     ],
     "warnings": []
   },
@@ -33,7 +33,9 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "90.160.63.9 does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
     "record": "v=spf1 a mx ip4:90.160.60.248/32 -all",

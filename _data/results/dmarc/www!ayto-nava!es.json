@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns-es.1and1-dns.es",
+      "ns-es.1and1-dns.com",
       "ns-es.1and1-dns.org",
-      "ns-es.1and1-dns.biz",
-      "ns-es.1and1-dns.com"
+      "ns-es.1and1-dns.es",
+      "ns-es.1and1-dns.biz"
     ],
     "warnings": []
   },
@@ -28,7 +28,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The DNS operation timed out after 2.1 seconds",
+      "The reverse DNS of 217.72.192.67 is mx01.kundenserver.de, but the A/AAAA DNS records for mx01.kundenserver.de do not resolve to 217.72.192.67"
+    ]
   },
   "spf": {
     "record": null,

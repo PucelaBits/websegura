@@ -3,23 +3,12 @@
   "base_domain": "aytolena.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "ns1.srv-acens.com",
-      "ns2.srv-acens.com"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mx.aytolena.es",
-        "addresses": [
-          "217.116.0.227"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 ip4:212.89.23.3 redirect=spf.dominioabsoluto.net",

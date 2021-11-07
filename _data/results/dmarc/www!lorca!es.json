@@ -10,30 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "correo.lorca.es",
-        "addresses": [
-          "213.0.108.5"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "correo2.lorca.es",
-        "addresses": [
-          "213.0.108.5"
-        ]
-      },
-      {
-        "preference": 30,
-        "hostname": "mx.leader-network.com",
-        "addresses": [
-          "194.140.143.69"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 mx -all",
