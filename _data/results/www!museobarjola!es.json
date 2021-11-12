@@ -1,20 +1,26 @@
 {
   "algorithm_version": 2,
-  "end_time": "Wed, 10 Nov 2021 00:30:04 GMT",
+  "end_time": "Fri, 12 Nov 2021 00:16:32 GMT",
   "grade": "F",
   "hidden": false,
   "likelihood_indicator": "MEDIUM",
   "response_headers": {
-    "Connection": "close",
-    "Content-Type": "text/html; charset=utf-8",
-    "Window-target": "_top"
+    "Accept-Ranges": "bytes",
+    "Content-Length": "251",
+    "Content-Type": "text/html",
+    "Date": "Fri, 12 Nov 2021 00:16:31 GMT",
+    "ETag": "\"f583463665d1d71:0\"",
+    "Last-Modified": "Thu, 04 Nov 2021 10:17:46 GMT",
+    "Server": "Microsoft-IIS/10.0",
+    "X-Powered-By": "ASP.NET",
+    "X-Powered-By-Plesk": "PleskWin"
   },
-  "scan_id": 22616562,
-  "score": 0,
-  "start_time": "Wed, 10 Nov 2021 00:29:55 GMT",
+  "scan_id": 22652761,
+  "score": 20,
+  "start_time": "Fri, 12 Nov 2021 00:16:26 GMT",
   "state": "FINISHED",
-  "status_code": 403,
-  "tests_failed": 6,
-  "tests_passed": 6,
+  "status_code": 200,
+  "tests_failed": 5,
+  "tests_passed": 7,
   "tests_quantity": 12
 }
