@@ -34,14 +34,15 @@ function getAllUrls() {
 
 /**
  * Devuelve la URL de las webs que no se han refrescado
- * en los últimos MAX_TIME_TO_REFRESH_MILLIS.
- * Para evitar saturar el API de Mozilla se devuelve MAX_RESULTS como máximo, ordenados al azar.
+ * en los últimos `MAX_TIME_TO_REFRESH_MILLIS`.
+ * Para evitar saturar el API de Mozilla se devuelve `MAX_RESULTS` como máximo.
  *
  * For the sake of simplicity, this function is sync for now
  */
 async function parse(limit = MAX_RESULTS) {
-  const all = getAllUrls()
-    .filter(outdated)
+  const allUrls = getAllUrls()
+  const outdatedUrls = allUrls.filter(outdated)
+  const all = outdatedUrls
     .sort((a, b) => {
       const aInfo = siteInfo(a);
       const bInfo = siteInfo(b);
@@ -62,7 +63,7 @@ async function parse(limit = MAX_RESULTS) {
     })
     .slice(0, limit);
 
-  console.log(`Outdated sites found = ${all.length} (limit = ${limit})`);
+  console.log(`Total sites: ${allUrls.length}. Outdated sites: ${all.length}. Reported sites: ${all.length} (limit = ${limit})`);
   return all;
 }
 
@@ -78,11 +79,18 @@ function filePath(site) {
   return`_data/results/${fileName}`;
 }
 
-// XXX memoize or cache somehow to improve performance
+const siteInfoCache = {}
+
 function siteInfo(site) {
+  if (siteInfoCache[site] !== undefined) {
+    return siteInfoCache[site]
+  }
+
   try {
     const path = filePath(site);
-    return JSON.parse(fs.readFileSync(path));
+    const result = JSON.parse(fs.readFileSync(path));
+    siteInfoCache[site] = result
+    return result
   } catch (err) {
     console.log('\tWARN', err.message);
     // file not found (err.code === ENOENT) or an unexpected error, refresh the analysis
