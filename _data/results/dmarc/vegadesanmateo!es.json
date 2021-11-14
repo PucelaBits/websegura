@@ -4,73 +4,16 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns.dinahosting.com",
       "ns4.dinahosting.com",
       "ns3.dinahosting.com",
-      "ns2.dinahosting.com"
+      "ns2.dinahosting.com",
+      "ns.dinahosting.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "aspmx.l.google.com",
-        "addresses": [
-          "142.250.152.27",
-          "2607:f8b0:4001:c00::1a"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "alt1.aspmx.l.google.com",
-        "addresses": [
-          "173.194.77.27",
-          "2607:f8b0:4023:401::1a"
-        ]
-      },
-      {
-        "preference": 30,
-        "hostname": "aspmx3.googlemail.com",
-        "addresses": [
-          "173.194.219.26",
-          "2607:f8b0:4002:c03::1a"
-        ]
-      },
-      {
-        "preference": 40,
-        "hostname": "alt2.aspmx.l.google.com",
-        "addresses": [
-          "173.194.219.26",
-          "2607:f8b0:4002:c03::1b"
-        ]
-      },
-      {
-        "preference": 50,
-        "hostname": "aspmx4.googlemail.com",
-        "addresses": [
-          "142.250.112.26",
-          "2607:f8b0:4023:1402::1b"
-        ]
-      },
-      {
-        "preference": 60,
-        "hostname": "aspmx2.googlemail.com",
-        "addresses": [
-          "173.194.77.27",
-          "2607:f8b0:4023:401::1a"
-        ]
-      },
-      {
-        "preference": 70,
-        "hostname": "aspmx5.googlemail.com",
-        "addresses": [
-          "173.194.204.26",
-          "2607:f8b0:400d:c07::1b"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 include:_spf.google.com ~all",

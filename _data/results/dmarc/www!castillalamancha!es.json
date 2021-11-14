@@ -4,29 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.jccm.es",
-      "ns1.jccm.es"
+      "ns1.jccm.es",
+      "ns2.jccm.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mail.jccm.es",
-        "addresses": [
-          "89.107.242.26"
-        ]
-      },
-      {
-        "preference": 200,
-        "hostname": "mail2.jccm.es",
-        "addresses": [
-          "89.107.242.1"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 mx a:pop3.jccm.es a:smtp2.jccm.es a:mail1.jccm.es a:mail3.jccm.es a:mail4.jccm.es a:mail5.jccm.es a:mail6.jccm.es a:mail7.jccm.es a:mail8.jccm.es -all",

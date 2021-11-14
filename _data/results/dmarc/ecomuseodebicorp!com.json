@@ -4,14 +4,22 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns50311.webempresa.eu",
-      "ns50312.webempresa.eu"
+      "ns50312.webempresa.eu",
+      "ns50311.webempresa.eu"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 0,
+        "hostname": "ecomuseodebicorp.com",
+        "addresses": [
+          "178.33.167.114"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:184.173.239.120 a mx include:websitewelcome.com ~all",

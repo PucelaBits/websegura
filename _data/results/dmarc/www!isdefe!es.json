@@ -3,17 +3,36 @@
   "base_domain": "isdefe.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hostnames": [
+      "ns1.isdefe.es",
+      "ns2.isdefe.es"
+    ],
+    "warnings": []
   },
   "mx": {
     "hosts": [],
     "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "record": "v=spf1 mx a:mail1.isdefe.es a:mail6.isdefe.es a:mail33.isdefe.es -all",
+    "valid": true,
+    "dns_lookups": 4,
+    "warnings": [
+      "The DNS operation timed out after 3.1 seconds",
+      "The DNS operation timed out after 3.1 seconds",
+      "The DNS operation timed out after 3.1 seconds",
+      "The DNS operation timed out after 3.1 seconds"
+    ],
+    "parsed": {
+      "pass": [],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
     "record": null,

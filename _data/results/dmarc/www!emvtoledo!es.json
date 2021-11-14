@@ -4,16 +4,52 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1064.ui-dns.org",
       "ns1064.ui-dns.de",
-      "ns1064.ui-dns.biz",
-      "ns1064.ui-dns.com"
+      "ns1064.ui-dns.com",
+      "ns1064.ui-dns.org",
+      "ns1064.ui-dns.biz"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 1,
+        "hostname": "aspmx.l.google.com",
+        "addresses": [
+          "173.194.207.27",
+          "2607:f8b0:400d:c02::1a"
+        ]
+      },
+      {
+        "preference": 5,
+        "hostname": "alt1.aspmx.l.google.com",
+        "addresses": [
+          "2800:3f0:4003:c00::1a",
+          "64.233.186.26"
+        ]
+      },
+      {
+        "preference": 5,
+        "hostname": "alt2.aspmx.l.google.com",
+        "addresses": [
+          "209.85.202.27",
+          "2a00:1450:400b:c00::1b"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "aspmx2.googlemail.com",
+        "addresses": [
+          "2800:3f0:4003:c00::1a",
+          "64.233.186.27"
+        ]
+      }
+    ],
+    "warnings": [
+      "2800:3f0:4003:c00::1a does not have any reverse DNS (PTR) records",
+      "2800:3f0:4003:c00::1a does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
     "record": null,

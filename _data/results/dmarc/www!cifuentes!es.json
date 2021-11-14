@@ -4,16 +4,24 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns.dinahosting.com",
-      "ns4.dinahosting.com",
       "ns2.dinahosting.com",
-      "ns3.dinahosting.com"
+      "ns3.dinahosting.com",
+      "ns.dinahosting.com",
+      "ns4.dinahosting.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.cifuentes.es",
+        "addresses": [
+          "82.98.155.217"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 a mx ~all",

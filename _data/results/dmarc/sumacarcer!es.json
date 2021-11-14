@@ -4,15 +4,50 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.dnsxperta.com",
+      "ns3.dnsxperta.com",
       "ns1.dnsxperta.com",
-      "ns3.dnsxperta.com"
+      "ns2.dnsxperta.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx.spamexperts.com",
+        "addresses": [
+          "2001:550:2:78::ca:100",
+          "38.111.198.185"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "fallbackmx.spamexperts.eu",
+        "addresses": [
+          "2001:550:2:61::2fc:100",
+          "2001:550:2:78::ca:100",
+          "2001:550:2:9::280:100",
+          "38.109.53.20",
+          "38.111.198.185",
+          "38.89.254.156"
+        ]
+      },
+      {
+        "preference": 30,
+        "hostname": "lastmx.spamexperts.net",
+        "addresses": [
+          "130.117.53.188",
+          "149.13.75.27",
+          "2001:550:2:61::2fc:100",
+          "2001:550:2:9::280:100",
+          "2001:978:2:2c::137:100",
+          "2001:978:2:7::162:100",
+          "38.111.198.185",
+          "38.89.254.156"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx include:spf.qsemail.net ~all",
@@ -109,6 +144,10 @@
                 "mechanism": "a"
               },
               {
+                "value": "154.61.86.52",
+                "mechanism": "a"
+              },
+              {
                 "value": "154.61.86.53",
                 "mechanism": "a"
               },
@@ -118,6 +157,10 @@
               },
               {
                 "value": "154.61.86.55",
+                "mechanism": "a"
+              },
+              {
+                "value": "154.61.86.57",
                 "mechanism": "a"
               },
               {

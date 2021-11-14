@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns12.servicio-online.net",
+      "ns10.servicio-online.net",
       "ns11.servicio-online.net",
-      "ns10.servicio-online.net"
+      "ns12.servicio-online.net"
     ],
     "warnings": []
   },
@@ -20,7 +20,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The DNS operation timed out after 2.1 seconds",
+      "The reverse DNS of 213.0.98.20 is correo.mogan.es, but the A/AAAA DNS records for correo.mogan.es do not resolve to 213.0.98.20"
+    ]
   },
   "spf": {
     "record": "v=spf1 mx a ip4:213.0.98.20 a:inf1.mogan.es -all",

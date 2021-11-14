@@ -4,15 +4,26 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns.gipuzkoa.net",
+      "dns.gipuzkoa.eus",
       "dns2.gipuzkoa.net",
-      "dns.gipuzkoa.eus"
+      "dns.gipuzkoa.net"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 100,
+        "hostname": "barracuda-ls.gipuzkoa.net",
+        "addresses": [
+          "82.116.160.138"
+        ]
+      }
+    ],
+    "warnings": [
+      "The domain barraspam-ls.gipuzkoa.net does not exist",
+      "The reverse DNS of 82.116.160.138 is barraspam-ls.gipuzkoa.net, but the A/AAAA DNS records for barraspam-ls.gipuzkoa.net do not resolve to 82.116.160.138"
+    ]
   },
   "spf": {
     "record": "v=spf1 mx ip4:82.116.160.145/32 ip4:82.116.160.138/32 include:spf.protection.outlook.com -all",

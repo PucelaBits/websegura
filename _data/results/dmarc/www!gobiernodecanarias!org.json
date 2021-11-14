@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "acatife.gobiernodecanarias.org",
-      "seti.gobiernodecanarias.org"
+      "seti.gobiernodecanarias.org",
+      "acatife.gobiernodecanarias.org"
     ],
     "warnings": []
   },
@@ -45,6 +45,10 @@
         },
         {
           "value": "93.188.136.122",
+          "mechanism": "a"
+        },
+        {
+          "value": "93.188.137.42",
           "mechanism": "a"
         },
         {

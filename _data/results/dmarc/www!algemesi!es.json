@@ -10,8 +10,18 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 100,
+        "hostname": "mx.algemesi.es",
+        "addresses": [
+          "213.162.200.234"
+        ]
+      }
+    ],
+    "warnings": [
+      "213.162.200.234 does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
     "record": null,
@@ -22,6 +32,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.algemesi.es\n\ngoogle-site-verification=PUvHNUyXEtc_fbjw3K3fQTPvv_QneTqrRxDP7BnqOMY"
   }
 }

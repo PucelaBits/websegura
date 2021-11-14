@@ -33,7 +33,7 @@
         "preference": 20,
         "hostname": "emivasa-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.12.36",
+          "104.47.13.36",
           "104.47.14.36"
         ]
       }
@@ -41,7 +41,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:84.124.28.165 include:_spf.innovatelecom.es include:spf.protection.outlook.com exists:%{i}.spf.hc782-58.eu.iphmx.com ~all",
+    "record": "v=spf1 ip4:84.124.28.165 ip4:90.161.157.217 include:_spf.innovatelecom.es include:spf.protection.outlook.com exists:%{i}.spf.hc782-58.eu.iphmx.com ~all",
     "valid": true,
     "dns_lookups": 4,
     "warnings": [],
@@ -49,6 +49,10 @@
       "pass": [
         {
           "value": "84.124.28.165",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "90.161.157.217",
           "mechanism": "ip4"
         },
         {

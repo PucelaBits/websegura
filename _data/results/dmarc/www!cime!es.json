@@ -15,44 +15,46 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "2607:f8b0:4001:c34::1a",
-          "74.125.129.27"
+          "173.194.205.27",
+          "2607:f8b0:400d:c02::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "173.194.77.27",
-          "2607:f8b0:4023:401::1b"
+          "2800:3f0:4003:c00::1b",
+          "64.233.186.27"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "173.194.219.26",
-          "2607:f8b0:4002:c03::1b"
+          "209.85.202.27",
+          "2a00:1450:400b:c00::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "142.250.112.26",
-          "2607:f8b0:4023:1402::1a"
+          "2a00:1450:400c:c0b::1a",
+          "64.233.184.26"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "173.194.204.26",
-          "2607:f8b0:400d:c07::1b"
+          "142.250.27.27",
+          "2a00:1450:4025:401::1a"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "2800:3f0:4003:c00::1b does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
     "record": "v=spf1 ip4:88.87.207.210  ip4:88.87.207.202/32 ip4:185.68.189.2/32 ip4:195.57.252.186/32 ip4:185.68.189.17/32 ip4:185.68.189.2/32 include:spf.ipzmarketing.com include:smtp.tgi.cat include:_spf.google.com ~all",

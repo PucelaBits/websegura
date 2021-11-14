@@ -10,23 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 20,
-        "hostname": "mx.parlamentodegalicia.es",
-        "addresses": [
-          "213.0.85.241"
-        ]
-      },
-      {
-        "preference": 30,
-        "hostname": "correo.parlamentodegalicia.es",
-        "addresses": [
-          "213.0.85.240"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 mx ip4:213.0.85.241/32 -all",

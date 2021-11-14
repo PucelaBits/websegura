@@ -10,8 +10,24 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 5,
+        "hostname": "correo1.dipvalladolid.es",
+        "addresses": [
+          "89.6.103.180"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "provinciadevalladolid-com.mail.protection.outlook.com",
+        "addresses": [
+          "104.47.13.36",
+          "104.47.14.36"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com -all",
