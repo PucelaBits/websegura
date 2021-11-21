@@ -10,24 +10,14 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "correo.cetarsa.es",
-        "addresses": [
-          "194.179.96.130"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 mx a ip4:194.179.96.130 a:cetarsa.es include:spf.abansys.com ~all",
     "valid": true,
     "dns_lookups": 4,
-    "warnings": [
-      "SPF type DNS records found. Use of DNS Type SPF has been removed in the standards track version of SPF, RFC 7208. These records should be removed and replaced with TXT records: v=spf1 mx a ip4:194.179.96.130 a:cetarsa.es include:spf.abansys.com ~all"
-    ],
+    "warnings": [],
     "parsed": {
       "pass": [
         {

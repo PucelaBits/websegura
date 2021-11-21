@@ -4,14 +4,62 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "silmail.silme.es",
-      "servdns3.silme.es"
+      "servdns3.silme.es",
+      "silmail.silme.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 1,
+        "hostname": "aspmx.l.google.com",
+        "addresses": [
+          "2607:f8b0:400e:c08::1b",
+          "74.125.142.27"
+        ]
+      },
+      {
+        "preference": 5,
+        "hostname": "alt1.aspmx.l.google.com",
+        "addresses": [
+          "2607:f8b0:4003:c15::1b",
+          "64.233.171.27"
+        ]
+      },
+      {
+        "preference": 5,
+        "hostname": "alt2.aspmx.l.google.com",
+        "addresses": [
+          "142.250.152.27",
+          "2607:f8b0:4001:c56::1b"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "alt3.aspmx.l.google.com",
+        "addresses": [
+          "172.253.113.26",
+          "2607:f8b0:4023:1::1a"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "alt4.aspmx.l.google.com",
+        "addresses": [
+          "173.194.77.27",
+          "2607:f8b0:4023:401::1b"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "correuweb.silme.es",
+        "addresses": [
+          "185.68.189.17"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:88.87.207.210  ip4:88.87.207.202/32 ip4:185.68.189.2/32 ip4:195.57.252.186/32 ip4:185.68.189.17/32 ip4:185.68.189.2/32 include:smtp.tgi.cat include:_spf.google.com ~all",

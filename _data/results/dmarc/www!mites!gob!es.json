@@ -40,17 +40,12 @@
         ]
       }
     ],
-    "warnings": [
-      "The domain 63.red-192-148-211.customer.static.ccgg.telefonica.net does not exist",
-      "The reverse DNS of 192.148.211.63 is 63.red-192-148-211.customer.static.ccgg.telefonica.net, but the A/AAAA DNS records for 63.red-192-148-211.customer.static.ccgg.telefonica.net do not resolve to 192.148.211.63",
-      "The domain 64.red-192-148-211.customer.static.ccgg.telefonica.net does not exist",
-      "The reverse DNS of 192.148.211.64 is 64.red-192-148-211.customer.static.ccgg.telefonica.net, but the A/AAAA DNS records for 64.red-192-148-211.customer.static.ccgg.telefonica.net do not resolve to 192.148.211.64"
-    ]
+    "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx a:srvsmtp01.mites.gob.es a:srvsmtp02.mites.gob.es include:spf.protection.outlook.com -all",
+    "record": "v=spf1 mx a:srvsmtp01.mites.gob.es a:srvsmtp02.mites.gob.es a:srvsmtp03.mites.gob.es a:srvsmtp04.mites.gob.es include:spf.protection.outlook.com -all",
     "valid": true,
-    "dns_lookups": 5,
+    "dns_lookups": 7,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -76,6 +71,14 @@
         },
         {
           "value": "192.148.211.62",
+          "mechanism": "a"
+        },
+        {
+          "value": "192.148.211.63",
+          "mechanism": "a"
+        },
+        {
+          "value": "192.148.211.64",
           "mechanism": "a"
         }
       ],

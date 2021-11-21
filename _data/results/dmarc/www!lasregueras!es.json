@@ -18,7 +18,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The DNS operation timed out after 2.1 seconds",
+      "The reverse DNS of 5.181.46.145 is dv45.digival.org, but the A/AAAA DNS records for dv45.digival.org do not resolve to 5.181.46.145"
+    ]
   },
   "spf": {
     "record": "v=spf1 +a +mx +include:dv4.digival.org -all",

@@ -25,14 +25,16 @@
     "record": "v=spf1 ip4:185.61.124.243 +a +mx ~all",
     "valid": true,
     "dns_lookups": 2,
-    "warnings": [
-      "All nameservers failed to answer the query joventut-valencia.es. IN AAAA: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
-    ],
+    "warnings": [],
     "parsed": {
       "pass": [
         {
           "value": "185.61.124.243",
           "mechanism": "ip4"
+        },
+        {
+          "value": "185.61.124.243",
+          "mechanism": "a"
         },
         {
           "value": "joventut-valencia.es",

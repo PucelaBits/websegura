@@ -22,7 +22,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:avap.ip-zone.com ip4:51.83.41.202 a mx a:gcloud11.gsitdns.com include:spf.protection.outlook.com -all",
+    "record": "v=spf1 include:avap.ip-zone.com ip4:51.83.41.202 a mx a:mareny.sistematicadns.com include:spf.protection.outlook.com include:emsd1.com -all",
     "valid": false,
     "warnings": [],
     "error": "avap.ip-zone.com does not have a SPF TXT record"

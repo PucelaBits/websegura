@@ -21,13 +21,16 @@
       {
         "preference": 10,
         "hostname": "mail2.correo.gob.es",
-        "addresses": []
+        "addresses": [
+          "185.73.174.72"
+        ]
       }
     ],
     "warnings": [
       "The domain 71.red-185-73-174.customer.static.ccgg.telefonica.net does not exist",
       "The reverse DNS of 185.73.174.71 is 71.red-185-73-174.customer.static.ccgg.telefonica.net, but the A/AAAA DNS records for 71.red-185-73-174.customer.static.ccgg.telefonica.net do not resolve to 185.73.174.71",
-      "All nameservers failed to answer the query mail2.correo.gob.es. IN A: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+      "The domain 72.red-185-73-174.customer.static.ccgg.telefonica.net does not exist",
+      "The reverse DNS of 185.73.174.72 is 72.red-185-73-174.customer.static.ccgg.telefonica.net, but the A/AAAA DNS records for 72.red-185-73-174.customer.static.ccgg.telefonica.net do not resolve to 185.73.174.72"
     ]
   },
   "spf": {

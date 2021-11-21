@@ -4,15 +4,23 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "213.0.184.69",
       "artemis.ttd.net",
-      "sfirewall.ayto-santander.es",
-      "213.0.184.69"
+      "sfirewall.ayto-santander.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "sfirewall.ayto-santander.es",
+        "addresses": [
+          "195.55.43.227"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:195.55.43.227 ip4:195.55.43.230  ip4:195.55.43.236 ~all",

@@ -4,11 +4,11 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns4.cdmondns-01.org",
+      "ns3.cdmon.net",
       "ns1.cdmon.net",
       "ns5.cdmondns-01.com",
-      "ns4.cdmondns-01.org",
-      "ns2.cdmon.net",
-      "ns3.cdmon.net"
+      "ns2.cdmon.net"
     ],
     "warnings": []
   },
@@ -19,7 +19,7 @@
         "hostname": "mx.spamexperts.com",
         "addresses": [
           "2001:550:2:61::2fc:100",
-          "38.111.198.185"
+          "38.89.254.156"
         ]
       },
       {
@@ -416,10 +416,14 @@
         },
         {
           "domain": "spf.qsemail.net",
-          "record": "v=spf1 ip4:135.181.153.240 ip4:188.208.218.128 ip4:188.208.218.61 ip4:188.208.218.94 ip4:188.208.218.64 ip4:188.208.218.63 ip4:54.36.27.2 ip4:167.114.239.180 ip4:185.201.17.2 ip4:167.114.238.39 ip4:151.80.133.157 ip4:188.208.218.166 ip4:162.55.164.124 include:spf.antispamcloud.com a:delivery.antispamcloud.com ~all",
+          "record": "v=spf1 ip4:88.99.188.16 ip4:135.181.153.240 ip4:188.208.218.128 ip4:188.208.218.61 ip4:188.208.218.94 ip4:188.208.218.64 ip4:188.208.218.63 ip4:54.36.27.2 ip4:167.114.239.180 ip4:185.201.17.2 ip4:167.114.238.39 ip4:151.80.133.157 ip4:188.208.218.166 ip4:162.55.164.124 include:spf.antispamcloud.com a:delivery.antispamcloud.com ~all",
           "dns_lookups": 2,
           "parsed": {
             "pass": [
+              {
+                "value": "88.99.188.16",
+                "mechanism": "ip4"
+              },
               {
                 "value": "135.181.153.240",
                 "mechanism": "ip4"

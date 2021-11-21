@@ -4,40 +4,19 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.cica.es",
+      "dns2.uco.es",
       "chico.rediris.es",
-      "dns2.cica.es",
       "sun.rediris.es",
+      "dns1.cica.es",
       "dns1.uco.es",
-      "druuna.uco.es",
-      "dns2.uco.es"
+      "dns2.cica.es",
+      "druuna.uco.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 5,
-        "hostname": "mx01.puc.rediris.es",
-        "addresses": [
-          "130.206.19.130",
-          "130.206.19.162",
-          "2001:720:418:ca10::2",
-          "2001:720:418:ca11::2"
-        ]
-      },
-      {
-        "preference": 5,
-        "hostname": "mx02.puc.rediris.es",
-        "addresses": [
-          "130.206.19.130",
-          "130.206.19.162",
-          "2001:720:418:ca10::2",
-          "2001:720:418:ca11::2"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": null,

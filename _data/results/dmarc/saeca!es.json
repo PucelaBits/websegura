@@ -4,15 +4,23 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.intervia.com",
+      "ns0.intervia.com",
       "ns1.intervia.com",
-      "ns0.intervia.com"
+      "ns2.intervia.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.intervia.com",
+        "addresses": [
+          "95.211.205.16"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:95.211.205.16 ip4:95.211.136.209 ip4:37.48.64.153 ip4:37.48.116.53 ip4:88.2.101.45 mx -all",

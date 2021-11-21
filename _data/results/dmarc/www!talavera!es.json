@@ -4,8 +4,12 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.rocahost.com",
-      "ns1.rocahost.com"
+      "ns14.dnsmadeeasy.com",
+      "ns13.dnsmadeeasy.com",
+      "ns10.dnsmadeeasy.com",
+      "ns12.dnsmadeeasy.com",
+      "ns11.dnsmadeeasy.com",
+      "ns15.dnsmadeeasy.com"
     ],
     "warnings": []
   },
@@ -16,36 +20,14 @@
     ]
   },
   "spf": {
-    "record": "v=spf1 ip4:216.137.182.63 +a +mx ~all",
-    "valid": true,
-    "dns_lookups": 2,
-    "warnings": [
-      "talavera.es does not have any MX records"
-    ],
-    "parsed": {
-      "pass": [
-        {
-          "value": "216.137.182.63",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "216.137.182.63",
-          "mechanism": "a"
-        }
-      ],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [],
-      "redirect": null,
-      "exp": null,
-      "all": "softfail"
-    }
+    "record": null,
+    "valid": false,
+    "error": "talavera.es does not have a SPF TXT record"
   },
   "dmarc": {
     "record": null,
     "valid": false,
     "location": null,
-    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.talavera.es\n\nv=spf1 +a +mx +ip4:216.137.182.63 ~all"
+    "error": "A DMARC record does not exist for this domain or its base domain"
   }
 }
