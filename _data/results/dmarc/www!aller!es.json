@@ -3,11 +3,8 @@
   "base_domain": "aller.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "ns2.aller.es",
-      "ns1.aller.es"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "mx": {
     "hosts": [],

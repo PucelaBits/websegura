@@ -13,23 +13,16 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "mxr.mundo-r.com",
+        "hostname": "mail.xunta.es",
         "addresses": [
-          "212.51.32.239"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mxr2.mundo-r.com",
-        "addresses": [
-          "212.51.32.239"
+          "85.91.64.136"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:212.51.62.160/27 ip4:91.117.126.128/25 include:mundo-r.com -all",
+    "record": "v=spf1 ip4:212.51.62.160/27 ip4:91.117.126.128/25 include:mundo-r.com ip4:85.91.64.213 ip4:85.91.64.214 -all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
@@ -41,6 +34,14 @@
         },
         {
           "value": "91.117.126.128/25",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "85.91.64.213",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "85.91.64.214",
           "mechanism": "ip4"
         }
       ],

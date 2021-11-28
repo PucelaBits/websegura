@@ -4,18 +4,111 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns3.parlamentodeandalucia.es"
+      "dns2.parlamentodeandalucia.es",
+      "dns1.parlamentodeandalucia.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "dns1.parlamentodeandalucia.es",
+        "addresses": [
+          "193.147.254.21"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "dns2.parlamentodeandalucia.es",
+        "addresses": [
+          "193.147.254.2"
+        ]
+      },
+      {
+        "preference": 30,
+        "hostname": "mx3.parlamentodeandalucia.es",
+        "addresses": [
+          "195.55.47.130"
+        ]
+      }
+    ],
+    "warnings": [
+      "195.55.47.130 does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "parlamentodeandalucia.es does not have a SPF TXT record"
+    "record": "v=spf1 mx ip4:193.147.254.0/24 include:parlamento-and.es ?all",
+    "valid": true,
+    "dns_lookups": 6,
+    "warnings": [
+      "parlamento-and.es does not have any A/AAAA records",
+      "Duplicate include: parlamentodeandalucia.es"
+    ],
+    "parsed": {
+      "pass": [
+        {
+          "value": "dns1.parlamentodeandalucia.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "dns2.parlamentodeandalucia.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mx3.parlamentodeandalucia.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "193.147.254.0/24",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "parlamento-and.es",
+          "record": "v=spf1 mx a ip4:193.147.254.21/24 a:dns1.parlamento-and.es include:parlamentodeandalucia.es ?all",
+          "dns_lookups": 4,
+          "parsed": {
+            "pass": [
+              {
+                "value": "dns1.parlamento-and.es",
+                "mechanism": "mx"
+              },
+              {
+                "value": "dns2.parlamento-and.es",
+                "mechanism": "mx"
+              },
+              {
+                "value": "193.147.254.21/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "193.147.254.21",
+                "mechanism": "a"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "neutral"
+          },
+          "warnings": [
+            "parlamento-and.es does not have any A/AAAA records",
+            "Duplicate include: parlamentodeandalucia.es"
+          ]
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "neutral"
+    }
   },
   "dmarc": {
     "record": null,

@@ -4,18 +4,26 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.xunta.es",
-      "dns.dacoruna.gal",
-      "dns1.dicoruna.es",
       "ns1.xunta.es",
+      "ns2.xunta.es",
       "dns1.dacoruna.gal",
-      "dns.dicoruna.es"
+      "dns1.dicoruna.es",
+      "dns.dicoruna.es",
+      "dns.dacoruna.gal"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "smtp.dicoruna.es",
+        "addresses": [
+          "85.91.67.3"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 a mx include:_spf.dacoruna.gal -all",

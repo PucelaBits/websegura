@@ -15,7 +15,7 @@
         "preference": 10,
         "hostname": "puertos-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.5.36",
+          "104.47.4.36",
           "104.47.6.36"
         ]
       }
@@ -23,7 +23,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx a ip4:195.53.26.234 ip4:195.55.142.69 ip4:195.55.142.73 ip4:195.55.142.74 include:spf.protection.outlook.com -all",
+    "record": "v=spf1 mx a ip4:195.53.26.234 ip4:195.55.142.69 include:spf.protection.outlook.com -all",
     "valid": true,
     "dns_lookups": 4,
     "warnings": [],
@@ -43,14 +43,6 @@
         },
         {
           "value": "195.55.142.69",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "195.55.142.73",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "195.55.142.74",
           "mechanism": "ip4"
         }
       ],

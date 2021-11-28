@@ -4,30 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.xpress.es",
-      "dns1.xpress.es"
+      "dns1.xpress.es",
+      "dns2.xpress.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 0,
-        "hostname": "feriavalencia-com.mail.protection.outlook.com",
-        "addresses": [
-          "104.47.4.36",
-          "104.47.5.36"
-        ]
-      },
-      {
-        "preference": 40,
-        "hostname": "senvios02.feriavalencia.com",
-        "addresses": [
-          "188.86.160.90"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 ip4:188.86.160.90 ip4:188.86.160.91 include:spf.protection.outlook.com -all",

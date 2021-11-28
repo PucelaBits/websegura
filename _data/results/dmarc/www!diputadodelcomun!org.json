@@ -4,36 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns26.servidoresdns.net",
-      "dns25.servidoresdns.net"
+      "dns25.servidoresdns.net",
+      "dns26.servidoresdns.net"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "poster1i.iberlayer.com",
-        "addresses": [
-          "130.117.89.12",
-          "130.117.89.26",
-          "130.117.89.4",
-          "130.117.89.5",
-          "130.117.89.6"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "poster4i.iberlayer.com",
-        "addresses": [
-          "80.169.225.36",
-          "80.169.225.37",
-          "80.169.225.38",
-          "80.169.225.44"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 ip4:62.82.138.99 include:iberlayer.com -all",

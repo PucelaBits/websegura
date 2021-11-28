@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.cpgestion-dtc-ib.com",
-      "cdj11.cgpj.es"
+      "cdj11.cgpj.es",
+      "ns2.cpgestion-dtc-ib.com"
     ],
     "warnings": []
   },
@@ -14,9 +14,9 @@
     "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
-    "record": "v=spf1 mx a:mail.pnj.cgpj.es a:mailip1.poderjudicial.es a:mailip2.poderjudicial.es a:correo.escuela.poderjudicial.es ip4:195.55.151.37 ip4:195.55.151.39 ip4:62.37.233.240  ip4:195.55.151.99 -all",
+    "record": "v=spf1 mx ip4:62.37.232.37 ip4:62.37.232.39 ip4:62.37.233.240 -all",
     "valid": true,
-    "dns_lookups": 5,
+    "dns_lookups": 1,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -29,35 +29,15 @@
           "mechanism": "mx"
         },
         {
-          "value": "62.37.233.240",
-          "mechanism": "a"
-        },
-        {
-          "value": "195.55.151.37",
-          "mechanism": "a"
-        },
-        {
-          "value": "195.55.151.39",
-          "mechanism": "a"
-        },
-        {
-          "value": "195.55.151.99",
-          "mechanism": "a"
-        },
-        {
-          "value": "195.55.151.37",
+          "value": "62.37.232.37",
           "mechanism": "ip4"
         },
         {
-          "value": "195.55.151.39",
+          "value": "62.37.232.39",
           "mechanism": "ip4"
         },
         {
           "value": "62.37.233.240",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "195.55.151.99",
           "mechanism": "ip4"
         }
       ],

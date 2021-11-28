@@ -4,29 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.grn.es",
-      "adns.grn.es"
+      "adns.grn.es",
+      "dns2.grn.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mx1.grn.es",
-        "addresses": [
-          "80.64.32.18"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mx2.grn.es",
-        "addresses": [
-          "80.64.32.16"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 mx ip4:80.64.32.0/26 ip4:80.64.47.207 ip4:80.64.37.224/27 ~all",

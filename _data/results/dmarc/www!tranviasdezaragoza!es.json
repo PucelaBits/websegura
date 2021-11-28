@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "pluton.virtualsw.es",
-      "pl1.solunet.es",
       "pl2.solunet.es",
+      "pl1.solunet.es",
       "pl3.solunet.es",
       "trole.lostranviasdezaragoza.es"
     ],
@@ -23,6 +23,7 @@
       }
     ],
     "warnings": [
+      "The DNS operation timed out after 2.1 seconds",
       "The reverse DNS of 195.77.239.35 is trole.lostranviasdezaragoza.es, but the A/AAAA DNS records for trole.lostranviasdezaragoza.es do not resolve to 195.77.239.35"
     ]
   },
