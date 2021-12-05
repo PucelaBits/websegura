@@ -1,0 +1,194 @@
+{
+  "domain": "etradvigo.org",
+  "base_domain": "etradvigo.org",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "dns1.raiolanetworks.es",
+      "dns2.raiolanetworks.es",
+      "dns3.raiolanetworks.es"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 0,
+        "hostname": "etradvigo.org",
+        "addresses": [
+          "37.59.226.114"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 a mx +include:spf.raiolanetworks.com +ip4:5.196.132.144 ~all",
+    "valid": true,
+    "dns_lookups": 4,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "37.59.226.114",
+          "mechanism": "a"
+        },
+        {
+          "value": "etradvigo.org",
+          "mechanism": "mx"
+        },
+        {
+          "value": "5.196.132.144",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "spf.raiolanetworks.com",
+          "record": "v=spf1 +a:spf.raiolanetworks.com ~all",
+          "dns_lookups": 1,
+          "parsed": {
+            "pass": [
+              {
+                "value": "145.239.129.166",
+                "mechanism": "a"
+              },
+              {
+                "value": "149.202.98.105",
+                "mechanism": "a"
+              },
+              {
+                "value": "149.202.98.106",
+                "mechanism": "a"
+              },
+              {
+                "value": "151.80.16.24",
+                "mechanism": "a"
+              },
+              {
+                "value": "151.80.177.216",
+                "mechanism": "a"
+              },
+              {
+                "value": "178.33.177.121",
+                "mechanism": "a"
+              },
+              {
+                "value": "178.33.177.123",
+                "mechanism": "a"
+              },
+              {
+                "value": "178.33.177.124",
+                "mechanism": "a"
+              },
+              {
+                "value": "193.70.65.184",
+                "mechanism": "a"
+              },
+              {
+                "value": "217.182.121.195",
+                "mechanism": "a"
+              },
+              {
+                "value": "217.182.121.196",
+                "mechanism": "a"
+              },
+              {
+                "value": "217.182.121.197",
+                "mechanism": "a"
+              },
+              {
+                "value": "5.135.120.86",
+                "mechanism": "a"
+              },
+              {
+                "value": "5.196.170.73",
+                "mechanism": "a"
+              },
+              {
+                "value": "51.83.52.234",
+                "mechanism": "a"
+              },
+              {
+                "value": "79.137.45.64",
+                "mechanism": "a"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
+  },
+  "dmarc": {
+    "record": "v=DMARC1; p=none; sp=none; rf=afrf; pct=100; ri=86400;rua=mailto:dmarc@etradvigo.org",
+    "valid": true,
+    "location": "etradvigo.org",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "sp": {
+        "value": "none",
+        "explicit": true
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": true
+      },
+      "pct": {
+        "value": 100,
+        "explicit": true
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc@etradvigo.org",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      }
+    }
+  }
+}

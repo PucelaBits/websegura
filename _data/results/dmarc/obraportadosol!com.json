@@ -1,0 +1,57 @@
+{
+  "domain": "obraportadosol.com",
+  "base_domain": "obraportadosol.com",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns.dinahosting.com",
+      "ns3.dinahosting.com",
+      "ns4.dinahosting.com",
+      "ns2.dinahosting.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.obraportadosol.com",
+        "addresses": [
+          "82.98.132.106"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 a mx ~all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "82.98.132.106",
+          "mechanism": "a"
+        },
+        {
+          "value": "mail.obraportadosol.com",
+          "mechanism": "mx"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

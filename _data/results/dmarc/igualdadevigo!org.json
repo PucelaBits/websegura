@@ -1,0 +1,103 @@
+{
+  "domain": "igualdadevigo.org",
+  "base_domain": "igualdadevigo.org",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns2alenmultimedia4.cyberneticos.com",
+      "ns1alenmultimedia4.cyberneticos.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.igualdadevigo.org",
+        "addresses": [
+          "95.211.243.170"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 a mx ip4:95.211.243.170 -all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "95.211.243.170",
+          "mechanism": "a"
+        },
+        {
+          "value": "mail.igualdadevigo.org",
+          "mechanism": "mx"
+        },
+        {
+          "value": "95.211.243.170",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": "v=DMARC1; p=none; sp=none",
+    "valid": true,
+    "location": "igualdadevigo.org",
+    "warnings": [
+      "rua tag (destination for aggregate reports) not found"
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "sp": {
+        "value": "none",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      }
+    }
+  }
+}

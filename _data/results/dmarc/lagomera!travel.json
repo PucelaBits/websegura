@@ -4,62 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.lagomera.travel",
-      "ns2.lagomera.travel"
+      "ns2.lagomera.travel",
+      "ns1.lagomera.travel"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 1,
-        "hostname": "aspmx.l.google.com",
-        "addresses": [
-          "2607:f8b0:4001:c20::1a",
-          "74.125.70.26"
-        ]
-      },
-      {
-        "preference": 5,
-        "hostname": "alt1.aspmx.l.google.com",
-        "addresses": [
-          "173.194.77.26",
-          "2607:f8b0:4023:401::1a"
-        ]
-      },
-      {
-        "preference": 5,
-        "hostname": "alt2.aspmx.l.google.com",
-        "addresses": [
-          "173.194.219.27",
-          "2607:f8b0:4002:c03::1a"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "alt3.aspmx.l.google.com",
-        "addresses": [
-          "142.250.112.26",
-          "2607:f8b0:4023:1402::1b"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "alt4.aspmx.l.google.com",
-        "addresses": [
-          "173.194.204.27",
-          "2607:f8b0:400d:c07::1b"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "mail.lagomera.travel",
-        "addresses": [
-          "212.89.16.163"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 include:_spf.google.com ~all",

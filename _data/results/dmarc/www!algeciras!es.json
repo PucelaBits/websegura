@@ -10,8 +10,16 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.algeciras.es",
+        "addresses": [
+          "188.85.16.242"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": null,

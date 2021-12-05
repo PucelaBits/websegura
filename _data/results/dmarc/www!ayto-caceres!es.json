@@ -5,29 +5,14 @@
   "ns": {
     "hostnames": [
       "ns03.ns-cloud4b.net",
-      "ns06.ns-cloud4b.com",
-      "ns05.ns-cloud4b.org"
+      "ns05.ns-cloud4b.org",
+      "ns06.ns-cloud4b.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 5,
-        "hostname": "mx30.asaccomunicaciones.es",
-        "addresses": [
-          "94.100.134.8"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "mx40.asaccomunicaciones.es",
-        "addresses": [
-          "94.100.136.7"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 +a +mx include:emailservice.cpd.as -all",

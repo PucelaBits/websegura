@@ -10,18 +10,23 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "warnings": [
-      "No MX records found. Is the domain parked?"
-    ]
+    "hosts": [
+      {
+        "preference": 5,
+        "hostname": "mail.idae.es",
+        "addresses": [
+          "213.0.86.147"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 a mx ip4:213.0.86.147 ~all include:mail.idae.es ~all include:mail.zendesk.com ~all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [
-      "Any text after the all mechanism is ignored",
-      "idae.es does not have any MX records"
+      "Any text after the all mechanism is ignored"
     ],
     "parsed": {
       "pass": [
@@ -32,6 +37,10 @@
         {
           "value": "213.0.86.147",
           "mechanism": "a"
+        },
+        {
+          "value": "mail.idae.es",
+          "mechanism": "mx"
         },
         {
           "value": "213.0.86.147",

@@ -3,12 +3,8 @@
   "base_domain": "miteco.gob.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "dns1.magrama.es",
-      "dns2.magrama.es",
-      "artemis.ttd.net"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "All nameservers failed to answer the query miteco.gob.es. IN NS: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
   },
   "mx": {
     "hosts": [],

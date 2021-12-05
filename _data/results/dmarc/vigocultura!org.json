@@ -1,0 +1,29 @@
+{
+  "domain": "vigocultura.org",
+  "base_domain": "vigocultura.org",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns2.altia.es",
+      "ns1.altia.es"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [],
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "vigocultura.org does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

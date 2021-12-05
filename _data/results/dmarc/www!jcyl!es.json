@@ -6,29 +6,14 @@
     "hostnames": [
       "dns1.jcyl.es",
       "dns2.jcyl.es",
-      "ns2.f5cloudservices.com",
-      "ns1.f5cloudservices.com"
+      "ns1.f5cloudservices.com",
+      "ns2.f5cloudservices.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 25,
-        "hostname": "correo1.jcyl.es",
-        "addresses": [
-          "217.71.16.5"
-        ]
-      },
-      {
-        "preference": 25,
-        "hostname": "correo2.jcyl.es",
-        "addresses": [
-          "217.71.16.6"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 ip4:217.71.16.5/32 ip4:217.71.16.6/32 ip4:217.71.16.7/32 ip4:217.71.16.239/32 ip4:217.71.16.240/32 ip4:217.71.16.241/32 ip4:217.71.16.242/32 ip4:217.71.16.243/32 ip4:217.71.21.22/32 ip4:217.71.22.22/32 mx -all",

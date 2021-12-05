@@ -10,23 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mail.zaragoza.es",
-        "addresses": [
-          "194.224.70.81"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mail2.zaragoza.es",
-        "addresses": [
-          "194.224.70.72"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 ip4:194.224.70.71 ip4:194.224.70.72 ip4:194.224.70.88 ip4:188.244.91.7 -all",

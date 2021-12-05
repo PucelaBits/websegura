@@ -10,23 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mail.tuineje.es",
-        "addresses": [
-          "188.165.207.97"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "correo.tuineje.es",
-        "addresses": [
-          "188.165.207.97"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 a:tuineje.es mx ptr:tuineje.es mx ip4:188.165.207.97 ~all",

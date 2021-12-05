@@ -3,8 +3,14 @@
   "base_domain": "cescyl.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hostnames": [
+      "ns2.cescyl.es",
+      "ns1.stinet.net",
+      "ns2.stinet.net",
+      "ns3.stinet.net",
+      "ns1.cescyl.es"
+    ],
+    "warnings": []
   },
   "mx": {
     "hosts": [],

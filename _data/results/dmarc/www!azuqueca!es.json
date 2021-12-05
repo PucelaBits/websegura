@@ -11,9 +11,7 @@
   },
   "mx": {
     "hosts": [],
-    "warnings": [
-      "No MX records found. Is the domain parked?"
-    ]
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": null,

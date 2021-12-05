@@ -10,8 +10,23 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail8.atib.es",
+        "addresses": [
+          "195.53.227.133"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "correu4.atib.es",
+        "addresses": [
+          "195.53.227.133"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 a mx ip4:85.119.193.3 ip4:85.119.193.4 include:_spf.atlassian.net include:spf.sendinblue.com -all",

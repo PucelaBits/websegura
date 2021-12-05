@@ -1,0 +1,74 @@
+{
+  "domain": "sede.uvigo.gal",
+  "base_domain": "uvigo.gal",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [],
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "sede.uvigo.gal does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": "v=DMARC1; p=none; rua=mailto:dmarc@uvigo.es",
+    "valid": true,
+    "location": "uvigo.gal",
+    "warnings": [
+      "uvigo.es does not indicate that it accepts DMARC reports about uvigo.gal - Authorization record not found: uvigo.gal._report._dmarc.uvigo.es IN TXT \"v=DMARC1\""
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "rua": {
+        "value": "mailto:dmarc@uvigo.es",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
+  }
+}

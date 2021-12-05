@@ -4,14 +4,31 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ninot.gva.es",
-      "tirant.gva.es"
+      "tirant.gva.es",
+      "ninot.gva.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx1ext.gva.es",
+        "addresses": [
+          "193.145.206.215",
+          "195.77.18.230"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mx2ext.gva.es",
+        "addresses": [
+          "193.145.200.16",
+          "195.77.20.28"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:195.77.19.0/24 ip4:193.145.207.0/24 include:spf.protection.outlook.com a:mx11.gva.es a:mx12.gva.es a:mx13.gva.es a:mx21.gva.es a:mx22.gva.es a:mx23.gva.es -all",

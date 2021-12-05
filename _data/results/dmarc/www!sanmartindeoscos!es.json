@@ -10,8 +10,16 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 0,
+        "hostname": "correo.sanmartindeoscos.es",
+        "addresses": [
+          "37.153.90.156"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": null,

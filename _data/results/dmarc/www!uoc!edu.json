@@ -10,65 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 1,
-        "hostname": "aspmx.l.google.com",
-        "addresses": [
-          "173.194.197.27",
-          "2607:f8b0:4001:c1f::1a"
-        ]
-      },
-      {
-        "preference": 5,
-        "hostname": "alt1.aspmx.l.google.com",
-        "addresses": [
-          "173.194.77.26",
-          "2607:f8b0:4023:401::1a"
-        ]
-      },
-      {
-        "preference": 5,
-        "hostname": "alt2.aspmx.l.google.com",
-        "addresses": [
-          "173.194.219.27",
-          "2607:f8b0:4002:c03::1a"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "aspmx2.googlemail.com",
-        "addresses": [
-          "173.194.77.27",
-          "2607:f8b0:4023:401::1b"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "aspmx3.googlemail.com",
-        "addresses": [
-          "173.194.219.27",
-          "2607:f8b0:4002:c03::1b"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "aspmx4.googlemail.com",
-        "addresses": [
-          "142.250.112.26",
-          "2607:f8b0:4023:401::1a"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "aspmx5.googlemail.com",
-        "addresses": [
-          "173.194.219.27",
-          "2607:f8b0:400d:c07::1a"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 ip4:213.73.40.0/24 ip4:13.111.22.169 ip4:83.169.91.142 ip4:83.169.91.143 ip4:83.169.91.144 ip4:83.169.91.145 ip4:83.169.91.146 ip4:83.169.91.147 ip4:84.88.0.7 ip4:84.88.0.6 include:_spf.google.com include:eevid.com include:amazonses.com include:spf-moodle.isyc.es ~all",
@@ -444,12 +387,12 @@
                   "include": [
                     {
                       "domain": "spf6.alinto.net",
-                      "record": "v=spf1 ip6:2a01:0240:ab0b:fffe:78:153:243::/112 ~all",
+                      "record": "v=spf1 ip6:2a01:0240:ab0b:fffe:0078:0153:0243:0000/112 ~all",
                       "dns_lookups": 0,
                       "parsed": {
                         "pass": [
                           {
-                            "value": "2a01:0240:ab0b:fffe:78:153:243::/112",
+                            "value": "2a01:0240:ab0b:fffe:0078:0153:0243:0000/112",
                             "mechanism": "ip6"
                           }
                         ],

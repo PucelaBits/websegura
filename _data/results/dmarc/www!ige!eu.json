@@ -10,19 +10,11 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mail.xunta.es",
-        "addresses": [
-          "85.91.64.136"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
-    "record": "v=spf1 ip4:212.51.62.160/27 ip4:91.117.126.128/25 ip4:85.91.64.213 ip4:85.91.64.214 include:mundo-r.com -all",
+    "record": "v=spf1 ip4:212.51.62.160/27 ip4:91.117.126.128/25 ip4:85.91.71.0/24 ip4:85.91.64.213 ip4:85.91.64.214 include:mundo-r.com -all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
@@ -34,6 +26,10 @@
         },
         {
           "value": "91.117.126.128/25",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "85.91.71.0/24",
           "mechanism": "ip4"
         },
         {

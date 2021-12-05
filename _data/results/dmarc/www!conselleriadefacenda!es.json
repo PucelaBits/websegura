@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.xunta.es",
-      "ns1.xunta.es"
+      "ns1.xunta.es",
+      "ns2.xunta.es"
     ],
     "warnings": []
   },
@@ -22,7 +22,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:212.51.62.160/27 ip4:91.117.126.128/25 include:mundo-r.com ip4:85.91.64.213 ip4:85.91.64.214 -all",
+    "record": "v=spf1 ip4:212.51.62.160/27 ip4:91.117.126.128/25 ip4:85.91.71.0/24 include:mundo-r.com ip4:85.91.64.213 ip4:85.91.64.214 -all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
@@ -34,6 +34,10 @@
         },
         {
           "value": "91.117.126.128/25",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "85.91.71.0/24",
           "mechanism": "ip4"
         },
         {

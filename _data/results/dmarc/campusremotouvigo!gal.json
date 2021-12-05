@@ -1,0 +1,114 @@
+{
+  "domain": "campusremotouvigo.gal",
+  "base_domain": "campusremotouvigo.gal",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "fred.ns.cloudflare.com",
+      "michelle.ns.cloudflare.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 1,
+        "hostname": "mail.campusremotouvigo.gal",
+        "addresses": [
+          "176.31.59.39"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mail.campusremotouvigo.gal",
+        "addresses": []
+      }
+    ],
+    "warnings": [
+      "Hostname mail.campusremotouvigo.gal is listed in multiple MX records"
+    ]
+  },
+  "spf": {
+    "record": "v=spf1 mx ~all",
+    "valid": true,
+    "dns_lookups": 1,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "mail.campusremotouvigo.gal",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mail.campusremotouvigo.gal",
+          "mechanism": "mx"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
+  },
+  "dmarc": {
+    "record": "v=DMARC1;p=none;pct=100;rua=mailto:pnieto@campusremotouvigo.gal;sp=none;aspf=r;",
+    "valid": true,
+    "location": "campusremotouvigo.gal",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "pct": {
+        "value": 100,
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "pnieto@campusremotouvigo.gal",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "sp": {
+        "value": "none",
+        "explicit": true
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      }
+    }
+  }
+}

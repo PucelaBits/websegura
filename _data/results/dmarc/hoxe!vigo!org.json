@@ -1,0 +1,91 @@
+{
+  "domain": "hoxe.vigo.org",
+  "base_domain": "vigo.org",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns1.altia.es",
+      "ns2.altia.es"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [],
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "hoxe.vigo.org does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": "v=DMARC1; p=quarantine; rua=mailto:postmaster@vigo.org; ruf=mailto:postmaster@vigo.org; sp=quarantine",
+    "valid": true,
+    "location": "vigo.org",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "postmaster@vigo.org",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "postmaster@vigo.org",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "sp": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      }
+    }
+  }
+}

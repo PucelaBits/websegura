@@ -4,10 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns3.dinahosting.com",
-      "ns.dinahosting.com",
-      "ns4.dinahosting.com",
-      "ns2.dinahosting.com"
+      "ns1.xunta.es",
+      "ns2.xunta.es"
     ],
     "warnings": []
   },
@@ -49,61 +47,9 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1;p=none;rua=mailto:systems@crtvg.es",
-    "valid": true,
+    "record": "v=DMARC1",
+    "valid": false,
     "location": "crtvg.es",
-    "warnings": [],
-    "tags": {
-      "v": {
-        "value": "DMARC1",
-        "explicit": true
-      },
-      "p": {
-        "value": "none",
-        "explicit": true
-      },
-      "rua": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "systems@crtvg.es",
-            "size_limit": null
-          }
-        ],
-        "explicit": true
-      },
-      "adkim": {
-        "value": "r",
-        "explicit": false
-      },
-      "aspf": {
-        "value": "r",
-        "explicit": false
-      },
-      "fo": {
-        "value": [
-          "0"
-        ],
-        "explicit": false
-      },
-      "pct": {
-        "value": 100,
-        "explicit": false
-      },
-      "rf": {
-        "value": [
-          "afrf"
-        ],
-        "explicit": false
-      },
-      "ri": {
-        "value": 86400,
-        "explicit": false
-      },
-      "sp": {
-        "value": "none",
-        "explicit": false
-      }
-    }
+    "error": "Error: Expected version_tag at position 0 in: v=DMARC1"
   }
 }

@@ -1,0 +1,57 @@
+{
+  "domain": "xuventudevigo.org",
+  "base_domain": "xuventudevigo.org",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns1.altia.es",
+      "ns2.altia.es"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [],
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
+  },
+  "spf": {
+    "record": "v=spf1 a ip4:176.58.12.180 ip4:176.58.12.181 ip4:176.58.12.182 ~all",
+    "valid": true,
+    "dns_lookups": 1,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "176.58.12.182",
+          "mechanism": "a"
+        },
+        {
+          "value": "176.58.12.180",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "176.58.12.181",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "176.58.12.182",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "a7-64.akam.net",
-      "a9-66.akam.net",
       "a20-67.akam.net",
+      "a7-64.akam.net",
       "a1-15.akam.net",
+      "a9-66.akam.net",
       "a2-66.akam.net"
     ],
     "warnings": []
@@ -25,7 +25,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx ip4:85.91.64.213 ip4:85.91.64.214 ip4:91.117.126.200 ip4:91.117.126.201 ip4:91.117.126.142 a:mta.edu.xunta.es a:mta2.edu.xunta.es -all",
+    "record": "v=spf1 mx ip4:85.91.64.213 ip4:85.91.64.214 ip4:85.91.71.142 a:mta.edu.xunta.es a:mta2.edu.xunta.es -all",
     "valid": true,
     "dns_lookups": 3,
     "warnings": [],
@@ -44,15 +44,7 @@
           "mechanism": "ip4"
         },
         {
-          "value": "91.117.126.200",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "91.117.126.201",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "91.117.126.142",
+          "value": "85.91.71.142",
           "mechanism": "ip4"
         },
         {
