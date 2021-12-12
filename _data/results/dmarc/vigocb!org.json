@@ -4,14 +4,22 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2alenmultimedia4.cyberneticos.com",
-      "ns1alenmultimedia4.cyberneticos.com"
+      "ns1alenmultimedia4.cyberneticos.com",
+      "ns2alenmultimedia4.cyberneticos.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.vigocb.org",
+        "addresses": [
+          "95.211.243.170"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 a mx ip4:95.211.243.170 -all",

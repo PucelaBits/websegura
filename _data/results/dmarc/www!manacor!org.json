@@ -15,23 +15,23 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "173.194.66.27",
-          "2607:f8b0:400d:c09::1b"
+          "142.250.125.26",
+          "2607:f8b0:4023:1407::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "2800:3f0:4003:c00::1a",
-          "64.233.186.27"
+          "108.177.12.27",
+          "2607:f8b0:4023:401::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "209.85.202.27",
+          "172.253.113.26",
           "2a00:1450:400b:c00::1b"
         ]
       },
@@ -39,22 +39,20 @@
         "preference": 10,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "2a00:1450:400c:c0b::1b",
-          "64.233.184.27"
+          "142.250.112.26",
+          "2607:f8b0:4023:1402::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "142.250.27.26",
-          "2a00:1450:4025:401::1a"
+          "2607:f8b0:400d:c07::1b",
+          "64.233.184.26"
         ]
       }
     ],
-    "warnings": [
-      "2800:3f0:4003:c00::1a does not have any reverse DNS (PTR) records"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:213.201.84.215/32 ip4:213.201.84.218/32 a mx include:_spf.google.com ~all",

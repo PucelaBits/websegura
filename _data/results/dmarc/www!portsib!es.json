@@ -10,8 +10,57 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "aspmx.l.google.com",
+        "addresses": [
+          "142.250.115.26",
+          "2607:f8b0:4023:1004::1b"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "alt1.aspmx.l.google.com",
+        "addresses": [
+          "108.177.12.27",
+          "2607:f8b0:4023:401::1a"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "alt2.aspmx.l.google.com",
+        "addresses": [
+          "172.253.113.26",
+          "2607:f8b0:4002:c03::1a"
+        ]
+      },
+      {
+        "preference": 30,
+        "hostname": "aspmx2.googlemail.com",
+        "addresses": [
+          "2607:f8b0:4023:401::1b",
+          "64.233.186.26"
+        ]
+      },
+      {
+        "preference": 30,
+        "hostname": "aspmx3.googlemail.com",
+        "addresses": [
+          "173.194.219.27",
+          "2607:f8b0:4023:1::1b"
+        ]
+      },
+      {
+        "preference": 30,
+        "hostname": "aspmx5.googlemail.com",
+        "addresses": [
+          "173.194.219.27",
+          "2607:f8b0:400d:c07::1b"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:95.60.248.251 include:_spf.google.com ~all",

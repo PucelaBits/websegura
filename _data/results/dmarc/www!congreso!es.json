@@ -5,36 +5,15 @@
   "ns": {
     "hostnames": [
       "sun.rediris.es",
-      "dns1.congreso.es",
       "dns2.congreso.es",
+      "dns1.congreso.es",
       "chico.rediris.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mx01.puc.rediris.es",
-        "addresses": [
-          "130.206.19.130",
-          "130.206.19.162",
-          "2001:720:418:ca10::2",
-          "2001:720:418:ca11::2"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "mx02.puc.rediris.es",
-        "addresses": [
-          "130.206.19.130",
-          "130.206.19.162",
-          "2001:720:418:ca10::2",
-          "2001:720:418:ca11::2"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 include:spf.puc.rediris.es ip4:193.145.227.0/24 ip4:213.27.204.0/25 ip6:2001:720:440::/64 ip6:2001:920:580a::/64 -all",

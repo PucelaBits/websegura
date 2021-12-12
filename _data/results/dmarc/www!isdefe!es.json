@@ -11,27 +11,9 @@
     "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
-    "record": "v=spf1 mx a:mail1.isdefe.es a:mail6.isdefe.es a:mail33.isdefe.es a:vw-cmnmail-dmz.isdefe.es a:vw-cmnfree-dmz.isdefe.es -all",
-    "valid": true,
-    "dns_lookups": 6,
-    "warnings": [
-      "The DNS operation timed out after 3.1 seconds",
-      "The DNS operation timed out after 3.1 seconds",
-      "The DNS operation timed out after 3.1 seconds",
-      "The DNS operation timed out after 3.1 seconds",
-      "The DNS operation timed out after 3.1 seconds",
-      "The DNS operation timed out after 3.1 seconds"
-    ],
-    "parsed": {
-      "pass": [],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [],
-      "redirect": null,
-      "exp": null,
-      "all": "fail"
-    }
+    "record": null,
+    "valid": false,
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "dmarc": {
     "record": null,

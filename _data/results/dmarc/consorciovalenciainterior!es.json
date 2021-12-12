@@ -4,16 +4,49 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1107.ui-dns.de",
       "ns1107.ui-dns.org",
-      "ns1107.ui-dns.biz",
-      "ns1107.ui-dns.com"
+      "ns1107.ui-dns.com",
+      "ns1107.ui-dns.de",
+      "ns1107.ui-dns.biz"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 1,
+        "hostname": "aspmx.l.google.com",
+        "addresses": [
+          "173.194.66.27",
+          "2607:f8b0:4023:1000::1a"
+        ]
+      },
+      {
+        "preference": 5,
+        "hostname": "alt1.aspmx.l.google.com",
+        "addresses": [
+          "142.250.152.27",
+          "2607:f8b0:4023:401::1a"
+        ]
+      },
+      {
+        "preference": 5,
+        "hostname": "alt2.aspmx.l.google.com",
+        "addresses": [
+          "172.253.113.27",
+          "2a00:1450:400b:c00::1a"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "aspmx2.googlemail.com",
+        "addresses": [
+          "108.177.12.26",
+          "2607:f8b0:4001:c56::1b"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": null,

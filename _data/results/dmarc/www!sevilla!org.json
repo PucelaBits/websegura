@@ -12,8 +12,23 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "avas15.sys.voztele.net",
+        "addresses": [
+          "213.236.3.15"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "avas15b.sys.voztele.net",
+        "addresses": [
+          "213.236.6.15"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:213.236.6.0/24 ip4:213.236.3.0/24 include:_spf.google.com include:spf.acumbamail.com ~all",

@@ -5,11 +5,11 @@
   "ns": {
     "hostnames": [
       "ns1.ssib.es",
-      "ns2.ssib.es",
-      "dns2.ibsalut.es",
       "ns2.ibsalut.es",
+      "ns2.ssib.es",
       "ns1.ibsalut.es",
-      "dns1.ibsalut.es"
+      "dns1.ibsalut.es",
+      "dns2.ibsalut.es"
     ],
     "warnings": []
   },
@@ -30,7 +30,7 @@
   "spf": {
     "record": "v=spf1 mx a ip4:195.76.89.3/32 ip4:195.76.89.6/32 include:spf.tmes.trendmicro.com include:caib.es include:spf.protection.outlook.com -all",
     "valid": true,
-    "dns_lookups": 8,
+    "dns_lookups": 9,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -58,7 +58,7 @@
         {
           "domain": "spf.tmes.trendmicro.com",
           "record": "v=spf1 ip4:18.208.22.64/26 ip4:18.208.22.128/25 ip4:18.185.115.128/26 ip4:18.185.115.0/25 ip4:13.238.202.0/25 ip4:13.238.202.128/26 ip4:18.176.203.128/25 ip4:13.213.174.128/25 ip4:18.177.156.0/25 ip4:13.213.220.0/25 include:spfb.tmes.trendmicro.com ~all",
-          "dns_lookups": 1,
+          "dns_lookups": 2,
           "parsed": {
             "pass": [
               {
@@ -108,8 +108,8 @@
             "include": [
               {
                 "domain": "spfb.tmes.trendmicro.com",
-                "record": "v=spf1 ip4:18.188.9.192/26 ip4:18.188.239.128/26 ip4:34.253.238.128/26 ip4:34.253.238.192/26 ip4:18.197.208.213 ip4:18.184.15.245 ip4:18.197.37.28 ip4:35.157.33.67 ip4:3.121.19.15 ip4:3.123.213.180 ip4:3.126.205.42 ip4:18.158.139.138 ~all",
-                "dns_lookups": 0,
+                "record": "v=spf1 ip4:18.188.9.192/26 ip4:18.188.239.128/26 ip4:34.253.238.128/26 ip4:34.253.238.192/26 ip4:18.197.208.213 ip4:18.184.15.245 ip4:18.197.37.28 ip4:35.157.33.67 ip4:3.121.19.15 ip4:3.123.213.180 ip4:3.126.205.42 include:spfs.tmes.trendmicro.com ~all",
+                "dns_lookups": 1,
                 "parsed": {
                   "pass": [
                     {
@@ -155,16 +155,42 @@
                     {
                       "value": "3.126.205.42",
                       "mechanism": "ip4"
-                    },
-                    {
-                      "value": "18.158.139.138",
-                      "mechanism": "ip4"
                     }
                   ],
                   "neutral": [],
                   "softfail": [],
                   "fail": [],
-                  "include": [],
+                  "include": [
+                    {
+                      "domain": "spfs.tmes.trendmicro.com",
+                      "record": "v=spf1 ip4:52.202.71.114 ip4:54.145.52.119 ip4:18.158.139.138 ~all",
+                      "dns_lookups": 0,
+                      "parsed": {
+                        "pass": [
+                          {
+                            "value": "52.202.71.114",
+                            "mechanism": "ip4"
+                          },
+                          {
+                            "value": "54.145.52.119",
+                            "mechanism": "ip4"
+                          },
+                          {
+                            "value": "18.158.139.138",
+                            "mechanism": "ip4"
+                          }
+                        ],
+                        "neutral": [],
+                        "softfail": [],
+                        "fail": [],
+                        "include": [],
+                        "redirect": null,
+                        "exp": null,
+                        "all": "softfail"
+                      },
+                      "warnings": []
+                    }
+                  ],
                   "redirect": null,
                   "exp": null,
                   "all": "softfail"

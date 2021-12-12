@@ -5,15 +5,23 @@
   "ns": {
     "hostnames": [
       "ns.gestiondecuenta.com",
+      "ns3.gestiondecuenta.com",
       "ns4.gestiondecuenta.com",
-      "ns2.gestiondecuenta.com",
-      "ns3.gestiondecuenta.com"
+      "ns2.gestiondecuenta.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.elfranco.net",
+        "addresses": [
+          "82.98.134.111"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": null,

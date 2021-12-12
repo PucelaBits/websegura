@@ -4,14 +4,58 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.diputaciondepalencia.es",
-      "dns2.diputaciondepalencia.es"
+      "dns2.diputaciondepalencia.es",
+      "dns1.diputaciondepalencia.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "aspmx.l.google.com",
+        "addresses": [
+          "142.250.115.26",
+          "2607:f8b0:4023:1002::1b"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "alt1.aspmx.l.google.com",
+        "addresses": [
+          "108.177.12.26",
+          "2800:3f0:4003:c00::1b"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "alt2.aspmx.l.google.com",
+        "addresses": [
+          "172.253.113.26",
+          "2607:f8b0:4002:c03::1a"
+        ]
+      },
+      {
+        "preference": 30,
+        "hostname": "aspmx2.googlemail.com",
+        "addresses": [
+          "173.194.77.26",
+          "2800:3f0:4003:c00::1a"
+        ]
+      },
+      {
+        "preference": 30,
+        "hostname": "aspmx3.googlemail.com",
+        "addresses": [
+          "172.253.113.27",
+          "2607:f8b0:4002:c03::1a"
+        ]
+      }
+    ],
+    "warnings": [
+      "2800:3f0:4003:c00::1b does not have any reverse DNS (PTR) records",
+      "2800:3f0:4003:c00::1a does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:_spf.google.com ~all include:servers.mcsv.net ~all",

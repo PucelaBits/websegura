@@ -4,14 +4,55 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns4.grupocesce.es",
-      "ns5.grupocesce.es"
+      "ns5.grupocesce.es",
+      "ns4.grupocesce.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 1,
+        "hostname": "aspmx.l.google.com",
+        "addresses": [
+          "142.250.152.27",
+          "2607:f8b0:4001:c32::1a"
+        ]
+      },
+      {
+        "preference": 5,
+        "hostname": "alt1.aspmx.l.google.com",
+        "addresses": [
+          "142.250.152.27",
+          "2607:f8b0:400c:c08::1a"
+        ]
+      },
+      {
+        "preference": 5,
+        "hostname": "alt2.aspmx.l.google.com",
+        "addresses": [
+          "209.85.202.26",
+          "2607:f8b0:4023:1::1a"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "aspmx2.googlemail.com",
+        "addresses": [
+          "108.177.12.27",
+          "2607:f8b0:4001:c56::1b"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "aspmx3.googlemail.com",
+        "addresses": [
+          "173.194.219.26",
+          "2607:f8b0:4023:1::1a"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf1.cesce.es ip4:195.53.154.168/29 ip4:195.53.197.128/25 ip4:195.53.197.153 ip4:185.20.116.0/22 ip4:194.140.17.67 ip4:194.140.17.70 include:_spf.google.com include:sendgrid.net include:aspmx.pardot.com -all",

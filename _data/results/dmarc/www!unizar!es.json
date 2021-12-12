@@ -5,16 +5,37 @@
   "ns": {
     "hostnames": [
       "ns.unizar.es",
-      "ns2.unizar.es",
-      "ns3.unizar.es",
+      "chico.rediris.es",
       "sun.rediris.es",
-      "chico.rediris.es"
+      "ns2.unizar.es",
+      "ns3.unizar.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx01.puc.rediris.es",
+        "addresses": [
+          "130.206.19.130",
+          "130.206.19.162",
+          "2001:720:418:ca10::2",
+          "2001:720:418:ca11::2"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mx02.puc.rediris.es",
+        "addresses": [
+          "130.206.19.130",
+          "130.206.19.162",
+          "2001:720:418:ca10::2",
+          "2001:720:418:ca11::2"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:155.210.1.96/28 include:_spf.google.com include:amazonses.com ~all",

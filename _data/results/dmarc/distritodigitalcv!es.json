@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns10.ovh.net",
-      "dns10.ovh.net"
+      "dns10.ovh.net",
+      "ns10.ovh.net"
     ],
     "warnings": []
   },
@@ -15,8 +15,8 @@
         "preference": 0,
         "hostname": "distritodigitalcv-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.13.36",
-          "104.47.14.36"
+          "104.47.12.36",
+          "104.47.13.36"
         ]
       }
     ],
@@ -35,7 +35,7 @@
       "include": [
         {
           "domain": "eu.zcsend.net",
-          "record": "v=spf1 ip4:31.186.226.160/27 ip4:185.20.211.0/25 ip4:185.172.199.0/25 ~all",
+          "record": "v=spf1 ip4:31.186.226.160/27 ip4:185.20.211.0/25 ip4:185.172.199.0/25 ip4:91.103.152.0/26 ~all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -49,6 +49,10 @@
               },
               {
                 "value": "185.172.199.0/25",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "91.103.152.0/26",
                 "mechanism": "ip4"
               }
             ],

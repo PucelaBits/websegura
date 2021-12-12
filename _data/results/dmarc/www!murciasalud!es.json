@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "dns01.ono.com",
       "ns2e.carm.es",
       "rafi.f-integra.org",
-      "ns1e.carm.es",
-      "dns01.ono.com"
+      "ns1e.carm.es"
     ],
     "warnings": []
   },
@@ -21,7 +21,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The DNS operation timed out after 2.1 seconds",
+      "The reverse DNS of 80.73.144.108 is mx.redctnet.com, but the A/AAAA DNS records for mx.redctnet.com do not resolve to 80.73.144.108"
+    ]
   },
   "spf": {
     "record": "v=spf1 ip4:80.73.144.108 ip4:80.73.148.250 -all",

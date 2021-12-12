@@ -3,11 +3,8 @@
   "base_domain": "mites.gob.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "minerva.ttd.net",
-      "artemis.ttd.net"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "All nameservers failed to answer the query mites.gob.es. IN NS: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
   },
   "mx": {
     "hosts": [

@@ -4,7 +4,7 @@
   "dnssec": false,
   "ns": {
     "hostnames": [],
-    "warnings": []
+    "error": "All nameservers failed to answer the query sede.fnmt.gob.es. IN NS: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
   },
   "mx": {
     "hosts": [],
@@ -15,7 +15,7 @@
   "spf": {
     "record": null,
     "valid": false,
-    "error": "sede.fnmt.gob.es does not have a SPF TXT record"
+    "error": "All nameservers failed to answer the query sede.fnmt.gob.es. IN TXT: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
   },
   "dmarc": {
     "record": null,

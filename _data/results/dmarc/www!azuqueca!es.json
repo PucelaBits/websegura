@@ -4,14 +4,16 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.redunda.com",
-      "ns.redunda.com"
+      "ns.redunda.com",
+      "ns2.redunda.com"
     ],
     "warnings": []
   },
   "mx": {
     "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
   },
   "spf": {
     "record": null,
