@@ -15,12 +15,17 @@
         "preference": 5,
         "hostname": "inclusion-gob-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.17.138",
+          "104.47.17.74",
           "104.47.18.74"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The DNS operation timed out after 2.1 seconds",
+      "The reverse DNS of 104.47.17.74 is mail-db8eur050074.inbound.protection.outlook.com, but the A/AAAA DNS records for mail-db8eur050074.inbound.protection.outlook.com do not resolve to 104.47.17.74",
+      "The DNS operation timed out after 2.1 seconds",
+      "The reverse DNS of 104.47.18.74 is mail-am6eur050074.inbound.protection.outlook.com, but the A/AAAA DNS records for mail-am6eur050074.inbound.protection.outlook.com do not resolve to 104.47.18.74"
+    ]
   },
   "spf": {
     "record": "v=spf1 ip4:212.128.108.46 ip4:212.128.108.45 include:spf.protection.outlook.com -all",

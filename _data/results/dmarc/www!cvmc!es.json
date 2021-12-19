@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns3.dinahosting.com",
       "ns.dinahosting.com",
       "ns2.dinahosting.com",
+      "ns3.dinahosting.com",
       "ns4.dinahosting.com"
     ],
     "warnings": []
@@ -22,7 +22,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The DNS operation timed out after 2.1 seconds",
+      "The reverse DNS of 104.47.12.36 is mail-db3eur040036.inbound.protection.outlook.com, but the A/AAAA DNS records for mail-db3eur040036.inbound.protection.outlook.com do not resolve to 104.47.12.36"
+    ]
   },
   "spf": {
     "record": "v=spf1 a ip4:46.231.127.152 a:cvmc.es a:smtp.cvmc.es include:spf.protection.outlook.com ~all",

@@ -4,16 +4,37 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.upct.es",
-      "chico.rediris.es",
       "sun.rediris.es",
+      "chico.rediris.es",
+      "ns1.upct.es",
       "ns2.upct.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx01.puc.rediris.es",
+        "addresses": [
+          "130.206.19.130",
+          "130.206.19.162",
+          "2001:720:418:ca10::2",
+          "2001:720:418:ca11::2"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mx02.puc.rediris.es",
+        "addresses": [
+          "130.206.19.130",
+          "130.206.19.162",
+          "2001:720:418:ca10::2",
+          "2001:720:418:ca11::2"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.puc.rediris.es include:spf.protection.outlook.com ip4:212.128.20.42 ip4:212.128.20.115 ip4:212.128.20.211 ip4:212.128.20.254 ip4:212.128.20.86 a:eventos.upct.es -all",

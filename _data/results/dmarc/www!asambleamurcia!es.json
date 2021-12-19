@@ -4,14 +4,30 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "nso.nic.es",
-      "dns.asambleamurcia.es"
+      "dns.asambleamurcia.es",
+      "nso.nic.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 0,
+        "hostname": "asambleamurcia-es.mail.protection.outlook.com",
+        "addresses": [
+          "104.47.17.74",
+          "104.47.18.74"
+        ]
+      },
+      {
+        "preference": 30,
+        "hostname": "smtp.asambleamurcia.es",
+        "addresses": [
+          "195.55.193.109"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com ~all",

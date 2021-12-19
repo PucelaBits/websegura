@@ -10,8 +10,23 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 20,
+        "hostname": "mx.parlamentodegalicia.es",
+        "addresses": [
+          "213.0.85.241"
+        ]
+      },
+      {
+        "preference": 30,
+        "hostname": "correo.parlamentodegalicia.es",
+        "addresses": [
+          "213.0.85.240"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx ip4:213.0.85.241/32 -all",
@@ -43,71 +58,9 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; ruf=mailto:dmarc@parlamentodegalicia.es; rua=mailto:dmarc@parlamentodegalicia.es",
-    "valid": true,
+    "record": "v=DMARC1; p=quarantine ; ruf=mailto:dmarc@parlamentodegalicia.es; rua=mailto:dmarc@parlamentodegalicia.es",
+    "valid": false,
     "location": "parlamentodegalicia.es",
-    "warnings": [],
-    "tags": {
-      "v": {
-        "value": "DMARC1",
-        "explicit": true
-      },
-      "p": {
-        "value": "none",
-        "explicit": true
-      },
-      "ruf": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "dmarc@parlamentodegalicia.es",
-            "size_limit": null
-          }
-        ],
-        "explicit": true
-      },
-      "rua": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "dmarc@parlamentodegalicia.es",
-            "size_limit": null
-          }
-        ],
-        "explicit": true
-      },
-      "adkim": {
-        "value": "r",
-        "explicit": false
-      },
-      "aspf": {
-        "value": "r",
-        "explicit": false
-      },
-      "fo": {
-        "value": [
-          "0"
-        ],
-        "explicit": false
-      },
-      "pct": {
-        "value": 100,
-        "explicit": false
-      },
-      "rf": {
-        "value": [
-          "afrf"
-        ],
-        "explicit": false
-      },
-      "ri": {
-        "value": 86400,
-        "explicit": false
-      },
-      "sp": {
-        "value": "none",
-        "explicit": false
-      }
-    }
+    "error": "Tag p must have one of the following values: none,quarantine,reject - not quarantine "
   }
 }

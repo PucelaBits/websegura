@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.cuentadns.com",
       "ns3.cuentadns.com",
+      "ns1.cuentadns.com",
       "ns2.cuentadns.com"
     ],
     "warnings": []
@@ -16,12 +16,15 @@
         "preference": 0,
         "hostname": "sfmadrid-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.1.36",
-          "104.47.2.36"
+          "104.47.0.36",
+          "104.47.1.36"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The DNS operation timed out after 2.1 seconds",
+      "The reverse DNS of 104.47.1.36 is mail-ve1eur010036.inbound.protection.outlook.com, but the A/AAAA DNS records for mail-ve1eur010036.inbound.protection.outlook.com do not resolve to 104.47.1.36"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com include:spf.ivcert.net -all",

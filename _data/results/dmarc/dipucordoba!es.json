@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "proxy2.eprinsa.es",
-      "proxy.eprinsa.es"
+      "proxy.eprinsa.es",
+      "proxy2.eprinsa.es"
     ],
     "warnings": []
   },
@@ -15,46 +15,44 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.250.123.26",
-          "2607:f8b0:4023:1004::1b"
+          "142.250.152.26",
+          "2607:f8b0:4001:c18::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "142.250.152.26",
-          "2800:3f0:4003:c00::1a"
+          "173.194.77.26",
+          "2607:f8b0:4023:401::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "209.85.202.26",
-          "2607:f8b0:4023:1::1b"
+          "173.194.219.27",
+          "2607:f8b0:4002:c03::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "aspmx2.googlemail.com",
         "addresses": [
-          "173.194.77.26",
-          "2607:f8b0:4001:c56::1b"
+          "173.194.77.27",
+          "2607:f8b0:4023:401::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "aspmx3.googlemail.com",
         "addresses": [
-          "172.253.113.26",
-          "2607:f8b0:4023:1::1b"
+          "173.194.219.26",
+          "2607:f8b0:4002:c03::1b"
         ]
       }
     ],
-    "warnings": [
-      "2800:3f0:4003:c00::1a does not have any reverse DNS (PTR) records"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:195.57.20.245 ip4:195.57.20.2 include:_spf.google.com ~all",

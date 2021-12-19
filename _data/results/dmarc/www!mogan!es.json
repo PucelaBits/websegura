@@ -4,23 +4,15 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns12.servicio-online.net",
       "ns10.servicio-online.net",
+      "ns12.servicio-online.net",
       "ns11.servicio-online.net"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "inf1.mogan.es",
-        "addresses": [
-          "213.0.98.20"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 mx a ip4:213.0.98.20 a:inf1.mogan.es -all",

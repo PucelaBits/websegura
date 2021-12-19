@@ -4,29 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns.lpa.idec.net",
-      "dns.mad.idec.net"
+      "dns.mad.idec.net",
+      "dns.lpa.idec.net"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "smtp-02.servidoresdns.net",
-        "addresses": [
-          "217.76.128.139"
-        ]
-      },
-      {
-        "preference": 15,
-        "hostname": "smtp.aguimes.es",
-        "addresses": [
-          "195.77.245.218"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": null,
