@@ -10,8 +10,23 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 0,
+        "hostname": "mx.msc.es",
+        "addresses": [
+          "195.64.186.52"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mxres.msc.es",
+        "addresses": [
+          "91.230.250.52"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:174.142.68.79/32 ip4:195.64.186.0/23 ip4:91.230.250.0/24 ip4:31.186.254.162/32 ip4:212.92.54.69/32 ip4:212.92.57.122/32 -all",

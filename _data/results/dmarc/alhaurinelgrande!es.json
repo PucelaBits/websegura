@@ -4,15 +4,24 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.dnsxperta.com",
+      "ns1.dnsxperta.com",
       "ns3.dnsxperta.com",
-      "ns1.dnsxperta.com"
+      "ns2.dnsxperta.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 100,
+        "hostname": "mx1.dnsxperta.com",
+        "addresses": [
+          "217.13.80.229",
+          "83.147.63.42"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": null,

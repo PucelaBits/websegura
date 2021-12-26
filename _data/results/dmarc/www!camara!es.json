@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns07.ns-cloud4b.org",
       "ns06.ns-cloud4b.net",
+      "ns07.ns-cloud4b.org",
       "ns08.ns-cloud4b.com"
     ],
     "warnings": []
@@ -17,14 +17,11 @@
         "hostname": "camara-es.mail.protection.outlook.com",
         "addresses": [
           "104.47.4.36",
-          "104.47.5.36"
+          "104.47.6.36"
         ]
       }
     ],
-    "warnings": [
-      "The DNS operation timed out after 2.1 seconds",
-      "The reverse DNS of 104.47.5.36 is mail-he1eur020036.inbound.protection.outlook.com, but the A/AAAA DNS records for mail-he1eur020036.inbound.protection.outlook.com do not resolve to 104.47.5.36"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 a mx include:spf.protection.outlook.com include:servers.mcsv.net include:spf.sendinblue.com a:mailsrv.camaras.es a:jupiter.camaras.es ~all",

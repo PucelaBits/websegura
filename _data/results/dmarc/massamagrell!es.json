@@ -16,8 +16,8 @@
         "preference": 10,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "172.217.219.27",
-          "2607:f8b0:4001:c56::1a"
+          "2607:f8b0:4001:c2f::1b",
+          "74.125.202.27"
         ]
       },
       {
@@ -25,11 +25,13 @@
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
           "173.194.77.27",
-          "2607:f8b0:4023:401::1a"
+          "2800:3f0:4003:c00::1a"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "2800:3f0:4003:c00::1a does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
     "record": null,

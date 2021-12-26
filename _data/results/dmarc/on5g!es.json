@@ -5,10 +5,10 @@
   "ns": {
     "hostnames": [
       "ns4.cdmondns-01.org",
-      "ns1.cdmon.net",
-      "ns5.cdmondns-01.com",
+      "ns3.cdmon.net",
       "ns2.cdmon.net",
-      "ns3.cdmon.net"
+      "ns1.cdmon.net",
+      "ns5.cdmondns-01.com"
     ],
     "warnings": []
   },
@@ -23,7 +23,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The DNS operation timed out after 2.1 seconds",
+      "The reverse DNS of 104.47.18.74 is mail-am6eur050074.inbound.protection.outlook.com, but the A/AAAA DNS records for mail-am6eur050074.inbound.protection.outlook.com do not resolve to 104.47.18.74"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com -all",
@@ -141,6 +144,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.on5g.es\n\nu0022vu003Dspf1u0020includeu003Au005Fspfu002Esrvu002Ecatu0020includeu003Au005Fspfu002Egoogleu002Ecomu0020u007Eallu0022u007Cu007Cu0022googleu002Dsiteu002Dverificationu003DgQSFiB9jqPX3yu002DVKqhf1wiVtP7GVk4dGL8ctbFuCTlAu0022u007Cu007Cu0022MSu003Dms63453700u0022\n\nv=spf1 include:spf.protection.outlook.com -all\n\nSFMC-YFmPcIzaeiRNC4ktUhkChdVPWxM-r0BVztSn-XnC"
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.on5g.es\n\nu0022vu003Dspf1u0020includeu003Au005Fspfu002Esrvu002Ecatu0020includeu003Au005Fspfu002Egoogleu002Ecomu0020u007Eallu0022u007Cu007Cu0022googleu002Dsiteu002Dverificationu003DgQSFiB9jqPX3yu002DVKqhf1wiVtP7GVk4dGL8ctbFuCTlAu0022u007Cu007Cu0022MSu003Dms63453700u0022\n\nSFMC-YFmPcIzaeiRNC4ktUhkChdVPWxM-r0BVztSn-XnC\n\nv=spf1 include:spf.protection.outlook.com -all"
   }
 }

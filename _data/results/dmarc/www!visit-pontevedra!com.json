@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns4.serviciodns.es",
       "ns5.serviciodns.es",
-      "ns6.serviciodns.es"
+      "ns6.serviciodns.es",
+      "ns4.serviciodns.es"
     ],
     "warnings": []
   },
@@ -16,28 +16,30 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "108.177.121.27",
-          "2607:f8b0:4001:c02::1b"
+          "173.194.194.27",
+          "2607:f8b0:400d:c07::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "173.194.77.26",
-          "2607:f8b0:4023:401::1b"
+          "173.194.77.27",
+          "2800:3f0:4003:c00::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "173.194.219.27",
-          "2607:f8b0:4002:c03::1a"
+          "209.85.202.26",
+          "2607:f8b0:4002:c03::1b"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "2800:3f0:4003:c00::1a does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:_spf.google.com ~all",

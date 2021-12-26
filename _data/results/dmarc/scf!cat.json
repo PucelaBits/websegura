@@ -5,33 +5,15 @@
   "ns": {
     "hostnames": [
       "ns4.gestiondecuenta.com",
-      "ns2.gestiondecuenta.com",
+      "ns.gestiondecuenta.com",
       "ns3.gestiondecuenta.com",
-      "ns.gestiondecuenta.com"
+      "ns2.gestiondecuenta.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mail.scf.cat",
-        "addresses": [
-          "194.107.136.90"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mail2.scf.cat",
-        "addresses": [
-          "81.43.101.123"
-        ]
-      }
-    ],
-    "warnings": [
-      "194.107.136.90 does not have any reverse DNS (PTR) records",
-      "The reverse DNS of 81.43.101.123 is bustia.scf.cat, but the A/AAAA DNS records for bustia.scf.cat do not resolve to 81.43.101.123"
-    ]
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 +a +mx +ip4:194.107.136.90 +ip4:81.43.101.123 +a:bustia.scf.cat ~all",

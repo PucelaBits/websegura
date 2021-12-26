@@ -4,14 +4,44 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.adif.es",
-      "ns1.adif.es"
+      "ns1.adif.es",
+      "ns2.adif.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 0,
+        "hostname": "adifaltavelocidad-es.mail.protection.outlook.com",
+        "addresses": [
+          "104.47.12.36",
+          "104.47.14.36"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "smtp.adif.es",
+        "addresses": [
+          "213.144.33.142"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "ebro.adif.es",
+        "addresses": [
+          "213.144.33.148"
+        ]
+      },
+      {
+        "preference": 30,
+        "hostname": "duero.adif.es",
+        "addresses": [
+          "213.144.33.149"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx a:smtp.adif.es a:ebro.adif.es a:duero.adif.es include:spf.protection.outlook.com -all",

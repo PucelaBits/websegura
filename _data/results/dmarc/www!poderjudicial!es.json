@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.cpgestion-dtc-ib.com",
-      "cdj11.cgpj.es"
+      "cdj11.cgpj.es",
+      "ns2.cpgestion-dtc-ib.com"
     ],
     "warnings": []
   },
@@ -41,6 +41,14 @@
         },
         {
           "value": "mailip2.poderjudicial.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mailip1o.poderjudicial.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mailip2o.poderjudicial.es",
           "mechanism": "mx"
         },
         {

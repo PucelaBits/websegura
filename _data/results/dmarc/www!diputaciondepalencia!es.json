@@ -4,55 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.diputaciondepalencia.es",
-      "dns1.diputaciondepalencia.es"
+      "dns1.diputaciondepalencia.es",
+      "dns2.diputaciondepalencia.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "aspmx.l.google.com",
-        "addresses": [
-          "2607:f8b0:4001:c5a::1b",
-          "74.125.70.26"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "alt1.aspmx.l.google.com",
-        "addresses": [
-          "173.194.77.26",
-          "2607:f8b0:4023:401::1b"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "alt2.aspmx.l.google.com",
-        "addresses": [
-          "173.194.219.26",
-          "2607:f8b0:4002:c03::1a"
-        ]
-      },
-      {
-        "preference": 30,
-        "hostname": "aspmx2.googlemail.com",
-        "addresses": [
-          "173.194.77.26",
-          "2607:f8b0:4023:401::1b"
-        ]
-      },
-      {
-        "preference": 30,
-        "hostname": "aspmx3.googlemail.com",
-        "addresses": [
-          "173.194.219.27",
-          "2607:f8b0:4002:c03::1b"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 include:_spf.google.com ~all include:servers.mcsv.net ~all",

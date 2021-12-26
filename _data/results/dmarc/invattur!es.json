@@ -5,22 +5,14 @@
   "ns": {
     "hostnames": [
       "ns05.ns-cloud4b.org",
-      "ns06.ns-cloud4b.com",
-      "ns03.ns-cloud4b.net"
+      "ns03.ns-cloud4b.net",
+      "ns06.ns-cloud4b.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "smtp.invattur.es",
-        "addresses": [
-          "154.58.16.140"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 mx -all",

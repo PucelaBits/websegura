@@ -4,16 +4,44 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.acceseo.com",
       "dns4.acceseo.com",
+      "dns3.acceseo.com",
       "dns1.acceseo.com",
-      "dns3.acceseo.com"
+      "dns2.acceseo.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 0,
+        "hostname": "mx00.perimeter.email",
+        "addresses": [
+          "178.255.228.162",
+          "178.255.229.25",
+          "178.255.230.2"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mx01.perimeter.email",
+        "addresses": [
+          "178.255.228.162",
+          "2a00:a220:8000::aaaa:1"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mx02.perimeter.email",
+        "addresses": [
+          "178.255.229.254",
+          "2a00:a220:8000::bbbb:1"
+        ]
+      }
+    ],
+    "warnings": [
+      "178.255.229.25 does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
     "record": "v=spf1 +a +mx +a:plesk6.acceseo.com include:spf.perimeter.email ~all",

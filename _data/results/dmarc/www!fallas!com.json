@@ -10,16 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mail.fallas.com",
-        "addresses": [
-          "213.201.83.247"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 a mx ip4:213.201.83.247 a:mail.fallas.com mx:mail.fallas.com include:fallas.ip-zone.com -all",

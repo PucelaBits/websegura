@@ -7,8 +7,23 @@
     "error": "The DNS operation timed out after 3.1 seconds"
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "cust13082-1.in.mailcontrol.com",
+        "addresses": [
+          "85.115.60.190"
+        ]
+      },
+      {
+        "preference": 30,
+        "hostname": "cust13082-2.in.mailcontrol.com",
+        "addresses": [
+          "85.115.54.190"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": null,

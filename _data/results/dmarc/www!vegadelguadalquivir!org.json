@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns3plusB.cyberneticos.com",
-      "ns3plusA.cyberneticos.com"
+      "kehlani.ns.cloudflare.com",
+      "rajeev.ns.cloudflare.com"
     ],
     "warnings": []
   },
@@ -15,29 +15,21 @@
         "preference": 10,
         "hostname": "mail.vegadelguadalquivir.org",
         "addresses": [
-          "164.138.210.36"
+          "77.81.119.103"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 a mx ip4:164.138.210.36 -all",
+    "record": "v=spf1 ip4:77.81.119.103/32 -all",
     "valid": true,
-    "dns_lookups": 2,
+    "dns_lookups": 0,
     "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "164.138.210.36",
-          "mechanism": "a"
-        },
-        {
-          "value": "mail.vegadelguadalquivir.org",
-          "mechanism": "mx"
-        },
-        {
-          "value": "164.138.210.36",
+          "value": "77.81.119.103/32",
           "mechanism": "ip4"
         }
       ],
@@ -51,7 +43,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; sp=none",
+    "record": "v=DMARC1; p=quarantine; adkim=s; aspf=s; sp=reject;",
     "valid": true,
     "location": "vegadelguadalquivir.org",
     "warnings": [
@@ -63,20 +55,20 @@
         "explicit": true
       },
       "p": {
-        "value": "none",
-        "explicit": true
-      },
-      "sp": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": true
       },
       "adkim": {
-        "value": "r",
-        "explicit": false
+        "value": "s",
+        "explicit": true
       },
       "aspf": {
-        "value": "r",
-        "explicit": false
+        "value": "s",
+        "explicit": true
+      },
+      "sp": {
+        "value": "reject",
+        "explicit": true
       },
       "fo": {
         "value": [

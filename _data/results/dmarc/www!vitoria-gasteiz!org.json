@@ -10,23 +10,37 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "smtp1.vitoria-gasteiz.org",
-        "addresses": [
-          "46.25.57.207"
-        ]
-      }
-    ],
-    "warnings": [
-      "The reverse DNS of 46.25.57.207 is smtp1.vitoria-gasteiz.org, but the A/AAAA DNS records for smtp1.vitoria-gasteiz.org do not resolve to 46.25.57.207"
-    ]
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "vitoria-gasteiz.org does not have a SPF TXT record"
+    "record": "v=spf1 mx ip4:194.30.117.79 ip4:46.25.57.207 -all",
+    "valid": true,
+    "dns_lookups": 1,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "smtp1.vitoria-gasteiz.org",
+          "mechanism": "mx"
+        },
+        {
+          "value": "194.30.117.79",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "46.25.57.207",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
     "record": "v=DMARC1; p=reject; rua=mailto:postmaster@vitoria-gasteiz.org; ruf=mailto:postmaster@vitoria-gasteiz.org; adkim=r; aspf=r",

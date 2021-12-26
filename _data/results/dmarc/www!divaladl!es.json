@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns02.ono.com",
-      "dns01.ono.com"
+      "dns01.ono.com",
+      "dns02.ono.com"
     ],
     "warnings": []
   },
@@ -15,8 +15,8 @@
         "preference": 10,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.250.128.27",
-          "2607:f8b0:4001:c0d::1b"
+          "142.251.6.27",
+          "2607:f8b0:4001:c09::1b"
         ]
       },
       {
@@ -24,7 +24,7 @@
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
           "173.194.77.26",
-          "2607:f8b0:4023:401::1a"
+          "2800:3f0:4003:c00::1a"
         ]
       },
       {
@@ -40,19 +40,21 @@
         "hostname": "aspmx2.googlemail.com",
         "addresses": [
           "173.194.77.26",
-          "2607:f8b0:4023:401::1b"
+          "2607:f8b0:4023:401::1a"
         ]
       },
       {
         "preference": 40,
         "hostname": "aspmx3.googlemail.com",
         "addresses": [
-          "173.194.219.26",
-          "2607:f8b0:4002:c03::1b"
+          "209.85.202.26",
+          "2a00:1450:400b:c00::1b"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "2800:3f0:4003:c00::1a does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
     "record": "v=spf1 ip4:168.63.36.127 include:_spf.google.com include:spf.sendinblue.com mx -all",

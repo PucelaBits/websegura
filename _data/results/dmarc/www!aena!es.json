@@ -4,17 +4,39 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns6.aena.es",
       "dns13.aena.es",
-      "dns12.aena.es",
+      "dns6.aena.es",
+      "artemis.ttd.net",
       "dns7.aena.es",
-      "artemis.ttd.net"
+      "dns12.aena.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "correosmtp.aena.es",
+        "addresses": [
+          "194.224.177.201",
+          "217.130.124.201"
+        ]
+      }
+    ],
+    "warnings": [
+      "The domain spf.aena.es does not exist",
+      "The reverse DNS of 194.224.177.201 is spf.aena.es, but the A/AAAA DNS records for spf.aena.es do not resolve to 194.224.177.201",
+      "The domain meg04.aena.es does not exist",
+      "The reverse DNS of 194.224.177.201 is meg04.aena.es, but the A/AAAA DNS records for meg04.aena.es do not resolve to 194.224.177.201",
+      "The domain meg02.aena.es does not exist",
+      "The reverse DNS of 194.224.177.201 is meg02.aena.es, but the A/AAAA DNS records for meg02.aena.es do not resolve to 194.224.177.201",
+      "The domain spf.aena.es does not exist",
+      "The reverse DNS of 217.130.124.201 is spf.aena.es, but the A/AAAA DNS records for spf.aena.es do not resolve to 217.130.124.201",
+      "The domain meg04.aena.es does not exist",
+      "The reverse DNS of 217.130.124.201 is meg04.aena.es, but the A/AAAA DNS records for meg04.aena.es do not resolve to 217.130.124.201",
+      "The domain meg02.aena.es does not exist",
+      "The reverse DNS of 217.130.124.201 is meg02.aena.es, but the A/AAAA DNS records for meg02.aena.es do not resolve to 217.130.124.201"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:spf-a.aena.es  include:spf.protection.outlook.com -all",
