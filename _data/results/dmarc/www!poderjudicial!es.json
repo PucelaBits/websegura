@@ -10,23 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mailip1.poderjudicial.es",
-        "addresses": [
-          "62.37.232.37"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "mailip2.poderjudicial.es",
-        "addresses": [
-          "62.37.232.39"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 mx ip4:62.37.232.37 ip4:62.37.232.39 ip4:62.37.233.240 -all",
@@ -41,14 +26,6 @@
         },
         {
           "value": "mailip2.poderjudicial.es",
-          "mechanism": "mx"
-        },
-        {
-          "value": "mailip1o.poderjudicial.es",
-          "mechanism": "mx"
-        },
-        {
-          "value": "mailip2o.poderjudicial.es",
           "mechanism": "mx"
         },
         {

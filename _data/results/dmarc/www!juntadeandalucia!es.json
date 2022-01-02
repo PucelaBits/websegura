@@ -4,16 +4,31 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns3.juntadeandalucia.es",
-      "ns4.juntadeandalucia.es",
       "ns1.juntadeandalucia.es",
-      "ns.juntadeandalucia.es"
+      "ns3.juntadeandalucia.es",
+      "ns.juntadeandalucia.es",
+      "ns4.juntadeandalucia.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx.juntadeandalucia.es",
+        "addresses": [
+          "217.12.25.231"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mx2.juntadeandalucia.es",
+        "addresses": [
+          "217.12.25.241"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": null,

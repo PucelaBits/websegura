@@ -4,29 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns.lpa.idec.net",
-      "dns.mad.idec.net"
+      "dns.mad.idec.net",
+      "dns.lpa.idec.net"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 5,
-        "hostname": "mail.fecam.es",
-        "addresses": [
-          "212.64.170.85"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "mxdomain.mad.idec.net",
-        "addresses": [
-          "212.64.169.11"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 ip4:212.64.170.195 ip4:212.64.170.94 ip4:212.64.170.85 a:fecam.es ~all",

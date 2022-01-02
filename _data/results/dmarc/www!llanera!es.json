@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dnsp16.servidoresdns.net",
-      "dnsp15.servidoresdns.net"
+      "dnsp15.servidoresdns.net",
+      "dnsp16.servidoresdns.net"
     ],
     "warnings": []
   },
@@ -15,47 +15,44 @@
         "preference": 10,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "172.253.119.27",
-          "2607:f8b0:4001:c07::1a"
+          "2607:f8b0:400e:c06::1b",
+          "74.125.142.26"
         ]
       },
       {
         "preference": 20,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "2800:3f0:4003:c00::1a",
-          "64.233.186.27"
+          "142.250.115.26",
+          "2607:f8b0:4023:1004::1a"
         ]
       },
       {
         "preference": 30,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "173.194.219.27",
-          "2607:f8b0:4002:c03::1a"
+          "2607:f8b0:4003:c15::1b",
+          "64.233.171.27"
         ]
       },
       {
         "preference": 40,
         "hostname": "aspmx2.googlemail.com",
         "addresses": [
-          "173.194.77.27",
-          "2800:3f0:4003:c00::1a"
+          "142.250.115.26",
+          "2607:f8b0:4023:1004::1a"
         ]
       },
       {
         "preference": 50,
         "hostname": "aspmx3.googlemail.com",
         "addresses": [
-          "173.194.219.27",
-          "2607:f8b0:4002:c03::1b"
+          "2607:f8b0:4003:c15::1a",
+          "64.233.171.27"
         ]
       }
     ],
-    "warnings": [
-      "2800:3f0:4003:c00::1a does not have any reverse DNS (PTR) records",
-      "2800:3f0:4003:c00::1a does not have any reverse DNS (PTR) records"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:_spf.google.com ~all",

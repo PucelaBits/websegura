@@ -4,14 +4,43 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns.redunda.com",
-      "ns2.redunda.com"
+      "ns2.redunda.com",
+      "ns.redunda.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx.redunda.com",
+        "addresses": [
+          "84.246.208.51",
+          "84.246.208.52",
+          "84.246.208.53",
+          "84.246.208.54",
+          "84.246.208.55",
+          "84.246.208.56",
+          "84.246.208.57",
+          "84.246.208.58"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mx2.redunda.com",
+        "addresses": [
+          "84.246.208.51",
+          "84.246.208.52",
+          "84.246.208.53",
+          "84.246.208.54",
+          "84.246.208.55",
+          "84.246.208.56",
+          "84.246.208.57",
+          "84.246.208.58"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:espadan.infortelecom.net +a +mx a:mail.semanasantamarinera.org ip4:84.246.209.46 -all",

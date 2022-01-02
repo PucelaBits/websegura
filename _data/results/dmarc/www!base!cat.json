@@ -4,17 +4,39 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.nominalia.com",
-      "dns1.nominalia.com"
+      "dns1.nominalia.com",
+      "dns2.nominalia.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "correu.base.cat",
+        "addresses": [
+          "90.160.63.9"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mx1.tinet.org",
+        "addresses": [
+          "195.77.216.146"
+        ]
+      },
+      {
+        "preference": 30,
+        "hostname": "mx1.dipta.cat",
+        "addresses": [
+          "195.76.233.59"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
-    "record": "v=spf1 a mx ip4:90.160.60.248/32 -all",
+    "record": "v=spf1 a mx ip4:90.160.60.248/32 ip4:90.160.63.9/32 -all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
@@ -39,6 +61,10 @@
         {
           "value": "90.160.60.248/32",
           "mechanism": "ip4"
+        },
+        {
+          "value": "90.160.63.9/32",
+          "mechanism": "ip4"
         }
       ],
       "neutral": [],
@@ -51,9 +77,71 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=quarantine; rua=mailto:admin@base.cat; ruf=mailto:admin@base.cat; sp=quarantine",
+    "valid": true,
+    "location": "base.cat",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "admin@base.cat",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "admin@base.cat",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "sp": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      }
+    }
   }
 }

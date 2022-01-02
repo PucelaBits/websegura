@@ -21,7 +21,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The DNS operation timed out after 2.1 seconds",
+      "The reverse DNS of 104.47.8.36 is mail-am5eur030036.inbound.protection.outlook.com, but the A/AAAA DNS records for mail-am5eur030036.inbound.protection.outlook.com do not resolve to 104.47.8.36"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com include:spf.ymlp.com a:email-smtp.eu-west-1.amazonaws.com -all",
@@ -35,7 +38,7 @@
           "mechanism": "a"
         },
         {
-          "value": "34.251.64.28",
+          "value": "34.249.46.152",
           "mechanism": "a"
         },
         {
@@ -51,7 +54,7 @@
           "mechanism": "a"
         },
         {
-          "value": "54.76.5.241",
+          "value": "54.229.97.87",
           "mechanism": "a"
         }
       ],

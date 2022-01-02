@@ -4,22 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns21.servidoresdns.net",
-      "dns22.servidoresdns.net"
+      "dns22.servidoresdns.net",
+      "dns21.servidoresdns.net"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mx.serviciodecorreo.es",
-        "addresses": [
-          "82.223.190.100"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 include:spf.ipzmarketing.com include:_spf.serviciodecorreo.es ~all",

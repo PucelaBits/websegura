@@ -4,38 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.parlamentodeandalucia.es",
-      "dns2.parlamentodeandalucia.es"
+      "dns2.parlamentodeandalucia.es",
+      "dns1.parlamentodeandalucia.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "dns1.parlamentodeandalucia.es",
-        "addresses": [
-          "193.147.254.21"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "dns2.parlamentodeandalucia.es",
-        "addresses": [
-          "193.147.254.2"
-        ]
-      },
-      {
-        "preference": 30,
-        "hostname": "mx3.parlamentodeandalucia.es",
-        "addresses": [
-          "195.55.47.130"
-        ]
-      }
-    ],
-    "warnings": [
-      "195.55.47.130 does not have any reverse DNS (PTR) records"
-    ]
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": null,

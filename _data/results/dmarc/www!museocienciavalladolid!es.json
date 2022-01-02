@@ -16,14 +16,11 @@
         "hostname": "museocienciavalladolid-es.mail.protection.outlook.com",
         "addresses": [
           "104.47.12.36",
-          "104.47.14.36"
+          "104.47.13.36"
         ]
       }
     ],
-    "warnings": [
-      "The DNS operation timed out after 2.1 seconds",
-      "The reverse DNS of 104.47.12.36 is mail-db3eur040036.inbound.protection.outlook.com, but the A/AAAA DNS records for mail-db3eur040036.inbound.protection.outlook.com do not resolve to 104.47.12.36"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com include:spf.acumbamail.com ~all",

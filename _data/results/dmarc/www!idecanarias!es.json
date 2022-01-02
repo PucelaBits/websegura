@@ -4,22 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.grafcan.es",
-      "ns2.grafcan.es"
+      "ns2.grafcan.es",
+      "ns1.grafcan.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 1,
-        "hostname": "correo.idecanarias.es",
-        "addresses": [
-          "195.53.241.141"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": null,

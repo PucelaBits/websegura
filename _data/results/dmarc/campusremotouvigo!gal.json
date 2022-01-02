@@ -10,23 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 1,
-        "hostname": "mail.campusremotouvigo.gal",
-        "addresses": [
-          "176.31.59.39"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "mail.campusremotouvigo.gal",
-        "addresses": []
-      }
-    ],
-    "warnings": [
-      "Hostname mail.campusremotouvigo.gal is listed in multiple MX records"
-    ]
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 mx ~all",

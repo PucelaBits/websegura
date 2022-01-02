@@ -4,31 +4,16 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns3.juntadeandalucia.es",
       "ns.juntadeandalucia.es",
-      "ns4.juntadeandalucia.es",
-      "ns1.juntadeandalucia.es"
+      "ns1.juntadeandalucia.es",
+      "ns3.juntadeandalucia.es",
+      "ns4.juntadeandalucia.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mx.juntadeandalucia.es",
-        "addresses": [
-          "217.12.25.231"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mx2.juntadeandalucia.es",
-        "addresses": [
-          "217.12.25.241"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 ip4:217.12.27.153 ip4:217.12.27.75 ip4:217.12.26.60 ip4:217.12.26.61 ip4:217.12.27.157 ip4:217.12.27.158 ip4:217.12.27.159 ip4:217.12.27.160 include:spf.acumbamail.com ~all",

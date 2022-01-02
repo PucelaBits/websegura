@@ -15,25 +15,49 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "173.194.208.27",
-          "2607:f8b0:4001:c05::1a"
+          "142.250.107.27",
+          "2607:f8b0:400e:c01::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "2607:f8b0:4023:401::1a",
-          "64.233.186.26"
+          "142.250.115.27",
+          "2607:f8b0:4023:1004::1b"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "granada.es does not have a SPF TXT record"
+    "record": "v=spf1 ip4:85.62.209.14 ip4:85.62.209.9 ip4:85.62.209.131 -all",
+    "valid": true,
+    "dns_lookups": 0,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "85.62.209.14",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "85.62.209.9",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "85.62.209.131",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
     "record": null,

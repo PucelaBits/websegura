@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.cuentadns.com",
       "ns1.cuentadns.com",
-      "ns3.cuentadns.com"
+      "ns3.cuentadns.com",
+      "ns2.cuentadns.com"
     ],
     "warnings": []
   },
@@ -16,7 +16,7 @@
         "preference": 0,
         "hostname": "sfmadrid-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.1.36",
+          "104.47.0.36",
           "104.47.2.36"
         ]
       }

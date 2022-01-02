@@ -15,19 +15,23 @@
         "preference": 0,
         "hostname": "mail.castropol.es",
         "addresses": [
-          "31.193.225.47"
+          "185.101.225.33"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:31.193.225.47 +mx +a +ip4:31.193.225.27 +include:_spf.google.com -all",
+    "record": "v=spf1 ip4:185.101.225.33 ip4:31.193.225.47 +mx +a +ip4:31.193.225.27 +include:_spf.google.com -all",
     "valid": true,
     "dns_lookups": 6,
     "warnings": [],
     "parsed": {
       "pass": [
+        {
+          "value": "185.101.225.33",
+          "mechanism": "ip4"
+        },
         {
           "value": "31.193.225.47",
           "mechanism": "ip4"

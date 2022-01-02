@@ -10,18 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 100,
-        "hostname": "mx.algemesi.es",
-        "addresses": [
-          "213.162.200.234"
-        ]
-      }
-    ],
-    "warnings": [
-      "213.162.200.234 does not have any reverse DNS (PTR) records"
-    ]
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": null,
