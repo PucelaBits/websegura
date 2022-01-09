@@ -4,14 +4,29 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.isdefe.es",
-      "ns2.isdefe.es"
+      "ns2.isdefe.es",
+      "ns1.isdefe.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "cust13082-1.in.mailcontrol.com",
+        "addresses": [
+          "85.115.60.190"
+        ]
+      },
+      {
+        "preference": 30,
+        "hostname": "cust13082-2.in.mailcontrol.com",
+        "addresses": [
+          "85.115.54.190"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx a:mail1.isdefe.es a:mail6.isdefe.es a:mail33.isdefe.es a:vw-cmnmail-dmz.isdefe.es a:vw-cmnfree-dmz.isdefe.es include:spf.protection.outlook.com -all",

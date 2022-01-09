@@ -11,8 +11,30 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx1.feriazaragoza.es",
+        "addresses": [
+          "89.17.218.99"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mx2.feriazaragoza.es",
+        "addresses": [
+          "80.28.131.13"
+        ]
+      },
+      {
+        "preference": 30,
+        "hostname": "mx3.feriazaragoza.es",
+        "addresses": [
+          "89.17.218.99"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:89.17.218.96/29 ip4:104.40.149.226 ip4:168.245.50.85 include:sendgrid.net ~all",
@@ -40,7 +62,7 @@
       "include": [
         {
           "domain": "sendgrid.net",
-          "record": "v=spf1 ip4:167.89.0.0/17 ip4:208.117.48.0/20 ip4:50.31.32.0/19 ip4:198.37.144.0/20 ip4:198.21.0.0/21 ip4:192.254.112.0/20 ip4:168.245.0.0/17 ip4:149.72.0.0/16 include:ab.sendgrid.net ~all",
+          "record": "v=spf1 ip4:167.89.0.0/17 ip4:208.117.48.0/20 ip4:50.31.32.0/19 ip4:198.37.144.0/20 ip4:198.21.0.0/21 ip4:192.254.112.0/20 ip4:168.245.0.0/17 ip4:149.72.0.0/16 ip4:159.183.0.0/16 include:ab.sendgrid.net ~all",
           "dns_lookups": 1,
           "parsed": {
             "pass": [
@@ -74,6 +96,10 @@
               },
               {
                 "value": "149.72.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "159.183.0.0/16",
                 "mechanism": "ip4"
               }
             ],

@@ -5,22 +5,14 @@
   "ns": {
     "hostnames": [
       "ns3bcn.entorno.es",
-      "ns1.bcn.cat",
-      "ns2.bcn.cat"
+      "ns2.bcn.cat",
+      "ns1.bcn.cat"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "bcnweb11.bcn.es",
-        "addresses": [
-          "212.15.224.45"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": null,

@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.diputaciondepalencia.es",
-      "dns1.diputaciondepalencia.es"
+      "dns1.diputaciondepalencia.es",
+      "dns2.diputaciondepalencia.es"
     ],
     "warnings": []
   },
@@ -16,39 +16,39 @@
         "hostname": "aspmx.l.google.com",
         "addresses": [
           "2607:f8b0:400e:c09::1b",
-          "74.125.195.26"
+          "74.125.142.26"
         ]
       },
       {
         "preference": 20,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "142.250.115.27",
-          "2607:f8b0:4023:1004::1b"
+          "2607:f8b0:4003:c15::1a",
+          "64.233.171.26"
         ]
       },
       {
         "preference": 20,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "2607:f8b0:4003:c15::1b",
-          "64.233.171.26"
+          "142.250.152.26",
+          "2607:f8b0:4001:c56::1b"
         ]
       },
       {
         "preference": 30,
         "hostname": "aspmx2.googlemail.com",
         "addresses": [
-          "142.250.115.26",
-          "2607:f8b0:4023:1004::1a"
+          "2607:f8b0:4003:c15::1a",
+          "64.233.171.26"
         ]
       },
       {
         "preference": 30,
         "hostname": "aspmx3.googlemail.com",
         "addresses": [
-          "2607:f8b0:4003:c15::1a",
-          "64.233.171.26"
+          "142.250.152.26",
+          "2607:f8b0:4001:c56::1a"
         ]
       }
     ],

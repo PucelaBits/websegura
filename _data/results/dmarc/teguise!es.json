@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.nominalia.com",
-      "dns2.nominalia.com"
+      "dns2.nominalia.com",
+      "dns1.nominalia.com"
     ],
     "warnings": []
   },
@@ -15,14 +15,14 @@
         "preference": 0,
         "hostname": "teguise-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.13.36",
-          "104.47.14.36"
+          "104.47.12.36",
+          "104.47.13.36"
         ]
       }
     ],
     "warnings": [
       "The DNS operation timed out after 2.1 seconds",
-      "The reverse DNS of 104.47.14.36 is mail-vi1eur040036.inbound.protection.outlook.com, but the A/AAAA DNS records for mail-vi1eur040036.inbound.protection.outlook.com do not resolve to 104.47.14.36"
+      "The reverse DNS of 104.47.13.36 is mail-he1eur040036.inbound.protection.outlook.com, but the A/AAAA DNS records for mail-he1eur040036.inbound.protection.outlook.com do not resolve to 104.47.13.36"
     ]
   },
   "spf": {

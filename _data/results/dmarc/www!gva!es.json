@@ -14,20 +14,12 @@
     "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
-    "record": "v=spf1 ip4:195.77.19.0/24 ip4:193.145.207.0/24 include:spf.protection.outlook.com a:mx11.gva.es a:mx12.gva.es a:mx13.gva.es a:mx21.gva.es a:mx22.gva.es a:mx23.gva.es -all",
+    "record": "v=spf1 include:spf.protection.outlook.com a:mx11.gva.es a:mx12.gva.es a:mx13.gva.es a:mx21.gva.es a:mx22.gva.es a:mx23.gva.es a:dunas.gva.es a:sarabi.gva.es -all",
     "valid": true,
-    "dns_lookups": 8,
+    "dns_lookups": 10,
     "warnings": [],
     "parsed": {
       "pass": [
-        {
-          "value": "195.77.19.0/24",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "193.145.207.0/24",
-          "mechanism": "ip4"
-        },
         {
           "value": "193.145.206.211",
           "mechanism": "a"
@@ -74,6 +66,54 @@
         },
         {
           "value": "195.77.19.36",
+          "mechanism": "a"
+        },
+        {
+          "value": "193.145.207.85",
+          "mechanism": "a"
+        },
+        {
+          "value": "195.77.19.105",
+          "mechanism": "a"
+        },
+        {
+          "value": "193.145.207.20",
+          "mechanism": "a"
+        },
+        {
+          "value": "193.145.207.21",
+          "mechanism": "a"
+        },
+        {
+          "value": "193.145.207.22",
+          "mechanism": "a"
+        },
+        {
+          "value": "193.145.207.23",
+          "mechanism": "a"
+        },
+        {
+          "value": "193.145.207.86",
+          "mechanism": "a"
+        },
+        {
+          "value": "195.77.19.106",
+          "mechanism": "a"
+        },
+        {
+          "value": "195.77.19.68",
+          "mechanism": "a"
+        },
+        {
+          "value": "195.77.19.69",
+          "mechanism": "a"
+        },
+        {
+          "value": "195.77.19.70",
+          "mechanism": "a"
+        },
+        {
+          "value": "195.77.19.71",
           "mechanism": "a"
         }
       ],

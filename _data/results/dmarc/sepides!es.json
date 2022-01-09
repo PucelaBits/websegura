@@ -4,30 +4,15 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns08.ns-cloud4b.com",
       "ns06.ns-cloud4b.net",
+      "ns08.ns-cloud4b.com",
       "ns07.ns-cloud4b.org"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mx10.sepides.es",
-        "addresses": [
-          "94.100.132.8"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mx20.sepides.es",
-        "addresses": [
-          "94.100.134.100"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 +a +mx include:emailservice.cpd.as -all",
@@ -55,7 +40,7 @@
       "include": [
         {
           "domain": "emailservice.cpd.as",
-          "record": "v=spf1 ip4:154.58.16.0/22 ip4:185.79.128.0/22 ip4:213.99.28.0/24 ip4:46.24.172.0/25 include:spf.hornetsecurity.com -all",
+          "record": "v=spf1 +ip4:154.58.16.0/22 +ip4:185.79.128.0/22 +ip4:213.99.28.0/24 +ip4:46.24.172.0/25 +include:spf.hornetsecurity.com -all",
           "dns_lookups": 1,
           "parsed": {
             "pass": [

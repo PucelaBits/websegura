@@ -4,24 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.diputaciondepalencia.es",
-      "dns1.diputaciondepalencia.es"
+      "dns1.diputaciondepalencia.es",
+      "dns2.diputaciondepalencia.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "correodepalencia.es",
-        "addresses": [
-          "85.62.54.231"
-        ]
-      }
-    ],
-    "warnings": [
-      "85.62.54.231 does not have any reverse DNS (PTR) records"
-    ]
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 include:_spf.google.com ~all",

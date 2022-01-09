@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "tirant.gva.es",
-      "ninot.gva.es"
+      "ninot.gva.es",
+      "tirant.gva.es"
     ],
     "warnings": []
   },
@@ -15,12 +15,15 @@
         "preference": 0,
         "hostname": "tramalacant-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.12.36",
+          "104.47.13.36",
           "104.47.14.36"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The DNS operation timed out after 2.1 seconds",
+      "The reverse DNS of 104.47.14.36 is mail-vi1eur040036.inbound.protection.outlook.com, but the A/AAAA DNS records for mail-vi1eur040036.inbound.protection.outlook.com do not resolve to 104.47.14.36"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com -all",

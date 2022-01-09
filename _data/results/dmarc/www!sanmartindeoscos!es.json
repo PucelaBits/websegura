@@ -3,11 +3,8 @@
   "base_domain": "sanmartindeoscos.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "ns2.infofuturo.net",
-      "ns1.infofuturo.net"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "mx": {
     "hosts": [],

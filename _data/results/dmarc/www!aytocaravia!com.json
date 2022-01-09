@@ -3,22 +3,21 @@
   "base_domain": "aytocaravia.com",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hostnames": [
+      "ns.aytocaravia.com"
+    ],
+    "warnings": []
   },
   "mx": {
     "hosts": [
       {
         "preference": 10,
         "hostname": "antispam.asturhosting.com",
-        "addresses": [
-          "82.223.89.64"
-        ]
+        "addresses": []
       }
     ],
     "warnings": [
-      "The DNS operation timed out after 2.1 seconds",
-      "The reverse DNS of 82.223.89.64 is antispam.asturhosting.com, but the A/AAAA DNS records for antispam.asturhosting.com do not resolve to 82.223.89.64"
+      "The DNS operation timed out after 3.1 seconds"
     ]
   },
   "spf": {
@@ -26,15 +25,11 @@
     "valid": true,
     "dns_lookups": 5,
     "warnings": [
-      "The domain 212.89.4.66 does not exist"
+      "The domain 212.89.4.66 does not exist",
+      "The DNS operation timed out after 3.1 seconds"
     ],
     "parsed": {
-      "pass": [
-        {
-          "value": "antispam.asturhosting.com",
-          "mechanism": "mx"
-        }
-      ],
+      "pass": [],
       "neutral": [],
       "softfail": [],
       "fail": [],
@@ -185,6 +180,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "error": "The DNS operation timed out after 3.1 seconds"
   }
 }

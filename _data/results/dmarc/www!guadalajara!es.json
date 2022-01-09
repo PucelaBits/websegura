@@ -10,23 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mail.guadalajara.es",
-        "addresses": [
-          "213.0.97.162"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mail01.guadalajara.es",
-        "addresses": [
-          "62.82.228.203"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 mx a ip4:213.0.97.162/32 ip4:62.82.228.203/32 a:mail.guadalajara.es a:mail01.guadalajara.es a:correo.guadalajara.es ?all",
@@ -56,7 +41,7 @@
           "mechanism": "ip4"
         },
         {
-          "value": "213.0.97.162",
+          "value": "213.0.97.168",
           "mechanism": "a"
         },
         {

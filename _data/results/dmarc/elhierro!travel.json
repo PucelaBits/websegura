@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns.lpa.idec.net",
-      "dns.mad.idec.net"
+      "dns.mad.idec.net",
+      "dns.lpa.idec.net"
     ],
     "warnings": []
   },
@@ -62,10 +62,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The DNS operation timed out after 2.1 seconds",
-      "The reverse DNS of 212.64.169.75 is mailzmx2.idecnet.com, but the A/AAAA DNS records for mailzmx2.idecnet.com do not resolve to 212.64.169.75"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": null,

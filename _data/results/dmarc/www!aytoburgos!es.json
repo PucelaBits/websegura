@@ -4,27 +4,17 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "dns1.csanet.io",
       "dns2.csanet.io",
       "clunia.csa.es",
-      "dns1.csanet.io",
       "buniel.csa.es",
       "tapia.csa.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 5,
-        "hostname": "smtp.sarenet.es",
-        "addresses": [
-          "194.30.0.70",
-          "194.30.0.71",
-          "194.30.0.72"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "spf": {
     "record": "v=spf1 mx a:correo.aytoburgos.es include:spf-relay.sarenet.es include:emailservice.cpd.as -all",
@@ -81,7 +71,7 @@
         },
         {
           "domain": "emailservice.cpd.as",
-          "record": "v=spf1 ip4:154.58.16.0/22 ip4:185.79.128.0/22 ip4:213.99.28.0/24 ip4:46.24.172.0/25 include:spf.hornetsecurity.com -all",
+          "record": "v=spf1 +ip4:154.58.16.0/22 +ip4:185.79.128.0/22 +ip4:213.99.28.0/24 +ip4:46.24.172.0/25 +include:spf.hornetsecurity.com -all",
           "dns_lookups": 1,
           "parsed": {
             "pass": [

@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns10.infofuturo.net",
-      "ns11.infofuturo.net"
+      "ns11.infofuturo.net",
+      "ns10.infofuturo.net"
     ],
     "warnings": []
   },
@@ -16,12 +16,12 @@
   "spf": {
     "record": null,
     "valid": false,
-    "error": "ayto-sobrescobio.es does not have a SPF TXT record"
+    "error": "The DNS operation timed out after 3.1 seconds"
   },
   "dmarc": {
     "record": null,
     "valid": false,
     "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "error": "The DNS operation timed out after 3.1 seconds"
   }
 }
