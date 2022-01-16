@@ -10,8 +10,33 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "cluster5.eu.messagelabs.com",
+        "addresses": [
+          "195.245.230.200",
+          "195.245.230.201",
+          "195.245.230.202",
+          "195.245.231.69",
+          "195.245.231.72",
+          "195.245.231.75",
+          "85.158.142.210",
+          "85.158.142.214",
+          "85.158.142.215"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "cluster5a.eu.messagelabs.com",
+        "addresses": [
+          "18.185.169.49",
+          "3.120.52.241",
+          "3.124.15.88"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:194.179.53.235 include:spf.protection.outlook.com include:spf.messagelabs.com ~all",

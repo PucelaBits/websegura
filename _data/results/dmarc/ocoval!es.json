@@ -15,7 +15,7 @@
         "preference": 10,
         "hostname": "ocoval-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.17.138",
+          "104.47.17.74",
           "104.47.18.74"
         ]
       }
@@ -23,7 +23,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:84.246.214.14 ip4:84.246.215.14 include:spf.protection.outlook.com -all",
+    "record": "v=spf1 ip4:84.246.214.14 ip4:84.246.215.14 ip4:206.189.106.209 include:spf.protection.outlook.com -all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
@@ -35,6 +35,10 @@
         },
         {
           "value": "84.246.215.14",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "206.189.106.209",
           "mechanism": "ip4"
         }
       ],

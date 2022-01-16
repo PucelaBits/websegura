@@ -10,11 +10,26 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "smtp-lp.gobiernodecanarias.org",
+        "addresses": [
+          "93.188.136.122"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "smtp-tf.gobiernodecanarias.org",
+        "addresses": [
+          "93.188.137.42"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx a:correo.gobiernodecanarias.org a:correomasivo.gobiernodecanarias.org -all",
+    "record": "v=spf1 mx a:correo.gobiernodecanarias.org a:correomasivo.gobiernodecanarias.org ip4:52.17.45.98/32 ip4:52.16.190.81/32 -all",
     "valid": true,
     "dns_lookups": 3,
     "warnings": [],
@@ -33,16 +48,20 @@
           "mechanism": "a"
         },
         {
-          "value": "93.188.137.42",
-          "mechanism": "a"
-        },
-        {
           "value": "93.188.136.128",
           "mechanism": "a"
         },
         {
           "value": "93.188.137.128",
           "mechanism": "a"
+        },
+        {
+          "value": "52.17.45.98/32",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "52.16.190.81/32",
+          "mechanism": "ip4"
         }
       ],
       "neutral": [],

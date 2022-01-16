@@ -3,12 +3,23 @@
   "base_domain": "sanmartindeoscos.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hostnames": [
+      "ns5.infofuturo.net",
+      "ns4.infofuturo.net"
+    ],
+    "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 0,
+        "hostname": "correo.sanmartindeoscos.es",
+        "addresses": [
+          "37.153.90.131"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": null,

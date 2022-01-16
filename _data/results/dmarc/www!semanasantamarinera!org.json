@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.redunda.com",
-      "ns.redunda.com"
+      "ns.redunda.com",
+      "ns2.redunda.com"
     ],
     "warnings": []
   },
@@ -40,10 +40,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The DNS operation timed out after 2.1 seconds",
-      "The reverse DNS of 84.246.208.58 is rl8.redunda.com, but the A/AAAA DNS records for rl8.redunda.com do not resolve to 84.246.208.58"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:espadan.infortelecom.net +a +mx a:mail.semanasantamarinera.org ip4:84.246.209.46 -all",

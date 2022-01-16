@@ -20,10 +20,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The DNS operation timed out after 2.1 seconds",
-      "The reverse DNS of 104.47.17.138 is mail-vi1eur050138.inbound.protection.outlook.com, but the A/AAAA DNS records for mail-vi1eur050138.inbound.protection.outlook.com do not resolve to 104.47.17.138"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:212.128.108.46 ip4:212.128.108.45 include:spf.protection.outlook.com -all",

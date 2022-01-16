@@ -6,8 +6,8 @@
     "hostnames": [
       "ns.dinahosting.com",
       "ns4.dinahosting.com",
-      "ns2.dinahosting.com",
-      "ns3.dinahosting.com"
+      "ns3.dinahosting.com",
+      "ns2.dinahosting.com"
     ],
     "warnings": []
   },
@@ -17,15 +17,12 @@
         "preference": 10,
         "hostname": "mercavalencia-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.0.36",
+          "104.47.1.36",
           "104.47.2.36"
         ]
       }
     ],
-    "warnings": [
-      "The DNS operation timed out after 2.1 seconds",
-      "The reverse DNS of 104.47.2.36 is mail-db5eur010036.inbound.protection.outlook.com, but the A/AAAA DNS records for mail-db5eur010036.inbound.protection.outlook.com do not resolve to 104.47.2.36"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:94.242.254.237 ip4:178.33.231.124 ip6:2001:41d0:8:287c::/64 a:bolt.xinxeta.eu a:mercavalencia.es include:spf.protection.outlook.com -all",

@@ -9,8 +9,16 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 5,
+        "hostname": "mail.evaristovalle.com",
+        "addresses": [
+          "91.121.161.128"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 a mx a:evaristovalle.com ip4:91.121.161.128 ip6:2001:41d0:0001:e280:: ?all",

@@ -1,13 +1,13 @@
 {
-  "domain": "mazonovo.es",
-  "base_domain": "mazonovo.es",
+  "domain": "auva2030.es",
+  "base_domain": "auva2030.es",
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns.dinahosting.com",
-      "ns3.dinahosting.com",
-      "ns2.dinahosting.com",
-      "ns4.dinahosting.com"
+      "dns2.megaservidor.com",
+      "dns4.megaservidor.com",
+      "dns1.megaservidor.com",
+      "dns3.megaservidor.com"
     ],
     "warnings": []
   },
@@ -15,9 +15,9 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "mail.mazonovo.es",
+        "hostname": "mail.auva2030.es",
         "addresses": [
-          "82.98.136.168"
+          "82.98.154.95"
         ]
       }
     ],
@@ -31,11 +31,11 @@
     "parsed": {
       "pass": [
         {
-          "value": "82.98.136.168",
+          "value": "82.98.154.95",
           "mechanism": "a"
         },
         {
-          "value": "mail.mazonovo.es",
+          "value": "mail.auva2030.es",
           "mechanism": "mx"
         }
       ],

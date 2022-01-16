@@ -10,8 +10,30 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "correo.citapreviadnie.es",
+        "addresses": [
+          "195.55.116.96"
+        ]
+      },
+      {
+        "preference": 50,
+        "hostname": "correo11.citapreviadnie.es",
+        "addresses": [
+          "195.55.116.96"
+        ]
+      },
+      {
+        "preference": 70,
+        "hostname": "correo22.citapreviadnie.es",
+        "addresses": [
+          "195.55.116.96"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx -all",

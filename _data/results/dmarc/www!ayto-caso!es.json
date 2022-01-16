@@ -15,17 +15,19 @@
         "preference": 10,
         "hostname": "mail.ayto-caso.es",
         "addresses": [
-          "212.89.13.125"
+          "89.17.204.80"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx a ip4:212.89.13.125  -all",
+    "record": "v=spf1 mx a ip4:89.17.204.80 ip4:89.17.204.220 ip4:89.17.204.215 ip4:89.17.204.213 -all ",
     "valid": true,
     "dns_lookups": 2,
-    "warnings": [],
+    "warnings": [
+      "Any text after the all mechanism is ignored"
+    ],
     "parsed": {
       "pass": [
         {
@@ -37,7 +39,19 @@
           "mechanism": "a"
         },
         {
-          "value": "212.89.13.125",
+          "value": "89.17.204.80",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "89.17.204.220",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "89.17.204.215",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "89.17.204.213",
           "mechanism": "ip4"
         }
       ],

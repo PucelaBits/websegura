@@ -4,15 +4,30 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns06.ns-cloud4b.net",
       "ns08.ns-cloud4b.com",
+      "ns06.ns-cloud4b.net",
       "ns07.ns-cloud4b.org"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx10.sepides.es",
+        "addresses": [
+          "94.100.132.8"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mx20.sepides.es",
+        "addresses": [
+          "94.100.134.100"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 +a +mx include:emailservice.cpd.as -all",

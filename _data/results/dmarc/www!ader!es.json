@@ -4,14 +4,29 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "cardns2.larioja.org",
-      "cardns1.larioja.org"
+      "cardns1.larioja.org",
+      "cardns2.larioja.org"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 20,
+        "hostname": "mx1.riojasalud.es",
+        "addresses": [
+          "193.145.4.9"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mx2.riojasalud.es",
+        "addresses": [
+          "195.55.164.16"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx -all",

@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns12.servicio-online.net",
       "ns10.servicio-online.net",
-      "ns11.servicio-online.net",
-      "ns12.servicio-online.net"
+      "ns11.servicio-online.net"
     ],
     "warnings": []
   },
@@ -83,10 +83,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The DNS operation timed out after 2.1 seconds",
-      "The reverse DNS of 213.99.38.78 is asimov.correolimpio.telefonica.es, but the A/AAAA DNS records for asimov.correolimpio.telefonica.es do not resolve to 213.99.38.78"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com -all",

@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.srv-acens.com",
-      "ns1.srv-acens.com"
+      "ns1.srv-acens.com",
+      "ns2.srv-acens.com"
     ],
     "warnings": []
   },
@@ -19,10 +19,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The DNS operation timed out after 2.1 seconds",
-      "The reverse DNS of 217.116.0.227 is relaysin.dominioabsoluto.net, but the A/AAAA DNS records for relaysin.dominioabsoluto.net do not resolve to 217.116.0.227"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:212.89.23.3 redirect=spf.dominioabsoluto.net",

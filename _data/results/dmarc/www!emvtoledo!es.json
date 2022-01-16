@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "ns1064.ui-dns.de",
-      "ns1064.ui-dns.com",
       "ns1064.ui-dns.biz",
+      "ns1064.ui-dns.com",
       "ns1064.ui-dns.org"
     ],
     "warnings": []
@@ -17,7 +17,7 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "2607:f8b0:400e:c09::1b",
+          "2607:f8b0:400e:c07::1a",
           "74.125.142.26"
         ]
       },
@@ -25,24 +25,24 @@
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "2607:f8b0:4003:c15::1b",
-          "64.233.171.26"
+          "142.250.115.27",
+          "2607:f8b0:4023:1004::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "142.250.152.26",
-          "2607:f8b0:4001:c56::1b"
+          "2607:f8b0:4003:c15::1a",
+          "64.233.171.27"
         ]
       },
       {
         "preference": 10,
         "hostname": "aspmx2.googlemail.com",
         "addresses": [
-          "2607:f8b0:4003:c15::1a",
-          "64.233.171.26"
+          "142.250.115.26",
+          "2607:f8b0:4023:1004::1b"
         ]
       }
     ],

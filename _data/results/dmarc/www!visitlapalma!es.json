@@ -22,9 +22,10 @@
     "warnings": []
   },
   "spf": {
-    "record": null,
+    "record": "v=spf1 mx a ip4:116.202.0.0/15 mx include:visitlapalma.es -all",
     "valid": false,
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "warnings": [],
+    "error": "Include loop: visitlapalma.es"
   },
   "dmarc": {
     "record": "v=DMARC1; p=none",

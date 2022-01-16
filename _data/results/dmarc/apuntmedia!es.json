@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.dnsoverant103.com",
-      "ns1.dnsoverant103.com"
+      "ns1.dnsoverant103.com",
+      "ns2.dnsoverant103.com"
     ],
     "warnings": []
   },
@@ -43,7 +43,7 @@
       "include": [
         {
           "domain": "spf.smtp2go.com",
-          "record": "v=spf1 ip4:207.58.147.64/28 ip4:216.22.15.224/27 ip4:43.228.184.0/22 ip4:103.47.204.0/22 ip4:103.2.140.0/22 ip4:203.31.36.0/22 ip4:198.74.56.28 -all",
+          "record": "v=spf1 ip4:207.58.147.64/28 ip4:216.22.15.224/27 ip4:43.228.184.0/22 ip4:103.47.204.0/22 ip4:103.2.140.0/22 ip4:203.31.36.0/22 ip4:170.10.68.0/22 ip4:198.74.56.28 -all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -69,6 +69,10 @@
               },
               {
                 "value": "203.31.36.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "170.10.68.0/22",
                 "mechanism": "ip4"
               },
               {

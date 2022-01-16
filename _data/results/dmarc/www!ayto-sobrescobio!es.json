@@ -4,24 +4,32 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns11.infofuturo.net",
-      "ns10.infofuturo.net"
+      "ns10.infofuturo.net",
+      "ns11.infofuturo.net"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 0,
+        "hostname": "correo.ayto-sobrescobio.es",
+        "addresses": [
+          "37.153.90.139"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": null,
     "valid": false,
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "error": "ayto-sobrescobio.es does not have a SPF TXT record"
   },
   "dmarc": {
     "record": null,
     "valid": false,
     "location": null,
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "error": "A DMARC record does not exist for this domain or its base domain"
   }
 }

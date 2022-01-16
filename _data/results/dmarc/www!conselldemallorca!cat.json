@@ -13,19 +13,20 @@
     "hosts": [
       {
         "preference": 30,
-        "hostname": "saluetw.conselldemallorca.cat",
-        "addresses": []
+        "hostname": "saluetw.conselldemallorca.net",
+        "addresses": [
+          "213.201.84.232"
+        ]
       },
       {
         "preference": 50,
-        "hostname": "saluetw2.conselldemallorca.cat",
-        "addresses": []
+        "hostname": "saluetw2.conselldemallorca.net",
+        "addresses": [
+          "213.201.84.233"
+        ]
       }
     ],
-    "warnings": [
-      "The domain saluetw.conselldemallorca.cat does not exist",
-      "The domain saluetw2.conselldemallorca.cat does not exist"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": null,
