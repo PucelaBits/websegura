@@ -4,14 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.virtualns.net",
-      "ns2.virtualns.net"
+      "ns2.virtualns.net",
+      "ns1.virtualns.net"
     ],
     "warnings": []
   },
   "mx": {
     "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "error": "The resolution lifetime expired after 3.1 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "spf": {
     "record": null,

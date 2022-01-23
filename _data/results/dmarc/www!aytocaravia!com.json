@@ -9,19 +9,34 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "antispam.asturhosting.com",
+        "addresses": [
+          "82.223.89.64"
+        ]
+      }
+    ],
+    "warnings": [
+      "The resolution lifetime expired after 2.1 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
+      "The reverse DNS of 82.223.89.64 is antispam.asturhosting.com, but the A/AAAA DNS records for antispam.asturhosting.com do not resolve to 82.223.89.64"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com include:_spf.asturservers.com a:212.89.4.66 +mx ~all",
     "valid": true,
     "dns_lookups": 5,
     "warnings": [
-      "The domain 212.89.4.66 does not exist",
-      "All nameservers failed to answer the query aytocaravia.com. IN MX: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+      "The domain 212.89.4.66 does not exist"
     ],
     "parsed": {
-      "pass": [],
+      "pass": [
+        {
+          "value": "antispam.asturhosting.com",
+          "mechanism": "mx"
+        }
+      ],
       "neutral": [],
       "softfail": [],
       "fail": [],

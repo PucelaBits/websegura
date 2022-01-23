@@ -4,14 +4,22 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "artemis.ttd.net",
-      "ns.boe.es"
+      "ns.boe.es",
+      "artemis.ttd.net"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx.boe.es",
+        "addresses": [
+          "81.89.32.208"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:81.89.32.208 ip4:81.89.33.140 include:spf.protection.outlook.com ~all",

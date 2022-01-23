@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "ns1.dnsxperta.com",
-      "ns2.dnsxperta.com",
-      "ns3.dnsxperta.com"
+      "ns3.dnsxperta.com",
+      "ns2.dnsxperta.com"
     ],
     "warnings": []
   },
@@ -77,6 +77,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.sotdechera.es\n\nv=spf1 include:dnsxperta.com -all"
   }
 }

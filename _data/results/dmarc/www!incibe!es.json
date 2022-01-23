@@ -1,14 +1,14 @@
 {
   "domain": "incibe.es",
   "base_domain": "incibe.es",
-  "dnssec": false,
+  "dnssec": true,
   "ns": {
     "hostnames": [
+      "ns1.cdmon.net",
       "ns2.cdmon.net",
       "ns3.cdmon.net",
-      "ns5.cdmondns-01.com",
       "ns4.cdmondns-01.org",
-      "ns1.cdmon.net"
+      "ns5.cdmondns-01.com"
     ],
     "warnings": []
   },
@@ -17,27 +17,27 @@
       {
         "preference": 10,
         "hostname": "correo.incibe.es",
-        "addresses": [
-          "195.53.165.148"
-        ]
+        "addresses": []
       },
       {
         "preference": 20,
         "hostname": "correo2.incibe.es",
-        "addresses": [
-          "193.146.253.148"
-        ]
+        "addresses": []
       }
     ],
     "warnings": [
-      "193.146.253.148 does not have any reverse DNS (PTR) records"
+      "All nameservers failed to answer the query correo.incibe.es. IN AAAA: Server 1.0.0.1 UDP port 53 answered SERVFAIL",
+      "All nameservers failed to answer the query correo2.incibe.es. IN AAAA: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
     ]
   },
   "spf": {
     "record": "v=spf1 mx a:correo.inteco.es a:correo2.inteco.es -all",
     "valid": true,
     "dns_lookups": 3,
-    "warnings": [],
+    "warnings": [
+      "All nameservers failed to answer the query correo.inteco.es. IN AAAA: Server 1.0.0.1 UDP port 53 answered SERVFAIL",
+      "All nameservers failed to answer the query correo2.inteco.es. IN AAAA: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    ],
     "parsed": {
       "pass": [
         {
@@ -47,14 +47,6 @@
         {
           "value": "correo2.incibe.es",
           "mechanism": "mx"
-        },
-        {
-          "value": "195.53.165.57",
-          "mechanism": "a"
-        },
-        {
-          "value": "195.53.165.57",
-          "mechanism": "a"
         }
       ],
       "neutral": [],

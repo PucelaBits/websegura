@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.interdomain.net",
       "ns3.interdomain.es",
+      "ns2.interdomain.net",
       "ns1.interdomain.net"
     ],
     "warnings": []
@@ -29,11 +29,13 @@
     "record": "v=spf1 a ip4:217.124.174.13/32 ip4:62.42.233.151/32 ip4:212.170.35.96/27 mx:cni.es ~all",
     "valid": true,
     "dns_lookups": 2,
-    "warnings": [
-      "cni.es does not have any A/AAAA records"
-    ],
+    "warnings": [],
     "parsed": {
       "pass": [
+        {
+          "value": "86.109.99.243",
+          "mechanism": "a"
+        },
         {
           "value": "217.124.174.13/32",
           "mechanism": "ip4"

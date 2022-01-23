@@ -5,9 +5,9 @@
   "ns": {
     "hostnames": [
       "ns1075.ui-dns.org",
+      "ns1075.ui-dns.com",
       "ns1075.ui-dns.de",
-      "ns1075.ui-dns.biz",
-      "ns1075.ui-dns.com"
+      "ns1075.ui-dns.biz"
     ],
     "warnings": []
   },
@@ -17,36 +17,39 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "2607:f8b0:400e:c09::1a",
-          "74.125.142.26"
+          "173.194.204.27",
+          "2607:f8b0:400d:c09::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "142.250.115.26",
-          "2607:f8b0:4023:1004::1b"
+          "2800:3f0:4003:c00::1a",
+          "64.233.186.26"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "2607:f8b0:4003:c15::1a",
-          "64.233.171.26"
+          "173.194.219.26",
+          "2607:f8b0:4002:c03::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "aspmx2.googlemail.com",
         "addresses": [
-          "142.250.115.26",
-          "2607:f8b0:4023:1004::1b"
+          "173.194.77.26",
+          "2800:3f0:4003:c00::1a"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "2800:3f0:4003:c00::1a does not have any reverse DNS (PTR) records",
+      "2800:3f0:4003:c00::1a does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
     "record": null,

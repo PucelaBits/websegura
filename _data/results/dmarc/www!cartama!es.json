@@ -13,7 +13,7 @@
   },
   "mx": {
     "hosts": [],
-    "error": "The DNS operation timed out after 3.1 seconds"
+    "error": "The resolution lifetime expired after 3.1 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 include:spf.malaga.es include:spf.qsemail.net include:spf.acumbamail.com ~all",
@@ -246,6 +246,18 @@
                 "mechanism": "a"
               },
               {
+                "value": "2001:550:2:8::b0:12",
+                "mechanism": "a"
+              },
+              {
+                "value": "2001:550:2:8::b0:13",
+                "mechanism": "a"
+              },
+              {
+                "value": "2001:550:2:8::b0:14",
+                "mechanism": "a"
+              },
+              {
                 "value": "2001:550:2:9::280:10",
                 "mechanism": "a"
               },
@@ -262,11 +274,35 @@
                 "mechanism": "a"
               },
               {
+                "value": "206.148.0.34",
+                "mechanism": "a"
+              },
+              {
+                "value": "206.148.0.46",
+                "mechanism": "a"
+              },
+              {
+                "value": "206.148.0.47",
+                "mechanism": "a"
+              },
+              {
+                "value": "206.148.0.48",
+                "mechanism": "a"
+              },
+              {
                 "value": "213.163.65.6",
                 "mechanism": "a"
               },
               {
                 "value": "2402:4480:8002::b:100",
+                "mechanism": "a"
+              },
+              {
+                "value": "2406:3400:280:8::16",
+                "mechanism": "a"
+              },
+              {
+                "value": "2406:3400:280:8::17",
                 "mechanism": "a"
               },
               {
@@ -366,10 +402,6 @@
                 "mechanism": "a"
               },
               {
-                "value": "2a01:4f8:172:1666::2",
-                "mechanism": "a"
-              },
-              {
                 "value": "2a01:4f8:172:1686::2",
                 "mechanism": "a"
               },
@@ -379,14 +411,6 @@
               },
               {
                 "value": "2a01:4f8:172:168b::2",
-                "mechanism": "a"
-              },
-              {
-                "value": "2a01:4f8:172:3582::2",
-                "mechanism": "a"
-              },
-              {
-                "value": "2a01:4f8:172:379b::2",
                 "mechanism": "a"
               },
               {

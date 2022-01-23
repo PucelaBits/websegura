@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns28.servidoresdns.net",
-      "dns27.servidoresdns.net"
+      "dns27.servidoresdns.net",
+      "dns28.servidoresdns.net"
     ],
     "warnings": []
   },
@@ -15,44 +15,46 @@
         "preference": 10,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "108.177.98.27",
-          "2607:f8b0:400e:c08::1b"
+          "172.217.212.27",
+          "2607:f8b0:4001:c54::1a"
         ]
       },
       {
         "preference": 20,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "142.250.115.27",
-          "2607:f8b0:4023:1004::1a"
+          "2800:3f0:4003:c00::1b",
+          "64.233.186.26"
         ]
       },
       {
         "preference": 20,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "2607:f8b0:4003:c15::1a",
-          "64.233.171.27"
+          "209.85.202.26",
+          "2a00:1450:400b:c00::1b"
         ]
       },
       {
         "preference": 30,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "142.250.152.26",
-          "2607:f8b0:4001:c56::1a"
+          "142.250.112.27",
+          "2607:f8b0:4023:1402::1b"
         ]
       },
       {
         "preference": 30,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "172.253.113.26",
-          "2607:f8b0:4023:1::1a"
+          "142.250.27.26",
+          "2a00:1450:4025:401::1b"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "2800:3f0:4003:c00::1b does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
     "record": "v=spf1 ip4:195.55.105.25 include:_spf.serviciodecorreo.es ~all",
