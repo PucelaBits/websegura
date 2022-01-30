@@ -6,8 +6,8 @@
     "hostnames": [
       "ns1e.carm.es",
       "ns2e.carm.es",
-      "dns01.ono.com",
-      "rafi.f-integra.org"
+      "rafi.f-integra.org",
+      "dns01.ono.com"
     ],
     "warnings": []
   },
@@ -25,30 +25,22 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:147.84.180.17 ip4:147.84.180.18 ip4:147.84.180.73 ip4:147.84.186.100 ip4:147.84.186.101 include:spf.protection.outlook.com -all",
+    "record": "v=spf1 ip4:147.84.186.100 ip4:147.84.186.101 ip4:147.84.180.73 include:spf.protection.outlook.com -all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "147.84.180.17",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "147.84.180.18",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "147.84.180.73",
-          "mechanism": "ip4"
-        },
-        {
           "value": "147.84.186.100",
           "mechanism": "ip4"
         },
         {
           "value": "147.84.186.101",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "147.84.180.73",
           "mechanism": "ip4"
         }
       ],

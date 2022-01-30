@@ -25,11 +25,13 @@
     "record": "v=spf1 +a +mx +ip4:212.21.227.10 +ip4:195.53.90.200 ~all",
     "valid": true,
     "dns_lookups": 2,
-    "warnings": [
-      "cendeadecizur.es does not have any A/AAAA records"
-    ],
+    "warnings": [],
     "parsed": {
       "pass": [
+        {
+          "value": "185.101.224.34",
+          "mechanism": "a"
+        },
         {
           "value": "correo.cendeadecizur.es",
           "mechanism": "mx"

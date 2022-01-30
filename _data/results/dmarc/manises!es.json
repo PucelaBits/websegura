@@ -19,10 +19,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.1 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
-      "The reverse DNS of 95.39.50.139 is correo.manises.es, but the A/AAAA DNS records for correo.manises.es do not resolve to 95.39.50.139"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:84.124.7.58 mx ip4:95.39.50.141 ip4:95.39.50.139 ~all",

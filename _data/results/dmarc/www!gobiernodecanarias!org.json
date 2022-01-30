@@ -4,29 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "seti.gobiernodecanarias.org",
-      "acatife.gobiernodecanarias.org"
+      "acatife.gobiernodecanarias.org",
+      "seti.gobiernodecanarias.org"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "smtp-lp.gobiernodecanarias.org",
-        "addresses": [
-          "93.188.136.122"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "smtp-tf.gobiernodecanarias.org",
-        "addresses": [
-          "93.188.137.42"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.1 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 mx a:correo.gobiernodecanarias.org a:correomasivo.gobiernodecanarias.org ip4:52.17.45.98/32 ip4:52.16.190.81/32 -all",
@@ -45,6 +30,10 @@
         },
         {
           "value": "93.188.136.122",
+          "mechanism": "a"
+        },
+        {
+          "value": "93.188.137.42",
           "mechanism": "a"
         },
         {

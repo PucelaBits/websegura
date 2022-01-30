@@ -1,0 +1,26 @@
+{
+  "domain": "zamora.sedelectronica.es",
+  "base_domain": "sedelectronica.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [],
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "zamora.sedelectronica.es does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.sedelectronica.es\n\nesfirma-domain-verification=33da9c11-811b-4e47-8591-eab6779b533a"
+  }
+}

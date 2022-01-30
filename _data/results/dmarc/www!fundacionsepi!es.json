@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "sun.rediris.es",
       "chico.rediris.es",
-      "picula.funep.es",
-      "sun.rediris.es"
+      "picula.funep.es"
     ],
     "warnings": []
   },
@@ -40,7 +40,6 @@
     "valid": true,
     "dns_lookups": 5,
     "warnings": [
-      "The domain fangui.fundacionsepi.es does not exist",
       "picula.funep.es does not have any MX records",
       "picula.fundacionsepi.es does not have any MX records"
     ],
@@ -57,6 +56,10 @@
         {
           "value": "193.146.141.99",
           "mechanism": "ip4"
+        },
+        {
+          "value": "193.146.141.99",
+          "mechanism": "a"
         },
         {
           "value": "193.146.141.98",

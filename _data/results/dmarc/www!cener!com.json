@@ -4,19 +4,79 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns10.servidoresdns.net",
-      "dns9.servidoresdns.net"
+      "dns9.servidoresdns.net",
+      "dns10.servidoresdns.net"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.1 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail1.cener.com",
+        "addresses": [
+          "194.179.96.231"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mail2.cener.com",
+        "addresses": [
+          "217.127.127.39"
+        ]
+      },
+      {
+        "preference": 30,
+        "hostname": "mail3.cener.com",
+        "addresses": [
+          "212.170.29.98"
+        ]
+      }
+    ],
+    "warnings": [
+      "The reverse DNS of 194.179.96.231 is correo.cener.com, but the A/AAAA DNS records for correo.cener.com do not resolve to 194.179.96.231"
+    ]
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "The resolution lifetime expired after 3.1 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
+    "record": "v=spf1 ip4:212.170.29.98 ip4:194.179.96.231 ip4:217.127.127.39 mx -all",
+    "valid": true,
+    "dns_lookups": 1,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "212.170.29.98",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "194.179.96.231",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "217.127.127.39",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "mail1.cener.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mail2.cener.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mail3.cener.com",
+          "mechanism": "mx"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
     "record": null,

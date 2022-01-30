@@ -4,12 +4,12 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.dicoruna.es",
-      "dns.dacoruna.gal",
       "dns1.dacoruna.gal",
-      "dns.dicoruna.es",
+      "dns.dacoruna.gal",
+      "ns1.xunta.es",
       "ns2.xunta.es",
-      "ns1.xunta.es"
+      "dns1.dicoruna.es",
+      "dns.dicoruna.es"
     ],
     "warnings": []
   },
@@ -30,12 +30,15 @@
     "valid": true,
     "dns_lookups": 7,
     "warnings": [
-      "The resolution lifetime expired after 3.1 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out.",
       "smtp.dacoruna.gal does not have any MX records",
       "smtp.dicoruna.es does not have any MX records"
     ],
     "parsed": {
       "pass": [
+        {
+          "value": "85.91.67.124",
+          "mechanism": "a"
+        },
         {
           "value": "smtp.dicoruna.es",
           "mechanism": "mx"

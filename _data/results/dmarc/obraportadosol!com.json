@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns2.dinahosting.com",
       "ns4.dinahosting.com",
-      "ns.dinahosting.com",
       "ns3.dinahosting.com",
-      "ns2.dinahosting.com"
+      "ns.dinahosting.com"
     ],
     "warnings": []
   },
@@ -21,7 +21,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.1 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
+      "The reverse DNS of 82.98.132.106 is hl750.dinaserver.com, but the A/AAAA DNS records for hl750.dinaserver.com do not resolve to 82.98.132.106"
+    ]
   },
   "spf": {
     "record": "v=spf1 a mx ~all",

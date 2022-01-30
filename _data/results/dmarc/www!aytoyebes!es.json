@@ -3,26 +3,12 @@
   "base_domain": "aytoyebes.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "ns3.almazena.com",
-      "ns2.almazena.com",
-      "ns1.almazena.com"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "All nameservers failed to answer the query aytoyebes.es. IN NS: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 0,
-        "hostname": "aytoyebes.es",
-        "addresses": [
-          "185.5.126.59"
-        ]
-      }
-    ],
-    "warnings": [
-      "185.5.126.59 does not have any reverse DNS (PTR) records"
-    ]
+    "hosts": [],
+    "error": "All nameservers failed to answer the query aytoyebes.es. IN MX: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
   },
   "spf": {
     "record": null,
@@ -33,6 +19,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "error": "All nameservers failed to answer the query _dmarc.aytoyebes.es. IN TXT: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
   }
 }

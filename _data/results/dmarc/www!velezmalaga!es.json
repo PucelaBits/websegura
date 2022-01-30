@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns4.cdmondns-01.org",
       "ns1.cdmon.net",
       "ns2.cdmon.net",
+      "ns4.cdmondns-01.org",
       "ns3.cdmon.net",
       "ns5.cdmondns-01.com"
     ],
@@ -18,8 +18,8 @@
         "preference": 10,
         "hostname": "mx.spamexperts.com",
         "addresses": [
-          "2001:550:2:9::280:100",
-          "38.109.53.20"
+          "2001:550:2:61::2fc:100",
+          "38.111.198.185"
         ]
       },
       {
@@ -605,6 +605,10 @@
                 "mechanism": "a"
               },
               {
+                "value": "2001:550:2:8::b0:15",
+                "mechanism": "a"
+              },
+              {
                 "value": "2001:550:2:9::280:10",
                 "mechanism": "a"
               },
@@ -642,6 +646,14 @@
               },
               {
                 "value": "2402:4480:8002::b:100",
+                "mechanism": "a"
+              },
+              {
+                "value": "2406:3400:280:8::14",
+                "mechanism": "a"
+              },
+              {
+                "value": "2406:3400:280:8::15",
                 "mechanism": "a"
               },
               {
