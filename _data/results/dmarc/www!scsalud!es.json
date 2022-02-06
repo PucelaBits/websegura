@@ -10,235 +10,91 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.1 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx01.hornetsecurity.com",
+        "addresses": [
+          "94.100.132.8"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mx02.hornetsecurity.com",
+        "addresses": [
+          "94.100.136.8"
+        ]
+      },
+      {
+        "preference": 30,
+        "hostname": "mx03.hornetsecurity.com",
+        "addresses": [
+          "94.100.134.8"
+        ]
+      },
+      {
+        "preference": 40,
+        "hostname": "mx04.hornetsecurity.com",
+        "addresses": [
+          "94.100.136.7"
+        ]
+      },
+      {
+        "preference": 50,
+        "hostname": "mx01.correolimpio.telefonica.es",
+        "addresses": [
+          "213.99.38.71",
+          "213.99.38.76",
+          "213.99.38.77",
+          "213.99.38.78",
+          "217.124.240.201",
+          "81.47.205.101",
+          "81.47.205.107",
+          "81.47.205.108",
+          "81.47.205.113",
+          "81.47.205.114",
+          "81.47.205.118",
+          "81.47.205.119",
+          "81.47.205.122",
+          "81.47.205.124",
+          "81.47.205.99"
+        ]
+      },
+      {
+        "preference": 60,
+        "hostname": "mx02.correolimpio.telefonica.es",
+        "addresses": []
+      },
+      {
+        "preference": 70,
+        "hostname": "mx03.correolimpio.telefonica.es",
+        "addresses": []
+      }
+    ],
+    "warnings": [
+      "The resolution lifetime expired after 2.1 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
+      "The reverse DNS of 213.99.38.78 is mendel.correolimpio.telefonica.es, but the A/AAAA DNS records for mendel.correolimpio.telefonica.es do not resolve to 213.99.38.78",
+      "The resolution lifetime expired after 2.1 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
+      "The reverse DNS of 217.124.240.201 is arquimedes.correolimpio.telefonica.es, but the A/AAAA DNS records for arquimedes.correolimpio.telefonica.es do not resolve to 217.124.240.201",
+      "The resolution lifetime expired after 2.1 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
+      "The reverse DNS of 81.47.205.101 is davinci.correolimpio.telefonica.es, but the A/AAAA DNS records for davinci.correolimpio.telefonica.es do not resolve to 81.47.205.101",
+      "The resolution lifetime expired after 2.1 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
+      "The reverse DNS of 81.47.205.113 is peru.correolimpio.telefonica.es, but the A/AAAA DNS records for peru.correolimpio.telefonica.es do not resolve to 81.47.205.113",
+      "The resolution lifetime expired after 2.1 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
+      "The reverse DNS of 81.47.205.118 is aristoteles.correolimpio.telefonica.es, but the A/AAAA DNS records for aristoteles.correolimpio.telefonica.es do not resolve to 81.47.205.118",
+      "The resolution lifetime expired after 2.1 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
+      "The reverse DNS of 81.47.205.119 is descartes.correolimpio.telefonica.es, but the A/AAAA DNS records for descartes.correolimpio.telefonica.es do not resolve to 81.47.205.119",
+      "The resolution lifetime expired after 2.1 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
+      "The reverse DNS of 81.47.205.124 is kelvin.correolimpio.telefonica.es, but the A/AAAA DNS records for kelvin.correolimpio.telefonica.es do not resolve to 81.47.205.124",
+      "The resolution lifetime expired after 3.1 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out.",
+      "The resolution lifetime expired after 3.1 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
+    ]
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com include:spf.correolimpio.telefonica.es ip4:195.77.245.225 ip4:213.99.38.0/24 include:spf.hornetsecurity.com -all",
-    "valid": true,
-    "dns_lookups": 4,
+    "valid": false,
     "warnings": [],
-    "parsed": {
-      "pass": [
-        {
-          "value": "195.77.245.225",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "213.99.38.0/24",
-          "mechanism": "ip4"
-        }
-      ],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [
-        {
-          "domain": "spf.protection.outlook.com",
-          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/48 include:spfd.protection.outlook.com -all",
-          "dns_lookups": 1,
-          "parsed": {
-            "pass": [
-              {
-                "value": "40.92.0.0/15",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "40.107.0.0/16",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "52.100.0.0/14",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "104.47.0.0/17",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "2a01:111:f400::/48",
-                "mechanism": "ip6"
-              },
-              {
-                "value": "2a01:111:f403::/48",
-                "mechanism": "ip6"
-              }
-            ],
-            "neutral": [],
-            "softfail": [],
-            "fail": [],
-            "include": [
-              {
-                "domain": "spfd.protection.outlook.com",
-                "record": "v=spf1 ip4:51.4.72.0/24 ip4:51.5.72.0/24 ip4:51.5.80.0/27 ip4:20.47.149.138/32 ip4:51.4.80.0/27 ip6:2a01:4180:4051:0800::/64 ip6:2a01:4180:4050:0800::/64 ip6:2a01:4180:4051:0400::/64 ip6:2a01:4180:4050:0400::/64 -all",
-                "dns_lookups": 0,
-                "parsed": {
-                  "pass": [
-                    {
-                      "value": "51.4.72.0/24",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "51.5.72.0/24",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "51.5.80.0/27",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "20.47.149.138/32",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "51.4.80.0/27",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "2a01:4180:4051:0800::/64",
-                      "mechanism": "ip6"
-                    },
-                    {
-                      "value": "2a01:4180:4050:0800::/64",
-                      "mechanism": "ip6"
-                    },
-                    {
-                      "value": "2a01:4180:4051:0400::/64",
-                      "mechanism": "ip6"
-                    },
-                    {
-                      "value": "2a01:4180:4050:0400::/64",
-                      "mechanism": "ip6"
-                    }
-                  ],
-                  "neutral": [],
-                  "softfail": [],
-                  "fail": [],
-                  "include": [],
-                  "redirect": null,
-                  "exp": null,
-                  "all": "fail"
-                },
-                "warnings": []
-              }
-            ],
-            "redirect": null,
-            "exp": null,
-            "all": "fail"
-          },
-          "warnings": []
-        },
-        {
-          "domain": "spf.correolimpio.telefonica.es",
-          "record": "v=spf1 ip4:213.99.38.64/28 ip4:81.47.205.96/27 ip4:217.124.240.192/28 ~all",
-          "dns_lookups": 0,
-          "parsed": {
-            "pass": [
-              {
-                "value": "213.99.38.64/28",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "81.47.205.96/27",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "217.124.240.192/28",
-                "mechanism": "ip4"
-              }
-            ],
-            "neutral": [],
-            "softfail": [],
-            "fail": [],
-            "include": [],
-            "redirect": null,
-            "exp": null,
-            "all": "softfail"
-          },
-          "warnings": []
-        },
-        {
-          "domain": "spf.hornetsecurity.com",
-          "record": "v=spf1 ip4:83.246.65.0/24 ip4:185.140.204.0/22 ip4:94.100.128.0/20 ip4:81.20.94.0/24 ip4:173.45.18.0/24 ip4:52.62.123.207/32 ip4:52.62.108.212/32 ip4:129.232.203.80/28 ip4:209.172.38.64/27 ip4:108.163.133.224/27 ip4:199.27.221.76 ip4:216.46.11.238 ip4:216.46.11.244 ip4:199.27.221.81 ip4:199.27.221.82 ~all",
-          "dns_lookups": 0,
-          "parsed": {
-            "pass": [
-              {
-                "value": "83.246.65.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "185.140.204.0/22",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "94.100.128.0/20",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "81.20.94.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "173.45.18.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "52.62.123.207/32",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "52.62.108.212/32",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "129.232.203.80/28",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "209.172.38.64/27",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "108.163.133.224/27",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "199.27.221.76",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "216.46.11.238",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "216.46.11.244",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "199.27.221.81",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "199.27.221.82",
-                "mechanism": "ip4"
-              }
-            ],
-            "neutral": [],
-            "softfail": [],
-            "fail": [],
-            "include": [],
-            "redirect": null,
-            "exp": null,
-            "all": "softfail"
-          },
-          "warnings": []
-        }
-      ],
-      "redirect": null,
-      "exp": null,
-      "all": "fail"
-    }
+    "error": "The resolution lifetime expired after 3.1 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "dmarc": {
     "record": null,

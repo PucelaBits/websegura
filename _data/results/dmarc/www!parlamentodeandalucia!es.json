@@ -37,9 +37,77 @@
     ]
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "parlamentodeandalucia.es does not have a SPF TXT record"
+    "record": "v=spf1 mx ip4:193.147.254.0/24 include:parlamento-and.es ?all",
+    "valid": true,
+    "dns_lookups": 6,
+    "warnings": [
+      "parlamento-and.es does not have any A/AAAA records",
+      "Duplicate include: parlamentodeandalucia.es"
+    ],
+    "parsed": {
+      "pass": [
+        {
+          "value": "dns1.parlamentodeandalucia.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "dns2.parlamentodeandalucia.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mx3.parlamentodeandalucia.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "193.147.254.0/24",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "parlamento-and.es",
+          "record": "v=spf1 mx a ip4:193.147.254.21/24 a:dns1.parlamento-and.es include:parlamentodeandalucia.es ?all",
+          "dns_lookups": 4,
+          "parsed": {
+            "pass": [
+              {
+                "value": "dns1.parlamento-and.es",
+                "mechanism": "mx"
+              },
+              {
+                "value": "dns2.parlamento-and.es",
+                "mechanism": "mx"
+              },
+              {
+                "value": "193.147.254.21/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "193.147.254.21",
+                "mechanism": "a"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "neutral"
+          },
+          "warnings": [
+            "parlamento-and.es does not have any A/AAAA records",
+            "Duplicate include: parlamentodeandalucia.es"
+          ]
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "neutral"
+    }
   },
   "dmarc": {
     "record": null,

@@ -4,17 +4,32 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "clunia.csa.es",
-      "buniel.csa.es",
-      "nso.nic.es",
       "dns1.csanet.io",
-      "tapia.csa.es"
+      "nso.nic.es",
+      "clunia.csa.es",
+      "tapia.csa.es",
+      "buniel.csa.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.1 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "atapuerca.csa.es",
+        "addresses": [
+          "5.40.65.234"
+        ]
+      },
+      {
+        "preference": 80,
+        "hostname": "silos.csa.es",
+        "addresses": [
+          "5.40.65.34"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": null,

@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "nso.nic.es",
-      "dns.asambleamurcia.es"
+      "dns.asambleamurcia.es",
+      "nso.nic.es"
     ],
     "warnings": []
   },
@@ -17,13 +17,6 @@
         "addresses": [
           "104.47.17.138",
           "104.47.17.74"
-        ]
-      },
-      {
-        "preference": 30,
-        "hostname": "smtp.asambleamurcia.es",
-        "addresses": [
-          "195.55.193.109"
         ]
       }
     ],

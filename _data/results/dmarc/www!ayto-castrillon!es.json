@@ -4,14 +4,55 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns3.servidoresdns.net",
-      "dns4.servidoresdns.net"
+      "dns4.servidoresdns.net",
+      "dns3.servidoresdns.net"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.1 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "aspmx.l.google.com",
+        "addresses": [
+          "2607:f8b0:400e:c08::1a",
+          "74.125.197.26"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "alt1.aspmx.l.google.com",
+        "addresses": [
+          "142.250.115.26",
+          "2607:f8b0:4023:1004::1a"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "alt2.aspmx.l.google.com",
+        "addresses": [
+          "2607:f8b0:4003:c15::1b",
+          "64.233.171.26"
+        ]
+      },
+      {
+        "preference": 30,
+        "hostname": "alt3.aspmx.l.google.com",
+        "addresses": [
+          "142.250.152.27",
+          "2607:f8b0:4001:c56::1a"
+        ]
+      },
+      {
+        "preference": 30,
+        "hostname": "alt4.aspmx.l.google.com",
+        "addresses": [
+          "172.253.113.26",
+          "2607:f8b0:4023:1::1b"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 a include:_spf.google.com ~all",

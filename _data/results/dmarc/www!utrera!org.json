@@ -3,20 +3,39 @@
   "base_domain": "utrera.org",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "The resolution lifetime expired after 3.1 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
+    "hostnames": [
+      "b-ns.primari.net",
+      "a-ns.primari.net"
+    ],
+    "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.1 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "correo.utrera.org",
+        "addresses": [
+          "195.53.27.99"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "smail.utrera.org",
+        "addresses": [
+          "195.53.27.99"
+        ]
+      }
+    ],
+    "warnings": [
+      "The resolution lifetime expired after 2.1 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
+      "The reverse DNS of 195.53.27.99 is smail.utrera.org, but the A/AAAA DNS records for smail.utrera.org do not resolve to 195.53.27.99"
+    ]
   },
   "spf": {
     "record": "v=spf1 mx ip4:195.53.27.99 a:smail.utrera.org include:_spf.google.com ~all",
     "valid": true,
     "dns_lookups": 6,
-    "warnings": [
-      "The resolution lifetime expired after 3.1 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
-    ],
+    "warnings": [],
     "parsed": {
       "pass": [
         {
@@ -30,6 +49,10 @@
         {
           "value": "195.53.27.99",
           "mechanism": "ip4"
+        },
+        {
+          "value": "195.53.27.99",
+          "mechanism": "a"
         }
       ],
       "neutral": [],

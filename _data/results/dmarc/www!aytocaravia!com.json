@@ -9,27 +9,23 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "antispam.asturhosting.com",
-        "addresses": [
-          "82.223.89.64"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.1 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com include:_spf.asturservers.com a:212.89.4.66 +mx ~all",
     "valid": true,
     "dns_lookups": 5,
     "warnings": [
-      "The domain 212.89.4.66 does not exist",
-      "The resolution lifetime expired after 3.1 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
+      "The domain 212.89.4.66 does not exist"
     ],
     "parsed": {
-      "pass": [],
+      "pass": [
+        {
+          "value": "antispam.asturhosting.com",
+          "mechanism": "mx"
+        }
+      ],
       "neutral": [],
       "softfail": [],
       "fail": [],

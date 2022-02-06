@@ -4,11 +4,11 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "buniel.csa.es",
-      "tapia.csa.es",
-      "clunia.csa.es",
       "dns2.csanet.io",
-      "dns1.csanet.io"
+      "clunia.csa.es",
+      "dns1.csanet.io",
+      "tapia.csa.es",
+      "buniel.csa.es"
     ],
     "warnings": []
   },
@@ -24,10 +24,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.1 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
-      "The reverse DNS of 194.30.0.70 is smtp3.sarenet.es, but the A/AAAA DNS records for smtp3.sarenet.es do not resolve to 194.30.0.70"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx a:correo.aytoburgos.es include:spf-relay.sarenet.es include:emailservice.cpd.as -all",

@@ -4,16 +4,57 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns3.dinahosting.com",
+      "ns.dinahosting.com",
       "ns2.dinahosting.com",
       "ns4.dinahosting.com",
-      "ns.dinahosting.com"
+      "ns3.dinahosting.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.1 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "aspmx.l.google.com",
+        "addresses": [
+          "2607:f8b0:400e:c02::1a",
+          "74.125.142.27"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "alt1.aspmx.l.google.com",
+        "addresses": [
+          "142.250.115.27",
+          "2607:f8b0:4023:1004::1b"
+        ]
+      },
+      {
+        "preference": 30,
+        "hostname": "aspmx2.googlemail.com",
+        "addresses": [
+          "142.250.115.27",
+          "2607:f8b0:4023:1004::1b"
+        ]
+      },
+      {
+        "preference": 40,
+        "hostname": "aspmx3.googlemail.com",
+        "addresses": [
+          "2607:f8b0:4003:c15::1b",
+          "64.233.171.27"
+        ]
+      },
+      {
+        "preference": 50,
+        "hostname": "alt2.aspmx.l.google.com",
+        "addresses": [
+          "2607:f8b0:4003:c15::1b",
+          "64.233.171.27"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx ptr ip4:62.81.130.130 ip4:62.81.130.131 include:_spf.google.com ~all",
