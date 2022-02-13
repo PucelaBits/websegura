@@ -162,7 +162,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; sp=quarantine; rua=mailto:dmarc@ineco.com; ruf=mailto:dmarc@ineco.com; pct=100; fo=1",
+    "record": "v=DMARC1; p=quarantine; sp=quarantine; rua=mailto:dmarc@ineco.com,mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc@ineco.com,mailto:dmarc_ruf@emaildefense.proofpoint.com; pct=100; fo=1",
     "valid": true,
     "location": "ineco.com",
     "warnings": [],
@@ -185,6 +185,11 @@
             "scheme": "mailto",
             "address": "dmarc@ineco.com",
             "size_limit": null
+          },
+          {
+            "scheme": "mailto",
+            "address": "dmarc_rua@emaildefense.proofpoint.com",
+            "size_limit": null
           }
         ],
         "explicit": true
@@ -194,6 +199,11 @@
           {
             "scheme": "mailto",
             "address": "dmarc@ineco.com",
+            "size_limit": null
+          },
+          {
+            "scheme": "mailto",
+            "address": "dmarc_ruf@emaildefense.proofpoint.com",
             "size_limit": null
           }
         ],

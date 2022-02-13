@@ -4,14 +4,23 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "esifw1.tsai.es",
-      "esifw2.tsai.es"
+      "esifw2.tsai.es",
+      "esifw1.tsai.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.1 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 100,
+        "hostname": "mail.ccyl.es",
+        "addresses": [
+          "194.179.106.101",
+          "194.179.106.102"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 +mx +a:mail.ccyl.es ~ip4:194.179.106.0/24 -all",

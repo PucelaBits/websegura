@@ -16,7 +16,7 @@
         "hostname": "cortesaragon-es.mail.protection.outlook.com",
         "addresses": [
           "104.47.12.36",
-          "104.47.13.36"
+          "104.47.14.36"
         ]
       }
     ],
@@ -143,7 +143,7 @@
         },
         {
           "domain": "emsd1.com",
-          "record": "v=spf1 ip4:173.236.20.0/24 ip4:192.92.97.0/24 ip4:52.128.40.0/21 ~all",
+          "record": "v=spf1 ip4:173.236.20.0/24 ip4:192.92.97.0/24 ip4:52.128.40.0/21 ip4:217.8.118.0/24 ~all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -157,6 +157,10 @@
               },
               {
                 "value": "52.128.40.0/21",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "217.8.118.0/24",
                 "mechanism": "ip4"
               }
             ],
