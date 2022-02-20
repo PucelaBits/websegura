@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns3.diba.cat",
-      "ns4.diba.cat"
+      "ns4.diba.cat",
+      "ns3.diba.cat"
     ],
     "warnings": []
   },
@@ -48,14 +48,10 @@
       "include": [
         {
           "domain": "spf.diba.cat",
-          "record": "v=spf1 ip4:195.76.107.96/28 ip4:45.15.50.192/26 ~all",
+          "record": "v=spf1 ip4:45.15.50.192/26 ~all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
-              {
-                "value": "195.76.107.96/28",
-                "mechanism": "ip4"
-              },
               {
                 "value": "45.15.50.192/26",
                 "mechanism": "ip4"

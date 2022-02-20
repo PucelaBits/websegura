@@ -33,12 +33,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.1 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
-      "The reverse DNS of 87.98.160.167 is mx2.mail.ovh.net, but the A/AAAA DNS records for mx2.mail.ovh.net do not resolve to 87.98.160.167",
-      "The resolution lifetime expired after 2.1 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
-      "The reverse DNS of 91.121.53.175 is mx3.mail.ovh.net, but the A/AAAA DNS records for mx3.mail.ovh.net do not resolve to 91.121.53.175"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 +a +mx +ip4:51.91.48.71 ~all",

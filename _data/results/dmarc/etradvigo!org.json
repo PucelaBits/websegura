@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns3.raiolanetworks.es",
       "dns1.raiolanetworks.es",
+      "dns3.raiolanetworks.es",
       "dns2.raiolanetworks.es"
     ],
     "warnings": []
@@ -62,6 +62,14 @@
               },
               {
                 "value": "149.202.98.106",
+                "mechanism": "a"
+              },
+              {
+                "value": "149.202.98.107",
+                "mechanism": "a"
+              },
+              {
+                "value": "149.202.98.108",
                 "mechanism": "a"
               },
               {

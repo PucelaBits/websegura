@@ -4,27 +4,19 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns62.worldnic.com",
-      "ns61.worldnic.com"
+      "ns61.worldnic.com",
+      "ns62.worldnic.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "correo.acuentascanarias.org",
-        "addresses": [
-          "80.26.156.177"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "All nameservers failed to answer the query acuentascanarias.org. IN MX: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
   },
   "spf": {
     "record": null,
     "valid": false,
-    "error": "acuentascanarias.org does not have a SPF TXT record"
+    "error": "All nameservers failed to answer the query acuentascanarias.org. IN TXT: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
   },
   "dmarc": {
     "record": null,

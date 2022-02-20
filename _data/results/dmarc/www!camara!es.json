@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns07.ns-cloud4b.org",
       "ns08.ns-cloud4b.com",
-      "ns06.ns-cloud4b.net"
+      "ns06.ns-cloud4b.net",
+      "ns07.ns-cloud4b.org"
     ],
     "warnings": []
   },
@@ -16,7 +16,7 @@
         "preference": 10,
         "hostname": "camara-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.5.36",
+          "104.47.4.36",
           "104.47.6.36"
         ]
       }
@@ -24,9 +24,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 a mx include:spf.protection.outlook.com include:servers.mcsv.net include:spf.sendinblue.com a:mailsrv.camaras.es a:jupiter.camaras.es ~all",
+    "record": "v=spf1 a mx include:spf.protection.outlook.com include:servers.mcsv.net include:spf.sendinblue.com a:mailsrv.camaras.es a:jupiter.camaras.es a:vulcano.camaras.es ~all",
     "valid": true,
-    "dns_lookups": 8,
+    "dns_lookups": 9,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -44,6 +44,10 @@
         },
         {
           "value": "154.58.18.102",
+          "mechanism": "a"
+        },
+        {
+          "value": "154.58.18.174",
           "mechanism": "a"
         }
       ],

@@ -3,8 +3,13 @@
   "base_domain": "burgosalimenta.com",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "The resolution lifetime expired after 3.1 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
+    "hostnames": [
+      "clunia.csa.es",
+      "buniel.csa.es",
+      "dns1.csanet.io",
+      "tapia.csa.es"
+    ],
+    "warnings": []
   },
   "mx": {
     "hosts": [
@@ -28,7 +33,7 @@
   "spf": {
     "record": null,
     "valid": false,
-    "error": "burgosalimenta.com does not have a SPF TXT record"
+    "error": "The resolution lifetime expired after 3.1 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "dmarc": {
     "record": null,

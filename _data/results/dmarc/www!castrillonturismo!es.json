@@ -3,12 +3,8 @@
   "base_domain": "castrillonturismo.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "ns11.servicio-online.net",
-      "ns10.servicio-online.net",
-      "ns12.servicio-online.net"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The resolution lifetime expired after 3.1 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "mx": {
     "hosts": [

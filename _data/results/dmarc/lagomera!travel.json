@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.lagomera.travel",
-      "ns1.lagomera.travel"
+      "ns1.lagomera.travel",
+      "ns2.lagomera.travel"
     ],
     "warnings": []
   },
@@ -15,7 +15,7 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.250.115.26",
+          "142.250.138.27",
           "2607:f8b0:4023:1000::1b"
         ]
       },
@@ -31,8 +31,8 @@
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "172.253.113.26",
-          "2607:f8b0:4023:1::1a"
+          "172.253.113.27",
+          "2607:f8b0:4023:1::1b"
         ]
       },
       {
@@ -40,14 +40,14 @@
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
           "173.194.77.27",
-          "2607:f8b0:4023:401::1b"
+          "2607:f8b0:4023:401::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "173.194.219.27",
+          "173.194.219.26",
           "2607:f8b0:4002:c03::1a"
         ]
       },

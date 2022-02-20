@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1e.carm.es",
       "dns01.ono.com",
-      "ns2e.carm.es",
-      "rafi.f-integra.org"
+      "ns1e.carm.es",
+      "rafi.f-integra.org",
+      "ns2e.carm.es"
     ],
     "warnings": []
   },
@@ -23,7 +23,7 @@
     ],
     "warnings": [
       "The resolution lifetime expired after 2.1 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
-      "The reverse DNS of 80.73.144.108 is mx.redctnet.es, but the A/AAAA DNS records for mx.redctnet.es do not resolve to 80.73.144.108"
+      "The reverse DNS of 80.73.144.108 is mx.redctnet.com, but the A/AAAA DNS records for mx.redctnet.com do not resolve to 80.73.144.108"
     ]
   },
   "spf": {
