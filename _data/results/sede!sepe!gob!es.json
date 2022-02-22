@@ -1,20 +1,31 @@
 {
   "algorithm_version": 2,
-  "end_time": "Sat, 19 Feb 2022 00:38:14 GMT",
+  "end_time": "Tue, 22 Feb 2022 00:36:08 GMT",
   "grade": "F",
   "hidden": false,
   "likelihood_indicator": "MEDIUM",
   "response_headers": {
+    "Cache-control": "no-cache, no-store, must-revalidate, max-age=0",
     "Connection": "Keep-Alive",
-    "Content-Length": "5165",
-    "Server": "BigIP"
+    "Content-encoding": "gzip",
+    "Content-length": "8716",
+    "Content-type": "text/html;charset=UTF-8",
+    "Date": "Tue, 22 Feb 2022 00:36:05 GMT",
+    "Expires": "Thu, 01 Jan 1970 00:00:00 GMT",
+    "Keep-Alive": "timeout=1, max=4999",
+    "Last-modified": "Mon, 21 Feb 2022 13:33:04 GMT",
+    "Pragma": "no-cache",
+    "Server": "Servidor Web 1.0",
+    "Set-cookie": "JSESSIONID=2FAE3BA52D5935A5D3FF54AFB06C9DE7.sedepropuba; Path=/; Secure; HttpOnly",
+    "Vary": "Accept-Encoding",
+    "X-magnolia-registration": "Registered"
   },
-  "scan_id": 24613964,
+  "scan_id": 24673270,
   "score": 0,
-  "start_time": "Sat, 19 Feb 2022 00:38:09 GMT",
+  "start_time": "Tue, 22 Feb 2022 00:36:02 GMT",
   "state": "FINISHED",
   "status_code": 200,
-  "tests_failed": 6,
-  "tests_passed": 6,
+  "tests_failed": 7,
+  "tests_passed": 5,
   "tests_quantity": 12
 }
