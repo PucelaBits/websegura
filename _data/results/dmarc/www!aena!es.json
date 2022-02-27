@@ -4,11 +4,11 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns7.aena.es",
-      "dns13.aena.es",
-      "dns6.aena.es",
       "dns12.aena.es",
-      "artemis.ttd.net"
+      "artemis.ttd.net",
+      "dns13.aena.es",
+      "dns7.aena.es",
+      "dns6.aena.es"
     ],
     "warnings": []
   },
@@ -24,18 +24,18 @@
       }
     ],
     "warnings": [
+      "The domain meg02.aena.es does not exist",
+      "The reverse DNS of 194.224.177.201 is meg02.aena.es, but the A/AAAA DNS records for meg02.aena.es do not resolve to 194.224.177.201",
       "The domain spf.aena.es does not exist",
       "The reverse DNS of 194.224.177.201 is spf.aena.es, but the A/AAAA DNS records for spf.aena.es do not resolve to 194.224.177.201",
       "The domain meg04.aena.es does not exist",
       "The reverse DNS of 194.224.177.201 is meg04.aena.es, but the A/AAAA DNS records for meg04.aena.es do not resolve to 194.224.177.201",
-      "The domain meg02.aena.es does not exist",
-      "The reverse DNS of 194.224.177.201 is meg02.aena.es, but the A/AAAA DNS records for meg02.aena.es do not resolve to 194.224.177.201",
+      "The domain meg04.aena.es does not exist",
+      "The reverse DNS of 217.130.124.201 is meg04.aena.es, but the A/AAAA DNS records for meg04.aena.es do not resolve to 217.130.124.201",
       "The domain meg02.aena.es does not exist",
       "The reverse DNS of 217.130.124.201 is meg02.aena.es, but the A/AAAA DNS records for meg02.aena.es do not resolve to 217.130.124.201",
       "The domain spf.aena.es does not exist",
-      "The reverse DNS of 217.130.124.201 is spf.aena.es, but the A/AAAA DNS records for spf.aena.es do not resolve to 217.130.124.201",
-      "The domain meg04.aena.es does not exist",
-      "The reverse DNS of 217.130.124.201 is meg04.aena.es, but the A/AAAA DNS records for meg04.aena.es do not resolve to 217.130.124.201"
+      "The reverse DNS of 217.130.124.201 is spf.aena.es, but the A/AAAA DNS records for spf.aena.es do not resolve to 217.130.124.201"
     ]
   },
   "spf": {
@@ -212,10 +212,12 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1;p=none;fo=1;pct=100;ri=3600;rua=mailto:aena@rua.dmp.cisco.com,mailto:DMARCManagement@aena.es;ruf=mailto:aena@ruf.dmp.cisco.com,mailto:DMARCManagement@aena.es",
+    "record": "v=DMARC1;p=none;fo=1;pct=100;ri=3600;rua=mailto:ivzxofam@ag.eu.dmarcian.com,mailto:aena@rua.dmp.cisco.com,mailto:DMARCManagement@aena.es;ruf=mailto:aena@ruf.dmp.cisco.com,mailto:DMARCManagement@aena.es",
     "valid": true,
     "location": "aena.es",
-    "warnings": [],
+    "warnings": [
+      "Some DMARC reporters might not send to more than two rua URIs"
+    ],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -241,6 +243,11 @@
       },
       "rua": {
         "value": [
+          {
+            "scheme": "mailto",
+            "address": "ivzxofam@ag.eu.dmarcian.com",
+            "size_limit": null
+          },
           {
             "scheme": "mailto",
             "address": "aena@rua.dmp.cisco.com",

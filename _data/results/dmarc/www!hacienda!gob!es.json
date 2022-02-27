@@ -15,9 +15,7 @@
       {
         "preference": 5,
         "hostname": "smtp1.hacienda.gob.es",
-        "addresses": [
-          "193.203.200.132"
-        ]
+        "addresses": []
       },
       {
         "preference": 10,
@@ -41,7 +39,9 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "All nameservers failed to answer the query smtp1.hacienda.gob.es. IN AAAA: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    ]
   },
   "spf": {
     "record": "v=spf1 mx a:smtp1.hacienda.gob.es a:smtp2.hacienda.gob.es a:smtp3.hacienda.gob.es a:smtp4.hacienda.gob.es include:spf.protection.outlook.com -all",

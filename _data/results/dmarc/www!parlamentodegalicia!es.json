@@ -12,31 +12,23 @@
   "mx": {
     "hosts": [
       {
-        "preference": 20,
-        "hostname": "mx.parlamentodegalicia.es",
+        "preference": 10,
+        "hostname": "parlamentodegalicia-es.mail.protection.outlook.com",
         "addresses": [
-          "213.0.85.241"
+          "104.47.13.36",
+          "104.47.14.36"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx ip4:213.0.85.241/32 include:spf.protection.outlook.com ~all",
+    "record": "v=spf1 include:spf.protection.outlook.com -all",
     "valid": true,
-    "dns_lookups": 3,
+    "dns_lookups": 2,
     "warnings": [],
     "parsed": {
-      "pass": [
-        {
-          "value": "mx.parlamentodegalicia.es",
-          "mechanism": "mx"
-        },
-        {
-          "value": "213.0.85.241/32",
-          "mechanism": "ip4"
-        }
-      ],
+      "pass": [],
       "neutral": [],
       "softfail": [],
       "fail": [],
@@ -139,7 +131,7 @@
       ],
       "redirect": null,
       "exp": null,
-      "all": "softfail"
+      "all": "fail"
     }
   },
   "dmarc": {

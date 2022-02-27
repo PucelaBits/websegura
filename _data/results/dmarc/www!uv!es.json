@@ -13,29 +13,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 20,
-        "hostname": "mx01.puc.rediris.es",
-        "addresses": [
-          "130.206.19.130",
-          "130.206.19.162",
-          "2001:720:418:ca10::2",
-          "2001:720:418:ca11::2"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mx02.puc.rediris.es",
-        "addresses": [
-          "130.206.19.130",
-          "130.206.19.162",
-          "2001:720:418:ca10::2",
-          "2001:720:418:ca11::2"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "All nameservers failed to answer the query 162.19.206.130.in-addr.arpa. IN PTR: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
   },
   "spf": {
     "record": "v=spf1 a:postin.uv.es a:postin.ipv6.uv.es a:postilla.uv.es a:postilla.ipv6.uv.es a:hal.ific.uv.es a:ifmx.ific.uv.es a:glup.irobot.uv.es -all",

@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.servidoresdns10.com",
-      "dns2.servidoresdns10.com"
+      "dns2.servidoresdns10.com",
+      "dns1.servidoresdns10.com"
     ],
     "warnings": []
   },
@@ -22,101 +22,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx a ip4:194.179.96.130 a:cetarsa.es include:spf.abansys.com ~all",
-    "valid": true,
-    "dns_lookups": 4,
-    "warnings": [
-      "SPF type DNS records found. Use of DNS Type SPF has been removed in the standards track version of SPF, RFC 7208. These records should be removed and replaced with TXT records: v=spf1 mx a ip4:194.179.96.130 a:cetarsa.es include:spf.abansys.com ~all"
-    ],
-    "parsed": {
-      "pass": [
-        {
-          "value": "correo.cetarsa.es",
-          "mechanism": "mx"
-        },
-        {
-          "value": "86.109.162.32",
-          "mechanism": "a"
-        },
-        {
-          "value": "194.179.96.130",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "86.109.162.32",
-          "mechanism": "a"
-        }
-      ],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [
-        {
-          "domain": "spf.abansys.com",
-          "record": "v=spf1 ip4:86.109.160.0/24 ip4:86.109.162.0/24 ip4:86.109.161.0/24 ip4:86.109.163.0/24 ip4:86.109.165.0/24 ip4:86.109.166.0/24 ip4:86.109.167.0/24 ip4:86.109.177.0/24 ip4:86.109.178.0/24 ip4:86.109.179.0/24 ip4:86.109.180.0/24 -all",
-          "dns_lookups": 0,
-          "parsed": {
-            "pass": [
-              {
-                "value": "86.109.160.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "86.109.162.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "86.109.161.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "86.109.163.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "86.109.165.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "86.109.166.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "86.109.167.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "86.109.177.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "86.109.178.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "86.109.179.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "86.109.180.0/24",
-                "mechanism": "ip4"
-              }
-            ],
-            "neutral": [],
-            "softfail": [],
-            "fail": [],
-            "include": [],
-            "redirect": null,
-            "exp": null,
-            "all": "fail"
-          },
-          "warnings": []
-        }
-      ],
-      "redirect": null,
-      "exp": null,
-      "all": "softfail"
-    }
+    "record": null,
+    "valid": false,
+    "error": "cetarsa.es does not have a SPF TXT record"
   },
   "dmarc": {
     "record": null,

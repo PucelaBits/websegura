@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "europe2713.banahosting.com",
-      "europe2712.banahosting.com"
+      "europe2712.banahosting.com",
+      "europe2713.banahosting.com"
     ],
     "warnings": []
   },
@@ -15,44 +15,46 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.251.116.27",
-          "2607:f8b0:4023:1006::1b"
+          "172.217.222.26",
+          "2607:f8b0:400d:c0a::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "142.250.152.27",
-          "2607:f8b0:4001:c56::1a"
+          "2800:3f0:4003:c00::1a",
+          "64.233.186.26"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "172.253.113.27",
-          "2607:f8b0:4023:1::1a"
+          "209.85.202.26",
+          "2a00:1450:400b:c00::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "173.194.77.27",
-          "2607:f8b0:4023:401::1b"
+          "2a00:1450:400c:c0b::1b",
+          "64.233.184.26"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "173.194.219.26",
-          "2607:f8b0:4002:c03::1a"
+          "142.250.27.26",
+          "2a00:1450:4025:401::1b"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "2800:3f0:4003:c00::1a does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
     "record": "v=spf1 ip4:107.6.151.134 +a +mx include:relay.mailchannels.net include:_spf.google.com ~all",

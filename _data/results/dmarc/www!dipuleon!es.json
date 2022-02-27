@@ -1,0 +1,57 @@
+{
+  "domain": "dipuleon.es",
+  "base_domain": "dipuleon.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns1113.ui-dns.com",
+      "ns1091.ui-dns.org",
+      "ns1022.ui-dns.biz",
+      "ns1043.ui-dns.de"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.dipuleon.es",
+        "addresses": [
+          "194.224.108.251"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 a mx -all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "185.79.130.166",
+          "mechanism": "a"
+        },
+        {
+          "value": "mail.dipuleon.es",
+          "mechanism": "mx"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

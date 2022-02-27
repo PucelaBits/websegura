@@ -1,0 +1,51 @@
+{
+  "domain": "aytosalamanca.es",
+  "base_domain": "aytosalamanca.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "minerva.ttd.net",
+      "artemis.ttd.net"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 5,
+        "hostname": "correo.aytosalamanca.es",
+        "addresses": [
+          "194.224.19.202"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 mx ~all",
+    "valid": true,
+    "dns_lookups": 1,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "correo.aytosalamanca.es",
+          "mechanism": "mx"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

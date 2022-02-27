@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.mpr.es",
       "chico.rediris.es",
+      "dns2.mpr.es",
       "sun.rediris.es",
       "dns1.mpr.es"
     ],
@@ -59,6 +59,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "All nameservers failed to answer the query _dmarc.lamoncloa.gob.es. IN TXT: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "error": "A DMARC record does not exist for this domain or its base domain"
   }
 }

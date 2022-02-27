@@ -22,7 +22,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:_spf.srv.cat +a +mx +ip4:212.21.227.10 +ip4:195.53.90.200 ~all",
+    "record": "v=spf1 include:_spf.srv.cat +a +mx +ip4:195.53.90.200 ~all",
     "valid": true,
     "dns_lookups": 5,
     "warnings": [
@@ -37,10 +37,6 @@
         {
           "value": "correo.estella-lizarra.com",
           "mechanism": "mx"
-        },
-        {
-          "value": "212.21.227.10",
-          "mechanism": "ip4"
         },
         {
           "value": "195.53.90.200",

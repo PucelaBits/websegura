@@ -83,7 +83,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1;p=none;rua=mailto:dmarc@incibe.es",
+    "record": "v=DMARC1;p=reject;fo=1;rua=mailto:dmarc@incibe.es;ruf=mailto:dmarc@incibe.es",
     "valid": true,
     "location": "osi.es",
     "warnings": [],
@@ -93,10 +93,26 @@
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "reject",
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "1"
+        ],
         "explicit": true
       },
       "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc@incibe.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
         "value": [
           {
             "scheme": "mailto",
@@ -114,12 +130,6 @@
         "value": "r",
         "explicit": false
       },
-      "fo": {
-        "value": [
-          "0"
-        ],
-        "explicit": false
-      },
       "pct": {
         "value": 100,
         "explicit": false
@@ -135,7 +145,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "none",
+        "value": "reject",
         "explicit": false
       }
     }

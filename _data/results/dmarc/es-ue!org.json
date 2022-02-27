@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.siteground.net",
-      "ns1.siteground.net"
+      "ns1.siteground.net",
+      "ns2.siteground.net"
     ],
     "warnings": []
   },
@@ -109,7 +109,7 @@
       "The reverse DNS of 185.56.84.30 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 185.56.84.30",
       "The resolution lifetime expired after 2.1 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
       "The reverse DNS of 185.56.84.5 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 185.56.84.5",
-      "The resolution lifetime expired after 2.1 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
+      "All nameservers failed to answer the query delivery.mailspamprotection.com. IN A: Server 127.0.0.53 UDP port 53 answered SERVFAIL",
       "The reverse DNS of 185.56.84.8 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 185.56.84.8",
       "The resolution lifetime expired after 2.1 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
       "The reverse DNS of 185.56.85.133 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 185.56.85.133",
@@ -119,7 +119,7 @@
       "The reverse DNS of 185.56.85.145 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 185.56.85.145",
       "The resolution lifetime expired after 2.1 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
       "The reverse DNS of 185.56.85.152 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 185.56.85.152",
-      "All nameservers failed to answer the query delivery.mailspamprotection.com. IN A: Server 127.0.0.53 UDP port 53 answered SERVFAIL",
+      "The resolution lifetime expired after 2.1 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
       "The reverse DNS of 185.56.85.158 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 185.56.85.158",
       "The resolution lifetime expired after 2.1 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
       "The reverse DNS of 185.56.84.10 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 185.56.84.10",
@@ -127,9 +127,9 @@
       "The reverse DNS of 185.56.84.13 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 185.56.84.13",
       "The resolution lifetime expired after 2.1 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
       "The reverse DNS of 185.56.84.16 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 185.56.84.16",
-      "The resolution lifetime expired after 2.1 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
-      "The reverse DNS of 185.56.84.19 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 185.56.84.19",
       "All nameservers failed to answer the query delivery.mailspamprotection.com. IN A: Server 127.0.0.53 UDP port 53 answered SERVFAIL",
+      "The reverse DNS of 185.56.84.19 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 185.56.84.19",
+      "The resolution lifetime expired after 2.1 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
       "The reverse DNS of 185.56.84.22 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 185.56.84.22",
       "The resolution lifetime expired after 2.1 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
       "The reverse DNS of 185.56.84.26 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 185.56.84.26",
@@ -137,7 +137,7 @@
       "The reverse DNS of 185.56.84.29 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 185.56.84.29",
       "The resolution lifetime expired after 2.1 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
       "The reverse DNS of 185.56.84.32 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 185.56.84.32",
-      "The resolution lifetime expired after 2.1 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
+      "All nameservers failed to answer the query delivery.mailspamprotection.com. IN A: Server 127.0.0.53 UDP port 53 answered SERVFAIL",
       "The reverse DNS of 185.56.84.4 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 185.56.84.4",
       "The resolution lifetime expired after 2.1 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
       "The reverse DNS of 185.56.84.7 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 185.56.84.7",
@@ -167,7 +167,7 @@
       "The reverse DNS of 185.56.84.28 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 185.56.84.28",
       "The resolution lifetime expired after 2.1 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
       "The reverse DNS of 185.56.84.3 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 185.56.84.3",
-      "The resolution lifetime expired after 2.1 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
+      "All nameservers failed to answer the query delivery.mailspamprotection.com. IN A: Server 127.0.0.53 UDP port 53 answered SERVFAIL",
       "The reverse DNS of 185.56.84.31 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 185.56.84.31",
       "The resolution lifetime expired after 2.1 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
       "The reverse DNS of 185.56.84.6 is delivery.mailspamprotection.com, but the A/AAAA DNS records for delivery.mailspamprotection.com do not resolve to 185.56.84.6",

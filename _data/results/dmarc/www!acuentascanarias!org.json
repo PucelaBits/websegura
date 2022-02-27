@@ -10,13 +10,21 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query acuentascanarias.org. IN MX: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "correo.acuentascanarias.org",
+        "addresses": [
+          "80.26.156.177"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": null,
     "valid": false,
-    "error": "All nameservers failed to answer the query acuentascanarias.org. IN TXT: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "error": "acuentascanarias.org does not have a SPF TXT record"
   },
   "dmarc": {
     "record": null,
