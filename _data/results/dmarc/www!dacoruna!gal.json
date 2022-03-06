@@ -4,12 +4,12 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns.dicoruna.es",
       "ns1.xunta.es",
-      "dns.dacoruna.gal",
-      "dns1.dacoruna.gal",
+      "dns.dicoruna.es",
       "dns1.dicoruna.es",
-      "ns2.xunta.es"
+      "ns2.xunta.es",
+      "dns.dacoruna.gal",
+      "dns1.dacoruna.gal"
     ],
     "warnings": []
   },
@@ -23,16 +23,16 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.1 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
+      "The reverse DNS of 85.91.67.3 is smtp.dicoruna.es, but the A/AAAA DNS records for smtp.dicoruna.es do not resolve to 85.91.67.3"
+    ]
   },
   "spf": {
     "record": "v=spf1 a mx include:_spf.dacoruna.gal -all",
     "valid": true,
     "dns_lookups": 7,
-    "warnings": [
-      "smtp.dacoruna.gal does not have any MX records",
-      "smtp.dicoruna.es does not have any MX records"
-    ],
+    "warnings": [],
     "parsed": {
       "pass": [
         {
@@ -50,10 +50,18 @@
       "include": [
         {
           "domain": "_spf.dacoruna.gal",
-          "record": "v=spf1 mx:smtp.dacoruna.gal mx:smtp.dicoruna.es a:correo.dacoruna.gal a:correo.dicoruna.es -all",
+          "record": "v=spf1 mx:dacoruna.gal mx:dicoruna.es a:correo.dacoruna.gal a:correo.dicoruna.es -all",
           "dns_lookups": 4,
           "parsed": {
             "pass": [
+              {
+                "value": "smtp.dicoruna.es",
+                "mechanism": "mx"
+              },
+              {
+                "value": "smtp.dicoruna.es",
+                "mechanism": "mx"
+              },
               {
                 "value": "85.91.67.132",
                 "mechanism": "a"
@@ -71,10 +79,7 @@
             "exp": null,
             "all": "fail"
           },
-          "warnings": [
-            "smtp.dacoruna.gal does not have any MX records",
-            "smtp.dicoruna.es does not have any MX records"
-          ]
+          "warnings": []
         }
       ],
       "redirect": null,

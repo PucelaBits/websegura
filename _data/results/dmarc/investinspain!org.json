@@ -3,11 +3,8 @@
   "base_domain": "investinspain.org",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "halcon.icex.es",
-      "milano.icex.es"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The resolution lifetime expired after 3.1 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "mx": {
     "hosts": [],

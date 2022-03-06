@@ -12,43 +12,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mx.spamexperts.com",
-        "addresses": [
-          "2001:550:2:9::280:100",
-          "38.111.198.185"
-        ]
-      },
-      {
-        "preference": 50,
-        "hostname": "fallbackmx.spamexperts.eu",
-        "addresses": [
-          "2001:550:2:61::2fc:100",
-          "2001:550:2:78::ca:100",
-          "2001:550:2:9::280:100",
-          "38.109.53.20",
-          "38.111.198.185",
-          "38.89.254.156"
-        ]
-      },
-      {
-        "preference": 100,
-        "hostname": "lastmx.spamexperts.net",
-        "addresses": [
-          "130.117.53.188",
-          "149.13.75.27",
-          "2001:550:2:61::2fc:100",
-          "2001:550:2:9::280:100",
-          "2001:978:2:2c::137:100",
-          "2001:978:2:7::162:100",
-          "38.111.198.185",
-          "38.89.254.156"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.1 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 include:spf.malaga.es include:spf.qsemail.net include:spf.acumbamail.com ~all",
@@ -229,6 +194,22 @@
                 "mechanism": "a"
               },
               {
+                "value": "193.200.214.134",
+                "mechanism": "a"
+              },
+              {
+                "value": "193.200.214.136",
+                "mechanism": "a"
+              },
+              {
+                "value": "193.200.214.137",
+                "mechanism": "a"
+              },
+              {
+                "value": "193.200.214.138",
+                "mechanism": "a"
+              },
+              {
                 "value": "199.115.117.7",
                 "mechanism": "a"
               },
@@ -298,6 +279,10 @@
               },
               {
                 "value": "2001:550:2:9::280:10",
+                "mechanism": "a"
+              },
+              {
+                "value": "2001:668:1f:ffa4::13",
                 "mechanism": "a"
               },
               {

@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "dns2.ddgi.cat",
-      "dns1.ddgi.cat",
-      "dns2.grn.es"
+      "dns2.grn.es",
+      "dns1.ddgi.cat"
     ],
     "warnings": []
   },
@@ -30,9 +30,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx include:spf.protection.outlook.com ip4:195.93.170.5 ip4:213.151.119.70 ip4:213.151.119.116 ip4:85.112.5.50 ~all",
+    "record": "v=spf1 mx include:spf.protection.outlook.com include:spf.mailjet.com ip4:195.93.170.5 ~all",
     "valid": true,
-    "dns_lookups": 3,
+    "dns_lookups": 4,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -46,18 +46,6 @@
         },
         {
           "value": "195.93.170.5",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "213.151.119.70",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "213.151.119.116",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "85.112.5.50",
           "mechanism": "ip4"
         }
       ],
@@ -157,6 +145,39 @@
             "redirect": null,
             "exp": null,
             "all": "fail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "spf.mailjet.com",
+          "record": "v=spf1 ip4:87.253.232.0/21 ip4:185.189.236.0/22 ip4:185.211.120.0/22 ip4:185.250.236.0/22 ~all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "87.253.232.0/21",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.189.236.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.211.120.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.250.236.0/22",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
           },
           "warnings": []
         }

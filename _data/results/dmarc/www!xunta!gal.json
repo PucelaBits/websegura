@@ -4,11 +4,11 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "a1-15.akam.net",
       "a2-66.akam.net",
-      "a9-66.akam.net",
       "a20-67.akam.net",
-      "a7-64.akam.net"
+      "a7-64.akam.net",
+      "a9-66.akam.net",
+      "a1-15.akam.net"
     ],
     "warnings": []
   },
@@ -25,45 +25,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx ip4:85.91.64.213 ip4:85.91.64.214 ip4:85.91.71.142 a:mta.edu.xunta.es a:mta2.edu.xunta.es -all",
-    "valid": true,
-    "dns_lookups": 3,
-    "warnings": [],
-    "parsed": {
-      "pass": [
-        {
-          "value": "mail.xunta.es",
-          "mechanism": "mx"
-        },
-        {
-          "value": "85.91.64.213",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "85.91.64.214",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "85.91.71.142",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "85.91.64.180",
-          "mechanism": "a"
-        },
-        {
-          "value": "85.91.64.181",
-          "mechanism": "a"
-        }
-      ],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [],
-      "redirect": null,
-      "exp": null,
-      "all": "fail"
-    }
+    "record": null,
+    "valid": false,
+    "error": "xunta.gal has multiple SPF TXT records"
   },
   "dmarc": {
     "record": "v=DMARC1;p=none; aspf=s; adkim=s;rua=mailto:dmarc@xunta.gal;ruf=mailto:dmarc@xunta.gal;fo=1",

@@ -4,29 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.cibir.es",
-      "ns2.cibir.es"
+      "ns2.cibir.es",
+      "ns1.cibir.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mx1.riojasalud.es",
-        "addresses": [
-          "193.145.4.9"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "mx2.riojasalud.es",
-        "addresses": [
-          "195.55.164.16"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "All nameservers failed to answer the query 16.164.55.195.in-addr.arpa. IN PTR: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
   },
   "spf": {
     "record": "v=spf1 mx -all",

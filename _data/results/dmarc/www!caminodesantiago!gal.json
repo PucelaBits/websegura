@@ -3,15 +3,8 @@
   "base_domain": "caminodesantiago.gal",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "a2-66.akam.net",
-      "a8-65.akam.net",
-      "a7-64.akam.net",
-      "a20-67.akam.net",
-      "a9-66.akam.net",
-      "a1-15.akam.net"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "All nameservers failed to answer the query caminodesantiago.gal. IN NS: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
   },
   "mx": {
     "hosts": [],

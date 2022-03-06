@@ -17,7 +17,7 @@
         "preference": 0,
         "hostname": "dominios-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.5.36",
+          "104.47.4.36",
           "104.47.6.36"
         ]
       }
@@ -28,7 +28,7 @@
     "record": "v=spf1 MS=ms78806188 ip4:194.69.254.0/24 include:spf.protection.outlook.com -all",
     "valid": false,
     "warnings": [],
-    "error": "dominios.es: Expected mechanism or end_of_statement at position 7 in: v=spf1 MS=ms78806188 ip4:194.69.254.0/24 include:spf.protection.outlook.com -all"
+    "error": "dominios.es: Expected end_of_statement or mechanism at position 7 in: v=spf1 MS=ms78806188 ip4:194.69.254.0/24 include:spf.protection.outlook.com -all"
   },
   "dmarc": {
     "record": "v=DMARC1; p=none; fo=0; rua=mailto:abuse@dominios.es",

@@ -4,37 +4,15 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "aspe.efor.es",
       "dns.efor.es",
-      "dns2.efor.es"
+      "dns2.efor.es",
+      "aspe.efor.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mx1.feriazaragoza.es",
-        "addresses": [
-          "89.17.218.99"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mx2.feriazaragoza.es",
-        "addresses": [
-          "80.28.131.13"
-        ]
-      },
-      {
-        "preference": 30,
-        "hostname": "mx3.feriazaragoza.es",
-        "addresses": [
-          "89.17.218.99"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.1 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 ip4:89.17.218.96/29 ip4:104.40.149.226 ip4:168.245.50.85 include:sendgrid.net ~all",

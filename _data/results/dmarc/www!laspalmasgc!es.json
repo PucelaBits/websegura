@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns12.servicio-online.net",
       "ns10.servicio-online.net",
-      "ns11.servicio-online.net"
+      "ns11.servicio-online.net",
+      "ns12.servicio-online.net"
     ],
     "warnings": []
   },
@@ -83,10 +83,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.1 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
-      "The reverse DNS of 213.99.38.71 is kant.correolimpio.telefonica.es, but the A/AAAA DNS records for kant.correolimpio.telefonica.es do not resolve to 213.99.38.71"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com -all",

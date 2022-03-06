@@ -3,36 +3,17 @@
   "base_domain": "museominadearnao.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "ns4.acens.net",
-      "ns7.acens.net",
-      "ns3.acens.net"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The resolution lifetime expired after 3.1 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mail.museominadearnao.es",
-        "addresses": [
-          "195.55.127.94"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mail2.museominadearnao.es",
-        "addresses": [
-          "195.55.127.94"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.1 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "spf": {
     "record": null,
     "valid": false,
-    "error": "museominadearnao.es does not have a SPF TXT record"
+    "error": "The resolution lifetime expired after 3.1 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "dmarc": {
     "record": null,

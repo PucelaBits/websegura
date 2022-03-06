@@ -4,16 +4,18 @@
   "dnssec": false,
   "ns": {
     "hostnames": [],
-    "error": "All nameservers failed to answer the query csirtcv.gva.es. IN NS: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "warnings": []
   },
   "mx": {
     "hosts": [],
-    "error": "All nameservers failed to answer the query csirtcv.gva.es. IN MX: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
   },
   "spf": {
     "record": null,
     "valid": false,
-    "error": "All nameservers failed to answer the query csirtcv.gva.es. IN TXT: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "error": "csirtcv.gva.es does not have a SPF TXT record"
   },
   "dmarc": {
     "record": null,

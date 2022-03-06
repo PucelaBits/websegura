@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.catarroja.es",
-      "dns1.catarroja.es"
+      "dns1.catarroja.es",
+      "dns2.catarroja.es"
     ],
     "warnings": []
   },
@@ -15,14 +15,16 @@
         "preference": 10,
         "hostname": "mail.catarroja.es",
         "addresses": [
-          "95.39.28.247"
+          "194.224.197.55"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "194.224.197.55 does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
-    "record": "v=spf1 a mx ip4:194.224.197.51 ip4:95.39.28.247 include:catarroja.ip-zone.com include:spf.ipzmarketing.com include:dnsxperta.com ~all",
+    "record": "v=spf1 a mx ip4:194.224.197.55 ip4:194.224.197.51 ip4:95.39.28.247 include:catarroja.ip-zone.com include:spf.ipzmarketing.com include:dnsxperta.com ~all",
     "valid": true,
     "dns_lookups": 7,
     "warnings": [
@@ -37,6 +39,10 @@
         {
           "value": "mail.catarroja.es",
           "mechanism": "mx"
+        },
+        {
+          "value": "194.224.197.55",
+          "mechanism": "ip4"
         },
         {
           "value": "194.224.197.51",
