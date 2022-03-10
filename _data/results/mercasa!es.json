@@ -1,22 +1,26 @@
 {
   "algorithm_version": 2,
-  "end_time": "Sun, 06 Mar 2022 00:53:36 GMT",
+  "end_time": "Thu, 10 Mar 2022 00:41:15 GMT",
   "grade": "F",
   "hidden": false,
   "likelihood_indicator": "MEDIUM",
   "response_headers": {
-    "Connection": "close",
-    "Content-Length": "315",
-    "Content-Type": "text/html; charset=us-ascii",
-    "Date": "Sun, 06 Mar 2022 00:53:33 GMT",
-    "Server": "Microsoft-HTTPAPI/2.0"
+    "Cache-Control": "private",
+    "Content-Encoding": "gzip",
+    "Content-Length": "17978",
+    "Content-Type": "text/html",
+    "Date": "Thu, 10 Mar 2022 00:41:08 GMT",
+    "Server": "Microsoft-IIS/10.0",
+    "Set-Cookie": "ASPSESSIONIDQWAQDSAS=ICMBOOPDHKGLGLIFJOMDDIPD; secure; path=/",
+    "Vary": "Accept-Encoding",
+    "X-Powered-By": "ASP.NET"
   },
-  "scan_id": 24939699,
-  "score": 15,
-  "start_time": "Sun, 06 Mar 2022 00:53:29 GMT",
+  "scan_id": 25058438,
+  "score": 0,
+  "start_time": "Thu, 10 Mar 2022 00:41:04 GMT",
   "state": "FINISHED",
-  "status_code": 404,
-  "tests_failed": 6,
-  "tests_passed": 6,
+  "status_code": 200,
+  "tests_failed": 7,
+  "tests_passed": 5,
   "tests_quantity": 12
 }
