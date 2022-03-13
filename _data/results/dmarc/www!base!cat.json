@@ -10,30 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "correu.base.cat",
-        "addresses": [
-          "90.160.63.9"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mx1.tinet.org",
-        "addresses": [
-          "195.77.216.146"
-        ]
-      },
-      {
-        "preference": 30,
-        "hostname": "mx1.dipta.cat",
-        "addresses": [
-          "195.76.233.59"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 include:spf.antispamcloud.com ip4:90.160.60.248/32 ip4:90.160.63.9/32 -all",
@@ -102,6 +80,10 @@
                 "mechanism": "a"
               },
               {
+                "value": "2001:1af8:4400:a047:6::1",
+                "mechanism": "a"
+              },
+              {
                 "value": "2001:1af8:4500:a034:101::2",
                 "mechanism": "a"
               },
@@ -123,6 +105,10 @@
               },
               {
                 "value": "209.126.121.73",
+                "mechanism": "a"
+              },
+              {
+                "value": "2604:9a00:2010:a024:21::1",
                 "mechanism": "a"
               },
               {

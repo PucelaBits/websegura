@@ -15,42 +15,28 @@
         "preference": 10,
         "hostname": "correo.sepe.es",
         "addresses": [
-          "195.57.139.249"
+          "192.187.23.249"
         ]
       },
       {
         "preference": 50,
         "hostname": "correo2.sepe.es",
         "addresses": [
-          "195.57.139.250"
-        ]
-      },
-      {
-        "preference": 80,
-        "hostname": "correo3.sepe.es",
-        "addresses": [
-          "195.57.139.248"
+          "192.187.23.248"
         ]
       }
     ],
-    "warnings": [
-      "The domain 248.red-195-57-139.customer.static.ccgg.telefonica.net does not exist",
-      "The reverse DNS of 195.57.139.248 is 248.red-195-57-139.customer.static.ccgg.telefonica.net, but the A/AAAA DNS records for 248.red-195-57-139.customer.static.ccgg.telefonica.net do not resolve to 195.57.139.248"
-    ]
+    "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:195.57.139.248/31 ip4:195.57.139.250 include:spf.protection.outlook.com ~all",
+    "record": "v=spf1 ip4:192.187.23.248/31 include:spf.protection.outlook.com ~all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "195.57.139.248/31",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "195.57.139.250",
+          "value": "192.187.23.248/31",
           "mechanism": "ip4"
         }
       ],

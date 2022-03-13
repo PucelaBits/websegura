@@ -22,14 +22,14 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:51.91.83.222 ip4:54.36.77.111 include:_spf.webempresa.eu +a +mx ~all",
+    "record": "v=spf1 ip4:51.91.62.63 ip4:54.36.77.111 include:_spf.webempresa.eu +a +mx ~all",
     "valid": true,
     "dns_lookups": 3,
     "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "51.91.83.222",
+          "value": "51.91.62.63",
           "mechanism": "ip4"
         },
         {

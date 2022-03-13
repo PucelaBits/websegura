@@ -22,10 +22,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:oliva.es include:dnsxperta.com ip4:95.39.225.138 ip4:89.248.106.134 ip4:95.39.225.133 -all",
+    "record": null,
     "valid": false,
-    "warnings": [],
-    "error": "Include loop: oliva.es"
+    "error": "oliva.es does not have a SPF TXT record"
   },
   "dmarc": {
     "record": null,

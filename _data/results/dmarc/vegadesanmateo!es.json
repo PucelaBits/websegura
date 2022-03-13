@@ -5,9 +5,9 @@
   "ns": {
     "hostnames": [
       "ns3.dinahosting.com",
+      "ns.dinahosting.com",
       "ns4.dinahosting.com",
-      "ns2.dinahosting.com",
-      "ns.dinahosting.com"
+      "ns2.dinahosting.com"
     ],
     "warnings": []
   },
@@ -25,8 +25,8 @@
         "preference": 20,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "2607:f8b0:4003:c15::1b",
-          "64.233.171.26"
+          "2607:f8b0:4003:c15::1a",
+          "64.233.171.27"
         ]
       },
       {
@@ -34,14 +34,14 @@
         "hostname": "aspmx3.googlemail.com",
         "addresses": [
           "142.250.152.26",
-          "2607:f8b0:4001:c56::1b"
+          "2607:f8b0:4001:c56::1a"
         ]
       },
       {
         "preference": 40,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "142.250.152.27",
+          "142.250.152.26",
           "2607:f8b0:4001:c56::1a"
         ]
       },
@@ -57,7 +57,7 @@
         "preference": 60,
         "hostname": "aspmx2.googlemail.com",
         "addresses": [
-          "2607:f8b0:4003:c15::1a",
+          "2607:f8b0:4003:c15::1b",
           "64.233.171.26"
         ]
       },

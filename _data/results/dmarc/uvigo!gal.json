@@ -3,8 +3,13 @@
   "base_domain": "uvigo.gal",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "The resolution lifetime expired after 3.1 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
+    "hostnames": [
+      "dns.uvigo.es",
+      "chico.rediris.es",
+      "dns2.uvigo.es",
+      "sun.rediris.es"
+    ],
+    "warnings": []
   },
   "mx": {
     "hosts": [

@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns4.servidoresdns.net",
-      "dns3.servidoresdns.net"
+      "dns3.servidoresdns.net",
+      "dns4.servidoresdns.net"
     ],
     "warnings": []
   },
@@ -22,25 +22,48 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:mail.puertodelrosario.org ~all",
-    "valid": false,
+    "record": "v=spf1 ip4:195.53.124.41 ~all",
+    "valid": true,
+    "dns_lookups": 0,
     "warnings": [],
-    "error": "Include loop: mail.puertodelrosario.org"
+    "parsed": {
+      "pass": [
+        {
+          "value": "195.53.124.41",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none",
+    "record": "v=DMARC1; p=quarantine; rua=mailto:nuevastecnologias@puertodelrosario.org;",
     "valid": true,
     "location": "puertodelrosario.org",
-    "warnings": [
-      "rua tag (destination for aggregate reports) not found"
-    ],
+    "warnings": [],
     "tags": {
       "v": {
         "value": "DMARC1",
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "quarantine",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "nuevastecnologias@puertodelrosario.org",
+            "size_limit": null
+          }
+        ],
         "explicit": true
       },
       "adkim": {
@@ -72,7 +95,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": false
       }
     }

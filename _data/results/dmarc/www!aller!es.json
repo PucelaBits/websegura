@@ -3,8 +3,11 @@
   "base_domain": "aller.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "The resolution lifetime expired after 3.1 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
+    "hostnames": [
+      "ns1.aller.es",
+      "ns2.aller.es"
+    ],
+    "warnings": []
   },
   "mx": {
     "hosts": [
@@ -12,37 +15,21 @@
         "preference": 10,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.250.141.26",
-          "2607:f8b0:4023:c0b::1a"
+          "2607:f8b0:4023:c0b::1b",
+          "74.125.137.26"
         ]
       },
       {
         "preference": 20,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "2607:f8b0:4003:c15::1b",
-          "64.233.171.27"
+          "2607:f8b0:4003:c15::1a",
+          "64.233.171.26"
         ]
       },
       {
         "preference": 20,
         "hostname": "alt2.aspmx.l.google.com",
-        "addresses": [
-          "142.250.152.27",
-          "2607:f8b0:4001:c56::1b"
-        ]
-      },
-      {
-        "preference": 30,
-        "hostname": "aspmx2.googlemail.com",
-        "addresses": [
-          "2607:f8b0:4003:c15::1b",
-          "64.233.171.27"
-        ]
-      },
-      {
-        "preference": 30,
-        "hostname": "aspmx3.googlemail.com",
         "addresses": [
           "142.250.152.26",
           "2607:f8b0:4001:c56::1a"
@@ -50,10 +37,26 @@
       },
       {
         "preference": 30,
+        "hostname": "aspmx2.googlemail.com",
+        "addresses": [
+          "2607:f8b0:4003:c15::1a",
+          "64.233.171.26"
+        ]
+      },
+      {
+        "preference": 30,
+        "hostname": "aspmx3.googlemail.com",
+        "addresses": [
+          "142.250.152.27",
+          "2607:f8b0:4001:c56::1b"
+        ]
+      },
+      {
+        "preference": 30,
         "hostname": "aspmx4.googlemail.com",
         "addresses": [
           "172.253.113.26",
-          "2607:f8b0:4023:1::1b"
+          "2607:f8b0:4023:1::1a"
         ]
       },
       {

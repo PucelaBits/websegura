@@ -4,7 +4,7 @@
   "dnssec": false,
   "ns": {
     "hostnames": [],
-    "error": "The resolution lifetime expired after 3.1 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
+    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "mx": {
     "hosts": [
@@ -15,18 +15,18 @@
       }
     ],
     "warnings": [
-      "The domain mail.aragonhoy.net does not exist"
+      "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
     ]
   },
   "spf": {
     "record": null,
     "valid": false,
-    "error": "The resolution lifetime expired after 3.1 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
+    "error": "aragonhoy.net does not have a SPF TXT record"
   },
   "dmarc": {
     "record": null,
     "valid": false,
     "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   }
 }

@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.altia.es",
-      "ns2.altia.es"
+      "ns2.altia.es",
+      "ns1.altia.es"
     ],
     "warnings": []
   },
@@ -31,7 +31,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 exists:%{i}.spf.hc1008-19.eu.iphmx.com ip4:82.194.75.131/32 ip4:176.58.8.208/29 ip4:217.130.24.0/24 ip4:195.69.254.31 ip4:195.69.253.6 ip4:195.69.253.2 include:amazonses.com include:eu.mailgun.org include:spf.protection.outlook.com include:spf.emailsignatures365.com -all",
+    "record": "v=spf1 exists:%{i}.spf.hc1008-19.eu.iphmx.com ip4:82.194.75.131/32 ip4:176.58.8.208/29 ip4:217.130.24.0/24 ip4:195.69.254.31 ip4:195.69.253.6 ip4:195.69.253.2 include:amazonses.com include:eu.mailgun.org include:spf.protection.outlook.com ip4:35.214.185.23 include:spf.emailsignatures365.com -all",
     "valid": true,
     "dns_lookups": 7,
     "warnings": [],
@@ -63,6 +63,10 @@
         },
         {
           "value": "195.69.253.2",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "35.214.185.23",
           "mechanism": "ip4"
         }
       ],

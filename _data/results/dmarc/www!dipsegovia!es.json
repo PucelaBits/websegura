@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns06.ns-cloud4b.net",
-      "ns08.ns-cloud4b.com"
+      "ns08.ns-cloud4b.com",
+      "ns06.ns-cloud4b.net"
     ],
     "warnings": []
   },
@@ -15,23 +15,23 @@
         "preference": 0,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.250.141.26",
-          "2607:f8b0:4023:c0b::1a"
+          "142.250.101.27",
+          "2607:f8b0:4023:c0b::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "2607:f8b0:4003:c15::1a",
-          "64.233.171.27"
+          "2607:f8b0:4003:c15::1b",
+          "64.233.171.26"
         ]
       },
       {
         "preference": 20,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "142.250.152.26",
+          "142.250.152.27",
           "2607:f8b0:4001:c56::1a"
         ]
       },
@@ -39,8 +39,8 @@
         "preference": 25,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "172.253.113.26",
-          "2607:f8b0:4023:1::1a"
+          "172.253.113.27",
+          "2607:f8b0:4023:1::1b"
         ]
       },
       {
@@ -48,19 +48,28 @@
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
           "173.194.77.26",
-          "2607:f8b0:4023:401::1b"
+          "2607:f8b0:4023:401::1a"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:_spf.google.com ~all",
+    "record": "v=spf1 a:espublico.com ip4:213.4.82.201 include:_spf.google.com ~all",
     "valid": true,
-    "dns_lookups": 4,
+    "dns_lookups": 5,
     "warnings": [],
     "parsed": {
-      "pass": [],
+      "pass": [
+        {
+          "value": "213.4.82.203",
+          "mechanism": "a"
+        },
+        {
+          "value": "213.4.82.201",
+          "mechanism": "ip4"
+        }
+      ],
       "neutral": [],
       "softfail": [],
       "fail": [],

@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns3.dnsgeneral.net",
       "ns4.dnsgeneral.net",
       "ns1.dnsgeneral.net",
-      "ns2.dnsgeneral.net",
-      "ns3.dnsgeneral.net"
+      "ns2.dnsgeneral.net"
     ],
     "warnings": []
   },
@@ -31,9 +31,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:213.236.6.0/24 ip4:213.236.3.0/24 include:_spf.google.com include:spf.acumbamail.com ~all",
+    "record": "v=spf1 include:spf.ipzmarketing.com ip4:213.236.6.0/24 ip4:213.236.3.0/24 include:_spf.google.com include:spf.acumbamail.com ~all",
     "valid": true,
-    "dns_lookups": 5,
+    "dns_lookups": 6,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -50,6 +50,43 @@
       "softfail": [],
       "fail": [],
       "include": [
+        {
+          "domain": "spf.ipzmarketing.com",
+          "record": "v=spf1 ip4:93.159.208.0/21 ip4:185.103.8.0/22 ip4:5.56.22.0/24 ip4:82.199.156.0/24 ip4:212.192.13.0/24 ~all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "93.159.208.0/21",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.103.8.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "5.56.22.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "82.199.156.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "212.192.13.0/24",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        },
         {
           "domain": "_spf.google.com",
           "record": "v=spf1 include:_netblocks.google.com include:_netblocks2.google.com include:_netblocks3.google.com ~all",
@@ -286,9 +323,53 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=none;",
+    "valid": true,
+    "location": "sevilla.org",
+    "warnings": [
+      "rua tag (destination for aggregate reports) not found"
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }

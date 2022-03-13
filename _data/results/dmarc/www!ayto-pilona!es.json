@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "linuxdns01.telecable.es",
-      "linuxdns02.telecable.es"
+      "linuxdns02.telecable.es",
+      "linuxdns01.telecable.es"
     ],
     "warnings": []
   },
@@ -15,7 +15,7 @@
         "preference": 10,
         "hostname": "mx1.telecable.es",
         "addresses": [
-          "2001:978:2:2f::5:100",
+          "2001:550:2:9::280:100",
           "38.111.198.185"
         ]
       },
@@ -23,8 +23,8 @@
         "preference": 20,
         "hostname": "mx2.telecable.es",
         "addresses": [
-          "130.117.54.106",
-          "2001:978:2:19::e:100"
+          "2001:550:2:61::2fc:100",
+          "38.89.254.156"
         ]
       },
       {
@@ -39,14 +39,12 @@
         "preference": 40,
         "hostname": "mx4.telecable.es",
         "addresses": [
-          "2001:550:2:9::280:100",
-          "38.111.198.185"
+          "130.117.53.188",
+          "2001:550:2:9::280:100"
         ]
       }
     ],
-    "warnings": [
-      "2001:978:2:2f::5:100 does not have any reverse DNS (PTR) records"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.antispamcloud.com ~all",
@@ -106,6 +104,10 @@
                 "mechanism": "a"
               },
               {
+                "value": "2001:1af8:4400:a047:6::1",
+                "mechanism": "a"
+              },
+              {
                 "value": "2001:1af8:4500:a034:101::2",
                 "mechanism": "a"
               },
@@ -127,6 +129,10 @@
               },
               {
                 "value": "209.126.121.73",
+                "mechanism": "a"
+              },
+              {
+                "value": "2604:9a00:2010:a024:21::1",
                 "mechanism": "a"
               },
               {

@@ -18,16 +18,13 @@
         "hostname": "red-es.mail.protection.outlook.com",
         "addresses": [
           "104.47.4.36",
-          "104.47.5.36",
+          "104.47.6.36",
           "2a01:111:f400:7e05::10",
-          "2a01:111:f400:7e1e::10"
+          "2a01:111:f400:7e06::10"
         ]
       }
     ],
-    "warnings": [
-      "The domain mail-am5eur020010.inbound.protection.outlook.com does not exist",
-      "The reverse DNS of 2a01:111:f400:7e1e::10 is mail-am5eur020010.inbound.protection.outlook.com, but the A/AAAA DNS records for mail-am5eur020010.inbound.protection.outlook.com do not resolve to 2a01:111:f400:7e1e::10"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:194.69.254.0/24 include:spf.protection.outlook.com include:spf.sendinblue.com include:spf.mandrillapp.com -all",
