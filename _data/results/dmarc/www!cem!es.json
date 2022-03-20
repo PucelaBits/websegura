@@ -4,36 +4,20 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "dns.serviciosmin.gob.es",
       "sun.rediris.es",
-      "sunrelay.rediris.es",
-      "chico.rediris.es",
-      "dns.serviciosmin.gob.es"
+      "chico.rediris.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mailin.minetad.es",
-        "addresses": [
-          "193.146.123.230"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "mailin1.minetad.es",
-        "addresses": [
-          "193.146.123.234"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "All nameservers failed to answer the query 230.123.146.193.in-addr.arpa. IN PTR: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
   },
   "spf": {
-    "record": "v=spf1 mx a:mailout.minetad.es a:mailout1.minetad.es a:mta90.minetad.es ip4:193.146.1.50/32 ip4:193.146.123.231/32 ip4:193.146.123.235/32 ~all",
+    "record": "v=spf1 mx ip4:193.146.1.50/32 ip4:193.146.123.231/32 ip4:193.146.123.235/32 include:spf.mandrillapp.com ~all",
     "valid": true,
-    "dns_lookups": 4,
+    "dns_lookups": 2,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -44,18 +28,6 @@
         {
           "value": "mailin1.minetad.es",
           "mechanism": "mx"
-        },
-        {
-          "value": "193.146.123.231",
-          "mechanism": "a"
-        },
-        {
-          "value": "193.146.123.235",
-          "mechanism": "a"
-        },
-        {
-          "value": "193.146.1.50",
-          "mechanism": "a"
         },
         {
           "value": "193.146.1.50/32",
@@ -73,7 +45,73 @@
       "neutral": [],
       "softfail": [],
       "fail": [],
-      "include": [],
+      "include": [
+        {
+          "domain": "spf.mandrillapp.com",
+          "record": "v=spf1 ip4:198.2.128.0/24 ip4:198.2.132.0/22 ip4:198.2.136.0/23 ip4:198.2.145.0/24 ip4:198.2.186.0/23 ip4:205.201.131.128/25 ip4:205.201.134.128/25 ip4:205.201.136.0/23 ip4:205.201.139.0/24 ip4:198.2.177.0/24 ip4:198.2.178.0/23 ip4:198.2.180.0/24 ~all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "198.2.128.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "198.2.132.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "198.2.136.0/23",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "198.2.145.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "198.2.186.0/23",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "205.201.131.128/25",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "205.201.134.128/25",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "205.201.136.0/23",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "205.201.139.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "198.2.177.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "198.2.178.0/23",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "198.2.180.0/24",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        }
+      ],
       "redirect": null,
       "exp": null,
       "all": "softfail"

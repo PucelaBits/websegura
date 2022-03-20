@@ -9,65 +9,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "aspmx.l.google.com",
-        "addresses": [
-          "142.250.141.27",
-          "2607:f8b0:4023:c0b::1a"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "alt1.aspmx.l.google.com",
-        "addresses": [
-          "2607:f8b0:4003:c15::1b",
-          "64.233.171.26"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "alt2.aspmx.l.google.com",
-        "addresses": [
-          "142.250.152.26",
-          "2607:f8b0:4001:c56::1a"
-        ]
-      },
-      {
-        "preference": 30,
-        "hostname": "aspmx2.googlemail.com",
-        "addresses": [
-          "2607:f8b0:4003:c15::1b",
-          "64.233.171.26"
-        ]
-      },
-      {
-        "preference": 30,
-        "hostname": "aspmx3.googlemail.com",
-        "addresses": [
-          "142.250.152.26",
-          "2607:f8b0:4001:c56::1b"
-        ]
-      },
-      {
-        "preference": 30,
-        "hostname": "aspmx4.googlemail.com",
-        "addresses": [
-          "172.253.113.27",
-          "2607:f8b0:4023:1::1a"
-        ]
-      },
-      {
-        "preference": 30,
-        "hostname": "aspmx5.googlemail.com",
-        "addresses": [
-          "173.194.77.26",
-          "2607:f8b0:4023:401::1a"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 mx redirect=_spf.google.com",
@@ -293,6 +236,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
+    "error": "A DMARC record does not exist for this domain or its base domain"
   }
 }

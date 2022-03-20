@@ -8,9 +8,7 @@
   },
   "mx": {
     "hosts": [],
-    "warnings": [
-      "No MX records found. Is the domain parked?"
-    ]
+    "error": "All nameservers failed to answer the query coronavirus.sergas.gal. IN MX: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
   },
   "spf": {
     "record": null,

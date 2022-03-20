@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.evolutio.es",
-      "ns1.evolutio.es"
+      "ns1.evolutio.es",
+      "ns2.evolutio.es"
     ],
     "warnings": []
   },
@@ -16,14 +16,14 @@
         "hostname": "enresa-es.mail.protection.outlook.com",
         "addresses": [
           "104.47.10.36",
-          "104.47.8.36"
+          "104.47.9.36"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:Spf.protection.outlook.com ip4:212.163.6.88 -all",
+    "record": "v=spf1 include:spf.protection.outlook.com ip4:212.163.6.88 -all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],

@@ -34,9 +34,7 @@
     "record": "v=spf1 mx a:spf.correo.gob.es ~all",
     "valid": true,
     "dns_lookups": 2,
-    "warnings": [
-      "All nameservers failed to answer the query spf.correo.gob.es. IN A: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
-    ],
+    "warnings": [],
     "parsed": {
       "pass": [
         {
@@ -46,6 +44,62 @@
         {
           "value": "mail2.correo.gob.es",
           "mechanism": "mx"
+        },
+        {
+          "value": "185.73.172.122",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.172.123",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.172.124",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.172.125",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.172.147",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.174.101",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.174.102",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.174.103",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.174.220",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.174.91",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.174.92",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.174.97",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.174.98",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.174.99",
+          "mechanism": "a"
         }
       ],
       "neutral": [],

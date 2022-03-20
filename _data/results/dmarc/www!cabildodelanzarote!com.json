@@ -4,43 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns11.ovh.net",
-      "ns11.ovh.net"
+      "ns11.ovh.net",
+      "dns11.ovh.net"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mx01.hornetsecurity.com",
-        "addresses": [
-          "94.100.132.8"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mx02.hornetsecurity.com",
-        "addresses": [
-          "94.100.136.8"
-        ]
-      },
-      {
-        "preference": 30,
-        "hostname": "mx03.hornetsecurity.com",
-        "addresses": [
-          "94.100.134.8"
-        ]
-      },
-      {
-        "preference": 40,
-        "hostname": "mx04.hornetsecurity.com",
-        "addresses": [
-          "94.100.136.7"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 a:mail.cabildodelanzarote.com a:smtp.cabildodelanzarote.com ip4:217.124.240.192/28 ip4:213.99.38.64/28 ip4:81.47.205.96/27 include:spf.hornetsecurity.com -all",

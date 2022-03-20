@@ -3,11 +3,8 @@
   "base_domain": "benavente.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "ns2.nds.es",
-      "ns1.nds.es"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "mx": {
     "hosts": [

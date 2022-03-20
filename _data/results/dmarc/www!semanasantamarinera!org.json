@@ -43,9 +43,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:espadan.infortelecom.net +a +mx a:mail.semanasantamarinera.org ip4:84.246.209.46 -all",
+    "record": "v=spf1 +a +mx a:mail.semanasantamarinera.org include:_sh.axarnet.es ~all",
     "valid": true,
-    "dns_lookups": 6,
+    "dns_lookups": 5,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -64,10 +64,6 @@
         {
           "value": "84.246.209.45",
           "mechanism": "a"
-        },
-        {
-          "value": "84.246.209.46",
-          "mechanism": "ip4"
         }
       ],
       "neutral": [],
@@ -75,78 +71,92 @@
       "fail": [],
       "include": [
         {
-          "domain": "espadan.infortelecom.net",
-          "record": "v=spf1 a a:relay1.redunda.com ip4:84.246.209.45 ip4:84.246.214.205 ip4:84.246.209.46 ip4:84.246.209.220 ip4:84.246.209.116 ip4:84.246.209.118 ip4:84.246.209.114 ip4:84.246.209.119 ip4:84.246.209.91 ip4:84.246.209.49 -all",
-          "dns_lookups": 2,
+          "domain": "_sh.axarnet.es",
+          "record": "v=spf1 ip4:84.246.209.0/24 ip4:5.175.41.0/24 ip4:5.175.44.0/24 include:relay.mailchannels.net ~all",
+          "dns_lookups": 1,
           "parsed": {
             "pass": [
               {
-                "value": "84.246.209.45",
-                "mechanism": "a"
-              },
-              {
-                "value": "84.246.209.46",
-                "mechanism": "a"
-              },
-              {
-                "value": "84.246.210.12",
-                "mechanism": "a"
-              },
-              {
-                "value": "84.246.209.45",
+                "value": "84.246.209.0/24",
                 "mechanism": "ip4"
               },
               {
-                "value": "84.246.214.205",
+                "value": "5.175.41.0/24",
                 "mechanism": "ip4"
               },
               {
-                "value": "84.246.209.46",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "84.246.209.220",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "84.246.209.116",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "84.246.209.118",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "84.246.209.114",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "84.246.209.119",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "84.246.209.91",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "84.246.209.49",
+                "value": "5.175.44.0/24",
                 "mechanism": "ip4"
               }
             ],
             "neutral": [],
             "softfail": [],
             "fail": [],
-            "include": [],
+            "include": [
+              {
+                "domain": "relay.mailchannels.net",
+                "record": "v=spf1 ip4:23.83.208.0/20 ip4:46.232.183.0/24 ip4:199.10.31.235/32 ip4:199.10.31.236/32 ip4:172.255.62.10/32 ip4:172.255.62.11/32 ip4:54.245.125.39/32 ip4:103.18.109.138/32 ip4:54.214.232.113/32 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "23.83.208.0/20",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "46.232.183.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "199.10.31.235/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "199.10.31.236/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "172.255.62.10/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "172.255.62.11/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "54.245.125.39/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "103.18.109.138/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "54.214.232.113/32",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              }
+            ],
             "redirect": null,
             "exp": null,
-            "all": "fail"
+            "all": "softfail"
           },
           "warnings": []
         }
       ],
       "redirect": null,
       "exp": null,
-      "all": "fail"
+      "all": "softfail"
     }
   },
   "dmarc": {

@@ -3,37 +3,12 @@
   "base_domain": "citapreviadnie.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "dns.citapreviadnie.es",
-      "dns2.citapreviadnie.es"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "correo.citapreviadnie.es",
-        "addresses": [
-          "195.55.116.96"
-        ]
-      },
-      {
-        "preference": 50,
-        "hostname": "correo11.citapreviadnie.es",
-        "addresses": [
-          "195.55.116.96"
-        ]
-      },
-      {
-        "preference": 70,
-        "hostname": "correo22.citapreviadnie.es",
-        "addresses": [
-          "195.55.116.96"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 mx -all",

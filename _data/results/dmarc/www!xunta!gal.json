@@ -4,11 +4,11 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "a1-15.akam.net",
       "a9-66.akam.net",
-      "a2-66.akam.net",
+      "a1-15.akam.net",
+      "a20-67.akam.net",
       "a7-64.akam.net",
-      "a20-67.akam.net"
+      "a2-66.akam.net"
     ],
     "warnings": []
   },
@@ -28,13 +28,11 @@
     "record": "v=spf1 mx ip4:85.91.64.213 ip4:85.91.64.214 ip4:85.91.71.142 a:mta.edu.xunta.es a:mta2.edu.xunta.es -all",
     "valid": true,
     "dns_lookups": 3,
-    "warnings": [],
+    "warnings": [
+      "All nameservers failed to answer the query xunta.gal. IN MX: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    ],
     "parsed": {
       "pass": [
-        {
-          "value": "mail.xunta.es",
-          "mechanism": "mx"
-        },
         {
           "value": "85.91.64.213",
           "mechanism": "ip4"

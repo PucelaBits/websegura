@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "kvm4.srvdr.com",
-      "sdns2.ovh.net"
+      "sdns2.ovh.net",
+      "kvm4.srvdr.com"
     ],
     "warnings": []
   },
@@ -248,6 +248,22 @@
                 "mechanism": "a"
               },
               {
+                "value": "2001:550:2:61::3bf:10",
+                "mechanism": "a"
+              },
+              {
+                "value": "2001:550:2:61::3bf:13",
+                "mechanism": "a"
+              },
+              {
+                "value": "2001:550:2:61::3bf:16",
+                "mechanism": "a"
+              },
+              {
+                "value": "2001:550:2:61::3bf:18",
+                "mechanism": "a"
+              },
+              {
                 "value": "2001:550:2:6a::10:10",
                 "mechanism": "a"
               },
@@ -269,6 +285,10 @@
               },
               {
                 "value": "2001:550:2:9::280:10",
+                "mechanism": "a"
+              },
+              {
+                "value": "2001:668:1f:ffa4::12",
                 "mechanism": "a"
               },
               {
@@ -501,6 +521,22 @@
               },
               {
                 "value": "38.107.142.46",
+                "mechanism": "a"
+              },
+              {
+                "value": "38.71.17.45",
+                "mechanism": "a"
+              },
+              {
+                "value": "38.71.17.46",
+                "mechanism": "a"
+              },
+              {
+                "value": "38.71.17.57",
+                "mechanism": "a"
+              },
+              {
+                "value": "38.71.17.58",
                 "mechanism": "a"
               },
               {
