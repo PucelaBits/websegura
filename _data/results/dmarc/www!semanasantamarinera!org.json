@@ -43,7 +43,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 +a +mx a:mail.semanasantamarinera.org include:_sh.axarnet.es ~all",
+    "record": "v=spf1 a mx a:mail.semanasantamarinera.org include:_sh.axarnet.es ~all",
     "valid": true,
     "dns_lookups": 5,
     "warnings": [],

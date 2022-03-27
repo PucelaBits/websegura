@@ -27,7 +27,12 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
+      "The reverse DNS of 94.100.134.8 is mx03.hornetsecurity.com, but the A/AAAA DNS records for mx03.hornetsecurity.com do not resolve to 94.100.134.8",
+      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
+      "The reverse DNS of 94.100.136.7 is mx04.hornetsecurity.com, but the A/AAAA DNS records for mx04.hornetsecurity.com do not resolve to 94.100.136.7"
+    ]
   },
   "spf": {
     "record": "v=spf1 +a +mx include:emailservice.cpd.as -all",

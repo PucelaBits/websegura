@@ -4,49 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.dnsxperta.com",
-      "ns2.dnsxperta.com"
+      "ns2.dnsxperta.com",
+      "ns1.dnsxperta.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mx.spamexperts.com",
-        "addresses": [
-          "2001:550:2:9::280:100",
-          "38.109.53.20"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "fallbackmx.spamexperts.eu",
-        "addresses": [
-          "2001:550:2:61::2fc:100",
-          "2001:550:2:78::ca:100",
-          "2001:550:2:9::280:100",
-          "38.109.53.20",
-          "38.111.198.185",
-          "38.89.254.156"
-        ]
-      },
-      {
-        "preference": 30,
-        "hostname": "lastmx.spamexperts.net",
-        "addresses": [
-          "130.117.53.188",
-          "149.13.75.27",
-          "2001:550:2:61::2fc:100",
-          "2001:550:2:9::280:100",
-          "2001:978:2:2c::137:100",
-          "2001:978:2:7::162:100",
-          "38.111.198.185",
-          "38.89.254.156"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 include:spf.antispamcloud.com a:delivery.antispamcloud.com include:dnsxperta.com ~all",
@@ -184,7 +149,15 @@
           "mechanism": "a"
         },
         {
+          "value": "2001:550:2:61::3bf:1",
+          "mechanism": "a"
+        },
+        {
           "value": "2001:550:2:61::3bf:10",
+          "mechanism": "a"
+        },
+        {
+          "value": "2001:550:2:61::3bf:11",
           "mechanism": "a"
         },
         {
@@ -196,7 +169,15 @@
           "mechanism": "a"
         },
         {
+          "value": "2001:550:2:61::3bf:17",
+          "mechanism": "a"
+        },
+        {
           "value": "2001:550:2:61::3bf:18",
+          "mechanism": "a"
+        },
+        {
+          "value": "2001:550:2:61::3bf:1a",
           "mechanism": "a"
         },
         {
@@ -233,6 +214,14 @@
         },
         {
           "value": "2001:668:1f:ffa4::15",
+          "mechanism": "a"
+        },
+        {
+          "value": "2001:668:1f:ffa4::17",
+          "mechanism": "a"
+        },
+        {
+          "value": "2001:668:1f:ffa4::18",
           "mechanism": "a"
         },
         {
@@ -460,6 +449,18 @@
           "mechanism": "a"
         },
         {
+          "value": "38.71.17.10",
+          "mechanism": "a"
+        },
+        {
+          "value": "38.71.17.42",
+          "mechanism": "a"
+        },
+        {
+          "value": "38.71.17.43",
+          "mechanism": "a"
+        },
+        {
           "value": "38.71.17.45",
           "mechanism": "a"
         },
@@ -468,11 +469,47 @@
           "mechanism": "a"
         },
         {
+          "value": "38.71.17.54",
+          "mechanism": "a"
+        },
+        {
+          "value": "38.71.17.55",
+          "mechanism": "a"
+        },
+        {
           "value": "38.71.17.57",
           "mechanism": "a"
         },
         {
           "value": "38.71.17.58",
+          "mechanism": "a"
+        },
+        {
+          "value": "38.71.17.6",
+          "mechanism": "a"
+        },
+        {
+          "value": "38.71.17.60",
+          "mechanism": "a"
+        },
+        {
+          "value": "38.71.17.61",
+          "mechanism": "a"
+        },
+        {
+          "value": "38.71.17.66",
+          "mechanism": "a"
+        },
+        {
+          "value": "38.71.17.67",
+          "mechanism": "a"
+        },
+        {
+          "value": "38.71.17.7",
+          "mechanism": "a"
+        },
+        {
+          "value": "38.71.17.9",
           "mechanism": "a"
         },
         {

@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.dnsrapido.com",
       "ns3.dnsrapido.com",
+      "ns2.dnsrapido.com",
       "ns1.dnsrapido.com"
     ],
     "warnings": []
@@ -44,13 +44,10 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx a ptr ip4:195.55.90.34/32 include:spf.hornetsecurity.com ~all",
+    "record": "v=spf1 mx ip4:195.55.90.34/32 include:spf.hornetsecurity.com ~all",
     "valid": true,
-    "dns_lookups": 3,
-    "warnings": [
-      "aytoleon.es does not have any A/AAAA records",
-      "The ptr mechanism should not be used - https://tools.ietf.org/html/rfc7208#section-5.5"
-    ],
+    "dns_lookups": 2,
+    "warnings": [],
     "parsed": {
       "pass": [
         {
@@ -68,10 +65,6 @@
         {
           "value": "mx04.hornetsecurity.com",
           "mechanism": "mx"
-        },
-        {
-          "value": "",
-          "mechanism": "ptr"
         },
         {
           "value": "195.55.90.34/32",

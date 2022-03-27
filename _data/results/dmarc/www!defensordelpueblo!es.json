@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.interdomain.net",
+      "ns3.interdomain.es",
       "ns1.interdomain.net",
-      "ns3.interdomain.es"
+      "ns2.interdomain.net"
     ],
     "warnings": []
   },
@@ -24,9 +24,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:212.51.32.128/25 mx include:_pmta2.antevenio.com include:spf.mail-cert.com include:spf.protection.outlook.com exists:%{i}.spf.hc583-29.eu.iphmx.com ~all",
+    "record": "v=spf1 ip4:212.51.32.128/25 mx include:_pmta2.antevenio.com include:spf.mail-cert.com include:spf.protection.outlook.com a:defensordelpueblo-es.fortimailcloud.com exists:%{i}.spf.hc583-29.eu.iphmx.com ~all",
     "valid": true,
-    "dns_lookups": 6,
+    "dns_lookups": 7,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -37,6 +37,14 @@
         {
           "value": "mx1.hc583-29.eu.iphmx.com",
           "mechanism": "mx"
+        },
+        {
+          "value": "154.52.2.131",
+          "mechanism": "a"
+        },
+        {
+          "value": "154.52.3.131",
+          "mechanism": "a"
         },
         {
           "value": "%{i}.spf.hc583-29.eu.iphmx.com",

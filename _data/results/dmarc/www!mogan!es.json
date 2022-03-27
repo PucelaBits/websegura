@@ -15,12 +15,12 @@
       {
         "preference": 10,
         "hostname": "inf1.mogan.es",
-        "addresses": [
-          "213.0.98.20"
-        ]
+        "addresses": []
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
+    ]
   },
   "spf": {
     "record": "v=spf1 mx a ip4:213.0.98.20 a:inf1.mogan.es -all",

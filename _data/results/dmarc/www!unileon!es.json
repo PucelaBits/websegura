@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns1.unileon.es",
       "ns2.unileon.es",
       "sun.rediris.es",
-      "ns1.unileon.es",
       "chico.rediris.es"
     ],
     "warnings": []
@@ -17,8 +17,8 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.250.141.26",
-          "2607:f8b0:4023:c03::1b"
+          "142.250.141.27",
+          "2607:f8b0:4023:c0b::1a"
         ]
       },
       {
@@ -26,7 +26,7 @@
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
           "2607:f8b0:4003:c15::1b",
-          "64.233.171.27"
+          "64.233.171.26"
         ]
       },
       {
@@ -42,7 +42,7 @@
         "hostname": "aspmx2.googlemail.com",
         "addresses": [
           "2607:f8b0:4003:c15::1b",
-          "64.233.171.27"
+          "64.233.171.26"
         ]
       },
       {

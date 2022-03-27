@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns3.correos.es",
-      "ns4.correos.es"
+      "ns4.correos.es",
+      "ns3.correos.es"
     ],
     "warnings": []
   },
@@ -19,9 +19,7 @@
         ]
       }
     ],
-    "warnings": [
-      "193.148.128.133 does not have any reverse DNS (PTR) records"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 a:mail.correos.es a:smtp.cep.correos.es a:smtp1.cep.correos.es a:smtp2.cep.correos.es a:smtp3.cep.correos.es a:smtp4.cep.correos.es ~all",

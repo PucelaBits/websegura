@@ -11,8 +11,23 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query 230.123.146.193.in-addr.arpa. IN PTR: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mailin.minetad.es",
+        "addresses": [
+          "193.146.123.230"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mailin1.minetad.es",
+        "addresses": [
+          "193.146.123.234"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx ip4:193.146.1.50/32 ip4:193.146.123.231/32 ip4:193.146.123.235/32 include:spf.mandrillapp.com ~all",
