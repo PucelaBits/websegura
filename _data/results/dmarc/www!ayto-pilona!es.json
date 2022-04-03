@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "linuxdns01.telecable.es",
-      "linuxdns02.telecable.es"
+      "linuxdns02.telecable.es",
+      "linuxdns01.telecable.es"
     ],
     "warnings": []
   },
@@ -15,7 +15,7 @@
         "preference": 10,
         "hostname": "mx1.telecable.es",
         "addresses": [
-          "2001:978:2:2f::5:100",
+          "2001:550:2:9::280:100",
           "38.111.198.185"
         ]
       },
@@ -44,9 +44,7 @@
         ]
       }
     ],
-    "warnings": [
-      "2001:978:2:2f::5:100 does not have any reverse DNS (PTR) records"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.antispamcloud.com ~all",

@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns3.dinahosting.com",
-      "ns.dinahosting.com",
       "ns2.dinahosting.com",
-      "ns4.dinahosting.com"
+      "ns3.dinahosting.com",
+      "ns4.dinahosting.com",
+      "ns.dinahosting.com"
     ],
     "warnings": []
   },
@@ -15,26 +15,44 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "mercavalencia-es.mail.protection.outlook.com",
+        "hostname": "mx01.hornetsecurity.com",
         "addresses": [
-          "104.47.0.36",
-          "104.47.1.36"
+          "94.100.132.8"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mx02.hornetsecurity.com",
+        "addresses": [
+          "94.100.136.8"
+        ]
+      },
+      {
+        "preference": 30,
+        "hostname": "mx03.hornetsecurity.com",
+        "addresses": [
+          "94.100.134.8"
+        ]
+      },
+      {
+        "preference": 40,
+        "hostname": "mx04.hornetsecurity.com",
+        "addresses": [
+          "94.100.136.7"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:94.242.254.237 ip4:178.33.231.124 ip6:2001:41d0:8:287c::/64 a:bolt.xinxeta.eu a:mercavalencia.es include:spf.protection.outlook.com -all",
+    "record": "v=spf1 ip4:82.98.165.212 ip4:178.33.231.124 ip6:2001:41d0:8:287c::/64 a:vl22247.dinaserver.com a:mercavalencia.es include:spf.protection.outlook.com include:spf.hornetsecurity.com -all",
     "valid": true,
-    "dns_lookups": 4,
-    "warnings": [
-      "The domain bolt.xinxeta.eu does not exist"
-    ],
+    "dns_lookups": 5,
+    "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "94.242.254.237",
+          "value": "82.98.165.212",
           "mechanism": "ip4"
         },
         {
@@ -44,6 +62,10 @@
         {
           "value": "2001:41d0:8:287c::/64",
           "mechanism": "ip6"
+        },
+        {
+          "value": "82.98.165.212",
+          "mechanism": "a"
         },
         {
           "value": "82.98.165.212",
@@ -146,6 +168,83 @@
             "redirect": null,
             "exp": null,
             "all": "fail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "spf.hornetsecurity.com",
+          "record": "v=spf1 ip4:83.246.65.0/24 ip4:185.140.204.0/22 ip4:94.100.128.0/20 ip4:81.20.94.0/24 ip4:173.45.18.0/24 ip4:52.62.123.207/32 ip4:52.62.108.212/32 ip4:129.232.203.80/28 ip4:209.172.38.64/27 ip4:108.163.133.224/27 ip4:199.27.221.76 ip4:216.46.11.238 ip4:216.46.11.244 ip4:199.27.221.81 ip4:199.27.221.82 ~all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "83.246.65.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.140.204.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "94.100.128.0/20",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "81.20.94.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "173.45.18.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.62.123.207/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.62.108.212/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "129.232.203.80/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "209.172.38.64/27",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "108.163.133.224/27",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "199.27.221.76",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "216.46.11.238",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "216.46.11.244",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "199.27.221.81",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "199.27.221.82",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
           },
           "warnings": []
         }

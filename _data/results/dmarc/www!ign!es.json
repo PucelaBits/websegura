@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "minerva.ttd.net",
-      "artemis.ttd.net"
+      "ns1.age.gob.es",
+      "ns2.age.gob.es"
     ],
     "warnings": []
   },
@@ -22,49 +22,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:192.148.212.217 ip4:192.148.212.218 ip4:192.148.212.221 ip4:192.148.212.222 ip4:192.148.212.223 ip4:192.148.212.224 mx -all",
-    "valid": true,
-    "dns_lookups": 1,
-    "warnings": [],
-    "parsed": {
-      "pass": [
-        {
-          "value": "192.148.212.217",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "192.148.212.218",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "192.148.212.221",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "192.148.212.222",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "192.148.212.223",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "192.148.212.224",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "mail01.fomento.es",
-          "mechanism": "mx"
-        }
-      ],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [],
-      "redirect": null,
-      "exp": null,
-      "all": "fail"
-    }
+    "record": null,
+    "valid": false,
+    "error": "ign.es has multiple SPF TXT records"
   },
   "dmarc": {
     "record": null,

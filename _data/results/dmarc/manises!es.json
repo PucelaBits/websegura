@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.dnsxperta.com",
-      "ns2.dnsxperta.com"
+      "ns2.dnsxperta.com",
+      "ns1.dnsxperta.com"
     ],
     "warnings": []
   },
@@ -22,22 +22,18 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:84.124.7.58 mx ip4:95.39.50.141 ip4:95.39.50.139 ~all",
+    "record": "v=spf1 mx ip4:212.145.21.150 ip4:95.39.50.139 ~all",
     "valid": true,
     "dns_lookups": 1,
     "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "84.124.7.58",
-          "mechanism": "ip4"
-        },
-        {
           "value": "correo.manises.es",
           "mechanism": "mx"
         },
         {
-          "value": "95.39.50.141",
+          "value": "212.145.21.150",
           "mechanism": "ip4"
         },
         {
@@ -58,6 +54,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.manises.es\n\nv=spf1 ip4:84.124.7.58 mx ip4:95.39.50.141 ip4:95.39.50.139 ~all"
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.manises.es\n\nv=spf1 mx ip4:212.145.21.150 ip4:95.39.50.139 ~all"
   }
 }
