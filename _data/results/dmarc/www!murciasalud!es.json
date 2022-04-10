@@ -5,9 +5,9 @@
   "ns": {
     "hostnames": [
       "rafi.f-integra.org",
+      "ns2e.carm.es",
       "dns01.ono.com",
-      "ns1e.carm.es",
-      "ns2e.carm.es"
+      "ns1e.carm.es"
     ],
     "warnings": []
   },
@@ -21,7 +21,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
+      "The reverse DNS of 80.73.144.108 is mx.redctnet.com, but the A/AAAA DNS records for mx.redctnet.com do not resolve to 80.73.144.108"
+    ]
   },
   "spf": {
     "record": "v=spf1 ip4:80.73.144.108 ip4:80.73.148.250 -all",

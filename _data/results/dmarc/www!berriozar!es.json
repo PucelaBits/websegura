@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.hostinet.com",
-      "dns1.hostinet.com"
+      "dns1.hostinet.com",
+      "dns2.hostinet.com"
     ],
     "warnings": []
   },
@@ -16,13 +16,6 @@
         "hostname": "correo.berriozar.es",
         "addresses": [
           "195.53.90.200"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "correo2.berriozar.es",
-        "addresses": [
-          "83.173.136.11"
         ]
       }
     ],
@@ -41,10 +34,6 @@
         },
         {
           "value": "correo.berriozar.es",
-          "mechanism": "mx"
-        },
-        {
-          "value": "correo2.berriozar.es",
           "mechanism": "mx"
         },
         {

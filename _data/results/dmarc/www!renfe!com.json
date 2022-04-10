@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.renfe.es",
-      "dns2.renfe.es"
+      "dns2.renfe.es",
+      "dns1.renfe.es"
     ],
     "warnings": []
   },
@@ -16,7 +16,7 @@
     ]
   },
   "spf": {
-    "record": "v=spf1 ~all",
+    "record": "v=spf1 -all",
     "valid": true,
     "dns_lookups": 0,
     "warnings": [],
@@ -28,7 +28,7 @@
       "include": [],
       "redirect": null,
       "exp": null,
-      "all": "softfail"
+      "all": "fail"
     }
   },
   "dmarc": {

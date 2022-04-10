@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.dondominio.com",
-      "ns1.dondominio.com"
+      "ns1.dondominio.com",
+      "ns2.dondominio.com"
     ],
     "warnings": []
   },
@@ -28,16 +28,12 @@
       "include": [
         {
           "domain": "spf.dondominio.com",
-          "record": "v=spf1 ip4:37.152.88.0/24 ip4:212.95.210.0/24 ip4:31.214.176.0/25 ~all",
+          "record": "v=spf1 ip4:37.152.88.0/24 ip4:31.214.176.0/25 ~all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
               {
                 "value": "37.152.88.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "212.95.210.0/24",
                 "mechanism": "ip4"
               },
               {

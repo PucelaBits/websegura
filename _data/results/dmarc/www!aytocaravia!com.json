@@ -135,7 +135,7 @@
         },
         {
           "domain": "_spf.asturservers.com",
-          "record": "v=spf1 ip4:213.227.137.0/24 ip4:82.223.89.0/24 -all",
+          "record": "v=spf1 ip4:213.227.137.0/24 ip4:82.223.89.0/24 ip4:172.104.151.72  -all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -145,6 +145,10 @@
               },
               {
                 "value": "82.223.89.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "172.104.151.72",
                 "mechanism": "ip4"
               }
             ],

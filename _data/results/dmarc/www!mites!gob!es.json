@@ -24,20 +24,6 @@
         "addresses": [
           "192.148.211.64"
         ]
-      },
-      {
-        "preference": 100,
-        "hostname": "srvsmtp01.mites.gob.es",
-        "addresses": [
-          "192.148.211.61"
-        ]
-      },
-      {
-        "preference": 100,
-        "hostname": "srvsmtp02.mites.gob.es",
-        "addresses": [
-          "192.148.211.62"
-        ]
       }
     ],
     "warnings": []
@@ -55,14 +41,6 @@
         },
         {
           "value": "srvsmtp04.mites.gob.es",
-          "mechanism": "mx"
-        },
-        {
-          "value": "srvsmtp01.mites.gob.es",
-          "mechanism": "mx"
-        },
-        {
-          "value": "srvsmtp02.mites.gob.es",
           "mechanism": "mx"
         },
         {

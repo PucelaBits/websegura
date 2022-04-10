@@ -4,8 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ram.ns.cloudflare.com",
-      "stephane.ns.cloudflare.com"
+      "ns1.dnsxperta.com",
+      "ns2.dnsxperta.com",
+      "ns3.dnsxperta.com"
     ],
     "warnings": []
   },
@@ -23,7 +24,7 @@
       },
       {
         "preference": 10,
-        "hostname": "dc-daf0fbe7c46c.culturadeproximitat.com",
+        "hostname": "mail.culturadeproximitat.com",
         "addresses": [
           "134.0.12.251"
         ]
@@ -119,6 +120,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.culturadeproximitat.com\n\nv=spf1 include:_spf.srv.cat ~all"
   }
 }

@@ -1,0 +1,72 @@
+{
+  "domain": "elvendrell.net",
+  "base_domain": "elvendrell.net",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns.dinahosting.com",
+      "ns4.dinahosting.com",
+      "ns3.dinahosting.com",
+      "ns2.dinahosting.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx1.dipta.cat",
+        "addresses": [
+          "195.76.233.59"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mx1.tinet.org",
+        "addresses": [
+          "195.77.216.146"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 a:mx1.dipta.cat a:mx1.tinet.org a:mx2.tinet.org a:elvendrell.net ~all",
+    "valid": true,
+    "dns_lookups": 4,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "195.76.233.59",
+          "mechanism": "a"
+        },
+        {
+          "value": "195.77.216.146",
+          "mechanism": "a"
+        },
+        {
+          "value": "195.77.216.147",
+          "mechanism": "a"
+        },
+        {
+          "value": "82.98.180.99",
+          "mechanism": "a"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

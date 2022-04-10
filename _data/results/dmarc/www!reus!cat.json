@@ -1,0 +1,200 @@
+{
+  "domain": "reus.cat",
+  "base_domain": "reus.cat",
+  "dnssec": true,
+  "ns": {
+    "hostnames": [
+      "ns1.reus.cat",
+      "ns2.reus.cat",
+      "ns3.reus.cat"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 5,
+        "hostname": "relay.reus.cat",
+        "addresses": [
+          "77.227.178.12"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mx1.reus.cat",
+        "addresses": [
+          "46.25.84.232"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 mx include:spf.ipzmarketing.com include:eu.transmail.net -all",
+    "valid": true,
+    "dns_lookups": 3,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "relay.reus.cat",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mx1.reus.cat",
+          "mechanism": "mx"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "spf.ipzmarketing.com",
+          "record": "v=spf1 ip4:93.159.208.0/21 ip4:185.103.8.0/22 ip4:5.56.22.0/24 ip4:82.199.156.0/24 ip4:212.192.13.0/24 ~all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "93.159.208.0/21",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.103.8.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "5.56.22.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "82.199.156.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "212.192.13.0/24",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "eu.transmail.net",
+          "record": "v=spf1 ip4:31.186.226.0/24 ip4:185.20.211.0/24 ip4:185.172.199.128/26 ip4:185.172.199.192/27 ip4:185.172.199.56/29 ~all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "31.186.226.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.20.211.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.172.199.128/26",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.172.199.192/27",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.172.199.56/29",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": "v=DMARC1; p=reject; rua=mailto:dmarc-reports@reus.cat; ruf=mailto:dmarc-forensics@reus.cat; fo=1",
+    "valid": true,
+    "location": "reus.cat",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "reject",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc-reports@reus.cat",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc-forensics@reus.cat",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "1"
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "reject",
+        "explicit": false
+      }
+    }
+  }
+}

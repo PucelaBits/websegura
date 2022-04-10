@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.ineco.es",
-      "ns1.ineco.es"
+      "ns1.ineco.es",
+      "ns2.ineco.es"
     ],
     "warnings": []
   },
@@ -162,7 +162,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; sp=quarantine; rua=mailto:dmarc@ineco.com,mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc@ineco.com,mailto:dmarc_ruf@emaildefense.proofpoint.com; pct=100; fo=1",
+    "record": "v=DMARC1; p=reject; sp=reject; rua=mailto:dmarc@ineco.com,mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc@ineco.com,mailto:dmarc_ruf@emaildefense.proofpoint.com; pct=100; fo=1",
     "valid": true,
     "location": "ineco.com",
     "warnings": [],
@@ -172,11 +172,11 @@
         "explicit": true
       },
       "p": {
-        "value": "quarantine",
+        "value": "reject",
         "explicit": true
       },
       "sp": {
-        "value": "quarantine",
+        "value": "reject",
         "explicit": true
       },
       "rua": {

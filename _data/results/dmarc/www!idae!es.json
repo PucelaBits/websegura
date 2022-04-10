@@ -17,14 +17,56 @@
         "addresses": [
           "213.0.86.147"
         ]
+      },
+      {
+        "preference": 50,
+        "hostname": "idae-es.mail.protection.outlook.com",
+        "addresses": [
+          "104.47.17.74",
+          "104.47.18.74"
+        ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "idae.es has multiple SPF TXT records"
+    "record": "v=spf1 ip4:213.0.86.147 a:mail.idae.es a:mail.zendesk.com a:spf.protection.outlook.com ~all",
+    "valid": true,
+    "dns_lookups": 3,
+    "warnings": [
+      "spf.protection.outlook.com does not have any A/AAAA records"
+    ],
+    "parsed": {
+      "pass": [
+        {
+          "value": "213.0.86.147",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "213.0.86.147",
+          "mechanism": "a"
+        },
+        {
+          "value": "184.72.174.126",
+          "mechanism": "a"
+        },
+        {
+          "value": "3.213.143.227",
+          "mechanism": "a"
+        },
+        {
+          "value": "34.235.62.90",
+          "mechanism": "a"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
   },
   "dmarc": {
     "record": "v=DMARC1; p=none; rua=mailto:dmarc@idae.es; ruf=mailto:dmarc@idae.es; fo=1",

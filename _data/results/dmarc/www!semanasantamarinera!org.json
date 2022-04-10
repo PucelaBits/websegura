@@ -40,10 +40,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
-      "The reverse DNS of 84.246.208.51 is rl1.redunda.com, but the A/AAAA DNS records for rl1.redunda.com do not resolve to 84.246.208.51"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 a mx a:mail.semanasantamarinera.org include:_sh.axarnet.es ~all",
