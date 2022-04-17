@@ -10,8 +10,16 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query 80.117.128.212.in-addr.arpa. IN PTR: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 100,
+        "hostname": "hermes.cultura.gob.es",
+        "addresses": [
+          "212.128.117.80"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx ip4:212.128.114.9 ip4:212.128.114.10 ip4:212.128.114.12 ip4:212.128.114.13 ip4:212.128.112.130 ip4:212.128.112.131 ip4:212.128.117.80 ip4:212.128.117.83 ip4:212.128.117.84 ip4:212.128.117.85 ip4:212.128.117.86 include:spf.protection.outlook.com -all",

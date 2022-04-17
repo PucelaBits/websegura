@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "nil.fut.es",
-      "damia.altanet.org"
+      "damia.altanet.org",
+      "nil.fut.es"
     ],
     "warnings": []
   },
@@ -15,8 +15,8 @@
         "preference": 0,
         "hostname": "tarragona-cat.mail.protection.outlook.com",
         "addresses": [
-          "104.47.13.36",
-          "104.47.14.36"
+          "104.47.12.36",
+          "104.47.13.36"
         ]
       }
     ],
@@ -26,11 +26,13 @@
     "record": "v=spf1 include:spf.ipzmarketing.com a mx include:spf.protection.outlook.com ip4:195.55.52.99 ip4:195.55.84.238 ip4:92.54.14.18 ~all",
     "valid": true,
     "dns_lookups": 5,
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
-    ],
+    "warnings": [],
     "parsed": {
       "pass": [
+        {
+          "value": "163.172.127.57",
+          "mechanism": "a"
+        },
         {
           "value": "tarragona-cat.mail.protection.outlook.com",
           "mechanism": "mx"

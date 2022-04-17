@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1121.ui-dns.com",
-      "ns1096.ui-dns.de",
       "ns1112.ui-dns.biz",
-      "ns1108.ui-dns.org"
+      "ns1121.ui-dns.com",
+      "ns1108.ui-dns.org",
+      "ns1096.ui-dns.de"
     ],
     "warnings": []
   },
@@ -158,14 +158,10 @@
         },
         {
           "domain": "spf.emailsignatures365.com",
-          "record": "v=spf1 ip4:20.92.116.22 ip4:20.98.33.77 ip4:20.98.2.159 ip4:20.92.233.59 ip4:52.138.216.130 ip4:13.93.42.39 ip4:40.113.3.253 ip4:52.229.64.105 ip4:40.86.165.91 ip4:20.79.220.33 ip4:20.58.22.103 ip4:13.74.137.176 ip4:40.86.225.121 -all",
+          "record": "v=spf1 ip4:20.98.33.77 ip4:20.98.2.159 ip4:20.92.233.59 ip4:52.138.216.130 ip4:13.93.42.39 ip4:40.113.3.253 ip4:40.86.165.91 ip4:20.79.220.33 ip4:20.58.22.103 ip4:13.74.137.176 ip4:40.86.225.121 ip4:20.49.202.3 ip4:20.213.110.190 -all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
-              {
-                "value": "20.92.116.22",
-                "mechanism": "ip4"
-              },
               {
                 "value": "20.98.33.77",
                 "mechanism": "ip4"
@@ -191,10 +187,6 @@
                 "mechanism": "ip4"
               },
               {
-                "value": "52.229.64.105",
-                "mechanism": "ip4"
-              },
-              {
                 "value": "40.86.165.91",
                 "mechanism": "ip4"
               },
@@ -212,6 +204,14 @@
               },
               {
                 "value": "40.86.225.121",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "20.49.202.3",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "20.213.110.190",
                 "mechanism": "ip4"
               }
             ],

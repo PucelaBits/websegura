@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns13.servidoresdns.net",
-      "dns14.servidoresdns.net"
+      "dns14.servidoresdns.net",
+      "dns13.servidoresdns.net"
     ],
     "warnings": []
   },
@@ -16,7 +16,7 @@
         "hostname": "mx.spamexperts.com",
         "addresses": [
           "2001:550:2:78::ca:100",
-          "38.89.254.156"
+          "38.109.53.20"
         ]
       },
       {
@@ -272,6 +272,14 @@
           "mechanism": "a"
         },
         {
+          "value": "2001:550:2:61::3bf:1e",
+          "mechanism": "a"
+        },
+        {
+          "value": "2001:550:2:61::3bf:1f",
+          "mechanism": "a"
+        },
+        {
           "value": "2001:550:2:61::3bf:20",
           "mechanism": "a"
         },
@@ -353,6 +361,10 @@
         },
         {
           "value": "2001:978:2:7::162:10",
+          "mechanism": "a"
+        },
+        {
+          "value": "2001:978:2:7::e7:6",
           "mechanism": "a"
         },
         {
@@ -585,6 +597,14 @@
         },
         {
           "value": "38.71.17.16",
+          "mechanism": "a"
+        },
+        {
+          "value": "38.71.17.18",
+          "mechanism": "a"
+        },
+        {
+          "value": "38.71.17.19",
           "mechanism": "a"
         },
         {

@@ -25,8 +25,8 @@
     "record": "v=spf1 a mx include:websitewelcome.com ~all",
     "valid": false,
     "warnings": [],
-    "error": "Parsing the SPF record requires 12/10 maximum DNS lookups - https://tools.ietf.org/html/rfc7208#section-4.6.4",
-    "dns_lookups": 12
+    "error": "Parsing the SPF record requires 13/10 maximum DNS lookups - https://tools.ietf.org/html/rfc7208#section-4.6.4",
+    "dns_lookups": 13
   },
   "dmarc": {
     "record": null,

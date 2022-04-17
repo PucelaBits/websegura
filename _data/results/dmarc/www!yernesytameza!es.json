@@ -31,7 +31,7 @@
         "preference": 30,
         "hostname": "mx3.telecable.es",
         "addresses": [
-          "2001:978:2:7::162:100",
+          "2001:550:2:78::ca:100",
           "38.109.53.20"
         ]
       },
@@ -39,14 +39,12 @@
         "preference": 40,
         "hostname": "mx4.telecable.es",
         "addresses": [
-          "2001:978:2:2f::5:100",
+          "2001:550:2:9::280:100",
           "38.111.198.185"
         ]
       }
     ],
-    "warnings": [
-      "2001:978:2:2f::5:100 does not have any reverse DNS (PTR) records"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.antispamcloud.com ~all",

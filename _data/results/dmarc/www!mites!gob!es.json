@@ -24,9 +24,18 @@
         "addresses": [
           "192.148.211.64"
         ]
+      },
+      {
+        "preference": 100,
+        "hostname": "srvsmtp05.mites.gob.es",
+        "addresses": [
+          "192.148.211.65"
+        ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "192.148.211.65 does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
     "record": "v=spf1 mx a:srvsmtp01.mites.gob.es a:srvsmtp02.mites.gob.es a:srvsmtp03.mites.gob.es a:srvsmtp04.mites.gob.es include:spf.protection.outlook.com -all",
@@ -41,6 +50,10 @@
         },
         {
           "value": "srvsmtp04.mites.gob.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "srvsmtp05.mites.gob.es",
           "mechanism": "mx"
         },
         {

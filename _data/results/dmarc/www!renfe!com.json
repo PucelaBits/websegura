@@ -1,11 +1,11 @@
 {
   "domain": "renfe.com",
   "base_domain": "renfe.com",
-  "dnssec": false,
+  "dnssec": true,
   "ns": {
     "hostnames": [
-      "dns2.renfe.es",
-      "dns1.renfe.es"
+      "dns1.renfe.es",
+      "dns2.renfe.es"
     ],
     "warnings": []
   },
@@ -32,9 +32,53 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=reject; sp=reject; adkim=s; aspf=s; fo=1",
+    "valid": true,
+    "location": "renfe.com",
+    "warnings": [
+      "rua tag (destination for aggregate reports) not found"
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "reject",
+        "explicit": true
+      },
+      "sp": {
+        "value": "reject",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "s",
+        "explicit": true
+      },
+      "aspf": {
+        "value": "s",
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "1"
+        ],
+        "explicit": true
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      }
+    }
   }
 }
