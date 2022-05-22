@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.adif.es",
-      "ns2.adif.es"
+      "ns2.adif.es",
+      "ns1.adif.es"
     ],
     "warnings": []
   },
@@ -44,9 +44,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx a:smtp.adif.es a:ebro.adif.es a:duero.adif.es include:spf.protection.outlook.com -all",
+    "record": "v=spf1 mx a:smtp.adif.es a:ebro.adif.es a:duero.adif.es include:spf.protection.outlook.com exists:%{i}.spf.hc1197-70.eu.iphmx.com ~all",
     "valid": true,
-    "dns_lookups": 6,
+    "dns_lookups": 7,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -77,6 +77,10 @@
         {
           "value": "213.144.33.149",
           "mechanism": "a"
+        },
+        {
+          "value": "%{i}.spf.hc1197-70.eu.iphmx.com",
+          "mechanism": "exists"
         }
       ],
       "neutral": [],
@@ -181,7 +185,7 @@
       ],
       "redirect": null,
       "exp": null,
-      "all": "fail"
+      "all": "softfail"
     }
   },
   "dmarc": {

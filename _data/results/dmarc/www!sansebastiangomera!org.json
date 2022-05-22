@@ -36,41 +36,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 +a +mx +ip4:51.91.48.71 ~all",
-    "valid": true,
-    "dns_lookups": 2,
-    "warnings": [],
-    "parsed": {
-      "pass": [
-        {
-          "value": "51.91.48.71",
-          "mechanism": "a"
-        },
-        {
-          "value": "mx1.mail.ovh.net",
-          "mechanism": "mx"
-        },
-        {
-          "value": "mx2.mail.ovh.net",
-          "mechanism": "mx"
-        },
-        {
-          "value": "mx3.mail.ovh.net",
-          "mechanism": "mx"
-        },
-        {
-          "value": "51.91.48.71",
-          "mechanism": "ip4"
-        }
-      ],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [],
-      "redirect": null,
-      "exp": null,
-      "all": "softfail"
-    }
+    "record": null,
+    "valid": false,
+    "error": "sansebastiangomera.org has multiple SPF TXT records"
   },
   "dmarc": {
     "record": null,

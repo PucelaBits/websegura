@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns01.ono.com",
-      "dns02.ono.com"
+      "dns02.ono.com",
+      "dns01.ono.com"
     ],
     "warnings": []
   },
@@ -15,52 +15,57 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "2607:f8b0:400e:c08::1b",
-          "74.125.197.26"
+          "142.250.114.26",
+          "2607:f8b0:4023:1006::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "142.250.115.27",
-          "2607:f8b0:4023:1004::1a"
+          "142.250.152.26",
+          "2607:f8b0:4001:c56::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "2607:f8b0:4003:c15::1a",
-          "64.233.171.27"
+          "172.253.113.27",
+          "2607:f8b0:4023:1::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "aspmx2.googlemail.com",
         "addresses": [
-          "142.250.115.27",
-          "2607:f8b0:4023:1004::1b"
+          "142.250.152.26",
+          "2607:f8b0:4001:c56::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "aspmx3.googlemail.com",
         "addresses": [
-          "2607:f8b0:4003:c15::1b",
-          "64.233.171.26"
+          "172.253.113.27",
+          "2607:f8b0:4023:1::1b"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:_spf.google.com ~all",
+    "record": "v=spf1 ip4:213.232.232.105 include:_spf.google.com ~all",
     "valid": true,
     "dns_lookups": 4,
     "warnings": [],
     "parsed": {
-      "pass": [],
+      "pass": [
+        {
+          "value": "213.232.232.105",
+          "mechanism": "ip4"
+        }
+      ],
       "neutral": [],
       "softfail": [],
       "fail": [],

@@ -141,7 +141,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; pct=100; rua=mailto:amicro@cantabria.es",
+    "record": "v=DMARC1; p=reject; pct=100; rua=mailto:amicro@cantabria.es,mailto:usermgr@cantabria.es",
     "valid": true,
     "location": "cantabria.es",
     "warnings": [],
@@ -151,7 +151,7 @@
         "explicit": true
       },
       "p": {
-        "value": "quarantine",
+        "value": "reject",
         "explicit": true
       },
       "pct": {
@@ -163,6 +163,11 @@
           {
             "scheme": "mailto",
             "address": "amicro@cantabria.es",
+            "size_limit": null
+          },
+          {
+            "scheme": "mailto",
+            "address": "usermgr@cantabria.es",
             "size_limit": null
           }
         ],
@@ -193,7 +198,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "quarantine",
+        "value": "reject",
         "explicit": false
       }
     }

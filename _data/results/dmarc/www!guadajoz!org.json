@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns892.webempresa.eu",
-      "ns891.webempresa.eu"
+      "ns891.webempresa.eu",
+      "ns892.webempresa.eu"
     ],
     "warnings": []
   },
@@ -22,14 +22,14 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:51.91.72.80 ip4:94.23.87.86 include:_spf.webempresa.eu +a +mx ~all",
+    "record": "v=spf1 ip4:51.91.61.104 ip4:94.23.87.86 include:_spf.webempresa.eu +a +mx ~all",
     "valid": true,
     "dns_lookups": 3,
     "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "51.91.72.80",
+          "value": "51.91.61.104",
           "mechanism": "ip4"
         },
         {

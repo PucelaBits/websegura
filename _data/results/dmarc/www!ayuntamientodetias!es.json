@@ -14,46 +14,35 @@
         "preference": 10,
         "hostname": "ayuntamientodetias-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.12.36",
-          "104.47.13.36"
+          "104.47.13.36",
+          "104.47.14.36"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "smtp.ayuntamientodetias.es",
+        "addresses": [
+          "213.4.199.90"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "213.4.199.90 does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
-    "record": "v=spf1 ip4:82.223.190.100 ip4:82.223.190.15 ip4:82.223.190.139 ip4:217.76.128.100 ip4:82.223.190.46 ip4:82.223.191.131 ip4:88.2.249.205 include:spf.protection.outlook.com ~all",
+    "record": "v=spf1 ip4:5.39.73.22 ip4:213.4.199.90 include:spf.protection.outlook.com ~all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "82.223.190.100",
+          "value": "5.39.73.22",
           "mechanism": "ip4"
         },
         {
-          "value": "82.223.190.15",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "82.223.190.139",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "217.76.128.100",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "82.223.190.46",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "82.223.191.131",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "88.2.249.205",
+          "value": "213.4.199.90",
           "mechanism": "ip4"
         }
       ],

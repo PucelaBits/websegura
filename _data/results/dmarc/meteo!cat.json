@@ -15,20 +15,27 @@
     "hosts": [
       {
         "preference": 10,
+        "hostname": "inbound-smtp.eu-west-1.amazonaws.com",
+        "addresses": [
+          "52.95.121.182"
+        ]
+      },
+      {
+        "preference": 20,
         "hostname": "smtp1.gencat.cat",
         "addresses": [
           "83.247.135.20"
         ]
       },
       {
-        "preference": 20,
+        "preference": 30,
         "hostname": "smtp2.gencat.cat",
         "addresses": [
           "83.247.135.21"
         ]
       },
       {
-        "preference": 30,
+        "preference": 40,
         "hostname": "smtp3.gencat.cat",
         "addresses": [
           "83.247.135.22"

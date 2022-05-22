@@ -25,7 +25,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:spf.protection.outlook.com ip4:88.84.78.15 ip4:88.84.78.2 ip4:88.84.78.3 ip4:88.84.78.13 -all",
+    "record": "v=spf1 include:spf.protection.outlook.com ip4:88.84.78.15 ip4:88.84.78.2 ip4:88.84.78.3 ip4:88.84.78.13 ip4:88.84.71.140 -all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
@@ -45,6 +45,10 @@
         },
         {
           "value": "88.84.78.13",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "88.84.71.140",
           "mechanism": "ip4"
         }
       ],
@@ -157,6 +161,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.cdti.es\n\nglobalsign-domain-verification=uV82P1qPVO4hngoQfpfCHaGcWlJe0DSDWMuGIpFmTX"
+    "error": "A DMARC record does not exist for this domain or its base domain"
   }
 }

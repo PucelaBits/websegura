@@ -10,35 +10,11 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "srvsmtp03.mites.gob.es",
-        "addresses": [
-          "192.148.211.63"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "srvsmtp04.mites.gob.es",
-        "addresses": [
-          "192.148.211.64"
-        ]
-      },
-      {
-        "preference": 100,
-        "hostname": "srvsmtp05.mites.gob.es",
-        "addresses": [
-          "192.148.211.65"
-        ]
-      }
-    ],
-    "warnings": [
-      "192.148.211.65 does not have any reverse DNS (PTR) records"
-    ]
+    "hosts": [],
+    "error": "The DNS response does not contain an answer to the question: 65.211.148.192.in-addr.arpa. IN PTR"
   },
   "spf": {
-    "record": "v=spf1 mx a:srvsmtp01.mites.gob.es a:srvsmtp02.mites.gob.es a:srvsmtp03.mites.gob.es a:srvsmtp04.mites.gob.es include:spf.protection.outlook.com -all",
+    "record": "v=spf1 mx a:srvsmtp01.mites.gob.es a:srvsmtp02.mites.gob.es a:srvsmtp03.mites.gob.es a:srvsmtp04.mites.gob.es include:spf.protection.outlook.com ip4:192.148.211.63 ip4:192.148.211.64 ip4:192.148.211.65 -all",
     "valid": true,
     "dns_lookups": 7,
     "warnings": [],
@@ -71,6 +47,18 @@
         {
           "value": "192.148.211.64",
           "mechanism": "a"
+        },
+        {
+          "value": "192.148.211.63",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "192.148.211.64",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "192.148.211.65",
+          "mechanism": "ip4"
         }
       ],
       "neutral": [],
@@ -179,7 +167,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; fo=1;rua=mailto:dmarc_rua@emaildefense.proofpoint.com;ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com",
+    "record": "v=DMARC1; p=none; fo=1;rua=mailto:dmarc.rua@mites.gob.es;ruf=mailto:dmarc.ruf@mites.gob.es; adkim=r; aspf=r",
     "valid": true,
     "location": "mites.gob.es",
     "warnings": [],
@@ -202,7 +190,7 @@
         "value": [
           {
             "scheme": "mailto",
-            "address": "dmarc_rua@emaildefense.proofpoint.com",
+            "address": "dmarc.rua@mites.gob.es",
             "size_limit": null
           }
         ],
@@ -212,7 +200,7 @@
         "value": [
           {
             "scheme": "mailto",
-            "address": "dmarc_ruf@emaildefense.proofpoint.com",
+            "address": "dmarc.ruf@mites.gob.es",
             "size_limit": null
           }
         ],
@@ -220,11 +208,11 @@
       },
       "adkim": {
         "value": "r",
-        "explicit": false
+        "explicit": true
       },
       "aspf": {
         "value": "r",
-        "explicit": false
+        "explicit": true
       },
       "pct": {
         "value": 100,

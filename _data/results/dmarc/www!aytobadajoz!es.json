@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns26.servidoresdns.net",
-      "dns25.servidoresdns.net"
+      "dns25.servidoresdns.net",
+      "dns26.servidoresdns.net"
     ],
     "warnings": []
   },
@@ -14,7 +14,9 @@
       {
         "preference": 10,
         "hostname": "smtp2.aytobadajoz.es",
-        "addresses": []
+        "addresses": [
+          "195.55.246.162"
+        ]
       },
       {
         "preference": 20,
@@ -25,7 +27,7 @@
       }
     ],
     "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
+      "195.55.246.162 does not have any reverse DNS (PTR) records"
     ]
   },
   "spf": {

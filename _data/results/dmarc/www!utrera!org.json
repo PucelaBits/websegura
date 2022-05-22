@@ -26,7 +26,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
+      "The reverse DNS of 195.53.27.99 is smail.utrera.org, but the A/AAAA DNS records for smail.utrera.org do not resolve to 195.53.27.99"
+    ]
   },
   "spf": {
     "record": "v=spf1 mx ip4:195.53.27.99 a:smail.utrera.org include:_spf.google.com ~all",

@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns10.ovh.net",
-      "dns10.ovh.net"
+      "dns10.ovh.net",
+      "ns10.ovh.net"
     ],
     "warnings": []
   },
@@ -15,67 +15,52 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "2607:f8b0:400e:c08::1b",
-          "74.125.195.26"
+          "142.250.114.26",
+          "2607:f8b0:4023:1006::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "142.250.115.27",
-          "2607:f8b0:4023:1004::1b"
+          "142.250.152.26",
+          "2607:f8b0:4001:c56::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "2607:f8b0:4003:c15::1a",
-          "64.233.171.26"
+          "172.253.113.26",
+          "2607:f8b0:4023:1::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "142.250.152.27",
-          "2607:f8b0:4001:c56::1a"
+          "173.194.77.26",
+          "2607:f8b0:4023:401::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "172.253.113.26",
-          "2607:f8b0:4023:1::1a"
+          "173.194.219.26",
+          "2607:f8b0:4002:c03::1b"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:213.201.84.215/32 ip4:213.201.84.218/32 a mx include:_spf.google.com ~all",
+    "record": "v=spf1 include:_spf.google.com ~all",
     "valid": true,
-    "dns_lookups": 6,
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
-    ],
+    "dns_lookups": 4,
+    "warnings": [],
     "parsed": {
-      "pass": [
-        {
-          "value": "213.201.84.215/32",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "213.201.84.218/32",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "54.37.83.187",
-          "mechanism": "a"
-        }
-      ],
+      "pass": [],
       "neutral": [],
       "softfail": [],
       "fail": [],

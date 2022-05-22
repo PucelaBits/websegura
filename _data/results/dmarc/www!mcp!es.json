@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.serv513734.servidoresdns.net",
-      "dns1.serv513734.servidoresdns.net"
+      "dns1.serv513734.servidoresdns.net",
+      "dns2.serv513734.servidoresdns.net"
     ],
     "warnings": []
   },
@@ -34,7 +34,7 @@
       }
     ],
     "warnings": [
-      "The domain 241.red-194-179-77.customer.static.ccgg.telefonica.net does not exist",
+      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
       "The reverse DNS of 194.179.77.241 is 241.red-194-179-77.customer.static.ccgg.telefonica.net, but the A/AAAA DNS records for 241.red-194-179-77.customer.static.ccgg.telefonica.net do not resolve to 194.179.77.241"
     ]
   },

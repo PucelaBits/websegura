@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns01.santacruzdetenerife.es",
-      "dns02.santacruzdetenerife.es"
+      "dns02.santacruzdetenerife.es",
+      "dns01.santacruzdetenerife.es"
     ],
     "warnings": []
   },
@@ -31,9 +31,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx:santacruzdetenerife.es ip4:195.76.166.0/24 -all",
+    "record": "v=spf1 mx:santacruzdetenerife.es ip4:195.76.166.0/24 include:_spf.prod.hydra.sophos.com -all",
     "valid": true,
-    "dns_lookups": 1,
+    "dns_lookups": 6,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -53,7 +53,189 @@
       "neutral": [],
       "softfail": [],
       "fail": [],
-      "include": [],
+      "include": [
+        {
+          "domain": "_spf.prod.hydra.sophos.com",
+          "record": "v=spf1 include:_spf_uswest2.prod.hydra.sophos.com include:_spf_euwest1.prod.hydra.sophos.com include:_spf_eucentral1.prod.hydra.sophos.com include:_spf_useast2.prod.hydra.sophos.com ~all",
+          "dns_lookups": 4,
+          "parsed": {
+            "pass": [],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [
+              {
+                "domain": "_spf_uswest2.prod.hydra.sophos.com",
+                "record": "v=spf1 ip4:198.154.181.0/24 ip4:64.69.223.0/24 ip4:192.175.3.0/24 ip4:198.160.151.0/24 ip4:34.212.96.64/26 ip4:34.213.30.0/26 ip4:34.213.30.64/26 ip4:34.213.30.128/26 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "198.154.181.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "64.69.223.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "192.175.3.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "198.160.151.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "34.212.96.64/26",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "34.213.30.0/26",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "34.213.30.64/26",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "34.213.30.128/26",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              },
+              {
+                "domain": "_spf_euwest1.prod.hydra.sophos.com",
+                "record": "v=spf1 ip4:198.154.180.0/24 ip4:34.253.219.128/26 ip4:34.253.219.192/26 ip4:34.253.238.0/26 ip4:34.253.238.64/26 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "198.154.180.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "34.253.219.128/26",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "34.253.219.192/26",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "34.253.238.0/26",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "34.253.238.64/26",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              },
+              {
+                "domain": "_spf_eucentral1.prod.hydra.sophos.com",
+                "record": "v=spf1 ip4:94.140.18.0/24 ip4:35.159.27.0/26 ip4:35.159.27.64/26 ip4:35.159.27.128/26 ip4:35.159.27.192/26 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "94.140.18.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "35.159.27.0/26",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "35.159.27.64/26",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "35.159.27.128/26",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "35.159.27.192/26",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              },
+              {
+                "domain": "_spf_useast2.prod.hydra.sophos.com",
+                "record": "v=spf1 ip4:85.113.84.0/24 ip4:103.246.251.0/24 ip4:18.216.13.64/26 ip4:18.216.13.128/26 ip4:18.216.13.192/26 ip4:18.216.23.0/26 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "85.113.84.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "103.246.251.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "18.216.13.64/26",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "18.216.13.128/26",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "18.216.13.192/26",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "18.216.23.0/26",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              }
+            ],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        }
+      ],
       "redirect": null,
       "exp": null,
       "all": "fail"

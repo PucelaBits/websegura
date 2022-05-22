@@ -4,11 +4,11 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns2.stinet.net",
+      "ns3.stinet.net",
       "ns2.cescyl.es",
       "ns1.cescyl.es",
-      "ns1.stinet.net",
-      "ns2.stinet.net",
-      "ns3.stinet.net"
+      "ns1.stinet.net"
     ],
     "warnings": []
   },
@@ -27,77 +27,9 @@
     ]
   },
   "spf": {
-    "record": "v=spf1 a mx ip4:217.127.94.52 ip4:84.124.4.210 ip4:84.124.4.211 ip4:84.124.24.70 ip4:84.124.24.71 ip4:84.124.4.216 ip4:84.124.24.89/29 ip4:212.95.221.225 ip4:213.201.115.156 ip4:213.201.115.187 ip4:213.201.115.188 ip4:213.4.82.254 -all",
-    "valid": true,
-    "dns_lookups": 2,
-    "warnings": [],
-    "parsed": {
-      "pass": [
-        {
-          "value": "213.201.115.198",
-          "mechanism": "a"
-        },
-        {
-          "value": "i-mail.cescyl.es",
-          "mechanism": "mx"
-        },
-        {
-          "value": "217.127.94.52",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "84.124.4.210",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "84.124.4.211",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "84.124.24.70",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "84.124.24.71",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "84.124.4.216",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "84.124.24.89/29",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "212.95.221.225",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "213.201.115.156",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "213.201.115.187",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "213.201.115.188",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "213.4.82.254",
-          "mechanism": "ip4"
-        }
-      ],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [],
-      "redirect": null,
-      "exp": null,
-      "all": "fail"
-    }
+    "record": null,
+    "valid": false,
+    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "dmarc": {
     "record": null,

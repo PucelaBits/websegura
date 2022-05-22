@@ -38,9 +38,37 @@
     ]
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "parlamentodeandalucia.es does not have a SPF TXT record"
+    "record": "v=spf1 mx ip4:193.147.254.0/24 ?all",
+    "valid": true,
+    "dns_lookups": 1,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "dns1.parlamentodeandalucia.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "dns2.parlamentodeandalucia.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mx3.parlamentodeandalucia.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "193.147.254.0/24",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "neutral"
+    }
   },
   "dmarc": {
     "record": null,

@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.parlamentodenavarra.es",
-      "ns1.parlamentodenavarra.es"
+      "ns1.parlamentodenavarra.es",
+      "ns2.parlamentodenavarra.es"
     ],
     "warnings": []
   },
@@ -43,9 +43,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx a:correo.parlamentodenavarra.es include:spf.hornetsecurity.com include:spf.protection.outlook.com ip4:195.76.224.1 -all",
+    "record": "v=spf1 mx include:spf.hornetsecurity.com include:spf.protection.outlook.com ip4:195.76.224.1 -all",
     "valid": true,
-    "dns_lookups": 5,
+    "dns_lookups": 4,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -64,10 +64,6 @@
         {
           "value": "mx03.hornetsecurity.com",
           "mechanism": "mx"
-        },
-        {
-          "value": "195.76.224.1",
-          "mechanism": "a"
         },
         {
           "value": "195.76.224.1",

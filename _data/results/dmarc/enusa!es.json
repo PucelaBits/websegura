@@ -13,10 +13,13 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "enusa-es.mail.protection.outlook.com",
+        "hostname": "poster1i.iberlayer.com",
         "addresses": [
-          "104.47.12.36",
-          "104.47.14.36"
+          "130.117.89.12",
+          "130.117.89.26",
+          "130.117.89.4",
+          "130.117.89.5",
+          "130.117.89.6"
         ]
       },
       {
@@ -47,9 +50,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:195.235.227.27 include:spf.protection.outlook.com -all",
+    "record": "v=spf1 ip4:195.235.227.27 include:spf.protection.outlook.com include:iberlayer.com -all",
     "valid": true,
-    "dns_lookups": 2,
+    "dns_lookups": 3,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -151,6 +154,63 @@
                 "warnings": []
               }
             ],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "iberlayer.com",
+          "record": "v=spf1 ip4:130.117.89.0/27 ip4:80.169.225.32/27 ip4:185.136.218.5/32 ip4:185.136.218.6/32 ip4:185.136.218.7/32 ip4:185.136.218.8/32 ip4:185.136.219.26/32 ip4:185.136.219.27/32 ip4:185.136.219.28/32 ip4:185.136.219.29/32 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "130.117.89.0/27",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "80.169.225.32/27",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.136.218.5/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.136.218.6/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.136.218.7/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.136.218.8/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.136.219.26/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.136.219.27/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.136.219.28/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.136.219.29/32",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
             "redirect": null,
             "exp": null,
             "all": "fail"

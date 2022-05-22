@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns3.interdomain.es",
       "ns2.interdomain.net",
-      "ns1.interdomain.net",
-      "ns3.interdomain.es"
+      "ns1.interdomain.net"
     ],
     "warnings": []
   },
@@ -30,7 +30,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx a ip4:195.55.125.164 ip4:195.55.125.162 ip4:195.55.127.94 ?all",
+    "record": "v=spf1 mx a ip4:195.55.125.164 ip4:195.55.125.162 ip4:195.55.127.94 ~all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
@@ -67,7 +67,7 @@
       "include": [],
       "redirect": null,
       "exp": null,
-      "all": "neutral"
+      "all": "softfail"
     }
   },
   "dmarc": {

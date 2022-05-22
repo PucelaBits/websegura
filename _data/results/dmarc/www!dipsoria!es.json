@@ -4,11 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns10.everex.es",
-      "ns14.everex.es",
-      "ns13.everex.es",
-      "ns12.everex.es",
-      "ns11.everex.es"
+      "ns3.dnsxperta.com",
+      "ns1.dnsxperta.com",
+      "ns2.dnsxperta.com"
     ],
     "warnings": []
   },
@@ -18,7 +16,7 @@
         "preference": 0,
         "hostname": "dipsoria-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.18.202",
+          "104.47.18.138",
           "104.47.22.138"
         ]
       }
@@ -205,6 +203,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.dipsoria.es\n\nv=spf1 include:spf.protection.outlook.com include:domicenter.net ip4:89.6.107.100/27 ~all\n\nMS=ms54615009\n\n19503350"
   }
 }

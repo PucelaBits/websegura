@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "chico.rediris.es",
-      "dns2.mpr.es",
       "sun.rediris.es",
-      "dns1.mpr.es"
+      "dns1.mpr.es",
+      "dns2.mpr.es",
+      "chico.rediris.es"
     ],
     "warnings": []
   },
@@ -31,29 +31,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:212.128.108.45  ip4:212.128.108.46  -all",
-    "valid": true,
-    "dns_lookups": 0,
-    "warnings": [],
-    "parsed": {
-      "pass": [
-        {
-          "value": "212.128.108.45",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "212.128.108.46",
-          "mechanism": "ip4"
-        }
-      ],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [],
-      "redirect": null,
-      "exp": null,
-      "all": "fail"
-    }
+    "record": null,
+    "valid": false,
+    "error": "All nameservers failed to answer the query lamoncloa.gob.es. IN TXT: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
   },
   "dmarc": {
     "record": null,

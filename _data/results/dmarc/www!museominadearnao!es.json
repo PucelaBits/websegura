@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns7.acens.net",
+      "ns4.acens.net",
       "ns3.acens.net",
-      "ns4.acens.net"
+      "ns7.acens.net"
     ],
     "warnings": []
   },
@@ -30,14 +30,50 @@
     "warnings": []
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "museominadearnao.es does not have a SPF TXT record"
+    "record": "v=spf1 mx a ip4:195.55.125.164 ip4:195.55.125.162 ip4:195.55.127.94 ~all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "mail.museominadearnao.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mail2.museominadearnao.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "195.55.193.5",
+          "mechanism": "a"
+        },
+        {
+          "value": "195.55.125.164",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "195.55.125.162",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "195.55.127.94",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
   },
   "dmarc": {
     "record": null,
     "valid": false,
     "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.museominadearnao.es\n\nv=spf1 mx a ip4:195.55.125.164 ip4:195.55.125.162 ip4:195.55.127.94 ~all"
   }
 }
