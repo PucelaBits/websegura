@@ -1,24 +1,25 @@
 {
   "algorithm_version": 2,
-  "end_time": "Sat, 28 May 2022 01:11:19 GMT",
+  "end_time": "Tue, 31 May 2022 00:11:50 GMT",
   "grade": "F",
   "hidden": false,
   "likelihood_indicator": "MEDIUM",
   "response_headers": {
-    "Cache-Control": "no-cache, must-revalidate, max-age=0",
     "Connection": "keep-alive",
     "Content-Type": "text/html; charset=UTF-8",
-    "Date": "Sat, 28 May 2022 01:11:17 GMT",
-    "Expires": "Wed, 11 Jan 1984 05:00:00 GMT",
+    "Date": "Tue, 31 May 2022 00:11:30 GMT",
+    "Link": "<https://www.aytobetancuria.org/wp-json/>; rel=\"https://api.w.org/\", <https://www.aytobetancuria.org/>; rel=shortlink",
     "Server": "nginx",
-    "Transfer-Encoding": "chunked"
+    "Set-Cookie": "qtrans_cookie_test=qTranslate+Cookie+Test; path=/; domain=www.aytobetancuria.org",
+    "Transfer-Encoding": "chunked",
+    "X-Powered-By": "PleskLin"
   },
-  "scan_id": 26728654,
-  "score": 20,
-  "start_time": "Sat, 28 May 2022 01:10:09 GMT",
+  "scan_id": 26791939,
+  "score": 0,
+  "start_time": "Tue, 31 May 2022 00:11:25 GMT",
   "state": "FINISHED",
-  "status_code": 500,
-  "tests_failed": 5,
-  "tests_passed": 7,
+  "status_code": 200,
+  "tests_failed": 7,
+  "tests_passed": 5,
   "tests_quantity": 12
 }
