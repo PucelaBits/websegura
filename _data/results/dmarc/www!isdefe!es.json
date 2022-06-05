@@ -29,7 +29,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx a:mail1.isdefe.es a:mail6.isdefe.es a:mail33.isdefe.es a:vw-cmnmail-dmz.isdefe.es a:vw-cmnfree-dmz.isdefe.es ip4:194.15.213.10 ip4:194.15.213.103 ip4:194.15.213.106 include:spf.protection.outlook.com -all",
+    "record": "v=spf1 mx a:mail1.isdefe.es a:mail6.isdefe.es a:mail33.isdefe.es a:vw-cmnmail-dmz.isdefe.es a:vw-cmnfree-dmz.isdefe.es ip4:194.15.213.10 ip4:194.15.213.230 ip4:194.15.213.103 ip4:194.15.213.106 include:spf.protection.outlook.com -all",
     "valid": true,
     "dns_lookups": 8,
     "warnings": [],
@@ -65,6 +65,10 @@
         },
         {
           "value": "194.15.213.10",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "194.15.213.230",
           "mechanism": "ip4"
         },
         {

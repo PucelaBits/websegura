@@ -22,9 +22,33 @@
     "warnings": []
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "alegria-dulantzi.eus has multiple SPF TXT records"
+    "record": "v=spf1 mx a ip4:217.130.24.0/24 ~all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "vmail.altia.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "82.194.88.106",
+          "mechanism": "a"
+        },
+        {
+          "value": "217.130.24.0/24",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
   },
   "dmarc": {
     "record": null,

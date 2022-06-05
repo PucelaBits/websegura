@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns1112.ui-dns.biz",
       "ns1121.ui-dns.com",
       "ns1096.ui-dns.de",
-      "ns1108.ui-dns.org",
-      "ns1112.ui-dns.biz"
+      "ns1108.ui-dns.org"
     ],
     "warnings": []
   },
@@ -18,7 +18,7 @@
         "hostname": "puertogijon-es.mail.protection.outlook.com",
         "addresses": [
           "104.47.51.138",
-          "104.47.8.36"
+          "104.47.9.36"
         ]
       }
     ],
@@ -158,12 +158,28 @@
         },
         {
           "domain": "spf.emailsignatures365.com",
-          "record": "v=spf1 ip4:20.98.33.77 ip4:20.98.2.159 ip4:20.92.233.59 ip4:13.93.42.39 ip4:40.113.3.253 ip4:40.86.165.91 ip4:20.79.220.33 ip4:20.58.22.103 ip4:13.74.137.176 ip4:40.86.225.121 ip4:20.49.202.3 ip4:20.92.116.22 ip4:52.138.216.130 -all",
+          "record": "v=spf1 ip4:20.92.116.22 ip4:40.86.225.121 ip4:13.74.137.176 ip4:40.113.3.253 ip4:20.49.202.3 ip4:20.98.2.159 ip4:13.93.42.39 ip4:40.86.165.91 ip4:20.79.220.33 ip4:20.92.233.59 ip4:52.138.216.130 ip4:20.98.33.77 ip4:20.93.157.195 ip4:40.86.217.129 ip4:23.100.56.64 ip4:20.58.22.103 ip4:40.86.171.128 ip4:20.79.222.204 ip4:13.77.59.28 ip4:40.114.221.220 ip4:20.97.70.227 ip4:40.69.19.60 ip4:52.170.22.60 ip4:13.94.95.171 ip4:20.116.107.216 -all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
               {
-                "value": "20.98.33.77",
+                "value": "20.92.116.22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "40.86.225.121",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "13.74.137.176",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "40.113.3.253",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "20.49.202.3",
                 "mechanism": "ip4"
               },
               {
@@ -171,15 +187,7 @@
                 "mechanism": "ip4"
               },
               {
-                "value": "20.92.233.59",
-                "mechanism": "ip4"
-              },
-              {
                 "value": "13.93.42.39",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "40.113.3.253",
                 "mechanism": "ip4"
               },
               {
@@ -191,27 +199,67 @@
                 "mechanism": "ip4"
               },
               {
-                "value": "20.58.22.103",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "13.74.137.176",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "40.86.225.121",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "20.49.202.3",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "20.92.116.22",
+                "value": "20.92.233.59",
                 "mechanism": "ip4"
               },
               {
                 "value": "52.138.216.130",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "20.98.33.77",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "20.93.157.195",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "40.86.217.129",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "23.100.56.64",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "20.58.22.103",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "40.86.171.128",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "20.79.222.204",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "13.77.59.28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "40.114.221.220",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "20.97.70.227",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "40.69.19.60",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.170.22.60",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "13.94.95.171",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "20.116.107.216",
                 "mechanism": "ip4"
               }
             ],

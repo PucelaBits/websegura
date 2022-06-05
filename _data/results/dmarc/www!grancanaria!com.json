@@ -19,7 +19,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
+      "The reverse DNS of 212.64.178.10 is smtp.grancanaria.com, but the A/AAAA DNS records for smtp.grancanaria.com do not resolve to 212.64.178.10"
+    ]
   },
   "spf": {
     "record": "v=spf1 mx a:smtp.grancanaria.com ip4:212.64.178.10 ip4:213.60.255.116 ip4:213.60.255.178 -all",

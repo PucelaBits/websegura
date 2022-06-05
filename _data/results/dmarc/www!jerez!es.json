@@ -15,23 +15,21 @@
         "preference": 10,
         "hostname": "1694806815.pamx1.hotmail.com",
         "addresses": [
-          "104.47.17.161",
-          "104.47.18.97"
+          "104.47.55.161",
+          "104.47.66.33"
         ]
       }
     ],
     "warnings": [
-      "104.47.17.161 does not have any reverse DNS (PTR) records",
-      "104.47.18.97 does not have any reverse DNS (PTR) records"
+      "104.47.55.161 does not have any reverse DNS (PTR) records",
+      "104.47.66.33 does not have any reverse DNS (PTR) records"
     ]
   },
   "spf": {
     "record": "v=spf1 include:hotmail.com ~all",
     "valid": true,
     "dns_lookups": 8,
-    "warnings": [
-      "SPF type DNS records found. Use of DNS Type SPF has been removed in the standards track version of SPF, RFC 7208. These records should be removed and replaced with TXT records: v=spf1 include:hotmail.com ~all"
-    ],
+    "warnings": [],
     "parsed": {
       "pass": [],
       "neutral": [],

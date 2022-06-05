@@ -16,7 +16,7 @@
         "hostname": "madrid-es.mail.protection.outlook.com",
         "addresses": [
           "104.47.18.138",
-          "104.47.22.138"
+          "104.47.18.202"
         ]
       }
     ],
@@ -207,7 +207,7 @@
         },
         {
           "domain": "spf.augure.com",
-          "record": "v=spf1 ip4:141.94.7.30 ip4:141.94.7.31 ip4:141.94.7.32/27 ip4:91.204.117.80/29 include:engage.augure.com ~all",
+          "record": "v=spf1 ip4:141.94.7.30 ip4:141.94.7.31 ip4:141.94.7.32/27 ip4:91.204.117.80/29 ip4:91.204.117.36 include:engage.augure.com ~all",
           "dns_lookups": 1,
           "parsed": {
             "pass": [
@@ -225,6 +225,10 @@
               },
               {
                 "value": "91.204.117.80/29",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "91.204.117.36",
                 "mechanism": "ip4"
               }
             ],

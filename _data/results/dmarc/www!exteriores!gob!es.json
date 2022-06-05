@@ -10,51 +10,13 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "smtp4.maec.es",
-        "addresses": []
-      },
-      {
-        "preference": 20,
-        "hostname": "smtp3.maec.es",
-        "addresses": []
-      }
-    ],
-    "warnings": [
-      "smtp4.maec.es does not have any A or AAAA DNS records",
-      "smtp3.maec.es does not have any A or AAAA DNS records"
-    ]
+    "hosts": [],
+    "error": "All nameservers failed to answer the query exteriores.gob.es. IN MX: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
   },
   "spf": {
-    "record": "v=spf1 mx ip4:217.149.144.253 ~all",
-    "valid": true,
-    "dns_lookups": 1,
-    "warnings": [],
-    "parsed": {
-      "pass": [
-        {
-          "value": "smtp4.maec.es",
-          "mechanism": "mx"
-        },
-        {
-          "value": "smtp3.maec.es",
-          "mechanism": "mx"
-        },
-        {
-          "value": "217.149.144.253",
-          "mechanism": "ip4"
-        }
-      ],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [],
-      "redirect": null,
-      "exp": null,
-      "all": "softfail"
-    }
+    "record": null,
+    "valid": false,
+    "error": "All nameservers failed to answer the query exteriores.gob.es. IN TXT: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
   },
   "dmarc": {
     "record": null,

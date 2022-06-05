@@ -21,20 +21,36 @@
       },
       {
         "preference": 10,
+        "hostname": "mx1.hc1197-70.eu.iphmx.com",
+        "addresses": [
+          "23.90.119.224",
+          "23.90.122.66"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mx2.hc1197-70.eu.iphmx.com",
+        "addresses": [
+          "23.90.119.224",
+          "23.90.122.66"
+        ]
+      },
+      {
+        "preference": 40,
         "hostname": "smtp.adif.es",
         "addresses": [
           "213.144.33.142"
         ]
       },
       {
-        "preference": 20,
+        "preference": 50,
         "hostname": "ebro.adif.es",
         "addresses": [
           "213.144.33.148"
         ]
       },
       {
-        "preference": 30,
+        "preference": 60,
         "hostname": "duero.adif.es",
         "addresses": [
           "213.144.33.149"
@@ -52,6 +68,14 @@
       "pass": [
         {
           "value": "adifaltavelocidad-es.mail.protection.outlook.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mx1.hc1197-70.eu.iphmx.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mx2.hc1197-70.eu.iphmx.com",
           "mechanism": "mx"
         },
         {

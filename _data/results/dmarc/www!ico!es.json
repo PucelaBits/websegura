@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "icodns.ico.es",
-      "dns2.comtenidos.com"
+      "dns2.comtenidos.com",
+      "icodns.ico.es"
     ],
     "warnings": []
   },
@@ -29,7 +29,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx ip4:90.160.63.192/26 ?include:_pmta2.antevenio.com include:spf.protection.outlook.com ~all",
+    "record": "v=spf1 mx ip4:90.160.63.192/26 include:_pmta2.antevenio.com include:spf.protection.outlook.com ~all",
     "valid": true,
     "dns_lookups": 4,
     "warnings": [],

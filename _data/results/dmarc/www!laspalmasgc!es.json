@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns10.servicio-online.net",
       "ns11.servicio-online.net",
-      "ns12.servicio-online.net",
-      "ns10.servicio-online.net"
+      "ns12.servicio-online.net"
     ],
     "warnings": []
   },
@@ -83,22 +83,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
-      "The reverse DNS of 213.99.38.71 is kant.correolimpio.telefonica.es, but the A/AAAA DNS records for kant.correolimpio.telefonica.es do not resolve to 213.99.38.71",
-      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
-      "The reverse DNS of 213.99.38.76 is faraday.correolimpio.telefonica.es, but the A/AAAA DNS records for faraday.correolimpio.telefonica.es do not resolve to 213.99.38.76",
-      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
-      "The reverse DNS of 213.99.38.78 is asimov.correolimpio.telefonica.es, but the A/AAAA DNS records for asimov.correolimpio.telefonica.es do not resolve to 213.99.38.78",
-      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
-      "The reverse DNS of 213.99.38.78 is mx02.correolimpio.telefonica.es, but the A/AAAA DNS records for mx02.correolimpio.telefonica.es do not resolve to 213.99.38.78",
-      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
-      "The reverse DNS of 81.47.205.113 is peru.correolimpio.telefonica.es, but the A/AAAA DNS records for peru.correolimpio.telefonica.es do not resolve to 81.47.205.113",
-      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
-      "The reverse DNS of 81.47.205.108 is japon.correolimpio.telefonica.es, but the A/AAAA DNS records for japon.correolimpio.telefonica.es do not resolve to 81.47.205.108",
-      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
-      "The reverse DNS of 81.47.205.119 is descartes.correolimpio.telefonica.es, but the A/AAAA DNS records for descartes.correolimpio.telefonica.es do not resolve to 81.47.205.119"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com -all",

@@ -14,40 +14,83 @@
   "mx": {
     "hosts": [
       {
-        "preference": 10,
+        "preference": 2,
         "hostname": "inbound-smtp.eu-west-1.amazonaws.com",
         "addresses": [
-          "52.95.121.182"
+          "176.32.109.132"
         ]
       },
       {
-        "preference": 20,
-        "hostname": "smtp1.gencat.cat",
+        "preference": 5,
+        "hostname": "mx1.hc489-80.eu.iphmx.com",
         "addresses": [
-          "83.247.135.20"
+          "207.54.76.180",
+          "207.54.77.56"
         ]
       },
       {
-        "preference": 30,
-        "hostname": "smtp2.gencat.cat",
+        "preference": 5,
+        "hostname": "mx2.hc489-80.eu.iphmx.com",
         "addresses": [
-          "83.247.135.21"
-        ]
-      },
-      {
-        "preference": 40,
-        "hostname": "smtp3.gencat.cat",
-        "addresses": [
-          "83.247.135.22"
+          "207.54.76.180",
+          "207.54.77.56"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The reverse DNS of 176.32.109.132 is inbound-smtp.eu-west-1.amazonaws.com, but the A/AAAA DNS records for inbound-smtp.eu-west-1.amazonaws.com do not resolve to 176.32.109.132"
+    ]
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "meteo.cat does not have a SPF TXT record"
+    "record": "v=spf1 ip4:207.54.76.180 ip4:207.54.76.248 ip4:207.54.77.56 ip4:207.54.69.189 mx exists:%{i}.spf.hc489-80.eu.iphmx.com -all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [
+      "SPF type DNS records found. Use of DNS Type SPF has been removed in the standards track version of SPF, RFC 7208. These records should be removed and replaced with TXT records: v=spf1 ip4:207.54.76.180 ip4:207.54.76.248 ip4:207.54.77.56 ip4:207.54.69.189 mx exists:%{i}.spf.hc489-80.eu.iphmx.com -all"
+    ],
+    "parsed": {
+      "pass": [
+        {
+          "value": "207.54.76.180",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "207.54.76.248",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "207.54.77.56",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "207.54.69.189",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "inbound-smtp.eu-west-1.amazonaws.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mx1.hc489-80.eu.iphmx.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mx2.hc489-80.eu.iphmx.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "%{i}.spf.hc489-80.eu.iphmx.com",
+          "mechanism": "exists"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
     "record": null,

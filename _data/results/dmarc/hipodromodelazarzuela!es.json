@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns8.servidoresdns.net",
-      "dns7.servidoresdns.net"
+      "dns7.servidoresdns.net",
+      "dns8.servidoresdns.net"
     ],
     "warnings": []
   },
@@ -22,12 +22,17 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:_spf.serviciodecorreo.es ~all",
+    "record": "v=spf1 include:_spf.serviciodecorreo.es ip4:154.58.19.207 ~all",
     "valid": true,
     "dns_lookups": 3,
     "warnings": [],
     "parsed": {
-      "pass": [],
+      "pass": [
+        {
+          "value": "154.58.19.207",
+          "mechanism": "ip4"
+        }
+      ],
       "neutral": [],
       "softfail": [],
       "fail": [],
