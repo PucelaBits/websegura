@@ -1,7 +1,7 @@
 {
   "algorithm_version": 2,
-  "end_time": "Wed, 15 Jun 2022 00:13:54 GMT",
-  "grade": "D+",
+  "end_time": "Sat, 18 Jun 2022 00:12:59 GMT",
+  "grade": "B",
   "hidden": false,
   "likelihood_indicator": "MEDIUM",
   "response_headers": {
@@ -10,21 +10,24 @@
     "Content-Encoding": "gzip",
     "Content-Security-Policy": "upgrade-insecure-requests; default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline' maps.google.com maps.googleapis.com; connect-src 'self'; img-src 'self' 'unsafe-inline' data: *.google.com maps.gstatic.com; style-src 'self' 'unsafe-inline' fonts.googleapis.com; font-src 'self' data: fonts.gstatic.com; frame-src 'self' https://www.tutiempo.net",
     "Content-Type": "text/html; charset=utf-8",
-    "Date": "Wed, 15 Jun 2022 00:13:21 GMT",
+    "Date": "Sat, 18 Jun 2022 00:12:17 GMT",
     "Expires": "Wed, 17 Aug 2005 00:00:00 GMT",
-    "Last-Modified": "Wed, 15 Jun 2022 00:13:18 GMT",
+    "Last-Modified": "Sat, 18 Jun 2022 00:12:14 GMT",
     "P3P": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
     "Pragma": "no-cache",
     "Server": "nginx",
     "Strict-Transport-Security": "max-age=31536000; includeSubdomains; preload;",
-    "Transfer-Encoding": "chunked"
+    "Transfer-Encoding": "chunked",
+    "X-Content-Type-Options": "nosniff",
+    "X-Frame-Options": "SAMEORIGIN",
+    "X-XSS-Protection": "1; mode=block"
   },
-  "scan_id": 27165210,
-  "score": 40,
-  "start_time": "Wed, 15 Jun 2022 00:13:09 GMT",
+  "scan_id": 27229933,
+  "score": 75,
+  "start_time": "Sat, 18 Jun 2022 00:12:04 GMT",
   "state": "FINISHED",
   "status_code": 200,
-  "tests_failed": 5,
-  "tests_passed": 7,
+  "tests_failed": 2,
+  "tests_passed": 10,
   "tests_quantity": 12
 }
