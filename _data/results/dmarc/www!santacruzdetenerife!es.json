@@ -31,7 +31,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx:santacruzdetenerife.es ip4:195.76.166.0/24 include:_spf.prod.hydra.sophos.com -all",
+    "record": "v=spf1 mx:santacruzdetenerife.es ip4:195.76.166.0/24 ip4:54.229.2.165/32 include:_spf.prod.hydra.sophos.com -all",
     "valid": true,
     "dns_lookups": 6,
     "warnings": [],
@@ -47,6 +47,10 @@
         },
         {
           "value": "195.76.166.0/24",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "54.229.2.165/32",
           "mechanism": "ip4"
         }
       ],

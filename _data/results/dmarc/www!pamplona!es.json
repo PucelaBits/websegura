@@ -15,28 +15,28 @@
         "preference": 10,
         "hostname": "correo.pamplona.es",
         "addresses": [
-          "77.225.12.100"
+          "213.0.38.185"
         ]
       },
       {
         "preference": 20,
         "hostname": "correo2.pamplona.es",
         "addresses": [
-          "77.225.12.99"
+          "213.0.38.186"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 +a +mx +ip4:77.225.12.99 +ip4:77.225.12.100 ~all",
+    "record": "v=spf1 +a +mx +ip4:213.0.38.186 +ip4:213.0.38.185 ~all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "77.225.12.101",
+          "value": "213.0.38.200",
           "mechanism": "a"
         },
         {
@@ -48,11 +48,11 @@
           "mechanism": "mx"
         },
         {
-          "value": "77.225.12.99",
+          "value": "213.0.38.186",
           "mechanism": "ip4"
         },
         {
-          "value": "77.225.12.100",
+          "value": "213.0.38.185",
           "mechanism": "ip4"
         }
       ],

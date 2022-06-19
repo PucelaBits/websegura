@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.dnsxperta.com",
-      "ns3.dnsxperta.com"
+      "ns3.dnsxperta.com",
+      "ns2.dnsxperta.com"
     ],
     "warnings": []
   },
@@ -15,6 +15,7 @@
         "preference": 10,
         "hostname": "mail.sollana.es",
         "addresses": [
+          "62.37.227.29",
           "88.26.240.91"
         ]
       },
@@ -22,19 +23,33 @@
         "preference": 50,
         "hostname": "mail2.sollana.es",
         "addresses": [
+          "62.37.227.29",
           "80.28.153.216"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The domain 62.37.227.29.static.abi.uni2.es does not exist",
+      "The reverse DNS of 62.37.227.29 is 62.37.227.29.static.abi.uni2.es, but the A/AAAA DNS records for 62.37.227.29.static.abi.uni2.es do not resolve to 62.37.227.29",
+      "The domain 62.37.227.29.static.abi.uni2.es does not exist",
+      "The reverse DNS of 62.37.227.29 is 62.37.227.29.static.abi.uni2.es, but the A/AAAA DNS records for 62.37.227.29.static.abi.uni2.es do not resolve to 62.37.227.29"
+    ]
   },
   "spf": {
-    "record": "v=spf1 ip4:88.26.240.91 ip4:80.28.153.216 ip4:213.4.82.254 ip4:185.96.232.224  include:dnsxperta.com -all",
+    "record": "v=spf1 ip4:62.37.227.34 ip4:62.37.227.30 ip4:88.26.240.91 ip4:80.28.153.216 ip4:213.4.82.254 ip4:185.96.232.224 include:dnsxperta.com -all",
     "valid": true,
     "dns_lookups": 1,
     "warnings": [],
     "parsed": {
       "pass": [
+        {
+          "value": "62.37.227.34",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "62.37.227.30",
+          "mechanism": "ip4"
+        },
         {
           "value": "88.26.240.91",
           "mechanism": "ip4"
@@ -99,6 +114,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.sollana.es\n\nv=spf1 ip4:88.26.240.91 ip4:80.28.153.216 ip4:213.4.82.254 ip4:185.96.232.224  include:dnsxperta.com -all"
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.sollana.es\n\nv=spf1 ip4:62.37.227.34 ip4:62.37.227.30 ip4:88.26.240.91 ip4:80.28.153.216 ip4:213.4.82.254 ip4:185.96.232.224 include:dnsxperta.com -all"
   }
 }

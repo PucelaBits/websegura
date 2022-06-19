@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.hostinet.com",
-      "dns1.hostinet.com"
+      "dns1.hostinet.com",
+      "dns2.hostinet.com"
     ],
     "warnings": []
   },
@@ -23,12 +23,17 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:spf.protection.outlook.com -all",
+    "record": "v=spf1 include:spf.protection.outlook.com ip4:2.136.172.18/32 -all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
     "parsed": {
-      "pass": [],
+      "pass": [
+        {
+          "value": "2.136.172.18/32",
+          "mechanism": "ip4"
+        }
+      ],
       "neutral": [],
       "softfail": [],
       "fail": [],

@@ -29,7 +29,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx ~all",
+    "record": "v=spf1 mx -all",
     "valid": true,
     "dns_lookups": 1,
     "warnings": [],
@@ -50,7 +50,7 @@
       "include": [],
       "redirect": null,
       "exp": null,
-      "all": "softfail"
+      "all": "fail"
     }
   },
   "dmarc": {

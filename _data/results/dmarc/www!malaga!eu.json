@@ -109,23 +109,17 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=reject; pct=20; rua=mailto:sistemas.cemi@malaga.eu",
+    "record": "v=DMARC1; p=none; rua=mailto:sistemas.cemi@malaga.eu",
     "valid": true,
     "location": "malaga.eu",
-    "warnings": [
-      "pct value is less than 100. This leads to inconsistent and unpredictable policy enforcement. Consider using p=none to monitor results instead"
-    ],
+    "warnings": [],
     "tags": {
       "v": {
         "value": "DMARC1",
         "explicit": true
       },
       "p": {
-        "value": "reject",
-        "explicit": true
-      },
-      "pct": {
-        "value": 20,
+        "value": "none",
         "explicit": true
       },
       "rua": {
@@ -152,6 +146,10 @@
         ],
         "explicit": false
       },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
       "rf": {
         "value": [
           "afrf"
@@ -163,7 +161,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "reject",
+        "value": "none",
         "explicit": false
       }
     }

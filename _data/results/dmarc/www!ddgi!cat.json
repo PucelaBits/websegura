@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "dns1.ddgi.cat",
       "dns2.grn.es",
-      "dns2.ddgi.cat",
-      "dns1.ddgi.cat"
+      "dns2.ddgi.cat"
     ],
     "warnings": []
   },
@@ -30,7 +30,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx include:spf.protection.outlook.com include:spf.mailjet.com ip4:195.93.170.5 ~all",
+    "record": "v=spf1 mx include:spf.protection.outlook.com include:spf.mailjet.com ip4:195.93.170.5 -all",
     "valid": true,
     "dns_lookups": 4,
     "warnings": [],
@@ -184,7 +184,7 @@
       ],
       "redirect": null,
       "exp": null,
-      "all": "softfail"
+      "all": "fail"
     }
   },
   "dmarc": {

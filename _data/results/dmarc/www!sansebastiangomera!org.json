@@ -36,9 +36,65 @@
     "warnings": []
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "sansebastiangomera.org has multiple SPF TXT records"
+    "record": "v=spf1 ip4:188.165.35.127 include:mx.ovh.com ~all",
+    "valid": true,
+    "dns_lookups": 1,
+    "warnings": [
+      "The ptr mechanism should not be used - https://tools.ietf.org/html/rfc7208#section-5.5",
+      "The ptr mechanism should not be used - https://tools.ietf.org/html/rfc7208#section-5.5"
+    ],
+    "parsed": {
+      "pass": [
+        {
+          "value": "188.165.35.127",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "mx.ovh.com",
+          "record": "v=spf1 ptr:mail-out.ovh.net ptr:mail.ovh.net ip4:8.33.137.105/32 ip4:192.99.77.81/32 ?all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "mail-out.ovh.net",
+                "mechanism": "ptr"
+              },
+              {
+                "value": "mail.ovh.net",
+                "mechanism": "ptr"
+              },
+              {
+                "value": "8.33.137.105/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "192.99.77.81/32",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "neutral"
+          },
+          "warnings": [
+            "The ptr mechanism should not be used - https://tools.ietf.org/html/rfc7208#section-5.5",
+            "The ptr mechanism should not be used - https://tools.ietf.org/html/rfc7208#section-5.5"
+          ]
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
   },
   "dmarc": {
     "record": null,

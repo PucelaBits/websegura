@@ -14,20 +14,18 @@
         "preference": 10,
         "hostname": "ayuntamientodetias-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.12.36",
-          "104.47.13.36"
+          "104.47.13.36",
+          "104.47.14.36"
         ]
       },
       {
         "preference": 10,
         "hostname": "smtp.ayuntamientodetias.es",
-        "addresses": [
-          "213.4.199.90"
-        ]
+        "addresses": []
       }
     ],
     "warnings": [
-      "213.4.199.90 does not have any reverse DNS (PTR) records"
+      "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
     ]
   },
   "spf": {

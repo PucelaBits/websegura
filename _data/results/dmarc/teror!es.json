@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns3.gestiondecuenta.com",
+      "ns.gestiondecuenta.com",
       "ns4.gestiondecuenta.com",
-      "ns2.gestiondecuenta.com",
-      "ns.gestiondecuenta.com"
+      "ns3.gestiondecuenta.com",
+      "ns2.gestiondecuenta.com"
     ],
     "warnings": []
   },
@@ -17,7 +17,7 @@
         "preference": 10,
         "hostname": "teror-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.12.36",
+          "104.47.13.36",
           "104.47.14.36"
         ]
       }
@@ -25,9 +25,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 a ip4:213.99.29.169 ip4:213.99.29.169  ip4:213.99.29.168/29 include:spf.protection.outlook.com -all",
+    "record": "v=spf1 a ip4:213.99.29.169 ip4:213.99.29.169  ip4:213.99.29.168/29 a:espublico.com include:spf.protection.outlook.com -all",
     "valid": true,
-    "dns_lookups": 3,
+    "dns_lookups": 4,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -46,6 +46,10 @@
         {
           "value": "213.99.29.168/29",
           "mechanism": "ip4"
+        },
+        {
+          "value": "213.4.82.203",
+          "mechanism": "a"
         }
       ],
       "neutral": [],

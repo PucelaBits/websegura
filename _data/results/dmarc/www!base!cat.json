@@ -15,7 +15,7 @@
         "preference": 10,
         "hostname": "correu.base.cat",
         "addresses": [
-          "90.160.63.9"
+          "217.130.125.204"
         ]
       },
       {
@@ -36,7 +36,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:spf.antispamcloud.com ip4:90.160.60.248/32 ip4:90.160.63.9/32 -all",
+    "record": "v=spf1 include:spf.antispamcloud.com ip4:90.160.60.248/32 ip4:217.130.125.204/32 -all",
     "valid": true,
     "dns_lookups": 4,
     "warnings": [],
@@ -47,7 +47,7 @@
           "mechanism": "ip4"
         },
         {
-          "value": "90.160.63.9/32",
+          "value": "217.130.125.204/32",
           "mechanism": "ip4"
         }
       ],

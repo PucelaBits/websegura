@@ -22,9 +22,33 @@
     "warnings": []
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "ayto-sobrescobio.es does not have a SPF TXT record"
+    "record": "v=spf1 +mx +a +ip4:37.153.90.139 ~all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "correo.ayto-sobrescobio.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "212.89.23.78",
+          "mechanism": "a"
+        },
+        {
+          "value": "37.153.90.139",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
   },
   "dmarc": {
     "record": null,
