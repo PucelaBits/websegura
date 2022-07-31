@@ -39,9 +39,9 @@
     ]
   },
   "spf": {
-    "record": "v=spf1 a mx include:spf.acumbamail.com a:smtp.mcp.es a:mail.mcp.es ip4:194.179.77.241 ~all",
+    "record": "v=spf1 a mx include:spf.acumbamail.com a:smtp.mcp.es a:mail.mcp.es ip4:194.179.77.241 include:mail.zendesk.com ~all",
     "valid": true,
-    "dns_lookups": 5,
+    "dns_lookups": 6,
     "warnings": [
       "The domain smtp.mcp.es does not exist"
     ],
@@ -116,6 +116,43 @@
               },
               {
                 "value": "185.103.36.192/28",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "mail.zendesk.com",
+          "record": "v=spf1 ip4:103.151.192.0/23 ip4:185.12.80.0/22 ip4:188.172.128.0/20 ip4:192.161.144.0/20 ip4:216.198.0.0/18 ~all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "103.151.192.0/23",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.12.80.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "188.172.128.0/20",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "192.161.144.0/20",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "216.198.0.0/18",
                 "mechanism": "ip4"
               }
             ],

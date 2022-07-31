@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns.gestiondecuenta.com",
+      "ns2.gestiondecuenta.com",
       "ns4.gestiondecuenta.com",
-      "ns3.gestiondecuenta.com",
-      "ns2.gestiondecuenta.com"
+      "ns.gestiondecuenta.com",
+      "ns3.gestiondecuenta.com"
     ],
     "warnings": []
   },
@@ -17,24 +17,20 @@
         "preference": 10,
         "hostname": "teror-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.13.36",
-          "104.47.14.36"
+          "104.47.12.36",
+          "104.47.13.36"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 a ip4:213.99.29.169 ip4:213.99.29.169  ip4:213.99.29.168/29 a:espublico.com include:spf.protection.outlook.com -all",
+    "record": "v=spf1 ip4:213.99.29.169 ip4:213.99.29.169 ip4:213.99.29.168/29 ip4:213.4.82.192/26 ip4:82.98.134.240 include:spf.protection.outlook.com include:_spf.espublico.com include:_flatsvcs.espublico.com -all",
     "valid": true,
-    "dns_lookups": 4,
+    "dns_lookups": 6,
     "warnings": [],
     "parsed": {
       "pass": [
-        {
-          "value": "82.98.134.240",
-          "mechanism": "a"
-        },
         {
           "value": "213.99.29.169",
           "mechanism": "ip4"
@@ -48,8 +44,12 @@
           "mechanism": "ip4"
         },
         {
-          "value": "213.4.82.203",
-          "mechanism": "a"
+          "value": "213.4.82.192/26",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "82.98.134.240",
+          "mechanism": "ip4"
         }
       ],
       "neutral": [],
@@ -150,6 +150,142 @@
             "all": "fail"
           },
           "warnings": []
+        },
+        {
+          "domain": "_spf.espublico.com",
+          "record": "v=spf1 include:_netblocks.espublico.com include:_nethosts.espublico.com ~all",
+          "dns_lookups": 2,
+          "parsed": {
+            "pass": [],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [
+              {
+                "domain": "_netblocks.espublico.com",
+                "record": "v=spf1 ip4:195.77.90.64/26 ip4:188.85.141.80/29 ip4:213.4.82.192/26 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "195.77.90.64/26",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "188.85.141.80/29",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "213.4.82.192/26",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              },
+              {
+                "domain": "_nethosts.espublico.com",
+                "record": "v=spf1 ip4:195.76.253.210/32 ip4:13.36.4.115/32 ip4:13.37.15.66/32 ip4:13.37.49.31/32 ip4:15.188.158.28/32 ip4:52.47.92.42 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "195.76.253.210/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "13.36.4.115/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "13.37.15.66/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "13.37.49.31/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "15.188.158.28/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "52.47.92.42",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              }
+            ],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "_flatsvcs.espublico.com",
+          "record": "v=spf1 ip4:198.2.128.0/18 ip4:148.105.8.0/21 ip4:185.12.80.0/22 ip4:216.198.0.0/18 ip4:205.201.128.0/20 ip4:103.151.192.0/23 ip4:188.172.128.0/20 ip4:192.161.144.0/20 ~all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "198.2.128.0/18",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "148.105.8.0/21",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.12.80.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "216.198.0.0/18",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "205.201.128.0/20",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "103.151.192.0/23",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "188.172.128.0/20",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "192.161.144.0/20",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
         }
       ],
       "redirect": null,
@@ -158,9 +294,71 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=quarantine; rua=mailto:augustososa@teror.es; ruf=mailto:augustososa@teror.es",
+    "valid": true,
+    "location": "teror.es",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "augustososa@teror.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "augustososa@teror.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "quarantine",
+        "explicit": false
+      }
+    }
   }
 }

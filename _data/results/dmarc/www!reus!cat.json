@@ -1,12 +1,12 @@
 {
   "domain": "reus.cat",
   "base_domain": "reus.cat",
-  "dnssec": true,
+  "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns3.reus.cat",
       "ns1.reus.cat",
-      "ns2.reus.cat",
-      "ns3.reus.cat"
+      "ns2.reus.cat"
     ],
     "warnings": []
   },

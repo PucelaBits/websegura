@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.murcia.es",
-      "dns1.murcia.es"
+      "dns1.murcia.es",
+      "dns2.murcia.es"
     ],
     "warnings": []
   },
@@ -14,9 +14,7 @@
       {
         "preference": 10,
         "hostname": "correo.murcia.es",
-        "addresses": [
-          "81.46.205.179"
-        ]
+        "addresses": []
       },
       {
         "preference": 20,
@@ -27,6 +25,7 @@
       }
     ],
     "warnings": [
+      "All nameservers failed to answer the query correo.murcia.es. IN AAAA: Server 1.0.0.1 UDP port 53 answered SERVFAIL",
       "The domain 81-46-205-178.redes.acens.net does not exist",
       "The reverse DNS of 81.46.205.178 is 81-46-205-178.redes.acens.net, but the A/AAAA DNS records for 81-46-205-178.redes.acens.net do not resolve to 81.46.205.178"
     ]

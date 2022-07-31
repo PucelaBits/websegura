@@ -4,8 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "josh.ns.cloudflare.com",
-      "uma.ns.cloudflare.com"
+      "ns1069.ui-dns.biz",
+      "ns1080.ui-dns.com",
+      "ns1096.ui-dns.de",
+      "ns1071.ui-dns.org"
     ],
     "warnings": []
   },
@@ -13,30 +15,109 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "mx00.1and1.es",
+        "hostname": "mx.fundacionideo.org",
         "addresses": [
-          "212.227.15.41"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "mx01.1and1.es",
-        "addresses": [
-          "217.72.192.67"
+          "95.60.60.120"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "fundacionideo.org does not have a SPF TXT record"
+    "record": "v=spf1 +a +mx +a:mx.fundacionideo.org -all",
+    "valid": true,
+    "dns_lookups": 3,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "5.196.214.72",
+          "mechanism": "a"
+        },
+        {
+          "value": "mx.fundacionideo.org",
+          "mechanism": "mx"
+        },
+        {
+          "value": "95.60.60.120",
+          "mechanism": "a"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=quarantine; sp=quarantine; rua=mailto:binhex@fundacionideo.org; ruf=mailto:binhex@fundacionideo.org; rf=afrf; pct=100; ri=86400",
+    "valid": true,
+    "location": "fundacionideo.org",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "sp": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "binhex@fundacionideo.org",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "binhex@fundacionideo.org",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": true
+      },
+      "pct": {
+        "value": 100,
+        "explicit": true
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      }
+    }
   }
 }

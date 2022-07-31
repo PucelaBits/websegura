@@ -18,14 +18,14 @@
         "hostname": "uclm-es.mail.protection.outlook.com",
         "addresses": [
           "104.47.51.138",
-          "104.47.8.36"
+          "104.47.9.36"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:161.67.136.23 ip4:161.67.136.24 include:spf.protection.outlook.com include:spf.puc.rediris.es -all",
+    "record": "v=spf1 ip4:161.67.136.23 ip4:161.67.136.24 ip4:161.67.136.9 include:spf.protection.outlook.com include:spf.puc.rediris.es -all",
     "valid": true,
     "dns_lookups": 3,
     "warnings": [],
@@ -37,6 +37,10 @@
         },
         {
           "value": "161.67.136.24",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "161.67.136.9",
           "mechanism": "ip4"
         }
       ],

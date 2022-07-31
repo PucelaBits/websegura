@@ -38,9 +38,7 @@
     "record": "v=spf1 include:spf.puc.rediris.es a:correo.ine.es a:smtpout.ine.es a:remesas.ine.es a:mta01.ine.es a:mta02.ine.es -all",
     "valid": true,
     "dns_lookups": 6,
-    "warnings": [
-      "SPF type DNS records found. Use of DNS Type SPF has been removed in the standards track version of SPF, RFC 7208. These records should be removed and replaced with TXT records: v=spf1 include:spf.puc.rediris.es a:correo.ine.es a:smtpout.ine.es a:remesas.ine.es a:mta01.ine.es a:mta02.ine.es -all"
-    ],
+    "warnings": [],
     "parsed": {
       "pass": [
         {

@@ -6,8 +6,8 @@
     "hostnames": [
       "buniel.csa.es",
       "dns1.csanet.io",
-      "nso.nic.es",
       "clunia.csa.es",
+      "nso.nic.es",
       "tapia.csa.es"
     ],
     "warnings": []
@@ -32,9 +32,29 @@
     "warnings": []
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "burgos.es does not have a SPF TXT record"
+    "record": "v=spf1 mx -all",
+    "valid": true,
+    "dns_lookups": 1,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "atapuerca.csa.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "silos.csa.es",
+          "mechanism": "mx"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
     "record": null,

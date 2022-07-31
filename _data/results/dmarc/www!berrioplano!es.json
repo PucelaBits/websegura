@@ -25,13 +25,11 @@
     "record": "v=spf1 +a +mx +ip4:195.53.90.200 ~all",
     "valid": true,
     "dns_lookups": 2,
-    "warnings": [],
+    "warnings": [
+      "berrioplano.es does not have any A/AAAA records"
+    ],
     "parsed": {
       "pass": [
-        {
-          "value": "185.101.224.34",
-          "mechanism": "a"
-        },
         {
           "value": "correo.berrioplano.es",
           "mechanism": "mx"

@@ -4,11 +4,11 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns4.cdmondns-01.org",
-      "ns5.cdmondns-01.com",
       "ns3.cdmon.net",
-      "ns1.cdmon.net",
-      "ns2.cdmon.net"
+      "ns5.cdmondns-01.com",
+      "ns2.cdmon.net",
+      "ns4.cdmondns-01.org",
+      "ns1.cdmon.net"
     ],
     "warnings": []
   },
@@ -49,7 +49,7 @@
             "include": [
               {
                 "domain": "_netblocks.srv.cat",
-                "record": "v=spf1 a ip4:46.16.56.0/21 ip4:134.0.8.0/21 ip4:185.22.200.0/22 ip4:185.34.192.0/22 ip4:185.42.104.0/22 ip4:185.66.40.0/22 ~all",
+                "record": "v=spf1 a ip4:46.16.56.0/21 ip4:134.0.8.0/21 ip4:185.22.200.0/22 ip4:185.34.192.0/22 ip4:185.42.104.0/22 ip4:185.66.40.0/22 ip4:185.22.201.0/22 ~all",
                 "dns_lookups": 1,
                 "parsed": {
                   "pass": [
@@ -75,6 +75,10 @@
                     },
                     {
                       "value": "185.66.40.0/22",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.22.201.0/22",
                       "mechanism": "ip4"
                     }
                   ],

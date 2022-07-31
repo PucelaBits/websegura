@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns12.servidoresdns.net",
-      "dns11.servidoresdns.net"
+      "ns1.ymant.com",
+      "ns2.ymant.com"
     ],
     "warnings": []
   },
@@ -15,7 +15,7 @@
         "preference": 10,
         "hostname": "plancabanyal-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.18.202",
+          "104.47.18.138",
           "104.47.22.138"
         ]
       }
@@ -23,12 +23,17 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:spf.protection.outlook.com -all",
+    "record": "v=spf1 ip4:185.231.20.50 include:spf.protection.outlook.com -all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
     "parsed": {
-      "pass": [],
+      "pass": [
+        {
+          "value": "185.231.20.50",
+          "mechanism": "ip4"
+        }
+      ],
       "neutral": [],
       "softfail": [],
       "fail": [],

@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns07.ns-cloud4b.org",
       "ns06.ns-cloud4b.net",
+      "ns07.ns-cloud4b.org",
       "ns08.ns-cloud4b.com"
     ],
     "warnings": []
@@ -27,7 +27,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The domain nlb01-hz2.hornetsecurity.com.65.246.83.in-addr.arpa does not exist",
+      "The reverse DNS of 83.246.65.100 is nlb01-hz2.hornetsecurity.com.65.246.83.in-addr.arpa, but the A/AAAA DNS records for nlb01-hz2.hornetsecurity.com.65.246.83.in-addr.arpa do not resolve to 83.246.65.100"
+    ]
   },
   "spf": {
     "record": "v=spf1 ip4:93.159.211.185 ip4:194.140.77.185 ip4:194.140.77.186 ip4:154.58.19.206 include:sepi.ip-zone.com include:emailservice.cpd.as -all",

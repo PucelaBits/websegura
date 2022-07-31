@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns3.dnsxperta.com",
-      "ns2.dnsxperta.com"
+      "ns2.dnsxperta.com",
+      "ns3.dnsxperta.com"
     ],
     "warnings": []
   },
@@ -16,7 +16,7 @@
         "hostname": "mx.spamexperts.com",
         "addresses": [
           "2001:550:2:9::280:100",
-          "38.109.53.20"
+          "38.111.198.185"
         ]
       },
       {
@@ -52,7 +52,8 @@
     "record": "v=spf1 include:dnsxperta.com include:spf.qsemail.net include:espublico.com ip4:213.4.82.254 -all",
     "valid": false,
     "warnings": [],
-    "error": "Include loop: espublico.com"
+    "error": "Parsing the SPF record requires 18/10 maximum DNS lookups - https://tools.ietf.org/html/rfc7208#section-4.6.4",
+    "dns_lookups": 18
   },
   "dmarc": {
     "record": null,

@@ -4,43 +4,43 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.ineco.es",
-      "ns1.ineco.es"
+      "ns1.ineco.es",
+      "ns2.ineco.es"
     ],
     "warnings": []
   },
   "mx": {
     "hosts": [
       {
-        "preference": 20,
-        "hostname": "smtp1.ineco.es",
+        "preference": 10,
+        "hostname": "mxa-006e4701.gslb.pphosted.com",
         "addresses": [
-          "193.201.107.41"
+          "205.220.185.208"
         ]
       },
       {
-        "preference": 20,
-        "hostname": "smtp2.ineco.es",
+        "preference": 10,
+        "hostname": "mxb-006e4701.gslb.pphosted.com",
         "addresses": [
-          "193.201.107.42"
+          "143.55.144.156"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx ip4:193.201.107.0/24 a:smtp1.ineco.es a:smtp2.ineco.es include:spf.protection.outlook.com ~all",
+    "record": "v=spf1 mx ip4:193.201.107.0/24 a:smtp1.ineco.es a:smtp2.ineco.es include:spf.protection.outlook.com include:spf-006e4701.pphosted.com ~all",
     "valid": true,
-    "dns_lookups": 5,
+    "dns_lookups": 6,
     "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "smtp1.ineco.es",
+          "value": "mxa-006e4701.gslb.pphosted.com",
           "mechanism": "mx"
         },
         {
-          "value": "smtp2.ineco.es",
+          "value": "mxb-006e4701.gslb.pphosted.com",
           "mechanism": "mx"
         },
         {
@@ -48,11 +48,11 @@
           "mechanism": "ip4"
         },
         {
-          "value": "193.201.107.41",
+          "value": "143.55.144.156",
           "mechanism": "a"
         },
         {
-          "value": "193.201.107.42",
+          "value": "143.55.144.156",
           "mechanism": "a"
         }
       ],
@@ -152,6 +152,31 @@
             "redirect": null,
             "exp": null,
             "all": "fail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "spf-006e4701.pphosted.com",
+          "record": "v=spf1 ip4:205.220.185.208 ip4:143.55.144.156",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "205.220.185.208",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "143.55.144.156",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "neutral"
           },
           "warnings": []
         }

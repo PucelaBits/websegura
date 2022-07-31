@@ -24,7 +24,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx ip4:212.4.98.128/29 ip4:185.166.212.18 ip4:154.58.16.80/32 ip4:213.170.50.16 ip4:213.170.50.19 ip4:195.114.216.138 ip4:195.114.216.146 include:spf.protection.outlook.com include:teenvio.com include:_pmta2.antevenio.com include:spf.sendinblue.com ~all",
+    "record": "v=spf1 mx ip4:212.4.98.128/29 ip4:185.166.212.18 ip4:154.58.16.80/32 ip4:213.170.50.16 ip4:213.170.50.19 ip4:195.114.216.138 ip4:195.114.216.146 ip4:212.63.109.135 include:spf.protection.outlook.com include:teenvio.com include:_pmta2.antevenio.com include:spf.sendinblue.com ~all",
     "valid": true,
     "dns_lookups": 10,
     "warnings": [],
@@ -60,6 +60,10 @@
         },
         {
           "value": "195.114.216.146",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "212.63.109.135",
           "mechanism": "ip4"
         }
       ],
@@ -394,7 +398,7 @@
         },
         {
           "domain": "_pmta2.antevenio.com",
-          "record": "v=spf1 ip4:62.97.141.0/24 ip4:62.97.140.0/24 ip4:62.97.130.0/25 ip4:62.97.133.0/28 ip4:212.101.74.32/28 ip4:212.101.90.80/28 ip4:108.168.215.128/29 ip4:212.101.77.132 ip4:108.168.215.128/29 ip4:75.126.177.160/27 ip4:185.214.212.0/22 -all",
+          "record": "v=spf1 ip4:62.97.141.0/24 ip4:62.97.140.0/24 ip4:62.97.130.0/25 ip4:62.97.133.0/28 ip4:212.101.74.32/28 ip4:212.101.90.80/28 ip4:212.101.77.132 ip4:185.214.212.0/22 ip4:159.8.104.48/28 ip4:159.8.108.240/28 -all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -423,23 +427,19 @@
                 "mechanism": "ip4"
               },
               {
-                "value": "108.168.215.128/29",
-                "mechanism": "ip4"
-              },
-              {
                 "value": "212.101.77.132",
                 "mechanism": "ip4"
               },
               {
-                "value": "108.168.215.128/29",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "75.126.177.160/27",
-                "mechanism": "ip4"
-              },
-              {
                 "value": "185.214.212.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "159.8.104.48/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "159.8.108.240/28",
                 "mechanism": "ip4"
               }
             ],

@@ -14,9 +14,9 @@
     "error": "The DNS response does not contain an answer to the question: 65.211.148.192.in-addr.arpa. IN PTR"
   },
   "spf": {
-    "record": "v=spf1 mx a:srvsmtp01.mites.gob.es a:srvsmtp02.mites.gob.es a:srvsmtp03.mites.gob.es a:srvsmtp04.mites.gob.es include:spf.protection.outlook.com ip4:192.148.211.63 ip4:192.148.211.64 ip4:192.148.211.65 -all",
+    "record": "v=spf1 mx a:srvsmtp01.mites.gob.es a:srvsmtp02.mites.gob.es a:srvsmtp03.mites.gob.es a:srvsmtp04.mites.gob.es a:srvsmtp05.mites.gob.es include:spf.protection.outlook.com ip4:192.148.211.63 ip4:192.148.211.64 ip4:192.148.211.65 ~all",
     "valid": true,
-    "dns_lookups": 7,
+    "dns_lookups": 8,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -46,6 +46,10 @@
         },
         {
           "value": "192.148.211.64",
+          "mechanism": "a"
+        },
+        {
+          "value": "192.148.211.65",
           "mechanism": "a"
         },
         {
@@ -163,7 +167,7 @@
       ],
       "redirect": null,
       "exp": null,
-      "all": "fail"
+      "all": "softfail"
     }
   },
   "dmarc": {

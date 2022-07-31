@@ -3,22 +3,27 @@
   "base_domain": "eugo.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "All nameservers failed to answer the query eugo.es. IN NS: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "hostnames": [
+      "dns2.eugo.es",
+      "dns1.eugo.es"
+    ],
+    "warnings": []
   },
   "mx": {
     "hosts": [],
-    "error": "All nameservers failed to answer the query eugo.es. IN MX: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
   },
   "spf": {
     "record": null,
     "valid": false,
-    "error": "All nameservers failed to answer the query eugo.es. IN TXT: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "error": "eugo.es does not have a SPF TXT record"
   },
   "dmarc": {
     "record": null,
     "valid": false,
     "location": null,
-    "error": "All nameservers failed to answer the query _dmarc.eugo.es. IN TXT: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "error": "A DMARC record does not exist for this domain or its base domain"
   }
 }

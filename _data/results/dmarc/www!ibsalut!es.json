@@ -5,10 +5,10 @@
   "ns": {
     "hostnames": [
       "dns1.ibsalut.es",
-      "ns1.ssib.es",
-      "ns2.ssib.es",
       "ns1.ibsalut.es",
+      "ns2.ssib.es",
       "ns2.ibsalut.es",
+      "ns1.ssib.es",
       "dns2.ibsalut.es"
     ],
     "warnings": []
@@ -28,29 +28,12 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx a ip4:195.76.89.3/32 ip4:195.76.89.6/32 include:spf.tmes.trendmicro.com include:caib.es include:spf.protection.outlook.com -all",
+    "record": "v=spf1 include:spf.tmes.trendmicro.com include:caib.es include:spf.protection.outlook.com -all",
     "valid": true,
-    "dns_lookups": 8,
+    "dns_lookups": 6,
     "warnings": [],
     "parsed": {
-      "pass": [
-        {
-          "value": "ibsalut.in.tmes.trendmicro.eu",
-          "mechanism": "mx"
-        },
-        {
-          "value": "195.76.89.10",
-          "mechanism": "a"
-        },
-        {
-          "value": "195.76.89.3/32",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "195.76.89.6/32",
-          "mechanism": "ip4"
-        }
-      ],
+      "pass": [],
       "neutral": [],
       "softfail": [],
       "fail": [],
@@ -293,9 +276,73 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=quarantine; rua=mailto:dmarc.reports@ibsalut.es; ruf=mailto:dmarc.reports@ibsalut.es; fo=1:d:s; ri=3600",
+    "valid": true,
+    "location": "ibsalut.es",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc.reports@ibsalut.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc.reports@ibsalut.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "1",
+          "d",
+          "s"
+        ],
+        "explicit": true
+      },
+      "ri": {
+        "value": 3600,
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "sp": {
+        "value": "quarantine",
+        "explicit": false
+      }
+    }
   }
 }

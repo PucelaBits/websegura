@@ -24,7 +24,7 @@
   "spf": {
     "record": "v=spf1 ip4:212.51.62.160/27 ip4:91.117.126.128/25 ip4:85.91.71.0/24 include:mundo-r.com ip4:85.91.64.213 ip4:85.91.64.214 -all",
     "valid": true,
-    "dns_lookups": 2,
+    "dns_lookups": 3,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -55,8 +55,8 @@
       "include": [
         {
           "domain": "mundo-r.com",
-          "record": "v=spf1 mx ip4:212.51.32.0/23 ip4:213.60.252.118 ip4:212.142.145.31 ip4:212.142.145.32 -all",
-          "dns_lookups": 1,
+          "record": "v=spf1 mx include:spf.hornetsecurity.com ip4:212.51.32.0/23 ip4:213.60.252.118 ip4:212.142.145.31 ip4:212.142.145.32 -all",
+          "dns_lookups": 2,
           "parsed": {
             "pass": [
               {
@@ -83,7 +83,101 @@
             "neutral": [],
             "softfail": [],
             "fail": [],
-            "include": [],
+            "include": [
+              {
+                "domain": "spf.hornetsecurity.com",
+                "record": "v=spf1 ip4:83.246.65.0/24 ip4:185.140.204.0/22 ip4:94.100.128.0/20 ip4:81.20.94.0/24 ip4:173.45.18.0/24 ip4:52.62.123.207/32 ip4:52.62.108.212/32 ip4:129.232.203.80/28 ip4:209.172.38.64/27 ip4:108.163.133.224/27 ip4:193.135.100.0/27 ip4:199.27.221.76 ip4:216.46.11.238 ip4:216.46.11.244 ip4:199.27.221.81 ip4:199.27.221.82 ip4:52.62.114.130 ip4:52.62.125.178 ip4:92.54.27.0/24 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "83.246.65.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.140.204.0/22",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "94.100.128.0/20",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "81.20.94.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "173.45.18.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "52.62.123.207/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "52.62.108.212/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "129.232.203.80/28",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "209.172.38.64/27",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "108.163.133.224/27",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "193.135.100.0/27",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "199.27.221.76",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "216.46.11.238",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "216.46.11.244",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "199.27.221.81",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "199.27.221.82",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "52.62.114.130",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "52.62.125.178",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "92.54.27.0/24",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              }
+            ],
             "redirect": null,
             "exp": null,
             "all": "fail"

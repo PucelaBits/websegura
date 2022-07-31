@@ -4,12 +4,12 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns.dacoruna.gal",
-      "ns2.xunta.es",
       "dns.dicoruna.es",
-      "dns1.dicoruna.es",
+      "ns2.xunta.es",
+      "dns1.dacoruna.gal",
       "ns1.xunta.es",
-      "dns1.dacoruna.gal"
+      "dns.dacoruna.gal",
+      "dns1.dicoruna.es"
     ],
     "warnings": []
   },
@@ -28,7 +28,7 @@
   "spf": {
     "record": "v=spf1 a mx include:_spf.dacoruna.gal -all",
     "valid": true,
-    "dns_lookups": 7,
+    "dns_lookups": 8,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -47,8 +47,8 @@
       "include": [
         {
           "domain": "_spf.dacoruna.gal",
-          "record": "v=spf1 mx:dacoruna.gal mx:dicoruna.es a:correo.dacoruna.gal a:correo.dicoruna.es -all",
-          "dns_lookups": 4,
+          "record": "v=spf1 mx:dacoruna.gal mx:dicoruna.es a:correo.dacoruna.gal a:correo.dicoruna.es a:smtp-alt.dacoruna.gal -all",
+          "dns_lookups": 5,
           "parsed": {
             "pass": [
               {
@@ -65,6 +65,10 @@
               },
               {
                 "value": "85.91.67.14",
+                "mechanism": "a"
+              },
+              {
+                "value": "85.91.67.133",
                 "mechanism": "a"
               }
             ],

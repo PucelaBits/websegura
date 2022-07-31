@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.virtualns.net",
-      "ns1.virtualns.net"
+      "ns1.virtualns.net",
+      "ns2.virtualns.net"
     ],
     "warnings": []
   },
@@ -44,12 +44,47 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
+      "The reverse DNS of 185.107.213.57 is se02-it.route25.eu, but the A/AAAA DNS records for se02-it.route25.eu do not resolve to 185.107.213.57"
+    ]
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "aytovalverde.org does not have a SPF TXT record"
+    "record": "v=spf1 mx a ip4:91.142.220.126 a:tenerife.vservers.es -all",
+    "valid": true,
+    "dns_lookups": 3,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "mx1.spamcluster.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mx2.spamcluster.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "217.182.198.173",
+          "mechanism": "a"
+        },
+        {
+          "value": "91.142.220.126",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "91.142.220.126",
+          "mechanism": "a"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
     "record": null,

@@ -13,86 +13,170 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "mail.fallas.com",
+        "hostname": "mx.serviciodecorreo.es",
         "addresses": [
-          "213.201.83.247"
+          "82.223.190.100"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 a mx ip4:213.201.83.247 a:mail.fallas.com mx:mail.fallas.com include:fallas.ip-zone.com -all",
-    "valid": false,
+    "record": "v=spf1 include:_spf.serviciodecorreo.es ~all",
+    "valid": true,
+    "dns_lookups": 3,
     "warnings": [],
-    "error": "fallas.ip-zone.com does not have a SPF TXT record"
+    "parsed": {
+      "pass": [],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "_spf.serviciodecorreo.es",
+          "record": "v=spf1 include:_netblock1.serviciodecorreo.es include:_netblock2.serviciodecorreo.es ~all",
+          "dns_lookups": 2,
+          "parsed": {
+            "pass": [],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [
+              {
+                "domain": "_netblock1.serviciodecorreo.es",
+                "record": "v=spf1 ip4:82.223.85.0/24 ip4:82.223.190.0/23 ip4:82.223.199.0/24 ip4:82.223.218.0/23 ip4:82.223.230.0/24 ip4:82.223.251.0/24 ip4:217.76.128.0/23 ip4:217.76.150.128/25 ip4:217.76.156.128/25 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "82.223.85.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "82.223.190.0/23",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "82.223.199.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "82.223.218.0/23",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "82.223.230.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "82.223.251.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "217.76.128.0/23",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "217.76.150.128/25",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "217.76.156.128/25",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              },
+              {
+                "domain": "_netblock2.serviciodecorreo.es",
+                "record": "v=spf1 ip4:82.223.56.0/23 ip4:82.223.113.0/24 ip4:82.223.119.0/24 ip4:82.223.226.0/24 ip4:217.76.130.0/23 ip4:217.76.148.0/23 ip4:217.76.143.0/24 ip4:217.76.150.0/25 ip4:217.76.156.0/25 ip4:217.76.132.128/25 ip4:82.223.208.0/24 ip4:82.223.212.0/23 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "82.223.56.0/23",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "82.223.113.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "82.223.119.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "82.223.226.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "217.76.130.0/23",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "217.76.148.0/23",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "217.76.143.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "217.76.150.0/25",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "217.76.156.0/25",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "217.76.132.128/25",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "82.223.208.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "82.223.212.0/23",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              }
+            ],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
   },
   "dmarc": {
-    "record": "v=DMARC1;p=none;pct=100;rua=mailto:mailer@fallas.com;ruf=mailto:mailer@fallas.com",
-    "valid": true,
-    "location": "fallas.com",
-    "warnings": [],
-    "tags": {
-      "v": {
-        "value": "DMARC1",
-        "explicit": true
-      },
-      "p": {
-        "value": "none",
-        "explicit": true
-      },
-      "pct": {
-        "value": 100,
-        "explicit": true
-      },
-      "rua": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "mailer@fallas.com",
-            "size_limit": null
-          }
-        ],
-        "explicit": true
-      },
-      "ruf": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "mailer@fallas.com",
-            "size_limit": null
-          }
-        ],
-        "explicit": true
-      },
-      "adkim": {
-        "value": "r",
-        "explicit": false
-      },
-      "aspf": {
-        "value": "r",
-        "explicit": false
-      },
-      "fo": {
-        "value": [
-          "0"
-        ],
-        "explicit": false
-      },
-      "rf": {
-        "value": [
-          "afrf"
-        ],
-        "explicit": false
-      },
-      "ri": {
-        "value": 86400,
-        "explicit": false
-      },
-      "sp": {
-        "value": "none",
-        "explicit": false
-      }
-    }
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
   }
 }
