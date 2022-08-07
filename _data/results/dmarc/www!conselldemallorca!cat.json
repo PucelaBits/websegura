@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "saluet.conselldemallorca.net",
-      "gubia.conselldemallorca.net"
+      "gubia.conselldemallorca.net",
+      "saluet.conselldemallorca.net"
     ],
     "warnings": []
   },
@@ -26,7 +26,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
+      "The reverse DNS of 213.201.84.232 is saluetw.conselldemallorca.net, but the A/AAAA DNS records for saluetw.conselldemallorca.net do not resolve to 213.201.84.232"
+    ]
   },
   "spf": {
     "record": null,

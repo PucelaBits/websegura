@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "ns2.entornodns.com",
-      "ns-c.eurodns.eu",
       "ns1.entornodns.com",
+      "ns-c.eurodns.eu",
       "ns-d.eurodns.biz"
     ],
     "warnings": []
@@ -34,14 +34,11 @@
         "hostname": "aragonradio-es.mail.protection.outlook.com",
         "addresses": [
           "104.47.4.36",
-          "104.47.6.36"
+          "104.47.5.36"
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
-      "The reverse DNS of 104.47.6.36 is mail-ve1eur020036.inbound.protection.outlook.com, but the A/AAAA DNS records for mail-ve1eur020036.inbound.protection.outlook.com do not resolve to 104.47.6.36"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:212.47.235.149 include:spf.protection.outlook.com include:emsd1.com -all",

@@ -10,8 +10,23 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query 249.23.187.192.in-addr.arpa. IN PTR: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "correo.sepe.es",
+        "addresses": [
+          "192.187.23.249"
+        ]
+      },
+      {
+        "preference": 50,
+        "hostname": "correo2.sepe.es",
+        "addresses": [
+          "192.187.23.248"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:192.187.23.248/31 include:spf.protection.outlook.com ~all",

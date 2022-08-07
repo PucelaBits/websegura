@@ -15,7 +15,7 @@
         "preference": 5,
         "hostname": "inclusion-gob-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.17.138",
+          "104.47.17.74",
           "104.47.18.74"
         ]
       }
@@ -23,9 +23,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:212.128.108.46 ip4:212.128.108.45 include:spf.protection.outlook.com -all",
+    "record": "v=spf1 ip4:212.128.108.46 ip4:212.128.108.45 include:spf.protection.outlook.com include:seg-social.es -all",
     "valid": true,
-    "dns_lookups": 2,
+    "dns_lookups": 4,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -134,6 +134,35 @@
             "redirect": null,
             "exp": null,
             "all": "fail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "seg-social.es",
+          "record": "v=spf1 mx ip4:194.179.55.96/28 ip4:213.99.40.96/28 ~all",
+          "dns_lookups": 1,
+          "parsed": {
+            "pass": [
+              {
+                "value": "smtp.seg-social.es",
+                "mechanism": "mx"
+              },
+              {
+                "value": "194.179.55.96/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "213.99.40.96/28",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
           },
           "warnings": []
         }

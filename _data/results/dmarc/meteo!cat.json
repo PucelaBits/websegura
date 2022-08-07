@@ -37,7 +37,9 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The reverse DNS of 176.32.109.132 is inbound-smtp.eu-west-1.amazonaws.com, but the A/AAAA DNS records for inbound-smtp.eu-west-1.amazonaws.com do not resolve to 176.32.109.132"
+    ]
   },
   "spf": {
     "record": "v=spf1 ip4:207.54.76.180 ip4:207.54.76.248 ip4:207.54.77.56 ip4:207.54.69.189 mx exists:%{i}.spf.hc489-80.eu.iphmx.com -all",

@@ -1,12 +1,11 @@
 {
   "domain": "reus.cat",
   "base_domain": "reus.cat",
-  "dnssec": false,
+  "dnssec": true,
   "ns": {
     "hostnames": [
-      "ns3.reus.cat",
-      "ns1.reus.cat",
-      "ns2.reus.cat"
+      "chip.ns.cloudflare.com",
+      "phoenix.ns.cloudflare.com"
     ],
     "warnings": []
   },

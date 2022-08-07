@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "ns08.ns-cloud4b.com",
-      "ns07.ns-cloud4b.org",
-      "ns06.ns-cloud4b.net"
+      "ns06.ns-cloud4b.net",
+      "ns07.ns-cloud4b.org"
     ],
     "warnings": []
   },
@@ -27,9 +27,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The reverse DNS of 94.100.134.100 is nlb01-hz3.hornetsecurity.com, but the A/AAAA DNS records for nlb01-hz3.hornetsecurity.com do not resolve to 94.100.134.100"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 +a +mx include:emailservice.cpd.as -all",

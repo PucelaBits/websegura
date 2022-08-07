@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns10.infofuturo.net",
-      "ns11.infofuturo.net"
+      "ns4.infofuturo.net",
+      "ns5.infofuturo.net"
     ],
     "warnings": []
   },
@@ -15,19 +15,23 @@
         "preference": 0,
         "hostname": "correo.ayto-sobrescobio.es",
         "addresses": [
-          "37.153.90.139"
+          "37.153.90.131"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 +mx +a +ip4:37.153.90.139 ~all",
+    "record": "v=spf1 ip4:37.153.90.131 +mx +a +ip4:37.153.90.139 ~all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
     "parsed": {
       "pass": [
+        {
+          "value": "37.153.90.131",
+          "mechanism": "ip4"
+        },
         {
           "value": "correo.ayto-sobrescobio.es",
           "mechanism": "mx"

@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.fnmt.es",
-      "dns2.fnmt.es"
+      "dns2.fnmt.es",
+      "dns1.fnmt.es"
     ],
     "warnings": []
   },
@@ -21,7 +21,7 @@
     "error": "cert.fnmt.es does not have a SPF TXT record"
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; fo=1; rua=mailto:dmarc.rua@fnmt.es; ruf=mailto:dmarc.ruf@fnmt.es",
+    "record": "v=DMARC1; p=quarantine; fo=1; rua=mailto:dmarc.rua@fnmt.es; ruf=mailto:dmarc.ruf@fnmt.es",
     "valid": true,
     "location": "fnmt.es",
     "warnings": [],
@@ -31,7 +31,7 @@
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": true
       },
       "fo": {
@@ -83,7 +83,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": false
       }
     }

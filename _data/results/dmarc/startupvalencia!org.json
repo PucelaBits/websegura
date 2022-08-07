@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "europe2712.banahosting.com",
-      "europe2713.banahosting.com"
+      "europe2713.banahosting.com",
+      "europe2712.banahosting.com"
     ],
     "warnings": []
   },
@@ -15,21 +15,29 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.250.113.26",
-          "2607:f8b0:4023:1006::1a"
+          "142.250.141.27",
+          "2607:f8b0:4023:c03::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "142.250.152.27",
-          "2607:f8b0:4001:c56::1b"
+          "2607:f8b0:4003:c15::1a",
+          "64.233.171.27"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
+        "addresses": [
+          "142.250.152.26",
+          "2607:f8b0:4001:c56::1b"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
           "172.253.113.27",
           "2607:f8b0:4023:1::1b"
@@ -37,18 +45,10 @@
       },
       {
         "preference": 10,
-        "hostname": "alt3.aspmx.l.google.com",
-        "addresses": [
-          "173.194.77.26",
-          "2607:f8b0:4023:401::1b"
-        ]
-      },
-      {
-        "preference": 10,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "173.194.219.27",
-          "2607:f8b0:4002:c03::1b"
+          "173.194.77.27",
+          "2607:f8b0:4023:401::1a"
         ]
       }
     ],
@@ -96,7 +96,7 @@
       "include": [
         {
           "domain": "relay.mailchannels.net",
-          "record": "v=spf1 ip4:23.83.208.0/20 ip4:46.232.183.0/24 ip4:199.10.31.235/32 ip4:199.10.31.236/32 ip4:172.255.62.10/32 ip4:172.255.62.11/32 ip4:54.245.125.39/32 ip4:103.18.109.138/32 ip4:54.214.232.113/32 ~all",
+          "record": "v=spf1 ip4:23.83.208.0/20 ip4:46.232.183.0/24 ip4:199.10.31.235/32 ip4:199.10.31.236/32 ip4:172.255.62.10/32 ip4:172.255.62.11/32 ip4:54.245.125.39/32 ip4:103.18.109.138/32 ~all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -130,10 +130,6 @@
               },
               {
                 "value": "103.18.109.138/32",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "54.214.232.113/32",
                 "mechanism": "ip4"
               }
             ],

@@ -13,12 +13,12 @@
       {
         "preference": 10,
         "hostname": "antispam.asturhosting.com",
-        "addresses": [
-          "82.223.89.64"
-        ]
+        "addresses": []
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
+    ]
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com include:_spf.asturservers.com a:212.89.4.66 +mx ~all",

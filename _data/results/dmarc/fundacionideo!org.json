@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1069.ui-dns.biz",
-      "ns1080.ui-dns.com",
       "ns1096.ui-dns.de",
-      "ns1071.ui-dns.org"
+      "ns1071.ui-dns.org",
+      "ns1069.ui-dns.biz",
+      "ns1080.ui-dns.com"
     ],
     "warnings": []
   },
@@ -15,7 +15,7 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "mx.fundacionideo.org",
+        "hostname": "mail.fundacionideo.org",
         "addresses": [
           "95.60.60.120"
         ]
@@ -24,7 +24,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 +a +mx +a:mx.fundacionideo.org -all",
+    "record": "v=spf1 +a +mx +a:mail.fundacionideo.org -all",
     "valid": true,
     "dns_lookups": 3,
     "warnings": [],
@@ -35,7 +35,7 @@
           "mechanism": "a"
         },
         {
-          "value": "mx.fundacionideo.org",
+          "value": "mail.fundacionideo.org",
           "mechanism": "mx"
         },
         {
