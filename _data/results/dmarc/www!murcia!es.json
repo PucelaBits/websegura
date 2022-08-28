@@ -3,15 +3,20 @@
   "base_domain": "murcia.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "All nameservers failed to answer the query murcia.es. IN NS: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "hostnames": [
+      "dns2.murcia.es",
+      "dns1.murcia.es"
+    ],
+    "warnings": []
   },
   "mx": {
     "hosts": [
       {
         "preference": 10,
         "hostname": "correo.murcia.es",
-        "addresses": []
+        "addresses": [
+          "81.46.205.179"
+        ]
       },
       {
         "preference": 20,
@@ -22,7 +27,6 @@
       }
     ],
     "warnings": [
-      "All nameservers failed to answer the query correo.murcia.es. IN AAAA: Server 1.0.0.1 UDP port 53 answered SERVFAIL",
       "The domain 81-46-205-178.redes.acens.net does not exist",
       "The reverse DNS of 81.46.205.178 is 81-46-205-178.redes.acens.net, but the A/AAAA DNS records for 81-46-205-178.redes.acens.net do not resolve to 81.46.205.178"
     ]
@@ -36,6 +40,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "All nameservers failed to answer the query _dmarc.murcia.es. IN TXT: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "error": "A DMARC record does not exist for this domain or its base domain"
   }
 }

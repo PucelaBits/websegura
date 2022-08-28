@@ -29,19 +29,19 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx -all",
+    "record": "v=spf1 ip4:178.156.125.145 ip4:178.156.125.146 -all",
     "valid": true,
-    "dns_lookups": 1,
+    "dns_lookups": 0,
     "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "mail.tribunalconstitucional.es",
-          "mechanism": "mx"
+          "value": "178.156.125.145",
+          "mechanism": "ip4"
         },
         {
-          "value": "correo.tribunalconstitucional.es",
-          "mechanism": "mx"
+          "value": "178.156.125.146",
+          "mechanism": "ip4"
         }
       ],
       "neutral": [],
@@ -54,7 +54,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; rua=mailto:postmaster@tribunalconstitucional.es",
+    "record": "v=DMARC1; p=quarantine; rua=mailto:postmaster@tribunalconstitucional.es",
     "valid": true,
     "location": "tribunalconstitucional.es",
     "warnings": [],
@@ -64,7 +64,7 @@
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": true
       },
       "rua": {
@@ -106,7 +106,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": false
       }
     }

@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns3.hostingfacyl.com",
-      "ns1.hostingfacyl.com",
-      "ns2.hostingfacyl.com"
+      "ns3.andaina.net",
+      "ns2.andaina.net",
+      "ns1.andaina.net"
     ],
     "warnings": []
   },
@@ -23,26 +23,14 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:185.140.32.34 ip4:185.140.32.71 ip4:178.60.205.23 +ip4:178.60.205.61 +a +mx +ip4:178.60.205.32 +ip4:178.60.205.61 ~all",
+    "record": "v=spf1 ip4:185.140.32.61 +a +mx +ip4:185.140.32.34 +ip4:178.60.205.23 +ip4:178.60.205.61 +ip4:178.60.205.32 +ip4:178.60.205.61 ~all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "185.140.32.34",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "185.140.32.71",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "178.60.205.23",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "178.60.205.61",
+          "value": "185.140.32.61",
           "mechanism": "ip4"
         },
         {
@@ -52,6 +40,18 @@
         {
           "value": "carriondeloscondes.org",
           "mechanism": "mx"
+        },
+        {
+          "value": "185.140.32.34",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "178.60.205.23",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "178.60.205.61",
+          "mechanism": "ip4"
         },
         {
           "value": "178.60.205.32",

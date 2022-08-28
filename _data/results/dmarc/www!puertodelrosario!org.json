@@ -146,7 +146,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; rua=mailto:nuevastecnologias@puertodelrosario.org;",
+    "record": "v=DMARC1; p=quarantine; rua=mailto:dmarc@puertodelrosario.org;",
     "valid": true,
     "location": "puertodelrosario.org",
     "warnings": [],
@@ -163,7 +163,7 @@
         "value": [
           {
             "scheme": "mailto",
-            "address": "nuevastecnologias@puertodelrosario.org",
+            "address": "dmarc@puertodelrosario.org",
             "size_limit": null
           }
         ],

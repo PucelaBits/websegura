@@ -1,0 +1,31 @@
+{
+  "domain": "meet.barcelona",
+  "base_domain": "meet.barcelona",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns-1518.awsdns-61.org",
+      "ns-1852.awsdns-39.co.uk",
+      "ns-484.awsdns-60.com",
+      "ns-911.awsdns-49.net"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [],
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "meet.barcelona does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

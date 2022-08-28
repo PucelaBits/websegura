@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "dns1.raiolanetworks.es",
       "dns2.raiolanetworks.es",
-      "dns3.raiolanetworks.es",
-      "dns1.raiolanetworks.es"
+      "dns3.raiolanetworks.es"
     ],
     "warnings": []
   },
@@ -16,7 +16,7 @@
         "preference": 0,
         "hostname": "etradvigo.org",
         "addresses": [
-          "37.59.226.114"
+          "178.211.133.13"
         ]
       }
     ],
@@ -30,7 +30,7 @@
     "parsed": {
       "pass": [
         {
-          "value": "37.59.226.114",
+          "value": "178.211.133.13",
           "mechanism": "a"
         },
         {

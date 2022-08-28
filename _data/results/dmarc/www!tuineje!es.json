@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "sdns2.ovh.net",
-      "dns.tuineje.es"
+      "dns.tuineje.es",
+      "sdns2.ovh.net"
     ],
     "warnings": []
   },
@@ -29,12 +29,10 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 a:tuineje.es mx ptr:tuineje.es mx ip4:188.165.207.97 ~all",
+    "record": "v=spf1 a mx a:correo.tuineje.es ip4:188.165.207.97 -all",
     "valid": true,
     "dns_lookups": 3,
-    "warnings": [
-      "The ptr mechanism should not be used - https://tools.ietf.org/html/rfc7208#section-5.5"
-    ],
+    "warnings": [],
     "parsed": {
       "pass": [
         {
@@ -50,16 +48,8 @@
           "mechanism": "mx"
         },
         {
-          "value": "tuineje.es",
-          "mechanism": "ptr"
-        },
-        {
-          "value": "mail.tuineje.es",
-          "mechanism": "mx"
-        },
-        {
-          "value": "correo.tuineje.es",
-          "mechanism": "mx"
+          "value": "188.165.207.97",
+          "mechanism": "a"
         },
         {
           "value": "188.165.207.97",
@@ -72,11 +62,11 @@
       "include": [],
       "redirect": null,
       "exp": null,
-      "all": "softfail"
+      "all": "fail"
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; rua=mailto:dmarc@tuineje.es; ruf=mailto:dmarc@tuineje.es; adkim=r; aspf=r; rf=afrf; sp=quarantine",
+    "record": "v=DMARC1; p=reject; rua=mailto:dmarc@tuineje.es; ruf=mailto:dmarc@tuineje.es; adkim=s; aspf=s; rf=afrf; sp=reject",
     "valid": true,
     "location": "tuineje.es",
     "warnings": [],
@@ -86,7 +76,7 @@
         "explicit": true
       },
       "p": {
-        "value": "quarantine",
+        "value": "reject",
         "explicit": true
       },
       "rua": {
@@ -110,11 +100,11 @@
         "explicit": true
       },
       "adkim": {
-        "value": "r",
+        "value": "s",
         "explicit": true
       },
       "aspf": {
-        "value": "r",
+        "value": "s",
         "explicit": true
       },
       "rf": {
@@ -124,7 +114,7 @@
         "explicit": true
       },
       "sp": {
-        "value": "quarantine",
+        "value": "reject",
         "explicit": true
       },
       "fo": {

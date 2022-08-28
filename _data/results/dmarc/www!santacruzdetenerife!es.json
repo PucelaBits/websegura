@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns01.santacruzdetenerife.es",
-      "dns02.santacruzdetenerife.es"
+      "dns02.santacruzdetenerife.es",
+      "dns01.santacruzdetenerife.es"
     ],
     "warnings": []
   },
@@ -98,7 +98,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; rua=mailto:dmarcreports@santacruzdetenerife.es; sp=quarantine; pct=100; adkim=s; aspf=s",
+    "record": "v=DMARC1; p=reject; rua=mailto:dmarcreports@santacruzdetenerife.es; sp=quarantine; pct=100; adkim=s; aspf=s",
     "valid": true,
     "location": "santacruzdetenerife.es",
     "warnings": [],
@@ -108,7 +108,7 @@
         "explicit": true
       },
       "p": {
-        "value": "quarantine",
+        "value": "reject",
         "explicit": true
       },
       "rua": {

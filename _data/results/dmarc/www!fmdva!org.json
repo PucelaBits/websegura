@@ -6,8 +6,8 @@
     "hostnames": [
       "ns.dinahosting.com",
       "ns3.dinahosting.com",
-      "ns2.dinahosting.com",
-      "ns4.dinahosting.com"
+      "ns4.dinahosting.com",
+      "ns2.dinahosting.com"
     ],
     "warnings": []
   },
@@ -24,49 +24,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 a mx ip4:82.98.191.181 ip4:213.201.115.187 ip4:213.201.115.188 ip4:176.58.8.112 ip4:212.183.201.145 +all",
-    "valid": true,
-    "dns_lookups": 2,
-    "warnings": [],
-    "parsed": {
-      "pass": [
-        {
-          "value": "82.98.169.149",
-          "mechanism": "a"
-        },
-        {
-          "value": "mail.fmdva.org",
-          "mechanism": "mx"
-        },
-        {
-          "value": "82.98.191.181",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "213.201.115.187",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "213.201.115.188",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "176.58.8.112",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "212.183.201.145",
-          "mechanism": "ip4"
-        }
-      ],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [],
-      "redirect": null,
-      "exp": null,
-      "all": "pass"
-    }
+    "record": null,
+    "valid": false,
+    "error": "fmdva.org has multiple SPF TXT records"
   },
   "dmarc": {
     "record": null,

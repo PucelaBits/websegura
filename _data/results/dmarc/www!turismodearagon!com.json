@@ -13,197 +13,123 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "mxa.eu.mailgun.org",
+        "hostname": "mx.turismodearagon.com",
         "addresses": [
-          "3.122.29.183",
-          "35.156.190.149",
-          "35.157.140.183"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "mxb.eu.mailgun.org",
-        "addresses": [
-          "3.122.29.183",
-          "35.156.190.149",
-          "35.157.140.183"
+          "51.255.126.193"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:mailgun.org ~all",
+    "record": "v=spf1 mx include:spf.ipzmarketing.com -all ",
     "valid": true,
-    "dns_lookups": 3,
-    "warnings": [],
+    "dns_lookups": 2,
+    "warnings": [
+      "Any text after the all mechanism is ignored"
+    ],
     "parsed": {
-      "pass": [],
+      "pass": [
+        {
+          "value": "mx.turismodearagon.com",
+          "mechanism": "mx"
+        }
+      ],
       "neutral": [],
       "softfail": [],
       "fail": [],
       "include": [
         {
-          "domain": "mailgun.org",
-          "record": "v=spf1 include:_spf.mailgun.org include:_spf.eu.mailgun.org -all",
-          "dns_lookups": 2,
+          "domain": "spf.ipzmarketing.com",
+          "record": "v=spf1 ip4:93.159.208.0/21 ip4:185.103.8.0/22 ip4:5.56.22.0/24 ip4:82.199.156.0/24 ip4:212.192.13.0/24 ~all",
+          "dns_lookups": 0,
           "parsed": {
-            "pass": [],
+            "pass": [
+              {
+                "value": "93.159.208.0/21",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.103.8.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "5.56.22.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "82.199.156.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "212.192.13.0/24",
+                "mechanism": "ip4"
+              }
+            ],
             "neutral": [],
             "softfail": [],
             "fail": [],
-            "include": [
-              {
-                "domain": "_spf.mailgun.org",
-                "record": "v=spf1 ip4:209.61.151.0/24 ip4:166.78.68.0/22 ip4:198.61.254.0/23 ip4:192.237.158.0/23 ip4:23.253.182.0/23 ip4:104.130.96.0/28 ip4:146.20.113.0/24 ip4:146.20.191.0/24 ip4:159.135.224.0/20 ip4:69.72.32.0/20 ip4:104.130.122.0/23 ip4:146.20.112.0/26 ip4:161.38.192.0/20 ip4:143.55.224.0/21 ip4:143.55.232.0/22 ip4:159.112.240.0/20 ~all",
-                "dns_lookups": 0,
-                "parsed": {
-                  "pass": [
-                    {
-                      "value": "209.61.151.0/24",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "166.78.68.0/22",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "198.61.254.0/23",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "192.237.158.0/23",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "23.253.182.0/23",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "104.130.96.0/28",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "146.20.113.0/24",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "146.20.191.0/24",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "159.135.224.0/20",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "69.72.32.0/20",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "104.130.122.0/23",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "146.20.112.0/26",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "161.38.192.0/20",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "143.55.224.0/21",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "143.55.232.0/22",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "159.112.240.0/20",
-                      "mechanism": "ip4"
-                    }
-                  ],
-                  "neutral": [],
-                  "softfail": [],
-                  "fail": [],
-                  "include": [],
-                  "redirect": null,
-                  "exp": null,
-                  "all": "softfail"
-                },
-                "warnings": []
-              },
-              {
-                "domain": "_spf.eu.mailgun.org",
-                "record": "v=spf1 ip4:141.193.32.0/23 ip4:159.135.140.80/29 ip4:159.135.132.128/25 ip4:161.38.204.0/22 ip4:87.253.232.0/21 ip4:185.189.236.0/22 ip4:185.211.120.0/22 ip4:185.250.236.0/22 ip4:143.55.236.0/22 ~all",
-                "dns_lookups": 0,
-                "parsed": {
-                  "pass": [
-                    {
-                      "value": "141.193.32.0/23",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "159.135.140.80/29",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "159.135.132.128/25",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "161.38.204.0/22",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "87.253.232.0/21",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "185.189.236.0/22",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "185.211.120.0/22",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "185.250.236.0/22",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "143.55.236.0/22",
-                      "mechanism": "ip4"
-                    }
-                  ],
-                  "neutral": [],
-                  "softfail": [],
-                  "fail": [],
-                  "include": [],
-                  "redirect": null,
-                  "exp": null,
-                  "all": "softfail"
-                },
-                "warnings": []
-              }
-            ],
+            "include": [],
             "redirect": null,
             "exp": null,
-            "all": "fail"
+            "all": "softfail"
           },
           "warnings": []
         }
       ],
       "redirect": null,
       "exp": null,
-      "all": "softfail"
+      "all": "fail"
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=none; ",
+    "valid": true,
+    "location": "turismodearagon.com",
+    "warnings": [
+      "rua tag (destination for aggregate reports) not found"
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }

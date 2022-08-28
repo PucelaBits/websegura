@@ -4,15 +4,24 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns4.noc.softec-internet.com",
       "ns1.noc.softec-internet.com",
-      "ns2.noc.softec-internet.com"
+      "ns2.noc.softec-internet.com",
+      "ns4.noc.softec-internet.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 0,
+        "hostname": "ribadedeva-es.mail.protection.outlook.com",
+        "addresses": [
+          "104.47.18.202",
+          "104.47.22.138"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com -all",

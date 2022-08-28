@@ -1,0 +1,31 @@
+{
+  "domain": "guia.barcelona.cat",
+  "base_domain": "barcelona.cat",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns-1052.awsdns-03.org",
+      "ns-1683.awsdns-18.co.uk",
+      "ns-29.awsdns-03.com",
+      "ns-649.awsdns-17.net"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [],
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "guia.barcelona.cat does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}
