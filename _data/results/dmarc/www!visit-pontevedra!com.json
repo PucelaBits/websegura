@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns6.serviciodns.es",
       "ns5.serviciodns.es",
-      "ns4.serviciodns.es"
+      "ns4.serviciodns.es",
+      "ns6.serviciodns.es"
     ],
     "warnings": []
   },
@@ -16,24 +16,24 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.251.2.27",
-          "2607:f8b0:4023:c0b::1a"
+          "142.250.114.27",
+          "2607:f8b0:4023:1006::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "2607:f8b0:4003:c15::1a",
-          "64.233.171.27"
+          "172.217.197.27",
+          "2607:f8b0:4001:c56::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "142.250.152.27",
-          "2607:f8b0:4001:c56::1a"
+          "172.253.113.27",
+          "2607:f8b0:4023:1::1a"
         ]
       }
     ],

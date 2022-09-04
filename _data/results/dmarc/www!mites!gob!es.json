@@ -171,71 +171,9 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; fo=1;rua=mailto:dmarc.rua@mites.gob.es;ruf=mailto:dmarc.ruf@mites.gob.es; adkim=r; aspf=r",
-    "valid": true,
+    "record": "v=DMARC1; p=none; fo=0 ;rua=mailto:dmarc.rua@mites.gob.es;ruf=mailto:dmarc.ruf@mites.gob.es; adkim=r; aspf=s",
+    "valid": false,
     "location": "mites.gob.es",
-    "warnings": [],
-    "tags": {
-      "v": {
-        "value": "DMARC1",
-        "explicit": true
-      },
-      "p": {
-        "value": "none",
-        "explicit": true
-      },
-      "fo": {
-        "value": [
-          "1"
-        ],
-        "explicit": true
-      },
-      "rua": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "dmarc.rua@mites.gob.es",
-            "size_limit": null
-          }
-        ],
-        "explicit": true
-      },
-      "ruf": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "dmarc.ruf@mites.gob.es",
-            "size_limit": null
-          }
-        ],
-        "explicit": true
-      },
-      "adkim": {
-        "value": "r",
-        "explicit": true
-      },
-      "aspf": {
-        "value": "r",
-        "explicit": true
-      },
-      "pct": {
-        "value": 100,
-        "explicit": false
-      },
-      "rf": {
-        "value": [
-          "afrf"
-        ],
-        "explicit": false
-      },
-      "ri": {
-        "value": 86400,
-        "explicit": false
-      },
-      "sp": {
-        "value": "none",
-        "explicit": false
-      }
-    }
+    "error": "0  is not a valid option for the DMARC fo tag"
   }
 }

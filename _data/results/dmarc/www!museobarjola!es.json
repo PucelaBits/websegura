@@ -3,12 +3,8 @@
   "base_domain": "museobarjola.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "ns09.ns-cloud4b.com",
-      "ns06.ns-cloud4b.net",
-      "ns07.ns-cloud4b.org"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "All nameservers failed to answer the query museobarjola.es. IN NS: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
   },
   "mx": {
     "hosts": [
@@ -187,53 +183,9 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none",
-    "valid": true,
-    "location": "museobarjola.es",
-    "warnings": [
-      "rua tag (destination for aggregate reports) not found"
-    ],
-    "tags": {
-      "v": {
-        "value": "DMARC1",
-        "explicit": true
-      },
-      "p": {
-        "value": "none",
-        "explicit": true
-      },
-      "adkim": {
-        "value": "r",
-        "explicit": false
-      },
-      "aspf": {
-        "value": "r",
-        "explicit": false
-      },
-      "fo": {
-        "value": [
-          "0"
-        ],
-        "explicit": false
-      },
-      "pct": {
-        "value": 100,
-        "explicit": false
-      },
-      "rf": {
-        "value": [
-          "afrf"
-        ],
-        "explicit": false
-      },
-      "ri": {
-        "value": 86400,
-        "explicit": false
-      },
-      "sp": {
-        "value": "none",
-        "explicit": false
-      }
-    }
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "All nameservers failed to answer the query _dmarc.museobarjola.es. IN TXT: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
   }
 }

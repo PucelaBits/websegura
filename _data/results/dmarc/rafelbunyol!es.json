@@ -3,8 +3,11 @@
   "base_domain": "rafelbunyol.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "All nameservers failed to answer the query rafelbunyol.es. IN NS: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "hostnames": [
+      "sdns2.ovh.net",
+      "kvm4.srvdr.com"
+    ],
+    "warnings": []
   },
   "mx": {
     "hosts": [],
@@ -249,14 +252,6 @@
                 "mechanism": "a"
               },
               {
-                "value": "2001:1af8:4500:a050:2::1",
-                "mechanism": "a"
-              },
-              {
-                "value": "2001:1af8:4700:a008:1::2",
-                "mechanism": "a"
-              },
-              {
                 "value": "2001:1af8:4900:a01e:9::1",
                 "mechanism": "a"
               },
@@ -422,6 +417,10 @@
               },
               {
                 "value": "2001:978:2:2c::149:3",
+                "mechanism": "a"
+              },
+              {
+                "value": "2001:978:2:2f::5:101",
                 "mechanism": "a"
               },
               {
@@ -1093,9 +1092,7 @@
     "record": "v=DMARC1; p=reject; pct=100; rua=mailto:dmarc@rafelbunyol.es",
     "valid": true,
     "location": "rafelbunyol.es",
-    "warnings": [
-      "Failed to retrieve MX records for the domain of rua email address dmarc@rafelbunyol.es - All nameservers failed to answer the query rafelbunyol.es. IN MX: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
-    ],
+    "warnings": [],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -1110,7 +1107,13 @@
         "explicit": true
       },
       "rua": {
-        "value": "mailto:dmarc@rafelbunyol.es",
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc@rafelbunyol.es",
+            "size_limit": null
+          }
+        ],
         "explicit": true
       },
       "adkim": {

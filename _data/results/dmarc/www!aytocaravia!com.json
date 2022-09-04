@@ -18,10 +18,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
-      "The reverse DNS of 82.223.89.64 is antispam.asturhosting.com, but the A/AAAA DNS records for antispam.asturhosting.com do not resolve to 82.223.89.64"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com include:_spf.asturservers.com a:212.89.4.66 +mx ~all",

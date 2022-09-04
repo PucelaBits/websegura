@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "sintlin1.caib.es",
-      "sintlin2.caib.es"
+      "sintlin2.caib.es",
+      "sintlin1.caib.es"
     ],
     "warnings": []
   },
@@ -15,40 +15,40 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.250.141.27",
-          "2607:f8b0:4023:c0d::1b"
+          "2607:f8b0:4023:1002::1b",
+          "64.233.177.27"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "2607:f8b0:4003:c15::1b",
-          "64.233.171.27"
+          "172.217.197.26",
+          "2607:f8b0:4001:c56::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "142.250.152.27",
-          "2607:f8b0:4001:c56::1b"
+          "172.253.113.26",
+          "2607:f8b0:4023:1::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "aspmx2.googlemail.com",
         "addresses": [
-          "2607:f8b0:4003:c15::1a",
-          "64.233.171.26"
+          "142.250.152.26",
+          "2607:f8b0:4001:c56::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "aspmx3.googlemail.com",
         "addresses": [
-          "142.250.152.27",
-          "2607:f8b0:4001:c56::1b"
+          "108.177.12.27",
+          "2607:f8b0:4023:1::1a"
         ]
       }
     ],

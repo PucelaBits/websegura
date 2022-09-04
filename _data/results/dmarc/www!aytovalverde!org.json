@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.virtualns.net",
-      "ns1.virtualns.net"
+      "ns1.virtualns.net",
+      "ns2.virtualns.net"
     ],
     "warnings": []
   },
@@ -44,10 +44,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
-      "The reverse DNS of 185.103.159.139 is se05-it.route25.eu, but the A/AAAA DNS records for se05-it.route25.eu do not resolve to 185.103.159.139"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx a ip4:91.142.220.126 a:tenerife.vservers.es -all",
