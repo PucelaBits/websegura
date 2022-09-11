@@ -17,7 +17,7 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.250.138.26",
+          "142.250.114.26",
           "2607:f8b0:4023:1004::1b"
         ]
       },
@@ -26,7 +26,7 @@
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
           "142.250.152.26",
-          "2607:f8b0:4001:c56::1b"
+          "2607:f8b0:4001:c56::1a"
         ]
       },
       {
@@ -34,14 +34,14 @@
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
           "172.253.113.27",
-          "2607:f8b0:400c:c08::1a"
+          "2607:f8b0:4023:1::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "173.194.77.26",
+          "173.194.77.27",
           "2607:f8b0:4023:401::1b"
         ]
       },
@@ -50,13 +50,11 @@
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
           "173.194.219.27",
-          "2800:3f0:4003:c00::1a"
+          "2607:f8b0:4002:c03::1a"
         ]
       }
     ],
-    "warnings": [
-      "2800:3f0:4003:c00::1a does not have any reverse DNS (PTR) records"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 +a +mx ip4:195.235.115.46/32 +ip4:92.43.19.148 +ip4:92.43.18.128/26 +ip4:176.28.99.27/32 include:_spf.google.com include:servers.mcsv.net include:amazonses.com ip4:152.160.0.0/16 ip4:78.157.218.0/24 ip4:74.63.245.96/28 -all",

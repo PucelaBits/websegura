@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "proxy2.eprinsa.es",
-      "proxy.eprinsa.es"
+      "proxy.eprinsa.es",
+      "proxy2.eprinsa.es"
     ],
     "warnings": []
   },
@@ -15,8 +15,8 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.250.113.27",
-          "2607:f8b0:4023:1002::1b"
+          "142.250.114.27",
+          "2607:f8b0:4023:1006::1a"
         ]
       },
       {
@@ -32,7 +32,7 @@
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
           "172.253.113.26",
-          "2607:f8b0:4023:1::1b"
+          "2607:f8b0:4023:1::1a"
         ]
       },
       {
@@ -40,15 +40,15 @@
         "hostname": "aspmx2.googlemail.com",
         "addresses": [
           "142.250.152.27",
-          "2607:f8b0:400d:c0f::1a"
+          "2607:f8b0:4001:c56::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "aspmx3.googlemail.com",
         "addresses": [
-          "108.177.12.26",
-          "2607:f8b0:4023:1::1a"
+          "172.253.113.26",
+          "2607:f8b0:4023:1::1b"
         ]
       }
     ],

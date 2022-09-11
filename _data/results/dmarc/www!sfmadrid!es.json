@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "ns1.cuentadns.com",
-      "ns3.cuentadns.com",
-      "ns2.cuentadns.com"
+      "ns2.cuentadns.com",
+      "ns3.cuentadns.com"
     ],
     "warnings": []
   },
@@ -16,8 +16,8 @@
         "preference": 0,
         "hostname": "sfmadrid-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.1.36",
-          "104.47.2.36"
+          "104.47.0.36",
+          "104.47.1.36"
         ]
       }
     ],
@@ -36,7 +36,7 @@
       "include": [
         {
           "domain": "spf.protection.outlook.com",
-          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/48 include:spfd.protection.outlook.com -all",
+          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/50 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 include:spfd.protection.outlook.com -all",
           "dns_lookups": 1,
           "parsed": {
             "pass": [
@@ -61,7 +61,19 @@
                 "mechanism": "ip6"
               },
               {
-                "value": "2a01:111:f403::/48",
+                "value": "2a01:111:f403::/49",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:8000::/50",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:c000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:f000::/52",
                 "mechanism": "ip6"
               }
             ],

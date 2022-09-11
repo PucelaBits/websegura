@@ -3,8 +3,12 @@
   "base_domain": "mineco.gob.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "All nameservers failed to answer the query mineco.gob.es. IN NS: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "hostnames": [
+      "ns.mcx.es",
+      "ns1.t-systems.es",
+      "ns2.t-systems.es"
+    ],
+    "warnings": []
   },
   "mx": {
     "hosts": [],

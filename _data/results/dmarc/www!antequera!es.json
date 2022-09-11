@@ -3,11 +3,8 @@
   "base_domain": "antequera.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "sdns2.ovh.net",
-      "ns3053579.ip-137-74-93.eu"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "All nameservers failed to answer the query antequera.es. IN NS: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
   },
   "mx": {
     "hosts": [
@@ -46,6 +43,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "error": "All nameservers failed to answer the query _dmarc.antequera.es. IN TXT: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
   }
 }

@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "picula.funep.es",
       "sun.rediris.es",
-      "chico.rediris.es",
-      "picula.funep.es"
+      "chico.rediris.es"
     ],
     "warnings": []
   },
@@ -16,9 +16,7 @@
         "preference": 10,
         "hostname": "mx01.puc.rediris.es",
         "addresses": [
-          "130.206.19.130",
           "130.206.19.162",
-          "2001:720:418:ca10::2",
           "2001:720:418:ca11::2"
         ]
       },
@@ -26,9 +24,7 @@
         "preference": 10,
         "hostname": "mx02.puc.rediris.es",
         "addresses": [
-          "130.206.19.130",
           "130.206.19.162",
-          "2001:720:418:ca10::2",
           "2001:720:418:ca11::2"
         ]
       }

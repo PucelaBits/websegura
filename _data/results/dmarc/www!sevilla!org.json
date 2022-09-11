@@ -5,9 +5,9 @@
   "ns": {
     "hostnames": [
       "ns4.dnsgeneral.net",
-      "ns1.dnsgeneral.net",
       "ns2.dnsgeneral.net",
-      "ns3.dnsgeneral.net"
+      "ns3.dnsgeneral.net",
+      "ns1.dnsgeneral.net"
     ],
     "warnings": []
   },
@@ -265,7 +265,7 @@
         },
         {
           "domain": "spf.acumbamail.com",
-          "record": "v=spf1 ip4:176.28.104.1/24 ip4:185.2.150.1/24 ip4:185.103.37.224/28 ip4:5.57.226.1/24 ip4:5.57.227.80/28 ip4:185.99.184.146/31 ip4:5.57.227.112/28 ip4:185.99.184.144/28 ip4:185.103.36.192/28 ~all",
+          "record": "v=spf1 ip4:176.28.104.1/24 ip4:185.2.150.1/24 ip4:185.103.37.224/28 ip4:5.57.226.1/24 ip4:5.57.227.80/28 ip4:5.57.227.112/28 ip4:185.99.184.144/28 ip4:185.103.36.192/28 ~all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -287,10 +287,6 @@
               },
               {
                 "value": "5.57.227.80/28",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "185.99.184.146/31",
                 "mechanism": "ip4"
               },
               {

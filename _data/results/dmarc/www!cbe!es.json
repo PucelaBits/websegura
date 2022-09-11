@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns3.losdns.net",
       "ns1.losdns.net",
-      "ns2.losdns.net",
-      "ns3.losdns.net"
+      "ns2.losdns.net"
     ],
     "warnings": []
   },
@@ -16,8 +16,8 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.251.116.26",
-          "2607:f8b0:4023:1002::1b"
+          "142.251.116.27",
+          "2607:f8b0:4023:1006::1a"
         ]
       },
       {
@@ -32,8 +32,8 @@
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "172.253.113.26",
-          "2607:f8b0:4023:1::1b"
+          "172.253.113.27",
+          "2607:f8b0:4023:1::1a"
         ]
       },
       {
@@ -41,7 +41,7 @@
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
           "173.194.77.27",
-          "2607:f8b0:4004:c07::1a"
+          "2607:f8b0:4023:401::1a"
         ]
       },
       {
@@ -49,7 +49,7 @@
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
           "173.194.219.26",
-          "2607:f8b0:4002:c03::1b"
+          "2607:f8b0:4002:c03::1a"
         ]
       },
       {

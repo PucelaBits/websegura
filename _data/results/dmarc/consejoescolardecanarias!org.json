@@ -15,16 +15,16 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.250.113.26",
-          "2607:f8b0:4023:1009::1a"
+          "142.250.114.26",
+          "2607:f8b0:4023:1004::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "142.250.152.26",
-          "2607:f8b0:4001:c56::1b"
+          "142.250.152.27",
+          "2607:f8b0:4001:c56::1a"
         ]
       },
       {
@@ -32,7 +32,7 @@
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
           "172.253.113.27",
-          "2607:f8b0:4023:1::1b"
+          "2607:f8b0:4023:1::1a"
         ]
       },
       {
@@ -55,7 +55,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:_spf.google.com ~all",
+    "record": "v=spf1 include:_spf.google.com -all",
     "valid": true,
     "dns_lookups": 4,
     "warnings": [],
@@ -244,7 +244,7 @@
       ],
       "redirect": null,
       "exp": null,
-      "all": "softfail"
+      "all": "fail"
     }
   },
   "dmarc": {

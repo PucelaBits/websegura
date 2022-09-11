@@ -4,11 +4,11 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns3.cdmon.net",
+      "ns4.cdmondns-01.org",
       "ns2.cdmon.net",
       "ns5.cdmondns-01.com",
-      "ns4.cdmondns-01.org",
-      "ns1.cdmon.net"
+      "ns1.cdmon.net",
+      "ns3.cdmon.net"
     ],
     "warnings": []
   },
@@ -18,40 +18,40 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.250.113.26",
-          "2607:f8b0:4023:1006::1b"
+          "142.251.116.27",
+          "2607:f8b0:4023:1009::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "142.250.152.27",
-          "2607:f8b0:4001:c56::1b"
+          "142.250.152.26",
+          "2607:f8b0:4001:c56::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "108.177.12.27",
-          "2607:f8b0:4023:1::1a"
+          "172.253.113.27",
+          "2607:f8b0:4023:1::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "aspmx2.googlemail.com",
         "addresses": [
-          "172.217.197.27",
-          "2607:f8b0:4001:c56::1a"
+          "142.250.152.27",
+          "2607:f8b0:4001:c56::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "aspmx3.googlemail.com",
         "addresses": [
-          "172.253.113.27",
-          "2607:f8b0:4023:1::1a"
+          "172.253.113.26",
+          "2607:f8b0:4023:1::1b"
         ]
       },
       {

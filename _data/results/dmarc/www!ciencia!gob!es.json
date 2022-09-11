@@ -27,6 +27,8 @@
       }
     ],
     "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
+      "The reverse DNS of 212.128.122.3 is smtp1.mineco.es, but the A/AAAA DNS records for smtp1.mineco.es do not resolve to 212.128.122.3",
       "The reverse DNS of 212.128.122.3 is smtp1.micinn.es, but the A/AAAA DNS records for smtp1.micinn.es do not resolve to 212.128.122.3",
       "The reverse DNS of 212.128.122.4 is smtp2.micinn.es, but the A/AAAA DNS records for smtp2.micinn.es do not resolve to 212.128.122.4"
     ]
@@ -69,7 +71,7 @@
       "include": [
         {
           "domain": "spf.acumbamail.com",
-          "record": "v=spf1 ip4:176.28.104.1/24 ip4:185.2.150.1/24 ip4:185.103.37.224/28 ip4:5.57.226.1/24 ip4:5.57.227.80/28 ip4:185.99.184.146/31 ip4:5.57.227.112/28 ip4:185.99.184.144/28 ip4:185.103.36.192/28 ~all",
+          "record": "v=spf1 ip4:176.28.104.1/24 ip4:185.2.150.1/24 ip4:185.103.37.224/28 ip4:5.57.226.1/24 ip4:5.57.227.80/28 ip4:5.57.227.112/28 ip4:185.99.184.144/28 ip4:185.103.36.192/28 ~all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -91,10 +93,6 @@
               },
               {
                 "value": "5.57.227.80/28",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "185.99.184.146/31",
                 "mechanism": "ip4"
               },
               {
@@ -122,7 +120,7 @@
         },
         {
           "domain": "spf.protection.outlook.com",
-          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/48 include:spfd.protection.outlook.com -all",
+          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/50 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 include:spfd.protection.outlook.com -all",
           "dns_lookups": 1,
           "parsed": {
             "pass": [
@@ -147,7 +145,19 @@
                 "mechanism": "ip6"
               },
               {
-                "value": "2a01:111:f403::/48",
+                "value": "2a01:111:f403::/49",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:8000::/50",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:c000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:f000::/52",
                 "mechanism": "ip6"
               }
             ],

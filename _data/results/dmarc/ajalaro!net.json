@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns10.ovh.net",
-      "ns10.ovh.net"
+      "ns10.ovh.net",
+      "dns10.ovh.net"
     ],
     "warnings": []
   },
@@ -15,16 +15,16 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.250.114.26",
-          "2607:f8b0:4023:1004::1a"
+          "142.250.115.26",
+          "2607:f8b0:4023:1004::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "142.250.152.27",
-          "2607:f8b0:400d:c0f::1b"
+          "142.250.152.26",
+          "2607:f8b0:4001:c56::1b"
         ]
       },
       {
@@ -32,15 +32,15 @@
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
           "172.253.113.27",
-          "2607:f8b0:400c:c08::1b"
+          "2607:f8b0:4023:1::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "172.253.62.27",
-          "2607:f8b0:4023:401::1b"
+          "173.194.77.27",
+          "2607:f8b0:4023:401::1a"
         ]
       },
       {
@@ -48,13 +48,11 @@
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
           "173.194.219.26",
-          "2800:3f0:4003:c00::1a"
+          "2607:f8b0:4002:c03::1b"
         ]
       }
     ],
-    "warnings": [
-      "2800:3f0:4003:c00::1a does not have any reverse DNS (PTR) records"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:_spf.google.com ~all",
