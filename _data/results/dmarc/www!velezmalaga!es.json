@@ -4,17 +4,52 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns3.cdmon.net",
-      "ns2.cdmon.net",
-      "ns1.cdmon.net",
       "ns5.cdmondns-01.com",
-      "ns4.cdmondns-01.org"
+      "ns4.cdmondns-01.org",
+      "ns1.cdmon.net",
+      "ns3.cdmon.net",
+      "ns2.cdmon.net"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx.spamexperts.com",
+        "addresses": [
+          "2001:550:2:78::ca:100",
+          "38.109.53.20"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "fallbackmx.spamexperts.eu",
+        "addresses": [
+          "2001:550:2:61::2fc:100",
+          "2001:550:2:78::ca:100",
+          "2001:550:2:9::280:100",
+          "38.109.53.20",
+          "38.111.198.185",
+          "38.89.254.156"
+        ]
+      },
+      {
+        "preference": 30,
+        "hostname": "lastmx.spamexperts.net",
+        "addresses": [
+          "130.117.53.188",
+          "149.13.75.27",
+          "2001:550:2:61::2fc:100",
+          "2001:550:2:9::280:100",
+          "2001:978:2:2c::137:100",
+          "2001:978:2:7::162:100",
+          "38.111.198.185",
+          "38.89.254.156"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.qsemail.net include:spf.mailjet.com -all",
@@ -102,6 +137,14 @@
                 "mechanism": "a"
               },
               {
+                "value": "130.117.54.73",
+                "mechanism": "a"
+              },
+              {
+                "value": "130.117.54.74",
+                "mechanism": "a"
+              },
+              {
                 "value": "149.13.73.12",
                 "mechanism": "a"
               },
@@ -110,11 +153,43 @@
                 "mechanism": "a"
               },
               {
+                "value": "149.13.73.29",
+                "mechanism": "a"
+              },
+              {
+                "value": "149.13.73.30",
+                "mechanism": "a"
+              },
+              {
+                "value": "149.13.73.31",
+                "mechanism": "a"
+              },
+              {
+                "value": "149.13.73.32",
+                "mechanism": "a"
+              },
+              {
                 "value": "149.13.73.4",
                 "mechanism": "a"
               },
               {
                 "value": "149.13.73.6",
+                "mechanism": "a"
+              },
+              {
+                "value": "154.59.194.248",
+                "mechanism": "a"
+              },
+              {
+                "value": "154.59.194.249",
+                "mechanism": "a"
+              },
+              {
+                "value": "154.59.194.251",
+                "mechanism": "a"
+              },
+              {
+                "value": "154.59.194.252",
                 "mechanism": "a"
               },
               {
@@ -247,6 +322,10 @@
               },
               {
                 "value": "2001:550:2:61::3bf:11",
+                "mechanism": "a"
+              },
+              {
+                "value": "2001:550:2:61::3bf:110",
                 "mechanism": "a"
               },
               {
@@ -558,22 +637,6 @@
                 "mechanism": "a"
               },
               {
-                "value": "2a01:4f8:13b:3001::2",
-                "mechanism": "a"
-              },
-              {
-                "value": "2a01:4f8:13b:308b::2",
-                "mechanism": "a"
-              },
-              {
-                "value": "2a01:4f8:140:4289::2",
-                "mechanism": "a"
-              },
-              {
-                "value": "2a01:4f8:140:42a7::2",
-                "mechanism": "a"
-              },
-              {
                 "value": "2a01:4f8:141:40c2::2",
                 "mechanism": "a"
               },
@@ -591,10 +654,6 @@
               },
               {
                 "value": "2a01:4f8:172:168b::2",
-                "mechanism": "a"
-              },
-              {
-                "value": "2a01:4f8:172:39e6::2",
                 "mechanism": "a"
               },
               {
@@ -771,10 +830,6 @@
               },
               {
                 "value": "62.138.14.204",
-                "mechanism": "a"
-              },
-              {
-                "value": "69.64.57.149",
                 "mechanism": "a"
               },
               {
@@ -1095,6 +1150,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.velezmalaga.es\n\nVLOPS5720\n\nv=spf1 include:spf.qsemail.net include:spf.mailjet.com -all"
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.velezmalaga.es\n\nv=spf1 include:spf.qsemail.net include:spf.mailjet.com -all\n\nVLOPS5720"
   }
 }

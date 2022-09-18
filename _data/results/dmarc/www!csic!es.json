@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "chico.rediris.es",
       "sun.rediris.es",
+      "chico.rediris.es",
       "olmo.csic.es",
       "sabina.cti.csic.es"
     ],
@@ -26,29 +26,9 @@
     ]
   },
   "spf": {
-    "record": "v=spf1  ip4:161.111.10.57 ip4:161.111.10.60 -all",
-    "valid": true,
-    "dns_lookups": 0,
-    "warnings": [],
-    "parsed": {
-      "pass": [
-        {
-          "value": "161.111.10.57",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "161.111.10.60",
-          "mechanism": "ip4"
-        }
-      ],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [],
-      "redirect": null,
-      "exp": null,
-      "all": "fail"
-    }
+    "record": null,
+    "valid": false,
+    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "dmarc": {
     "record": null,

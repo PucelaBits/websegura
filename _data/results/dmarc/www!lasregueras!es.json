@@ -9,8 +9,16 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query lasregueras.es. IN MX: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.lasregueras.es",
+        "addresses": []
+      }
+    ],
+    "warnings": [
+      "All nameservers failed to answer the query mail.lasregueras.es. IN AAAA: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    ]
   },
   "spf": {
     "record": "v=spf1 +a +mx +include:dv45.digival.org -all",
@@ -22,6 +30,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "All nameservers failed to answer the query _dmarc.lasregueras.es. IN TXT: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "error": "A DMARC record does not exist for this domain or its base domain"
   }
 }

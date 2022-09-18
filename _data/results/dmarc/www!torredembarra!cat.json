@@ -13,24 +13,95 @@
     "hosts": [
       {
         "preference": 0,
-        "hostname": "195.235.183.115",
-        "addresses": []
+        "hostname": "correu.torredembarra.cat",
+        "addresses": [
+          "195.235.183.115"
+        ]
       }
     ],
-    "warnings": [
-      "The domain 195.235.183.115 does not exist"
-    ]
+    "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:torredembarra.cat ~all",
-    "valid": false,
+    "record": "v=spf1 ip4:195.235.183.113/29 a:correu.torredembarra.cat ~all",
+    "valid": true,
+    "dns_lookups": 1,
     "warnings": [],
-    "error": "Include loop: torredembarra.cat"
+    "parsed": {
+      "pass": [
+        {
+          "value": "195.235.183.113/29",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "195.235.183.115",
+          "mechanism": "a"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=quarantine; sp=quarantine; rua=mailto:admin@torredembarra.cat ; pct=100; adkim=r; aspf=r",
+    "valid": true,
+    "location": "torredembarra.cat",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "sp": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "admin@torredembarra.cat",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "pct": {
+        "value": 100,
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": true
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      }
+    }
   }
 }

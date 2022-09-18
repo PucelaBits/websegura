@@ -10,8 +10,23 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query agenciatributaria.gob.es. IN MX: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx1.correo.aeat.es",
+        "addresses": [
+          "195.77.198.96"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mx2.correo.aeat.es",
+        "addresses": [
+          "195.77.198.97"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": null,

@@ -13,7 +13,7 @@
     ]
   },
   "spf": {
-    "record": "v=spf1 include:euskadi.ip-zone.com ip4:185.161.117.31/32 ip4:212.142.249.0/24 ip4:212.55.29.0/24 ip4:195.53.88.0/24 ip4:62.99.63.0/24 ip4:217.124.154.0/24 ip4:185.161.119.55/32 include:spf.protection.outlook.com -all",
+    "record": "v=spf1 include:euskadi.ip-zone.com ip4:185.161.117.31/32 ip4:185.161.119.32/27 include:spf.protection.outlook.com -all",
     "valid": true,
     "dns_lookups": 5,
     "warnings": [],
@@ -24,27 +24,7 @@
           "mechanism": "ip4"
         },
         {
-          "value": "212.142.249.0/24",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "212.55.29.0/24",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "195.53.88.0/24",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "62.99.63.0/24",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "217.124.154.0/24",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "185.161.119.55/32",
+          "value": "185.161.119.32/27",
           "mechanism": "ip4"
         }
       ],

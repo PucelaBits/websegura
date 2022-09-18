@@ -15,16 +15,16 @@
         "preference": 10,
         "hostname": "mx-01-eu-central-1.prod.hydra.sophos.com",
         "addresses": [
-          "18.185.231.126",
-          "3.120.48.222"
+          "3.120.48.222",
+          "52.29.142.60"
         ]
       },
       {
         "preference": 10,
         "hostname": "mx-02-eu-central-1.prod.hydra.sophos.com",
         "addresses": [
-          "18.185.231.126",
-          "3.120.48.222"
+          "3.120.48.222",
+          "52.29.142.60"
         ]
       }
     ],
@@ -98,10 +98,12 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=reject; rua=mailto:dmarcreports@santacruzdetenerife.es; sp=quarantine; pct=100; adkim=s; aspf=s",
+    "record": "v=DMARC1; p=reject; sp=quarantine; pct=100; adkim=s; aspf=s",
     "valid": true,
     "location": "santacruzdetenerife.es",
-    "warnings": [],
+    "warnings": [
+      "rua tag (destination for aggregate reports) not found"
+    ],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -109,16 +111,6 @@
       },
       "p": {
         "value": "reject",
-        "explicit": true
-      },
-      "rua": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "dmarcreports@santacruzdetenerife.es",
-            "size_limit": null
-          }
-        ],
         "explicit": true
       },
       "sp": {

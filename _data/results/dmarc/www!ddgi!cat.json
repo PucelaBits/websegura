@@ -4,48 +4,47 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.ddgi.cat",
       "dns2.grn.es",
-      "dns2.ddgi.cat"
+      "dns2.ddgi.cat",
+      "dns1.ddgi.cat"
     ],
     "warnings": []
   },
   "mx": {
     "hosts": [
       {
-        "preference": 10,
-        "hostname": "mx1.ddgi.cat",
+        "preference": 5,
+        "hostname": "mx.ddgi.cat",
         "addresses": [
-          "195.93.170.15"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mx2.ddgi.cat",
-        "addresses": [
-          "195.93.170.40"
+          "195.93.170.80"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "195.93.170.80 does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
-    "record": "v=spf1 mx include:spf.protection.outlook.com include:spf.mailjet.com ip4:195.93.170.5 -all",
+    "record": "v=spf1 mx include:spf.protection.outlook.com include:spf.mailjet.com ip4:195.93.170.5 ip4:195.93.170.40 ip4:157.97.64.101 -all",
     "valid": true,
     "dns_lookups": 4,
     "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "mx1.ddgi.cat",
-          "mechanism": "mx"
-        },
-        {
-          "value": "mx2.ddgi.cat",
+          "value": "mx.ddgi.cat",
           "mechanism": "mx"
         },
         {
           "value": "195.93.170.5",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "195.93.170.40",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "157.97.64.101",
           "mechanism": "ip4"
         }
       ],
