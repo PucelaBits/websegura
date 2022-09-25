@@ -10,24 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 0,
-        "hostname": "acuentascanarias-org.mail.protection.outlook.com",
-        "addresses": [
-          "104.47.18.202",
-          "104.47.22.138"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "correo.acuentascanarias.org",
-        "addresses": [
-          "80.26.156.177"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "All nameservers failed to answer the query 177.156.26.80.in-addr.arpa. IN PTR: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com -all",

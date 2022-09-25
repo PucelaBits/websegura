@@ -5,35 +5,14 @@
   "ns": {
     "hostnames": [
       "sun.rediris.es",
-      "ds3100.uib.es",
-      "chico.rediris.es"
+      "chico.rediris.es",
+      "ds3100.uib.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 20,
-        "hostname": "mx01.puc.rediris.es",
-        "addresses": [
-          "130.206.19.130",
-          "130.206.19.162",
-          "2001:720:418:ca10::2",
-          "2001:720:418:ca11::2"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mx02.puc.rediris.es",
-        "addresses": [
-          "130.206.19.130",
-          "130.206.19.162",
-          "2001:720:418:ca10::2",
-          "2001:720:418:ca11::2"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "All nameservers failed to answer the query 162.19.206.130.in-addr.arpa. IN PTR: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
   },
   "spf": {
     "record": "v=spf1 ip4:130.206.30.205 ip4:130.206.30.206 ip4:130.206.30.225 ip4:130.206.30.226 ip4:130.206.31.249 ip4:130.206.30.210 ip4:130.206.30.227 ip4:10.80.82.41 ip4:10.80.82.42 include:spf.puc.rediris.es include:spf.protection.outlook.com -all",
@@ -85,7 +64,7 @@
       "include": [
         {
           "domain": "spf.puc.rediris.es",
-          "record": "v=spf1 ip4:143.55.146.78 ip4:143.55.146.243 ip4:130.206.24.0/24 ip4:130.206.19.0/24 ip4:192.187.24.32/28 ip4:192.187.24.0/28 ip6:2001:720:418:ca10::/64 ip6:2001:720:418:ca11::/64 ~all",
+          "record": "v=spf1 ip4:143.55.146.78 ip4:143.55.148.243 ip4:130.206.24.0/24 ip4:130.206.19.0/24 ip4:192.187.24.32/28 ip4:192.187.24.0/28 ip6:2001:720:418:ca10::/64 ip6:2001:720:418:ca11::/64 ~all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -94,7 +73,7 @@
                 "mechanism": "ip4"
               },
               {
-                "value": "143.55.146.243",
+                "value": "143.55.148.243",
                 "mechanism": "ip4"
               },
               {

@@ -162,9 +162,71 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; pct=100; p=none; rua=mailto:dmarc@navantia.es; ruf=mailto:dmarc@navantia.es; fo=1",
-    "valid": false,
+    "record": "v=DMARC1; p=none; pct=100; rua=mailto:dmarc@navantia.es; ruf=mailto:dmarc@navantia.es; fo=1",
+    "valid": true,
     "location": "navantia.es",
-    "error": "the p tag must immediately follow the v tag"
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "pct": {
+        "value": 100,
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc@navantia.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc@navantia.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "1"
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }

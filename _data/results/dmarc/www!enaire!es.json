@@ -15,7 +15,7 @@
         "preference": 10,
         "hostname": "enaire-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.5.36",
+          "104.47.4.36",
           "104.47.6.36"
         ]
       }
@@ -23,7 +23,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx ip4:195.55.44.0/24 ip4:195.100.28.0/24 ip4:92.60.165.0/24 include:spf.protection.outlook.com -all",
+    "record": "v=spf1 mx ip4:195.55.44.0/24 ip4:185.195.76.0/24 ip4:185.195.77.0/24 include:spf.protection.outlook.com -all",
     "valid": true,
     "dns_lookups": 3,
     "warnings": [],
@@ -38,11 +38,11 @@
           "mechanism": "ip4"
         },
         {
-          "value": "195.100.28.0/24",
+          "value": "185.195.76.0/24",
           "mechanism": "ip4"
         },
         {
-          "value": "92.60.165.0/24",
+          "value": "185.195.77.0/24",
           "mechanism": "ip4"
         }
       ],

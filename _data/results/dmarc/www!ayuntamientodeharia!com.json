@@ -79,11 +79,12 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; pct=100",
+    "record": "v=DMARC1; p=quarantine; pct=10",
     "valid": true,
     "location": "ayuntamientodeharia.com",
     "warnings": [
-      "rua tag (destination for aggregate reports) not found"
+      "rua tag (destination for aggregate reports) not found",
+      "pct value is less than 100. This leads to inconsistent and unpredictable policy enforcement. Consider using p=none to monitor results instead"
     ],
     "tags": {
       "v": {
@@ -95,7 +96,7 @@
         "explicit": true
       },
       "pct": {
-        "value": 100,
+        "value": 10,
         "explicit": true
       },
       "adkim": {

@@ -4,29 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.hostingsage.com",
-      "ns2.hostingsage.com"
+      "ns2.hostingsage.com",
+      "ns1.hostingsage.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mx4.spamtador.com",
-        "addresses": [
-          "188.93.79.151"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "mx5.spamtador.com",
-        "addresses": [
-          "188.93.79.152"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 ip4:188.93.72.15 ip4:188.93.72.74 ip4:188.93.72.88 ~all",

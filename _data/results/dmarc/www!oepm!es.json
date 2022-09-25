@@ -21,12 +21,12 @@
       {
         "preference": 20,
         "hostname": "mail.oepm.es",
-        "addresses": [
-          "192.187.18.139"
-        ]
+        "addresses": []
       }
     ],
-    "warnings": []
+    "warnings": [
+      "All nameservers failed to answer the query mail.oepm.es. IN A: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    ]
   },
   "spf": {
     "record": "v=spf1 mx -all",

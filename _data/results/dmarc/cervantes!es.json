@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns.cervantes.es",
-      "machuca.cervantes.es"
+      "machuca.cervantes.es",
+      "dns.cervantes.es"
     ],
     "warnings": []
   },
@@ -21,9 +21,7 @@
       {
         "preference": 10,
         "hostname": "vela2.cervantes.es",
-        "addresses": [
-          "193.146.3.229"
-        ]
+        "addresses": []
       },
       {
         "preference": 20,
@@ -35,7 +33,9 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "All nameservers failed to answer the query vela2.cervantes.es. IN AAAA: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com ip4:193.146.3.230 ip4:193.146.3.229 ip4:193.146.3.128 ip4:193.146.3.129 ip4:193.146.3.130 ip4:193.146.3.219 -all",
@@ -190,6 +190,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "error": "All nameservers failed to answer the query _dmarc.cervantes.es. IN TXT: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
   }
 }

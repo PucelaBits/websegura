@@ -10,27 +10,23 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mail.ces.es",
-        "addresses": [
-          "194.224.106.199"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS response does not contain an answer to the question: 242.211.148.192.in-addr.arpa. IN PTR"
   },
   "spf": {
-    "record": "v=spf1 mx include:spf.acumbamail.com a:srvsmtp01.mites.gob.es a:srvsmtp02.mites.gob.es a:srvsmtp03.mites.gob.es a:srvsmtp04.mites.gob.es include:spf.protection.outlook.com -all",
+    "record": "v=spf1 mx include:spf.acumbamail.com a:webmail.ces.es a:srvsmtp01.mites.gob.es a:srvsmtp02.mites.gob.es a:srvsmtp03.mites.gob.es a:srvsmtp04.mites.gob.es include:spf.protection.outlook.com -all",
     "valid": true,
-    "dns_lookups": 8,
+    "dns_lookups": 9,
     "warnings": [],
     "parsed": {
       "pass": [
         {
           "value": "mail.ces.es",
           "mechanism": "mx"
+        },
+        {
+          "value": "192.148.211.245",
+          "mechanism": "a"
         },
         {
           "value": "192.148.211.61",

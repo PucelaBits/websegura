@@ -10,32 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mail1.cener.com",
-        "addresses": [
-          "194.179.96.231"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mail2.cener.com",
-        "addresses": [
-          "217.127.127.39"
-        ]
-      },
-      {
-        "preference": 30,
-        "hostname": "mail3.cener.com",
-        "addresses": [
-          "212.170.29.98"
-        ]
-      }
-    ],
-    "warnings": [
-      "The reverse DNS of 194.179.96.231 is correo.cener.com, but the A/AAAA DNS records for correo.cener.com do not resolve to 194.179.96.231"
-    ]
+    "hosts": [],
+    "error": "All nameservers failed to answer the query 39.127.127.217.in-addr.arpa. IN PTR: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
   },
   "spf": {
     "record": "v=spf1 ip4:212.170.29.98 ip4:194.179.96.231 ip4:217.127.127.39 mx -all",

@@ -10,24 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "smtp1.ciencia.gob.es",
-        "addresses": [
-          "212.128.122.3"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "smtp2.ciencia.gob.es",
-        "addresses": []
-      }
-    ],
-    "warnings": [
-      "The reverse DNS of 212.128.122.3 is smtp1.micinn.es, but the A/AAAA DNS records for smtp1.micinn.es do not resolve to 212.128.122.3",
-      "All nameservers failed to answer the query smtp2.ciencia.gob.es. IN A: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
-    ]
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 mx ip4:212.128.122.3 ip4:212.128.122.4 ip4:193.147.0.22 ip4:193.147.0.23 include:spf.acumbamail.com include:spf.protection.outlook.com -all",

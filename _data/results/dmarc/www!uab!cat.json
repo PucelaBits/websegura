@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns.uab.es",
       "ns2.csuc.cat",
       "ns1.csuc.cat",
+      "dns.uab.es",
       "dns1.uab.es"
     ],
     "warnings": []
@@ -17,7 +17,7 @@
         "preference": 0,
         "hostname": "uab-cat.mail.protection.outlook.com",
         "addresses": [
-          "104.47.5.36",
+          "104.47.4.36",
           "104.47.6.36"
         ]
       }
@@ -214,7 +214,7 @@
         },
         {
           "domain": "spf.sendinblue.com",
-          "record": "v=spf1 ip4:185.41.28.0/22 ip4:94.143.16.0/21 ip4:185.24.144.0/22 ip4:153.92.224.0/19 ip4:213.32.128.0/18 ip4:185.107.232.0/22 ip4:77.32.128.0/18 ip4:77.32.192.0/19 ip4:212.146.192.0/18 ip4:172.246.0.0/18 ~all",
+          "record": "v=spf1 ip4:185.41.28.0/22 ip4:94.143.16.0/21 ip4:185.24.144.0/22 ip4:153.92.224.0/19 ip4:213.32.128.0/18 ip4:185.107.232.0/22 ip4:77.32.128.0/18 ip4:77.32.192.0/19 ip4:212.146.192.0/18 ip4:172.246.0.0/18 -all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -265,7 +265,7 @@
             "include": [],
             "redirect": null,
             "exp": null,
-            "all": "softfail"
+            "all": "fail"
           },
           "warnings": []
         }
