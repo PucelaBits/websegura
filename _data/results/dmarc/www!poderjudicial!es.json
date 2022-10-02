@@ -4,13 +4,21 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.cp2gestion-dtc-ib.com",
-      "cdj11.cgpj.es"
+      "cdj11.cgpj.es",
+      "ns2.cp2gestion-dtc-ib.com"
     ],
     "warnings": []
   },
   "mx": {
     "hosts": [
+      {
+        "preference": 5,
+        "hostname": "poderjudicial-es.mail.protection.outlook.com",
+        "addresses": [
+          "104.47.51.138",
+          "104.47.51.202"
+        ]
+      },
       {
         "preference": 10,
         "hostname": "mailip1.poderjudicial.es",
@@ -35,6 +43,10 @@
     "warnings": [],
     "parsed": {
       "pass": [
+        {
+          "value": "poderjudicial-es.mail.protection.outlook.com",
+          "mechanism": "mx"
+        },
         {
           "value": "mailip1.poderjudicial.es",
           "mechanism": "mx"

@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns0.intervia.com",
       "ns2.intervia.com",
-      "ns1.intervia.com",
-      "ns0.intervia.com"
+      "ns1.intervia.com"
     ],
     "warnings": []
   },
@@ -64,11 +64,11 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; rua=mailto:postmaster@intervia.com",
+    "record": "v=DMARC1; p=quarantine;",
     "valid": true,
     "location": "saeca.es",
     "warnings": [
-      "intervia.com does not indicate that it accepts DMARC reports about saeca.es - Authorization record not found: saeca.es._report._dmarc.intervia.com IN TXT \"v=DMARC1\""
+      "rua tag (destination for aggregate reports) not found"
     ],
     "tags": {
       "v": {
@@ -77,10 +77,6 @@
       },
       "p": {
         "value": "quarantine",
-        "explicit": true
-      },
-      "rua": {
-        "value": "mailto:postmaster@intervia.com",
         "explicit": true
       },
       "adkim": {

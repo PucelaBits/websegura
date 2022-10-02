@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns02.santacruzdetenerife.es",
-      "dns01.santacruzdetenerife.es"
+      "dns01.santacruzdetenerife.es",
+      "dns02.santacruzdetenerife.es"
     ],
     "warnings": []
   },
@@ -15,16 +15,16 @@
         "preference": 10,
         "hostname": "mx-01-eu-central-1.prod.hydra.sophos.com",
         "addresses": [
-          "3.120.48.222",
-          "52.29.142.60"
+          "3.120.8.107",
+          "3.123.126.251"
         ]
       },
       {
         "preference": 10,
         "hostname": "mx-02-eu-central-1.prod.hydra.sophos.com",
         "addresses": [
-          "3.120.48.222",
-          "52.29.142.60"
+          "3.120.8.107",
+          "3.123.126.251"
         ]
       }
     ],

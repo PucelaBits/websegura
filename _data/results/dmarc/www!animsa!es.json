@@ -22,9 +22,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx include:animsa.ip-zone.com mx:correo.animsa.es   ip4:195.53.90.200",
+    "record": "v=spf1 mx include:spf.ipzmarketing.com mx:correo.animsa.es   ip4:195.53.90.200  -all",
     "valid": true,
-    "dns_lookups": 5,
+    "dns_lookups": 3,
     "warnings": [
       "correo.animsa.es does not have any MX records"
     ],
@@ -44,91 +44,96 @@
       "fail": [],
       "include": [
         {
-          "domain": "animsa.ip-zone.com",
-          "record": "v=spf1 ip4:93.159.208.0/21 include:spf.dyd.es",
-          "dns_lookups": 2,
+          "domain": "spf.ipzmarketing.com",
+          "record": "v=spf1 ip4:93.159.208.0/21 ip4:185.103.8.0/22 ip4:5.56.22.0/24 ip4:82.199.156.0/24 ip4:212.192.13.0/24 ~all",
+          "dns_lookups": 0,
           "parsed": {
             "pass": [
               {
                 "value": "93.159.208.0/21",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.103.8.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "5.56.22.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "82.199.156.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "212.192.13.0/24",
                 "mechanism": "ip4"
               }
             ],
             "neutral": [],
             "softfail": [],
             "fail": [],
-            "include": [
-              {
-                "domain": "spf.dyd.es",
-                "record": "v=spf1 include:spf.ipzmarketing.com ~all",
-                "dns_lookups": 1,
-                "parsed": {
-                  "pass": [],
-                  "neutral": [],
-                  "softfail": [],
-                  "fail": [],
-                  "include": [
-                    {
-                      "domain": "spf.ipzmarketing.com",
-                      "record": "v=spf1 ip4:93.159.208.0/21 ip4:185.103.8.0/22 ip4:5.56.22.0/24 ip4:82.199.156.0/24 ip4:212.192.13.0/24 ~all",
-                      "dns_lookups": 0,
-                      "parsed": {
-                        "pass": [
-                          {
-                            "value": "93.159.208.0/21",
-                            "mechanism": "ip4"
-                          },
-                          {
-                            "value": "185.103.8.0/22",
-                            "mechanism": "ip4"
-                          },
-                          {
-                            "value": "5.56.22.0/24",
-                            "mechanism": "ip4"
-                          },
-                          {
-                            "value": "82.199.156.0/24",
-                            "mechanism": "ip4"
-                          },
-                          {
-                            "value": "212.192.13.0/24",
-                            "mechanism": "ip4"
-                          }
-                        ],
-                        "neutral": [],
-                        "softfail": [],
-                        "fail": [],
-                        "include": [],
-                        "redirect": null,
-                        "exp": null,
-                        "all": "softfail"
-                      },
-                      "warnings": []
-                    }
-                  ],
-                  "redirect": null,
-                  "exp": null,
-                  "all": "softfail"
-                },
-                "warnings": []
-              }
-            ],
+            "include": [],
             "redirect": null,
             "exp": null,
-            "all": "neutral"
+            "all": "softfail"
           },
           "warnings": []
         }
       ],
       "redirect": null,
       "exp": null,
-      "all": "neutral"
+      "all": "fail"
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=none",
+    "valid": true,
+    "location": "animsa.es",
+    "warnings": [
+      "rua tag (destination for aggregate reports) not found"
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }

@@ -5,15 +5,39 @@
   "ns": {
     "hostnames": [
       "ns2.gestiondecuenta.com",
-      "ns.gestiondecuenta.com",
       "ns4.gestiondecuenta.com",
+      "ns.gestiondecuenta.com",
       "ns3.gestiondecuenta.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query 222.205.139.2.in-addr.arpa. IN PTR: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mercasa.in.tmes.trendmicro.eu",
+        "addresses": [
+          "18.185.115.145",
+          "18.185.115.146",
+          "18.185.115.147"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mx10.mercasa.es",
+        "addresses": [
+          "2.139.205.222"
+        ]
+      },
+      {
+        "preference": 30,
+        "hostname": "mx20.mercasa.es",
+        "addresses": [
+          "212.170.103.172"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx include:spf.tmes.trendmicro.com include:factoriadeinnovacion.com include:spf.protection.outlook.com -all",
@@ -94,7 +118,7 @@
             "include": [
               {
                 "domain": "spfb.tmes.trendmicro.com",
-                "record": "v=spf1 ip4:18.188.9.192/26 ip4:18.188.239.128/26 ip4:34.253.238.128/26 ip4:34.253.238.192/26 ip4:52.202.71.114 ip4:54.145.52.119 ip4:35.156.245.132 ip4:18.156.0.20 ip4:3.74.126.139 ip4:3.72.196.143 ~all",
+                "record": "v=spf1 ip4:18.188.9.192/26 ip4:18.188.239.128/26 ip4:34.253.238.128/26 ip4:34.253.238.192/26 ip4:52.202.71.114 ip4:54.145.52.119 ip4:35.156.245.132 ip4:18.156.0.20 ip4:3.74.126.139 ip4:3.72.196.143 ip4:3.212.20.253 ip4:34.225.87.138 ~all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
@@ -136,6 +160,14 @@
                     },
                     {
                       "value": "3.72.196.143",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "3.212.20.253",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "34.225.87.138",
                       "mechanism": "ip4"
                     }
                   ],

@@ -3,16 +3,14 @@
   "base_domain": "mineco.gob.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "ns.mcx.es",
-      "ns1.t-systems.es",
-      "ns2.t-systems.es"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "mx": {
     "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
   },
   "spf": {
     "record": null,

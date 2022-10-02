@@ -18,7 +18,7 @@
     "error": "sede.carm.es does not have a SPF TXT record"
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; rua=mailto:dmarc-reports-rua@carm.es; ruf=mailto:dmarc-reports-ruf@carm.es",
+    "record": "v=DMARC1; p=quarantine; fo=1; rua=mailto:dmarc-reports-rua@carm.es; ruf=mailto:dmarc-reports-ruf@carm.es",
     "valid": true,
     "location": "carm.es",
     "warnings": [],
@@ -28,7 +28,13 @@
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "quarantine",
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "1"
+        ],
         "explicit": true
       },
       "rua": {
@@ -59,12 +65,6 @@
         "value": "r",
         "explicit": false
       },
-      "fo": {
-        "value": [
-          "0"
-        ],
-        "explicit": false
-      },
       "pct": {
         "value": 100,
         "explicit": false
@@ -80,7 +80,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": false
       }
     }

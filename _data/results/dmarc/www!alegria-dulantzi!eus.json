@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.dominioabsoluto.com",
-      "ns2.dominioabsoluto.com"
+      "ns2.dominioabsoluto.com",
+      "ns1.dominioabsoluto.com"
     ],
     "warnings": []
   },
@@ -25,14 +25,16 @@
     "record": "v=spf1 mx a ip4:217.130.24.0/24 ~all",
     "valid": true,
     "dns_lookups": 2,
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
-    ],
+    "warnings": [],
     "parsed": {
       "pass": [
         {
           "value": "vmail.altia.es",
           "mechanism": "mx"
+        },
+        {
+          "value": "82.194.88.106",
+          "mechanism": "a"
         },
         {
           "value": "217.130.24.0/24",

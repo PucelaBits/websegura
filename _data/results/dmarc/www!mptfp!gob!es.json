@@ -112,28 +112,43 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; rua= mailto:informes.correo@correo.gob.es; ruf=mailto:avisos.correo@correo.gob.es",
+    "record": "v=DMARC1; p=quarantine; rua=mailto:avisos.correo@correo.gob.es; ruf=mailto:avisos.correo@correo.gob.es; fo=1;",
     "valid": true,
     "location": "mptfp.gob.es",
-    "warnings": [
-      "correo.gob.es does not indicate that it accepts DMARC reports about mptfp.gob.es - Authorization record not found: mptfp.gob.es._report._dmarc.correo.gob.es IN TXT \"v=DMARC1\"",
-      "correo.gob.es does not indicate that it accepts DMARC reports about mptfp.gob.es - Authorization record not found: mptfp.gob.es._report._dmarc.correo.gob.es IN TXT \"v=DMARC1\""
-    ],
+    "warnings": [],
     "tags": {
       "v": {
         "value": "DMARC1",
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": true
       },
       "rua": {
-        "value": " mailto:informes.correo@correo.gob.es",
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "avisos.correo@correo.gob.es",
+            "size_limit": null
+          }
+        ],
         "explicit": true
       },
       "ruf": {
-        "value": "mailto:avisos.correo@correo.gob.es",
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "avisos.correo@correo.gob.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "1"
+        ],
         "explicit": true
       },
       "adkim": {
@@ -142,12 +157,6 @@
       },
       "aspf": {
         "value": "r",
-        "explicit": false
-      },
-      "fo": {
-        "value": [
-          "0"
-        ],
         "explicit": false
       },
       "pct": {
@@ -165,7 +174,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": false
       }
     }

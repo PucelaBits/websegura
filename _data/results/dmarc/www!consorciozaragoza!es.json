@@ -4,16 +4,24 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "dns1.canaldominios.com",
       "dns3.canaldominios.com",
       "dns4.canaldominios.com",
-      "dns2.canaldominios.com",
-      "dns1.canaldominios.com"
+      "dns2.canaldominios.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query 72.174.139.2.in-addr.arpa. IN PTR: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "proxmox.consorciozaragoza.es",
+        "addresses": [
+          "2.139.174.72"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:2.139.172.72 a mx a:consorciozaragoza.es ~all",

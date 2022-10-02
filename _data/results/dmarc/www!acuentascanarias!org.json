@@ -4,14 +4,30 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns61.worldnic.com",
-      "ns62.worldnic.com"
+      "ns62.worldnic.com",
+      "ns61.worldnic.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query 177.156.26.80.in-addr.arpa. IN PTR: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 0,
+        "hostname": "acuentascanarias-org.mail.protection.outlook.com",
+        "addresses": [
+          "104.47.18.138",
+          "104.47.18.202"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "correo.acuentascanarias.org",
+        "addresses": [
+          "80.26.156.177"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com -all",

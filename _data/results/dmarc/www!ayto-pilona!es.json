@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "linuxdns02.telecable.es",
-      "linuxdns01.telecable.es"
+      "linuxdns01.telecable.es",
+      "linuxdns02.telecable.es"
     ],
     "warnings": []
   },
@@ -15,32 +15,32 @@
         "preference": 10,
         "hostname": "mx1.telecable.es",
         "addresses": [
-          "130.117.54.106",
-          "2001:550:2:61::2fc:100"
+          "2001:550:2:61::2fc:100",
+          "38.89.254.156"
         ]
       },
       {
         "preference": 20,
         "hostname": "mx2.telecable.es",
         "addresses": [
-          "2001:550:2:78::ca:100",
-          "38.111.198.185"
+          "2001:550:2:9::280:100",
+          "38.109.53.20"
         ]
       },
       {
         "preference": 30,
         "hostname": "mx3.telecable.es",
         "addresses": [
-          "2001:550:2:78::ca:100",
-          "38.109.53.20"
+          "2001:550:2:9::280:100",
+          "38.111.198.185"
         ]
       },
       {
         "preference": 40,
         "hostname": "mx4.telecable.es",
         "addresses": [
-          "130.117.54.106",
-          "2001:550:2:61::2fc:100"
+          "2001:550:2:61::2fc:100",
+          "38.89.254.156"
         ]
       }
     ],

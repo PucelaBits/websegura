@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns05.ns-cloud4b.org",
+      "ns06.ns-cloud4b.com",
       "ns03.ns-cloud4b.net",
-      "ns06.ns-cloud4b.com"
+      "ns05.ns-cloud4b.org"
     ],
     "warnings": []
   },
@@ -25,7 +25,7 @@
         "preference": 10,
         "hostname": "emtmadrid-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.12.36",
+          "104.47.13.36",
           "104.47.14.36"
         ]
       }
@@ -212,7 +212,7 @@
             "include": [
               {
                 "domain": "spfb.tmes.trendmicro.com",
-                "record": "v=spf1 ip4:18.188.9.192/26 ip4:18.188.239.128/26 ip4:34.253.238.128/26 ip4:34.253.238.192/26 ip4:52.202.71.114 ip4:54.145.52.119 ip4:35.156.245.132 ip4:18.156.0.20 ip4:3.74.126.139 ip4:3.72.196.143 ~all",
+                "record": "v=spf1 ip4:18.188.9.192/26 ip4:18.188.239.128/26 ip4:34.253.238.128/26 ip4:34.253.238.192/26 ip4:52.202.71.114 ip4:54.145.52.119 ip4:35.156.245.132 ip4:18.156.0.20 ip4:3.74.126.139 ip4:3.72.196.143 ip4:3.212.20.253 ip4:34.225.87.138 ~all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
@@ -254,6 +254,14 @@
                     },
                     {
                       "value": "3.72.196.143",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "3.212.20.253",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "34.225.87.138",
                       "mechanism": "ip4"
                     }
                   ],

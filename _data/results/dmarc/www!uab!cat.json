@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "ns2.csuc.cat",
-      "ns1.csuc.cat",
       "dns.uab.es",
+      "ns1.csuc.cat",
       "dns1.uab.es"
     ],
     "warnings": []
@@ -17,7 +17,7 @@
         "preference": 0,
         "hostname": "uab-cat.mail.protection.outlook.com",
         "addresses": [
-          "104.47.4.36",
+          "104.47.11.74",
           "104.47.6.36"
         ]
       }
@@ -25,7 +25,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:158.109.168.128/27 ip4:158.109.168.91 ip4:158.109.168.113 ip4:84.88.0.6 ip4:84.88.0.7 ip4:84.88.0.8 ip4:84.88.0.9 ip4:158.109.168.72/29 include:spf.protection.outlook.com include:spf.ipzmarketing.com include:spf.sendinblue.com ~all",
+    "record": "v=spf1 ip4:158.109.168.128/27 ip4:158.109.168.91 ip4:158.109.168.113 ip4:84.88.0.6 ip4:84.88.0.7 ip4:84.88.0.8 ip4:84.88.0.9 ip4:84.88.95.241 ip4:158.109.168.72/29 include:spf.protection.outlook.com include:spf.ipzmarketing.com include:spf.sendinblue.com ~all",
     "valid": true,
     "dns_lookups": 4,
     "warnings": [],
@@ -57,6 +57,10 @@
         },
         {
           "value": "84.88.0.9",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "84.88.95.241",
           "mechanism": "ip4"
         },
         {
