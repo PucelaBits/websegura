@@ -12,7 +12,7 @@ const UNIX_TIME_RELEASE_DATE = 1611183600;
 const getSafeScore = (value) => {
   let safe = value.filter((v) => v.score > 69 && v.score < NO_SCORE).length;
   let safeScore = (safe * 100) / value.length;
-  return safeScore.toFixed(0);
+  return Number(safeScore.toFixed(0));
 };
 
 const getEmailScore = (value) => {
@@ -97,7 +97,7 @@ const filenameToData = (f) => ({
     .map(({ name, id }) => ({
       name,
       id,
-      safeScore: getSafeScore(filterByTerritorioId(all, id)),
+      safeScore: Number(getSafeScore(filterByTerritorioId(all, id))),
       subTerritories: territoriesLevel2
         .map(filenameToData)
         .filter(({ file }) => id === file.comunidad)
@@ -105,7 +105,7 @@ const filenameToData = (f) => ({
         .map(({ name, id }) => ({
           name,
           id,
-          safeScore: getSafeScore(filterByTerritorioId(all, id)),
+          safeScore: Number(getSafeScore(filterByTerritorioId(all, id))),
         })),
     }));
 
