@@ -1,0 +1,35 @@
+{
+  "domain": "centrodehemoterapiacyl.es",
+  "base_domain": "centrodehemoterapiacyl.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns10.piensasolutions.com",
+      "ns9.piensasolutions.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx.buzondecorreo.com",
+        "addresses": [
+          "82.223.190.101"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "centrodehemoterapiacyl.es does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

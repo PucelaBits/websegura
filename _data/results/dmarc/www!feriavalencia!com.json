@@ -16,7 +16,7 @@
         "hostname": "feriavalencia-com.mail.protection.outlook.com",
         "addresses": [
           "104.47.11.202",
-          "104.47.11.74"
+          "104.47.6.36"
         ]
       },
       {
@@ -27,10 +27,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
-      "The reverse DNS of 104.47.11.74 is mail-db5eur020074.inbound.protection.outlook.com, but the A/AAAA DNS records for mail-db5eur020074.inbound.protection.outlook.com do not resolve to 104.47.11.74"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:188.86.160.90 ip4:188.86.160.91 include:spf.protection.outlook.com -all",

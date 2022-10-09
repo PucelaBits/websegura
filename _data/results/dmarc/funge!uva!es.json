@@ -1,0 +1,198 @@
+{
+  "domain": "funge.uva.es",
+  "base_domain": "uva.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "mapache.funge.uva.es",
+      "ns2.uva.es",
+      "ns1.uva.es",
+      "ns3.uva.es",
+      "ns1.funge.uva.es"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx01.puc.rediris.es",
+        "addresses": [
+          "130.206.19.130",
+          "130.206.19.162",
+          "2001:720:418:ca10::2",
+          "2001:720:418:ca11::2"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mx02.puc.rediris.es",
+        "addresses": [
+          "130.206.19.130",
+          "130.206.19.162",
+          "2001:720:418:ca10::2",
+          "2001:720:418:ca11::2"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 include:spf.ipzmarketing.com ip4:157.88.0.0/16 include:spf.puc.rediris.es -all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "157.88.0.0/16",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "spf.ipzmarketing.com",
+          "record": "v=spf1 ip4:93.159.208.0/21 ip4:185.103.8.0/22 ip4:5.56.22.0/24 ip4:82.199.156.0/24 ip4:212.192.13.0/24 ~all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "93.159.208.0/21",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.103.8.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "5.56.22.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "82.199.156.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "212.192.13.0/24",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "spf.puc.rediris.es",
+          "record": "v=spf1 ip4:143.55.146.78 ip4:143.55.148.243 ip4:130.206.24.0/24 ip4:130.206.19.0/24 ip4:192.187.24.32/28 ip4:192.187.24.0/28 ip6:2001:720:418:ca10::/64 ip6:2001:720:418:ca11::/64 ~all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "143.55.146.78",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "143.55.148.243",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "130.206.24.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "130.206.19.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "192.187.24.32/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "192.187.24.0/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "2001:720:418:ca10::/64",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2001:720:418:ca11::/64",
+                "mechanism": "ip6"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": "v=DMARC1; p=none;",
+    "valid": true,
+    "location": "funge.uva.es",
+    "warnings": [
+      "rua tag (destination for aggregate reports) not found"
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
+  }
+}

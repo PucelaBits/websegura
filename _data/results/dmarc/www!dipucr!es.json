@@ -1,0 +1,69 @@
+{
+  "domain": "dipucr.es",
+  "base_domain": "dipucr.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "dns5.cim.es",
+      "dns6.cim.es"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "correo.dipucr.es",
+        "addresses": [
+          "185.191.65.144"
+        ]
+      }
+    ],
+    "warnings": [
+      "185.191.65.144 does not have any reverse DNS (PTR) records"
+    ]
+  },
+  "spf": {
+    "record": "v=spf1 ip4:185.191.65.144 ip4:185.191.65.133 mx a:correo.dipucr.es ip4:89.17.211.96/27 ~all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "185.191.65.144",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "185.191.65.133",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "correo.dipucr.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "185.191.65.144",
+          "mechanism": "a"
+        },
+        {
+          "value": "89.17.211.96/27",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

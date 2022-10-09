@@ -4,12 +4,12 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.mpr.es",
       "dns1.mpr.es",
-      "sun.rediris.es",
       "chico.rediris.es",
+      "chicorelay.rediris.es",
       "sunrelay.rediris.es",
-      "chicorelay.rediris.es"
+      "dns2.mpr.es",
+      "sun.rediris.es"
     ],
     "warnings": []
   },
@@ -17,16 +17,16 @@
     "hosts": [
       {
         "preference": 20,
-        "hostname": "mail1.mpr.es",
+        "hostname": "mail01.mpr.es",
         "addresses": [
-          "212.128.108.16"
+          "212.128.108.45"
         ]
       },
       {
         "preference": 20,
-        "hostname": "mail2.mpr.es",
+        "hostname": "mail02.mpr.es",
         "addresses": [
-          "212.128.108.19"
+          "212.128.108.46"
         ]
       }
     ],

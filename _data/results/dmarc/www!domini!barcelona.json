@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "matagalls.lacuinadel.cat",
       "pedraforca.lacuinadel.cat",
-      "balandrau.lacuinadel.cat"
+      "balandrau.lacuinadel.cat",
+      "matagalls.lacuinadel.cat"
     ],
     "warnings": []
   },
@@ -21,7 +21,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
+      "The reverse DNS of 104.47.17.138 is mail-vi1eur050138.inbound.protection.outlook.com, but the A/AAAA DNS records for mail-vi1eur050138.inbound.protection.outlook.com do not resolve to 104.47.17.138"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com include:spf.zoho.eu include:eu.transmail.net ~all",
@@ -143,7 +146,7 @@
         },
         {
           "domain": "spf.zoho.eu",
-          "record": "v=spf1 ip4:185.20.209.0/24 ip4:31.186.226.0/24 ip4:31.186.243.0/24 ip4:89.36.170.0/24 ip4:185.20.211.0/24 ip4:185.172.199.0/24 ip4:91.135.68.104/29 ip4:185.230.214.0/23 ~all",
+          "record": "v=spf1 ip4:185.20.209.0/24 ip4:31.186.226.0/24 ip4:31.186.243.0/24 ip4:89.36.170.0/24 ip4:185.20.211.0/24 ip4:185.172.199.0/24 ip4:91.135.68.104/29 ip4:185.230.214.0/23 ip4:136.143.168.0/22 ~all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -178,6 +181,10 @@
               {
                 "value": "185.230.214.0/23",
                 "mechanism": "ip4"
+              },
+              {
+                "value": "136.143.168.0/22",
+                "mechanism": "ip4"
               }
             ],
             "neutral": [],
@@ -192,7 +199,7 @@
         },
         {
           "domain": "eu.transmail.net",
-          "record": "v=spf1 ip4:31.186.226.0/24 ip4:185.20.211.0/24 ip4:185.172.199.128/26 ip4:185.172.199.192/27 ip4:185.172.199.56/29 ~all",
+          "record": "v=spf1 ip4:31.186.226.0/24 ip4:185.20.211.0/24 ip4:185.172.199.128/26 ip4:185.172.199.192/27 ip4:185.172.199.56/29 ip4:136.143.168.0/22 ~all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -214,6 +221,10 @@
               },
               {
                 "value": "185.172.199.56/29",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "136.143.168.0/22",
                 "mechanism": "ip4"
               }
             ],

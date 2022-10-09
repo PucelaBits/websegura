@@ -7,16 +7,8 @@
     "error": "All nameservers failed to answer the query antequera.es. IN NS: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mail.antequera.es",
-        "addresses": [
-          "195.77.81.171"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "All nameservers failed to answer the query antequera.es. IN MX: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
   },
   "spf": {
     "record": "v=spf1 ip4:195.77.81.171 ~all",

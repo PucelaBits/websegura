@@ -1,0 +1,35 @@
+{
+  "domain": "inforiego.org",
+  "base_domain": "inforiego.org",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "dns.itacyl.org",
+      "dns2.itacyl.org"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.inforiego.org",
+        "addresses": []
+      }
+    ],
+    "warnings": [
+      "The domain mail.inforiego.org does not exist"
+    ]
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "inforiego.org does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

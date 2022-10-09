@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns1.cuentadns.com",
       "ns2.cuentadns.com",
-      "ns3.cuentadns.com",
-      "ns1.cuentadns.com"
+      "ns3.cuentadns.com"
     ],
     "warnings": []
   },
@@ -21,10 +21,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
-      "The reverse DNS of 104.47.1.36 is mail-ve1eur010036.inbound.protection.outlook.com, but the A/AAAA DNS records for mail-ve1eur010036.inbound.protection.outlook.com do not resolve to 104.47.1.36"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com include:spf.ivcert.net -all",

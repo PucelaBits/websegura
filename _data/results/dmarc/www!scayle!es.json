@@ -1,0 +1,118 @@
+{
+  "domain": "scayle.es",
+  "base_domain": "scayle.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "srv-dns1.scayle.es",
+      "srv-dns2.scayle.es"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 5,
+        "hostname": "mail.scayle.es",
+        "addresses": [
+          "185.179.104.11"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mailbackup.scayle.es",
+        "addresses": [
+          "185.179.104.9"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 a mx ~all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "185.179.104.10",
+          "mechanism": "a"
+        },
+        {
+          "value": "mail.scayle.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mailbackup.scayle.es",
+          "mechanism": "mx"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
+  },
+  "dmarc": {
+    "record": "v=DMARC1; p=none; rua=mailto:dmarcreport@scayle.es",
+    "valid": true,
+    "location": "scayle.es",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarcreport@scayle.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
+  }
+}

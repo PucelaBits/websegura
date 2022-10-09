@@ -10,10 +10,16 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "warnings": [
-      "No MX records found. Is the domain parked?"
-    ]
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.azuqueca.es",
+        "addresses": [
+          "84.246.210.27"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": null,

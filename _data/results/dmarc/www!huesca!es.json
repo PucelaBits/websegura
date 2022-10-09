@@ -1,0 +1,289 @@
+{
+  "domain": "huesca.es",
+  "base_domain": "huesca.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns1.huesca.es",
+      "ns3.huesca.es"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx01.cloud.vadesecure.com",
+        "addresses": [
+          "163.172.240.110"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mx02.cloud.vadesecure.com",
+        "addresses": [
+          "163.172.240.111"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mx03.cloud.vadesecure.com",
+        "addresses": [
+          "135.125.122.66"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mx04.cloud.vadesecure.com",
+        "addresses": [
+          "135.125.122.67"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 ip4:195.76.147.146 ip4:194.179.101.130 include:spf.cloud.vadesecure.com include:spf.acumbamail.com -all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "195.76.147.146",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "194.179.101.130",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "spf.cloud.vadesecure.com",
+          "record": "v=spf1 ip4:109.197.246.0/26 ip4:92.103.69.0/24 ip4:217.74.103.0/24 ip4:52.47.203.24 ip4:35.180.3.224 ip4:52.143.185.155 ip4:52.143.133.92 ip4:195.154.80.82 ip4:163.172.55.8 ip4:163.172.240.98 ip4:51.15.159.199 ip4:52.143.144.224 ip4:52.143.151.82 ip4:163.172.240.98 ip4:51.15.159.199 ip4:52.143.144.224 ip4:52.143.151.82 ip4:163.172.240.110 ip4:163.172.240.111 ip4:135.125.122.66 ip4:135.125.122.67 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "109.197.246.0/26",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "92.103.69.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "217.74.103.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.47.203.24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "35.180.3.224",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.143.185.155",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.143.133.92",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "195.154.80.82",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "163.172.55.8",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "163.172.240.98",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "51.15.159.199",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.143.144.224",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.143.151.82",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "163.172.240.98",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "51.15.159.199",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.143.144.224",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.143.151.82",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "163.172.240.110",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "163.172.240.111",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "135.125.122.66",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "135.125.122.67",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "spf.acumbamail.com",
+          "record": "v=spf1 ip4:176.28.104.1/24 ip4:185.2.150.1/24 ip4:185.103.37.224/28 ip4:5.57.226.1/24 ip4:5.57.227.80/28 ip4:5.57.227.112/28 ip4:185.99.184.144/28 ip4:185.103.36.192/28 ~all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "176.28.104.1/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.2.150.1/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.103.37.224/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "5.57.226.1/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "5.57.227.80/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "5.57.227.112/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.99.184.144/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.103.36.192/28",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": "v=DMARC1; p=quarantine; rua=mailto:dmarc@huesca.es; ruf=mailto:dmarc@huesca.es; sp=quarantine",
+    "valid": true,
+    "location": "huesca.es",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc@huesca.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc@huesca.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "sp": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      }
+    }
+  }
+}

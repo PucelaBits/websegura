@@ -16,19 +16,24 @@
         "hostname": "arrecife-es.mail.protection.outlook.com",
         "addresses": [
           "104.47.17.138",
-          "104.47.18.74"
+          "104.47.17.74"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:spf.protection.outlook.com -all",
+    "record": "v=spf1 ip4:213.4.82.201/32 include:spf.protection.outlook.com -all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
     "parsed": {
-      "pass": [],
+      "pass": [
+        {
+          "value": "213.4.82.201/32",
+          "mechanism": "ip4"
+        }
+      ],
       "neutral": [],
       "softfail": [],
       "fail": [],
@@ -147,7 +152,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; rua=mailto:postmaster@arrecife.es; ruf=mailto:postmaster@arrecife.es; adkim=s; aspf=s; rf=afrf; sp=none",
+    "record": "v=DMARC1; p=none; rua=mailto:admin@arrecife.es; ruf=mailto:admin@arrecife.es; adkim=s; aspf=s; rf=afrf; sp=none",
     "valid": true,
     "location": "arrecife.es",
     "warnings": [],
@@ -164,7 +169,7 @@
         "value": [
           {
             "scheme": "mailto",
-            "address": "postmaster@arrecife.es",
+            "address": "admin@arrecife.es",
             "size_limit": null
           }
         ],
@@ -174,7 +179,7 @@
         "value": [
           {
             "scheme": "mailto",
-            "address": "postmaster@arrecife.es",
+            "address": "admin@arrecife.es",
             "size_limit": null
           }
         ],

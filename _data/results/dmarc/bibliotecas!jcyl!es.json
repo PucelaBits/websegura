@@ -1,0 +1,88 @@
+{
+  "domain": "bibliotecas.jcyl.es",
+  "base_domain": "jcyl.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [],
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "bibliotecas.jcyl.es does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": "v=DMARC1; p=reject; sp=none; fo=1; ri=3600; rua=mailto:junta-de-castilla-y-leon-servicios-centrales@rua.dmp.cisco.com; ruf=mailto:junta-de-castilla-y-leon-servicios-centrales@ruf.dmp.cisco.com",
+    "valid": true,
+    "location": "jcyl.es",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "reject",
+        "explicit": true
+      },
+      "sp": {
+        "value": "none",
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "1"
+        ],
+        "explicit": true
+      },
+      "ri": {
+        "value": 3600,
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "junta-de-castilla-y-leon-servicios-centrales@rua.dmp.cisco.com",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "junta-de-castilla-y-leon-servicios-centrales@ruf.dmp.cisco.com",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      }
+    }
+  }
+}

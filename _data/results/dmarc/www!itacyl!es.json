@@ -1,0 +1,154 @@
+{
+  "domain": "itacyl.es",
+  "base_domain": "itacyl.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "sun.rediris.es",
+      "dns2.itacyl.es",
+      "chico.rediris.es",
+      "dns.itacyl.es"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx01.puc.rediris.es",
+        "addresses": [
+          "130.206.19.130",
+          "130.206.19.162",
+          "2001:720:418:ca10::2",
+          "2001:720:418:ca11::2"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mx02.puc.rediris.es",
+        "addresses": [
+          "130.206.19.130",
+          "130.206.19.162",
+          "2001:720:418:ca10::2",
+          "2001:720:418:ca11::2"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 ip4:193.146.230.67/32 ip4:195.76.182.230/32 ip4:195.76.182.224/32 ip4:195.76.182.225/32 ptr mx ~all",
+    "valid": true,
+    "dns_lookups": 1,
+    "warnings": [
+      "The ptr mechanism should not be used - https://tools.ietf.org/html/rfc7208#section-5.5"
+    ],
+    "parsed": {
+      "pass": [
+        {
+          "value": "193.146.230.67/32",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "195.76.182.230/32",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "195.76.182.224/32",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "195.76.182.225/32",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "",
+          "mechanism": "ptr"
+        },
+        {
+          "value": "mx01.puc.rediris.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mx02.puc.rediris.es",
+          "mechanism": "mx"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
+  },
+  "dmarc": {
+    "record": "v=DMARC1; p=quarantine; pct=100; adkim=s; aspf=s; rua=mailto:dmarc@itacyl.es; ruf=mailto:dmarc@itacyl.es",
+    "valid": true,
+    "location": "itacyl.es",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "pct": {
+        "value": 100,
+        "explicit": true
+      },
+      "adkim": {
+        "value": "s",
+        "explicit": true
+      },
+      "aspf": {
+        "value": "s",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc@itacyl.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc@itacyl.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "quarantine",
+        "explicit": false
+      }
+    }
+  }
+}

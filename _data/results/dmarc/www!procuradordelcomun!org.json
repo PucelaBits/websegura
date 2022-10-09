@@ -1,0 +1,51 @@
+{
+  "domain": "procuradordelcomun.org",
+  "base_domain": "procuradordelcomun.org",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns2.procuradordelcomun.org",
+      "ns1.procuradordelcomun.org"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "correo.tedra.es",
+        "addresses": [
+          "185.23.36.35"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 ip4:185.23.36.35 -all",
+    "valid": true,
+    "dns_lookups": 0,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "185.23.36.35",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}
