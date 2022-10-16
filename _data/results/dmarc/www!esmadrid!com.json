@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "ns07.ns-cloud4b.org",
-      "ns08.ns-cloud4b.com",
-      "ns06.ns-cloud4b.net"
+      "ns06.ns-cloud4b.net",
+      "ns08.ns-cloud4b.com"
     ],
     "warnings": []
   },
@@ -16,15 +16,15 @@
         "preference": 0,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.251.163.27",
-          "2607:f8b0:4004:c1b::1a"
+          "142.251.16.27",
+          "2607:f8b0:4004:c06::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "209.85.202.26",
+          "209.85.202.27",
           "2a00:1450:400b:c00::1b"
         ]
       },
@@ -33,7 +33,7 @@
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
           "2a00:1450:400c:c0b::1a",
-          "64.233.184.27"
+          "64.233.184.26"
         ]
       },
       {

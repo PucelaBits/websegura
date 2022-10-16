@@ -20,9 +20,7 @@
         ]
       }
     ],
-    "warnings": [
-      "195.93.170.80 does not have any reverse DNS (PTR) records"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx include:spf.protection.outlook.com include:spf.mailjet.com ip4:157.97.64.101 ip4:195.93.170.5 ip4:195.93.170.40 ip4:157.97.64.101 -all",

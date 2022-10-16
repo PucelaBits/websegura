@@ -4,17 +4,15 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.mapa.es",
       "dns1.mapa.es",
-      "artemis.ttd.net"
+      "artemis.ttd.net",
+      "dns2.mapa.es"
     ],
     "warnings": []
   },
   "mx": {
     "hosts": [],
-    "warnings": [
-      "No MX records found. Is the domain parked?"
-    ]
+    "error": "All nameservers failed to answer the query miteco.gob.es. IN MX: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
   },
   "spf": {
     "record": null,

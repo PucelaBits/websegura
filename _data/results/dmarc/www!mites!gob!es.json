@@ -11,7 +11,7 @@
   },
   "mx": {
     "hosts": [],
-    "error": "The DNS response does not contain an answer to the question: 65.211.148.192.in-addr.arpa. IN PTR"
+    "error": "All nameservers failed to answer the query 63.211.148.192.in-addr.arpa. IN PTR: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
   },
   "spf": {
     "record": "v=spf1 mx a:srvsmtp03.mites.gob.es a:srvsmtp04.mites.gob.es a:srvsmtp05.mites.gob.es include:spf.protection.outlook.com ip4:192.148.211.63 ip4:192.148.211.64 ip4:192.148.211.65 ~all",

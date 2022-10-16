@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.ddgi.cat",
-      "dns1.ddgi.cat"
+      "dns1.ddgi.cat",
+      "dns2.ddgi.cat"
     ],
     "warnings": []
   },
@@ -19,9 +19,7 @@
         ]
       }
     ],
-    "warnings": [
-      "195.93.170.80 does not have any reverse DNS (PTR) records"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx ip4:213.0.55.194 ip4:195.93.170.5 ip4:195.93.170.139 ip4:195.93.170.40 include:_spf.google.com ~all",

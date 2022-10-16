@@ -1,7 +1,7 @@
 {
   "domain": "cooperacionespanola.es",
   "base_domain": "cooperacionespanola.es",
-  "dnssec": false,
+  "dnssec": true,
   "ns": {
     "hostnames": [
       "ns1.age.gob.es",
@@ -15,7 +15,7 @@
         "preference": 1,
         "hostname": "cooperacionespanola-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.12.36",
+          "104.47.13.36",
           "104.47.14.36"
         ]
       }

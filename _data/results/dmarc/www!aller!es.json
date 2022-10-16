@@ -15,12 +15,14 @@
         "preference": 0,
         "hostname": "aller-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.51.138",
+          "104.47.30.74",
           "104.47.51.202"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "104.47.30.74 does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:_spf.google.com include:spf.protection.outlook.com ~all",
