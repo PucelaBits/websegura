@@ -5,15 +5,36 @@
   "ns": {
     "hostnames": [
       "dns1.um.es",
+      "chico.rediris.es",
       "sun.rediris.es",
-      "dns2.um.es",
-      "chico.rediris.es"
+      "dns2.um.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query 130.19.206.130.in-addr.arpa. IN PTR: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx01.puc.rediris.es",
+        "addresses": [
+          "130.206.19.130",
+          "130.206.19.162",
+          "2001:720:418:ca10::2",
+          "2001:720:418:ca11::2"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mx02.puc.rediris.es",
+        "addresses": [
+          "130.206.19.130",
+          "130.206.19.162",
+          "2001:720:418:ca10::2",
+          "2001:720:418:ca11::2"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.puc.rediris.es include:spf.protection.outlook.com ip4:155.54.212.160/28 ip6:2001:720:1710:601::/64 a:mail.symposium.events -all",

@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "sun.rediris.es",
-      "dns1.congreso.es",
       "dns2.congreso.es",
+      "dns1.congreso.es",
+      "sun.rediris.es",
       "chico.rediris.es"
     ],
     "warnings": []
@@ -15,22 +15,9 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "mx01.puc.rediris.es",
+        "hostname": "mxa-006a4e02.gslb.pphosted.com",
         "addresses": [
-          "130.206.19.130",
-          "130.206.19.162",
-          "2001:720:418:ca10::2",
-          "2001:720:418:ca11::2"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "mx02.puc.rediris.es",
-        "addresses": [
-          "130.206.19.130",
-          "130.206.19.162",
-          "2001:720:418:ca10::2",
-          "2001:720:418:ca11::2"
+          "143.55.148.243"
         ]
       }
     ],

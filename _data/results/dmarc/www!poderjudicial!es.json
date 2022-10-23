@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.cp2gestion-dtc-ib.com",
-      "cdj11.cgpj.es"
+      "cdj11.cgpj.es",
+      "ns2.cp2gestion-dtc-ib.com"
     ],
     "warnings": []
   },
@@ -15,7 +15,7 @@
         "preference": 5,
         "hostname": "poderjudicial-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.51.138",
+          "104.47.30.74",
           "104.47.51.202"
         ]
       },
@@ -34,7 +34,9 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "104.47.30.74 does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
     "record": "v=spf1 mx ip4:62.37.232.37 ip4:62.37.232.39 ip4:62.37.233.240 include:spf.protection.outlook.com -all",

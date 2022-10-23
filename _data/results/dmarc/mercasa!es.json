@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns4.gestiondecuenta.com",
       "ns2.gestiondecuenta.com",
       "ns.gestiondecuenta.com",
-      "ns3.gestiondecuenta.com"
+      "ns3.gestiondecuenta.com",
+      "ns4.gestiondecuenta.com"
     ],
     "warnings": []
   },
@@ -37,7 +37,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
+      "The reverse DNS of 18.185.115.145 is in.tmes.trendmicro.eu, but the A/AAAA DNS records for in.tmes.trendmicro.eu do not resolve to 18.185.115.145"
+    ]
   },
   "spf": {
     "record": "v=spf1 mx include:spf.tmes.trendmicro.com include:factoriadeinnovacion.com include:spf.protection.outlook.com -all",

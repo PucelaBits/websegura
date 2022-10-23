@@ -29,14 +29,26 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:5.39.208.0/24 ip4:213.4.82.201 +a +mx include:spf.protection.outlook.com ~all",
+    "record": "v=spf1 ip4:5.39.208.39 ip4:5.39.208.40 ip4:5.39.208.45 ip4:5.39.208.49 ip4:213.4.82.201 +a:dipcas.es +mx include:spf.protection.outlook.com -all",
     "valid": true,
     "dns_lookups": 4,
     "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "5.39.208.0/24",
+          "value": "5.39.208.39",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "5.39.208.40",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "5.39.208.45",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "5.39.208.49",
           "mechanism": "ip4"
         },
         {
@@ -170,65 +182,13 @@
       ],
       "redirect": null,
       "exp": null,
-      "all": "softfail"
+      "all": "fail"
     }
   },
   "dmarc": {
-    "record": "v=DMARC1;p=none;sp=none;rua=mailto:oper@dipcas.es",
-    "valid": true,
+    "record": "v=DMARC1;p=quarantine;pct=20;adkim=r,aspf=r;fo=1;rua=mailto:oper@dipcas.es;ruf=mailto:oper@dipcas.es",
+    "valid": false,
     "location": "dipcas.es",
-    "warnings": [],
-    "tags": {
-      "v": {
-        "value": "DMARC1",
-        "explicit": true
-      },
-      "p": {
-        "value": "none",
-        "explicit": true
-      },
-      "sp": {
-        "value": "none",
-        "explicit": true
-      },
-      "rua": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "oper@dipcas.es",
-            "size_limit": null
-          }
-        ],
-        "explicit": true
-      },
-      "adkim": {
-        "value": "r",
-        "explicit": false
-      },
-      "aspf": {
-        "value": "r",
-        "explicit": false
-      },
-      "fo": {
-        "value": [
-          "0"
-        ],
-        "explicit": false
-      },
-      "pct": {
-        "value": 100,
-        "explicit": false
-      },
-      "rf": {
-        "value": [
-          "afrf"
-        ],
-        "explicit": false
-      },
-      "ri": {
-        "value": 86400,
-        "explicit": false
-      }
-    }
+    "error": "Error: Expected end_of_statement or ; at position 41 in: v=DMARC1;p=quarantine;pct=20;adkim=r,aspf=r;fo=1;rua=mailto:oper@dipcas.es;ruf=mailto:oper@dipcas.es"
   }
 }

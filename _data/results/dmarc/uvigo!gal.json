@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns.uvigo.es",
-      "sun.rediris.es",
+      "chico.rediris.es",
       "dns2.uvigo.es",
-      "chico.rediris.es"
+      "dns.uvigo.es",
+      "sun.rediris.es"
     ],
     "warnings": []
   },
@@ -15,22 +15,16 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "mx01.puc.rediris.es",
+        "hostname": "mx03.puc.rediris.es",
         "addresses": [
-          "130.206.19.130",
-          "130.206.19.162",
-          "2001:720:418:ca10::2",
-          "2001:720:418:ca11::2"
+          "143.55.146.78"
         ]
       },
       {
         "preference": 10,
-        "hostname": "mx02.puc.rediris.es",
+        "hostname": "mx04.puc.rediris.es",
         "addresses": [
-          "130.206.19.130",
-          "130.206.19.162",
-          "2001:720:418:ca10::2",
-          "2001:720:418:ca11::2"
+          "143.55.148.243"
         ]
       }
     ],

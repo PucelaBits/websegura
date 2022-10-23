@@ -33,7 +33,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
+      "The reverse DNS of 217.130.125.204 is static-204-125-130-217.ipcom.comunitel.net, but the A/AAAA DNS records for static-204-125-130-217.ipcom.comunitel.net do not resolve to 217.130.125.204"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:spf.antispamcloud.com ip4:90.160.60.248/32 ip4:217.130.125.204/32 -all",

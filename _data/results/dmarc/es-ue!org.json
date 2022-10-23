@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.siteground.net",
-      "ns1.siteground.net"
+      "ns1.siteground.net",
+      "ns2.siteground.net"
     ],
     "warnings": []
   },
@@ -90,7 +90,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
+      "The reverse DNS of 185.56.84.5 is delivery16.mailspamprotection.com, but the A/AAAA DNS records for delivery16.mailspamprotection.com do not resolve to 185.56.84.5"
+    ]
   },
   "spf": {
     "record": "v=spf1 +a +mx +ip4:35.214.194.97 include:_spf.mailspamprotection.com ~all",

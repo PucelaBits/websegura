@@ -13,8 +13,23 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query 162.19.206.130.in-addr.arpa. IN PTR: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 20,
+        "hostname": "mxa-006a4e02.gslb.pphosted.com",
+        "addresses": [
+          "143.55.146.78"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mxb-006a4e02.gslb.pphosted.com",
+        "addresses": [
+          "143.55.146.78"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 a:postin.uv.es a:postin.ipv6.uv.es a:postilla.uv.es a:postilla.ipv6.uv.es a:hal.ific.uv.es a:ifmx.ific.uv.es a:glup.irobot.uv.es -all",

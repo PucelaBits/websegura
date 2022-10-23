@@ -10,8 +10,24 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query 90.160.86.188.in-addr.arpa. IN PTR: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 0,
+        "hostname": "feriavalencia-com.mail.protection.outlook.com",
+        "addresses": [
+          "104.47.11.74",
+          "104.47.6.36"
+        ]
+      },
+      {
+        "preference": 40,
+        "hostname": "senvios02.feriavalencia.com",
+        "addresses": [
+          "188.86.160.90"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:188.86.160.90 ip4:188.86.160.91 include:spf.protection.outlook.com -all",

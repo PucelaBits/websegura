@@ -10,13 +10,25 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query 63.211.148.192.in-addr.arpa. IN PTR: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "smtp.mites.gob.es",
+        "addresses": [
+          "192.148.211.63"
+        ]
+      }
+    ],
+    "warnings": [
+      "The reverse DNS of 192.148.211.63 is srvsmtp03.meyss.es, but the A/AAAA DNS records for srvsmtp03.meyss.es do not resolve to 192.148.211.63",
+      "The reverse DNS of 192.148.211.63 is srvsmtp03.mites.gob.es, but the A/AAAA DNS records for srvsmtp03.mites.gob.es do not resolve to 192.148.211.63",
+      "The reverse DNS of 192.148.211.63 is srvsmtp03.mitramiss.es, but the A/AAAA DNS records for srvsmtp03.mitramiss.es do not resolve to 192.148.211.63"
+    ]
   },
   "spf": {
-    "record": "v=spf1 mx a:srvsmtp03.mites.gob.es a:srvsmtp04.mites.gob.es a:srvsmtp05.mites.gob.es include:spf.protection.outlook.com ip4:192.148.211.63 ip4:192.148.211.64 ip4:192.148.211.65 ~all",
+    "record": "v=spf1 mx a:smtp.mites.gob.es include:spf.protection.outlook.com ip4:192.148.211.63 ~all",
     "valid": true,
-    "dns_lookups": 6,
+    "dns_lookups": 4,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -25,39 +37,11 @@
           "mechanism": "mx"
         },
         {
-          "value": "srvsmtp03.mites.gob.es",
-          "mechanism": "mx"
-        },
-        {
-          "value": "srvsmtp04.mites.gob.es",
-          "mechanism": "mx"
-        },
-        {
-          "value": "srvsmtp05.mites.gob.es",
-          "mechanism": "mx"
-        },
-        {
           "value": "192.148.211.63",
           "mechanism": "a"
         },
         {
-          "value": "192.148.211.64",
-          "mechanism": "a"
-        },
-        {
-          "value": "192.148.211.65",
-          "mechanism": "a"
-        },
-        {
           "value": "192.148.211.63",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "192.148.211.64",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "192.148.211.65",
           "mechanism": "ip4"
         }
       ],

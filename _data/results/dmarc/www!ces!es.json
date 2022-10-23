@@ -22,9 +22,9 @@
     ]
   },
   "spf": {
-    "record": "v=spf1 mx include:spf.acumbamail.com a:webmail.ces.es a:srvsmtp01.mites.gob.es a:srvsmtp02.mites.gob.es a:srvsmtp03.mites.gob.es a:srvsmtp04.mites.gob.es include:spf.protection.outlook.com -all",
+    "record": "v=spf1 mx include:spf.acumbamail.com a:webmail.ces.es a:smtp.mites.gob.es ip4:192.148.211.63 include:spf.protection.outlook.com -all",
     "valid": true,
-    "dns_lookups": 9,
+    "dns_lookups": 6,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -37,20 +37,12 @@
           "mechanism": "a"
         },
         {
-          "value": "192.148.211.61",
-          "mechanism": "a"
-        },
-        {
-          "value": "192.148.211.62",
-          "mechanism": "a"
-        },
-        {
           "value": "192.148.211.63",
           "mechanism": "a"
         },
         {
-          "value": "192.148.211.64",
-          "mechanism": "a"
+          "value": "192.148.211.63",
+          "mechanism": "ip4"
         }
       ],
       "neutral": [],

@@ -28,7 +28,9 @@
     ],
     "warnings": [
       "The reverse DNS of 212.128.122.3 is smtp1.micinn.es, but the A/AAAA DNS records for smtp1.micinn.es do not resolve to 212.128.122.3",
-      "The reverse DNS of 212.128.122.4 is smtp2.micinn.es, but the A/AAAA DNS records for smtp2.micinn.es do not resolve to 212.128.122.4"
+      "The reverse DNS of 212.128.122.4 is smtp2.micinn.es, but the A/AAAA DNS records for smtp2.micinn.es do not resolve to 212.128.122.4",
+      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
+      "The reverse DNS of 212.128.122.4 is smtp2.mineco.es, but the A/AAAA DNS records for smtp2.mineco.es do not resolve to 212.128.122.4"
     ]
   },
   "spf": {

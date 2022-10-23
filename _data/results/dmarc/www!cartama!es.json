@@ -18,7 +18,7 @@
         "hostname": "mx.spamexperts.com",
         "addresses": [
           "2001:550:2:9::280:100",
-          "38.109.53.20"
+          "38.89.254.156"
         ]
       },
       {
@@ -48,7 +48,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records",
+      "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:spf.qsemail.net include:spf.acumbamail.com -all",
@@ -609,6 +612,14 @@
               },
               {
                 "value": "2001:978:2:7::e7:102",
+                "mechanism": "a"
+              },
+              {
+                "value": "2001:978:2:7::e7:103",
+                "mechanism": "a"
+              },
+              {
+                "value": "2001:978:2:7::e7:104",
                 "mechanism": "a"
               },
               {

@@ -44,7 +44,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx ip4:195.55.90.34/32 include:spf.hornetsecurity.com ~all",
+    "record": "v=spf1 mx ip4:195.55.90.34/32 ip4:195.76.202.102/28  include:spf.hornetsecurity.com ~all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
@@ -68,6 +68,10 @@
         },
         {
           "value": "195.55.90.34/32",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "195.76.202.102/28",
           "mechanism": "ip4"
         }
       ],

@@ -15,7 +15,7 @@
         "preference": 10,
         "hostname": "mx.spamexperts.com",
         "addresses": [
-          "2001:550:2:9::280:100",
+          "2001:550:2:61::2fc:100",
           "38.109.53.20"
         ]
       },
@@ -46,7 +46,11 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records",
+      "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records",
+      "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
     "record": "v=spf1 mx a ptr ip4:213.4.82.254 a:espublico.com include:dpz.es",
