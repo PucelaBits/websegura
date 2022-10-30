@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "dns1.atlassolutions.net",
       "dns3.atlassolutions.net",
       "dns2.atlassolutions.net",
-      "dns1.atlassolutions.net",
       "dns5.atlassolutions.net"
     ],
     "warnings": []
@@ -18,7 +18,7 @@
         "hostname": "aoc-cat.mail.protection.outlook.com",
         "addresses": [
           "104.47.12.36",
-          "104.47.13.36"
+          "104.47.14.36"
         ]
       }
     ],
@@ -42,7 +42,7 @@
       "include": [
         {
           "domain": "spf1.aoc.cat",
-          "record": "v=spf1 mx ip4:90.160.140.196/32 ip4:62.37.231.71/32 ip4:157.97.64.28/32 ip4:157.97.64.101/32 ip4:83.231.131.86/32 ip4:46.51.145.164/32 ip4:157.97.64.116/32 ip4:157.97.64.84/32 ip4:157.97.64.117/32 ~all",
+          "record": "v=spf1 mx ip4:90.160.140.196/32 ip4:62.37.231.72/32 ip4:157.97.64.28/32 ip4:157.97.64.101/32 ip4:83.231.131.86/32 ip4:46.51.145.164/32 ip4:157.97.64.116/32 ip4:157.97.64.84/32 ip4:157.97.64.117/32 ~all",
           "dns_lookups": 1,
           "parsed": {
             "pass": [
@@ -55,7 +55,7 @@
                 "mechanism": "ip4"
               },
               {
-                "value": "62.37.231.71/32",
+                "value": "62.37.231.72/32",
                 "mechanism": "ip4"
               },
               {

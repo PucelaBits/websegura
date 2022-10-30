@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "sdns1.occentus.net",
+      "sdns4.occentus.net",
       "sdns2.occentus.net",
       "sdns3.occentus.net",
-      "sdns4.occentus.net"
+      "sdns1.occentus.net"
     ],
     "warnings": []
   },
@@ -17,11 +17,13 @@
         "preference": 10,
         "hostname": "mail.comunitatvalenciana.com",
         "addresses": [
-          "154.58.16.140"
+          "178.255.230.221"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "178.255.230.221 does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
     "record": "v=spf1 +a +mx include:emailservice.cpd.as include:gva.ip-zone.com include:spf.ipzmarketing.com -all",
@@ -33,11 +35,11 @@
     "parsed": {
       "pass": [
         {
-          "value": "154.58.16.190",
+          "value": "178.255.230.196",
           "mechanism": "a"
         },
         {
-          "value": "154.58.16.191",
+          "value": "178.255.230.198",
           "mechanism": "a"
         },
         {

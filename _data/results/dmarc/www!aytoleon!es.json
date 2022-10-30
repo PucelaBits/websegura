@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.dnsrapido.com",
       "ns1.dnsrapido.com",
-      "ns3.dnsrapido.com"
+      "ns3.dnsrapido.com",
+      "ns2.dnsrapido.com"
     ],
     "warnings": []
   },
@@ -44,7 +44,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx ip4:195.55.90.34/32 ip4:195.76.202.102/28  include:spf.hornetsecurity.com ~all",
+    "record": "v=spf1 mx ip4:195.55.90.34/32 ip4:195.76.202.102/28 include:spf.hornetsecurity.com ~all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],

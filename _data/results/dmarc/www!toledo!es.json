@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.serv213537.servidoresdns.net",
-      "dns1.serv213537.servidoresdns.net"
+      "dns1.serv213537.servidoresdns.net",
+      "dns2.serv213537.servidoresdns.net"
     ],
     "warnings": []
   },
@@ -22,7 +22,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:_spf.serviciodecorreo.es ~all",
+    "record": "v=spf1 include:_spf.serviciodecorreo.es -all",
     "valid": true,
     "dns_lookups": 3,
     "warnings": [],
@@ -170,7 +170,7 @@
       ],
       "redirect": null,
       "exp": null,
-      "all": "softfail"
+      "all": "fail"
     }
   },
   "dmarc": {

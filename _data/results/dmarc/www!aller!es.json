@@ -3,11 +3,8 @@
   "base_domain": "aller.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "ns1.aller.es",
-      "ns2.aller.es"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "mx": {
     "hosts": [
@@ -15,14 +12,12 @@
         "preference": 0,
         "hostname": "aller-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.30.74",
-          "104.47.51.138"
+          "104.47.51.138",
+          "104.47.51.202"
         ]
       }
     ],
-    "warnings": [
-      "104.47.30.74 does not have any reverse DNS (PTR) records"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:_spf.google.com include:spf.protection.outlook.com ~all",

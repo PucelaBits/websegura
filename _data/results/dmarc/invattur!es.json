@@ -6,35 +6,26 @@
     "hostnames": [
       "sdns3.occentus.net",
       "sdns1.occentus.net",
-      "sdns2.occentus.net",
-      "sdns4.occentus.net"
+      "sdns4.occentus.net",
+      "sdns2.occentus.net"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "smtp.invattur.es",
-        "addresses": [
-          "154.58.16.140"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
   },
   "spf": {
     "record": "v=spf1 mx -all",
     "valid": true,
     "dns_lookups": 1,
-    "warnings": [],
+    "warnings": [
+      "invattur.es does not have any MX records"
+    ],
     "parsed": {
-      "pass": [
-        {
-          "value": "smtp.invattur.es",
-          "mechanism": "mx"
-        }
-      ],
+      "pass": [],
       "neutral": [],
       "softfail": [],
       "fail": [],

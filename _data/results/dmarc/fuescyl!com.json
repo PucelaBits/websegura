@@ -10,42 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 5,
-        "hostname": "vmail.altia.es",
-        "addresses": [
-          "217.130.24.175"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "mail.fuescyl.com",
-        "addresses": [
-          "217.116.0.206"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "mail2.fuescyl.com",
-        "addresses": [
-          "86.109.99.246"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mail2.fuescyl.com",
-        "addresses": []
-      },
-      {
-        "preference": 30,
-        "hostname": "mail2.fuescyl.com",
-        "addresses": []
-      }
-    ],
-    "warnings": [
-      "Hostname mail2.fuescyl.com is listed in multiple MX records"
-    ]
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 mx a ~all",

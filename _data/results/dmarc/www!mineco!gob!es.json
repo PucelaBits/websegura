@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "ns2.t-systems.es",
-      "ns.mcx.es",
-      "ns1.t-systems.es"
+      "ns1.t-systems.es",
+      "ns.mcx.es"
     ],
     "warnings": []
   },
@@ -25,6 +25,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
+    "error": "A DMARC record does not exist for this domain or its base domain"
   }
 }

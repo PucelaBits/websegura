@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns11.ovh.net",
-      "dns11.ovh.net"
+      "dns11.ovh.net",
+      "ns11.ovh.net"
     ],
     "warnings": []
   },
@@ -15,14 +15,12 @@
         "preference": 0,
         "hostname": "aytoantigua-es01b.mail.protection.outlook.com",
         "addresses": [
-          "104.47.30.74",
-          "104.47.51.138"
+          "104.47.51.138",
+          "104.47.51.202"
         ]
       }
     ],
-    "warnings": [
-      "104.47.30.74 does not have any reverse DNS (PTR) records"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com -all",

@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.jccm.es",
-      "ns1.jccm.es"
+      "ns1.jccm.es",
+      "ns2.jccm.es"
     ],
     "warnings": []
   },
@@ -90,7 +90,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; fo=1; ri=3600; rua=mailto:dmarc@castillalamancha.es; ruf=mailto:dmarc@castillalamancha.es",
+    "record": "v=DMARC1; p=quarantine; pct=100; fo=1; rua=mailto:dmarc@castillalamancha.es; ruf=mailto:dmarcfo@castillalamancha.es",
     "valid": true,
     "location": "castillalamancha.es",
     "warnings": [],
@@ -100,17 +100,17 @@
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "quarantine",
+        "explicit": true
+      },
+      "pct": {
+        "value": 100,
         "explicit": true
       },
       "fo": {
         "value": [
           "1"
         ],
-        "explicit": true
-      },
-      "ri": {
-        "value": 3600,
         "explicit": true
       },
       "rua": {
@@ -127,7 +127,7 @@
         "value": [
           {
             "scheme": "mailto",
-            "address": "dmarc@castillalamancha.es",
+            "address": "dmarcfo@castillalamancha.es",
             "size_limit": null
           }
         ],
@@ -141,18 +141,18 @@
         "value": "r",
         "explicit": false
       },
-      "pct": {
-        "value": 100,
-        "explicit": false
-      },
       "rf": {
         "value": [
           "afrf"
         ],
         "explicit": false
       },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
       "sp": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": false
       }
     }

@@ -20,11 +20,14 @@
           "104.47.11.202",
           "104.47.4.36",
           "2a01:111:f400:7e06::10",
-          "2a01:111:f400:fe12::10"
+          "2a01:111:f400:7e1e::10"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The domain mail-am5eur020010.inbound.protection.outlook.com does not exist",
+      "The reverse DNS of 2a01:111:f400:7e1e::10 is mail-am5eur020010.inbound.protection.outlook.com, but the A/AAAA DNS records for mail-am5eur020010.inbound.protection.outlook.com do not resolve to 2a01:111:f400:7e1e::10"
+    ]
   },
   "spf": {
     "record": "v=spf1 a mx a:smtp.red.es include:spf.protection.outlook.com include:spf.sendinblue.com include:spf.mandrillapp.com -all",
@@ -34,51 +37,51 @@
     "parsed": {
       "pass": [
         {
-          "value": "2600:9000:250f:1200:12:c39d:d340:93a1",
+          "value": "18.67.76.113",
           "mechanism": "a"
         },
         {
-          "value": "2600:9000:250f:2800:12:c39d:d340:93a1",
+          "value": "18.67.76.51",
           "mechanism": "a"
         },
         {
-          "value": "2600:9000:250f:6a00:12:c39d:d340:93a1",
+          "value": "18.67.76.6",
           "mechanism": "a"
         },
         {
-          "value": "2600:9000:250f:8800:12:c39d:d340:93a1",
+          "value": "18.67.76.71",
           "mechanism": "a"
         },
         {
-          "value": "2600:9000:250f:a800:12:c39d:d340:93a1",
+          "value": "2600:9000:2305:3000:12:c39d:d340:93a1",
           "mechanism": "a"
         },
         {
-          "value": "2600:9000:250f:b000:12:c39d:d340:93a1",
+          "value": "2600:9000:2305:4600:12:c39d:d340:93a1",
           "mechanism": "a"
         },
         {
-          "value": "2600:9000:250f:e00:12:c39d:d340:93a1",
+          "value": "2600:9000:2305:6e00:12:c39d:d340:93a1",
           "mechanism": "a"
         },
         {
-          "value": "2600:9000:250f:e600:12:c39d:d340:93a1",
+          "value": "2600:9000:2305:9c00:12:c39d:d340:93a1",
           "mechanism": "a"
         },
         {
-          "value": "65.9.121.103",
+          "value": "2600:9000:2305:a600:12:c39d:d340:93a1",
           "mechanism": "a"
         },
         {
-          "value": "65.9.121.112",
+          "value": "2600:9000:2305:aa00:12:c39d:d340:93a1",
           "mechanism": "a"
         },
         {
-          "value": "65.9.121.33",
+          "value": "2600:9000:2305:b800:12:c39d:d340:93a1",
           "mechanism": "a"
         },
         {
-          "value": "65.9.121.86",
+          "value": "2600:9000:2305:d800:12:c39d:d340:93a1",
           "mechanism": "a"
         },
         {

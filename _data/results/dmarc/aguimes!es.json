@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns.lpa.idec.net",
-      "dns.mad.idec.net"
+      "dns.mad.idec.net",
+      "dns.lpa.idec.net"
     ],
     "warnings": []
   },
@@ -21,12 +21,12 @@
       {
         "preference": 15,
         "hostname": "smtp.aguimes.es",
-        "addresses": []
+        "addresses": [
+          "195.77.245.218"
+        ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
-    ]
+    "warnings": []
   },
   "spf": {
     "record": null,

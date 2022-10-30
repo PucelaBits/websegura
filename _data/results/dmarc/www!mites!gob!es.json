@@ -19,11 +19,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The reverse DNS of 192.148.211.63 is srvsmtp03.meyss.es, but the A/AAAA DNS records for srvsmtp03.meyss.es do not resolve to 192.148.211.63",
-      "The reverse DNS of 192.148.211.63 is srvsmtp03.mites.gob.es, but the A/AAAA DNS records for srvsmtp03.mites.gob.es do not resolve to 192.148.211.63",
-      "The reverse DNS of 192.148.211.63 is srvsmtp03.mitramiss.es, but the A/AAAA DNS records for srvsmtp03.mitramiss.es do not resolve to 192.148.211.63"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx a:smtp.mites.gob.es include:spf.protection.outlook.com ip4:192.148.211.63 ~all",

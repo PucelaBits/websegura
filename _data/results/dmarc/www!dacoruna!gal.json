@@ -4,12 +4,12 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns.dacoruna.gal",
       "dns.dicoruna.es",
-      "ns1.xunta.es",
-      "dns1.dacoruna.gal",
       "dns1.dicoruna.es",
-      "ns2.xunta.es"
+      "ns2.xunta.es",
+      "dns1.dacoruna.gal",
+      "dns.dacoruna.gal",
+      "ns1.xunta.es"
     ],
     "warnings": []
   },
@@ -26,63 +26,25 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 a mx include:_spf.dacoruna.gal -all",
+    "record": "v=spf1 mx a:smtp-alt.dacoruna.gal -all",
     "valid": true,
-    "dns_lookups": 8,
+    "dns_lookups": 2,
     "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "85.91.67.124",
-          "mechanism": "a"
-        },
-        {
           "value": "smtp.dicoruna.es",
           "mechanism": "mx"
+        },
+        {
+          "value": "85.91.67.133",
+          "mechanism": "a"
         }
       ],
       "neutral": [],
       "softfail": [],
       "fail": [],
-      "include": [
-        {
-          "domain": "_spf.dacoruna.gal",
-          "record": "v=spf1 mx:dacoruna.gal mx:dicoruna.es a:correo.dacoruna.gal a:correo.dicoruna.es a:smtp-alt.dacoruna.gal -all",
-          "dns_lookups": 5,
-          "parsed": {
-            "pass": [
-              {
-                "value": "smtp.dicoruna.es",
-                "mechanism": "mx"
-              },
-              {
-                "value": "smtp.dicoruna.es",
-                "mechanism": "mx"
-              },
-              {
-                "value": "85.91.67.132",
-                "mechanism": "a"
-              },
-              {
-                "value": "85.91.67.14",
-                "mechanism": "a"
-              },
-              {
-                "value": "85.91.67.133",
-                "mechanism": "a"
-              }
-            ],
-            "neutral": [],
-            "softfail": [],
-            "fail": [],
-            "include": [],
-            "redirect": null,
-            "exp": null,
-            "all": "fail"
-          },
-          "warnings": []
-        }
-      ],
+      "include": [],
       "redirect": null,
       "exp": null,
       "all": "fail"
