@@ -15,8 +15,8 @@
         "preference": 0,
         "hostname": "lafontdencarros-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.51.138",
-          "104.47.51.202"
+          "104.47.30.74",
+          "104.47.51.138"
         ]
       },
       {
@@ -26,6 +26,7 @@
       }
     ],
     "warnings": [
+      "104.47.30.74 does not have any reverse DNS (PTR) records",
       "The domain ms35284834.msv1.invalid does not exist. Consider using a TXT record to validate domain ownership in Office 365 instead."
     ]
   },
@@ -157,6 +158,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.lafontdencarros.es\n\nv=spf1 include:spf.protection.outlook.com -all\n\nMS=ms35284834"
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.lafontdencarros.es\n\nMS=ms35284834\n\nv=spf1 include:spf.protection.outlook.com -all"
   }
 }

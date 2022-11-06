@@ -4,14 +4,50 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.redunda.com",
-      "ns.redunda.com"
+      "ns.redunda.com",
+      "ns2.redunda.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx.redunda.com",
+        "addresses": [
+          "84.246.208.51",
+          "84.246.208.52",
+          "84.246.208.53",
+          "84.246.208.54",
+          "84.246.208.55",
+          "84.246.208.56",
+          "84.246.208.57",
+          "84.246.208.58"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mx2.redunda.com",
+        "addresses": [
+          "84.246.208.51",
+          "84.246.208.52",
+          "84.246.208.53",
+          "84.246.208.54",
+          "84.246.208.55",
+          "84.246.208.56",
+          "84.246.208.57",
+          "84.246.208.58"
+        ]
+      },
+      {
+        "preference": 32767,
+        "hostname": "ms98722601.msv1.invalid",
+        "addresses": []
+      }
+    ],
+    "warnings": [
+      "The domain ms98722601.msv1.invalid does not exist. Consider using a TXT record to validate domain ownership in Office 365 instead."
+    ]
   },
   "spf": {
     "record": "v=spf1 mx ip4:195.77.252.1 ip4:195.77.252.2 ip4:195.77.252.3 ip4:195.77.252.4 ip4:195.77.252.5 mx:mail.betera.es a:mail.betera.es -all",

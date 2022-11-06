@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "chico.rediris.es",
-      "sabina.cti.csic.es",
       "sun.rediris.es",
-      "olmo.csic.es"
+      "olmo.csic.es",
+      "chico.rediris.es",
+      "sabina.cti.csic.es"
     ],
     "warnings": []
   },
@@ -22,7 +22,9 @@
       }
     ],
     "warnings": [
-      "The reverse DNS of 161.111.10.17 is smtpin.csic.es, but the A/AAAA DNS records for smtpin.csic.es do not resolve to 161.111.10.17"
+      "The reverse DNS of 161.111.10.17 is smtpin.csic.es, but the A/AAAA DNS records for smtpin.csic.es do not resolve to 161.111.10.17",
+      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
+      "The reverse DNS of 161.111.10.17 is cuarentena.sgai.csic.es, but the A/AAAA DNS records for cuarentena.sgai.csic.es do not resolve to 161.111.10.17"
     ]
   },
   "spf": {

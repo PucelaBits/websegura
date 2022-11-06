@@ -22,7 +22,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
+      "The reverse DNS of 195.77.18.230 is mxext.gva.es, but the A/AAAA DNS records for mxext.gva.es do not resolve to 195.77.18.230"
+    ]
   },
   "spf": {
     "record": null,
