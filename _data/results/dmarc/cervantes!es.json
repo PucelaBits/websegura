@@ -10,8 +10,32 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS response does not contain an answer to the question: 230.3.146.193.in-addr.arpa. IN PTR"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "vela1.cervantes.es",
+        "addresses": [
+          "193.146.3.230"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "vela2.cervantes.es",
+        "addresses": [
+          "193.146.3.229"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "cervantes-mxbck.sistemaip.net",
+        "addresses": [
+          "151.80.14.50",
+          "176.31.21.100",
+          "176.31.81.228"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com ip4:193.146.3.230 ip4:193.146.3.229 ip4:193.146.3.128 ip4:193.146.3.129 ip4:193.146.3.130 ip4:193.146.3.219 -all",

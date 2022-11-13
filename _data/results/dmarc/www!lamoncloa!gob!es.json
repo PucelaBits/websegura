@@ -5,10 +5,10 @@
   "ns": {
     "hostnames": [
       "sun.rediris.es",
-      "dns1.mpr.es",
-      "dns2.mpr.es",
       "chico.rediris.es",
       "sunrelay.rediris.es",
+      "dns1.mpr.es",
+      "dns2.mpr.es",
       "chicorelay.rediris.es"
     ],
     "warnings": []
@@ -30,10 +30,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
-      "The reverse DNS of 212.128.108.46 is mail02.mpr.es, but the A/AAAA DNS records for mail02.mpr.es do not resolve to 212.128.108.46"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:212.128.108.45  ip4:212.128.108.46  -all",

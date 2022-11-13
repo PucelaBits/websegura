@@ -26,10 +26,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
-      "The reverse DNS of 194.224.70.81 is mail.zaragoza.es, but the A/AAAA DNS records for mail.zaragoza.es do not resolve to 194.224.70.81"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:194.224.70.71 ip4:194.224.70.72 ip4:194.224.70.88 ip4:188.244.91.7 -all",

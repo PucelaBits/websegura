@@ -10,23 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "smtp-lp.gobiernodecanarias.org",
-        "addresses": [
-          "93.188.136.122"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "smtp-tf.gobiernodecanarias.org",
-        "addresses": [
-          "93.188.137.42"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 mx a:correo.gobiernodecanarias.org a:correomasivo.gobiernodecanarias.org -all",

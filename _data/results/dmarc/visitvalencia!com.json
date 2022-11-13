@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.prored.es",
       "dns3.prored.es",
-      "dns2.prored.es"
+      "dns2.prored.es",
+      "dns1.prored.es"
     ],
     "warnings": []
   },
@@ -16,14 +16,12 @@
         "preference": 10,
         "hostname": "visitvalencia-com.mail.protection.outlook.com",
         "addresses": [
-          "104.47.30.74",
-          "104.47.51.138"
+          "104.47.51.138",
+          "104.47.51.202"
         ]
       }
     ],
-    "warnings": [
-      "104.47.30.74 does not have any reverse DNS (PTR) records"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com include:spf.ymlp.com a:email-smtp.eu-west-1.amazonaws.com -all",
@@ -33,15 +31,11 @@
     "parsed": {
       "pass": [
         {
-          "value": "34.242.19.44",
-          "mechanism": "a"
-        },
-        {
           "value": "34.253.248.133",
           "mechanism": "a"
         },
         {
-          "value": "52.18.110.190",
+          "value": "52.19.55.95",
           "mechanism": "a"
         },
         {
@@ -50,6 +44,10 @@
         },
         {
           "value": "52.50.157.193",
+          "mechanism": "a"
+        },
+        {
+          "value": "54.154.14.0",
           "mechanism": "a"
         },
         {

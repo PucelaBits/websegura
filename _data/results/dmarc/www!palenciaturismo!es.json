@@ -3,25 +3,12 @@
   "base_domain": "palenciaturismo.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "dns1.diputaciondepalencia.es",
-      "dns2.diputaciondepalencia.es"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "correodepalencia.es",
-        "addresses": [
-          "85.62.54.231"
-        ]
-      }
-    ],
-    "warnings": [
-      "85.62.54.231 does not have any reverse DNS (PTR) records"
-    ]
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 include:_spf.google.com ~all",

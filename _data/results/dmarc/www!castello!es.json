@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns4.galanoa.net",
       "dns1.galanoa.net",
+      "dns4.galanoa.net",
       "dns2.galanoa.net"
     ],
     "warnings": []
@@ -27,17 +27,15 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
-      "The reverse DNS of 195.76.253.211 is mx1.castello.es, but the A/AAAA DNS records for mx1.castello.es do not resolve to 195.76.253.211"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx ip4:46.101.172.164 ip4:195.76.253.211 ip4:91.121.66.37 ip4:94.23.81.245 ip4:91.121.145.84 ip4:217.182.172.167 ip4:37.59.249.171 ip4:5.175.42.43 ip6:2001:41d0:a:65d4::1 include:mailborder.net -all",
     "valid": true,
     "dns_lookups": 9,
     "warnings": [
-      "mailborder.net does not have any A/AAAA records"
+      "mailborder.net does not have any A/AAAA records",
+      "Any text after the all mechanism is ignored"
     ],
     "parsed": {
       "pass": [
@@ -125,7 +123,7 @@
                   "include": [
                     {
                       "domain": "spf.zoho.com",
-                      "record": "v=spf1 ip4:136.143.188.0/24 ip4:136.143.184.0/24 ip4:135.84.80.192/26 ip4:135.84.82.0/24 ip4:8.39.54.0/23 ip4:204.141.32.0/23 ip4:136.143.182.0/23 ip4:204.141.42.0/23 ip4:8.40.222.0/23 ip4:65.154.166.0/24 ip4:199.67.84.0/24 ip4:199.67.86.0/24 ip4:169.148.129.0/24 -all",
+                      "record": "v=spf1 ip4:136.143.188.0/24 ip4:136.143.184.0/24 ip4:135.84.80.192/26 ip4:135.84.82.0/24 ip4:8.39.54.0/23 ip4:204.141.32.0/23 ip4:136.143.182.0/23 ip4:204.141.42.0/23 ip4:8.40.222.0/23 ip4:65.154.166.0/24 ip4:199.67.84.0/24 ip4:199.67.86.0/24 ip4:169.148.129.0/24 ip4:169.148.131.0/24 -all ",
                       "dns_lookups": 0,
                       "parsed": {
                         "pass": [
@@ -180,6 +178,10 @@
                           {
                             "value": "169.148.129.0/24",
                             "mechanism": "ip4"
+                          },
+                          {
+                            "value": "169.148.131.0/24",
+                            "mechanism": "ip4"
                           }
                         ],
                         "neutral": [],
@@ -190,7 +192,9 @@
                         "exp": null,
                         "all": "fail"
                       },
-                      "warnings": []
+                      "warnings": [
+                        "Any text after the all mechanism is ignored"
+                      ]
                     },
                     {
                       "domain": "zcsend.net",
@@ -238,7 +242,9 @@
                   "exp": null,
                   "all": "fail"
                 },
-                "warnings": []
+                "warnings": [
+                  "Any text after the all mechanism is ignored"
+                ]
               },
               {
                 "domain": "amazonses.com",
@@ -336,7 +342,8 @@
             "all": "softfail"
           },
           "warnings": [
-            "mailborder.net does not have any A/AAAA records"
+            "mailborder.net does not have any A/AAAA records",
+            "Any text after the all mechanism is ignored"
           ]
         }
       ],

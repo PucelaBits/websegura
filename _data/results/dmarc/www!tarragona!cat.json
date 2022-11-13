@@ -15,15 +15,15 @@
         "preference": 0,
         "hostname": "tarragona-cat.mail.protection.outlook.com",
         "addresses": [
-          "104.47.13.36",
-          "104.47.14.36"
+          "104.47.12.36",
+          "104.47.13.36"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 a mx include:spf.protection.outlook.com include:spf.ipzmarketing.com ip4:217.160.207.239 ip4:92.54.14.18 ~all",
+    "record": "v=spf1 a mx include:spf.protection.outlook.com include:spf.ipzmarketing.com ip4:217.160.207.239 ip4:92.54.14.18 -all",
     "valid": true,
     "dns_lookups": 5,
     "warnings": [],
@@ -197,7 +197,7 @@
       ],
       "redirect": null,
       "exp": null,
-      "all": "softfail"
+      "all": "fail"
     }
   },
   "dmarc": {

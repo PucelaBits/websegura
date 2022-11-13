@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.cp2gestion-dtc-ib.com",
-      "cdj11.cgpj.es"
+      "cdj11.cgpj.es",
+      "ns2.cp2gestion-dtc-ib.com"
     ],
     "warnings": []
   },
@@ -22,20 +22,18 @@
       {
         "preference": 10,
         "hostname": "mailip1.poderjudicial.es",
-        "addresses": [
-          "62.37.232.37"
-        ]
+        "addresses": []
       },
       {
         "preference": 10,
         "hostname": "mailip2.poderjudicial.es",
-        "addresses": [
-          "62.37.232.39"
-        ]
+        "addresses": []
       }
     ],
     "warnings": [
-      "104.47.30.74 does not have any reverse DNS (PTR) records"
+      "104.47.30.74 does not have any reverse DNS (PTR) records",
+      "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out.",
+      "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
     ]
   },
   "spf": {
@@ -191,6 +189,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   }
 }
