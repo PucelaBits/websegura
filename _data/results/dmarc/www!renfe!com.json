@@ -1,7 +1,7 @@
 {
   "domain": "renfe.com",
   "base_domain": "renfe.com",
-  "dnssec": false,
+  "dnssec": true,
   "ns": {
     "hostnames": [
       "dns1.renfe.es",
@@ -11,7 +11,9 @@
   },
   "mx": {
     "hosts": [],
-    "error": "All nameservers failed to answer the query renfe.com. IN MX: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
   },
   "spf": {
     "record": "v=spf1 -all",
@@ -30,9 +32,53 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
+    "record": "v=DMARC1; p=reject; sp=reject; adkim=s; aspf=s; fo=1",
+    "valid": true,
+    "location": "renfe.com",
+    "warnings": [
+      "rua tag (destination for aggregate reports) not found"
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "reject",
+        "explicit": true
+      },
+      "sp": {
+        "value": "reject",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "s",
+        "explicit": true
+      },
+      "aspf": {
+        "value": "s",
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "1"
+        ],
+        "explicit": true
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      }
+    }
   }
 }

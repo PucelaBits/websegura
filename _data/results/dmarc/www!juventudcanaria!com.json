@@ -4,19 +4,29 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "seti.gobiernodecanarias.org",
-      "acatife.gobiernodecanarias.org"
+      "acatife.gobiernodecanarias.org",
+      "seti.gobiernodecanarias.org"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx00.dns-servicios.com",
+        "addresses": [
+          "82.194.66.163",
+          "82.194.66.207",
+          "82.194.66.208"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": null,
     "valid": false,
-    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
+    "error": "juventudcanaria.com does not have a SPF TXT record"
   },
   "dmarc": {
     "record": null,

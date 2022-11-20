@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.coruna.es",
-      "ns4.coruna.es",
       "ns1.coruna.es",
-      "ns3.coruna.es"
+      "ns2.coruna.es",
+      "ns3.coruna.es",
+      "ns4.coruna.es"
     ],
     "warnings": []
   },
@@ -41,8 +41,8 @@
     "record": "v=spf1 mx a:oxi.coruna.es a:bakdmz.coruna.es include:spf.protection.outlook.com include:_migracion.coruna.es -all",
     "valid": false,
     "warnings": [],
-    "error": "Parsing the SPF record requires 12/10 maximum DNS lookups - https://tools.ietf.org/html/rfc7208#section-4.6.4",
-    "dns_lookups": 12
+    "error": "Parsing the SPF record requires 11/10 maximum DNS lookups - https://tools.ietf.org/html/rfc7208#section-4.6.4",
+    "dns_lookups": 11
   },
   "dmarc": {
     "record": null,

@@ -7,8 +7,8 @@
       "ns2.uva.es",
       "ns3.uva.es",
       "mapache.funge.uva.es",
-      "ns1.uva.es",
-      "ns1.funge.uva.es"
+      "ns1.funge.uva.es",
+      "ns1.uva.es"
     ],
     "warnings": []
   },
@@ -18,7 +18,7 @@
         "preference": 10,
         "hostname": "mxa-006a4e02.gslb.pphosted.com",
         "addresses": [
-          "143.55.146.78"
+          "143.55.148.243"
         ]
       },
       {
@@ -86,7 +86,7 @@
         },
         {
           "domain": "spf.puc.rediris.es",
-          "record": "v=spf1 ip4:143.55.146.78 ip4:143.55.148.243 ip4:130.206.24.0/24 ip4:130.206.19.0/24 ip4:192.187.24.32/28 ip4:192.187.24.0/28 ip6:2001:720:418:ca10::/64 ip6:2001:720:418:ca11::/64 ~all",
+          "record": "v=spf1 ip4:143.55.146.78 ip4:143.55.148.243 ip4:130.206.25.38 ip4:130.206.24.0/24 ip4:130.206.19.0/24 ip4:192.187.24.32/28 ip4:192.187.24.0/28 ip6:2001:720:418:ca10::/64 ip6:2001:720:418:ca11::/64 ~all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -96,6 +96,10 @@
               },
               {
                 "value": "143.55.148.243",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "130.206.25.38",
                 "mechanism": "ip4"
               },
               {
@@ -140,53 +144,9 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none;",
-    "valid": true,
-    "location": "funge.uva.es",
-    "warnings": [
-      "rua tag (destination for aggregate reports) not found"
-    ],
-    "tags": {
-      "v": {
-        "value": "DMARC1",
-        "explicit": true
-      },
-      "p": {
-        "value": "none",
-        "explicit": true
-      },
-      "adkim": {
-        "value": "r",
-        "explicit": false
-      },
-      "aspf": {
-        "value": "r",
-        "explicit": false
-      },
-      "fo": {
-        "value": [
-          "0"
-        ],
-        "explicit": false
-      },
-      "pct": {
-        "value": 100,
-        "explicit": false
-      },
-      "rf": {
-        "value": [
-          "afrf"
-        ],
-        "explicit": false
-      },
-      "ri": {
-        "value": 86400,
-        "explicit": false
-      },
-      "sp": {
-        "value": "none",
-        "explicit": false
-      }
-    }
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "All nameservers failed to answer the query _dmarc.funge.uva.es. IN TXT: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
   }
 }

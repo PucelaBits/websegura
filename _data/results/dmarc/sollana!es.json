@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.dnsxperta.com",
-      "ns3.dnsxperta.com"
+      "ns3.dnsxperta.com",
+      "ns2.dnsxperta.com"
     ],
     "warnings": []
   },
@@ -150,6 +150,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.sollana.es\n\nv=spf1 include:spf.protection.outlook.com -all\n\nMS=F4B15552D989D06D6668B0D226A160C6F3696484"
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.sollana.es\n\nMS=F4B15552D989D06D6668B0D226A160C6F3696484\n\nv=spf1 include:spf.protection.outlook.com -all"
   }
 }

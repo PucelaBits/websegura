@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns2.upct.es",
       "ns1.upct.es",
       "chico.rediris.es",
-      "sun.rediris.es",
-      "ns2.upct.es"
+      "sun.rediris.es"
     ],
     "warnings": []
   },
@@ -58,15 +58,15 @@
           "mechanism": "ip4"
         },
         {
-          "value": "34.242.213.52",
+          "value": "52.212.37.172",
           "mechanism": "a"
         },
         {
-          "value": "52.16.241.92",
+          "value": "52.49.4.21",
           "mechanism": "a"
         },
         {
-          "value": "52.49.226.246",
+          "value": "63.33.154.197",
           "mechanism": "a"
         }
       ],
@@ -76,7 +76,7 @@
       "include": [
         {
           "domain": "spf.puc.rediris.es",
-          "record": "v=spf1 ip4:143.55.146.78 ip4:143.55.148.243 ip4:130.206.24.0/24 ip4:130.206.19.0/24 ip4:192.187.24.32/28 ip4:192.187.24.0/28 ip6:2001:720:418:ca10::/64 ip6:2001:720:418:ca11::/64 ~all",
+          "record": "v=spf1 ip4:143.55.146.78 ip4:143.55.148.243 ip4:130.206.25.38 ip4:130.206.24.0/24 ip4:130.206.19.0/24 ip4:192.187.24.32/28 ip4:192.187.24.0/28 ip6:2001:720:418:ca10::/64 ip6:2001:720:418:ca11::/64 ~all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -86,6 +86,10 @@
               },
               {
                 "value": "143.55.148.243",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "130.206.25.38",
                 "mechanism": "ip4"
               },
               {

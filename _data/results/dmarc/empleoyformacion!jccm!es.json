@@ -18,27 +18,29 @@
     "error": "empleoyformacion.jccm.es does not have a SPF TXT record"
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; fo=1; ri=3600; rua=mailto:dmarc@jccm.es; ruf=mailto:dmarc@jccm.es",
+    "record": "v=DMARC1; p=quarantine; pct=50; fo=1; rua=mailto:dmarc@jccm.es; ruf=mailto:dmarc@jccm.es",
     "valid": true,
     "location": "jccm.es",
-    "warnings": [],
+    "warnings": [
+      "pct value is less than 100. This leads to inconsistent and unpredictable policy enforcement. Consider using p=none to monitor results instead"
+    ],
     "tags": {
       "v": {
         "value": "DMARC1",
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "quarantine",
+        "explicit": true
+      },
+      "pct": {
+        "value": 50,
         "explicit": true
       },
       "fo": {
         "value": [
           "1"
         ],
-        "explicit": true
-      },
-      "ri": {
-        "value": 3600,
         "explicit": true
       },
       "rua": {
@@ -69,18 +71,18 @@
         "value": "r",
         "explicit": false
       },
-      "pct": {
-        "value": 100,
-        "explicit": false
-      },
       "rf": {
         "value": [
           "afrf"
         ],
         "explicit": false
       },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
       "sp": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": false
       }
     }

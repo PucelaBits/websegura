@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.alsitel.net",
-      "ns1.alsitel.net"
+      "ns1.alsitel.net",
+      "ns2.alsitel.net"
     ],
     "warnings": []
   },
@@ -21,14 +21,13 @@
       {
         "preference": 20,
         "hostname": "mail01.guadalajara.es",
-        "addresses": [
-          "62.82.228.203"
-        ]
+        "addresses": []
       }
     ],
     "warnings": [
       "The domain 168.red-213-0-97.customer.static.ccgg.telefonica.net does not exist",
-      "The reverse DNS of 213.0.97.168 is 168.red-213-0-97.customer.static.ccgg.telefonica.net, but the A/AAAA DNS records for 168.red-213-0-97.customer.static.ccgg.telefonica.net do not resolve to 213.0.97.168"
+      "The reverse DNS of 213.0.97.168 is 168.red-213-0-97.customer.static.ccgg.telefonica.net, but the A/AAAA DNS records for 168.red-213-0-97.customer.static.ccgg.telefonica.net do not resolve to 213.0.97.168",
+      "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
     ]
   },
   "spf": {
