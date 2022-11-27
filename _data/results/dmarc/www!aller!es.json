@@ -15,17 +15,19 @@
         "preference": 0,
         "hostname": "aller-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.51.138",
+          "104.47.30.74",
           "104.47.51.202"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "104.47.30.74 does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
-    "record": "v=spf1 include:_spf.google.com include:spf.protection.outlook.com ~all",
+    "record": "v=spf1 include:_spf.google.com include:spf.protection.outlook.com include:spf.ipzmarketing.com ~all",
     "valid": true,
-    "dns_lookups": 6,
+    "dns_lookups": 7,
     "warnings": [],
     "parsed": {
       "pass": [],
@@ -313,6 +315,43 @@
             "redirect": null,
             "exp": null,
             "all": "fail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "spf.ipzmarketing.com",
+          "record": "v=spf1 ip4:93.159.208.0/21 ip4:185.103.8.0/22 ip4:5.56.22.0/24 ip4:82.199.156.0/24 ip4:212.192.13.0/24 ~all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "93.159.208.0/21",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.103.8.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "5.56.22.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "82.199.156.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "212.192.13.0/24",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
           },
           "warnings": []
         }

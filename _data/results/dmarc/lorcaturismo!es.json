@@ -4,26 +4,15 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "beta.lobocom.es",
       "ns3.lobocom.es",
-      "alfa.lobocom.es",
-      "beta.lobocom.es"
+      "alfa.lobocom.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "lorcaturismo.es",
-        "addresses": [
-          "213.0.108.7"
-        ]
-      }
-    ],
-    "warnings": [
-      "The domain red213-7.lorca.es does not exist",
-      "The reverse DNS of 213.0.108.7 is red213-7.lorca.es, but the A/AAAA DNS records for red213-7.lorca.es do not resolve to 213.0.108.7"
-    ]
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 a mx ptr -all",

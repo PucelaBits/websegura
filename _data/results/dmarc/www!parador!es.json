@@ -10,8 +10,16 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS response does not contain an answer to the question: 66.48.76.195.in-addr.arpa. IN PTR"
+    "hosts": [
+      {
+        "preference": 30,
+        "hostname": "correo-paradores.secureit.es",
+        "addresses": [
+          "195.81.202.230"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:81.201.101.195 ip4:154.52.0.195 ip4:195.76.48.66 ip4:195.76.48.76 include:spf.protection.outlook.com include:spf.mandrillapp.com -all",

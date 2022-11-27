@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns.itacyl.es",
       "chico.rediris.es",
-      "dns2.itacyl.es",
-      "sun.rediris.es"
+      "dns.itacyl.es",
+      "sun.rediris.es",
+      "dns2.itacyl.es"
     ],
     "warnings": []
   },
@@ -17,21 +17,21 @@
         "preference": 10,
         "hostname": "mxa-006a4e02.gslb.pphosted.com",
         "addresses": [
-          "143.55.146.78"
+          "143.55.148.243"
         ]
       },
       {
         "preference": 10,
         "hostname": "mxb-006a4e02.gslb.pphosted.com",
         "addresses": [
-          "143.55.148.243"
+          "143.55.146.78"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:193.146.230.67/32 ip4:195.76.182.230/32 ip4:195.76.182.224/32 ip4:195.76.182.225/32 ptr mx ~all",
+    "record": "v=spf1 ip4:193.146.230.67/32 ip4:185.179.105.195/32 ip4:195.76.182.230/32 ip4:195.76.182.224/32 ip4:195.76.182.225/32 ptr mx ~all",
     "valid": true,
     "dns_lookups": 1,
     "warnings": [
@@ -41,6 +41,10 @@
       "pass": [
         {
           "value": "193.146.230.67/32",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "185.179.105.195/32",
           "mechanism": "ip4"
         },
         {

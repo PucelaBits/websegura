@@ -31,16 +31,12 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:spf.messagelabs.com a:smtp1.bilbao.eus a:smtp2.bilbao.eus ~all",
+    "record": "v=spf1 include:spf.messagelabs.com a:smtp.bilbao.eus ~all",
     "valid": true,
-    "dns_lookups": 5,
+    "dns_lookups": 4,
     "warnings": [],
     "parsed": {
       "pass": [
-        {
-          "value": "212.142.136.41",
-          "mechanism": "a"
-        },
         {
           "value": "212.142.136.41",
           "mechanism": "a"

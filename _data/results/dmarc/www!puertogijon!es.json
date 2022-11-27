@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1112.ui-dns.biz",
       "ns1096.ui-dns.de",
       "ns1121.ui-dns.com",
-      "ns1108.ui-dns.org"
+      "ns1108.ui-dns.org",
+      "ns1112.ui-dns.biz"
     ],
     "warnings": []
   },
@@ -17,14 +17,12 @@
         "preference": 10,
         "hostname": "puertogijon-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.30.74",
+          "104.47.51.138",
           "104.47.51.202"
         ]
       }
     ],
-    "warnings": [
-      "104.47.30.74 does not have any reverse DNS (PTR) records"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:213.0.96.226 ip4:195.53.242.107 include:protection.outlook.com include:spf.emailsignatures365.com -all",

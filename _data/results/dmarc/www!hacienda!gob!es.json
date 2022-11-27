@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "dns2.hacienda.gob.es",
       "dns.hacienda.gob.es",
-      "artemis.ttd.net",
-      "dns2.hacienda.gob.es"
+      "artemis.ttd.net"
     ],
     "warnings": []
   },
@@ -44,9 +44,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx a:smtp1.hacienda.gob.es a:smtp2.hacienda.gob.es a:smtp3.hacienda.gob.es a:smtp4.hacienda.gob.es include:spf.protection.outlook.com -all",
+    "record": "v=spf1 mx a:smtp1.hacienda.gob.es a:smtp2.hacienda.gob.es a:smtp3.hacienda.gob.es a:smtp4.hacienda.gob.es a:smtp5.hacienda.gob.es include:spf.protection.outlook.com -all",
     "valid": true,
-    "dns_lookups": 7,
+    "dns_lookups": 8,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -80,6 +80,10 @@
         },
         {
           "value": "193.203.200.244",
+          "mechanism": "a"
+        },
+        {
+          "value": "193.203.200.2",
           "mechanism": "a"
         }
       ],
