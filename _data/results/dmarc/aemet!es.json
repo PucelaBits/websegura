@@ -10,25 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 5,
-        "hostname": "mail1.correo.gob.es",
-        "addresses": [
-          "185.73.172.122",
-          "185.73.172.123"
-        ]
-      },
-      {
-        "preference": 5,
-        "hostname": "mail2.correo.gob.es",
-        "addresses": [
-          "185.73.172.124",
-          "185.73.172.125"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "All nameservers failed to answer the query 122.172.73.185.in-addr.arpa. IN PTR: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
   },
   "spf": {
     "record": "v=spf1 a:spf.correo.gob.es -all",

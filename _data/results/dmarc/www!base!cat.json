@@ -4,36 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.nominalia.com",
-      "dns2.nominalia.com"
+      "dns2.nominalia.com",
+      "dns1.nominalia.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "correu.base.cat",
-        "addresses": [
-          "217.130.125.204"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mx1.tinet.org",
-        "addresses": [
-          "195.77.216.146"
-        ]
-      },
-      {
-        "preference": 30,
-        "hostname": "mx1.dipta.cat",
-        "addresses": [
-          "195.76.233.59"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 include:spf.antispamcloud.com ip4:90.160.60.248/32 ip4:217.130.125.204/32 -all",

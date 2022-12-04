@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "ns06.ns-cloud4b.com",
-      "ns05.ns-cloud4b.org",
-      "ns03.ns-cloud4b.net"
+      "ns03.ns-cloud4b.net",
+      "ns05.ns-cloud4b.org"
     ],
     "warnings": []
   },
@@ -16,14 +16,12 @@
         "preference": 10,
         "hostname": "segittur-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.30.74",
-          "104.47.51.138"
+          "104.47.51.138",
+          "104.47.51.202"
         ]
       }
     ],
-    "warnings": [
-      "104.47.30.74 does not have any reverse DNS (PTR) records"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx ip4:212.4.98.128/29 ip4:185.166.212.18 ip4:154.58.16.80/32 ip4:213.170.50.16 ip4:213.170.50.19 ip4:195.114.216.138 ip4:195.114.216.146 ip4:212.63.109.135 include:spf.protection.outlook.com include:teenvio.com include:_pmta2.antevenio.com include:spf.sendinblue.com ~all",

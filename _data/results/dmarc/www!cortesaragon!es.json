@@ -16,11 +16,14 @@
         "hostname": "cortesaragon-es.mail.protection.outlook.com",
         "addresses": [
           "104.47.12.36",
-          "104.47.14.36"
+          "104.47.13.36"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
+      "The reverse DNS of 104.47.12.36 is mail-db3eur040036.inbound.protection.outlook.com, but the A/AAAA DNS records for mail-db3eur040036.inbound.protection.outlook.com do not resolve to 104.47.12.36"
+    ]
   },
   "spf": {
     "record": "v=spf1 a mx ip4:46.24.234.0/24 include:spf.protection.outlook.com include:emsd1.com -all",

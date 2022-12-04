@@ -4,31 +4,27 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns4.guebs.com",
       "dns2.guebs.com",
-      "dns3.guebs.com"
+      "dns3.guebs.com",
+      "dns4.guebs.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 0,
-        "hostname": "mail.turismo-zamora.com",
-        "addresses": [
-          "54.171.143.22"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "spf": {
-    "record": "v=spf1 ip4:54.171.143.22 ip4:52.16.203.74 include:_spf.guebs.net a mx ~all",
+    "record": "v=spf1 ip4:185.23.70.108 ip4:54.171.143.22 ip4:52.16.203.74 include:_spf.guebs.net a mx ~all",
     "valid": true,
     "dns_lookups": 3,
     "warnings": [],
     "parsed": {
       "pass": [
+        {
+          "value": "185.23.70.108",
+          "mechanism": "ip4"
+        },
         {
           "value": "54.171.143.22",
           "mechanism": "ip4"
@@ -38,7 +34,7 @@
           "mechanism": "ip4"
         },
         {
-          "value": "54.171.143.22",
+          "value": "185.23.70.108",
           "mechanism": "a"
         },
         {

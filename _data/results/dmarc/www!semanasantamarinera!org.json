@@ -4,43 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns.redunda.com",
-      "ns2.redunda.com"
+      "ns2.redunda.com",
+      "ns.redunda.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mx.redunda.com",
-        "addresses": [
-          "84.246.208.51",
-          "84.246.208.52",
-          "84.246.208.53",
-          "84.246.208.54",
-          "84.246.208.55",
-          "84.246.208.56",
-          "84.246.208.57",
-          "84.246.208.58"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "mx2.redunda.com",
-        "addresses": [
-          "84.246.208.51",
-          "84.246.208.52",
-          "84.246.208.53",
-          "84.246.208.54",
-          "84.246.208.55",
-          "84.246.208.56",
-          "84.246.208.57",
-          "84.246.208.58"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 a mx a:mail.semanasantamarinera.org include:_sh.axarnet.es ~all",
