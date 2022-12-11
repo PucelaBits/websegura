@@ -4,11 +4,11 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns3.cdmon.net",
+      "ns1.cdmon.net",
+      "ns5.cdmondns-01.com",
       "ns4.cdmondns-01.org",
       "ns2.cdmon.net",
-      "ns1.cdmon.net",
-      "ns5.cdmondns-01.com"
+      "ns3.cdmon.net"
     ],
     "warnings": []
   },
@@ -18,15 +18,15 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.250.138.26",
-          "2607:f8b0:4023:1004::1a"
+          "142.250.115.27",
+          "2607:f8b0:4023:1002::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "142.250.152.26",
+          "142.250.152.27",
           "2607:f8b0:4001:c56::1b"
         ]
       },
@@ -34,8 +34,8 @@
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "172.253.113.27",
-          "2607:f8b0:4023:1::1a"
+          "172.253.113.26",
+          "2607:f8b0:4023:1::1b"
         ]
       },
       {
@@ -51,7 +51,7 @@
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
           "173.194.219.27",
-          "2607:f8b0:4002:c03::1a"
+          "2607:f8b0:4002:c03::1b"
         ]
       }
     ],

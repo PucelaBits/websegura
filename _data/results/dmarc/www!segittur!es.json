@@ -14,10 +14,16 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "segittur-es.mail.protection.outlook.com",
+        "hostname": "mxa-006a4e02.gslb.pphosted.com",
         "addresses": [
-          "104.47.51.138",
-          "104.47.51.202"
+          "143.55.146.78"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mxb-006a4e02.gslb.pphosted.com",
+        "addresses": [
+          "143.55.148.243"
         ]
       }
     ],
@@ -31,7 +37,11 @@
     "parsed": {
       "pass": [
         {
-          "value": "segittur-es.mail.protection.outlook.com",
+          "value": "mxa-006a4e02.gslb.pphosted.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mxb-006a4e02.gslb.pphosted.com",
           "mechanism": "mx"
         },
         {

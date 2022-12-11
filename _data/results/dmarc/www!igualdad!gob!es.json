@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "crdserver.msc.es",
-      "mailhost-pre.msc.es",
-      "mailhost.msc.es"
+      "mailhost.msc.es",
+      "mailhost-pre.msc.es"
     ],
     "warnings": []
   },
@@ -27,10 +27,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
-      "The reverse DNS of 195.64.186.52 is mx.msc.es, but the A/AAAA DNS records for mx.msc.es do not resolve to 195.64.186.52"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:174.142.68.79/32 ip4:195.64.186.0/23 ip4:91.230.250.0/24 ip4:31.186.254.162/32 ip4:212.92.54.69/32 ip4:212.92.57.122/32 -all",

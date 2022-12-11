@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1064.ui-dns.de",
       "ns1101.ui-dns.org",
       "ns1121.ui-dns.biz",
+      "ns1064.ui-dns.de",
       "ns1106.ui-dns.com"
     ],
     "warnings": []
@@ -17,15 +17,12 @@
         "preference": 10,
         "hostname": "aytopbpanes-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.18.138",
+          "104.47.18.202",
           "104.47.22.138"
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
-      "The reverse DNS of 104.47.22.138 is mail-db8eur060138.inbound.protection.outlook.com, but the A/AAAA DNS records for mail-db8eur060138.inbound.protection.outlook.com do not resolve to 104.47.22.138"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com -all",

@@ -17,25 +17,26 @@
         "addresses": [
           "89.6.103.180"
         ]
-      },
-      {
-        "preference": 10,
-        "hostname": "provinciadevalladolid-com.mail.protection.outlook.com",
-        "addresses": [
-          "104.47.12.36",
-          "104.47.13.36"
-        ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:spf.protection.outlook.com -all",
+    "record": "v=spf1 mx include:spf.protection.outlook.com ip4:89.6.103.145 -all",
     "valid": true,
-    "dns_lookups": 2,
+    "dns_lookups": 3,
     "warnings": [],
     "parsed": {
-      "pass": [],
+      "pass": [
+        {
+          "value": "correo1.dipvalladolid.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "89.6.103.145",
+          "mechanism": "ip4"
+        }
+      ],
       "neutral": [],
       "softfail": [],
       "fail": [],

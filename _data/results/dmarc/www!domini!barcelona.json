@@ -4,27 +4,15 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "balandrau.lacuinadel.cat",
       "pedraforca.lacuinadel.cat",
+      "balandrau.lacuinadel.cat",
       "matagalls.lacuinadel.cat"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 0,
-        "hostname": "domini-barcelona.mail.protection.outlook.com",
-        "addresses": [
-          "104.47.17.138",
-          "104.47.17.74"
-        ]
-      }
-    ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
-      "The reverse DNS of 104.47.17.138 is mail-vi1eur050138.inbound.protection.outlook.com, but the A/AAAA DNS records for mail-vi1eur050138.inbound.protection.outlook.com do not resolve to 104.47.17.138"
-    ]
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com include:spf.zoho.eu include:eu.transmail.net ~all",

@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.servidoresdns10.com",
-      "dns2.servidoresdns10.com"
+      "dns2.servidoresdns10.com",
+      "dns1.servidoresdns10.com"
     ],
     "warnings": []
   },
@@ -15,7 +15,7 @@
         "preference": 10,
         "hostname": "feriavalencia-com.mail.protection.outlook.com",
         "addresses": [
-          "104.47.11.202",
+          "104.47.11.10",
           "104.47.11.74"
         ]
       },
@@ -33,9 +33,7 @@
     "record": "v=spf1 ip4:188.86.160.90 ip4:188.86.160.91 include:spf.protection.outlook.com -all",
     "valid": true,
     "dns_lookups": 2,
-    "warnings": [
-      "SPF type DNS records found. Use of DNS Type SPF has been removed in the standards track version of SPF, RFC 7208. These records should be removed and replaced with TXT records: v=spf1 ip4:188.86.160.90 ip4:188.86.160.91 include:spf.protection.outlook.com -all"
-    ],
+    "warnings": [],
     "parsed": {
       "pass": [
         {

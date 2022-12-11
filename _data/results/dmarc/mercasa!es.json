@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns4.gestiondecuenta.com",
       "ns.gestiondecuenta.com",
       "ns3.gestiondecuenta.com",
-      "ns2.gestiondecuenta.com",
-      "ns4.gestiondecuenta.com"
+      "ns2.gestiondecuenta.com"
     ],
     "warnings": []
   },
@@ -40,12 +40,10 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx include:spf.tmes.trendmicro.com include:factoriadeinnovacion.com include:spf.protection.outlook.com -all",
+    "record": "v=spf1 mx ip4:104.47.13.36 include:spf.tmes.trendmicro.com include:spf.protection.outlook.com -all",
     "valid": true,
-    "dns_lookups": 7,
-    "warnings": [
-      "Duplicate include: spf.protection.outlook.com"
-    ],
+    "dns_lookups": 5,
+    "warnings": [],
     "parsed": {
       "pass": [
         {
@@ -59,6 +57,10 @@
         {
           "value": "mx20.mercasa.es",
           "mechanism": "mx"
+        },
+        {
+          "value": "104.47.13.36",
+          "mechanism": "ip4"
         }
       ],
       "neutral": [],
@@ -189,54 +191,46 @@
           "warnings": []
         },
         {
-          "domain": "factoriadeinnovacion.com",
-          "record": "v=spf1 include:spf.protection.outlook.com ip4:176.31.86.118 ip4:5.196.124.71 ip4:37.59.138.162 ip4:37.187.28.123 ip4:87.98.225.48 ip4:87.98.225.81 ip4:87.98.226.231 ip4:178.33.160.205 ip4:188.165.135.137 ip4:37.187.28.39 ip4:176.31.233.81 -all",
-          "dns_lookups": 2,
+          "domain": "spf.protection.outlook.com",
+          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/50 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 include:spfd.protection.outlook.com -all",
+          "dns_lookups": 1,
           "parsed": {
             "pass": [
               {
-                "value": "176.31.86.118",
+                "value": "40.92.0.0/15",
                 "mechanism": "ip4"
               },
               {
-                "value": "5.196.124.71",
+                "value": "40.107.0.0/16",
                 "mechanism": "ip4"
               },
               {
-                "value": "37.59.138.162",
+                "value": "52.100.0.0/14",
                 "mechanism": "ip4"
               },
               {
-                "value": "37.187.28.123",
+                "value": "104.47.0.0/17",
                 "mechanism": "ip4"
               },
               {
-                "value": "87.98.225.48",
-                "mechanism": "ip4"
+                "value": "2a01:111:f400::/48",
+                "mechanism": "ip6"
               },
               {
-                "value": "87.98.225.81",
-                "mechanism": "ip4"
+                "value": "2a01:111:f403::/49",
+                "mechanism": "ip6"
               },
               {
-                "value": "87.98.226.231",
-                "mechanism": "ip4"
+                "value": "2a01:111:f403:8000::/50",
+                "mechanism": "ip6"
               },
               {
-                "value": "178.33.160.205",
-                "mechanism": "ip4"
+                "value": "2a01:111:f403:c000::/51",
+                "mechanism": "ip6"
               },
               {
-                "value": "188.165.135.137",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "37.187.28.39",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "176.31.233.81",
-                "mechanism": "ip4"
+                "value": "2a01:111:f403:f000::/52",
+                "mechanism": "ip6"
               }
             ],
             "neutral": [],
@@ -244,106 +238,52 @@
             "fail": [],
             "include": [
               {
-                "domain": "spf.protection.outlook.com",
-                "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/50 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 include:spfd.protection.outlook.com -all",
-                "dns_lookups": 1,
+                "domain": "spfd.protection.outlook.com",
+                "record": "v=spf1 ip4:51.4.72.0/24 ip4:51.5.72.0/24 ip4:51.5.80.0/27 ip4:20.47.149.138/32 ip4:51.4.80.0/27 ip6:2a01:4180:4051:0800::/64 ip6:2a01:4180:4050:0800::/64 ip6:2a01:4180:4051:0400::/64 ip6:2a01:4180:4050:0400::/64 -all",
+                "dns_lookups": 0,
                 "parsed": {
                   "pass": [
                     {
-                      "value": "40.92.0.0/15",
+                      "value": "51.4.72.0/24",
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "40.107.0.0/16",
+                      "value": "51.5.72.0/24",
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "52.100.0.0/14",
+                      "value": "51.5.80.0/27",
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "104.47.0.0/17",
+                      "value": "20.47.149.138/32",
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "2a01:111:f400::/48",
+                      "value": "51.4.80.0/27",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "2a01:4180:4051:0800::/64",
                       "mechanism": "ip6"
                     },
                     {
-                      "value": "2a01:111:f403::/49",
+                      "value": "2a01:4180:4050:0800::/64",
                       "mechanism": "ip6"
                     },
                     {
-                      "value": "2a01:111:f403:8000::/50",
+                      "value": "2a01:4180:4051:0400::/64",
                       "mechanism": "ip6"
                     },
                     {
-                      "value": "2a01:111:f403:c000::/51",
-                      "mechanism": "ip6"
-                    },
-                    {
-                      "value": "2a01:111:f403:f000::/52",
+                      "value": "2a01:4180:4050:0400::/64",
                       "mechanism": "ip6"
                     }
                   ],
                   "neutral": [],
                   "softfail": [],
                   "fail": [],
-                  "include": [
-                    {
-                      "domain": "spfd.protection.outlook.com",
-                      "record": "v=spf1 ip4:51.4.72.0/24 ip4:51.5.72.0/24 ip4:51.5.80.0/27 ip4:20.47.149.138/32 ip4:51.4.80.0/27 ip6:2a01:4180:4051:0800::/64 ip6:2a01:4180:4050:0800::/64 ip6:2a01:4180:4051:0400::/64 ip6:2a01:4180:4050:0400::/64 -all",
-                      "dns_lookups": 0,
-                      "parsed": {
-                        "pass": [
-                          {
-                            "value": "51.4.72.0/24",
-                            "mechanism": "ip4"
-                          },
-                          {
-                            "value": "51.5.72.0/24",
-                            "mechanism": "ip4"
-                          },
-                          {
-                            "value": "51.5.80.0/27",
-                            "mechanism": "ip4"
-                          },
-                          {
-                            "value": "20.47.149.138/32",
-                            "mechanism": "ip4"
-                          },
-                          {
-                            "value": "51.4.80.0/27",
-                            "mechanism": "ip4"
-                          },
-                          {
-                            "value": "2a01:4180:4051:0800::/64",
-                            "mechanism": "ip6"
-                          },
-                          {
-                            "value": "2a01:4180:4050:0800::/64",
-                            "mechanism": "ip6"
-                          },
-                          {
-                            "value": "2a01:4180:4051:0400::/64",
-                            "mechanism": "ip6"
-                          },
-                          {
-                            "value": "2a01:4180:4050:0400::/64",
-                            "mechanism": "ip6"
-                          }
-                        ],
-                        "neutral": [],
-                        "softfail": [],
-                        "fail": [],
-                        "include": [],
-                        "redirect": null,
-                        "exp": null,
-                        "all": "fail"
-                      },
-                      "warnings": []
-                    }
-                  ],
+                  "include": [],
                   "redirect": null,
                   "exp": null,
                   "all": "fail"
