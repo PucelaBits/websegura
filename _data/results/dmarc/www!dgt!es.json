@@ -10,8 +10,23 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query dgt.es. IN MX: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx01.dgt.es",
+        "addresses": [
+          "212.128.100.149"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mx02.dgt.es",
+        "addresses": [
+          "212.128.100.150"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx -all",

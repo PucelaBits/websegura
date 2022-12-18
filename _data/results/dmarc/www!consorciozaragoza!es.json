@@ -4,10 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns4.canaldominios.com",
-      "dns2.canaldominios.com",
-      "dns3.canaldominios.com",
-      "dns1.canaldominios.com"
+      "howard.ns.cloudflare.com",
+      "lilyana.ns.cloudflare.com"
     ],
     "warnings": []
   },
@@ -15,7 +13,7 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "proxmox.consorciozaragoza.es",
+        "hostname": "correo.consorciozaragoza.es",
         "addresses": [
           "2.139.174.72"
         ]
@@ -24,14 +22,14 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:2.139.172.72 a mx a:consorciozaragoza.es ~all",
+    "record": "v=spf1 ip4:2.139.174.72 a mx a:consorciozaragoza.es ~all",
     "valid": true,
     "dns_lookups": 3,
     "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "2.139.172.72",
+          "value": "2.139.174.72",
           "mechanism": "ip4"
         },
         {
@@ -39,7 +37,7 @@
           "mechanism": "a"
         },
         {
-          "value": "proxmox.consorciozaragoza.es",
+          "value": "correo.consorciozaragoza.es",
           "mechanism": "mx"
         },
         {

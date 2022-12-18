@@ -3,24 +3,12 @@
   "base_domain": "tribunalconstitucional.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "ns1.servihosting.com",
-      "ns2.servihosting.com"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 0,
-        "hostname": "tribunalconstitucional-es.mail.protection.outlook.com",
-        "addresses": [
-          "104.47.12.36",
-          "104.47.13.36"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 ip4:178.156.125.145 ip4:178.156.125.146 include:spf.protection.outlook.com -all",

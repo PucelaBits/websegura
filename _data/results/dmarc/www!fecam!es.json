@@ -32,9 +32,7 @@
     "record": "v=spf1 ip4:212.64.170.195 ip4:212.64.170.94 ip4:212.64.170.85 a:fecam.es ~all",
     "valid": true,
     "dns_lookups": 1,
-    "warnings": [
-      "SPF type DNS records found. Use of DNS Type SPF has been removed in the standards track version of SPF, RFC 7208. These records should be removed and replaced with TXT records: v=spf1 ip4:212.64.170.195 ip4:212.64.170.94 ip4:212.64.170.85 a:fecam.es ~all"
-    ],
+    "warnings": [],
     "parsed": {
       "pass": [
         {

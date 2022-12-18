@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns.leader-network.com",
-      "dns1.leader-network.com"
+      "dns1.leader-network.com",
+      "dns.leader-network.com"
     ],
     "warnings": []
   },
@@ -14,9 +14,7 @@
       {
         "preference": 10,
         "hostname": "emtvalencia-es-1.fortimailcloud.com",
-        "addresses": [
-          "154.52.2.132"
-        ]
+        "addresses": []
       },
       {
         "preference": 20,
@@ -26,12 +24,14 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
+    ]
   },
   "spf": {
-    "record": "v=spf1 mx ip4:195.55.76.77 ip4:185.79.131.202 ip4:185.79.131.206 ip4:195.53.78.101 ip4:195.53.78.102 ip4:154.52.2.131 include:_spf.fortimailcloud.com include:spf.protection.outlook.com -all",
+    "record": "v=spf1 mx ip4:195.55.76.77 ip4:185.79.131.202 ip4:185.79.131.206 ip4:195.53.78.101 ip4:195.53.78.102 ip4:154.52.2.131 include:_spf.fortimailcloud.com include:spf.protection.outlook.com include:_spf.cmail.ondemand.com include:_spf.cloudmail.net.sap include:amazonses.com -all",
     "valid": true,
-    "dns_lookups": 4,
+    "dns_lookups": 7,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -258,6 +258,149 @@
                 "warnings": []
               }
             ],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "_spf.cmail.ondemand.com",
+          "record": "v=spf1 ip4:155.56.208.100/30 ip4:157.133.97.216/30 ip4:169.145.66.70/31 ip4:169.145.66.72/31 ip4:130.214.105.240/28 ip4:130.214.163.240/28 ip4:130.214.134.192/28 ip4:130.214.240.208/28 ~all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "155.56.208.100/30",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "157.133.97.216/30",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "169.145.66.70/31",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "169.145.66.72/31",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "130.214.105.240/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "130.214.163.240/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "130.214.134.192/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "130.214.240.208/28",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "_spf.cloudmail.net.sap",
+          "record": "v=spf1 ip4:130.214.105.240/28 ip4:130.214.163.240/28 ip4:130.214.134.192/28 ip4:130.214.240.208/28 ~all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "130.214.105.240/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "130.214.163.240/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "130.214.134.192/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "130.214.240.208/28",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "amazonses.com",
+          "record": "v=spf1 ip4:199.255.192.0/22 ip4:199.127.232.0/22 ip4:54.240.0.0/18 ip4:69.169.224.0/20 ip4:23.249.208.0/20 ip4:23.251.224.0/19 ip4:76.223.176.0/20 ip4:54.240.64.0/19 ip4:54.240.96.0/19 ip4:52.82.172.0/22 ip4:76.223.128.0/19 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "199.255.192.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "199.127.232.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "54.240.0.0/18",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "69.169.224.0/20",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "23.249.208.0/20",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "23.251.224.0/19",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "76.223.176.0/20",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "54.240.64.0/19",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "54.240.96.0/19",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.82.172.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "76.223.128.0/19",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
             "redirect": null,
             "exp": null,
             "all": "fail"

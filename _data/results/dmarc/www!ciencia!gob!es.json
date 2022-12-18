@@ -10,33 +10,13 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "smtp1.ciencia.gob.es",
-        "addresses": [
-          "212.128.122.3"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "smtp2.ciencia.gob.es",
-        "addresses": [
-          "212.128.122.4"
-        ]
-      }
-    ],
-    "warnings": [
-      "The reverse DNS of 212.128.122.3 is smtp1.micinn.es, but the A/AAAA DNS records for smtp1.micinn.es do not resolve to 212.128.122.3",
-      "The reverse DNS of 212.128.122.3 is smtp1.newsletter.economia.gob.es, but the A/AAAA DNS records for smtp1.newsletter.economia.gob.es do not resolve to 212.128.122.3",
-      "The reverse DNS of 212.128.122.3 is smtp1.icac.economia.gob.es, but the A/AAAA DNS records for smtp1.icac.economia.gob.es do not resolve to 212.128.122.3",
-      "The reverse DNS of 212.128.122.4 is smtp2.micinn.es, but the A/AAAA DNS records for smtp2.micinn.es do not resolve to 212.128.122.4"
-    ]
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "spf": {
-    "record": "v=spf1 mx ip4:212.128.122.3 ip4:212.128.122.4 ip4:193.147.0.22 ip4:193.147.0.23 include:spf.acumbamail.com include:spf.protection.outlook.com -all",
+    "record": "v=spf1 mx a:spf.correo.gob.es ip4:212.128.122.3 ip4:212.128.122.4 ip4:193.147.0.22 ip4:193.147.0.23 include:spf.acumbamail.com include:spf.protection.outlook.com -all",
     "valid": true,
-    "dns_lookups": 4,
+    "dns_lookups": 5,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -47,6 +27,26 @@
         {
           "value": "smtp2.ciencia.gob.es",
           "mechanism": "mx"
+        },
+        {
+          "value": "185.73.172.122",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.172.123",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.172.124",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.172.125",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.172.147",
+          "mechanism": "a"
         },
         {
           "value": "212.128.122.3",

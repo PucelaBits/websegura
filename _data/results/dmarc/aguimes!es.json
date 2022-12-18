@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns.lpa.idec.net",
-      "dns.mad.idec.net"
+      "dns.mad.idec.net",
+      "dns.lpa.idec.net"
     ],
     "warnings": []
   },
@@ -31,7 +31,7 @@
   "spf": {
     "record": null,
     "valid": false,
-    "error": "aguimes.es does not have a SPF TXT record. SPF type DNS records found. Use of DNS Type SPF has been removed in the standards track version of SPF, RFC 7208. These records should be removed and replaced with TXT records: spf.mtaroutes.com"
+    "error": "aguimes.es does not have a SPF TXT record"
   },
   "dmarc": {
     "record": null,

@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns4.guebs.com",
       "dns3.guebs.com",
-      "dns2.guebs.com"
+      "dns2.guebs.com",
+      "dns4.guebs.com"
     ],
     "warnings": []
   },
@@ -16,25 +16,29 @@
         "preference": 0,
         "hostname": "mail.defensornavarra.com",
         "addresses": [
-          "194.62.97.134"
+          "185.23.70.112"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:194.62.97.134 +a +mx include:_spf.guebs.net ~all",
+    "record": "v=spf1 ip4:185.23.70.112 ip4:194.62.97.134 +a +mx include:_spf.guebs.net ~all",
     "valid": true,
     "dns_lookups": 3,
     "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "194.62.97.134",
+          "value": "185.23.70.112",
           "mechanism": "ip4"
         },
         {
           "value": "194.62.97.134",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "185.23.70.112",
           "mechanism": "a"
         },
         {

@@ -150,9 +150,71 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine ; ruf=mailto:dmarc@parlamentodegalicia.es; rua=mailto:dmarc@parlamentodegalicia.es",
-    "valid": false,
+    "record": "v=DMARC1; p=reject; ruf=mailto:dmarc@parlamentodegalicia.es; rua=mailto:dmarc@parlamentodegalicia.es",
+    "valid": true,
     "location": "parlamentodegalicia.es",
-    "error": "Tag p must have one of the following values: none,quarantine,reject - not quarantine "
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "reject",
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc@parlamentodegalicia.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc@parlamentodegalicia.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "reject",
+        "explicit": false
+      }
+    }
   }
 }

@@ -11,8 +11,17 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 0,
+        "hostname": "domini-barcelona.mail.protection.outlook.com",
+        "addresses": [
+          "104.47.17.74",
+          "104.47.18.74"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com include:spf.zoho.eu include:eu.transmail.net ~all",

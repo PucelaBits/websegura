@@ -18,7 +18,7 @@
     "error": "turismo.toledo.es does not have a SPF TXT record"
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; pct=25; rua=mailto:informatica@toledo.es; ruf=mailto:informatica@toledo.es; fo=1",
+    "record": "v=DMARC1; p=quarantine; pct=50; rua=mailto:informatica@toledo.es; ruf=mailto:informatica@toledo.es; fo=1",
     "valid": true,
     "location": "toledo.es",
     "warnings": [
@@ -34,7 +34,7 @@
         "explicit": true
       },
       "pct": {
-        "value": 25,
+        "value": 50,
         "explicit": true
       },
       "rua": {

@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1080.ui-dns.org",
       "ns1080.ui-dns.com",
+      "ns1080.ui-dns.de",
       "ns1080.ui-dns.biz",
-      "ns1080.ui-dns.de"
+      "ns1080.ui-dns.org"
     ],
     "warnings": []
   },
@@ -17,7 +17,7 @@
         "preference": 10,
         "hostname": "mx1-eu.mtaroutes.com",
         "addresses": [
-          "130.117.54.106",
+          "130.117.53.188",
           "2001:978:2:2c::137:100"
         ]
       },
@@ -44,10 +44,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
-      "The reverse DNS of 130.117.54.106 is fe3-r3-in.par01.l.antispamcloud.com, but the A/AAAA DNS records for fe3-r3-in.par01.l.antispamcloud.com do not resolve to 130.117.54.106"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx ip4:80.28.208.248 a:mail.valleseco.es a:mail0.valleseco.es -all",
