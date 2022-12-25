@@ -3,28 +3,41 @@
   "base_domain": "antequera.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "sdns2.ovh.net",
-      "ns3053579.ip-137-74-93.eu"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "All nameservers failed to answer the query antequera.es. IN NS: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
   },
   "mx": {
     "hosts": [
       {
         "preference": 10,
         "hostname": "mail.antequera.es",
-        "addresses": [
-          "195.77.81.171"
-        ]
+        "addresses": []
       }
     ],
-    "warnings": []
+    "warnings": [
+      "All nameservers failed to answer the query mail.antequera.es. IN A: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    ]
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "All nameservers failed to answer the query antequera.es. IN TXT: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "record": "v=spf1 ip4:195.77.81.171 ~all",
+    "valid": true,
+    "dns_lookups": 0,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "195.77.81.171",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
   },
   "dmarc": {
     "record": null,

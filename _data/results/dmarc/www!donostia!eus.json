@@ -5,9 +5,9 @@
   "ns": {
     "hostnames": [
       "ns2.dinahosting.com",
-      "ns4.dinahosting.com",
       "ns3.dinahosting.com",
-      "ns.dinahosting.com"
+      "ns.dinahosting.com",
+      "ns4.dinahosting.com"
     ],
     "warnings": []
   },
@@ -31,9 +31,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx ip4:82.130.212.3 include:8819695.spf05.hubspotemail.net -all",
+    "record": "v=spf1 mx ip4:82.130.212.3 -all",
     "valid": true,
-    "dns_lookups": 2,
+    "dns_lookups": 1,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -53,73 +53,7 @@
       "neutral": [],
       "softfail": [],
       "fail": [],
-      "include": [
-        {
-          "domain": "8819695.spf05.hubspotemail.net",
-          "record": "v=spf1 ip4:3.93.157.0/24 ip4:3.210.190.0/24 ip4:18.208.124.128/25 ip4:54.174.52.0/24 ip4:54.174.53.128/30 ip4:54.174.57.0/24 ip4:54.174.59.0/24 ip4:54.174.60.0/23 ip4:54.174.63.0/24 ip4:139.180.17.0/24 ip4:143.244.80.0/20 ip4:158.247.16.0/20 -all",
-          "dns_lookups": 0,
-          "parsed": {
-            "pass": [
-              {
-                "value": "3.93.157.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "3.210.190.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "18.208.124.128/25",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "54.174.52.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "54.174.53.128/30",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "54.174.57.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "54.174.59.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "54.174.60.0/23",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "54.174.63.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "139.180.17.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "143.244.80.0/20",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "158.247.16.0/20",
-                "mechanism": "ip4"
-              }
-            ],
-            "neutral": [],
-            "softfail": [],
-            "fail": [],
-            "include": [],
-            "redirect": null,
-            "exp": null,
-            "all": "fail"
-          },
-          "warnings": []
-        }
-      ],
+      "include": [],
       "redirect": null,
       "exp": null,
       "all": "fail"

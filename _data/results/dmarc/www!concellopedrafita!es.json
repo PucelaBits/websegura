@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.interhost.com",
-      "iria.alsernet.es"
+      "iria.alsernet.es",
+      "ns2.interhost.com"
     ],
     "warnings": []
   },
@@ -22,86 +22,14 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:213.134.40.0/24 ip4:195.76.97.35/32 ip4:195.76.97.30/32  ~all",
-    "valid": true,
-    "dns_lookups": 0,
-    "warnings": [],
-    "parsed": {
-      "pass": [
-        {
-          "value": "213.134.40.0/24",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "195.76.97.35/32",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "195.76.97.30/32",
-          "mechanism": "ip4"
-        }
-      ],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [],
-      "redirect": null,
-      "exp": null,
-      "all": "softfail"
-    }
+    "record": null,
+    "valid": false,
+    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; rua=mailto:dmarc@alsernet.es",
-    "valid": true,
-    "location": "concellopedrafita.es",
-    "warnings": [
-      "alsernet.es does not indicate that it accepts DMARC reports about concellopedrafita.es - Authorization record not found: concellopedrafita.es._report._dmarc.alsernet.es IN TXT \"v=DMARC1\""
-    ],
-    "tags": {
-      "v": {
-        "value": "DMARC1",
-        "explicit": true
-      },
-      "p": {
-        "value": "quarantine",
-        "explicit": true
-      },
-      "rua": {
-        "value": "mailto:dmarc@alsernet.es",
-        "explicit": true
-      },
-      "adkim": {
-        "value": "r",
-        "explicit": false
-      },
-      "aspf": {
-        "value": "r",
-        "explicit": false
-      },
-      "fo": {
-        "value": [
-          "0"
-        ],
-        "explicit": false
-      },
-      "pct": {
-        "value": 100,
-        "explicit": false
-      },
-      "rf": {
-        "value": [
-          "afrf"
-        ],
-        "explicit": false
-      },
-      "ri": {
-        "value": 86400,
-        "explicit": false
-      },
-      "sp": {
-        "value": "quarantine",
-        "explicit": false
-      }
-    }
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   }
 }

@@ -10,33 +10,28 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query 139.18.187.192.in-addr.arpa. IN PTR: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "estrella.oepm.es",
+        "addresses": [
+          "192.187.18.186"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mail.oepm.es",
+        "addresses": [
+          "192.187.18.139"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx -all",
-    "valid": true,
-    "dns_lookups": 1,
-    "warnings": [],
-    "parsed": {
-      "pass": [
-        {
-          "value": "estrella.oepm.es",
-          "mechanism": "mx"
-        },
-        {
-          "value": "mail.oepm.es",
-          "mechanism": "mx"
-        }
-      ],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [],
-      "redirect": null,
-      "exp": null,
-      "all": "fail"
-    }
+    "record": null,
+    "valid": false,
+    "error": "All nameservers failed to answer the query oepm.es. IN TXT: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
   },
   "dmarc": {
     "record": null,

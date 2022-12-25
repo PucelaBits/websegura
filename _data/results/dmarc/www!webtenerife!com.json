@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns14.servidoresdns.net",
-      "dns13.servidoresdns.net"
+      "dns13.servidoresdns.net",
+      "dns14.servidoresdns.net"
     ],
     "warnings": []
   },
@@ -23,9 +23,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:spf.protection.outlook.com ~all",
+    "record": "v=spf1 include:spf.protection.outlook.com include:customers.clickdimensions.com ~all",
     "valid": true,
-    "dns_lookups": 2,
+    "dns_lookups": 5,
     "warnings": [],
     "parsed": {
       "pass": [],
@@ -137,6 +137,93 @@
             "redirect": null,
             "exp": null,
             "all": "fail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "customers.clickdimensions.com",
+          "record": "v=spf1 include:_spf.messagegears.net include:_spf.eu.messagegears.net ~all",
+          "dns_lookups": 2,
+          "parsed": {
+            "pass": [],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [
+              {
+                "domain": "_spf.messagegears.net",
+                "record": "v=spf1 ip4:135.84.216.0/22 ip4:66.240.227.0/24 ip4:63.143.59.128/25 ip4:63.143.57.128/25 ip4:216.98.158.0/24 ip4:74.63.212.0/24 ip4:52.200.59.0/24 ip4:34.245.210.0/24 -all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "135.84.216.0/22",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "66.240.227.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "63.143.59.128/25",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "63.143.57.128/25",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "216.98.158.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "74.63.212.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "52.200.59.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "34.245.210.0/24",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "fail"
+                },
+                "warnings": []
+              },
+              {
+                "domain": "_spf.eu.messagegears.net",
+                "record": "v=spf1 ip4:34.245.210.0/24 -all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "34.245.210.0/24",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "fail"
+                },
+                "warnings": []
+              }
+            ],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
           },
           "warnings": []
         }

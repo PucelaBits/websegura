@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.sarenet.es",
-      "ns1.sarenet.es"
+      "ns1.sarenet.es",
+      "ns2.sarenet.es"
     ],
     "warnings": []
   },
@@ -16,14 +16,11 @@
         "hostname": "ensa-es.mail.protection.outlook.com",
         "addresses": [
           "104.47.12.36",
-          "104.47.14.36"
+          "104.47.13.36"
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
-      "The reverse DNS of 104.47.12.36 is mail-db3eur040036.inbound.protection.outlook.com, but the A/AAAA DNS records for mail-db3eur040036.inbound.protection.outlook.com do not resolve to 104.47.12.36"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:90.161.64.145/32 ip4:90.161.64.146/32 ip4:194.30.98.172/32 ip4:195.16.140.228 ip4:195.16.132.100 ip4:194.30.34.100 ip4:90.161.64.148 include:spf.spamina.com include:spf.protection.outlook.com -all",

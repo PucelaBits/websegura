@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.leader-network.com",
-      "dns.leader-network.com"
+      "dns.leader-network.com",
+      "dns1.leader-network.com"
     ],
     "warnings": []
   },
@@ -14,7 +14,9 @@
       {
         "preference": 10,
         "hostname": "emtvalencia-es-1.fortimailcloud.com",
-        "addresses": []
+        "addresses": [
+          "154.52.2.132"
+        ]
       },
       {
         "preference": 20,
@@ -24,9 +26,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx ip4:195.55.76.77 ip4:185.79.131.202 ip4:185.79.131.206 ip4:195.53.78.101 ip4:195.53.78.102 ip4:154.52.2.131 include:_spf.fortimailcloud.com include:spf.protection.outlook.com include:_spf.cmail.ondemand.com include:_spf.cloudmail.net.sap include:amazonses.com -all",

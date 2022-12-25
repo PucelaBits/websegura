@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.citapreviadnie.es",
-      "dns.citapreviadnie.es"
+      "dns.citapreviadnie.es",
+      "dns2.citapreviadnie.es"
     ],
     "warnings": []
   },
@@ -21,9 +21,7 @@
       {
         "preference": 50,
         "hostname": "correo11.citapreviadnie.es",
-        "addresses": [
-          "195.55.116.96"
-        ]
+        "addresses": []
       },
       {
         "preference": 70,
@@ -33,7 +31,11 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
+      "The reverse DNS of 195.55.116.96 is correo.policia.es, but the A/AAAA DNS records for correo.policia.es do not resolve to 195.55.116.96",
+      "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
+    ]
   },
   "spf": {
     "record": "v=spf1 mx -all",

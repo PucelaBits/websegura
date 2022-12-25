@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "chico.rediris.es",
       "ns1.ubu.es",
-      "sun.rediris.es",
       "ns2.ubu.es",
+      "sun.rediris.es",
+      "chico.rediris.es",
       "ineco.nic.es"
     ],
     "warnings": []
@@ -23,7 +23,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
+      "The reverse DNS of 104.47.11.202 is mail-am0eur020202.inbound.protection.outlook.com, but the A/AAAA DNS records for mail-am0eur020202.inbound.protection.outlook.com do not resolve to 104.47.11.202"
+    ]
   },
   "spf": {
     "record": "v=spf1 mx a:relay.ubu.es ip4:193.146.160.3 a:listas.ubu.es ip4:193.146.160.149 ip4:95.172.90.143 ip4:95.172.90.156 include:spf.protection.outlook.com -all",

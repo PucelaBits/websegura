@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns1.dnsxperta.com",
       "ns2.dnsxperta.com",
-      "ns3.dnsxperta.com",
-      "ns1.dnsxperta.com"
+      "ns3.dnsxperta.com"
     ],
     "warnings": []
   },
@@ -16,7 +16,7 @@
         "preference": 10,
         "hostname": "mx.spamexperts.com",
         "addresses": [
-          "2001:550:2:61::2fc:100",
+          "2001:550:2:78::ca:100",
           "38.109.53.20"
         ]
       },
@@ -48,7 +48,6 @@
       }
     ],
     "warnings": [
-      "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records",
       "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records",
       "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records"
     ]
@@ -833,6 +832,10 @@
               },
               {
                 "value": "38.133.191.228",
+                "mechanism": "a"
+              },
+              {
+                "value": "38.133.191.232",
                 "mechanism": "a"
               },
               {
