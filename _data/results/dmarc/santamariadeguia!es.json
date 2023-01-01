@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns4.gestiondecuenta.com",
-      "ns3.gestiondecuenta.com",
+      "ns.gestiondecuenta.com",
       "ns2.gestiondecuenta.com",
-      "ns.gestiondecuenta.com"
+      "ns3.gestiondecuenta.com",
+      "ns4.gestiondecuenta.com"
     ],
     "warnings": []
   },
@@ -17,14 +17,14 @@
         "preference": 10,
         "hostname": "correo.santamariadeguia.es",
         "addresses": [
-          "164.138.200.56"
+          "207.154.237.207"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 a mx ip4:213.4.82.254 ip4:164.138.200.148 -all",
+    "record": "v=spf1 a mx ip4:213.4.82.254 ip4:164.138.200.148 ip4:207.154.237.207 -all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
@@ -44,6 +44,10 @@
         },
         {
           "value": "164.138.200.148",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "207.154.237.207",
           "mechanism": "ip4"
         }
       ],

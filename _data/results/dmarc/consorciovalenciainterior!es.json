@@ -3,13 +3,8 @@
   "base_domain": "consorciovalenciainterior.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "ns1107.ui-dns.de",
-      "ns1107.ui-dns.biz",
-      "ns1107.ui-dns.com",
-      "ns1107.ui-dns.org"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "mx": {
     "hosts": [
@@ -17,32 +12,32 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.250.138.26",
-          "2607:f8b0:4023:1006::1a"
+          "142.251.163.27",
+          "2607:f8b0:4004:c1b::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "142.250.152.27",
-          "2607:f8b0:4001:c56::1b"
+          "209.85.202.26",
+          "2a00:1450:400b:c00::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "172.253.113.26",
-          "2607:f8b0:4023:1::1a"
+          "2a00:1450:400c:c0b::1a",
+          "64.233.184.26"
         ]
       },
       {
         "preference": 10,
         "hostname": "aspmx2.googlemail.com",
         "addresses": [
-          "142.250.152.27",
-          "2607:f8b0:4001:c56::1b"
+          "209.85.202.26",
+          "2a00:1450:400b:c00::1b"
         ]
       }
     ],

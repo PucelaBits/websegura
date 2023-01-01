@@ -10,8 +10,16 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query cooperacionespanola.es. IN MX: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 1,
+        "hostname": "cooperacionespanola-es.mail.protection.outlook.com",
+        "addresses": []
+      }
+    ],
+    "warnings": [
+      "The domain cooperacionespanola-es.mail.protection.outlook.com does not exist"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com -all",

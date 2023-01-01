@@ -19,7 +19,7 @@
         ]
       },
       {
-        "preference": 10,
+        "preference": 20,
         "hostname": "smtp.ayuntamientodetias.es",
         "addresses": [
           "213.4.199.90"
@@ -27,6 +27,8 @@
       }
     ],
     "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
+      "The reverse DNS of 104.47.13.36 is mail-he1eur040036.inbound.protection.outlook.com, but the A/AAAA DNS records for mail-he1eur040036.inbound.protection.outlook.com do not resolve to 104.47.13.36",
       "213.4.199.90 does not have any reverse DNS (PTR) records"
     ]
   },

@@ -4,62 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns14.servidoresdns.net",
-      "dns13.servidoresdns.net"
+      "dns13.servidoresdns.net",
+      "dns14.servidoresdns.net"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "aspmx.l.google.com",
-        "addresses": [
-          "142.250.138.26",
-          "2607:f8b0:4023:1000::1b"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "alt1.aspmx.l.google.com",
-        "addresses": [
-          "142.250.152.26",
-          "2607:f8b0:4001:c56::1b"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "alt2.aspmx.l.google.com",
-        "addresses": [
-          "172.253.113.27",
-          "2607:f8b0:4023:1::1a"
-        ]
-      },
-      {
-        "preference": 30,
-        "hostname": "alt3.aspmx.l.google.com",
-        "addresses": [
-          "173.194.77.27",
-          "2607:f8b0:4023:401::1b"
-        ]
-      },
-      {
-        "preference": 30,
-        "hostname": "alt4.aspmx.l.google.com",
-        "addresses": [
-          "173.194.219.26",
-          "2607:f8b0:4002:c03::1b"
-        ]
-      },
-      {
-        "preference": 40,
-        "hostname": "fd74xvjn6iyddr2vmlahveq636i6thbr56ve3wp4n4zjgi7qracq.mx-verification.google.com",
-        "addresses": []
-      }
-    ],
-    "warnings": [
-      "The domain fd74xvjn6iyddr2vmlahveq636i6thbr56ve3wp4n4zjgi7qracq.mx-verification.google.com does not exist"
-    ]
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "spf": {
     "record": null,

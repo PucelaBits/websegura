@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.dnsxperta.com",
-      "ns1.dnsxperta.com"
+      "ns1.dnsxperta.com",
+      "ns2.dnsxperta.com"
     ],
     "warnings": []
   },
@@ -15,8 +15,8 @@
         "preference": 10,
         "hostname": "mx.spamexperts.com",
         "addresses": [
-          "2001:550:2:78::ca:100",
-          "38.111.198.185"
+          "2001:550:2:61::2fc:100",
+          "38.89.254.156"
         ]
       },
       {
@@ -48,6 +48,7 @@
     ],
     "warnings": [
       "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records",
+      "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records",
       "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records"
     ]
   },
@@ -55,7 +56,9 @@
     "record": "v=spf1 include:spf.antispamcloud.com a:delivery.antispamcloud.com include:dnsxperta.com ~all",
     "valid": true,
     "dns_lookups": 6,
-    "warnings": [],
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
+    ],
     "parsed": {
       "pass": [
         {
@@ -1000,90 +1003,6 @@
               {
                 "value": "94.75.244.184",
                 "mechanism": "a"
-              },
-              {
-                "value": "130.117.249.148",
-                "mechanism": "a"
-              },
-              {
-                "value": "130.117.249.150",
-                "mechanism": "a"
-              },
-              {
-                "value": "138.201.192.38",
-                "mechanism": "a"
-              },
-              {
-                "value": "149.13.73.60",
-                "mechanism": "a"
-              },
-              {
-                "value": "149.13.75.38",
-                "mechanism": "a"
-              },
-              {
-                "value": "162.210.192.149",
-                "mechanism": "a"
-              },
-              {
-                "value": "2604:9a00:2100:a043:16::1",
-                "mechanism": "a"
-              },
-              {
-                "value": "2a01:4f8:13b:3001::2",
-                "mechanism": "a"
-              },
-              {
-                "value": "2a01:4f8:13b:308b::2",
-                "mechanism": "a"
-              },
-              {
-                "value": "2a01:4f8:140:4289::2",
-                "mechanism": "a"
-              },
-              {
-                "value": "2a01:4f8:140:42a7::2",
-                "mechanism": "a"
-              },
-              {
-                "value": "2a01:4f8:172:1666::2",
-                "mechanism": "a"
-              },
-              {
-                "value": "2a01:4f8:172:3582::2",
-                "mechanism": "a"
-              },
-              {
-                "value": "2a01:4f8:172:379b::2",
-                "mechanism": "a"
-              },
-              {
-                "value": "2a01:4f8:172:39e5::2",
-                "mechanism": "a"
-              },
-              {
-                "value": "2a01:4f8:172:39e6::2",
-                "mechanism": "a"
-              },
-              {
-                "value": "38.109.53.39",
-                "mechanism": "a"
-              },
-              {
-                "value": "88.198.67.41",
-                "mechanism": "a"
-              },
-              {
-                "value": "88.198.67.44",
-                "mechanism": "a"
-              },
-              {
-                "value": "94.130.139.116",
-                "mechanism": "a"
-              },
-              {
-                "value": "94.130.140.62",
-                "mechanism": "a"
               }
             ],
             "neutral": [],
@@ -1148,7 +1067,9 @@
             "exp": null,
             "all": "fail"
           },
-          "warnings": []
+          "warnings": [
+            "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
+          ]
         },
         {
           "domain": "dnsxperta.com",

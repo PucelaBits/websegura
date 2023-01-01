@@ -29,9 +29,29 @@
     "warnings": []
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "All nameservers failed to answer the query oepm.es. IN TXT: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "record": "v=spf1 mx -all",
+    "valid": true,
+    "dns_lookups": 1,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "estrella.oepm.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mail.oepm.es",
+          "mechanism": "mx"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
     "record": null,

@@ -3,11 +3,8 @@
   "base_domain": "noain.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "ps2.hostinet.com",
-      "ps1.hostinet.com"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "All nameservers failed to answer the query noain.es. IN NS: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
   },
   "mx": {
     "hosts": [
@@ -15,8 +12,8 @@
         "preference": 10,
         "hostname": "noain-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.17.74",
-          "104.47.18.74"
+          "104.47.17.138",
+          "104.47.17.74"
         ]
       }
     ],
@@ -150,6 +147,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "error": "All nameservers failed to answer the query _dmarc.noain.es. IN TXT: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
   }
 }
