@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.cibir.es",
-      "ns1.cibir.es"
+      "ns1.cibir.es",
+      "ns2.cibir.es"
     ],
     "warnings": []
   },
@@ -14,18 +14,19 @@
       {
         "preference": 20,
         "hostname": "mx1.riojasalud.es",
-        "addresses": []
+        "addresses": [
+          "193.145.4.9"
+        ]
       },
       {
         "preference": 20,
         "hostname": "mx2.riojasalud.es",
-        "addresses": []
+        "addresses": [
+          "195.55.164.16"
+        ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out.",
-      "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx ip4:193.145.4.9 ip4:193.145.4.10 ip4:195.55.164.16 -all",

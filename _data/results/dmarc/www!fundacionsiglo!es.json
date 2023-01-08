@@ -4,19 +4,27 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ps2.hostinet.com",
-      "ps1.hostinet.com"
+      "ps1.hostinet.com",
+      "ps2.hostinet.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query fundacionsiglo.es. IN MX: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "fundacionsiglo.es",
+        "addresses": [
+          "217.71.16.29"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": null,
     "valid": false,
-    "error": "All nameservers failed to answer the query fundacionsiglo.es. IN TXT: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "error": "fundacionsiglo.es does not have a SPF TXT record"
   },
   "dmarc": {
     "record": null,

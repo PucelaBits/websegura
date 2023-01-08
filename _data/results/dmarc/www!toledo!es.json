@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.serv213537.servidoresdns.net",
-      "dns1.serv213537.servidoresdns.net"
+      "dns1.serv213537.servidoresdns.net",
+      "dns2.serv213537.servidoresdns.net"
     ],
     "warnings": []
   },
@@ -174,7 +174,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; pct=50; rua=mailto:informatica@toledo.es; ruf=mailto:informatica@toledo.es; fo=1",
+    "record": "v=DMARC1; p=quarantine; pct=75; rua=mailto:informatica@toledo.es; ruf=mailto:informatica@toledo.es; fo=1",
     "valid": true,
     "location": "toledo.es",
     "warnings": [
@@ -190,7 +190,7 @@
         "explicit": true
       },
       "pct": {
-        "value": 50,
+        "value": 75,
         "explicit": true
       },
       "rua": {

@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2e.carm.es",
-      "dns01.ono.com",
       "rafi.f-integra.org",
-      "ns1e.carm.es"
+      "ns1e.carm.es",
+      "dns01.ono.com",
+      "ns2e.carm.es"
     ],
     "warnings": []
   },
@@ -22,7 +22,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
+      "The reverse DNS of 104.47.17.74 is mail-db8eur050074.inbound.protection.outlook.com, but the A/AAAA DNS records for mail-db8eur050074.inbound.protection.outlook.com do not resolve to 104.47.17.74"
+    ]
   },
   "spf": {
     "record": "v=spf1 ip4:147.84.186.100 ip4:147.84.186.101 ip4:147.84.180.73 include:spf.protection.outlook.com -all",

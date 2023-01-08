@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns3.hostinger.es",
       "ns4.hostinger.es",
       "ns2.hostinger.es",
+      "ns3.hostinger.es",
       "ns1.hostinger.es"
     ],
     "warnings": []
@@ -17,21 +17,18 @@
         "preference": 10,
         "hostname": "mx.zoho.com",
         "addresses": [
-          "136.143.183.44"
+          "204.141.43.44"
         ]
       },
       {
         "preference": 20,
         "hostname": "mx2.zoho.com",
         "addresses": [
-          "136.143.183.44"
+          "204.141.43.44"
         ]
       }
     ],
-    "warnings": [
-      "The reverse DNS of 136.143.183.44 is mx3.zoho.com, but the A/AAAA DNS records for mx3.zoho.com do not resolve to 136.143.183.44",
-      "The reverse DNS of 136.143.183.44 is mx3.zoho.com, but the A/AAAA DNS records for mx3.zoho.com do not resolve to 136.143.183.44"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": null,

@@ -3,8 +3,14 @@
   "base_domain": "metromadrid.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
+    "hostnames": [
+      "dns2.metromadrid.es",
+      "artemis.ttd.net",
+      "rf-dns-cti.metromadrid.net",
+      "rf-dns-ccs.metromadrid.net",
+      "dns1.metromadrid.es"
+    ],
+    "warnings": []
   },
   "mx": {
     "hosts": [

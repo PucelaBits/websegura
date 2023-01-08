@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.nombresweb.net",
-      "ns1.galiciadigital.net"
+      "ns1.galiciadigital.net",
+      "ns1.nombresweb.net"
     ],
     "warnings": []
   },
@@ -14,17 +14,43 @@
       {
         "preference": 10,
         "hostname": "mail.monterroso.es",
-        "addresses": []
+        "addresses": [
+          "94.23.86.245"
+        ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
-    ]
+    "warnings": []
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
+    "record": "v=spf1 a mx ptr ~all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [
+      "The ptr mechanism should not be used - https://tools.ietf.org/html/rfc7208#section-5.5"
+    ],
+    "parsed": {
+      "pass": [
+        {
+          "value": "94.23.86.225",
+          "mechanism": "a"
+        },
+        {
+          "value": "mail.monterroso.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "",
+          "mechanism": "ptr"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
   },
   "dmarc": {
     "record": null,

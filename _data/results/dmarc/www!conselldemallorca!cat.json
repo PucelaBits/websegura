@@ -4,14 +4,29 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "saluet.conselldemallorca.net",
-      "gubia.conselldemallorca.net"
+      "gubia.conselldemallorca.net",
+      "saluet.conselldemallorca.net"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 30,
+        "hostname": "saluetw.conselldemallorca.net",
+        "addresses": [
+          "213.201.84.232"
+        ]
+      },
+      {
+        "preference": 50,
+        "hostname": "saluetw2.conselldemallorca.net",
+        "addresses": [
+          "213.201.84.233"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": null,
