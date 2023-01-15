@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "machuca.cervantes.es",
-      "dns.cervantes.es"
+      "dns.cervantes.es",
+      "machuca.cervantes.es"
     ],
     "warnings": []
   },
@@ -14,9 +14,7 @@
       {
         "preference": 10,
         "hostname": "vela1.cervantes.es",
-        "addresses": [
-          "193.146.3.230"
-        ]
+        "addresses": []
       },
       {
         "preference": 10,
@@ -35,7 +33,9 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "All nameservers failed to answer the query vela1.cervantes.es. IN A: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com ip4:193.146.3.230 ip4:193.146.3.229 ip4:193.146.3.128 ip4:193.146.3.129 ip4:193.146.3.130 ip4:193.146.3.219 -all",

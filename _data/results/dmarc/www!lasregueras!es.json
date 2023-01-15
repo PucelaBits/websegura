@@ -21,10 +21,9 @@
     ]
   },
   "spf": {
-    "record": "v=spf1 +a +mx +include:dv45.digival.org -all",
+    "record": null,
     "valid": false,
-    "warnings": [],
-    "error": "dv45.digival.org does not have a SPF TXT record"
+    "error": "All nameservers failed to answer the query lasregueras.es. IN TXT: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
   },
   "dmarc": {
     "record": null,

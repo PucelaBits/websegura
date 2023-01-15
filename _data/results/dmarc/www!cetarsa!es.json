@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.servidoresdns10.com",
-      "dns1.servidoresdns10.com"
+      "dns1.servidoresdns10.com",
+      "dns2.servidoresdns10.com"
     ],
     "warnings": []
   },
@@ -13,9 +13,10 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "correo.cetarsa.es",
+        "hostname": "cetarsa-es.mail.protection.outlook.com",
         "addresses": [
-          "194.179.96.130"
+          "104.47.18.138",
+          "104.47.18.202"
         ]
       }
     ],
@@ -35,7 +36,7 @@
           "mechanism": "a"
         },
         {
-          "value": "correo.cetarsa.es",
+          "value": "cetarsa-es.mail.protection.outlook.com",
           "mechanism": "mx"
         },
         {

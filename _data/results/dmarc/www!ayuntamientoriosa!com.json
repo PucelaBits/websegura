@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns185227.phdns22.es",
-      "dns185227.phdns22.es"
+      "dns185227.phdns22.es",
+      "ns185227.phdns22.es"
     ],
     "warnings": []
   },
@@ -33,14 +33,14 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:45.13.185.227 include:spf.profesionalhosting.com -all",
+    "record": "v=spf1 ip4:45.154.57.249 include:spf.profesionalhosting.com -all",
     "valid": true,
     "dns_lookups": 6,
     "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "45.13.185.227",
+          "value": "45.154.57.249",
           "mechanism": "ip4"
         }
       ],

@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.upct.es",
-      "sun.rediris.es",
+      "chico.rediris.es",
       "ns1.upct.es",
-      "chico.rediris.es"
+      "sun.rediris.es",
+      "ns2.upct.es"
     ],
     "warnings": []
   },
@@ -15,16 +15,20 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "mx03.puc.rediris.es",
+        "hostname": "mx01.puc.rediris.es",
         "addresses": [
-          "143.55.146.78"
+          "143.55.146.78",
+          "2001:720:418:ca10::2",
+          "2001:720:418:ca11::2"
         ]
       },
       {
         "preference": 10,
-        "hostname": "mx04.puc.rediris.es",
+        "hostname": "mx02.puc.rediris.es",
         "addresses": [
-          "143.55.148.243"
+          "143.55.148.243",
+          "2001:720:418:ca10::2",
+          "2001:720:418:ca11::2"
         ]
       }
     ],

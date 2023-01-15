@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "dns2.uclm.es",
       "chico.rediris.es",
       "dns1.uclm.es",
-      "sun.rediris.es",
-      "dns2.uclm.es"
+      "sun.rediris.es"
     ],
     "warnings": []
   },
@@ -17,12 +17,14 @@
         "preference": 0,
         "hostname": "uclm-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.51.138",
+          "104.47.30.74",
           "104.47.51.202"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "104.47.30.74 does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
     "record": "v=spf1 ip4:161.67.136.23 ip4:161.67.136.24 ip4:161.67.136.9 include:spf.protection.outlook.com include:spf.puc.rediris.es -all",

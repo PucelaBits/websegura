@@ -174,12 +174,10 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; pct=75; rua=mailto:informatica@toledo.es; ruf=mailto:informatica@toledo.es; fo=1",
+    "record": "v=DMARC1; p=quarantine; pct=100; rua=mailto:informatica@toledo.es; ruf=mailto:informatica@toledo.es; fo=1",
     "valid": true,
     "location": "toledo.es",
-    "warnings": [
-      "pct value is less than 100. This leads to inconsistent and unpredictable policy enforcement. Consider using p=none to monitor results instead"
-    ],
+    "warnings": [],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -190,7 +188,7 @@
         "explicit": true
       },
       "pct": {
-        "value": 75,
+        "value": 100,
         "explicit": true
       },
       "rua": {

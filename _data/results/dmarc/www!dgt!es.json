@@ -54,7 +54,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; rua=mailto:informes.correo@dgt.es;ruf=mailto:alertas.correo@dgt.es; fo=0:1:d:s;",
+    "record": "v=DMARC1; p=quarantine; rua=mailto:informes.correo@dgt.es;ruf=mailto:alertas.correo@dgt.es; fo=0:1:d:s;",
     "valid": false,
     "location": "dgt.es",
     "error": "fo DMARC tag options 0 and 1 are mutually exclusive"
