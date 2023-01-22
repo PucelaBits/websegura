@@ -4,15 +4,30 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns06.ns-cloud4b.net",
       "ns07.ns-cloud4b.org",
-      "ns08.ns-cloud4b.com"
+      "ns08.ns-cloud4b.com",
+      "ns06.ns-cloud4b.net"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query 34.65.40.5.in-addr.arpa. IN PTR: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "atapuerca.csa.es",
+        "addresses": [
+          "5.40.65.234"
+        ]
+      },
+      {
+        "preference": 50,
+        "hostname": "silos.csa.es",
+        "addresses": [
+          "5.40.65.34"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": null,

@@ -10,8 +10,25 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx1ext.gva.es",
+        "addresses": [
+          "193.145.206.215",
+          "195.77.18.230"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mx2ext.gva.es",
+        "addresses": [
+          "193.145.200.16",
+          "195.77.20.28"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com a:mx11.gva.es a:mx12.gva.es a:mx13.gva.es a:mx21.gva.es a:mx22.gva.es a:mx23.gva.es a:dunas.gva.es a:sarabi.gva.es -all",

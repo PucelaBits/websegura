@@ -4,20 +4,13 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.cibir.es",
-      "ns1.cibir.es"
+      "ns1.cibir.es",
+      "ns2.cibir.es"
     ],
     "warnings": []
   },
   "mx": {
     "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mx1.riojasalud.es",
-        "addresses": [
-          "193.145.4.9"
-        ]
-      },
       {
         "preference": 10,
         "hostname": "mx2.riojasalud.es",
@@ -35,10 +28,6 @@
     "warnings": [],
     "parsed": {
       "pass": [
-        {
-          "value": "mx1.riojasalud.es",
-          "mechanism": "mx"
-        },
         {
           "value": "mx2.riojasalud.es",
           "mechanism": "mx"

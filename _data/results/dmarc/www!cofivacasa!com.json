@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.dondominio.com",
-      "ns4.dondominio.com"
+      "ns4.dondominio.com",
+      "ns2.dondominio.com"
     ],
     "warnings": []
   },
@@ -150,6 +150,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.cofivacasa.com\n\nv=spf1 include:spf.protection.outlook.com -all\n\nMS=ms20998851"
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.cofivacasa.com\n\nMS=ms20998851\n\nv=spf1 include:spf.protection.outlook.com -all"
   }
 }

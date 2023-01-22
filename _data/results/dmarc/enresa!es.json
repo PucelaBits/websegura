@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.evolutio.es",
-      "ns1.evolutio.es"
+      "ns1.evolutio.es",
+      "ns2.evolutio.es"
     ],
     "warnings": []
   },
@@ -15,14 +15,12 @@
         "preference": 20,
         "hostname": "enresa-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.30.74",
-          "104.47.51.138"
+          "104.47.51.138",
+          "104.47.51.202"
         ]
       }
     ],
-    "warnings": [
-      "104.47.30.74 does not have any reverse DNS (PTR) records"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com ip4:212.163.6.88 -all",

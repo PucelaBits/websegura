@@ -13,13 +13,6 @@
     "hosts": [
       {
         "preference": 20,
-        "hostname": "mx1.riojasalud.es",
-        "addresses": [
-          "193.145.4.9"
-        ]
-      },
-      {
-        "preference": 20,
         "hostname": "mx2.riojasalud.es",
         "addresses": [
           "195.55.164.16"
@@ -35,10 +28,6 @@
     "warnings": [],
     "parsed": {
       "pass": [
-        {
-          "value": "mx1.riojasalud.es",
-          "mechanism": "mx"
-        },
         {
           "value": "mx2.riojasalud.es",
           "mechanism": "mx"

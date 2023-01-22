@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.dnsxperta.com",
-      "ns2.dnsxperta.com"
+      "ns2.dnsxperta.com",
+      "ns1.dnsxperta.com"
     ],
     "warnings": []
   },
@@ -15,7 +15,7 @@
         "preference": 0,
         "hostname": "lafontdencarros-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.30.74",
+          "104.47.51.138",
           "104.47.51.202"
         ]
       },
@@ -26,7 +26,6 @@
       }
     ],
     "warnings": [
-      "104.47.30.74 does not have any reverse DNS (PTR) records",
       "The domain ms35284834.msv1.invalid does not exist. Consider using a TXT record to validate domain ownership in Office 365 instead."
     ]
   },

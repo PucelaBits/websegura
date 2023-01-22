@@ -50,7 +50,7 @@
     ]
   },
   "spf": {
-    "record": "v=spf1 mx ip4:195.77.252.1 ip4:195.77.252.2 ip4:195.77.252.3 ip4:195.77.252.4 ip4:195.77.252.5 mx:mail.betera.es a:mail.betera.es -all",
+    "record": "v=spf1 mx ip4:195.77.40.68 mx:mail.betera.es a:mail.betera.es -all",
     "valid": true,
     "dns_lookups": 3,
     "warnings": [
@@ -71,23 +71,7 @@
           "mechanism": "mx"
         },
         {
-          "value": "195.77.252.1",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "195.77.252.2",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "195.77.252.3",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "195.77.252.4",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "195.77.252.5",
+          "value": "195.77.40.68",
           "mechanism": "ip4"
         },
         {

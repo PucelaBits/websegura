@@ -14,7 +14,9 @@
       {
         "preference": 10,
         "hostname": "estrella.oepm.es",
-        "addresses": []
+        "addresses": [
+          "192.187.18.186"
+        ]
       },
       {
         "preference": 20,
@@ -24,9 +26,7 @@
         ]
       }
     ],
-    "warnings": [
-      "All nameservers failed to answer the query estrella.oepm.es. IN AAAA: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx -all",

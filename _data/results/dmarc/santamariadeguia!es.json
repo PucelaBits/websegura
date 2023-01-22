@@ -5,9 +5,9 @@
   "ns": {
     "hostnames": [
       "ns4.gestiondecuenta.com",
+      "ns3.gestiondecuenta.com",
       "ns2.gestiondecuenta.com",
-      "ns.gestiondecuenta.com",
-      "ns3.gestiondecuenta.com"
+      "ns.gestiondecuenta.com"
     ],
     "warnings": []
   },
@@ -24,9 +24,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 a mx ip4:213.4.82.254 ip4:164.138.200.148 ip4:207.154.237.207 -all",
+    "record": "v=spf1 a mx ip4:207.154.237.207 include:amazonses.com -all",
     "valid": true,
-    "dns_lookups": 2,
+    "dns_lookups": 3,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -39,14 +39,6 @@
           "mechanism": "mx"
         },
         {
-          "value": "213.4.82.254",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "164.138.200.148",
-          "mechanism": "ip4"
-        },
-        {
           "value": "207.154.237.207",
           "mechanism": "ip4"
         }
@@ -54,70 +46,78 @@
       "neutral": [],
       "softfail": [],
       "fail": [],
-      "include": [],
+      "include": [
+        {
+          "domain": "amazonses.com",
+          "record": "v=spf1 ip4:199.255.192.0/22 ip4:199.127.232.0/22 ip4:54.240.0.0/18 ip4:69.169.224.0/20 ip4:23.249.208.0/20 ip4:23.251.224.0/19 ip4:76.223.176.0/20 ip4:54.240.64.0/19 ip4:54.240.96.0/19 ip4:52.82.172.0/22 ip4:76.223.128.0/19 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "199.255.192.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "199.127.232.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "54.240.0.0/18",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "69.169.224.0/20",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "23.249.208.0/20",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "23.251.224.0/19",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "76.223.176.0/20",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "54.240.64.0/19",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "54.240.96.0/19",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.82.172.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "76.223.128.0/19",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        }
+      ],
       "redirect": null,
       "exp": null,
       "all": "fail"
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; rua=mailto:abuse@santamariadeguia.es; pct=5; sp=none",
-    "valid": true,
-    "location": "santamariadeguia.es",
-    "warnings": [
-      "pct value is less than 100. This leads to inconsistent and unpredictable policy enforcement. Consider using p=none to monitor results instead"
-    ],
-    "tags": {
-      "v": {
-        "value": "DMARC1",
-        "explicit": true
-      },
-      "p": {
-        "value": "quarantine",
-        "explicit": true
-      },
-      "rua": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "abuse@santamariadeguia.es",
-            "size_limit": null
-          }
-        ],
-        "explicit": true
-      },
-      "pct": {
-        "value": 5,
-        "explicit": true
-      },
-      "sp": {
-        "value": "none",
-        "explicit": true
-      },
-      "adkim": {
-        "value": "r",
-        "explicit": false
-      },
-      "aspf": {
-        "value": "r",
-        "explicit": false
-      },
-      "fo": {
-        "value": [
-          "0"
-        ],
-        "explicit": false
-      },
-      "rf": {
-        "value": [
-          "afrf"
-        ],
-        "explicit": false
-      },
-      "ri": {
-        "value": 86400,
-        "explicit": false
-      }
-    }
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   }
 }

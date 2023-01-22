@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.srv-acens.com",
-      "ns1.srv-acens.com"
+      "ns1.srv-acens.com",
+      "ns2.srv-acens.com"
     ],
     "warnings": []
   },
@@ -25,13 +25,11 @@
     "record": "v=spf1 include:spf.dominioabsoluto.net +a +mx ip4:94.247.31.162 -all",
     "valid": true,
     "dns_lookups": 3,
-    "warnings": [],
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
+    ],
     "parsed": {
       "pass": [
-        {
-          "value": "77.231.98.152",
-          "mechanism": "a"
-        },
         {
           "value": "mx.nerja.es",
           "mechanism": "mx"
