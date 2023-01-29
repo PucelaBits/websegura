@@ -9,16 +9,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mail.lasregueras.es",
-        "addresses": []
-      }
-    ],
-    "warnings": [
-      "All nameservers failed to answer the query mail.lasregueras.es. IN AAAA: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
-    ]
+    "hosts": [],
+    "error": "All nameservers failed to answer the query lasregueras.es. IN MX: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
   },
   "spf": {
     "record": "v=spf1 +a +mx +include:dv45.digival.org -all",

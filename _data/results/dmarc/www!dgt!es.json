@@ -21,12 +21,12 @@
       {
         "preference": 10,
         "hostname": "mx02.dgt.es",
-        "addresses": []
+        "addresses": [
+          "212.128.100.150"
+        ]
       }
     ],
-    "warnings": [
-      "All nameservers failed to answer the query mx02.dgt.es. IN AAAA: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx -all",

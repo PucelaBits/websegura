@@ -14,12 +14,12 @@
       {
         "preference": 10,
         "hostname": "mail.apuntmedia.es",
-        "addresses": []
+        "addresses": [
+          "54.36.4.5"
+        ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 a mx include:spf.smtp2go.com -all",

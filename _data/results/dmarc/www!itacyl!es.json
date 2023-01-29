@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "chico.rediris.es",
-      "dns.itacyl.es",
       "sun.rediris.es",
+      "dns.itacyl.es",
+      "chico.rediris.es",
       "dns2.itacyl.es"
     ],
     "warnings": []
@@ -17,7 +17,7 @@
         "preference": 10,
         "hostname": "mxa-006a4e02.gslb.pphosted.com",
         "addresses": [
-          "143.55.146.78"
+          "143.55.148.243"
         ]
       },
       {
@@ -31,55 +31,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:193.146.230.67/32 ip4:185.179.105.195/32 ip4:195.76.182.230/32 ip4:195.76.182.224/32 ip4:195.76.182.225/32 ptr mx ~all",
-    "valid": true,
-    "dns_lookups": 1,
-    "warnings": [
-      "The ptr mechanism should not be used - https://tools.ietf.org/html/rfc7208#section-5.5"
-    ],
-    "parsed": {
-      "pass": [
-        {
-          "value": "193.146.230.67/32",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "185.179.105.195/32",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "195.76.182.230/32",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "195.76.182.224/32",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "195.76.182.225/32",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "",
-          "mechanism": "ptr"
-        },
-        {
-          "value": "mxa-006a4e02.gslb.pphosted.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "mxb-006a4e02.gslb.pphosted.com",
-          "mechanism": "mx"
-        }
-      ],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [],
-      "redirect": null,
-      "exp": null,
-      "all": "softfail"
-    }
+    "record": null,
+    "valid": false,
+    "error": "All nameservers failed to answer the query itacyl.es. IN TXT: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
   },
   "dmarc": {
     "record": "v=DMARC1; p=quarantine; pct=100; adkim=s; aspf=s; rua=mailto:dmarc@itacyl.es; ruf=mailto:dmarc@itacyl.es",

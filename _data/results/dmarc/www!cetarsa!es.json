@@ -15,8 +15,8 @@
         "preference": 10,
         "hostname": "cetarsa-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.18.138",
-          "104.47.18.202"
+          "104.47.18.202",
+          "104.47.22.138"
         ]
       }
     ],
@@ -26,9 +26,7 @@
     "record": "v=spf1 a:cetarsa.es mx:cetarsa.es include:spf.abansys.com ip4:194.179.96.130 include:spf.protection.outlook.com ~all",
     "valid": true,
     "dns_lookups": 5,
-    "warnings": [
-      "SPF type DNS records found. Use of DNS Type SPF has been removed in the standards track version of SPF, RFC 7208. These records should be removed and replaced with TXT records: v=spf1 a:cetarsa.es mx:cetarsa.es include:spf.abansys.com ip4:194.179.96.130 include:spf.protection.outlook.com ~all"
-    ],
+    "warnings": [],
     "parsed": {
       "pass": [
         {

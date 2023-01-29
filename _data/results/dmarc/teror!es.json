@@ -5,9 +5,9 @@
   "ns": {
     "hostnames": [
       "ns4.gestiondecuenta.com",
+      "ns.gestiondecuenta.com",
       "ns3.gestiondecuenta.com",
-      "ns2.gestiondecuenta.com",
-      "ns.gestiondecuenta.com"
+      "ns2.gestiondecuenta.com"
     ],
     "warnings": []
   },
@@ -16,12 +16,13 @@
       {
         "preference": 10,
         "hostname": "teror-es.mail.protection.outlook.com",
-        "addresses": []
+        "addresses": [
+          "104.47.13.36",
+          "104.47.14.36"
+        ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:213.99.29.169 ip4:213.99.29.169 ip4:213.99.29.168/29 ip4:213.4.82.192/26 ip4:82.98.134.240 include:spf.protection.outlook.com include:_spf.espublico.com include:_flatsvcs.espublico.com -all",

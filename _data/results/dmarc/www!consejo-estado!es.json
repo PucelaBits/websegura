@@ -3,11 +3,8 @@
   "base_domain": "consejo-estado.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "sun.rediris.es",
-      "chico.rediris.es"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "mx": {
     "hosts": [

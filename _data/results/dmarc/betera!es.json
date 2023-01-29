@@ -12,6 +12,13 @@
   "mx": {
     "hosts": [
       {
+        "preference": 8,
+        "hostname": "mail.betera.es",
+        "addresses": [
+          "31.24.154.99"
+        ]
+      },
+      {
         "preference": 10,
         "hostname": "mx.redunda.com",
         "addresses": [
@@ -50,43 +57,10 @@
     ]
   },
   "spf": {
-    "record": "v=spf1 mx ip4:195.77.40.68 mx:mail.betera.es a:mail.betera.es -all",
-    "valid": true,
-    "dns_lookups": 3,
-    "warnings": [
-      "mail.betera.es does not have any MX records"
-    ],
-    "parsed": {
-      "pass": [
-        {
-          "value": "mx.redunda.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "mx2.redunda.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "ms98722601.msv1.invalid",
-          "mechanism": "mx"
-        },
-        {
-          "value": "195.77.40.68",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "31.24.154.99",
-          "mechanism": "a"
-        }
-      ],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [],
-      "redirect": null,
-      "exp": null,
-      "all": "fail"
-    }
+    "record": "v=spf1 mx ip4:195.77.40.68 31.24.154.99 mx:mail.betera.es a:mail.betera.es -all",
+    "valid": false,
+    "warnings": [],
+    "error": "betera.es: Expected mechanism at position 27 in: v=spf1 mx ip4:195.77.40.68 31.24.154.99 mx:mail.betera.es a:mail.betera.es -all"
   },
   "dmarc": {
     "record": null,

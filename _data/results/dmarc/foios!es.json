@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns3.dnsxperta.com",
-      "ns2.dnsxperta.com"
+      "ns2.dnsxperta.com",
+      "ns3.dnsxperta.com"
     ],
     "warnings": []
   },
@@ -14,7 +14,10 @@
       {
         "preference": 10,
         "hostname": "mx.spamexperts.com",
-        "addresses": []
+        "addresses": [
+          "2001:550:2:9::280:100",
+          "38.89.254.156"
+        ]
       },
       {
         "preference": 20,
@@ -44,7 +47,6 @@
       }
     ],
     "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out.",
       "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records",
       "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records"
     ]

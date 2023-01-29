@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns4.gestiondecuenta.com",
       "ns.gestiondecuenta.com",
       "ns2.gestiondecuenta.com",
-      "ns4.gestiondecuenta.com",
       "ns3.gestiondecuenta.com"
     ],
     "warnings": []
@@ -22,7 +22,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
+      "The reverse DNS of 104.47.51.138 is mail-dbaeur030138.inbound.protection.outlook.com, but the A/AAAA DNS records for mail-dbaeur030138.inbound.protection.outlook.com do not resolve to 104.47.51.138"
+    ]
   },
   "spf": {
     "record": "v=spf1 a mx ip4:51.178.156.0 include:_spf.google.com include:spf.protection.outlook.com ~all",

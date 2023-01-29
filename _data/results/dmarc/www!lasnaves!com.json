@@ -25,13 +25,11 @@
         "preference": 10,
         "hostname": "inbound-smtp.eu-west-1.amazonaws.com",
         "addresses": [
-          "54.239.39.100"
+          "176.32.109.132"
         ]
       }
     ],
-    "warnings": [
-      "The reverse DNS of 54.239.39.100 is inbound-smtp.eu-west-1.amazonaws.com, but the A/AAAA DNS records for inbound-smtp.eu-west-1.amazonaws.com do not resolve to 54.239.39.100"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com -all",

@@ -3,30 +3,12 @@
   "base_domain": "ico.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "icodns.ico.es",
-      "dns2.comtenidos.com"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mail.ico.es",
-        "addresses": [
-          "90.160.63.202"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mail2.ico.es",
-        "addresses": []
-      }
-    ],
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
-    ]
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "spf": {
     "record": null,
