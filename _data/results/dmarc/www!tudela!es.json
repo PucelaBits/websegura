@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns.dinahosting.com",
       "ns4.dinahosting.com",
       "ns2.dinahosting.com",
-      "ns.dinahosting.com",
       "ns3.dinahosting.com"
     ],
     "warnings": []
@@ -17,15 +17,15 @@
         "preference": 10,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.251.163.26",
-          "2607:f8b0:4004:c19::1b"
+          "142.251.16.27",
+          "2607:f8b0:4004:c1b::1a"
         ]
       },
       {
         "preference": 20,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "209.85.202.27",
+          "209.85.202.26",
           "2a00:1450:400b:c00::1a"
         ]
       },
@@ -33,8 +33,8 @@
         "preference": 30,
         "hostname": "aspmx2.googlemail.com",
         "addresses": [
-          "209.85.202.27",
-          "2a00:1450:400b:c00::1a"
+          "209.85.202.26",
+          "2a00:1450:400b:c00::1b"
         ]
       },
       {
@@ -49,17 +49,12 @@
         "preference": 50,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "2a00:1450:400c:c0b::1b",
+          "2a00:1450:400c:c0b::1a",
           "64.233.184.26"
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
-      "The reverse DNS of 2a00:1450:400c:c0b::1b is wa-in-x1b.1e100.net, but the A/AAAA DNS records for wa-in-x1b.1e100.net do not resolve to 2a00:1450:400c:c0b::1b",
-      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
-      "The reverse DNS of 2a00:1450:400c:c0b::1b is wa-in-x1b.1e100.net, but the A/AAAA DNS records for wa-in-x1b.1e100.net do not resolve to 2a00:1450:400c:c0b::1b"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx ptr ip4:62.81.130.130 ip4:62.81.130.131 include:_spf.google.com ~all",

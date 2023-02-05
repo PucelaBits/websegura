@@ -1,11 +1,11 @@
 {
-  "domain": "monfortedelemos.es",
-  "base_domain": "monfortedelemos.es",
+  "domain": "biki-valladolid.es",
+  "base_domain": "biki-valladolid.es",
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.serv501863.servidoresdns.net",
-      "dns1.serv501863.servidoresdns.net"
+      "dns1.nominalia.com",
+      "dns2.nominalia.com"
     ],
     "warnings": []
   },
@@ -13,16 +13,16 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "mx.serviciodecorreo.es",
+        "hostname": "mail.nominalia.com",
         "addresses": [
-          "82.223.190.100"
+          "195.110.124.132"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:_spf.serviciodecorreo.es ~all",
+    "record": "v=spf1 include:spf.webapps.net ~all",
     "valid": true,
     "dns_lookups": 3,
     "warnings": [],
@@ -33,8 +33,8 @@
       "fail": [],
       "include": [
         {
-          "domain": "_spf.serviciodecorreo.es",
-          "record": "v=spf1 include:_netblock1.serviciodecorreo.es include:_netblock2.serviciodecorreo.es ~all",
+          "domain": "spf.webapps.net",
+          "record": "v=spf1 include:spf1.webapps.net include:spf2.webapps.net ~all",
           "dns_lookups": 2,
           "parsed": {
             "pass": [],
@@ -43,45 +43,37 @@
             "fail": [],
             "include": [
               {
-                "domain": "_netblock1.serviciodecorreo.es",
-                "record": "v=spf1 ip4:82.223.85.0/24 ip4:82.223.190.0/23 ip4:82.223.199.0/24 ip4:82.223.218.0/23 ip4:82.223.230.0/24 ip4:82.223.251.0/24 ip4:217.76.128.0/23 ip4:217.76.150.128/25 ip4:217.76.156.128/25 ~all",
+                "domain": "spf1.webapps.net",
+                "record": "v=spf1 ip4:81.88.48.32/27 ip4:81.88.50.224/27 ip4:81.88.54.64/27 ip4:81.88.55.96/27 ip4:81.88.56.0/27 ip4:81.88.62.160/27 ip4:81.88.63.128/27 ~all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
                     {
-                      "value": "82.223.85.0/24",
+                      "value": "81.88.48.32/27",
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "82.223.190.0/23",
+                      "value": "81.88.50.224/27",
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "82.223.199.0/24",
+                      "value": "81.88.54.64/27",
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "82.223.218.0/23",
+                      "value": "81.88.55.96/27",
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "82.223.230.0/24",
+                      "value": "81.88.56.0/27",
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "82.223.251.0/24",
+                      "value": "81.88.62.160/27",
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "217.76.128.0/23",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "217.76.150.128/25",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "217.76.156.128/25",
+                      "value": "81.88.63.128/27",
                       "mechanism": "ip4"
                     }
                   ],
@@ -96,57 +88,37 @@
                 "warnings": []
               },
               {
-                "domain": "_netblock2.serviciodecorreo.es",
-                "record": "v=spf1 ip4:82.223.56.0/23 ip4:82.223.113.0/24 ip4:82.223.119.0/24 ip4:82.223.226.0/24 ip4:217.76.130.0/23 ip4:217.76.148.0/23 ip4:217.76.143.0/24 ip4:217.76.150.0/25 ip4:217.76.156.0/25 ip4:217.76.132.128/25 ip4:82.223.208.0/24 ip4:82.223.212.0/23 ~all",
+                "domain": "spf2.webapps.net",
+                "record": "v=spf1 ip4:195.110.101.32/27 ip4:195.110.122.160/27 ip4:195.110.123.0/27 ip4:185.2.4.0/22 ip4:81.88.49.224/27 ip4:195.7.249.29 ip4:81.88.52.0/23 ~all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
                     {
-                      "value": "82.223.56.0/23",
+                      "value": "195.110.101.32/27",
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "82.223.113.0/24",
+                      "value": "195.110.122.160/27",
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "82.223.119.0/24",
+                      "value": "195.110.123.0/27",
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "82.223.226.0/24",
+                      "value": "185.2.4.0/22",
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "217.76.130.0/23",
+                      "value": "81.88.49.224/27",
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "217.76.148.0/23",
+                      "value": "195.7.249.29",
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "217.76.143.0/24",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "217.76.150.0/25",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "217.76.156.0/25",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "217.76.132.128/25",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "82.223.208.0/24",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "82.223.212.0/23",
+                      "value": "81.88.52.0/23",
                       "mechanism": "ip4"
                     }
                   ],

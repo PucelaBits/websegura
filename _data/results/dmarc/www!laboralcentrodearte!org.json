@@ -15,19 +15,18 @@
       {
         "preference": 10,
         "hostname": "mx01.ionos.es",
-        "addresses": [
-          "217.72.192.67"
-        ]
+        "addresses": []
       },
       {
         "preference": 50,
         "hostname": "mx00.ionos.es",
-        "addresses": [
-          "212.227.15.41"
-        ]
+        "addresses": []
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out.",
+      "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
+    ]
   },
   "spf": {
     "record": "v=spf1 a mx include:amazonses.com include:_spf.google.com include:_spf.perfora.net include:_spf.kundenserver.de -all",

@@ -19,10 +19,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
-      "The reverse DNS of 195.53.63.199 is mail.teruel.es, but the A/AAAA DNS records for mail.teruel.es do not resolve to 195.53.63.199"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 +a +mx ip4:185.45.72.125 -all",

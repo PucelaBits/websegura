@@ -57,10 +57,49 @@
     ]
   },
   "spf": {
-    "record": "v=spf1 mx ip4:195.77.40.68 31.24.154.99 mx:mail.betera.es a:mail.betera.es -all",
-    "valid": false,
+    "record": "v=spf1 a mx a:mail.betera.es ip4:31.24.154.99 -all",
+    "valid": true,
+    "dns_lookups": 3,
     "warnings": [],
-    "error": "betera.es: Expected mechanism at position 27 in: v=spf1 mx ip4:195.77.40.68 31.24.154.99 mx:mail.betera.es a:mail.betera.es -all"
+    "parsed": {
+      "pass": [
+        {
+          "value": "217.13.85.35",
+          "mechanism": "a"
+        },
+        {
+          "value": "mail.betera.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mx.redunda.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mx2.redunda.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "ms98722601.msv1.invalid",
+          "mechanism": "mx"
+        },
+        {
+          "value": "31.24.154.99",
+          "mechanism": "a"
+        },
+        {
+          "value": "31.24.154.99",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
     "record": null,

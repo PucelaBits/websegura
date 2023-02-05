@@ -4,10 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns.malaga.es",
-      "dns2.malaga.es",
-      "dns3.malaga.es",
-      "dns4.malaga.es"
+      "dpmdns03.ns-cloud4b.net",
+      "dpmdns01.ns-cloud4b.org",
+      "dpmdns02.ns-cloud4b.com"
     ],
     "warnings": []
   },
@@ -18,7 +17,7 @@
         "hostname": "mx.spamexperts.com",
         "addresses": [
           "2001:550:2:78::ca:100",
-          "38.111.198.185"
+          "38.89.254.156"
         ]
       },
       {
@@ -54,12 +53,10 @@
     ]
   },
   "spf": {
-    "record": "v=spf1 include:spf2.malaga.es include:spf.antispamcloud.com -all",
+    "record": "v=spf1 include:spf2.malaga.es -all",
     "valid": true,
-    "dns_lookups": 6,
-    "warnings": [
-      "Duplicate include: spf.antispamcloud.com"
-    ],
+    "dns_lookups": 5,
+    "warnings": [],
     "parsed": {
       "pass": [],
       "neutral": [],
@@ -358,9 +355,9 @@
     }
   },
   "dmarc": {
-    "record": null,
+    "record": "v=DMARC1",
     "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "location": "istan.es",
+    "error": "Error: Expected version_tag at position 0 in: v=DMARC1"
   }
 }

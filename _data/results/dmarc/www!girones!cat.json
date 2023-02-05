@@ -26,7 +26,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
+      "The reverse DNS of 80.64.32.18 is mx1.grn.es, but the A/AAAA DNS records for mx1.grn.es do not resolve to 80.64.32.18"
+    ]
   },
   "spf": {
     "record": "v=spf1 mx ip4:80.64.32.0/26 ip4:80.64.47.207 ip4:80.64.37.224/27 ~all",

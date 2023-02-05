@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "nso.nic.es",
-      "alula.diputoledo.es",
-      "tania.diputoledo.es"
+      "tania.diputoledo.es",
+      "alula.diputoledo.es"
     ],
     "warnings": []
   },
@@ -15,12 +15,12 @@
       {
         "preference": 10,
         "hostname": "correo.diputoledo.es",
-        "addresses": []
+        "addresses": [
+          "217.124.228.11"
+        ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 +a +mx +ip4:217.124.228.11 ~all",

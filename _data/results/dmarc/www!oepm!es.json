@@ -10,23 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "estrella.oepm.es",
-        "addresses": [
-          "192.187.18.186"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mail.oepm.es",
-        "addresses": [
-          "192.187.18.139"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "All nameservers failed to answer the query 186.18.187.192.in-addr.arpa. IN PTR: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
   },
   "spf": {
     "record": "v=spf1 mx -all",

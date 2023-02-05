@@ -407,71 +407,9 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; rua=mailto:123604d72a42667@rep.dmarcanalyzer.com; ruf=mailto:123604d72a42667@for.dmarcanalyzer.com; fo=1;",
-    "valid": true,
+    "record": "v=DMARC1; p=none; rua=3d77757ad5ff108@rep.dmarcanalyzer.com; ruf=3d77757ad5ff108@for.dmarcanalyzer.com; fo=1;",
+    "valid": false,
     "location": "emivasa.es",
-    "warnings": [],
-    "tags": {
-      "v": {
-        "value": "DMARC1",
-        "explicit": true
-      },
-      "p": {
-        "value": "none",
-        "explicit": true
-      },
-      "rua": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "123604d72a42667@rep.dmarcanalyzer.com",
-            "size_limit": null
-          }
-        ],
-        "explicit": true
-      },
-      "ruf": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "123604d72a42667@for.dmarcanalyzer.com",
-            "size_limit": null
-          }
-        ],
-        "explicit": true
-      },
-      "fo": {
-        "value": [
-          "1"
-        ],
-        "explicit": true
-      },
-      "adkim": {
-        "value": "r",
-        "explicit": false
-      },
-      "aspf": {
-        "value": "r",
-        "explicit": false
-      },
-      "pct": {
-        "value": 100,
-        "explicit": false
-      },
-      "rf": {
-        "value": [
-          "afrf"
-        ],
-        "explicit": false
-      },
-      "ri": {
-        "value": 86400,
-        "explicit": false
-      },
-      "sp": {
-        "value": "none",
-        "explicit": false
-      }
-    }
+    "error": "3d77757ad5ff108@rep.dmarcanalyzer.com is not a valid DMARC report URI"
   }
 }

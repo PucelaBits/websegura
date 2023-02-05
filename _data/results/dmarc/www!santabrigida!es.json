@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns3.dinahosting.com",
       "ns.dinahosting.com",
-      "ns4.dinahosting.com",
       "ns2.dinahosting.com",
-      "ns3.dinahosting.com"
+      "ns4.dinahosting.com"
     ],
     "warnings": []
   },
@@ -22,7 +22,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
+      "The reverse DNS of 104.47.18.74 is mail-am6eur050074.inbound.protection.outlook.com, but the A/AAAA DNS records for mail-am6eur050074.inbound.protection.outlook.com do not resolve to 104.47.18.74"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com -all",

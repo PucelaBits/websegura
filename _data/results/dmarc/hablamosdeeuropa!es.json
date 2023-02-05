@@ -3,8 +3,11 @@
   "base_domain": "hablamosdeeuropa.es",
   "dnssec": true,
   "ns": {
-    "hostnames": [],
-    "error": "All nameservers failed to answer the query hablamosdeeuropa.es. IN NS: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "hostnames": [
+      "ns1.age.gob.es",
+      "ns2.age.gob.es"
+    ],
+    "warnings": []
   },
   "mx": {
     "hosts": [

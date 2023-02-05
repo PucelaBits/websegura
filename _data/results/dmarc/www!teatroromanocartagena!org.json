@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.cetait.es",
-      "ns2.cetait.es"
+      "ns2.cetait.es",
+      "ns1.cetait.es"
     ],
     "warnings": []
   },
@@ -19,7 +19,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
+      "The reverse DNS of 144.76.70.232 is server.cetait.es, but the A/AAAA DNS records for server.cetait.es do not resolve to 144.76.70.232"
+    ]
   },
   "spf": {
     "record": "v=spf1 a mx ip4:144.76.70.232 ~all",

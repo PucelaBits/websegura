@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "sec2.rcode0.net",
-      "sec1.rcode0.net"
+      "sec1.rcode0.net",
+      "sec2.rcode0.net"
     ],
     "warnings": []
   },
@@ -23,9 +23,11 @@
     "warnings": []
   },
   "spf": {
-    "record": null,
+    "record": "v=spf1 ip4:51.210.242.132/32 ip4:217.127.200.163/32 ip4:95.39.58.147/32 ip4:80.37.120.41 ip4:195.55.246.192/29 ip4:88.26.242.108 ip4:80.39.125.188 ip4:62.175.142.158 ip4:194.179.105.128/29 ip4:195.77.180.40/29 ip4:195.235.111.128/28 ip4:2.139.152.230 ip4:83.56.19.80 ip4:10.14.191.69 ip4:195.57.87.112/29 ip4:62.175.137.190 include:spf.protection.outlook.com include:_pmta2.antevenio.com include:spf.mandrillapp.com include:_spf.salesforce.com include:kunn.ip-zone.com include:spf.sendinblue.com include:spf.protection.outlook.com include:spf-eu.emailsignatures365.com -all",
     "valid": false,
-    "error": "ucjc.edu has multiple SPF TXT records"
+    "warnings": [],
+    "error": "Parsing the SPF record requires 12/10 maximum DNS lookups - https://tools.ietf.org/html/rfc7208#section-4.6.4",
+    "dns_lookups": 12
   },
   "dmarc": {
     "record": null,

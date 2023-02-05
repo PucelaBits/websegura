@@ -3,8 +3,12 @@
   "base_domain": "elpalomar.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
+    "hostnames": [
+      "ns3.dnsxperta.com",
+      "ns2.dnsxperta.com",
+      "ns1.dnsxperta.com"
+    ],
+    "warnings": []
   },
   "mx": {
     "hosts": [
