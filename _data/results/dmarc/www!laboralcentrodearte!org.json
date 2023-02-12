@@ -3,30 +3,12 @@
   "base_domain": "laboralcentrodearte.org",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "ns-62-a.gandi.net",
-      "ns-106-c.gandi.net",
-      "ns-165-b.gandi.net"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mx01.ionos.es",
-        "addresses": []
-      },
-      {
-        "preference": 50,
-        "hostname": "mx00.ionos.es",
-        "addresses": []
-      }
-    ],
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out.",
-      "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
-    ]
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 a mx include:amazonses.com include:_spf.google.com include:_spf.perfora.net include:_spf.kundenserver.de -all",

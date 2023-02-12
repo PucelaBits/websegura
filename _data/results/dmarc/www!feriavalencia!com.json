@@ -4,8 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.servidoresdns10.com",
-      "dns2.servidoresdns10.com"
+      "ns1-33.azure-dns.com",
+      "ns2-33.azure-dns.net",
+      "ns3-33.azure-dns.org",
+      "ns4-33.azure-dns.info"
     ],
     "warnings": []
   },
@@ -15,8 +17,8 @@
         "preference": 10,
         "hostname": "feriavalencia-com.mail.protection.outlook.com",
         "addresses": [
-          "104.47.11.202",
-          "104.47.11.74"
+          "104.47.11.10",
+          "104.47.11.202"
         ]
       },
       {

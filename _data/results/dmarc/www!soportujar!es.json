@@ -4,14 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "montero.dipgra.es",
-      "gate.dipgra.es"
+      "gate.dipgra.es",
+      "montero.dipgra.es"
     ],
     "warnings": []
   },
   "mx": {
     "hosts": [],
-    "error": "All nameservers failed to answer the query 7.47.57.195.in-addr.arpa. IN PTR: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "error": "All nameservers failed to answer the query 13.47.57.195.in-addr.arpa. IN PTR: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
   },
   "spf": {
     "record": null,

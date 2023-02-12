@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns5.cdmondns-01.com",
       "ns1.cdmon.net",
-      "ns2.cdmon.net",
       "ns4.cdmondns-01.org",
+      "ns5.cdmondns-01.com",
+      "ns2.cdmon.net",
       "ns3.cdmon.net"
     ],
     "warnings": []
@@ -744,10 +744,6 @@
                 "mechanism": "a"
               },
               {
-                "value": "2604:9a00:2010:a066:8::1",
-                "mechanism": "a"
-              },
-              {
                 "value": "2604:9a00:2100:a043:16::1",
                 "mechanism": "a"
               },
@@ -1281,6 +1277,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.velezmalaga.es\n\nVLOPS5720\n\nv=spf1 include:spf.qsemail.net include:spf.mailjet.com -all"
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.velezmalaga.es\n\nv=spf1 include:spf.qsemail.net include:spf.mailjet.com -all\n\nVLOPS5720"
   }
 }

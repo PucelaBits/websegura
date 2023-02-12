@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "sec1.rcode0.net",
-      "sec2.rcode0.net"
+      "sec2.rcode0.net",
+      "sec1.rcode0.net"
     ],
     "warnings": []
   },
@@ -30,9 +30,9 @@
     "dns_lookups": 12
   },
   "dmarc": {
-    "record": null,
+    "record": "v=DMARC1; p= quarantine; sp=none; rua=mailto:dmarc@mailinblue.com; ruf=mailto:dmarc@mailinblue.com; rf=afrf; pct=100; ri=86400",
     "valid": false,
-    "location": null,
-    "error": "Multiple DMARC policy records are not permitted - https://tools.ietf.org/html/rfc7489#section-6.6.3"
+    "location": "ucjc.edu",
+    "error": "Tag p must have one of the following values: none,quarantine,reject - not  quarantine"
   }
 }

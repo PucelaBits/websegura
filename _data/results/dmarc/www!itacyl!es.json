@@ -3,8 +3,13 @@
   "base_domain": "itacyl.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "All nameservers failed to answer the query itacyl.es. IN NS: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "hostnames": [
+      "chico.rediris.es",
+      "dns.itacyl.es",
+      "sun.rediris.es",
+      "dns2.itacyl.es"
+    ],
+    "warnings": []
   },
   "mx": {
     "hosts": [
@@ -12,7 +17,7 @@
         "preference": 10,
         "hostname": "mxa-006a4e02.gslb.pphosted.com",
         "addresses": [
-          "143.55.146.78"
+          "143.55.148.243"
         ]
       },
       {

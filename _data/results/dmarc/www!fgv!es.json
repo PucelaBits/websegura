@@ -12,11 +12,19 @@
   "mx": {
     "hosts": [
       {
-        "preference": 0,
-        "hostname": "fgv-es.mail.protection.outlook.com",
+        "preference": 10,
+        "hostname": "mx1ext.gva.es",
         "addresses": [
-          "104.47.18.202",
-          "104.47.22.138"
+          "193.145.206.215",
+          "195.77.18.230"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mx2ext.gva.es",
+        "addresses": [
+          "193.145.200.16",
+          "195.77.20.28"
         ]
       }
     ],
