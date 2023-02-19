@@ -15,7 +15,7 @@
         "preference": 10,
         "hostname": "mxa-006a4e02.gslb.pphosted.com",
         "addresses": [
-          "143.55.146.78"
+          "143.55.148.243"
         ]
       },
       {
@@ -32,15 +32,13 @@
     "record": "v=spf1 include:spf.puc.rediris.es a:correo.ine.es a:smtpout.ine.es a:remesas.ine.es a:mta01.ine.es a:mta02.ine.es -all",
     "valid": true,
     "dns_lookups": 6,
-    "warnings": [],
+    "warnings": [
+      "All nameservers failed to answer the query smtpout.ine.es. IN AAAA: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    ],
     "parsed": {
       "pass": [
         {
           "value": "195.254.149.7",
-          "mechanism": "a"
-        },
-        {
-          "value": "195.254.149.12",
           "mechanism": "a"
         },
         {

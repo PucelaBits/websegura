@@ -3,13 +3,8 @@
   "base_domain": "tejeda.eu",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "ns3.dinahosting.com",
-      "ns2.dinahosting.com",
-      "ns.dinahosting.com",
-      "ns4.dinahosting.com"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "mx": {
     "hosts": [

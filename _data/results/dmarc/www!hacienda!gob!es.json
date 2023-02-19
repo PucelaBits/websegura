@@ -40,10 +40,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
-      "The reverse DNS of 193.203.200.244 is smtp2.minhafp.es, but the A/AAAA DNS records for smtp2.minhafp.es do not resolve to 193.203.200.244"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx a:smtp1.hacienda.gob.es a:smtp2.hacienda.gob.es a:smtp3.hacienda.gob.es a:smtp4.hacienda.gob.es a:smtp5.hacienda.gob.es include:spf.protection.outlook.com -all",

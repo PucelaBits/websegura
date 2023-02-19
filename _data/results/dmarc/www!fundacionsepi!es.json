@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "picula.funep.es",
-      "chico.rediris.es",
-      "sun.rediris.es"
+      "sun.rediris.es",
+      "chico.rediris.es"
     ],
     "warnings": []
   },
@@ -16,21 +16,21 @@
         "preference": 10,
         "hostname": "mxa-006a4e02.gslb.pphosted.com",
         "addresses": [
-          "143.55.148.243"
+          "143.55.146.78"
         ]
       },
       {
         "preference": 10,
         "hostname": "mxb-006a4e02.gslb.pphosted.com",
         "addresses": [
-          "143.55.146.78"
+          "143.55.148.243"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx ip4:193.146.141.99 a:fangui.fundacionsepi.es a:picula.fundacionsepi.es mx:picula.funep.es mx:picula.fundacionsepi.es ip4:193.146.141.98 ip4:212.63.110.69 ~all",
+    "record": "v=spf1 mx ip4:193.146.141.99 a:fangui.fundacionsepi.es a:picula.fundacionsepi.es mx:picula.funep.es mx:picula.fundacionsepi.es ip4:193.146.141.98 ip4:193.146.129.230 ip4:212.63.110.69 ~all",
     "valid": true,
     "dns_lookups": 5,
     "warnings": [
@@ -61,6 +61,10 @@
         },
         {
           "value": "193.146.141.98",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "193.146.129.230",
           "mechanism": "ip4"
         },
         {

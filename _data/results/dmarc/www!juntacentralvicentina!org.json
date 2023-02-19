@@ -16,21 +16,21 @@
         "preference": 10,
         "hostname": "mail.juntacentralvicentina.org",
         "addresses": [
-          "193.42.143.170"
+          "185.110.66.7"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 a mx ip4:193.42.143.170 ~all",
+    "record": "v=spf1 a mx ip4:185.110.66.7 ~all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "193.42.143.170",
+          "value": "185.110.66.7",
           "mechanism": "a"
         },
         {
@@ -38,7 +38,7 @@
           "mechanism": "mx"
         },
         {
-          "value": "193.42.143.170",
+          "value": "185.110.66.7",
           "mechanism": "ip4"
         }
       ],

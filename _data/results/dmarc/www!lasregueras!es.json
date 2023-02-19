@@ -3,8 +3,10 @@
   "base_domain": "lasregueras.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "All nameservers failed to answer the query lasregueras.es. IN NS: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "hostnames": [
+      "ns.lasregueras.es"
+    ],
+    "warnings": []
   },
   "mx": {
     "hosts": [
@@ -19,9 +21,10 @@
     "warnings": []
   },
   "spf": {
-    "record": null,
+    "record": "v=spf1 +a +mx +include:dv45.digival.org -all",
     "valid": false,
-    "error": "All nameservers failed to answer the query lasregueras.es. IN TXT: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "warnings": [],
+    "error": "dv45.digival.org does not have a SPF TXT record"
   },
   "dmarc": {
     "record": null,

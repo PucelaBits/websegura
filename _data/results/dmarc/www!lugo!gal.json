@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns.dinahosting.com",
       "ns4.dinahosting.com",
-      "ns2.dinahosting.com",
       "ns3.dinahosting.com",
-      "ns.dinahosting.com"
+      "ns2.dinahosting.com"
     ],
     "warnings": []
   },
@@ -55,9 +55,7 @@
     "record": "v=spf1 a mx a:correo.lugo.gal ip4:195.77.245.58 include:spf.hornetsecurity.com -all",
     "valid": true,
     "dns_lookups": 4,
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
-    ],
+    "warnings": [],
     "parsed": {
       "pass": [
         {
@@ -83,6 +81,10 @@
         {
           "value": "correo.lugo.gal",
           "mechanism": "mx"
+        },
+        {
+          "value": "195.77.245.58",
+          "mechanism": "a"
         },
         {
           "value": "195.77.245.58",

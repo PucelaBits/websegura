@@ -13,23 +13,14 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "clubsenior-enaire-es.mail.protection.outlook.com.enaire.es",
-        "addresses": []
-      },
-      {
-        "preference": 10,
         "hostname": "enaire-es.mail.protection.outlook.com",
         "addresses": [
           "104.47.11.10",
-          "104.47.11.74"
+          "104.47.11.202"
         ]
       }
     ],
-    "warnings": [
-      "The domain clubsenior-enaire-es.mail.protection.outlook.com.enaire.es does not exist",
-      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
-      "The reverse DNS of 104.47.11.74 is mail-db5eur020074.inbound.protection.outlook.com, but the A/AAAA DNS records for mail-db5eur020074.inbound.protection.outlook.com do not resolve to 104.47.11.74"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx ip4:195.55.44.0/24 ip4:185.195.76.0/24 ip4:185.195.77.0/24 include:spf.protection.outlook.com -all",
@@ -38,10 +29,6 @@
     "warnings": [],
     "parsed": {
       "pass": [
-        {
-          "value": "clubsenior-enaire-es.mail.protection.outlook.com.enaire.es",
-          "mechanism": "mx"
-        },
         {
           "value": "enaire-es.mail.protection.outlook.com",
           "mechanism": "mx"

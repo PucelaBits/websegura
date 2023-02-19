@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.cuentadns.com",
       "ns2.cuentadns.com",
-      "ns3.cuentadns.com"
+      "ns3.cuentadns.com",
+      "ns1.cuentadns.com"
     ],
     "warnings": []
   },
@@ -16,7 +16,7 @@
         "preference": 0,
         "hostname": "sfmadrid-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.0.36",
+          "104.47.1.36",
           "104.47.2.36"
         ]
       }
@@ -143,7 +143,7 @@
         },
         {
           "domain": "spf.ivcert.net",
-          "record": "v=spf1 ip4:178.255.229.128/28 ip4:178.255.229.144/28 ip4:178.255.224.64/26 ip4:178.255.224.0/26 ip4:82.223.79.192 ip4:82.223.79.172 ip4:95.129.117.20 ip4:212.170.179.8 ip4:37.230.81.66/26 -all",
+          "record": "v=spf1 ip4:178.255.229.128/28 ip4:178.255.229.144/28 ip4:178.255.224.64/26 ip4:178.255.224.0/26 ip4:82.223.79.192 ip4:82.223.79.172 ip4:95.129.117.20 ip4:212.170.179.8 ip4:37.230.81.66/26 ip4:18.100.193.71 -all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -181,6 +181,10 @@
               },
               {
                 "value": "37.230.81.66/26",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "18.100.193.71",
                 "mechanism": "ip4"
               }
             ],
