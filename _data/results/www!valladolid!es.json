@@ -1,7 +1,7 @@
 {
   "algorithm_version": 2,
-  "end_time": "Tue, 14 Mar 2023 00:50:45 GMT",
-  "grade": "D",
+  "end_time": "Fri, 17 Mar 2023 00:50:23 GMT",
+  "grade": "F",
   "hidden": false,
   "likelihood_indicator": "MEDIUM",
   "response_headers": {
@@ -10,11 +10,11 @@
     "Cache-Control": "max-age=0, must-revalidate",
     "Connection": "Keep-Alive",
     "Content-Encoding": "gzip",
-    "Content-Length": "22691",
+    "Content-Length": "22668",
     "Content-Security-Policy": "frame-ancestors 'self' https://www.valladolid.es https://www.valladolid.gob.es",
     "Content-Type": "text/html;charset=UTF-8",
-    "Date": "Tue, 14 Mar 2023 00:50:21 GMT",
-    "ETag": "\"CD350841776447FE4096369EFBAAEB151678730389000\"",
+    "Date": "Fri, 17 Mar 2023 00:49:47 GMT",
+    "ETag": "\"CD350841776447FE4096369EFBAAEB151679011350000\"",
     "Keep-Alive": "timeout=15",
     "ProxiaInstanceId": "836883674:1312654243:0",
     "Server": "Apache",
@@ -23,12 +23,12 @@
     "X-Content-Type-Options": "nosniff",
     "X-XSS-Protection": "1; mode=block"
   },
-  "scan_id": 35244643,
-  "score": 30,
-  "start_time": "Tue, 14 Mar 2023 00:42:36 GMT",
+  "scan_id": 35336948,
+  "score": 0,
+  "start_time": "Fri, 17 Mar 2023 00:49:42 GMT",
   "state": "FINISHED",
   "status_code": 200,
-  "tests_failed": 2,
-  "tests_passed": 10,
+  "tests_failed": 4,
+  "tests_passed": 8,
   "tests_quantity": 12
 }
