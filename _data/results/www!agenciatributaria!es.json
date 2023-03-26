@@ -1,25 +1,26 @@
 {
   "algorithm_version": 2,
-  "end_time": "Thu, 23 Mar 2023 00:44:51 GMT",
-  "grade": "F",
+  "end_time": "Sun, 26 Mar 2023 00:50:58 GMT",
+  "grade": "C",
   "hidden": false,
   "likelihood_indicator": "MEDIUM",
   "response_headers": {
     "accept-ranges": "bytes",
     "content-length": "65872",
     "content-type": "text/html",
-    "date": "Thu, 23 Mar 2023 00:44:48 GMT",
-    "etag": "\"10150-5f77c32bba695\"",
+    "date": "Sun, 26 Mar 2023 00:50:53 GMT",
     "last-modified": "Wed, 22 Mar 2023 12:21:22 GMT",
     "server": "Apache",
-    "x-site": "Sede"
+    "x-frame-options": "SAMEORIGIN",
+    "x-site": "Sede",
+    "x-xss-protection": "1; mode=block"
   },
-  "scan_id": 35549352,
-  "score": 20,
-  "start_time": "Thu, 23 Mar 2023 00:44:38 GMT",
+  "scan_id": 35645678,
+  "score": 50,
+  "start_time": "Sun, 26 Mar 2023 00:50:36 GMT",
   "state": "FINISHED",
   "status_code": 200,
-  "tests_failed": 5,
-  "tests_passed": 7,
+  "tests_failed": 3,
+  "tests_passed": 9,
   "tests_quantity": 12
 }
