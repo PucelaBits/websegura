@@ -12,9 +12,51 @@
   "mx": {
     "hosts": [
       {
+        "preference": 1,
+        "hostname": "aspmx.l.google.com",
+        "addresses": [
+          "142.251.2.27",
+          "2607:f8b0:4023:c03::1b"
+        ]
+      },
+      {
+        "preference": 5,
+        "hostname": "alt1.aspmx.l.google.com",
+        "addresses": [
+          "2607:f8b0:4003:c15::1a",
+          "64.233.171.26"
+        ]
+      },
+      {
+        "preference": 5,
+        "hostname": "alt2.aspmx.l.google.com",
+        "addresses": [
+          "142.250.152.27",
+          "2607:f8b0:4001:c56::1a"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "alt3.aspmx.l.google.com",
+        "addresses": [
+          "172.253.113.27",
+          "2607:f8b0:4023:1::1b"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "alt4.aspmx.l.google.com",
+        "addresses": [
+          "172.253.126.27",
+          "2607:f8b0:4023:400::1b"
+        ]
+      },
+      {
         "preference": 10,
         "hostname": "correo.utrera.org",
-        "addresses": []
+        "addresses": [
+          "195.53.27.99"
+        ]
       },
       {
         "preference": 10,
@@ -24,9 +66,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx ip4:195.53.27.99 a:smail.utrera.org include:_spf.google.com ~all",
@@ -35,6 +75,26 @@
     "warnings": [],
     "parsed": {
       "pass": [
+        {
+          "value": "aspmx.l.google.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "alt1.aspmx.l.google.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "alt2.aspmx.l.google.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "alt3.aspmx.l.google.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "alt4.aspmx.l.google.com",
+          "mechanism": "mx"
+        },
         {
           "value": "correo.utrera.org",
           "mechanism": "mx"

@@ -4,29 +4,53 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.canaldominios.com",
-      "dns1.canaldominios.com",
-      "dns3.canaldominios.com",
-      "dns4.canaldominios.com"
+      "ns1045.ui-dns.com",
+      "ns1045.ui-dns.org",
+      "ns1045.ui-dns.de",
+      "ns1045.ui-dns.biz"
     ],
     "warnings": []
   },
   "mx": {
     "hosts": [
       {
-        "preference": 10,
-        "hostname": "mx.coin.es",
+        "preference": 1,
+        "hostname": "mail.coin.es",
         "addresses": [
-          "217.116.0.227"
+          "82.98.171.13"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "'utf-8' codec can't decode byte 0x96 in position 10: invalid start byte"
+    "record": "v=spf1 a mx ~all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "2001:8d8:100f:f000::200",
+          "mechanism": "a"
+        },
+        {
+          "value": "217.160.0.213",
+          "mechanism": "a"
+        },
+        {
+          "value": "mail.coin.es",
+          "mechanism": "mx"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
   },
   "dmarc": {
     "record": null,

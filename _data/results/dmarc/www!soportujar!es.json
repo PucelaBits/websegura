@@ -10,8 +10,30 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query 13.47.57.195.in-addr.arpa. IN PTR: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 5,
+        "hostname": "mehali.dipgra.es",
+        "addresses": [
+          "195.57.47.13"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "morente.dipgra.es",
+        "addresses": [
+          "195.57.47.7"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mail.dipgra.es",
+        "addresses": [
+          "195.57.47.11"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": null,

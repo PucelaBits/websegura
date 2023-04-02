@@ -22,7 +22,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:2.139.174.72 a mx a:consorciozaragoza.es ~all",
+    "record": "v=spf1 ip4:2.139.174.72 ip4:213.4.82.201 a mx a:consorciozaragoza.es ~all",
     "valid": true,
     "dns_lookups": 3,
     "warnings": [],
@@ -30,6 +30,10 @@
       "pass": [
         {
           "value": "2.139.174.72",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "213.4.82.201",
           "mechanism": "ip4"
         },
         {

@@ -27,18 +27,18 @@
       },
       {
         "preference": 30,
-        "hostname": "mx.leader-network.com",
+        "hostname": "pmx.lnm.es",
         "addresses": [
-          "194.140.143.69"
+          "194.140.143.72"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx -all",
+    "record": "v=spf1 mx a:pmx.lnm.es -all",
     "valid": true,
-    "dns_lookups": 1,
+    "dns_lookups": 2,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -51,8 +51,12 @@
           "mechanism": "mx"
         },
         {
-          "value": "mx.leader-network.com",
+          "value": "pmx.lnm.es",
           "mechanism": "mx"
+        },
+        {
+          "value": "194.140.143.72",
+          "mechanism": "a"
         }
       ],
       "neutral": [],

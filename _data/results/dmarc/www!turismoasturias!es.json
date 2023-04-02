@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.nominalia.com",
-      "dns1.nominalia.com"
+      "ns2.turismoasturias.es",
+      "ns1.turismoasturias.es"
     ],
     "warnings": []
   },
@@ -13,23 +13,91 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "mail.nominalia.com",
+        "hostname": "mail.turismoasturias.es",
         "addresses": [
-          "195.110.124.132"
+          "51.38.237.179"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "turismoasturias.es does not have a SPF TXT record"
+    "record": "v=spf1 +a +mx +a:dns5.emarketers.com -all",
+    "valid": true,
+    "dns_lookups": 3,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "88.151.16.192",
+          "mechanism": "a"
+        },
+        {
+          "value": "mail.turismoasturias.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "51.38.237.179",
+          "mechanism": "a"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=none",
+    "valid": true,
+    "location": "turismoasturias.es",
+    "warnings": [
+      "rua tag (destination for aggregate reports) not found"
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }

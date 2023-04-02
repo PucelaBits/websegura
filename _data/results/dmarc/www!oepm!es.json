@@ -10,18 +10,40 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query oepm.es. IN MX: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "estrella.oepm.es",
+        "addresses": [
+          "192.187.18.186"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mail.oepm.es",
+        "addresses": []
+      }
+    ],
+    "warnings": [
+      "All nameservers failed to answer the query mail.oepm.es. IN A: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    ]
   },
   "spf": {
     "record": "v=spf1 mx -all",
     "valid": true,
     "dns_lookups": 1,
-    "warnings": [
-      "All nameservers failed to answer the query oepm.es. IN MX: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
-    ],
+    "warnings": [],
     "parsed": {
-      "pass": [],
+      "pass": [
+        {
+          "value": "estrella.oepm.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mail.oepm.es",
+          "mechanism": "mx"
+        }
+      ],
       "neutral": [],
       "softfail": [],
       "fail": [],

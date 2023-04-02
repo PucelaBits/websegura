@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "tirant2.gva.es",
       "tirant.gva.es",
       "ninot2.gva.es",
-      "ninot.gva.es"
+      "ninot.gva.es",
+      "tirant2.gva.es"
     ],
     "warnings": []
   },
@@ -18,7 +18,7 @@
         "hostname": "dival-es.mail.protection.outlook.com",
         "addresses": [
           "104.47.12.36",
-          "104.47.13.36"
+          "104.47.14.36"
         ]
       }
     ],
@@ -28,8 +28,8 @@
     "record": "v=spf1 include:gva.es include:spf.protection.outlook.com -all",
     "valid": false,
     "warnings": [],
-    "error": "Parsing the SPF record requires 12/10 maximum DNS lookups - https://tools.ietf.org/html/rfc7208#section-4.6.4",
-    "dns_lookups": 12
+    "error": "Parsing the SPF record requires 11/10 maximum DNS lookups - https://tools.ietf.org/html/rfc7208#section-4.6.4",
+    "dns_lookups": 11
   },
   "dmarc": {
     "record": null,

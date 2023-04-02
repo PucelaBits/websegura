@@ -4,35 +4,24 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "beta2.sigadel.com",
-      "alpha.sigadel.com"
+      "alpha.sigadel.com",
+      "beta2.sigadel.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 5,
-        "hostname": "correo.diphuelva.es",
-        "addresses": [
-          "195.77.52.34"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 mx ~all",
     "valid": true,
     "dns_lookups": 1,
-    "warnings": [],
+    "warnings": [
+      "All nameservers failed to answer the query diphuelva.es. IN MX: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    ],
     "parsed": {
-      "pass": [
-        {
-          "value": "correo.diphuelva.es",
-          "mechanism": "mx"
-        }
-      ],
+      "pass": [],
       "neutral": [],
       "softfail": [],
       "fail": [],

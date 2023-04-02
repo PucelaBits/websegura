@@ -4,47 +4,19 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ce2022012809002.dnssw.net",
-      "dns4.swhosting.com"
+      "dns4.swhosting.com",
+      "ce2022012809002.dnssw.net"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "ce2022012809002.dnssw.net",
-        "addresses": [
-          "185.61.126.238"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "spf": {
-    "record": "v=spf1 a mx ~all",
-    "valid": true,
-    "dns_lookups": 2,
-    "warnings": [],
-    "parsed": {
-      "pass": [
-        {
-          "value": "212.89.23.124",
-          "mechanism": "a"
-        },
-        {
-          "value": "ce2022012809002.dnssw.net",
-          "mechanism": "mx"
-        }
-      ],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [],
-      "redirect": null,
-      "exp": null,
-      "all": "softfail"
-    }
+    "record": null,
+    "valid": false,
+    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "dmarc": {
     "record": "v=DMARC1; p=none",

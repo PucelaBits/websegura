@@ -16,10 +16,12 @@
     "error": "The domain 2.ava.es does not exist"
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; rua=mailto:ue@ava.es",
+    "record": "v=DMARC1; p=none; pct=100",
     "valid": true,
     "location": "ava.es",
-    "warnings": [],
+    "warnings": [
+      "rua tag (destination for aggregate reports) not found"
+    ],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -29,14 +31,8 @@
         "value": "none",
         "explicit": true
       },
-      "rua": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "ue@ava.es",
-            "size_limit": null
-          }
-        ],
+      "pct": {
+        "value": 100,
         "explicit": true
       },
       "adkim": {
@@ -51,10 +47,6 @@
         "value": [
           "0"
         ],
-        "explicit": false
-      },
-      "pct": {
-        "value": 100,
         "explicit": false
       },
       "rf": {

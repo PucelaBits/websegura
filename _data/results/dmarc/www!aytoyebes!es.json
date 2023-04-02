@@ -25,9 +25,143 @@
     ]
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "aytoyebes.es does not have a SPF TXT record"
+    "record": "v=spf1 a mx include:almazena.com -all",
+    "valid": true,
+    "dns_lookups": 5,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "185.5.126.59",
+          "mechanism": "a"
+        },
+        {
+          "value": "aytoyebes.es",
+          "mechanism": "mx"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "almazena.com",
+          "record": "v=spf1 ip4:185.5.126.11 ip4:185.5.126.0/24 ip4:185.5.125.0/24 include:colaboras.cloud -all",
+          "dns_lookups": 2,
+          "parsed": {
+            "pass": [
+              {
+                "value": "185.5.126.11",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.5.126.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.5.125.0/24",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [
+              {
+                "domain": "colaboras.cloud",
+                "record": "v=spf1 ip4:89.140.186.0/24 ip4:5.56.160.0/21 ip4:185.5.124.0/22 ip4:5.181.44.0/22 include:relay.mailchannels.net -all",
+                "dns_lookups": 1,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "89.140.186.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "5.56.160.0/21",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.5.124.0/22",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "5.181.44.0/22",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [
+                    {
+                      "domain": "relay.mailchannels.net",
+                      "record": "v=spf1 ip4:23.83.208.0/20 ip4:46.232.183.0/24 ip4:199.10.31.235/32 ip4:199.10.31.236/32 ip4:172.255.62.10/32 ip4:172.255.62.11/32 ip4:185.67.193.67/32 ip4:35.85.190.185/32 ~all",
+                      "dns_lookups": 0,
+                      "parsed": {
+                        "pass": [
+                          {
+                            "value": "23.83.208.0/20",
+                            "mechanism": "ip4"
+                          },
+                          {
+                            "value": "46.232.183.0/24",
+                            "mechanism": "ip4"
+                          },
+                          {
+                            "value": "199.10.31.235/32",
+                            "mechanism": "ip4"
+                          },
+                          {
+                            "value": "199.10.31.236/32",
+                            "mechanism": "ip4"
+                          },
+                          {
+                            "value": "172.255.62.10/32",
+                            "mechanism": "ip4"
+                          },
+                          {
+                            "value": "172.255.62.11/32",
+                            "mechanism": "ip4"
+                          },
+                          {
+                            "value": "185.67.193.67/32",
+                            "mechanism": "ip4"
+                          },
+                          {
+                            "value": "35.85.190.185/32",
+                            "mechanism": "ip4"
+                          }
+                        ],
+                        "neutral": [],
+                        "softfail": [],
+                        "fail": [],
+                        "include": [],
+                        "redirect": null,
+                        "exp": null,
+                        "all": "softfail"
+                      },
+                      "warnings": []
+                    }
+                  ],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "fail"
+                },
+                "warnings": []
+              }
+            ],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
     "record": null,

@@ -15,7 +15,7 @@
         "preference": 10,
         "hostname": "mxa-006a4e02.gslb.pphosted.com",
         "addresses": [
-          "143.55.148.243"
+          "143.55.146.78"
         ]
       },
       {
@@ -32,13 +32,15 @@
     "record": "v=spf1 include:spf.puc.rediris.es a:correo.ine.es a:smtpout.ine.es a:remesas.ine.es a:mta01.ine.es a:mta02.ine.es -all",
     "valid": true,
     "dns_lookups": 6,
-    "warnings": [
-      "All nameservers failed to answer the query smtpout.ine.es. IN AAAA: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
-    ],
+    "warnings": [],
     "parsed": {
       "pass": [
         {
           "value": "195.254.149.7",
+          "mechanism": "a"
+        },
+        {
+          "value": "195.254.149.12",
           "mechanism": "a"
         },
         {
@@ -118,7 +120,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; sp=none; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com",
+    "record": "v=DMARC1; p=quarantine; sp=quarantine; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com",
     "valid": true,
     "location": "ine.es",
     "warnings": [],
@@ -128,11 +130,11 @@
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": true
       },
       "sp": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": true
       },
       "fo": {

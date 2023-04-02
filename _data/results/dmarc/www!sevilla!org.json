@@ -5,9 +5,9 @@
   "ns": {
     "hostnames": [
       "ns4.dnsgeneral.net",
+      "ns2.dnsgeneral.net",
       "ns1.dnsgeneral.net",
-      "ns3.dnsgeneral.net",
-      "ns2.dnsgeneral.net"
+      "ns3.dnsgeneral.net"
     ],
     "warnings": []
   },
@@ -15,28 +15,25 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "avas15.sys.voztele.net",
+        "hostname": "mx10.sevilla.org",
         "addresses": [
-          "213.236.3.15"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "avas15b.sys.voztele.net",
-        "addresses": [
-          "213.236.4.15"
+          "77.227.0.32"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:spf.ipzmarketing.com ip4:213.236.6.0/24 ip4:213.236.3.0/24 include:_spf.google.com include:spf.acumbamail.com ~all",
+    "record": "v=spf1 include:spf.ipzmarketing.com ip4:77.227.0.32/32 ip4:213.236.6.0/24 ip4:213.236.3.0/24 include:_spf.google.com include:spf.acumbamail.com ~all",
     "valid": true,
     "dns_lookups": 6,
     "warnings": [],
     "parsed": {
       "pass": [
+        {
+          "value": "77.227.0.32/32",
+          "mechanism": "ip4"
+        },
         {
           "value": "213.236.6.0/24",
           "mechanism": "ip4"

@@ -22,9 +22,33 @@
     "warnings": []
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "sanmartindeoscos.es does not have a SPF TXT record"
+    "record": "v=spf1 +a +mx +ip4:37.153.90.131 ~all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "212.89.23.124",
+          "mechanism": "a"
+        },
+        {
+          "value": "correo.sanmartindeoscos.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "37.153.90.131",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
   },
   "dmarc": {
     "record": null,

@@ -4,18 +4,18 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns02.ono.com",
-      "dns01.ono.com"
+      "dns01.ono.com",
+      "dns02.ono.com"
     ],
     "warnings": []
   },
   "mx": {
     "hosts": [
       {
-        "preference": 5,
-        "hostname": "vmail.altia.es",
+        "preference": 6,
+        "hostname": "mailgw.algeciras.es",
         "addresses": [
-          "217.130.24.175"
+          "188.85.16.242"
         ]
       },
       {

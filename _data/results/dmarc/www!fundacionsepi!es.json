@@ -30,7 +30,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx ip4:193.146.141.99 a:fangui.fundacionsepi.es a:picula.fundacionsepi.es mx:picula.funep.es mx:picula.fundacionsepi.es ip4:193.146.141.98 ip4:193.146.129.230 ip4:212.63.110.69 ~all",
+    "record": "v=spf1 mx ip4:193.146.141.99 a:fangui.fundacionsepi.es a:picula.fundacionsepi.es mx:picula.funep.es mx:picula.fundacionsepi.es ip4:193.146.141.98 ip4:212.63.110.69 ~all",
     "valid": true,
     "dns_lookups": 5,
     "warnings": [
@@ -61,10 +61,6 @@
         },
         {
           "value": "193.146.141.98",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "193.146.129.230",
           "mechanism": "ip4"
         },
         {

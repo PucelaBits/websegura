@@ -31,7 +31,7 @@
   "spf": {
     "record": "v=spf1 ip4:195.235.188.81 ip4:195.235.188.141 include:spf.protection.outlook.com ~all",
     "valid": true,
-    "dns_lookups": 2,
+    "dns_lookups": 1,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -50,8 +50,8 @@
       "include": [
         {
           "domain": "spf.protection.outlook.com",
-          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/50 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 include:spfd.protection.outlook.com -all",
-          "dns_lookups": 1,
+          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/50 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
+          "dns_lookups": 0,
           "parsed": {
             "pass": [
               {
@@ -94,61 +94,7 @@
             "neutral": [],
             "softfail": [],
             "fail": [],
-            "include": [
-              {
-                "domain": "spfd.protection.outlook.com",
-                "record": "v=spf1 ip4:51.4.72.0/24 ip4:51.5.72.0/24 ip4:51.5.80.0/27 ip4:20.47.149.138/32 ip4:51.4.80.0/27 ip6:2a01:4180:4051:0800::/64 ip6:2a01:4180:4050:0800::/64 ip6:2a01:4180:4051:0400::/64 ip6:2a01:4180:4050:0400::/64 -all",
-                "dns_lookups": 0,
-                "parsed": {
-                  "pass": [
-                    {
-                      "value": "51.4.72.0/24",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "51.5.72.0/24",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "51.5.80.0/27",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "20.47.149.138/32",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "51.4.80.0/27",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "2a01:4180:4051:0800::/64",
-                      "mechanism": "ip6"
-                    },
-                    {
-                      "value": "2a01:4180:4050:0800::/64",
-                      "mechanism": "ip6"
-                    },
-                    {
-                      "value": "2a01:4180:4051:0400::/64",
-                      "mechanism": "ip6"
-                    },
-                    {
-                      "value": "2a01:4180:4050:0400::/64",
-                      "mechanism": "ip6"
-                    }
-                  ],
-                  "neutral": [],
-                  "softfail": [],
-                  "fail": [],
-                  "include": [],
-                  "redirect": null,
-                  "exp": null,
-                  "all": "fail"
-                },
-                "warnings": []
-              }
-            ],
+            "include": [],
             "redirect": null,
             "exp": null,
             "all": "fail"
@@ -162,7 +108,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; pct=100; rua=mailto:dmarc@navantia.es; ruf=mailto:dmarc@navantia.es; fo=1",
+    "record": "v=DMARC1; p=quarantine; pct=100; rua=mailto:dmarc@navantia.es; ruf=mailto:dmarc@navantia.es; fo=1",
     "valid": true,
     "location": "navantia.es",
     "warnings": [],
@@ -172,7 +118,7 @@
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": true
       },
       "pct": {
@@ -224,7 +170,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": false
       }
     }
