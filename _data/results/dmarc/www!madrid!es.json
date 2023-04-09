@@ -20,7 +20,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
+      "The reverse DNS of 104.47.22.138 is mail-db8eur060138.inbound.protection.outlook.com, but the A/AAAA DNS records for mail-db8eur060138.inbound.protection.outlook.com do not resolve to 104.47.22.138"
+    ]
   },
   "spf": {
     "record": "v=spf1 ip4:195.55.79.61 ip4:195.55.79.62 ip4:195.55.79.41 ip4:195.55.79.42 ip4:195.55.79.43 ip4:195.55.79.44 ip4:195.55.79.73 ip4:195.55.79.74 ip4:195.55.79.75 ip4:195.55.79.49 ip4:195.55.79.148 ip4:195.55.79.71 ip4:195.55.79.20 ip4:195.55.79.21 ip4:195.55.79.22 ip4:195.55.79.23 ip4:195.55.79.24 ip4:195.55.79.25 include:spf.protection.outlook.com ip4:195.55.79.72 include:spf.augure.com a:origen2.iam.akamai.c.mad.interhost.com a:origen.iam.akamai.c.mad.interhost.com a:origen3.iam.akamai.c.mad.interhost.com ~all",

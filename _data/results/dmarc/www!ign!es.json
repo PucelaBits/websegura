@@ -14,12 +14,12 @@
       {
         "preference": 10,
         "hostname": "mail01.fomento.es",
-        "addresses": []
+        "addresses": [
+          "192.148.212.221"
+        ]
       }
     ],
-    "warnings": [
-      "All nameservers failed to answer the query mail01.fomento.es. IN A: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": null,

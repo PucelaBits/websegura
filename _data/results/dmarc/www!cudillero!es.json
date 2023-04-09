@@ -4,14 +4,22 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.asegi.es",
-      "ns2.asegi.es"
+      "ns2.asegi.es",
+      "ns1.asegi.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.cudillero.es",
+        "addresses": [
+          "194.53.148.173"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx a ip6:2a01:b5c0:0:2::168/64 ~all",

@@ -3,12 +3,24 @@
   "base_domain": "parquenaturalsomiedo.com",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
+    "hostnames": [
+      "ns11.servicio-online.net",
+      "ns12.servicio-online.net",
+      "ns10.servicio-online.net"
+    ],
+    "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx.parquenaturalsomiedo.com",
+        "addresses": [
+          "217.116.0.227"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 redirect=spf.dominioabsoluto.net",

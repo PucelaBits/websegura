@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.gestiondecuenta.com",
-      "ns.gestiondecuenta.com",
+      "ns4.gestiondecuenta.com",
       "ns3.gestiondecuenta.com",
-      "ns4.gestiondecuenta.com"
+      "ns.gestiondecuenta.com",
+      "ns2.gestiondecuenta.com"
     ],
     "warnings": []
   },
@@ -22,10 +22,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
-      "The reverse DNS of 104.47.13.36 is mail-he1eur040036.inbound.protection.outlook.com, but the A/AAAA DNS records for mail-he1eur040036.inbound.protection.outlook.com do not resolve to 104.47.13.36"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:213.99.29.169 ip4:213.99.29.169 ip4:213.99.29.168/29 ip4:213.4.82.192/26 ip4:82.98.134.240 include:spf.protection.outlook.com include:_spf.espublico.com include:_flatsvcs.espublico.com -all",

@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns1.dnsxperta.com",
       "ns2.dnsxperta.com",
-      "ns3.dnsxperta.com",
-      "ns1.dnsxperta.com"
+      "ns3.dnsxperta.com"
     ],
     "warnings": []
   },
@@ -17,14 +17,11 @@
         "hostname": "godelleta-es.mail.protection.outlook.com",
         "addresses": [
           "104.47.18.138",
-          "104.47.18.202"
+          "104.47.22.138"
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
-      "The reverse DNS of 104.47.18.202 is mail-am7eur060202.inbound.protection.outlook.com, but the A/AAAA DNS records for mail-am7eur060202.inbound.protection.outlook.com do not resolve to 104.47.18.202"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com ip4:194.143.202.167 include:dnsxperta.com-all",
@@ -36,6 +33,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.godelleta.es\n\nMS=ms70425054\n\nv=spf1 include:spf.protection.outlook.com ip4:194.143.202.167 include:dnsxperta.com-all"
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.godelleta.es\n\nv=spf1 include:spf.protection.outlook.com ip4:194.143.202.167 include:dnsxperta.com-all\n\nMS=ms70425054"
   }
 }

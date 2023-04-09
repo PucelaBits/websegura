@@ -144,7 +144,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; rua=mailto:sistemas@isdefe.es; ruf=mailto:sistemas@isdefe.es; fo=1",
+    "record": "v=DMARC1; p=none; rua=mailto:sistemas@isdefe.es; ruf=mailto:sistemas@isdefe.es",
     "valid": true,
     "location": "isdefe.es",
     "warnings": [],
@@ -177,18 +177,18 @@
         ],
         "explicit": true
       },
-      "fo": {
-        "value": [
-          "1"
-        ],
-        "explicit": true
-      },
       "adkim": {
         "value": "r",
         "explicit": false
       },
       "aspf": {
         "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
         "explicit": false
       },
       "pct": {

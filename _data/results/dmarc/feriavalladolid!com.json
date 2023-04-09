@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns.feriavalladolid.com",
       "ns1.feriavalladolid.com",
-      "ns2.feriavalladolid.com"
+      "ns2.feriavalladolid.com",
+      "ns.feriavalladolid.com"
     ],
     "warnings": []
   },
@@ -17,14 +17,11 @@
         "hostname": "feriavalladolid-com.mail.eo.outlook.com",
         "addresses": [
           "104.47.0.36",
-          "104.47.2.36"
+          "104.47.1.36"
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
-      "The reverse DNS of 104.47.0.36 is mail-he1eur010036.inbound.protection.outlook.com, but the A/AAAA DNS records for mail-he1eur010036.inbound.protection.outlook.com do not resolve to 104.47.0.36"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com -all",

@@ -16,11 +16,14 @@
         "hostname": "tarragona-cat.mail.protection.outlook.com",
         "addresses": [
           "104.47.12.36",
-          "104.47.14.36"
+          "104.47.13.36"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
+      "The reverse DNS of 104.47.12.36 is mail-db3eur040036.inbound.protection.outlook.com, but the A/AAAA DNS records for mail-db3eur040036.inbound.protection.outlook.com do not resolve to 104.47.12.36"
+    ]
   },
   "spf": {
     "record": "v=spf1 a mx include:spf.protection.outlook.com include:spf.ipzmarketing.com include:amazonses.com ip4:217.160.207.239 ip4:92.54.14.18 ip4:195.55.52.102 -all",

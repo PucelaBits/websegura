@@ -3,38 +3,22 @@
   "base_domain": "diphuelva.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "alpha.sigadel.com",
-      "beta2.sigadel.com"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "mx": {
     "hosts": [],
     "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "spf": {
-    "record": "v=spf1 mx ~all",
-    "valid": true,
-    "dns_lookups": 1,
-    "warnings": [
-      "All nameservers failed to answer the query diphuelva.es. IN MX: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
-    ],
-    "parsed": {
-      "pass": [],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [],
-      "redirect": null,
-      "exp": null,
-      "all": "softfail"
-    }
+    "record": null,
+    "valid": false,
+    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "dmarc": {
     "record": null,
     "valid": false,
     "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   }
 }

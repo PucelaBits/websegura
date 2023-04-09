@@ -10,8 +10,27 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 0,
+        "hostname": "mx20.profesionalhosting.com",
+        "addresses": [
+          "185.18.197.69",
+          "212.63.111.240",
+          "95.85.44.99"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mx10.profesionalhosting.com",
+        "addresses": [
+          "185.18.197.200",
+          "212.63.111.240",
+          "95.85.44.99"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:45.154.57.249 include:spf.profesionalhosting.com -all",

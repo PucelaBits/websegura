@@ -3,10 +3,8 @@
   "base_domain": "tineo.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "dv1.digival.org"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "mx": {
     "hosts": [
@@ -14,15 +12,15 @@
         "preference": 10,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.250.141.26",
-          "2607:f8b0:4023:c0d::1a"
+          "142.250.141.27",
+          "2607:f8b0:4023:c03::1b"
         ]
       },
       {
         "preference": 20,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "2607:f8b0:4003:c15::1a",
+          "2607:f8b0:4003:c15::1b",
           "64.233.171.26"
         ]
       },
@@ -39,7 +37,7 @@
         "hostname": "aspmx2.googlemail.com",
         "addresses": [
           "2607:f8b0:4003:c15::1b",
-          "64.233.171.26"
+          "64.233.171.27"
         ]
       },
       {
@@ -54,16 +52,16 @@
         "preference": 30,
         "hostname": "aspmx4.googlemail.com",
         "addresses": [
-          "172.253.113.27",
-          "2607:f8b0:4023:1::1b"
+          "172.253.113.26",
+          "2607:f8b0:4023:1::1a"
         ]
       },
       {
         "preference": 30,
         "hostname": "aspmx5.googlemail.com",
         "addresses": [
-          "172.253.126.26",
-          "2607:f8b0:4023:400::1b"
+          "172.253.126.27",
+          "2607:f8b0:4023:400::1a"
         ]
       }
     ],
@@ -293,6 +291,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   }
 }
