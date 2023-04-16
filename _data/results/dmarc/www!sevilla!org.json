@@ -4,24 +4,16 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns3.dnsgeneral.net",
-      "ns2.dnsgeneral.net",
+      "ns1.dnsgeneral.net",
       "ns4.dnsgeneral.net",
-      "ns1.dnsgeneral.net"
+      "ns3.dnsgeneral.net",
+      "ns2.dnsgeneral.net"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mx10.sevilla.org",
-        "addresses": [
-          "77.227.0.32"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 include:spf.ipzmarketing.com ip4:77.227.0.32/32 ip4:213.236.6.0/24 ip4:213.236.3.0/24 include:_spf.google.com include:spf.acumbamail.com ~all",

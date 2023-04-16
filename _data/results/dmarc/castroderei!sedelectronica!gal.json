@@ -7,31 +7,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "in1-smtp.messagingengine.com",
-        "addresses": [
-          "103.168.172.216",
-          "66.111.4.71",
-          "66.111.4.72",
-          "66.111.4.73",
-          "66.111.4.74",
-          "66.111.4.75"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "in2-smtp.messagingengine.com",
-        "addresses": [
-          "64.147.123.51",
-          "64.147.123.52"
-        ]
-      }
-    ],
-    "warnings": [
-      "The reverse DNS of 103.168.172.216 is mx1.messagingengine.com, but the A/AAAA DNS records for mx1.messagingengine.com do not resolve to 103.168.172.216"
-    ]
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "spf": {
     "record": null,

@@ -4,39 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.serv513734.servidoresdns.net",
-      "dns1.serv513734.servidoresdns.net"
+      "dns1.serv513734.servidoresdns.net",
+      "dns2.serv513734.servidoresdns.net"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mail.mcp.es",
-        "addresses": [
-          "194.179.77.231"
-        ]
-      },
-      {
-        "preference": 90,
-        "hostname": "as.solsenet.com",
-        "addresses": [
-          "77.229.94.207"
-        ]
-      },
-      {
-        "preference": 100,
-        "hostname": "pruebamx.mcp.es",
-        "addresses": [
-          "194.179.77.241"
-        ]
-      }
-    ],
-    "warnings": [
-      "The domain 241.red-194-179-77.customer.static.ccgg.telefonica.net does not exist",
-      "The reverse DNS of 194.179.77.241 is 241.red-194-179-77.customer.static.ccgg.telefonica.net, but the A/AAAA DNS records for 241.red-194-179-77.customer.static.ccgg.telefonica.net do not resolve to 194.179.77.241"
-    ]
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 a mx include:spf.acumbamail.com a:smtp.mcp.es a:mail.mcp.es ip4:194.179.77.241 include:mail.zendesk.com ~all",

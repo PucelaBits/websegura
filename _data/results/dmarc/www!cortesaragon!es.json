@@ -15,7 +15,7 @@
         "preference": 0,
         "hostname": "cortesaragon-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.12.36",
+          "104.47.13.36",
           "104.47.14.36"
         ]
       }
@@ -142,6 +142,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.cortesaragon.es\n\ncortesaragon.es-673019094"
   }
 }

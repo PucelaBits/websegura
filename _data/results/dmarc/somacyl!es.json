@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.somacyl.es",
       "ns2.somacyl.es",
+      "ns1.somacyl.es",
       "ns.somacyl.es"
     ],
     "warnings": []
@@ -17,11 +17,14 @@
         "hostname": "somacyl-es.mail.protection.outlook.com",
         "addresses": [
           "104.47.11.10",
-          "104.47.11.74"
+          "104.47.11.202"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
+      "The reverse DNS of 104.47.11.202 is mail-am0eur020202.inbound.protection.outlook.com, but the A/AAAA DNS records for mail-am0eur020202.inbound.protection.outlook.com do not resolve to 104.47.11.202"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com -all",

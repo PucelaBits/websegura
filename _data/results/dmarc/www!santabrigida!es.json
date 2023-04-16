@@ -6,8 +6,8 @@
     "hostnames": [
       "ns.dinahosting.com",
       "ns3.dinahosting.com",
-      "ns4.dinahosting.com",
-      "ns2.dinahosting.com"
+      "ns2.dinahosting.com",
+      "ns4.dinahosting.com"
     ],
     "warnings": []
   },
@@ -18,11 +18,14 @@
         "hostname": "santabrigida-es.mail.protection.outlook.com",
         "addresses": [
           "104.47.17.138",
-          "104.47.18.74"
+          "104.47.17.74"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
+      "The reverse DNS of 104.47.17.138 is mail-vi1eur050138.inbound.protection.outlook.com, but the A/AAAA DNS records for mail-vi1eur050138.inbound.protection.outlook.com do not resolve to 104.47.17.138"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com -all",

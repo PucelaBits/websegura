@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.altia.es",
-      "ns2.altia.es"
+      "ns2.altia.es",
+      "ns1.altia.es"
     ],
     "warnings": []
   },
@@ -44,6 +44,10 @@
       }
     ],
     "warnings": [
+      "All nameservers failed to answer the query ns1.interdomain.net. IN AAAA: Server 127.0.0.53 UDP port 53 answered SERVFAIL",
+      "The reverse DNS of 217.116.0.206 is ns1.interdomain.net, but the A/AAAA DNS records for ns1.interdomain.net do not resolve to 217.116.0.206",
+      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
+      "The reverse DNS of 86.109.99.246 is ns2.interdomain.net, but the A/AAAA DNS records for ns2.interdomain.net do not resolve to 86.109.99.246",
       "Hostname mail2.fuescyl.com is listed in multiple MX records"
     ]
   },

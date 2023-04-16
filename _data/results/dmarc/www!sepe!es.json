@@ -21,12 +21,12 @@
       {
         "preference": 50,
         "hostname": "correo2.sepe.es",
-        "addresses": [
-          "192.187.23.248"
-        ]
+        "addresses": []
       }
     ],
-    "warnings": []
+    "warnings": [
+      "All nameservers failed to answer the query correo2.sepe.es. IN A: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    ]
   },
   "spf": {
     "record": "v=spf1 ip4:192.187.23.248/31 include:spf.protection.outlook.com ~all",

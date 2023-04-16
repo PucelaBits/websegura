@@ -3,8 +3,12 @@
   "base_domain": "domini.barcelona",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
+    "hostnames": [
+      "pedraforca.lacuinadel.cat",
+      "balandrau.lacuinadel.cat",
+      "matagalls.lacuinadel.cat"
+    ],
+    "warnings": []
   },
   "mx": {
     "hosts": [
@@ -17,7 +21,12 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
+      "The reverse DNS of 104.47.17.74 is mail-db8eur050074.inbound.protection.outlook.com, but the A/AAAA DNS records for mail-db8eur050074.inbound.protection.outlook.com do not resolve to 104.47.17.74",
+      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
+      "The reverse DNS of 104.47.18.74 is mail-am6eur050074.inbound.protection.outlook.com, but the A/AAAA DNS records for mail-am6eur050074.inbound.protection.outlook.com do not resolve to 104.47.18.74"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com include:spf.zoho.eu include:eu.transmail.net ~all",

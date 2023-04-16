@@ -4,34 +4,51 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns01.ono.com",
-      "dns02.ono.com"
+      "dns02.ono.com",
+      "dns01.ono.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 6,
-        "hostname": "mailgw.algeciras.es",
-        "addresses": [
-          "188.85.16.242"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "mail.algeciras.es",
-        "addresses": [
-          "188.85.16.242"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "algeciras.es does not have a SPF TXT record"
+    "record": "v=spf1 mx a ip4:188.85.16.242 ip4:188.85.16.244 -all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "mailgw.algeciras.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mail.algeciras.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "188.85.16.243",
+          "mechanism": "a"
+        },
+        {
+          "value": "188.85.16.242",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "188.85.16.244",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
     "record": null,

@@ -22,14 +22,96 @@
     "warnings": []
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "aytopenamelleraalta.es does not have a SPF TXT record"
+    "record": "v=spf1 mx a -all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "mail.aytopenamelleraalta.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "212.89.23.124",
+          "mechanism": "a"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1;p=reject;sp=none;adkim=r;aspf=r;pct=100;fo=1;rf=afrf;ri=86400;rua=mailto:00ce08b769@rua.easydmarc.eu;ruf=mailto:00ce08b769@ruf.easydmarc.eu",
+    "valid": true,
+    "location": "aytopenamelleraalta.es",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "reject",
+        "explicit": true
+      },
+      "sp": {
+        "value": "none",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": true
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": true
+      },
+      "pct": {
+        "value": 100,
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "1"
+        ],
+        "explicit": true
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": true
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "00ce08b769@rua.easydmarc.eu",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "00ce08b769@ruf.easydmarc.eu",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      }
+    }
   }
 }
