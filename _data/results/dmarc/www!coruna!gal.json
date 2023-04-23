@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns4.coruna.es",
-      "ns1.coruna.es",
       "ns2.coruna.es",
-      "ns3.coruna.es"
+      "ns3.coruna.es",
+      "ns4.coruna.es",
+      "ns1.coruna.es"
     ],
     "warnings": []
   },
@@ -37,15 +37,14 @@
     ],
     "warnings": [
       "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
-      "The reverse DNS of 195.57.99.212 is ara.coruna.es, but the A/AAAA DNS records for ara.coruna.es do not resolve to 195.57.99.212"
+      "The reverse DNS of 195.57.99.209 is bakdmz.coruna.es, but the A/AAAA DNS records for bakdmz.coruna.es do not resolve to 195.57.99.209"
     ]
   },
   "spf": {
     "record": "v=spf1 mx a:oxi.coruna.es a:bakdmz.coruna.es include:spf.protection.outlook.com include:_migracion.coruna.es -all",
     "valid": true,
-    "dns_lookups": 10,
+    "dns_lookups": 9,
     "warnings": [
-      "The domain 77.226.244.90 does not exist",
       "The domain 195.57.99.209 does not exist",
       "The domain 195.57.99.210 does not exist",
       "The domain 195.57.99.211 does not exist",
@@ -133,8 +132,8 @@
         },
         {
           "domain": "_migracion.coruna.es",
-          "record": "v=spf1 a:77.226.244.90 a:195.57.99.209 a:195.57.99.210 a:195.57.99.211 a:195.57.99.212 -all",
-          "dns_lookups": 5,
+          "record": "v=spf1 a:195.57.99.209 a:195.57.99.210 a:195.57.99.211 a:195.57.99.212 -all",
+          "dns_lookups": 4,
           "parsed": {
             "pass": [],
             "neutral": [],
@@ -146,7 +145,6 @@
             "all": "fail"
           },
           "warnings": [
-            "The domain 77.226.244.90 does not exist",
             "The domain 195.57.99.209 does not exist",
             "The domain 195.57.99.210 does not exist",
             "The domain 195.57.99.211 does not exist",

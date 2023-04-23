@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "mirzam.ccc.upv.es",
       "sun.rediris.es",
+      "mirzam.ccc.upv.es",
       "vega.cc.upv.es",
       "chico.rediris.es"
     ],
@@ -35,7 +35,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
+      "The reverse DNS of 158.42.250.62 is mx2.cc.upv.es, but the A/AAAA DNS records for mx2.cc.upv.es do not resolve to 158.42.250.62"
+    ]
   },
   "spf": {
     "record": "v=spf1 a:smtpsal1.cc.upv.es a:smtpsal2.cc.upv.es a:smtpsal3.cc.upv.es a:smtpsal4.cc.upv.es a:smtpsalv.cc.upv.es a:smtpsalr.cc.upv.es a:smtpxv.cc.upv.es a:smtpxr.cc.upv.es ~all",

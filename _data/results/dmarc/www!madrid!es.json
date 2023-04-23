@@ -23,9 +23,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:195.55.79.61 ip4:195.55.79.62 ip4:195.55.79.41 ip4:195.55.79.42 ip4:195.55.79.43 ip4:195.55.79.44 ip4:195.55.79.73 ip4:195.55.79.74 ip4:195.55.79.75 ip4:195.55.79.49 ip4:195.55.79.148 ip4:195.55.79.71 ip4:195.55.79.20 ip4:195.55.79.21 ip4:195.55.79.22 ip4:195.55.79.23 ip4:195.55.79.24 ip4:195.55.79.25 include:spf.protection.outlook.com ip4:195.55.79.72 include:spf.augure.com a:origen2.iam.akamai.c.mad.interhost.com a:origen.iam.akamai.c.mad.interhost.com a:origen3.iam.akamai.c.mad.interhost.com ~all",
+    "record": "v=spf1 ip4:195.55.79.61 ip4:195.55.79.62 ip4:195.55.79.41 ip4:195.55.79.42 ip4:195.55.79.43 ip4:195.55.79.44 ip4:195.55.79.73 ip4:195.55.79.74 ip4:195.55.79.75 ip4:195.55.79.49 ip4:195.55.79.148 ip4:195.55.79.71 ip4:195.55.79.20 ip4:195.55.79.21 ip4:195.55.79.22 ip4:195.55.79.23 ip4:195.55.79.24 ip4:195.55.79.25 include:spf.protection.outlook.com ip4:195.55.79.72 include:spf.augure.com include:spf.mailjet.com a:origen2.iam.akamai.c.mad.interhost.com a:origen.iam.akamai.c.mad.interhost.com a:origen3.iam.akamai.c.mad.interhost.com ~all",
     "valid": true,
-    "dns_lookups": 6,
+    "dns_lookups": 7,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -244,6 +244,39 @@
                 "warnings": []
               }
             ],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "spf.mailjet.com",
+          "record": "v=spf1 ip4:87.253.232.0/21 ip4:185.189.236.0/22 ip4:185.211.120.0/22 ip4:185.250.236.0/22 ~all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "87.253.232.0/21",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.189.236.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.211.120.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.250.236.0/22",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
             "redirect": null,
             "exp": null,
             "all": "softfail"

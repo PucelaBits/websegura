@@ -5,9 +5,9 @@
   "ns": {
     "hostnames": [
       "isabel.dip-badajoz.es",
+      "proxy.dip-badajoz.es",
       "artemis.ttd.net",
-      "ineco.nic.es",
-      "proxy.dip-badajoz.es"
+      "ineco.nic.es"
     ],
     "warnings": []
   },
@@ -42,12 +42,73 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
+      "The reverse DNS of 195.57.11.113 is sdb-mta03.dip-badajoz.es, but the A/AAAA DNS records for sdb-mta03.dip-badajoz.es do not resolve to 195.57.11.113"
+    ]
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "lobon.es does not have a SPF TXT record"
+    "record": "v=spf1 a mx ptr ip4:195.57.11.0/25 mx:lobon.es -all",
+    "valid": true,
+    "dns_lookups": 3,
+    "warnings": [
+      "The ptr mechanism should not be used - https://tools.ietf.org/html/rfc7208#section-5.5"
+    ],
+    "parsed": {
+      "pass": [
+        {
+          "value": "195.57.11.78",
+          "mechanism": "a"
+        },
+        {
+          "value": "sdb-mta03.dip-badajoz.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "sdb-mta04.dip-badajoz.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "sdb-mta01.dip-badajoz.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "sdb-mta02.dip-badajoz.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "",
+          "mechanism": "ptr"
+        },
+        {
+          "value": "195.57.11.0/25",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "sdb-mta03.dip-badajoz.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "sdb-mta04.dip-badajoz.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "sdb-mta01.dip-badajoz.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "sdb-mta02.dip-badajoz.es",
+          "mechanism": "mx"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
     "record": null,

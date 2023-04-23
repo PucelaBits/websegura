@@ -20,10 +20,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
-      "The reverse DNS of 104.47.17.138 is mail-vi1eur050138.inbound.protection.outlook.com, but the A/AAAA DNS records for mail-vi1eur050138.inbound.protection.outlook.com do not resolve to 104.47.17.138"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 a mx include:spfsede.soria.es include:domicenter.net include:spf.protection.outlook.com -all",
@@ -33,19 +30,27 @@
     "parsed": {
       "pass": [
         {
-          "value": "104.21.71.40",
+          "value": "104.26.2.120",
           "mechanism": "a"
         },
         {
-          "value": "172.67.143.22",
+          "value": "104.26.3.120",
           "mechanism": "a"
         },
         {
-          "value": "2606:4700:3031::6815:4728",
+          "value": "172.67.75.3",
           "mechanism": "a"
         },
         {
-          "value": "2606:4700:3037::ac43:8f16",
+          "value": "2606:4700:20::681a:278",
+          "mechanism": "a"
+        },
+        {
+          "value": "2606:4700:20::681a:378",
+          "mechanism": "a"
+        },
+        {
+          "value": "2606:4700:20::ac43:4b03",
           "mechanism": "a"
         },
         {

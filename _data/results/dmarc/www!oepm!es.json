@@ -3,26 +3,30 @@
   "base_domain": "oepm.es",
   "dnssec": true,
   "ns": {
-    "hostnames": [],
-    "error": "All nameservers failed to answer the query oepm.es. IN NS: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "hostnames": [
+      "ns1.age.gob.es",
+      "ns2.age.gob.es"
+    ],
+    "warnings": []
   },
   "mx": {
     "hosts": [
       {
         "preference": 10,
         "hostname": "estrella.oepm.es",
-        "addresses": []
+        "addresses": [
+          "192.187.18.186"
+        ]
       },
       {
         "preference": 20,
         "hostname": "mail.oepm.es",
-        "addresses": []
+        "addresses": [
+          "192.187.18.139"
+        ]
       }
     ],
-    "warnings": [
-      "All nameservers failed to answer the query estrella.oepm.es. IN A: Server 1.0.0.1 UDP port 53 answered SERVFAIL",
-      "All nameservers failed to answer the query mail.oepm.es. IN A: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx -all",

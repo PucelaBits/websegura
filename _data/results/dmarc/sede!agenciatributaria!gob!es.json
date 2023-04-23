@@ -18,62 +18,9 @@
     "error": "sede.agenciatributaria.gob.es does not have a SPF TXT record"
   },
   "dmarc": {
-    "record": "v=DMARC1; p=reject; fo=1; ri=3600; rua=mailto:informesdmarc@correo.aeat.es; ruf=mailto:informesdmarc@correo.aeat.es",
-    "valid": true,
-    "location": "agenciatributaria.gob.es",
-    "warnings": [
-      "correo.aeat.es does not indicate that it accepts DMARC reports about agenciatributaria.gob.es - Authorization record not found: agenciatributaria.gob.es._report._dmarc.correo.aeat.es IN TXT \"v=DMARC1\"",
-      "correo.aeat.es does not indicate that it accepts DMARC reports about agenciatributaria.gob.es - Authorization record not found: agenciatributaria.gob.es._report._dmarc.correo.aeat.es IN TXT \"v=DMARC1\""
-    ],
-    "tags": {
-      "v": {
-        "value": "DMARC1",
-        "explicit": true
-      },
-      "p": {
-        "value": "reject",
-        "explicit": true
-      },
-      "fo": {
-        "value": [
-          "1"
-        ],
-        "explicit": true
-      },
-      "ri": {
-        "value": 3600,
-        "explicit": true
-      },
-      "rua": {
-        "value": "mailto:informesdmarc@correo.aeat.es",
-        "explicit": true
-      },
-      "ruf": {
-        "value": "mailto:informesdmarc@correo.aeat.es",
-        "explicit": true
-      },
-      "adkim": {
-        "value": "r",
-        "explicit": false
-      },
-      "aspf": {
-        "value": "r",
-        "explicit": false
-      },
-      "pct": {
-        "value": 100,
-        "explicit": false
-      },
-      "rf": {
-        "value": [
-          "afrf"
-        ],
-        "explicit": false
-      },
-      "sp": {
-        "value": "reject",
-        "explicit": false
-      }
-    }
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   }
 }

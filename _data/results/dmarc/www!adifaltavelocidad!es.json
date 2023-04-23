@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.adif.es",
-      "ns1.adif.es"
+      "ns1.adif.es",
+      "ns2.adif.es"
     ],
     "warnings": []
   },
@@ -57,10 +57,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
-      "The reverse DNS of 104.47.12.36 is mail-db3eur040036.inbound.protection.outlook.com, but the A/AAAA DNS records for mail-db3eur040036.inbound.protection.outlook.com do not resolve to 104.47.12.36"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx a:smtp.adif.es a:ebro.adif.es a:duero.adif.es include:spf.protection.outlook.com exists:%{i}.spf.hc1197-70.eu.iphmx.com ~all",

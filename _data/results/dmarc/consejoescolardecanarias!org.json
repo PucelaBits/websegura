@@ -15,40 +15,40 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "172.253.122.27",
-          "2607:f8b0:4004:c08::1a"
+          "142.250.113.26",
+          "2607:f8b0:4023:1000::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "209.85.202.26",
-          "2a00:1450:400b:c00::1b"
+          "142.250.152.26",
+          "2607:f8b0:4001:c56::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "2a00:1450:400c:c0b::1b",
-          "64.233.184.26"
+          "172.253.113.27",
+          "2607:f8b0:4023:1::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "142.250.27.27",
-          "2a00:1450:4025:401::1b"
+          "172.253.126.27",
+          "2607:f8b0:4023:400::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "142.250.153.27",
-          "2a00:1450:4013:c16::1a"
+          "2607:f8b0:4002:c09::1a",
+          "64.233.185.27"
         ]
       }
     ],
@@ -248,7 +248,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1;p=reject;rua=mailto:0873088ae6eb4dab9ba538d77a51e40e@dmarc-reports.cloudflare.net,mailto:webmaster@consejoescolardecanarias.org;sp=reject;aspf=s;ruf=mailto:webmaster@consejoescolardecanarias.org;adkim=s",
+    "record": "v=DMARC1;p=reject;rua=mailto:0873088ae6eb4dab9ba538d77a51e40e@dmarc-reports.cloudflare.net;sp=reject;aspf=s;adkim=s",
     "valid": true,
     "location": "consejoescolardecanarias.org",
     "warnings": [],
@@ -267,11 +267,6 @@
             "scheme": "mailto",
             "address": "0873088ae6eb4dab9ba538d77a51e40e@dmarc-reports.cloudflare.net",
             "size_limit": null
-          },
-          {
-            "scheme": "mailto",
-            "address": "webmaster@consejoescolardecanarias.org",
-            "size_limit": null
           }
         ],
         "explicit": true
@@ -282,16 +277,6 @@
       },
       "aspf": {
         "value": "s",
-        "explicit": true
-      },
-      "ruf": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "webmaster@consejoescolardecanarias.org",
-            "size_limit": null
-          }
-        ],
         "explicit": true
       },
       "adkim": {

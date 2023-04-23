@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "ns05.ns-cloud4b.org",
-      "ns06.ns-cloud4b.com",
-      "ns03.ns-cloud4b.net"
+      "ns03.ns-cloud4b.net",
+      "ns06.ns-cloud4b.com"
     ],
     "warnings": []
   },
@@ -21,10 +21,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
-      "The reverse DNS of 104.47.51.138 is mail-dbaeur030138.inbound.protection.outlook.com, but the A/AAAA DNS records for mail-dbaeur030138.inbound.protection.outlook.com do not resolve to 104.47.51.138"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx ip4:5.56.62.219 ip4:168.245.29.58 ip4:74.55.114.130 ip4:185.79.129.97 ip4:82.144.103.50 ip4:82.144.103.51 ip4:213.0.45.236 ip4:213.99.28.0/24 ip4:213.0.44.0/23 ip4:212.89.15.0/24 ip4:185.79.128.0/22 ip4:154.58.16.0/22 include:spf.protection.outlook.com include:servers.mcsv.net -all",

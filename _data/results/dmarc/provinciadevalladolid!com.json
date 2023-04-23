@@ -10,16 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 5,
-        "hostname": "correo1.dipvalladolid.es",
-        "addresses": [
-          "89.6.103.180"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 mx include:spf.protection.outlook.com ip4:89.6.103.145 -all",

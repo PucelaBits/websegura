@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns.gestiondecuenta.com",
-      "ns2.gestiondecuenta.com",
+      "ns3.gestiondecuenta.com",
       "ns4.gestiondecuenta.com",
-      "ns3.gestiondecuenta.com"
+      "ns.gestiondecuenta.com",
+      "ns2.gestiondecuenta.com"
     ],
     "warnings": []
   },
@@ -17,24 +17,24 @@
         "preference": 10,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "2a00:1450:400c:c0b::1a",
-          "64.233.184.27"
+          "172.253.113.27",
+          "2607:f8b0:4023:1::1b"
         ]
       },
       {
         "preference": 20,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.251.16.27",
-          "2607:f8b0:4004:c09::1a"
+          "142.250.138.27",
+          "2607:f8b0:4023:1006::1a"
         ]
       },
       {
         "preference": 30,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "209.85.202.26",
-          "2a00:1450:400b:c00::1a"
+          "142.250.152.27",
+          "2607:f8b0:4001:c56::1a"
         ]
       }
     ],

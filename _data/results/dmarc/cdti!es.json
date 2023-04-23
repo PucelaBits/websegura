@@ -25,12 +25,16 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:spf.protection.outlook.com ip4:212.163.54.109 ip4:212.163.54.98 ip4:212.163.54.99 ip4:212.163.54.108 ip4:212.163.54.125 include:spf.sendinblue.com -all",
+    "record": "v=spf1 include:spf.protection.outlook.com ip4:212.163.54.123 ip4:212.163.54.109 ip4:212.163.54.98 ip4:212.163.54.99 ip4:212.163.54.108 ip4:212.163.54.125 ip4:212.163.54.120 include:spf.sendinblue.com -all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
     "parsed": {
       "pass": [
+        {
+          "value": "212.163.54.123",
+          "mechanism": "ip4"
+        },
         {
           "value": "212.163.54.109",
           "mechanism": "ip4"
@@ -49,6 +53,10 @@
         },
         {
           "value": "212.163.54.125",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "212.163.54.120",
           "mechanism": "ip4"
         }
       ],

@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns3053579.ip-137-74-93.eu",
-      "sdns2.ovh.net"
+      "sdns2.ovh.net",
+      "ns3053579.ip-137-74-93.eu"
     ],
     "warnings": []
   },
@@ -22,25 +22,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:195.77.81.171 ~all",
-    "valid": true,
-    "dns_lookups": 0,
-    "warnings": [],
-    "parsed": {
-      "pass": [
-        {
-          "value": "195.77.81.171",
-          "mechanism": "ip4"
-        }
-      ],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [],
-      "redirect": null,
-      "exp": null,
-      "all": "softfail"
-    }
+    "record": null,
+    "valid": false,
+    "error": "All nameservers failed to answer the query antequera.es. IN TXT: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
   },
   "dmarc": {
     "record": null,

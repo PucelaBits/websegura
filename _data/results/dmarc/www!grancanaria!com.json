@@ -13,49 +13,75 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "smtp.grancanaria.com",
+        "hostname": "mx-01-eu-central-1.prod.hydra.sophos.com",
         "addresses": [
-          "212.64.178.10"
+          "3.127.84.23",
+          "35.156.61.191"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mx-02-eu-central-1.prod.hydra.sophos.com",
+        "addresses": [
+          "3.127.84.23",
+          "35.156.61.191"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx a:smtp.grancanaria.com ip4:212.64.178.10 ip4:213.60.255.116 ip4:213.60.255.178 -all",
+    "record": "v=spf1 include:_spf_eucentral1.prod.hydra.sophos.com ~all",
     "valid": true,
-    "dns_lookups": 2,
+    "dns_lookups": 1,
     "warnings": [],
     "parsed": {
-      "pass": [
-        {
-          "value": "smtp.grancanaria.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "212.64.178.10",
-          "mechanism": "a"
-        },
-        {
-          "value": "212.64.178.10",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "213.60.255.116",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "213.60.255.178",
-          "mechanism": "ip4"
-        }
-      ],
+      "pass": [],
       "neutral": [],
       "softfail": [],
       "fail": [],
-      "include": [],
+      "include": [
+        {
+          "domain": "_spf_eucentral1.prod.hydra.sophos.com",
+          "record": "v=spf1 ip4:94.140.18.0/24 ip4:35.159.27.0/26 ip4:35.159.27.64/26 ip4:35.159.27.128/26 ip4:35.159.27.192/26 ~all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "94.140.18.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "35.159.27.0/26",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "35.159.27.64/26",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "35.159.27.128/26",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "35.159.27.192/26",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        }
+      ],
       "redirect": null,
       "exp": null,
-      "all": "fail"
+      "all": "softfail"
     }
   },
   "dmarc": {

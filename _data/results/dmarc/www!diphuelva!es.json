@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "alpha.sigadel.com",
-      "beta2.sigadel.com"
+      "beta2.sigadel.com",
+      "alpha.sigadel.com"
     ],
     "warnings": []
   },
@@ -14,14 +14,11 @@
       {
         "preference": 5,
         "hostname": "correo.diphuelva.es",
-        "addresses": [
-          "195.77.52.34"
-        ]
+        "addresses": []
       }
     ],
     "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
-      "The reverse DNS of 195.77.52.34 is smtp.diphuelva.org, but the A/AAAA DNS records for smtp.diphuelva.org do not resolve to 195.77.52.34"
+      "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
     ]
   },
   "spf": {
@@ -49,6 +46,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   }
 }

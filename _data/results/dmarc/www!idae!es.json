@@ -20,10 +20,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
-      "The reverse DNS of 104.47.17.74 is mail-db8eur050074.inbound.protection.outlook.com, but the A/AAAA DNS records for mail-db8eur050074.inbound.protection.outlook.com do not resolve to 104.47.17.74"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com -all",
