@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "icmcom.madrid.org",
-      "olimpia.madrid.org"
+      "olimpia.madrid.org",
+      "icmcom.madrid.org"
     ],
     "warnings": []
   },
@@ -23,7 +23,7 @@
         "hostname": "aspmx.l.google.com",
         "addresses": [
           "142.250.138.27",
-          "2607:f8b0:4023:1006::1b"
+          "2607:f8b0:4023:1009::1a"
         ]
       },
       {
@@ -31,15 +31,15 @@
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
           "142.250.152.27",
-          "2607:f8b0:4001:c56::1a"
+          "2607:f8b0:4001:c56::1b"
         ]
       },
       {
         "preference": 30,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "172.253.113.27",
-          "2607:f8b0:4023:1::1b"
+          "172.253.113.26",
+          "2607:f8b0:4023:1::1a"
         ]
       },
       {
@@ -47,15 +47,15 @@
         "hostname": "aspmx2.googlemail.com",
         "addresses": [
           "142.250.152.26",
-          "2607:f8b0:4001:c56::1a"
+          "2607:f8b0:4001:c56::1b"
         ]
       },
       {
         "preference": 40,
         "hostname": "aspmx3.googlemail.com",
         "addresses": [
-          "172.253.113.26",
-          "2607:f8b0:4023:1::1b"
+          "172.253.113.27",
+          "2607:f8b0:4023:1::1a"
         ]
       }
     ],

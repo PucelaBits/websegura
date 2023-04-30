@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns.gipuzkoa.eus",
       "dns2.gipuzkoa.net",
-      "dns.gipuzkoa.net"
+      "dns.gipuzkoa.net",
+      "dns.gipuzkoa.eus"
     ],
     "warnings": []
   },
@@ -26,7 +26,7 @@
     ]
   },
   "spf": {
-    "record": "v=spf1 mx ip4:82.116.160.145/32 ip4:82.116.160.138/32 include:spf.protection.outlook.com -all",
+    "record": "v=spf1 mx ip4:82.116.160.145/32 ip4:82.116.160.138/32 ip4:82.116.160.225/32 include:spf.protection.outlook.com -all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
@@ -42,6 +42,10 @@
         },
         {
           "value": "82.116.160.138/32",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "82.116.160.225/32",
           "mechanism": "ip4"
         }
       ],

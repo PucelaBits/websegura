@@ -118,7 +118,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=reject; rua=mailto:dmarc-reports@reus.cat; ruf=mailto:dmarc-forensics@reus.cat; fo=1",
+    "record": "v=DMARC1; p=reject; sp=reject; rua=mailto:dmarc-reports@reus.cat; ruf=mailto:dmarc-forensics@reus.cat; fo=1",
     "valid": true,
     "location": "reus.cat",
     "warnings": [],
@@ -128,6 +128,10 @@
         "explicit": true
       },
       "p": {
+        "value": "reject",
+        "explicit": true
+      },
+      "sp": {
         "value": "reject",
         "explicit": true
       },
@@ -177,10 +181,6 @@
       },
       "ri": {
         "value": 86400,
-        "explicit": false
-      },
-      "sp": {
-        "value": "reject",
         "explicit": false
       }
     }

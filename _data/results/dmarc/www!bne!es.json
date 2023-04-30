@@ -221,6 +221,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "All nameservers failed to answer the query _dmarc.bne.es. IN TXT: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.bne.es\n\ngoogle-site-verification=saMst-k33VwrMgDHW6BOmzssLFjgzGY3CJbblRjOJWc"
   }
 }

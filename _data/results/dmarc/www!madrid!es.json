@@ -15,7 +15,7 @@
         "preference": 1,
         "hostname": "madrid-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.18.202",
+          "104.47.18.138",
           "104.47.22.138"
         ]
       }
@@ -23,9 +23,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:195.55.79.61 ip4:195.55.79.62 ip4:195.55.79.41 ip4:195.55.79.42 ip4:195.55.79.43 ip4:195.55.79.44 ip4:195.55.79.73 ip4:195.55.79.74 ip4:195.55.79.75 ip4:195.55.79.49 ip4:195.55.79.148 ip4:195.55.79.71 ip4:195.55.79.20 ip4:195.55.79.21 ip4:195.55.79.22 ip4:195.55.79.23 ip4:195.55.79.24 ip4:195.55.79.25 include:spf.protection.outlook.com ip4:195.55.79.72 include:spf.augure.com include:spf.mailjet.com a:origen2.iam.akamai.c.mad.interhost.com a:origen.iam.akamai.c.mad.interhost.com a:origen3.iam.akamai.c.mad.interhost.com ~all",
+    "record": "v=spf1 ip4:195.55.79.61 ip4:195.55.79.62 ip4:195.55.79.41 ip4:195.55.79.42 ip4:195.55.79.43 ip4:195.55.79.44 ip4:195.55.79.73 ip4:195.55.79.74 ip4:195.55.79.75 ip4:195.55.79.49 ip4:195.55.79.148 ip4:195.55.79.71 ip4:195.55.79.20 ip4:195.55.79.21 ip4:195.55.79.22 ip4:195.55.79.23 ip4:195.55.79.24 ip4:195.55.79.25 include:spf.protection.outlook.com ip4:195.55.79.72 include:spf.augure.com include:spf.mailjet.com include:spf.mandrillapp.com a:origen2.iam.akamai.c.mad.interhost.com a:origen.iam.akamai.c.mad.interhost.com a:origen3.iam.akamai.c.mad.interhost.com ~all",
     "valid": true,
-    "dns_lookups": 7,
+    "dns_lookups": 8,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -270,6 +270,71 @@
               },
               {
                 "value": "185.250.236.0/22",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "spf.mandrillapp.com",
+          "record": "v=spf1 ip4:198.2.128.0/24 ip4:198.2.132.0/22 ip4:198.2.136.0/23 ip4:198.2.145.0/24 ip4:198.2.186.0/23 ip4:205.201.131.128/25 ip4:205.201.134.128/25 ip4:205.201.136.0/23 ip4:205.201.139.0/24 ip4:198.2.177.0/24 ip4:198.2.178.0/23 ip4:198.2.180.0/24 ~all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "198.2.128.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "198.2.132.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "198.2.136.0/23",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "198.2.145.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "198.2.186.0/23",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "205.201.131.128/25",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "205.201.134.128/25",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "205.201.136.0/23",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "205.201.139.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "198.2.177.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "198.2.178.0/23",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "198.2.180.0/24",
                 "mechanism": "ip4"
               }
             ],

@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.dnsxperta.com",
       "ns1.dnsxperta.com",
+      "ns2.dnsxperta.com",
       "ns3.dnsxperta.com"
     ],
     "warnings": []
@@ -23,7 +23,9 @@
       {
         "preference": 10,
         "hostname": "elpuig.prored.es",
-        "addresses": []
+        "addresses": [
+          "83.136.188.48"
+        ]
       },
       {
         "preference": 100,
@@ -33,9 +35,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The domain elpuig.prored.es does not exist"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com a:mr-01.gestiona.espublico.com ip4:213.4.82.201 -all",

@@ -4,14 +4,22 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.ddgi.cat",
-      "dns2.ddgi.cat"
+      "dns2.ddgi.cat",
+      "dns1.ddgi.cat"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 5,
+        "hostname": "mx.ddgi.cat",
+        "addresses": [
+          "195.93.170.80"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx ip4:213.0.55.194 ip4:195.93.170.5 ip4:195.93.170.139 ip4:195.93.170.40 include:_spf.google.com ~all",

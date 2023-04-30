@@ -4,13 +4,20 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns9.softwin.es",
-      "serverdns.softwin.es"
+      "serverdns.softwin.es",
+      "dns9.softwin.es"
     ],
     "warnings": []
   },
   "mx": {
     "hosts": [
+      {
+        "preference": 0,
+        "hostname": "correo3.dipujaen.es",
+        "addresses": [
+          "46.39.192.61"
+        ]
+      },
       {
         "preference": 5,
         "hostname": "correo.dipujaen.es",
@@ -42,6 +49,10 @@
     "warnings": [],
     "parsed": {
       "pass": [
+        {
+          "value": "correo3.dipujaen.es",
+          "mechanism": "mx"
+        },
         {
           "value": "correo.dipujaen.es",
           "mechanism": "mx"

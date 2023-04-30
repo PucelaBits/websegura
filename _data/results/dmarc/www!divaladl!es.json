@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.dnsxperta.com",
       "ns3.dnsxperta.com",
+      "ns1.dnsxperta.com",
       "ns2.dnsxperta.com"
     ],
     "warnings": []
@@ -16,7 +16,7 @@
         "preference": 10,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.250.138.27",
+          "142.250.114.26",
           "2607:f8b0:4023:1002::1a"
         ]
       },
@@ -32,7 +32,7 @@
         "preference": 30,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "172.253.113.26",
+          "172.253.113.27",
           "2607:f8b0:4023:1::1a"
         ]
       },
@@ -41,15 +41,15 @@
         "hostname": "aspmx2.googlemail.com",
         "addresses": [
           "142.250.152.27",
-          "2607:f8b0:4001:c56::1a"
+          "2607:f8b0:4001:c56::1b"
         ]
       },
       {
         "preference": 40,
         "hostname": "aspmx3.googlemail.com",
         "addresses": [
-          "172.253.113.26",
-          "2607:f8b0:4023:1::1b"
+          "172.253.113.27",
+          "2607:f8b0:4023:1::1a"
         ]
       }
     ],

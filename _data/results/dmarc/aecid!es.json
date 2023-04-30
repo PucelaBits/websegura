@@ -32,18 +32,11 @@
     "record": "v=spf1 mx:aecid.es include:spf.protection.outlook.com -all",
     "valid": true,
     "dns_lookups": 2,
-    "warnings": [],
+    "warnings": [
+      "All nameservers failed to answer the query aecid.es. IN MX: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    ],
     "parsed": {
-      "pass": [
-        {
-          "value": "mailhost2.aecid.es",
-          "mechanism": "mx"
-        },
-        {
-          "value": "mailhost3.aecid.es",
-          "mechanism": "mx"
-        }
-      ],
+      "pass": [],
       "neutral": [],
       "softfail": [],
       "fail": [],

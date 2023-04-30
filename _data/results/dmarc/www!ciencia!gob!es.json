@@ -43,7 +43,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx ip4:212.128.122.3 ip4:212.128.122.4 ip4:193.147.0.22 ip4:193.147.0.23 include:spf.acumbamail.com include:spf.protection.outlook.com include:spf.hornetsecurity.com -all",
+    "record": "v=spf1 mx include:spf.acumbamail.com include:spf.protection.outlook.com include:spf.hornetsecurity.com -all",
     "valid": true,
     "dns_lookups": 4,
     "warnings": [],
@@ -64,22 +64,6 @@
         {
           "value": "mx04.hornetsecurity.com",
           "mechanism": "mx"
-        },
-        {
-          "value": "212.128.122.3",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "212.128.122.4",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "193.147.0.22",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "193.147.0.23",
-          "mechanism": "ip4"
         }
       ],
       "neutral": [],

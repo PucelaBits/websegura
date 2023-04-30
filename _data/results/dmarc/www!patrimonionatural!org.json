@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "ns1.patrimonionatural.org",
-      "ns2.patrimonionatural.org",
-      "ns.patrimonionatural.org"
+      "ns.patrimonionatural.org",
+      "ns2.patrimonionatural.org"
     ],
     "warnings": []
   },
@@ -17,7 +17,7 @@
         "hostname": "patrimonionatural-org.mail.protection.outlook.com",
         "addresses": [
           "104.47.0.36",
-          "104.47.2.36"
+          "104.47.1.36"
         ]
       }
     ],
@@ -99,9 +99,53 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; adkim=s; aspf=s; p=quarantine",
-    "valid": false,
+    "record": "v=DMARC1; p=quarantine; adkim=s; aspf=s",
+    "valid": true,
     "location": "patrimonionatural.org",
-    "error": "the p tag must immediately follow the v tag"
+    "warnings": [
+      "rua tag (destination for aggregate reports) not found"
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "s",
+        "explicit": true
+      },
+      "aspf": {
+        "value": "s",
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "quarantine",
+        "explicit": false
+      }
+    }
   }
 }

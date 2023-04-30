@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns3.cuentadns.com",
+      "ns2.cuentadns.com",
       "ns1.cuentadns.com",
-      "ns2.cuentadns.com"
+      "ns3.cuentadns.com"
     ],
     "warnings": []
   },
@@ -89,7 +89,7 @@
         },
         {
           "domain": "spf.ivcert.net",
-          "record": "v=spf1 ip4:178.255.229.128/28 ip4:178.255.229.144/28 ip4:178.255.224.64/26 ip4:178.255.224.0/26 ip4:82.223.79.192 ip4:82.223.79.172 ip4:95.129.117.20 ip4:212.170.179.8 ip4:37.230.81.66/26 ip4:18.100.193.71 -all",
+          "record": "v=spf1 ip4:178.255.229.128/28 ip4:178.255.229.144/28 ip4:178.255.224.64/26 ip4:178.255.224.0/26 ip4:82.223.79.192 ip4:95.129.117.20 ip4:212.170.179.8 ip4:37.230.81.66/26 ip4:18.100.193.71 ip4:18.100.104.235 ip4:18.100.36.15 -all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -114,10 +114,6 @@
                 "mechanism": "ip4"
               },
               {
-                "value": "82.223.79.172",
-                "mechanism": "ip4"
-              },
-              {
                 "value": "95.129.117.20",
                 "mechanism": "ip4"
               },
@@ -131,6 +127,14 @@
               },
               {
                 "value": "18.100.193.71",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "18.100.104.235",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "18.100.36.15",
                 "mechanism": "ip4"
               }
             ],

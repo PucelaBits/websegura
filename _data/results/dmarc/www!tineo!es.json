@@ -3,8 +3,10 @@
   "base_domain": "tineo.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
+    "hostnames": [
+      "dv1.digival.org"
+    ],
+    "warnings": []
   },
   "mx": {
     "hosts": [
@@ -12,16 +14,16 @@
         "preference": 10,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.250.114.26",
-          "2607:f8b0:4023:1009::1b"
+          "142.250.115.27",
+          "2607:f8b0:4023:1006::1b"
         ]
       },
       {
         "preference": 20,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "142.250.152.26",
-          "2607:f8b0:4001:c56::1a"
+          "142.250.152.27",
+          "2607:f8b0:4001:c56::1b"
         ]
       },
       {
@@ -36,7 +38,7 @@
         "preference": 30,
         "hostname": "aspmx2.googlemail.com",
         "addresses": [
-          "142.250.152.26",
+          "142.250.152.27",
           "2607:f8b0:4001:c56::1b"
         ]
       },
@@ -44,7 +46,7 @@
         "preference": 30,
         "hostname": "aspmx3.googlemail.com",
         "addresses": [
-          "172.253.113.26",
+          "172.253.113.27",
           "2607:f8b0:4023:1::1a"
         ]
       },
@@ -53,15 +55,15 @@
         "hostname": "aspmx4.googlemail.com",
         "addresses": [
           "172.253.126.26",
-          "2607:f8b0:4023:400::1b"
+          "2607:f8b0:4023:400::1a"
         ]
       },
       {
         "preference": 30,
         "hostname": "aspmx5.googlemail.com",
         "addresses": [
-          "2607:f8b0:4002:c09::1a",
-          "64.233.185.26"
+          "142.251.15.27",
+          "2607:f8b0:4002:c2c::1a"
         ]
       }
     ],

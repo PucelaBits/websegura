@@ -3,8 +3,15 @@
   "base_domain": "uimp.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "All nameservers failed to answer the query uimp.es. IN NS: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "hostnames": [
+      "ns1.age.gob.es",
+      "ns2.age.gob.es",
+      "artemis.ttd.net",
+      "cloudflare",
+      "offcorrmad.uimp.es",
+      "suimpdnsmad01.uimp.es"
+    ],
+    "warnings": []
   },
   "mx": {
     "hosts": [
@@ -12,8 +19,8 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.251.116.27",
-          "2607:f8b0:4023:1006::1b"
+          "142.250.113.27",
+          "2607:f8b0:4023:1002::1b"
         ]
       },
       {
@@ -21,7 +28,7 @@
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
           "142.250.152.26",
-          "2607:f8b0:4001:c56::1a"
+          "2607:f8b0:4001:c56::1b"
         ]
       },
       {
@@ -36,16 +43,16 @@
         "preference": 10,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "172.253.126.27",
-          "2607:f8b0:4023:400::1b"
+          "172.253.126.26",
+          "2607:f8b0:4023:400::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "2607:f8b0:4002:c09::1a",
-          "64.233.185.26"
+          "142.251.15.26",
+          "2607:f8b0:4002:c2c::1a"
         ]
       }
     ],
@@ -55,11 +62,13 @@
     "record": "v=spf1 include:uimp.ip-zone.com include:_spf.google.com a mx -all",
     "valid": true,
     "dns_lookups": 9,
-    "warnings": [
-      "All nameservers failed to answer the query uimp.es. IN AAAA: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
-    ],
+    "warnings": [],
     "parsed": {
       "pass": [
+        {
+          "value": "212.128.111.246",
+          "mechanism": "a"
+        },
         {
           "value": "aspmx.l.google.com",
           "mechanism": "mx"

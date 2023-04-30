@@ -14,12 +14,12 @@
       {
         "preference": 10,
         "hostname": "mail.fsbarbara.com",
-        "addresses": [
-          "91.126.72.25"
-        ]
+        "addresses": []
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
+    ]
   },
   "spf": {
     "record": "v=spf1 ip4:91.126.40.175/32 ~all",
