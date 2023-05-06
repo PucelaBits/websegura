@@ -1,28 +1,20 @@
 {
   "algorithm_version": 2,
-  "end_time": "Wed, 03 May 2023 00:45:00 GMT",
+  "end_time": "Sat, 06 May 2023 01:11:08 GMT",
   "grade": "F",
   "hidden": false,
   "likelihood_indicator": "MEDIUM",
   "response_headers": {
-    "Cache-control": "no-cache, no-store, must-revalidate, max-age=0",
-    "Content-encoding": "gzip",
-    "Content-length": "25498",
-    "Content-type": "text/html;charset=UTF-8",
-    "Date": "Wed, 03 May 2023 00:44:09 GMT",
-    "Expires": "Thu, 01 Jan 1970 00:00:00 GMT",
-    "Last-modified": "Tue, 02 May 2023 20:00:14 GMT",
-    "Pragma": "no-cache",
-    "Set-cookie": "JSESSIONID=CBD3B0327044D02541E6CC777FAF8A75.prointera; Path=/; Secure; HttpOnly, TS0181b561=01b9fcf5f81ce00a0d67f813eea3075c7397db686694389097731968b73ebc42dfe02dd458f40f775d1dedc8271bf047607e1bca4491888087fc303fcaa22186a415047efd; Path=/; Domain=.www.sepe.es",
-    "Vary": "Accept-Encoding",
-    "X-magnolia-registration": "Registered"
+    "Connection": "Keep-Alive",
+    "Content-Length": "8294",
+    "Server": "BigIP"
   },
-  "scan_id": 36966552,
-  "score": 0,
-  "start_time": "Wed, 03 May 2023 00:44:05 GMT",
+  "scan_id": 37072384,
+  "score": 20,
+  "start_time": "Sat, 06 May 2023 01:10:44 GMT",
   "state": "FINISHED",
-  "status_code": 200,
-  "tests_failed": 7,
-  "tests_passed": 5,
+  "status_code": 503,
+  "tests_failed": 5,
+  "tests_passed": 7,
   "tests_quantity": 12
 }
