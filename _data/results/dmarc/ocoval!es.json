@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.redunda.com",
-      "ns.redunda.com"
+      "ns.redunda.com",
+      "ns2.redunda.com"
     ],
     "warnings": []
   },
@@ -15,7 +15,7 @@
         "preference": 0,
         "hostname": "ocoval-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.17.138",
+          "104.47.17.74",
           "104.47.18.74"
         ]
       }
@@ -143,7 +143,7 @@
               },
               {
                 "domain": "_spf.eu.mailgun.org",
-                "record": "v=spf1 ip4:141.193.32.0/23 ip4:159.135.140.80/29 ip4:159.135.132.128/25 ip4:161.38.204.0/22 ip4:87.253.232.0/21 ip4:185.189.236.0/22 ip4:185.211.120.0/22 ip4:185.250.236.0/22 ip4:143.55.236.0/22 ~all",
+                "record": "v=spf1 ip4:141.193.32.0/23 ip4:159.135.140.80/29 ip4:159.135.132.128/25 ip4:161.38.204.0/22 ip4:87.253.232.0/21 ip4:185.189.236.0/22 ip4:185.211.120.0/22 ip4:185.250.236.0/22 ip4:143.55.236.0/22 ip4:198.244.60.0/22 ~all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
@@ -181,6 +181,10 @@
                     },
                     {
                       "value": "143.55.236.0/22",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "198.244.60.0/22",
                       "mechanism": "ip4"
                     }
                   ],

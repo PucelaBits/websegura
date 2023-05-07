@@ -17,33 +17,12 @@
         "addresses": [
           "46.39.192.61"
         ]
-      },
-      {
-        "preference": 5,
-        "hostname": "correo.dipujaen.es",
-        "addresses": [
-          "195.57.106.136"
-        ]
-      },
-      {
-        "preference": 15,
-        "hostname": "correo2.dipujaen.es",
-        "addresses": [
-          "195.57.106.137"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mail.dipujaen.es",
-        "addresses": [
-          "195.57.106.132"
-        ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 +mx include:spf.protection.outlook.com -all",
+    "record": "v=spf1 +mx +ip4:195.57.106.132 +ip4:195.57.106.136 +ip4:195.57.106.137 include:spf.protection.outlook.com -all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
@@ -54,16 +33,16 @@
           "mechanism": "mx"
         },
         {
-          "value": "correo.dipujaen.es",
-          "mechanism": "mx"
+          "value": "195.57.106.132",
+          "mechanism": "ip4"
         },
         {
-          "value": "correo2.dipujaen.es",
-          "mechanism": "mx"
+          "value": "195.57.106.136",
+          "mechanism": "ip4"
         },
         {
-          "value": "mail.dipujaen.es",
-          "mechanism": "mx"
+          "value": "195.57.106.137",
+          "mechanism": "ip4"
         }
       ],
       "neutral": [],

@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns1106.ui-dns.com",
       "ns1101.ui-dns.org",
       "ns1064.ui-dns.de",
-      "ns1106.ui-dns.com",
       "ns1121.ui-dns.biz"
     ],
     "warnings": []
@@ -17,7 +17,7 @@
         "preference": 10,
         "hostname": "aytopbpanes-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.18.202",
+          "104.47.18.138",
           "104.47.22.138"
         ]
       }
@@ -95,9 +95,57 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=none; rua=mailto:csirt@seresco.es",
+    "valid": true,
+    "location": "aytopbpanes.es",
+    "warnings": [
+      "seresco.es does not indicate that it accepts DMARC reports about aytopbpanes.es - Authorization record not found: aytopbpanes.es._report._dmarc.seresco.es IN TXT \"v=DMARC1\""
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "rua": {
+        "value": "mailto:csirt@seresco.es",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }
