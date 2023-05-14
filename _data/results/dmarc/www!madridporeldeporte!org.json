@@ -20,7 +20,12 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
+      "The reverse DNS of 2a01:238:20a:202:50f0::2097 is smtp.rzone.de, but the A/AAAA DNS records for smtp.rzone.de do not resolve to 2a01:238:20a:202:50f0::2097",
+      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
+      "The reverse DNS of 81.169.145.98 is smtp.rzone.de, but the A/AAAA DNS records for smtp.rzone.de do not resolve to 81.169.145.98"
+    ]
   },
   "spf": {
     "record": null,

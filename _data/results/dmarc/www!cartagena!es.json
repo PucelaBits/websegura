@@ -4,14 +4,22 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns6.servidoresdns.net",
-      "dns5.servidoresdns.net"
+      "dns5.servidoresdns.net",
+      "dns6.servidoresdns.net"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "ispconfig.ayto-cartagena.es",
+        "addresses": [
+          "77.230.242.43"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:77.230.242.32/27 mx:ispconfig.ayto-cartagena.es include=spf.dominioabsoluto.net",

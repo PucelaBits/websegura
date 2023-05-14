@@ -4,16 +4,24 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1069.ui-dns.biz",
       "ns1071.ui-dns.org",
-      "ns1096.ui-dns.de",
-      "ns1080.ui-dns.com"
+      "ns1069.ui-dns.biz",
+      "ns1080.ui-dns.com",
+      "ns1096.ui-dns.de"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query 120.60.60.95.in-addr.arpa. IN PTR: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.fundacionideo.org",
+        "addresses": [
+          "95.60.60.120"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 +a +mx +a:mail.fundacionideo.org -all",
@@ -23,7 +31,7 @@
     "parsed": {
       "pass": [
         {
-          "value": "5.196.214.72",
+          "value": "77.231.150.97",
           "mechanism": "a"
         },
         {

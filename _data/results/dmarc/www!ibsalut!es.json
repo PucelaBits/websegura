@@ -3,8 +3,15 @@
   "base_domain": "ibsalut.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
+    "hostnames": [
+      "ns1.ibsalut.es",
+      "dns2.ibsalut.es",
+      "ns2.ssib.es",
+      "ns1.ssib.es",
+      "dns1.ibsalut.es",
+      "ns2.ibsalut.es"
+    ],
+    "warnings": []
   },
   "mx": {
     "hosts": [

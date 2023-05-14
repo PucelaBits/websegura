@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.7i-misdns.net",
-      "ns2.7i-misdns.net"
+      "ns2.dnshachepublicidad.com",
+      "ns1.dnshachepublicidad.com"
     ],
     "warnings": []
   },
@@ -15,20 +15,43 @@
         "preference": 5,
         "hostname": "mail.visitlapalma.es",
         "addresses": [
-          "116.202.214.20"
+          "136.243.79.86"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx a ip4:116.202.0.0/15 mx include:visitlapalma.es -all",
-    "valid": false,
+    "record": "v=spf1 +a +mx +a:dnshachepublicidad.com -all",
+    "valid": true,
+    "dns_lookups": 3,
     "warnings": [],
-    "error": "Include loop: visitlapalma.es"
+    "parsed": {
+      "pass": [
+        {
+          "value": "136.243.79.86",
+          "mechanism": "a"
+        },
+        {
+          "value": "mail.visitlapalma.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "136.243.79.86",
+          "mechanism": "a"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none",
+    "record": "v=DMARC1; p=quarantine; adkim=s; aspf=s",
     "valid": true,
     "location": "visitlapalma.es",
     "warnings": [
@@ -40,16 +63,16 @@
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": true
       },
       "adkim": {
-        "value": "r",
-        "explicit": false
+        "value": "s",
+        "explicit": true
       },
       "aspf": {
-        "value": "r",
-        "explicit": false
+        "value": "s",
+        "explicit": true
       },
       "fo": {
         "value": [
@@ -72,7 +95,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": false
       }
     }

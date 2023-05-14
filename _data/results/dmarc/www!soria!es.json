@@ -15,8 +15,8 @@
         "preference": 0,
         "hostname": "soria-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.17.74",
-          "104.47.18.74"
+          "104.47.17.138",
+          "104.47.17.74"
         ]
       }
     ],
@@ -95,12 +95,16 @@
             "include": [
               {
                 "domain": "spfa.domicenter.net",
-                "record": "v=spf1 ip4:176.28.114.97/28 -all",
+                "record": "v=spf1 ip4:176.28.114.97/28 ip4:176.28.125.225/28 -all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
                     {
                       "value": "176.28.114.97/28",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "176.28.125.225/28",
                       "mechanism": "ip4"
                     }
                   ],
@@ -116,12 +120,16 @@
               },
               {
                 "domain": "spfb.domicenter.net",
-                "record": "v=spf1 ip4:176.28.125.225/28 -all",
+                "record": "v=spf1 ip4:82.223.8.172 ip4:82.223.196.37 -all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
                     {
-                      "value": "176.28.125.225/28",
+                      "value": "82.223.8.172",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "82.223.196.37",
                       "mechanism": "ip4"
                     }
                   ],

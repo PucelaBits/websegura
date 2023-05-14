@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "silmail.silme.es",
-      "servdns3.silme.es"
+      "servdns3.silme.es",
+      "silmail.silme.es"
     ],
     "warnings": []
   },
@@ -15,29 +15,21 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.250.141.27",
-          "2607:f8b0:4023:c0d::1b"
+          "142.250.138.26",
+          "2607:f8b0:4023:1004::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "2607:f8b0:4003:c15::1b",
-          "64.233.171.27"
+          "142.250.152.26",
+          "2607:f8b0:4001:c56::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
-        "addresses": [
-          "142.250.152.27",
-          "2607:f8b0:4001:c56::1a"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
           "172.253.113.26",
           "2607:f8b0:4023:1::1a"
@@ -45,10 +37,18 @@
       },
       {
         "preference": 10,
+        "hostname": "alt3.aspmx.l.google.com",
+        "addresses": [
+          "172.253.126.27",
+          "2607:f8b0:4023:400::1a"
+        ]
+      },
+      {
+        "preference": 10,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "172.253.126.26",
-          "2607:f8b0:4023:400::1b"
+          "173.194.219.26",
+          "2607:f8b0:4002:c03::1a"
         ]
       }
     ],

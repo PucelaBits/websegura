@@ -4,15 +4,17 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.asegi.es",
-      "ns2.asegi.es"
+      "ns232.iservices4u.eu",
+      "ns233.iservices4u.eu",
+      "ns230.iservices4u.eu",
+      "ns231.iservices4u.eu"
     ],
     "warnings": []
   },
   "mx": {
     "hosts": [
       {
-        "preference": 10,
+        "preference": 0,
         "hostname": "mail.cudillero.es",
         "addresses": [
           "194.53.148.173"
@@ -22,33 +24,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx a ip6:2a01:b5c0:0:2::168/64 ~all",
-    "valid": true,
-    "dns_lookups": 2,
-    "warnings": [],
-    "parsed": {
-      "pass": [
-        {
-          "value": "mail.cudillero.es",
-          "mechanism": "mx"
-        },
-        {
-          "value": "212.89.23.124",
-          "mechanism": "a"
-        },
-        {
-          "value": "2a01:b5c0:0:2::168/64",
-          "mechanism": "ip6"
-        }
-      ],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [],
-      "redirect": null,
-      "exp": null,
-      "all": "softfail"
-    }
+    "record": null,
+    "valid": false,
+    "error": "cudillero.es does not have a SPF TXT record"
   },
   "dmarc": {
     "record": null,

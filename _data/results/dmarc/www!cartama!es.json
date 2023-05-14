@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dpmdns02.ns-cloud4b.com",
+      "dpmdns03.ns-cloud4b.net",
       "dpmdns01.ns-cloud4b.org",
-      "dpmdns03.ns-cloud4b.net"
+      "dpmdns02.ns-cloud4b.com"
     ],
     "warnings": []
   },
@@ -53,9 +53,9 @@
     ]
   },
   "spf": {
-    "record": "v=spf1 include:spf.qsemail.net include:spf.acumbamail.com -all",
+    "record": "v=spf1 include:spf.qsemail.net include:spf.acumbamail.com include:spf1.mensagia.com -all",
     "valid": true,
-    "dns_lookups": 7,
+    "dns_lookups": 8,
     "warnings": [],
     "parsed": {
       "pass": [],
@@ -1292,6 +1292,71 @@
             "all": "softfail"
           },
           "warnings": []
+        },
+        {
+          "domain": "spf1.mensagia.com",
+          "record": "v=spf1 ip4:141.193.32.0/23 ip4:159.135.140.80/29 ip4:159.135.132.128/25 ip4:161.38.205.0/24 ip4:161.38.206.0/24 ip4:161.38.207.0/24 ip4:185.250.236.0/22 ip4:185.189.236.0/22 ip4:87.253.232.0/21 ip4:185.211.120.0/22 ip4:159.112.251.0/24 ip4:143.55.236.0/22 ~all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "141.193.32.0/23",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "159.135.140.80/29",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "159.135.132.128/25",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "161.38.205.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "161.38.206.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "161.38.207.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.250.236.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.189.236.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "87.253.232.0/21",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.211.120.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "159.112.251.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "143.55.236.0/22",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
         }
       ],
       "redirect": null,
@@ -1300,9 +1365,53 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1",
-    "valid": false,
+    "record": "v=DMARC1; p=none",
+    "valid": true,
     "location": "cartama.es",
-    "error": "Error: Expected version_tag at position 0 in: v=DMARC1"
+    "warnings": [
+      "rua tag (destination for aggregate reports) not found"
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }

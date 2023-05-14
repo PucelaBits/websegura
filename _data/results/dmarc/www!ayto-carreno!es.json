@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1109.ui-dns.biz",
       "ns1099.ui-dns.de",
-      "ns1125.ui-dns.com",
-      "ns1095.ui-dns.org"
+      "ns1109.ui-dns.biz",
+      "ns1095.ui-dns.org",
+      "ns1125.ui-dns.com"
     ],
     "warnings": []
   },
@@ -17,7 +17,7 @@
         "preference": 10,
         "hostname": "aytocarreno-es01b.mail.protection.outlook.com",
         "addresses": [
-          "104.47.18.202",
+          "104.47.18.138",
           "104.47.22.138"
         ]
       }
@@ -150,7 +150,7 @@
               },
               {
                 "domain": "spf2.webapps.net",
-                "record": "v=spf1 ip4:195.110.101.32/27 ip4:195.110.122.160/27 ip4:195.110.123.0/27 ip4:185.2.4.0/22 ip4:81.88.49.224/27 ip4:195.7.249.29 ip4:81.88.52.0/23 ~all",
+                "record": "v=spf1 ip4:195.110.101.32/27 ip4:195.110.122.160/27 ip4:195.110.123.0/27 ip4:185.2.4.0/22 ip4:81.88.49.224/27 ip4:195.7.249.29 ip4:81.88.52.0/23 ip4:185.110.66.0/24 ~all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
@@ -180,6 +180,10 @@
                     },
                     {
                       "value": "81.88.52.0/23",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.110.66.0/24",
                       "mechanism": "ip4"
                     }
                   ],

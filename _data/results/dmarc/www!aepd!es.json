@@ -10,8 +10,17 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query aepd.es. IN MX: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "aepd-es.mail.protection.outlook.com",
+        "addresses": [
+          "104.47.13.36",
+          "104.47.14.36"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:194.224.120.98 include:spf.protection.outlook.com include:mail.zendesk.com include:_spf.atlassian.net ~all",

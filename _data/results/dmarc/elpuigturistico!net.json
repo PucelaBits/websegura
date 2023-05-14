@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1045.ui-dns.de",
-      "ns1045.ui-dns.com",
       "ns1045.ui-dns.org",
+      "ns1045.ui-dns.com",
+      "ns1045.ui-dns.de",
       "ns1045.ui-dns.biz"
     ],
     "warnings": []
@@ -28,7 +28,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
+      "The reverse DNS of 217.72.192.67 is mx01.kundenserver.de, but the A/AAAA DNS records for mx01.kundenserver.de do not resolve to 217.72.192.67"
+    ]
   },
   "spf": {
     "record": null,

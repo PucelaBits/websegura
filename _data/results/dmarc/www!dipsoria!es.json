@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.dnsxperta.com",
       "ns1.dnsxperta.com",
-      "ns3.dnsxperta.com"
+      "ns3.dnsxperta.com",
+      "ns2.dnsxperta.com"
     ],
     "warnings": []
   },
@@ -16,7 +16,7 @@
         "preference": 0,
         "hostname": "dipsoria-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.18.138",
+          "104.47.18.202",
           "104.47.22.138"
         ]
       }
@@ -104,12 +104,16 @@
             "include": [
               {
                 "domain": "spfa.domicenter.net",
-                "record": "v=spf1 ip4:176.28.114.97/28 -all",
+                "record": "v=spf1 ip4:176.28.114.97/28 ip4:176.28.125.225/28 -all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
                     {
                       "value": "176.28.114.97/28",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "176.28.125.225/28",
                       "mechanism": "ip4"
                     }
                   ],
@@ -125,12 +129,16 @@
               },
               {
                 "domain": "spfb.domicenter.net",
-                "record": "v=spf1 ip4:176.28.125.225/28 -all",
+                "record": "v=spf1 ip4:82.223.8.172 ip4:82.223.196.37 -all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
                     {
-                      "value": "176.28.125.225/28",
+                      "value": "82.223.8.172",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "82.223.196.37",
                       "mechanism": "ip4"
                     }
                   ],

@@ -10,8 +10,23 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 5,
+        "hostname": "relay.reus.cat",
+        "addresses": [
+          "77.227.178.12"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mx1.reus.cat",
+        "addresses": [
+          "46.25.84.232"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx include:spf.ipzmarketing.com include:eu.transmail.net -all",
