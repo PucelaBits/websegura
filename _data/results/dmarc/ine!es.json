@@ -1,10 +1,13 @@
 {
   "domain": "ine.es",
   "base_domain": "ine.es",
-  "dnssec": false,
+  "dnssec": true,
   "ns": {
-    "hostnames": [],
-    "error": "All nameservers failed to answer the query ine.es. IN NS: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "hostnames": [
+      "ns1.age.gob.es",
+      "ns2.age.gob.es"
+    ],
+    "warnings": []
   },
   "mx": {
     "hosts": [
@@ -12,7 +15,7 @@
         "preference": 10,
         "hostname": "mxa-006a4e02.gslb.pphosted.com",
         "addresses": [
-          "143.55.148.243"
+          "143.55.146.78"
         ]
       },
       {
@@ -30,20 +33,20 @@
     "valid": true,
     "dns_lookups": 6,
     "warnings": [
-      "All nameservers failed to answer the query mta02.ine.es. IN AAAA: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+      "All nameservers failed to answer the query correo.ine.es. IN AAAA: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
     ],
     "parsed": {
       "pass": [
-        {
-          "value": "195.254.149.7",
-          "mechanism": "a"
-        },
         {
           "value": "195.254.149.12",
           "mechanism": "a"
         },
         {
           "value": "195.254.149.6",
+          "mechanism": "a"
+        },
+        {
+          "value": "195.254.149.12",
           "mechanism": "a"
         },
         {

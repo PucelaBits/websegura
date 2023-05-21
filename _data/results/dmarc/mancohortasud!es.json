@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.nunsys.net",
-      "ns1.nunsys.net"
+      "ns1.nunsys.net",
+      "ns2.nunsys.net"
     ],
     "warnings": []
   },
@@ -15,7 +15,7 @@
         "preference": 0,
         "hostname": "mancohortasud-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.30.74",
+          "104.47.51.138",
           "104.47.51.202"
         ]
       },
@@ -27,9 +27,7 @@
         ]
       }
     ],
-    "warnings": [
-      "104.47.30.74 does not have any reverse DNS (PTR) records"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com ip4:185.5.236.0/23 -all",

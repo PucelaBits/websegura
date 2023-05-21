@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns3.gestiondecuenta.com",
-      "ns4.gestiondecuenta.com",
+      "ns2.gestiondecuenta.com",
       "ns.gestiondecuenta.com",
-      "ns2.gestiondecuenta.com"
+      "ns4.gestiondecuenta.com",
+      "ns3.gestiondecuenta.com"
     ],
     "warnings": []
   },
@@ -27,13 +27,11 @@
     "record": "v=spf1 include:spf.ipzmarketing.com a mx ~all",
     "valid": true,
     "dns_lookups": 3,
-    "warnings": [],
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
+    ],
     "parsed": {
       "pass": [
-        {
-          "value": "82.98.188.40",
-          "mechanism": "a"
-        },
         {
           "value": "mail.catedraldeoviedo.com",
           "mechanism": "mx"

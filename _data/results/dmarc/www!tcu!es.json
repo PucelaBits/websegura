@@ -3,25 +3,12 @@
   "base_domain": "tcu.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "ns05.ns-cloud4b.org",
-      "ns03.ns-cloud4b.net",
-      "ns06.ns-cloud4b.com"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 0,
-        "hostname": "tcu-es.mail.protection.outlook.com",
-        "addresses": [
-          "104.47.0.36",
-          "104.47.2.36"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com -all",

@@ -4,15 +4,53 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dpmdns02.ns-cloud4b.com",
       "dpmdns01.ns-cloud4b.org",
+      "dpmdns02.ns-cloud4b.com",
       "dpmdns03.ns-cloud4b.net"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx.spamexperts.com",
+        "addresses": [
+          "2001:550:2:78::ca:100",
+          "38.111.198.185"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "fallbackmx.spamexperts.eu",
+        "addresses": [
+          "2001:550:2:61::2fc:100",
+          "2001:550:2:78::ca:100",
+          "2001:550:2:9::280:100",
+          "38.109.53.20",
+          "38.111.198.185",
+          "38.89.254.156"
+        ]
+      },
+      {
+        "preference": 30,
+        "hostname": "lastmx.spamexperts.net",
+        "addresses": [
+          "130.117.53.188",
+          "149.13.75.27",
+          "2001:550:2:61::2fc:100",
+          "2001:550:2:9::280:100",
+          "2001:978:2:2c::137:100",
+          "2001:978:2:7::162:100",
+          "38.111.198.185",
+          "38.89.254.156"
+        ]
+      }
+    ],
+    "warnings": [
+      "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records",
+      "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:spf2.malaga.es -all",
@@ -317,9 +355,53 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1",
-    "valid": false,
+    "record": "v=DMARC1; p=none",
+    "valid": true,
     "location": "villanuevadeltrabuco.es",
-    "error": "Error: Expected version_tag at position 0 in: v=DMARC1"
+    "warnings": [
+      "rua tag (destination for aggregate reports) not found"
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }

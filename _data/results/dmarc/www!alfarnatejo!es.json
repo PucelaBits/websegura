@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "dpmdns03.ns-cloud4b.net",
-      "dpmdns02.ns-cloud4b.com",
-      "dpmdns01.ns-cloud4b.org"
+      "dpmdns01.ns-cloud4b.org",
+      "dpmdns02.ns-cloud4b.com"
     ],
     "warnings": []
   },
@@ -17,7 +17,7 @@
         "hostname": "mx.spamexperts.com",
         "addresses": [
           "2001:550:2:9::280:100",
-          "38.89.254.156"
+          "38.111.198.185"
         ]
       },
       {
@@ -355,53 +355,9 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none",
-    "valid": true,
+    "record": "v=DMARC1",
+    "valid": false,
     "location": "alfarnatejo.es",
-    "warnings": [
-      "rua tag (destination for aggregate reports) not found"
-    ],
-    "tags": {
-      "v": {
-        "value": "DMARC1",
-        "explicit": true
-      },
-      "p": {
-        "value": "none",
-        "explicit": true
-      },
-      "adkim": {
-        "value": "r",
-        "explicit": false
-      },
-      "aspf": {
-        "value": "r",
-        "explicit": false
-      },
-      "fo": {
-        "value": [
-          "0"
-        ],
-        "explicit": false
-      },
-      "pct": {
-        "value": 100,
-        "explicit": false
-      },
-      "rf": {
-        "value": [
-          "afrf"
-        ],
-        "explicit": false
-      },
-      "ri": {
-        "value": 86400,
-        "explicit": false
-      },
-      "sp": {
-        "value": "none",
-        "explicit": false
-      }
-    }
+    "error": "Error: Expected version_tag at position 0 in: v=DMARC1"
   }
 }
