@@ -1,8 +1,8 @@
 {
   "algorithm_version": 2,
-  "end_time": "Tue, 18 Jul 2023 00:11:32 GMT",
+  "end_time": "Fri, 21 Jul 2023 07:09:54 GMT",
   "grade": "F",
-  "hidden": false,
+  "hidden": true,
   "likelihood_indicator": "MEDIUM",
   "response_headers": {
     "Accept-Ranges": "bytes",
@@ -10,19 +10,20 @@
     "Connection": "Keep-Alive",
     "Content-Encoding": "gzip",
     "Content-Type": "text/html",
-    "Date": "Tue, 18 Jul 2023 00:11:25 GMT",
-    "Expires": "Tue, 18 Jul 2023 00:11:25 GMT",
+    "Date": "Fri, 21 Jul 2023 07:09:52 GMT",
+    "Expires": "Fri, 21 Jul 2023 07:09:52 GMT",
     "Keep-Alive": "timeout=15, max=100",
+    "Set-Cookie": "TS01f17082=014e1bb94fe8616af55746be99125ca7b274fa95dd27b06651bd18ded4ea1258b2b3c0c7f771af743ec25c8f18d37259308f2fdacc; Path=/; Domain=.ine.es",
     "Transfer-Encoding": "chunked",
     "Vary": "Accept-Encoding",
     "X-UA-Compatible": "IE=edge"
   },
-  "scan_id": 39832710,
-  "score": 15,
-  "start_time": "Tue, 18 Jul 2023 00:11:22 GMT",
+  "scan_id": 39952884,
+  "score": 0,
+  "start_time": "Fri, 21 Jul 2023 07:09:48 GMT",
   "state": "FINISHED",
   "status_code": 200,
-  "tests_failed": 6,
-  "tests_passed": 6,
+  "tests_failed": 7,
+  "tests_passed": 5,
   "tests_quantity": 12
 }
