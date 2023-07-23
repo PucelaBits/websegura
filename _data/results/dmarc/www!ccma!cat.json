@@ -23,12 +23,12 @@
       {
         "preference": 10,
         "hostname": "smtp2.ccma.cat",
-        "addresses": [
-          "193.104.51.123"
-        ]
+        "addresses": []
       }
     ],
-    "warnings": []
+    "warnings": [
+      "All nameservers failed to answer the query smtp2.ccma.cat. IN A: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    ]
   },
   "spf": {
     "record": "v=spf1 mx a include:spf1.ccma.cat include:_spf.salesforce.com include:spf.protection.outlook.com -all",

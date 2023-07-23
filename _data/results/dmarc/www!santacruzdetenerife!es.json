@@ -15,16 +15,16 @@
         "preference": 10,
         "hostname": "mx-01-eu-central-1.prod.hydra.sophos.com",
         "addresses": [
-          "3.126.210.83",
-          "35.157.176.221"
+          "3.122.65.178",
+          "52.57.29.194"
         ]
       },
       {
         "preference": 10,
         "hostname": "mx-02-eu-central-1.prod.hydra.sophos.com",
         "addresses": [
-          "3.126.210.83",
-          "35.157.176.221"
+          "3.122.65.178",
+          "52.57.29.194"
         ]
       }
     ],
@@ -56,7 +56,7 @@
       "include": [
         {
           "domain": "_spf_eucentral1.prod.hydra.sophos.com",
-          "record": "v=spf1 ip4:94.140.18.0/24 ip4:35.159.27.0/26 ip4:35.159.27.64/26 ip4:35.159.27.128/26 ip4:35.159.27.192/26 ~all",
+          "record": "v=spf1 ip4:94.140.18.0/24 ip4:35.159.27.8/30 ip4:35.159.27.28/30 ip4:35.159.27.32/30 ip4:35.159.27.48/29 ip4:35.159.27.160/28 ~all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -65,19 +65,23 @@
                 "mechanism": "ip4"
               },
               {
-                "value": "35.159.27.0/26",
+                "value": "35.159.27.8/30",
                 "mechanism": "ip4"
               },
               {
-                "value": "35.159.27.64/26",
+                "value": "35.159.27.28/30",
                 "mechanism": "ip4"
               },
               {
-                "value": "35.159.27.128/26",
+                "value": "35.159.27.32/30",
                 "mechanism": "ip4"
               },
               {
-                "value": "35.159.27.192/26",
+                "value": "35.159.27.48/29",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "35.159.27.160/28",
                 "mechanism": "ip4"
               }
             ],

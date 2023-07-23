@@ -14,7 +14,7 @@
     "error": "The DNS response does not contain an answer to the question: 242.211.148.192.in-addr.arpa. IN PTR"
   },
   "spf": {
-    "record": "v=spf1 mx include:spf.acumbamail.com a:webmail.ces.es a:smtp.mites.gob.es ip4:192.148.211.63 include:spf.protection.outlook.com -all",
+    "record": "v=spf1 mx include:spf.acumbamail.com a:webmail.ces.es a:smtp.mites.gob.es ip4:192.148.211.63 ip4:192.148.211.20 include:spf.protection.outlook.com -all",
     "valid": true,
     "dns_lookups": 5,
     "warnings": [],
@@ -34,6 +34,10 @@
         },
         {
           "value": "192.148.211.63",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "192.148.211.20",
           "mechanism": "ip4"
         }
       ],

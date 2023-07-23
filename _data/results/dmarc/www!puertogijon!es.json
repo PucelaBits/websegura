@@ -4,25 +4,16 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1112.ui-dns.biz",
-      "ns1108.ui-dns.org",
       "ns1121.ui-dns.com",
-      "ns1096.ui-dns.de"
+      "ns1108.ui-dns.org",
+      "ns1096.ui-dns.de",
+      "ns1112.ui-dns.biz"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "puertogijon-es.mail.protection.outlook.com",
-        "addresses": [
-          "104.47.51.138",
-          "104.47.51.202"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "All nameservers failed to answer the query 202.51.47.104.in-addr.arpa. IN PTR: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "spf": {
     "record": "v=spf1 ip4:213.0.96.226 ip4:195.53.242.107 include:protection.outlook.com include:spf.emailsignatures365.com -all",
@@ -238,9 +229,53 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=none;",
+    "valid": true,
+    "location": "puertogijon.es",
+    "warnings": [
+      "rua tag (destination for aggregate reports) not found"
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }

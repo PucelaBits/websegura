@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "dns2.guardiacivil.es",
       "artemis.ttd.net",
-      "dns1.guardiacivil.es",
-      "dns2.guardiacivil.es"
+      "dns1.guardiacivil.es"
     ],
     "warnings": []
   },
@@ -14,13 +14,27 @@
     "hosts": [
       {
         "preference": 10,
+        "hostname": "mailgw3.guardiacivil.es",
+        "addresses": [
+          "62.36.55.37"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mailgw4.guardiacivil.es",
+        "addresses": [
+          "62.36.55.17"
+        ]
+      },
+      {
+        "preference": 20,
         "hostname": "mailgw1.guardiacivil.es",
         "addresses": [
           "194.179.107.37"
         ]
       },
       {
-        "preference": 10,
+        "preference": 20,
         "hostname": "mailgw2.guardiacivil.es",
         "addresses": [
           "194.179.107.17"
@@ -30,12 +44,20 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx ip4:194.179.107.37 ip4:194.179.107.17 include:spf.protection.outlook.com ~all",
+    "record": "v=spf1 mx ip4:62.36.55.12 ip4:62.36.55.13 ip4:194.179.107.37 ip4:194.179.107.17 include:spf.protection.outlook.com ~all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
     "parsed": {
       "pass": [
+        {
+          "value": "mailgw3.guardiacivil.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mailgw4.guardiacivil.es",
+          "mechanism": "mx"
+        },
         {
           "value": "mailgw1.guardiacivil.es",
           "mechanism": "mx"
@@ -43,6 +65,14 @@
         {
           "value": "mailgw2.guardiacivil.es",
           "mechanism": "mx"
+        },
+        {
+          "value": "62.36.55.12",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "62.36.55.13",
+          "mechanism": "ip4"
         },
         {
           "value": "194.179.107.37",

@@ -4,41 +4,16 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.gestiondecuenta.com",
       "ns4.gestiondecuenta.com",
       "ns3.gestiondecuenta.com",
+      "ns2.gestiondecuenta.com",
       "ns.gestiondecuenta.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "alt2.aspmx.l.google.com",
-        "addresses": [
-          "2a00:1450:400c:c0b::1b",
-          "64.233.184.27"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "aspmx.l.google.com",
-        "addresses": [
-          "142.251.16.27",
-          "2607:f8b0:4004:c17::1a"
-        ]
-      },
-      {
-        "preference": 30,
-        "hostname": "alt1.aspmx.l.google.com",
-        "addresses": [
-          "209.85.202.27",
-          "2a00:1450:400b:c00::1a"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "All nameservers failed to answer the query a.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.b.0.c.0.c.0.0.4.0.5.4.1.0.0.a.2.ip6.arpa. IN PTR: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "spf": {
     "record": "v=spf1 include:_spf.google.com ~all",

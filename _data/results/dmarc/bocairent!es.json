@@ -11,17 +11,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 100,
-        "hostname": "mx1.dnsxperta.com",
-        "addresses": [
-          "217.13.80.229",
-          "83.147.63.42"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "All nameservers failed to answer the query bocairent.es. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "spf": {
     "record": "v=spf1 ip4:192.168.0.0/16 include:_spf.google.com include:dnsxperta.com ~all",

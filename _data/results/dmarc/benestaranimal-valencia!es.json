@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns3.raiolanetworks.es",
+      "dns2.raiolanetworks.es",
       "dns1.raiolanetworks.es",
-      "dns2.raiolanetworks.es"
+      "dns3.raiolanetworks.es"
     ],
     "warnings": []
   },
@@ -26,16 +26,14 @@
     "record": "v=spf1 a mx +include:spf.raiolanetworks.com +ip4:91.134.184.234 ~all",
     "valid": true,
     "dns_lookups": 4,
-    "warnings": [],
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ],
     "parsed": {
       "pass": [
         {
           "value": "178.211.133.38",
           "mechanism": "a"
-        },
-        {
-          "value": "mail.benestaranimal-valencia.es",
-          "mechanism": "mx"
         },
         {
           "value": "91.134.184.234",

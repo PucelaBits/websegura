@@ -4,22 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.hostinet.com",
-      "dns2.hostinet.com"
+      "dns2.hostinet.com",
+      "dns1.hostinet.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "correo.villava.es",
-        "addresses": [
-          "195.53.90.200"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "All nameservers failed to answer the query 200.90.53.195.in-addr.arpa. IN PTR: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "spf": {
     "record": "v=spf1 +a +mx +ip4:195.53.90.200 ~all",

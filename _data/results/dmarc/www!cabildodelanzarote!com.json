@@ -12,161 +12,59 @@
   "mx": {
     "hosts": [
       {
+        "preference": 1,
+        "hostname": "aspmx.l.google.com",
+        "addresses": [
+          "172.253.63.27",
+          "2607:f8b0:4004:c19::1a"
+        ]
+      },
+      {
+        "preference": 5,
+        "hostname": "alt1.aspmx.l.google.com",
+        "addresses": [
+          "209.85.202.27",
+          "2a00:1450:400b:c00::1b"
+        ]
+      },
+      {
+        "preference": 5,
+        "hostname": "alt2.aspmx.l.google.com",
+        "addresses": [
+          "2a00:1450:400c:c0b::1b",
+          "64.233.184.27"
+        ]
+      },
+      {
         "preference": 10,
-        "hostname": "mx01.hornetsecurity.com",
+        "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "94.100.132.8"
+          "142.250.27.27",
+          "2a00:1450:4025:401::1b"
         ]
       },
       {
-        "preference": 20,
-        "hostname": "mx02.hornetsecurity.com",
+        "preference": 10,
+        "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "94.100.136.8"
-        ]
-      },
-      {
-        "preference": 30,
-        "hostname": "mx03.hornetsecurity.com",
-        "addresses": [
-          "94.100.134.8"
-        ]
-      },
-      {
-        "preference": 40,
-        "hostname": "mx04.hornetsecurity.com",
-        "addresses": [
-          "94.100.136.7"
+          "142.250.153.27",
+          "2a00:1450:4013:c16::1a"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 a:mail.cabildodelanzarote.com a:smtp.cabildodelanzarote.com ip4:217.124.240.192/28 ip4:213.99.38.64/28 ip4:81.47.205.96/27 include:spf.hornetsecurity.com include:_spf.google.com -all",
+    "record": "v=spf1 include:_spf.google.com -all",
     "valid": true,
-    "dns_lookups": 7,
+    "dns_lookups": 4,
     "warnings": [],
     "parsed": {
-      "pass": [
-        {
-          "value": "194.224.154.94",
-          "mechanism": "a"
-        },
-        {
-          "value": "194.224.154.93",
-          "mechanism": "a"
-        },
-        {
-          "value": "217.124.240.192/28",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "213.99.38.64/28",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "81.47.205.96/27",
-          "mechanism": "ip4"
-        }
-      ],
+      "pass": [],
       "neutral": [],
       "softfail": [],
       "fail": [],
       "include": [
-        {
-          "domain": "spf.hornetsecurity.com",
-          "record": "v=spf1 ip4:83.246.65.0/24 ip4:185.140.204.0/22 ip4:94.100.128.0/20 ip4:81.20.94.0/24 ip4:173.45.18.0/24 ip4:52.62.123.207/32 ip4:52.62.108.212/32 ip4:129.232.203.80/28 ip4:209.172.38.64/27 ip4:108.163.133.224/27 ip4:193.135.100.0/27 ip4:199.27.221.76 ip4:216.46.11.238 ip4:216.46.11.244 ip4:199.27.221.81 ip4:199.27.221.82 ip4:52.62.114.130 ip4:52.62.125.178 ip4:92.54.27.0/24 ~all",
-          "dns_lookups": 0,
-          "parsed": {
-            "pass": [
-              {
-                "value": "83.246.65.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "185.140.204.0/22",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "94.100.128.0/20",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "81.20.94.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "173.45.18.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "52.62.123.207/32",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "52.62.108.212/32",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "129.232.203.80/28",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "209.172.38.64/27",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "108.163.133.224/27",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "193.135.100.0/27",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "199.27.221.76",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "216.46.11.238",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "216.46.11.244",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "199.27.221.81",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "199.27.221.82",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "52.62.114.130",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "52.62.125.178",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "92.54.27.0/24",
-                "mechanism": "ip4"
-              }
-            ],
-            "neutral": [],
-            "softfail": [],
-            "fail": [],
-            "include": [],
-            "redirect": null,
-            "exp": null,
-            "all": "softfail"
-          },
-          "warnings": []
-        },
         {
           "domain": "_spf.google.com",
           "record": "v=spf1 include:_netblocks.google.com include:_netblocks2.google.com include:_netblocks3.google.com ~all",

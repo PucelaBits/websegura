@@ -5,9 +5,9 @@
   "ns": {
     "hostnames": [
       "sun.rediris.es",
-      "dns2.uvigo.es",
+      "dns.uvigo.es",
       "chico.rediris.es",
-      "dns.uvigo.es"
+      "dns2.uvigo.es"
     ],
     "warnings": []
   },
@@ -70,7 +70,7 @@
         },
         {
           "domain": "antispam._spf.uvigo.es",
-          "record": "v=spf1 ip4:193.146.32.73 ip4:193.146.32.85 ip4:193.146.32.87 ip4:193.146.32.89 ip4:193.146.32.90 ip4:193.146.32.91 ip4:193.146.32.93 ip4:193.146.32.99 -all",
+          "record": "v=spf1 ip4:193.146.32.73 ip4:193.146.32.85 ip4:193.146.32.103 ip4:193.146.32.87 ip4:193.146.32.89 ip4:193.146.32.90 ip4:193.146.32.91 ip4:193.146.32.93 ip4:193.146.32.99 -all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -80,6 +80,10 @@
               },
               {
                 "value": "193.146.32.85",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "193.146.32.103",
                 "mechanism": "ip4"
               },
               {

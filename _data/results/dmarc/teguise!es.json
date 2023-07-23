@@ -15,12 +15,27 @@
         "preference": 0,
         "hostname": "teguise-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.12.36",
-          "104.47.13.36"
+          "52.101.68.0",
+          "52.101.68.21",
+          "52.101.68.3",
+          "52.101.68.5",
+          "52.101.73.1",
+          "52.101.73.2",
+          "52.101.73.4",
+          "52.101.73.6"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "52.101.68.0 does not have any reverse DNS (PTR) records",
+      "52.101.68.21 does not have any reverse DNS (PTR) records",
+      "52.101.68.3 does not have any reverse DNS (PTR) records",
+      "52.101.68.5 does not have any reverse DNS (PTR) records",
+      "52.101.73.1 does not have any reverse DNS (PTR) records",
+      "52.101.73.2 does not have any reverse DNS (PTR) records",
+      "52.101.73.4 does not have any reverse DNS (PTR) records",
+      "52.101.73.6 does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com -all",
@@ -93,7 +108,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; rua=mailto:eperez@teguise.es; ruf=mailto:eperez@teguise.es; sp=none; ri=86400",
+    "record": "v=DMARC1; p=quarantine; rua=mailto:eperez@teguise.es; ruf=mailto:eperez@teguise.es; sp=quarantine; ri=604800",
     "valid": true,
     "location": "teguise.es",
     "warnings": [],
@@ -103,7 +118,7 @@
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": true
       },
       "rua": {
@@ -127,11 +142,11 @@
         "explicit": true
       },
       "sp": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": true
       },
       "ri": {
-        "value": 86400,
+        "value": 604800,
         "explicit": true
       },
       "adkim": {

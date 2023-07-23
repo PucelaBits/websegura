@@ -19,7 +19,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The domain correo2.duonet.es does not exist",
+      "The reverse DNS of 212.89.13.125 is correo2.duonet.es, but the A/AAAA DNS records for correo2.duonet.es do not resolve to 212.89.13.125"
+    ]
   },
   "spf": {
     "record": "v=spf1 mx a ip4:212.89.13.125  -all",

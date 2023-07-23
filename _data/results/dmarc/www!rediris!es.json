@@ -32,7 +32,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:spf.puc.rediris.es ip4:130.206.24.0/30 ip6:2001:720:418:caf1::57 ip4:130.206.1.57 ip4:130.206.1.69 -all",
+    "record": "v=spf1 include:spf.puc.rediris.es ip4:130.206.24.0/30 -all",
     "valid": true,
     "dns_lookups": 1,
     "warnings": [],
@@ -40,18 +40,6 @@
       "pass": [
         {
           "value": "130.206.24.0/30",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "2001:720:418:caf1::57",
-          "mechanism": "ip6"
-        },
-        {
-          "value": "130.206.1.57",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "130.206.1.69",
           "mechanism": "ip4"
         }
       ],

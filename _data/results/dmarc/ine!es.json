@@ -29,14 +29,16 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:spf.puc.rediris.es a:correo.ine.es a:smtpout.ine.es a:remesas.ine.es a:mta01.ine.es a:mta02.ine.es -all",
+    "record": "v=spf1 include:spf.puc.rediris.es a:correo.ine.es a:smtpout.ine.es a:remesas.ine.es a:c.spf.service-now.com  -all",
     "valid": true,
-    "dns_lookups": 6,
-    "warnings": [
-      "All nameservers failed to answer the query correo.ine.es. IN AAAA: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
-    ],
+    "dns_lookups": 5,
+    "warnings": [],
     "parsed": {
       "pass": [
+        {
+          "value": "195.254.149.7",
+          "mechanism": "a"
+        },
         {
           "value": "195.254.149.12",
           "mechanism": "a"
@@ -46,11 +48,111 @@
           "mechanism": "a"
         },
         {
-          "value": "195.254.149.12",
+          "value": "148.139.0.2",
           "mechanism": "a"
         },
         {
-          "value": "195.254.149.12",
+          "value": "148.139.0.31",
+          "mechanism": "a"
+        },
+        {
+          "value": "148.139.1.2",
+          "mechanism": "a"
+        },
+        {
+          "value": "148.139.1.31",
+          "mechanism": "a"
+        },
+        {
+          "value": "148.139.2.2",
+          "mechanism": "a"
+        },
+        {
+          "value": "148.139.3.2",
+          "mechanism": "a"
+        },
+        {
+          "value": "149.96.13.2",
+          "mechanism": "a"
+        },
+        {
+          "value": "149.96.14.2",
+          "mechanism": "a"
+        },
+        {
+          "value": "199.91.136.26",
+          "mechanism": "a"
+        },
+        {
+          "value": "199.91.136.28",
+          "mechanism": "a"
+        },
+        {
+          "value": "199.91.137.2",
+          "mechanism": "a"
+        },
+        {
+          "value": "199.91.137.26",
+          "mechanism": "a"
+        },
+        {
+          "value": "199.91.139.145",
+          "mechanism": "a"
+        },
+        {
+          "value": "199.91.139.22",
+          "mechanism": "a"
+        },
+        {
+          "value": "199.91.139.23",
+          "mechanism": "a"
+        },
+        {
+          "value": "199.91.139.24",
+          "mechanism": "a"
+        },
+        {
+          "value": "199.91.140.26",
+          "mechanism": "a"
+        },
+        {
+          "value": "199.91.140.28",
+          "mechanism": "a"
+        },
+        {
+          "value": "199.91.141.145",
+          "mechanism": "a"
+        },
+        {
+          "value": "199.91.141.22",
+          "mechanism": "a"
+        },
+        {
+          "value": "199.91.141.23",
+          "mechanism": "a"
+        },
+        {
+          "value": "199.91.141.24",
+          "mechanism": "a"
+        },
+        {
+          "value": "37.98.232.12",
+          "mechanism": "a"
+        },
+        {
+          "value": "37.98.232.2",
+          "mechanism": "a"
+        },
+        {
+          "value": "37.98.232.26",
+          "mechanism": "a"
+        },
+        {
+          "value": "37.98.234.2",
+          "mechanism": "a"
+        },
+        {
+          "value": "37.98.235.2",
           "mechanism": "a"
         }
       ],

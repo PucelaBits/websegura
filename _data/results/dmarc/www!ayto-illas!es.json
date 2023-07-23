@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.panelcontrol.info",
-      "dns1.panelcontrol.info"
+      "dns1.panelcontrol.info",
+      "dns2.panelcontrol.info"
     ],
     "warnings": []
   },
@@ -15,8 +15,8 @@
         "preference": 10,
         "hostname": "aytoillas-es01b.mail.protection.outlook.com",
         "addresses": [
-          "104.47.18.202",
-          "104.47.22.138"
+          "104.47.18.138",
+          "104.47.18.202"
         ]
       }
     ],
@@ -228,9 +228,61 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=none; rua=mailto:revisiones@ayto-illas.es",
+    "valid": true,
+    "location": "ayto-illas.es",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "revisiones@ayto-illas.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }

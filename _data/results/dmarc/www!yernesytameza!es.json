@@ -4,43 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "otilio-pub.telecable.es",
-      "mortadelo.telecable.es"
+      "mortadelo.telecable.es",
+      "otilio-pub.telecable.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mx1.telecable.es",
-        "addresses": [
-          "94.100.132.8"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mx2.telecable.es",
-        "addresses": [
-          "94.100.136.8"
-        ]
-      },
-      {
-        "preference": 30,
-        "hostname": "mx3.telecable.es",
-        "addresses": [
-          "94.100.134.8"
-        ]
-      },
-      {
-        "preference": 40,
-        "hostname": "mx4.telecable.es",
-        "addresses": [
-          "94.100.136.7"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "All nameservers failed to answer the query 8.132.100.94.in-addr.arpa. IN PTR: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "spf": {
     "record": "v=spf1 include:spf.antispamcloud.com include:spf.hornetsecurity.com ~all",

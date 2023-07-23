@@ -4,14 +4,20 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.dominioabsoluto.com",
-      "ns2.acens.net",
-      "ns1.acens.net",
-      "ns4.acens.net",
-      "ns2.dominioabsoluto.com",
-      "ip90.dominioabsoluto.com",
+      "srvcpdefficientipmor.gobex.pri",
+      "srvcpdefficientipagr.gobex.pri",
+      "srvadmefficientipagr.gobex.pri",
+      "srvefficientipagr.educarex.pri",
       "ns7.acens.net",
-      "ns3.acens.net"
+      "ns2.acens.net",
+      "srvadmefficientipmor.gobex.pri",
+      "ns2.dominioabsoluto.com",
+      "srvefficientipmor.educarex.pri",
+      "ns3.acens.net",
+      "ns4.acens.net",
+      "ns1.acens.net",
+      "ns1.dominioabsoluto.com",
+      "ip90.dominioabsoluto.com"
     ],
     "warnings": []
   },
@@ -21,12 +27,27 @@
         "preference": 10,
         "hostname": "juntaex-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.12.36",
-          "104.47.14.36"
+          "52.101.68.0",
+          "52.101.68.21",
+          "52.101.68.3",
+          "52.101.68.5",
+          "52.101.73.1",
+          "52.101.73.2",
+          "52.101.73.4",
+          "52.101.73.6"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "52.101.68.0 does not have any reverse DNS (PTR) records",
+      "52.101.68.21 does not have any reverse DNS (PTR) records",
+      "52.101.68.3 does not have any reverse DNS (PTR) records",
+      "52.101.68.5 does not have any reverse DNS (PTR) records",
+      "52.101.73.1 does not have any reverse DNS (PTR) records",
+      "52.101.73.2 does not have any reverse DNS (PTR) records",
+      "52.101.73.4 does not have any reverse DNS (PTR) records",
+      "52.101.73.6 does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
     "record": "v=spf1 ip4:217.124.182.92 ip4:178.255.108.128 include:spf.protection.outlook.com -all",
@@ -108,71 +129,9 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; sp=none; rua=mailto:admexc.epinilla@juntaex.es; ruf=mailto:admexc.epinilla@juntaex.es; rf=afrf; pct=100; ri=8640",
-    "valid": true,
-    "location": "juntaex.es",
-    "warnings": [],
-    "tags": {
-      "v": {
-        "value": "DMARC1",
-        "explicit": true
-      },
-      "p": {
-        "value": "quarantine",
-        "explicit": true
-      },
-      "sp": {
-        "value": "none",
-        "explicit": true
-      },
-      "rua": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "admexc.epinilla@juntaex.es",
-            "size_limit": null
-          }
-        ],
-        "explicit": true
-      },
-      "ruf": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "admexc.epinilla@juntaex.es",
-            "size_limit": null
-          }
-        ],
-        "explicit": true
-      },
-      "rf": {
-        "value": [
-          "afrf"
-        ],
-        "explicit": true
-      },
-      "pct": {
-        "value": 100,
-        "explicit": true
-      },
-      "ri": {
-        "value": 8640,
-        "explicit": true
-      },
-      "adkim": {
-        "value": "r",
-        "explicit": false
-      },
-      "aspf": {
-        "value": "r",
-        "explicit": false
-      },
-      "fo": {
-        "value": [
-          "0"
-        ],
-        "explicit": false
-      }
-    }
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "All nameservers failed to answer the query _dmarc.juntaex.es. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
   }
 }

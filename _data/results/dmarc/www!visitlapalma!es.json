@@ -4,32 +4,32 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.dnshachepublicidad.com",
-      "ns1.dnshachepublicidad.com"
+      "ns1.visitlapalma.es",
+      "ns2.visitlapalma.es"
     ],
     "warnings": []
   },
   "mx": {
     "hosts": [
       {
-        "preference": 5,
+        "preference": 10,
         "hostname": "mail.visitlapalma.es",
         "addresses": [
-          "136.243.79.86"
+          "89.248.100.48"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 +a +mx +a:dnshachepublicidad.com -all",
+    "record": "v=spf1 a mx a:visitlapalma.vhost.interdominios.com ~all",
     "valid": true,
     "dns_lookups": 3,
     "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "136.243.79.86",
+          "value": "89.248.100.48",
           "mechanism": "a"
         },
         {
@@ -37,7 +37,7 @@
           "mechanism": "mx"
         },
         {
-          "value": "136.243.79.86",
+          "value": "89.248.100.48",
           "mechanism": "a"
         }
       ],
@@ -47,7 +47,7 @@
       "include": [],
       "redirect": null,
       "exp": null,
-      "all": "fail"
+      "all": "softfail"
     }
   },
   "dmarc": {

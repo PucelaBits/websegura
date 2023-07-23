@@ -4,25 +4,16 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.gestiondecuenta.com",
-      "ns4.gestiondecuenta.com",
       "ns.gestiondecuenta.com",
-      "ns3.gestiondecuenta.com"
+      "ns3.gestiondecuenta.com",
+      "ns2.gestiondecuenta.com",
+      "ns4.gestiondecuenta.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "teror-es.mail.protection.outlook.com",
-        "addresses": [
-          "104.47.13.36",
-          "104.47.14.36"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "All nameservers failed to answer the query 5.68.101.52.in-addr.arpa. IN PTR: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "spf": {
     "record": "v=spf1 ip4:213.99.29.169 ip4:213.99.29.169 ip4:213.99.29.168/29 ip4:213.4.82.192/26 ip4:82.98.134.240 include:spf.protection.outlook.com include:_spf.espublico.com include:_flatsvcs.espublico.com -all",

@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns08.ns-cloud4b.com",
       "ns07.ns-cloud4b.org",
+      "ns08.ns-cloud4b.com",
       "ns06.ns-cloud4b.net"
     ],
     "warnings": []
@@ -17,7 +17,7 @@
         "hostname": "camara-es.mail.protection.outlook.com",
         "addresses": [
           "104.47.11.10",
-          "104.47.11.202"
+          "104.47.11.74"
         ]
       }
     ],
@@ -201,71 +201,9 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=reject; rua=mailto:dmarc@camara.es; ruf=mailto:dmarc@camara.es; fo=1; adkim=r; aspf=r; pct=100; rf=afrf; ri=86400; sp=none",
-    "valid": true,
-    "location": "camara.es",
-    "warnings": [],
-    "tags": {
-      "v": {
-        "value": "DMARC1",
-        "explicit": true
-      },
-      "p": {
-        "value": "reject",
-        "explicit": true
-      },
-      "rua": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "dmarc@camara.es",
-            "size_limit": null
-          }
-        ],
-        "explicit": true
-      },
-      "ruf": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "dmarc@camara.es",
-            "size_limit": null
-          }
-        ],
-        "explicit": true
-      },
-      "fo": {
-        "value": [
-          "1"
-        ],
-        "explicit": true
-      },
-      "adkim": {
-        "value": "r",
-        "explicit": true
-      },
-      "aspf": {
-        "value": "r",
-        "explicit": true
-      },
-      "pct": {
-        "value": 100,
-        "explicit": true
-      },
-      "rf": {
-        "value": [
-          "afrf"
-        ],
-        "explicit": true
-      },
-      "ri": {
-        "value": 86400,
-        "explicit": true
-      },
-      "sp": {
-        "value": "none",
-        "explicit": true
-      }
-    }
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "All nameservers failed to answer the query _dmarc.camara.es. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
   }
 }

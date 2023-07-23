@@ -17,15 +17,15 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "172.253.115.27",
-          "2607:f8b0:4004:c17::1a"
+          "142.251.167.27",
+          "2607:f8b0:4004:c09::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "209.85.202.27",
+          "209.85.202.26",
           "2a00:1450:400b:c00::1a"
         ]
       },
@@ -34,15 +34,15 @@
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
           "2a00:1450:400c:c0b::1a",
-          "64.233.184.27"
+          "64.233.184.26"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "142.250.27.27",
-          "2a00:1450:4025:401::1b"
+          "142.250.27.26",
+          "2a00:1450:4025:401::1a"
         ]
       },
       {
@@ -50,7 +50,7 @@
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
           "142.250.153.27",
-          "2a00:1450:4013:c16::1b"
+          "2a00:1450:4013:c16::1a"
         ]
       }
     ],
@@ -64,11 +64,11 @@
     "parsed": {
       "pass": [
         {
-          "value": "54.75.247.165",
+          "value": "108.128.19.222",
           "mechanism": "a"
         },
         {
-          "value": "54.76.75.133",
+          "value": "52.210.197.234",
           "mechanism": "a"
         },
         {
@@ -400,6 +400,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "error": "All nameservers failed to answer the query _dmarc.eoi.es. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
   }
 }

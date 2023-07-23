@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1106.ui-dns.com",
       "ns1101.ui-dns.org",
-      "ns1121.ui-dns.biz",
-      "ns1064.ui-dns.de"
+      "ns1064.ui-dns.de",
+      "ns1106.ui-dns.com",
+      "ns1121.ui-dns.biz"
     ],
     "warnings": []
   },
@@ -17,7 +17,7 @@
         "preference": 10,
         "hostname": "aytopbpanes-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.18.138",
+          "104.47.18.202",
           "104.47.22.138"
         ]
       }
@@ -95,23 +95,27 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; rua=mailto:csirt@seresco.es",
+    "record": "v=DMARC1; p=quarantine; rua=mailto:revisiones@aytopbpanes.es",
     "valid": true,
     "location": "aytopbpanes.es",
-    "warnings": [
-      "seresco.es does not indicate that it accepts DMARC reports about aytopbpanes.es - Authorization record not found: aytopbpanes.es._report._dmarc.seresco.es IN TXT \"v=DMARC1\""
-    ],
+    "warnings": [],
     "tags": {
       "v": {
         "value": "DMARC1",
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": true
       },
       "rua": {
-        "value": "mailto:csirt@seresco.es",
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "revisiones@aytopbpanes.es",
+            "size_limit": null
+          }
+        ],
         "explicit": true
       },
       "adkim": {
@@ -143,7 +147,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": false
       }
     }

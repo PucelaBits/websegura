@@ -21,12 +21,12 @@
       {
         "preference": 10,
         "hostname": "mail.algeciras.es",
-        "addresses": [
-          "188.85.16.244"
-        ]
+        "addresses": []
       }
     ],
-    "warnings": []
+    "warnings": [
+      "All nameservers failed to answer the query mail.algeciras.es. IN A: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    ]
   },
   "spf": {
     "record": "v=spf1 mx a ip4:188.85.16.242 ip4:188.85.16.244 -all",

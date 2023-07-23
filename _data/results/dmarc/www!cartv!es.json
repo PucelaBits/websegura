@@ -12,33 +12,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mx1.hc384-90.eu.iphmx.com",
-        "addresses": [
-          "207.54.72.179",
-          "207.54.76.11"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mx2.hc384-90.eu.iphmx.com",
-        "addresses": [
-          "207.54.72.179",
-          "207.54.76.11"
-        ]
-      },
-      {
-        "preference": 40,
-        "hostname": "cartv-es.mail.protection.outlook.com",
-        "addresses": [
-          "104.47.11.10",
-          "104.47.11.202"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "All nameservers failed to answer the query 11.76.54.207.in-addr.arpa. IN PTR: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "spf": {
     "record": "v=spf1 ip4:82.159.156.66  include:spf.protection.outlook.com  -all",

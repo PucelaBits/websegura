@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns3.coruna.es",
-      "ns2.coruna.es",
       "ns1.coruna.es",
+      "ns2.coruna.es",
+      "ns3.coruna.es",
       "ns4.coruna.es"
     ],
     "warnings": []
@@ -15,54 +15,29 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "mx1.coruna.es",
+        "hostname": "coruna-gal.mail.protection.outlook.com",
         "addresses": [
-          "195.57.99.211"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mx2.coruna.es",
-        "addresses": [
-          "195.57.99.212"
-        ]
-      },
-      {
-        "preference": 30,
-        "hostname": "mx3.coruna.es",
-        "addresses": [
-          "195.57.99.209"
+          "104.47.17.138",
+          "104.47.18.74"
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
-      "The reverse DNS of 195.57.99.211 is gerion.coruna.es, but the A/AAAA DNS records for gerion.coruna.es do not resolve to 195.57.99.211"
-    ]
+    "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx a:oxi.coruna.es a:bakdmz.coruna.es include:spf.protection.outlook.com include:_migracion.coruna.es -all",
+    "record": "v=spf1 a:ara.coruna.es a:gerion.coruna.es a:oxi.coruna.es a:bakdmz.coruna.es include:spf.protection.outlook.com -all",
     "valid": true,
-    "dns_lookups": 9,
-    "warnings": [
-      "The domain 195.57.99.209 does not exist",
-      "The domain 195.57.99.210 does not exist",
-      "The domain 195.57.99.211 does not exist",
-      "The domain 195.57.99.212 does not exist"
-    ],
+    "dns_lookups": 5,
+    "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "mx1.coruna.es",
-          "mechanism": "mx"
+          "value": "195.57.99.212",
+          "mechanism": "a"
         },
         {
-          "value": "mx2.coruna.es",
-          "mechanism": "mx"
-        },
-        {
-          "value": "mx3.coruna.es",
-          "mechanism": "mx"
+          "value": "195.57.99.211",
+          "mechanism": "a"
         },
         {
           "value": "195.57.99.210",
@@ -129,27 +104,6 @@
             "all": "fail"
           },
           "warnings": []
-        },
-        {
-          "domain": "_migracion.coruna.es",
-          "record": "v=spf1 a:195.57.99.209 a:195.57.99.210 a:195.57.99.211 a:195.57.99.212 -all",
-          "dns_lookups": 4,
-          "parsed": {
-            "pass": [],
-            "neutral": [],
-            "softfail": [],
-            "fail": [],
-            "include": [],
-            "redirect": null,
-            "exp": null,
-            "all": "fail"
-          },
-          "warnings": [
-            "The domain 195.57.99.209 does not exist",
-            "The domain 195.57.99.210 does not exist",
-            "The domain 195.57.99.211 does not exist",
-            "The domain 195.57.99.212 does not exist"
-          ]
         }
       ],
       "redirect": null,

@@ -10,30 +10,13 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mx1.hc1008-19.eu.iphmx.com",
-        "addresses": [
-          "23.90.117.155",
-          "23.90.119.37"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "mx2.hc1008-19.eu.iphmx.com",
-        "addresses": [
-          "23.90.117.155",
-          "23.90.119.37"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "All nameservers failed to answer the query 37.119.90.23.in-addr.arpa. IN PTR: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "spf": {
-    "record": "v=spf1 exists:%{i}.spf.hc1008-19.eu.iphmx.com ip4:82.194.75.131/32 ip4:176.58.8.208/29 ip4:217.130.24.0/24 ip4:195.69.254.31 ip4:195.69.253.6 ip4:195.69.253.2 include:amazonses.com include:eu.mailgun.org include:spf.protection.outlook.com include:spf.emailsignatures365.com -all",
+    "record": "v=spf1 exists:%{i}.spf.hc1008-19.eu.iphmx.com ip4:82.194.75.131/32 ip4:176.58.8.208/29 ip4:217.130.24.0/24 ip4:195.69.254.31 ip4:195.69.253.6 ip4:195.69.253.2 include:amazonses.com include:eu.mailgun.org include:spf.protection.outlook.com include:spf.emailsignatures365.com include:msrv-smtp-01.aspl.es include:spf.sendinblue.com -all",
     "valid": true,
-    "dns_lookups": 6,
+    "dns_lookups": 8,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -362,6 +345,84 @@
               },
               {
                 "value": "20.116.107.216",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "msrv-smtp-01.aspl.es",
+          "record": "v=spf1 ip4:185.195.96.0/25 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "185.195.96.0/25",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "spf.sendinblue.com",
+          "record": "v=spf1 ip4:185.41.28.0/22 ip4:94.143.16.0/21 ip4:185.24.144.0/22 ip4:153.92.224.0/19 ip4:213.32.128.0/18 ip4:185.107.232.0/22 ip4:77.32.128.0/18 ip4:77.32.192.0/19 ip4:212.146.192.0/18 ip4:172.246.0.0/18 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "185.41.28.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "94.143.16.0/21",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.24.144.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "153.92.224.0/19",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "213.32.128.0/18",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.107.232.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "77.32.128.0/18",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "77.32.192.0/19",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "212.146.192.0/18",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "172.246.0.0/18",
                 "mechanism": "ip4"
               }
             ],

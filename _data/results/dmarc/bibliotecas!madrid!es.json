@@ -8,9 +8,7 @@
   },
   "mx": {
     "hosts": [],
-    "warnings": [
-      "No MX records found. Is the domain parked?"
-    ]
+    "error": "All nameservers failed to answer the query bibliotecas.madrid.es. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "spf": {
     "record": null,

@@ -12,17 +12,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 0,
-        "hostname": "ib3-org.mail.protection.outlook.com",
-        "addresses": [
-          "104.47.18.138",
-          "104.47.18.202"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "All nameservers failed to answer the query 138.22.47.104.in-addr.arpa. IN PTR: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com -all",

@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.uab.es",
+      "ns2.csuc.cat",
       "ns1.csuc.cat",
       "dns.uab.es",
-      "ns2.csuc.cat"
+      "dns1.uab.es"
     ],
     "warnings": []
   },
@@ -17,8 +17,8 @@
         "preference": 0,
         "hostname": "uab-cat.mail.protection.outlook.com",
         "addresses": [
-          "104.47.11.10",
-          "104.47.11.202"
+          "104.47.11.202",
+          "104.47.11.74"
         ]
       }
     ],
@@ -95,7 +95,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; rua=mailto:dmarc_agg@vali.email",
+    "record": "v=DMARC1; p=quarantine; sp=none; pct=100; adkim=r; aspf=r; rua=mailto:dmarc_agg@vali.email",
     "valid": true,
     "location": "uab.cat",
     "warnings": [],
@@ -105,7 +105,23 @@
         "explicit": true
       },
       "p": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "sp": {
         "value": "none",
+        "explicit": true
+      },
+      "pct": {
+        "value": 100,
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": true
+      },
+      "aspf": {
+        "value": "r",
         "explicit": true
       },
       "rua": {
@@ -118,22 +134,10 @@
         ],
         "explicit": true
       },
-      "adkim": {
-        "value": "r",
-        "explicit": false
-      },
-      "aspf": {
-        "value": "r",
-        "explicit": false
-      },
       "fo": {
         "value": [
           "0"
         ],
-        "explicit": false
-      },
-      "pct": {
-        "value": 100,
         "explicit": false
       },
       "rf": {
@@ -144,10 +148,6 @@
       },
       "ri": {
         "value": 86400,
-        "explicit": false
-      },
-      "sp": {
-        "value": "none",
         "explicit": false
       }
     }

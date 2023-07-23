@@ -4,57 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.redunda.com",
-      "ns.redunda.com"
+      "ns.redunda.com",
+      "ns2.redunda.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 8,
-        "hostname": "mail.betera.es",
-        "addresses": [
-          "31.24.154.99"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "mx.redunda.com",
-        "addresses": [
-          "84.246.208.51",
-          "84.246.208.52",
-          "84.246.208.53",
-          "84.246.208.54",
-          "84.246.208.55",
-          "84.246.208.56",
-          "84.246.208.57",
-          "84.246.208.58"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "mx2.redunda.com",
-        "addresses": [
-          "84.246.208.51",
-          "84.246.208.52",
-          "84.246.208.53",
-          "84.246.208.54",
-          "84.246.208.55",
-          "84.246.208.56",
-          "84.246.208.57",
-          "84.246.208.58"
-        ]
-      },
-      {
-        "preference": 32767,
-        "hostname": "ms98722601.msv1.invalid",
-        "addresses": []
-      }
-    ],
-    "warnings": [
-      "The domain ms98722601.msv1.invalid does not exist. Consider using a TXT record to validate domain ownership in Office 365 instead."
-    ]
+    "hosts": [],
+    "error": "All nameservers failed to answer the query 55.208.246.84.in-addr.arpa. IN PTR: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "spf": {
     "record": "v=spf1 a mx a:mail.betera.es ip4:31.24.154.99 -all",

@@ -10,16 +10,30 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 5,
+        "hostname": "correo5.valencia.es",
+        "addresses": [
+          "213.201.83.247"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:213.201.83.247 ~all",
+    "record": "v=spf1 mx a:correo5.valencia.es ip4:213.201.83.247 ~all",
     "valid": true,
-    "dns_lookups": 0,
-    "warnings": [],
+    "dns_lookups": 2,
+    "warnings": [
+      "All nameservers failed to answer the query valencia.es. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    ],
     "parsed": {
       "pass": [
+        {
+          "value": "213.201.83.247",
+          "mechanism": "a"
+        },
         {
           "value": "213.201.83.247",
           "mechanism": "ip4"

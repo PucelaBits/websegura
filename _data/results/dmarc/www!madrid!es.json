@@ -10,17 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 1,
-        "hostname": "madrid-es.mail.protection.outlook.com",
-        "addresses": [
-          "104.47.18.138",
-          "104.47.18.202"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "All nameservers failed to answer the query 138.18.47.104.in-addr.arpa. IN PTR: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "spf": {
     "record": "v=spf1 ip4:195.55.79.61 ip4:195.55.79.62 ip4:195.55.79.41 ip4:195.55.79.42 ip4:195.55.79.43 ip4:195.55.79.44 ip4:195.55.79.73 ip4:195.55.79.74 ip4:195.55.79.75 ip4:195.55.79.49 ip4:195.55.79.148 ip4:195.55.79.71 ip4:195.55.79.20 ip4:195.55.79.21 ip4:195.55.79.22 ip4:195.55.79.23 ip4:195.55.79.24 ip4:195.55.79.25 include:spf.protection.outlook.com ip4:195.55.79.72 include:spf.augure.com include:spf.mailjet.com include:spf.mandrillapp.com a:origen2.iam.akamai.c.mad.interhost.com a:origen.iam.akamai.c.mad.interhost.com a:origen3.iam.akamai.c.mad.interhost.com ~all",

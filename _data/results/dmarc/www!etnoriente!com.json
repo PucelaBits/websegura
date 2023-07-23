@@ -5,30 +5,15 @@
   "ns": {
     "hostnames": [
       "ns1091.ui-dns.com",
-      "ns1030.ui-dns.de",
+      "ns1054.ui-dns.biz",
       "ns1024.ui-dns.org",
-      "ns1054.ui-dns.biz"
+      "ns1030.ui-dns.de"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mx00.ionos.es",
-        "addresses": [
-          "212.227.15.41"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "mx01.ionos.es",
-        "addresses": [
-          "217.72.192.67"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "All nameservers failed to answer the query 67.192.72.217.in-addr.arpa. IN PTR: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "spf": {
     "record": "v=spf1 include:_spf.google.com include:_spf-eu.ionos.com include:spf.protection.outlook.com ~all",

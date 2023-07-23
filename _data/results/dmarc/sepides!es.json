@@ -4,177 +4,82 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.dondominio.com",
-      "ns1.dondominio.com"
+      "ns1.dondominio.com",
+      "ns2.dondominio.com"
     ],
     "warnings": []
   },
   "mx": {
     "hosts": [
       {
-        "preference": 10,
-        "hostname": "mx10.sepides.es",
+        "preference": 0,
+        "hostname": "sepides-es.mail.protection.outlook.com",
         "addresses": [
-          "94.100.132.8"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mx20.sepides.es",
-        "addresses": [
-          "94.100.134.100"
+          "104.47.18.202",
+          "104.47.22.138"
         ]
       }
     ],
-    "warnings": [
-      "The reverse DNS of 94.100.134.100 is nlb01-hz3.hornetsecurity.com, but the A/AAAA DNS records for nlb01-hz3.hornetsecurity.com do not resolve to 94.100.134.100"
-    ]
+    "warnings": []
   },
   "spf": {
-    "record": "v=spf1 +a +mx include:emailservice.cpd.as -all",
+    "record": "v=spf1 include:spf.protection.outlook.com -all",
     "valid": true,
-    "dns_lookups": 4,
+    "dns_lookups": 1,
     "warnings": [],
     "parsed": {
-      "pass": [
-        {
-          "value": "80.240.126.176",
-          "mechanism": "a"
-        },
-        {
-          "value": "mx10.sepides.es",
-          "mechanism": "mx"
-        },
-        {
-          "value": "mx20.sepides.es",
-          "mechanism": "mx"
-        }
-      ],
+      "pass": [],
       "neutral": [],
       "softfail": [],
       "fail": [],
       "include": [
         {
-          "domain": "emailservice.cpd.as",
-          "record": "v=spf1 +ip4:154.58.16.0/22 +ip4:185.79.128.0/22 +ip4:213.99.28.0/24 +ip4:46.24.172.0/25 +include:spf.hornetsecurity.com -all",
-          "dns_lookups": 1,
+          "domain": "spf.protection.outlook.com",
+          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/50 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
+          "dns_lookups": 0,
           "parsed": {
             "pass": [
               {
-                "value": "154.58.16.0/22",
+                "value": "40.92.0.0/15",
                 "mechanism": "ip4"
               },
               {
-                "value": "185.79.128.0/22",
+                "value": "40.107.0.0/16",
                 "mechanism": "ip4"
               },
               {
-                "value": "213.99.28.0/24",
+                "value": "52.100.0.0/14",
                 "mechanism": "ip4"
               },
               {
-                "value": "46.24.172.0/25",
+                "value": "104.47.0.0/17",
                 "mechanism": "ip4"
+              },
+              {
+                "value": "2a01:111:f400::/48",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403::/49",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:8000::/50",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:c000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:f000::/52",
+                "mechanism": "ip6"
               }
             ],
             "neutral": [],
             "softfail": [],
             "fail": [],
-            "include": [
-              {
-                "domain": "spf.hornetsecurity.com",
-                "record": "v=spf1 ip4:83.246.65.0/24 ip4:185.140.204.0/22 ip4:94.100.128.0/20 ip4:81.20.94.0/24 ip4:173.45.18.0/24 ip4:52.62.123.207/32 ip4:52.62.108.212/32 ip4:129.232.203.80/28 ip4:209.172.38.64/27 ip4:108.163.133.224/27 ip4:193.135.100.0/27 ip4:199.27.221.76 ip4:216.46.11.238 ip4:216.46.11.244 ip4:199.27.221.81 ip4:199.27.221.82 ip4:52.62.114.130 ip4:52.62.125.178 ip4:92.54.27.0/24 ~all",
-                "dns_lookups": 0,
-                "parsed": {
-                  "pass": [
-                    {
-                      "value": "83.246.65.0/24",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "185.140.204.0/22",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "94.100.128.0/20",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "81.20.94.0/24",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "173.45.18.0/24",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "52.62.123.207/32",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "52.62.108.212/32",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "129.232.203.80/28",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "209.172.38.64/27",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "108.163.133.224/27",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "193.135.100.0/27",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "199.27.221.76",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "216.46.11.238",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "216.46.11.244",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "199.27.221.81",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "199.27.221.82",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "52.62.114.130",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "52.62.125.178",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "92.54.27.0/24",
-                      "mechanism": "ip4"
-                    }
-                  ],
-                  "neutral": [],
-                  "softfail": [],
-                  "fail": [],
-                  "include": [],
-                  "redirect": null,
-                  "exp": null,
-                  "all": "softfail"
-                },
-                "warnings": []
-              }
-            ],
+            "include": [],
             "redirect": null,
             "exp": null,
             "all": "fail"

@@ -136,7 +136,7 @@
     "valid": true,
     "location": "dipcas.es",
     "warnings": [
-      "pct value is less than 100. This leads to inconsistent and unpredictable policy enforcement. Consider using p=none to monitor results instead"
+      "Failed to retrieve MX records for the domain of ruf email address oper@dipcas.es - All nameservers failed to answer the query dipcas.es. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
     ],
     "tags": {
       "v": {
@@ -176,13 +176,7 @@
         "explicit": true
       },
       "ruf": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "oper@dipcas.es",
-            "size_limit": null
-          }
-        ],
+        "value": "mailto:oper@dipcas.es",
         "explicit": true
       },
       "rf": {

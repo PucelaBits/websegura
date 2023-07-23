@@ -37,9 +37,7 @@
       {
         "preference": 20,
         "hostname": "mx2.idecnet.com",
-        "addresses": [
-          "212.64.169.75"
-        ]
+        "addresses": []
       },
       {
         "preference": 30,
@@ -70,7 +68,9 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "All nameservers failed to answer the query mx2.idecnet.com. IN A: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com -all",

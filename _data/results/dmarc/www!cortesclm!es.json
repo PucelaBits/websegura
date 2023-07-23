@@ -3,11 +3,8 @@
   "base_domain": "cortesclm.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "dns6.cim.es",
-      "dns5.cim.es"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "All nameservers failed to answer the query cortesclm.es. IN NS: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "mx": {
     "hosts": [

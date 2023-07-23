@@ -5,23 +5,14 @@
   "ns": {
     "hostnames": [
       "ns1.feriavalladolid.com",
-      "ns.feriavalladolid.com",
-      "ns2.feriavalladolid.com"
+      "ns2.feriavalladolid.com",
+      "ns.feriavalladolid.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "feriavalladolid-com.mail.eo.outlook.com",
-        "addresses": [
-          "104.47.0.36",
-          "104.47.1.36"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "All nameservers failed to answer the query 0.68.101.52.in-addr.arpa. IN PTR: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com -all",

@@ -4,23 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.ymant.com",
-      "ns2.ymant.com"
+      "ns2.ymant.com",
+      "ns1.ymant.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "plancabanyal-es.mail.protection.outlook.com",
-        "addresses": [
-          "104.47.18.138",
-          "104.47.22.138"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "All nameservers failed to answer the query plancabanyal.es. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "spf": {
     "record": "v=spf1 ip4:185.231.20.50 include:spf.protection.outlook.com -all",

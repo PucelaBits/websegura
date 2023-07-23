@@ -120,7 +120,7 @@
               },
               {
                 "domain": "spfb.domicenter.net",
-                "record": "v=spf1 ip4:82.223.8.172 ip4:82.223.196.37 -all",
+                "record": "v=spf1 ip4:82.223.8.172 ip4:82.223.196.37 ip4:212.227.153.147 -all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
@@ -130,6 +130,10 @@
                     },
                     {
                       "value": "82.223.196.37",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "212.227.153.147",
                       "mechanism": "ip4"
                     }
                   ],

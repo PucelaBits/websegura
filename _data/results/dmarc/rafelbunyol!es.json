@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns3.dnsxperta.com",
+      "ns1.dnsxperta.com",
       "ns2.dnsxperta.com",
-      "ns1.dnsxperta.com"
+      "ns3.dnsxperta.com"
     ],
     "warnings": []
   },
@@ -16,8 +16,8 @@
         "preference": 10,
         "hostname": "mx.spamexperts.com",
         "addresses": [
-          "2001:550:2:78::ca:100",
-          "38.89.254.156"
+          "2001:550:2:61::2fc:100",
+          "38.111.198.185"
         ]
       },
       {
@@ -48,6 +48,7 @@
       }
     ],
     "warnings": [
+      "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records",
       "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records",
       "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records"
     ]
@@ -98,12 +99,16 @@
         },
         {
           "domain": "spf.qsemail.net",
-          "record": "v=spf1 ip4:88.99.188.16 ip4:135.181.153.240 ip4:188.208.218.128 ip4:188.208.218.61 ip4:188.208.218.94 ip4:188.208.218.64 ip4:188.208.218.63 ip4:54.36.27.2 ip4:167.114.239.180 ip4:185.201.17.2 ip4:167.114.238.39 ip4:151.80.133.157 ip4:188.208.218.166 ip4:162.55.164.124 include:spf.antispamcloud.com a:delivery.antispamcloud.com ~all",
+          "record": "v=spf1 ip4:88.99.188.16 ip4:188.208.218.47 ip4:135.181.153.240 ip4:188.208.218.128 ip4:188.208.218.61 ip4:188.208.218.94 ip4:188.208.218.64 ip4:188.208.218.63 ip4:54.36.27.2 ip4:167.114.239.180 ip4:185.201.17.2 ip4:167.114.238.39 ip4:151.80.133.157 ip4:188.208.218.166 ip4:162.55.164.124 ip4:84.232.22.24 include:spf.antispamcloud.com a:delivery.antispamcloud.com ~all",
           "dns_lookups": 5,
           "parsed": {
             "pass": [
               {
                 "value": "88.99.188.16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "188.208.218.47",
                 "mechanism": "ip4"
               },
               {
@@ -156,6 +161,10 @@
               },
               {
                 "value": "162.55.164.124",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "84.232.22.24",
                 "mechanism": "ip4"
               },
               {
@@ -732,10 +741,6 @@
               },
               {
                 "value": "206.148.0.49",
-                "mechanism": "a"
-              },
-              {
-                "value": "213.163.65.6",
                 "mechanism": "a"
               },
               {

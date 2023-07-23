@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.dondominio.com",
-      "ns1.dondominio.com"
+      "ns1.dondominio.com",
+      "ns2.dondominio.com"
     ],
     "warnings": []
   },
@@ -26,8 +26,8 @@
     "record": "v=spf1 include:spf.protection.outlook.com mx include:_spf.evicertia.com mx include:trackglobe.com -all",
     "valid": false,
     "warnings": [],
-    "error": "Parsing the SPF record requires 13/10 maximum DNS lookups - https://tools.ietf.org/html/rfc7208#section-4.6.4",
-    "dns_lookups": 13
+    "error": "Parsing the SPF record requires 14/10 maximum DNS lookups - https://tools.ietf.org/html/rfc7208#section-4.6.4",
+    "dns_lookups": 14
   },
   "dmarc": {
     "record": null,

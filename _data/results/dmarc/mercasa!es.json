@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns.gestiondecuenta.com",
       "ns2.gestiondecuenta.com",
+      "ns4.gestiondecuenta.com",
       "ns3.gestiondecuenta.com",
-      "ns4.gestiondecuenta.com"
+      "ns.gestiondecuenta.com"
     ],
     "warnings": []
   },
@@ -17,26 +17,21 @@
         "preference": 10,
         "hostname": "mercasaes-mail-onmicrosoft-com.mail.protection.outlook.com",
         "addresses": [
-          "104.47.12.36",
-          "104.47.14.36"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mx10.mercasa.es",
-        "addresses": [
-          "2.139.205.222"
-        ]
-      },
-      {
-        "preference": 30,
-        "hostname": "mx20.mercasa.es",
-        "addresses": [
-          "212.170.103.172"
+          "52.101.68.0",
+          "52.101.68.3",
+          "52.101.68.5",
+          "52.101.73.2",
+          "52.101.73.6"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "52.101.68.0 does not have any reverse DNS (PTR) records",
+      "52.101.68.3 does not have any reverse DNS (PTR) records",
+      "52.101.68.5 does not have any reverse DNS (PTR) records",
+      "52.101.73.2 does not have any reverse DNS (PTR) records",
+      "52.101.73.6 does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
     "record": "v=spf1 +a +mx a:172-104-137-76.ip.linodeusercontent.com a:cph-smtp-gw134.customprofessionalhosting.com ip4:172.104.137.76 ip4:185.22.93.134 ip4:212.170.103.172 ip4:2.139.205.222 include:spf.protection.outlook.com -all",
@@ -51,14 +46,6 @@
         },
         {
           "value": "mercasaes-mail-onmicrosoft-com.mail.protection.outlook.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "mx10.mercasa.es",
-          "mechanism": "mx"
-        },
-        {
-          "value": "mx20.mercasa.es",
           "mechanism": "mx"
         },
         {

@@ -17,12 +17,25 @@
         "preference": 0,
         "hostname": "firabarcelona-com.mail.protection.outlook.com",
         "addresses": [
-          "104.47.0.36",
-          "104.47.2.36"
+          "52.101.68.0",
+          "52.101.68.21",
+          "52.101.68.5",
+          "52.101.73.1",
+          "52.101.73.2",
+          "52.101.73.4",
+          "52.101.73.6"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "52.101.68.0 does not have any reverse DNS (PTR) records",
+      "52.101.68.21 does not have any reverse DNS (PTR) records",
+      "52.101.68.5 does not have any reverse DNS (PTR) records",
+      "52.101.73.1 does not have any reverse DNS (PTR) records",
+      "52.101.73.2 does not have any reverse DNS (PTR) records",
+      "52.101.73.4 does not have any reverse DNS (PTR) records",
+      "52.101.73.6 does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
     "record": "v=spf1 ip4:82.223.209.146/32 ip4:195.47.206.154/32 ip4:95.215.120.0/22 include:spf.mittum.com include:spf.protection.outlook.com include:_spf.evicertia.com include:spf.mandrillapp.com include:servers.mcsv.net include:amazonses.com  -all",
@@ -50,7 +63,7 @@
       "include": [
         {
           "domain": "spf.mittum.com",
-          "record": "v=spf1 ip4:15.235.88.128/25 ip4:213.32.64.31 ip4:51.79.34.129/25 ip4:186.194.140.0/25 ip4:189.197.63.192/26 ip4:213.32.57.192/26 ip4:142.44.133.128/26 ip4:51.75.189.0/26 ip4:217.182.26.64/26 ip4:144.217.209.0/26 ip4:54.39.225.96/27 ip4:66.70.208.0/25 ip4:200.53.188.128/27 ip4:152.228.199.0/26 ~all",
+          "record": "v=spf1 ip4:15.235.88.128/25 ip4:213.32.64.31 ip4:51.79.34.129/25 ip4:186.194.140.0/25 ip4:189.197.63.192/26 ip4:213.32.57.192/26 ip4:142.44.133.128/26 ip4:51.75.189.0/26 ip4:217.182.26.64/26 ip4:144.217.209.0/26 ip4:54.39.225.96/27 ip4:66.70.208.0/25 ip4:200.53.188.128/27 ip4:152.228.199.0/26 ip4:198.50.134.128/26 ~all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -108,6 +121,10 @@
               },
               {
                 "value": "152.228.199.0/26",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "198.50.134.128/26",
                 "mechanism": "ip4"
               }
             ],

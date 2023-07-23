@@ -3,8 +3,11 @@
   "base_domain": "aller.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
+    "hostnames": [
+      "ns2.aller.es",
+      "ns1.aller.es"
+    ],
+    "warnings": []
   },
   "mx": {
     "hosts": [
@@ -303,7 +306,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none",
+    "record": "v=DMARC1; p=quarantine; adkim=s; aspf=s",
     "valid": true,
     "location": "aller.es",
     "warnings": [
@@ -315,16 +318,16 @@
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": true
       },
       "adkim": {
-        "value": "r",
-        "explicit": false
+        "value": "s",
+        "explicit": true
       },
       "aspf": {
-        "value": "r",
-        "explicit": false
+        "value": "s",
+        "explicit": true
       },
       "fo": {
         "value": [
@@ -347,7 +350,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": false
       }
     }

@@ -15,43 +15,28 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "mx1.dipta.cat",
+        "hostname": "mail.elvendrell.net",
         "addresses": [
-          "195.76.233.59"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mx1.tinet.org",
-        "addresses": [
-          "195.77.216.146"
+          "82.98.147.204"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 a:mx1.dipta.cat a:mx1.tinet.org a:mx2.tinet.org a:elvendrell.net ~all",
+    "record": "v=spf1 a mx ~all",
     "valid": true,
-    "dns_lookups": 4,
+    "dns_lookups": 2,
     "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "195.76.233.59",
-          "mechanism": "a"
-        },
-        {
-          "value": "195.77.216.146",
-          "mechanism": "a"
-        },
-        {
-          "value": "195.77.216.147",
-          "mechanism": "a"
-        },
-        {
           "value": "82.98.147.204",
           "mechanism": "a"
+        },
+        {
+          "value": "mail.elvendrell.net",
+          "mechanism": "mx"
         }
       ],
       "neutral": [],

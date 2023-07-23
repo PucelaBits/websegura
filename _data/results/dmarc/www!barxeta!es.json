@@ -3,12 +3,8 @@
   "base_domain": "barxeta.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "ns3.dnsxperta.com",
-      "ns2.dnsxperta.com",
-      "ns1.dnsxperta.com"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "All nameservers failed to answer the query barxeta.es. IN NS: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "mx": {
     "hosts": [
@@ -24,14 +20,59 @@
     "warnings": []
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "barxeta.es does not have a SPF TXT record"
+    "record": "v=spf1 include:dnsxperta.com -all",
+    "valid": true,
+    "dns_lookups": 1,
+    "warnings": [],
+    "parsed": {
+      "pass": [],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "dnsxperta.com",
+          "record": "v=spf1 ip4:217.13.80.0/20 ip4:194.143.202.166/28 ip4:194.143.202.194/28 ip4:83.147.63.0/24 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "217.13.80.0/20",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "194.143.202.166/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "194.143.202.194/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "83.147.63.0/24",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
     "record": null,
     "valid": false,
     "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.barxeta.es\n\nv=spf1 include:dnsxperta.com -all"
   }
 }

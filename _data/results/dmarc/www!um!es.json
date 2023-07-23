@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "chico.rediris.es",
       "sun.rediris.es",
       "dns2.um.es",
-      "chico.rediris.es",
       "dns1.um.es"
     ],
     "warnings": []
@@ -31,7 +31,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:spf.puc.rediris.es include:spf.protection.outlook.com ip4:155.54.212.160/28 ip6:2001:720:1710:601::/64 a:mail.symposium.events -all",
+    "record": "v=spf1 include:spf.puc.rediris.es include:spf.protection.outlook.com ip4:155.54.212.160/28 ip4:155.54.211.128/28 ip6:2001:720:1710:601::/64 ip6:2001:720:1710:607::/64 a:mail.symposium.events -all",
     "valid": true,
     "dns_lookups": 3,
     "warnings": [],
@@ -42,7 +42,15 @@
           "mechanism": "ip4"
         },
         {
+          "value": "155.54.211.128/28",
+          "mechanism": "ip4"
+        },
+        {
           "value": "2001:720:1710:601::/64",
+          "mechanism": "ip6"
+        },
+        {
+          "value": "2001:720:1710:607::/64",
           "mechanism": "ip6"
         },
         {

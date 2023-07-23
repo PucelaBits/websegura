@@ -4,11 +4,11 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "pl3.solunet.es",
       "pl1.solunet.es",
       "pl2.solunet.es",
-      "trole.lostranviasdezaragoza.es",
-      "pluton.virtualsw.es"
+      "pl3.solunet.es",
+      "pluton.virtualsw.es",
+      "trole.lostranviasdezaragoza.es"
     ],
     "warnings": []
   },
@@ -27,14 +27,32 @@
     ]
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "The resolution lifetime expired after 3.100 seconds: Server 1.0.0.1 UDP port 53 answered The DNS operation timed out."
+    "record": "v=spf1 +a +mx -all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ],
+    "parsed": {
+      "pass": [
+        {
+          "value": "mail.tranviasdezaragoza.es",
+          "mechanism": "mx"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
     "record": null,
     "valid": false,
     "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   }
 }

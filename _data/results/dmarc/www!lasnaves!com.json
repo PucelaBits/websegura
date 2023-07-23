@@ -34,9 +34,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:spf.protection.outlook.com -all",
+    "record": "v=spf1 include:spf.mailjet.com include:spf.protection.outlook.com -all",
     "valid": true,
-    "dns_lookups": 1,
+    "dns_lookups": 2,
     "warnings": [],
     "parsed": {
       "pass": [],
@@ -44,6 +44,39 @@
       "softfail": [],
       "fail": [],
       "include": [
+        {
+          "domain": "spf.mailjet.com",
+          "record": "v=spf1 ip4:87.253.232.0/21 ip4:185.189.236.0/22 ip4:185.211.120.0/22 ip4:185.250.236.0/22 ~all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "87.253.232.0/21",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.189.236.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.211.120.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.250.236.0/22",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        },
         {
           "domain": "spf.protection.outlook.com",
           "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/50 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",

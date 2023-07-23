@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns10.servicio-online.net",
       "ns11.servicio-online.net",
-      "ns12.servicio-online.net",
-      "ns10.servicio-online.net"
+      "ns12.servicio-online.net"
     ],
     "warnings": []
   },
@@ -26,16 +26,14 @@
     "record": "v=spf1 mx a ip4:195.76.51.99 a:correo.maspalomas.com -all",
     "valid": true,
     "dns_lookups": 3,
-    "warnings": [],
+    "warnings": [
+      "All nameservers failed to answer the query maspalomas.com. IN A: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    ],
     "parsed": {
       "pass": [
         {
           "value": "correo.maspalomas.com",
           "mechanism": "mx"
-        },
-        {
-          "value": "195.77.159.164",
-          "mechanism": "a"
         },
         {
           "value": "195.76.51.99",

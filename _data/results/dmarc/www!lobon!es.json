@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "isabel.dip-badajoz.es",
-      "ineco.nic.es",
+      "artemis.ttd.net",
       "proxy.dip-badajoz.es",
-      "artemis.ttd.net"
+      "isabel.dip-badajoz.es",
+      "ineco.nic.es"
     ],
     "warnings": []
   },
@@ -42,7 +42,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 195.57.11.112 is sdb-mta02.dip-badajoz.es, but the A/AAAA DNS records for sdb-mta02.dip-badajoz.es do not resolve to 195.57.11.112"
+    ]
   },
   "spf": {
     "record": "v=spf1 a mx ptr ip4:195.57.11.0/25 mx:lobon.es -all",
@@ -54,7 +57,7 @@
     "parsed": {
       "pass": [
         {
-          "value": "195.57.11.78",
+          "value": "195.57.11.116",
           "mechanism": "a"
         },
         {

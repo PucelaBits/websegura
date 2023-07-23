@@ -21,22 +21,29 @@
       {
         "preference": 20,
         "hostname": "mail.oepm.es",
-        "addresses": []
+        "addresses": [
+          "192.187.18.139"
+        ]
       }
     ],
-    "warnings": [
-      "All nameservers failed to answer the query mail.oepm.es. IN AAAA: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx -all",
     "valid": true,
     "dns_lookups": 1,
-    "warnings": [
-      "All nameservers failed to answer the query oepm.es. IN MX: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
-    ],
+    "warnings": [],
     "parsed": {
-      "pass": [],
+      "pass": [
+        {
+          "value": "estrella.oepm.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mail.oepm.es",
+          "mechanism": "mx"
+        }
+      ],
       "neutral": [],
       "softfail": [],
       "fail": [],

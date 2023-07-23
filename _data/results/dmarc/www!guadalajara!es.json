@@ -35,7 +35,9 @@
     "record": "v=spf1 mx a ip4:213.0.97.162/32 ip4:62.82.228.203/32 a:mail.guadalajara.es a:mail01.guadalajara.es a:correo.guadalajara.es ?all",
     "valid": true,
     "dns_lookups": 5,
-    "warnings": [],
+    "warnings": [
+      "All nameservers failed to answer the query correo.guadalajara.es. IN AAAA: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    ],
     "parsed": {
       "pass": [
         {
@@ -60,14 +62,6 @@
         },
         {
           "value": "213.0.97.168",
-          "mechanism": "a"
-        },
-        {
-          "value": "62.82.228.203",
-          "mechanism": "a"
-        },
-        {
-          "value": "213.0.97.162",
           "mechanism": "a"
         },
         {

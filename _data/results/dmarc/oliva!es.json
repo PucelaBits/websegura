@@ -10,16 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 8,
-        "hostname": "zimbra-oliva.digitalvalue.es",
-        "addresses": [
-          "217.13.93.4"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "All nameservers failed to answer the query 4.93.13.217.in-addr.arpa. IN PTR: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "spf": {
     "record": "v=spf1 include:dnsxperta.com ip4:95.39.225.138 ip4:89.248.106.134 ip4:95.39.225.133 -all",

@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns02.ono.com",
-      "dns01.ono.com"
+      "dns01.ono.com",
+      "dns02.ono.com"
     ],
     "warnings": []
   },
@@ -15,12 +15,25 @@
         "preference": 0,
         "hostname": "cortesaragon-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.12.36",
-          "104.47.13.36"
+          "52.101.68.0",
+          "52.101.68.21",
+          "52.101.68.3",
+          "52.101.73.1",
+          "52.101.73.2",
+          "52.101.73.4",
+          "52.101.73.6"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "52.101.68.0 does not have any reverse DNS (PTR) records",
+      "52.101.68.21 does not have any reverse DNS (PTR) records",
+      "52.101.68.3 does not have any reverse DNS (PTR) records",
+      "52.101.73.1 does not have any reverse DNS (PTR) records",
+      "52.101.73.2 does not have any reverse DNS (PTR) records",
+      "52.101.73.4 does not have any reverse DNS (PTR) records",
+      "52.101.73.6 does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
     "record": "v=spf1 a mx ip4:46.24.234.0/24 include:spf.protection.outlook.com include:emsd1.com -all",
@@ -101,7 +114,7 @@
         },
         {
           "domain": "emsd1.com",
-          "record": "v=spf1 ip4:173.236.20.0/24 ip4:192.92.97.0/24 ip4:52.128.40.0/21 ip4:217.8.118.0/24 ~all",
+          "record": "v=spf1 ip4:173.236.20.0/24 ip4:192.92.97.0/24 ip4:52.128.40.0/21 ip4:217.8.118.0/24 ip4:103.229.233.0/24 ~all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -119,6 +132,10 @@
               },
               {
                 "value": "217.8.118.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "103.229.233.0/24",
                 "mechanism": "ip4"
               }
             ],

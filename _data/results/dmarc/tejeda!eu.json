@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns3.dinahosting.com",
-      "ns.dinahosting.com",
       "ns4.dinahosting.com",
-      "ns2.dinahosting.com"
+      "ns2.dinahosting.com",
+      "ns3.dinahosting.com",
+      "ns.dinahosting.com"
     ],
     "warnings": []
   },
@@ -27,16 +27,14 @@
     "record": "v=spf1 a mx ~all",
     "valid": true,
     "dns_lookups": 2,
-    "warnings": [],
+    "warnings": [
+      "All nameservers failed to answer the query tejeda.eu. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    ],
     "parsed": {
       "pass": [
         {
           "value": "82.98.178.140",
           "mechanism": "a"
-        },
-        {
-          "value": "mail.tejeda.eu",
-          "mechanism": "mx"
         }
       ],
       "neutral": [],
