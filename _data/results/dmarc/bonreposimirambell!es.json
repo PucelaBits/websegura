@@ -77,6 +77,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.bonreposimirambell.es\n\nMS=ms69461387\n\nMS=E85AFC60C08B4C91A7BAC93144E8F1F1743780DC\n\nv=spf1 include:dnsxperta.com -all"
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.bonreposimirambell.es\n\nMS=ms69461387\n\nv=spf1 include:dnsxperta.com -all\n\nMS=E85AFC60C08B4C91A7BAC93144E8F1F1743780DC"
   }
 }

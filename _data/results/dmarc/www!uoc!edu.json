@@ -17,65 +17,67 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "172.253.63.26",
-          "2607:f8b0:4004:c19::1b"
+          "142.250.141.26",
+          "2607:f8b0:4023:c06::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "209.85.202.27",
-          "2a00:1450:400b:c00::1a"
+          "2607:f8b0:4003:c15::1a",
+          "64.233.171.27"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "2a00:1450:400c:c0b::1b",
-          "64.233.184.27"
+          "142.250.152.27",
+          "2607:f8b0:4001:c56::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "aspmx2.googlemail.com",
         "addresses": [
-          "209.85.202.27",
-          "2a00:1450:400b:c00::1b"
+          "2607:f8b0:4003:c15::1a",
+          "64.233.171.27"
         ]
       },
       {
         "preference": 10,
         "hostname": "aspmx3.googlemail.com",
         "addresses": [
-          "2a00:1450:400c:c0b::1b",
-          "64.233.184.27"
+          "142.250.152.27",
+          "2607:f8b0:4001:c56::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "aspmx4.googlemail.com",
         "addresses": [
-          "142.250.27.27",
-          "2a00:1450:4025:401::1a"
+          "172.253.113.27",
+          "2607:f8b0:4023:1::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "aspmx5.googlemail.com",
         "addresses": [
-          "142.250.153.26",
-          "2a00:1450:4013:c16::1a"
+          "172.253.126.26",
+          "2607:f8b0:4023:400::1a"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": null,
+    "record": "v=spf1 a:legacy.uoc.edu include:_spf.google.com include:in1.uoc.edu include:ex1.uoc.edu ~all",
     "valid": false,
-    "error": "All nameservers failed to answer the query uoc.edu. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "warnings": [],
+    "error": "Parsing the SPF record requires 15/10 maximum DNS lookups - https://tools.ietf.org/html/rfc7208#section-4.6.4",
+    "dns_lookups": 15
   },
   "dmarc": {
     "record": null,

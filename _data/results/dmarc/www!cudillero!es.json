@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns221.iservices4u.eu",
-      "ns223.iservices4u.eu",
       "ns220.iservices4u.eu",
+      "ns223.iservices4u.eu",
+      "ns221.iservices4u.eu",
       "ns222.iservices4u.eu"
     ],
     "warnings": []
@@ -16,7 +16,10 @@
       {
         "preference": 0,
         "hostname": "mta-ger-221.iservices4u.eu",
-        "addresses": []
+        "addresses": [
+          "2a01:4f8:c2c:8c47::1",
+          "88.99.174.10"
+        ]
       },
       {
         "preference": 10,
@@ -35,9 +38,7 @@
         ]
       }
     ],
-    "warnings": [
-      "All nameservers failed to answer the query mta-ger-221.iservices4u.eu. IN AAAA: Server Do53:1.0.0.1@53 answered SERVFAIL"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:116.202.67.80/28 ip4:5.135.230.0/27 include:spf.iservices4u.eu a -all",

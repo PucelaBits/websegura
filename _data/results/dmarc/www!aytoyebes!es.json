@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "ns3.almazena.com",
-      "ns1.almazena.com",
-      "ns2.almazena.com"
+      "ns2.almazena.com",
+      "ns1.almazena.com"
     ],
     "warnings": []
   },
@@ -28,11 +28,13 @@
     "record": "v=spf1 a mx include:almazena.com -all",
     "valid": true,
     "dns_lookups": 5,
-    "warnings": [
-      "All nameservers failed to answer the query aytoyebes.es. IN A: Server Do53:1.0.0.1@53 answered SERVFAIL"
-    ],
+    "warnings": [],
     "parsed": {
       "pass": [
+        {
+          "value": "185.5.126.59",
+          "mechanism": "a"
+        },
         {
           "value": "aytoyebes.es",
           "mechanism": "mx"

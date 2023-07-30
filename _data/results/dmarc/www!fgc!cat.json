@@ -10,8 +10,24 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query 97.92.0.213.in-addr.arpa. IN PTR: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 0,
+        "hostname": "fgc-cat.mail.protection.outlook.com",
+        "addresses": [
+          "104.47.51.138",
+          "104.47.51.202"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "correu.fgc.net",
+        "addresses": [
+          "213.0.92.97"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.eurovia.es include:spf.protection.outlook.com a:smtp.fgc.cat include:spf.mailjet.com ip4:213.0.92.96/29 ip4:34.249.133.35 ip4:46.4.94.111 ip4:217.11.123.50 ip4:83.247.130.253 ip4:83.247.130.41 exists:%{i}.spf.hc1623-67.eu.iphmx.com ip4:23.90.123.12 ip4:23.90.122.149 -all",

@@ -20,12 +20,15 @@
     "valid": true,
     "dns_lookups": 2,
     "warnings": [
-      "All nameservers failed to answer the query diputaciondevalladolid.es. IN A: Server Do53:1.0.0.1@53 answered SERVFAIL",
       "diputaciondevalladolid.es does not have any MX records",
       "The ptr mechanism should not be used - https://tools.ietf.org/html/rfc7208#section-5.5"
     ],
     "parsed": {
       "pass": [
+        {
+          "value": "89.6.103.17",
+          "mechanism": "a"
+        },
         {
           "value": "217.130.24.0/24",
           "mechanism": "ip4"

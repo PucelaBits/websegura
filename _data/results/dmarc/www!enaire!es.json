@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns.comtenidos.com",
-      "dns2.comtenidos.com"
+      "dns2.comtenidos.com",
+      "dns.comtenidos.com"
     ],
     "warnings": []
   },
@@ -15,7 +15,7 @@
         "preference": 10,
         "hostname": "enaire-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.11.10",
+          "104.47.11.202",
           "104.47.11.74"
         ]
       }
@@ -113,7 +113,9 @@
     "record": "v=DMARC1;p=none;sp=none;pct=100;rua=mailto:dmarceports@enaire.es",
     "valid": true,
     "location": "enaire.es",
-    "warnings": [],
+    "warnings": [
+      "DMARC record at root of enaire.es has no effect"
+    ],
     "tags": {
       "v": {
         "value": "DMARC1",

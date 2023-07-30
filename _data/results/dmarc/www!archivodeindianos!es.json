@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns4.gestiondecuenta.com",
       "ns3.gestiondecuenta.com",
       "ns2.gestiondecuenta.com",
-      "ns4.gestiondecuenta.com",
       "ns.gestiondecuenta.com"
     ],
     "warnings": []
@@ -28,11 +28,13 @@
     "record": "v=spf1 a mx ip4:51.178.156.0 include:_spf.google.com include:spf.protection.outlook.com ~all",
     "valid": true,
     "dns_lookups": 7,
-    "warnings": [
-      "All nameservers failed to answer the query archivodeindianos.es. IN A: Server Do53:1.0.0.1@53 answered SERVFAIL"
-    ],
+    "warnings": [],
     "parsed": {
       "pass": [
+        {
+          "value": "51.178.156.0",
+          "mechanism": "a"
+        },
         {
           "value": "archivodeindianos-es.mail.protection.outlook.com",
           "mechanism": "mx"

@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.fnmt.es",
-      "dns1.fnmt.es"
+      "dns1.fnmt.es",
+      "dns2.fnmt.es"
     ],
     "warnings": []
   },
@@ -25,9 +25,7 @@
     "record": "v=spf1 ip4:195.235.252.89 ip4:195.235.252.92 ip4:193.104.0.132 ip4:82.223.79.172 ip4:185.25.114.146 include:spf.ivcert.net mx ~all",
     "valid": true,
     "dns_lookups": 2,
-    "warnings": [
-      "All nameservers failed to answer the query fnmt.es. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
-    ],
+    "warnings": [],
     "parsed": {
       "pass": [
         {
@@ -49,6 +47,10 @@
         {
           "value": "185.25.114.146",
           "mechanism": "ip4"
+        },
+        {
+          "value": "correo.fnmt.es",
+          "mechanism": "mx"
         }
       ],
       "neutral": [],

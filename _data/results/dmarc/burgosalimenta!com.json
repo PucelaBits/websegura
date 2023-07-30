@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "buniel.csa.es",
-      "dns1.csanet.io",
       "tapia.csa.es",
-      "clunia.csa.es"
+      "dns1.csanet.io",
+      "clunia.csa.es",
+      "buniel.csa.es"
     ],
     "warnings": []
   },
@@ -28,7 +28,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 5.40.65.34 is silos.csa.es, but the A/AAAA DNS records for silos.csa.es do not resolve to 5.40.65.34"
+    ]
   },
   "spf": {
     "record": null,

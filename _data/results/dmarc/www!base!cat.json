@@ -3,8 +3,11 @@
   "base_domain": "base.cat",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "All nameservers failed to answer the query base.cat. IN NS: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "hostnames": [
+      "dns2.nominalia.com",
+      "dns1.nominalia.com"
+    ],
+    "warnings": []
   },
   "mx": {
     "hosts": [
@@ -30,10 +33,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 195.76.233.59 is mx1.dipta.cat, but the A/AAAA DNS records for mx1.dipta.cat do not resolve to 195.76.233.59"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.antispamcloud.com ip4:90.160.60.248/32 ip4:217.130.125.204/32 -all",

@@ -3,8 +3,11 @@
   "base_domain": "gsccanarias.com",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "All nameservers failed to answer the query gsccanarias.com. IN NS: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "hostnames": [
+      "ns1.dns-servicios.es",
+      "ns2.dns-servicios.es"
+    ],
+    "warnings": []
   },
   "mx": {
     "hosts": [
@@ -12,8 +15,8 @@
         "preference": 5,
         "hostname": "gsccanarias-com.mail.protection.outlook.com",
         "addresses": [
-          "104.47.11.10",
-          "104.47.11.202"
+          "104.47.11.202",
+          "104.47.11.74"
         ]
       }
     ],

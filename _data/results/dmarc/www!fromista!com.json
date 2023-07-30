@@ -4,31 +4,16 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns4.hostinger.es",
+      "ns3.hostinger.es",
       "ns1.hostinger.es",
-      "ns2.hostinger.es",
-      "ns3.hostinger.es"
+      "ns4.hostinger.es",
+      "ns2.hostinger.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mx.zoho.com",
-        "addresses": [
-          "136.143.191.44"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mx2.zoho.com",
-        "addresses": [
-          "136.143.191.44"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 include:zoho.com ~all",

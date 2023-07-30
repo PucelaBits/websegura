@@ -25,11 +25,13 @@
     "record": "v=spf1 mx a:correo5.valencia.es ip4:213.201.83.247 ~all",
     "valid": true,
     "dns_lookups": 2,
-    "warnings": [
-      "All nameservers failed to answer the query valencia.es. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
-    ],
+    "warnings": [],
     "parsed": {
       "pass": [
+        {
+          "value": "correo5.valencia.es",
+          "mechanism": "mx"
+        },
         {
           "value": "213.201.83.247",
           "mechanism": "a"

@@ -4,20 +4,77 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "a22-65.akam.net",
-      "ns1.adif.es",
       "a4-65.akam.net",
-      "a1-37.akam.net",
-      "a8-65.akam.net",
       "ns2.adif.es",
+      "ns1.adif.es",
+      "a9-67.akam.net",
       "a11-64.akam.net",
-      "a9-67.akam.net"
+      "a22-65.akam.net",
+      "a1-37.akam.net",
+      "a8-65.akam.net"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query 1.73.101.52.in-addr.arpa. IN PTR: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 0,
+        "hostname": "adifaltavelocidad-es.mail.protection.outlook.com",
+        "addresses": [
+          "52.101.68.0",
+          "52.101.68.21",
+          "52.101.73.1",
+          "52.101.73.2",
+          "52.101.73.4",
+          "52.101.73.6"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mx1.hc1197-70.eu.iphmx.com",
+        "addresses": [
+          "23.90.119.224",
+          "23.90.122.66"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mx2.hc1197-70.eu.iphmx.com",
+        "addresses": [
+          "23.90.119.224",
+          "23.90.122.66"
+        ]
+      },
+      {
+        "preference": 40,
+        "hostname": "smtp.adif.es",
+        "addresses": [
+          "213.144.33.142"
+        ]
+      },
+      {
+        "preference": 50,
+        "hostname": "ebro.adif.es",
+        "addresses": [
+          "213.144.33.148"
+        ]
+      },
+      {
+        "preference": 60,
+        "hostname": "duero.adif.es",
+        "addresses": [
+          "213.144.33.149"
+        ]
+      }
+    ],
+    "warnings": [
+      "52.101.68.0 does not have any reverse DNS (PTR) records",
+      "52.101.68.21 does not have any reverse DNS (PTR) records",
+      "52.101.73.1 does not have any reverse DNS (PTR) records",
+      "52.101.73.2 does not have any reverse DNS (PTR) records",
+      "52.101.73.4 does not have any reverse DNS (PTR) records",
+      "52.101.73.6 does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
     "record": "v=spf1 mx a:smtp.adif.es a:ebro.adif.es a:duero.adif.es include:spf.protection.outlook.com exists:%{i}.spf.hc1197-70.eu.iphmx.com ~all",

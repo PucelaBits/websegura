@@ -5,15 +5,24 @@
   "ns": {
     "hostnames": [
       "ns1121.ui-dns.com",
-      "ns1108.ui-dns.org",
       "ns1096.ui-dns.de",
+      "ns1108.ui-dns.org",
       "ns1112.ui-dns.biz"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query 202.51.47.104.in-addr.arpa. IN PTR: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "puertogijon-es.mail.protection.outlook.com",
+        "addresses": [
+          "104.47.51.138",
+          "104.47.51.202"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:213.0.96.226 ip4:195.53.242.107 include:protection.outlook.com include:spf.emailsignatures365.com -all",

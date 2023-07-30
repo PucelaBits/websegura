@@ -10,8 +10,37 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query 8.132.100.94.in-addr.arpa. IN PTR: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx01.hornetsecurity.com",
+        "addresses": [
+          "94.100.132.8"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mx02.hornetsecurity.com",
+        "addresses": [
+          "94.100.136.8"
+        ]
+      },
+      {
+        "preference": 30,
+        "hostname": "mx03.hornetsecurity.com",
+        "addresses": [
+          "94.100.134.8"
+        ]
+      },
+      {
+        "preference": 40,
+        "hostname": "mx04.hornetsecurity.com",
+        "addresses": [
+          "94.100.136.7"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com include:spf.hornetsecurity.com +ip4:82.223.19.151 +ip4:2.139.238.122 ~all",

@@ -3,8 +3,12 @@
   "base_domain": "lliria.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "All nameservers failed to answer the query lliria.es. IN NS: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "hostnames": [
+      "ns2.dnsxperta.com",
+      "ns1.dnsxperta.com",
+      "ns3.dnsxperta.com"
+    ],
+    "warnings": []
   },
   "mx": {
     "hosts": [

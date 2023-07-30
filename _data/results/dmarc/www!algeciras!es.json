@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns01.ono.com",
-      "dns02.ono.com"
+      "dns02.ono.com",
+      "dns01.ono.com"
     ],
     "warnings": []
   },
@@ -21,12 +21,12 @@
       {
         "preference": 10,
         "hostname": "mail.algeciras.es",
-        "addresses": []
+        "addresses": [
+          "188.85.16.244"
+        ]
       }
     ],
-    "warnings": [
-      "All nameservers failed to answer the query mail.algeciras.es. IN A: Server Do53:1.0.0.1@53 answered SERVFAIL"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx a ip4:188.85.16.242 ip4:188.85.16.244 -all",

@@ -36,9 +36,9 @@
     ]
   },
   "spf": {
-    "record": "v=spf1 a mx include:spf.protection.outlook.com include:spf.ipzmarketing.com include:amazonses.com ip4:217.160.207.239 ip4:92.54.14.18 ip4:195.55.52.102 -all",
+    "record": "v=spf1 a mx include:spf.protection.outlook.com include:spf.ipzmarketing.com include:amazonses.com include:spf.secutix.com ip4:217.160.207.239 ip4:92.54.14.18 ip4:195.55.52.102 -all",
     "valid": true,
-    "dns_lookups": 5,
+    "dns_lookups": 6,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -215,6 +215,99 @@
             "redirect": null,
             "exp": null,
             "all": "fail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "spf.secutix.com",
+          "record": "v=spf1 ip4:193.73.238.5 ip4:193.73.238.6 ip4:80.80.231.73 ip4:193.73.238.28 ip4:193.73.238.125 ip4:193.73.238.126 ip4:193.73.238.127 ip4:193.72.147.138 ip4:193.72.147.139 ip4:193.72.147.140 ip4:18.185.233.11 ip4:3.74.129.141 ip4:3.74.255.70 ip4:3.120.73.255 ip4:35.158.169.102 ip4:35.157.167.112 ip4:18.196.153.124 ip4:18.197.182.240 ip4:18.159.23.120 ?all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "193.73.238.5",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "193.73.238.6",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "80.80.231.73",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "193.73.238.28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "193.73.238.125",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "193.73.238.126",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "193.73.238.127",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "193.72.147.138",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "193.72.147.139",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "193.72.147.140",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "18.185.233.11",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "3.74.129.141",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "3.74.255.70",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "3.120.73.255",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "35.158.169.102",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "35.157.167.112",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "18.196.153.124",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "18.197.182.240",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "18.159.23.120",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "neutral"
           },
           "warnings": []
         }

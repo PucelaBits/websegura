@@ -26,10 +26,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 195.53.249.44 is carteroreal.dpteruel.es, but the A/AAAA DNS records for carteroreal.dpteruel.es do not resolve to 195.53.249.44"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 a mx ip4:195.53.249.30  ip4:195.53.249.44 ip4:213.4.82.201 include:_spf.espublico.com ~all",

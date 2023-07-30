@@ -4,14 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns.dpz.es",
-      "dns2.dpz.es"
+      "dns2.dpz.es",
+      "dns.dpz.es"
     ],
     "warnings": []
   },
   "mx": {
     "hosts": [],
-    "error": "All nameservers failed to answer the query 156.254.89.38.in-addr.arpa. IN PTR: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 mx a ptr ip4:213.4.82.254 a:espublico.com include:dpz.es",

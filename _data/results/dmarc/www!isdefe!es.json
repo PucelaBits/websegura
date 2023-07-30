@@ -32,9 +32,7 @@
     "record": "v=spf1 mx a:mail1.isdefe.es a:mail6.isdefe.es a:mail33.isdefe.es a:vw-cmnmail-dmz.isdefe.es a:vw-cmnfree-dmz.isdefe.es ip4:194.15.213.10 ip4:194.15.213.230 ip4:194.15.213.103 ip4:194.15.213.106 include:spf.protection.outlook.com -all",
     "valid": true,
     "dns_lookups": 7,
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ],
+    "warnings": [],
     "parsed": {
       "pass": [
         {
@@ -51,6 +49,10 @@
         },
         {
           "value": "194.15.213.252",
+          "mechanism": "a"
+        },
+        {
+          "value": "194.15.213.240",
           "mechanism": "a"
         },
         {

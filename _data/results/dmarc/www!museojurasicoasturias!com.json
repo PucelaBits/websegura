@@ -4,10 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns.gestiondecuenta.com",
-      "ns2.gestiondecuenta.com",
-      "ns3.gestiondecuenta.com",
-      "ns4.gestiondecuenta.com"
+      "ns2.museojurasicoasturias.com",
+      "ns1.museojurasicoasturias.com"
     ],
     "warnings": []
   },
@@ -160,9 +158,53 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=none",
+    "valid": true,
+    "location": "museojurasicoasturias.com",
+    "warnings": [
+      "rua tag (destination for aggregate reports) not found"
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }

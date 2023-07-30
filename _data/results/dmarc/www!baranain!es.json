@@ -4,23 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.hostinet.com",
-      "dns2.hostinet.com"
+      "dns2.hostinet.com",
+      "dns1.hostinet.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 0,
-        "hostname": "baranain-es.mail.protection.outlook.com",
-        "addresses": [
-          "104.47.11.10",
-          "104.47.11.74"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com ~all",

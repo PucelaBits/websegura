@@ -3,8 +3,11 @@
   "base_domain": "navantia.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "All nameservers failed to answer the query navantia.es. IN NS: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "hostnames": [
+      "artemis.ttd.net",
+      "minerva.ttd.net"
+    ],
+    "warnings": []
   },
   "mx": {
     "hosts": [
@@ -108,9 +111,7 @@
     "record": "v=DMARC1; p=reject; pct=100; rua=mailto:dmarc@navantia.es; ruf=mailto:dmarc@navantia.es; fo=1",
     "valid": true,
     "location": "navantia.es",
-    "warnings": [
-      "Failed to retrieve MX records for the domain of rua email address dmarc@navantia.es - All nameservers failed to answer the query navantia.es. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
-    ],
+    "warnings": [],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -125,7 +126,13 @@
         "explicit": true
       },
       "rua": {
-        "value": "mailto:dmarc@navantia.es",
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc@navantia.es",
+            "size_limit": null
+          }
+        ],
         "explicit": true
       },
       "ruf": {

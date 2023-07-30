@@ -4,20 +4,20 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "srvcpdefficientipmor.gobex.pri",
-      "srvcpdefficientipagr.gobex.pri",
-      "srvadmefficientipagr.gobex.pri",
-      "srvefficientipagr.educarex.pri",
-      "ns7.acens.net",
+      "ns1.dominioabsoluto.com",
+      "ns3.acens.net",
+      "srvefficientipmor.educarex.pri",
       "ns2.acens.net",
+      "ns1.acens.net",
+      "srvcpdefficientipmor.gobex.pri",
+      "srvadmefficientipagr.gobex.pri",
+      "srvcpdefficientipagr.gobex.pri",
       "srvadmefficientipmor.gobex.pri",
       "ns2.dominioabsoluto.com",
-      "srvefficientipmor.educarex.pri",
-      "ns3.acens.net",
+      "ns7.acens.net",
+      "ip90.dominioabsoluto.com",
       "ns4.acens.net",
-      "ns1.acens.net",
-      "ns1.dominioabsoluto.com",
-      "ip90.dominioabsoluto.com"
+      "srvefficientipagr.educarex.pri"
     ],
     "warnings": []
   },
@@ -129,9 +129,71 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "All nameservers failed to answer the query _dmarc.juntaex.es. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "record": "v=DMARC1; p=quarantine; sp=none; rua=mailto:admexc.epinilla@juntaex.es; ruf=mailto:admexc.epinilla@juntaex.es; rf=afrf; pct=100; ri=8640",
+    "valid": true,
+    "location": "juntaex.es",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "sp": {
+        "value": "none",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "admexc.epinilla@juntaex.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "admexc.epinilla@juntaex.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": true
+      },
+      "pct": {
+        "value": 100,
+        "explicit": true
+      },
+      "ri": {
+        "value": 8640,
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      }
+    }
   }
 }

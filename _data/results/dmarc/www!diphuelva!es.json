@@ -3,23 +3,20 @@
   "base_domain": "diphuelva.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "alpha.sigadel.com",
-      "beta2.sigadel.com"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "mx": {
     "hosts": [
       {
         "preference": 5,
         "hostname": "correo.diphuelva.es",
-        "addresses": [
-          "195.77.52.34"
-        ]
+        "addresses": []
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ]
   },
   "spf": {
     "record": "v=spf1 mx ~all",

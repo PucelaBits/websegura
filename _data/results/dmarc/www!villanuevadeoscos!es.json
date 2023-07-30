@@ -15,19 +15,17 @@
         "preference": 10,
         "hostname": "mail.villanuevadeoscos.es",
         "addresses": [
-          "51.83.52.230"
+          "178.211.133.69"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 a mx +ip4:51.83.52.230 +include:spf.webcloud.es ~all",
+    "record": "v=spf1 a mx +ip4:178.211.133.69 +include:spf.webcloud.es ~all",
     "valid": true,
     "dns_lookups": 4,
-    "warnings": [
-      "All nameservers failed to answer the query spf.webcloud.es. IN A: Server Do53:1.0.0.1@53 answered SERVFAIL"
-    ],
+    "warnings": [],
     "parsed": {
       "pass": [
         {
@@ -39,7 +37,7 @@
           "mechanism": "mx"
         },
         {
-          "value": "51.83.52.230",
+          "value": "178.211.133.69",
           "mechanism": "ip4"
         }
       ],
@@ -52,7 +50,180 @@
           "record": "v=spf1 +a:spf.webcloud.es ~all",
           "dns_lookups": 1,
           "parsed": {
-            "pass": [],
+            "pass": [
+              {
+                "value": "141.94.57.241",
+                "mechanism": "a"
+              },
+              {
+                "value": "141.94.57.251",
+                "mechanism": "a"
+              },
+              {
+                "value": "141.95.251.124",
+                "mechanism": "a"
+              },
+              {
+                "value": "141.95.251.52",
+                "mechanism": "a"
+              },
+              {
+                "value": "147.135.174.82",
+                "mechanism": "a"
+              },
+              {
+                "value": "149.202.228.228",
+                "mechanism": "a"
+              },
+              {
+                "value": "149.202.228.232",
+                "mechanism": "a"
+              },
+              {
+                "value": "149.202.228.233",
+                "mechanism": "a"
+              },
+              {
+                "value": "151.80.10.220",
+                "mechanism": "a"
+              },
+              {
+                "value": "217.182.121.215",
+                "mechanism": "a"
+              },
+              {
+                "value": "217.182.121.221",
+                "mechanism": "a"
+              },
+              {
+                "value": "217.182.121.226",
+                "mechanism": "a"
+              },
+              {
+                "value": "217.182.121.231",
+                "mechanism": "a"
+              },
+              {
+                "value": "37.59.226.104",
+                "mechanism": "a"
+              },
+              {
+                "value": "37.59.226.106",
+                "mechanism": "a"
+              },
+              {
+                "value": "37.59.226.118",
+                "mechanism": "a"
+              },
+              {
+                "value": "37.59.226.119",
+                "mechanism": "a"
+              },
+              {
+                "value": "37.59.226.65",
+                "mechanism": "a"
+              },
+              {
+                "value": "37.59.226.66",
+                "mechanism": "a"
+              },
+              {
+                "value": "37.59.226.72",
+                "mechanism": "a"
+              },
+              {
+                "value": "37.59.226.76",
+                "mechanism": "a"
+              },
+              {
+                "value": "37.59.226.84",
+                "mechanism": "a"
+              },
+              {
+                "value": "37.59.226.92",
+                "mechanism": "a"
+              },
+              {
+                "value": "5.196.132.133",
+                "mechanism": "a"
+              },
+              {
+                "value": "5.196.132.141",
+                "mechanism": "a"
+              },
+              {
+                "value": "5.196.132.160",
+                "mechanism": "a"
+              },
+              {
+                "value": "5.39.18.67",
+                "mechanism": "a"
+              },
+              {
+                "value": "51.210.164.135",
+                "mechanism": "a"
+              },
+              {
+                "value": "51.210.164.155",
+                "mechanism": "a"
+              },
+              {
+                "value": "51.255.120.229",
+                "mechanism": "a"
+              },
+              {
+                "value": "51.255.134.121",
+                "mechanism": "a"
+              },
+              {
+                "value": "51.83.52.230",
+                "mechanism": "a"
+              },
+              {
+                "value": "51.83.52.236",
+                "mechanism": "a"
+              },
+              {
+                "value": "51.83.52.244",
+                "mechanism": "a"
+              },
+              {
+                "value": "51.91.45.235",
+                "mechanism": "a"
+              },
+              {
+                "value": "54.37.168.207",
+                "mechanism": "a"
+              },
+              {
+                "value": "54.37.168.7",
+                "mechanism": "a"
+              },
+              {
+                "value": "79.137.45.112",
+                "mechanism": "a"
+              },
+              {
+                "value": "91.134.16.5",
+                "mechanism": "a"
+              },
+              {
+                "value": "91.134.184.212",
+                "mechanism": "a"
+              },
+              {
+                "value": "91.134.184.213",
+                "mechanism": "a"
+              },
+              {
+                "value": "91.134.184.236",
+                "mechanism": "a"
+              },
+              {
+                "value": "91.134.184.237",
+                "mechanism": "a"
+              }
+            ],
             "neutral": [],
             "softfail": [],
             "fail": [],
@@ -61,9 +232,7 @@
             "exp": null,
             "all": "softfail"
           },
-          "warnings": [
-            "All nameservers failed to answer the query spf.webcloud.es. IN A: Server Do53:1.0.0.1@53 answered SERVFAIL"
-          ]
+          "warnings": []
         }
       ],
       "redirect": null,

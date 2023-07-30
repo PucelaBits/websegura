@@ -1,15 +1,11 @@
 {
   "domain": "lamoncloa.gob.es",
   "base_domain": "lamoncloa.gob.es",
-  "dnssec": false,
+  "dnssec": true,
   "ns": {
     "hostnames": [
-      "chico.rediris.es",
-      "chicorelay.rediris.es",
-      "dns2.mpr.es",
-      "dns1.mpr.es",
-      "sun.rediris.es",
-      "sunrelay.rediris.es"
+      "ns1.age.gob.es",
+      "ns2.age.gob.es"
     ],
     "warnings": []
   },
@@ -33,7 +29,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:212.128.108.45  ip4:212.128.108.46  -all",
+    "record": "v=spf1 ip4:212.128.108.45 ip4:212.128.108.46 -all",
     "valid": true,
     "dns_lookups": 0,
     "warnings": [],

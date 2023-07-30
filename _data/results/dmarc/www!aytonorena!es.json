@@ -4,14 +4,44 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.aytonorena.es",
-      "ns1.aytonorena.es"
+      "ns1.aytonorena.es",
+      "ns2.aytonorena.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query 100.132.100.94.in-addr.arpa. IN PTR: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx19a.antispameurope.com",
+        "addresses": [
+          "83.246.65.85",
+          "94.100.132.100"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mx19b.antispameurope.com",
+        "addresses": [
+          "83.246.65.85"
+        ]
+      },
+      {
+        "preference": 30,
+        "hostname": "mx19c.antispameurope.com",
+        "addresses": [
+          "94.100.132.100"
+        ]
+      },
+      {
+        "preference": 40,
+        "hostname": "mx19d.antispameurope.com",
+        "addresses": [
+          "83.246.65.85"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 a mx a:isotelco1.vhost.interdominios.com include:antispameurope.com ~all",

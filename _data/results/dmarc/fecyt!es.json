@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns06.ns-cloud4b.com",
       "ns03.ns-cloud4b.net",
-      "ns05.ns-cloud4b.org"
+      "ns05.ns-cloud4b.org",
+      "ns06.ns-cloud4b.com"
     ],
     "warnings": []
   },
@@ -179,6 +179,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "All nameservers failed to answer the query _dmarc.fecyt.es. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "error": "A DMARC record does not exist for this domain or its base domain"
   }
 }

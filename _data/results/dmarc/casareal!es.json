@@ -28,7 +28,9 @@
       {
         "preference": 3,
         "hostname": "mx03.hornetsecurity.com",
-        "addresses": []
+        "addresses": [
+          "94.100.134.8"
+        ]
       },
       {
         "preference": 4,
@@ -38,9 +40,7 @@
         ]
       }
     ],
-    "warnings": [
-      "All nameservers failed to answer the query mx03.hornetsecurity.com. IN AAAA: Server Do53:1.0.0.1@53 answered SERVFAIL"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com ip4:217.124.155.49/32 ip4:194.179.47.226/32 include:spf.hornetsecurity.com ~all",
