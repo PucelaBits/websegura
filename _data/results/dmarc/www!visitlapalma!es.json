@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.visitlapalma.es",
-      "ns2.visitlapalma.es"
+      "ns2.visitlapalma.es",
+      "ns1.visitlapalma.es"
     ],
     "warnings": []
   },
@@ -28,10 +28,6 @@
     "warnings": [],
     "parsed": {
       "pass": [
-        {
-          "value": "2001:4860:4802:34::15",
-          "mechanism": "a"
-        },
         {
           "value": "89.248.100.48",
           "mechanism": "a"

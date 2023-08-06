@@ -1,0 +1,149 @@
+{
+  "domain": "sort.cat",
+  "base_domain": "sort.cat",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns2.siteground.net",
+      "ns1.siteground.net"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 5,
+        "hostname": "mx1-smtp.svt.es",
+        "addresses": [
+          "95.130.52.42"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mx2-smtp.svt.es",
+        "addresses": [
+          "95.130.52.43"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 redirect=_spf.svt.es",
+    "valid": true,
+    "dns_lookups": 1,
+    "warnings": [
+      "The ptr mechanism should not be used - https://tools.ietf.org/html/rfc7208#section-5.5"
+    ],
+    "parsed": {
+      "pass": [],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": {
+        "domain": "_spf.svt.es",
+        "record": "v=spf1 ptr ip4:95.130.48.0/21 ip4:172.26.0.0/16 ip4:172.25.0.0/16 ip4:146.255.99.0/24 ip4:199.89.52.0/24 -all",
+        "dns_lookups": 0,
+        "parsed": {
+          "pass": [
+            {
+              "value": "",
+              "mechanism": "ptr"
+            },
+            {
+              "value": "95.130.48.0/21",
+              "mechanism": "ip4"
+            },
+            {
+              "value": "172.26.0.0/16",
+              "mechanism": "ip4"
+            },
+            {
+              "value": "172.25.0.0/16",
+              "mechanism": "ip4"
+            },
+            {
+              "value": "146.255.99.0/24",
+              "mechanism": "ip4"
+            },
+            {
+              "value": "199.89.52.0/24",
+              "mechanism": "ip4"
+            }
+          ],
+          "neutral": [],
+          "softfail": [],
+          "fail": [],
+          "include": [],
+          "redirect": null,
+          "exp": null,
+          "all": "fail"
+        },
+        "warnings": [
+          "The ptr mechanism should not be used - https://tools.ietf.org/html/rfc7208#section-5.5"
+        ]
+      },
+      "exp": null,
+      "all": "neutral"
+    }
+  },
+  "dmarc": {
+    "record": "v=DMARC1; p=none; rua=mailto:postmaster@sort.cat",
+    "valid": true,
+    "location": "sort.cat",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "postmaster@sort.cat",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
+  }
+}

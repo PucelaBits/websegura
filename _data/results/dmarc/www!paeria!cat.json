@@ -1,0 +1,227 @@
+{
+  "domain": "paeria.cat",
+  "base_domain": "paeria.cat",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns1-04.azure-dns.com",
+      "ns2-04.azure-dns.net",
+      "ns3-04.azure-dns.org",
+      "ns4-04.azure-dns.info"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "paeria-cat.mail.protection.outlook.com",
+        "addresses": [
+          "104.47.11.10",
+          "104.47.11.74"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 include:spf.protection.outlook.com include:_spf.atlassian.net ip4:13.69.76.22 ip4:91.103.148.82 ip4:40.85.130.75 ip4:195.57.245.235 ip4:194.224.186.128/27 ip4:195.77.85.128/26 ip4:77.246.188.131 ip4:13.80.72.161 ip4:13.88.200.22 -all",
+    "valid": true,
+    "dns_lookups": 3,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "13.69.76.22",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "91.103.148.82",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "40.85.130.75",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "195.57.245.235",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "194.224.186.128/27",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "195.77.85.128/26",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "77.246.188.131",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "13.80.72.161",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "13.88.200.22",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "spf.protection.outlook.com",
+          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/50 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "40.92.0.0/15",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "40.107.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.100.0.0/14",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "104.47.0.0/17",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "2a01:111:f400::/48",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403::/49",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:8000::/50",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:c000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:f000::/52",
+                "mechanism": "ip6"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "_spf.atlassian.net",
+          "record": "v=spf1 ip4:167.89.0.0/17 ip4:168.245.0.0/17 include:amazonses.com -all",
+          "dns_lookups": 1,
+          "parsed": {
+            "pass": [
+              {
+                "value": "167.89.0.0/17",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "168.245.0.0/17",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [
+              {
+                "domain": "amazonses.com",
+                "record": "v=spf1 ip4:199.255.192.0/22 ip4:199.127.232.0/22 ip4:54.240.0.0/18 ip4:69.169.224.0/20 ip4:23.249.208.0/20 ip4:23.251.224.0/19 ip4:76.223.176.0/20 ip4:54.240.64.0/19 ip4:54.240.96.0/19 ip4:52.82.172.0/22 ip4:76.223.128.0/19 -all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "199.255.192.0/22",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "199.127.232.0/22",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "54.240.0.0/18",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "69.169.224.0/20",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "23.249.208.0/20",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "23.251.224.0/19",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "76.223.176.0/20",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "54.240.64.0/19",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "54.240.96.0/19",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "52.82.172.0/22",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "76.223.128.0/19",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "fail"
+                },
+                "warnings": []
+              }
+            ],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

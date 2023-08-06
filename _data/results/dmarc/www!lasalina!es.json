@@ -26,10 +26,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 194.224.128.8 is antispam.lasalina.es, but the A/AAAA DNS records for antispam.lasalina.es do not resolve to 194.224.128.8"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.ipzmarketing.com ip4:194.224.128.2 ip4:194.224.128.5 ip4:194.224.128.8 include:_spf.google.com include:spf.protection.outlook.com a:lasalina.es ~all",

@@ -1,15 +1,11 @@
 {
   "domain": "mpr.gob.es",
   "base_domain": "mpr.gob.es",
-  "dnssec": false,
+  "dnssec": true,
   "ns": {
     "hostnames": [
-      "sunrelay.rediris.es",
-      "chicorelay.rediris.es",
-      "chico.rediris.es",
-      "dns1.mpr.es",
-      "dns2.mpr.es",
-      "sun.rediris.es"
+      "ns1.age.gob.es",
+      "ns2.age.gob.es"
     ],
     "warnings": []
   },

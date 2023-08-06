@@ -4,11 +4,11 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.cdmon.net",
       "ns3.cdmon.net",
-      "ns4.cdmondns-01.org",
+      "ns2.cdmon.net",
       "ns5.cdmondns-01.com",
-      "ns2.cdmon.net"
+      "ns1.cdmon.net",
+      "ns4.cdmondns-01.org"
     ],
     "warnings": []
   },
@@ -24,12 +24,12 @@
       {
         "preference": 10,
         "hostname": "mx5.spamtador.com",
-        "addresses": []
+        "addresses": [
+          "188.93.79.152"
+        ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx ip4:154.58.16.65 -all",
