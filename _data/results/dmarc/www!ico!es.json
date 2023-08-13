@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.comtenidos.com",
-      "icodns.ico.es"
+      "icodns.ico.es",
+      "dns2.comtenidos.com"
     ],
     "warnings": []
   },
@@ -26,7 +26,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 90.160.63.197 is mail2.ico.es, but the A/AAAA DNS records for mail2.ico.es do not resolve to 90.160.63.197"
+    ]
   },
   "spf": {
     "record": "v=spf1 mx ip4:90.160.63.192/26 include:_pmta2.antevenio.com include:spf.protection.outlook.com include:spf-moodle.isyc.es ~all",

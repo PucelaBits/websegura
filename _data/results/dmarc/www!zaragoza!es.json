@@ -29,26 +29,18 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:194.224.70.71 ip4:194.224.70.72 ip4:194.224.70.81 ip4:194.224.70.88 ip4:188.244.91.7 -all",
+    "record": "v=spf1 ip4:194.224.70.72 ip4:194.224.70.81 ip4:188.244.91.7 -all",
     "valid": true,
     "dns_lookups": 0,
     "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "194.224.70.71",
-          "mechanism": "ip4"
-        },
-        {
           "value": "194.224.70.72",
           "mechanism": "ip4"
         },
         {
           "value": "194.224.70.81",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "194.224.70.88",
           "mechanism": "ip4"
         },
         {

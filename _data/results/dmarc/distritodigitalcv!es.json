@@ -15,8 +15,8 @@
         "preference": 0,
         "hostname": "distritodigitalcv-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.16",
-          "52.101.68.18",
+          "52.101.68.21",
+          "52.101.68.3",
           "52.101.68.36",
           "52.101.73.1",
           "52.101.73.15",
@@ -25,8 +25,8 @@
       }
     ],
     "warnings": [
-      "52.101.68.16 does not have any reverse DNS (PTR) records",
-      "52.101.68.18 does not have any reverse DNS (PTR) records",
+      "52.101.68.21 does not have any reverse DNS (PTR) records",
+      "52.101.68.3 does not have any reverse DNS (PTR) records",
       "52.101.68.36 does not have any reverse DNS (PTR) records",
       "52.101.73.1 does not have any reverse DNS (PTR) records",
       "52.101.73.15 does not have any reverse DNS (PTR) records",
@@ -46,7 +46,7 @@
       "include": [
         {
           "domain": "eu.zcsend.net",
-          "record": "v=spf1 ip4:31.186.226.160/27 ip4:185.20.211.0/25 ip4:185.172.199.0/25 ip4:91.103.152.0/26 ~all",
+          "record": "v=spf1 ip4:31.186.226.160/27 ip4:185.20.211.0/25 ip4:185.172.199.0/25 ip4:91.103.152.0/24 ~all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -63,7 +63,7 @@
                 "mechanism": "ip4"
               },
               {
-                "value": "91.103.152.0/26",
+                "value": "91.103.152.0/24",
                 "mechanism": "ip4"
               }
             ],

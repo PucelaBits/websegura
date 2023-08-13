@@ -10,71 +10,14 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 1,
-        "hostname": "aspmx.l.google.com",
-        "addresses": [
-          "172.253.122.27",
-          "2607:f8b0:4004:c1b::1b"
-        ]
-      },
-      {
-        "preference": 5,
-        "hostname": "alt1.aspmx.l.google.com",
-        "addresses": [
-          "209.85.202.27",
-          "2a00:1450:400b:c00::1a"
-        ]
-      },
-      {
-        "preference": 5,
-        "hostname": "alt2.aspmx.l.google.com",
-        "addresses": [
-          "2a00:1450:400c:c0b::1a",
-          "64.233.184.26"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "alt3.aspmx.l.google.com",
-        "addresses": [
-          "142.250.27.26",
-          "2a00:1450:4025:401::1a"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "alt4.aspmx.l.google.com",
-        "addresses": [
-          "142.250.153.26",
-          "2a00:1450:4013:c16::1b"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "correo.utrera.org",
-        "addresses": [
-          "195.53.27.99"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "smail.utrera.org",
-        "addresses": [
-          "195.53.27.99"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 mx ip4:195.53.27.99 a:smail.utrera.org include:_spf.google.com ~all",
     "valid": true,
     "dns_lookups": 6,
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ],
+    "warnings": [],
     "parsed": {
       "pass": [
         {
@@ -108,6 +51,10 @@
         {
           "value": "195.53.27.99",
           "mechanism": "ip4"
+        },
+        {
+          "value": "195.53.27.99",
+          "mechanism": "a"
         }
       ],
       "neutral": [],
