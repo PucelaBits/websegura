@@ -22,12 +22,20 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:213.201.83.247 ~all",
+    "record": "v=spf1 mx a:correo5.valencia.es ip4:213.201.83.247 ~all",
     "valid": true,
-    "dns_lookups": 0,
+    "dns_lookups": 2,
     "warnings": [],
     "parsed": {
       "pass": [
+        {
+          "value": "correo5.valencia.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "213.201.83.247",
+          "mechanism": "a"
+        },
         {
           "value": "213.201.83.247",
           "mechanism": "ip4"
@@ -43,9 +51,71 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1;  p=none;  rua=mailto:postmaster@valencia.es;  ruf=mailto:postmaster@valencia.es;  fo=1",
+    "valid": true,
+    "location": "valencia.es",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "postmaster@valencia.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "postmaster@valencia.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "1"
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }

@@ -1,12 +1,11 @@
 {
   "domain": "miteco.gob.es",
   "base_domain": "miteco.gob.es",
-  "dnssec": false,
+  "dnssec": true,
   "ns": {
     "hostnames": [
-      "dns2.mapa.es",
-      "dns1.mapa.es",
-      "artemis.ttd.net"
+      "ns1.age.gob.es",
+      "ns2.age.gob.es"
     ],
     "warnings": []
   },

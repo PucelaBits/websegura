@@ -15,14 +15,14 @@
         "preference": 10,
         "hostname": "mail.villanuevadeoscos.es",
         "addresses": [
-          "51.83.52.230"
+          "178.211.133.69"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 a mx +ip4:51.83.52.230 +include:spf.webcloud.es ~all",
+    "record": "v=spf1 a mx +ip4:178.211.133.69 +include:spf.webcloud.es ~all",
     "valid": true,
     "dns_lookups": 4,
     "warnings": [],
@@ -37,7 +37,7 @@
           "mechanism": "mx"
         },
         {
-          "value": "51.83.52.230",
+          "value": "178.211.133.69",
           "mechanism": "ip4"
         }
       ],

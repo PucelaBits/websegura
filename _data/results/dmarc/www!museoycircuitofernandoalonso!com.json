@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns06.ns-cloud4b.com",
-      "panel01.fundacionfernandoalonso.com",
-      "ns07.ns-cloud4b.org"
+      "ns06.ns-cloud4b.net",
+      "ns07.ns-cloud4b.org",
+      "ns08.ns-cloud4b.com"
     ],
     "warnings": []
   },
@@ -17,7 +17,7 @@
     ]
   },
   "spf": {
-    "record": "v=spf1 -all",
+    "record": "v=spf1 ~all",
     "valid": true,
     "dns_lookups": 0,
     "warnings": [],
@@ -29,7 +29,7 @@
       "include": [],
       "redirect": null,
       "exp": null,
-      "all": "fail"
+      "all": "softfail"
     }
   },
   "dmarc": {

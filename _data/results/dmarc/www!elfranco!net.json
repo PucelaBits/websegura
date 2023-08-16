@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns4.gestiondecuenta.com",
       "ns3.gestiondecuenta.com",
       "ns.gestiondecuenta.com",
-      "ns4.gestiondecuenta.com",
       "ns2.gestiondecuenta.com"
     ],
     "warnings": []
@@ -24,9 +24,27 @@
     "warnings": []
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "elfranco.net does not have a SPF TXT record"
+    "record": "v=spf1 a mx ~all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [
+      "elfranco.net does not have any A/AAAA records"
+    ],
+    "parsed": {
+      "pass": [
+        {
+          "value": "mail.elfranco.net",
+          "mechanism": "mx"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
   },
   "dmarc": {
     "record": null,

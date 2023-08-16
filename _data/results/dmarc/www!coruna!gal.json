@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "ns1.coruna.es",
-      "ns2.coruna.es",
       "ns3.coruna.es",
+      "ns2.coruna.es",
       "ns4.coruna.es"
     ],
     "warnings": []
@@ -15,34 +15,101 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "mx1.coruna.es",
+        "hostname": "coruna-gal.mail.protection.outlook.com",
         "addresses": [
-          "195.57.99.211"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mx2.coruna.es",
-        "addresses": [
-          "195.57.99.212"
-        ]
-      },
-      {
-        "preference": 30,
-        "hostname": "mx3.coruna.es",
-        "addresses": [
-          "195.57.99.209"
+          "104.47.17.138",
+          "104.47.17.74"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx a:oxi.coruna.es a:bakdmz.coruna.es include:spf.protection.outlook.com include:_migracion.coruna.es -all",
-    "valid": false,
+    "record": "v=spf1 a:ara.coruna.es a:gerion.coruna.es a:oxi.coruna.es a:bakdmz.coruna.es include:spf.protection.outlook.com -all",
+    "valid": true,
+    "dns_lookups": 5,
     "warnings": [],
-    "error": "Parsing the SPF record requires 11/10 maximum DNS lookups - https://tools.ietf.org/html/rfc7208#section-4.6.4",
-    "dns_lookups": 11
+    "parsed": {
+      "pass": [
+        {
+          "value": "195.57.99.212",
+          "mechanism": "a"
+        },
+        {
+          "value": "195.57.99.211",
+          "mechanism": "a"
+        },
+        {
+          "value": "195.57.99.210",
+          "mechanism": "a"
+        },
+        {
+          "value": "195.57.99.209",
+          "mechanism": "a"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "spf.protection.outlook.com",
+          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/50 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "40.92.0.0/15",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "40.107.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.100.0.0/14",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "104.47.0.0/17",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "2a01:111:f400::/48",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403::/49",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:8000::/50",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:c000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:f000::/52",
+                "mechanism": "ip6"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
     "record": null,

@@ -15,17 +15,30 @@
         "preference": 10,
         "hostname": "webtenerife-com.mail.protection.outlook.com",
         "addresses": [
-          "104.47.1.36",
-          "104.47.2.36"
+          "52.101.68.21",
+          "52.101.68.36",
+          "52.101.73.1",
+          "52.101.73.12",
+          "52.101.73.15",
+          "52.101.73.4",
+          "52.101.73.8"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "52.101.68.21 does not have any reverse DNS (PTR) records",
+      "52.101.68.36 does not have any reverse DNS (PTR) records",
+      "52.101.73.1 does not have any reverse DNS (PTR) records",
+      "52.101.73.12 does not have any reverse DNS (PTR) records",
+      "52.101.73.15 does not have any reverse DNS (PTR) records",
+      "52.101.73.4 does not have any reverse DNS (PTR) records",
+      "52.101.73.8 does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
-    "record": "v=spf1 include:spf.protection.outlook.com ~all",
+    "record": "v=spf1 include:spf.protection.outlook.com include:customers.clickdimensions.com include:spf.EU.exclaimer.net -all",
     "valid": true,
-    "dns_lookups": 2,
+    "dns_lookups": 5,
     "warnings": [],
     "parsed": {
       "pass": [],
@@ -35,8 +48,8 @@
       "include": [
         {
           "domain": "spf.protection.outlook.com",
-          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/50 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 include:spfd.protection.outlook.com -all",
-          "dns_lookups": 1,
+          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/50 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
+          "dns_lookups": 0,
           "parsed": {
             "pass": [
               {
@@ -79,48 +92,81 @@
             "neutral": [],
             "softfail": [],
             "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "customers.clickdimensions.com",
+          "record": "v=spf1 include:_spf.messagegears.net include:_spf.eu.messagegears.net ~all",
+          "dns_lookups": 2,
+          "parsed": {
+            "pass": [],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
             "include": [
               {
-                "domain": "spfd.protection.outlook.com",
-                "record": "v=spf1 ip4:51.4.72.0/24 ip4:51.5.72.0/24 ip4:51.5.80.0/27 ip4:20.47.149.138/32 ip4:51.4.80.0/27 ip6:2a01:4180:4051:0800::/64 ip6:2a01:4180:4050:0800::/64 ip6:2a01:4180:4051:0400::/64 ip6:2a01:4180:4050:0400::/64 -all",
+                "domain": "_spf.messagegears.net",
+                "record": "v=spf1 ip4:135.84.216.0/22 ip4:66.240.227.0/24 ip4:63.143.59.128/25 ip4:63.143.57.128/25 ip4:216.98.158.0/24 ip4:74.63.212.0/24 ip4:52.200.59.0/24 ip4:34.245.210.0/24 -all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
                     {
-                      "value": "51.4.72.0/24",
+                      "value": "135.84.216.0/22",
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "51.5.72.0/24",
+                      "value": "66.240.227.0/24",
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "51.5.80.0/27",
+                      "value": "63.143.59.128/25",
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "20.47.149.138/32",
+                      "value": "63.143.57.128/25",
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "51.4.80.0/27",
+                      "value": "216.98.158.0/24",
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "2a01:4180:4051:0800::/64",
-                      "mechanism": "ip6"
+                      "value": "74.63.212.0/24",
+                      "mechanism": "ip4"
                     },
                     {
-                      "value": "2a01:4180:4050:0800::/64",
-                      "mechanism": "ip6"
+                      "value": "52.200.59.0/24",
+                      "mechanism": "ip4"
                     },
                     {
-                      "value": "2a01:4180:4051:0400::/64",
-                      "mechanism": "ip6"
-                    },
+                      "value": "34.245.210.0/24",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "fail"
+                },
+                "warnings": []
+              },
+              {
+                "domain": "_spf.eu.messagegears.net",
+                "record": "v=spf1 ip4:34.245.210.0/24 -all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
                     {
-                      "value": "2a01:4180:4050:0400::/64",
-                      "mechanism": "ip6"
+                      "value": "34.245.210.0/24",
+                      "mechanism": "ip4"
                     }
                   ],
                   "neutral": [],
@@ -136,14 +182,47 @@
             ],
             "redirect": null,
             "exp": null,
-            "all": "fail"
+            "all": "softfail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "spf.eu.exclaimer.net",
+          "record": "v=spf1 ip4:104.40.229.156 ip4:52.169.0.179 ip4:20.50.220.144/28 ip4:40.127.253.48/28 ~all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "104.40.229.156",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.169.0.179",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "20.50.220.144/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "40.127.253.48/28",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
           },
           "warnings": []
         }
       ],
       "redirect": null,
       "exp": null,
-      "all": "softfail"
+      "all": "fail"
     }
   },
   "dmarc": {

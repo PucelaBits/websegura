@@ -4,32 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "b-ns.primari.net",
-      "a-ns.primari.net"
+      "a-ns.primari.net",
+      "b-ns.primari.net"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "correo.utrera.org",
-        "addresses": [
-          "195.53.27.99"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "smail.utrera.org",
-        "addresses": [
-          "195.53.27.99"
-        ]
-      }
-    ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
-      "The reverse DNS of 195.53.27.99 is smail.utrera.org, but the A/AAAA DNS records for smail.utrera.org do not resolve to 195.53.27.99"
-    ]
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 mx ip4:195.53.27.99 a:smail.utrera.org include:_spf.google.com ~all",
@@ -38,6 +20,26 @@
     "warnings": [],
     "parsed": {
       "pass": [
+        {
+          "value": "aspmx.l.google.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "alt1.aspmx.l.google.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "alt2.aspmx.l.google.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "alt3.aspmx.l.google.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "alt4.aspmx.l.google.com",
+          "mechanism": "mx"
+        },
         {
           "value": "correo.utrera.org",
           "mechanism": "mx"
@@ -242,23 +244,17 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; pct=5; rua=mailto:dmarc@utrera.org",
+    "record": "v=DMARC1; p=none; rua=mailto:dmarc@utrera.org",
     "valid": true,
     "location": "utrera.org",
-    "warnings": [
-      "pct value is less than 100. This leads to inconsistent and unpredictable policy enforcement. Consider using p=none to monitor results instead"
-    ],
+    "warnings": [],
     "tags": {
       "v": {
         "value": "DMARC1",
         "explicit": true
       },
       "p": {
-        "value": "quarantine",
-        "explicit": true
-      },
-      "pct": {
-        "value": 5,
+        "value": "none",
         "explicit": true
       },
       "rua": {
@@ -285,6 +281,10 @@
         ],
         "explicit": false
       },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
       "rf": {
         "value": [
           "afrf"
@@ -296,7 +296,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "quarantine",
+        "value": "none",
         "explicit": false
       }
     }

@@ -27,8 +27,6 @@
       }
     ],
     "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
-      "The reverse DNS of 195.235.203.138 is mail.emvs.es, but the A/AAAA DNS records for mail.emvs.es do not resolve to 195.235.203.138",
       "The domain 156.red-195-235-203.customer.static.ccgg.telefonica.net does not exist",
       "The reverse DNS of 195.235.203.156 is 156.red-195-235-203.customer.static.ccgg.telefonica.net, but the A/AAAA DNS records for 156.red-195-235-203.customer.static.ccgg.telefonica.net do not resolve to 195.235.203.156"
     ]
@@ -36,7 +34,7 @@
   "spf": {
     "record": "v=spf1 mx ip4:195.235.203.128/28 ip4:195.235.203.144/28 include:spf.protection.outlook.com -all",
     "valid": true,
-    "dns_lookups": 3,
+    "dns_lookups": 2,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -63,8 +61,8 @@
       "include": [
         {
           "domain": "spf.protection.outlook.com",
-          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/50 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 include:spfd.protection.outlook.com -all",
-          "dns_lookups": 1,
+          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/50 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
+          "dns_lookups": 0,
           "parsed": {
             "pass": [
               {
@@ -107,61 +105,7 @@
             "neutral": [],
             "softfail": [],
             "fail": [],
-            "include": [
-              {
-                "domain": "spfd.protection.outlook.com",
-                "record": "v=spf1 ip4:51.4.72.0/24 ip4:51.5.72.0/24 ip4:51.5.80.0/27 ip4:20.47.149.138/32 ip4:51.4.80.0/27 ip6:2a01:4180:4051:0800::/64 ip6:2a01:4180:4050:0800::/64 ip6:2a01:4180:4051:0400::/64 ip6:2a01:4180:4050:0400::/64 -all",
-                "dns_lookups": 0,
-                "parsed": {
-                  "pass": [
-                    {
-                      "value": "51.4.72.0/24",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "51.5.72.0/24",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "51.5.80.0/27",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "20.47.149.138/32",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "51.4.80.0/27",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "2a01:4180:4051:0800::/64",
-                      "mechanism": "ip6"
-                    },
-                    {
-                      "value": "2a01:4180:4050:0800::/64",
-                      "mechanism": "ip6"
-                    },
-                    {
-                      "value": "2a01:4180:4051:0400::/64",
-                      "mechanism": "ip6"
-                    },
-                    {
-                      "value": "2a01:4180:4050:0400::/64",
-                      "mechanism": "ip6"
-                    }
-                  ],
-                  "neutral": [],
-                  "softfail": [],
-                  "fail": [],
-                  "include": [],
-                  "redirect": null,
-                  "exp": null,
-                  "all": "fail"
-                },
-                "warnings": []
-              }
-            ],
+            "include": [],
             "redirect": null,
             "exp": null,
             "all": "fail"

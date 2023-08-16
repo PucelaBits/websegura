@@ -4,50 +4,115 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.asegi.es",
-      "ns2.asegi.es"
+      "ns220.iservices4u.eu",
+      "ns222.iservices4u.eu",
+      "ns221.iservices4u.eu",
+      "ns223.iservices4u.eu"
     ],
     "warnings": []
   },
   "mx": {
     "hosts": [
       {
-        "preference": 10,
-        "hostname": "mail.cudillero.es",
+        "preference": 0,
+        "hostname": "mta-ger-221.iservices4u.eu",
         "addresses": [
-          "194.53.148.173"
+          "2a01:4f8:c2c:8c47::1",
+          "88.99.174.10"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mta-ger-222.iservices4u.eu",
+        "addresses": [
+          "2a01:4f8:1c17:57ff::1",
+          "78.46.212.107"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mta-ger-223.iservices4u.eu",
+        "addresses": [
+          "159.69.31.253",
+          "2a01:4f8:1c1c:3901::1"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx a ip6:2a01:b5c0:0:2::168/64 ~all",
+    "record": "v=spf1 ip4:116.202.67.80/28 ip4:5.135.230.0/27 include:spf.iservices4u.eu a -all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "mail.cudillero.es",
-          "mechanism": "mx"
+          "value": "116.202.67.80/28",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "5.135.230.0/27",
+          "mechanism": "ip4"
         },
         {
           "value": "212.89.23.124",
           "mechanism": "a"
-        },
-        {
-          "value": "2a01:b5c0:0:2::168/64",
-          "mechanism": "ip6"
         }
       ],
       "neutral": [],
       "softfail": [],
       "fail": [],
-      "include": [],
+      "include": [
+        {
+          "domain": "spf.iservices4u.eu",
+          "record": "v=spf1 ip4:88.99.174.10 ip6:2a01:4f8:c2c:8c47::1 ip4:78.46.212.107 ip6:2a01:4f8:1c17:57ff::1 ip4:159.69.31.253 ip6:2a01:4f8:1c1c:3901::1 ip4:116.202.67.80/28 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "88.99.174.10",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "2a01:4f8:c2c:8c47::1",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "78.46.212.107",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "2a01:4f8:1c17:57ff::1",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "159.69.31.253",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "2a01:4f8:1c1c:3901::1",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "116.202.67.80/28",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        }
+      ],
       "redirect": null,
       "exp": null,
-      "all": "softfail"
+      "all": "fail"
     }
   },
   "dmarc": {

@@ -19,19 +19,15 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 a:mta.edu.xunta.es a:mta2.edu.xunta.es ip4:85.91.64.213 ip4:85.91.64.214 -all",
+    "record": "v=spf1 mx ip4:85.91.64.213 ip4:85.91.64.214 -all",
     "valid": true,
-    "dns_lookups": 2,
+    "dns_lookups": 1,
     "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "85.91.64.180",
-          "mechanism": "a"
-        },
-        {
-          "value": "85.91.64.181",
-          "mechanism": "a"
+          "value": "smtp.edu.xunta.gal",
+          "mechanism": "mx"
         },
         {
           "value": "85.91.64.213",

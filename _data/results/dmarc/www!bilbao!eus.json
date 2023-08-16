@@ -24,6 +24,7 @@
         "preference": 20,
         "hostname": "cluster4a.eu.messagelabs.com",
         "addresses": [
+          "34.253.63.114",
           "46.137.95.199"
         ]
       }
@@ -31,16 +32,12 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:spf.messagelabs.com a:smtp1.bilbao.eus a:smtp2.bilbao.eus ~all",
+    "record": "v=spf1 include:spf.messagelabs.com a:smtp.bilbao.eus -all",
     "valid": true,
-    "dns_lookups": 5,
+    "dns_lookups": 4,
     "warnings": [],
     "parsed": {
       "pass": [
-        {
-          "value": "212.142.136.41",
-          "mechanism": "a"
-        },
         {
           "value": "212.142.136.41",
           "mechanism": "a"
@@ -144,13 +141,75 @@
       ],
       "redirect": null,
       "exp": null,
-      "all": "softfail"
+      "all": "fail"
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=none; rua=mailto:postmaster@bilbaotik.bilbao.eus; ruf=mailto:postmaster@bilbaotik.bilbao.eus; fo=1; adkim=s; aspf=s;",
+    "valid": true,
+    "location": "bilbao.eus",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "postmaster@bilbaotik.bilbao.eus",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "postmaster@bilbaotik.bilbao.eus",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "1"
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "s",
+        "explicit": true
+      },
+      "aspf": {
+        "value": "s",
+        "explicit": true
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }

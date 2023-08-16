@@ -18,12 +18,10 @@
     "error": "portaltributario.jccm.es does not have a SPF TXT record"
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; pct=50; fo=1; rua=mailto:dmarc@jccm.es; ruf=mailto:dmarc@jccm.es",
+    "record": "v=DMARC1; p=quarantine; pct=100; fo=1; rua=mailto:dmarc@jccm.es; ruf=mailto:dmarc@jccm.es",
     "valid": true,
     "location": "jccm.es",
-    "warnings": [
-      "pct value is less than 100. This leads to inconsistent and unpredictable policy enforcement. Consider using p=none to monitor results instead"
-    ],
+    "warnings": [],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -34,7 +32,7 @@
         "explicit": true
       },
       "pct": {
-        "value": 50,
+        "value": 100,
         "explicit": true
       },
       "fo": {

@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.uvigo.es",
       "sun.rediris.es",
+      "chico.rediris.es",
       "dns.uvigo.es",
-      "chico.rediris.es"
+      "dns2.uvigo.es"
     ],
     "warnings": []
   },
@@ -33,7 +33,7 @@
   "spf": {
     "record": "v=spf1 include:spf.puc.rediris.es include:antispam._spf.uvigo.es include:antispam.ipv6._spf.uvigo.es include:spf.protection.outlook.com -all",
     "valid": true,
-    "dns_lookups": 5,
+    "dns_lookups": 4,
     "warnings": [
       "SPF type DNS records found. Use of DNS Type SPF has been removed in the standards track version of SPF, RFC 7208. These records should be removed and replaced with TXT records: v=spf1 include:spf.puc.rediris.es include:antispam._spf.uvigo.es include:antispam.ipv6._spf.uvigo.es include:spf.protection.outlook.com -all"
     ],
@@ -45,7 +45,7 @@
       "include": [
         {
           "domain": "spf.puc.rediris.es",
-          "record": "v=spf1 ip4:143.55.146.78 ip4:143.55.148.243 ip4:130.206.25.38 ip4:130.206.24.0/24 ip4:130.206.19.0/24 ip4:192.187.24.32/28 ip4:192.187.24.0/28 ip6:2001:720:418:ca10::/64 ip6:2001:720:418:ca11::/64 ~all",
+          "record": "v=spf1 ip4:143.55.146.78 ip4:143.55.148.243 ~all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -56,34 +56,6 @@
               {
                 "value": "143.55.148.243",
                 "mechanism": "ip4"
-              },
-              {
-                "value": "130.206.25.38",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "130.206.24.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "130.206.19.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "192.187.24.32/28",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "192.187.24.0/28",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "2001:720:418:ca10::/64",
-                "mechanism": "ip6"
-              },
-              {
-                "value": "2001:720:418:ca11::/64",
-                "mechanism": "ip6"
               }
             ],
             "neutral": [],
@@ -98,7 +70,7 @@
         },
         {
           "domain": "antispam._spf.uvigo.es",
-          "record": "v=spf1 ip4:193.146.32.73 ip4:193.146.32.85 ip4:193.146.32.87 ip4:193.146.32.89 ip4:193.146.32.90 ip4:193.146.32.91 ip4:193.146.32.93 ip4:193.146.32.99 -all",
+          "record": "v=spf1 ip4:193.146.32.73 ip4:193.146.32.85 ip4:193.146.32.103 ip4:193.146.32.87 ip4:193.146.32.89 ip4:193.146.32.90 ip4:193.146.32.91 ip4:193.146.32.93 ip4:193.146.32.99 -all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -108,6 +80,10 @@
               },
               {
                 "value": "193.146.32.85",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "193.146.32.103",
                 "mechanism": "ip4"
               },
               {
@@ -196,8 +172,8 @@
         },
         {
           "domain": "spf.protection.outlook.com",
-          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/50 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 include:spfd.protection.outlook.com -all",
-          "dns_lookups": 1,
+          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/50 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
+          "dns_lookups": 0,
           "parsed": {
             "pass": [
               {
@@ -240,61 +216,7 @@
             "neutral": [],
             "softfail": [],
             "fail": [],
-            "include": [
-              {
-                "domain": "spfd.protection.outlook.com",
-                "record": "v=spf1 ip4:51.4.72.0/24 ip4:51.5.72.0/24 ip4:51.5.80.0/27 ip4:20.47.149.138/32 ip4:51.4.80.0/27 ip6:2a01:4180:4051:0800::/64 ip6:2a01:4180:4050:0800::/64 ip6:2a01:4180:4051:0400::/64 ip6:2a01:4180:4050:0400::/64 -all",
-                "dns_lookups": 0,
-                "parsed": {
-                  "pass": [
-                    {
-                      "value": "51.4.72.0/24",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "51.5.72.0/24",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "51.5.80.0/27",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "20.47.149.138/32",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "51.4.80.0/27",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "2a01:4180:4051:0800::/64",
-                      "mechanism": "ip6"
-                    },
-                    {
-                      "value": "2a01:4180:4050:0800::/64",
-                      "mechanism": "ip6"
-                    },
-                    {
-                      "value": "2a01:4180:4051:0400::/64",
-                      "mechanism": "ip6"
-                    },
-                    {
-                      "value": "2a01:4180:4050:0400::/64",
-                      "mechanism": "ip6"
-                    }
-                  ],
-                  "neutral": [],
-                  "softfail": [],
-                  "fail": [],
-                  "include": [],
-                  "redirect": null,
-                  "exp": null,
-                  "all": "fail"
-                },
-                "warnings": []
-              }
-            ],
+            "include": [],
             "redirect": null,
             "exp": null,
             "all": "fail"

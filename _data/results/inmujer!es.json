@@ -1,24 +1,22 @@
 {
   "algorithm_version": 2,
-  "end_time": "Fri, 26 Aug 2022 02:10:19 GMT",
+  "end_time": "Mon, 14 Aug 2023 00:38:02 GMT",
   "grade": "F",
   "hidden": false,
   "likelihood_indicator": "MEDIUM",
   "response_headers": {
-    "Accept-ranges": "bytes",
-    "Content-length": "32004",
+    "Content-length": "223",
     "Content-type": "text/html",
-    "Date": "Fri, 26 Aug 2022 02:10:09 GMT",
-    "Etag": "\"7d04-62ff3b37\"",
-    "Last-modified": "Fri, 19 Aug 2022 07:26:47 GMT",
-    "Server": "server-header-none"
+    "Date": "Mon, 14 Aug 2023 00:38:01 GMT",
+    "Server": "server-header-none",
+    "Www-authenticate": "Basic realm=\"Oracle iPlanet Web Server\""
   },
-  "scan_id": 28966964,
-  "score": 15,
-  "start_time": "Fri, 26 Aug 2022 02:10:03 GMT",
+  "scan_id": 40806391,
+  "score": 20,
+  "start_time": "Mon, 14 Aug 2023 00:37:52 GMT",
   "state": "FINISHED",
-  "status_code": 200,
-  "tests_failed": 6,
-  "tests_passed": 6,
+  "status_code": 401,
+  "tests_failed": 5,
+  "tests_passed": 7,
   "tests_quantity": 12
 }

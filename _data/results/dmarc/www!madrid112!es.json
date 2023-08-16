@@ -42,19 +42,18 @@
       {
         "preference": 50,
         "hostname": "mx01.mep.pandasecurity.com",
-        "addresses": [
-          "92.54.27.6"
-        ]
+        "addresses": []
       },
       {
         "preference": 50,
         "hostname": "mx02.mep.pandasecurity.com",
-        "addresses": [
-          "92.54.27.6"
-        ]
+        "addresses": []
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The domain mx01.mep.pandasecurity.com does not exist",
+      "The domain mx02.mep.pandasecurity.com does not exist"
+    ]
   },
   "spf": {
     "record": "v=spf1 a:mail.madrid112.es include:spf.hornetsecurity.com ~all",

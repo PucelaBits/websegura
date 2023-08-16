@@ -36,9 +36,87 @@
     "warnings": []
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "diputadodelcomun.org has multiple SPF TXT records"
+    "record": "v=spf1 ip4:62.82.138.99 include:iberlayer.com -all",
+    "valid": true,
+    "dns_lookups": 1,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "62.82.138.99",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "iberlayer.com",
+          "record": "v=spf1 ip4:130.117.89.0/27 ip4:80.169.225.32/27 ip4:91.90.161.0/24 ip4:185.136.218.5/32 ip4:185.136.218.6/32 ip4:185.136.218.7/32 ip4:185.136.218.8/32 ip4:185.136.219.26/32 ip4:185.136.219.27/32 ip4:185.136.219.28/32 ip4:185.136.219.29/32 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "130.117.89.0/27",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "80.169.225.32/27",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "91.90.161.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.136.218.5/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.136.218.6/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.136.218.7/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.136.218.8/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.136.219.26/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.136.219.27/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.136.219.28/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.136.219.29/32",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
     "record": null,

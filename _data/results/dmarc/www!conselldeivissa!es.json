@@ -31,12 +31,16 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:2.139.232.242 a mx ip4:213.4.20.215 include:spf.ipzmarketing.com exists:%{i}.spf.hc348-91.eu.iphmx.com ~all",
+    "record": "v=spf1 ip4:46.24.200.236 ip4:2.139.232.242 a mx ip4:213.4.20.215 include:spf.ipzmarketing.com exists:%{i}.spf.hc348-91.eu.iphmx.com ~all",
     "valid": true,
     "dns_lookups": 4,
     "warnings": [],
     "parsed": {
       "pass": [
+        {
+          "value": "46.24.200.236",
+          "mechanism": "ip4"
+        },
         {
           "value": "2.139.232.242",
           "mechanism": "ip4"

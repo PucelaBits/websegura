@@ -4,101 +4,104 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns.redunda.com",
-      "ns2.redunda.com"
+      "ns2.redunda.com",
+      "ns.redunda.com"
     ],
     "warnings": []
   },
   "mx": {
     "hosts": [
       {
-        "preference": 10,
-        "hostname": "mx.redunda.com",
+        "preference": 0,
+        "hostname": "betera-es.mail.protection.outlook.com",
         "addresses": [
-          "84.246.208.51",
-          "84.246.208.52",
-          "84.246.208.53",
-          "84.246.208.54",
-          "84.246.208.55",
-          "84.246.208.56",
-          "84.246.208.57",
-          "84.246.208.58"
+          "52.101.68.0",
+          "52.101.68.21",
+          "52.101.68.3",
+          "52.101.68.32",
+          "52.101.68.5",
+          "52.101.73.2",
+          "52.101.73.4",
+          "52.101.73.6"
         ]
-      },
-      {
-        "preference": 10,
-        "hostname": "mx2.redunda.com",
-        "addresses": [
-          "84.246.208.51",
-          "84.246.208.52",
-          "84.246.208.53",
-          "84.246.208.54",
-          "84.246.208.55",
-          "84.246.208.56",
-          "84.246.208.57",
-          "84.246.208.58"
-        ]
-      },
-      {
-        "preference": 32767,
-        "hostname": "ms98722601.msv1.invalid",
-        "addresses": []
       }
     ],
     "warnings": [
-      "The domain ms98722601.msv1.invalid does not exist. Consider using a TXT record to validate domain ownership in Office 365 instead."
+      "52.101.68.0 does not have any reverse DNS (PTR) records",
+      "52.101.68.21 does not have any reverse DNS (PTR) records",
+      "52.101.68.3 does not have any reverse DNS (PTR) records",
+      "52.101.68.32 does not have any reverse DNS (PTR) records",
+      "52.101.68.5 does not have any reverse DNS (PTR) records",
+      "52.101.73.2 does not have any reverse DNS (PTR) records",
+      "52.101.73.4 does not have any reverse DNS (PTR) records",
+      "52.101.73.6 does not have any reverse DNS (PTR) records"
     ]
   },
   "spf": {
-    "record": "v=spf1 mx ip4:195.77.252.1 ip4:195.77.252.2 ip4:195.77.252.3 ip4:195.77.252.4 ip4:195.77.252.5 mx:mail.betera.es a:mail.betera.es -all",
+    "record": "v=spf1 include:spf.protection.outlook.com -all",
     "valid": true,
-    "dns_lookups": 3,
-    "warnings": [
-      "mail.betera.es does not have any MX records"
-    ],
+    "dns_lookups": 1,
+    "warnings": [],
     "parsed": {
-      "pass": [
-        {
-          "value": "mx.redunda.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "mx2.redunda.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "ms98722601.msv1.invalid",
-          "mechanism": "mx"
-        },
-        {
-          "value": "195.77.252.1",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "195.77.252.2",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "195.77.252.3",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "195.77.252.4",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "195.77.252.5",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "31.24.154.99",
-          "mechanism": "a"
-        }
-      ],
+      "pass": [],
       "neutral": [],
       "softfail": [],
       "fail": [],
-      "include": [],
+      "include": [
+        {
+          "domain": "spf.protection.outlook.com",
+          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/50 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "40.92.0.0/15",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "40.107.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.100.0.0/14",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "104.47.0.0/17",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "2a01:111:f400::/48",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403::/49",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:8000::/50",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:c000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:f000::/52",
+                "mechanism": "ip6"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        }
+      ],
       "redirect": null,
       "exp": null,
       "all": "fail"

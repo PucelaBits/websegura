@@ -153,12 +153,10 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none",
+    "record": "v=DMARC1; p=none; rua=mailto:alertas@consejo-estado.es; ruf=mailto:alertas@consejo-estado.es; sp=none; ri=86400",
     "valid": true,
     "location": "consejo-estado.es",
-    "warnings": [
-      "rua tag (destination for aggregate reports) not found"
-    ],
+    "warnings": [],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -166,6 +164,34 @@
       },
       "p": {
         "value": "none",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "alertas@consejo-estado.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "alertas@consejo-estado.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "sp": {
+        "value": "none",
+        "explicit": true
+      },
+      "ri": {
+        "value": 86400,
         "explicit": true
       },
       "adkim": {
@@ -190,14 +216,6 @@
         "value": [
           "afrf"
         ],
-        "explicit": false
-      },
-      "ri": {
-        "value": 86400,
-        "explicit": false
-      },
-      "sp": {
-        "value": "none",
         "explicit": false
       }
     }

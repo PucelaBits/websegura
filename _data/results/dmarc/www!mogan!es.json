@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns10.servicio-online.net",
       "ns12.servicio-online.net",
+      "ns10.servicio-online.net",
       "ns11.servicio-online.net"
     ],
     "warnings": []
@@ -14,6 +14,20 @@
     "hosts": [
       {
         "preference": 10,
+        "hostname": "cust80680-1.in.mailcontrol.com",
+        "addresses": [
+          "85.115.52.190"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "cust80680-2.in.mailcontrol.com",
+        "addresses": [
+          "85.115.60.190"
+        ]
+      },
+      {
+        "preference": 40,
         "hostname": "inf1.mogan.es",
         "addresses": [
           "213.0.98.20"
@@ -29,6 +43,14 @@
     "warnings": [],
     "parsed": {
       "pass": [
+        {
+          "value": "cust80680-1.in.mailcontrol.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "cust80680-2.in.mailcontrol.com",
+          "mechanism": "mx"
+        },
         {
           "value": "inf1.mogan.es",
           "mechanism": "mx"

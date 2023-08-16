@@ -15,23 +15,23 @@
         "preference": 10,
         "hostname": "mxa-006a4e02.gslb.pphosted.com",
         "addresses": [
-          "143.55.148.243"
+          "143.55.146.78"
         ]
       },
       {
         "preference": 10,
         "hostname": "mxb-006a4e02.gslb.pphosted.com",
         "addresses": [
-          "143.55.148.243"
+          "143.55.146.78"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:spf.puc.rediris.es a:correo.ine.es a:smtpout.ine.es a:remesas.ine.es a:mta01.ine.es a:mta02.ine.es -all",
+    "record": "v=spf1 include:spf.puc.rediris.es a:correo.ine.es a:smtpout.ine.es a:remesas.ine.es a:c.spf.service-now.com  -all",
     "valid": true,
-    "dns_lookups": 6,
+    "dns_lookups": 5,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -48,11 +48,111 @@
           "mechanism": "a"
         },
         {
-          "value": "195.254.149.12",
+          "value": "148.139.0.2",
           "mechanism": "a"
         },
         {
-          "value": "195.254.149.12",
+          "value": "148.139.0.31",
+          "mechanism": "a"
+        },
+        {
+          "value": "148.139.1.2",
+          "mechanism": "a"
+        },
+        {
+          "value": "148.139.1.31",
+          "mechanism": "a"
+        },
+        {
+          "value": "148.139.2.2",
+          "mechanism": "a"
+        },
+        {
+          "value": "148.139.3.2",
+          "mechanism": "a"
+        },
+        {
+          "value": "149.96.13.2",
+          "mechanism": "a"
+        },
+        {
+          "value": "149.96.14.2",
+          "mechanism": "a"
+        },
+        {
+          "value": "199.91.136.26",
+          "mechanism": "a"
+        },
+        {
+          "value": "199.91.136.28",
+          "mechanism": "a"
+        },
+        {
+          "value": "199.91.137.2",
+          "mechanism": "a"
+        },
+        {
+          "value": "199.91.137.26",
+          "mechanism": "a"
+        },
+        {
+          "value": "199.91.139.145",
+          "mechanism": "a"
+        },
+        {
+          "value": "199.91.139.22",
+          "mechanism": "a"
+        },
+        {
+          "value": "199.91.139.23",
+          "mechanism": "a"
+        },
+        {
+          "value": "199.91.139.24",
+          "mechanism": "a"
+        },
+        {
+          "value": "199.91.140.26",
+          "mechanism": "a"
+        },
+        {
+          "value": "199.91.140.28",
+          "mechanism": "a"
+        },
+        {
+          "value": "199.91.141.145",
+          "mechanism": "a"
+        },
+        {
+          "value": "199.91.141.22",
+          "mechanism": "a"
+        },
+        {
+          "value": "199.91.141.23",
+          "mechanism": "a"
+        },
+        {
+          "value": "199.91.141.24",
+          "mechanism": "a"
+        },
+        {
+          "value": "37.98.232.12",
+          "mechanism": "a"
+        },
+        {
+          "value": "37.98.232.2",
+          "mechanism": "a"
+        },
+        {
+          "value": "37.98.232.26",
+          "mechanism": "a"
+        },
+        {
+          "value": "37.98.234.2",
+          "mechanism": "a"
+        },
+        {
+          "value": "37.98.235.2",
           "mechanism": "a"
         }
       ],
@@ -62,7 +162,7 @@
       "include": [
         {
           "domain": "spf.puc.rediris.es",
-          "record": "v=spf1 ip4:143.55.146.78 ip4:143.55.148.243 ip4:130.206.25.38 ip4:130.206.24.0/24 ip4:130.206.19.0/24 ip4:192.187.24.32/28 ip4:192.187.24.0/28 ip6:2001:720:418:ca10::/64 ip6:2001:720:418:ca11::/64 ~all",
+          "record": "v=spf1 ip4:143.55.146.78 ip4:143.55.148.243 ~all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -73,34 +173,6 @@
               {
                 "value": "143.55.148.243",
                 "mechanism": "ip4"
-              },
-              {
-                "value": "130.206.25.38",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "130.206.24.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "130.206.19.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "192.187.24.32/28",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "192.187.24.0/28",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "2001:720:418:ca10::/64",
-                "mechanism": "ip6"
-              },
-              {
-                "value": "2001:720:418:ca11::/64",
-                "mechanism": "ip6"
               }
             ],
             "neutral": [],
@@ -120,9 +192,71 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=reject; sp=reject; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com",
+    "valid": true,
+    "location": "ine.es",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "reject",
+        "explicit": true
+      },
+      "sp": {
+        "value": "reject",
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "1"
+        ],
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc_rua@emaildefense.proofpoint.com",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc_ruf@emaildefense.proofpoint.com",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      }
+    }
   }
 }

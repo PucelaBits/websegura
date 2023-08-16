@@ -4,23 +4,22 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns08.ns-cloud4b.com",
-      "ns07.ns-cloud4b.org",
-      "ns06.ns-cloud4b.net"
+      "linuxdns02.telecable.es",
+      "linuxdns01.telecable.es"
     ],
     "warnings": []
   },
   "mx": {
     "hosts": [
       {
-        "preference": 30,
+        "preference": 10,
         "hostname": "mx30.asaccomunicaciones.es",
         "addresses": [
           "94.100.134.8"
         ]
       },
       {
-        "preference": 40,
+        "preference": 20,
         "hostname": "mx40.asaccomunicaciones.es",
         "addresses": [
           "94.100.136.7"
@@ -39,7 +38,7 @@
     "parsed": {
       "pass": [
         {
-          "value": "195.55.193.8",
+          "value": "185.79.129.239",
           "mechanism": "a"
         },
         {

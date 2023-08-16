@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.efor.es",
       "aspe.efor.es",
-      "dns.efor.es"
+      "dns.efor.es",
+      "dns2.efor.es"
     ],
     "warnings": []
   },
@@ -16,33 +16,41 @@
         "preference": 10,
         "hostname": "mx1.feriazaragoza.es",
         "addresses": [
-          "89.17.218.99"
+          "80.28.246.117"
         ]
       },
       {
         "preference": 20,
         "hostname": "mx2.feriazaragoza.es",
         "addresses": [
-          "80.28.131.13"
+          "80.28.246.117"
         ]
       },
       {
         "preference": 30,
         "hostname": "mx3.feriazaragoza.es",
         "addresses": [
-          "89.17.218.99"
+          "80.28.246.117"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:89.17.218.96/29 ip4:104.40.149.226 ip4:168.245.50.85 include:sendgrid.net ~all",
+    "record": "v=spf1 ip4:80.28.246.117 ip4:213.97.13.208 ip4:89.17.218.96/29 ip4:104.40.149.226 ip4:168.245.50.85 include:sendgrid.net ~all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
     "parsed": {
       "pass": [
+        {
+          "value": "80.28.246.117",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "213.97.13.208",
+          "mechanism": "ip4"
+        },
         {
           "value": "89.17.218.96/29",
           "mechanism": "ip4"

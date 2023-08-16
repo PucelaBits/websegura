@@ -5,9 +5,9 @@
   "ns": {
     "hostnames": [
       "ns-cloud-d2.googledomains.com",
-      "ns-cloud-d1.googledomains.com",
+      "ns-cloud-d3.googledomains.com",
       "ns-cloud-d4.googledomains.com",
-      "ns-cloud-d3.googledomains.com"
+      "ns-cloud-d1.googledomains.com"
     ],
     "warnings": []
   },
@@ -17,14 +17,24 @@
         "preference": 10,
         "hostname": "fundaciones-org.mail.protection.outlook.com",
         "addresses": [
-          "104.47.0.36",
-          "104.47.1.36"
+          "52.101.68.16",
+          "52.101.68.36",
+          "52.101.73.1",
+          "52.101.73.12",
+          "52.101.73.15",
+          "52.101.73.4",
+          "52.101.73.8"
         ]
       }
     ],
     "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
-      "The reverse DNS of 104.47.0.36 is mail-he1eur010036.inbound.protection.outlook.com, but the A/AAAA DNS records for mail-he1eur010036.inbound.protection.outlook.com do not resolve to 104.47.0.36"
+      "52.101.68.16 does not have any reverse DNS (PTR) records",
+      "52.101.68.36 does not have any reverse DNS (PTR) records",
+      "52.101.73.1 does not have any reverse DNS (PTR) records",
+      "52.101.73.12 does not have any reverse DNS (PTR) records",
+      "52.101.73.15 does not have any reverse DNS (PTR) records",
+      "52.101.73.4 does not have any reverse DNS (PTR) records",
+      "52.101.73.8 does not have any reverse DNS (PTR) records"
     ]
   },
   "spf": {

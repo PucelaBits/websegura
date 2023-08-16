@@ -15,16 +15,16 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "172.253.122.27",
-          "2607:f8b0:4004:c1b::1b"
+          "172.253.115.27",
+          "2607:f8b0:4004:c08::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "209.85.202.26",
-          "2a00:1450:400b:c00::1b"
+          "209.85.202.27",
+          "2a00:1450:400b:c00::1a"
         ]
       },
       {
@@ -39,23 +39,23 @@
         "preference": 10,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "142.250.27.27",
-          "2a00:1450:4025:401::1b"
+          "142.250.27.26",
+          "2a00:1450:4025:401::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "142.250.153.27",
-          "2a00:1450:4013:c16::1b"
+          "142.250.153.26",
+          "2a00:1450:4013:c16::1a"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:_spf.google.com  include:_spf.atlassian.net -all",
+    "record": "v=spf1 include:_spf.google.com include:_spf.atlassian.net -all",
     "valid": true,
     "dns_lookups": 6,
     "warnings": [],
@@ -335,7 +335,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=reject; sp=reject; adkim=r; aspf=r; rua=mailto:webmaster@cjcanarias.es; ruf=mailto:webmaster@cjcanarias.es",
+    "record": "v=DMARC1; p=reject; sp=reject; adkim=s; aspf=s; rua=mailto:cfcc7416b9e14ee3891add81e87544ae@dmarc-reports.cloudflare.net",
     "valid": true,
     "location": "cjcanarias.es",
     "warnings": [],
@@ -353,28 +353,18 @@
         "explicit": true
       },
       "adkim": {
-        "value": "r",
+        "value": "s",
         "explicit": true
       },
       "aspf": {
-        "value": "r",
+        "value": "s",
         "explicit": true
       },
       "rua": {
         "value": [
           {
             "scheme": "mailto",
-            "address": "webmaster@cjcanarias.es",
-            "size_limit": null
-          }
-        ],
-        "explicit": true
-      },
-      "ruf": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "webmaster@cjcanarias.es",
+            "address": "cfcc7416b9e14ee3891add81e87544ae@dmarc-reports.cloudflare.net",
             "size_limit": null
           }
         ],

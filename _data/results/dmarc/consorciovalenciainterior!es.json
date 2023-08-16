@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1107.ui-dns.org",
-      "ns1107.ui-dns.com",
       "ns1107.ui-dns.biz",
-      "ns1107.ui-dns.de"
+      "ns1107.ui-dns.com",
+      "ns1107.ui-dns.de",
+      "ns1107.ui-dns.org"
     ],
     "warnings": []
   },
@@ -17,15 +17,15 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.251.163.27",
-          "2607:f8b0:4004:c09::1b"
+          "172.253.63.27",
+          "2607:f8b0:4004:c07::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "209.85.202.27",
+          "209.85.202.26",
           "2a00:1450:400b:c00::1b"
         ]
       },
@@ -41,12 +41,15 @@
         "preference": 10,
         "hostname": "aspmx2.googlemail.com",
         "addresses": [
-          "209.85.202.26",
-          "2a00:1450:400b:c00::1a"
+          "209.85.202.27",
+          "2a00:1450:400b:c00::1b"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 2a00:1450:400b:c00::1b is dg-in-x1b.1e100.net, but the A/AAAA DNS records for dg-in-x1b.1e100.net do not resolve to 2a00:1450:400b:c00::1b"
+    ]
   },
   "spf": {
     "record": null,

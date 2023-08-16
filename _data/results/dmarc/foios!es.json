@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.dnsxperta.com",
-      "ns3.dnsxperta.com"
+      "ns3.dnsxperta.com",
+      "ns2.dnsxperta.com"
     ],
     "warnings": []
   },
@@ -15,7 +15,7 @@
         "preference": 10,
         "hostname": "mx.spamexperts.com",
         "addresses": [
-          "2001:550:2:61::2fc:100",
+          "2001:550:2:9::280:100",
           "38.111.198.185"
         ]
       },
@@ -48,7 +48,6 @@
     ],
     "warnings": [
       "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records",
-      "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records",
       "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records"
     ]
   },
@@ -56,8 +55,8 @@
     "record": "v=spf1 include:dnsxperta.com include:spf.qsemail.net include:espublico.com ip4:213.4.82.254 -all",
     "valid": false,
     "warnings": [],
-    "error": "Parsing the SPF record requires 18/10 maximum DNS lookups - https://tools.ietf.org/html/rfc7208#section-4.6.4",
-    "dns_lookups": 18
+    "error": "Parsing the SPF record requires 17/10 maximum DNS lookups - https://tools.ietf.org/html/rfc7208#section-4.6.4",
+    "dns_lookups": 17
   },
   "dmarc": {
     "record": null,

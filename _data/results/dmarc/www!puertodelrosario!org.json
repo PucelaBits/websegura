@@ -24,7 +24,7 @@
   "spf": {
     "record": "v=spf1 include:spf.webapps.net ~all",
     "valid": true,
-    "dns_lookups": 3,
+    "dns_lookups": 5,
     "warnings": [],
     "parsed": {
       "pass": [],
@@ -35,7 +35,7 @@
         {
           "domain": "spf.webapps.net",
           "record": "v=spf1 include:spf1.webapps.net include:spf2.webapps.net ~all",
-          "dns_lookups": 2,
+          "dns_lookups": 4,
           "parsed": {
             "pass": [],
             "neutral": [],
@@ -44,8 +44,8 @@
             "include": [
               {
                 "domain": "spf1.webapps.net",
-                "record": "v=spf1 ip4:81.88.48.32/27 ip4:81.88.50.224/27 ip4:81.88.54.64/27 ip4:81.88.55.96/27 ip4:81.88.56.0/27 ip4:81.88.62.160/27 ip4:81.88.63.128/27 ~all",
-                "dns_lookups": 0,
+                "record": "v=spf1 ip4:81.88.48.32/27 ip4:81.88.50.224/27 ip4:81.88.54.64/27 ip4:81.88.55.96/27 ip4:81.88.56.0/27 ip4:81.88.62.160/27 ip4:81.88.63.128/27 ip4:195.7.249.16/29 include:dominiando.email ~all",
+                "dns_lookups": 2,
                 "parsed": {
                   "pass": [
                     {
@@ -75,12 +75,50 @@
                     {
                       "value": "81.88.63.128/27",
                       "mechanism": "ip4"
+                    },
+                    {
+                      "value": "195.7.249.16/29",
+                      "mechanism": "ip4"
                     }
                   ],
                   "neutral": [],
                   "softfail": [],
                   "fail": [],
-                  "include": [],
+                  "include": [
+                    {
+                      "domain": "dominiando.email",
+                      "record": "v=spf1 mx ip4:81.88.54.130 ip4:81.88.54.152/30 ~all",
+                      "dns_lookups": 1,
+                      "parsed": {
+                        "pass": [
+                          {
+                            "value": "mx1.dominiando.email",
+                            "mechanism": "mx"
+                          },
+                          {
+                            "value": "mx2.dominiando.email",
+                            "mechanism": "mx"
+                          },
+                          {
+                            "value": "81.88.54.130",
+                            "mechanism": "ip4"
+                          },
+                          {
+                            "value": "81.88.54.152/30",
+                            "mechanism": "ip4"
+                          }
+                        ],
+                        "neutral": [],
+                        "softfail": [],
+                        "fail": [],
+                        "include": [],
+                        "redirect": null,
+                        "exp": null,
+                        "all": "softfail"
+                      },
+                      "warnings": []
+                    }
+                  ],
                   "redirect": null,
                   "exp": null,
                   "all": "softfail"
@@ -89,7 +127,7 @@
               },
               {
                 "domain": "spf2.webapps.net",
-                "record": "v=spf1 ip4:195.110.101.32/27 ip4:195.110.122.160/27 ip4:195.110.123.0/27 ip4:185.2.4.0/22 ip4:81.88.49.224/27 ip4:195.7.249.29 ip4:81.88.52.0/23 ~all",
+                "record": "v=spf1 ip4:195.110.101.32/27 ip4:195.110.122.160/27 ip4:195.110.123.0/27 ip4:185.2.4.0/22 ip4:81.88.49.224/27 ip4:195.7.249.29 ip4:81.88.52.0/23 ip4:185.110.66.0/24 ip4:213.158.94.0/23 ip4:81.88.54.154/32 ~all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
@@ -119,6 +157,18 @@
                     },
                     {
                       "value": "81.88.52.0/23",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.110.66.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "213.158.94.0/23",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "81.88.54.154/32",
                       "mechanism": "ip4"
                     }
                   ],

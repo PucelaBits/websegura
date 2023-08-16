@@ -4,11 +4,11 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns5.cdmondns-01.com",
+      "ns4.cdmondns-01.org",
       "ns2.cdmon.net",
       "ns3.cdmon.net",
-      "ns1.cdmon.net",
-      "ns4.cdmondns-01.org",
-      "ns5.cdmondns-01.com"
+      "ns1.cdmon.net"
     ],
     "warnings": []
   },
@@ -25,9 +25,63 @@
     "warnings": []
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "cabranes.es does not have a SPF TXT record"
+    "record": "v=spf1 mx a include:spf.sentidocomun.es -all",
+    "valid": true,
+    "dns_lookups": 3,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "mx.sentidocomun.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "212.89.23.124",
+          "mechanism": "a"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "spf.sentidocomun.es",
+          "record": "v=spf1 ip4:154.58.16.69 ip4:154.58.16.49 ip4:154.58.16.65 ip4:54.217.206.198 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "154.58.16.69",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "154.58.16.49",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "154.58.16.65",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "54.217.206.198",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
     "record": null,

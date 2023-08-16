@@ -17,7 +17,9 @@
         "preference": 2,
         "hostname": "inbound-smtp.eu-west-1.amazonaws.com",
         "addresses": [
-          "54.239.39.100"
+          "18.200.203.69",
+          "54.155.140.59",
+          "54.76.31.185"
         ]
       },
       {
@@ -37,9 +39,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The reverse DNS of 54.239.39.100 is inbound-smtp.eu-west-1.amazonaws.com, but the A/AAAA DNS records for inbound-smtp.eu-west-1.amazonaws.com do not resolve to 54.239.39.100"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:207.54.76.180 ip4:207.54.76.248 ip4:207.54.77.56 ip4:207.54.69.189 mx exists:%{i}.spf.hc489-80.eu.iphmx.com -all",

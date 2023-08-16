@@ -54,9 +54,9 @@
     }
   },
   "dmarc": {
-    "record": null,
+    "record": "v=DMARC1; p=quarantine; rua=mailto:informes.correo@dgt.es;ruf=mailto:alertas.correo@dgt.es; fo=0:1:d:s;",
     "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "location": "dgt.es",
+    "error": "fo DMARC tag options 0 and 1 are mutually exclusive"
   }
 }

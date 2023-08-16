@@ -13,13 +13,6 @@
     "hosts": [
       {
         "preference": 20,
-        "hostname": "mx1.riojasalud.es",
-        "addresses": [
-          "193.145.4.9"
-        ]
-      },
-      {
-        "preference": 20,
         "hostname": "mx2.riojasalud.es",
         "addresses": [
           "195.55.164.16"
@@ -29,31 +22,15 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx ip4:193.145.4.9 ip4:193.145.4.10 ip4:195.55.164.16 -all",
+    "record": "v=spf1 mx  -all",
     "valid": true,
     "dns_lookups": 1,
     "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "mx1.riojasalud.es",
-          "mechanism": "mx"
-        },
-        {
           "value": "mx2.riojasalud.es",
           "mechanism": "mx"
-        },
-        {
-          "value": "193.145.4.9",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "193.145.4.10",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "195.55.164.16",
-          "mechanism": "ip4"
         }
       ],
       "neutral": [],

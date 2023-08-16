@@ -1,16 +1,11 @@
 {
   "domain": "avancedigital.gob.es",
   "base_domain": "avancedigital.gob.es",
-  "dnssec": false,
+  "dnssec": true,
   "ns": {
     "hostnames": [
-      "ns1.t-systems.es",
-      "artemis.ttd.net",
-      "nso.nic.es",
-      "chico.rediris.es",
-      "sun.rediris.es",
-      "ns1.mineco.es",
-      "ns2.t-systems.es"
+      "ns1.age.gob.es",
+      "ns2.age.gob.es"
     ],
     "warnings": []
   },

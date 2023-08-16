@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.intervia.com",
       "ns1.intervia.com",
-      "ns0.intervia.com"
+      "ns0.intervia.com",
+      "ns2.intervia.com"
     ],
     "warnings": []
   },
@@ -23,28 +23,12 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:95.211.205.16 ip4:95.211.136.209 ip4:37.48.64.153 ip4:37.48.116.53 ip4:88.2.101.45 mx -all",
+    "record": "v=spf1 include:_spf.intervia.com ip4:88.2.101.45 mx -all",
     "valid": true,
-    "dns_lookups": 1,
+    "dns_lookups": 4,
     "warnings": [],
     "parsed": {
       "pass": [
-        {
-          "value": "95.211.205.16",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "95.211.136.209",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "37.48.64.153",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "37.48.116.53",
-          "mechanism": "ip4"
-        },
         {
           "value": "88.2.101.45",
           "mechanism": "ip4"
@@ -57,7 +41,139 @@
       "neutral": [],
       "softfail": [],
       "fail": [],
-      "include": [],
+      "include": [
+        {
+          "domain": "_spf.intervia.com",
+          "record": "v=spf1 include:_spf_iv.intervia.com include:_spf_cli.intervia.com ~all",
+          "dns_lookups": 2,
+          "parsed": {
+            "pass": [],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [
+              {
+                "domain": "_spf_iv.intervia.com",
+                "record": "v=spf1 ip4:95.211.205.16 ip4:95.211.136.209 ip4:81.171.6.164 ip4:5.79.75.205 ip4:95.211.214.95 ip4:37.48.116.53 ip4:78.159.100.245 ip4:83.149.110.60 ip4:23.105.39.95 ip4:213.227.129.169 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "95.211.205.16",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "95.211.136.209",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "81.171.6.164",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "5.79.75.205",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "95.211.214.95",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "37.48.116.53",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "78.159.100.245",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "83.149.110.60",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "23.105.39.95",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "213.227.129.169",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              },
+              {
+                "domain": "_spf_cli.intervia.com",
+                "record": "v=spf1 ip4:95.211.174.101 ip4:95.211.148.229 ip4:212.95.51.139 ip4:89.149.211.53 ip4:5.79.73.7 ip4:37.48.64.153 ip4:84.16.232.198 ip4:213.227.134.136 ip4:84.16.232.198 ip4:212.32.240.7 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "95.211.174.101",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "95.211.148.229",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "212.95.51.139",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "89.149.211.53",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "5.79.73.7",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "37.48.64.153",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "84.16.232.198",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "213.227.134.136",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "84.16.232.198",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "212.32.240.7",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              }
+            ],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        }
+      ],
       "redirect": null,
       "exp": null,
       "all": "fail"

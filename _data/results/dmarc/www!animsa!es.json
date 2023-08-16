@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.hostinet.com",
-      "dns2.hostinet.com"
+      "dns2.hostinet.com",
+      "dns1.hostinet.com"
     ],
     "warnings": []
   },
@@ -22,7 +22,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx include:spf.ipzmarketing.com mx:correo.animsa.es   ip4:195.53.90.200  -all",
+    "record": "v=spf1 mx include:spf.ipzmarketing.com mx:correo.animsa.es   ip4:195.53.90.200   ~all",
     "valid": true,
     "dns_lookups": 3,
     "warnings": [
@@ -83,7 +83,7 @@
       ],
       "redirect": null,
       "exp": null,
-      "all": "fail"
+      "all": "softfail"
     }
   },
   "dmarc": {

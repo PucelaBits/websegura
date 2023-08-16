@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "vega.cc.upv.es",
       "sun.rediris.es",
+      "vega.cc.upv.es",
       "chico.rediris.es",
       "mirzam.ccc.upv.es"
     ],
@@ -32,13 +32,6 @@
         "hostname": "mx4.cc.upv.es",
         "addresses": [
           "158.42.250.194"
-        ]
-      },
-      {
-        "preference": 50,
-        "hostname": "vega.cc.upv.es",
-        "addresses": [
-          "158.42.4.1"
         ]
       }
     ],

@@ -3,8 +3,12 @@
   "base_domain": "museobarjola.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "All nameservers failed to answer the query museobarjola.es. IN NS: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "hostnames": [
+      "ns09.ns-cloud4b.com",
+      "ns06.ns-cloud4b.net",
+      "ns07.ns-cloud4b.org"
+    ],
+    "warnings": []
   },
   "mx": {
     "hosts": [

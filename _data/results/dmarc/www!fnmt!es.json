@@ -22,10 +22,107 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:195.235.252.89 ip4:195.235.252.92 ip4:193.104.0.132 ip4:82.223.79.172 include:spf.ivcert.net include:atento.es mx ~all",
-    "valid": false,
+    "record": "v=spf1 ip4:195.235.252.89 ip4:195.235.252.92 ip4:193.104.0.132 ip4:82.223.79.172 ip4:185.25.114.146 include:spf.ivcert.net mx ~all",
+    "valid": true,
+    "dns_lookups": 2,
     "warnings": [],
-    "error": "178.255.229.128/28ip4:178.255.229.144/28 is not a valid ipv4/ipv6 value"
+    "parsed": {
+      "pass": [
+        {
+          "value": "195.235.252.89",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "195.235.252.92",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "193.104.0.132",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "82.223.79.172",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "185.25.114.146",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "correo.fnmt.es",
+          "mechanism": "mx"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "spf.ivcert.net",
+          "record": "v=spf1 ip4:178.255.229.128/28 ip4:178.255.229.144/28 ip4:178.255.224.64/26 ip4:178.255.224.0/26 ip4:82.223.79.192 ip4:95.129.117.20 ip4:212.170.179.8 ip4:37.230.81.66/26 ip4:18.100.193.71 ip4:18.100.104.235 ip4:18.100.36.15 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "178.255.229.128/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "178.255.229.144/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "178.255.224.64/26",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "178.255.224.0/26",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "82.223.79.192",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "95.129.117.20",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "212.170.179.8",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "37.230.81.66/26",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "18.100.193.71",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "18.100.104.235",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "18.100.36.15",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
   },
   "dmarc": {
     "record": "v=DMARC1; p=quarantine; fo=1; rua=mailto:dmarc.rua@fnmt.es; ruf=mailto:dmarc.ruf@fnmt.es",

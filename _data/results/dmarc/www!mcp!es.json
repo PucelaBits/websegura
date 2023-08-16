@@ -15,7 +15,7 @@
         "preference": 10,
         "hostname": "mail.mcp.es",
         "addresses": [
-          "194.179.77.231"
+          "195.76.209.199"
         ]
       },
       {
@@ -28,14 +28,11 @@
       {
         "preference": 100,
         "hostname": "pruebamx.mcp.es",
-        "addresses": [
-          "194.179.77.241"
-        ]
+        "addresses": []
       }
     ],
     "warnings": [
-      "The domain 241.red-194-179-77.customer.static.ccgg.telefonica.net does not exist",
-      "The reverse DNS of 194.179.77.241 is 241.red-194-179-77.customer.static.ccgg.telefonica.net, but the A/AAAA DNS records for 241.red-194-179-77.customer.static.ccgg.telefonica.net do not resolve to 194.179.77.241"
+      "The domain pruebamx.mcp.es does not exist"
     ]
   },
   "spf": {
@@ -48,7 +45,7 @@
     "parsed": {
       "pass": [
         {
-          "value": "46.137.165.193",
+          "value": "185.246.55.26",
           "mechanism": "a"
         },
         {
@@ -64,7 +61,7 @@
           "mechanism": "mx"
         },
         {
-          "value": "194.179.77.231",
+          "value": "195.76.209.199",
           "mechanism": "a"
         },
         {

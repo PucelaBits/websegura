@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1043.ui-dns.de",
       "ns1091.ui-dns.org",
-      "ns1113.ui-dns.com",
-      "ns1022.ui-dns.biz"
+      "ns1022.ui-dns.biz",
+      "ns1043.ui-dns.de",
+      "ns1113.ui-dns.com"
     ],
     "warnings": []
   },
@@ -15,16 +15,16 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "mail.dipuleon.es",
+        "hostname": "mx10.dipuleon.es",
         "addresses": [
-          "194.224.108.251"
+          "77.227.0.12"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 a mx -all",
+    "record": "v=spf1 a mx ip4:77.227.0.12 ip4:194.224.108.250 -all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
@@ -35,8 +35,16 @@
           "mechanism": "a"
         },
         {
-          "value": "mail.dipuleon.es",
+          "value": "mx10.dipuleon.es",
           "mechanism": "mx"
+        },
+        {
+          "value": "77.227.0.12",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "194.224.108.250",
+          "mechanism": "ip4"
         }
       ],
       "neutral": [],

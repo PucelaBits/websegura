@@ -1,0 +1,182 @@
+{
+  "domain": "elpontdesuert.com",
+  "base_domain": "elpontdesuert.com",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns2.dinahosting.com",
+      "ns.dinahosting.com",
+      "ns4.dinahosting.com",
+      "ns3.dinahosting.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.elpontdesuert.com",
+        "addresses": [
+          "51.178.70.251"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "bckmx.imaginais.com",
+        "addresses": [
+          "176.31.91.172"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 ip4:37.187.254.161 a mx include:imaginais.com -all",
+    "valid": true,
+    "dns_lookups": 3,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "37.187.254.161",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "51.178.70.251",
+          "mechanism": "a"
+        },
+        {
+          "value": "mail.elpontdesuert.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "bckmx.imaginais.com",
+          "mechanism": "mx"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "imaginais.com",
+          "record": "v=spf1 ip4:51.178.70.248 ip4:51.178.70.249 ip4:51.178.70.250 ip4:51.178.70.251 ip4:176.31.91.171 ip4:176.31.91.172 ip4:176.31.91.173 ip4:176.31.91.174 ip4:176.31.91.175 ip4:37.187.254.161 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "51.178.70.248",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "51.178.70.249",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "51.178.70.250",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "51.178.70.251",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "176.31.91.171",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "176.31.91.172",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "176.31.91.173",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "176.31.91.174",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "176.31.91.175",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "37.187.254.161",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": "v=DMARC1;p=reject;pct=100;rua=mailto:postmaster@elpontdesuert.com;ri=86400;fo=1",
+    "valid": true,
+    "location": "elpontdesuert.com",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "reject",
+        "explicit": true
+      },
+      "pct": {
+        "value": 100,
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "postmaster@elpontdesuert.com",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "1"
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "sp": {
+        "value": "reject",
+        "explicit": false
+      }
+    }
+  }
+}

@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns1115.ui-dns.de",
       "ns1115.ui-dns.org",
-      "ns1115.ui-dns.com",
       "ns1115.ui-dns.biz",
-      "ns1115.ui-dns.de"
+      "ns1115.ui-dns.com"
     ],
     "warnings": []
   },
@@ -31,9 +31,58 @@
     "warnings": []
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "concellomondonedo.es does not have a SPF TXT record"
+    "record": "v=spf1 include:_spf-eu.ionos.com ~all",
+    "valid": true,
+    "dns_lookups": 1,
+    "warnings": [],
+    "parsed": {
+      "pass": [],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "_spf-eu.ionos.com",
+          "record": "v=spf1 ip4:212.227.126.128/25 ip4:82.165.159.0/26 ip4:212.227.15.0/25 ip4:212.227.17.0/27 ip4:217.72.192.64/26 ?all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "212.227.126.128/25",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "82.165.159.0/26",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "212.227.15.0/25",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "212.227.17.0/27",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "217.72.192.64/26",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "neutral"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
   },
   "dmarc": {
     "record": null,

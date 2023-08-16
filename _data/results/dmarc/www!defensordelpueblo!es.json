@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "ns1.interdomain.net",
-      "ns3.interdomain.es",
-      "ns2.interdomain.net"
+      "ns2.interdomain.net",
+      "ns3.interdomain.es"
     ],
     "warnings": []
   },
@@ -26,7 +26,7 @@
   "spf": {
     "record": "v=spf1 ip4:212.51.32.128/25 mx include:_pmta2.antevenio.com include:spf.mail-cert.com include:spf.protection.outlook.com include:_spf.fortimailcloud.com exists:%{i}.spf.hc583-29.eu.iphmx.com -all",
     "valid": true,
-    "dns_lookups": 7,
+    "dns_lookups": 6,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -139,8 +139,8 @@
         },
         {
           "domain": "spf.protection.outlook.com",
-          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/50 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 include:spfd.protection.outlook.com -all",
-          "dns_lookups": 1,
+          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/50 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
+          "dns_lookups": 0,
           "parsed": {
             "pass": [
               {
@@ -183,61 +183,7 @@
             "neutral": [],
             "softfail": [],
             "fail": [],
-            "include": [
-              {
-                "domain": "spfd.protection.outlook.com",
-                "record": "v=spf1 ip4:51.4.72.0/24 ip4:51.5.72.0/24 ip4:51.5.80.0/27 ip4:20.47.149.138/32 ip4:51.4.80.0/27 ip6:2a01:4180:4051:0800::/64 ip6:2a01:4180:4050:0800::/64 ip6:2a01:4180:4051:0400::/64 ip6:2a01:4180:4050:0400::/64 -all",
-                "dns_lookups": 0,
-                "parsed": {
-                  "pass": [
-                    {
-                      "value": "51.4.72.0/24",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "51.5.72.0/24",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "51.5.80.0/27",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "20.47.149.138/32",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "51.4.80.0/27",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "2a01:4180:4051:0800::/64",
-                      "mechanism": "ip6"
-                    },
-                    {
-                      "value": "2a01:4180:4050:0800::/64",
-                      "mechanism": "ip6"
-                    },
-                    {
-                      "value": "2a01:4180:4051:0400::/64",
-                      "mechanism": "ip6"
-                    },
-                    {
-                      "value": "2a01:4180:4050:0400::/64",
-                      "mechanism": "ip6"
-                    }
-                  ],
-                  "neutral": [],
-                  "softfail": [],
-                  "fail": [],
-                  "include": [],
-                  "redirect": null,
-                  "exp": null,
-                  "all": "fail"
-                },
-                "warnings": []
-              }
-            ],
+            "include": [],
             "redirect": null,
             "exp": null,
             "all": "fail"
@@ -246,7 +192,7 @@
         },
         {
           "domain": "_spf.fortimailcloud.com",
-          "record": "v=spf1 ip4:66.35.19.192/26 ip4:99.79.185.184 ip4:204.101.161.204 ip4:154.52.2.128/27 ip4:154.52.3.128/27 ip4:154.52.4.128/27 ip4:154.52.5.128/27 ip4:154.52.14.128/27 ip4:154.52.29.128/27 ip4:154.52.16.128/27 ip4:154.52.13.0/25 ip4:3.97.5.75 ip4:66.35.17.228 ip4:154.52.20.191 ip4:154.52.20.193 ip4:154.52.22.128/27 ip4:154.52.23.160/27 -all",
+          "record": "v=spf1 ip4:66.35.19.192/26 ip4:99.79.185.184 ip4:204.101.161.204 ip4:154.52.2.128/27 ip4:154.52.3.128/27 ip4:154.52.4.128/27 ip4:154.52.5.128/27 ip4:154.52.14.128/27 ip4:154.52.29.128/27 ip4:154.52.16.128/27 ip4:154.52.13.0/25 ip4:3.97.5.75 ip4:209.52.38.228 ip4:154.52.20.191 ip4:154.52.20.193 ip4:154.52.22.128/27 ip4:154.52.23.160/27 -all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -299,7 +245,7 @@
                 "mechanism": "ip4"
               },
               {
-                "value": "66.35.17.228",
+                "value": "209.52.38.228",
                 "mechanism": "ip4"
               },
               {
