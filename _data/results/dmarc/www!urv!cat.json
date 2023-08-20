@@ -1,0 +1,132 @@
+{
+  "domain": "urv.cat",
+  "base_domain": "urv.cat",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "aliga.urv.cat",
+      "dns.urv.cat"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 5,
+        "hostname": "urv-cat.mail.protection.outlook.com",
+        "addresses": [
+          "104.47.51.138",
+          "104.47.51.202"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 include:spf.protection.outlook.com a:mail.cpd0.urv.cat a:mail1.cpd0.urv.cat a:mail2.cpd0.urv.cat a:mail.cpd1.urv.cat a:mail1.cpd1.urv.cat a:mail2.cpd1.urv.cat ip4:84.88.0.7/32 ip4:84.88.0.6/32 -all",
+    "valid": true,
+    "dns_lookups": 7,
+    "warnings": [
+      "The domain mail1.cpd1.urv.cat does not exist"
+    ],
+    "parsed": {
+      "pass": [
+        {
+          "value": "193.144.16.200",
+          "mechanism": "a"
+        },
+        {
+          "value": "193.144.16.171",
+          "mechanism": "a"
+        },
+        {
+          "value": "193.144.16.172",
+          "mechanism": "a"
+        },
+        {
+          "value": "84.88.194.11",
+          "mechanism": "a"
+        },
+        {
+          "value": "84.88.194.13",
+          "mechanism": "a"
+        },
+        {
+          "value": "84.88.0.7/32",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "84.88.0.6/32",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "spf.protection.outlook.com",
+          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/50 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "40.92.0.0/15",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "40.107.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.100.0.0/14",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "104.47.0.0/17",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "2a01:111:f400::/48",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403::/49",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:8000::/50",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:c000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:f000::/52",
+                "mechanism": "ip6"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

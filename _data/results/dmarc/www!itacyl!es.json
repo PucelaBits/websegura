@@ -12,8 +12,23 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query itacyl.es. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mxa-006a4e02.gslb.pphosted.com",
+        "addresses": [
+          "143.55.146.78"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mxb-006a4e02.gslb.pphosted.com",
+        "addresses": [
+          "143.55.148.243"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:193.146.230.67/32 ip4:185.179.105.195/32 ip4:195.76.182.230/32 ip4:195.76.182.224/32 ip4:195.76.182.225/32 ptr mx ~all",
@@ -70,9 +85,7 @@
     "record": "v=DMARC1; p=quarantine; pct=100; adkim=s; aspf=s; rua=mailto:dmarc@itacyl.es; ruf=mailto:dmarc@itacyl.es",
     "valid": true,
     "location": "itacyl.es",
-    "warnings": [
-      "Failed to retrieve MX records for the domain of ruf email address dmarc@itacyl.es - All nameservers failed to answer the query itacyl.es. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
-    ],
+    "warnings": [],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -105,7 +118,13 @@
         "explicit": true
       },
       "ruf": {
-        "value": "mailto:dmarc@itacyl.es",
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc@itacyl.es",
+            "size_limit": null
+          }
+        ],
         "explicit": true
       },
       "fo": {

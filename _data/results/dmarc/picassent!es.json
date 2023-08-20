@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns3.dnsxperta.com",
       "ns2.dnsxperta.com",
-      "ns1.dnsxperta.com"
+      "ns1.dnsxperta.com",
+      "ns3.dnsxperta.com"
     ],
     "warnings": []
   },
@@ -16,7 +16,7 @@
         "preference": 0,
         "hostname": "picassent-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.17.138",
+          "104.47.17.74",
           "104.47.18.74"
         ]
       }
@@ -135,6 +135,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.picassent.es\n\nMS=ms83749994\n\nv=spf1 include:dnsxperta.com include:spf.protection.outlook.com ip4:82.223.190.0/24 -all"
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.picassent.es\n\nv=spf1 include:dnsxperta.com include:spf.protection.outlook.com ip4:82.223.190.0/24 -all\n\nMS=ms83749994"
   }
 }

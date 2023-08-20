@@ -4,14 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "a1-37.akam.net",
       "a22-65.akam.net",
-      "a9-67.akam.net",
-      "ns2.adif.es",
       "a8-65.akam.net",
-      "a11-64.akam.net",
+      "a1-37.akam.net",
+      "ns1.adif.es",
       "a4-65.akam.net",
-      "ns1.adif.es"
+      "a11-64.akam.net",
+      "a9-67.akam.net",
+      "ns2.adif.es"
     ],
     "warnings": []
   },
@@ -23,8 +23,8 @@
         "addresses": [
           "52.101.68.16",
           "52.101.68.18",
-          "52.101.73.12",
-          "52.101.73.15",
+          "52.101.68.32",
+          "52.101.73.11",
           "52.101.73.6",
           "52.101.73.8"
         ]
@@ -70,8 +70,8 @@
     "warnings": [
       "52.101.68.16 does not have any reverse DNS (PTR) records",
       "52.101.68.18 does not have any reverse DNS (PTR) records",
-      "52.101.73.12 does not have any reverse DNS (PTR) records",
-      "52.101.73.15 does not have any reverse DNS (PTR) records",
+      "52.101.68.32 does not have any reverse DNS (PTR) records",
+      "52.101.73.11 does not have any reverse DNS (PTR) records",
       "52.101.73.6 does not have any reverse DNS (PTR) records",
       "52.101.73.8 does not have any reverse DNS (PTR) records"
     ]

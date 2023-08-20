@@ -1,0 +1,288 @@
+{
+  "domain": "udl.cat",
+  "base_domain": "udl.cat",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "sun.rediris.es",
+      "chico.rediris.es",
+      "gardeny.udl.es",
+      "marraco.udl.es"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 0,
+        "hostname": "udl-cat.mail.protection.outlook.com",
+        "addresses": [
+          "104.47.51.138",
+          "104.47.51.202"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 mx ptr a:relayout.udl.cat a:relayout01.udl.cat a:relayout02.udl.cat a:peguera.xs.csuc.cat a:peguera.xs.cesca.cat include:spf.sendinblue.com include:spf.protection.outlook.com include:spf.ipzmarketing.com mx -all",
+    "valid": true,
+    "dns_lookups": 10,
+    "warnings": [
+      "The ptr mechanism should not be used - https://tools.ietf.org/html/rfc7208#section-5.5"
+    ],
+    "parsed": {
+      "pass": [
+        {
+          "value": "udl-cat.mail.protection.outlook.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "",
+          "mechanism": "ptr"
+        },
+        {
+          "value": "193.144.10.100",
+          "mechanism": "a"
+        },
+        {
+          "value": "193.144.8.30",
+          "mechanism": "a"
+        },
+        {
+          "value": "193.144.8.31",
+          "mechanism": "a"
+        },
+        {
+          "value": "2001:40b0:1:1122:ce5c:a000:0:7",
+          "mechanism": "a"
+        },
+        {
+          "value": "84.88.0.7",
+          "mechanism": "a"
+        },
+        {
+          "value": "2001:40b0:1:1122:ce5c:a000:0:7",
+          "mechanism": "a"
+        },
+        {
+          "value": "84.88.0.7",
+          "mechanism": "a"
+        },
+        {
+          "value": "udl-cat.mail.protection.outlook.com",
+          "mechanism": "mx"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "spf.sendinblue.com",
+          "record": "v=spf1 ip4:185.41.28.0/22 ip4:94.143.16.0/21 ip4:185.24.144.0/22 ip4:153.92.224.0/19 ip4:213.32.128.0/18 ip4:185.107.232.0/22 ip4:77.32.128.0/18 ip4:77.32.192.0/19 ip4:212.146.192.0/18 ip4:172.246.0.0/18 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "185.41.28.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "94.143.16.0/21",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.24.144.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "153.92.224.0/19",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "213.32.128.0/18",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.107.232.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "77.32.128.0/18",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "77.32.192.0/19",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "212.146.192.0/18",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "172.246.0.0/18",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "spf.protection.outlook.com",
+          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/50 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "40.92.0.0/15",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "40.107.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.100.0.0/14",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "104.47.0.0/17",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "2a01:111:f400::/48",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403::/49",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:8000::/50",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:c000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:f000::/52",
+                "mechanism": "ip6"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "spf.ipzmarketing.com",
+          "record": "v=spf1 ip4:93.159.208.0/21 ip4:185.103.8.0/22 ip4:5.56.22.0/24 ip4:82.199.156.0/24 ip4:212.192.13.0/24 ~all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "93.159.208.0/21",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.103.8.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "5.56.22.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "82.199.156.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "212.192.13.0/24",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": "v=DMARC1;p=none;rua=mailto:dmarc.sic.opinfra@.udl.cat;",
+    "valid": true,
+    "location": "udl.cat",
+    "warnings": [
+      "Failed to retrieve MX records for the domain of rua email address dmarc.sic.opinfra@.udl.cat - A DNS label is empty."
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "rua": {
+        "value": "mailto:dmarc.sic.opinfra@.udl.cat",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
+  }
+}
