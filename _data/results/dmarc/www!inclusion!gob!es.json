@@ -16,16 +16,16 @@
         "hostname": "inclusion-gob-es.mail.protection.outlook.com",
         "addresses": [
           "104.47.17.138",
-          "104.47.18.74"
+          "104.47.17.74"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx:smtp.seg-social.es ip4:194.179.55.12 ip4:212.128.108.46 ip4:212.128.108.45 ip4:194.179.55.96/28 ip4:213.99.40.96/28 include:spf.protection.outlook.com include:seg-social.es -all",
+    "record": "v=spf1 mx:smtp.seg-social.es ip4:194.179.55.12 ip4:212.128.108.46 ip4:212.128.108.45 ip4:194.179.55.96/28 ip4:213.99.40.96/28 include:spf.protection.outlook.com include:seg-social.es include:spf.odmad.quest-on-demand.com -all",
     "valid": true,
-    "dns_lookups": 4,
+    "dns_lookups": 7,
     "warnings": [
       "smtp.seg-social.es does not have any MX records"
     ],
@@ -132,6 +132,114 @@
             "softfail": [],
             "fail": [],
             "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "spf.odmad.quest-on-demand.com",
+          "record": "v=spf1 ip4:20.104.71.155 ip4:52.229.64.120 ip4:51.141.3.13 ip4:20.108.5.185 ip4:52.187.249.33 ip4:40.127.75.37 include:spf.us.odmad.quest-on-demand.com include:spf.eu.odmad.quest-on-demand.com ~all",
+          "dns_lookups": 2,
+          "parsed": {
+            "pass": [
+              {
+                "value": "20.104.71.155",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.229.64.120",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "51.141.3.13",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "20.108.5.185",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.187.249.33",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "40.127.75.37",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [
+              {
+                "domain": "spf.us.odmad.quest-on-demand.com",
+                "record": "v=spf1 ip4:13.66.130.121 ip4:20.96.2.88 ip4:20.230.234.206 ip4:20.122.27.14 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "13.66.130.121",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "20.96.2.88",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "20.230.234.206",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "20.122.27.14",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              },
+              {
+                "domain": "spf.eu.odmad.quest-on-demand.com",
+                "record": "v=spf1 ip4:13.69.143.169 ip4:20.199.118.217 ip4:20.223.216.143 ip4:51.103.125.121 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "13.69.143.169",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "20.199.118.217",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "20.223.216.143",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "51.103.125.121",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              }
+            ],
             "redirect": null,
             "exp": null,
             "all": "softfail"

@@ -12,94 +12,68 @@
   "mx": {
     "hosts": [
       {
-        "preference": 10,
-        "hostname": "poster1i.iberlayer.com",
+        "preference": 0,
+        "hostname": "diputadodelcomun-org.mail.protection.outlook.com",
         "addresses": [
-          "130.117.89.12",
-          "130.117.89.26",
-          "130.117.89.4",
-          "130.117.89.5",
-          "130.117.89.6"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "poster4i.iberlayer.com",
-        "addresses": [
-          "80.169.225.36",
-          "80.169.225.37",
-          "80.169.225.38",
-          "80.169.225.44"
+          "104.47.18.138",
+          "104.47.22.138"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:62.82.138.99 include:iberlayer.com -all",
+    "record": "v=spf1 include:spf.protection.outlook.com -all",
     "valid": true,
     "dns_lookups": 1,
     "warnings": [],
     "parsed": {
-      "pass": [
-        {
-          "value": "62.82.138.99",
-          "mechanism": "ip4"
-        }
-      ],
+      "pass": [],
       "neutral": [],
       "softfail": [],
       "fail": [],
       "include": [
         {
-          "domain": "iberlayer.com",
-          "record": "v=spf1 ip4:130.117.89.0/27 ip4:80.169.225.32/27 ip4:91.90.161.0/24 ip4:185.136.218.5/32 ip4:185.136.218.6/32 ip4:185.136.218.7/32 ip4:185.136.218.8/32 ip4:185.136.219.26/32 ip4:185.136.219.27/32 ip4:185.136.219.28/32 ip4:185.136.219.29/32 -all",
+          "domain": "spf.protection.outlook.com",
+          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/50 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
               {
-                "value": "130.117.89.0/27",
+                "value": "40.92.0.0/15",
                 "mechanism": "ip4"
               },
               {
-                "value": "80.169.225.32/27",
+                "value": "40.107.0.0/16",
                 "mechanism": "ip4"
               },
               {
-                "value": "91.90.161.0/24",
+                "value": "52.100.0.0/14",
                 "mechanism": "ip4"
               },
               {
-                "value": "185.136.218.5/32",
+                "value": "104.47.0.0/17",
                 "mechanism": "ip4"
               },
               {
-                "value": "185.136.218.6/32",
-                "mechanism": "ip4"
+                "value": "2a01:111:f400::/48",
+                "mechanism": "ip6"
               },
               {
-                "value": "185.136.218.7/32",
-                "mechanism": "ip4"
+                "value": "2a01:111:f403::/49",
+                "mechanism": "ip6"
               },
               {
-                "value": "185.136.218.8/32",
-                "mechanism": "ip4"
+                "value": "2a01:111:f403:8000::/50",
+                "mechanism": "ip6"
               },
               {
-                "value": "185.136.219.26/32",
-                "mechanism": "ip4"
+                "value": "2a01:111:f403:c000::/51",
+                "mechanism": "ip6"
               },
               {
-                "value": "185.136.219.27/32",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "185.136.219.28/32",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "185.136.219.29/32",
-                "mechanism": "ip4"
+                "value": "2a01:111:f403:f000::/52",
+                "mechanism": "ip6"
               }
             ],
             "neutral": [],

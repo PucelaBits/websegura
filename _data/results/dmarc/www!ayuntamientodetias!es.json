@@ -14,23 +14,16 @@
         "preference": 10,
         "hostname": "ayuntamientodetias-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.0",
-          "52.101.68.3",
-          "52.101.68.32",
+          "52.101.68.16",
+          "52.101.68.18",
           "52.101.68.5",
-          "52.101.73.2",
-          "52.101.73.6"
+          "52.101.73.12",
+          "52.101.73.6",
+          "52.101.73.8"
         ]
       }
     ],
-    "warnings": [
-      "52.101.68.0 does not have any reverse DNS (PTR) records",
-      "52.101.68.3 does not have any reverse DNS (PTR) records",
-      "52.101.68.32 does not have any reverse DNS (PTR) records",
-      "52.101.68.5 does not have any reverse DNS (PTR) records",
-      "52.101.73.2 does not have any reverse DNS (PTR) records",
-      "52.101.73.6 does not have any reverse DNS (PTR) records"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:141.95.97.112 ip4:141.95.97.103 ip4:5.39.73.22 ip4:213.4.199.90 include:spf.protection.outlook.com ~all",

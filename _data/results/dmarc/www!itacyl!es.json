@@ -4,31 +4,16 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "sun.rediris.es",
+      "dns.itacyl.es",
       "dns2.itacyl.es",
-      "chico.rediris.es",
-      "dns.itacyl.es"
+      "sun.rediris.es",
+      "chico.rediris.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mxa-006a4e02.gslb.pphosted.com",
-        "addresses": [
-          "143.55.146.78"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "mxb-006a4e02.gslb.pphosted.com",
-        "addresses": [
-          "143.55.148.243"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "All nameservers failed to answer the query itacyl.es. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "spf": {
     "record": "v=spf1 ip4:193.146.230.67/32 ip4:185.179.105.195/32 ip4:195.76.182.230/32 ip4:195.76.182.224/32 ip4:195.76.182.225/32 ptr mx ~all",

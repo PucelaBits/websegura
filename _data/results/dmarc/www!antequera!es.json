@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "sdns2.ovh.net",
-      "ns3053579.ip-137-74-93.eu"
+      "ns3053579.ip-137-74-93.eu",
+      "sdns2.ovh.net"
     ],
     "warnings": []
   },
@@ -17,9 +17,17 @@
         "addresses": [
           "195.235.227.126"
         ]
+      },
+      {
+        "preference": 15,
+        "hostname": "correo.antequera.es",
+        "addresses": [
+          "195.235.227.126"
+        ]
       }
     ],
     "warnings": [
+      "195.235.227.126 does not have any reverse DNS (PTR) records",
       "195.235.227.126 does not have any reverse DNS (PTR) records"
     ]
   },

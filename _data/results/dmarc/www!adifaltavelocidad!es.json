@@ -4,14 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "a22-65.akam.net",
+      "ns2.adif.es",
       "a8-65.akam.net",
-      "a1-37.akam.net",
+      "a9-67.akam.net",
       "ns1.adif.es",
+      "a22-65.akam.net",
       "a4-65.akam.net",
       "a11-64.akam.net",
-      "a9-67.akam.net",
-      "ns2.adif.es"
+      "a1-37.akam.net"
     ],
     "warnings": []
   },
@@ -21,12 +21,12 @@
         "preference": 0,
         "hostname": "adifaltavelocidad-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.16",
-          "52.101.68.18",
-          "52.101.68.32",
-          "52.101.73.11",
-          "52.101.73.6",
-          "52.101.73.8"
+          "52.101.68.36",
+          "52.101.68.5",
+          "52.101.73.1",
+          "52.101.73.2",
+          "52.101.73.4",
+          "52.101.73.6"
         ]
       },
       {
@@ -67,14 +67,7 @@
         ]
       }
     ],
-    "warnings": [
-      "52.101.68.16 does not have any reverse DNS (PTR) records",
-      "52.101.68.18 does not have any reverse DNS (PTR) records",
-      "52.101.68.32 does not have any reverse DNS (PTR) records",
-      "52.101.73.11 does not have any reverse DNS (PTR) records",
-      "52.101.73.6 does not have any reverse DNS (PTR) records",
-      "52.101.73.8 does not have any reverse DNS (PTR) records"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx a:smtp.adif.es a:ebro.adif.es a:duero.adif.es include:spf.protection.outlook.com exists:%{i}.spf.hc1197-70.eu.iphmx.com ~all",

@@ -10,41 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mx1.spamcluster.com",
-        "addresses": [
-          "185.103.159.139",
-          "185.103.159.239",
-          "185.107.213.57",
-          "185.107.213.61",
-          "185.95.31.8",
-          "2a00:f10:121:b00:1c00:67ff:fe00:1b64",
-          "2a00:f10:121:b00:1c00:e4ff:fe00:1b60",
-          "2a00:f10:400:4:1c00:58ff:fe00:1689",
-          "2a00:f10:400:4:1c00:b6ff:fe00:16ed",
-          "2a00:f10:402:781:1c00:1eff:fe00:24b3"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mx2.spamcluster.com",
-        "addresses": [
-          "185.103.159.139",
-          "185.103.159.239",
-          "185.107.213.57",
-          "185.107.213.61",
-          "185.95.31.8",
-          "2a00:f10:121:b00:1c00:67ff:fe00:1b64",
-          "2a00:f10:121:b00:1c00:e4ff:fe00:1b60",
-          "2a00:f10:400:4:1c00:58ff:fe00:1689",
-          "2a00:f10:400:4:1c00:b6ff:fe00:16ed",
-          "2a00:f10:402:781:1c00:1eff:fe00:24b3"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 mx a ip4:91.142.220.126 a:tenerife.vservers.es -all",

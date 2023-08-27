@@ -16,28 +16,18 @@
         "hostname": "aepd-es.mail.protection.outlook.com",
         "addresses": [
           "52.101.68.0",
+          "52.101.68.16",
+          "52.101.68.18",
           "52.101.68.21",
           "52.101.68.3",
           "52.101.68.36",
-          "52.101.68.5",
           "52.101.73.1",
           "52.101.73.2",
-          "52.101.73.4",
-          "52.101.73.6"
+          "52.101.73.8"
         ]
       }
     ],
-    "warnings": [
-      "52.101.68.0 does not have any reverse DNS (PTR) records",
-      "52.101.68.21 does not have any reverse DNS (PTR) records",
-      "52.101.68.3 does not have any reverse DNS (PTR) records",
-      "52.101.68.36 does not have any reverse DNS (PTR) records",
-      "52.101.68.5 does not have any reverse DNS (PTR) records",
-      "52.101.73.1 does not have any reverse DNS (PTR) records",
-      "52.101.73.2 does not have any reverse DNS (PTR) records",
-      "52.101.73.4 does not have any reverse DNS (PTR) records",
-      "52.101.73.6 does not have any reverse DNS (PTR) records"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:192.148.209.198 ip4:192.148.209.182 include:spf.protection.outlook.com ~all",

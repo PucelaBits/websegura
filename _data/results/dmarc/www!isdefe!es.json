@@ -147,7 +147,9 @@
     "record": "v=DMARC1; p=none; rua=mailto:sistemas@isdefe.es; ruf=mailto:sistemas@isdefe.es",
     "valid": true,
     "location": "isdefe.es",
-    "warnings": [],
+    "warnings": [
+      "Failed to retrieve MX records for the domain of ruf email address sistemas@isdefe.es - The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -168,13 +170,7 @@
         "explicit": true
       },
       "ruf": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "sistemas@isdefe.es",
-            "size_limit": null
-          }
-        ],
+        "value": "mailto:sistemas@isdefe.es",
         "explicit": true
       },
       "adkim": {

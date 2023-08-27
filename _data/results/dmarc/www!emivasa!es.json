@@ -33,27 +33,18 @@
         "preference": 20,
         "hostname": "emivasa-es.mail.protection.outlook.com",
         "addresses": [
+          "52.101.68.16",
+          "52.101.68.18",
           "52.101.68.21",
-          "52.101.68.3",
           "52.101.68.36",
-          "52.101.68.5",
           "52.101.73.1",
           "52.101.73.12",
           "52.101.73.15",
-          "52.101.73.4"
+          "52.101.73.2"
         ]
       }
     ],
-    "warnings": [
-      "52.101.68.21 does not have any reverse DNS (PTR) records",
-      "52.101.68.3 does not have any reverse DNS (PTR) records",
-      "52.101.68.36 does not have any reverse DNS (PTR) records",
-      "52.101.68.5 does not have any reverse DNS (PTR) records",
-      "52.101.73.1 does not have any reverse DNS (PTR) records",
-      "52.101.73.12 does not have any reverse DNS (PTR) records",
-      "52.101.73.15 does not have any reverse DNS (PTR) records",
-      "52.101.73.4 does not have any reverse DNS (PTR) records"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:84.124.28.165 ip4:90.161.157.217 include:_spf.google.com include:_spf.innovatelecom.es include:spf.protection.outlook.com exists:%{i}.spf.hc782-58.eu.iphmx.com ~all",

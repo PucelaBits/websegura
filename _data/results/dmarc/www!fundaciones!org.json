@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns-cloud-d3.googledomains.com",
-      "ns-cloud-d4.googledomains.com",
       "ns-cloud-d2.googledomains.com",
-      "ns-cloud-d1.googledomains.com"
+      "ns-cloud-d1.googledomains.com",
+      "ns-cloud-d4.googledomains.com",
+      "ns-cloud-d3.googledomains.com"
     ],
     "warnings": []
   },
@@ -17,25 +17,17 @@
         "preference": 10,
         "hostname": "fundaciones-org.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.16",
-          "52.101.68.18",
-          "52.101.68.36",
+          "52.101.68.0",
+          "52.101.68.3",
           "52.101.73.11",
-          "52.101.73.12",
           "52.101.73.15",
-          "52.101.73.8"
+          "52.101.73.2",
+          "52.101.73.4",
+          "52.101.73.6"
         ]
       }
     ],
-    "warnings": [
-      "52.101.68.16 does not have any reverse DNS (PTR) records",
-      "52.101.68.18 does not have any reverse DNS (PTR) records",
-      "52.101.68.36 does not have any reverse DNS (PTR) records",
-      "52.101.73.11 does not have any reverse DNS (PTR) records",
-      "52.101.73.12 does not have any reverse DNS (PTR) records",
-      "52.101.73.15 does not have any reverse DNS (PTR) records",
-      "52.101.73.8 does not have any reverse DNS (PTR) records"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1amxip4:54.155.102.133include:outlook.com~all",
