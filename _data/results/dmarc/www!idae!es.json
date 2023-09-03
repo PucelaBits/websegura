@@ -4,18 +4,18 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "artemis.ttd.net",
-      "minerva.ttd.net"
+      "dns25.servidoresdns.net",
+      "dns26.servidoresdns.net"
     ],
     "warnings": []
   },
   "mx": {
     "hosts": [
       {
-        "preference": 0,
+        "preference": 20,
         "hostname": "idae-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.17.138",
+          "104.47.17.74",
           "104.47.18.74"
         ]
       }

@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.dinahosting.com",
-      "ns4.dinahosting.com",
       "ns.dinahosting.com",
-      "ns3.dinahosting.com"
+      "ns3.dinahosting.com",
+      "ns2.dinahosting.com",
+      "ns4.dinahosting.com"
     ],
     "warnings": []
   },
@@ -17,7 +17,7 @@
         "preference": 10,
         "hostname": "mail.mazonovo.es",
         "addresses": [
-          "82.98.136.168"
+          "82.98.132.179"
         ]
       }
     ],
@@ -31,7 +31,7 @@
     "parsed": {
       "pass": [
         {
-          "value": "82.98.136.168",
+          "value": "82.98.132.179",
           "mechanism": "a"
         },
         {

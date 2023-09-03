@@ -15,17 +15,23 @@
         "preference": 10,
         "hostname": "euskadi-eus.mail.protection.outlook.com",
         "addresses": [
-          "104.47.11.10",
-          "104.47.11.202"
+          "52.101.68.18",
+          "52.101.68.32",
+          "52.101.68.36",
+          "52.101.68.5",
+          "52.101.73.11",
+          "52.101.73.19",
+          "52.101.73.4",
+          "52.101.73.6"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:176.28.98.112/28 a:c.spf.service-now.com include:servers.mcsv.net include:euskadi.ip-zone.com include:eu.zcsend.net ip4:185.161.119.32/27 include:spf.protection.outlook.com include:spf.tmes.trendmicro.com -all",
+    "record": "v=spf1 ip4:176.28.98.112/28 a:c.spf.service-now.com include:spf.mandrillapp.com include:servers.mcsv.net include:euskadi.ip-zone.com include:eu.zcsend.net ip4:185.161.119.32/27 include:spf.protection.outlook.com include:spf.tmes.trendmicro.com -all",
     "valid": true,
-    "dns_lookups": 9,
+    "dns_lookups": 10,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -150,6 +156,71 @@
       "softfail": [],
       "fail": [],
       "include": [
+        {
+          "domain": "spf.mandrillapp.com",
+          "record": "v=spf1 ip4:198.2.128.0/24 ip4:198.2.132.0/22 ip4:198.2.136.0/23 ip4:198.2.145.0/24 ip4:198.2.186.0/23 ip4:205.201.131.128/25 ip4:205.201.134.128/25 ip4:205.201.136.0/23 ip4:205.201.139.0/24 ip4:198.2.177.0/24 ip4:198.2.178.0/23 ip4:198.2.180.0/24 ~all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "198.2.128.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "198.2.132.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "198.2.136.0/23",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "198.2.145.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "198.2.186.0/23",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "205.201.131.128/25",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "205.201.134.128/25",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "205.201.136.0/23",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "205.201.139.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "198.2.177.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "198.2.178.0/23",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "198.2.180.0/24",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        },
         {
           "domain": "servers.mcsv.net",
           "record": "v=spf1 ip4:205.201.128.0/20 ip4:198.2.128.0/18 ip4:148.105.8.0/21 -all",

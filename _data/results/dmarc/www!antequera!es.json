@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns3053579.ip-137-74-93.eu",
-      "sdns2.ovh.net"
+      "sdns2.ovh.net",
+      "ns3053579.ip-137-74-93.eu"
     ],
     "warnings": []
   },
@@ -15,31 +15,28 @@
         "preference": 10,
         "hostname": "mail.antequera.es",
         "addresses": [
-          "195.235.227.126"
+          "195.77.81.171"
         ]
       },
       {
         "preference": 15,
         "hostname": "correo.antequera.es",
         "addresses": [
-          "195.235.227.126"
+          "195.77.81.171"
         ]
       }
     ],
-    "warnings": [
-      "195.235.227.126 does not have any reverse DNS (PTR) records",
-      "195.235.227.126 does not have any reverse DNS (PTR) records"
-    ]
+    "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:195.235.227.126 ~all",
+    "record": "v=spf1 ip4:195.77.81.171 ~all",
     "valid": true,
     "dns_lookups": 0,
     "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "195.235.227.126",
+          "value": "195.77.81.171",
           "mechanism": "ip4"
         }
       ],

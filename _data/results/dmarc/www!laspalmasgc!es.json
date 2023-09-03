@@ -83,14 +83,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 213.99.38.77 is pasteur.correolimpio.telefonica.es, but the A/AAAA DNS records for pasteur.correolimpio.telefonica.es do not resolve to 213.99.38.77",
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 213.99.38.78 is asimov.correolimpio.telefonica.es, but the A/AAAA DNS records for asimov.correolimpio.telefonica.es do not resolve to 213.99.38.78",
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 81.47.205.107 is argentina.correolimpio.telefonica.es, but the A/AAAA DNS records for argentina.correolimpio.telefonica.es do not resolve to 81.47.205.107"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com -all",
