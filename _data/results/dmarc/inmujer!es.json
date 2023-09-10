@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "mailhost.msc.es",
       "crdserver.msc.es",
-      "artemis.ttd.net",
-      "mailhost.msc.es"
+      "artemis.ttd.net"
     ],
     "warnings": []
   },
@@ -27,10 +27,7 @@
         ]
       }
     ],
-    "warnings": [
-      "All nameservers failed to answer the query mx.msps.es. IN A: Server Do53:127.0.0.53@53 answered SERVFAIL",
-      "The reverse DNS of 195.64.186.52 is mx.msps.es, but the A/AAAA DNS records for mx.msps.es do not resolve to 195.64.186.52"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": null,

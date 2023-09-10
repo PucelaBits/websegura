@@ -1,7 +1,7 @@
 {
   "domain": "uimp.es",
   "base_domain": "uimp.es",
-  "dnssec": false,
+  "dnssec": true,
   "ns": {
     "hostnames": [],
     "error": "All nameservers failed to answer the query uimp.es. IN NS: Server Do53:1.0.0.1@53 answered SERVFAIL"
@@ -12,7 +12,7 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.251.167.27",
+          "142.251.167.26",
           "2607:f8b0:4004:c08::1a"
         ]
       },
@@ -21,7 +21,7 @@
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
           "209.85.202.27",
-          "2a00:1450:400b:c00::1a"
+          "2a00:1450:400b:c00::1b"
         ]
       },
       {
@@ -37,7 +37,7 @@
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
           "142.250.27.26",
-          "2a00:1450:4025:401::1a"
+          "2a00:1450:4025:401::1b"
         ]
       },
       {

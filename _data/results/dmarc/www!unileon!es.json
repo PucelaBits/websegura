@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.unileon.es",
+      "ns1.unileon.es",
       "sun.rediris.es",
-      "chico.rediris.es",
-      "ns1.unileon.es"
+      "ns2.unileon.es",
+      "chico.rediris.es"
     ],
     "warnings": []
   },
@@ -18,15 +18,15 @@
         "hostname": "aspmx.l.google.com",
         "addresses": [
           "172.253.63.26",
-          "2607:f8b0:4004:c08::1b"
+          "2607:f8b0:4004:c09::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "209.85.202.26",
-          "2a00:1450:400b:c00::1a"
+          "209.85.202.27",
+          "2a00:1450:400b:c00::1b"
         ]
       },
       {
@@ -41,8 +41,8 @@
         "preference": 10,
         "hostname": "aspmx2.googlemail.com",
         "addresses": [
-          "209.85.202.27",
-          "2a00:1450:400b:c00::1b"
+          "209.85.202.26",
+          "2a00:1450:400b:c00::1a"
         ]
       },
       {
@@ -50,7 +50,7 @@
         "hostname": "aspmx3.googlemail.com",
         "addresses": [
           "2a00:1450:400c:c0b::1b",
-          "64.233.184.27"
+          "64.233.184.26"
         ]
       }
     ],
@@ -60,9 +60,7 @@
     "record": "v=spf1 a:diana.unileon.es a:mailx1.unileon.es a:mailx2.unileon.es a:mailx.unileon.es a:mailx-dmi.unileon.es include:_spf.google.com include:spf.protection.outlook.com ~all",
     "valid": true,
     "dns_lookups": 10,
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ],
+    "warnings": [],
     "parsed": {
       "pass": [
         {
@@ -79,6 +77,10 @@
         },
         {
           "value": "193.146.99.43",
+          "mechanism": "a"
+        },
+        {
+          "value": "193.146.96.112",
           "mechanism": "a"
         }
       ],

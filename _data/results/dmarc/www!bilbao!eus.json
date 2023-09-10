@@ -144,7 +144,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; rua=mailto:postmaster@bilbaotik.bilbao.eus; ruf=mailto:postmaster@bilbaotik.bilbao.eus; fo=1; adkim=s; aspf=s;",
+    "record": "v=DMARC1; p=none; rua=mailto:dmarcreports@bilbaotik.bilbao.eus; ruf=mailto:postmaster@bilbaotik.bilbao.eus; fo=1; adkim=s; aspf=s;",
     "valid": true,
     "location": "bilbao.eus",
     "warnings": [],
@@ -161,7 +161,7 @@
         "value": [
           {
             "scheme": "mailto",
-            "address": "postmaster@bilbaotik.bilbao.eus",
+            "address": "dmarcreports@bilbaotik.bilbao.eus",
             "size_limit": null
           }
         ],

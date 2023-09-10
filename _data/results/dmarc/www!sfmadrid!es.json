@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns3.cuentadns.com",
       "ns1.cuentadns.com",
+      "ns3.cuentadns.com",
       "ns2.cuentadns.com"
     ],
     "warnings": []
@@ -16,18 +16,21 @@
         "preference": 0,
         "hostname": "sfmadrid-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.16",
+          "52.101.68.0",
           "52.101.68.3",
-          "52.101.68.32",
-          "52.101.68.36",
           "52.101.68.5",
           "52.101.73.19",
+          "52.101.73.21",
+          "52.101.73.30",
           "52.101.73.4",
           "52.101.73.6"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 52.101.73.30 is mail-am7pr05cu00306.inbound.protection.outlook.com, but the A/AAAA DNS records for mail-am7pr05cu00306.inbound.protection.outlook.com do not resolve to 52.101.73.30"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com include:spf.ivcert.net ip4:213.192.230.81 ip4:213.192.230.80 ip4:213.192.230.85 ~all",

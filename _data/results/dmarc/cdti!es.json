@@ -17,22 +17,22 @@
         "preference": 10,
         "hostname": "cdti-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.0",
           "52.101.68.16",
-          "52.101.68.21",
-          "52.101.68.3",
           "52.101.68.32",
-          "52.101.73.1",
-          "52.101.73.2",
-          "52.101.73.4",
-          "52.101.73.6"
+          "52.101.73.12",
+          "52.101.73.15",
+          "52.101.73.16",
+          "52.101.73.19",
+          "52.101.73.22",
+          "52.101.73.30",
+          "52.101.73.8"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:spf.protection.outlook.com ip4:212.163.54.123 ip4:212.163.54.109 ip4:212.163.54.98 ip4:212.163.54.99 ip4:212.163.54.108 ip4:212.163.54.125 ip4:212.163.54.120 include:spf.sendinblue.com -all",
+    "record": "v=spf1 include:spf.protection.outlook.com ip4:212.163.54.123 ip4:212.163.54.109 ip4:212.163.54.98 ip4:212.163.54.99 ip4:212.163.54.108 ip4:212.163.54.125 ip4:212.163.54.120 ip4:212.163.54.116 ip4:212.163.54.117 include:spf.sendinblue.com -all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
@@ -64,6 +64,14 @@
         },
         {
           "value": "212.163.54.120",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "212.163.54.116",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "212.163.54.117",
           "mechanism": "ip4"
         }
       ],

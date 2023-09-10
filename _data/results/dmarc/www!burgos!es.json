@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns08.ns-cloud4b.com",
       "ns06.ns-cloud4b.net",
-      "ns07.ns-cloud4b.org",
-      "ns08.ns-cloud4b.com"
+      "ns07.ns-cloud4b.org"
     ],
     "warnings": []
   },
@@ -15,19 +15,18 @@
       {
         "preference": 10,
         "hostname": "atapuerca.csa.es",
-        "addresses": [
-          "5.40.65.234"
-        ]
+        "addresses": []
       },
       {
         "preference": 50,
         "hostname": "silos.csa.es",
-        "addresses": [
-          "5.40.65.34"
-        ]
+        "addresses": []
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out.",
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ]
   },
   "spf": {
     "record": null,
