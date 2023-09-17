@@ -3,12 +3,8 @@
   "base_domain": "istan.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "dpmdns03.ns-cloud4b.net",
-      "dpmdns01.ns-cloud4b.org",
-      "dpmdns02.ns-cloud4b.com"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "mx": {
     "hosts": [
@@ -16,8 +12,8 @@
         "preference": 10,
         "hostname": "mx.spamexperts.com",
         "addresses": [
-          "2001:550:2:78::ca:100",
-          "38.111.198.185"
+          "2001:550:2:61::2fc:100",
+          "38.109.53.20"
         ]
       },
       {
@@ -48,6 +44,7 @@
       }
     ],
     "warnings": [
+      "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records",
       "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records",
       "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records"
     ]

@@ -23,7 +23,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:161.67.136.23 ip4:161.67.136.24 ip4:161.67.136.9 include:spf.protection.outlook.com include:spf.puc.rediris.es -all",
+    "record": "v=spf1 ip4:161.67.136.23 ip4:161.67.136.24 ip4:161.67.136.9 ip4:52.142.232.215 include:spf.protection.outlook.com include:spf.puc.rediris.es -all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
@@ -39,6 +39,10 @@
         },
         {
           "value": "161.67.136.9",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "52.142.232.215",
           "mechanism": "ip4"
         }
       ],

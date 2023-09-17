@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.ascio.com",
-      "ns1.ascio.com"
+      "ns1.ascio.com",
+      "ns2.ascio.com"
     ],
     "warnings": []
   },
@@ -34,7 +34,9 @@
     "record": "v=spf1 mx a ip4:195.235.198.107/32 ip4:195.235.198.106/32 ip4:195.235.198.109/32 a:correo.cuenca.es include:spf.ipzmarketing.com include:spf.hornetsecurity.com exists:%{i}.spf.hc1219-48.eu.iphmx.com -all",
     "valid": true,
     "dns_lookups": 6,
-    "warnings": [],
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ],
     "parsed": {
       "pass": [
         {
@@ -44,10 +46,6 @@
         {
           "value": "mx2.hc1219-48.eu.iphmx.com",
           "mechanism": "mx"
-        },
-        {
-          "value": "195.235.198.107",
-          "mechanism": "a"
         },
         {
           "value": "195.235.198.107/32",

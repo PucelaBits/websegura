@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns.itacyl.es",
-      "sun.rediris.es",
       "dns2.itacyl.es",
-      "chico.rediris.es"
+      "chico.rediris.es",
+      "dns.itacyl.es",
+      "sun.rediris.es"
     ],
     "warnings": []
   },
@@ -17,14 +17,14 @@
         "preference": 10,
         "hostname": "mxa-006a4e02.gslb.pphosted.com",
         "addresses": [
-          "143.55.146.78"
+          "143.55.148.243"
         ]
       },
       {
         "preference": 10,
         "hostname": "mxb-006a4e02.gslb.pphosted.com",
         "addresses": [
-          "143.55.148.243"
+          "143.55.146.78"
         ]
       }
     ],
@@ -35,7 +35,8 @@
     "valid": true,
     "dns_lookups": 1,
     "warnings": [
-      "The ptr mechanism should not be used - https://tools.ietf.org/html/rfc7208#section-5.5"
+      "The ptr mechanism should not be used - https://tools.ietf.org/html/rfc7208#section-5.5",
+      "All nameservers failed to answer the query itacyl.es. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
     ],
     "parsed": {
       "pass": [
@@ -62,14 +63,6 @@
         {
           "value": "",
           "mechanism": "ptr"
-        },
-        {
-          "value": "mxa-006a4e02.gslb.pphosted.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "mxb-006a4e02.gslb.pphosted.com",
-          "mechanism": "mx"
         }
       ],
       "neutral": [],
@@ -86,7 +79,7 @@
     "valid": true,
     "location": "itacyl.es",
     "warnings": [
-      "Failed to retrieve MX records for the domain of ruf email address dmarc@itacyl.es - All nameservers failed to answer the query itacyl.es. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
+      "Failed to retrieve MX records for the domain of rua email address dmarc@itacyl.es - All nameservers failed to answer the query itacyl.es. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
     ],
     "tags": {
       "v": {
@@ -110,6 +103,10 @@
         "explicit": true
       },
       "rua": {
+        "value": "mailto:dmarc@itacyl.es",
+        "explicit": true
+      },
+      "ruf": {
         "value": [
           {
             "scheme": "mailto",
@@ -117,10 +114,6 @@
             "size_limit": null
           }
         ],
-        "explicit": true
-      },
-      "ruf": {
-        "value": "mailto:dmarc@itacyl.es",
         "explicit": true
       },
       "fo": {

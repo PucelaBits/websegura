@@ -23,7 +23,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:77.224.171.130 ip4:92.54.14.18 ip4:92.54.14.21 include:spf.protection.outlook.com include:_spf.idisc.com mx ~all",
+    "record": "v=spf1 ip4:77.224.171.130 ip4:92.54.14.18 ip4:92.54.14.21 ip4:149.6.198.235 include:spf.protection.outlook.com include:_spf.idisc.com mx ~all",
     "valid": true,
     "dns_lookups": 3,
     "warnings": [],
@@ -39,6 +39,10 @@
         },
         {
           "value": "92.54.14.21",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "149.6.198.235",
           "mechanism": "ip4"
         },
         {

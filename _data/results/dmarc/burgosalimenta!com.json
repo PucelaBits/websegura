@@ -3,22 +3,42 @@
   "base_domain": "burgosalimenta.com",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hostnames": [
+      "tapia.csa.es",
+      "buniel.csa.es",
+      "clunia.csa.es",
+      "dns1.csanet.io"
+    ],
+    "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "atapuerca.csa.es",
+        "addresses": [
+          "5.40.65.234"
+        ]
+      },
+      {
+        "preference": 80,
+        "hostname": "silos.csa.es",
+        "addresses": [
+          "5.40.65.34"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": null,
     "valid": false,
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "error": "burgosalimenta.com does not have a SPF TXT record"
   },
   "dmarc": {
     "record": null,
     "valid": false,
     "location": null,
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "error": "A DMARC record does not exist for this domain or its base domain"
   }
 }

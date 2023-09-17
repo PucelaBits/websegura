@@ -15,17 +15,59 @@
         "preference": 10,
         "hostname": "intef-es.mail.eo.outlook.com",
         "addresses": [
-          "104.47.51.138",
-          "104.47.51.202"
+          "104.47.30.74",
+          "104.47.51.138"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "104.47.30.74 does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "intef.es has multiple SPF TXT records"
+    "record": "v=spf1 mx ip4:212.128.121.21 ip4:212.128.121.22 ip4:212.128.121.23 ip4:212.128.121.24 ip4:212.128.121.25 ip4:212.128.121.26 -all",
+    "valid": true,
+    "dns_lookups": 1,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "intef-es.mail.eo.outlook.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "212.128.121.21",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "212.128.121.22",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "212.128.121.23",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "212.128.121.24",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "212.128.121.25",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "212.128.121.26",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
     "record": null,

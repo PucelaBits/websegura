@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "ns07.ns-cloud4b.org",
-      "ns06.ns-cloud4b.net",
-      "ns09.ns-cloud4b.com"
+      "ns09.ns-cloud4b.com",
+      "ns06.ns-cloud4b.net"
     ],
     "warnings": []
   },
@@ -22,12 +22,12 @@
       {
         "preference": 40,
         "hostname": "mx40.asaccomunicaciones.es",
-        "addresses": [
-          "94.100.136.7"
-        ]
+        "addresses": []
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ]
   },
   "spf": {
     "record": "v=spf1 +a +mx include:emailservice.cpd.as -all",

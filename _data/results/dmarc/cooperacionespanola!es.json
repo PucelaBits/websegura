@@ -12,20 +12,25 @@
   "mx": {
     "hosts": [
       {
-        "preference": 1,
-        "hostname": "cooperacionespanola-es.mail.protection.outlook.com",
-        "addresses": []
+        "preference": 10,
+        "hostname": "mail.cooperacionespanola.es",
+        "addresses": [
+          "185.34.194.41",
+          "193.27.9.141"
+        ]
       }
     ],
     "warnings": [
-      "The domain cooperacionespanola-es.mail.protection.outlook.com does not exist"
+      "193.27.9.141 does not have any reverse DNS (PTR) records"
     ]
   },
   "spf": {
-    "record": "v=spf1 include:spf.protection.outlook.com -all",
+    "record": "v=spf1 include:_spf.srv.cat ~all",
     "valid": true,
-    "dns_lookups": 1,
-    "warnings": [],
+    "dns_lookups": 3,
+    "warnings": [
+      "_netblocks.srv.cat does not have any A/AAAA records"
+    ],
     "parsed": {
       "pass": [],
       "neutral": [],
@@ -33,62 +38,75 @@
       "fail": [],
       "include": [
         {
-          "domain": "spf.protection.outlook.com",
-          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/50 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
-          "dns_lookups": 0,
+          "domain": "_spf.srv.cat",
+          "record": "v=spf1 include:_netblocks.srv.cat ~all",
+          "dns_lookups": 2,
           "parsed": {
-            "pass": [
-              {
-                "value": "40.92.0.0/15",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "40.107.0.0/16",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "52.100.0.0/14",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "104.47.0.0/17",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "2a01:111:f400::/48",
-                "mechanism": "ip6"
-              },
-              {
-                "value": "2a01:111:f403::/49",
-                "mechanism": "ip6"
-              },
-              {
-                "value": "2a01:111:f403:8000::/50",
-                "mechanism": "ip6"
-              },
-              {
-                "value": "2a01:111:f403:c000::/51",
-                "mechanism": "ip6"
-              },
-              {
-                "value": "2a01:111:f403:f000::/52",
-                "mechanism": "ip6"
-              }
-            ],
+            "pass": [],
             "neutral": [],
             "softfail": [],
             "fail": [],
-            "include": [],
+            "include": [
+              {
+                "domain": "_netblocks.srv.cat",
+                "record": "v=spf1 a ip4:46.16.56.0/21 ip4:134.0.8.0/21 ip4:185.22.200.0/22 ip4:185.34.192.0/22 ip4:185.42.104.0/22 ip4:185.66.40.0/22 ip4:185.22.201.0/22 ~all",
+                "dns_lookups": 1,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "46.16.56.0/21",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "134.0.8.0/21",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.22.200.0/22",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.34.192.0/22",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.42.104.0/22",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.66.40.0/22",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.22.201.0/22",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": [
+                  "_netblocks.srv.cat does not have any A/AAAA records"
+                ]
+              }
+            ],
             "redirect": null,
             "exp": null,
-            "all": "fail"
+            "all": "softfail"
           },
-          "warnings": []
+          "warnings": [
+            "_netblocks.srv.cat does not have any A/AAAA records"
+          ]
         }
       ],
       "redirect": null,
       "exp": null,
-      "all": "fail"
+      "all": "softfail"
     }
   },
   "dmarc": {

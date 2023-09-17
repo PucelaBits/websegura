@@ -3,11 +3,8 @@
   "base_domain": "gobiernolocal.org",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "ns4.diba.cat",
-      "ns3.diba.cat"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "mx": {
     "hosts": [],
@@ -55,6 +52,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "error": "A DMARC record does not exist for this domain or its base domain"
   }
 }
