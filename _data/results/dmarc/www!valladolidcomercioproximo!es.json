@@ -15,42 +15,30 @@
         "preference": 10,
         "hostname": "mail.valladolidcomercioproximo.es",
         "addresses": [
-          "5.56.167.9"
+          "5.56.166.4"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "5.56.166.4 does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
     "record": "v=spf1 +a +mx +a:dv52.digival.org +ip4:5.181.46.156 include:servers.mcsv.net ?all",
     "valid": true,
     "dns_lookups": 4,
-    "warnings": [],
+    "warnings": [
+      "All nameservers failed to answer the query dv52.digival.org. IN A: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    ],
     "parsed": {
       "pass": [
         {
-          "value": "104.21.77.2",
-          "mechanism": "a"
-        },
-        {
-          "value": "172.67.202.193",
-          "mechanism": "a"
-        },
-        {
-          "value": "2606:4700:3033::6815:4d02",
-          "mechanism": "a"
-        },
-        {
-          "value": "2606:4700:3034::ac43:cac1",
+          "value": "5.56.166.4",
           "mechanism": "a"
         },
         {
           "value": "mail.valladolidcomercioproximo.es",
           "mechanism": "mx"
-        },
-        {
-          "value": "5.56.167.9",
-          "mechanism": "a"
         },
         {
           "value": "5.181.46.156",

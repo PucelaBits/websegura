@@ -3,33 +3,22 @@
   "base_domain": "lasregueras.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "ns.lasregueras.es"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mail.lasregueras.es",
-        "addresses": [
-          "5.181.46.145"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
-    "record": "v=spf1 +a +mx +include:dv45.digival.org -all",
+    "record": null,
     "valid": false,
-    "warnings": [],
-    "error": "dv45.digival.org does not have a SPF TXT record"
+    "error": "All nameservers failed to answer the query lasregueras.es. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "dmarc": {
     "record": null,
     "valid": false,
     "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   }
 }

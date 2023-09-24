@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns08.ns-cloud4b.com",
       "ns07.ns-cloud4b.org",
-      "ns06.ns-cloud4b.net",
-      "ns08.ns-cloud4b.com"
+      "ns06.ns-cloud4b.net"
     ],
     "warnings": []
   },
@@ -15,7 +15,9 @@
       {
         "preference": 30,
         "hostname": "mx30.asaccomunicaciones.es",
-        "addresses": []
+        "addresses": [
+          "94.100.134.8"
+        ]
       },
       {
         "preference": 40,
@@ -25,21 +27,30 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 +a +mx include:emailservice.cpd.as include:spf.hornetsecurity.com -all",
     "valid": true,
     "dns_lookups": 5,
     "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out.",
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out.",
       "Duplicate include: spf.hornetsecurity.com"
     ],
     "parsed": {
-      "pass": [],
+      "pass": [
+        {
+          "value": "185.79.129.240",
+          "mechanism": "a"
+        },
+        {
+          "value": "mx30.asaccomunicaciones.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mx40.asaccomunicaciones.es",
+          "mechanism": "mx"
+        }
+      ],
       "neutral": [],
       "softfail": [],
       "fail": [],
@@ -178,9 +189,53 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "record": "v=DMARC1; p=none",
+    "valid": true,
+    "location": "somiedo.es",
+    "warnings": [
+      "rua tag (destination for aggregate reports) not found"
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }

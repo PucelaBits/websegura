@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns3.dnsxperta.com",
+      "ns1.dnsxperta.com",
       "ns2.dnsxperta.com",
-      "ns1.dnsxperta.com"
+      "ns3.dnsxperta.com"
     ],
     "warnings": []
   },
@@ -21,10 +21,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 217.13.80.229 is mx3.dnsxperta.com, but the A/AAAA DNS records for mx3.dnsxperta.com do not resolve to 217.13.80.229"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:dnsxperta.com ip4:213.4.82.201 -all",

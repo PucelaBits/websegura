@@ -1,7 +1,7 @@
 {
   "domain": "intef.es",
   "base_domain": "intef.es",
-  "dnssec": true,
+  "dnssec": false,
   "ns": {
     "hostnames": [
       "ns1.age.gob.es",
@@ -15,14 +15,12 @@
         "preference": 10,
         "hostname": "intef-es.mail.eo.outlook.com",
         "addresses": [
-          "104.47.30.74",
-          "104.47.51.138"
+          "104.47.51.138",
+          "104.47.51.202"
         ]
       }
     ],
-    "warnings": [
-      "104.47.30.74 does not have any reverse DNS (PTR) records"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx ip4:212.128.121.21 ip4:212.128.121.22 ip4:212.128.121.23 ip4:212.128.121.24 ip4:212.128.121.25 ip4:212.128.121.26 -all",

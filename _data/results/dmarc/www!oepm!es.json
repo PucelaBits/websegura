@@ -13,35 +13,65 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "estrella.oepm.es",
+        "hostname": "mail1.correo.gob.es",
         "addresses": [
-          "192.187.18.186"
+          "185.73.172.122",
+          "185.73.172.123"
         ]
       },
       {
-        "preference": 20,
-        "hostname": "mail.oepm.es",
+        "preference": 10,
+        "hostname": "mail2.correo.gob.es",
         "addresses": [
-          "192.187.18.139"
+          "185.73.172.124",
+          "185.73.172.125"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx -all",
+    "record": "v=spf1 mx a:spf.correo.gob.es ip4:192.187.18.186 ip4:192.187.18.139 -all",
     "valid": true,
-    "dns_lookups": 1,
+    "dns_lookups": 2,
     "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "estrella.oepm.es",
+          "value": "mail1.correo.gob.es",
           "mechanism": "mx"
         },
         {
-          "value": "mail.oepm.es",
+          "value": "mail2.correo.gob.es",
           "mechanism": "mx"
+        },
+        {
+          "value": "185.73.172.122",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.172.123",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.172.124",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.172.125",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.172.147",
+          "mechanism": "a"
+        },
+        {
+          "value": "192.187.18.186",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "192.187.18.139",
+          "mechanism": "ip4"
         }
       ],
       "neutral": [],

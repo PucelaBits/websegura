@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns4.dinahosting.com",
       "ns2.dinahosting.com",
       "ns.dinahosting.com",
-      "ns3.dinahosting.com",
-      "ns4.dinahosting.com"
+      "ns3.dinahosting.com"
     ],
     "warnings": []
   },
@@ -28,12 +28,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 51.178.70.251 is alt3.mx.imaginais.com, but the A/AAAA DNS records for alt3.mx.imaginais.com do not resolve to 51.178.70.251",
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 176.31.91.172 is mail.imaginais.com, but the A/AAAA DNS records for mail.imaginais.com do not resolve to 176.31.91.172"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:37.187.254.161 a mx include:imaginais.com -all",

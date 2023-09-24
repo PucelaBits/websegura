@@ -20,25 +20,25 @@
           "52.101.68.0",
           "52.101.68.18",
           "52.101.68.21",
-          "52.101.73.11",
+          "52.101.68.3",
+          "52.101.68.5",
           "52.101.73.12",
-          "52.101.73.21",
-          "52.101.73.4",
-          "52.101.73.8"
+          "52.101.73.19",
+          "52.101.73.24"
         ]
       },
       {
         "preference": 10,
         "hostname": "mxa.mailgun.org",
         "addresses": [
-          "34.149.236.64"
+          "34.160.157.95"
         ]
       },
       {
         "preference": 60,
         "hostname": "mxb.mailgun.org",
         "addresses": [
-          "34.160.63.108"
+          "34.149.236.64"
         ]
       }
     ],
@@ -55,6 +55,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "error": "A DMARC record does not exist for this domain or its base domain"
   }
 }

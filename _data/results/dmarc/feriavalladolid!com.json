@@ -4,7 +4,6 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns.feriavalladolid.com",
       "ns1.feriavalladolid.com",
       "ns2.feriavalladolid.com"
     ],
@@ -13,15 +12,14 @@
   "mx": {
     "hosts": [
       {
-        "preference": 10,
-        "hostname": "feriavalladolid-com.mail.eo.outlook.com",
+        "preference": 0,
+        "hostname": "feriavalladolid-com.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.16",
-          "52.101.68.36",
           "52.101.68.5",
-          "52.101.73.1",
-          "52.101.73.19",
+          "52.101.73.12",
+          "52.101.73.15",
           "52.101.73.21",
+          "52.101.73.26",
           "52.101.73.28",
           "52.101.73.8"
         ]

@@ -3,47 +3,36 @@
   "base_domain": "hunosa.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "ns3.interdomain.es",
-      "ns2.interdomain.net",
-      "ns1.interdomain.net"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "mx": {
     "hosts": [
       {
         "preference": 10,
         "hostname": "mail.hunosa.es",
-        "addresses": [
-          "195.55.127.94"
-        ]
+        "addresses": []
       },
       {
         "preference": 20,
         "hostname": "mail2.hunosa.es",
-        "addresses": [
-          "195.55.125.174"
-        ]
+        "addresses": []
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out.",
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ]
   },
   "spf": {
     "record": "v=spf1 mx a ip4:195.55.125.164 ip4:195.55.125.162 ip4:195.55.127.94 ~all",
     "valid": true,
     "dns_lookups": 2,
-    "warnings": [],
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ],
     "parsed": {
       "pass": [
-        {
-          "value": "mail.hunosa.es",
-          "mechanism": "mx"
-        },
-        {
-          "value": "mail2.hunosa.es",
-          "mechanism": "mx"
-        },
         {
           "value": "195.55.193.11",
           "mechanism": "a"
