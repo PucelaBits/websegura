@@ -10,8 +10,30 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx1.diba.cat",
+        "addresses": [
+          "45.15.50.198"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mx2.diba.cat",
+        "addresses": [
+          "45.15.50.200"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mx3.diba.cat",
+        "addresses": [
+          "45.15.50.202"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.diba.cat ~all",

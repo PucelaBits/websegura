@@ -15,15 +15,15 @@
         "preference": 0,
         "hostname": "palma-cat.mail.protection.outlook.com",
         "addresses": [
-          "104.47.17.138",
-          "104.47.17.74"
+          "104.47.17.74",
+          "104.47.18.74"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:77.224.171.130 ip4:92.54.14.18 ip4:92.54.14.21 ip4:149.6.198.235 include:spf.protection.outlook.com include:_spf.idisc.com mx ~all",
+    "record": "v=spf1 ip4:77.224.171.130 ip4:149.6.198.235 include:spf.protection.outlook.com include:_spf.idisc.com mx ~all",
     "valid": true,
     "dns_lookups": 3,
     "warnings": [],
@@ -31,14 +31,6 @@
       "pass": [
         {
           "value": "77.224.171.130",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "92.54.14.18",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "92.54.14.21",
           "mechanism": "ip4"
         },
         {

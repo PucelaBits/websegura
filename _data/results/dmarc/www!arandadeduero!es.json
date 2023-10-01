@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.viavoxinteractive.com",
-      "ns2.viavoxinteractive.com"
+      "ns2.viavoxinteractive.com",
+      "ns1.viavoxinteractive.com"
     ],
     "warnings": []
   },
@@ -22,7 +22,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx ip4:84.124.18.70 -all",
+    "record": "v=spf1 mx ip4:212.145.22.204 -all",
     "valid": true,
     "dns_lookups": 1,
     "warnings": [],
@@ -33,7 +33,7 @@
           "mechanism": "mx"
         },
         {
-          "value": "84.124.18.70",
+          "value": "212.145.22.204",
           "mechanism": "ip4"
         }
       ],

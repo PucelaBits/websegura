@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.gestiondecuenta.com",
-      "ns3.gestiondecuenta.com",
       "ns4.gestiondecuenta.com",
-      "ns.gestiondecuenta.com"
+      "ns.gestiondecuenta.com",
+      "ns3.gestiondecuenta.com",
+      "ns2.gestiondecuenta.com"
     ],
     "warnings": []
   },
@@ -17,13 +17,12 @@
         "preference": 10,
         "hostname": "teror-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.16",
-          "52.101.68.3",
+          "52.101.68.18",
+          "52.101.68.21",
+          "52.101.68.36",
           "52.101.68.5",
-          "52.101.73.11",
-          "52.101.73.16",
-          "52.101.73.26",
-          "52.101.73.4",
+          "52.101.73.19",
+          "52.101.73.28",
           "52.101.73.6"
         ]
       }
@@ -117,7 +116,7 @@
         },
         {
           "domain": "_spf.espublico.com",
-          "record": "v=spf1 include:_netblocks.espublico.com include:_nethosts.espublico.com ~all",
+          "record": "v=spf1 include:_netblocks.espublico.com include:_nethosts.espublico.com -all",
           "dns_lookups": 2,
           "parsed": {
             "pass": [],
@@ -127,7 +126,7 @@
             "include": [
               {
                 "domain": "_netblocks.espublico.com",
-                "record": "v=spf1 ip4:195.77.90.64/26 ip4:188.85.141.80/29 ip4:213.4.82.192/26 ~all",
+                "record": "v=spf1 ip4:195.77.90.64/26 ip4:188.85.141.80/29 ip4:213.4.82.192/26 -all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
@@ -150,13 +149,13 @@
                   "include": [],
                   "redirect": null,
                   "exp": null,
-                  "all": "softfail"
+                  "all": "fail"
                 },
                 "warnings": []
               },
               {
                 "domain": "_nethosts.espublico.com",
-                "record": "v=spf1 ip4:195.76.253.210/32 ip4:13.36.4.115/32 ip4:13.37.15.66/32 ip4:13.37.49.31/32 ip4:15.188.158.28/32 ip4:52.47.92.42 ~all",
+                "record": "v=spf1 ip4:195.76.253.210/32 ip4:13.36.4.115/32 ip4:13.37.15.66/32 ip4:13.37.49.31/32 ip4:15.188.158.28/32 ip4:52.47.92.42 -all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
@@ -191,20 +190,20 @@
                   "include": [],
                   "redirect": null,
                   "exp": null,
-                  "all": "softfail"
+                  "all": "fail"
                 },
                 "warnings": []
               }
             ],
             "redirect": null,
             "exp": null,
-            "all": "softfail"
+            "all": "fail"
           },
           "warnings": []
         },
         {
           "domain": "_flatsvcs.espublico.com",
-          "record": "v=spf1 ip4:198.2.128.0/18 ip4:148.105.8.0/21 ip4:185.12.80.0/22 ip4:216.198.0.0/18 ip4:205.201.128.0/20 ip4:103.151.192.0/23 ip4:188.172.128.0/20 ip4:192.161.144.0/20 ~all",
+          "record": "v=spf1 ip4:198.2.128.0/18 ip4:148.105.8.0/21 ip4:185.12.80.0/22 ip4:216.198.0.0/18 ip4:205.201.128.0/20 ip4:103.151.192.0/23 ip4:188.172.128.0/20 ip4:192.161.144.0/20 -all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -247,7 +246,7 @@
             "include": [],
             "redirect": null,
             "exp": null,
-            "all": "softfail"
+            "all": "fail"
           },
           "warnings": []
         }

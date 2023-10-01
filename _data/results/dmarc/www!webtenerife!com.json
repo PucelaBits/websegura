@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns14.servidoresdns.net",
-      "dns13.servidoresdns.net"
+      "dns13.servidoresdns.net",
+      "dns14.servidoresdns.net"
     ],
     "warnings": []
   },
@@ -15,22 +15,22 @@
         "preference": 10,
         "hostname": "webtenerife-com.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.0",
           "52.101.68.18",
           "52.101.68.21",
           "52.101.68.3",
-          "52.101.73.12",
-          "52.101.73.19",
-          "52.101.73.21"
+          "52.101.68.32",
+          "52.101.68.5",
+          "52.101.73.11",
+          "52.101.73.2"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:spf.protection.outlook.com include:customers.clickdimensions.com include:spf.EU.exclaimer.net -all",
+    "record": "v=spf1 include:spf.protection.outlook.com include:customers.clickdimensions.com include:spf.EU.exclaimer.net include:one.zoho.eu -all",
     "valid": true,
-    "dns_lookups": 5,
+    "dns_lookups": 9,
     "warnings": [],
     "parsed": {
       "pass": [],
@@ -208,6 +208,150 @@
             "redirect": null,
             "exp": null,
             "all": "softfail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "one.zoho.eu",
+          "record": "v=spf1 include:spf.zoho.eu include:transmail.eu include:eu.zcsend.net -all",
+          "dns_lookups": 3,
+          "parsed": {
+            "pass": [],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [
+              {
+                "domain": "spf.zoho.eu",
+                "record": "v=spf1 ip4:185.20.209.0/24 ip4:31.186.226.0/24 ip4:31.186.243.0/24 ip4:89.36.170.0/24 ip4:185.20.211.0/24 ip4:185.172.199.0/24 ip4:91.135.68.104/29 ip4:185.230.214.0/23 ip4:136.143.168.0/22 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "185.20.209.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "31.186.226.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "31.186.243.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "89.36.170.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.20.211.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.172.199.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "91.135.68.104/29",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.230.214.0/23",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "136.143.168.0/22",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              },
+              {
+                "domain": "transmail.eu",
+                "record": "v=spf1 ip4:31.186.226.0/24 ip4:185.20.211.0/24 ip4:185.172.199.128/26 ip4:185.172.199.192/27 ip4:185.172.199.56/29 ip4:136.143.168.0/22 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "31.186.226.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.20.211.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.172.199.128/26",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.172.199.192/27",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.172.199.56/29",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "136.143.168.0/22",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              },
+              {
+                "domain": "eu.zcsend.net",
+                "record": "v=spf1 ip4:31.186.226.160/27 ip4:185.20.211.0/25 ip4:185.172.199.0/25 ip4:91.103.152.0/24 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "31.186.226.160/27",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.20.211.0/25",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.172.199.0/25",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "91.103.152.0/24",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              }
+            ],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
           },
           "warnings": []
         }

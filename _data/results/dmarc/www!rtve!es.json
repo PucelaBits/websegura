@@ -22,7 +22,7 @@
         "preference": 10,
         "hostname": "mxb-00626c01.gslb.pphosted.com",
         "addresses": [
-          "205.220.185.106"
+          "143.55.144.49"
         ]
       }
     ],
@@ -34,7 +34,7 @@
     "error": "rtve.es does not have a SPF TXT record"
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com",
+    "record": "v=DMARC1; p=quarantine; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com",
     "valid": true,
     "location": "rtve.es",
     "warnings": [],
@@ -44,7 +44,7 @@
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": true
       },
       "fo": {
@@ -96,7 +96,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": false
       }
     }

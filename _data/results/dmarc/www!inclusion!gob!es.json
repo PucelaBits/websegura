@@ -15,7 +15,7 @@
         "preference": 5,
         "hostname": "inclusion-gob-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.17.74",
+          "104.47.17.138",
           "104.47.18.74"
         ]
       }
@@ -25,9 +25,10 @@
   "spf": {
     "record": "v=spf1 mx:smtp.seg-social.es ip4:194.179.55.12 ip4:212.128.108.46 ip4:212.128.108.45 ip4:194.179.55.96/28 ip4:213.99.40.96/28 include:spf.protection.outlook.com include:seg-social.es include:spf.odmad.quest-on-demand.com -all",
     "valid": true,
-    "dns_lookups": 7,
+    "dns_lookups": 8,
     "warnings": [
-      "smtp.seg-social.es does not have any MX records"
+      "smtp.seg-social.es does not have any MX records",
+      "Duplicate include: spf.protection.outlook.com"
     ],
     "parsed": {
       "pass": [
@@ -111,8 +112,8 @@
         },
         {
           "domain": "seg-social.es",
-          "record": "v=spf1 mx ip4:194.179.55.96/28 ip4:213.99.40.96/28 ~all",
-          "dns_lookups": 1,
+          "record": "v=spf1 mx ip4:194.179.55.96/28 ip4:213.99.40.96/28 include:spf.protection.outlook.com ~all",
+          "dns_lookups": 2,
           "parsed": {
             "pass": [
               {
@@ -136,7 +137,9 @@
             "exp": null,
             "all": "softfail"
           },
-          "warnings": []
+          "warnings": [
+            "Duplicate include: spf.protection.outlook.com"
+          ]
         },
         {
           "domain": "spf.odmad.quest-on-demand.com",

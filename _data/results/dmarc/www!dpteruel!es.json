@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "neo.dpteruel.es",
-      "morpheo.dpteruel.es"
+      "morpheo.dpteruel.es",
+      "neo.dpteruel.es"
     ],
     "warnings": []
   },
@@ -66,7 +66,7 @@
       "include": [
         {
           "domain": "_spf.espublico.com",
-          "record": "v=spf1 include:_netblocks.espublico.com include:_nethosts.espublico.com ~all",
+          "record": "v=spf1 include:_netblocks.espublico.com include:_nethosts.espublico.com -all",
           "dns_lookups": 2,
           "parsed": {
             "pass": [],
@@ -76,7 +76,7 @@
             "include": [
               {
                 "domain": "_netblocks.espublico.com",
-                "record": "v=spf1 ip4:195.77.90.64/26 ip4:188.85.141.80/29 ip4:213.4.82.192/26 ~all",
+                "record": "v=spf1 ip4:195.77.90.64/26 ip4:188.85.141.80/29 ip4:213.4.82.192/26 -all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
@@ -99,13 +99,13 @@
                   "include": [],
                   "redirect": null,
                   "exp": null,
-                  "all": "softfail"
+                  "all": "fail"
                 },
                 "warnings": []
               },
               {
                 "domain": "_nethosts.espublico.com",
-                "record": "v=spf1 ip4:195.76.253.210/32 ip4:13.36.4.115/32 ip4:13.37.15.66/32 ip4:13.37.49.31/32 ip4:15.188.158.28/32 ip4:52.47.92.42 ~all",
+                "record": "v=spf1 ip4:195.76.253.210/32 ip4:13.36.4.115/32 ip4:13.37.15.66/32 ip4:13.37.49.31/32 ip4:15.188.158.28/32 ip4:52.47.92.42 -all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
@@ -140,14 +140,14 @@
                   "include": [],
                   "redirect": null,
                   "exp": null,
-                  "all": "softfail"
+                  "all": "fail"
                 },
                 "warnings": []
               }
             ],
             "redirect": null,
             "exp": null,
-            "all": "softfail"
+            "all": "fail"
           },
           "warnings": []
         }

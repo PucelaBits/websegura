@@ -19,21 +19,31 @@
         ]
       }
     ],
-    "warnings": [
-      "5.56.166.4 does not have any reverse DNS (PTR) records"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 +a +mx +a:dv52.digival.org +ip4:5.181.46.156 include:servers.mcsv.net ?all",
     "valid": true,
     "dns_lookups": 4,
     "warnings": [
-      "All nameservers failed to answer the query dv52.digival.org. IN A: Server Do53:1.0.0.1@53 answered SERVFAIL"
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
     ],
     "parsed": {
       "pass": [
         {
-          "value": "5.56.166.4",
+          "value": "104.21.77.2",
+          "mechanism": "a"
+        },
+        {
+          "value": "172.67.202.193",
+          "mechanism": "a"
+        },
+        {
+          "value": "2606:4700:3033::6815:4d02",
+          "mechanism": "a"
+        },
+        {
+          "value": "2606:4700:3034::ac43:cac1",
           "mechanism": "a"
         },
         {
