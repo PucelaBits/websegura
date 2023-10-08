@@ -4,11 +4,11 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns3.uva.es",
+      "ns1.funge.uva.es",
       "mapache.funge.uva.es",
       "ns2.uva.es",
-      "ns3.uva.es",
-      "ns1.uva.es",
-      "ns1.funge.uva.es"
+      "ns1.uva.es"
     ],
     "warnings": []
   },
@@ -25,7 +25,7 @@
         "preference": 10,
         "hostname": "mxb-006a4e02.gslb.pphosted.com",
         "addresses": [
-          "143.55.148.243"
+          "143.55.146.78"
         ]
       }
     ],
@@ -49,7 +49,7 @@
       "include": [
         {
           "domain": "spf.ipzmarketing.com",
-          "record": "v=spf1 ip4:93.159.208.0/21 ip4:185.103.8.0/22 ip4:5.56.22.0/24 ip4:82.199.156.0/24 ip4:212.192.13.0/24 ~all",
+          "record": "v=spf1 ip4:93.159.208.0/21 ip4:185.103.8.0/22 ip4:5.56.22.0/24 ip4:82.199.156.0/24 ip4:91.194.237.0/24 ~all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -70,7 +70,7 @@
                 "mechanism": "ip4"
               },
               {
-                "value": "212.192.13.0/24",
+                "value": "91.194.237.0/24",
                 "mechanism": "ip4"
               }
             ],

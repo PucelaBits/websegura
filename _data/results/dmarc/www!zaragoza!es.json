@@ -4,14 +4,29 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns.zaragoza.es",
-      "dns2.zaragoza.es"
+      "dns2.zaragoza.es",
+      "dns.zaragoza.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.zaragoza.es",
+        "addresses": [
+          "194.224.70.81"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mail2.zaragoza.es",
+        "addresses": [
+          "194.224.70.72"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:194.224.70.72 ip4:194.224.70.81 ip4:188.244.91.7 -all",

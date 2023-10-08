@@ -4,11 +4,11 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "chico.rediris.es",
       "rnpro07.com.ub.edu",
       "rnpro01.com.ub.edu",
-      "rnpro04.com.ub.edu",
-      "chico.rediris.es",
-      "sun.rediris.es"
+      "sun.rediris.es",
+      "rnpro04.com.ub.edu"
     ],
     "warnings": []
   },
@@ -18,24 +18,17 @@
         "preference": 5,
         "hostname": "ub-edu.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.16",
           "52.101.68.18",
-          "52.101.68.3",
-          "52.101.68.5",
-          "52.101.73.26",
+          "52.101.73.1",
+          "52.101.73.11",
+          "52.101.73.15",
+          "52.101.73.22",
           "52.101.73.30",
           "52.101.73.4"
         ]
-      },
-      {
-        "preference": 10,
-        "hostname": "mx.edau.ub.edu",
-        "addresses": []
       }
     ],
-    "warnings": [
-      "The domain mx.edau.ub.edu does not exist"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1  ip4:161.116.234.11 ip4:161.116.234.12 ip4:161.116.110.133 ip4:161.116.110.132 ip4:161.116.230.24 ip4:84.88.0.6/31 ip4:161.116.171.128/25 ip4:149.72.91.62 ip4:168.245.57.151 include:spf.puc.rediris.es include:spf.protection.outlook.com include:myopenlms.net -all",

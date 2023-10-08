@@ -10,8 +10,25 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query 122.172.73.185.in-addr.arpa. IN PTR: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 5,
+        "hostname": "mail1.correo.gob.es",
+        "addresses": [
+          "185.73.172.122",
+          "185.73.172.123"
+        ]
+      },
+      {
+        "preference": 5,
+        "hostname": "mail2.correo.gob.es",
+        "addresses": [
+          "185.73.172.124",
+          "185.73.172.125"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 a:spf.correo.gob.es -all",
@@ -51,9 +68,71 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "All nameservers failed to answer the query _dmarc.aemet.es. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "record": "v=DMARC1; p=quarantine; rua=mailto:avisos.correo@correo.gob.es; ruf=mailto:avisos.correo@correo.gob.es; fo=1;",
+    "valid": true,
+    "location": "aemet.es",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "avisos.correo@correo.gob.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "avisos.correo@correo.gob.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "1"
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "quarantine",
+        "explicit": false
+      }
+    }
   }
 }

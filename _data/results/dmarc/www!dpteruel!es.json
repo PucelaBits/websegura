@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "morpheo.dpteruel.es",
-      "neo.dpteruel.es"
+      "neo.dpteruel.es",
+      "morpheo.dpteruel.es"
     ],
     "warnings": []
   },
@@ -36,7 +36,11 @@
     "parsed": {
       "pass": [
         {
-          "value": "195.53.249.30",
+          "value": "18.156.16.255",
+          "mechanism": "a"
+        },
+        {
+          "value": "3.123.216.247",
           "mechanism": "a"
         },
         {

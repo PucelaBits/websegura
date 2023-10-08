@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.parlamentodeandalucia.es",
       "dns3.parlamentodeandalucia.es",
-      "dns1.parlamentodeandalucia.es"
+      "dns1.parlamentodeandalucia.es",
+      "dns2.parlamentodeandalucia.es"
     ],
     "warnings": []
   },
@@ -40,10 +40,41 @@
     ]
   },
   "spf": {
-    "record": "v=spf1 mx ip4:193.147.254.0/24 ipv4:90.161.143.225/28 ?all",
-    "valid": false,
+    "record": "v=spf1 mx ip4:193.147.254.0/24 ip4:90.161.143.225/28 ?all",
+    "valid": true,
+    "dns_lookups": 1,
     "warnings": [],
-    "error": "parlamentodeandalucia.es: Expected mechanism at position 31 in: v=spf1 mx ip4:193.147.254.0/24 ipv4:90.161.143.225/28 ?all"
+    "parsed": {
+      "pass": [
+        {
+          "value": "dns1.parlamentodeandalucia.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "dns2.parlamentodeandalucia.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mx3.parlamentodeandalucia.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "193.147.254.0/24",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "90.161.143.225/28",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "neutral"
+    }
   },
   "dmarc": {
     "record": null,

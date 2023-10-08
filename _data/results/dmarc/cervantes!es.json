@@ -3,12 +3,15 @@
   "base_domain": "cervantes.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "All nameservers failed to answer the query cervantes.es. IN NS: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "hostnames": [
+      "dns.cervantes.es",
+      "machuca.cervantes.es"
+    ],
+    "warnings": []
   },
   "mx": {
     "hosts": [],
-    "error": "All nameservers failed to answer the query cervantes.es. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "error": "The DNS response does not contain an answer to the question: 230.3.146.193.in-addr.arpa. IN PTR"
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com ip4:193.146.3.230 ip4:193.146.3.229 ip4:193.146.3.128 ip4:193.146.3.129 ip4:193.146.3.130 ip4:193.146.3.219 -all",
