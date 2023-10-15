@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "artemis.ttd.net",
-      "dns.tragsa.es"
+      "dns.tragsa.es",
+      "artemis.ttd.net"
     ],
     "warnings": []
   },
@@ -50,12 +50,10 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx:tragsa.es a:mail00.tragsa.es a:mailrelay01.tragsa.es a:mail20.tragsa.es a:mail35.tragsa.es a:mailsrv30.tragsa.es ip4:195.77.152.0/24 -all",
+    "record": "v=spf1 mx:tragsa.es a:mail00.tragsa.es a:mailrelay01.tragsa.es a:mail20.tragsa.es a:mail35.tragsa.es ip4:195.77.152.0/24 -all",
     "valid": true,
-    "dns_lookups": 6,
-    "warnings": [
-      "The domain mailsrv30.tragsa.es does not exist"
-    ],
+    "dns_lookups": 5,
+    "warnings": [],
     "parsed": {
       "pass": [
         {

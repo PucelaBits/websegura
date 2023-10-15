@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "chico.rediris.es",
-      "dns.itacyl.es",
       "sun.rediris.es",
-      "dns2.itacyl.es"
+      "dns2.itacyl.es",
+      "chico.rediris.es",
+      "dns.itacyl.es"
     ],
     "warnings": []
   },
@@ -17,7 +17,7 @@
         "preference": 10,
         "hostname": "mxa-006a4e02.gslb.pphosted.com",
         "addresses": [
-          "143.55.146.78"
+          "143.55.148.243"
         ]
       },
       {
@@ -31,12 +31,11 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:193.146.230.67/32 ip4:185.179.105.195/32 ip4:195.76.182.230/32 ip4:195.76.182.224/32 ip4:195.76.182.225/32 ptr mx ~all",
+    "record": "v=spf1 ip4:193.146.230.67/32 ip4:185.179.105.195/32 ip4:195.76.182.230/32 ip4:195.76.182.224/32 ip4:195.76.182.225/32 ptr mx -all",
     "valid": true,
     "dns_lookups": 1,
     "warnings": [
-      "The ptr mechanism should not be used - https://tools.ietf.org/html/rfc7208#section-5.5",
-      "All nameservers failed to answer the query itacyl.es. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
+      "The ptr mechanism should not be used - https://tools.ietf.org/html/rfc7208#section-5.5"
     ],
     "parsed": {
       "pass": [
@@ -63,6 +62,14 @@
         {
           "value": "",
           "mechanism": "ptr"
+        },
+        {
+          "value": "mxa-006a4e02.gslb.pphosted.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mxb-006a4e02.gslb.pphosted.com",
+          "mechanism": "mx"
         }
       ],
       "neutral": [],
@@ -71,7 +78,7 @@
       "include": [],
       "redirect": null,
       "exp": null,
-      "all": "softfail"
+      "all": "fail"
     }
   },
   "dmarc": {

@@ -15,13 +15,13 @@
         "preference": 10,
         "hostname": "aepd-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.36",
-          "52.101.68.5",
+          "52.101.68.16",
+          "52.101.68.21",
+          "52.101.73.1",
           "52.101.73.11",
-          "52.101.73.19",
-          "52.101.73.22",
+          "52.101.73.15",
           "52.101.73.26",
-          "52.101.73.4"
+          "52.101.73.8"
         ]
       }
     ],
@@ -115,21 +115,19 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; pct=100; rua=mailto:dmarc@aepd.es ; ruf=mailto:dmarc@aepd.es; fo=1",
+    "record": "v=DMARC1; p=quarantine; rua=mailto:dmarc@aepd.es; ruf=mailto:dmarc_ruf@aepd.es; fo=1; pct=10;",
     "valid": true,
     "location": "aepd.es",
-    "warnings": [],
+    "warnings": [
+      "pct value is less than 100. This leads to inconsistent and unpredictable policy enforcement. Consider using p=none to monitor results instead"
+    ],
     "tags": {
       "v": {
         "value": "DMARC1",
         "explicit": true
       },
       "p": {
-        "value": "none",
-        "explicit": true
-      },
-      "pct": {
-        "value": 100,
+        "value": "quarantine",
         "explicit": true
       },
       "rua": {
@@ -146,7 +144,7 @@
         "value": [
           {
             "scheme": "mailto",
-            "address": "dmarc@aepd.es",
+            "address": "dmarc_ruf@aepd.es",
             "size_limit": null
           }
         ],
@@ -156,6 +154,10 @@
         "value": [
           "1"
         ],
+        "explicit": true
+      },
+      "pct": {
+        "value": 10,
         "explicit": true
       },
       "adkim": {
@@ -177,7 +179,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": false
       }
     }

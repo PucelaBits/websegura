@@ -15,19 +15,17 @@
         "preference": 10,
         "hostname": "mail.valladolidcomercioproximo.es",
         "addresses": [
-          "5.56.166.4"
+          "5.56.167.58"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 +a +mx +a:dv52.digival.org +ip4:5.181.46.156 include:servers.mcsv.net ?all",
+    "record": "v=spf1 +a +mx +a:dv8.digival.biz -all",
     "valid": true,
-    "dns_lookups": 4,
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ],
+    "dns_lookups": 3,
+    "warnings": [],
     "parsed": {
       "pass": [
         {
@@ -51,80 +49,42 @@
           "mechanism": "mx"
         },
         {
-          "value": "5.181.46.156",
-          "mechanism": "ip4"
+          "value": "5.56.167.58",
+          "mechanism": "a"
         }
       ],
       "neutral": [],
       "softfail": [],
       "fail": [],
-      "include": [
-        {
-          "domain": "servers.mcsv.net",
-          "record": "v=spf1 ip4:205.201.128.0/20 ip4:198.2.128.0/18 ip4:148.105.8.0/21 -all",
-          "dns_lookups": 0,
-          "parsed": {
-            "pass": [
-              {
-                "value": "205.201.128.0/20",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "198.2.128.0/18",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "148.105.8.0/21",
-                "mechanism": "ip4"
-              }
-            ],
-            "neutral": [],
-            "softfail": [],
-            "fail": [],
-            "include": [],
-            "redirect": null,
-            "exp": null,
-            "all": "fail"
-          },
-          "warnings": []
-        }
-      ],
+      "include": [],
       "redirect": null,
       "exp": null,
-      "all": "neutral"
+      "all": "fail"
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; rua=mailto:dmarc@valladolidcomercioproximo.es",
+    "record": "v=DMARC1; p=quarantine; adkim=s; aspf=s",
     "valid": true,
     "location": "valladolidcomercioproximo.es",
-    "warnings": [],
+    "warnings": [
+      "rua tag (destination for aggregate reports) not found"
+    ],
     "tags": {
       "v": {
         "value": "DMARC1",
         "explicit": true
       },
       "p": {
-        "value": "none",
-        "explicit": true
-      },
-      "rua": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "dmarc@valladolidcomercioproximo.es",
-            "size_limit": null
-          }
-        ],
+        "value": "quarantine",
         "explicit": true
       },
       "adkim": {
-        "value": "r",
-        "explicit": false
+        "value": "s",
+        "explicit": true
       },
       "aspf": {
-        "value": "r",
-        "explicit": false
+        "value": "s",
+        "explicit": true
       },
       "fo": {
         "value": [
@@ -147,7 +107,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": false
       }
     }

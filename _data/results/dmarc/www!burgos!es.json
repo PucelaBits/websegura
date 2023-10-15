@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns06.ns-cloud4b.net",
       "ns07.ns-cloud4b.org",
+      "ns06.ns-cloud4b.net",
       "ns08.ns-cloud4b.com"
     ],
     "warnings": []
@@ -27,10 +27,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 5.40.65.234 is atapuerca.csa.es, but the A/AAAA DNS records for atapuerca.csa.es do not resolve to 5.40.65.234"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": null,

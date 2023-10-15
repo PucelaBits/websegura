@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1043.ui-dns.de",
       "ns1113.ui-dns.com",
+      "ns1022.ui-dns.biz",
       "ns1091.ui-dns.org",
-      "ns1022.ui-dns.biz"
+      "ns1043.ui-dns.de"
     ],
     "warnings": []
   },
@@ -24,9 +24,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 a mx ip4:77.227.0.12 ip4:194.224.108.250 -all",
+    "record": "v=spf1 a mx include:_spf1.dipuleon.es -all",
     "valid": true,
-    "dns_lookups": 2,
+    "dns_lookups": 3,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -37,20 +37,42 @@
         {
           "value": "mx10.dipuleon.es",
           "mechanism": "mx"
-        },
-        {
-          "value": "77.227.0.12",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "194.224.108.250",
-          "mechanism": "ip4"
         }
       ],
       "neutral": [],
       "softfail": [],
       "fail": [],
-      "include": [],
+      "include": [
+        {
+          "domain": "_spf1.dipuleon.es",
+          "record": "v=spf1 ip4:77.227.0.11 ip4:77.227.0.12 ip4:77.227.0.13 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "77.227.0.11",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "77.227.0.12",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "77.227.0.13",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        }
+      ],
       "redirect": null,
       "exp": null,
       "all": "fail"
