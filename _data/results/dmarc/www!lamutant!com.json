@@ -24,7 +24,7 @@
   "spf": {
     "record": "v=spf1 ip4:51.91.62.63 ip4:54.36.77.111 include:_spf.webempresa.eu +a +mx ~all",
     "valid": true,
-    "dns_lookups": 3,
+    "dns_lookups": 4,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -51,8 +51,8 @@
       "include": [
         {
           "domain": "_spf.webempresa.eu",
-          "record": "v=spf1 ip4:54.37.172.205/32 ip4:87.98.227.61/32 ip4:178.33.113.178/32 ip4:178.33.119.38/32 ip4:87.98.229.233/32 ip4:5.39.109.72/32 ip4:178.32.150.70/32 ip4:5.196.253.55/32 ip4:178.33.116.19/32 ip4:188.165.126.169/32 ip4:51.68.67.124/32 ~all",
-          "dns_lookups": 0,
+          "record": "v=spf1 ip4:54.37.172.205/32 ip4:87.98.227.61/32 ip4:178.32.150.70/32 ip4:188.165.126.169/32 ip4:147.135.246.19/32 ip4:5.135.63.183/32 ip4:178.33.166.217/32 ip4:5.39.109.65/32 ip4:87.98.229.233/32 ip4:5.39.109.72/32 include:_spf2.webempresa.eu ~all",
+          "dns_lookups": 1,
           "parsed": {
             "pass": [
               {
@@ -64,11 +64,27 @@
                 "mechanism": "ip4"
               },
               {
-                "value": "178.33.113.178/32",
+                "value": "178.32.150.70/32",
                 "mechanism": "ip4"
               },
               {
-                "value": "178.33.119.38/32",
+                "value": "188.165.126.169/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "147.135.246.19/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "5.135.63.183/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "178.33.166.217/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "5.39.109.65/32",
                 "mechanism": "ip4"
               },
               {
@@ -78,32 +94,70 @@
               {
                 "value": "5.39.109.72/32",
                 "mechanism": "ip4"
-              },
-              {
-                "value": "178.32.150.70/32",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "5.196.253.55/32",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "178.33.116.19/32",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "188.165.126.169/32",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "51.68.67.124/32",
-                "mechanism": "ip4"
               }
             ],
             "neutral": [],
             "softfail": [],
             "fail": [],
-            "include": [],
+            "include": [
+              {
+                "domain": "_spf2.webempresa.eu",
+                "record": "v=spf1 ip4:178.33.116.19/32 ip4:188.165.132.24/32 ip4:178.32.150.76/32 ip4:5.196.253.55/32 ip4:178.33.119.38/32 ip4:51.68.67.124/32 ip4:188.165.134.164/32 ip4:178.32.150.89/32 ip4:87.98.230.23/32 ip4:178.33.113.178/32 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "178.33.116.19/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "188.165.132.24/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "178.32.150.76/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "5.196.253.55/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "178.33.119.38/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "51.68.67.124/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "188.165.134.164/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "178.32.150.89/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "87.98.230.23/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "178.33.113.178/32",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              }
+            ],
             "redirect": null,
             "exp": null,
             "all": "softfail"

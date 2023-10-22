@@ -29,9 +29,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx -all",
+    "record": "v=spf1 mx ip4:212.128.100.149 ip4:212.128.100.150 a:spf.correo.gob.es -all",
     "valid": true,
-    "dns_lookups": 1,
+    "dns_lookups": 2,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -42,6 +42,34 @@
         {
           "value": "mx02.dgt.es",
           "mechanism": "mx"
+        },
+        {
+          "value": "212.128.100.149",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "212.128.100.150",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "185.73.172.122",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.172.123",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.172.124",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.172.125",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.172.147",
+          "mechanism": "a"
         }
       ],
       "neutral": [],

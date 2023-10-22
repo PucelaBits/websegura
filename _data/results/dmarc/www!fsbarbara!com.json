@@ -3,44 +3,17 @@
   "base_domain": "fsbarbara.com",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "a-ns.primari.net",
-      "b-ns.primari.net"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mail.fsbarbara.com",
-        "addresses": [
-          "91.126.72.25"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
-    "record": "v=spf1 ip4:91.126.40.175/32 ~all",
-    "valid": true,
-    "dns_lookups": 0,
-    "warnings": [],
-    "parsed": {
-      "pass": [
-        {
-          "value": "91.126.40.175/32",
-          "mechanism": "ip4"
-        }
-      ],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [],
-      "redirect": null,
-      "exp": null,
-      "all": "softfail"
-    }
+    "record": null,
+    "valid": false,
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "dmarc": {
     "record": "v=DMARC1;p=none;rua=mailto:webmaster@primari.net",

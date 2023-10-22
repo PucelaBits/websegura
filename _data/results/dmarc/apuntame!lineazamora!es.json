@@ -4,16 +4,44 @@
   "dnssec": false,
   "ns": {
     "hostnames": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "warnings": []
   },
   "mx": {
     "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "record": "v=spf1 ip4:185.23.70.11 +a +mx +ip4:63.35.133.186 ~all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [
+      "apuntame.lineazamora.es does not have any MX records"
+    ],
+    "parsed": {
+      "pass": [
+        {
+          "value": "185.23.70.11",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "185.23.70.11",
+          "mechanism": "a"
+        },
+        {
+          "value": "63.35.133.186",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
   },
   "dmarc": {
     "record": "v=DMARC1; p=none",

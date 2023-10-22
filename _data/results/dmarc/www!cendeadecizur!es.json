@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.hostinet.com",
-      "dns1.hostinet.com"
+      "dns1.hostinet.com",
+      "dns2.hostinet.com"
     ],
     "warnings": []
   },
@@ -15,7 +15,7 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.251.2.26",
+          "142.250.101.26",
           "2607:f8b0:4023:c0d::1a"
         ]
       },
@@ -23,7 +23,7 @@
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "2607:f8b0:4003:c15::1a",
+          "2607:f8b0:4003:c15::1b",
           "64.233.171.27"
         ]
       },
@@ -32,22 +32,22 @@
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
           "142.250.152.26",
-          "2607:f8b0:4001:c56::1a"
+          "2607:f8b0:4001:c56::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "172.253.113.27",
-          "2607:f8b0:4023:1::1b"
+          "172.253.113.26",
+          "2607:f8b0:4023:1::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "172.253.126.27",
+          "172.253.126.26",
           "2607:f8b0:4023:400::1a"
         ]
       },

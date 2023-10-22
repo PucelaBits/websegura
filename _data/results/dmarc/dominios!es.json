@@ -17,23 +17,96 @@
         "preference": 0,
         "hostname": "dominios-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.18",
-          "52.101.73.16",
-          "52.101.73.24",
-          "52.101.73.28",
-          "52.101.73.30",
-          "52.101.73.4",
-          "52.101.73.8"
+          "52.101.68.5",
+          "52.101.73.12",
+          "52.101.73.15",
+          "52.101.73.21",
+          "52.101.73.22",
+          "52.101.73.26",
+          "52.101.73.4"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 MS=ms78806188 ip4:194.69.254.0/24 ip4:54.72.161.36 include:spf.protection.outlook.com -all",
-    "valid": false,
+    "record": "v=spf1 ip4:194.69.254.0/24 ip4:54.72.161.36 include:spf.protection.outlook.com -all",
+    "valid": true,
+    "dns_lookups": 1,
     "warnings": [],
-    "error": "dominios.es: Expected mechanism or end_of_statement at position 7 in: v=spf1 MS=ms78806188 ip4:194.69.254.0/24 ip4:54.72.161.36 include:spf.protection.outlook.com -all"
+    "parsed": {
+      "pass": [
+        {
+          "value": "194.69.254.0/24",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "54.72.161.36",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "spf.protection.outlook.com",
+          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/50 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "40.92.0.0/15",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "40.107.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.100.0.0/14",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "104.47.0.0/17",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "2a01:111:f400::/48",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403::/49",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:8000::/50",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:c000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:f000::/52",
+                "mechanism": "ip6"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
     "record": "v=DMARC1; p=none; fo=0; rua=mailto:abuse@dominios.es",

@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns481.webempresa.eu",
-      "ns482.webempresa.eu"
+      "ns482.webempresa.eu",
+      "ns481.webempresa.eu"
     ],
     "warnings": []
   },
@@ -15,15 +15,15 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.251.2.26",
-          "2607:f8b0:4023:c0d::1b"
+          "142.250.101.26",
+          "2607:f8b0:4023:c0b::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "2607:f8b0:4003:c15::1b",
+          "2607:f8b0:4003:c15::1a",
           "64.233.171.27"
         ]
       },
@@ -47,7 +47,7 @@
         "preference": 10,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "172.253.126.27",
+          "172.253.126.26",
           "2607:f8b0:4023:400::1b"
         ]
       }
@@ -57,7 +57,7 @@
   "spf": {
     "record": "v=spf1 ip4:51.77.129.98 ip4:178.33.167.48 include:_spf.webempresa.eu ip4:151.80.24.226 +a +mx +include:_spf.google.com ~all",
     "valid": true,
-    "dns_lookups": 7,
+    "dns_lookups": 8,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -104,8 +104,8 @@
       "include": [
         {
           "domain": "_spf.webempresa.eu",
-          "record": "v=spf1 ip4:54.37.172.205/32 ip4:87.98.227.61/32 ip4:178.33.113.178/32 ip4:178.33.119.38/32 ip4:87.98.229.233/32 ip4:5.39.109.72/32 ip4:178.32.150.70/32 ip4:5.196.253.55/32 ip4:178.33.116.19/32 ip4:188.165.126.169/32 ip4:51.68.67.124/32 ~all",
-          "dns_lookups": 0,
+          "record": "v=spf1 ip4:54.37.172.205/32 ip4:87.98.227.61/32 ip4:178.32.150.70/32 ip4:188.165.126.169/32 ip4:147.135.246.19/32 ip4:5.135.63.183/32 ip4:178.33.166.217/32 ip4:5.39.109.65/32 ip4:87.98.229.233/32 ip4:5.39.109.72/32 include:_spf2.webempresa.eu ~all",
+          "dns_lookups": 1,
           "parsed": {
             "pass": [
               {
@@ -117,11 +117,27 @@
                 "mechanism": "ip4"
               },
               {
-                "value": "178.33.113.178/32",
+                "value": "178.32.150.70/32",
                 "mechanism": "ip4"
               },
               {
-                "value": "178.33.119.38/32",
+                "value": "188.165.126.169/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "147.135.246.19/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "5.135.63.183/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "178.33.166.217/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "5.39.109.65/32",
                 "mechanism": "ip4"
               },
               {
@@ -131,32 +147,70 @@
               {
                 "value": "5.39.109.72/32",
                 "mechanism": "ip4"
-              },
-              {
-                "value": "178.32.150.70/32",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "5.196.253.55/32",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "178.33.116.19/32",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "188.165.126.169/32",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "51.68.67.124/32",
-                "mechanism": "ip4"
               }
             ],
             "neutral": [],
             "softfail": [],
             "fail": [],
-            "include": [],
+            "include": [
+              {
+                "domain": "_spf2.webempresa.eu",
+                "record": "v=spf1 ip4:178.33.116.19/32 ip4:188.165.132.24/32 ip4:178.32.150.76/32 ip4:5.196.253.55/32 ip4:178.33.119.38/32 ip4:51.68.67.124/32 ip4:188.165.134.164/32 ip4:178.32.150.89/32 ip4:87.98.230.23/32 ip4:178.33.113.178/32 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "178.33.116.19/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "188.165.132.24/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "178.32.150.76/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "5.196.253.55/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "178.33.119.38/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "51.68.67.124/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "188.165.134.164/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "178.32.150.89/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "87.98.230.23/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "178.33.113.178/32",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              }
+            ],
             "redirect": null,
             "exp": null,
             "all": "softfail"

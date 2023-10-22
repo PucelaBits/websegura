@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1045.ui-dns.de",
-      "ns1045.ui-dns.org",
       "ns1045.ui-dns.biz",
-      "ns1045.ui-dns.com"
+      "ns1045.ui-dns.org",
+      "ns1045.ui-dns.com",
+      "ns1045.ui-dns.de"
     ],
     "warnings": []
   },
@@ -24,7 +24,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 a mx ~all",
+    "record": "v=spf1 a mx -all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
@@ -49,7 +49,7 @@
       "include": [],
       "redirect": null,
       "exp": null,
-      "all": "softfail"
+      "all": "fail"
     }
   },
   "dmarc": {

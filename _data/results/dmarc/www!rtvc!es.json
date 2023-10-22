@@ -4,8 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "aldo.ns.cloudflare.com",
-      "lina.ns.cloudflare.com"
+      "ns-1412.awsdns-48.org",
+      "ns-1633.awsdns-12.co.uk",
+      "ns-301.awsdns-37.com",
+      "ns-983.awsdns-58.net"
     ],
     "warnings": []
   },
@@ -48,14 +50,6 @@
         },
         {
           "value": "172.67.162.167",
-          "mechanism": "a"
-        },
-        {
-          "value": "2606:4700:3034::ac43:a2a7",
-          "mechanism": "a"
-        },
-        {
-          "value": "2606:4700:3036::6815:f86",
           "mechanism": "a"
         },
         {

@@ -15,15 +15,15 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.251.2.26",
-          "2607:f8b0:4023:c0d::1b"
+          "142.251.2.27",
+          "2607:f8b0:4023:c06::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "2607:f8b0:4003:c15::1b",
+          "2607:f8b0:4003:c15::1a",
           "64.233.171.26"
         ]
       },
@@ -31,8 +31,8 @@
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "142.250.152.27",
-          "2607:f8b0:4001:c56::1a"
+          "142.250.152.26",
+          "2607:f8b0:4001:c56::1b"
         ]
       },
       {
@@ -47,7 +47,7 @@
         "preference": 10,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "172.253.126.26",
+          "172.253.126.27",
           "2607:f8b0:4023:400::1a"
         ]
       }
@@ -58,11 +58,30 @@
     "record": "v=spf1 mx ~all",
     "valid": true,
     "dns_lookups": 1,
-    "warnings": [
-      "All nameservers failed to answer the query insst.es. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
-    ],
+    "warnings": [],
     "parsed": {
-      "pass": [],
+      "pass": [
+        {
+          "value": "aspmx.l.google.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "alt1.aspmx.l.google.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "alt2.aspmx.l.google.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "alt3.aspmx.l.google.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "alt4.aspmx.l.google.com",
+          "mechanism": "mx"
+        }
+      ],
       "neutral": [],
       "softfail": [],
       "fail": [],

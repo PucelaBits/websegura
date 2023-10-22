@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "chico.rediris.es",
-      "sun.rediris.es",
       "dns.uvigo.es",
-      "dns2.uvigo.es"
+      "sun.rediris.es",
+      "dns2.uvigo.es",
+      "chico.rediris.es"
     ],
     "warnings": []
   },
@@ -31,203 +31,13 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:spf.puc.rediris.es include:antispam._spf.uvigo.es include:antispam.ipv6._spf.uvigo.es include:spf.protection.outlook.com -all",
-    "valid": true,
-    "dns_lookups": 4,
+    "record": "v=spf1 include:spf.puc.rediris.es include:antispam._spf.uvigo.es include:antispam.ipv6._spf.uvigo.es include:spf.protection.outlook.com include:email.freshdesk.com -all",
+    "valid": false,
     "warnings": [
-      "SPF type DNS records found. Use of DNS Type SPF has been removed in the standards track version of SPF, RFC 7208. These records should be removed and replaced with TXT records: v=spf1 include:spf.puc.rediris.es include:antispam._spf.uvigo.es include:antispam.ipv6._spf.uvigo.es include:spf.protection.outlook.com -all"
+      "SPF type DNS records found. Use of DNS Type SPF has been removed in the standards track version of SPF, RFC 7208. These records should be removed and replaced with TXT records: v=spf1 include:spf.puc.rediris.es include:antispam._spf.uvigo.es include:antispam.ipv6._spf.uvigo.es include:spf.protection.outlook.com include:email.freshdesk.com -all"
     ],
-    "parsed": {
-      "pass": [],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [
-        {
-          "domain": "spf.puc.rediris.es",
-          "record": "v=spf1 ip4:143.55.146.78 ip4:143.55.148.243 ~all",
-          "dns_lookups": 0,
-          "parsed": {
-            "pass": [
-              {
-                "value": "143.55.146.78",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "143.55.148.243",
-                "mechanism": "ip4"
-              }
-            ],
-            "neutral": [],
-            "softfail": [],
-            "fail": [],
-            "include": [],
-            "redirect": null,
-            "exp": null,
-            "all": "softfail"
-          },
-          "warnings": []
-        },
-        {
-          "domain": "antispam._spf.uvigo.es",
-          "record": "v=spf1 ip4:193.146.32.73 ip4:193.146.32.85 ip4:193.146.32.103 ip4:193.146.32.87 ip4:193.146.32.89 ip4:193.146.32.90 ip4:193.146.32.91 ip4:193.146.32.93 ip4:193.146.32.99 -all",
-          "dns_lookups": 0,
-          "parsed": {
-            "pass": [
-              {
-                "value": "193.146.32.73",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "193.146.32.85",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "193.146.32.103",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "193.146.32.87",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "193.146.32.89",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "193.146.32.90",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "193.146.32.91",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "193.146.32.93",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "193.146.32.99",
-                "mechanism": "ip4"
-              }
-            ],
-            "neutral": [],
-            "softfail": [],
-            "fail": [],
-            "include": [],
-            "redirect": null,
-            "exp": null,
-            "all": "fail"
-          },
-          "warnings": []
-        },
-        {
-          "domain": "antispam.ipv6._spf.uvigo.es",
-          "record": "v=spf1 ip6:2001:720:1214:4200::73 ip6:2001:720:1214:4200::85 ip6:2001:720:1214:4200::87 ip6:2001:720:1214:4200::89 ip6:2001:720:1214:4200::90 ip6:2001:720:1214:4200::91 ip6:2001:720:1214:4200::93 ip6:2001:720:1214:4200::99 -all",
-          "dns_lookups": 0,
-          "parsed": {
-            "pass": [
-              {
-                "value": "2001:720:1214:4200::73",
-                "mechanism": "ip6"
-              },
-              {
-                "value": "2001:720:1214:4200::85",
-                "mechanism": "ip6"
-              },
-              {
-                "value": "2001:720:1214:4200::87",
-                "mechanism": "ip6"
-              },
-              {
-                "value": "2001:720:1214:4200::89",
-                "mechanism": "ip6"
-              },
-              {
-                "value": "2001:720:1214:4200::90",
-                "mechanism": "ip6"
-              },
-              {
-                "value": "2001:720:1214:4200::91",
-                "mechanism": "ip6"
-              },
-              {
-                "value": "2001:720:1214:4200::93",
-                "mechanism": "ip6"
-              },
-              {
-                "value": "2001:720:1214:4200::99",
-                "mechanism": "ip6"
-              }
-            ],
-            "neutral": [],
-            "softfail": [],
-            "fail": [],
-            "include": [],
-            "redirect": null,
-            "exp": null,
-            "all": "fail"
-          },
-          "warnings": []
-        },
-        {
-          "domain": "spf.protection.outlook.com",
-          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/50 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
-          "dns_lookups": 0,
-          "parsed": {
-            "pass": [
-              {
-                "value": "40.92.0.0/15",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "40.107.0.0/16",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "52.100.0.0/14",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "104.47.0.0/17",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "2a01:111:f400::/48",
-                "mechanism": "ip6"
-              },
-              {
-                "value": "2a01:111:f403::/49",
-                "mechanism": "ip6"
-              },
-              {
-                "value": "2a01:111:f403:8000::/50",
-                "mechanism": "ip6"
-              },
-              {
-                "value": "2a01:111:f403:c000::/51",
-                "mechanism": "ip6"
-              },
-              {
-                "value": "2a01:111:f403:f000::/52",
-                "mechanism": "ip6"
-              }
-            ],
-            "neutral": [],
-            "softfail": [],
-            "fail": [],
-            "include": [],
-            "redirect": null,
-            "exp": null,
-            "all": "fail"
-          },
-          "warnings": []
-        }
-      ],
-      "redirect": null,
-      "exp": null,
-      "all": "fail"
-    }
+    "error": "Parsing the SPF record requires 12/10 maximum DNS lookups - https://tools.ietf.org/html/rfc7208#section-4.6.4",
+    "dns_lookups": 12
   },
   "dmarc": {
     "record": "v=DMARC1; p=none; rua=mailto:dmarc@uvigo.gal",
