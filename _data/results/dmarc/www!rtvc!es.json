@@ -45,11 +45,19 @@
     "parsed": {
       "pass": [
         {
-          "value": "104.21.15.134",
+          "value": "18.172.213.10",
           "mechanism": "a"
         },
         {
-          "value": "172.67.162.167",
+          "value": "18.172.213.122",
+          "mechanism": "a"
+        },
+        {
+          "value": "18.172.213.25",
+          "mechanism": "a"
+        },
+        {
+          "value": "18.172.213.43",
           "mechanism": "a"
         },
         {
@@ -267,6 +275,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.rtvc.es\n\n1687961196339\n\ngoogle-site-verification=dLlG0mWtxhmEhMgPwGw3HXjzCWP1wD-KRwPCt_OLC1c\n\ngoogle-site-verification=hD1P7FA-yPXZMQtLo7sNQyG14OD6FciHQrEhkpGIKbY\n\nv=spf1 +a +mx +ip4:35.214.246.15 include:_spf.mailspamprotection.com ~all"
   }
 }

@@ -18,7 +18,7 @@
     "error": "bv.gva.es does not have a SPF TXT record"
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; rua=mailto:correu_gva@gva.es",
+    "record": "v=DMARC1; p=none; rua=mailto:dmarc-reports@gva.es",
     "valid": true,
     "location": "gva.es",
     "warnings": [],
@@ -35,7 +35,7 @@
         "value": [
           {
             "scheme": "mailto",
-            "address": "correu_gva@gva.es",
+            "address": "dmarc-reports@gva.es",
             "size_limit": null
           }
         ],

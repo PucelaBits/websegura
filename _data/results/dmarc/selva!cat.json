@@ -10,8 +10,19 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 5,
+        "hostname": "mx.ddgi.cat",
+        "addresses": [
+          "195.93.170.80"
+        ]
+      }
+    ],
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 195.93.170.80 is mx.ddgi.cat, but the A/AAAA DNS records for mx.ddgi.cat do not resolve to 195.93.170.80"
+    ]
   },
   "spf": {
     "record": "v=spf1 mx ip4:213.0.55.194 ip4:195.93.170.5 ip4:195.93.170.139 include:_spf.google.com ~all",

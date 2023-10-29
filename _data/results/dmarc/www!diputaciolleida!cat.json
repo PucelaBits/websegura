@@ -26,10 +26,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 95.130.52.43 is mx2-smtp-in.svt.es, but the A/AAAA DNS records for mx2-smtp-in.svt.es do not resolve to 95.130.52.43"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:95.130.48.0/21 ip4:194.179.98.44/30 ip4:194.179.98.48/30 ip4:95.130.54.241 ip4:195.77.149.54 ip4:194.224.55.98 include:spf.protection.outlook.com  include:spf.ipzmarketing.com include:one.zoho.eu -all",
