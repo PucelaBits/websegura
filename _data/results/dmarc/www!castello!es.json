@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "dns4.galanoa.net",
-      "dns1.galanoa.net",
-      "dns2.galanoa.net"
+      "dns2.galanoa.net",
+      "dns1.galanoa.net"
     ],
     "warnings": []
   },
@@ -27,7 +27,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 195.76.253.211 is mx1.castello.es, but the A/AAAA DNS records for mx1.castello.es do not resolve to 195.76.253.211"
+    ]
   },
   "spf": {
     "record": "v=spf1 mx ip4:46.101.172.164 ip4:195.76.253.211 ip4:5.175.42.43 ip4:213.4.82.192/26 include:mailborder.net -all",

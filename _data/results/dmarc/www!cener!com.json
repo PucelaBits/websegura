@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns9.servidoresdns.net",
-      "dns10.servidoresdns.net"
+      "dns10.servidoresdns.net",
+      "dns9.servidoresdns.net"
     ],
     "warnings": []
   },
@@ -13,29 +13,19 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "mail1.cener.com",
+        "hostname": "cener-com.mail.protection.outlook.com",
         "addresses": [
-          "194.179.96.231"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mail2.cener.com",
-        "addresses": [
-          "217.127.127.39"
-        ]
-      },
-      {
-        "preference": 30,
-        "hostname": "mail3.cener.com",
-        "addresses": [
-          "212.170.29.98"
+          "52.101.68.3",
+          "52.101.68.32",
+          "52.101.73.1",
+          "52.101.73.12",
+          "52.101.73.2",
+          "52.101.73.30",
+          "52.101.73.6"
         ]
       }
     ],
-    "warnings": [
-      "The reverse DNS of 194.179.96.231 is correo.cener.com, but the A/AAAA DNS records for correo.cener.com do not resolve to 194.179.96.231"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:212.170.29.98 ip4:194.179.96.231 ip4:217.127.127.39 mx include:spf.protection.outlook.com -all",
@@ -57,15 +47,7 @@
           "mechanism": "ip4"
         },
         {
-          "value": "mail1.cener.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "mail2.cener.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "mail3.cener.com",
+          "value": "cener-com.mail.protection.outlook.com",
           "mechanism": "mx"
         }
       ],

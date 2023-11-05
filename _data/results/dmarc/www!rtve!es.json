@@ -15,7 +15,7 @@
         "preference": 10,
         "hostname": "mxa-00626c01.gslb.pphosted.com",
         "addresses": [
-          "143.55.144.49"
+          "205.220.185.106"
         ]
       },
       {
@@ -29,9 +29,10 @@
     "warnings": []
   },
   "spf": {
-    "record": null,
+    "record": "v=spf1 include:%{ir}.%{v}.%{d}.spf.has.pphosted.com -all",
     "valid": false,
-    "error": "rtve.es does not have a SPF TXT record"
+    "warnings": [],
+    "error": "The domain %{ir}.%{v}.%{d}.spf.has.pphosted.com does not exist"
   },
   "dmarc": {
     "record": "v=DMARC1; p=quarantine; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com",

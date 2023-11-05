@@ -6,8 +6,8 @@
     "hostnames": [
       "vega.cc.upv.es",
       "mirzam.ccc.upv.es",
-      "chico.rediris.es",
-      "sun.rediris.es"
+      "sun.rediris.es",
+      "chico.rediris.es"
     ],
     "warnings": []
   },
@@ -141,7 +141,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; sp=none; fo=1; rua=mailto:dmarc_rua@upv.es;",
+    "record": "v=DMARC1; p=none; sp=none; fo=1; rua=mailto:dmarc_rua@upv.es; ruf=mailto:dmarc_ruf@upv.es;",
     "valid": true,
     "location": "upv.es",
     "warnings": [],
@@ -169,6 +169,16 @@
           {
             "scheme": "mailto",
             "address": "dmarc_rua@upv.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc_ruf@upv.es",
             "size_limit": null
           }
         ],

@@ -10,37 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 5,
-        "hostname": "smtp1.hacienda.gob.es",
-        "addresses": [
-          "193.203.200.132"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "smtp2.hacienda.gob.es",
-        "addresses": [
-          "193.203.200.244"
-        ]
-      },
-      {
-        "preference": 15,
-        "hostname": "smtp3.hacienda.gob.es",
-        "addresses": [
-          "193.203.200.132"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "smtp4.hacienda.gob.es",
-        "addresses": [
-          "193.203.200.244"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "All nameservers failed to answer the query 132.200.203.193.in-addr.arpa. IN PTR: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "spf": {
     "record": "v=spf1 mx a:smtp1.hacienda.gob.es a:smtp2.hacienda.gob.es a:smtp3.hacienda.gob.es a:smtp4.hacienda.gob.es a:smtp5.hacienda.gob.es include:spf.protection.outlook.com -all",
