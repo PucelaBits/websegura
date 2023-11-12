@@ -45,19 +45,19 @@
     "parsed": {
       "pass": [
         {
-          "value": "13.226.225.15",
+          "value": "99.84.208.14",
           "mechanism": "a"
         },
         {
-          "value": "13.226.225.42",
+          "value": "99.84.208.22",
           "mechanism": "a"
         },
         {
-          "value": "13.226.225.51",
+          "value": "99.84.208.43",
           "mechanism": "a"
         },
         {
-          "value": "13.226.225.62",
+          "value": "99.84.208.79",
           "mechanism": "a"
         },
         {
@@ -272,9 +272,61 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.rtvc.es\n\n1687961196339\n\ngoogle-site-verification=dLlG0mWtxhmEhMgPwGw3HXjzCWP1wD-KRwPCt_OLC1c\n\ngoogle-site-verification=hD1P7FA-yPXZMQtLo7sNQyG14OD6FciHQrEhkpGIKbY\n\nv=spf1 +a +mx +ip4:35.214.246.15 include:_spf.mailspamprotection.com ~all"
+    "record": "v=DMARC1; p=none; fo=1; rua=mailto:noreply@rtvc.es",
+    "valid": true,
+    "location": "rtvc.es",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "1"
+        ],
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "noreply@rtvc.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }

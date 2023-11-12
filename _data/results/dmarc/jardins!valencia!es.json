@@ -18,7 +18,7 @@
     "error": "jardins.valencia.es does not have a SPF TXT record"
   },
   "dmarc": {
-    "record": "v=DMARC1;  p=none;  rua=mailto:postmaster@valencia.es;  ruf=mailto:postmaster@valencia.es;  fo=1",
+    "record": "v=DMARC1; p=quarantine; rua=mailto:postmaster@valencia.es; ruf=mailto:postmaster@valencia.es; fo=1",
     "valid": true,
     "location": "valencia.es",
     "warnings": [],
@@ -28,7 +28,7 @@
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": true
       },
       "rua": {
@@ -80,7 +80,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": false
       }
     }

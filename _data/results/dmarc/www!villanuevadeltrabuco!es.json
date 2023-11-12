@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "dpmdns01.ns-cloud4b.org",
-      "dpmdns03.ns-cloud4b.net",
-      "dpmdns02.ns-cloud4b.com"
+      "dpmdns02.ns-cloud4b.com",
+      "dpmdns03.ns-cloud4b.net"
     ],
     "warnings": []
   },
@@ -16,8 +16,8 @@
         "preference": 10,
         "hostname": "mx.spamexperts.com",
         "addresses": [
-          "2001:550:2:78::ca:100",
-          "38.109.53.20"
+          "2001:550:2:61::2fc:100",
+          "38.111.198.185"
         ]
       },
       {
@@ -48,6 +48,7 @@
       }
     ],
     "warnings": [
+      "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records",
       "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records",
       "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records"
     ]
@@ -730,18 +731,6 @@
                 "mechanism": "a"
               },
               {
-                "value": "2a01:4f8:172:1686::2",
-                "mechanism": "a"
-              },
-              {
-                "value": "2a01:4f8:172:1689::2",
-                "mechanism": "a"
-              },
-              {
-                "value": "2a01:4f8:172:168b::2",
-                "mechanism": "a"
-              },
-              {
                 "value": "2a0d:3000:2100:a008:4::1",
                 "mechanism": "a"
               },
@@ -1102,22 +1091,6 @@
                     },
                     {
                       "value": "38.109.53.39",
-                      "mechanism": "a"
-                    },
-                    {
-                      "value": "88.198.67.41",
-                      "mechanism": "a"
-                    },
-                    {
-                      "value": "88.198.67.44",
-                      "mechanism": "a"
-                    },
-                    {
-                      "value": "94.130.139.116",
-                      "mechanism": "a"
-                    },
-                    {
-                      "value": "94.130.140.62",
                       "mechanism": "a"
                     }
                   ],

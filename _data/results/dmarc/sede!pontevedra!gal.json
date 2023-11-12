@@ -15,7 +15,7 @@
   "spf": {
     "record": null,
     "valid": false,
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "error": "sede.pontevedra.gal does not have a SPF TXT record"
   },
   "dmarc": {
     "record": "v=DMARC1; p=none; sp=none; rua=mailto:dmarc@mailinblue.com!10m; ruf=mailto:dmarc@mailinblue.com!10m; rf=afrf; pct=100; ri=86400",

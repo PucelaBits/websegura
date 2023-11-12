@@ -15,28 +15,67 @@
         "preference": 0,
         "hostname": "distritodigitalcv-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.18",
-          "52.101.68.36",
-          "52.101.73.16",
-          "52.101.73.19",
-          "52.101.73.26",
-          "52.101.73.30"
+          "52.101.68.0",
+          "52.101.68.16",
+          "52.101.68.3",
+          "52.101.73.22",
+          "52.101.73.30",
+          "52.101.73.8"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:eu.zcsend.net include:eu.transmail.net include:spf.protection.outlook.com -all",
+    "record": "v=spf1 include:mx.ovh.com include:eu.zcsend.net include:eu.transmail.net include:spf.protection.outlook.com -all",
     "valid": true,
-    "dns_lookups": 3,
-    "warnings": [],
+    "dns_lookups": 4,
+    "warnings": [
+      "The ptr mechanism should not be used - https://tools.ietf.org/html/rfc7208#section-5.5",
+      "The ptr mechanism should not be used - https://tools.ietf.org/html/rfc7208#section-5.5"
+    ],
     "parsed": {
       "pass": [],
       "neutral": [],
       "softfail": [],
       "fail": [],
       "include": [
+        {
+          "domain": "mx.ovh.com",
+          "record": "v=spf1 ptr:mail-out.ovh.net ptr:mail.ovh.net ip4:8.33.137.105/32 ip4:192.99.77.81/32 ?all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "mail-out.ovh.net",
+                "mechanism": "ptr"
+              },
+              {
+                "value": "mail.ovh.net",
+                "mechanism": "ptr"
+              },
+              {
+                "value": "8.33.137.105/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "192.99.77.81/32",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "neutral"
+          },
+          "warnings": [
+            "The ptr mechanism should not be used - https://tools.ietf.org/html/rfc7208#section-5.5",
+            "The ptr mechanism should not be used - https://tools.ietf.org/html/rfc7208#section-5.5"
+          ]
+        },
         {
           "domain": "eu.zcsend.net",
           "record": "v=spf1 ip4:31.186.226.160/27 ip4:185.20.211.0/25 ip4:185.172.199.0/25 ip4:91.103.152.0/24 ~all",

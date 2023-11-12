@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.cetait.es",
-      "ns2.cetait.es"
+      "ns2.cetait.es",
+      "ns1.cetait.es"
     ],
     "warnings": []
   },
@@ -22,9 +22,33 @@
     "warnings": []
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "All nameservers failed to answer the query teatroromanocartagena.org. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "record": "v=spf1 a mx ip4:82.223.54.207 ~all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "77.230.242.33",
+          "mechanism": "a"
+        },
+        {
+          "value": "mail.teatroromanocartagena.org",
+          "mechanism": "mx"
+        },
+        {
+          "value": "82.223.54.207",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
   },
   "dmarc": {
     "record": null,

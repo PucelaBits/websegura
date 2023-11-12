@@ -13,16 +13,18 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "mx01.dgt.es",
+        "hostname": "mail1.correo.gob.es",
         "addresses": [
-          "212.128.100.149"
+          "185.73.172.122",
+          "185.73.172.123"
         ]
       },
       {
         "preference": 10,
-        "hostname": "mx02.dgt.es",
+        "hostname": "mail2.correo.gob.es",
         "addresses": [
-          "212.128.100.150"
+          "185.73.172.124",
+          "185.73.172.125"
         ]
       }
     ],
@@ -36,11 +38,11 @@
     "parsed": {
       "pass": [
         {
-          "value": "mx01.dgt.es",
+          "value": "mail1.correo.gob.es",
           "mechanism": "mx"
         },
         {
-          "value": "mx02.dgt.es",
+          "value": "mail2.correo.gob.es",
           "mechanism": "mx"
         },
         {

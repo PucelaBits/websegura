@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.nominalia.com",
-      "dns1.nominalia.com"
+      "dns1.nominalia.com",
+      "dns2.nominalia.com"
     ],
     "warnings": []
   },
@@ -47,7 +47,20 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 130.117.89.12 is pluton.iberlayer.com, but the A/AAAA DNS records for pluton.iberlayer.com do not resolve to 130.117.89.12",
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 130.117.89.4 is mercurio.iberlayer.com, but the A/AAAA DNS records for mercurio.iberlayer.com do not resolve to 130.117.89.4",
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 130.117.89.5 is venus.iberlayer.com, but the A/AAAA DNS records for venus.iberlayer.com do not resolve to 130.117.89.5",
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 130.117.89.6 is marte.iberlayer.com, but the A/AAAA DNS records for marte.iberlayer.com do not resolve to 130.117.89.6",
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 80.169.225.36 is luna.iberlayer.com, but the A/AAAA DNS records for luna.iberlayer.com do not resolve to 80.169.225.36",
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 80.169.225.44 is hiperion.iberlayer.com, but the A/AAAA DNS records for hiperion.iberlayer.com do not resolve to 80.169.225.44"
+    ]
   },
   "spf": {
     "record": "v=spf1 ip4:195.235.227.27 include:spf.protection.outlook.com include:iberlayer.com -all",

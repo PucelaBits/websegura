@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns3.dnsxperta.com",
       "ns1.dnsxperta.com",
-      "ns2.dnsxperta.com"
+      "ns2.dnsxperta.com",
+      "ns3.dnsxperta.com"
     ],
     "warnings": []
   },
@@ -16,13 +16,13 @@
         "preference": 0,
         "hostname": "dipsoria-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.0",
-          "52.101.73.1",
-          "52.101.73.12",
-          "52.101.73.15",
+          "52.101.68.16",
+          "52.101.68.21",
+          "52.101.68.32",
+          "52.101.68.5",
+          "52.101.73.16",
           "52.101.73.21",
-          "52.101.73.22",
-          "52.101.73.30"
+          "52.101.73.4"
         ]
       }
     ],
@@ -182,6 +182,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.dipsoria.es\n\nv=spf1 include:spf.protection.outlook.com include:domicenter.net ip4:89.6.107.100/27 ~all\n\ndipsoria.es-099451886\n\n19503350\n\ndipsoria.es- 099451886\n\nMS=ms54615009"
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.dipsoria.es\n\nMS=ms54615009\n\ndipsoria.es-099451886\n\ndipsoria.es- 099451886\n\nv=spf1 include:spf.protection.outlook.com include:domicenter.net ip4:89.6.107.100/27 ~all\n\n19503350"
   }
 }

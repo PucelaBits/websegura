@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.ayto-antigua.es",
-      "ns1.ayto-antigua.es"
+      "ns11.ovh.net",
+      "dns11.ovh.net"
     ],
     "warnings": []
   },
@@ -15,13 +15,13 @@
         "preference": 0,
         "hostname": "aytoantigua-es01b.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.0",
           "52.101.68.16",
+          "52.101.68.18",
           "52.101.68.3",
           "52.101.68.32",
-          "52.101.73.15",
-          "52.101.73.21",
-          "52.101.73.30"
+          "52.101.73.16",
+          "52.101.73.22",
+          "52.101.73.24"
         ]
       }
     ],
@@ -98,53 +98,9 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; adkim=s; aspf=s",
-    "valid": true,
-    "location": "ayto-antigua.es",
-    "warnings": [
-      "rua tag (destination for aggregate reports) not found"
-    ],
-    "tags": {
-      "v": {
-        "value": "DMARC1",
-        "explicit": true
-      },
-      "p": {
-        "value": "quarantine",
-        "explicit": true
-      },
-      "adkim": {
-        "value": "s",
-        "explicit": true
-      },
-      "aspf": {
-        "value": "s",
-        "explicit": true
-      },
-      "fo": {
-        "value": [
-          "0"
-        ],
-        "explicit": false
-      },
-      "pct": {
-        "value": 100,
-        "explicit": false
-      },
-      "rf": {
-        "value": [
-          "afrf"
-        ],
-        "explicit": false
-      },
-      "ri": {
-        "value": 86400,
-        "explicit": false
-      },
-      "sp": {
-        "value": "quarantine",
-        "explicit": false
-      }
-    }
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
   }
 }
