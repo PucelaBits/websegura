@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "rnpro07.com.ub.edu",
-      "rnpro01.com.ub.edu",
       "sun.rediris.es",
+      "rnpro01.com.ub.edu",
       "chico.rediris.es",
+      "rnpro07.com.ub.edu",
       "rnpro04.com.ub.edu"
     ],
     "warnings": []
@@ -18,13 +18,13 @@
         "preference": 5,
         "hostname": "ub-edu.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.3",
-          "52.101.68.36",
+          "52.101.68.32",
           "52.101.73.11",
-          "52.101.73.12",
-          "52.101.73.26",
-          "52.101.73.28",
-          "52.101.73.8"
+          "52.101.73.16",
+          "52.101.73.19",
+          "52.101.73.2",
+          "52.101.73.22",
+          "52.101.73.4"
         ]
       }
     ],
@@ -80,7 +80,7 @@
       "include": [
         {
           "domain": "spf.puc.rediris.es",
-          "record": "v=spf1 ip4:143.55.146.78 ip4:143.55.148.243 ~all",
+          "record": "v=spf1 ip4:143.55.146.78 ip4:143.55.148.243 ip4:130.206.25.38 ~all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -90,6 +90,10 @@
               },
               {
                 "value": "143.55.148.243",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "130.206.25.38",
                 "mechanism": "ip4"
               }
             ],

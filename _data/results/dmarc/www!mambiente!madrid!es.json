@@ -18,7 +18,7 @@
     "error": "mambiente.madrid.es does not have a SPF TXT record"
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; rua=mailto:informesdmarc@madrid.es; ruf=mailto:informesdmarc@madrid.es; fo=1",
+    "record": "v=DMARC1; p=none; rua=mailto:7091677fcff6.a@dmarcinput.com,mailto:informesdmarc@madrid.es; ruf=mailto:7091677fcff6.f@dmarcinput.com,mailto:informesdmarc@madrid.es; fo=1",
     "valid": true,
     "location": "madrid.es",
     "warnings": [],
@@ -35,6 +35,11 @@
         "value": [
           {
             "scheme": "mailto",
+            "address": "7091677fcff6.a@dmarcinput.com",
+            "size_limit": null
+          },
+          {
+            "scheme": "mailto",
             "address": "informesdmarc@madrid.es",
             "size_limit": null
           }
@@ -43,6 +48,11 @@
       },
       "ruf": {
         "value": [
+          {
+            "scheme": "mailto",
+            "address": "7091677fcff6.f@dmarcinput.com",
+            "size_limit": null
+          },
           {
             "scheme": "mailto",
             "address": "informesdmarc@madrid.es",

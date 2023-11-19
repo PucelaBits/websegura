@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.upct.es",
-      "sun.rediris.es",
+      "chico.rediris.es",
       "ns2.upct.es",
-      "chico.rediris.es"
+      "ns1.upct.es",
+      "sun.rediris.es"
     ],
     "warnings": []
   },
@@ -24,7 +24,7 @@
         "preference": 10,
         "hostname": "mxb-006a4e02.gslb.pphosted.com",
         "addresses": [
-          "143.55.148.243"
+          "143.55.146.78"
         ]
       }
     ],
@@ -58,7 +58,7 @@
           "mechanism": "ip4"
         },
         {
-          "value": "52.30.237.151",
+          "value": "52.17.227.35",
           "mechanism": "a"
         },
         {
@@ -66,7 +66,7 @@
           "mechanism": "a"
         },
         {
-          "value": "99.80.14.253",
+          "value": "54.247.33.236",
           "mechanism": "a"
         }
       ],
@@ -76,7 +76,7 @@
       "include": [
         {
           "domain": "spf.puc.rediris.es",
-          "record": "v=spf1 ip4:143.55.146.78 ip4:143.55.148.243 ~all",
+          "record": "v=spf1 ip4:143.55.146.78 ip4:143.55.148.243 ip4:130.206.25.38 ~all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -86,6 +86,10 @@
               },
               {
                 "value": "143.55.148.243",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "130.206.25.38",
                 "mechanism": "ip4"
               }
             ],

@@ -1,48 +1,20 @@
 {
   "domain": "prerromanicoasturiano.es",
   "base_domain": "prerromanicoasturiano.es",
-  "dnssec": false,
+  "dnssec": true,
   "ns": {
     "hostnames": [
-      "ns2.gestiondecuenta.com",
-      "ns.gestiondecuenta.com",
-      "ns4.gestiondecuenta.com",
-      "ns3.gestiondecuenta.com"
+      "ns1.openprovider.nl",
+      "ns2.openprovider.be",
+      "ns3.openprovider.eu"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mx01.hornetsecurity.com",
-        "addresses": [
-          "94.100.132.8"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mx02.hornetsecurity.com",
-        "addresses": [
-          "94.100.136.8"
-        ]
-      },
-      {
-        "preference": 30,
-        "hostname": "mx04.hornetsecurity.com",
-        "addresses": [
-          "94.100.136.7"
-        ]
-      },
-      {
-        "preference": 40,
-        "hostname": "mx03.hornetsecurity.com",
-        "addresses": [
-          "94.100.134.8"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:spf.hornetsecurity.com ip4:88.151.16.0/22 -all",

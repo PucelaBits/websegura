@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.congreso.es",
-      "chico.rediris.es",
       "sun.rediris.es",
-      "dns2.congreso.es"
+      "dns1.congreso.es",
+      "dns2.congreso.es",
+      "chico.rediris.es"
     ],
     "warnings": []
   },
@@ -17,7 +17,7 @@
         "preference": 10,
         "hostname": "mxa-006a4e02.gslb.pphosted.com",
         "addresses": [
-          "143.55.148.243"
+          "143.55.146.78"
         ]
       },
       {
@@ -60,7 +60,7 @@
       "include": [
         {
           "domain": "spf.puc.rediris.es",
-          "record": "v=spf1 ip4:143.55.146.78 ip4:143.55.148.243 ~all",
+          "record": "v=spf1 ip4:143.55.146.78 ip4:143.55.148.243 ip4:130.206.25.38 ~all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -70,6 +70,10 @@
               },
               {
                 "value": "143.55.148.243",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "130.206.25.38",
                 "mechanism": "ip4"
               }
             ],
