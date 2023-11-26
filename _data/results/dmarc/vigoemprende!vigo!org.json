@@ -4,7 +4,7 @@
   "dnssec": false,
   "ns": {
     "hostnames": [],
-    "warnings": []
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "mx": {
     "hosts": [],
@@ -15,74 +15,12 @@
   "spf": {
     "record": null,
     "valid": false,
-    "error": "vigoemprende.vigo.org does not have a SPF TXT record"
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; rua=mailto:postmaster@vigo.org; ruf=mailto:postmaster@vigo.org; sp=quarantine",
-    "valid": true,
-    "location": "vigo.org",
-    "warnings": [],
-    "tags": {
-      "v": {
-        "value": "DMARC1",
-        "explicit": true
-      },
-      "p": {
-        "value": "quarantine",
-        "explicit": true
-      },
-      "rua": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "postmaster@vigo.org",
-            "size_limit": null
-          }
-        ],
-        "explicit": true
-      },
-      "ruf": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "postmaster@vigo.org",
-            "size_limit": null
-          }
-        ],
-        "explicit": true
-      },
-      "sp": {
-        "value": "quarantine",
-        "explicit": true
-      },
-      "adkim": {
-        "value": "r",
-        "explicit": false
-      },
-      "aspf": {
-        "value": "r",
-        "explicit": false
-      },
-      "fo": {
-        "value": [
-          "0"
-        ],
-        "explicit": false
-      },
-      "pct": {
-        "value": 100,
-        "explicit": false
-      },
-      "rf": {
-        "value": [
-          "afrf"
-        ],
-        "explicit": false
-      },
-      "ri": {
-        "value": 86400,
-        "explicit": false
-      }
-    }
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   }
 }

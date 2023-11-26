@@ -22,10 +22,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 195.77.20.28 is mx2ext.gva.es, but the A/AAAA DNS records for mx2ext.gva.es do not resolve to 195.77.20.28"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:193.145.205.216/24 ip4:193.145.206.211/24  ip4:193.145.206.0/25 ip4:195.77.17.0/24 ip4:195.77.18.0/24 ip4:195.77.22.20/24 ip4:193.145.200.20/24 mx:bombersdv.es mx:bombers.dva.gva.es -all",

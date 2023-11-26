@@ -15,13 +15,13 @@
         "preference": 0,
         "hostname": "cofivacasa-com.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.0",
           "52.101.68.16",
-          "52.101.68.3",
-          "52.101.73.11",
-          "52.101.73.19",
-          "52.101.73.22",
-          "52.101.73.24"
+          "52.101.73.12",
+          "52.101.73.15",
+          "52.101.73.2",
+          "52.101.73.30",
+          "52.101.73.4",
+          "52.101.73.8"
         ]
       }
     ],
@@ -101,6 +101,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.cofivacasa.com\n\nMS=ms20998851\n\nv=spf1 include:spf.protection.outlook.com -all"
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.cofivacasa.com\n\nv=spf1 include:spf.protection.outlook.com -all\n\nMS=ms20998851"
   }
 }

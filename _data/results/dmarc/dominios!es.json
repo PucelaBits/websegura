@@ -17,13 +17,13 @@
         "preference": 0,
         "hostname": "dominios-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.0",
-          "52.101.68.36",
-          "52.101.73.1",
+          "52.101.68.21",
+          "52.101.73.15",
           "52.101.73.19",
+          "52.101.73.21",
+          "52.101.73.24",
           "52.101.73.28",
-          "52.101.73.30",
-          "52.101.73.4"
+          "52.101.73.30"
         ]
       }
     ],
@@ -109,7 +109,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; fo=0; rua=mailto:abuse@dominios.es",
+    "record": "v=DMARC1; p=quarantine; rua=mailto:abuse@dominios.es; ruf=mailto:abuse@dominios.es; fo=0; ri=86400; adkim=r; aspf=s",
     "valid": true,
     "location": "dominios.es",
     "warnings": [],
@@ -119,13 +119,7 @@
         "explicit": true
       },
       "p": {
-        "value": "none",
-        "explicit": true
-      },
-      "fo": {
-        "value": [
-          "0"
-        ],
+        "value": "quarantine",
         "explicit": true
       },
       "rua": {
@@ -138,13 +132,33 @@
         ],
         "explicit": true
       },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "abuse@dominios.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": true
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": true
+      },
       "adkim": {
         "value": "r",
-        "explicit": false
+        "explicit": true
       },
       "aspf": {
-        "value": "r",
-        "explicit": false
+        "value": "s",
+        "explicit": true
       },
       "pct": {
         "value": 100,
@@ -156,12 +170,8 @@
         ],
         "explicit": false
       },
-      "ri": {
-        "value": 86400,
-        "explicit": false
-      },
       "sp": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": false
       }
     }

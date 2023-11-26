@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ninot.gva.es",
       "ninot2.gva.es",
       "tirant.gva.es",
+      "ninot.gva.es",
       "tirant2.gva.es"
     ],
     "warnings": []
@@ -30,10 +30,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 195.77.20.28 is mx2ext.gva.es, but the A/AAAA DNS records for mx2ext.gva.es do not resolve to 195.77.20.28"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:mta.gva.es include:mtallistes.gva.es include:spf.difusio.gva.es include:spf.protection.outlook.com include:fgv.ip-zone.com include:spf.ipzmarketing.com -all",

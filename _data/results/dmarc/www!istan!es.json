@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "dpmdns03.ns-cloud4b.net",
-      "dpmdns01.ns-cloud4b.org",
-      "dpmdns02.ns-cloud4b.com"
+      "dpmdns02.ns-cloud4b.com",
+      "dpmdns01.ns-cloud4b.org"
     ],
     "warnings": []
   },
@@ -1172,11 +1172,12 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none",
+    "record": "v=DMARC1; p=none; rua=mailto:dmarc@hispasec.com; ruf=mailto:dmarc@hispasec.com; fo=1",
     "valid": true,
     "location": "istan.es",
     "warnings": [
-      "rua tag (destination for aggregate reports) not found"
+      "hispasec.com does not indicate that it accepts DMARC reports about istan.es - Authorization record not found: istan.es._report._dmarc.hispasec.com IN TXT \"v=DMARC1\"",
+      "hispasec.com does not indicate that it accepts DMARC reports about istan.es - Authorization record not found: istan.es._report._dmarc.hispasec.com IN TXT \"v=DMARC1\""
     ],
     "tags": {
       "v": {
@@ -1187,18 +1188,26 @@
         "value": "none",
         "explicit": true
       },
+      "rua": {
+        "value": "mailto:dmarc@hispasec.com",
+        "explicit": true
+      },
+      "ruf": {
+        "value": "mailto:dmarc@hispasec.com",
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "1"
+        ],
+        "explicit": true
+      },
       "adkim": {
         "value": "r",
         "explicit": false
       },
       "aspf": {
         "value": "r",
-        "explicit": false
-      },
-      "fo": {
-        "value": [
-          "0"
-        ],
         "explicit": false
       },
       "pct": {

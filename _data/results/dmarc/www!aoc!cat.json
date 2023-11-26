@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "dns6.atlassolutions.net",
       "dns2.atlassolutions.net",
-      "dns1.atlassolutions.net",
-      "dns6.atlassolutions.net"
+      "dns1.atlassolutions.net"
     ],
     "warnings": []
   },
@@ -16,20 +16,20 @@
         "preference": 0,
         "hostname": "aoc-cat.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.18",
+          "52.101.68.0",
+          "52.101.68.21",
           "52.101.68.36",
-          "52.101.73.19",
-          "52.101.73.21",
-          "52.101.73.30",
-          "52.101.73.4",
-          "52.101.73.8"
+          "52.101.73.12",
+          "52.101.73.2",
+          "52.101.73.22",
+          "52.101.73.26"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx include:spf1.aoc.cat include:spf.protection.outlook.com include:mail.zendesk.com include:spf-scd.aoc.cat ip4:90.160.147.194 ~all",
+    "record": "v=spf1 mx include:spf1.aoc.cat include:spf.protection.outlook.com include:mail.zendesk.com include:spf-scd.aoc.cat ~all",
     "valid": true,
     "dns_lookups": 7,
     "warnings": [
@@ -40,10 +40,6 @@
         {
           "value": "aoc-cat.mail.protection.outlook.com",
           "mechanism": "mx"
-        },
-        {
-          "value": "90.160.147.194",
-          "mechanism": "ip4"
         }
       ],
       "neutral": [],
@@ -199,14 +195,10 @@
         },
         {
           "domain": "spf-scd.aoc.cat",
-          "record": "v=spf1 mx ip4:90.160.147.194/32 ip4:93.115.204.2/26 ~all",
+          "record": "v=spf1 mx ip4:93.115.204.2/26 ~all",
           "dns_lookups": 1,
           "parsed": {
             "pass": [
-              {
-                "value": "90.160.147.194/32",
-                "mechanism": "ip4"
-              },
               {
                 "value": "93.115.204.2/26",
                 "mechanism": "ip4"

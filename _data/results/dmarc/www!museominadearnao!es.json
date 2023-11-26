@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns3.acens.net",
       "ns7.acens.net",
-      "ns4.acens.net",
-      "ns3.acens.net"
+      "ns4.acens.net"
     ],
     "warnings": []
   },
@@ -27,7 +27,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 195.55.127.94 is mail.hunosa.es, but the A/AAAA DNS records for mail.hunosa.es do not resolve to 195.55.127.94"
+    ]
   },
   "spf": {
     "record": "v=spf1 mx a ip4:195.55.125.164 ip4:195.55.125.162 ip4:195.55.127.94 ~all",

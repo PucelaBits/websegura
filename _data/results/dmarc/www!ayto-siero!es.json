@@ -22,17 +22,12 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:217.76.130.179 include:_spf.serviciodecorreo.es include:spf.protection.outlook.com -all",
+    "record": "v=spf1 include:_spf.serviciodecorreo.es include:spf.protection.outlook.com -all",
     "valid": true,
     "dns_lookups": 4,
     "warnings": [],
     "parsed": {
-      "pass": [
-        {
-          "value": "217.76.130.179",
-          "mechanism": "ip4"
-        }
-      ],
+      "pass": [],
       "neutral": [],
       "softfail": [],
       "fail": [],
@@ -232,9 +227,71 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=reject; rua=mailto:dmarc@ayto-siero.es; ruf=mailto:dmarc@ayto-siero.es",
+    "valid": true,
+    "location": "ayto-siero.es",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "reject",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc@ayto-siero.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc@ayto-siero.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "reject",
+        "explicit": false
+      }
+    }
   }
 }

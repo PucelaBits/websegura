@@ -29,7 +29,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:spf.ipzmarketing.com +a +mx +ip4:213.0.38.186 +ip4:213.0.38.185 ~all",
+    "record": "v=spf1 include:spf.ipzmarketing.com +a +mx +ip4:213.0.38.186 +ip4:213.0.38.185 -all",
     "valid": true,
     "dns_lookups": 3,
     "warnings": [],
@@ -100,13 +100,75 @@
       ],
       "redirect": null,
       "exp": null,
-      "all": "softfail"
+      "all": "fail"
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=none; fo=1; rua=mailto:rua@pamplona.es; ruf=mailto:ruf@pamplona.es",
+    "valid": true,
+    "location": "pamplona.es",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "1"
+        ],
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "rua@pamplona.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "ruf@pamplona.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }
