@@ -38,7 +38,7 @@
   "spf": {
     "record": "v=spf1 +a +mx +ip4:35.214.194.97 include:_spf.mailspamprotection.com ~all",
     "valid": true,
-    "dns_lookups": 6,
+    "dns_lookups": 3,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -69,182 +69,31 @@
       "include": [
         {
           "domain": "_spf.mailspamprotection.com",
-          "record": "v=spf1 include:_nb1.mailspamprotection.com include:_nb2.mailspamprotection.com include:_nb3.mailspamprotection.com ~all",
-          "dns_lookups": 3,
+          "record": "v=spf1 ip4:185.56.84.0/24 ip4:185.56.85.0/24 ip4:185.56.86.0/24 ip4:185.56.87.0/24 ~all",
+          "dns_lookups": 0,
           "parsed": {
-            "pass": [],
+            "pass": [
+              {
+                "value": "185.56.84.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.56.85.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.56.86.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.56.87.0/24",
+                "mechanism": "ip4"
+              }
+            ],
             "neutral": [],
             "softfail": [],
             "fail": [],
-            "include": [
-              {
-                "domain": "_nb1.mailspamprotection.com",
-                "record": "v=spf1 ip4:104.154.162.117 ip4:104.197.223.236 ip4:34.66.115.54 ip4:34.69.117.62 ip4:34.70.123.227 ip4:34.70.37.227 ip4:35.184.95.72 ip4:35.192.135.139 ip4:35.192.5.156 ip4:35.202.176.239 ~all",
-                "dns_lookups": 0,
-                "parsed": {
-                  "pass": [
-                    {
-                      "value": "104.154.162.117",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "104.197.223.236",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "34.66.115.54",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "34.69.117.62",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "34.70.123.227",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "34.70.37.227",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "35.184.95.72",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "35.192.135.139",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "35.192.5.156",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "35.202.176.239",
-                      "mechanism": "ip4"
-                    }
-                  ],
-                  "neutral": [],
-                  "softfail": [],
-                  "fail": [],
-                  "include": [],
-                  "redirect": null,
-                  "exp": null,
-                  "all": "softfail"
-                },
-                "warnings": []
-              },
-              {
-                "domain": "_nb2.mailspamprotection.com",
-                "record": "v=spf1 ip4:35.208.121.216 ip4:35.206.105.37 ip4:35.208.244.18 ip4:35.208.10.124 ip4:35.209.67.207 ip4:35.222.126.238 ip4:35.223.167.9 ip4:35.225.203.128 ip4:35.232.122.203 ip4:35.232.58.54 ~all",
-                "dns_lookups": 0,
-                "parsed": {
-                  "pass": [
-                    {
-                      "value": "35.208.121.216",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "35.206.105.37",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "35.208.244.18",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "35.208.10.124",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "35.209.67.207",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "35.222.126.238",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "35.223.167.9",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "35.225.203.128",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "35.232.122.203",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "35.232.58.54",
-                      "mechanism": "ip4"
-                    }
-                  ],
-                  "neutral": [],
-                  "softfail": [],
-                  "fail": [],
-                  "include": [],
-                  "redirect": null,
-                  "exp": null,
-                  "all": "softfail"
-                },
-                "warnings": []
-              },
-              {
-                "domain": "_nb3.mailspamprotection.com",
-                "record": "v=spf1 ip4:35.238.96.225 ip4:35.206.120.11 ip4:35.225.161.143 ip4:104.197.42.21 ip4:35.224.11.180 ip4:185.56.84.0/24 ip4:185.56.85.0/24 ip4:185.56.86.0/24 ip4:185.56.87.0/24 ~all",
-                "dns_lookups": 0,
-                "parsed": {
-                  "pass": [
-                    {
-                      "value": "35.238.96.225",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "35.206.120.11",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "35.225.161.143",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "104.197.42.21",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "35.224.11.180",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "185.56.84.0/24",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "185.56.85.0/24",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "185.56.86.0/24",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "185.56.87.0/24",
-                      "mechanism": "ip4"
-                    }
-                  ],
-                  "neutral": [],
-                  "softfail": [],
-                  "fail": [],
-                  "include": [],
-                  "redirect": null,
-                  "exp": null,
-                  "all": "softfail"
-                },
-                "warnings": []
-              }
-            ],
+            "include": [],
             "redirect": null,
             "exp": null,
             "all": "softfail"

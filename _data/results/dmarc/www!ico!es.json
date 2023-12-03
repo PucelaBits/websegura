@@ -32,17 +32,11 @@
     "record": "v=spf1 mx ip4:90.160.63.192/26 include:_pmta2.antevenio.com include:spf.protection.outlook.com include:spf-moodle.isyc.es ~all",
     "valid": true,
     "dns_lookups": 6,
-    "warnings": [],
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ],
     "parsed": {
       "pass": [
-        {
-          "value": "mail.ico.es",
-          "mechanism": "mx"
-        },
-        {
-          "value": "mail2.ico.es",
-          "mechanism": "mx"
-        },
         {
           "value": "90.160.63.192/26",
           "mechanism": "ip4"

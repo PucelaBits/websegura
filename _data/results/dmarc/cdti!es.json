@@ -17,12 +17,12 @@
         "preference": 10,
         "hostname": "cdti-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.21",
-          "52.101.73.15",
-          "52.101.73.19",
+          "52.101.68.18",
+          "52.101.68.5",
+          "52.101.73.1",
+          "52.101.73.16",
           "52.101.73.21",
           "52.101.73.24",
-          "52.101.73.28",
           "52.101.73.30"
         ]
       }
@@ -169,9 +169,7 @@
     "record": "v=DMARC1; p=none; sp=none; rua=mailto:dmarc@mailinblue.com!10m; ruf=mailto:dmarc@mailinblue.com!10m; rf=afrf; pct=100; ri=86400",
     "valid": true,
     "location": "cdti.es",
-    "warnings": [
-      "Failed to retrieve MX records for the domain of rua email address dmarc@mailinblue.com - The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ],
+    "warnings": [],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -186,7 +184,13 @@
         "explicit": true
       },
       "rua": {
-        "value": "mailto:dmarc@mailinblue.com!10m",
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc@mailinblue.com",
+            "size_limit": "10m"
+          }
+        ],
         "explicit": true
       },
       "ruf": {

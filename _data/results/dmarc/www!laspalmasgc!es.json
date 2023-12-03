@@ -4,86 +4,15 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns11.servicio-online.net",
       "ns12.servicio-online.net",
+      "ns11.servicio-online.net",
       "ns10.servicio-online.net"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 1,
-        "hostname": "mx01.hornetsecurity.com",
-        "addresses": [
-          "94.100.132.8"
-        ]
-      },
-      {
-        "preference": 5,
-        "hostname": "mx02.hornetsecurity.com",
-        "addresses": [
-          "94.100.136.8"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "mx03.hornetsecurity.com",
-        "addresses": [
-          "94.100.134.8"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mx04.hornetsecurity.com",
-        "addresses": [
-          "94.100.136.7"
-        ]
-      },
-      {
-        "preference": 40,
-        "hostname": "mx01.correolimpio.telefonica.es",
-        "addresses": [
-          "213.99.38.71",
-          "213.99.38.76",
-          "213.99.38.77",
-          "213.99.38.78",
-          "217.124.240.201",
-          "81.47.205.101",
-          "81.47.205.107",
-          "81.47.205.108",
-          "81.47.205.113",
-          "81.47.205.114",
-          "81.47.205.118",
-          "81.47.205.119",
-          "81.47.205.122",
-          "81.47.205.124",
-          "81.47.205.99"
-        ]
-      },
-      {
-        "preference": 40,
-        "hostname": "mx02.correolimpio.telefonica.es",
-        "addresses": [
-          "213.99.38.71",
-          "213.99.38.76",
-          "213.99.38.77",
-          "213.99.38.78",
-          "217.124.240.201",
-          "81.47.205.101",
-          "81.47.205.107",
-          "81.47.205.108",
-          "81.47.205.113",
-          "81.47.205.114",
-          "81.47.205.118",
-          "81.47.205.119",
-          "81.47.205.122",
-          "81.47.205.124",
-          "81.47.205.99"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com -all",

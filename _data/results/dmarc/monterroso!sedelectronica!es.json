@@ -7,8 +7,29 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "in1-smtp.messagingengine.com",
+        "addresses": [
+          "103.168.172.216",
+          "103.168.172.217",
+          "103.168.172.218",
+          "103.168.172.219",
+          "103.168.172.220",
+          "103.168.172.221"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "in2-smtp.messagingengine.com",
+        "addresses": [
+          "64.147.123.51",
+          "64.147.123.52"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": null,

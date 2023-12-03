@@ -15,22 +15,21 @@
         "preference": 10,
         "hostname": "puertoscanarios-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.16",
-          "52.101.68.3",
+          "104.47.12.36",
+          "52.101.68.0",
           "52.101.68.36",
-          "52.101.73.16",
-          "52.101.73.26",
-          "52.101.73.6",
-          "52.101.73.8"
+          "52.101.73.2",
+          "52.101.73.21",
+          "52.101.73.6"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:spf.protection.outlook.com include:spf.mailjet.com  -all",
+    "record": "v=spf1 include:spf.protection.outlook.com include:spf.mailjet.com  include:_5e72d27e7c2305b709dfa3abcbfbc190.spf.dnssmarthost.net -all",
     "valid": true,
-    "dns_lookups": 2,
+    "dns_lookups": 4,
     "warnings": [],
     "parsed": {
       "pass": [],
@@ -118,6 +117,56 @@
             "softfail": [],
             "fail": [],
             "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "_5e72d27e7c2305b709dfa3abcbfbc190.spf.dnssmarthost.net",
+          "record": "v=spf1 include:_spf.mailspamprotection.com ~all",
+          "dns_lookups": 1,
+          "parsed": {
+            "pass": [],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [
+              {
+                "domain": "_spf.mailspamprotection.com",
+                "record": "v=spf1 ip4:185.56.84.0/24 ip4:185.56.85.0/24 ip4:185.56.86.0/24 ip4:185.56.87.0/24 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "185.56.84.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.56.85.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.56.86.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.56.87.0/24",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              }
+            ],
             "redirect": null,
             "exp": null,
             "all": "softfail"

@@ -3,8 +3,11 @@
   "base_domain": "ayto-antigua.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hostnames": [
+      "dns11.ovh.net",
+      "ns11.ovh.net"
+    ],
+    "warnings": []
   },
   "mx": {
     "hosts": [
@@ -13,12 +16,12 @@
         "hostname": "aytoantigua-es01b.mail.protection.outlook.com",
         "addresses": [
           "52.101.68.16",
-          "52.101.68.21",
-          "52.101.68.32",
-          "52.101.68.5",
-          "52.101.73.16",
-          "52.101.73.28",
-          "52.101.73.4"
+          "52.101.68.36",
+          "52.101.73.1",
+          "52.101.73.15",
+          "52.101.73.22",
+          "52.101.73.30",
+          "52.101.73.6"
         ]
       }
     ],

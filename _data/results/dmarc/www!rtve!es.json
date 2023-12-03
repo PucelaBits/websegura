@@ -22,7 +22,7 @@
         "preference": 10,
         "hostname": "mxb-00626c01.gslb.pphosted.com",
         "addresses": [
-          "143.55.144.49"
+          "205.220.185.106"
         ]
       }
     ],
@@ -35,7 +35,7 @@
     "error": "The domain %{ir}.%{v}.%{d}.spf.has.pphosted.com does not exist"
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com",
+    "record": "v=DMARC1; p=reject; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com",
     "valid": true,
     "location": "rtve.es",
     "warnings": [],
@@ -45,7 +45,7 @@
         "explicit": true
       },
       "p": {
-        "value": "quarantine",
+        "value": "reject",
         "explicit": true
       },
       "fo": {
@@ -97,7 +97,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "quarantine",
+        "value": "reject",
         "explicit": false
       }
     }

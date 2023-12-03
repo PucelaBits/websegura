@@ -15,8 +15,8 @@
         "preference": 0,
         "hostname": "manises-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.17.138",
-          "104.47.17.74"
+          "104.47.17.74",
+          "104.47.18.74"
         ]
       }
     ],
@@ -96,6 +96,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.manises.es\n\nv=spf1 include:spf.protection.outlook.com -all\n\nMS=ms96836429\n\ngoogle-site-verification=IDapQQ8AJ4al0WzrS2RLV9Xyh4jr6Q1HNnIpyLJsZ50"
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.manises.es\n\ngoogle-site-verification=IDapQQ8AJ4al0WzrS2RLV9Xyh4jr6Q1HNnIpyLJsZ50\n\nMS=ms96836429\n\nv=spf1 include:spf.protection.outlook.com -all"
   }
 }

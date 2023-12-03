@@ -13,22 +13,11 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "mx1-eu1.ppe-hosted.com",
-        "addresses": [
-          "185.132.181.16",
-          "91.209.104.155"
-        ]
+        "hostname": "_mx1-eu1.ppe-hosted.com",
+        "addresses": []
       },
       {
         "preference": 10,
-        "hostname": "mx2-eu1.ppe-hosted.com",
-        "addresses": [
-          "185.132.181.17",
-          "91.209.104.156"
-        ]
-      },
-      {
-        "preference": 20,
         "hostname": "poster1i.iberlayer.com",
         "addresses": [
           "130.117.89.12",
@@ -37,9 +26,41 @@
           "130.117.89.5",
           "130.117.89.6"
         ]
+      },
+      {
+        "preference": 20,
+        "hostname": "poster4i.iberlayer.com",
+        "addresses": [
+          "80.169.225.36",
+          "80.169.225.37",
+          "80.169.225.38",
+          "80.169.225.44"
+        ]
+      },
+      {
+        "preference": 30,
+        "hostname": "poster2i.iberlayer.com",
+        "addresses": [
+          "185.136.219.26"
+        ]
+      },
+      {
+        "preference": 40,
+        "hostname": "poster3i.iberlayer.com",
+        "addresses": [
+          "185.136.218.5"
+        ]
+      },
+      {
+        "preference": 50,
+        "hostname": "_mx2-eu1.ppe-hosted.com",
+        "addresses": []
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The domain _mx1-eu1.ppe-hosted.com does not exist",
+      "The domain _mx2-eu1.ppe-hosted.com does not exist"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com a:dispatch-eu.ppe-hosted.com -all",

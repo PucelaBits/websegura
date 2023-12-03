@@ -47,7 +47,12 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 130.117.89.5 is venus.iberlayer.com, but the A/AAAA DNS records for venus.iberlayer.com do not resolve to 130.117.89.5",
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 130.117.89.6 is marte.iberlayer.com, but the A/AAAA DNS records for marte.iberlayer.com do not resolve to 130.117.89.6"
+    ]
   },
   "spf": {
     "record": "v=spf1 ip4:195.235.227.27 include:spf.protection.outlook.com include:iberlayer.com -all",
