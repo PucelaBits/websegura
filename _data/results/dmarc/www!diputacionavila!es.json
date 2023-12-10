@@ -5,9 +5,9 @@
   "ns": {
     "hostnames": [
       "ns1.diputacionavila.es",
-      "ns2.diputacionavila.es",
+      "ns4.diputacionavila.es",
       "ns3.diputacionavila.es",
-      "ns4.diputacionavila.es"
+      "ns2.diputacionavila.es"
     ],
     "warnings": []
   },
@@ -21,7 +21,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 194.224.225.130 is diputacionavila.es, but the A/AAAA DNS records for diputacionavila.es do not resolve to 194.224.225.130"
+    ]
   },
   "spf": {
     "record": "v=spf1 mx ip4:194.224.225.128/29  ip4:91.205.126.0/24 -all",

@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns06.ns-cloud4b.net",
-      "ns08.ns-cloud4b.com"
+      "ns08.ns-cloud4b.com",
+      "ns06.ns-cloud4b.net"
     ],
     "warnings": []
   },
@@ -16,7 +16,7 @@
         "hostname": "aspmx.l.google.com",
         "addresses": [
           "142.251.177.27",
-          "2607:f8b0:4023:1401::1b"
+          "2607:f8b0:4023:1417::1a"
         ]
       },
       {
@@ -31,7 +31,7 @@
         "preference": 20,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "172.253.62.26",
+          "172.253.62.27",
           "2607:f8b0:4004:c07::1a"
         ]
       },
@@ -48,7 +48,7 @@
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
           "209.85.202.26",
-          "2a00:1450:400b:c00::1a"
+          "2a00:1450:400b:c00::1b"
         ]
       }
     ],
@@ -259,66 +259,9 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=reject; rua=mailto:cpintos@dipsegovia.es, mailto:cpintos@dipsegovia.es;pct=100; adkim=s; aspf=s",
-    "valid": true,
-    "location": "dipsegovia.es",
-    "warnings": [],
-    "tags": {
-      "v": {
-        "value": "DMARC1",
-        "explicit": true
-      },
-      "p": {
-        "value": "reject",
-        "explicit": true
-      },
-      "rua": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "cpintos@dipsegovia.es",
-            "size_limit": null
-          },
-          {
-            "scheme": "mailto",
-            "address": "cpintos@dipsegovia.es",
-            "size_limit": null
-          }
-        ],
-        "explicit": true
-      },
-      "pct": {
-        "value": 100,
-        "explicit": true
-      },
-      "adkim": {
-        "value": "s",
-        "explicit": true
-      },
-      "aspf": {
-        "value": "s",
-        "explicit": true
-      },
-      "fo": {
-        "value": [
-          "0"
-        ],
-        "explicit": false
-      },
-      "rf": {
-        "value": [
-          "afrf"
-        ],
-        "explicit": false
-      },
-      "ri": {
-        "value": 86400,
-        "explicit": false
-      },
-      "sp": {
-        "value": "reject",
-        "explicit": false
-      }
-    }
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   }
 }

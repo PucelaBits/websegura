@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.cdmon.net",
-      "ns5.cdmondns-01.com",
       "ns3.cdmon.net",
       "ns4.cdmondns-01.org",
+      "ns1.cdmon.net",
+      "ns5.cdmondns-01.com",
       "ns2.cdmon.net"
     ],
     "warnings": []
@@ -38,11 +38,9 @@
         "preference": 30,
         "hostname": "lastmx.spamexperts.net",
         "addresses": [
-          "130.117.53.188",
           "149.13.75.27",
           "2001:550:2:61::2fc:100",
           "2001:550:2:9::280:100",
-          "2001:978:2:2c::137:100",
           "2001:978:2:7::162:100",
           "38.111.198.185",
           "38.89.254.156"
@@ -148,11 +146,39 @@
                 "mechanism": "a"
               },
               {
+                "value": "130.117.53.102",
+                "mechanism": "a"
+              },
+              {
+                "value": "130.117.53.103",
+                "mechanism": "a"
+              },
+              {
                 "value": "130.117.53.25",
                 "mechanism": "a"
               },
               {
                 "value": "130.117.53.26",
+                "mechanism": "a"
+              },
+              {
+                "value": "130.117.53.55",
+                "mechanism": "a"
+              },
+              {
+                "value": "130.117.53.57",
+                "mechanism": "a"
+              },
+              {
+                "value": "130.117.53.96",
+                "mechanism": "a"
+              },
+              {
+                "value": "130.117.53.97",
+                "mechanism": "a"
+              },
+              {
+                "value": "130.117.54.71",
                 "mechanism": "a"
               },
               {
@@ -204,6 +230,10 @@
                 "mechanism": "a"
               },
               {
+                "value": "149.13.73.37",
+                "mechanism": "a"
+              },
+              {
                 "value": "149.13.73.4",
                 "mechanism": "a"
               },
@@ -225,6 +255,22 @@
               },
               {
                 "value": "149.13.75.20",
+                "mechanism": "a"
+              },
+              {
+                "value": "154.59.193.137",
+                "mechanism": "a"
+              },
+              {
+                "value": "154.59.193.138",
+                "mechanism": "a"
+              },
+              {
+                "value": "154.59.193.49",
+                "mechanism": "a"
+              },
+              {
+                "value": "154.59.193.50",
                 "mechanism": "a"
               },
               {
@@ -564,6 +610,18 @@
                 "mechanism": "a"
               },
               {
+                "value": "2001:978:2:2f::5:109",
+                "mechanism": "a"
+              },
+              {
+                "value": "2001:978:2:2f::5:110",
+                "mechanism": "a"
+              },
+              {
+                "value": "2001:978:2:2f::5:111",
+                "mechanism": "a"
+              },
+              {
                 "value": "2001:978:2:6::20:11",
                 "mechanism": "a"
               },
@@ -589,6 +647,14 @@
               },
               {
                 "value": "2001:978:2:6::f:101",
+                "mechanism": "a"
+              },
+              {
+                "value": "2001:978:2:6::f:103",
+                "mechanism": "a"
+              },
+              {
+                "value": "2001:978:2:6::f:104",
                 "mechanism": "a"
               },
               {

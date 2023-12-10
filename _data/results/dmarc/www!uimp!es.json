@@ -1,10 +1,17 @@
 {
   "domain": "uimp.es",
   "base_domain": "uimp.es",
-  "dnssec": false,
+  "dnssec": true,
   "ns": {
-    "hostnames": [],
-    "error": "All nameservers failed to answer the query uimp.es. IN NS: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "hostnames": [
+      "ns1.age.gob.es",
+      "ns2.age.gob.es",
+      "artemis.ttd.net",
+      "cloudflare",
+      "offcorrmad.uimp.es",
+      "suimpdnsmad01.uimp.es"
+    ],
+    "warnings": []
   },
   "mx": {
     "hosts": [
@@ -12,8 +19,8 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.250.123.26",
-          "2607:f8b0:4023:1404::1b"
+          "142.251.177.27",
+          "2607:f8b0:4023:1407::1b"
         ]
       },
       {
@@ -21,7 +28,7 @@
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
           "108.177.12.26",
-          "2607:f8b0:400c:c08::1a"
+          "2607:f8b0:400c:c08::1b"
         ]
       },
       {
@@ -29,15 +36,15 @@
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
           "172.253.62.26",
-          "2607:f8b0:4004:c07::1b"
+          "2607:f8b0:4004:c07::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "2800:3f0:4003:c00::1b",
-          "64.233.186.27"
+          "2800:3f0:4003:c00::1a",
+          "64.233.186.26"
         ]
       },
       {
@@ -50,7 +57,7 @@
       }
     ],
     "warnings": [
-      "2800:3f0:4003:c00::1b does not have any reverse DNS (PTR) records"
+      "2800:3f0:4003:c00::1a does not have any reverse DNS (PTR) records"
     ]
   },
   "spf": {

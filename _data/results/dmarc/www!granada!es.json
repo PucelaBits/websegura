@@ -3,11 +3,8 @@
   "base_domain": "granada.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "ns.granada.org",
-      "ns2.granada.org"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "mx": {
     "hosts": [
@@ -15,8 +12,8 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.251.177.26",
-          "2607:f8b0:4023:140d::1a"
+          "142.250.123.26",
+          "2607:f8b0:4023:1407::1b"
         ]
       },
       {
@@ -31,15 +28,15 @@
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "172.253.62.26",
-          "2607:f8b0:4004:c07::1b"
+          "172.253.62.27",
+          "2607:f8b0:4004:c07::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "2800:3f0:4003:c00::1a",
+          "2800:3f0:4003:c00::1b",
           "64.233.186.26"
         ]
       },
@@ -47,13 +44,13 @@
         "preference": 10,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "209.85.202.27",
+          "209.85.202.26",
           "2a00:1450:400b:c00::1a"
         ]
       }
     ],
     "warnings": [
-      "2800:3f0:4003:c00::1a does not have any reverse DNS (PTR) records"
+      "2800:3f0:4003:c00::1b does not have any reverse DNS (PTR) records"
     ]
   },
   "spf": {

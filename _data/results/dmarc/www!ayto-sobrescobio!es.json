@@ -3,61 +3,22 @@
   "base_domain": "ayto-sobrescobio.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "ns4.infofuturo.net",
-      "ns5.infofuturo.net"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 0,
-        "hostname": "correo.ayto-sobrescobio.es",
-        "addresses": [
-          "37.153.90.131"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
-    "record": "v=spf1 ip4:37.153.90.131 +mx +a +ip4:37.153.90.139 ~all",
-    "valid": true,
-    "dns_lookups": 2,
-    "warnings": [],
-    "parsed": {
-      "pass": [
-        {
-          "value": "37.153.90.131",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "correo.ayto-sobrescobio.es",
-          "mechanism": "mx"
-        },
-        {
-          "value": "212.89.23.124",
-          "mechanism": "a"
-        },
-        {
-          "value": "37.153.90.139",
-          "mechanism": "ip4"
-        }
-      ],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [],
-      "redirect": null,
-      "exp": null,
-      "all": "softfail"
-    }
+    "record": null,
+    "valid": false,
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "dmarc": {
     "record": null,
     "valid": false,
     "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   }
 }

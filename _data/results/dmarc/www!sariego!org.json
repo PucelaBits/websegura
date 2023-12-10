@@ -4,11 +4,11 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.cdmon.net",
-      "ns4.cdmondns-01.org",
       "ns1.cdmon.net",
       "ns3.cdmon.net",
-      "ns5.cdmondns-01.com"
+      "ns4.cdmondns-01.org",
+      "ns5.cdmondns-01.com",
+      "ns2.cdmon.net"
     ],
     "warnings": []
   },
@@ -26,62 +26,9 @@
   },
   "spf": {
     "record": "v=spf1 mx a include:spf.sentidocomun.es -all",
-    "valid": true,
-    "dns_lookups": 3,
+    "valid": false,
     "warnings": [],
-    "parsed": {
-      "pass": [
-        {
-          "value": "correo.sentidocomun.es",
-          "mechanism": "mx"
-        },
-        {
-          "value": "212.89.23.124",
-          "mechanism": "a"
-        }
-      ],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [
-        {
-          "domain": "spf.sentidocomun.es",
-          "record": "v=spf1 ip4:154.58.16.69 ip4:154.58.16.49 ip4:154.58.16.65 ip4:54.217.206.198 -all",
-          "dns_lookups": 0,
-          "parsed": {
-            "pass": [
-              {
-                "value": "154.58.16.69",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "154.58.16.49",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "154.58.16.65",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "54.217.206.198",
-                "mechanism": "ip4"
-              }
-            ],
-            "neutral": [],
-            "softfail": [],
-            "fail": [],
-            "include": [],
-            "redirect": null,
-            "exp": null,
-            "all": "fail"
-          },
-          "warnings": []
-        }
-      ],
-      "redirect": null,
-      "exp": null,
-      "all": "fail"
-    }
+    "error": "spf.sentidocomun.es: Expected mechanism at position 94 in: v=spf1 ip4:154.58.16.69 ip4:154.58.16.49 ip4:154.58.16.65 ip4:54.217.206.198 -ip4:85.152.54.4 -ipv:212.227.126.187-all"
   },
   "dmarc": {
     "record": null,

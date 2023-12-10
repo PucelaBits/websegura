@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.cesca.cat",
       "ns1.cesca.cat",
-      "ns1.upc.edu",
-      "ns2.upc.edu"
+      "ns2.upc.edu",
+      "ns2.cesca.cat",
+      "ns1.upc.edu"
     ],
     "warnings": []
   },
@@ -17,15 +17,15 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.251.176.26",
-          "2607:f8b0:4023:1401::1a"
+          "142.251.166.27",
+          "2607:f8b0:4023:1417::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "108.177.12.27",
+          "108.177.12.26",
           "2607:f8b0:400c:c08::1a"
         ]
       },
@@ -33,7 +33,7 @@
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "172.253.62.27",
+          "172.253.62.26",
           "2607:f8b0:4004:c07::1a"
         ]
       },
@@ -41,7 +41,7 @@
         "preference": 10,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "2800:3f0:4003:c00::1a",
+          "2800:3f0:4003:c00::1b",
           "64.233.186.27"
         ]
       },
@@ -55,7 +55,7 @@
       }
     ],
     "warnings": [
-      "2800:3f0:4003:c00::1a does not have any reverse DNS (PTR) records"
+      "2800:3f0:4003:c00::1b does not have any reverse DNS (PTR) records"
     ]
   },
   "spf": {
