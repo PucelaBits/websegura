@@ -1,16 +1,16 @@
 {
   "algorithm_version": 2,
-  "end_time": "Thu, 14 Dec 2023 00:09:14 GMT",
-  "grade": "D+",
+  "end_time": "Sat, 16 Dec 2023 00:11:37 GMT",
+  "grade": "B",
   "hidden": false,
   "likelihood_indicator": "MEDIUM",
   "response_headers": {
     "Connection": "Keep-Alive",
     "Content-Encoding": "gzip",
-    "Content-Length": "25513",
+    "Content-Length": "25511",
     "Content-Security-Policy": "default-src https: blob: 'unsafe-inline' 'unsafe-eval'; img-src data: https:",
     "Content-Type": "text/html; charset=UTF-8",
-    "Date": "Thu, 14 Dec 2023 00:09:02 GMT",
+    "Date": "Sat, 16 Dec 2023 00:11:34 GMT",
     "Feature-Policy": "microphone 'self'; payment 'none'; sync-xhr 'self'",
     "Keep-Alive": "timeout=5, max=100",
     "Referrer-Policy": "same-origin",
@@ -21,12 +21,12 @@
     "X-Frame-Options": "SAMEORIGIN",
     "X-XSS-Protection": "1; mode=block"
   },
-  "scan_id": 45452125,
-  "score": 40,
-  "start_time": "Thu, 14 Dec 2023 00:08:05 GMT",
+  "scan_id": 45509340,
+  "score": 70,
+  "start_time": "Sat, 16 Dec 2023 00:11:31 GMT",
   "state": "FINISHED",
   "status_code": 200,
-  "tests_failed": 3,
-  "tests_passed": 9,
+  "tests_failed": 2,
+  "tests_passed": 10,
   "tests_quantity": 12
 }
