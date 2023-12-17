@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1080.ui-dns.biz",
       "ns1080.ui-dns.com",
-      "ns1080.ui-dns.de",
-      "ns1080.ui-dns.org"
+      "ns1080.ui-dns.biz",
+      "ns1080.ui-dns.org",
+      "ns1080.ui-dns.de"
     ],
     "warnings": []
   },
@@ -15,29 +15,13 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "mx1-eu.mtaroutes.com",
-        "addresses": [
-          "149.13.75.27",
-          "2001:978:2:7::162:100"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mx2-eu.mtaroutes.com",
-        "addresses": [
-          "149.13.75.27",
-          "2001:978:2:7::162:100"
-        ]
-      },
-      {
-        "preference": 30,
         "hostname": "mx00.1and1.es",
         "addresses": [
           "212.227.15.41"
         ]
       },
       {
-        "preference": 40,
+        "preference": 20,
         "hostname": "mx01.1and1.es",
         "addresses": [
           "217.72.192.67"
@@ -53,14 +37,6 @@
     "warnings": [],
     "parsed": {
       "pass": [
-        {
-          "value": "mx1-eu.mtaroutes.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "mx2-eu.mtaroutes.com",
-          "mechanism": "mx"
-        },
         {
           "value": "mx00.1and1.es",
           "mechanism": "mx"

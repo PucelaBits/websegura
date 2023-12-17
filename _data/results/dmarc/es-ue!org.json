@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.siteground.net",
-      "ns1.siteground.net"
+      "ns1.siteground.net",
+      "ns2.siteground.net"
     ],
     "warnings": []
   },
@@ -36,9 +36,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 +a +mx +ip4:35.214.194.97 include:_spf.mailspamprotection.com ~all",
+    "record": "v=spf1 +a +mx +ip4:35.214.194.97  include:_42ff7857e6b57b71f1e0dddee0c4726a.spf.dnssmarthost.net ~all",
     "valid": true,
-    "dns_lookups": 3,
+    "dns_lookups": 4,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -68,32 +68,49 @@
       "fail": [],
       "include": [
         {
-          "domain": "_spf.mailspamprotection.com",
-          "record": "v=spf1 ip4:185.56.84.0/24 ip4:185.56.85.0/24 ip4:185.56.86.0/24 ip4:185.56.87.0/24 ~all",
-          "dns_lookups": 0,
+          "domain": "_42ff7857e6b57b71f1e0dddee0c4726a.spf.dnssmarthost.net",
+          "record": "v=spf1 include:_spf.mailspamprotection.com ~all",
+          "dns_lookups": 1,
           "parsed": {
-            "pass": [
-              {
-                "value": "185.56.84.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "185.56.85.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "185.56.86.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "185.56.87.0/24",
-                "mechanism": "ip4"
-              }
-            ],
+            "pass": [],
             "neutral": [],
             "softfail": [],
             "fail": [],
-            "include": [],
+            "include": [
+              {
+                "domain": "_spf.mailspamprotection.com",
+                "record": "v=spf1 ip4:185.56.84.0/24 ip4:185.56.85.0/24 ip4:185.56.86.0/24 ip4:185.56.87.0/24 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "185.56.84.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.56.85.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.56.86.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.56.87.0/24",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              }
+            ],
             "redirect": null,
             "exp": null,
             "all": "softfail"

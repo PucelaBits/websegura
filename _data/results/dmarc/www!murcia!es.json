@@ -4,27 +4,15 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.murcia.es",
-      "dns2.murcia.es"
+      "dns2.murcia.es",
+      "dns1.murcia.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "correo.murcia.es",
-        "addresses": []
-      },
-      {
-        "preference": 20,
-        "hostname": "correo2.murcia.es",
-        "addresses": []
-      }
-    ],
+    "hosts": [],
     "warnings": [
-      "The domain correo.murcia.es does not exist",
-      "The domain correo2.murcia.es does not exist"
+      "No MX records found. Is the domain parked?"
     ]
   },
   "spf": {

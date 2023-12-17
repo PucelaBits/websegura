@@ -5,10 +5,10 @@
   "ns": {
     "hostnames": [
       "ns3.cdmon.net",
+      "ns2.cdmon.net",
       "ns4.cdmondns-01.org",
       "ns1.cdmon.net",
-      "ns5.cdmondns-01.com",
-      "ns2.cdmon.net"
+      "ns5.cdmondns-01.com"
     ],
     "warnings": []
   },
@@ -18,8 +18,8 @@
         "preference": 10,
         "hostname": "mx.spamexperts.com",
         "addresses": [
-          "2001:550:2:9::280:100",
-          "38.111.198.185"
+          "2001:550:2:78::ca:100",
+          "38.89.254.156"
         ]
       },
       {
@@ -39,8 +39,10 @@
         "hostname": "lastmx.spamexperts.net",
         "addresses": [
           "149.13.75.27",
+          "154.59.104.23",
           "2001:550:2:61::2fc:100",
           "2001:550:2:9::280:100",
+          "2001:978:2:2c::137:100",
           "2001:978:2:7::162:100",
           "38.111.198.185",
           "38.89.254.156"

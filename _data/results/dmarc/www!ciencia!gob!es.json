@@ -40,7 +40,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 94.100.136.8 is mx02.hornetsecurity.com, but the A/AAAA DNS records for mx02.hornetsecurity.com do not resolve to 94.100.136.8"
+    ]
   },
   "spf": {
     "record": "v=spf1 mx include:spf.acumbamail.com include:spf.protection.outlook.com include:spf.hornetsecurity.com -all",

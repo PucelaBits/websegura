@@ -12,17 +12,16 @@
   "mx": {
     "hosts": [
       {
-        "preference": 10,
-        "hostname": "mx1-smtp-in.svt.es",
+        "preference": 0,
+        "hostname": "diputaciolleida-cat.mail.protection.outlook.com",
         "addresses": [
-          "95.130.52.42"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mx2-smtp-in.svt.es",
-        "addresses": [
-          "95.130.52.43"
+          "52.101.68.18",
+          "52.101.68.32",
+          "52.101.73.19",
+          "52.101.73.2",
+          "52.101.73.26",
+          "52.101.73.30",
+          "52.101.73.6"
         ]
       }
     ],

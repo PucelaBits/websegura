@@ -15,20 +15,20 @@
         "preference": 0,
         "hostname": "uclm-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.16",
-          "52.101.68.36",
+          "52.101.73.15",
           "52.101.73.16",
-          "52.101.73.21",
-          "52.101.73.22",
-          "52.101.73.30",
-          "52.101.73.4"
+          "52.101.73.19",
+          "52.101.73.2",
+          "52.101.73.24",
+          "52.101.73.28",
+          "52.101.73.6"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:161.67.136.23 ip4:161.67.136.24 ip4:161.67.136.9 ip4:52.142.232.215 include:spf.protection.outlook.com include:spf.puc.rediris.es -all",
+    "record": "v=spf1 ip4:161.67.136.23 ip4:161.67.136.24 ip4:161.67.136.9 ip4:52.142.232.215 include:spf.protection.outlook.com include:spf.puc.rediris.es ~all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
@@ -140,13 +140,65 @@
       ],
       "redirect": null,
       "exp": null,
-      "all": "fail"
+      "all": "softfail"
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=none; rua=mailto:dmarc_agg@vali.email",
+    "valid": true,
+    "location": "uclm.es",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc_agg@vali.email",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }

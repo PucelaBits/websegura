@@ -47,16 +47,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 130.117.89.5 is venus.iberlayer.com, but the A/AAAA DNS records for venus.iberlayer.com do not resolve to 130.117.89.5",
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 80.169.225.37 is fobos.iberlayer.com, but the A/AAAA DNS records for fobos.iberlayer.com do not resolve to 80.169.225.37",
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 80.169.225.44 is hiperion.iberlayer.com, but the A/AAAA DNS records for hiperion.iberlayer.com do not resolve to 80.169.225.44",
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 185.136.219.26 is palas.iberlayer.com, but the A/AAAA DNS records for palas.iberlayer.com do not resolve to 185.136.219.26"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:195.235.227.27 include:spf.protection.outlook.com include:iberlayer.com -all",
@@ -129,10 +120,14 @@
         },
         {
           "domain": "iberlayer.com",
-          "record": "v=spf1 ip4:130.117.89.0/27 ip4:80.169.225.32/27 ip4:91.90.161.0/24 ip4:185.136.218.5/32 ip4:185.136.218.6/32 ip4:185.136.218.7/32 ip4:185.136.218.8/32 ip4:185.136.219.26/32 ip4:185.136.219.27/32 ip4:185.136.219.28/32 ip4:185.136.219.29/32 -all",
+          "record": "v=spf1 ip4:130.117.92.237 ip4:130.117.89.0/27 ip4:80.169.225.32/27 ip4:91.90.161.0/24 ip4:185.136.218.5 ip4:185.136.218.6 ip4:185.136.218.7 ip4:185.136.218.8 ip4:185.136.219.26 ip4:185.136.219.27 ip4:185.136.219.28 ip4:185.136.219.29 -all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
+              {
+                "value": "130.117.92.237",
+                "mechanism": "ip4"
+              },
               {
                 "value": "130.117.89.0/27",
                 "mechanism": "ip4"
@@ -146,35 +141,35 @@
                 "mechanism": "ip4"
               },
               {
-                "value": "185.136.218.5/32",
+                "value": "185.136.218.5",
                 "mechanism": "ip4"
               },
               {
-                "value": "185.136.218.6/32",
+                "value": "185.136.218.6",
                 "mechanism": "ip4"
               },
               {
-                "value": "185.136.218.7/32",
+                "value": "185.136.218.7",
                 "mechanism": "ip4"
               },
               {
-                "value": "185.136.218.8/32",
+                "value": "185.136.218.8",
                 "mechanism": "ip4"
               },
               {
-                "value": "185.136.219.26/32",
+                "value": "185.136.219.26",
                 "mechanism": "ip4"
               },
               {
-                "value": "185.136.219.27/32",
+                "value": "185.136.219.27",
                 "mechanism": "ip4"
               },
               {
-                "value": "185.136.219.28/32",
+                "value": "185.136.219.28",
                 "mechanism": "ip4"
               },
               {
-                "value": "185.136.219.29/32",
+                "value": "185.136.219.29",
                 "mechanism": "ip4"
               }
             ],
