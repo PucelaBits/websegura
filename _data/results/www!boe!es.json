@@ -1,27 +1,26 @@
 {
   "algorithm_version": 2,
-  "end_time": "Sat, 16 Dec 2023 00:08:34 GMT",
-  "grade": "C-",
+  "end_time": "Tue, 19 Dec 2023 00:09:03 GMT",
+  "grade": "D-",
   "hidden": false,
   "likelihood_indicator": "MEDIUM",
   "response_headers": {
     "Accept-Ranges": "bytes",
-    "Age": "113",
+    "Age": "6",
     "Content-Length": "22737",
     "Content-Security-Policy": "default-src afirma://* ; script-src 'unsafe-inline' 'unsafe-eval' 'self' https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ ; frame-src 'self' https://www.google.com/recaptcha/ https://recaptcha.google.com/recaptcha/  afirma://* ; connect-src 'self' ; img-src 'self' eur-lex.europa.eu data: ; style-src 'unsafe-inline' 'self' *.boe.es ; font-src 'self' ; child-src 'self'  www.youtube.com afirma://* ; object-src 'self' ; media-src 'self'",
     "Content-Type": "text/html; charset=UTF-8",
-    "Date": "Sat, 16 Dec 2023 00:06:38 GMT",
+    "Date": "Tue, 19 Dec 2023 00:08:55 GMT",
     "Server": "Apache",
     "Via": "1.1 cachem1 (Varnish/7.2)",
-    "X-Varnish": "424426449 427001446",
-    "x-frame-options": "SAMEORIGIN"
+    "X-Varnish": "726613313 726613200"
   },
-  "scan_id": 45509161,
-  "score": 45,
-  "start_time": "Sat, 16 Dec 2023 00:08:28 GMT",
+  "scan_id": 45598830,
+  "score": 25,
+  "start_time": "Tue, 19 Dec 2023 00:08:57 GMT",
   "state": "FINISHED",
   "status_code": 200,
-  "tests_failed": 4,
-  "tests_passed": 8,
+  "tests_failed": 5,
+  "tests_passed": 7,
   "tests_quantity": 12
 }
