@@ -1,24 +1,26 @@
 {
   "algorithm_version": 2,
-  "end_time": "Sun, 17 Dec 2023 00:45:08 GMT",
+  "end_time": "Wed, 20 Dec 2023 00:07:07 GMT",
   "grade": "F",
   "hidden": false,
   "likelihood_indicator": "MEDIUM",
   "response_headers": {
     "Connection": "keep-alive",
-    "Content-Length": "288",
-    "Content-Type": "text/html",
-    "Date": "Sun, 17 Dec 2023 00:45:07 GMT",
-    "Retry-After": "14400",
+    "Content-Encoding": "gzip",
+    "Content-Type": "text/html; charset=UTF-8",
+    "Date": "Wed, 20 Dec 2023 00:06:53 GMT",
+    "Link": "<https://www.carriondeloscondes.org/>; rel=shortlink",
     "Server": "nginx",
-    "Vary": "Accept-Encoding,User-Agent"
+    "Transfer-Encoding": "chunked",
+    "Vary": "Accept-Encoding",
+    "X-Pingback": "https://www.carriondeloscondes.org/xmlrpc.php"
   },
-  "scan_id": 45535578,
-  "score": 20,
-  "start_time": "Sun, 17 Dec 2023 00:45:03 GMT",
+  "scan_id": 45632215,
+  "score": 0,
+  "start_time": "Wed, 20 Dec 2023 00:06:49 GMT",
   "state": "FINISHED",
-  "status_code": 508,
-  "tests_failed": 5,
-  "tests_passed": 7,
+  "status_code": 200,
+  "tests_failed": 6,
+  "tests_passed": 6,
   "tests_quantity": 12
 }
