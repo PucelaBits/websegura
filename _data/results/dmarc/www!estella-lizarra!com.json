@@ -24,10 +24,8 @@
   "spf": {
     "record": "v=spf1 include:_spf.srv.cat +a +mx +ip4:195.53.90.200 ~all",
     "valid": true,
-    "dns_lookups": 5,
-    "warnings": [
-      "_netblocks.srv.cat does not have any A/AAAA records"
-    ],
+    "dns_lookups": 4,
+    "warnings": [],
     "parsed": {
       "pass": [
         {
@@ -54,7 +52,7 @@
         {
           "domain": "_spf.srv.cat",
           "record": "v=spf1 include:_netblocks.srv.cat ~all",
-          "dns_lookups": 2,
+          "dns_lookups": 1,
           "parsed": {
             "pass": [],
             "neutral": [],
@@ -63,8 +61,8 @@
             "include": [
               {
                 "domain": "_netblocks.srv.cat",
-                "record": "v=spf1 a ip4:46.16.56.0/21 ip4:134.0.8.0/21 ip4:185.22.200.0/22 ip4:185.34.192.0/22 ip4:185.42.104.0/22 ip4:185.66.40.0/22 ip4:185.22.201.0/22 ~all",
-                "dns_lookups": 1,
+                "record": "v=spf1 ip4:46.16.56.0/21 ip4:134.0.8.0/21 ip4:185.22.200.0/22 ip4:185.34.192.0/22 ip4:185.42.104.0/22 ip4:185.66.40.0/22 ip4:185.22.201.0/22 ~all",
+                "dns_lookups": 0,
                 "parsed": {
                   "pass": [
                     {
@@ -104,18 +102,14 @@
                   "exp": null,
                   "all": "softfail"
                 },
-                "warnings": [
-                  "_netblocks.srv.cat does not have any A/AAAA records"
-                ]
+                "warnings": []
               }
             ],
             "redirect": null,
             "exp": null,
             "all": "softfail"
           },
-          "warnings": [
-            "_netblocks.srv.cat does not have any A/AAAA records"
-          ]
+          "warnings": []
         }
       ],
       "redirect": null,
@@ -124,9 +118,53 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=none",
+    "valid": true,
+    "location": "estella-lizarra.com",
+    "warnings": [
+      "rua tag (destination for aggregate reports) not found"
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }

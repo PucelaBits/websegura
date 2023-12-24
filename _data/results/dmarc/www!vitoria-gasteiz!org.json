@@ -15,11 +15,13 @@
         "preference": 10,
         "hostname": "smtp1.vitoria-gasteiz.org",
         "addresses": [
-          "46.25.57.207"
+          "194.30.117.79"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The reverse DNS of 194.30.117.79 is smtp1.vitoria-gasteiz.org, but the A/AAAA DNS records for smtp1.vitoria-gasteiz.org do not resolve to 194.30.117.79"
+    ]
   },
   "spf": {
     "record": "v=spf1 mx ip4:194.30.117.79 ip4:46.25.57.207 include:mail.zendesk.com -all",

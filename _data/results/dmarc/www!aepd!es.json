@@ -15,13 +15,13 @@
         "preference": 10,
         "hostname": "aepd-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.32",
-          "52.101.73.1",
-          "52.101.73.11",
-          "52.101.73.15",
+          "52.101.68.18",
+          "52.101.73.12",
           "52.101.73.16",
-          "52.101.73.24",
-          "52.101.73.26"
+          "52.101.73.19",
+          "52.101.73.2",
+          "52.101.73.22",
+          "52.101.73.24"
         ]
       }
     ],
@@ -115,12 +115,10 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; rua=mailto:dmarc@aepd.es; ruf=mailto:dmarc_ruf@aepd.es; fo=1; pct=50;",
+    "record": "v=DMARC1; p=quarantine; rua=mailto:dmarc@aepd.es; ruf=mailto:dmarc_ruf@aepd.es; fo=1; pct=100;",
     "valid": true,
     "location": "aepd.es",
-    "warnings": [
-      "pct value is less than 100. This leads to inconsistent and unpredictable policy enforcement. Consider using p=none to monitor results instead"
-    ],
+    "warnings": [],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -157,7 +155,7 @@
         "explicit": true
       },
       "pct": {
-        "value": 50,
+        "value": 100,
         "explicit": true
       },
       "adkim": {
