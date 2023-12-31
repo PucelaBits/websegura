@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "dpmdns01.ns-cloud4b.org",
-      "dpmdns02.ns-cloud4b.com",
-      "dpmdns03.ns-cloud4b.net"
+      "dpmdns03.ns-cloud4b.net",
+      "dpmdns02.ns-cloud4b.com"
     ],
     "warnings": []
   },
@@ -17,7 +17,7 @@
         "hostname": "mx.spamexperts.com",
         "addresses": [
           "2001:550:2:61::2fc:100",
-          "38.109.53.20"
+          "38.111.198.185"
         ]
       },
       {
@@ -192,6 +192,14 @@
               },
               {
                 "value": "149.13.75.20",
+                "mechanism": "a"
+              },
+              {
+                "value": "154.59.193.129",
+                "mechanism": "a"
+              },
+              {
+                "value": "154.59.193.130",
                 "mechanism": "a"
               },
               {
@@ -584,6 +592,10 @@
               },
               {
                 "value": "2001:978:2:6::f:101",
+                "mechanism": "a"
+              },
+              {
+                "value": "2001:978:2:6::f:102",
                 "mechanism": "a"
               },
               {

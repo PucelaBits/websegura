@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns3.prored.es",
       "dns2.prored.es",
+      "dns3.prored.es",
       "dns1.prored.es"
     ],
     "warnings": []
@@ -16,13 +16,13 @@
         "preference": 10,
         "hostname": "visitvalencia-com.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.0",
           "52.101.68.21",
-          "52.101.68.3",
-          "52.101.73.12",
-          "52.101.73.16",
-          "52.101.73.2",
-          "52.101.73.22"
+          "52.101.68.32",
+          "52.101.68.5",
+          "52.101.73.1",
+          "52.101.73.21",
+          "52.101.73.28",
+          "52.101.73.8"
         ]
       }
     ],
@@ -36,7 +36,7 @@
     "parsed": {
       "pass": [
         {
-          "value": "52.208.90.157",
+          "value": "52.209.50.117",
           "mechanism": "a"
         },
         {

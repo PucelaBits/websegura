@@ -1,26 +1,162 @@
 {
   "domain": "centrotitobustillo.com",
   "base_domain": "centrotitobustillo.com",
-  "dnssec": false,
+  "dnssec": true,
   "ns": {
     "hostnames": [
-      "ns4.gestiondecuenta.com",
-      "ns3.gestiondecuenta.com",
-      "ns2.gestiondecuenta.com",
-      "ns.gestiondecuenta.com"
+      "ns1.openprovider.nl",
+      "ns2.openprovider.be",
+      "ns3.openprovider.eu"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "warnings": [
-      "No MX records found. Is the domain parked?"
-    ]
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx01.hornetsecurity.com",
+        "addresses": [
+          "94.100.132.8"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mx02.hornetsecurity.com",
+        "addresses": [
+          "94.100.136.8"
+        ]
+      },
+      {
+        "preference": 30,
+        "hostname": "mx03.hornetsecurity.com",
+        "addresses": [
+          "94.100.134.8"
+        ]
+      },
+      {
+        "preference": 40,
+        "hostname": "mx04.hornetsecurity.com",
+        "addresses": [
+          "94.100.136.7"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "centrotitobustillo.com does not have a SPF TXT record"
+    "record": "v=spf1 include:spf.hornetsecurity.com ip4:88.151.16.0/22 -all",
+    "valid": true,
+    "dns_lookups": 1,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "88.151.16.0/22",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "spf.hornetsecurity.com",
+          "record": "v=spf1 ip4:83.246.65.0/24 ip4:185.140.204.0/22 ip4:94.100.128.0/20 ip4:81.20.94.0/24 ip4:173.45.18.0/24 ip4:52.62.123.207/32 ip4:52.62.108.212/32 ip4:129.232.203.80/28 ip4:209.172.38.64/27 ip4:108.163.133.224/27 ip4:193.135.100.0/27 ip4:199.27.221.76 ip4:216.46.11.238 ip4:216.46.11.244 ip4:199.27.221.81 ip4:199.27.221.82 ip4:52.62.114.130 ip4:52.62.125.178 ip4:92.54.27.0/24 ~all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "83.246.65.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.140.204.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "94.100.128.0/20",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "81.20.94.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "173.45.18.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.62.123.207/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.62.108.212/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "129.232.203.80/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "209.172.38.64/27",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "108.163.133.224/27",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "193.135.100.0/27",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "199.27.221.76",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "216.46.11.238",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "216.46.11.244",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "199.27.221.81",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "199.27.221.82",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.62.114.130",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.62.125.178",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "92.54.27.0/24",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
     "record": null,

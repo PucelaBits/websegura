@@ -5,23 +5,15 @@
   "ns": {
     "hostnames": [
       "nsext2.udg.edu",
-      "ns1.csuc.cat",
       "ns2.csuc.cat",
-      "nsext1.udg.edu"
+      "nsext1.udg.edu",
+      "ns1.csuc.cat"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "imsva-in.udg.edu",
-        "addresses": [
-          "84.88.128.6"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS response does not contain an answer to the question: 6.128.88.84.in-addr.arpa. IN PTR"
   },
   "spf": {
     "record": "v=spf1 mx a:imsva-in.udg.edu a:mta-sortida.udg.edu a:imsva-out.udg.edu ip4:84.88.131.25 a:mta-sortida-alt.udg.edu a:peguera.xs.csuc.cat a:gabarro.xs.csuc.cat ~all",

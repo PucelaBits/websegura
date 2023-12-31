@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.altia.es",
-      "ns1.altia.es"
+      "ns1.altia.es",
+      "ns2.altia.es"
     ],
     "warnings": []
   },
@@ -28,7 +28,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 23.90.119.37 is esa1.hc1008-19.eu.iphmx.com, but the A/AAAA DNS records for esa1.hc1008-19.eu.iphmx.com do not resolve to 23.90.119.37"
+    ]
   },
   "spf": {
     "record": "v=spf1 exists:%{i}.spf.hc1008-19.eu.iphmx.com ip4:82.194.75.131/32 ip4:176.58.8.208/29 ip4:217.130.24.0/24 ip4:195.69.254.31 ip4:195.69.253.6 ip4:195.69.253.2 include:amazonses.com include:eu.mailgun.org include:spf.protection.outlook.com include:spf.emailsignatures365.com include:msrv-smtp-01.aspl.es include:spf.sendinblue.com -all",

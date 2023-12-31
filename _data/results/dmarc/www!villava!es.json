@@ -25,13 +25,11 @@
     "record": "v=spf1 +a +mx +ip4:195.53.90.200 ~all",
     "valid": true,
     "dns_lookups": 2,
-    "warnings": [],
+    "warnings": [
+      "villava.es does not have any A/AAAA records"
+    ],
     "parsed": {
       "pass": [
-        {
-          "value": "195.53.90.164",
-          "mechanism": "a"
-        },
         {
           "value": "correo.villava.es",
           "mechanism": "mx"

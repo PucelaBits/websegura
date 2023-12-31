@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns5.infofuturo.net",
-      "ns4.infofuturo.net"
+      "ns3.itechselect.net",
+      "ns4.itechselect.net"
     ],
     "warnings": []
   },
@@ -15,19 +15,23 @@
         "preference": 0,
         "hostname": "correo.sanmartindeoscos.es",
         "addresses": [
-          "37.153.90.131"
+          "31.200.242.22"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 +a +mx +ip4:37.153.90.131 ~all",
+    "record": "v=spf1 ip4:31.200.242.22 +a +mx +ip4:37.153.90.131 ~all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
     "parsed": {
       "pass": [
+        {
+          "value": "31.200.242.22",
+          "mechanism": "ip4"
+        },
         {
           "value": "212.89.23.124",
           "mechanism": "a"

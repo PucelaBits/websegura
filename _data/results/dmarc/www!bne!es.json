@@ -10,8 +10,23 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query bne.es. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx03.puc.rediris.es",
+        "addresses": [
+          "143.55.146.78"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mx04.puc.rediris.es",
+        "addresses": [
+          "143.55.148.243"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 a mx include:spf.puc.rediris.es ip4:212.128.118.39 include:spf.acumbamail.com include:spf.protection.outlook.com -all",

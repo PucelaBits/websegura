@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "fruela.greencom.net",
-      "gaudiosa.greencom.net"
+      "silo.greencom.net",
+      "fruela.greencom.net"
     ],
     "warnings": []
   },
@@ -13,37 +13,27 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "fruela.greencom.net",
+        "hostname": "silo.greencom.net",
         "addresses": [
-          "212.89.6.11"
+          "176.31.240.74"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 a mx ptr ip4:212.89.6.11 ~all",
+    "record": "v=spf1 mx ip4:176.31.240.74 ~all",
     "valid": true,
-    "dns_lookups": 2,
-    "warnings": [
-      "The ptr mechanism should not be used - https://tools.ietf.org/html/rfc7208#section-5.5"
-    ],
+    "dns_lookups": 1,
+    "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "212.89.23.124",
-          "mechanism": "a"
-        },
-        {
-          "value": "fruela.greencom.net",
+          "value": "silo.greencom.net",
           "mechanism": "mx"
         },
         {
-          "value": "",
-          "mechanism": "ptr"
-        },
-        {
-          "value": "212.89.6.11",
+          "value": "176.31.240.74",
           "mechanism": "ip4"
         }
       ],
@@ -57,7 +47,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; rua=mailto:info@greencom.net; ruf=mailto:info@greencom.net",
+    "record": "v=DMARC1; p=quarantine; rua=mailto:dmarc@greencom.net; ruf=mailto:dmarc@greencom.net",
     "valid": true,
     "location": "ayto-riberadearriba.es",
     "warnings": [
@@ -70,15 +60,15 @@
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": true
       },
       "rua": {
-        "value": "mailto:info@greencom.net",
+        "value": "mailto:dmarc@greencom.net",
         "explicit": true
       },
       "ruf": {
-        "value": "mailto:info@greencom.net",
+        "value": "mailto:dmarc@greencom.net",
         "explicit": true
       },
       "adkim": {
@@ -110,7 +100,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": false
       }
     }

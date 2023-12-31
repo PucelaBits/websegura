@@ -3,11 +3,8 @@
   "base_domain": "palma.cat",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "dns01.ono.com",
-      "dns02.ono.com"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "mx": {
     "hosts": [
@@ -16,7 +13,7 @@
         "hostname": "palma-cat.mail.protection.outlook.com",
         "addresses": [
           "104.47.17.138",
-          "104.47.17.74"
+          "104.47.18.74"
         ]
       }
     ],
@@ -174,6 +171,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   }
 }

@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "ns221.iservices4u.eu",
-      "ns222.iservices4u.eu",
       "ns223.iservices4u.eu",
+      "ns222.iservices4u.eu",
       "ns220.iservices4u.eu"
     ],
     "warnings": []
@@ -38,12 +38,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 2a01:4f8:1c17:57ff::1 is mta-ger-222.iservices4u.eu, but the A/AAAA DNS records for mta-ger-222.iservices4u.eu do not resolve to 2a01:4f8:1c17:57ff::1",
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 78.46.212.107 is mta-ger-222.iservices4u.eu, but the A/AAAA DNS records for mta-ger-222.iservices4u.eu do not resolve to 78.46.212.107"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:116.202.67.80/28 ip4:5.135.230.0/27 include:spf.iservices4u.eu a -all",
