@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.altia.es",
-      "ns2.altia.es"
+      "ns2.altia.es",
+      "ns1.altia.es"
     ],
     "warnings": []
   },
@@ -28,10 +28,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 23.90.119.37 is esa1.hc1008-19.eu.iphmx.com, but the A/AAAA DNS records for esa1.hc1008-19.eu.iphmx.com do not resolve to 23.90.119.37"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 exists:%{i}.spf.hc1008-19.eu.iphmx.com ip4:82.194.75.131/32 ip4:176.58.8.208/29 ip4:217.130.24.0/24 ip4:195.69.254.31 ip4:195.69.253.6 ip4:195.69.253.2 include:amazonses.com include:eu.mailgun.org include:spf.protection.outlook.com include:spf.emailsignatures365.com include:msrv-smtp-01.aspl.es include:spf.sendinblue.com -all",
@@ -75,7 +72,7 @@
       "include": [
         {
           "domain": "amazonses.com",
-          "record": "v=spf1 ip4:199.255.192.0/22 ip4:199.127.232.0/22 ip4:54.240.0.0/18 ip4:69.169.224.0/20 ip4:23.249.208.0/20 ip4:23.251.224.0/19 ip4:76.223.176.0/20 ip4:52.82.172.0/22 ip4:54.240.64.0/19 ip4:54.240.96.0/19 ip4:76.223.128.0/19 -all",
+          "record": "v=spf1 ip4:199.255.192.0/22 ip4:199.127.232.0/22 ip4:54.240.0.0/18 ip4:69.169.224.0/20 ip4:23.249.208.0/20 ip4:23.251.224.0/19 ip4:76.223.176.0/20 ip4:52.82.172.0/22 ip4:54.240.64.0/19 ip4:54.240.96.0/19 ip4:76.223.128.0/19 ip4:216.221.160.0/19 -all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -121,6 +118,10 @@
               },
               {
                 "value": "76.223.128.0/19",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "216.221.160.0/19",
                 "mechanism": "ip4"
               }
             ],

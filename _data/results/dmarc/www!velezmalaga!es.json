@@ -4,11 +4,11 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.cdmon.net",
-      "ns2.cdmon.net",
-      "ns3.cdmon.net",
       "ns5.cdmondns-01.com",
-      "ns4.cdmondns-01.org"
+      "ns4.cdmondns-01.org",
+      "ns3.cdmon.net",
+      "ns1.cdmon.net",
+      "ns2.cdmon.net"
     ],
     "warnings": []
   },
@@ -18,8 +18,8 @@
         "preference": 10,
         "hostname": "mx.spamexperts.com",
         "addresses": [
-          "2001:550:2:61::2fc:100",
-          "38.111.198.185"
+          "2001:550:2:78::ca:100",
+          "38.89.254.156"
         ]
       },
       {
@@ -50,7 +50,6 @@
       }
     ],
     "warnings": [
-      "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records",
       "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records",
       "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records"
     ]
@@ -266,6 +265,30 @@
               },
               {
                 "value": "154.59.193.130",
+                "mechanism": "a"
+              },
+              {
+                "value": "154.59.193.131",
+                "mechanism": "a"
+              },
+              {
+                "value": "154.59.193.132",
+                "mechanism": "a"
+              },
+              {
+                "value": "154.59.193.133",
+                "mechanism": "a"
+              },
+              {
+                "value": "154.59.193.134",
+                "mechanism": "a"
+              },
+              {
+                "value": "154.59.193.135",
+                "mechanism": "a"
+              },
+              {
+                "value": "154.59.193.136",
                 "mechanism": "a"
               },
               {
@@ -670,6 +693,18 @@
               },
               {
                 "value": "2001:978:2:6::f:104",
+                "mechanism": "a"
+              },
+              {
+                "value": "2001:978:2:6::f:105",
+                "mechanism": "a"
+              },
+              {
+                "value": "2001:978:2:6::f:106",
+                "mechanism": "a"
+              },
+              {
+                "value": "2001:978:2:6::f:107",
                 "mechanism": "a"
               },
               {

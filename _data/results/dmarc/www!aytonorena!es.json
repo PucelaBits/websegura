@@ -131,7 +131,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none",
+    "record": "v=DMARC1; p=reject",
     "valid": true,
     "location": "aytonorena.es",
     "warnings": [
@@ -143,7 +143,7 @@
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "reject",
         "explicit": true
       },
       "adkim": {
@@ -175,7 +175,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "none",
+        "value": "reject",
         "explicit": false
       }
     }
