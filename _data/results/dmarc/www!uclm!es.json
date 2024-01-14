@@ -15,12 +15,12 @@
         "preference": 0,
         "hostname": "uclm-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.0",
           "52.101.68.18",
-          "52.101.73.2",
-          "52.101.73.24",
+          "52.101.68.36",
+          "52.101.73.16",
           "52.101.73.26",
-          "52.101.73.30",
+          "52.101.73.28",
+          "52.101.73.4",
           "52.101.73.8"
         ]
       }
@@ -28,9 +28,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:161.67.136.23 ip4:161.67.136.24 ip4:161.67.136.9 ip4:52.142.232.215 include:spf.protection.outlook.com include:spf.puc.rediris.es ~all",
+    "record": "v=spf1 ip4:161.67.136.23 ip4:161.67.136.24 ip4:161.67.136.9 ip4:52.142.232.215 include:spf.protection.outlook.com ~all",
     "valid": true,
-    "dns_lookups": 2,
+    "dns_lookups": 1,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -57,7 +57,7 @@
       "include": [
         {
           "domain": "spf.protection.outlook.com",
-          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/50 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
+          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/51 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -86,7 +86,7 @@
                 "mechanism": "ip6"
               },
               {
-                "value": "2a01:111:f403:8000::/50",
+                "value": "2a01:111:f403:8000::/51",
                 "mechanism": "ip6"
               },
               {
@@ -107,35 +107,6 @@
             "all": "fail"
           },
           "warnings": []
-        },
-        {
-          "domain": "spf.puc.rediris.es",
-          "record": "v=spf1 ip4:143.55.146.78 ip4:143.55.148.243 ip4:130.206.25.38 ~all",
-          "dns_lookups": 0,
-          "parsed": {
-            "pass": [
-              {
-                "value": "143.55.146.78",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "143.55.148.243",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "130.206.25.38",
-                "mechanism": "ip4"
-              }
-            ],
-            "neutral": [],
-            "softfail": [],
-            "fail": [],
-            "include": [],
-            "redirect": null,
-            "exp": null,
-            "all": "softfail"
-          },
-          "warnings": []
         }
       ],
       "redirect": null,
@@ -144,7 +115,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; rua=mailto:dmarc_agg@vali.email",
+    "record": "v=DMARC1; p=none; rua=mailto:dmarc_agg@vali.email,mailto:dmarc@6ja9e1cq.uriports.com; ruf=mailto:dmarc@6ja9e1cq.uriports.com; fo=1:d:s",
     "valid": true,
     "location": "uclm.es",
     "warnings": [],
@@ -163,7 +134,30 @@
             "scheme": "mailto",
             "address": "dmarc_agg@vali.email",
             "size_limit": null
+          },
+          {
+            "scheme": "mailto",
+            "address": "dmarc@6ja9e1cq.uriports.com",
+            "size_limit": null
           }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc@6ja9e1cq.uriports.com",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "1",
+          "d",
+          "s"
         ],
         "explicit": true
       },
@@ -173,12 +167,6 @@
       },
       "aspf": {
         "value": "r",
-        "explicit": false
-      },
-      "fo": {
-        "value": [
-          "0"
-        ],
         "explicit": false
       },
       "pct": {

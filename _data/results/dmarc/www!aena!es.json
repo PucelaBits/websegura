@@ -4,11 +4,11 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns6.aena.es",
-      "dns7.aena.es",
       "dns12.aena.es",
-      "dns13.aena.es",
-      "artemis.ttd.net"
+      "artemis.ttd.net",
+      "dns7.aena.es",
+      "dns6.aena.es",
+      "dns13.aena.es"
     ],
     "warnings": []
   },
@@ -24,18 +24,18 @@
       }
     ],
     "warnings": [
-      "The domain meg04.aena.es does not exist",
-      "The reverse DNS of 194.224.177.201 is meg04.aena.es, but the A/AAAA DNS records for meg04.aena.es do not resolve to 194.224.177.201",
       "The domain spf.aena.es does not exist",
       "The reverse DNS of 194.224.177.201 is spf.aena.es, but the A/AAAA DNS records for spf.aena.es do not resolve to 194.224.177.201",
+      "The domain meg04.aena.es does not exist",
+      "The reverse DNS of 194.224.177.201 is meg04.aena.es, but the A/AAAA DNS records for meg04.aena.es do not resolve to 194.224.177.201",
       "The domain meg02.aena.es does not exist",
       "The reverse DNS of 194.224.177.201 is meg02.aena.es, but the A/AAAA DNS records for meg02.aena.es do not resolve to 194.224.177.201",
-      "The domain meg02.aena.es does not exist",
-      "The reverse DNS of 217.130.124.201 is meg02.aena.es, but the A/AAAA DNS records for meg02.aena.es do not resolve to 217.130.124.201",
       "The domain meg04.aena.es does not exist",
       "The reverse DNS of 217.130.124.201 is meg04.aena.es, but the A/AAAA DNS records for meg04.aena.es do not resolve to 217.130.124.201",
       "The domain spf.aena.es does not exist",
-      "The reverse DNS of 217.130.124.201 is spf.aena.es, but the A/AAAA DNS records for spf.aena.es do not resolve to 217.130.124.201"
+      "The reverse DNS of 217.130.124.201 is spf.aena.es, but the A/AAAA DNS records for spf.aena.es do not resolve to 217.130.124.201",
+      "The domain meg02.aena.es does not exist",
+      "The reverse DNS of 217.130.124.201 is meg02.aena.es, but the A/AAAA DNS records for meg02.aena.es do not resolve to 217.130.124.201"
     ]
   },
   "spf": {
@@ -116,7 +116,7 @@
         },
         {
           "domain": "spf.protection.outlook.com",
-          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/50 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
+          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/51 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -145,7 +145,7 @@
                 "mechanism": "ip6"
               },
               {
-                "value": "2a01:111:f403:8000::/50",
+                "value": "2a01:111:f403:8000::/51",
                 "mechanism": "ip6"
               },
               {

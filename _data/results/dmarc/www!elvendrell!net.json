@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns3.dinahosting.com",
-      "ns2.dinahosting.com",
       "ns4.dinahosting.com",
+      "ns2.dinahosting.com",
+      "ns3.dinahosting.com",
       "ns.dinahosting.com"
     ],
     "warnings": []
@@ -24,15 +24,15 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 a mx ~all",
+    "record": "v=spf1 ip4:82.98.147.204 mx -all",
     "valid": true,
-    "dns_lookups": 2,
+    "dns_lookups": 1,
     "warnings": [],
     "parsed": {
       "pass": [
         {
           "value": "82.98.147.204",
-          "mechanism": "a"
+          "mechanism": "ip4"
         },
         {
           "value": "mail.elvendrell.net",
@@ -45,13 +45,75 @@
       "include": [],
       "redirect": null,
       "exp": null,
-      "all": "softfail"
+      "all": "fail"
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=none; rua=mailto:dmarc@elvendrell.net; adkim=s; aspf=s; pct=100; fo=1; ruf=mailto:dmarc@elvendrell.net",
+    "valid": true,
+    "location": "elvendrell.net",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc@elvendrell.net",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "s",
+        "explicit": true
+      },
+      "aspf": {
+        "value": "s",
+        "explicit": true
+      },
+      "pct": {
+        "value": 100,
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "1"
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc@elvendrell.net",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }

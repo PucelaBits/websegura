@@ -22,16 +22,12 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx ip4:212.128.114.9 ip4:212.128.114.10 ip4:212.128.114.12 ip4:212.128.114.13 ip4:212.128.112.130 ip4:212.128.112.131 ip4:212.128.117.80 ip4:212.128.117.83 ip4:212.128.117.84 ip4:212.128.117.85 ip4:212.128.117.86 include:spf.protection.outlook.com -all",
+    "record": "v=spf1 ip4:212.128.114.9 ip4:212.128.114.10 ip4:212.128.114.12 ip4:212.128.114.13 ip4:212.128.112.130 ip4:212.128.112.131 ip4:212.128.117.80 ip4:212.128.117.83 ip4:212.128.117.84 ip4:212.128.117.85 ip4:212.128.117.86 include:spf.protection.outlook.com a:spf.correo.gob.es -all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
     "parsed": {
       "pass": [
-        {
-          "value": "hermes.cultura.gob.es",
-          "mechanism": "mx"
-        },
         {
           "value": "212.128.114.9",
           "mechanism": "ip4"
@@ -75,6 +71,50 @@
         {
           "value": "212.128.117.86",
           "mechanism": "ip4"
+        },
+        {
+          "value": "185.73.172.122",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.172.123",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.172.124",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.172.125",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.172.147",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.173.17",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.173.18",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.173.19",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.173.20",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.173.21",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.173.22",
+          "mechanism": "a"
         }
       ],
       "neutral": [],
@@ -83,7 +123,7 @@
       "include": [
         {
           "domain": "spf.protection.outlook.com",
-          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/50 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
+          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/51 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -112,7 +152,7 @@
                 "mechanism": "ip6"
               },
               {
-                "value": "2a01:111:f403:8000::/50",
+                "value": "2a01:111:f403:8000::/51",
                 "mechanism": "ip6"
               },
               {

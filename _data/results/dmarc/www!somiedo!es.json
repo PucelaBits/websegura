@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns06.ns-cloud4b.net",
+      "ns07.ns-cloud4b.org",
       "ns08.ns-cloud4b.com",
-      "ns07.ns-cloud4b.org"
+      "ns06.ns-cloud4b.net"
     ],
     "warnings": []
   },
@@ -34,12 +34,23 @@
     "valid": true,
     "dns_lookups": 5,
     "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out.",
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out.",
       "Duplicate include: spf.hornetsecurity.com"
     ],
     "parsed": {
-      "pass": [],
+      "pass": [
+        {
+          "value": "185.79.129.240",
+          "mechanism": "a"
+        },
+        {
+          "value": "mx30.asaccomunicaciones.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mx40.asaccomunicaciones.es",
+          "mechanism": "mx"
+        }
+      ],
       "neutral": [],
       "softfail": [],
       "fail": [],

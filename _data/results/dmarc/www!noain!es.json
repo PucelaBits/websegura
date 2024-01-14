@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ps1.hostinet.com",
-      "ps2.hostinet.com"
+      "ps2.hostinet.com",
+      "ps1.hostinet.com"
     ],
     "warnings": []
   },
@@ -16,7 +16,7 @@
         "hostname": "noain-es.mail.protection.outlook.com",
         "addresses": [
           "104.47.17.138",
-          "104.47.17.74"
+          "104.47.18.74"
         ]
       }
     ],
@@ -35,7 +35,7 @@
       "include": [
         {
           "domain": "spf.protection.outlook.com",
-          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/50 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
+          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/51 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -64,7 +64,7 @@
                 "mechanism": "ip6"
               },
               {
-                "value": "2a01:111:f403:8000::/50",
+                "value": "2a01:111:f403:8000::/51",
                 "mechanism": "ip6"
               },
               {

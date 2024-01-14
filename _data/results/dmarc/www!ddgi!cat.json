@@ -11,8 +11,19 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 5,
+        "hostname": "mx.ddgi.cat",
+        "addresses": [
+          "195.93.170.80"
+        ]
+      }
+    ],
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 195.93.170.80 is mx.ddgi.cat, but the A/AAAA DNS records for mx.ddgi.cat do not resolve to 195.93.170.80"
+    ]
   },
   "spf": {
     "record": "v=spf1 mx include:spf.protection.outlook.com include:spf.mailjet.com ip4:157.97.64.101 ip4:195.93.170.5 ip4:157.97.64.101 -all",
@@ -44,7 +55,7 @@
       "include": [
         {
           "domain": "spf.protection.outlook.com",
-          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/50 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
+          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/51 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -73,7 +84,7 @@
                 "mechanism": "ip6"
               },
               {
-                "value": "2a01:111:f403:8000::/50",
+                "value": "2a01:111:f403:8000::/51",
                 "mechanism": "ip6"
               },
               {

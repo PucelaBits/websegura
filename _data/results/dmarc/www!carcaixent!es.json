@@ -16,13 +16,13 @@
         "preference": 0,
         "hostname": "carcaixent-es.mail.protection.outlook.com",
         "addresses": [
+          "52.101.68.0",
           "52.101.68.16",
-          "52.101.68.36",
-          "52.101.73.12",
-          "52.101.73.24",
-          "52.101.73.4",
-          "52.101.73.6",
-          "52.101.73.8"
+          "52.101.68.5",
+          "52.101.73.1",
+          "52.101.73.16",
+          "52.101.73.22",
+          "52.101.73.26"
         ]
       }
     ],
@@ -41,7 +41,7 @@
       "include": [
         {
           "domain": "spf.protection.outlook.com",
-          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/50 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
+          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/51 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -70,7 +70,7 @@
                 "mechanism": "ip6"
               },
               {
-                "value": "2a01:111:f403:8000::/50",
+                "value": "2a01:111:f403:8000::/51",
                 "mechanism": "ip6"
               },
               {
@@ -102,6 +102,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.carcaixent.es\n\nMS=ms45525188\n\nv=spf1 include:spf.protection.outlook.com -all"
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.carcaixent.es\n\nv=spf1 include:spf.protection.outlook.com -all\n\nMS=ms45525188"
   }
 }

@@ -5,10 +5,10 @@
   "ns": {
     "hostnames": [
       "ns4.cdmondns-01.org",
+      "ns1.cdmon.net",
       "ns5.cdmondns-01.com",
       "ns3.cdmon.net",
-      "ns2.cdmon.net",
-      "ns1.cdmon.net"
+      "ns2.cdmon.net"
     ],
     "warnings": []
   },
@@ -104,9 +104,53 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.diaz-caneja.org\n\nv=spf1 include:_spf.srv.cat ~all"
+    "record": "v=DMARC1; p=none; aspf=s; adkim=r",
+    "valid": true,
+    "location": "diaz-caneja.org",
+    "warnings": [
+      "rua tag (destination for aggregate reports) not found"
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "aspf": {
+        "value": "s",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }

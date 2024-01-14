@@ -5,14 +5,16 @@
   "ns": {
     "hostnames": [
       "ns05.ns-cloud4b.org",
-      "ns03.ns-cloud4b.net",
-      "ns06.ns-cloud4b.com"
+      "ns06.ns-cloud4b.com",
+      "ns03.ns-cloud4b.net"
     ],
     "warnings": []
   },
   "mx": {
     "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
   },
   "spf": {
     "record": null,

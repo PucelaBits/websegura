@@ -3,50 +3,15 @@
   "base_domain": "dpz.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hostnames": [
+      "dns2.dpz.es",
+      "dns.dpz.es"
+    ],
+    "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mx.spamexperts.com",
-        "addresses": [
-          "2001:550:2:78::ca:100",
-          "38.109.53.20"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "fallbackmx.spamexperts.eu",
-        "addresses": [
-          "2001:550:2:61::2fc:100",
-          "2001:550:2:78::ca:100",
-          "2001:550:2:9::280:100",
-          "38.109.53.20",
-          "38.111.198.185",
-          "38.89.254.156"
-        ]
-      },
-      {
-        "preference": 30,
-        "hostname": "lastmx.spamexperts.net",
-        "addresses": [
-          "149.13.75.27",
-          "154.59.104.23",
-          "2001:550:2:61::2fc:100",
-          "2001:550:2:9::280:100",
-          "2001:978:2:2c::137:100",
-          "2001:978:2:7::162:100",
-          "38.111.198.185",
-          "38.89.254.156"
-        ]
-      }
-    ],
-    "warnings": [
-      "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records",
-      "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records"
-    ]
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 mx a ptr ip4:213.4.82.254 a:espublico.com include:dpz.es",
@@ -55,9 +20,67 @@
     "error": "Include loop: dpz.es"
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "record": "v=DMARC1; p=quarantine; rua=mailto:admin@dpz.es; ruf=mailto:admin@dpz.es; sp=quarantine",
+    "valid": true,
+    "location": "dpz.es",
+    "warnings": [
+      "Failed to retrieve MX records for the domain of ruf email address admin@dpz.es - The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "admin@dpz.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": "mailto:admin@dpz.es",
+        "explicit": true
+      },
+      "sp": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      }
+    }
   }
 }

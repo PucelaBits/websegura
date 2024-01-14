@@ -4,31 +4,17 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "chico.rediris.es",
-      "ns2.ubu.es",
       "sun.rediris.es",
-      "ineco.nic.es",
-      "ns1.ubu.es"
+      "chico.rediris.es",
+      "ns1.ubu.es",
+      "ns2.ubu.es",
+      "ineco.nic.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 0,
-        "hostname": "ubu-es.mail.protection.outlook.com",
-        "addresses": [
-          "52.101.68.16",
-          "52.101.68.32",
-          "52.101.68.5",
-          "52.101.73.1",
-          "52.101.73.12",
-          "52.101.73.24",
-          "52.101.73.26"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 mx a:relay.ubu.es ip4:193.146.160.3 a:listas.ubu.es ip4:193.146.160.149 ip4:95.172.90.143 ip4:95.172.90.156 include:spf.protection.outlook.com -all",
@@ -72,7 +58,7 @@
       "include": [
         {
           "domain": "spf.protection.outlook.com",
-          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/50 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
+          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/51 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -101,7 +87,7 @@
                 "mechanism": "ip6"
               },
               {
-                "value": "2a01:111:f403:8000::/50",
+                "value": "2a01:111:f403:8000::/51",
                 "mechanism": "ip6"
               },
               {

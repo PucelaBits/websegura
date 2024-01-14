@@ -19,7 +19,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 82.223.111.193 is a78e815.online-server.cloud, but the A/AAAA DNS records for a78e815.online-server.cloud do not resolve to 82.223.111.193"
+    ]
   },
   "spf": {
     "record": "v=spf1 a mx include:spf.acumbamail.com ~all",
