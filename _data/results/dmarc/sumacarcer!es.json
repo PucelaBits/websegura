@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns1.dnsxperta.com",
       "ns3.dnsxperta.com",
-      "ns2.dnsxperta.com",
-      "ns1.dnsxperta.com"
+      "ns2.dnsxperta.com"
     ],
     "warnings": []
   },
@@ -864,6 +864,18 @@
               },
               {
                 "value": "2406:3400:280:8::20",
+                "mechanism": "a"
+              },
+              {
+                "value": "2406:3400:288:500::10",
+                "mechanism": "a"
+              },
+              {
+                "value": "2406:3400:288:500::11",
+                "mechanism": "a"
+              },
+              {
+                "value": "2406:3400:288:500::12",
                 "mechanism": "a"
               },
               {

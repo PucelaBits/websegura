@@ -4,17 +4,31 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "sun.rediris.es",
-      "chico.rediris.es",
-      "ns1.ubu.es",
+      "ineco.nic.es",
       "ns2.ubu.es",
-      "ineco.nic.es"
+      "sun.rediris.es",
+      "ns1.ubu.es",
+      "chico.rediris.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 0,
+        "hostname": "ubu-es.mail.protection.outlook.com",
+        "addresses": [
+          "52.101.68.0",
+          "52.101.73.12",
+          "52.101.73.15",
+          "52.101.73.16",
+          "52.101.73.21",
+          "52.101.73.4",
+          "52.101.73.8"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx a:relay.ubu.es ip4:193.146.160.3 a:listas.ubu.es ip4:193.146.160.149 ip4:95.172.90.143 ip4:95.172.90.156 include:spf.protection.outlook.com -all",

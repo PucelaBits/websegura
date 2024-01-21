@@ -10,22 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 0,
-        "hostname": "aller-es.mail.protection.outlook.com",
-        "addresses": [
-          "52.101.68.0",
-          "52.101.68.3",
-          "52.101.68.32",
-          "52.101.73.1",
-          "52.101.73.12",
-          "52.101.73.26",
-          "52.101.73.8"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 include:_spf.google.com include:spf.protection.outlook.com include:spf.ipzmarketing.com ~all",

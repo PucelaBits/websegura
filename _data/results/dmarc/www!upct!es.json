@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "chico.rediris.es",
-      "ns2.upct.es",
+      "ns1.upct.es",
       "sun.rediris.es",
-      "ns1.upct.es"
+      "ns2.upct.es",
+      "chico.rediris.es"
     ],
     "warnings": []
   },
@@ -58,15 +58,15 @@
           "mechanism": "ip4"
         },
         {
+          "value": "52.17.40.40",
+          "mechanism": "a"
+        },
+        {
+          "value": "52.212.195.82",
+          "mechanism": "a"
+        },
+        {
           "value": "52.30.87.143",
-          "mechanism": "a"
-        },
-        {
-          "value": "54.194.3.222",
-          "mechanism": "a"
-        },
-        {
-          "value": "54.229.81.242",
           "mechanism": "a"
         }
       ],

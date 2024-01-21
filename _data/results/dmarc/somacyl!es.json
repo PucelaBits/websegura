@@ -4,25 +4,26 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.somacyl.es",
-      "ns2.somacyl.es",
-      "ns.somacyl.es"
+      "ns4.gestiondecuenta.com",
+      "ns3.gestiondecuenta.com",
+      "ns2.gestiondecuenta.com",
+      "ns.gestiondecuenta.com"
     ],
     "warnings": []
   },
   "mx": {
     "hosts": [
       {
-        "preference": 0,
+        "preference": 10,
         "hostname": "somacyl-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.3",
-          "52.101.68.32",
-          "52.101.73.19",
-          "52.101.73.22",
+          "52.101.68.16",
+          "52.101.68.21",
+          "52.101.73.12",
+          "52.101.73.2",
+          "52.101.73.26",
           "52.101.73.28",
-          "52.101.73.4",
-          "52.101.73.6"
+          "52.101.73.4"
         ]
       }
     ],
@@ -99,53 +100,9 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none",
-    "valid": true,
-    "location": "somacyl.es",
-    "warnings": [
-      "rua tag (destination for aggregate reports) not found"
-    ],
-    "tags": {
-      "v": {
-        "value": "DMARC1",
-        "explicit": true
-      },
-      "p": {
-        "value": "none",
-        "explicit": true
-      },
-      "adkim": {
-        "value": "r",
-        "explicit": false
-      },
-      "aspf": {
-        "value": "r",
-        "explicit": false
-      },
-      "fo": {
-        "value": [
-          "0"
-        ],
-        "explicit": false
-      },
-      "pct": {
-        "value": 100,
-        "explicit": false
-      },
-      "rf": {
-        "value": [
-          "afrf"
-        ],
-        "explicit": false
-      },
-      "ri": {
-        "value": 86400,
-        "explicit": false
-      },
-      "sp": {
-        "value": "none",
-        "explicit": false
-      }
-    }
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
   }
 }

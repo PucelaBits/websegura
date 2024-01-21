@@ -16,7 +16,7 @@
         "hostname": "palma-cat.mail.protection.outlook.com",
         "addresses": [
           "104.47.17.138",
-          "104.47.18.74"
+          "104.47.17.74"
         ]
       }
     ],
@@ -171,9 +171,62 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=none; rua=mailto:info.dmarc@palma.es; ruf=mailto:info.dmarc@palma.es; fo=1",
+    "valid": true,
+    "location": "palma.cat",
+    "warnings": [
+      "palma.es does not indicate that it accepts DMARC reports about palma.cat - Authorization record not found: palma.cat._report._dmarc.palma.es IN TXT \"v=DMARC1\"",
+      "palma.es does not indicate that it accepts DMARC reports about palma.cat - Authorization record not found: palma.cat._report._dmarc.palma.es IN TXT \"v=DMARC1\""
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "rua": {
+        "value": "mailto:info.dmarc@palma.es",
+        "explicit": true
+      },
+      "ruf": {
+        "value": "mailto:info.dmarc@palma.es",
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "1"
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }

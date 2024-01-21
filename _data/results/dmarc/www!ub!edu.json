@@ -4,11 +4,11 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "chico.rediris.es",
       "rnpro01.com.ub.edu",
       "rnpro07.com.ub.edu",
-      "rnpro04.com.ub.edu",
-      "chico.rediris.es",
-      "sun.rediris.es"
+      "sun.rediris.es",
+      "rnpro04.com.ub.edu"
     ],
     "warnings": []
   },
@@ -18,12 +18,12 @@
         "preference": 5,
         "hostname": "ub-edu.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.0",
-          "52.101.68.18",
           "52.101.68.21",
-          "52.101.68.3",
+          "52.101.73.1",
           "52.101.73.11",
-          "52.101.73.24",
+          "52.101.73.19",
+          "52.101.73.21",
+          "52.101.73.28",
           "52.101.73.8"
         ]
       }
@@ -33,7 +33,7 @@
   "spf": {
     "record": "v=spf1  ip4:161.116.234.11 ip4:161.116.234.12 ip4:161.116.110.133 ip4:161.116.110.132 ip4:161.116.230.24 ip4:84.88.0.6/31 ip4:161.116.171.128/25 ip4:149.72.91.62 ip4:168.245.57.151 include:spf.puc.rediris.es include:spf.protection.outlook.com include:myopenlms.net -all",
     "valid": true,
-    "dns_lookups": 5,
+    "dns_lookups": 4,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -162,8 +162,8 @@
         },
         {
           "domain": "myopenlms.net",
-          "record": "v=spf1 include:sendgrid.net ~all",
-          "dns_lookups": 2,
+          "record": "v=spf1 include:amazonses.com ~all",
+          "dns_lookups": 1,
           "parsed": {
             "pass": [],
             "neutral": [],
@@ -171,89 +171,67 @@
             "fail": [],
             "include": [
               {
-                "domain": "sendgrid.net",
-                "record": "v=spf1 ip4:167.89.0.0/17 ip4:208.117.48.0/20 ip4:50.31.32.0/19 ip4:198.37.144.0/20 ip4:198.21.0.0/21 ip4:192.254.112.0/20 ip4:168.245.0.0/17 ip4:149.72.0.0/16 ip4:159.183.0.0/16 include:ab.sendgrid.net ~all",
-                "dns_lookups": 1,
+                "domain": "amazonses.com",
+                "record": "v=spf1 ip4:199.255.192.0/22 ip4:199.127.232.0/22 ip4:54.240.0.0/18 ip4:69.169.224.0/20 ip4:23.249.208.0/20 ip4:23.251.224.0/19 ip4:76.223.176.0/20 ip4:52.82.172.0/22 ip4:54.240.64.0/19 ip4:54.240.96.0/19 ip4:76.223.128.0/19 ip4:216.221.160.0/19 -all",
+                "dns_lookups": 0,
                 "parsed": {
                   "pass": [
                     {
-                      "value": "167.89.0.0/17",
+                      "value": "199.255.192.0/22",
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "208.117.48.0/20",
+                      "value": "199.127.232.0/22",
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "50.31.32.0/19",
+                      "value": "54.240.0.0/18",
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "198.37.144.0/20",
+                      "value": "69.169.224.0/20",
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "198.21.0.0/21",
+                      "value": "23.249.208.0/20",
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "192.254.112.0/20",
+                      "value": "23.251.224.0/19",
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "168.245.0.0/17",
+                      "value": "76.223.176.0/20",
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "149.72.0.0/16",
+                      "value": "52.82.172.0/22",
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "159.183.0.0/16",
+                      "value": "54.240.64.0/19",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "54.240.96.0/19",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "76.223.128.0/19",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "216.221.160.0/19",
                       "mechanism": "ip4"
                     }
                   ],
                   "neutral": [],
                   "softfail": [],
                   "fail": [],
-                  "include": [
-                    {
-                      "domain": "ab.sendgrid.net",
-                      "record": "v=spf1 ip4:223.165.113.0/24 ip4:223.165.115.0/24 ip4:223.165.118.0/23 ip4:223.165.120.0/23 ~all",
-                      "dns_lookups": 0,
-                      "parsed": {
-                        "pass": [
-                          {
-                            "value": "223.165.113.0/24",
-                            "mechanism": "ip4"
-                          },
-                          {
-                            "value": "223.165.115.0/24",
-                            "mechanism": "ip4"
-                          },
-                          {
-                            "value": "223.165.118.0/23",
-                            "mechanism": "ip4"
-                          },
-                          {
-                            "value": "223.165.120.0/23",
-                            "mechanism": "ip4"
-                          }
-                        ],
-                        "neutral": [],
-                        "softfail": [],
-                        "fail": [],
-                        "include": [],
-                        "redirect": null,
-                        "exp": null,
-                        "all": "softfail"
-                      },
-                      "warnings": []
-                    }
-                  ],
+                  "include": [],
                   "redirect": null,
                   "exp": null,
-                  "all": "softfail"
+                  "all": "fail"
                 },
                 "warnings": []
               }

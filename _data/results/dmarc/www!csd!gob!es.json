@@ -12,10 +12,19 @@
   "mx": {
     "hosts": [
       {
-        "preference": 100,
-        "hostname": "hermes.cultura.gob.es",
+        "preference": 10,
+        "hostname": "mail1.correo.gob.es",
         "addresses": [
-          "212.128.117.80"
+          "185.73.172.122",
+          "185.73.172.123"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mail2.correo.gob.es",
+        "addresses": [
+          "185.73.172.124",
+          "185.73.172.125"
         ]
       }
     ],
