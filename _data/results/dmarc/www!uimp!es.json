@@ -3,15 +3,8 @@
   "base_domain": "uimp.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "ns1.age.gob.es",
-      "ns2.age.gob.es",
-      "artemis.ttd.net",
-      "cloudflare",
-      "offcorrmad.uimp.es",
-      "suimpdnsmad01.uimp.es"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "All nameservers failed to answer the query uimp.es. IN NS: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "mx": {
     "hosts": [
@@ -19,8 +12,8 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.251.16.26",
-          "2607:f8b0:4004:c1d::1a"
+          "142.251.167.26",
+          "2607:f8b0:4004:c06::1a"
         ]
       },
       {
@@ -35,7 +28,7 @@
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "2a00:1450:400c:c0b::1b",
+          "2a00:1450:400c:c0b::1a",
           "64.233.184.26"
         ]
       },
@@ -51,7 +44,7 @@
         "preference": 10,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "142.250.153.27",
+          "142.250.153.26",
           "2a00:1450:4013:c16::1b"
         ]
       }

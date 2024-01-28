@@ -5,9 +5,9 @@
   "ns": {
     "hostnames": [
       "ns3.dinahosting.com",
+      "ns2.dinahosting.com",
       "ns.dinahosting.com",
-      "ns4.dinahosting.com",
-      "ns2.dinahosting.com"
+      "ns4.dinahosting.com"
     ],
     "warnings": []
   },
@@ -15,9 +15,30 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "mx.nerja.es",
+        "hostname": "mx01.hornetsecurity.com",
         "addresses": [
-          "217.116.0.227"
+          "94.100.132.8"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mx02.hornetsecurity.com",
+        "addresses": [
+          "94.100.136.8"
+        ]
+      },
+      {
+        "preference": 30,
+        "hostname": "mx03.hornetsecurity.com",
+        "addresses": [
+          "94.100.134.8"
+        ]
+      },
+      {
+        "preference": 40,
+        "hostname": "mx04.hornetsecurity.com",
+        "addresses": [
+          "94.100.136.7"
         ]
       }
     ],
@@ -35,7 +56,19 @@
           "mechanism": "a"
         },
         {
-          "value": "mx.nerja.es",
+          "value": "mx01.hornetsecurity.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mx02.hornetsecurity.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mx03.hornetsecurity.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mx04.hornetsecurity.com",
           "mechanism": "mx"
         }
       ],

@@ -4,11 +4,11 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns4.cdmondns-01.org",
-      "ns3.cdmon.net",
-      "ns1.cdmon.net",
       "ns5.cdmondns-01.com",
-      "ns2.cdmon.net"
+      "ns2.cdmon.net",
+      "ns3.cdmon.net",
+      "ns4.cdmondns-01.org",
+      "ns1.cdmon.net"
     ],
     "warnings": []
   },
@@ -32,9 +32,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx a include:spf.sentidocomun.es -all",
+    "record": "v=spf1 mx a include:spf.sentidocomun.es include:spf.ipzmarketing.com -all",
     "valid": true,
-    "dns_lookups": 3,
+    "dns_lookups": 4,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -96,6 +96,43 @@
             "all": "fail"
           },
           "warnings": []
+        },
+        {
+          "domain": "spf.ipzmarketing.com",
+          "record": "v=spf1 ip4:93.159.208.0/21 ip4:185.103.8.0/22 ip4:5.56.22.0/24 ip4:82.199.156.0/24 ip4:91.194.237.0/24 ~all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "93.159.208.0/21",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.103.8.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "5.56.22.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "82.199.156.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "91.194.237.0/24",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
         }
       ],
       "redirect": null,
@@ -107,6 +144,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.museobbaa.com\n\nvalor TXT: v=DMARC1; p=none;"
   }
 }

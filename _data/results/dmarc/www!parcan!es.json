@@ -22,9 +22,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx mx:parcan.es include:spf.protection.outlook.com ~all",
+    "record": "v=spf1 mx mx:parcan.es include:spf.protection.outlook.com include:spf-008e9701.pphosted.com ~all",
     "valid": true,
-    "dns_lookups": 3,
+    "dns_lookups": 4,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -91,6 +91,31 @@
             "redirect": null,
             "exp": null,
             "all": "fail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "spf-008e9701.pphosted.com",
+          "record": "v=spf1 ip4:66.159.232.95 ip4:143.55.149.243",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "66.159.232.95",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "143.55.149.243",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "neutral"
           },
           "warnings": []
         }

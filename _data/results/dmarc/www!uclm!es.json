@@ -15,13 +15,13 @@
         "preference": 0,
         "hostname": "uclm-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.73.1",
+          "52.101.68.29",
+          "52.101.68.36",
+          "52.101.68.5",
+          "52.101.68.8",
           "52.101.73.11",
-          "52.101.73.16",
-          "52.101.73.22",
-          "52.101.73.28",
-          "52.101.73.4",
-          "52.101.73.8"
+          "52.101.73.2",
+          "52.101.73.22"
         ]
       }
     ],
@@ -115,17 +115,23 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; rua=mailto:dmarc_agg@vali.email,mailto:dmarc@6ja9e1cq.uriports.com; ruf=mailto:dmarc@6ja9e1cq.uriports.com; fo=1:d:s",
+    "record": "v=DMARC1; p=quarantine; pct=0; rua=mailto:dmarc_agg@vali.email,mailto:dmarc@6ja9e1cq.uriports.com; ruf=mailto:dmarc@6ja9e1cq.uriports.com; fo=1:d:s",
     "valid": true,
     "location": "uclm.es",
-    "warnings": [],
+    "warnings": [
+      "pct value is less than 100. This leads to inconsistent and unpredictable policy enforcement. Consider using p=none to monitor results instead"
+    ],
     "tags": {
       "v": {
         "value": "DMARC1",
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "quarantine",
+        "explicit": true
+      },
+      "pct": {
+        "value": 0,
         "explicit": true
       },
       "rua": {
@@ -169,10 +175,6 @@
         "value": "r",
         "explicit": false
       },
-      "pct": {
-        "value": 100,
-        "explicit": false
-      },
       "rf": {
         "value": [
           "afrf"
@@ -184,7 +186,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": false
       }
     }

@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "crdserver.msc.es",
       "artemis.ttd.net",
-      "mailhost.msc.es"
+      "mailhost.msc.es",
+      "crdserver.msc.es"
     ],
     "warnings": []
   },
@@ -15,18 +15,19 @@
       {
         "preference": 0,
         "hostname": "mx.msc.es",
-        "addresses": []
+        "addresses": [
+          "195.64.186.52"
+        ]
       },
       {
         "preference": 20,
         "hostname": "mxres.msc.es",
-        "addresses": []
+        "addresses": [
+          "91.230.250.52"
+        ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out.",
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ]
+    "warnings": []
   },
   "spf": {
     "record": null,

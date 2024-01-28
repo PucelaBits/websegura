@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1121.ui-dns.com",
       "ns1112.ui-dns.biz",
-      "ns1108.ui-dns.org",
-      "ns1096.ui-dns.de"
+      "ns1096.ui-dns.de",
+      "ns1121.ui-dns.com",
+      "ns1108.ui-dns.org"
     ],
     "warnings": []
   },
@@ -17,13 +17,13 @@
         "preference": 10,
         "hostname": "puertogijon-es.mail.protection.outlook.com",
         "addresses": [
+          "52.101.68.0",
+          "52.101.68.12",
+          "52.101.68.29",
           "52.101.73.11",
-          "52.101.73.2",
-          "52.101.73.22",
+          "52.101.73.16",
           "52.101.73.26",
-          "52.101.73.30",
-          "52.101.73.6",
-          "52.101.73.8"
+          "52.101.73.4"
         ]
       }
     ],
