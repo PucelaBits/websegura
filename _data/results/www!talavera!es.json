@@ -1,6 +1,6 @@
 {
-  "algorithm_version": 2,
-  "end_time": "Tue, 30 Jan 2024 00:11:28 GMT",
+  "algorithm_version": 3,
+  "end_time": "Thu, 01 Feb 2024 00:42:56 GMT",
   "grade": "F",
   "hidden": false,
   "likelihood_indicator": "MEDIUM",
@@ -11,8 +11,8 @@
     "Connection": "keep-alive",
     "Content-Encoding": "gzip",
     "Content-Type": "text/html; charset=UTF-8",
-    "Date": "Tue, 30 Jan 2024 00:11:06 GMT",
-    "Expires": "Tue, 30 Jan 2024 00:11:03 GMT",
+    "Date": "Thu, 01 Feb 2024 00:42:38 GMT",
+    "Expires": "Thu, 01 Feb 2024 00:42:35 GMT",
     "Link": "<https://talavera.es/wp-json/>; rel=\"https://api.w.org/\", <https://talavera.es/wp-json/wp/v2/pages/18444>; rel=\"alternate\"; type=\"application/json\", <https://talavera.es/>; rel=shortlink",
     "Permissions-Policy": "geolocation=(),midi=(),sync-xhr=(),microphone=(),camera=(),magnetometer=(),gyroscope=(),fullscreen=(self),payment=()",
     "Server": "nginx",
@@ -23,12 +23,12 @@
     "X-Frame-Options": "allow-from https://*.talavera.es",
     "X-XSS-Protection": "1; mode=block, 1; mode=block"
   },
-  "scan_id": 47176960,
-  "score": 10,
-  "start_time": "Tue, 30 Jan 2024 00:10:50 GMT",
+  "scan_id": 47054466,
+  "score": 15,
+  "start_time": "Thu, 01 Feb 2024 00:42:28 GMT",
   "state": "FINISHED",
   "status_code": 200,
   "tests_failed": 4,
-  "tests_passed": 8,
-  "tests_quantity": 12
+  "tests_passed": 7,
+  "tests_quantity": 11
 }

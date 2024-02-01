@@ -1,6 +1,6 @@
 {
-  "algorithm_version": 2,
-  "end_time": "Mon, 29 Jan 2024 00:39:05 GMT",
+  "algorithm_version": 3,
+  "end_time": "Thu, 01 Feb 2024 00:12:05 GMT",
   "grade": "F",
   "hidden": false,
   "likelihood_indicator": "MEDIUM",
@@ -9,22 +9,22 @@
     "Connection": "keep-alive",
     "Content-Encoding": "gzip",
     "Content-Type": "text/html; charset=utf-8",
-    "Date": "Mon, 29 Jan 2024 00:39:01 GMT",
+    "Date": "Thu, 01 Feb 2024 00:12:03 GMT",
     "P3P": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
     "Pragma": "no-cache",
     "Server": "nginx",
-    "Server-Timing": "EXPIRED , rt;dur=0.354;desc=Process-Time",
-    "Set-Cookie": "20508f2ef6e9881c6ac2c9b0dac77b0d=1jbeqqnnd9d4bgacr5q4g8oqv0; path=/, ja_university_tpl=ja_university; expires=Sat, 18-Jan-2025 00:39:01 GMT; path=/",
+    "Server-Timing": "MISS , rt;dur=0.363;desc=Process-Time",
+    "Set-Cookie": "20508f2ef6e9881c6ac2c9b0dac77b0d=g5h4af1i15kiv24qesfevk1f95; path=/, ja_university_tpl=ja_university; expires=Tue, 21-Jan-2025 00:12:03 GMT; path=/",
     "Transfer-Encoding": "chunked",
     "Vary": "Accept-Encoding",
     "X-Microcache": "True"
   },
-  "scan_id": 47150886,
+  "scan_id": 47054128,
   "score": 0,
-  "start_time": "Mon, 29 Jan 2024 00:11:40 GMT",
+  "start_time": "Thu, 01 Feb 2024 00:12:01 GMT",
   "state": "FINISHED",
   "status_code": 200,
-  "tests_failed": 7,
+  "tests_failed": 6,
   "tests_passed": 5,
-  "tests_quantity": 12
+  "tests_quantity": 11
 }

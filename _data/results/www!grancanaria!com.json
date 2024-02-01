@@ -1,6 +1,6 @@
 {
-  "algorithm_version": 2,
-  "end_time": "Mon, 29 Jan 2024 00:37:10 GMT",
+  "algorithm_version": 3,
+  "end_time": "Thu, 01 Feb 2024 00:12:08 GMT",
   "grade": "B",
   "hidden": false,
   "likelihood_indicator": "MEDIUM",
@@ -9,11 +9,11 @@
     "Connection": "Upgrade, Keep-Alive",
     "Content-Encoding": "gzip",
     "Content-Type": "text/html",
-    "Date": "Mon, 29 Jan 2024 00:37:09 GMT",
+    "Date": "Thu, 01 Feb 2024 00:12:07 GMT",
     "Keep-Alive": "timeout=15, max=100",
     "Last-Modified": "Mon, 18 Apr 2022 08:21:00 GMT",
     "Referrer-Policy": "no-referrer-when-downgrade",
-    "Set-Cookie": "nlbi_171420=J7PxVnxDmHAKlipZ3tof+wAAAADigYbeUTYzCwZRsgczWkT2; path=/; Domain=.grancanaria.com; Secure; SameSite=None, visid_incap_171420=DRYlpNrRTIC/VZRrvyJLDjTztmUAAAAAQUIPAAAAAADlorl0jfzUbVMJCmueVi77; expires=Mon, 27 Jan 2025 06:49:07 GMT; HttpOnly; path=/; Domain=.grancanaria.com; Secure; SameSite=None, incap_ses_257_171420=+4gtX8YE0AThyne63QyRAzTztmUAAAAACg7OGlk/NqfEMKtFBLas5Q==; path=/; Domain=.grancanaria.com; Secure; SameSite=None",
+    "Set-Cookie": "visid_incap_171420=z7QB/ZwQRWGFX1pMGnTUYtXhumUAAAAAQUIPAAAAAAB90ixR01hljPzMX4b3C45W; expires=Thu, 30 Jan 2025 06:53:40 GMT; HttpOnly; path=/; Domain=.grancanaria.com; Secure; SameSite=None, nlbi_171420=D6qKaqGCmjEVyoQv3tof+wAAAADusMXLm+tWwY3ozQCXN1Qr; path=/; Domain=.grancanaria.com; Secure; SameSite=None, incap_ses_1567_171420=/zfBa9tnezyovov30Bq/FdbhumUAAAAAXLG81xdyv95fmY+KR56R2w==; path=/; Domain=.grancanaria.com; Secure; SameSite=None",
     "Strict-Transport-Security": "max-age=31536000",
     "Transfer-Encoding": "chunked",
     "Upgrade": "h2",
@@ -21,15 +21,15 @@
     "X-CDN": "Imperva",
     "X-Content-Type-Options": "nosniff",
     "X-Frame-Options": "SAMEORIGIN",
-    "X-Iinfo": "13-90470305-90447428 pNNy RT(1706488628374 28) q(0 0 0 15) r(2 2) U12",
+    "X-Iinfo": "13-33152710-33152718 NNNY CT(181 364 0) RT(1706746326399 69) q(0 0 0 0) r(2 2) U12",
     "X-XSS-Protection": "1; mode=block"
   },
-  "scan_id": 47150676,
+  "scan_id": 47054138,
   "score": 70,
-  "start_time": "Mon, 29 Jan 2024 00:08:55 GMT",
+  "start_time": "Thu, 01 Feb 2024 00:12:05 GMT",
   "state": "FINISHED",
   "status_code": 200,
   "tests_failed": 2,
-  "tests_passed": 10,
-  "tests_quantity": 12
+  "tests_passed": 9,
+  "tests_quantity": 11
 }
