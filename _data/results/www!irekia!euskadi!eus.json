@@ -1,6 +1,6 @@
 {
-  "algorithm_version": 2,
-  "end_time": "Tue, 30 Jan 2024 00:39:41 GMT",
+  "algorithm_version": 3,
+  "end_time": "Fri, 02 Feb 2024 00:07:49 GMT",
   "grade": "F",
   "hidden": false,
   "likelihood_indicator": "MEDIUM",
@@ -10,8 +10,8 @@
     "Connection": "Keep-Alive",
     "Content-Encoding": "gzip",
     "Content-Type": "text/html; charset=utf-8",
-    "Date": "Tue, 30 Jan 2024 00:39:39 GMT",
-    "ETag": "W/\"8bfb3a40d410b0ade0468afef63516e7\"",
+    "Date": "Fri, 02 Feb 2024 00:07:47 GMT",
+    "ETag": "W/\"773d02eec9b2df6780715fd0988060e8\"",
     "Keep-Alive": "timeout=5, max=99",
     "Referrer-Policy": "strict-origin-when-cross-origin",
     "Server": "nginx/1.24.0 + Phusion Passenger(R) 6.0.18",
@@ -23,16 +23,16 @@
     "X-Frame-Options": "SAMEORIGIN",
     "X-Permitted-Cross-Domain-Policies": "none",
     "X-Powered-By": "Phusion Passenger(R) 6.0.18",
-    "X-Request-Id": "6c3b9cb9-dfbc-492a-b03f-ab50126e7315",
-    "X-Runtime": "0.015238",
+    "X-Request-Id": "3b8a218f-46a7-4f0b-9fc4-70d40bbf0b3f",
+    "X-Runtime": "0.016904",
     "X-XSS-Protection": "1; mode=block"
   },
-  "scan_id": 47177475,
+  "scan_id": 47091395,
   "score": 0,
-  "start_time": "Tue, 30 Jan 2024 00:39:36 GMT",
+  "start_time": "Fri, 02 Feb 2024 00:07:45 GMT",
   "state": "FINISHED",
   "status_code": 200,
   "tests_failed": 4,
-  "tests_passed": 8,
-  "tests_quantity": 12
+  "tests_passed": 7,
+  "tests_quantity": 11
 }
