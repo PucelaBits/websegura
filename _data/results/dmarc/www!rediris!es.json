@@ -83,7 +83,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; sp=none; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com",
+    "record": "v=DMARC1; p=quarantine; sp=none; fo=1; rua=mailto:dmarc@rediris.es; ruf=mailto:dmarc@rediris.es",
     "valid": true,
     "location": "rediris.es",
     "warnings": [],
@@ -110,7 +110,7 @@
         "value": [
           {
             "scheme": "mailto",
-            "address": "dmarc_rua@emaildefense.proofpoint.com",
+            "address": "dmarc@rediris.es",
             "size_limit": null
           }
         ],
@@ -120,7 +120,7 @@
         "value": [
           {
             "scheme": "mailto",
-            "address": "dmarc_ruf@emaildefense.proofpoint.com",
+            "address": "dmarc@rediris.es",
             "size_limit": null
           }
         ],

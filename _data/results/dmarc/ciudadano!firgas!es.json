@@ -13,21 +13,107 @@
     ]
   },
   "spf": {
-    "record": "v=spf1 ip4:95.168.169.96 ip4:95.168.169.97 ip4:37.48.92.140 ip4:37.48.92.146 +a +mx +ip4:81.171.28.98 +ip4:5.79.71.84 +ip4:37.48.92.141 -all",
+    "record": "v=spf1 +a:spf.theservercluster.com ip4:37.48.92.140 ip4:37.48.92.146 +ip4:81.171.28.98 +ip4:5.79.71.84 +ip4:37.48.92.141 -all",
     "valid": true,
-    "dns_lookups": 2,
-    "warnings": [
-      "ciudadano.firgas.es does not have any MX records"
-    ],
+    "dns_lookups": 1,
+    "warnings": [],
     "parsed": {
       "pass": [
         {
+          "value": "178.162.157.193",
+          "mechanism": "a"
+        },
+        {
+          "value": "213.227.131.210",
+          "mechanism": "a"
+        },
+        {
+          "value": "213.227.147.150",
+          "mechanism": "a"
+        },
+        {
+          "value": "213.227.147.151",
+          "mechanism": "a"
+        },
+        {
+          "value": "213.227.147.152",
+          "mechanism": "a"
+        },
+        {
+          "value": "213.227.147.153",
+          "mechanism": "a"
+        },
+        {
+          "value": "213.227.149.3",
+          "mechanism": "a"
+        },
+        {
+          "value": "213.227.149.49",
+          "mechanism": "a"
+        },
+        {
+          "value": "213.227.149.50",
+          "mechanism": "a"
+        },
+        {
+          "value": "213.227.149.51",
+          "mechanism": "a"
+        },
+        {
+          "value": "213.227.149.52",
+          "mechanism": "a"
+        },
+        {
+          "value": "81.171.21.186",
+          "mechanism": "a"
+        },
+        {
+          "value": "81.171.25.39",
+          "mechanism": "a"
+        },
+        {
+          "value": "81.171.25.46",
+          "mechanism": "a"
+        },
+        {
+          "value": "81.171.25.47",
+          "mechanism": "a"
+        },
+        {
+          "value": "95.168.163.33",
+          "mechanism": "a"
+        },
+        {
+          "value": "95.168.163.34",
+          "mechanism": "a"
+        },
+        {
+          "value": "95.168.163.35",
+          "mechanism": "a"
+        },
+        {
+          "value": "95.168.169.100",
+          "mechanism": "a"
+        },
+        {
+          "value": "95.168.169.101",
+          "mechanism": "a"
+        },
+        {
           "value": "95.168.169.96",
-          "mechanism": "ip4"
+          "mechanism": "a"
         },
         {
           "value": "95.168.169.97",
-          "mechanism": "ip4"
+          "mechanism": "a"
+        },
+        {
+          "value": "95.168.169.98",
+          "mechanism": "a"
+        },
+        {
+          "value": "95.168.169.99",
+          "mechanism": "a"
         },
         {
           "value": "37.48.92.140",
@@ -36,10 +122,6 @@
         {
           "value": "37.48.92.146",
           "mechanism": "ip4"
-        },
-        {
-          "value": "95.168.169.96",
-          "mechanism": "a"
         },
         {
           "value": "81.171.28.98",

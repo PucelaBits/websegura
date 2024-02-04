@@ -22,7 +22,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 +a +mx ip4:185.45.72.125 -all",
+    "record": "v=spf1 +a +mx +ip4:185.45.72.125 +ip4:195.53.63.198 -all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
@@ -38,6 +38,10 @@
         },
         {
           "value": "185.45.72.125",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "195.53.63.198",
           "mechanism": "ip4"
         }
       ],

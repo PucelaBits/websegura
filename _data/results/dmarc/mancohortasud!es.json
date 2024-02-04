@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.nunsys.net",
-      "ns1.nunsys.net"
+      "ns1.nunsys.net",
+      "ns2.nunsys.net"
     ],
     "warnings": []
   },
@@ -15,24 +15,27 @@
         "preference": 0,
         "hostname": "mancohortasud-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.10",
           "52.101.68.12",
-          "52.101.68.16",
-          "52.101.68.32",
-          "52.101.73.1",
-          "52.101.73.24",
-          "52.101.73.4"
+          "52.101.68.27",
+          "52.101.68.36",
+          "52.101.73.11",
+          "52.101.73.16",
+          "52.101.73.19",
+          "52.101.73.2"
         ]
       },
       {
         "preference": 0,
         "hostname": "mancohortasud.es",
         "addresses": [
-          "79.148.248.32"
+          "90.160.30.174"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The domain 174.pool90-160-30.dynamic.orange.es does not exist",
+      "The reverse DNS of 90.160.30.174 is 174.pool90-160-30.dynamic.orange.es, but the A/AAAA DNS records for 174.pool90-160-30.dynamic.orange.es do not resolve to 90.160.30.174"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com ip4:185.5.236.0/23 -all",

@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.dondominio.com",
-      "ns4.dondominio.com"
+      "ns4.dondominio.com",
+      "ns2.dondominio.com"
     ],
     "warnings": []
   },
@@ -15,20 +15,33 @@
         "preference": 10,
         "hostname": "vielhamijaran-org01e.mail.protection.outlook.com",
         "addresses": [
-          "104.47.17.74",
-          "104.47.18.74"
+          "104.47.17.138",
+          "104.47.17.74"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:spf.protection.outlook.com -all",
+    "record": "v=spf1 ip4:213.4.82.201 ip4:213.4.82.202 a:gestiona.espublico.com include:spf.protection.outlook.com -all",
     "valid": true,
-    "dns_lookups": 1,
+    "dns_lookups": 2,
     "warnings": [],
     "parsed": {
-      "pass": [],
+      "pass": [
+        {
+          "value": "213.4.82.201",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "213.4.82.202",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "213.4.82.203",
+          "mechanism": "a"
+        }
+      ],
       "neutral": [],
       "softfail": [],
       "fail": [],

@@ -18,9 +18,62 @@
     "error": "zamora.sedelectronica.es does not have a SPF TXT record"
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.sedelectronica.es\n\nesfirma-domain-verification=33da9c11-811b-4e47-8591-eab6779b533a"
+    "record": "v=DMARC1; p=none; sp=none; rua=mailto:dmarc@espublico.com,mailto:dmarc_agg@vali.email; ruf=mailto:dmarc@espublico.com; fo=s; ri=3600",
+    "valid": true,
+    "location": "sedelectronica.es",
+    "warnings": [
+      "espublico.com does not indicate that it accepts DMARC reports about sedelectronica.es - Authorization record not found: sedelectronica.es._report._dmarc.espublico.com IN TXT \"v=DMARC1\"",
+      "espublico.com does not indicate that it accepts DMARC reports about sedelectronica.es - Authorization record not found: sedelectronica.es._report._dmarc.espublico.com IN TXT \"v=DMARC1\""
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "sp": {
+        "value": "none",
+        "explicit": true
+      },
+      "rua": {
+        "value": "mailto:dmarc@espublico.com,mailto:dmarc_agg@vali.email",
+        "explicit": true
+      },
+      "ruf": {
+        "value": "mailto:dmarc@espublico.com",
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "s"
+        ],
+        "explicit": true
+      },
+      "ri": {
+        "value": 3600,
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      }
+    }
   }
 }

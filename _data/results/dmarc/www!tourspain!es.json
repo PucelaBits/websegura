@@ -4,15 +4,30 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "chico.rediris.es",
+      "dns.serviciosmin.gob.es",
       "sun.rediris.es",
-      "dns.serviciosmin.gob.es"
+      "chico.rediris.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query 230.123.146.193.in-addr.arpa. IN PTR: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mailin.minetad.es",
+        "addresses": [
+          "193.146.123.230"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mailin1.minetad.es",
+        "addresses": [
+          "193.146.123.234"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:193.146.123.231/32 ip4:193.146.123.235/32 ip4:54.240.50.203 include:marketing.dynamics.com include:spf.protection.outlook.com ~all",

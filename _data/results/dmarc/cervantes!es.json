@@ -3,11 +3,8 @@
   "base_domain": "cervantes.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "machuca.cervantes.es",
-      "dns.cervantes.es"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "All nameservers failed to answer the query cervantes.es. IN NS: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "mx": {
     "hosts": [
@@ -32,8 +29,8 @@
       }
     ],
     "warnings": [
-      "All nameservers failed to answer the query vela1.cervantes.es. IN AAAA: Server Do53:1.0.0.1@53 answered SERVFAIL",
-      "All nameservers failed to answer the query vela2.cervantes.es. IN AAAA: Server Do53:1.0.0.1@53 answered SERVFAIL"
+      "All nameservers failed to answer the query vela1.cervantes.es. IN A: Server Do53:1.0.0.1@53 answered SERVFAIL",
+      "All nameservers failed to answer the query vela2.cervantes.es. IN A: Server Do53:1.0.0.1@53 answered SERVFAIL"
     ]
   },
   "spf": {

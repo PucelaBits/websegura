@@ -5,24 +5,16 @@
   "ns": {
     "hostnames": [
       "ns4.cdmondns-01.org",
-      "ns3.cdmon.net",
-      "ns2.cdmon.net",
       "ns1.cdmon.net",
-      "ns5.cdmondns-01.com"
+      "ns5.cdmondns-01.com",
+      "ns2.cdmon.net",
+      "ns3.cdmon.net"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "correo.sentidocomun.es",
-        "addresses": [
-          "54.217.206.198"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 mx a include:spf.sentidocomun.es include:amazonses.com -all",

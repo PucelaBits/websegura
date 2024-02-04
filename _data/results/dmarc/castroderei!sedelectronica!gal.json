@@ -29,9 +29,62 @@
     "error": "castroderei.sedelectronica.gal does not have a SPF TXT record"
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=none; sp=none; rua=mailto:dmarc@espublico.com,mailto:dmarc_agg@vali.email; ruf=mailto:dmarc@espublico.com; fo=s; ri=3600",
+    "valid": true,
+    "location": "sedelectronica.gal",
+    "warnings": [
+      "espublico.com does not indicate that it accepts DMARC reports about sedelectronica.gal - Authorization record not found: sedelectronica.gal._report._dmarc.espublico.com IN TXT \"v=DMARC1\"",
+      "espublico.com does not indicate that it accepts DMARC reports about sedelectronica.gal - Authorization record not found: sedelectronica.gal._report._dmarc.espublico.com IN TXT \"v=DMARC1\""
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "sp": {
+        "value": "none",
+        "explicit": true
+      },
+      "rua": {
+        "value": "mailto:dmarc@espublico.com,mailto:dmarc_agg@vali.email",
+        "explicit": true
+      },
+      "ruf": {
+        "value": "mailto:dmarc@espublico.com",
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "s"
+        ],
+        "explicit": true
+      },
+      "ri": {
+        "value": 3600,
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      }
+    }
   }
 }

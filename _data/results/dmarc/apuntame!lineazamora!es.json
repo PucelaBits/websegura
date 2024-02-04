@@ -13,7 +13,7 @@
     ]
   },
   "spf": {
-    "record": "v=spf1 ip4:185.23.70.11 +a +mx +ip4:63.35.133.186 ~all",
+    "record": "v=spf1 ip4:188.95.113.133 ip4:185.23.70.11 +a +mx +ip4:63.35.133.186 ~all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [
@@ -22,11 +22,15 @@
     "parsed": {
       "pass": [
         {
-          "value": "185.23.70.11",
+          "value": "188.95.113.133",
           "mechanism": "ip4"
         },
         {
           "value": "185.23.70.11",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "188.95.113.133",
           "mechanism": "a"
         },
         {
