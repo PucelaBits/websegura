@@ -1,6 +1,6 @@
 {
   "algorithm_version": 3,
-  "end_time": "Tue, 06 Feb 2024 00:39:13 GMT",
+  "end_time": "Fri, 09 Feb 2024 00:39:03 GMT",
   "grade": "F",
   "hidden": false,
   "likelihood_indicator": "MEDIUM",
@@ -9,18 +9,20 @@
     "Connection": "Keep-Alive",
     "Content-Encoding": "gzip",
     "Content-Type": "text/html;charset=UTF-8",
-    "Date": "Tue, 06 Feb 2024 00:39:02 GMT",
+    "Date": "Fri, 09 Feb 2024 00:38:58 GMT",
     "Keep-Alive": "timeout=5, max=99",
     "Server": "Apache",
     "Transfer-Encoding": "chunked",
-    "Vary": "Accept-Encoding"
+    "Vary": "Accept-Encoding",
+    "X-CDN": "Imperva",
+    "X-Iinfo": "10-4878135-4845279 sNNN RT(1707439137665 257) q(0 0 0 -1) r(2 2) U12"
   },
-  "scan_id": 47218467,
+  "scan_id": 47340839,
   "score": 0,
-  "start_time": "Tue, 06 Feb 2024 00:38:58 GMT",
+  "start_time": "Fri, 09 Feb 2024 00:38:56 GMT",
   "state": "FINISHED",
   "status_code": 200,
-  "tests_failed": 5,
-  "tests_passed": 6,
+  "tests_failed": 6,
+  "tests_passed": 5,
   "tests_quantity": 11
 }
