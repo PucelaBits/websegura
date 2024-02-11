@@ -15,7 +15,7 @@
         "preference": 10,
         "hostname": "mx.spamexperts.com",
         "addresses": [
-          "2001:550:2:9::280:100",
+          "2001:550:2:61::2fc:100",
           "38.111.198.185"
         ]
       },
@@ -47,6 +47,7 @@
       }
     ],
     "warnings": [
+      "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records",
       "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records",
       "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records"
     ]
@@ -1298,9 +1299,62 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=none; rua=mailto:dmarc@hispasec.com; ruf=mailto:dmarc@hispasec.com; fo=1",
+    "valid": true,
+    "location": "alora.es",
+    "warnings": [
+      "hispasec.com does not indicate that it accepts DMARC reports about alora.es - Authorization record not found: alora.es._report._dmarc.hispasec.com IN TXT \"v=DMARC1\"",
+      "hispasec.com does not indicate that it accepts DMARC reports about alora.es - Authorization record not found: alora.es._report._dmarc.hispasec.com IN TXT \"v=DMARC1\""
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "rua": {
+        "value": "mailto:dmarc@hispasec.com",
+        "explicit": true
+      },
+      "ruf": {
+        "value": "mailto:dmarc@hispasec.com",
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "1"
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }

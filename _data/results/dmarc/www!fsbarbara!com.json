@@ -3,11 +3,8 @@
   "base_domain": "fsbarbara.com",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "a-ns.primari.net",
-      "b-ns.primari.net"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "mx": {
     "hosts": [

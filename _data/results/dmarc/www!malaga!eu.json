@@ -22,7 +22,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx include:spf.emdlv.net include:spf.mandrillapp.com include:_spf.google.com -all",
+    "record": "v=spf1 mx ip4:95.129.152.235 include:spf.emdlv.net include:spf.mandrillapp.com include:_spf.google.com -all",
     "valid": true,
     "dns_lookups": 7,
     "warnings": [],
@@ -31,6 +31,10 @@
         {
           "value": "correo.malaga.eu",
           "mechanism": "mx"
+        },
+        {
+          "value": "95.129.152.235",
+          "mechanism": "ip4"
         }
       ],
       "neutral": [],

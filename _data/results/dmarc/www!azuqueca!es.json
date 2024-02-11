@@ -19,7 +19,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 84.246.210.27 is innopulse.servidoresdedicados.com, but the A/AAAA DNS records for innopulse.servidoresdedicados.com do not resolve to 84.246.210.27"
+    ]
   },
   "spf": {
     "record": null,

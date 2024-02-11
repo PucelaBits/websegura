@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns3.hostinger.es",
       "ns1.hostinger.es",
       "ns2.hostinger.es",
-      "ns3.hostinger.es",
       "ns4.hostinger.es"
     ],
     "warnings": []
@@ -32,9 +32,7 @@
       "The reverse DNS of 204.141.43.44 is mx8.zoho.com, but the A/AAAA DNS records for mx8.zoho.com do not resolve to 204.141.43.44",
       "The reverse DNS of 204.141.43.44 is mx7.zoho.com, but the A/AAAA DNS records for mx7.zoho.com do not resolve to 204.141.43.44",
       "The reverse DNS of 204.141.43.44 is mx6.zoho.com, but the A/AAAA DNS records for mx6.zoho.com do not resolve to 204.141.43.44",
-      "The reverse DNS of 204.141.43.44 is mx3.zohomail.com, but the A/AAAA DNS records for mx3.zohomail.com do not resolve to 204.141.43.44",
       "The reverse DNS of 204.141.43.44 is mx2.zohomail.com, but the A/AAAA DNS records for mx2.zohomail.com do not resolve to 204.141.43.44",
-      "The reverse DNS of 204.141.43.44 is mx.zohomail.com, but the A/AAAA DNS records for mx.zohomail.com do not resolve to 204.141.43.44",
       "The reverse DNS of 204.141.43.44 is mx2.zoho.com, but the A/AAAA DNS records for mx2.zoho.com do not resolve to 204.141.43.44",
       "The reverse DNS of 136.143.183.44 is mx3.zohomail.com, but the A/AAAA DNS records for mx3.zohomail.com do not resolve to 136.143.183.44",
       "The reverse DNS of 136.143.183.44 is mx2.zohomail.com, but the A/AAAA DNS records for mx2.zohomail.com do not resolve to 136.143.183.44",
@@ -66,7 +64,7 @@
             "include": [
               {
                 "domain": "spf.zoho.com",
-                "record": "v=spf1 ip4:136.143.188.0/24 ip4:136.143.184.0/24 ip4:135.84.80.0/24 ip4:135.84.82.0/24 ip4:8.39.54.0/23 ip4:204.141.32.0/23 ip4:136.143.182.0/23 ip4:204.141.42.0/23 ip4:8.40.222.0/23 ip4:65.154.166.0/24 ip4:199.67.84.0/24 ip4:199.67.86.0/24 ip4:169.148.129.0/24 ip4:169.148.131.0/24 ip4:121.244.91.48/32 ip4:199.67.88.0/24 ip4:122.15.156.182/32 ip4:169.148.144.0/25 ip4:199.34.22.36/32 ip4:199.67.80.2/32 ip4:169.148.142.10/32 ip4:136.143.190.0/23 ip4:199.67.82.2/32 ip4:136.143.178.49/32 -all",
+                "record": "v=spf1 ip4:136.143.188.0/24 ip4:136.143.184.0/24 ip4:135.84.80.0/24 ip4:135.84.82.0/24 ip4:8.39.54.0/23 ip4:204.141.32.0/23 ip4:136.143.182.0/23 ip4:204.141.42.0/23 ip4:8.40.222.0/23 ip4:65.154.166.0/24 ip4:199.67.84.0/24 ip4:199.67.86.0/24 ip4:169.148.129.0/24 ip4:169.148.131.0/24 ip4:121.244.91.48/32 ip4:199.67.88.0/24 ip4:122.15.156.182/32 ip4:169.148.144.0/25 ip4:199.34.22.36/32 ip4:199.67.80.2/32 ip4:169.148.142.10/32 ip4:136.143.190.0/23 ip4:199.67.82.2/32 ip4:136.143.178.49/32 ip4:169.148.144.10/32 -all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
@@ -164,6 +162,10 @@
                     },
                     {
                       "value": "136.143.178.49/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "169.148.144.10/32",
                       "mechanism": "ip4"
                     }
                   ],

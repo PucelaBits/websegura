@@ -3,136 +3,22 @@
   "base_domain": "andalucia.org",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "ns.juntadeandalucia.es",
-      "ns3.juntadeandalucia.es",
-      "ns4.juntadeandalucia.es",
-      "ns1.juntadeandalucia.es"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mx.juntadeandalucia.es",
-        "addresses": [
-          "217.12.25.231"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mx2.juntadeandalucia.es",
-        "addresses": [
-          "217.12.25.241"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
-    "record": "v=spf1 ip4:217.12.27.153 ip4:217.12.27.75 ip4:217.12.26.60 ip4:217.12.26.61 ip4:217.12.27.157 ip4:217.12.27.158 ip4:217.12.27.159 ip4:217.12.27.160 include:spf.acumbamail.com ~all",
-    "valid": true,
-    "dns_lookups": 1,
-    "warnings": [],
-    "parsed": {
-      "pass": [
-        {
-          "value": "217.12.27.153",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "217.12.27.75",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "217.12.26.60",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "217.12.26.61",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "217.12.27.157",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "217.12.27.158",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "217.12.27.159",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "217.12.27.160",
-          "mechanism": "ip4"
-        }
-      ],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [
-        {
-          "domain": "spf.acumbamail.com",
-          "record": "v=spf1 ip4:176.28.104.1/24 ip4:185.2.150.1/24 ip4:185.103.37.224/28 ip4:5.57.226.1/24 ip4:5.57.227.80/28 ip4:5.57.227.112/28 ip4:185.99.184.144/28 ip4:185.103.36.192/28 ~all",
-          "dns_lookups": 0,
-          "parsed": {
-            "pass": [
-              {
-                "value": "176.28.104.1/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "185.2.150.1/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "185.103.37.224/28",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "5.57.226.1/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "5.57.227.80/28",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "5.57.227.112/28",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "185.99.184.144/28",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "185.103.36.192/28",
-                "mechanism": "ip4"
-              }
-            ],
-            "neutral": [],
-            "softfail": [],
-            "fail": [],
-            "include": [],
-            "redirect": null,
-            "exp": null,
-            "all": "softfail"
-          },
-          "warnings": []
-        }
-      ],
-      "redirect": null,
-      "exp": null,
-      "all": "softfail"
-    }
+    "record": null,
+    "valid": false,
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "dmarc": {
     "record": null,
     "valid": false,
     "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   }
 }

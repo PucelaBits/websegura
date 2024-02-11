@@ -36,9 +36,9 @@
     ]
   },
   "spf": {
-    "record": "v=spf1 a mx include:spf.acumbamail.com a:smtp.mcp.es a:mail.mcp.es ip4:194.179.77.241 include:mail.zendesk.com ~all",
+    "record": "v=spf1 a mx include:spf.protection.outlook.com include:spf.acumbamail.com a:smtp.mcp.es a:mail.mcp.es ip4:194.179.77.241 include:mail.zendesk.com ~all",
     "valid": true,
-    "dns_lookups": 6,
+    "dns_lookups": 7,
     "warnings": [
       "The domain smtp.mcp.es does not exist"
     ],
@@ -73,6 +73,59 @@
       "softfail": [],
       "fail": [],
       "include": [
+        {
+          "domain": "spf.protection.outlook.com",
+          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/51 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "40.92.0.0/15",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "40.107.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.100.0.0/14",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "104.47.0.0/17",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "2a01:111:f400::/48",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403::/49",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:8000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:c000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:f000::/52",
+                "mechanism": "ip6"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        },
         {
           "domain": "spf.acumbamail.com",
           "record": "v=spf1 ip4:176.28.104.1/24 ip4:185.2.150.1/24 ip4:185.103.37.224/28 ip4:5.57.226.1/24 ip4:5.57.227.80/28 ip4:5.57.227.112/28 ip4:185.99.184.144/28 ip4:185.103.36.192/28 ~all",

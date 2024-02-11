@@ -4,31 +4,16 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.juntadeandalucia.es",
-      "ns4.juntadeandalucia.es",
       "ns3.juntadeandalucia.es",
+      "ns4.juntadeandalucia.es",
+      "ns1.juntadeandalucia.es",
       "ns.juntadeandalucia.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mx.juntadeandalucia.es",
-        "addresses": [
-          "217.12.25.231"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mx2.juntadeandalucia.es",
-        "addresses": [
-          "217.12.25.241"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
     "record": null,

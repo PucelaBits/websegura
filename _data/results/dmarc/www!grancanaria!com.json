@@ -89,9 +89,62 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=none; fo=1; rua=mailto:agoney.cabrera@velorciosgroup.com; ruf=mailto:agoney.cabrera@velorciosgroup.com; pct=100",
+    "valid": true,
+    "location": "grancanaria.com",
+    "warnings": [
+      "velorciosgroup.com does not indicate that it accepts DMARC reports about grancanaria.com - Authorization record not found: grancanaria.com._report._dmarc.velorciosgroup.com IN TXT \"v=DMARC1\"",
+      "velorciosgroup.com does not indicate that it accepts DMARC reports about grancanaria.com - Authorization record not found: grancanaria.com._report._dmarc.velorciosgroup.com IN TXT \"v=DMARC1\""
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "1"
+        ],
+        "explicit": true
+      },
+      "rua": {
+        "value": "mailto:agoney.cabrera@velorciosgroup.com",
+        "explicit": true
+      },
+      "ruf": {
+        "value": "mailto:agoney.cabrera@velorciosgroup.com",
+        "explicit": true
+      },
+      "pct": {
+        "value": 100,
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }

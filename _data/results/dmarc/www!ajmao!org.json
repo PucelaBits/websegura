@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "silmail.silme.es",
-      "servdns3.silme.es"
+      "servdns3.silme.es",
+      "silmail.silme.es"
     ],
     "warnings": []
   },
@@ -15,51 +15,49 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.251.177.26",
-          "2607:f8b0:4023:1407::1a"
+          "172.253.122.27",
+          "2607:f8b0:4004:c1f::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "108.177.12.27",
-          "2607:f8b0:400c:c08::1a"
+          "209.85.202.26",
+          "2a00:1450:400b:c00::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "172.253.62.26",
-          "2607:f8b0:4004:c07::1b"
+          "2a00:1450:400c:c0b::1b",
+          "64.233.184.27"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "2800:3f0:4003:c00::1a",
-          "64.233.186.27"
+          "142.250.27.26",
+          "2a00:1450:4025:401::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "209.85.202.26",
-          "2a00:1450:400b:c00::1a"
+          "142.250.153.26",
+          "2a00:1450:4013:c16::1b"
         ]
       }
     ],
-    "warnings": [
-      "2800:3f0:4003:c00::1a does not have any reverse DNS (PTR) records"
-    ]
+    "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:88.87.207.210/32  ip4:88.87.207.202/32 ip4:185.68.189.2/32 ip4:185.68.189.17/32 include:smtp.tgi.cat include:_spf.google.com ~all",
+    "record": "v=spf1 ip4:88.87.207.210/32  ip4:88.87.207.202/32 ip4:185.68.189.2/32 ip4:185.68.189.17/32 include:smtp.tgi.cat include:spf.ipzmarketing.com include:_spf.google.com ~all",
     "valid": true,
-    "dns_lookups": 5,
+    "dns_lookups": 6,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -102,6 +100,43 @@
             "redirect": null,
             "exp": null,
             "all": "fail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "spf.ipzmarketing.com",
+          "record": "v=spf1 ip4:93.159.208.0/21 ip4:185.103.8.0/22 ip4:5.56.22.0/24 ip4:82.199.156.0/24 ip4:91.194.237.0/24 ~all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "93.159.208.0/21",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.103.8.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "5.56.22.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "82.199.156.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "91.194.237.0/24",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
           },
           "warnings": []
         },

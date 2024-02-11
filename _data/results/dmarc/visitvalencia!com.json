@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "dns3.prored.es",
-      "dns2.prored.es",
-      "dns1.prored.es"
+      "dns1.prored.es",
+      "dns2.prored.es"
     ],
     "warnings": []
   },
@@ -16,22 +16,22 @@
         "preference": 10,
         "hostname": "visitvalencia-com.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.10",
-          "52.101.68.16",
-          "52.101.68.18",
-          "52.101.68.29",
-          "52.101.73.16",
-          "52.101.73.19",
-          "52.101.73.4"
+          "52.101.68.0",
+          "52.101.68.12",
+          "52.101.68.15",
+          "52.101.68.25",
+          "52.101.73.12",
+          "52.101.73.15",
+          "52.101.73.24"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:spf.protection.outlook.com include:spf.ymlp.com a:email-smtp.eu-west-1.amazonaws.com -all",
+    "record": "v=spf1 include:spf.protection.outlook.com include:spf.ymlp.com include:5897040.spf07.hubspotemail.net a:email-smtp.eu-west-1.amazonaws.com -all",
     "valid": true,
-    "dns_lookups": 3,
+    "dns_lookups": 4,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -117,6 +117,71 @@
               },
               {
                 "value": "87.237.13.64/27",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "5897040.spf07.hubspotemail.net",
+          "record": "v=spf1 ip4:3.93.157.0/24 ip4:3.210.190.0/24 ip4:18.208.124.128/25 ip4:54.174.52.0/24 ip4:54.174.53.128/30 ip4:54.174.57.0/24 ip4:54.174.59.0/24 ip4:54.174.60.0/23 ip4:54.174.63.0/24 ip4:139.180.17.0/24 ip4:143.244.80.0/20 ip4:158.247.16.0/20 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "3.93.157.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "3.210.190.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "18.208.124.128/25",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "54.174.52.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "54.174.53.128/30",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "54.174.57.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "54.174.59.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "54.174.60.0/23",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "54.174.63.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "139.180.17.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "143.244.80.0/20",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "158.247.16.0/20",
                 "mechanism": "ip4"
               }
             ],

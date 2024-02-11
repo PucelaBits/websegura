@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "mirzam.ccc.upv.es",
-      "vega.cc.upv.es",
       "chico.rediris.es",
-      "sun.rediris.es"
+      "vega.cc.upv.es",
+      "sun.rediris.es",
+      "mirzam.ccc.upv.es"
     ],
     "warnings": []
   },
@@ -38,9 +38,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 a:smtpsal1.cc.upv.es a:smtpsal2.cc.upv.es a:smtpsal3.cc.upv.es a:smtpsal4.cc.upv.es a:smtpsalv.cc.upv.es a:smtpsalr.cc.upv.es a:smtpxv.cc.upv.es a:smtpxr.cc.upv.es include:spf.protection.outlook.com ~all",
+    "record": "v=spf1 a:smtpsal1.cc.upv.es a:smtpsal2.cc.upv.es a:smtpsalv.cc.upv.es a:smtpsalr.cc.upv.es include:spf.protection.outlook.com ~all",
     "valid": true,
-    "dns_lookups": 9,
+    "dns_lookups": 5,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -53,27 +53,11 @@
           "mechanism": "a"
         },
         {
-          "value": "158.42.249.12",
-          "mechanism": "a"
-        },
-        {
-          "value": "158.42.249.24",
-          "mechanism": "a"
-        },
-        {
           "value": "158.42.249.11",
           "mechanism": "a"
         },
         {
           "value": "158.42.249.35",
-          "mechanism": "a"
-        },
-        {
-          "value": "158.42.249.46",
-          "mechanism": "a"
-        },
-        {
-          "value": "158.42.249.47",
           "mechanism": "a"
         }
       ],

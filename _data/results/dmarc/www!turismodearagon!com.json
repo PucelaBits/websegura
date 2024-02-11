@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "calatayud.aragon.es",
-      "codos.aragon.es"
+      "codos.aragon.es",
+      "calatayud.aragon.es"
     ],
     "warnings": []
   },
@@ -19,9 +19,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The reverse DNS of 51.255.126.193 is mx1.cesarlaso.com, but the A/AAAA DNS records for mx1.cesarlaso.com do not resolve to 51.255.126.193"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx include:spf.ipzmarketing.com -all ",

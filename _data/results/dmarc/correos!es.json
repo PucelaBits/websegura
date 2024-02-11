@@ -37,9 +37,57 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=reject; rua=dmarc.es@correos.com; pct=100; adkim=s; aspf=s",
-    "valid": false,
+    "record": "v=DMARC1;p=reject;rua=mailto:dmarc.es@correos.com;pct=100;adkim=s;aspf=s",
+    "valid": true,
     "location": "correos.es",
-    "error": "dmarc.es@correos.com is not a valid DMARC report URI"
+    "warnings": [
+      "correos.com does not indicate that it accepts DMARC reports about correos.es - Authorization record not found: correos.es._report._dmarc.correos.com IN TXT \"v=DMARC1\""
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "reject",
+        "explicit": true
+      },
+      "rua": {
+        "value": "mailto:dmarc.es@correos.com",
+        "explicit": true
+      },
+      "pct": {
+        "value": 100,
+        "explicit": true
+      },
+      "adkim": {
+        "value": "s",
+        "explicit": true
+      },
+      "aspf": {
+        "value": "s",
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "reject",
+        "explicit": false
+      }
+    }
   }
 }

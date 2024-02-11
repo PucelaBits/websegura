@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "nsext1.udg.edu",
       "ns1.csuc.cat",
       "ns2.csuc.cat",
-      "nsext2.udg.edu",
-      "nsext1.udg.edu"
+      "nsext2.udg.edu"
     ],
     "warnings": []
   },
@@ -24,9 +24,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx a:imsva-in.udg.edu a:mta-sortida.udg.edu a:imsva-out.udg.edu ip4:84.88.131.25 a:mta-sortida-alt.udg.edu a:peguera.xs.csuc.cat a:gabarro.xs.csuc.cat ~all",
+    "record": "v=spf1 include:_spf.mlsend.com mx a:imsva-in.udg.edu a:mta-sortida.udg.edu a:imsva-out.udg.edu ip4:84.88.131.25 a:mta-sortida-alt.udg.edu a:peguera.xs.csuc.cat a:gabarro.xs.csuc.cat ~all",
     "valid": true,
-    "dns_lookups": 7,
+    "dns_lookups": 8,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -74,7 +74,33 @@
       "neutral": [],
       "softfail": [],
       "fail": [],
-      "include": [],
+      "include": [
+        {
+          "domain": "_spf.mlsend.com",
+          "record": "v=spf1 ip4:185.249.220.0/24 ip4:185.225.161.0/24 ~all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "185.249.220.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.225.161.0/24",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        }
+      ],
       "redirect": null,
       "exp": null,
       "all": "softfail"
@@ -84,6 +110,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.udg.edu\n\n\"v=DMARC1;p=none;rua=mailto:dmarcreports@udg.edu\""
   }
 }

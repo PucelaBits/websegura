@@ -15,13 +15,13 @@
         "preference": 10,
         "hostname": "parlamentib-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.0",
-          "52.101.68.18",
-          "52.101.68.3",
+          "52.101.68.36",
+          "52.101.68.39",
           "52.101.68.5",
-          "52.101.73.1",
           "52.101.73.15",
-          "52.101.73.28"
+          "52.101.73.2",
+          "52.101.73.28",
+          "52.101.73.30"
         ]
       }
     ],
@@ -103,7 +103,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; rua=mailto:postmaster@parlamentib.es; ruf=mailto:postmaster@parlamentib.es; adkim=s; aspf=s; rf=afrf",
+    "record": "v=DMARC1; p=quarantine; rua=mailto:postmaster@parlamentib.es; ruf=mailto:postmaster@parlamentib.es; adkim=s; aspf=s; rf=afrf",
     "valid": true,
     "location": "parlamentib.es",
     "warnings": [],
@@ -113,7 +113,7 @@
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": true
       },
       "rua": {
@@ -165,7 +165,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": false
       }
     }

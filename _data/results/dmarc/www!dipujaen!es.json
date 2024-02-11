@@ -22,7 +22,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 +mx +ip4:195.57.106.132 +ip4:195.57.106.136 +ip4:195.57.106.137 +ip4:77.228.205.32 +ip4:77.228.205.36 +ip4:77.228.205.37 include:spf.protection.outlook.com -all",
+    "record": "v=spf1 +mx +ip4:77.228.205.32 +ip4:77.228.205.36 +ip4:77.228.205.37 include:spf.protection.outlook.com -all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
@@ -31,18 +31,6 @@
         {
           "value": "correo3.dipujaen.es",
           "mechanism": "mx"
-        },
-        {
-          "value": "195.57.106.132",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "195.57.106.136",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "195.57.106.137",
-          "mechanism": "ip4"
         },
         {
           "value": "77.228.205.32",
