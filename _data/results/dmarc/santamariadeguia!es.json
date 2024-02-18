@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "ns2.gestiondecuenta.com",
-      "ns4.gestiondecuenta.com",
       "ns.gestiondecuenta.com",
+      "ns4.gestiondecuenta.com",
       "ns3.gestiondecuenta.com"
     ],
     "warnings": []
@@ -15,9 +15,18 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "correo.santamariadeguia.es",
+        "hostname": "mx-01-eu-central-1.prod.hydra.sophos.com",
         "addresses": [
-          "207.154.237.207"
+          "3.64.77.210",
+          "3.70.34.37"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mx-02-eu-central-1.prod.hydra.sophos.com",
+        "addresses": [
+          "3.64.77.210",
+          "3.70.34.37"
         ]
       }
     ],
@@ -35,7 +44,11 @@
           "mechanism": "a"
         },
         {
-          "value": "correo.santamariadeguia.es",
+          "value": "mx-01-eu-central-1.prod.hydra.sophos.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mx-02-eu-central-1.prod.hydra.sophos.com",
           "mechanism": "mx"
         },
         {

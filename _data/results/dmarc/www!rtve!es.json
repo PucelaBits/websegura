@@ -15,24 +15,23 @@
         "preference": 10,
         "hostname": "mxa-00626c01.gslb.pphosted.com",
         "addresses": [
-          "143.55.144.49"
+          "205.220.185.106"
         ]
       },
       {
         "preference": 10,
         "hostname": "mxb-00626c01.gslb.pphosted.com",
         "addresses": [
-          "143.55.144.49"
+          "205.220.185.106"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:%{ir}.%{v}.%{d}.spf.has.pphosted.com -all",
+    "record": null,
     "valid": false,
-    "warnings": [],
-    "error": "The domain %{ir}.%{v}.%{d}.spf.has.pphosted.com does not exist"
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "dmarc": {
     "record": "v=DMARC1; p=reject; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com",

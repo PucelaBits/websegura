@@ -17,12 +17,46 @@
         "addresses": [
           "77.228.205.36"
         ]
+      },
+      {
+        "preference": 5,
+        "hostname": "correo2.dipujaen.es",
+        "addresses": [
+          "77.228.205.37"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mail.dipujaen.es",
+        "addresses": [
+          "77.228.205.32"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "correo.dipujaen.es",
+        "addresses": [
+          "77.228.205.36"
+        ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 77.228.205.36 is correo2.promojaen.es, but the A/AAAA DNS records for correo2.promojaen.es do not resolve to 77.228.205.36",
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 77.228.205.37 is correo.promojaen.es, but the A/AAAA DNS records for correo.promojaen.es do not resolve to 77.228.205.37",
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 77.228.205.32 is mail.dipujaen.es, but the A/AAAA DNS records for mail.dipujaen.es do not resolve to 77.228.205.32",
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 77.228.205.32 is mail.promojaen.es, but the A/AAAA DNS records for mail.promojaen.es do not resolve to 77.228.205.32",
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 77.228.205.36 is correo.dipujaen.es, but the A/AAAA DNS records for correo.dipujaen.es do not resolve to 77.228.205.36",
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 77.228.205.36 is correo2.promojaen.es, but the A/AAAA DNS records for correo2.promojaen.es do not resolve to 77.228.205.36"
+    ]
   },
   "spf": {
-    "record": "v=spf1 +mx +ip4:77.228.205.32 +ip4:77.228.205.36 +ip4:77.228.205.37 include:spf.protection.outlook.com -all",
+    "record": "v=spf1 +mx +ip4:77.228.205.32 +ip4:77.228.205.36 +ip4:77.228.205.37 +ip4:77.228.205.160/28 include:spf.protection.outlook.com -all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
@@ -30,6 +64,18 @@
       "pass": [
         {
           "value": "correo3.dipujaen.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "correo2.dipujaen.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mail.dipujaen.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "correo.dipujaen.es",
           "mechanism": "mx"
         },
         {
@@ -42,6 +88,10 @@
         },
         {
           "value": "77.228.205.37",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "77.228.205.160/28",
           "mechanism": "ip4"
         }
       ],

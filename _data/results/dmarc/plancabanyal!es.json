@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.ymant.com",
-      "ns1.ymant.com"
+      "ns1.iukanet.com",
+      "ns2.iukanet.com"
     ],
     "warnings": []
   },
@@ -15,27 +15,39 @@
         "preference": 10,
         "hostname": "plancabanyal-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.16",
-          "52.101.68.25",
-          "52.101.68.3",
-          "52.101.73.19",
+          "52.101.68.0",
+          "52.101.68.29",
+          "52.101.68.36",
+          "52.101.73.1",
           "52.101.73.21",
-          "52.101.73.26",
-          "52.101.73.30"
+          "52.101.73.22",
+          "52.101.73.8"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:185.231.20.50 include:spf.protection.outlook.com -all",
+    "record": "v=spf1 +a +mx +ip4:185.231.20.50 +ip4:185.231.20.101 +include:spf.protection.outlook.com -all",
     "valid": true,
-    "dns_lookups": 1,
+    "dns_lookups": 3,
     "warnings": [],
     "parsed": {
       "pass": [
         {
+          "value": "185.231.20.101",
+          "mechanism": "a"
+        },
+        {
+          "value": "plancabanyal-es.mail.protection.outlook.com",
+          "mechanism": "mx"
+        },
+        {
           "value": "185.231.20.50",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "185.231.20.101",
           "mechanism": "ip4"
         }
       ],

@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns3.dnsxperta.com",
       "ns1.dnsxperta.com",
-      "ns2.dnsxperta.com"
+      "ns2.dnsxperta.com",
+      "ns3.dnsxperta.com"
     ],
     "warnings": []
   },
@@ -31,8 +31,8 @@
       }
     ],
     "warnings": [
-      "All nameservers failed to answer the query mx1.filterantispam.com. IN A: Server Do53:1.0.0.1@53 answered SERVFAIL",
-      "All nameservers failed to answer the query mx2.filterantispam.com. IN A: Server Do53:1.0.0.1@53 answered SERVFAIL"
+      "The domain mx1.filterantispam.com does not exist",
+      "The domain mx2.filterantispam.com does not exist"
     ]
   },
   "spf": {

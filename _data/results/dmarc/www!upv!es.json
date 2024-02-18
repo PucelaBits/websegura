@@ -5,9 +5,9 @@
   "ns": {
     "hostnames": [
       "chico.rediris.es",
-      "vega.cc.upv.es",
+      "mirzam.ccc.upv.es",
       "sun.rediris.es",
-      "mirzam.ccc.upv.es"
+      "vega.cc.upv.es"
     ],
     "warnings": []
   },
@@ -38,9 +38,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 a:smtpsal1.cc.upv.es a:smtpsal2.cc.upv.es a:smtpsalv.cc.upv.es a:smtpsalr.cc.upv.es include:spf.protection.outlook.com ~all",
+    "record": "v=spf1 a:smtpsal1.cc.upv.es a:smtpsal2.cc.upv.es a:smtpxv.cc.upv.es a:smtpxr.cc.upv.es a:smtpsalv.cc.upv.es a:smtpsalr.cc.upv.es include:spf.protection.outlook.com ~all",
     "valid": true,
-    "dns_lookups": 5,
+    "dns_lookups": 7,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -50,6 +50,14 @@
         },
         {
           "value": "158.42.249.62",
+          "mechanism": "a"
+        },
+        {
+          "value": "158.42.249.46",
+          "mechanism": "a"
+        },
+        {
+          "value": "158.42.249.47",
           "mechanism": "a"
         },
         {

@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "topacio.usal.es",
       "zafiro.usal.es",
       "sun.rediris.es",
-      "topacio.usal.es",
       "agata.usal.es",
       "chico.rediris.es"
     ],
@@ -18,15 +18,15 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "172.253.122.27",
-          "2607:f8b0:4004:c19::1a"
+          "172.253.115.26",
+          "2607:f8b0:4004:c06::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "209.85.202.26",
+          "209.85.202.27",
           "2a00:1450:400b:c00::1a"
         ]
       },
@@ -34,7 +34,7 @@
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "2a00:1450:400c:c0b::1a",
+          "2a00:1450:400c:c0b::1b",
           "64.233.184.27"
         ]
       },
@@ -42,8 +42,8 @@
         "preference": 10,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "142.250.27.26",
-          "2a00:1450:4025:401::1b"
+          "142.250.27.27",
+          "2a00:1450:4025:401::1a"
         ]
       },
       {
@@ -51,7 +51,7 @@
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
           "142.250.153.26",
-          "2a00:1450:4013:c16::1b"
+          "2a00:1450:4013:c16::1a"
         ]
       }
     ],
@@ -251,9 +251,61 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; rua=postmaster@usal.es",
-    "valid": false,
+    "record": "v=DMARC1; p=none; rua=mailto:postmaster@usal.es",
+    "valid": true,
     "location": "usal.es",
-    "error": "postmaster@usal.es is not a valid DMARC report URI"
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "postmaster@usal.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }

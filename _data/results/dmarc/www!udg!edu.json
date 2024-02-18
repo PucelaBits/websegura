@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "nsext1.udg.edu",
-      "ns1.csuc.cat",
       "ns2.csuc.cat",
-      "nsext2.udg.edu"
+      "ns1.csuc.cat",
+      "nsext2.udg.edu",
+      "nsext1.udg.edu"
     ],
     "warnings": []
   },
@@ -107,9 +107,61 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.udg.edu\n\n\"v=DMARC1;p=none;rua=mailto:dmarcreports@udg.edu\""
+    "record": "v=DMARC1;p=none;rua=mailto:si.seguretat@udg.edu",
+    "valid": true,
+    "location": "udg.edu",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "si.seguretat@udg.edu",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }

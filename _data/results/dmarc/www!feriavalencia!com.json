@@ -17,13 +17,13 @@
         "preference": 10,
         "hostname": "feriavalencia-com.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.12",
-          "52.101.68.16",
-          "52.101.68.25",
+          "52.101.68.0",
+          "52.101.68.15",
           "52.101.68.36",
-          "52.101.68.5",
-          "52.101.73.11",
-          "52.101.73.24"
+          "52.101.73.1",
+          "52.101.73.19",
+          "52.101.73.2",
+          "52.101.73.26"
         ]
       },
       {
@@ -37,7 +37,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:188.86.160.90 ip4:188.86.160.91 include:spf.protection.outlook.com -all",
+    "record": "v=spf1 ip4:188.86.160.90 ip4:188.86.160.91 ip4:77.228.101.135 include:spf.protection.outlook.com -all",
     "valid": true,
     "dns_lookups": 1,
     "warnings": [],
@@ -49,6 +49,10 @@
         },
         {
           "value": "188.86.160.91",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "77.228.101.135",
           "mechanism": "ip4"
         }
       ],
