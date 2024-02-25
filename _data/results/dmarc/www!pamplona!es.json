@@ -104,7 +104,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; fo=1; rua=mailto:rua@pamplona.es; ruf=mailto:ruf@pamplona.es",
+    "record": "v=DMARC1; p=none; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com,mailto:rua@pamplona.es; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com,mailto:ruf@pamplona.es",
     "valid": true,
     "location": "pamplona.es",
     "warnings": [],
@@ -127,6 +127,11 @@
         "value": [
           {
             "scheme": "mailto",
+            "address": "dmarc_rua@emaildefense.proofpoint.com",
+            "size_limit": null
+          },
+          {
+            "scheme": "mailto",
             "address": "rua@pamplona.es",
             "size_limit": null
           }
@@ -135,6 +140,11 @@
       },
       "ruf": {
         "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc_ruf@emaildefense.proofpoint.com",
+            "size_limit": null
+          },
           {
             "scheme": "mailto",
             "address": "ruf@pamplona.es",

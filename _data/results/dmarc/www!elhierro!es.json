@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.ascio.com",
-      "ns4.ascio.com",
       "ns2.ascio.com",
-      "ns3.ascio.com"
+      "ns1.ascio.com",
+      "ns3.ascio.com",
+      "ns4.ascio.com"
     ],
     "warnings": []
   },
@@ -18,19 +18,19 @@
         "hostname": "elhierro-es.mail.protection.outlook.com",
         "addresses": [
           "52.101.68.0",
-          "52.101.68.15",
-          "52.101.68.36",
-          "52.101.68.39",
-          "52.101.73.11",
+          "52.101.68.16",
+          "52.101.73.15",
           "52.101.73.22",
-          "52.101.73.30"
+          "52.101.73.30",
+          "52.101.73.6",
+          "52.101.73.8"
         ]
       },
       {
         "preference": 10,
         "hostname": "mxa.mailgun.org",
         "addresses": [
-          "34.160.13.42"
+          "34.149.236.64"
         ]
       },
       {

@@ -10,14 +10,11 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "in1-smtp.messagingengine.com",
+        "hostname": "inbound-smtp.eu-west-1.amazonaws.com",
         "addresses": [
-          "103.168.172.216",
-          "103.168.172.217",
-          "103.168.172.218",
-          "103.168.172.219",
-          "103.168.172.220",
-          "103.168.172.221"
+          "18.200.203.69",
+          "54.155.140.59",
+          "54.76.31.185"
         ]
       }
     ],
@@ -29,7 +26,7 @@
     "error": "castroderei.sedelectronica.gal does not have a SPF TXT record"
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; sp=none; rua=mailto:dmarc@espublico.com,mailto:dmarc_agg@vali.email; ruf=mailto:dmarc@espublico.com; fo=s; ri=3600",
+    "record": "v=DMARC1; p=quarantine; sp=none; rua=mailto:rua@espublico.com,mailto:dmarc_agg@vali.email; ruf=mailto:ruf@espublico.com; fo=1; ri=3600",
     "valid": true,
     "location": "sedelectronica.gal",
     "warnings": [
@@ -42,7 +39,7 @@
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": true
       },
       "sp": {
@@ -50,16 +47,16 @@
         "explicit": true
       },
       "rua": {
-        "value": "mailto:dmarc@espublico.com,mailto:dmarc_agg@vali.email",
+        "value": "mailto:rua@espublico.com,mailto:dmarc_agg@vali.email",
         "explicit": true
       },
       "ruf": {
-        "value": "mailto:dmarc@espublico.com",
+        "value": "mailto:ruf@espublico.com",
         "explicit": true
       },
       "fo": {
         "value": [
-          "s"
+          "1"
         ],
         "explicit": true
       },

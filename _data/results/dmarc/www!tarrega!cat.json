@@ -17,22 +17,22 @@
         "preference": 0,
         "hostname": "tarrega-cat.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.18",
+          "52.101.68.12",
+          "52.101.68.3",
           "52.101.68.32",
-          "52.101.73.12",
           "52.101.73.2",
-          "52.101.73.24",
-          "52.101.73.6",
-          "52.101.73.8"
+          "52.101.73.22",
+          "52.101.73.26",
+          "52.101.73.6"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:spf.protection.outlook.com -all",
+    "record": "v=spf1 include:_spf.mlsend.com include:spf.protection.outlook.com -all",
     "valid": true,
-    "dns_lookups": 1,
+    "dns_lookups": 2,
     "warnings": [],
     "parsed": {
       "pass": [],
@@ -40,6 +40,31 @@
       "softfail": [],
       "fail": [],
       "include": [
+        {
+          "domain": "_spf.mlsend.com",
+          "record": "v=spf1 ip4:185.249.220.0/24 ip4:185.225.161.0/24 ~all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "185.249.220.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.225.161.0/24",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        },
         {
           "domain": "spf.protection.outlook.com",
           "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/51 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",

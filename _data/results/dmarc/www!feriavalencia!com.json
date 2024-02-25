@@ -12,29 +12,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "feriavalencia-com.mail.protection.outlook.com",
-        "addresses": [
-          "52.101.68.0",
-          "52.101.68.15",
-          "52.101.68.36",
-          "52.101.73.1",
-          "52.101.73.19",
-          "52.101.73.2",
-          "52.101.73.26"
-        ]
-      },
-      {
-        "preference": 30,
-        "hostname": "senvios02.feriavalencia.com",
-        "addresses": [
-          "188.86.160.90"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 ip4:188.86.160.90 ip4:188.86.160.91 ip4:77.228.101.135 include:spf.protection.outlook.com -all",
@@ -120,9 +99,71 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=none; rua=mailto:reporte-dmarc@feriavalencia.com; ruf=mailto:reporte-dmarc@feriavalencia.com; rf=afrf; fo=1; ri=86400",
+    "valid": true,
+    "location": "feriavalencia.com",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "reporte-dmarc@feriavalencia.com",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "reporte-dmarc@feriavalencia.com",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "1"
+        ],
+        "explicit": true
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }

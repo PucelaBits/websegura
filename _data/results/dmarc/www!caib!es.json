@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "sintlin1.caib.es",
-      "sintlin2.caib.es"
+      "sintlin2.caib.es",
+      "sintlin1.caib.es"
     ],
     "warnings": []
   },
@@ -14,9 +14,7 @@
       {
         "preference": 5,
         "hostname": "rmail1.caib.es",
-        "addresses": [
-          "85.119.193.3"
-        ]
+        "addresses": []
       },
       {
         "preference": 5,
@@ -26,7 +24,9 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ]
   },
   "spf": {
     "record": "v=spf1 mx ip4:85.119.193.2 ip4:85.119.198.6 ip4:85.119.198.16 -all",

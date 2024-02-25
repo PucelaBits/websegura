@@ -3,30 +3,19 @@
   "base_domain": "spainun.org",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "ns1.bluehost.com",
-      "ns2.bluehost.com"
-    ],
+    "hostnames": [],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 0,
-        "hostname": "mail.spainun.org",
-        "addresses": [
-          "162.241.248.14"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
   },
   "spf": {
-    "record": "v=spf1 a mx include:websitewelcome.com ~all",
+    "record": null,
     "valid": false,
-    "warnings": [],
-    "error": "Parsing the SPF record requires 12/10 maximum DNS lookups - https://tools.ietf.org/html/rfc7208#section-4.6.4",
-    "dns_lookups": 12
+    "error": "spainun.org does not have a SPF TXT record"
   },
   "dmarc": {
     "record": null,

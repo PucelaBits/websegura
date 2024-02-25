@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.itbatera.euskadi.eus",
-      "ns1.itbatera.euskadi.eus"
+      "ns1.itbatera.euskadi.eus",
+      "ns2.itbatera.euskadi.eus"
     ],
     "warnings": []
   },
@@ -26,7 +26,7 @@
   "spf": {
     "record": "v=spf1 ip4:176.28.98.112/28 include:servers.mcsv.net include:euskadi.ip-zone.com include:eu.zcsend.net include:spf.batera.euskadi.eus -all",
     "valid": true,
-    "dns_lookups": 7,
+    "dns_lookups": 8,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -141,7 +141,7 @@
         {
           "domain": "spf.batera.euskadi.eus",
           "record": "v=spf1 ip4:185.161.119.34/32 ip4:185.161.119.55/32 include:spf.tmes.trendmicro.com include:spf.protection.outlook.com -all",
-          "dns_lookups": 3,
+          "dns_lookups": 4,
           "parsed": {
             "pass": [
               {
@@ -160,7 +160,7 @@
               {
                 "domain": "spf.tmes.trendmicro.com",
                 "record": "v=spf1 ip4:18.208.22.64/26 ip4:18.208.22.128/25 ip4:18.185.115.128/26 ip4:18.185.115.0/25 ip4:13.238.202.0/25 ip4:13.238.202.128/26 ip4:18.176.203.128/25 ip4:13.213.174.128/25 ip4:18.177.156.0/25 ip4:13.213.220.0/25 include:spfb.tmes.trendmicro.com ~all",
-                "dns_lookups": 1,
+                "dns_lookups": 2,
                 "parsed": {
                   "pass": [
                     {
@@ -210,26 +210,10 @@
                   "include": [
                     {
                       "domain": "spfb.tmes.trendmicro.com",
-                      "record": "v=spf1 ip4:18.188.9.192/26 ip4:18.188.239.128/26 ip4:34.253.238.128/26 ip4:34.253.238.192/26 ip4:107.22.223.18 ip4:52.70.252.86 ip4:35.156.245.132 ip4:18.156.0.20 ip4:3.74.126.139 ip4:3.72.196.143 ip4:54.146.4.63 ip4:54.174.82.86 ~all",
-                      "dns_lookups": 0,
+                      "record": "v=spf1 ip4:107.22.223.18 ip4:52.70.252.86 ip4:35.156.245.132 ip4:18.156.0.20 ip4:3.72.196.143 ip4:54.146.4.63 ip4:54.174.82.86 include:spfc.tmes.trendmicro.com ~all",
+                      "dns_lookups": 1,
                       "parsed": {
                         "pass": [
-                          {
-                            "value": "18.188.9.192/26",
-                            "mechanism": "ip4"
-                          },
-                          {
-                            "value": "18.188.239.128/26",
-                            "mechanism": "ip4"
-                          },
-                          {
-                            "value": "34.253.238.128/26",
-                            "mechanism": "ip4"
-                          },
-                          {
-                            "value": "34.253.238.192/26",
-                            "mechanism": "ip4"
-                          },
                           {
                             "value": "107.22.223.18",
                             "mechanism": "ip4"
@@ -244,10 +228,6 @@
                           },
                           {
                             "value": "18.156.0.20",
-                            "mechanism": "ip4"
-                          },
-                          {
-                            "value": "3.74.126.139",
                             "mechanism": "ip4"
                           },
                           {
@@ -266,7 +246,53 @@
                         "neutral": [],
                         "softfail": [],
                         "fail": [],
-                        "include": [],
+                        "include": [
+                          {
+                            "domain": "spfc.tmes.trendmicro.com",
+                            "record": "v=spf1 ip4:18.188.9.192/26 ip4:18.188.239.128/26 ip4:34.253.238.128/26 ip4:34.253.238.192/26 ip4:15.168.56.0/25 ip4:15.168.49.64/26 ip4:15.168.56.128/26 ~all",
+                            "dns_lookups": 0,
+                            "parsed": {
+                              "pass": [
+                                {
+                                  "value": "18.188.9.192/26",
+                                  "mechanism": "ip4"
+                                },
+                                {
+                                  "value": "18.188.239.128/26",
+                                  "mechanism": "ip4"
+                                },
+                                {
+                                  "value": "34.253.238.128/26",
+                                  "mechanism": "ip4"
+                                },
+                                {
+                                  "value": "34.253.238.192/26",
+                                  "mechanism": "ip4"
+                                },
+                                {
+                                  "value": "15.168.56.0/25",
+                                  "mechanism": "ip4"
+                                },
+                                {
+                                  "value": "15.168.49.64/26",
+                                  "mechanism": "ip4"
+                                },
+                                {
+                                  "value": "15.168.56.128/26",
+                                  "mechanism": "ip4"
+                                }
+                              ],
+                              "neutral": [],
+                              "softfail": [],
+                              "fail": [],
+                              "include": [],
+                              "redirect": null,
+                              "exp": null,
+                              "all": "softfail"
+                            },
+                            "warnings": []
+                          }
+                        ],
                         "redirect": null,
                         "exp": null,
                         "all": "softfail"

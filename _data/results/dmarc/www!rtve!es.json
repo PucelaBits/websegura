@@ -29,9 +29,10 @@
     "warnings": []
   },
   "spf": {
-    "record": null,
+    "record": "v=spf1 include:%{ir}.%{v}.%{d}.spf.has.pphosted.com -all",
     "valid": false,
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "warnings": [],
+    "error": "The domain %{ir}.%{v}.%{d}.spf.has.pphosted.com does not exist"
   },
   "dmarc": {
     "record": "v=DMARC1; p=reject; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com",

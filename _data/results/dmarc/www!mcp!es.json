@@ -36,7 +36,7 @@
     ]
   },
   "spf": {
-    "record": "v=spf1 a mx include:spf.protection.outlook.com include:spf.acumbamail.com a:smtp.mcp.es a:mail.mcp.es ip4:194.179.77.241 include:mail.zendesk.com ~all",
+    "record": "v=spf1 a mx include:spf.protection.outlook.com include:spf.acumbamail.com a:smtp.mcp.es a:mail.mcp.es include:mail.zendesk.com ~all",
     "valid": true,
     "dns_lookups": 7,
     "warnings": [
@@ -63,10 +63,6 @@
         {
           "value": "195.76.209.199",
           "mechanism": "a"
-        },
-        {
-          "value": "194.179.77.241",
-          "mechanism": "ip4"
         }
       ],
       "neutral": [],

@@ -43,9 +43,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:spf.protection.outlook.com ip4:217.124.155.49/32 ip4:194.179.47.226/32 include:spf.hornetsecurity.com ~all",
+    "record": "v=spf1 include:spf.protection.outlook.com ip4:217.124.155.49/32 ip4:194.179.47.226/32 include:spf.hornetsecurity.com include:spf-0085c402.pphosted.com ~all",
     "valid": true,
-    "dns_lookups": 2,
+    "dns_lookups": 3,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -205,6 +205,31 @@
             "redirect": null,
             "exp": null,
             "all": "softfail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "spf-0085c402.pphosted.com",
+          "record": "v=spf1 ip4:66.159.233.119 ip4:66.159.234.208",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "66.159.233.119",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "66.159.234.208",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "neutral"
           },
           "warnings": []
         }

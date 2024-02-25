@@ -13,12 +13,20 @@
     ]
   },
   "spf": {
-    "record": "v=spf1 +a:spf.theservercluster.com ip4:37.48.92.140 ip4:37.48.92.146 +ip4:81.171.28.98 +ip4:5.79.71.84 +ip4:37.48.92.141 -all",
+    "record": "v=spf1 ip4:85.17.20.99 ip4:85.17.20.69 +a:spf.theservercluster.com ip4:37.48.92.140 ip4:37.48.92.146 +ip4:81.171.28.98 +ip4:5.79.71.84 +ip4:37.48.92.141 -all",
     "valid": true,
     "dns_lookups": 1,
     "warnings": [],
     "parsed": {
       "pass": [
+        {
+          "value": "85.17.20.99",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "85.17.20.69",
+          "mechanism": "ip4"
+        },
         {
           "value": "178.162.157.193",
           "mechanism": "a"

@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns.redunda.com",
-      "ns2.redunda.com"
+      "ns2.redunda.com",
+      "ns.redunda.com"
     ],
     "warnings": []
   },
@@ -29,7 +29,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:62.82.178.94  ip4:62.82.178.90 ip4:62.82.178.66 ip4:109.234.71.137 -all",
+    "record": "v=spf1 ip4:62.82.178.94  ip4:62.82.178.90 ip4:62.82.178.66 ip4:109.234.71.137 ip4:109.234.71.72 -all",
     "valid": true,
     "dns_lookups": 0,
     "warnings": [],
@@ -49,6 +49,10 @@
         },
         {
           "value": "109.234.71.137",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "109.234.71.72",
           "mechanism": "ip4"
         }
       ],
