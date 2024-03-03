@@ -4,24 +4,28 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "minerva.ttd.net",
-      "artemis.ttd.net"
+      "a26-67.akam.net",
+      "a4-64.akam.net",
+      "a7-65.akam.net",
+      "a11-65.akam.net",
+      "a1-25.akam.net",
+      "a12-67.akam.net"
     ],
     "warnings": []
   },
   "mx": {
     "hosts": [
       {
-        "preference": 1,
+        "preference": 10,
         "hostname": "madrid-es.mail.protection.outlook.com",
         "addresses": [
+          "52.101.68.0",
           "52.101.68.25",
-          "52.101.68.27",
-          "52.101.68.29",
-          "52.101.68.39",
-          "52.101.73.19",
-          "52.101.73.28",
-          "52.101.73.6"
+          "52.101.68.3",
+          "52.101.68.32",
+          "52.101.68.36",
+          "52.101.68.8",
+          "52.101.73.15"
         ]
       }
     ],

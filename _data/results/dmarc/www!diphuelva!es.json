@@ -4,27 +4,32 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "beta2.sigadel.com",
-      "alpha.sigadel.com"
+      "alpha.sigadel.com",
+      "beta2.sigadel.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 5,
+        "hostname": "correo.diphuelva.es",
+        "addresses": []
+      }
+    ],
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ]
   },
   "spf": {
     "record": "v=spf1 mx ~all",
     "valid": true,
     "dns_lookups": 1,
-    "warnings": [],
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ],
     "parsed": {
-      "pass": [
-        {
-          "value": "correo.diphuelva.es",
-          "mechanism": "mx"
-        }
-      ],
+      "pass": [],
       "neutral": [],
       "softfail": [],
       "fail": [],
@@ -38,6 +43,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "error": "A DMARC record does not exist for this domain or its base domain"
   }
 }

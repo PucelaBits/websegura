@@ -17,22 +17,22 @@
         "preference": 0,
         "hostname": "udl-cat.mail.protection.outlook.com",
         "addresses": [
+          "52.101.68.10",
           "52.101.68.16",
-          "52.101.68.29",
-          "52.101.68.5",
-          "52.101.73.1",
           "52.101.73.11",
-          "52.101.73.16",
-          "52.101.73.4"
+          "52.101.73.12",
+          "52.101.73.2",
+          "52.101.73.21",
+          "52.101.73.22"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx ptr a:relayout.udl.cat a:relayout01.udl.cat a:relayout02.udl.cat a:peguera.xs.csuc.cat a:peguera.xs.cesca.cat include:spf.sendinblue.com include:spf.protection.outlook.com include:spf.ipzmarketing.com mx -all",
+    "record": "v=spf1 mx ptr a:relayout.udl.cat a:relayout01.udl.cat a:relayout02.udl.cat a:peguera.xs.csuc.cat a:peguera.xs.cesca.cat include:spf.sendinblue.com include:spf.protection.outlook.com include:spf.ipzmarketing.com -all",
     "valid": true,
-    "dns_lookups": 10,
+    "dns_lookups": 9,
     "warnings": [
       "The ptr mechanism should not be used - https://tools.ietf.org/html/rfc7208#section-5.5"
     ],
@@ -73,10 +73,6 @@
         {
           "value": "84.88.0.7",
           "mechanism": "a"
-        },
-        {
-          "value": "udl-cat.mail.protection.outlook.com",
-          "mechanism": "mx"
         }
       ],
       "neutral": [],

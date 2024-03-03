@@ -12,120 +12,31 @@
   "mx": {
     "hosts": [
       {
-        "preference": 0,
+        "preference": 10,
         "hostname": "mx.msc.es",
-        "addresses": [
-          "195.64.186.52"
-        ]
+        "addresses": []
       },
       {
-        "preference": 20,
+        "preference": 10,
         "hostname": "mxres.msc.es",
-        "addresses": [
-          "91.230.250.52"
-        ]
+        "addresses": []
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out.",
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ]
   },
   "spf": {
-    "record": "v=spf1 ip4:174.142.68.79/32 ip4:195.64.186.0/23 ip4:91.230.250.0/24 ip4:31.186.254.162/32 ip4:212.92.54.69/32 ip4:212.92.57.122/32 -all",
-    "valid": true,
-    "dns_lookups": 0,
+    "record": "v=spf1 ip4:195.64.186.0/23 ip4:91.230.250.0/24 include:spf.correo.gob.es. -all",
+    "valid": false,
     "warnings": [],
-    "parsed": {
-      "pass": [
-        {
-          "value": "174.142.68.79/32",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "195.64.186.0/23",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "91.230.250.0/24",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "31.186.254.162/32",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "212.92.54.69/32",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "212.92.57.122/32",
-          "mechanism": "ip4"
-        }
-      ],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [],
-      "redirect": null,
-      "exp": null,
-      "all": "fail"
-    }
+    "error": "spf.correo.gob.es. does not have a SPF TXT record"
   },
   "dmarc": {
-    "record": "v=DMARC1; p=reject; rua=mailto:postmaster@msc.es; ruf=mailto:postmaster@msc.es",
-    "valid": true,
-    "location": "igualdad.gob.es",
-    "warnings": [
-      "msc.es does not indicate that it accepts DMARC reports about igualdad.gob.es - Authorization record not found: igualdad.gob.es._report._dmarc.msc.es IN TXT \"v=DMARC1\"",
-      "msc.es does not indicate that it accepts DMARC reports about igualdad.gob.es - Authorization record not found: igualdad.gob.es._report._dmarc.msc.es IN TXT \"v=DMARC1\""
-    ],
-    "tags": {
-      "v": {
-        "value": "DMARC1",
-        "explicit": true
-      },
-      "p": {
-        "value": "reject",
-        "explicit": true
-      },
-      "rua": {
-        "value": "mailto:postmaster@msc.es",
-        "explicit": true
-      },
-      "ruf": {
-        "value": "mailto:postmaster@msc.es",
-        "explicit": true
-      },
-      "adkim": {
-        "value": "r",
-        "explicit": false
-      },
-      "aspf": {
-        "value": "r",
-        "explicit": false
-      },
-      "fo": {
-        "value": [
-          "0"
-        ],
-        "explicit": false
-      },
-      "pct": {
-        "value": 100,
-        "explicit": false
-      },
-      "rf": {
-        "value": [
-          "afrf"
-        ],
-        "explicit": false
-      },
-      "ri": {
-        "value": 86400,
-        "explicit": false
-      },
-      "sp": {
-        "value": "reject",
-        "explicit": false
-      }
-    }
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
   }
 }

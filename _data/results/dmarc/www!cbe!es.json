@@ -4,62 +4,26 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.parkingcrew.net",
-      "ns1.parkingcrew.net"
+      "ns2.bodis.com",
+      "ns1.bodis.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 5,
-        "hostname": "mail.h-email.net",
-        "addresses": [
-          "162.55.164.116",
-          "165.227.156.49",
-          "165.227.159.144",
-          "167.235.143.33",
-          "178.62.199.248",
-          "49.13.4.90",
-          "5.161.194.135",
-          "5.161.98.212",
-          "5.75.171.74",
-          "91.107.214.206"
-        ]
-      }
-    ],
+    "hosts": [],
     "warnings": [
-      "The domain mail3.h-email.net does not exist",
-      "The reverse DNS of 165.227.156.49 is mail3.h-email.net, but the A/AAAA DNS records for mail3.h-email.net do not resolve to 165.227.156.49",
-      "The domain mail2.h-email.net does not exist",
-      "The reverse DNS of 165.227.159.144 is mail2.h-email.net, but the A/AAAA DNS records for mail2.h-email.net do not resolve to 165.227.159.144"
+      "No MX records found. Is the domain parked?"
     ]
   },
   "spf": {
-    "record": "v=spf1 ip6:fd1b:212c:a5f9::/48 -all",
-    "valid": true,
-    "dns_lookups": 0,
-    "warnings": [],
-    "parsed": {
-      "pass": [
-        {
-          "value": "fd1b:212c:a5f9::/48",
-          "mechanism": "ip6"
-        }
-      ],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [],
-      "redirect": null,
-      "exp": null,
-      "all": "fail"
-    }
+    "record": null,
+    "valid": false,
+    "error": "All nameservers failed to answer the query cbe.es. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "dmarc": {
     "record": null,
     "valid": false,
     "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "error": "All nameservers failed to answer the query _dmarc.cbe.es. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
   }
 }

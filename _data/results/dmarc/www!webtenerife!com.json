@@ -15,23 +15,25 @@
         "preference": 10,
         "hostname": "webtenerife-com.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.29",
+          "52.101.68.10",
+          "52.101.68.25",
+          "52.101.68.3",
+          "52.101.68.39",
           "52.101.68.5",
-          "52.101.68.8",
-          "52.101.73.11",
           "52.101.73.15",
-          "52.101.73.2",
-          "52.101.73.22"
+          "52.101.73.2"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:spf.protection.outlook.com include:customers.clickdimensions.com include:spf.EU.exclaimer.net include:one.zoho.eu -all",
+    "record": "v=spf1 include:spf.protection.outlook.com include:customers.clickdimensions.com include:spf.EU.exclaimer.net include:one.zoho.eu include:_spf.eu.messagegears.net -all",
     "valid": true,
-    "dns_lookups": 9,
-    "warnings": [],
+    "dns_lookups": 10,
+    "warnings": [
+      "Duplicate include: _spf.eu.messagegears.net"
+    ],
     "parsed": {
       "pass": [],
       "neutral": [],

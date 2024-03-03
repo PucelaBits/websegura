@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.abansys.net",
-      "dns1.abansys.net"
+      "dns1.abansys.net",
+      "dns2.abansys.net"
     ],
     "warnings": []
   },
@@ -23,81 +23,11 @@
   },
   "spf": {
     "record": "v=spf1 include:spf.abansys.com -all",
-    "valid": true,
-    "dns_lookups": 1,
-    "warnings": [],
-    "parsed": {
-      "pass": [],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [
-        {
-          "domain": "spf.abansys.com",
-          "record": "v=spf1 ip4:86.109.160.0/24 ip4:86.109.162.0/24 ip4:86.109.161.0/24 ip4:86.109.163.0/24 ip4:86.109.165.0/24 ip4:86.109.166.0/24 ip4:86.109.167.0/24 ip4:86.109.177.0/24 ip4:86.109.178.0/24 ip4:86.109.179.0/24 ip4:86.109.180.0/24 -all",
-          "dns_lookups": 0,
-          "parsed": {
-            "pass": [
-              {
-                "value": "86.109.160.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "86.109.162.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "86.109.161.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "86.109.163.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "86.109.165.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "86.109.166.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "86.109.167.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "86.109.177.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "86.109.178.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "86.109.179.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "86.109.180.0/24",
-                "mechanism": "ip4"
-              }
-            ],
-            "neutral": [],
-            "softfail": [],
-            "fail": [],
-            "include": [],
-            "redirect": null,
-            "exp": null,
-            "all": "fail"
-          },
-          "warnings": []
-        }
-      ],
-      "redirect": null,
-      "exp": null,
-      "all": "fail"
-    }
+    "valid": false,
+    "warnings": [
+      "SPF type DNS records found. Use of DNS Type SPF has been removed in the standards track version of SPF, RFC 7208. These records should be removed and replaced with TXT records: v=spf1 include:spf.abansys.com -all"
+    ],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "dmarc": {
     "record": null,

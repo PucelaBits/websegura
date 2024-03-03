@@ -15,13 +15,13 @@
         "preference": 0,
         "hostname": "aller-es.mail.protection.outlook.com",
         "addresses": [
+          "52.101.68.10",
           "52.101.68.12",
-          "52.101.68.18",
-          "52.101.68.29",
-          "52.101.68.39",
-          "52.101.73.2",
-          "52.101.73.26",
-          "52.101.73.6"
+          "52.101.68.27",
+          "52.101.73.21",
+          "52.101.73.28",
+          "52.101.73.30",
+          "52.101.73.4"
         ]
       }
     ],
@@ -311,9 +311,53 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "record": "v=DMARC1; p=quarantine; adkim=s; aspf=s",
+    "valid": true,
+    "location": "aller.es",
+    "warnings": [
+      "rua tag (destination for aggregate reports) not found"
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "s",
+        "explicit": true
+      },
+      "aspf": {
+        "value": "s",
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "quarantine",
+        "explicit": false
+      }
+    }
   }
 }

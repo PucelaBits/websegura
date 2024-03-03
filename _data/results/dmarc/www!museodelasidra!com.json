@@ -22,7 +22,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 +a +mx +ip4:85.208.102.137 ~all",
+    "record": "v=spf1 ip4:85.208.102.137 +a +mx ~all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
@@ -30,15 +30,15 @@
       "pass": [
         {
           "value": "85.208.102.137",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "85.208.102.137",
           "mechanism": "a"
         },
         {
           "value": "museodelasidra.com",
           "mechanism": "mx"
-        },
-        {
-          "value": "85.208.102.137",
-          "mechanism": "ip4"
         }
       ],
       "neutral": [],

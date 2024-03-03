@@ -31,9 +31,9 @@
     ]
   },
   "spf": {
-    "record": "v=spf1 ip4:154.58.19.132 include:emailservice.cpd.as include:spf.sendinblue.com -all",
+    "record": "v=spf1 ip4:154.58.19.132 include:emailservice.cpd.as include:spf.sendinblue.com include:servers.mcsv.net -all",
     "valid": true,
-    "dns_lookups": 3,
+    "dns_lookups": 4,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -217,6 +217,35 @@
               },
               {
                 "value": "172.246.0.0/18",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "servers.mcsv.net",
+          "record": "v=spf1 ip4:205.201.128.0/20 ip4:198.2.128.0/18 ip4:148.105.8.0/21 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "205.201.128.0/20",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "198.2.128.0/18",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "148.105.8.0/21",
                 "mechanism": "ip4"
               }
             ],

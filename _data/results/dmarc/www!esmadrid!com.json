@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.zilore.net",
-      "ns1.zilore.net"
+      "ns1.zilore.net",
+      "ns2.zilore.net"
     ],
     "warnings": []
   },
@@ -36,7 +36,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:195.53.119.133 ip4:217.160.102.135 include:_spf.simpleviewinc.com include:teenvio.com include:spf.protection.outlook.com include:spf.hornetsecurity.com ~all",
+    "record": "v=spf1 ip4:195.53.119.133 ip4:217.160.102.135 ip4:185.79.131.235 include:_spf.simpleviewinc.com include:teenvio.com include:spf.protection.outlook.com include:spf.hornetsecurity.com ~all",
     "valid": true,
     "dns_lookups": 10,
     "warnings": [],
@@ -48,6 +48,10 @@
         },
         {
           "value": "217.160.102.135",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "185.79.131.235",
           "mechanism": "ip4"
         }
       ],

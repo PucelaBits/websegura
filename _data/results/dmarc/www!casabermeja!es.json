@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dpmdns01.ns-cloud4b.org",
       "dpmdns02.ns-cloud4b.com",
-      "dpmdns03.ns-cloud4b.net"
+      "dpmdns03.ns-cloud4b.net",
+      "dpmdns01.ns-cloud4b.org"
     ],
     "warnings": []
   },
@@ -17,7 +17,7 @@
         "hostname": "mx.spamexperts.com",
         "addresses": [
           "2001:550:2:78::ca:100",
-          "38.89.254.156"
+          "38.109.53.20"
         ]
       },
       {
@@ -35,12 +35,21 @@
       {
         "preference": 30,
         "hostname": "lastmx.spamexperts.net",
-        "addresses": []
+        "addresses": [
+          "149.13.75.27",
+          "154.59.104.23",
+          "2001:550:2:61::2fc:100",
+          "2001:550:2:9::280:100",
+          "2001:978:2:2c::137:100",
+          "2001:978:2:7::162:100",
+          "38.111.198.185",
+          "38.89.254.156"
+        ]
       }
     ],
     "warnings": [
       "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records",
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+      "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records"
     ]
   },
   "spf": {
