@@ -29,9 +29,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 a mx include:spf.puc.rediris.es ip4:212.128.118.39 include:spf.acumbamail.com include:spf.protection.outlook.com -all",
+    "record": "v=spf1 a mx include:spf.puc.rediris.es ip4:212.128.118.39 include:spf.acumbamail.com include:spf.protection.outlook.com include:spf-eu.exlibrisgroup.com -all",
     "valid": true,
-    "dns_lookups": 5,
+    "dns_lookups": 6,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -175,6 +175,35 @@
               {
                 "value": "2a01:111:f403:f000::/52",
                 "mechanism": "ip6"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "spf-eu.exlibrisgroup.com",
+          "record": "v=spf1 ip4:95.172.90.143 ip4:95.172.90.156 ip4:216.147.218.8/30 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "95.172.90.143",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "95.172.90.156",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "216.147.218.8/30",
+                "mechanism": "ip4"
               }
             ],
             "neutral": [],

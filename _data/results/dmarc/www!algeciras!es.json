@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns02.ono.com",
-      "dns01.ono.com"
+      "dns01.ono.com",
+      "dns02.ono.com"
     ],
     "warnings": []
   },
@@ -26,7 +26,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 188.85.16.244 is mail.algeciras.es, but the A/AAAA DNS records for mail.algeciras.es do not resolve to 188.85.16.244"
+    ]
   },
   "spf": {
     "record": "v=spf1 mx a ip4:188.85.16.242 ip4:188.85.16.244 -all",

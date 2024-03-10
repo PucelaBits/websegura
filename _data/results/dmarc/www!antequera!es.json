@@ -15,12 +15,12 @@
         "preference": 10,
         "hostname": "antequera-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.10",
-          "52.101.68.18",
-          "52.101.73.16",
+          "52.101.68.8",
+          "52.101.73.1",
           "52.101.73.24",
-          "52.101.73.26",
           "52.101.73.28",
+          "52.101.73.30",
+          "52.101.73.6",
           "52.101.73.8"
         ]
       }
@@ -28,9 +28,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:195.77.81.171 include:spf.protection.outlook.com ~all",
+    "record": "v=spf1 ip4:195.77.81.171 include:spf.protection.outlook.com include:spf.EU.exclaimer.net ~all",
     "valid": true,
-    "dns_lookups": 1,
+    "dns_lookups": 2,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -93,6 +93,39 @@
             "redirect": null,
             "exp": null,
             "all": "fail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "spf.eu.exclaimer.net",
+          "record": "v=spf1 ip4:104.40.229.156 ip4:52.169.0.179 ip4:20.50.220.144/28 ip4:40.127.253.48/28 ~all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "104.40.229.156",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.169.0.179",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "20.50.220.144/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "40.127.253.48/28",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
           },
           "warnings": []
         }

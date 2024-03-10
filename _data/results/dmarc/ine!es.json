@@ -22,16 +22,178 @@
         "preference": 10,
         "hostname": "mxb-006a4e02.gslb.pphosted.com",
         "addresses": [
-          "143.55.148.243"
+          "143.55.146.78"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "All nameservers failed to answer the query ine.es. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "record": "v=spf1 include:spf.puc.rediris.es a:correo.ine.es a:smtpout.ine.es a:remesas.ine.es a:c.spf.service-now.com  -all",
+    "valid": true,
+    "dns_lookups": 5,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "195.254.149.7",
+          "mechanism": "a"
+        },
+        {
+          "value": "195.254.149.12",
+          "mechanism": "a"
+        },
+        {
+          "value": "195.254.149.6",
+          "mechanism": "a"
+        },
+        {
+          "value": "148.139.0.2",
+          "mechanism": "a"
+        },
+        {
+          "value": "148.139.0.31",
+          "mechanism": "a"
+        },
+        {
+          "value": "148.139.1.2",
+          "mechanism": "a"
+        },
+        {
+          "value": "148.139.1.31",
+          "mechanism": "a"
+        },
+        {
+          "value": "148.139.2.2",
+          "mechanism": "a"
+        },
+        {
+          "value": "148.139.3.2",
+          "mechanism": "a"
+        },
+        {
+          "value": "149.96.13.2",
+          "mechanism": "a"
+        },
+        {
+          "value": "149.96.14.2",
+          "mechanism": "a"
+        },
+        {
+          "value": "199.91.136.26",
+          "mechanism": "a"
+        },
+        {
+          "value": "199.91.136.28",
+          "mechanism": "a"
+        },
+        {
+          "value": "199.91.137.2",
+          "mechanism": "a"
+        },
+        {
+          "value": "199.91.137.26",
+          "mechanism": "a"
+        },
+        {
+          "value": "199.91.139.145",
+          "mechanism": "a"
+        },
+        {
+          "value": "199.91.139.22",
+          "mechanism": "a"
+        },
+        {
+          "value": "199.91.139.23",
+          "mechanism": "a"
+        },
+        {
+          "value": "199.91.139.24",
+          "mechanism": "a"
+        },
+        {
+          "value": "199.91.140.26",
+          "mechanism": "a"
+        },
+        {
+          "value": "199.91.140.28",
+          "mechanism": "a"
+        },
+        {
+          "value": "199.91.141.145",
+          "mechanism": "a"
+        },
+        {
+          "value": "199.91.141.22",
+          "mechanism": "a"
+        },
+        {
+          "value": "199.91.141.23",
+          "mechanism": "a"
+        },
+        {
+          "value": "199.91.141.24",
+          "mechanism": "a"
+        },
+        {
+          "value": "37.98.232.12",
+          "mechanism": "a"
+        },
+        {
+          "value": "37.98.232.2",
+          "mechanism": "a"
+        },
+        {
+          "value": "37.98.232.26",
+          "mechanism": "a"
+        },
+        {
+          "value": "37.98.234.2",
+          "mechanism": "a"
+        },
+        {
+          "value": "37.98.235.2",
+          "mechanism": "a"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "spf.puc.rediris.es",
+          "record": "v=spf1 ip4:143.55.146.78 ip4:143.55.148.243 ip4:130.206.25.38 ~all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "143.55.146.78",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "143.55.148.243",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "130.206.25.38",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
     "record": "v=DMARC1; p=reject; sp=reject; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com",

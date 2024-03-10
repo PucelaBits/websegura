@@ -4,16 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "crdserver.msc.es",
-      "mailhost.msc.es"
+      "mailhost.msc.es",
+      "crdserver.msc.es"
     ],
     "warnings": []
   },
   "mx": {
     "hosts": [],
-    "warnings": [
-      "No MX records found. Is the domain parked?"
-    ]
+    "error": "All nameservers failed to answer the query agenda2030.gob.es. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "spf": {
     "record": null,

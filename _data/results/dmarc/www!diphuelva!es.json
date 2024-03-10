@@ -13,23 +13,28 @@
     "hosts": [
       {
         "preference": 5,
-        "hostname": "correo.diphuelva.es",
-        "addresses": []
+        "hostname": "mx.diphuelva.es",
+        "addresses": [
+          "195.77.52.34"
+        ]
       }
     ],
     "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+      "The reverse DNS of 195.77.52.34 is smtp.diphuelva.org, but the A/AAAA DNS records for smtp.diphuelva.org do not resolve to 195.77.52.34"
     ]
   },
   "spf": {
     "record": "v=spf1 mx ~all",
     "valid": true,
     "dns_lookups": 1,
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ],
+    "warnings": [],
     "parsed": {
-      "pass": [],
+      "pass": [
+        {
+          "value": "mx.diphuelva.es",
+          "mechanism": "mx"
+        }
+      ],
       "neutral": [],
       "softfail": [],
       "fail": [],

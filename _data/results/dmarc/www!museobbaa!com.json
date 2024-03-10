@@ -4,11 +4,11 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.cdmon.net",
-      "ns3.cdmon.net",
-      "ns4.cdmondns-01.org",
       "ns1.cdmon.net",
-      "ns5.cdmondns-01.com"
+      "ns2.cdmon.net",
+      "ns5.cdmondns-01.com",
+      "ns3.cdmon.net",
+      "ns4.cdmondns-01.org"
     ],
     "warnings": []
   },
@@ -99,7 +99,7 @@
         },
         {
           "domain": "spf.ipzmarketing.com",
-          "record": "v=spf1 ip4:93.159.208.0/21 ip4:185.103.8.0/22 ip4:5.56.22.0/24 ip4:82.199.156.0/24 ip4:91.194.237.0/24 ~all",
+          "record": "v=spf1 ip4:93.159.208.0/21 ip4:185.103.8.0/22 ip4:5.56.22.0/24 ip4:82.199.156.0/24 ip4:91.194.237.0/24 -all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -130,7 +130,7 @@
             "include": [],
             "redirect": null,
             "exp": null,
-            "all": "softfail"
+            "all": "fail"
           },
           "warnings": []
         }

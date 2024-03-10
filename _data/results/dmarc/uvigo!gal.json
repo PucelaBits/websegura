@@ -5,9 +5,9 @@
   "ns": {
     "hostnames": [
       "dns.uvigo.es",
-      "sun.rediris.es",
+      "chico.rediris.es",
       "dns2.uvigo.es",
-      "chico.rediris.es"
+      "sun.rediris.es"
     ],
     "warnings": []
   },
@@ -36,8 +36,8 @@
     "warnings": [
       "SPF type DNS records found. Use of DNS Type SPF has been removed in the standards track version of SPF, RFC 7208. These records should be removed and replaced with TXT records: v=spf1 include:spf.puc.rediris.es include:antispam._spf.uvigo.es include:antispam.ipv6._spf.uvigo.es include:spf.protection.outlook.com include:email.freshdesk.com -all"
     ],
-    "error": "Parsing the SPF record requires 12/10 maximum DNS lookups - https://tools.ietf.org/html/rfc7208#section-4.6.4",
-    "dns_lookups": 12
+    "error": "Parsing the SPF record requires 13/10 maximum DNS lookups - https://tools.ietf.org/html/rfc7208#section-4.6.4",
+    "dns_lookups": 13
   },
   "dmarc": {
     "record": "v=DMARC1; p=none; rua=mailto:dmarc@uvigo.gal",

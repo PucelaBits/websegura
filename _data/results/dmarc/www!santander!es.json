@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "sfirewall.ayto-santander.es",
+      "artemis.ttd.net",
       "213.0.184.69",
-      "artemis.ttd.net"
+      "sfirewall.ayto-santander.es"
     ],
     "warnings": []
   },
@@ -23,7 +23,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:195.55.43.227 ip4:195.55.43.230  ip4:195.55.43.236 ~all",
+    "record": "v=spf1 ip4:195.55.43.227  ip4:195.55.43.236  ip4:195.55.43.230 ~all",
     "valid": true,
     "dns_lookups": 0,
     "warnings": [],
@@ -34,11 +34,11 @@
           "mechanism": "ip4"
         },
         {
-          "value": "195.55.43.230",
+          "value": "195.55.43.236",
           "mechanism": "ip4"
         },
         {
-          "value": "195.55.43.236",
+          "value": "195.55.43.230",
           "mechanism": "ip4"
         }
       ],
@@ -52,7 +52,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=reject; rua=mailto:dmarc@santander.es; fo=1",
+    "record": "v=DMARC1; p=reject; rua=mailto:dmarc@santander.es",
     "valid": true,
     "location": "santander.es",
     "warnings": [],
@@ -75,18 +75,18 @@
         ],
         "explicit": true
       },
-      "fo": {
-        "value": [
-          "1"
-        ],
-        "explicit": true
-      },
       "adkim": {
         "value": "r",
         "explicit": false
       },
       "aspf": {
         "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
         "explicit": false
       },
       "pct": {

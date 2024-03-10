@@ -5,25 +5,14 @@
   "ns": {
     "hostnames": [
       "dns2.ddgi.cat",
-      "dns2.grn.es",
-      "dns1.ddgi.cat"
+      "dns1.ddgi.cat",
+      "dns2.grn.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 5,
-        "hostname": "mx.ddgi.cat",
-        "addresses": [
-          "195.93.170.80"
-        ]
-      }
-    ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 195.93.170.80 is mx.ddgi.cat, but the A/AAAA DNS records for mx.ddgi.cat do not resolve to 195.93.170.80"
-    ]
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 mx include:spf.protection.outlook.com include:spf.mailjet.com ip4:157.97.64.101 ip4:195.93.170.5 ip4:80.64.47.207 -all",
@@ -146,9 +135,61 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=none; rua=mailto:dmarc-monitor@ddgi.cat;",
+    "valid": true,
+    "location": "ddgi.cat",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc-monitor@ddgi.cat",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }

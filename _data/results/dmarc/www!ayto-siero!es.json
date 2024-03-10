@@ -22,12 +22,17 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:_spf.serviciodecorreo.es include:spf.protection.outlook.com -all",
+    "record": "v=spf1 ip4:185.79.128.75 include:_spf.serviciodecorreo.es include:spf.protection.outlook.com -all",
     "valid": true,
     "dns_lookups": 4,
     "warnings": [],
     "parsed": {
-      "pass": [],
+      "pass": [
+        {
+          "value": "185.79.128.75",
+          "mechanism": "ip4"
+        }
+      ],
       "neutral": [],
       "softfail": [],
       "fail": [],
