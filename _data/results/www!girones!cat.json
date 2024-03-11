@@ -1,6 +1,6 @@
 {
   "algorithm_version": 3,
-  "end_time": "Thu, 07 Mar 2024 00:33:10 GMT",
+  "end_time": "Mon, 11 Mar 2024 00:41:33 GMT",
   "grade": "F",
   "hidden": false,
   "likelihood_indicator": "MEDIUM",
@@ -9,21 +9,22 @@
     "Age": "0",
     "Connection": "Keep-Alive",
     "Content-Encoding": "gzip",
-    "Content-Length": "55059",
+    "Content-Length": "54966",
     "Content-Type": "text/html; charset=UTF-8",
-    "Date": "Thu, 07 Mar 2024 00:32:58 GMT",
+    "Date": "Mon, 11 Mar 2024 00:41:22 GMT",
     "Keep-Alive": "timeout=4, max=122",
     "Link": "<https://www.girones.cat/wp-json/>; rel=\"https://api.w.org/\", <https://www.girones.cat/wp-json/wp/v2/pages/5>; rel=\"alternate\"; type=\"application/json\", <https://www.girones.cat/>; rel=shortlink",
     "Server": "Apache",
+    "Set-Cookie": "__google_un=1; path=/",
     "Vary": "Accept-Encoding",
-    "X-Cache": "HIT"
+    "X-Cache": "MISS"
   },
-  "scan_id": 48546318,
-  "score": 20,
-  "start_time": "Thu, 07 Mar 2024 00:32:56 GMT",
+  "scan_id": 48708083,
+  "score": 0,
+  "start_time": "Mon, 11 Mar 2024 00:41:18 GMT",
   "state": "FINISHED",
   "status_code": 200,
-  "tests_failed": 6,
-  "tests_passed": 5,
+  "tests_failed": 7,
+  "tests_passed": 4,
   "tests_quantity": 11
 }
