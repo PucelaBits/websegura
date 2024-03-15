@@ -1,25 +1,27 @@
 {
   "algorithm_version": 3,
-  "end_time": "Tue, 12 Mar 2024 00:40:50 GMT",
-  "grade": "D+",
+  "end_time": "Fri, 15 Mar 2024 00:53:54 GMT",
+  "grade": "B-",
   "hidden": false,
   "likelihood_indicator": "MEDIUM",
   "response_headers": {
     "cache-control": "private",
     "content-encoding": "gzip",
-    "content-length": "11105",
+    "content-length": "11128",
     "content-type": "text/html;charset=utf-8",
-    "date": "Tue, 12 Mar 2024 00:40:45 GMT",
-    "set-cookie": "fe_typo_user=a218039022556c4b78b8c940cc5022d0; path=/, lb_9b758c85a72cdb131d41397a67782e28=i_b67be733ec183b7ca5db40ba1a3a5e84; path=/; HttpOnly",
+    "date": "Fri, 15 Mar 2024 00:53:48 GMT",
+    "set-cookie": "fe_typo_user=a587eb5f7db5ad272abe54e5d757b258; path=/, lb_9b758c85a72cdb131d41397a67782e28=i_e02352f5273612bb77abd842b4123133; path=/; HttpOnly",
     "strict-transport-security": "max-age=15552000",
-    "vary": "Accept-Encoding,"
+    "vary": "Accept-Encoding,",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "SAMEORIGIN"
   },
-  "scan_id": 48748295,
-  "score": 40,
-  "start_time": "Tue, 12 Mar 2024 00:40:42 GMT",
+  "scan_id": 48869784,
+  "score": 65,
+  "start_time": "Fri, 15 Mar 2024 00:53:43 GMT",
   "state": "FINISHED",
   "status_code": 200,
-  "tests_failed": 5,
-  "tests_passed": 6,
+  "tests_failed": 3,
+  "tests_passed": 8,
   "tests_quantity": 11
 }
