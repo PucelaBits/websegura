@@ -24,26 +24,25 @@
       {
         "preference": 20,
         "hostname": "mx2.hc384-90.eu.iphmx.com",
-        "addresses": [
-          "207.54.72.179",
-          "207.54.76.11"
-        ]
+        "addresses": []
       },
       {
         "preference": 40,
         "hostname": "aragonradio-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.18",
-          "52.101.68.25",
-          "52.101.68.29",
-          "52.101.68.8",
-          "52.101.73.12",
-          "52.101.73.15",
-          "52.101.73.16"
+          "52.101.68.15",
+          "52.101.68.16",
+          "52.101.68.5",
+          "52.101.73.22",
+          "52.101.73.24",
+          "52.101.73.30",
+          "52.101.73.6"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ]
   },
   "spf": {
     "record": "v=spf1 ip4:212.47.235.149 include:spf.protection.outlook.com include:emsd1.com -all",

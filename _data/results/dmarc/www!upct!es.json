@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.upct.es",
-      "ns2.upct.es",
+      "chico.rediris.es",
       "sun.rediris.es",
-      "chico.rediris.es"
+      "ns1.upct.es",
+      "ns2.upct.es"
     ],
     "warnings": []
   },
@@ -17,7 +17,7 @@
         "preference": 10,
         "hostname": "mxa-006a4e02.gslb.pphosted.com",
         "addresses": [
-          "143.55.148.243"
+          "143.55.146.78"
         ]
       },
       {
@@ -58,15 +58,15 @@
           "mechanism": "ip4"
         },
         {
-          "value": "52.213.88.219",
+          "value": "52.17.25.245",
           "mechanism": "a"
         },
         {
-          "value": "54.154.234.132",
+          "value": "52.211.39.239",
           "mechanism": "a"
         },
         {
-          "value": "54.73.158.140",
+          "value": "52.48.171.121",
           "mechanism": "a"
         }
       ],

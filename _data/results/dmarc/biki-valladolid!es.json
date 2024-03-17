@@ -25,7 +25,9 @@
     "record": "v=spf1 include:spf.webapps.net ~all",
     "valid": true,
     "dns_lookups": 5,
-    "warnings": [],
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ],
     "parsed": {
       "pass": [],
       "neutral": [],
@@ -92,14 +94,6 @@
                       "parsed": {
                         "pass": [
                           {
-                            "value": "mx1.dominiando.email",
-                            "mechanism": "mx"
-                          },
-                          {
-                            "value": "mx2.dominiando.email",
-                            "mechanism": "mx"
-                          },
-                          {
                             "value": "81.88.54.130",
                             "mechanism": "ip4"
                           },
@@ -116,14 +110,18 @@
                         "exp": null,
                         "all": "softfail"
                       },
-                      "warnings": []
+                      "warnings": [
+                        "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+                      ]
                     }
                   ],
                   "redirect": null,
                   "exp": null,
                   "all": "softfail"
                 },
-                "warnings": []
+                "warnings": [
+                  "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+                ]
               },
               {
                 "domain": "spf2.webapps.net",
@@ -187,7 +185,9 @@
             "exp": null,
             "all": "softfail"
           },
-          "warnings": []
+          "warnings": [
+            "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+          ]
         }
       ],
       "redirect": null,

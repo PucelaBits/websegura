@@ -24,26 +24,12 @@
         "addresses": [
           "94.100.136.8"
         ]
-      },
-      {
-        "preference": 30,
-        "hostname": "mx03.hornetsecurity.com",
-        "addresses": [
-          "94.100.134.8"
-        ]
-      },
-      {
-        "preference": 40,
-        "hostname": "mx04.hornetsecurity.com",
-        "addresses": [
-          "94.100.136.7"
-        ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:spf.hornetsecurity.com ~all",
+    "record": "v=spf1include:spf.hornetsecurity.com~all",
     "valid": true,
     "dns_lookups": 1,
     "warnings": [],

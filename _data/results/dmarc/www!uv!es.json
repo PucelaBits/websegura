@@ -25,7 +25,7 @@
         "preference": 20,
         "hostname": "mxb-006a4e02.gslb.pphosted.com",
         "addresses": [
-          "143.55.148.243"
+          "143.55.146.78"
         ]
       }
     ],
@@ -35,7 +35,9 @@
     "record": "v=spf1 a:postin.uv.es a:postin.ipv6.uv.es a:postilla.uv.es a:postilla.ipv6.uv.es a:hal.ific.uv.es a:ifmx.ific.uv.es a:glup.irobot.uv.es -all",
     "valid": true,
     "dns_lookups": 7,
-    "warnings": [],
+    "warnings": [
+      "The domain postilla.ipv6.uv.es does not exist"
+    ],
     "parsed": {
       "pass": [
         {
@@ -52,10 +54,6 @@
         },
         {
           "value": "147.156.1.69",
-          "mechanism": "a"
-        },
-        {
-          "value": "2001:720:1014:1::1:69",
           "mechanism": "a"
         },
         {

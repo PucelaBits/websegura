@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dpmdns01.ns-cloud4b.org",
       "dpmdns02.ns-cloud4b.com",
+      "dpmdns01.ns-cloud4b.org",
       "dpmdns03.ns-cloud4b.net"
     ],
     "warnings": []
@@ -16,8 +16,8 @@
         "preference": 10,
         "hostname": "mx.spamexperts.com",
         "addresses": [
-          "2001:550:2:9::280:100",
-          "38.109.53.20"
+          "2001:550:2:78::ca:100",
+          "38.89.254.156"
         ]
       },
       {
@@ -403,6 +403,30 @@
               },
               {
                 "value": "193.200.214.138",
+                "mechanism": "a"
+              },
+              {
+                "value": "196.192.175.60",
+                "mechanism": "a"
+              },
+              {
+                "value": "196.192.175.61",
+                "mechanism": "a"
+              },
+              {
+                "value": "196.192.175.63",
+                "mechanism": "a"
+              },
+              {
+                "value": "196.192.175.64",
+                "mechanism": "a"
+              },
+              {
+                "value": "196.192.175.66",
+                "mechanism": "a"
+              },
+              {
+                "value": "197.98.47.217",
                 "mechanism": "a"
               },
               {
@@ -907,6 +931,18 @@
               },
               {
                 "value": "2a0d:3000:2100:a008:4::1",
+                "mechanism": "a"
+              },
+              {
+                "value": "2c0f:f528:a:300::100",
+                "mechanism": "a"
+              },
+              {
+                "value": "2c0f:f528:a:300::102",
+                "mechanism": "a"
+              },
+              {
+                "value": "2c0f:f528:a:300::104",
                 "mechanism": "a"
               },
               {
@@ -1441,53 +1477,9 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none",
-    "valid": true,
-    "location": "cartama.es",
-    "warnings": [
-      "rua tag (destination for aggregate reports) not found"
-    ],
-    "tags": {
-      "v": {
-        "value": "DMARC1",
-        "explicit": true
-      },
-      "p": {
-        "value": "none",
-        "explicit": true
-      },
-      "adkim": {
-        "value": "r",
-        "explicit": false
-      },
-      "aspf": {
-        "value": "r",
-        "explicit": false
-      },
-      "fo": {
-        "value": [
-          "0"
-        ],
-        "explicit": false
-      },
-      "pct": {
-        "value": 100,
-        "explicit": false
-      },
-      "rf": {
-        "value": [
-          "afrf"
-        ],
-        "explicit": false
-      },
-      "ri": {
-        "value": 86400,
-        "explicit": false
-      },
-      "sp": {
-        "value": "none",
-        "explicit": false
-      }
-    }
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   }
 }

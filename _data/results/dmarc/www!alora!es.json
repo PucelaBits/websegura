@@ -15,8 +15,8 @@
         "preference": 10,
         "hostname": "mx.spamexperts.com",
         "addresses": [
-          "2001:550:2:61::2fc:100",
-          "38.111.198.185"
+          "2001:550:2:9::280:100",
+          "38.89.254.156"
         ]
       },
       {
@@ -47,7 +47,6 @@
       }
     ],
     "warnings": [
-      "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records",
       "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records",
       "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records"
     ]
@@ -339,6 +338,30 @@
               },
               {
                 "value": "193.200.214.138",
+                "mechanism": "a"
+              },
+              {
+                "value": "196.192.175.60",
+                "mechanism": "a"
+              },
+              {
+                "value": "196.192.175.61",
+                "mechanism": "a"
+              },
+              {
+                "value": "196.192.175.63",
+                "mechanism": "a"
+              },
+              {
+                "value": "196.192.175.64",
+                "mechanism": "a"
+              },
+              {
+                "value": "196.192.175.66",
+                "mechanism": "a"
+              },
+              {
+                "value": "197.98.47.217",
                 "mechanism": "a"
               },
               {
@@ -843,6 +866,18 @@
               },
               {
                 "value": "2a0d:3000:2100:a008:4::1",
+                "mechanism": "a"
+              },
+              {
+                "value": "2c0f:f528:a:300::100",
+                "mechanism": "a"
+              },
+              {
+                "value": "2c0f:f528:a:300::102",
+                "mechanism": "a"
+              },
+              {
+                "value": "2c0f:f528:a:300::104",
                 "mechanism": "a"
               },
               {

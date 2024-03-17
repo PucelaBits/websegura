@@ -3,11 +3,8 @@
   "base_domain": "diphuelva.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "alpha.sigadel.com",
-      "beta2.sigadel.com"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "mx": {
     "hosts": [
@@ -19,9 +16,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The reverse DNS of 195.77.52.34 is smtp.diphuelva.org, but the A/AAAA DNS records for smtp.diphuelva.org do not resolve to 195.77.52.34"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx ~all",
@@ -48,6 +43,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   }
 }
