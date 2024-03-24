@@ -13,23 +13,23 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "mx01.hornetsecurity.com",
+        "hostname": "mxa-006a4e02.gslb.pphosted.com",
         "addresses": [
-          "94.100.132.8"
+          "143.55.148.243"
         ]
       },
       {
-        "preference": 20,
-        "hostname": "mx02.hornetsecurity.com",
+        "preference": 10,
+        "hostname": "mxb-006a4e02.gslb.pphosted.com",
         "addresses": [
-          "94.100.136.8"
+          "143.55.148.243"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1include:spf.hornetsecurity.com~all",
+    "record": "v=spf1 include:spf.puc.rediris.es ~all",
     "valid": true,
     "dns_lookups": 1,
     "warnings": [],
@@ -40,85 +40,21 @@
       "fail": [],
       "include": [
         {
-          "domain": "spf.hornetsecurity.com",
-          "record": "v=spf1 ip4:83.246.65.0/24 ip4:185.140.204.0/22 ip4:94.100.128.0/20 ip4:81.20.94.0/24 ip4:173.45.18.0/24 ip4:52.62.123.207/32 ip4:52.62.108.212/32 ip4:129.232.203.80/28 ip4:209.172.38.64/27 ip4:108.163.133.224/27 ip4:193.135.100.0/27 ip4:199.27.221.76 ip4:216.46.11.238 ip4:216.46.11.244 ip4:199.27.221.81 ip4:199.27.221.82 ip4:52.62.114.130 ip4:52.62.125.178 ip4:92.54.27.0/24 ~all",
+          "domain": "spf.puc.rediris.es",
+          "record": "v=spf1 ip4:143.55.146.78 ip4:143.55.148.243 ip4:130.206.25.38 ~all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
               {
-                "value": "83.246.65.0/24",
+                "value": "143.55.146.78",
                 "mechanism": "ip4"
               },
               {
-                "value": "185.140.204.0/22",
+                "value": "143.55.148.243",
                 "mechanism": "ip4"
               },
               {
-                "value": "94.100.128.0/20",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "81.20.94.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "173.45.18.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "52.62.123.207/32",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "52.62.108.212/32",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "129.232.203.80/28",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "209.172.38.64/27",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "108.163.133.224/27",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "193.135.100.0/27",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "199.27.221.76",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "216.46.11.238",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "216.46.11.244",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "199.27.221.81",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "199.27.221.82",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "52.62.114.130",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "52.62.125.178",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "92.54.27.0/24",
+                "value": "130.206.25.38",
                 "mechanism": "ip4"
               }
             ],
@@ -139,71 +75,9 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; rua=mailto:alertas@consejo-estado.es; ruf=mailto:alertas@consejo-estado.es; sp=none; ri=86400",
-    "valid": true,
+    "record": "v=DMARC1; p=none; rua=none; ruf=mailto:alertas@consejo-estado.es; sp=none; ri=86400",
+    "valid": false,
     "location": "consejo-estado.es",
-    "warnings": [],
-    "tags": {
-      "v": {
-        "value": "DMARC1",
-        "explicit": true
-      },
-      "p": {
-        "value": "none",
-        "explicit": true
-      },
-      "rua": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "alertas@consejo-estado.es",
-            "size_limit": null
-          }
-        ],
-        "explicit": true
-      },
-      "ruf": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "alertas@consejo-estado.es",
-            "size_limit": null
-          }
-        ],
-        "explicit": true
-      },
-      "sp": {
-        "value": "none",
-        "explicit": true
-      },
-      "ri": {
-        "value": 86400,
-        "explicit": true
-      },
-      "adkim": {
-        "value": "r",
-        "explicit": false
-      },
-      "aspf": {
-        "value": "r",
-        "explicit": false
-      },
-      "fo": {
-        "value": [
-          "0"
-        ],
-        "explicit": false
-      },
-      "pct": {
-        "value": 100,
-        "explicit": false
-      },
-      "rf": {
-        "value": [
-          "afrf"
-        ],
-        "explicit": false
-      }
-    }
+    "error": "none is not a valid DMARC report URI"
   }
 }

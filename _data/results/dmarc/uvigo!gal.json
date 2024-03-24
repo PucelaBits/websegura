@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "sun.rediris.es",
       "chico.rediris.es",
       "dns.uvigo.es",
+      "sun.rediris.es",
       "dns2.uvigo.es"
     ],
     "warnings": []
@@ -16,7 +16,9 @@
       {
         "preference": 10,
         "hostname": "mx03.puc.rediris.es",
-        "addresses": []
+        "addresses": [
+          "143.55.146.78"
+        ]
       },
       {
         "preference": 10,
@@ -26,9 +28,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.puc.rediris.es include:antispam._spf.uvigo.es include:antispam.ipv6._spf.uvigo.es include:spf.protection.outlook.com include:email.freshdesk.com -all",

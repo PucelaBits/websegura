@@ -10,42 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 0,
-        "hostname": "correo3.dipujaen.es",
-        "addresses": [
-          "77.228.205.36"
-        ]
-      },
-      {
-        "preference": 5,
-        "hostname": "correo2.dipujaen.es",
-        "addresses": [
-          "77.228.205.37"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "mail.dipujaen.es",
-        "addresses": [
-          "77.228.205.32"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "correo.dipujaen.es",
-        "addresses": [
-          "77.228.205.36"
-        ]
-      }
-    ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 77.228.205.37 is correo2.dipujaen.es, but the A/AAAA DNS records for correo2.dipujaen.es do not resolve to 77.228.205.37",
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 77.228.205.32 is mail.dipujaen.es, but the A/AAAA DNS records for mail.dipujaen.es do not resolve to 77.228.205.32"
-    ]
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 mx ip4:77.228.205.160/28 include:spf.protection.outlook.com -all",

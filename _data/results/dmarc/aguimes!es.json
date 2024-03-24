@@ -29,9 +29,45 @@
     "warnings": []
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "record": "v=spf1 a mx ip4:185.201.0.0/19 ip4:82.98.157.184 a:correo.aguimes.es -all",
+    "valid": true,
+    "dns_lookups": 3,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "82.98.134.240",
+          "mechanism": "a"
+        },
+        {
+          "value": "smtp-02.servidoresdns.net",
+          "mechanism": "mx"
+        },
+        {
+          "value": "smtp.aguimes.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "185.201.0.0/19",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "82.98.157.184",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "195.77.245.219",
+          "mechanism": "a"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
     "record": null,

@@ -4,54 +4,15 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dpmdns03.ns-cloud4b.net",
       "dpmdns02.ns-cloud4b.com",
+      "dpmdns03.ns-cloud4b.net",
       "dpmdns01.ns-cloud4b.org"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mx.spamexperts.com",
-        "addresses": [
-          "2001:550:2:61::2fc:100",
-          "38.89.254.156"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "fallbackmx.spamexperts.eu",
-        "addresses": [
-          "2001:550:2:61::2fc:100",
-          "2001:550:2:78::ca:100",
-          "2001:550:2:9::280:100",
-          "38.109.53.20",
-          "38.111.198.185",
-          "38.89.254.156"
-        ]
-      },
-      {
-        "preference": 30,
-        "hostname": "lastmx.spamexperts.net",
-        "addresses": [
-          "149.13.75.27",
-          "154.59.104.23",
-          "2001:550:2:61::2fc:100",
-          "2001:550:2:9::280:100",
-          "2001:978:2:2c::137:100",
-          "2001:978:2:7::162:100",
-          "38.111.198.185",
-          "38.89.254.156"
-        ]
-      }
-    ],
-    "warnings": [
-      "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records",
-      "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records",
-      "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records"
-    ]
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 include:spf2.malaga.es -all",
@@ -363,10 +324,6 @@
                 "mechanism": "a"
               },
               {
-                "value": "197.98.47.217",
-                "mechanism": "a"
-              },
-              {
                 "value": "199.115.117.7",
                 "mechanism": "a"
               },
@@ -388,10 +345,6 @@
               },
               {
                 "value": "2001:550:2:2f::b:101",
-                "mechanism": "a"
-              },
-              {
-                "value": "2001:550:2:3::62:100",
                 "mechanism": "a"
               },
               {
@@ -499,10 +452,6 @@
                 "mechanism": "a"
               },
               {
-                "value": "2001:550:2:8::5f:110",
-                "mechanism": "a"
-              },
-              {
                 "value": "2001:550:2:8::b0:18",
                 "mechanism": "a"
               },
@@ -532,10 +481,6 @@
               },
               {
                 "value": "2001:668:1f:ffa4::17",
-                "mechanism": "a"
-              },
-              {
-                "value": "2001:668:1f:ffa4::18",
                 "mechanism": "a"
               },
               {
@@ -679,14 +624,6 @@
                 "mechanism": "a"
               },
               {
-                "value": "2001:978:2:7::162:110",
-                "mechanism": "a"
-              },
-              {
-                "value": "2001:978:2:7::162:111",
-                "mechanism": "a"
-              },
-              {
                 "value": "2001:978:2:7::162:112",
                 "mechanism": "a"
               },
@@ -791,10 +728,6 @@
                 "mechanism": "a"
               },
               {
-                "value": "2406:3400:280:8::19",
-                "mechanism": "a"
-              },
-              {
                 "value": "2406:3400:280:8::20",
                 "mechanism": "a"
               },
@@ -808,18 +741,6 @@
               },
               {
                 "value": "2406:3400:288:500::12",
-                "mechanism": "a"
-              },
-              {
-                "value": "2604:9a00:2010:a018:3::1",
-                "mechanism": "a"
-              },
-              {
-                "value": "2604:9a00:2010:a018:4::1",
-                "mechanism": "a"
-              },
-              {
-                "value": "2604:9a00:2010:a01a:5::1",
                 "mechanism": "a"
               },
               {
@@ -855,15 +776,7 @@
                 "mechanism": "a"
               },
               {
-                "value": "2a01:4f8:13b:1b20::2",
-                "mechanism": "a"
-              },
-              {
                 "value": "2a01:4f8:141:40c2::2",
-                "mechanism": "a"
-              },
-              {
-                "value": "2a01:4f8:162:22b0::2",
                 "mechanism": "a"
               },
               {
@@ -892,10 +805,6 @@
               },
               {
                 "value": "38.133.190.182",
-                "mechanism": "a"
-              },
-              {
-                "value": "38.133.191.228",
                 "mechanism": "a"
               },
               {

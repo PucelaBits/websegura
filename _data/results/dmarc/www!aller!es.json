@@ -7,8 +7,22 @@
     "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 0,
+        "hostname": "aller-es.mail.protection.outlook.com",
+        "addresses": [
+          "52.101.68.25",
+          "52.101.68.39",
+          "52.101.68.8",
+          "52.101.73.11",
+          "52.101.73.15",
+          "52.101.73.30",
+          "52.101.73.8"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:_spf.google.com include:spf.protection.outlook.com include:spf.ipzmarketing.com ~all",

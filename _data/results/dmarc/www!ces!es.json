@@ -14,9 +14,9 @@
     "error": "The DNS response does not contain an answer to the question: 242.211.148.192.in-addr.arpa. IN PTR"
   },
   "spf": {
-    "record": "v=spf1 mx include:spf.acumbamail.com a:webmail.ces.es a:smtp.mites.gob.es ip4:192.148.211.63 ip4:192.148.211.20 include:spf.protection.outlook.com -all",
+    "record": "v=spf1 mx include:spf.acumbamail.com a:smtp.mites.gob.es ip4:192.148.211.63 a:acmbems.com a:emlmkt.com include:spf.protection.outlook.com -all",
     "valid": true,
-    "dns_lookups": 5,
+    "dns_lookups": 6,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -25,10 +25,6 @@
           "mechanism": "mx"
         },
         {
-          "value": "192.148.211.245",
-          "mechanism": "a"
-        },
-        {
           "value": "192.148.211.63",
           "mechanism": "a"
         },
@@ -37,8 +33,12 @@
           "mechanism": "ip4"
         },
         {
-          "value": "192.148.211.20",
-          "mechanism": "ip4"
+          "value": "185.2.150.180",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.2.150.180",
+          "mechanism": "a"
         }
       ],
       "neutral": [],
@@ -157,7 +157,9 @@
     "record": "v=DMARC1; p=none; fo=0; rua=mailto:dmarc.rua2@ces.es; ruf=mailto:dmarc.ruf2@ces.es; adkim=r; aspf=s",
     "valid": true,
     "location": "ces.es",
-    "warnings": [],
+    "warnings": [
+      "Failed to retrieve MX records for the domain of ruf email address dmarc.ruf2@ces.es - All nameservers failed to answer the query ces.es. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    ],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -184,13 +186,7 @@
         "explicit": true
       },
       "ruf": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "dmarc.ruf2@ces.es",
-            "size_limit": null
-          }
-        ],
+        "value": "mailto:dmarc.ruf2@ces.es",
         "explicit": true
       },
       "adkim": {

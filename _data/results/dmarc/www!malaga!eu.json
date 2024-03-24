@@ -310,7 +310,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; rua=mailto:sistemas.cemi@malaga.eu",
+    "record": "v=DMARC1; p=reject; rua=mailto:sistemas.cemi@malaga.eu",
     "valid": true,
     "location": "malaga.eu",
     "warnings": [],
@@ -320,7 +320,7 @@
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "reject",
         "explicit": true
       },
       "rua": {
@@ -362,7 +362,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "none",
+        "value": "reject",
         "explicit": false
       }
     }

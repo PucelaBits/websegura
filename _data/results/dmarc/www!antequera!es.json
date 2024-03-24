@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "sdns2.ovh.net",
-      "ns3053579.ip-137-74-93.eu"
+      "ns3053579.ip-137-74-93.eu",
+      "sdns2.ovh.net"
     ],
     "warnings": []
   },
@@ -15,20 +15,20 @@
         "preference": 10,
         "hostname": "antequera-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.10",
-          "52.101.68.12",
+          "52.101.68.15",
           "52.101.68.29",
-          "52.101.68.36",
+          "52.101.68.3",
+          "52.101.68.39",
           "52.101.68.5",
-          "52.101.73.12",
-          "52.101.73.15"
+          "52.101.73.1",
+          "52.101.73.22"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:195.77.81.170 ip4:195.77.81.171 include:spf.protection.outlook.com include:spf.EU.exclaimer.net ~all",
+    "record": "v=spf1 ip4:195.77.81.170 ip4:195.77.81.171 ip4:195.77.81.172 include:spf.protection.outlook.com include:spf.EU.exclaimer.net ~all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
@@ -40,6 +40,10 @@
         },
         {
           "value": "195.77.81.171",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "195.77.81.172",
           "mechanism": "ip4"
         }
       ],

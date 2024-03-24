@@ -10,39 +10,11 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "sepe-es.mail.protection.outlook.com",
-        "addresses": [
-          "52.101.68.0",
-          "52.101.68.10",
-          "52.101.68.15",
-          "52.101.68.21",
-          "52.101.68.5",
-          "52.101.73.21",
-          "52.101.73.30"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "correo.sepe.es",
-        "addresses": [
-          "192.187.23.249"
-        ]
-      },
-      {
-        "preference": 50,
-        "hostname": "correo2.sepe.es",
-        "addresses": []
-      }
-    ],
-    "warnings": [
-      "All nameservers failed to answer the query correo2.sepe.es. IN AAAA: Server Do53:1.0.0.1@53 answered SERVFAIL"
-    ]
+    "hosts": [],
+    "error": "All nameservers failed to answer the query 248.23.187.192.in-addr.arpa. IN PTR: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "spf": {
-    "record": "v=spf1 ip4:192.187.23.248/31 include:spf.protection.outlook.com ~all",
+    "record": "v=spf1 ip4:192.187.23.248/31 ip4:192.187.23.240 include:spf.protection.outlook.com ~all",
     "valid": true,
     "dns_lookups": 1,
     "warnings": [],
@@ -50,6 +22,10 @@
       "pass": [
         {
           "value": "192.187.23.248/31",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "192.187.23.240",
           "mechanism": "ip4"
         }
       ],

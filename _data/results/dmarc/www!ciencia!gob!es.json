@@ -272,12 +272,10 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; ruf=mailto:alertas.sistemas@ciencia.gob.es",
+    "record": "v=DMARC1; p=quarantine; ruf=mailto:alertas.sistemas@ciencia.gob.es; rua=mailto:alertas.sistemas@ciencia.gob.es",
     "valid": true,
     "location": "ciencia.gob.es",
-    "warnings": [
-      "rua tag (destination for aggregate reports) not found"
-    ],
+    "warnings": [],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -288,6 +286,16 @@
         "explicit": true
       },
       "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "alertas.sistemas@ciencia.gob.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "rua": {
         "value": [
           {
             "scheme": "mailto",

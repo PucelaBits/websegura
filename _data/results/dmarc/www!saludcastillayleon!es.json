@@ -21,8 +21,8 @@
           "195.245.231.69",
           "195.245.231.72",
           "195.245.231.75",
-          "85.158.142.210",
-          "85.158.142.214"
+          "85.158.142.214",
+          "85.158.142.215"
         ]
       },
       {
@@ -202,7 +202,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com",
+    "record": "v=DMARC1; p=quarantine; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com",
     "valid": true,
     "location": "saludcastillayleon.es",
     "warnings": [],
@@ -212,7 +212,7 @@
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": true
       },
       "fo": {
@@ -264,7 +264,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": false
       }
     }

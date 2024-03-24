@@ -5,44 +5,15 @@
   "ns": {
     "hostnames": [
       "proxy.dip-badajoz.es",
-      "ineco.nic.es",
+      "isabel.dip-badajoz.es",
       "artemis.ttd.net",
-      "isabel.dip-badajoz.es"
+      "ineco.nic.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 100,
-        "hostname": "sdb-mta03.dip-badajoz.es",
-        "addresses": [
-          "195.57.11.113"
-        ]
-      },
-      {
-        "preference": 100,
-        "hostname": "sdb-mta04.dip-badajoz.es",
-        "addresses": [
-          "195.57.11.114"
-        ]
-      },
-      {
-        "preference": 500,
-        "hostname": "sdb-mta01.dip-badajoz.es",
-        "addresses": [
-          "195.57.11.111"
-        ]
-      },
-      {
-        "preference": 500,
-        "hostname": "sdb-mta02.dip-badajoz.es",
-        "addresses": [
-          "195.57.11.112"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "All nameservers failed to answer the query 111.11.57.195.in-addr.arpa. IN PTR: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "spf": {
     "record": "v=spf1 a mx ptr ip4:195.57.11.0/25 mx:lobon.es -all",

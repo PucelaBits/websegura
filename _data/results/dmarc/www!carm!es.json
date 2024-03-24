@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns2e.carm.es",
       "ns1e.carm.es",
-      "rafi.f-integra.org",
-      "ns2e.carm.es"
+      "rafi.f-integra.org"
     ],
     "warnings": []
   },
@@ -16,12 +16,12 @@
         "preference": 5,
         "hostname": "carm-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.15",
           "52.101.68.29",
-          "52.101.68.39",
           "52.101.68.5",
-          "52.101.73.1",
           "52.101.73.11",
+          "52.101.73.16",
+          "52.101.73.22",
+          "52.101.73.28",
           "52.101.73.8"
         ]
       }

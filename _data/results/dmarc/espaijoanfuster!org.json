@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns5232.webempresa.eu",
-      "ns5231.webempresa.eu"
+      "ns5231.webempresa.eu",
+      "ns5232.webempresa.eu"
     ],
     "warnings": []
   },
@@ -14,12 +14,12 @@
       {
         "preference": 0,
         "hostname": "espaijoanfuster.org",
-        "addresses": [
-          "178.33.164.163"
-        ]
+        "addresses": []
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ]
   },
   "spf": {
     "record": "v=spf1 ip4:51.91.61.167 ip4:54.37.172.200 include:_spf.webempresa.eu +a +mx ~all",
