@@ -15,12 +15,12 @@
   "spf": {
     "record": null,
     "valid": false,
-    "error": "sede.fnmt.gob.es does not have a SPF TXT record"
+    "error": "All nameservers failed to answer the query sede.fnmt.gob.es. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "dmarc": {
     "record": null,
     "valid": false,
     "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "error": "All nameservers failed to answer the query _dmarc.fnmt.gob.es. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
   }
 }

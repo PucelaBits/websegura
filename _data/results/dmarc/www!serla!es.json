@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.cosmomedia.es",
-      "dns2.cosmomedia.es"
+      "dns2.cosmomedia.es",
+      "dns1.cosmomedia.es"
     ],
     "warnings": []
   },
@@ -33,7 +33,8 @@
     "valid": true,
     "dns_lookups": 3,
     "warnings": [
-      "mx.cosmomedia.es does not have any MX records"
+      "mx.cosmomedia.es does not have any MX records",
+      "All nameservers failed to answer the query cosmomedia.es. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
     ],
     "parsed": {
       "pass": [
@@ -60,14 +61,6 @@
         {
           "value": "213.201.115.187",
           "mechanism": "ip4"
-        },
-        {
-          "value": "mx2.cosmomedia.es",
-          "mechanism": "mx"
-        },
-        {
-          "value": "mx3.cosmomedia.es",
-          "mechanism": "mx"
         }
       ],
       "neutral": [],

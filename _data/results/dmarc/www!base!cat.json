@@ -33,7 +33,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 195.76.233.59 is smtp.altanet.org, but the A/AAAA DNS records for smtp.altanet.org do not resolve to 195.76.233.59"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:spf.antispamcloud.com ip4:217.130.125.204/32 -all",

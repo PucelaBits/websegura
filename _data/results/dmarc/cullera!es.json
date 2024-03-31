@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns3.dnsxperta.com",
+      "ns2.dnsxperta.com",
       "ns1.dnsxperta.com",
-      "ns2.dnsxperta.com"
+      "ns3.dnsxperta.com"
     ],
     "warnings": []
   },
@@ -83,6 +83,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.cullera.es\n\nv=spf1 include:dnsxperta.com ip4:103.11.188.40 -all\n\nMS=0761D422DDCCC4982D4554AF983363376C810FF9"
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.cullera.es\n\nMS=0761D422DDCCC4982D4554AF983363376C810FF9\n\nv=spf1 include:dnsxperta.com ip4:103.11.188.40 -all"
   }
 }

@@ -4,14 +4,22 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.servidoresdns.net",
-      "dns2.servidoresdns.net"
+      "dns2.servidoresdns.net",
+      "dns1.servidoresdns.net"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx.serviciodecorreo.es",
+        "addresses": [
+          "82.223.190.100"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:_spf.serviciodecorreo.es ~all",

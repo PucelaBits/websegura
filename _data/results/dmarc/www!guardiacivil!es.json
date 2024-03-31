@@ -4,44 +4,15 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "artemis.ttd.net",
       "dns1.guardiacivil.es",
+      "artemis.ttd.net",
       "dns2.guardiacivil.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mailgw3.guardiacivil.es",
-        "addresses": [
-          "62.36.55.37"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "mailgw4.guardiacivil.es",
-        "addresses": [
-          "62.36.55.17"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mailgw1.guardiacivil.es",
-        "addresses": [
-          "194.179.107.37"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mailgw2.guardiacivil.es",
-        "addresses": [
-          "194.179.107.17"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "All nameservers failed to answer the query 37.55.36.62.in-addr.arpa. IN PTR: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "spf": {
     "record": "v=spf1 mx ip4:62.36.55.12 ip4:62.36.55.13 ip4:194.179.107.37 ip4:194.179.107.17 include:spf.protection.outlook.com ~all",

@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.serv513734.servidoresdns.net",
-      "dns1.serv513734.servidoresdns.net"
+      "dns1.serv513734.servidoresdns.net",
+      "dns2.serv513734.servidoresdns.net"
     ],
     "warnings": []
   },
@@ -40,7 +40,8 @@
     "valid": true,
     "dns_lookups": 7,
     "warnings": [
-      "The domain smtp.mcp.es does not exist"
+      "The domain smtp.mcp.es does not exist",
+      "All nameservers failed to answer the query mail.mcp.es. IN AAAA: Server Do53:1.0.0.1@53 answered SERVFAIL"
     ],
     "parsed": {
       "pass": [
@@ -59,10 +60,6 @@
         {
           "value": "pruebamx.mcp.es",
           "mechanism": "mx"
-        },
-        {
-          "value": "195.76.209.199",
-          "mechanism": "a"
         }
       ],
       "neutral": [],

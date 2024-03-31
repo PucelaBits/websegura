@@ -10,36 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 5,
-        "hostname": "poderjudicial-es.mail.protection.outlook.com",
-        "addresses": [
-          "52.101.68.15",
-          "52.101.68.3",
-          "52.101.68.32",
-          "52.101.73.11",
-          "52.101.73.19",
-          "52.101.73.22",
-          "52.101.73.28"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "mailip1.poderjudicial.es",
-        "addresses": [
-          "62.37.232.37"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "mailip2.poderjudicial.es",
-        "addresses": [
-          "62.37.232.39"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "All nameservers failed to answer the query 37.232.37.62.in-addr.arpa. IN PTR: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "spf": {
     "record": "v=spf1 mx ip4:62.37.232.37 ip4:62.37.232.39 ip4:62.37.233.240 include:spf.protection.outlook.com -all",

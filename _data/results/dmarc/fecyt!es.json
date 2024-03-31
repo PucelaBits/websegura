@@ -10,22 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 1,
-        "hostname": "fecyt-es.mail.protection.outlook.com",
-        "addresses": [
-          "52.101.68.15",
-          "52.101.68.3",
-          "52.101.68.32",
-          "52.101.73.11",
-          "52.101.73.19",
-          "52.101.73.22",
-          "52.101.73.28"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "All nameservers failed to answer the query fecyt.es. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "spf": {
     "record": "v=spf1 mx ip4:5.56.62.219 ip4:168.245.29.58 ip4:74.55.114.130 ip4:185.79.129.97 ip4:82.144.103.50 ip4:82.144.103.51 ip4:213.0.45.236 ip4:213.99.28.0/24 ip4:213.0.44.0/23 ip4:212.89.15.0/24 ip4:185.79.128.0/22 ip4:154.58.16.0/22  include:spf.protection.outlook.com include:servers.mcsv.net -all",

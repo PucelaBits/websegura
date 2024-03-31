@@ -4,14 +4,29 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "srv-dns1.scayle.es",
-      "srv-dns2.scayle.es"
+      "srv-dns2.scayle.es",
+      "srv-dns1.scayle.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 5,
+        "hostname": "mail.scayle.es",
+        "addresses": [
+          "185.179.104.11"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mailbackup.scayle.es",
+        "addresses": [
+          "185.179.104.9"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 a mx ~all",

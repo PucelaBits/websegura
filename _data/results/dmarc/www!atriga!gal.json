@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.xunta.es",
-      "ns1.xunta.es"
+      "ns1.xunta.es",
+      "ns2.xunta.es"
     ],
     "warnings": []
   },
@@ -18,7 +18,7 @@
   "spf": {
     "record": null,
     "valid": false,
-    "error": "atriga.gal does not have a SPF TXT record"
+    "error": "All nameservers failed to answer the query atriga.gal. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "dmarc": {
     "record": null,

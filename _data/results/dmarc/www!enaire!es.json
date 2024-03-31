@@ -10,22 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "enaire-es.mail.protection.outlook.com",
-        "addresses": [
-          "52.101.68.10",
-          "52.101.68.15",
-          "52.101.68.21",
-          "52.101.73.12",
-          "52.101.73.16",
-          "52.101.73.24",
-          "52.101.73.28"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "All nameservers failed to answer the query enaire.es. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "spf": {
     "record": "v=spf1 mx ip4:195.55.44.0/24 ip4:185.195.76.0/24 ip4:185.195.77.0/24 include:spf.protection.outlook.com -all",
@@ -119,7 +105,8 @@
     "valid": true,
     "location": "enaire.es",
     "warnings": [
-      "DMARC record at root of enaire.es has no effect"
+      "DMARC record at root of enaire.es has no effect",
+      "Failed to retrieve MX records for the domain of rua email address dmarceports@enaire.es - All nameservers failed to answer the query enaire.es. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
     ],
     "tags": {
       "v": {
@@ -139,13 +126,7 @@
         "explicit": true
       },
       "rua": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "dmarceports@enaire.es",
-            "size_limit": null
-          }
-        ],
+        "value": "mailto:dmarceports@enaire.es",
         "explicit": true
       },
       "adkim": {

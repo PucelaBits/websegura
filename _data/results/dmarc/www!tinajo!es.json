@@ -5,9 +5,9 @@
   "ns": {
     "hostnames": [
       "ns1045.ui-dns.de",
-      "ns1045.ui-dns.biz",
+      "ns1045.ui-dns.com",
       "ns1045.ui-dns.org",
-      "ns1045.ui-dns.com"
+      "ns1045.ui-dns.biz"
     ],
     "warnings": []
   },
@@ -23,12 +23,12 @@
       {
         "preference": 10,
         "hostname": "mx01.ionos.es",
-        "addresses": [
-          "217.72.192.67"
-        ]
+        "addresses": []
       }
     ],
-    "warnings": []
+    "warnings": [
+      "All nameservers failed to answer the query mx01.ionos.es. IN AAAA: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:_spf-eu.ionos.com ~all",

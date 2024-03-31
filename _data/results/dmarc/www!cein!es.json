@@ -5,29 +5,14 @@
   "ns": {
     "hostnames": [
       "dns2.navarra.es",
-      "dns1.nasertic.es",
-      "dns1.navarra.es"
+      "dns1.navarra.es",
+      "dns1.nasertic.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "smtp5.navarra.es",
-        "addresses": [
-          "176.12.85.140"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "smtp6.navarra.es",
-        "addresses": [
-          "176.12.85.141"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "All nameservers failed to answer the query 140.85.12.176.in-addr.arpa. IN PTR: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "spf": {
     "record": "v=spf1 mx -all",

@@ -4,58 +4,17 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "agata.usal.es",
-      "sun.rediris.es",
+      "topacio.usal.es",
       "chico.rediris.es",
       "zafiro.usal.es",
-      "topacio.usal.es"
+      "sun.rediris.es",
+      "agata.usal.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 1,
-        "hostname": "aspmx.l.google.com",
-        "addresses": [
-          "142.251.2.26",
-          "2607:f8b0:4023:c0d::1a"
-        ]
-      },
-      {
-        "preference": 5,
-        "hostname": "alt1.aspmx.l.google.com",
-        "addresses": [
-          "2607:f8b0:4003:c15::1b",
-          "64.233.171.26"
-        ]
-      },
-      {
-        "preference": 5,
-        "hostname": "alt2.aspmx.l.google.com",
-        "addresses": [
-          "142.250.152.26",
-          "2607:f8b0:4001:c56::1b"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "alt3.aspmx.l.google.com",
-        "addresses": [
-          "172.253.113.26",
-          "2607:f8b0:4023:1::1b"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "alt4.aspmx.l.google.com",
-        "addresses": [
-          "173.194.77.26",
-          "2607:f8b0:4023:401::1a"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "All nameservers failed to answer the query usal.es. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "spf": {
     "record": "v=spf1 include:_spf.google.com ~all",

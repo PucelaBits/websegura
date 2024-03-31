@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ninot2.gva.es",
-      "tirant2.gva.es",
       "ninot.gva.es",
-      "tirant.gva.es"
+      "tirant.gva.es",
+      "ninot2.gva.es",
+      "tirant2.gva.es"
     ],
     "warnings": []
   },
@@ -17,12 +17,12 @@
         "preference": 4,
         "hostname": "dival-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.10",
+          "52.101.68.15",
           "52.101.68.16",
-          "52.101.68.18",
-          "52.101.68.25",
-          "52.101.68.3",
           "52.101.73.15",
+          "52.101.73.19",
+          "52.101.73.2",
+          "52.101.73.30",
           "52.101.73.6"
         ]
       }
@@ -279,9 +279,71 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=none; pct=100; rua=mailto:alertas_seg_O365@dival.es; ruf=mailto:alertas_seg_O365@dival.es",
+    "valid": true,
+    "location": "dival.es",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "pct": {
+        "value": 100,
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "alertas_seg_O365@dival.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "alertas_seg_O365@dival.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }

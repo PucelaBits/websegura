@@ -14,12 +14,12 @@
       {
         "preference": 0,
         "hostname": "espaijoanfuster.org",
-        "addresses": []
+        "addresses": [
+          "178.33.164.163"
+        ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:51.91.61.167 ip4:54.37.172.200 include:_spf.webempresa.eu +a +mx ~all",

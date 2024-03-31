@@ -26,31 +26,18 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:212.170.35.96/27 -all",
-    "valid": true,
-    "dns_lookups": 0,
-    "warnings": [],
-    "parsed": {
-      "pass": [
-        {
-          "value": "212.170.35.96/27",
-          "mechanism": "ip4"
-        }
-      ],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [],
-      "redirect": null,
-      "exp": null,
-      "all": "fail"
-    }
+    "record": null,
+    "valid": false,
+    "error": "All nameservers failed to answer the query ccn-cert.cni.es. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "dmarc": {
     "record": "v=DMARC1; p=none; rua=mailto:dmarc@ccn-cert.cni.es;ruf=mailto:dmarcf@ccn-cert.cni.es;",
     "valid": true,
     "location": "ccn-cert.cni.es",
-    "warnings": [],
+    "warnings": [
+      "Failed to retrieve MX records for the domain of rua email address dmarc@ccn-cert.cni.es - All nameservers failed to answer the query ccn-cert.cni.es. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL",
+      "Failed to retrieve MX records for the domain of ruf email address dmarcf@ccn-cert.cni.es - All nameservers failed to answer the query ccn-cert.cni.es. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    ],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -61,23 +48,11 @@
         "explicit": true
       },
       "rua": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "dmarc@ccn-cert.cni.es",
-            "size_limit": null
-          }
-        ],
+        "value": "mailto:dmarc@ccn-cert.cni.es",
         "explicit": true
       },
       "ruf": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "dmarcf@ccn-cert.cni.es",
-            "size_limit": null
-          }
-        ],
+        "value": "mailto:dmarcf@ccn-cert.cni.es",
         "explicit": true
       },
       "adkim": {

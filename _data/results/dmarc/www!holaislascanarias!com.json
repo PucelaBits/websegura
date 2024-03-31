@@ -10,8 +10,71 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 1,
+        "hostname": "holaislascanarias-com.mail.protection.outlook.com",
+        "addresses": [
+          "52.101.68.29",
+          "52.101.68.32",
+          "52.101.68.39",
+          "52.101.73.11",
+          "52.101.73.15",
+          "52.101.73.24"
+        ]
+      },
+      {
+        "preference": 2,
+        "hostname": "mx.idecnet.com",
+        "addresses": [
+          "212.64.169.75",
+          "212.64.169.76"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mx1.idecnet.com",
+        "addresses": [
+          "212.64.169.76"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mx2.idecnet.com",
+        "addresses": [
+          "212.64.169.75"
+        ]
+      },
+      {
+        "preference": 30,
+        "hostname": "mx3.idecnet.com",
+        "addresses": [
+          "212.64.169.76"
+        ]
+      },
+      {
+        "preference": 40,
+        "hostname": "mx4.idecnet.com",
+        "addresses": [
+          "212.64.169.76"
+        ]
+      },
+      {
+        "preference": 50,
+        "hostname": "mx5.idecnet.com",
+        "addresses": [
+          "212.64.169.75"
+        ]
+      },
+      {
+        "preference": 60,
+        "hostname": "mx6.idecnet.com",
+        "addresses": [
+          "212.64.169.76"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com -all",
