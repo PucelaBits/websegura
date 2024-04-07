@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns5.cdmondns-01.com",
       "ns3.cdmon.net",
+      "ns5.cdmondns-01.com",
       "ns4.cdmondns-01.org",
       "ns1.cdmon.net",
       "ns2.cdmon.net"
@@ -19,20 +19,13 @@
         "hostname": "mx.spamexperts.com",
         "addresses": [
           "2001:550:2:9::280:100",
-          "38.109.53.20"
+          "38.111.198.185"
         ]
       },
       {
         "preference": 20,
         "hostname": "fallbackmx.spamexperts.eu",
-        "addresses": [
-          "2001:550:2:61::2fc:100",
-          "2001:550:2:78::ca:100",
-          "2001:550:2:9::280:100",
-          "38.109.53.20",
-          "38.111.198.185",
-          "38.89.254.156"
-        ]
+        "addresses": []
       },
       {
         "preference": 30,
@@ -50,7 +43,7 @@
       }
     ],
     "warnings": [
-      "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records",
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out.",
       "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records"
     ]
   },

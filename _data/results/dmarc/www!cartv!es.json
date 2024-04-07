@@ -3,8 +3,13 @@
   "base_domain": "cartv.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "All nameservers failed to answer the query cartv.es. IN NS: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "hostnames": [
+      "ns1.entorno.com",
+      "ns2.entorno.com",
+      "ns3.entorno.com",
+      "ns4.entorno.com"
+    ],
+    "warnings": []
   },
   "mx": {
     "hosts": [
@@ -28,13 +33,13 @@
         "preference": 40,
         "hostname": "cartv-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.21",
-          "52.101.68.27",
+          "52.101.68.10",
+          "52.101.68.12",
           "52.101.68.3",
-          "52.101.68.8",
-          "52.101.73.2",
+          "52.101.68.36",
           "52.101.73.26",
-          "52.101.73.6"
+          "52.101.73.28",
+          "52.101.73.8"
         ]
       }
     ],
@@ -119,6 +124,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "All nameservers failed to answer the query _dmarc.cartv.es. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "error": "A DMARC record does not exist for this domain or its base domain"
   }
 }

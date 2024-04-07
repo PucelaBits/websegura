@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns-106-c.gandi.net",
+      "ns-165-b.gandi.net",
       "ns-62-a.gandi.net",
-      "ns-165-b.gandi.net"
+      "ns-106-c.gandi.net"
     ],
     "warnings": []
   },
@@ -15,7 +15,9 @@
       {
         "preference": 10,
         "hostname": "mx01.ionos.es",
-        "addresses": []
+        "addresses": [
+          "217.72.192.67"
+        ]
       },
       {
         "preference": 50,
@@ -25,9 +27,7 @@
         ]
       }
     ],
-    "warnings": [
-      "All nameservers failed to answer the query mx01.ionos.es. IN A: Server Do53:1.0.0.1@53 answered SERVFAIL"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 a mx include:amazonses.com include:_spf.google.com include:_spf.perfora.net include:_spf.kundenserver.de -all",

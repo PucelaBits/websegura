@@ -10,25 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mx-01-eu-central-1.prod.hydra.sophos.com",
-        "addresses": [
-          "3.65.220.126",
-          "35.157.95.235"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "mx-02-eu-central-1.prod.hydra.sophos.com",
-        "addresses": [
-          "3.65.220.126",
-          "35.157.95.235"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 mx:santacruzdetenerife.es ip4:195.76.166.0/24 include:_spf_eucentral1.prod.hydra.sophos.com -all",

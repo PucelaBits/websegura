@@ -16,12 +16,12 @@
         "hostname": "toledo-es.mail.protection.outlook.com",
         "addresses": [
           "52.101.68.10",
-          "52.101.68.25",
-          "52.101.68.3",
-          "52.101.68.36",
-          "52.101.73.22",
-          "52.101.73.24",
-          "52.101.73.6"
+          "52.101.68.21",
+          "52.101.68.32",
+          "52.101.68.8",
+          "52.101.73.1",
+          "52.101.73.12",
+          "52.101.73.26"
         ]
       }
     ],
@@ -107,9 +107,71 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "All nameservers failed to answer the query _dmarc.toledo.es. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "record": "v=DMARC1; p=reject; pct=100; rua=mailto:informatica@toledo.es; ruf=mailto:informatica@toledo.es; fo=1",
+    "valid": true,
+    "location": "toledo.es",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "reject",
+        "explicit": true
+      },
+      "pct": {
+        "value": 100,
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "informatica@toledo.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "informatica@toledo.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "1"
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "reject",
+        "explicit": false
+      }
+    }
   }
 }

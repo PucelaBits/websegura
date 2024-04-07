@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1054.ui-dns.biz",
-      "ns1030.ui-dns.de",
       "ns1024.ui-dns.org",
-      "ns1091.ui-dns.com"
+      "ns1091.ui-dns.com",
+      "ns1054.ui-dns.biz",
+      "ns1030.ui-dns.de"
     ],
     "warnings": []
   },
@@ -16,7 +16,9 @@
       {
         "preference": 10,
         "hostname": "mx00.ionos.es",
-        "addresses": []
+        "addresses": [
+          "212.227.15.41"
+        ]
       },
       {
         "preference": 10,
@@ -26,9 +28,7 @@
         ]
       }
     ],
-    "warnings": [
-      "All nameservers failed to answer the query mx00.ionos.es. IN AAAA: Server Do53:1.0.0.1@53 answered SERVFAIL"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:_spf.google.com include:_spf-eu.ionos.com include:spf.protection.outlook.com ~all",

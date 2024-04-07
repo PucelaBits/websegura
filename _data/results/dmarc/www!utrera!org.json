@@ -4,82 +4,20 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "a-ns.primari.net",
-      "b-ns.primari.net"
+      "b-ns.primari.net",
+      "a-ns.primari.net"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 1,
-        "hostname": "aspmx.l.google.com",
-        "addresses": [
-          "142.251.16.26",
-          "2607:f8b0:4004:c1d::1b"
-        ]
-      },
-      {
-        "preference": 5,
-        "hostname": "alt1.aspmx.l.google.com",
-        "addresses": [
-          "209.85.202.26",
-          "2a00:1450:400b:c00::1b"
-        ]
-      },
-      {
-        "preference": 5,
-        "hostname": "alt2.aspmx.l.google.com",
-        "addresses": [
-          "2a00:1450:400c:c0b::1a",
-          "64.233.184.27"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "alt3.aspmx.l.google.com",
-        "addresses": [
-          "142.250.27.27",
-          "2a00:1450:4025:401::1b"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "alt4.aspmx.l.google.com",
-        "addresses": [
-          "142.250.153.26",
-          "2a00:1450:4013:c16::1a"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "correo.utrera.org",
-        "addresses": [
-          "195.53.27.99"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "smail.utrera.org",
-        "addresses": [
-          "195.53.27.99"
-        ]
-      }
-    ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 195.53.27.99 is smail.utrera.org, but the A/AAAA DNS records for smail.utrera.org do not resolve to 195.53.27.99",
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 195.53.27.99 is smail.utrera.org, but the A/AAAA DNS records for smail.utrera.org do not resolve to 195.53.27.99"
-    ]
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 mx ip4:195.53.27.99 a:smail.utrera.org include:_spf.google.com ~all",
     "valid": true,
     "dns_lookups": 6,
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ],
+    "warnings": [],
     "parsed": {
       "pass": [
         {
@@ -113,6 +51,10 @@
         {
           "value": "195.53.27.99",
           "mechanism": "ip4"
+        },
+        {
+          "value": "195.53.27.99",
+          "mechanism": "a"
         }
       ],
       "neutral": [],
@@ -305,7 +247,9 @@
     "record": "v=DMARC1; p=none; rua=mailto:dmarc@utrera.org",
     "valid": true,
     "location": "utrera.org",
-    "warnings": [],
+    "warnings": [
+      "Failed to retrieve MX records for the domain of rua email address dmarc@utrera.org - The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -316,13 +260,7 @@
         "explicit": true
       },
       "rua": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "dmarc@utrera.org",
-            "size_limit": null
-          }
-        ],
+        "value": "mailto:dmarc@utrera.org",
         "explicit": true
       },
       "adkim": {

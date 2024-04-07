@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "sintlin2.caib.es",
-      "sintlin1.caib.es"
+      "sintlin1.caib.es",
+      "sintlin2.caib.es"
     ],
     "warnings": []
   },
@@ -14,7 +14,9 @@
       {
         "preference": 5,
         "hostname": "rmail1.caib.es",
-        "addresses": []
+        "addresses": [
+          "85.119.193.3"
+        ]
       },
       {
         "preference": 5,
@@ -24,9 +26,7 @@
         ]
       }
     ],
-    "warnings": [
-      "All nameservers failed to answer the query rmail1.caib.es. IN AAAA: Server Do53:1.0.0.1@53 answered SERVFAIL"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx ip4:85.119.193.2 ip4:85.119.198.6 ip4:85.119.198.16 -all",
@@ -69,6 +69,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "All nameservers failed to answer the query _dmarc.caib.es. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "error": "A DMARC record does not exist for this domain or its base domain"
   }
 }

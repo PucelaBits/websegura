@@ -10,8 +10,23 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query 244.16.85.188.in-addr.arpa. IN PTR: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 6,
+        "hostname": "mailgw.algeciras.es",
+        "addresses": [
+          "188.85.16.244"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mail.algeciras.es",
+        "addresses": [
+          "188.85.16.244"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx a ip4:188.85.16.242 ip4:188.85.16.244 -all",

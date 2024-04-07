@@ -1251,7 +1251,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; rua=mailto:dmarc@hispasec.com; ruf=mailto:dmarc@hispasec.com; fo=1",
+    "record": "v=DMARC1; p=quarantine; rua=mailto:dmarc@hispasec.com; ruf=mailto:dmarc@hispasec.com; sp=quarantine; fo=1",
     "valid": true,
     "location": "alora.es",
     "warnings": [
@@ -1264,7 +1264,7 @@
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": true
       },
       "rua": {
@@ -1273,6 +1273,10 @@
       },
       "ruf": {
         "value": "mailto:dmarc@hispasec.com",
+        "explicit": true
+      },
+      "sp": {
+        "value": "quarantine",
         "explicit": true
       },
       "fo": {
@@ -1301,10 +1305,6 @@
       },
       "ri": {
         "value": 86400,
-        "explicit": false
-      },
-      "sp": {
-        "value": "none",
         "explicit": false
       }
     }

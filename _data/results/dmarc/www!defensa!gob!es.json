@@ -4,11 +4,11 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns03.mde.es",
+      "ns02.mde.es",
       "ns12.mde.es",
       "ns11.mde.es",
       "ns01.mde.es",
-      "ns02.mde.es"
+      "ns03.mde.es"
     ],
     "warnings": []
   },
@@ -27,6 +27,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "All nameservers failed to answer the query _dmarc.defensa.gob.es. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "error": "A DMARC record does not exist for this domain or its base domain"
   }
 }

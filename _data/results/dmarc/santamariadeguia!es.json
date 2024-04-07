@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns2.gestiondecuenta.com",
       "ns.gestiondecuenta.com",
       "ns3.gestiondecuenta.com",
-      "ns4.gestiondecuenta.com",
-      "ns2.gestiondecuenta.com"
+      "ns4.gestiondecuenta.com"
     ],
     "warnings": []
   },
@@ -17,16 +17,16 @@
         "preference": 10,
         "hostname": "mx-01-eu-central-1.prod.hydra.sophos.com",
         "addresses": [
-          "3.65.220.126",
-          "35.157.95.235"
+          "18.159.234.21",
+          "3.68.153.85"
         ]
       },
       {
         "preference": 20,
         "hostname": "mx-02-eu-central-1.prod.hydra.sophos.com",
         "addresses": [
-          "3.65.220.126",
-          "35.157.95.235"
+          "18.159.234.21",
+          "3.68.153.85"
         ]
       }
     ],

@@ -41,11 +41,25 @@
     "record": "v=spf1 +a +mx +ip4:35.214.246.15 include:_spf.mailspamprotection.com ~all",
     "valid": true,
     "dns_lookups": 3,
-    "warnings": [
-      "All nameservers failed to answer the query rtvc.es. IN A: Server Do53:1.0.0.1@53 answered SERVFAIL"
-    ],
+    "warnings": [],
     "parsed": {
       "pass": [
+        {
+          "value": "3.162.163.32",
+          "mechanism": "a"
+        },
+        {
+          "value": "3.162.163.36",
+          "mechanism": "a"
+        },
+        {
+          "value": "3.162.163.41",
+          "mechanism": "a"
+        },
+        {
+          "value": "3.162.163.46",
+          "mechanism": "a"
+        },
         {
           "value": "mx10.mailspamprotection.com",
           "mechanism": "mx"

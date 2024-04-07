@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.museojurasicoasturias.com",
-      "ns1.museojurasicoasturias.com"
+      "mortadelo.telecable.es",
+      "dns.asturias.es"
     ],
     "warnings": []
   },
@@ -27,16 +27,16 @@
       },
       {
         "preference": 30,
-        "hostname": "mx04.hornetsecurity.com",
+        "hostname": "mx03.hornetsecurity.com",
         "addresses": [
-          "94.100.136.7"
+          "94.100.134.8"
         ]
       },
       {
         "preference": 40,
-        "hostname": "mx03.hornetsecurity.com",
+        "hostname": "mx04.hornetsecurity.com",
         "addresses": [
-          "94.100.134.8"
+          "94.100.136.7"
         ]
       }
     ],

@@ -10,8 +10,23 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query jccm.es. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.jccm.es",
+        "addresses": [
+          "89.107.242.26"
+        ]
+      },
+      {
+        "preference": 200,
+        "hostname": "mail2.jccm.es",
+        "addresses": [
+          "89.107.242.1"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx a:pop3.jccm.es a:smtp2.jccm.es a:mail1.jccm.es a:mail3.jccm.es a:mail4.jccm.es a:mail5.jccm.es a:mail6.jccm.es a:mail7.jccm.es a:mail8.jccm.es -all",

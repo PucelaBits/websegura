@@ -22,44 +22,16 @@
         "preference": 2,
         "hostname": "mxb-0085c402.gslb.pphosted.com",
         "addresses": [
-          "66.159.234.208"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "mx01.hornetsecurity.com",
-        "addresses": [
-          "94.100.132.8"
-        ]
-      },
-      {
-        "preference": 11,
-        "hostname": "mx03.hornetsecurity.com",
-        "addresses": [
-          "94.100.134.8"
-        ]
-      },
-      {
-        "preference": 12,
-        "hostname": "mx04.hornetsecurity.com",
-        "addresses": [
-          "94.100.136.7"
-        ]
-      },
-      {
-        "preference": 13,
-        "hostname": "mx02.hornetsecurity.com",
-        "addresses": [
-          "94.100.136.8"
+          "66.159.233.119"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:spf.protection.outlook.com ip4:217.124.155.49/32 ip4:194.179.47.226/32 include:spf.hornetsecurity.com include:spf-0085c402.pphosted.com ~all",
+    "record": "v=spf1 include:spf.protection.outlook.com ip4:217.124.155.49/32 ip4:194.179.47.226/32 include:spf-0085c402.pphosted.com ~all",
     "valid": true,
-    "dns_lookups": 3,
+    "dns_lookups": 2,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -130,99 +102,6 @@
           "warnings": []
         },
         {
-          "domain": "spf.hornetsecurity.com",
-          "record": "v=spf1 ip4:83.246.65.0/24 ip4:185.140.204.0/22 ip4:94.100.128.0/20 ip4:81.20.94.0/24 ip4:173.45.18.0/24 ip4:52.62.123.207/32 ip4:52.62.108.212/32 ip4:129.232.203.80/28 ip4:209.172.38.64/27 ip4:108.163.133.224/27 ip4:193.135.100.0/27 ip4:199.27.221.76 ip4:216.46.11.238 ip4:216.46.11.244 ip4:199.27.221.81 ip4:199.27.221.82 ip4:52.62.114.130 ip4:52.62.125.178 ip4:92.54.27.0/24 ~all",
-          "dns_lookups": 0,
-          "parsed": {
-            "pass": [
-              {
-                "value": "83.246.65.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "185.140.204.0/22",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "94.100.128.0/20",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "81.20.94.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "173.45.18.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "52.62.123.207/32",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "52.62.108.212/32",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "129.232.203.80/28",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "209.172.38.64/27",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "108.163.133.224/27",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "193.135.100.0/27",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "199.27.221.76",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "216.46.11.238",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "216.46.11.244",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "199.27.221.81",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "199.27.221.82",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "52.62.114.130",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "52.62.125.178",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "92.54.27.0/24",
-                "mechanism": "ip4"
-              }
-            ],
-            "neutral": [],
-            "softfail": [],
-            "fail": [],
-            "include": [],
-            "redirect": null,
-            "exp": null,
-            "all": "softfail"
-          },
-          "warnings": []
-        },
-        {
           "domain": "spf-0085c402.pphosted.com",
           "record": "v=spf1 ip4:66.159.233.119 ip4:66.159.234.208",
           "dns_lookups": 0,
@@ -254,7 +133,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; fo=1; rua= mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com",
+    "record": "v=DMARC1; p=quarantine; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com",
     "valid": true,
     "location": "casareal.es",
     "warnings": [],
@@ -264,7 +143,7 @@
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": true
       },
       "fo": {
@@ -316,7 +195,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": false
       }
     }

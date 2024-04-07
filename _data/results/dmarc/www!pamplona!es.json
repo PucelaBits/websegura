@@ -3,36 +3,42 @@
   "base_domain": "pamplona.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "All nameservers failed to answer the query pamplona.es. IN NS: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "hostnames": [
+      "dns2.hostinet.com",
+      "dns1.hostinet.com"
+    ],
+    "warnings": []
   },
   "mx": {
     "hosts": [
       {
         "preference": 10,
         "hostname": "correo.pamplona.es",
-        "addresses": []
+        "addresses": [
+          "213.0.38.185"
+        ]
       },
       {
         "preference": 20,
         "hostname": "correo2.pamplona.es",
-        "addresses": []
+        "addresses": [
+          "213.0.38.186"
+        ]
       }
     ],
-    "warnings": [
-      "All nameservers failed to answer the query correo.pamplona.es. IN AAAA: Server Do53:1.0.0.1@53 answered SERVFAIL",
-      "All nameservers failed to answer the query correo2.pamplona.es. IN A: Server Do53:1.0.0.1@53 answered SERVFAIL"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.ipzmarketing.com +a +mx +ip4:213.0.38.186 +ip4:213.0.38.185 -all",
     "valid": true,
     "dns_lookups": 3,
-    "warnings": [
-      "All nameservers failed to answer the query pamplona.es. IN A: Server Do53:1.0.0.1@53 answered SERVFAIL"
-    ],
+    "warnings": [],
     "parsed": {
       "pass": [
+        {
+          "value": "213.0.38.200",
+          "mechanism": "a"
+        },
         {
           "value": "correo.pamplona.es",
           "mechanism": "mx"

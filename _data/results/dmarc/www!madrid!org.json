@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "icmcom.madrid.org",
-      "olimpia.madrid.org"
+      "olimpia.madrid.org",
+      "icmcom.madrid.org"
     ],
     "warnings": []
   },
@@ -13,6 +13,22 @@
     "hosts": [
       {
         "preference": 10,
+        "hostname": "mx1.hc1855-42.eu.iphmx.com",
+        "addresses": [
+          "194.165.193.239",
+          "23.90.123.185"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mx2.hc1855-42.eu.iphmx.com",
+        "addresses": [
+          "194.165.193.239",
+          "23.90.123.185"
+        ]
+      },
+      {
+        "preference": 20,
         "hostname": "mail.madrid.org",
         "addresses": [
           "195.77.128.11"

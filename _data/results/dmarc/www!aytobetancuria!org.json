@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "shades16.rzone.de",
-      "docks13.rzone.de"
+      "docks13.rzone.de",
+      "shades16.rzone.de"
     ],
     "warnings": []
   },
@@ -43,7 +43,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none",
+    "record": "v=DMARC1; p=quarantine; adkim=s; aspf=s",
     "valid": true,
     "location": "aytobetancuria.org",
     "warnings": [
@@ -55,16 +55,16 @@
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": true
       },
       "adkim": {
-        "value": "r",
-        "explicit": false
+        "value": "s",
+        "explicit": true
       },
       "aspf": {
-        "value": "r",
-        "explicit": false
+        "value": "s",
+        "explicit": true
       },
       "fo": {
         "value": [
@@ -87,7 +87,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": false
       }
     }

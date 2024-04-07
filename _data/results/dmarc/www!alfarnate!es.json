@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "dpmdns02.ns-cloud4b.com",
-      "dpmdns03.ns-cloud4b.net",
-      "dpmdns01.ns-cloud4b.org"
+      "dpmdns01.ns-cloud4b.org",
+      "dpmdns03.ns-cloud4b.net"
     ],
     "warnings": []
   },
@@ -16,8 +16,8 @@
         "preference": 10,
         "hostname": "mx.spamexperts.com",
         "addresses": [
-          "2001:550:2:78::ca:100",
-          "38.89.254.156"
+          "2001:550:2:61::2fc:100",
+          "38.109.53.20"
         ]
       },
       {
@@ -48,6 +48,7 @@
       }
     ],
     "warnings": [
+      "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records",
       "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records",
       "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records"
     ]
@@ -1251,7 +1252,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; rua=mailto:dmarc@hispasec.com; ruf=mailto:dmarc@hispasec.com; fo=1",
+    "record": "v=DMARC1; p=quarantine; rua=mailto:dmarc@hispasec.com; ruf=mailto:dmarc@hispasec.com; sp=quarantine; fo=1",
     "valid": true,
     "location": "alfarnate.es",
     "warnings": [
@@ -1264,7 +1265,7 @@
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": true
       },
       "rua": {
@@ -1273,6 +1274,10 @@
       },
       "ruf": {
         "value": "mailto:dmarc@hispasec.com",
+        "explicit": true
+      },
+      "sp": {
+        "value": "quarantine",
         "explicit": true
       },
       "fo": {
@@ -1301,10 +1306,6 @@
       },
       "ri": {
         "value": 86400,
-        "explicit": false
-      },
-      "sp": {
-        "value": "none",
         "explicit": false
       }
     }

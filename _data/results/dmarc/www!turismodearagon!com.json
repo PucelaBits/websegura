@@ -10,19 +10,31 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query turismodearagon.com. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx.turismodearagon.com",
+        "addresses": [
+          "51.255.126.193"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx include:spf.ipzmarketing.com -all ",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [
-      "Any text after the all mechanism is ignored",
-      "All nameservers failed to answer the query turismodearagon.com. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
+      "Any text after the all mechanism is ignored"
     ],
     "parsed": {
-      "pass": [],
+      "pass": [
+        {
+          "value": "mx.turismodearagon.com",
+          "mechanism": "mx"
+        }
+      ],
       "neutral": [],
       "softfail": [],
       "fail": [],

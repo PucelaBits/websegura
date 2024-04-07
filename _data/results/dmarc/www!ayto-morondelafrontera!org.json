@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns3.servidoresdns.net",
-      "dns4.servidoresdns.net"
+      "ns1.neodigit.net",
+      "ns2.neodigit.net"
     ],
     "warnings": []
   },
@@ -13,39 +13,39 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "zimbra.ayto-morondelafrontera.org",
+        "hostname": "bmx01.neodigit.net",
         "addresses": [
-          "5.83.92.252"
+          "31.47.72.161"
         ]
       },
       {
-        "preference": 20,
-        "hostname": "mail.ayto-morondelafrontera.org",
+        "preference": 10,
+        "hostname": "bmx02.neodigit.net",
         "addresses": [
-          "5.83.92.252"
+          "31.47.72.162"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx a ip4:5.83.92.252/32 -all",
+    "record": "v=spf1 a mx include:host551d55-a98.neodigit.net ip4:5.83.92.252/32 ~all",
     "valid": true,
-    "dns_lookups": 2,
+    "dns_lookups": 3,
     "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "zimbra.ayto-morondelafrontera.org",
-          "mechanism": "mx"
-        },
-        {
-          "value": "mail.ayto-morondelafrontera.org",
-          "mechanism": "mx"
-        },
-        {
           "value": "5.83.92.252",
           "mechanism": "a"
+        },
+        {
+          "value": "bmx01.neodigit.net",
+          "mechanism": "mx"
+        },
+        {
+          "value": "bmx02.neodigit.net",
+          "mechanism": "mx"
         },
         {
           "value": "5.83.92.252/32",
@@ -55,10 +55,36 @@
       "neutral": [],
       "softfail": [],
       "fail": [],
-      "include": [],
+      "include": [
+        {
+          "domain": "host551d55-a98.neodigit.net",
+          "record": "v=spf1 ip4:185.49.185.98 ip6:2a01:a940:454:5f::1 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "185.49.185.98",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "2a01:a940:454:5f::1",
+                "mechanism": "ip6"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        }
+      ],
       "redirect": null,
       "exp": null,
-      "all": "fail"
+      "all": "softfail"
     }
   },
   "dmarc": {
