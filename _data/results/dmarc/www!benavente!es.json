@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.nds.es",
-      "ns1.nds.es"
+      "ns1.nds.es",
+      "ns2.nds.es"
     ],
     "warnings": []
   },
@@ -19,10 +19,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 185.253.153.139 is omicron.nds.es, but the A/AAAA DNS records for omicron.nds.es do not resolve to 185.253.153.139"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:185.253.153.139 mx a ptr ip4:188.165.133.185/32 -all",

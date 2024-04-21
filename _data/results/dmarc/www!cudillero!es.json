@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns221.iservices4u.eu",
       "ns220.iservices4u.eu",
-      "ns222.iservices4u.eu",
-      "ns223.iservices4u.eu"
+      "ns223.iservices4u.eu",
+      "ns221.iservices4u.eu",
+      "ns222.iservices4u.eu"
     ],
     "warnings": []
   },
@@ -36,8 +36,6 @@
       }
     ],
     "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 2a01:4f8:1c17:57ff::1 is mta-ger-222.iservices4u.eu, but the A/AAAA DNS records for mta-ger-222.iservices4u.eu do not resolve to 2a01:4f8:1c17:57ff::1",
       "Hostname mta-ger-223.iservices4u.eu is listed in multiple MX records"
     ]
   },
@@ -45,9 +43,7 @@
     "record": "v=spf1 ip4:116.202.67.80/28 ip4:5.135.230.0/27 include:spf.iservices4u.eu a -all",
     "valid": true,
     "dns_lookups": 6,
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ],
+    "warnings": [],
     "parsed": {
       "pass": [
         {
@@ -115,6 +111,106 @@
                     {
                       "value": "185.201.16.0/22",
                       "mechanism": "ip4"
+                    },
+                    {
+                      "value": "130.117.251.9",
+                      "mechanism": "a"
+                    },
+                    {
+                      "value": "138.201.61.140",
+                      "mechanism": "a"
+                    },
+                    {
+                      "value": "138.201.61.180",
+                      "mechanism": "a"
+                    },
+                    {
+                      "value": "138.201.61.182",
+                      "mechanism": "a"
+                    },
+                    {
+                      "value": "154.62.137.204",
+                      "mechanism": "a"
+                    },
+                    {
+                      "value": "154.62.137.205",
+                      "mechanism": "a"
+                    },
+                    {
+                      "value": "199.115.117.10",
+                      "mechanism": "a"
+                    },
+                    {
+                      "value": "199.115.117.11",
+                      "mechanism": "a"
+                    },
+                    {
+                      "value": "199.115.117.7",
+                      "mechanism": "a"
+                    },
+                    {
+                      "value": "2001:1af8:4400:a047:6::1",
+                      "mechanism": "a"
+                    },
+                    {
+                      "value": "2001:978:2:6::20:10",
+                      "mechanism": "a"
+                    },
+                    {
+                      "value": "207.244.64.180",
+                      "mechanism": "a"
+                    },
+                    {
+                      "value": "207.244.64.182",
+                      "mechanism": "a"
+                    },
+                    {
+                      "value": "209.126.110.250",
+                      "mechanism": "a"
+                    },
+                    {
+                      "value": "209.126.121.72",
+                      "mechanism": "a"
+                    },
+                    {
+                      "value": "209.126.121.73",
+                      "mechanism": "a"
+                    },
+                    {
+                      "value": "2604:9a00:2010:a024:21::1",
+                      "mechanism": "a"
+                    },
+                    {
+                      "value": "37.58.58.55",
+                      "mechanism": "a"
+                    },
+                    {
+                      "value": "46.165.223.16",
+                      "mechanism": "a"
+                    },
+                    {
+                      "value": "46.165.232.175",
+                      "mechanism": "a"
+                    },
+                    {
+                      "value": "46.165.233.176",
+                      "mechanism": "a"
+                    },
+                    {
+                      "value": "94.75.192.139",
+                      "mechanism": "a"
+                    },
+                    {
+                      "value": "94.75.244.176",
+                      "mechanism": "a"
+                    },
+                    {
+                      "value": "94.75.244.183",
+                      "mechanism": "a"
+                    },
+                    {
+                      "value": "94.75.244.184",
+                      "mechanism": "a"
                     },
                     {
                       "value": "130.117.249.148",
@@ -247,18 +343,14 @@
                   "exp": null,
                   "all": "fail"
                 },
-                "warnings": [
-                  "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-                ]
+                "warnings": []
               }
             ],
             "redirect": null,
             "exp": null,
             "all": "fail"
           },
-          "warnings": [
-            "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-          ]
+          "warnings": []
         }
       ],
       "redirect": null,

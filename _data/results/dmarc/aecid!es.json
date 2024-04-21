@@ -10,38 +10,67 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mailhost2.aecid.es",
-        "addresses": [
-          "192.148.209.39"
-        ]
-      },
-      {
-        "preference": 30,
-        "hostname": "mailhost3.aecid.es",
-        "addresses": [
-          "192.148.209.40"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "All nameservers failed to answer the query 122.172.73.185.in-addr.arpa. IN PTR: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "spf": {
-    "record": "v=spf1 mx:aecid.es include:spf.protection.outlook.com -all",
+    "record": "v=spf1 ip4:192.148.209.39 ip4:192.148.209.40 include:spf.protection.outlook.com a:spf.correo.gob.es -all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "mailhost2.aecid.es",
-          "mechanism": "mx"
+          "value": "192.148.209.39",
+          "mechanism": "ip4"
         },
         {
-          "value": "mailhost3.aecid.es",
-          "mechanism": "mx"
+          "value": "192.148.209.40",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "185.73.172.122",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.172.123",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.172.124",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.172.125",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.172.147",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.173.17",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.173.18",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.173.19",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.173.20",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.173.21",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.173.22",
+          "mechanism": "a"
         }
       ],
       "neutral": [],

@@ -3,7 +3,10 @@
   "base_domain": "territoriomuseo.com",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
+    "hostnames": [
+      "dns2.cloudunificado.com",
+      "dns1.cloudunificado.com"
+    ],
     "warnings": []
   },
   "mx": {

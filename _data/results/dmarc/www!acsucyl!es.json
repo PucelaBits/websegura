@@ -4,14 +4,28 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ps2.hostinet.com",
-      "ps1.hostinet.com"
+      "ps1.hostinet.com",
+      "ps2.hostinet.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "acsucyl-es.mail.protection.outlook.com",
+        "addresses": [
+          "52.101.68.18",
+          "52.101.68.21",
+          "52.101.68.29",
+          "52.101.68.32",
+          "52.101.68.8",
+          "52.101.73.16",
+          "52.101.73.28"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com -all",

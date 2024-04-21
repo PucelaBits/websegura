@@ -18,21 +18,21 @@
         "hostname": "aoc-cat.mail.protection.outlook.com",
         "addresses": [
           "52.101.68.0",
-          "52.101.68.12",
           "52.101.68.15",
-          "52.101.68.29",
+          "52.101.68.18",
           "52.101.68.3",
-          "52.101.73.16",
-          "52.101.73.4"
+          "52.101.68.32",
+          "52.101.68.5",
+          "52.101.68.8"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx include:spf1.aoc.cat include:spf.protection.outlook.com include:mail.zendesk.com include:spf-scd.aoc.cat ~all",
+    "record": "v=spf1 mx include:spf1.aoc.cat  include:spf2.aoc.cat include:spf.protection.outlook.com include:mail.zendesk.com include:spf-scd.aoc.cat ~all",
     "valid": true,
-    "dns_lookups": 6,
+    "dns_lookups": 8,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -93,6 +93,55 @@
               },
               {
                 "value": "93.115.204.2/26",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "spf2.aoc.cat",
+          "record": "v=spf1 mx ip4:157.97.65.120/29 ip4:83.231.131.64/26 ip4:213.229.188.128/26 ip4:13.69.98.234/32 ip4:20.67.121.31/32 ip4:51.138.34.253/32 ip4:45.15.50.199/32 ~all",
+          "dns_lookups": 1,
+          "parsed": {
+            "pass": [
+              {
+                "value": "aoc-cat.mail.protection.outlook.com",
+                "mechanism": "mx"
+              },
+              {
+                "value": "157.97.65.120/29",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "83.231.131.64/26",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "213.229.188.128/26",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "13.69.98.234/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "20.67.121.31/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "51.138.34.253/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "45.15.50.199/32",
                 "mechanism": "ip4"
               }
             ],

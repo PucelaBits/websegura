@@ -4,13 +4,11 @@
   "dnssec": false,
   "ns": {
     "hostnames": [],
-    "warnings": []
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "mx": {
     "hosts": [],
-    "warnings": [
-      "No MX records found. Is the domain parked?"
-    ]
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
     "record": null,
@@ -18,9 +16,81 @@
     "error": "sede.cortesclm.es does not have a SPF TXT record"
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "record": "v=DMARC1;p=none;pct=100;rua=mailto:343f4fe28a@rua.easydmarc.us,mailto:dmarc_a@cortesclm.es;ruf=mailto:343f4fe28a@ruf.easydmarc.us,mailto:dmarc_f@cortesclm.es;ri=86400;fo=s",
+    "valid": true,
+    "location": "cortesclm.es",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "pct": {
+        "value": 100,
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "343f4fe28a@rua.easydmarc.us",
+            "size_limit": null
+          },
+          {
+            "scheme": "mailto",
+            "address": "dmarc_a@cortesclm.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "343f4fe28a@ruf.easydmarc.us",
+            "size_limit": null
+          },
+          {
+            "scheme": "mailto",
+            "address": "dmarc_f@cortesclm.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "s"
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }

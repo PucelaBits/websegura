@@ -4,14 +4,43 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.huesca.es",
-      "ns3.huesca.es"
+      "ns3.huesca.es",
+      "ns1.huesca.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx01.cloud.vadesecure.com",
+        "addresses": [
+          "163.172.240.110"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mx02.cloud.vadesecure.com",
+        "addresses": [
+          "163.172.240.111"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mx03.cloud.vadesecure.com",
+        "addresses": [
+          "135.125.122.66"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mx04.cloud.vadesecure.com",
+        "addresses": [
+          "135.125.122.67"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:195.76.147.146 ip4:194.179.101.130 include:spf.cloud.vadesecure.com include:spf.acumbamail.com -all",

@@ -18,8 +18,8 @@
           "195.245.230.200",
           "195.245.230.201",
           "195.245.230.202",
+          "195.245.231.69",
           "195.245.231.72",
-          "195.245.231.75",
           "85.158.142.210",
           "85.158.142.214",
           "85.158.142.215"
@@ -202,7 +202,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com",
+    "record": "v=DMARC1; p=reject; fo=1; rua=mailto:dmarc-reports@saludcastillayleon.es; ruf=mailto:dmarc-reports@saludcastillayleon.es",
     "valid": true,
     "location": "saludcastillayleon.es",
     "warnings": [],
@@ -212,7 +212,7 @@
         "explicit": true
       },
       "p": {
-        "value": "quarantine",
+        "value": "reject",
         "explicit": true
       },
       "fo": {
@@ -225,7 +225,7 @@
         "value": [
           {
             "scheme": "mailto",
-            "address": "dmarc_rua@emaildefense.proofpoint.com",
+            "address": "dmarc-reports@saludcastillayleon.es",
             "size_limit": null
           }
         ],
@@ -235,7 +235,7 @@
         "value": [
           {
             "scheme": "mailto",
-            "address": "dmarc_ruf@emaildefense.proofpoint.com",
+            "address": "dmarc-reports@saludcastillayleon.es",
             "size_limit": null
           }
         ],
@@ -264,7 +264,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "quarantine",
+        "value": "reject",
         "explicit": false
       }
     }

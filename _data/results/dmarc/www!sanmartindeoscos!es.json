@@ -19,10 +19,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 31.200.242.22 is server2.itechselect.net, but the A/AAAA DNS records for server2.itechselect.net do not resolve to 31.200.242.22"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:31.200.242.22 +a +mx +ip4:37.153.90.131 ~all",

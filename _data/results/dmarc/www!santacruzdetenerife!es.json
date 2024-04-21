@@ -4,14 +4,31 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns01.santacruzdetenerife.es",
-      "dns02.santacruzdetenerife.es"
+      "dns02.santacruzdetenerife.es",
+      "dns01.santacruzdetenerife.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx-01-eu-central-1.prod.hydra.sophos.com",
+        "addresses": [
+          "18.195.156.20",
+          "3.74.214.172"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mx-02-eu-central-1.prod.hydra.sophos.com",
+        "addresses": [
+          "18.195.156.20",
+          "3.74.214.172"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx:santacruzdetenerife.es ip4:195.76.166.0/24 include:_spf_eucentral1.prod.hydra.sophos.com -all",

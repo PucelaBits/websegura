@@ -4,12 +4,12 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "a4-64.akam.net",
       "a1-25.akam.net",
       "a12-67.akam.net",
       "a11-65.akam.net",
-      "a7-65.akam.net",
-      "a26-67.akam.net"
+      "a4-64.akam.net",
+      "a26-67.akam.net",
+      "a7-65.akam.net"
     ],
     "warnings": []
   },
@@ -18,12 +18,18 @@
       {
         "preference": 10,
         "hostname": "madrid-es.mail.protection.outlook.com",
-        "addresses": []
+        "addresses": [
+          "52.101.68.10",
+          "52.101.68.12",
+          "52.101.68.36",
+          "52.101.68.8",
+          "52.101.73.2",
+          "52.101.73.22",
+          "52.101.73.30"
+        ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:195.55.79.41 ip4:195.55.79.42 ip4:195.55.79.43 ip4:195.55.79.44 ip4:195.55.79.49 ip4:195.55.79.20 ip4:195.55.79.21 ip4:195.55.79.22 ip4:195.55.79.23 ip4:195.55.79.24 ip4:195.55.79.25 include:spf.protection.outlook.com include:spf.mailjet.com include:spf.mandrillapp.com a:origen2.iam.akamai.c.mad.interhost.com a:origen.iam.akamai.c.mad.interhost.com a:origen3.iam.akamai.c.mad.interhost.com a:origen4.iam.akamai.c.mad.interhost.com include:servers.mcsv.net ip4:54.229.2.165 ip4:52.30.130.201 include:amazonses.com ~all",

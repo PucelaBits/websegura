@@ -53,7 +53,9 @@
     "record": "v=spf1 mx:tragsa.es a:mail00.tragsa.es a:mailrelay01.tragsa.es a:mail20.tragsa.es a:mail35.tragsa.es ip4:195.77.152.0/24 -all",
     "valid": true,
     "dns_lookups": 5,
-    "warnings": [],
+    "warnings": [
+      "The domain mailrelay01.tragsa.es does not exist"
+    ],
     "parsed": {
       "pass": [
         {
@@ -78,10 +80,6 @@
         },
         {
           "value": "195.77.152.24",
-          "mechanism": "a"
-        },
-        {
-          "value": "195.77.152.37",
           "mechanism": "a"
         },
         {

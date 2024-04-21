@@ -133,7 +133,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com",
+    "record": "v=DMARC1; p=reject; fo=1; rua=mailto:clean.mail@casareal.es; ruf=mailto:clean.mail@casareal.es",
     "valid": true,
     "location": "casareal.es",
     "warnings": [],
@@ -143,7 +143,7 @@
         "explicit": true
       },
       "p": {
-        "value": "quarantine",
+        "value": "reject",
         "explicit": true
       },
       "fo": {
@@ -156,7 +156,7 @@
         "value": [
           {
             "scheme": "mailto",
-            "address": "dmarc_rua@emaildefense.proofpoint.com",
+            "address": "clean.mail@casareal.es",
             "size_limit": null
           }
         ],
@@ -166,7 +166,7 @@
         "value": [
           {
             "scheme": "mailto",
-            "address": "dmarc_ruf@emaildefense.proofpoint.com",
+            "address": "clean.mail@casareal.es",
             "size_limit": null
           }
         ],
@@ -195,7 +195,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "quarantine",
+        "value": "reject",
         "explicit": false
       }
     }
