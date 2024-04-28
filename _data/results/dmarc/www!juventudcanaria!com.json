@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "acatife.gobiernodecanarias.org",
-      "seti.gobiernodecanarias.org"
+      "seti.gobiernodecanarias.org",
+      "acatife.gobiernodecanarias.org"
     ],
     "warnings": []
   },
@@ -21,7 +21,12 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 82.194.66.207 is relay15.dns-servicios.com, but the A/AAAA DNS records for relay15.dns-servicios.com do not resolve to 82.194.66.207",
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 82.194.66.208 is relay16.dns-servicios.com, but the A/AAAA DNS records for relay16.dns-servicios.com do not resolve to 82.194.66.208"
+    ]
   },
   "spf": {
     "record": null,

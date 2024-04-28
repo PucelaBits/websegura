@@ -4,9 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns-106-c.gandi.net",
-      "ns-165-b.gandi.net",
-      "ns-62-a.gandi.net"
+      "ns1079.ui-dns.biz",
+      "ns1065.ui-dns.de",
+      "ns1067.ui-dns.com",
+      "ns1019.ui-dns.org"
     ],
     "warnings": []
   },
@@ -14,28 +15,26 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "mx01.ionos.es",
-        "addresses": [
-          "217.72.192.67"
-        ]
-      },
-      {
-        "preference": 50,
         "hostname": "mx00.ionos.es",
         "addresses": [
           "212.227.15.41"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mx01.ionos.es",
+        "addresses": [
+          "217.72.192.67"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 a mx include:amazonses.com include:_spf.google.com include:_spf.perfora.net include:_spf.kundenserver.de -all",
+    "record": "v=spf1 a mx include:amazonses.com include:_spf.google.com include:_spf.perfora.net include:_spf-eu.ionos.com -all",
     "valid": true,
     "dns_lookups": 9,
-    "warnings": [
-      "SPF type DNS records found. Use of DNS Type SPF has been removed in the standards track version of SPF, RFC 7208. These records should be removed and replaced with TXT records: v=spf1 a mx include:amazonses.com include:_spf.google.com include:_spf.perfora.net include:_spf.kundenserver.de -all"
-    ],
+    "warnings": [],
     "parsed": {
       "pass": [
         {
@@ -43,11 +42,11 @@
           "mechanism": "a"
         },
         {
-          "value": "mx01.ionos.es",
+          "value": "mx00.ionos.es",
           "mechanism": "mx"
         },
         {
-          "value": "mx00.ionos.es",
+          "value": "mx01.ionos.es",
           "mechanism": "mx"
         }
       ],
@@ -322,8 +321,8 @@
           "warnings": []
         },
         {
-          "domain": "_spf.kundenserver.de",
-          "record": "v=spf1 ip4:212.227.126.128/25 ip4:82.165.159.0/26 ip4:212.227.15.0/25 ip4:212.227.17.0/27 ip4:217.72.192.64/26 -all",
+          "domain": "_spf-eu.ionos.com",
+          "record": "v=spf1 ip4:212.227.126.128/25 ip4:82.165.159.0/26 ip4:212.227.15.0/25 ip4:212.227.17.0/27 ip4:217.72.192.64/26 ?all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -354,7 +353,7 @@
             "include": [],
             "redirect": null,
             "exp": null,
-            "all": "fail"
+            "all": "neutral"
           },
           "warnings": []
         }

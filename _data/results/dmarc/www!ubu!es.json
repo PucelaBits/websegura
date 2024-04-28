@@ -19,12 +19,12 @@
         "hostname": "ubu-es.mail.protection.outlook.com",
         "addresses": [
           "52.101.68.10",
-          "52.101.68.36",
-          "52.101.68.39",
-          "52.101.68.8",
-          "52.101.73.11",
-          "52.101.73.21",
-          "52.101.73.22"
+          "52.101.68.12",
+          "52.101.68.32",
+          "52.101.73.1",
+          "52.101.73.16",
+          "52.101.73.30",
+          "52.101.73.4"
         ]
       }
     ],
@@ -34,9 +34,7 @@
     "record": "v=spf1 mx a:relay.ubu.es ip4:193.146.160.3 a:listas.ubu.es ip4:193.146.160.149 ip4:95.172.90.143 ip4:95.172.90.156 include:spf.protection.outlook.com -all",
     "valid": true,
     "dns_lookups": 4,
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ],
+    "warnings": [],
     "parsed": {
       "pass": [
         {
@@ -50,6 +48,10 @@
         {
           "value": "193.146.160.3",
           "mechanism": "ip4"
+        },
+        {
+          "value": "193.146.160.149",
+          "mechanism": "a"
         },
         {
           "value": "193.146.160.149",

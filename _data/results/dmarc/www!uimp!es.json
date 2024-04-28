@@ -12,44 +12,46 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.251.16.27",
-          "2607:f8b0:4004:c08::1a"
+          "142.251.177.27",
+          "2607:f8b0:4023:140d::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "209.85.202.26",
-          "2a00:1450:400b:c00::1b"
+          "108.177.12.26",
+          "2607:f8b0:400c:c08::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "2a00:1450:400c:c0b::1a",
-          "64.233.184.26"
+          "172.253.62.26",
+          "2607:f8b0:4004:c07::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "142.250.27.26",
-          "2a00:1450:4025:401::1b"
+          "2800:3f0:4003:c00::1b",
+          "64.233.186.27"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "142.250.153.26",
-          "2a00:1450:4013:c16::1a"
+          "209.85.202.26",
+          "2a00:1450:400b:c00::1b"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "2800:3f0:4003:c00::1b does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:uimp.ip-zone.com include:_spf.google.com a mx -all",

@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "aliga.urv.cat",
-      "dns.urv.cat"
+      "dns.urv.cat",
+      "aliga.urv.cat"
     ],
     "warnings": []
   },
@@ -15,13 +15,13 @@
         "preference": 5,
         "hostname": "urv-cat.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.0",
-          "52.101.68.18",
-          "52.101.68.21",
-          "52.101.68.5",
-          "52.101.73.1",
+          "52.101.68.10",
+          "52.101.68.29",
+          "52.101.68.39",
           "52.101.73.11",
-          "52.101.73.24"
+          "52.101.73.16",
+          "52.101.73.24",
+          "52.101.73.4"
         ]
       }
     ],
@@ -31,9 +31,7 @@
     "record": "v=spf1 include:spf.protection.outlook.com a:mail.cpd0.urv.cat a:mail1.cpd0.urv.cat a:mail2.cpd0.urv.cat a:mail.cpd1.urv.cat a:mail1.cpd1.urv.cat a:mail2.cpd1.urv.cat ip4:84.88.0.7/32 ip4:84.88.0.6/32 -all",
     "valid": true,
     "dns_lookups": 7,
-    "warnings": [
-      "The domain mail1.cpd1.urv.cat does not exist"
-    ],
+    "warnings": [],
     "parsed": {
       "pass": [
         {
@@ -46,6 +44,10 @@
         },
         {
           "value": "84.88.196.32",
+          "mechanism": "a"
+        },
+        {
+          "value": "84.88.194.13",
           "mechanism": "a"
         },
         {

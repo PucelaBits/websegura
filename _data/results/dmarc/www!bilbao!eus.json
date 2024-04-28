@@ -31,9 +31,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:spf.messagelabs.com a:smtp.bilbao.eus -all",
+    "record": "v=spf1 include:spf-008fd801.pphosted.com include:spf.messagelabs.com a:smtp.bilbao.eus -all",
     "valid": true,
-    "dns_lookups": 4,
+    "dns_lookups": 5,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -46,6 +46,31 @@
       "softfail": [],
       "fail": [],
       "include": [
+        {
+          "domain": "spf-008fd801.pphosted.com",
+          "record": "v=spf1 ip4:66.159.233.73 ip4:66.159.234.148",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "66.159.233.73",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "66.159.234.148",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "neutral"
+          },
+          "warnings": []
+        },
         {
           "domain": "spf.messagelabs.com",
           "record": "v=spf1 include:nets1.spf.messagelabs.com include:nets2.spf.messagelabs.com ~all",

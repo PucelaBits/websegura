@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns6.grupoduo.net",
-      "ns5.grupoduo.net"
+      "ns5.grupoduo.net",
+      "ns6.grupoduo.net"
     ],
     "warnings": []
   },
@@ -15,17 +15,14 @@
         "preference": 10,
         "hostname": "mail.belmontedemiranda.es",
         "addresses": [
-          "212.89.13.125"
+          "89.17.204.80"
         ]
       }
     ],
-    "warnings": [
-      "The domain correo2.duonet.es does not exist",
-      "The reverse DNS of 212.89.13.125 is correo2.duonet.es, but the A/AAAA DNS records for correo2.duonet.es do not resolve to 212.89.13.125"
-    ]
+    "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx a ip4:212.89.13.125  -all",
+    "record": "v=spf1 mx a ip4:89.17.204.80 ip4:89.17.204.220 ip4:89.17.204.215 -all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
@@ -40,7 +37,15 @@
           "mechanism": "a"
         },
         {
-          "value": "212.89.13.125",
+          "value": "89.17.204.80",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "89.17.204.220",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "89.17.204.215",
           "mechanism": "ip4"
         }
       ],
