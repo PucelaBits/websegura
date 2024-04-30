@@ -1,7 +1,7 @@
 {
   "algorithm_version": 3,
-  "end_time": "Sat, 27 Apr 2024 00:41:41 GMT",
-  "grade": "F",
+  "end_time": "Tue, 30 Apr 2024 00:42:26 GMT",
+  "grade": "C+",
   "hidden": false,
   "likelihood_indicator": "MEDIUM",
   "response_headers": {
@@ -9,11 +9,11 @@
     "Connection": "Keep-Alive",
     "Content-Language": "es-ES",
     "Content-Type": "text/html; charset=utf-8",
-    "Date": "Sat, 27 Apr 2024 00:41:29 GMT",
+    "Date": "Tue, 30 Apr 2024 00:42:24 GMT",
     "Expires": "Thu, 01 Dec 1994 16:00:00 GMT",
     "Keep-Alive": "timeout=10, max=99",
     "Server": "Apache",
-    "Set-Cookie": "JSESSIONID=0000f1xwyZepP0qtiHPIzrX-LRJ:-1; Path=/we001/was; HttpOnly, idioma=es; Expires=Sun, 27-Apr-25 00:41:28 GMT; Path=/, idioma=es; Expires=Thu, 01-Dec-94 16:00:00 GMT; Path=/; Domain=www.vitoria-gasteiz.org, org.springframework.web.servlet.i18n.CookieLocaleResolver.LOCALE=es; Expires=Sun, 27-Apr-25 00:41:28 GMT; Path=/, org.springframework.web.servlet.i18n.CookieLocaleResolver.LOCALE=es; Expires=Thu, 01-Dec-94 16:00:00 GMT; Path=/; Domain=www.vitoria-gasteiz.org",
+    "Set-Cookie": "JSESSIONID=00002aSdeyvRgLZ8uygHpbPUlJa:-1; Path=/we001/was; HttpOnly, idioma=es; Expires=Wed, 30-Apr-25 00:42:24 GMT; Path=/, idioma=es; Expires=Thu, 01-Dec-94 16:00:00 GMT; Path=/; Domain=www.vitoria-gasteiz.org, org.springframework.web.servlet.i18n.CookieLocaleResolver.LOCALE=es; Expires=Wed, 30-Apr-25 00:42:24 GMT; Path=/, org.springframework.web.servlet.i18n.CookieLocaleResolver.LOCALE=es; Expires=Thu, 01-Dec-94 16:00:00 GMT; Path=/; Domain=www.vitoria-gasteiz.org",
     "Strict-Transport-Security": "max-age=31536000",
     "Transfer-Encoding": "chunked",
     "Vary": "Accept-Encoding",
@@ -21,12 +21,12 @@
     "X-Powered-By": "Servlet/3.0",
     "X-XSS-Protection": "1; mode=block"
   },
-  "scan_id": 50416539,
-  "score": 10,
-  "start_time": "Sat, 27 Apr 2024 00:41:27 GMT",
+  "scan_id": 50521460,
+  "score": 60,
+  "start_time": "Tue, 30 Apr 2024 00:42:22 GMT",
   "state": "FINISHED",
   "status_code": 200,
-  "tests_failed": 4,
-  "tests_passed": 7,
+  "tests_failed": 3,
+  "tests_passed": 8,
   "tests_quantity": 11
 }
