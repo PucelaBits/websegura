@@ -11,7 +11,7 @@
   },
   "mx": {
     "hosts": [],
-    "error": "All nameservers failed to answer the query 204.125.130.217.in-addr.arpa. IN PTR: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 include:spf.antispamcloud.com ip4:217.130.125.204/32 -all",

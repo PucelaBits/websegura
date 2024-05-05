@@ -3,11 +3,8 @@
   "base_domain": "sepe.es",
   "dnssec": true,
   "ns": {
-    "hostnames": [
-      "ns1.age.gob.es",
-      "ns2.age.gob.es"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "All nameservers failed to answer the query sepe.es. IN NS: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "mx": {
     "hosts": [
@@ -15,13 +12,13 @@
         "preference": 10,
         "hostname": "sepe-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.16",
-          "52.101.68.8",
-          "52.101.73.1",
-          "52.101.73.19",
+          "52.101.68.15",
+          "52.101.68.29",
+          "52.101.68.39",
+          "52.101.73.11",
           "52.101.73.2",
-          "52.101.73.22",
-          "52.101.73.28"
+          "52.101.73.30",
+          "52.101.73.8"
         ]
       },
       {

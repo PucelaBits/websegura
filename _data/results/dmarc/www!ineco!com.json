@@ -22,115 +22,16 @@
         "preference": 10,
         "hostname": "mxb-006e4701.gslb.pphosted.com",
         "addresses": [
-          "205.220.185.208"
+          "143.55.144.156"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx include:spf.protection.outlook.com include:spf-006e4701.pphosted.com ~all",
-    "valid": true,
-    "dns_lookups": 3,
-    "warnings": [],
-    "parsed": {
-      "pass": [
-        {
-          "value": "mxa-006e4701.gslb.pphosted.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "mxb-006e4701.gslb.pphosted.com",
-          "mechanism": "mx"
-        }
-      ],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [
-        {
-          "domain": "spf.protection.outlook.com",
-          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/51 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
-          "dns_lookups": 0,
-          "parsed": {
-            "pass": [
-              {
-                "value": "40.92.0.0/15",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "40.107.0.0/16",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "52.100.0.0/14",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "104.47.0.0/17",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "2a01:111:f400::/48",
-                "mechanism": "ip6"
-              },
-              {
-                "value": "2a01:111:f403::/49",
-                "mechanism": "ip6"
-              },
-              {
-                "value": "2a01:111:f403:8000::/51",
-                "mechanism": "ip6"
-              },
-              {
-                "value": "2a01:111:f403:c000::/51",
-                "mechanism": "ip6"
-              },
-              {
-                "value": "2a01:111:f403:f000::/52",
-                "mechanism": "ip6"
-              }
-            ],
-            "neutral": [],
-            "softfail": [],
-            "fail": [],
-            "include": [],
-            "redirect": null,
-            "exp": null,
-            "all": "fail"
-          },
-          "warnings": []
-        },
-        {
-          "domain": "spf-006e4701.pphosted.com",
-          "record": "v=spf1 ip4:205.220.185.208 ip4:143.55.144.156",
-          "dns_lookups": 0,
-          "parsed": {
-            "pass": [
-              {
-                "value": "205.220.185.208",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "143.55.144.156",
-                "mechanism": "ip4"
-              }
-            ],
-            "neutral": [],
-            "softfail": [],
-            "fail": [],
-            "include": [],
-            "redirect": null,
-            "exp": null,
-            "all": "neutral"
-          },
-          "warnings": []
-        }
-      ],
-      "redirect": null,
-      "exp": null,
-      "all": "softfail"
-    }
+    "record": null,
+    "valid": false,
+    "error": "ineco.com has multiple SPF TXT records"
   },
   "dmarc": {
     "record": "v=DMARC1; p=reject; sp=reject; rua=mailto:dmarc@ineco.com,mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc@ineco.com,mailto:dmarc_ruf@emaildefense.proofpoint.com; pct=100; fo=1",

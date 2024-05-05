@@ -3,57 +3,22 @@
   "base_domain": "turismoasturias.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "mortadelo.telecable.es",
-      "dns.asturias.es"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mail.turismoasturias.es",
-        "addresses": [
-          "51.38.237.179"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
-    "record": "v=spf1 +a +mx +a:dns5.emarketers.com -all",
-    "valid": true,
-    "dns_lookups": 3,
-    "warnings": [],
-    "parsed": {
-      "pass": [
-        {
-          "value": "88.151.16.194",
-          "mechanism": "a"
-        },
-        {
-          "value": "mail.turismoasturias.es",
-          "mechanism": "mx"
-        },
-        {
-          "value": "51.38.237.179",
-          "mechanism": "a"
-        }
-      ],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [],
-      "redirect": null,
-      "exp": null,
-      "all": "fail"
-    }
+    "record": null,
+    "valid": false,
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "dmarc": {
     "record": null,
     "valid": false,
     "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   }
 }

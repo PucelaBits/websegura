@@ -4,9 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "pedraforca.lacuinadel.cat",
-      "balandrau.lacuinadel.cat",
-      "matagalls.lacuinadel.cat"
+      "matagalls.lacuinadel.cat",
+      "pedraforca.lacuinadel.cat"
     ],
     "warnings": []
   },
@@ -16,22 +15,22 @@
         "preference": 0,
         "hostname": "domini-barcelona.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.15",
-          "52.101.68.18",
-          "52.101.68.21",
-          "52.101.68.32",
-          "52.101.68.5",
-          "52.101.73.24",
-          "52.101.73.4"
+          "52.101.68.3",
+          "52.101.68.36",
+          "52.101.68.8",
+          "52.101.73.1",
+          "52.101.73.12",
+          "52.101.73.4",
+          "52.101.73.8"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:spf.protection.outlook.com include:spf.zoho.eu include:eu.transmail.net ~all",
+    "record": "v=spf1 include:spf.protection.outlook.com include:144410672.spf04.hubspotemail.net include:spf.zoho.eu include:eu.transmail.net ~all",
     "valid": true,
-    "dns_lookups": 3,
+    "dns_lookups": 4,
     "warnings": [],
     "parsed": {
       "pass": [],
@@ -80,6 +79,95 @@
               {
                 "value": "2a01:111:f403:f000::/52",
                 "mechanism": "ip6"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "144410672.spf04.hubspotemail.net",
+          "record": "v=spf1 ip4:3.93.157.0/24 ip4:3.210.190.0/24 ip4:18.208.124.128/25 ip4:54.174.52.0/24 ip4:54.174.57.0/24 ip4:54.174.59.0/24 ip4:54.174.60.0/23 ip4:54.174.63.0/24 ip4:108.179.144.0/20 ip4:139.180.17.0/24 ip4:141.193.184.32/27 ip4:141.193.184.64/26 ip4:141.193.184.128/25 ip4:141.193.185.32/27 ip4:141.193.185.64/26 ip4:141.193.185.128/25 ip4:143.244.80.0/20 ip4:158.247.16.0/20 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "3.93.157.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "3.210.190.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "18.208.124.128/25",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "54.174.52.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "54.174.57.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "54.174.59.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "54.174.60.0/23",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "54.174.63.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "108.179.144.0/20",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "139.180.17.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "141.193.184.32/27",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "141.193.184.64/26",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "141.193.184.128/25",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "141.193.185.32/27",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "141.193.185.64/26",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "141.193.185.128/25",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "143.244.80.0/20",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "158.247.16.0/20",
+                "mechanism": "ip4"
               }
             ],
             "neutral": [],
@@ -193,9 +281,53 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=none;",
+    "valid": true,
+    "location": "domini.barcelona",
+    "warnings": [
+      "rua tag (destination for aggregate reports) not found"
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }

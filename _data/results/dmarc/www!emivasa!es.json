@@ -34,19 +34,16 @@
         "hostname": "emivasa-es.mail.protection.outlook.com",
         "addresses": [
           "52.101.68.10",
-          "52.101.68.12",
-          "52.101.68.39",
-          "52.101.73.19",
-          "52.101.73.24",
-          "52.101.73.4",
-          "52.101.73.8"
+          "52.101.68.15",
+          "52.101.68.25",
+          "52.101.68.5",
+          "52.101.73.15",
+          "52.101.73.2",
+          "52.101.73.26"
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 23.90.104.198 is esa1.hc782-58.eu.iphmx.com, but the A/AAAA DNS records for esa1.hc782-58.eu.iphmx.com do not resolve to 23.90.104.198"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:84.124.28.165 ip4:90.161.157.217 include:_spf.google.com include:_spf.innovatelecom.es include:spf.protection.outlook.com exists:%{i}.spf.hc782-58.eu.iphmx.com ~all",

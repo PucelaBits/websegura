@@ -4,13 +4,11 @@
   "dnssec": false,
   "ns": {
     "hostnames": [],
-    "warnings": []
+    "error": "All nameservers failed to answer the query ceice.gva.es. IN NS: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "mx": {
     "hosts": [],
-    "warnings": [
-      "No MX records found. Is the domain parked?"
-    ]
+    "error": "All nameservers failed to answer the query ceice.gva.es. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "spf": {
     "record": null,

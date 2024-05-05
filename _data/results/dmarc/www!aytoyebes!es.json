@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.almazena.com",
+      "ns3.almazena.com",
       "ns2.almazena.com",
-      "ns3.almazena.com"
+      "ns1.almazena.com"
     ],
     "warnings": []
   },
@@ -46,12 +46,12 @@
       "include": [
         {
           "domain": "almazena.com",
-          "record": "v=spf1 ip4:185.5.126.11 ip4:185.5.126.0/24 ip4:185.5.125.0/24 include:colaboras.cloud -all",
+          "record": "v=spf1 ip4:5.56.166.15 ip4:185.5.126.0/24 ip4:185.5.125.0/24 include:colaboras.cloud -all",
           "dns_lookups": 2,
           "parsed": {
             "pass": [
               {
-                "value": "185.5.126.11",
+                "value": "5.56.166.15",
                 "mechanism": "ip4"
               },
               {

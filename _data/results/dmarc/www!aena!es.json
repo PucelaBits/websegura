@@ -4,11 +4,11 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns7.aena.es",
       "dns13.aena.es",
-      "dns6.aena.es",
+      "artemis.ttd.net",
       "dns12.aena.es",
-      "artemis.ttd.net"
+      "dns7.aena.es",
+      "dns6.aena.es"
     ],
     "warnings": []
   },
@@ -30,18 +30,18 @@
       "The reverse DNS of 194.224.177.201 is meg04.aena.es, but the A/AAAA DNS records for meg04.aena.es do not resolve to 194.224.177.201",
       "The domain meg02.aena.es does not exist",
       "The reverse DNS of 194.224.177.201 is meg02.aena.es, but the A/AAAA DNS records for meg02.aena.es do not resolve to 194.224.177.201",
+      "The domain meg04.aena.es does not exist",
+      "The reverse DNS of 217.130.124.201 is meg04.aena.es, but the A/AAAA DNS records for meg04.aena.es do not resolve to 217.130.124.201",
       "The domain meg02.aena.es does not exist",
       "The reverse DNS of 217.130.124.201 is meg02.aena.es, but the A/AAAA DNS records for meg02.aena.es do not resolve to 217.130.124.201",
       "The domain spf.aena.es does not exist",
-      "The reverse DNS of 217.130.124.201 is spf.aena.es, but the A/AAAA DNS records for spf.aena.es do not resolve to 217.130.124.201",
-      "The domain meg04.aena.es does not exist",
-      "The reverse DNS of 217.130.124.201 is meg04.aena.es, but the A/AAAA DNS records for meg04.aena.es do not resolve to 217.130.124.201"
+      "The reverse DNS of 217.130.124.201 is spf.aena.es, but the A/AAAA DNS records for spf.aena.es do not resolve to 217.130.124.201"
     ]
   },
   "spf": {
-    "record": "v=spf1 include:spf-a.aena.es  include:spf.protection.outlook.com -all",
+    "record": "v=spf1 include:spf-a.aena.es  include:spf.protection.outlook.com include:_spf-dc33.sapsf.eu -all",
     "valid": true,
-    "dns_lookups": 2,
+    "dns_lookups": 3,
     "warnings": [],
     "parsed": {
       "pass": [],
@@ -155,6 +155,47 @@
               {
                 "value": "2a01:111:f403:f000::/52",
                 "mechanism": "ip6"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "_spf-dc33.sapsf.eu",
+          "record": "v=spf1 ip4:130.214.193.83/32 ip4:130.214.193.93/32 ip4:130.214.193.78/32 ip4:130.214.193.85/32 ip4:130.214.156.205/32 ip4:130.214.156.249/32 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "130.214.193.83/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "130.214.193.93/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "130.214.193.78/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "130.214.193.85/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "130.214.156.205/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "130.214.156.249/32",
+                "mechanism": "ip4"
               }
             ],
             "neutral": [],
