@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.redunda.com",
-      "ns.redunda.com"
+      "ns.redunda.com",
+      "ns2.redunda.com"
     ],
     "warnings": []
   },
@@ -26,7 +26,7 @@
     ]
   },
   "spf": {
-    "record": "v=spf1 ip4:193.145.205.216/24 ip4:193.145.206.211/24  ip4:193.145.206.0/25 ip4:195.77.17.0/24 ip4:195.77.18.0/24 ip4:195.77.22.20/24 ip4:193.145.200.20/24 mx:bombersdv.es mx:bombers.dva.gva.es -all",
+    "record": "v=spf1 ip4:193.145.205.216/24 ip4:193.145.206.211/24  ip4:193.145.206.0/25 ip4:195.77.17.0/24 ip4:195.77.18.0/24 ip4:195.77.22.20/24 ip4:193.145.200.20/24 ip4:193.145.200.16/24 ip4:195.77.20.28/24 mx:bombersdv.es mx:bombers.dva.gva.es -all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
@@ -58,6 +58,14 @@
         },
         {
           "value": "193.145.200.20/24",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "193.145.200.16/24",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "195.77.20.28/24",
           "mechanism": "ip4"
         },
         {

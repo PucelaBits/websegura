@@ -1,13 +1,10 @@
 {
   "domain": "hablamosdeeuropa.es",
   "base_domain": "hablamosdeeuropa.es",
-  "dnssec": true,
+  "dnssec": false,
   "ns": {
-    "hostnames": [
-      "ns1.age.gob.es",
-      "ns2.age.gob.es"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "All nameservers failed to answer the query hablamosdeeuropa.es. IN NS: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "mx": {
     "hosts": [
@@ -31,18 +28,11 @@
     "record": "v=spf1 mx ~all",
     "valid": true,
     "dns_lookups": 1,
-    "warnings": [],
+    "warnings": [
+      "All nameservers failed to answer the query hablamosdeeuropa.es. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    ],
     "parsed": {
-      "pass": [
-        {
-          "value": "smtp4.maec.es",
-          "mechanism": "mx"
-        },
-        {
-          "value": "smtp3.maec.es",
-          "mechanism": "mx"
-        }
-      ],
+      "pass": [],
       "neutral": [],
       "softfail": [],
       "fail": [],

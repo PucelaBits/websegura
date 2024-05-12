@@ -19,8 +19,8 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "172.253.122.27",
-          "2607:f8b0:4004:c08::1b"
+          "172.253.115.26",
+          "2607:f8b0:4004:c1f::1b"
         ]
       },
       {
@@ -28,14 +28,14 @@
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
           "209.85.202.26",
-          "2a00:1450:400b:c00::1a"
+          "2a00:1450:400b:c00::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "2a00:1450:400c:c0b::1b",
+          "2a00:1450:400c:c0b::1a",
           "64.233.184.26"
         ]
       },
@@ -44,15 +44,15 @@
         "hostname": "aspmx2.googlemail.com",
         "addresses": [
           "209.85.202.27",
-          "2a00:1450:400b:c00::1b"
+          "2a00:1450:400b:c00::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "aspmx3.googlemail.com",
         "addresses": [
-          "2a00:1450:400c:c0b::1b",
-          "64.233.184.27"
+          "2a00:1450:400c:c0b::1a",
+          "64.233.184.26"
         ]
       }
     ],
@@ -583,17 +583,23 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; rua=mailto:dmarc.informatica@upf.edu",
+    "record": "v=DMARC1;p=quarantine;pct=10;rua=mailto:dmarc.informatica@upf.edu",
     "valid": true,
     "location": "upf.edu",
-    "warnings": [],
+    "warnings": [
+      "pct value is less than 100. This leads to inconsistent and unpredictable policy enforcement. Consider using p=none to monitor results instead"
+    ],
     "tags": {
       "v": {
         "value": "DMARC1",
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "quarantine",
+        "explicit": true
+      },
+      "pct": {
+        "value": 10,
         "explicit": true
       },
       "rua": {
@@ -620,10 +626,6 @@
         ],
         "explicit": false
       },
-      "pct": {
-        "value": 100,
-        "explicit": false
-      },
       "rf": {
         "value": [
           "afrf"
@@ -635,7 +637,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": false
       }
     }

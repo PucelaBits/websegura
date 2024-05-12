@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "mailhost.msc.es",
-      "crdserver.msc.es"
+      "crdserver.msc.es",
+      "mailhost.msc.es"
     ],
     "warnings": []
   },
@@ -14,18 +14,19 @@
       {
         "preference": 10,
         "hostname": "mx.msc.es",
-        "addresses": []
+        "addresses": [
+          "195.64.186.52"
+        ]
       },
       {
         "preference": 10,
         "hostname": "mxres.msc.es",
-        "addresses": []
+        "addresses": [
+          "91.230.250.52"
+        ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out.",
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:195.64.186.0/23 ip4:91.230.250.0/24 include:spf.correo.gob.es. -all",

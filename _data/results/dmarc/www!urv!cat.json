@@ -15,43 +15,31 @@
         "preference": 5,
         "hostname": "urv-cat.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.12",
-          "52.101.68.16",
+          "52.101.68.25",
+          "52.101.68.27",
           "52.101.68.3",
-          "52.101.68.39",
-          "52.101.68.8",
-          "52.101.73.19",
-          "52.101.73.2"
+          "52.101.73.1",
+          "52.101.73.11",
+          "52.101.73.22",
+          "52.101.73.6"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:spf.protection.outlook.com a:mail.cpd0.urv.cat a:mail1.cpd0.urv.cat a:mail2.cpd0.urv.cat a:mail.cpd1.urv.cat a:mail1.cpd1.urv.cat a:mail2.cpd1.urv.cat ip4:84.88.0.7/32 ip4:84.88.0.6/32 -all",
+    "record": "v=spf1 include:spf.protection.outlook.com a:mail1.cpd0.urv.cat a:mail2.cpd0.urv.cat a:mail1.cpd1.urv.cat a:mail2.cpd1.urv.cat ip4:84.88.0.7/32 ip4:84.88.0.6/32 -all",
     "valid": true,
-    "dns_lookups": 7,
+    "dns_lookups": 5,
     "warnings": [],
     "parsed": {
       "pass": [
-        {
-          "value": "193.144.16.200",
-          "mechanism": "a"
-        },
         {
           "value": "84.88.196.31",
           "mechanism": "a"
         },
         {
           "value": "84.88.196.32",
-          "mechanism": "a"
-        },
-        {
-          "value": "84.88.194.11",
-          "mechanism": "a"
-        },
-        {
-          "value": "84.88.194.13",
           "mechanism": "a"
         },
         {
@@ -135,9 +123,71 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=none; pct=100; rua=mailto:dmarc-rua@urv.cat; ruf=mailto:dmarc-ruf@urv.cat",
+    "valid": true,
+    "location": "urv.cat",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "pct": {
+        "value": 100,
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc-rua@urv.cat",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc-ruf@urv.cat",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }

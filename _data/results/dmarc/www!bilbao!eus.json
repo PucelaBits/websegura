@@ -13,18 +13,16 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "cluster4.eu.messagelabs.com",
+        "hostname": "mxa-008fd801.gslb.pphosted.com",
         "addresses": [
-          "195.245.230.194",
-          "195.245.231.77",
-          "85.158.142.208"
+          "66.159.233.73"
         ]
       },
       {
-        "preference": 20,
-        "hostname": "cluster4a.eu.messagelabs.com",
+        "preference": 10,
+        "hostname": "mxb-008fd801.gslb.pphosted.com",
         "addresses": [
-          "34.253.63.114"
+          "66.159.233.73"
         ]
       }
     ],

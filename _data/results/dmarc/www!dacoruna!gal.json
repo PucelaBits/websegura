@@ -5,11 +5,11 @@
   "ns": {
     "hostnames": [
       "ns1.xunta.es",
-      "dns.dacoruna.gal",
-      "dns.dicoruna.es",
-      "dns1.dicoruna.es",
+      "ns2.xunta.es",
       "dns1.dacoruna.gal",
-      "ns2.xunta.es"
+      "dns1.dicoruna.es",
+      "dns.dacoruna.gal",
+      "dns.dicoruna.es"
     ],
     "warnings": []
   },
@@ -228,7 +228,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; pct=1; sp=none; adkim=r; aspf=r; rua=mailto:dmarc@dacoruna.gal; ruf=mailto:dmarc@dacoruna.gal; ",
+    "record": "v=DMARC1; p=quarantine; pct=60; sp=none; adkim=r; aspf=r; rua=mailto:dmarc@dacoruna.gal; ruf=mailto:dmarc@dacoruna.gal; ",
     "valid": true,
     "location": "dacoruna.gal",
     "warnings": [
@@ -244,7 +244,7 @@
         "explicit": true
       },
       "pct": {
-        "value": 1,
+        "value": 60,
         "explicit": true
       },
       "sp": {
