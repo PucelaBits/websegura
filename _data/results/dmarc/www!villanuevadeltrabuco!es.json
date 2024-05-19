@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "dpmdns01.ns-cloud4b.org",
       "dpmdns03.ns-cloud4b.net",
-      "dpmdns02.ns-cloud4b.com",
-      "dpmdns01.ns-cloud4b.org"
+      "dpmdns02.ns-cloud4b.com"
     ],
     "warnings": []
   },
@@ -17,7 +17,7 @@
         "hostname": "mx.spamexperts.com",
         "addresses": [
           "2001:550:2:61::2fc:100",
-          "38.89.254.156"
+          "38.111.198.185"
         ]
       },
       {
@@ -1240,9 +1240,62 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1",
-    "valid": false,
+    "record": "v=DMARC1; p=quarantine; rua=mailto:dmarc@hispasec.com; ruf=mailto:dmarc@hispasec.com; sp=quarantine",
+    "valid": true,
     "location": "villanuevadeltrabuco.es",
-    "error": "Error: Expected version_tag at position 0 in: v=DMARC1"
+    "warnings": [
+      "hispasec.com does not indicate that it accepts DMARC reports about villanuevadeltrabuco.es - Authorization record not found: villanuevadeltrabuco.es._report._dmarc.hispasec.com IN TXT \"v=DMARC1\"",
+      "hispasec.com does not indicate that it accepts DMARC reports about villanuevadeltrabuco.es - Authorization record not found: villanuevadeltrabuco.es._report._dmarc.hispasec.com IN TXT \"v=DMARC1\""
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "rua": {
+        "value": "mailto:dmarc@hispasec.com",
+        "explicit": true
+      },
+      "ruf": {
+        "value": "mailto:dmarc@hispasec.com",
+        "explicit": true
+      },
+      "sp": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      }
+    }
   }
 }

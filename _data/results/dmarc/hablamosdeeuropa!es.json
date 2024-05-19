@@ -1,38 +1,34 @@
 {
   "domain": "hablamosdeeuropa.es",
   "base_domain": "hablamosdeeuropa.es",
-  "dnssec": false,
+  "dnssec": true,
   "ns": {
-    "hostnames": [],
-    "error": "All nameservers failed to answer the query hablamosdeeuropa.es. IN NS: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "hostnames": [
+      "ns1.age.gob.es",
+      "ns2.age.gob.es"
+    ],
+    "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "smtp4.maec.es",
-        "addresses": []
-      },
-      {
-        "preference": 20,
-        "hostname": "smtp3.maec.es",
-        "addresses": []
-      }
-    ],
-    "warnings": [
-      "smtp4.maec.es does not have any A or AAAA DNS records",
-      "smtp3.maec.es does not have any A or AAAA DNS records"
-    ]
+    "hosts": [],
+    "error": "All nameservers failed to answer the query hablamosdeeuropa.es. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "spf": {
     "record": "v=spf1 mx ~all",
     "valid": true,
     "dns_lookups": 1,
-    "warnings": [
-      "All nameservers failed to answer the query hablamosdeeuropa.es. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
-    ],
+    "warnings": [],
     "parsed": {
-      "pass": [],
+      "pass": [
+        {
+          "value": "smtp4.maec.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "smtp3.maec.es",
+          "mechanism": "mx"
+        }
+      ],
       "neutral": [],
       "softfail": [],
       "fail": [],

@@ -15,10 +15,13 @@
         "preference": 10,
         "hostname": "sepe-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.12.36",
-          "104.47.14.36",
           "52.101.68.12",
-          "52.101.73.28"
+          "52.101.68.18",
+          "52.101.68.27",
+          "52.101.68.3",
+          "52.101.73.16",
+          "52.101.73.6",
+          "52.101.73.8"
         ]
       },
       {
@@ -31,9 +34,7 @@
       {
         "preference": 30,
         "hostname": "correo1.sepe.es",
-        "addresses": [
-          "192.187.23.240"
-        ]
+        "addresses": []
       },
       {
         "preference": 50,
@@ -43,7 +44,9 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "All nameservers failed to answer the query correo1.sepe.es. IN A: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    ]
   },
   "spf": {
     "record": "v=spf1 ip4:192.187.23.248/31 ip4:192.187.23.240 include:spf.protection.outlook.com ~all",

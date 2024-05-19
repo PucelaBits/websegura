@@ -132,7 +132,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; pct=10; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com;",
+    "record": "v=DMARC1; p=quarantine; pct=50; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com;",
     "valid": true,
     "location": "tenerife.es",
     "warnings": [
@@ -148,7 +148,7 @@
         "explicit": true
       },
       "pct": {
-        "value": 10,
+        "value": 50,
         "explicit": true
       },
       "fo": {

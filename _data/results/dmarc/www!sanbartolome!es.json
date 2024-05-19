@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns111.ovh.net",
-      "ns111.ovh.net"
+      "aiden.ns.cloudflare.com",
+      "sneh.ns.cloudflare.com"
     ],
     "warnings": []
   },
@@ -13,7 +13,7 @@
     "hosts": [
       {
         "preference": 1,
-        "hostname": "mail.sanbartolome.es",
+        "hostname": "_dc-mx.c626aa76913a.sanbartolome.es",
         "addresses": [
           "51.91.11.136"
         ]
@@ -29,11 +29,23 @@
     "parsed": {
       "pass": [
         {
-          "value": "51.91.11.136",
+          "value": "104.21.11.60",
           "mechanism": "a"
         },
         {
-          "value": "mail.sanbartolome.es",
+          "value": "172.67.191.90",
+          "mechanism": "a"
+        },
+        {
+          "value": "2606:4700:3031::6815:b3c",
+          "mechanism": "a"
+        },
+        {
+          "value": "2606:4700:3031::ac43:bf5a",
+          "mechanism": "a"
+        },
+        {
+          "value": "_dc-mx.c626aa76913a.sanbartolome.es",
           "mechanism": "mx"
         },
         {

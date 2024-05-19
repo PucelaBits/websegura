@@ -42,12 +42,10 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:207.54.76.180 ip4:207.54.76.248 ip4:207.54.77.56 ip4:207.54.69.189 mx exists:%{i}.spf.hc489-80.eu.iphmx.com -all",
+    "record": "v=spf1 include:spf.ironport.gencat.cat ip4:207.54.76.180 ip4:207.54.76.248 ip4:207.54.77.56 ip4:207.54.69.189 mx exists:%{i}.spf.hc489-80.eu.iphmx.com -all",
     "valid": true,
-    "dns_lookups": 2,
-    "warnings": [
-      "SPF type DNS records found. Use of DNS Type SPF has been removed in the standards track version of SPF, RFC 7208. These records should be removed and replaced with TXT records: v=spf1 ip4:207.54.76.180 ip4:207.54.76.248 ip4:207.54.77.56 ip4:207.54.69.189 mx exists:%{i}.spf.hc489-80.eu.iphmx.com -all"
-    ],
+    "dns_lookups": 3,
+    "warnings": [],
     "parsed": {
       "pass": [
         {
@@ -86,7 +84,37 @@
       "neutral": [],
       "softfail": [],
       "fail": [],
-      "include": [],
+      "include": [
+        {
+          "domain": "spf.ironport.gencat.cat",
+          "record": "v=spf1 ip4:83.247.135.20 ip4:83.247.135.21 ip4:83.247.135.22 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "83.247.135.20",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "83.247.135.21",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "83.247.135.22",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        }
+      ],
       "redirect": null,
       "exp": null,
       "all": "fail"

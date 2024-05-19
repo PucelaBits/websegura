@@ -4,22 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.nsproys.es",
-      "ns2.nsproys.es"
+      "ns2.nsproys.es",
+      "ns1.nsproys.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 0,
-        "hostname": "vigoeningles.org",
-        "addresses": [
-          "31.200.246.65"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 ip4:31.200.246.65 ip4:31.200.246.174 +a +mx +ip4:82.194.91.133 +ip4:82.194.91.134 +ip4:82.194.91.176 ~all",

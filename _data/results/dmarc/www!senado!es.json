@@ -5,11 +5,11 @@
   "ns": {
     "hostnames": [
       "a10-65.akam.net",
+      "a7-65.akam.net",
+      "a1-103.akam.net",
       "a8-66.akam.net",
       "a4-65.akam.net",
-      "a11-67.akam.net",
-      "a1-103.akam.net",
-      "a7-65.akam.net"
+      "a11-67.akam.net"
     ],
     "warnings": []
   },
@@ -17,23 +17,15 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "correo.senado.es",
+        "hostname": "senado.in.tmes.trendmicro.eu",
         "addresses": [
-          "193.146.129.80"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "correo3.senado.es",
-        "addresses": [
-          "90.160.130.19"
+          "18.185.115.145",
+          "18.185.115.146",
+          "18.185.115.147"
         ]
       }
     ],
-    "warnings": [
-      "The domain 19.pool90-160-130.dynamic.orange.es does not exist",
-      "The reverse DNS of 90.160.130.19 is 19.pool90-160-130.dynamic.orange.es, but the A/AAAA DNS records for 19.pool90-160-130.dynamic.orange.es do not resolve to 90.160.130.19"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:193.146.129.103 ip4:90.160.130.75 include:spf.tmes.trendmicro.com -all",

@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.ineco.es",
-      "ns1.ineco.es"
+      "ns1.ineco.es",
+      "ns2.ineco.es"
     ],
     "warnings": []
   },
@@ -22,14 +22,14 @@
         "preference": 10,
         "hostname": "mxb-006e4701.gslb.pphosted.com",
         "addresses": [
-          "143.55.144.156"
+          "205.220.185.208"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx include:spf.protection.outlook.com include:spf-006e4701.pphosted.com ip4:193.201.107.243 ~all",
+    "record": "v=spf1 mx include:spf.protection.outlook.com include:spf-006e4701.pphosted.com ip4:193.201.107.0/24 ~all",
     "valid": true,
     "dns_lookups": 3,
     "warnings": [],
@@ -44,7 +44,7 @@
           "mechanism": "mx"
         },
         {
-          "value": "193.201.107.243",
+          "value": "193.201.107.0/24",
           "mechanism": "ip4"
         }
       ],

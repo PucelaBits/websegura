@@ -4,41 +4,27 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "isabel.dip-badajoz.es",
       "artemis.ttd.net",
       "ineco.nic.es",
-      "proxy.dip-badajoz.es"
+      "proxy.dip-badajoz.es",
+      "isabel.dip-badajoz.es"
     ],
     "warnings": []
   },
   "mx": {
     "hosts": [
       {
-        "preference": 100,
-        "hostname": "sdb-mta03.dip-badajoz.es",
+        "preference": 10,
+        "hostname": "dip-badajoz-es-1.fortimailcloud.com",
         "addresses": [
-          "195.57.11.113"
+          "154.52.13.56"
         ]
       },
       {
-        "preference": 100,
-        "hostname": "sdb-mta04.dip-badajoz.es",
+        "preference": 20,
+        "hostname": "dip-badajoz-es-2.fortimailcloud.com",
         "addresses": [
-          "195.57.11.114"
-        ]
-      },
-      {
-        "preference": 500,
-        "hostname": "sdb-mta01.dip-badajoz.es",
-        "addresses": [
-          "195.57.11.111"
-        ]
-      },
-      {
-        "preference": 500,
-        "hostname": "sdb-mta02.dip-badajoz.es",
-        "addresses": [
-          "195.57.11.112"
+          "154.52.2.132"
         ]
       }
     ],
@@ -56,19 +42,11 @@
           "mechanism": "a"
         },
         {
-          "value": "sdb-mta03.dip-badajoz.es",
+          "value": "dip-badajoz-es-1.fortimailcloud.com",
           "mechanism": "mx"
         },
         {
-          "value": "sdb-mta04.dip-badajoz.es",
-          "mechanism": "mx"
-        },
-        {
-          "value": "sdb-mta01.dip-badajoz.es",
-          "mechanism": "mx"
-        },
-        {
-          "value": "sdb-mta02.dip-badajoz.es",
+          "value": "dip-badajoz-es-2.fortimailcloud.com",
           "mechanism": "mx"
         },
         {
@@ -76,19 +54,11 @@
           "mechanism": "ip4"
         },
         {
-          "value": "sdb-mta03.dip-badajoz.es",
+          "value": "dip-badajoz-es-1.fortimailcloud.com",
           "mechanism": "mx"
         },
         {
-          "value": "sdb-mta04.dip-badajoz.es",
-          "mechanism": "mx"
-        },
-        {
-          "value": "sdb-mta01.dip-badajoz.es",
-          "mechanism": "mx"
-        },
-        {
-          "value": "sdb-mta02.dip-badajoz.es",
+          "value": "dip-badajoz-es-2.fortimailcloud.com",
           "mechanism": "mx"
         }
       ],

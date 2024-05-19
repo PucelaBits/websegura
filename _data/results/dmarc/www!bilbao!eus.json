@@ -15,23 +15,23 @@
         "preference": 10,
         "hostname": "mxa-008fd801.gslb.pphosted.com",
         "addresses": [
-          "66.159.233.73"
+          "66.159.234.148"
         ]
       },
       {
         "preference": 10,
         "hostname": "mxb-008fd801.gslb.pphosted.com",
         "addresses": [
-          "66.159.233.73"
+          "66.159.234.148"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:spf-008fd801.pphosted.com include:spf.messagelabs.com a:smtp.bilbao.eus -all",
+    "record": "v=spf1 include:spf-008fd801.pphosted.com a:smtp.bilbao.eus -all",
     "valid": true,
-    "dns_lookups": 5,
+    "dns_lookups": 2,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -66,97 +66,6 @@
             "redirect": null,
             "exp": null,
             "all": "neutral"
-          },
-          "warnings": []
-        },
-        {
-          "domain": "spf.messagelabs.com",
-          "record": "v=spf1 include:nets1.spf.messagelabs.com include:nets2.spf.messagelabs.com ~all",
-          "dns_lookups": 2,
-          "parsed": {
-            "pass": [],
-            "neutral": [],
-            "softfail": [],
-            "fail": [],
-            "include": [
-              {
-                "domain": "nets1.spf.messagelabs.com",
-                "record": "v=spf1 ip4:85.158.136.0/21 ip4:193.109.254.0/23 ip4:194.106.220.0/23 ip4:195.245.230.0/23 ip4:95.131.104.0/21 ip4:46.226.48.0/21",
-                "dns_lookups": 0,
-                "parsed": {
-                  "pass": [
-                    {
-                      "value": "85.158.136.0/21",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "193.109.254.0/23",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "194.106.220.0/23",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "195.245.230.0/23",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "95.131.104.0/21",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "46.226.48.0/21",
-                      "mechanism": "ip4"
-                    }
-                  ],
-                  "neutral": [],
-                  "softfail": [],
-                  "fail": [],
-                  "include": [],
-                  "redirect": null,
-                  "exp": null,
-                  "all": "neutral"
-                },
-                "warnings": []
-              },
-              {
-                "domain": "nets2.spf.messagelabs.com",
-                "record": "v=spf1 ip4:216.82.240.0/20 ip4:67.219.240.0/20 ip4:117.120.16.0/21 ip4:103.9.96.0/22",
-                "dns_lookups": 0,
-                "parsed": {
-                  "pass": [
-                    {
-                      "value": "216.82.240.0/20",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "67.219.240.0/20",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "117.120.16.0/21",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "103.9.96.0/22",
-                      "mechanism": "ip4"
-                    }
-                  ],
-                  "neutral": [],
-                  "softfail": [],
-                  "fail": [],
-                  "include": [],
-                  "redirect": null,
-                  "exp": null,
-                  "all": "neutral"
-                },
-                "warnings": []
-              }
-            ],
-            "redirect": null,
-            "exp": null,
-            "all": "softfail"
           },
           "warnings": []
         }

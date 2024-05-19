@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns.asturias.es",
-      "mortadelo.telecable.es"
+      "mortadelo.telecable.es",
+      "dns.asturias.es"
     ],
     "warnings": []
   },
@@ -19,7 +19,9 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The reverse DNS of 51.38.237.179 is dns5.emarketers.com, but the A/AAAA DNS records for dns5.emarketers.com do not resolve to 51.38.237.179"
+    ]
   },
   "spf": {
     "record": "v=spf1 +a +mx +a:dns5.emarketers.com -all",
@@ -37,7 +39,7 @@
           "mechanism": "mx"
         },
         {
-          "value": "51.38.237.179",
+          "value": "15.197.240.20",
           "mechanism": "a"
         }
       ],
