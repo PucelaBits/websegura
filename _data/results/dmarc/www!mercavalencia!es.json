@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns3.dinahosting.com",
+      "ns4.dinahosting.com",
       "ns2.dinahosting.com",
-      "ns.dinahosting.com",
-      "ns4.dinahosting.com"
+      "ns3.dinahosting.com",
+      "ns.dinahosting.com"
     ],
     "warnings": []
   },
@@ -42,10 +42,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 94.100.134.8 is mx03.hornetsecurity.com, but the A/AAAA DNS records for mx03.hornetsecurity.com do not resolve to 94.100.134.8"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:82.98.165.212 ip4:178.33.231.124 ip6:2001:41d0:8:287c::/64 a:vl22247.dinaserver.com a:mercavalencia.es include:spf.protection.outlook.com include:spf.hornetsecurity.com -all",

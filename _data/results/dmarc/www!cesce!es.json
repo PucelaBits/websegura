@@ -24,7 +24,7 @@
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
           "209.85.202.27",
-          "2a00:1450:400b:c00::1a"
+          "2a00:1450:400b:c00::1b"
         ]
       },
       {
@@ -39,7 +39,7 @@
         "preference": 10,
         "hostname": "aspmx2.googlemail.com",
         "addresses": [
-          "209.85.202.27",
+          "209.85.202.26",
           "2a00:1450:400b:c00::1b"
         ]
       },
@@ -47,7 +47,7 @@
         "preference": 10,
         "hostname": "aspmx3.googlemail.com",
         "addresses": [
-          "2a00:1450:400c:c0b::1b",
+          "2a00:1450:400c:c0b::1a",
           "64.233.184.27"
         ]
       }
@@ -62,61 +62,9 @@
     "dns_lookups": 11
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; rua=mailto:dmarc-reports@cesce.es",
-    "valid": true,
-    "location": "cesce.es",
-    "warnings": [],
-    "tags": {
-      "v": {
-        "value": "DMARC1",
-        "explicit": true
-      },
-      "p": {
-        "value": "none",
-        "explicit": true
-      },
-      "rua": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "dmarc-reports@cesce.es",
-            "size_limit": null
-          }
-        ],
-        "explicit": true
-      },
-      "adkim": {
-        "value": "r",
-        "explicit": false
-      },
-      "aspf": {
-        "value": "r",
-        "explicit": false
-      },
-      "fo": {
-        "value": [
-          "0"
-        ],
-        "explicit": false
-      },
-      "pct": {
-        "value": 100,
-        "explicit": false
-      },
-      "rf": {
-        "value": [
-          "afrf"
-        ],
-        "explicit": false
-      },
-      "ri": {
-        "value": 86400,
-        "explicit": false
-      },
-      "sp": {
-        "value": "none",
-        "explicit": false
-      }
-    }
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.cesce.es\n\nMS=27260D098AF07136246F3969A6522C29F7AE1604"
   }
 }

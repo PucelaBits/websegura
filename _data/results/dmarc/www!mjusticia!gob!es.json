@@ -1,7 +1,7 @@
 {
   "domain": "mjusticia.gob.es",
   "base_domain": "mjusticia.gob.es",
-  "dnssec": false,
+  "dnssec": true,
   "ns": {
     "hostnames": [
       "ns1.age.gob.es",
@@ -37,6 +37,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.mjusticia.gob.es\n\n*.mjusticia.gob.es-970187635\n\n50187"
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.mjusticia.gob.es\n\n50187\n\n*.mjusticia.gob.es-970187635"
   }
 }

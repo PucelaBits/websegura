@@ -29,9 +29,10 @@
     "warnings": []
   },
   "spf": {
-    "record": null,
+    "record": "v=spf1 include:spf.ipzmarketing.com ip4:194.224.128.2 ip4:194.224.128.5 ip4:194.224.128.8 ip4:194.224.128.9 include:_spf.google.com include:estafeta.justicia.es include:estafeta2.justicia.es include:spf.protection.outlook.com a:lasalina.es ~all",
     "valid": false,
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered ; Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "warnings": [],
+    "error": "estafeta.justicia.es does not have a SPF TXT record"
   },
   "dmarc": {
     "record": null,

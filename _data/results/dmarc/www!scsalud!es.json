@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns02.ono.com",
-      "dns01.ono.com"
+      "dns01.ono.com",
+      "dns02.ono.com"
     ],
     "warnings": []
   },
@@ -94,6 +94,8 @@
       }
     ],
     "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 213.99.38.71 is kant.correolimpio.telefonica.es, but the A/AAAA DNS records for kant.correolimpio.telefonica.es do not resolve to 213.99.38.71",
       "The domain 196.red-217-124-240.customer.static.ccgg.telefonica.net does not exist",
       "The reverse DNS of 217.124.240.196 is 196.red-217-124-240.customer.static.ccgg.telefonica.net, but the A/AAAA DNS records for 196.red-217-124-240.customer.static.ccgg.telefonica.net do not resolve to 217.124.240.196"
     ]

@@ -4,24 +4,25 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.srv-acens.com",
-      "ns1.srv-acens.com"
+      "ns06.ns-cloud4b.net",
+      "ns08.ns-cloud4b.com",
+      "ns07.ns-cloud4b.org"
     ],
     "warnings": []
   },
   "mx": {
     "hosts": [
       {
-        "preference": 1,
+        "preference": 10,
         "hostname": "illescas-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.15",
+          "52.101.68.12",
           "52.101.68.18",
-          "52.101.68.27",
-          "52.101.73.1",
-          "52.101.73.11",
-          "52.101.73.16",
-          "52.101.73.8"
+          "52.101.68.25",
+          "52.101.68.39",
+          "52.101.68.5",
+          "52.101.68.8",
+          "52.101.73.26"
         ]
       }
     ],

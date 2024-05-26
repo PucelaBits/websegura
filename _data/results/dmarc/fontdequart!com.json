@@ -3,17 +3,175 @@
   "base_domain": "fontdequart.com",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "The domain fontdequart.com does not exist"
+    "hostnames": [
+      "ns5.piensasolutions.com",
+      "ns6.piensasolutions.com"
+    ],
+    "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The domain fontdequart.com does not exist"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx.buzondecorreo.com",
+        "addresses": [
+          "82.223.190.101"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "The domain fontdequart.com does not exist"
+    "record": "v=spf1 include:_spf.buzondecorreo.com ~all",
+    "valid": true,
+    "dns_lookups": 3,
+    "warnings": [],
+    "parsed": {
+      "pass": [],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "_spf.buzondecorreo.com",
+          "record": "v=spf1 include:_netblock1.buzondecorreo.com include:_netblock2.buzondecorreo.com ~all",
+          "dns_lookups": 2,
+          "parsed": {
+            "pass": [],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [
+              {
+                "domain": "_netblock1.buzondecorreo.com",
+                "record": "v=spf1 ip4:82.223.85.0/24 ip4:82.223.190.0/23 ip4:82.223.199.0/24 ip4:82.223.218.0/23 ip4:82.223.230.0/24 ip4:82.223.251.0/24 ip4:217.76.128.0/23 ip4:217.76.150.128/25 ip4:217.76.156.128/25 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "82.223.85.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "82.223.190.0/23",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "82.223.199.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "82.223.218.0/23",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "82.223.230.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "82.223.251.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "217.76.128.0/23",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "217.76.150.128/25",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "217.76.156.128/25",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              },
+              {
+                "domain": "_netblock2.buzondecorreo.com",
+                "record": "v=spf1 ip4:82.223.56.0/23 ip4:82.223.113.0/24 ip4:82.223.119.0/24 ip4:82.223.226.0/24 ip4:217.76.130.0/22 ip4:217.76.148.0/23 ip4:217.76.143.0/24 ip4:217.76.150.0/25 ip4:217.76.156.0/25 ip4:217.76.132.128/25 ip4:82.223.208.0/24 ip4:82.223.212.0/23 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "82.223.56.0/23",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "82.223.113.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "82.223.119.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "82.223.226.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "217.76.130.0/22",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "217.76.148.0/23",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "217.76.143.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "217.76.150.0/25",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "217.76.156.0/25",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "217.76.132.128/25",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "82.223.208.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "82.223.212.0/23",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              }
+            ],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
   },
   "dmarc": {
     "record": null,

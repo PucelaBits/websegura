@@ -4,11 +4,11 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "sun.rediris.es",
-      "ns2.ubu.es",
-      "ns1.ubu.es",
       "chico.rediris.es",
-      "ineco.nic.es"
+      "ns1.ubu.es",
+      "ineco.nic.es",
+      "sun.rediris.es",
+      "ns2.ubu.es"
     ],
     "warnings": []
   },
@@ -18,22 +18,22 @@
         "preference": 0,
         "hostname": "ubu-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.18",
-          "52.101.68.29",
-          "52.101.68.8",
-          "52.101.73.11",
-          "52.101.73.19",
-          "52.101.73.21",
-          "52.101.73.28"
+          "52.101.68.12",
+          "52.101.68.15",
+          "52.101.68.25",
+          "52.101.68.27",
+          "52.101.73.24",
+          "52.101.73.26",
+          "52.101.73.30"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx a:relay.ubu.es ip4:193.146.160.3 a:listas.ubu.es ip4:193.146.160.149 ip4:95.172.90.143 ip4:95.172.90.156 include:spf.protection.outlook.com -all",
+    "record": "v=spf1 mx a:relay.ubu.es ip4:193.146.160.3 a:listas.ubu.es ip4:193.146.160.149 ip4:95.172.90.143 ip4:95.172.90.156 a:apps.ubu.es ip4:193.146.160.103 include:spf.protection.outlook.com -all",
     "valid": true,
-    "dns_lookups": 4,
+    "dns_lookups": 5,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -63,6 +63,14 @@
         },
         {
           "value": "95.172.90.156",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "193.146.160.103",
+          "mechanism": "a"
+        },
+        {
+          "value": "193.146.160.103",
           "mechanism": "ip4"
         }
       ],
