@@ -124,7 +124,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none",
+    "record": "v=DMARC1; p=none; aspf=r; adkim=r;",
     "valid": true,
     "location": "es-ue.org",
     "warnings": [
@@ -139,13 +139,13 @@
         "value": "none",
         "explicit": true
       },
-      "adkim": {
-        "value": "r",
-        "explicit": false
-      },
       "aspf": {
         "value": "r",
-        "explicit": false
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": true
       },
       "fo": {
         "value": [

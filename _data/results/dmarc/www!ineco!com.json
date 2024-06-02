@@ -4,25 +4,24 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.ineco.es",
-      "ns1.ineco.es"
+      "ns1.ineco.es",
+      "ns2.ineco.es"
     ],
     "warnings": []
   },
   "mx": {
     "hosts": [
       {
-        "preference": 10,
-        "hostname": "mxa-006e4701.gslb.pphosted.com",
+        "preference": 1,
+        "hostname": "ineco-com.mail.protection.outlook.com",
         "addresses": [
-          "205.220.185.208"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "mxb-006e4701.gslb.pphosted.com",
-        "addresses": [
-          "143.55.144.156"
+          "52.101.68.15",
+          "52.101.68.16",
+          "52.101.68.21",
+          "52.101.68.25",
+          "52.101.68.5",
+          "52.101.73.2",
+          "52.101.73.8"
         ]
       }
     ],
@@ -36,11 +35,7 @@
     "parsed": {
       "pass": [
         {
-          "value": "mxa-006e4701.gslb.pphosted.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "mxb-006e4701.gslb.pphosted.com",
+          "value": "ineco-com.mail.protection.outlook.com",
           "mechanism": "mx"
         },
         {

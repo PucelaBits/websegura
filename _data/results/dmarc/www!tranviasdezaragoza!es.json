@@ -4,11 +4,11 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "pl3.solunet.es",
+      "trole.lostranviasdezaragoza.es",
       "pl1.solunet.es",
-      "pl2.solunet.es",
       "pluton.virtualsw.es",
-      "trole.lostranviasdezaragoza.es"
+      "pl3.solunet.es",
+      "pl2.solunet.es"
     ],
     "warnings": []
   },
@@ -17,24 +17,25 @@
       {
         "preference": 10,
         "hostname": "mail.tranviasdezaragoza.es",
-        "addresses": []
+        "addresses": [
+          "195.77.239.35"
+        ]
       }
     ],
     "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 195.77.239.35 is trole.lostranviasdezaragoza.es, but the A/AAAA DNS records for trole.lostranviasdezaragoza.es do not resolve to 195.77.239.35"
     ]
   },
   "spf": {
     "record": "v=spf1 +a +mx -all",
     "valid": true,
     "dns_lookups": 2,
-    "warnings": [],
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ],
     "parsed": {
       "pass": [
-        {
-          "value": "195.77.239.35",
-          "mechanism": "a"
-        },
         {
           "value": "mail.tranviasdezaragoza.es",
           "mechanism": "mx"
