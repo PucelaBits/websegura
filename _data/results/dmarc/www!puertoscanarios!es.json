@@ -15,17 +15,17 @@
         "preference": 10,
         "hostname": "puertoscanarios-es.mail.protection.outlook.com",
         "addresses": [
+          "52.101.68.16",
+          "52.101.68.29",
           "52.101.68.3",
-          "52.101.73.1",
-          "52.101.73.19",
-          "52.101.73.24"
+          "52.101.73.21"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:spf.protection.outlook.com include:spf.mailjet.com  include:_5e72d27e7c2305b709dfa3abcbfbc190.spf.dnssmarthost.net -all",
+    "record": "v=spf1 include:spf.protection.outlook.com include:spf.mailjet.com  include:puertoscanarios.es.spf.auto.dnssmarthost.net -all",
     "valid": true,
     "dns_lookups": 4,
     "warnings": [],
@@ -122,7 +122,7 @@
           "warnings": []
         },
         {
-          "domain": "_5e72d27e7c2305b709dfa3abcbfbc190.spf.dnssmarthost.net",
+          "domain": "puertoscanarios.es.spf.auto.dnssmarthost.net",
           "record": "v=spf1 include:_spf.mailspamprotection.com ~all",
           "dns_lookups": 1,
           "parsed": {

@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns4.cdmondns-01.org",
       "ns2.cdmon.net",
       "ns1.cdmon.net",
       "ns5.cdmondns-01.com",
+      "ns4.cdmondns-01.org",
       "ns3.cdmon.net"
     ],
     "warnings": []
@@ -28,16 +28,14 @@
     "record": "v=spf1 mx a include:spf.sentidocomun.es -all",
     "valid": true,
     "dns_lookups": 3,
-    "warnings": [],
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ],
     "parsed": {
       "pass": [
         {
           "value": "mx.sentidocomun.es",
           "mechanism": "mx"
-        },
-        {
-          "value": "212.89.23.124",
-          "mechanism": "a"
         }
       ],
       "neutral": [],

@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "a-ns.primari.net",
-      "b-ns.primari.net"
+      "b-ns.primari.net",
+      "a-ns.primari.net"
     ],
     "warnings": []
   },
@@ -14,11 +14,14 @@
       {
         "preference": 10,
         "hostname": "mail.fsbarbara.com",
-        "addresses": []
+        "addresses": [
+          "91.126.72.25"
+        ]
       }
     ],
     "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 91.126.72.25 is mail.fsbarbara.com, but the A/AAAA DNS records for mail.fsbarbara.com do not resolve to 91.126.72.25"
     ]
   },
   "spf": {
@@ -232,57 +235,9 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1;p=none;rua=mailto:webmaster@primari.net",
-    "valid": true,
-    "location": "fsbarbara.com",
-    "warnings": [
-      "primari.net does not indicate that it accepts DMARC reports about fsbarbara.com - Authorization record not found: fsbarbara.com._report._dmarc.primari.net IN TXT \"v=DMARC1\""
-    ],
-    "tags": {
-      "v": {
-        "value": "DMARC1",
-        "explicit": true
-      },
-      "p": {
-        "value": "none",
-        "explicit": true
-      },
-      "rua": {
-        "value": "mailto:webmaster@primari.net",
-        "explicit": true
-      },
-      "adkim": {
-        "value": "r",
-        "explicit": false
-      },
-      "aspf": {
-        "value": "r",
-        "explicit": false
-      },
-      "fo": {
-        "value": [
-          "0"
-        ],
-        "explicit": false
-      },
-      "pct": {
-        "value": 100,
-        "explicit": false
-      },
-      "rf": {
-        "value": [
-          "afrf"
-        ],
-        "explicit": false
-      },
-      "ri": {
-        "value": 86400,
-        "explicit": false
-      },
-      "sp": {
-        "value": "none",
-        "explicit": false
-      }
-    }
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   }
 }

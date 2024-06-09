@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.siteground.net",
-      "ns2.siteground.net"
+      "ns2.siteground.net",
+      "ns1.siteground.net"
     ],
     "warnings": []
   },
@@ -36,7 +36,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 +a +mx +ip4:35.214.194.97  include:_42ff7857e6b57b71f1e0dddee0c4726a.spf.dnssmarthost.net ~all",
+    "record": "v=spf1 +a +mx +ip4:35.214.194.97  include:es-ue.org.spf.auto.dnssmarthost.net ~all",
     "valid": true,
     "dns_lookups": 4,
     "warnings": [],
@@ -68,7 +68,7 @@
       "fail": [],
       "include": [
         {
-          "domain": "_42ff7857e6b57b71f1e0dddee0c4726a.spf.dnssmarthost.net",
+          "domain": "es-ue.org.spf.auto.dnssmarthost.net",
           "record": "v=spf1 include:_spf.mailspamprotection.com ~all",
           "dns_lookups": 1,
           "parsed": {

@@ -19,8 +19,8 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.251.16.27",
-          "2607:f8b0:4004:c07::1b"
+          "142.251.16.26",
+          "2607:f8b0:4004:c17::1a"
         ]
       },
       {
@@ -44,22 +44,22 @@
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
           "142.250.27.26",
-          "2a00:1450:4025:401::1b"
+          "2a00:1450:4025:401::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "142.250.153.26",
-          "2a00:1450:4013:c16::1a"
+          "142.250.153.27",
+          "2a00:1450:4013:c16::1b"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:_spf.google.com include:amazonses.com include:servers.mcsv.net include:mailgun.org include:_spf.explore-blue.com ip4:176.31.21.26 ip4:35.156.80.209 ip4:84.88.0.0/28 ip4:84.89.128.83 ip4:62.97.112.196 ip4:149.72.245.97 ~all",
+    "record": "v=spf1 include:_spf.google.com include:amazonses.com include:servers.mcsv.net include:mailgun.org include:_spf.explore-blue.com ip4:176.31.21.26 ip4:35.156.80.209 ip4:84.88.0.0/28 ip4:84.89.128.83 ip4:62.97.112.196 ip4:149.72.245.97 ip4:198.54.127.0/24 ~all",
     "valid": true,
     "dns_lookups": 10,
     "warnings": [],
@@ -87,6 +87,10 @@
         },
         {
           "value": "149.72.245.97",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "198.54.127.0/24",
           "mechanism": "ip4"
         }
       ],
@@ -587,7 +591,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1;p=quarantine;pct=50;rua=mailto:dmarc.informatica@upf.edu",
+    "record": "v=DMARC1;p=quarantine;pct=50;sp=none;rua=mailto:dmarc.informatica@upf.edu",
     "valid": true,
     "location": "upf.edu",
     "warnings": [
@@ -604,6 +608,10 @@
       },
       "pct": {
         "value": 50,
+        "explicit": true
+      },
+      "sp": {
+        "value": "none",
         "explicit": true
       },
       "rua": {
@@ -638,10 +646,6 @@
       },
       "ri": {
         "value": 86400,
-        "explicit": false
-      },
-      "sp": {
-        "value": "quarantine",
         "explicit": false
       }
     }

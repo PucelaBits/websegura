@@ -17,17 +17,17 @@
         "preference": 0,
         "hostname": "aoc-cat.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.12",
           "52.101.68.18",
-          "52.101.73.21",
-          "52.101.73.6"
+          "52.101.68.5",
+          "52.101.73.15",
+          "52.101.73.22"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx include:spf1.aoc.cat  include:spf2.aoc.cat include:spf.protection.outlook.com include:mail.zendesk.com include:spf-scd.aoc.cat ~all",
+    "record": "v=spf1 mx include:spf1.aoc.cat  include:spf2.aoc.cat include:spf.protection.outlook.com include:mail.zendesk.com include:spf-scd.aoc.cat ip4:185.86.34.136 ~all",
     "valid": true,
     "dns_lookups": 8,
     "warnings": [],
@@ -36,6 +36,10 @@
         {
           "value": "aoc-cat.mail.protection.outlook.com",
           "mechanism": "mx"
+        },
+        {
+          "value": "185.86.34.136",
+          "mechanism": "ip4"
         }
       ],
       "neutral": [],

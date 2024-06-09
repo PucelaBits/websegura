@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns3.dinahosting.com",
-      "ns2.dinahosting.com",
       "ns.dinahosting.com",
+      "ns2.dinahosting.com",
+      "ns3.dinahosting.com",
       "ns4.dinahosting.com"
     ],
     "warnings": []
@@ -17,9 +17,9 @@
         "preference": 10,
         "hostname": "cvmc-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.15",
-          "52.101.68.16",
-          "52.101.68.25",
+          "52.101.68.32",
+          "52.101.68.5",
+          "52.101.73.16",
           "52.101.73.2"
         ]
       }
@@ -27,18 +27,12 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 a ip4:46.231.127.152 a:cvmc.es a:smtp.cvmc.es include:spf.protection.outlook.com ~all",
+    "record": "v=spf1 ip4:46.231.127.152 a:cvmc.es include:spf.protection.outlook.com ~all",
     "valid": true,
-    "dns_lookups": 4,
-    "warnings": [
-      "The domain smtp.cvmc.es does not exist"
-    ],
+    "dns_lookups": 2,
+    "warnings": [],
     "parsed": {
       "pass": [
-        {
-          "value": "82.98.155.206",
-          "mechanism": "a"
-        },
         {
           "value": "46.231.127.152",
           "mechanism": "ip4"

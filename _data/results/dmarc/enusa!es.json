@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.nominalia.com",
-      "dns2.nominalia.com"
+      "dns2.nominalia.com",
+      "dns1.nominalia.com"
     ],
     "warnings": []
   },
@@ -13,49 +13,19 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "poster1i.iberlayer.com",
+        "hostname": "enusa-es.mail.protection.outlook.com",
         "addresses": [
-          "130.117.89.12",
-          "130.117.89.21",
-          "130.117.89.26",
-          "130.117.89.30",
-          "130.117.89.4",
-          "130.117.89.5",
-          "130.117.89.6"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "poster4i.iberlayer.com",
-        "addresses": [
-          "80.169.225.36",
-          "80.169.225.37",
-          "80.169.225.38",
-          "80.169.225.39",
-          "80.169.225.44",
-          "80.169.225.56",
-          "80.169.225.57"
-        ]
-      },
-      {
-        "preference": 30,
-        "hostname": "poster2i.iberlayer.com",
-        "addresses": [
-          "185.136.219.26"
-        ]
-      },
-      {
-        "preference": 40,
-        "hostname": "poster3i.iberlayer.com",
-        "addresses": [
-          "185.136.218.5"
+          "52.101.68.16",
+          "52.101.73.1",
+          "52.101.73.19",
+          "52.101.73.28"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:195.235.227.27 ip4:195.235.227.13 include:spf.protection.outlook.com include:iberlayer.com include:mmalaga.enusa.es -all",
+    "record": "v=spf1 ip4:195.235.227.27 ip4:195.235.227.13 include:spf.protection.outlook.com include:mmalaga.enusa.es -all",
     "valid": false,
     "warnings": [],
     "error": "The domain mmalaga.enusa.es does not exist"
