@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns07.ns-cloud4b.org",
       "ns08.ns-cloud4b.com",
-      "ns06.ns-cloud4b.net",
-      "ns07.ns-cloud4b.org"
+      "ns06.ns-cloud4b.net"
     ],
     "warnings": []
   },
@@ -32,7 +32,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:46.24.200.236 ip4:46.24.200.224 ip4:46.24.200.225 ip4:2.139.232.242 ip4:46.24.200.250 a mx ip4:213.4.20.215 include:spf.ipzmarketing.com exists:%{i}.spf.hc348-91.eu.iphmx.com ~all",
+    "record": "v=spf1 ip4:46.24.200.236 ip4:46.24.200.225 ip4:46.24.200.224 ip4:46.24.200.225 ip4:2.139.232.242 ip4:46.24.200.250 a mx ip4:213.4.20.215 include:spf.ipzmarketing.com exists:%{i}.spf.hc348-91.eu.iphmx.com ~all",
     "valid": true,
     "dns_lookups": 4,
     "warnings": [],
@@ -40,6 +40,10 @@
       "pass": [
         {
           "value": "46.24.200.236",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "46.24.200.225",
           "mechanism": "ip4"
         },
         {

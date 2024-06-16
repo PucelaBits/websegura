@@ -132,10 +132,12 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com;",
+    "record": "v=DMARC1; p=quarantine; pct=10; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com;",
     "valid": true,
     "location": "tenerife.es",
-    "warnings": [],
+    "warnings": [
+      "pct value is less than 100. This leads to inconsistent and unpredictable policy enforcement. Consider using p=none to monitor results instead"
+    ],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -143,6 +145,10 @@
       },
       "p": {
         "value": "quarantine",
+        "explicit": true
+      },
+      "pct": {
+        "value": 10,
         "explicit": true
       },
       "fo": {
@@ -177,10 +183,6 @@
       },
       "aspf": {
         "value": "r",
-        "explicit": false
-      },
-      "pct": {
-        "value": 100,
         "explicit": false
       },
       "rf": {

@@ -10,16 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mao.bsc.es",
-        "addresses": [
-          "84.88.52.34"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The DNS response does not contain an answer to the question: 34.52.88.84.in-addr.arpa. IN PTR"
   },
   "spf": {
     "record": "v=spf1 mx ip4:84.88.52.32/27 ip6:2001:40b0:7c00::71:34/112 ~all",

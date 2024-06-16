@@ -24,19 +24,19 @@
         "preference": 10,
         "hostname": "emtmadrid-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.10",
-          "52.101.68.21",
-          "52.101.68.25",
-          "52.101.73.22"
+          "52.101.68.15",
+          "52.101.68.16",
+          "52.101.73.28",
+          "52.101.73.8"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:195.57.112.128/28 ip4:188.84.97.215 include:spf.protection.outlook.com include:spf.tmes.trendmicro.com -all",
+    "record": "v=spf1 ip4:195.57.112.128/28 ip4:188.84.97.215 include:spf.protection.outlook.com include:spf.tmes.trendmicro.com include:spf.eu.exclaimer.net -all",
     "valid": true,
-    "dns_lookups": 4,
+    "dns_lookups": 5,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -249,6 +249,39 @@
                 "warnings": []
               }
             ],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "spf.eu.exclaimer.net",
+          "record": "v=spf1 ip4:104.40.229.156 ip4:52.169.0.179 ip4:20.50.220.144/28 ip4:40.127.253.48/28 ~all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "104.40.229.156",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.169.0.179",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "20.50.220.144/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "40.127.253.48/28",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
             "redirect": null,
             "exp": null,
             "all": "softfail"

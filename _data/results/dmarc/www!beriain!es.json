@@ -25,13 +25,11 @@
     "record": "v=spf1 +a +mx +ip4:195.53.90.200 ~all",
     "valid": true,
     "dns_lookups": 2,
-    "warnings": [],
+    "warnings": [
+      "beriain.es does not have any A/AAAA records"
+    ],
     "parsed": {
       "pass": [
-        {
-          "value": "195.53.90.156",
-          "mechanism": "a"
-        },
         {
           "value": "correo.beriain.es",
           "mechanism": "mx"

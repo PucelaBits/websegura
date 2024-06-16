@@ -4,11 +4,11 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "sun.rediris.es",
       "ns1.uva.es",
-      "chico.rediris.es",
       "ns2.uva.es",
-      "ns3.uva.es"
+      "ns3.uva.es",
+      "sun.rediris.es",
+      "chico.rediris.es"
     ],
     "warnings": []
   },
@@ -16,16 +16,12 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "mxa-006a4e02.gslb.pphosted.com",
+        "hostname": "uva-es.mail.protection.outlook.com",
         "addresses": [
-          "143.55.146.78"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "mxb-006a4e02.gslb.pphosted.com",
-        "addresses": [
-          "143.55.146.78"
+          "52.101.68.18",
+          "52.101.68.32",
+          "52.101.68.5",
+          "52.101.73.24"
         ]
       }
     ],

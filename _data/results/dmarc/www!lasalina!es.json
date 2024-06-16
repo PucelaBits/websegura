@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.dominioabsoluto.com",
-      "ns2.dominioabsoluto.com"
+      "ns2.dominioabsoluto.com",
+      "ns1.dominioabsoluto.com"
     ],
     "warnings": []
   },
@@ -29,7 +29,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:194.224.128.2 ip4:194.224.128.5 ip4:194.224.128.8 ip4:194.224.128.9 include:_spf.google.com include:spf.protection.outlook.com a:lasalina.es ~all",
+    "record": "v=spf1 ip4:194.224.128.2 ip4:194.224.128.5 ip4:194.224.128.8 ip4:194.224.128.9 include:_spf.google.com include:spf.protection.outlook.com a:lasalina.es -all",
     "valid": true,
     "dns_lookups": 6,
     "warnings": [],
@@ -292,7 +292,7 @@
       ],
       "redirect": null,
       "exp": null,
-      "all": "softfail"
+      "all": "fail"
     }
   },
   "dmarc": {
