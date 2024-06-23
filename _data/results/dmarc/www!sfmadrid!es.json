@@ -16,23 +16,157 @@
         "preference": 0,
         "hostname": "sfmadrid-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.3",
-          "52.101.68.5",
-          "52.101.73.12",
-          "52.101.73.2",
-          "52.101.73.28",
-          "52.101.73.30",
-          "52.101.73.4"
+          "52.101.68.12",
+          "52.101.68.15",
+          "52.101.68.25",
+          "52.101.68.8",
+          "52.101.73.1",
+          "52.101.73.22",
+          "52.101.73.6"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 1:spf.protection.outlook.com include:spf.ivcert.net ip4:213.192.230.77 ~all",
-    "valid": false,
+    "record": "v=spf1 include:spf.protection.outlook.com include:spf.ivcert.net ip4:213.192.230.77 ~all",
+    "valid": true,
+    "dns_lookups": 2,
     "warnings": [],
-    "error": "sfmadrid.es: Expected mechanism or end_of_statement at position 7 in: v=spf1 1:spf.protection.outlook.com include:spf.ivcert.net ip4:213.192.230.77 ~all"
+    "parsed": {
+      "pass": [
+        {
+          "value": "213.192.230.77",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "spf.protection.outlook.com",
+          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/51 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "40.92.0.0/15",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "40.107.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.100.0.0/14",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "104.47.0.0/17",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "2a01:111:f400::/48",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403::/49",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:8000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:c000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:f000::/52",
+                "mechanism": "ip6"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "spf.ivcert.net",
+          "record": "v=spf1 ip4:178.255.229.128/28 ip4:178.255.229.144/28 ip4:178.255.224.64/26 ip4:178.255.224.0/26 ip4:82.223.79.192 ip4:95.129.117.20 ip4:212.170.179.8 ip4:37.230.81.66/26 ip4:18.100.193.71 ip4:18.100.104.235 ip4:18.100.36.15 ip4:18.100.185.183 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "178.255.229.128/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "178.255.229.144/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "178.255.224.64/26",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "178.255.224.0/26",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "82.223.79.192",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "95.129.117.20",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "212.170.179.8",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "37.230.81.66/26",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "18.100.193.71",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "18.100.104.235",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "18.100.36.15",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "18.100.185.183",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
   },
   "dmarc": {
     "record": null,

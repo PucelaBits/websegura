@@ -4,8 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.hostinet.com",
-      "dns2.hostinet.com"
+      "ns1.entorno.com",
+      "ns2.entorno.com",
+      "ns3.entorno.com",
+      "ns4.entorno.com"
     ],
     "warnings": []
   },
@@ -22,7 +24,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1  include:spf.ipzmarketing.com +a +mx +ip4:195.53.90.200 ~all",
+    "record": "v=spf1 include:spf.ipzmarketing.com +a +mx +ip4:195.53.90.200 ~all",
     "valid": true,
     "dns_lookups": 3,
     "warnings": [],

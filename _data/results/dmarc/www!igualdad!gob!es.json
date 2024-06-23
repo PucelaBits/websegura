@@ -26,13 +26,79 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 91.230.250.52 is mxres.msc.es, but the A/AAAA DNS records for mxres.msc.es do not resolve to 91.230.250.52"
+    ]
   },
   "spf": {
-    "record": "v=spf1 ip4:195.64.186.0/23 ip4:91.230.250.0/24 include:spf.correo.gob.es. -all",
-    "valid": false,
+    "record": "v=spf1 ip4:195.64.186.0/23 ip4:91.230.250.0/24 a:spf.correo.gob.es -all",
+    "valid": true,
+    "dns_lookups": 1,
     "warnings": [],
-    "error": "spf.correo.gob.es. does not have a SPF TXT record"
+    "parsed": {
+      "pass": [
+        {
+          "value": "195.64.186.0/23",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "91.230.250.0/24",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "185.73.172.122",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.172.123",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.172.124",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.172.125",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.172.147",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.173.17",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.173.18",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.173.19",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.173.20",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.173.21",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.173.22",
+          "mechanism": "a"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
     "record": null,

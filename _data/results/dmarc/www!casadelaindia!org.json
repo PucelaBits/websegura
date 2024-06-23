@@ -15,20 +15,14 @@
         "preference": 10,
         "hostname": "casadelaindia-org.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.21",
-          "52.101.68.25",
-          "52.101.68.8",
-          "52.101.73.12",
-          "52.101.73.21",
-          "52.101.73.24",
-          "52.101.73.4"
+          "52.101.68.10",
+          "52.101.68.12",
+          "52.101.68.36",
+          "52.101.73.16"
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 52.101.73.12 is mail-am4pr0401cu00104.inbound.protection.outlook.com, but the A/AAAA DNS records for mail-am4pr0401cu00104.inbound.protection.outlook.com do not resolve to 52.101.73.12"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com -all",

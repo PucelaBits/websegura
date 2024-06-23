@@ -3,153 +3,17 @@
   "base_domain": "ces.es",
   "dnssec": true,
   "ns": {
-    "hostnames": [
-      "ns1.age.gob.es",
-      "ns2.age.gob.es"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "All nameservers failed to answer the query ces.es. IN NS: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "mx": {
     "hosts": [],
     "error": "The DNS response does not contain an answer to the question: 242.211.148.192.in-addr.arpa. IN PTR"
   },
   "spf": {
-    "record": "v=spf1 mx include:spf.acumbamail.com a:smtp.mites.gob.es ip4:192.148.211.63 a:acmbems.com a:emlmkt.com include:spf.protection.outlook.com -all",
-    "valid": true,
-    "dns_lookups": 6,
-    "warnings": [
-      "All nameservers failed to answer the query ces.es. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
-    ],
-    "parsed": {
-      "pass": [
-        {
-          "value": "192.148.211.63",
-          "mechanism": "a"
-        },
-        {
-          "value": "192.148.211.63",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "185.2.150.180",
-          "mechanism": "a"
-        },
-        {
-          "value": "185.2.150.180",
-          "mechanism": "a"
-        }
-      ],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [
-        {
-          "domain": "spf.acumbamail.com",
-          "record": "v=spf1 ip4:176.28.104.1/24 ip4:185.2.150.1/24 ip4:185.103.37.224/28 ip4:5.57.226.1/24 ip4:5.57.227.80/28 ip4:5.57.227.112/28 ip4:185.99.184.144/28 ip4:185.103.36.192/28 ~all",
-          "dns_lookups": 0,
-          "parsed": {
-            "pass": [
-              {
-                "value": "176.28.104.1/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "185.2.150.1/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "185.103.37.224/28",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "5.57.226.1/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "5.57.227.80/28",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "5.57.227.112/28",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "185.99.184.144/28",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "185.103.36.192/28",
-                "mechanism": "ip4"
-              }
-            ],
-            "neutral": [],
-            "softfail": [],
-            "fail": [],
-            "include": [],
-            "redirect": null,
-            "exp": null,
-            "all": "softfail"
-          },
-          "warnings": []
-        },
-        {
-          "domain": "spf.protection.outlook.com",
-          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/51 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
-          "dns_lookups": 0,
-          "parsed": {
-            "pass": [
-              {
-                "value": "40.92.0.0/15",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "40.107.0.0/16",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "52.100.0.0/14",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "104.47.0.0/17",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "2a01:111:f400::/48",
-                "mechanism": "ip6"
-              },
-              {
-                "value": "2a01:111:f403::/49",
-                "mechanism": "ip6"
-              },
-              {
-                "value": "2a01:111:f403:8000::/51",
-                "mechanism": "ip6"
-              },
-              {
-                "value": "2a01:111:f403:c000::/51",
-                "mechanism": "ip6"
-              },
-              {
-                "value": "2a01:111:f403:f000::/52",
-                "mechanism": "ip6"
-              }
-            ],
-            "neutral": [],
-            "softfail": [],
-            "fail": [],
-            "include": [],
-            "redirect": null,
-            "exp": null,
-            "all": "fail"
-          },
-          "warnings": []
-        }
-      ],
-      "redirect": null,
-      "exp": null,
-      "all": "fail"
-    }
+    "record": null,
+    "valid": false,
+    "error": "All nameservers failed to answer the query ces.es. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "dmarc": {
     "record": "v=DMARC1; p=none; fo=0; rua=mailto:dmarc.rua2@ces.es; ruf=mailto:dmarc.ruf2@ces.es; adkim=r; aspf=s",

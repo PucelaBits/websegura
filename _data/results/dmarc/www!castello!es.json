@@ -4,16 +4,17 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.galanoa.net",
-      "dns4.galanoa.net",
-      "dns1.galanoa.net"
+      "ns.gestiondecuenta.com",
+      "ns3.gestiondecuenta.com",
+      "ns2.gestiondecuenta.com",
+      "ns4.gestiondecuenta.com"
     ],
     "warnings": []
   },
   "mx": {
     "hosts": [
       {
-        "preference": 4,
+        "preference": 5,
         "hostname": "castello.mailborder.net",
         "addresses": [
           "46.101.172.164"
@@ -22,12 +23,12 @@
       {
         "preference": 10,
         "hostname": "mx1.castello.es",
-        "addresses": [
-          "195.76.253.211"
-        ]
+        "addresses": []
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The domain mx1.castello.es does not exist"
+    ]
   },
   "spf": {
     "record": "v=spf1 mx ip4:46.101.172.164 ip4:195.76.253.211 ip4:5.175.42.43 ip4:213.4.82.192/26 include:mailborder.net -all",

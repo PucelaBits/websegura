@@ -15,49 +15,51 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.251.2.26",
-          "2607:f8b0:4023:c0d::1b"
+          "142.251.4.27",
+          "2607:f8b0:4023:1411::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "108.177.104.27",
-          "2607:f8b0:4003:c04::1b"
+          "108.177.12.26",
+          "2607:f8b0:400c:c08::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "142.250.152.27",
-          "2607:f8b0:4001:c56::1a"
+          "172.253.62.27",
+          "2607:f8b0:4004:c07::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "172.253.113.27",
-          "2607:f8b0:4023:1::1b"
+          "2800:3f0:4003:c00::1a",
+          "64.233.186.27"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "173.194.77.27",
-          "2607:f8b0:4023:401::1a"
+          "209.85.202.27",
+          "2a00:1450:400b:c00::1a"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "2800:3f0:4003:c00::1a does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
-    "record": "v=spf1 ip4:88.87.207.210/32  ip4:88.87.207.202/32 ip4:185.68.189.2/32 ip4:185.68.189.17/32 include:spf.ipzmarketing.com include:smtp.tgi.cat include:_spf.google.com  mx ~all",
+    "record": "v=spf1 ip4:88.87.207.210/32  ip4:88.87.207.202/32 ip4:185.68.189.17/32 include:spf.ipzmarketing.com include:_spf.google.com include:cime.onice.io -all",
     "valid": true,
-    "dns_lookups": 7,
+    "dns_lookups": 10,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -70,32 +72,8 @@
           "mechanism": "ip4"
         },
         {
-          "value": "185.68.189.2/32",
-          "mechanism": "ip4"
-        },
-        {
           "value": "185.68.189.17/32",
           "mechanism": "ip4"
-        },
-        {
-          "value": "aspmx.l.google.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "alt1.aspmx.l.google.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "alt2.aspmx.l.google.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "alt3.aspmx.l.google.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "alt4.aspmx.l.google.com",
-          "mechanism": "mx"
         }
       ],
       "neutral": [],
@@ -126,27 +104,6 @@
               },
               {
                 "value": "91.194.237.0/24",
-                "mechanism": "ip4"
-              }
-            ],
-            "neutral": [],
-            "softfail": [],
-            "fail": [],
-            "include": [],
-            "redirect": null,
-            "exp": null,
-            "all": "fail"
-          },
-          "warnings": []
-        },
-        {
-          "domain": "smtp.tgi.cat",
-          "record": "v=spf1 ip4:88.87.207.202 -all",
-          "dns_lookups": 0,
-          "parsed": {
-            "pass": [
-              {
-                "value": "88.87.207.202",
                 "mechanism": "ip4"
               }
             ],
@@ -335,11 +292,102 @@
             "all": "softfail"
           },
           "warnings": []
+        },
+        {
+          "domain": "cime.onice.io",
+          "record": "v=spf1 a mx a:cime.onice.io include:spf.onice.io -all",
+          "dns_lookups": 4,
+          "parsed": {
+            "pass": [
+              {
+                "value": "185.138.223.182",
+                "mechanism": "a"
+              },
+              {
+                "value": "cime.onice.io",
+                "mechanism": "mx"
+              },
+              {
+                "value": "185.138.223.182",
+                "mechanism": "a"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [
+              {
+                "domain": "spf.onice.io",
+                "record": "v=spf1 ip4:185.119.216.219/32 ip4:185.138.223.208/32 ip4:130.185.182.208/32 ip4:130.185.182.156/32 ip4:185.119.218.173/32 ip4:185.119.219.138/32 ip4:185.108.31.142/32 ip4:185.108.30.132/32 ip4:185.108.28.180/32 ip4:185.108.29.132/32 ip4:185.119.219.132/32 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "185.119.216.219/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.138.223.208/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "130.185.182.208/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "130.185.182.156/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.119.218.173/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.119.219.138/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.108.31.142/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.108.30.132/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.108.28.180/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.108.29.132/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.119.219.132/32",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              }
+            ],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
         }
       ],
       "redirect": null,
       "exp": null,
-      "all": "softfail"
+      "all": "fail"
     }
   },
   "dmarc": {

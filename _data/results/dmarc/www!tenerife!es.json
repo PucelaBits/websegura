@@ -13,20 +13,16 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "d330208.a.ess.de.barracudanetworks.com",
+        "hostname": "mx.tenerife.es",
         "addresses": [
-          "18.185.115.250",
-          "18.185.115.251",
-          "18.185.115.252"
+          "212.170.134.61"
         ]
       },
       {
         "preference": 10,
-        "hostname": "d330208.b.ess.de.barracudanetworks.com",
+        "hostname": "mx1.tenerife.es",
         "addresses": [
-          "18.185.115.250",
-          "18.185.115.251",
-          "18.185.115.252"
+          "212.170.134.62"
         ]
       }
     ],
@@ -44,11 +40,11 @@
           "mechanism": "a"
         },
         {
-          "value": "d330208.a.ess.de.barracudanetworks.com",
+          "value": "mx.tenerife.es",
           "mechanism": "mx"
         },
         {
-          "value": "d330208.b.ess.de.barracudanetworks.com",
+          "value": "mx1.tenerife.es",
           "mechanism": "mx"
         },
         {
@@ -132,23 +128,17 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; pct=10; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com;",
+    "record": "v=DMARC1; p=none; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com;",
     "valid": true,
     "location": "tenerife.es",
-    "warnings": [
-      "pct value is less than 100. This leads to inconsistent and unpredictable policy enforcement. Consider using p=none to monitor results instead"
-    ],
+    "warnings": [],
     "tags": {
       "v": {
         "value": "DMARC1",
         "explicit": true
       },
       "p": {
-        "value": "quarantine",
-        "explicit": true
-      },
-      "pct": {
-        "value": 10,
+        "value": "none",
         "explicit": true
       },
       "fo": {
@@ -185,6 +175,10 @@
         "value": "r",
         "explicit": false
       },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
       "rf": {
         "value": [
           "afrf"
@@ -196,7 +190,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "quarantine",
+        "value": "none",
         "explicit": false
       }
     }

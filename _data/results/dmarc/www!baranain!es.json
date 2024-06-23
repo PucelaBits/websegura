@@ -4,8 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.hostinet.com",
-      "dns2.hostinet.com"
+      "ns1.entorno.com",
+      "ns2.entorno.com",
+      "ns3.entorno.com",
+      "ns4.entorno.com"
     ],
     "warnings": []
   },
@@ -15,10 +17,10 @@
         "preference": 0,
         "hostname": "baranain-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.12",
-          "52.101.68.39",
           "52.101.73.1",
-          "52.101.73.22"
+          "52.101.73.16",
+          "52.101.73.21",
+          "52.101.73.28"
         ]
       }
     ],

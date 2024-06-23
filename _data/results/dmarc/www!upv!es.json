@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "chico.rediris.es",
-      "vega.cc.upv.es",
+      "mirzam.ccc.upv.es",
       "sun.rediris.es",
-      "mirzam.ccc.upv.es"
+      "vega.cc.upv.es",
+      "chico.rediris.es"
     ],
     "warnings": []
   },
@@ -38,41 +38,57 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 a:smtpsal1.cc.upv.es a:smtpsal2.cc.upv.es a:smtpxv.cc.upv.es a:smtpxr.cc.upv.es a:smtpsalv.cc.upv.es a:smtpsalr.cc.upv.es include:spf.protection.outlook.com ~all",
+    "record": "v=spf1 include:spf.upv.es include:spf.protection.outlook.com ~all",
     "valid": true,
-    "dns_lookups": 7,
+    "dns_lookups": 8,
     "warnings": [],
     "parsed": {
-      "pass": [
-        {
-          "value": "158.42.249.61",
-          "mechanism": "a"
-        },
-        {
-          "value": "158.42.249.62",
-          "mechanism": "a"
-        },
-        {
-          "value": "158.42.249.46",
-          "mechanism": "a"
-        },
-        {
-          "value": "158.42.249.47",
-          "mechanism": "a"
-        },
-        {
-          "value": "158.42.249.11",
-          "mechanism": "a"
-        },
-        {
-          "value": "158.42.249.35",
-          "mechanism": "a"
-        }
-      ],
+      "pass": [],
       "neutral": [],
       "softfail": [],
       "fail": [],
       "include": [
+        {
+          "domain": "spf.upv.es",
+          "record": "v=spf1 a:smtpsal1.cc.upv.es a:smtpsal2.cc.upv.es a:smtpxv.cc.upv.es a:smtpxr.cc.upv.es a:smtpsalv.cc.upv.es a:smtpsalr.cc.upv.es ~all",
+          "dns_lookups": 6,
+          "parsed": {
+            "pass": [
+              {
+                "value": "158.42.249.61",
+                "mechanism": "a"
+              },
+              {
+                "value": "158.42.249.62",
+                "mechanism": "a"
+              },
+              {
+                "value": "158.42.249.46",
+                "mechanism": "a"
+              },
+              {
+                "value": "158.42.249.47",
+                "mechanism": "a"
+              },
+              {
+                "value": "158.42.249.11",
+                "mechanism": "a"
+              },
+              {
+                "value": "158.42.249.35",
+                "mechanism": "a"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        },
         {
           "domain": "spf.protection.outlook.com",
           "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/51 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",

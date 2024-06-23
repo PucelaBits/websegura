@@ -4,8 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.hostinet.com",
-      "dns1.hostinet.com"
+      "ns1.entorno.com",
+      "ns2.entorno.com",
+      "ns3.entorno.com",
+      "ns4.entorno.com"
     ],
     "warnings": []
   },
@@ -22,7 +24,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx include:spf.ipzmarketing.com mx:correo.animsa.es include:spf.protection.outlook.com ip4:195.53.90.200   ~all",
+    "record": "v=spf1 mx include:spf.ipzmarketing.com mx:correo.animsa.es include:spf.protection.outlook.com ip4:195.53.90.200 ~all",
     "valid": true,
     "dns_lookups": 4,
     "warnings": [

@@ -183,7 +183,7 @@
             "include": [
               {
                 "domain": "spfa.alinto.net",
-                "record": "v=spf1 ip4:81.88.178.30 ip4:83.145.109.0/24 ip4:31.172.161.0/24 ip4:78.153.243.64/26 ip4:91.212.152.0/24 ip4:195.167.226.128/26 ip4:195.167.228.208/28 ip4:185.51.216.86 ip4:51.77.185.250 ip4:51.159.179.247 ip4:51.15.137.26 ip4:178.33.104.94 include:spf6.alinto.net ~all",
+                "record": "v=spf1 ip4:81.88.178.30 ip4:83.145.109.0/24 ip4:31.172.161.0/24 ip4:78.153.243.64/26 ip4:91.212.152.0/24 ip4:195.167.226.128/26 ip4:195.167.228.208/28 ip4:185.51.216.86 ip4:51.77.185.250 ip4:51.159.179.247 ip4:51.15.137.26 ip4:178.33.104.94 ip4:46.22.203.174 include:spf6.alinto.net ~all",
                 "dns_lookups": 1,
                 "parsed": {
                   "pass": [
@@ -234,6 +234,10 @@
                     {
                       "value": "178.33.104.94",
                       "mechanism": "ip4"
+                    },
+                    {
+                      "value": "46.22.203.174",
+                      "mechanism": "ip4"
                     }
                   ],
                   "neutral": [],
@@ -282,7 +286,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine;",
+    "record": "v=DMARC1; p=quarantine;aspf=r;",
     "valid": true,
     "location": "ico.es",
     "warnings": [
@@ -297,11 +301,11 @@
         "value": "quarantine",
         "explicit": true
       },
-      "adkim": {
-        "value": "r",
-        "explicit": false
-      },
       "aspf": {
+        "value": "r",
+        "explicit": true
+      },
+      "adkim": {
         "value": "r",
         "explicit": false
       },
