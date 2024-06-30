@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns9.softwin.es",
-      "serverdns.softwin.es"
+      "serverdns.softwin.es",
+      "dns9.softwin.es"
     ],
     "warnings": []
   },
@@ -40,14 +40,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 77.228.205.36 is correo.dipujaen.es, but the A/AAAA DNS records for correo.dipujaen.es do not resolve to 77.228.205.36",
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 77.228.205.32 is mail.dipujaen.es, but the A/AAAA DNS records for mail.dipujaen.es do not resolve to 77.228.205.32",
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 77.228.205.36 is correo.dipujaen.es, but the A/AAAA DNS records for correo.dipujaen.es do not resolve to 77.228.205.36"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx ip4:77.228.205.160/28 include:spf.protection.outlook.com -all",
@@ -141,9 +134,71 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1;p=quarantine;sp=none;adkim=r;aspf=r;pct=100;fo=1;rf=afrf;ri=86400;rua=mailto:dmarc@dipujaen.es;ruf=mailto:dmarc@dipujaen.es",
+    "valid": true,
+    "location": "dipujaen.es",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "sp": {
+        "value": "none",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": true
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": true
+      },
+      "pct": {
+        "value": 100,
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "1"
+        ],
+        "explicit": true
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": true
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc@dipujaen.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc@dipujaen.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      }
+    }
   }
 }

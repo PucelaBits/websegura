@@ -3,11 +3,8 @@
   "base_domain": "enisa.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "ns2.dondominio.com",
-      "ns1.dondominio.com"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "mx": {
     "hosts": [
@@ -15,10 +12,10 @@
         "preference": 5,
         "hostname": "enisa-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.10",
           "52.101.68.21",
-          "52.101.73.15",
-          "52.101.73.8"
+          "52.101.68.36",
+          "52.101.73.19",
+          "52.101.73.30"
         ]
       }
     ],

@@ -15,7 +15,7 @@
         "preference": 10,
         "hostname": "mxa-006a4e02.gslb.pphosted.com",
         "addresses": [
-          "143.55.148.243"
+          "143.55.146.78"
         ]
       },
       {
@@ -29,7 +29,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx ip4:212.4.98.128/29 ip4:154.58.16.80/32 ip4:213.170.50.16 ip4:213.170.50.19 ip4:195.114.216.138 ip4:195.114.216.146 ip4:212.63.109.135 include:spf.protection.outlook.com include:teenvio.com include:_pmta2.antevenio.com  include:spf.sendinblue.com include:emailservice.cpd.as include:_spf.wolfcrm.es ~all",
+    "record": "v=spf1 mx ip4:212.4.98.128/29 ip4:154.58.16.80/32 ip4:213.170.50.16 ip4:213.170.50.19 ip4:195.114.216.138 ip4:195.114.216.146 ip4:212.63.109.135 ip4:194.224.6.145 include:spf.protection.outlook.com include:teenvio.com include:_pmta2.antevenio.com include:spf.sendinblue.com include:emailservice.cpd.as include:_spf.wolfcrm.es ~all",
     "valid": false,
     "warnings": [],
     "error": "Parsing the SPF record requires 11/10 maximum DNS lookups - https://tools.ietf.org/html/rfc7208#section-4.6.4",

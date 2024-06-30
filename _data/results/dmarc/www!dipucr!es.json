@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns5.cim.es",
-      "dns6.cim.es"
+      "dns6.cim.es",
+      "dns5.cim.es"
     ],
     "warnings": []
   },
@@ -24,9 +24,9 @@
     ]
   },
   "spf": {
-    "record": "v=spf1 ip4:185.191.65.144 ip4:185.191.65.133 mx a:correo.dipucr.es ip4:89.17.211.96/27 ~all",
+    "record": "v=spf1 ip4:185.191.65.144 ip4:185.191.65.133 mx a:correo.dipucr.es a:montes4.cim.es ip4:89.17.211.96/27 ~all",
     "valid": true,
-    "dns_lookups": 2,
+    "dns_lookups": 3,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -44,6 +44,10 @@
         },
         {
           "value": "185.191.65.144",
+          "mechanism": "a"
+        },
+        {
+          "value": "89.17.211.101",
           "mechanism": "a"
         },
         {

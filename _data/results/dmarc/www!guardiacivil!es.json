@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.guardiacivil.es",
+      "dns1.guardiacivil.es",
       "artemis.ttd.net",
-      "dns1.guardiacivil.es"
+      "dns2.guardiacivil.es"
     ],
     "warnings": []
   },
@@ -41,7 +41,12 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 62.36.55.37 is Mail3.guardicivil.es, but the A/AAAA DNS records for Mail3.guardicivil.es do not resolve to 62.36.55.37",
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 62.36.55.17 is Mail4.guardicivil.es, but the A/AAAA DNS records for Mail4.guardicivil.es do not resolve to 62.36.55.17"
+    ]
   },
   "spf": {
     "record": "v=spf1 mx ip4:62.36.55.12 ip4:62.36.55.13 ip4:194.179.107.37 ip4:194.179.107.17 include:spf.protection.outlook.com ~all",

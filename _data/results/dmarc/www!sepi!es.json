@@ -4,32 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns.transparentedge.eu",
-      "ns.transparentedge.es"
+      "ns.transparentedge.es",
+      "ns.transparentedge.eu"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "smtp1.sepi.es",
-        "addresses": [
-          "94.100.132.100"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "smtp2.sepi.es",
-        "addresses": [
-          "83.246.65.100"
-        ]
-      }
-    ],
-    "warnings": [
-      "The domain nlb01-hz2.hornetsecurity.com.65.246.83.in-addr.arpa does not exist",
-      "The reverse DNS of 83.246.65.100 is nlb01-hz2.hornetsecurity.com.65.246.83.in-addr.arpa, but the A/AAAA DNS records for nlb01-hz2.hornetsecurity.com.65.246.83.in-addr.arpa do not resolve to 83.246.65.100"
-    ]
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 ip4:93.159.211.185 ip4:194.140.77.185 ip4:194.140.77.186 ip4:154.58.19.206 a:spf.correo.gob.es include:emailservice.cpd.as -all",

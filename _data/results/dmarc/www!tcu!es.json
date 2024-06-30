@@ -4,28 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns.transparentedge.es",
-      "ns.transparentedge.eu"
+      "ns.transparentedge.eu",
+      "ns.transparentedge.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "tcu-es.mail.protection.outlook.com",
-        "addresses": [
-          "52.101.68.15",
-          "52.101.68.3",
-          "52.101.68.39",
-          "52.101.73.19",
-          "52.101.73.21",
-          "52.101.73.22",
-          "52.101.73.6"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com -all",

@@ -5,9 +5,9 @@
   "ns": {
     "hostnames": [
       "ns4.dinahosting.com",
-      "ns.dinahosting.com",
       "ns3.dinahosting.com",
-      "ns2.dinahosting.com"
+      "ns2.dinahosting.com",
+      "ns.dinahosting.com"
     ],
     "warnings": []
   },
@@ -26,7 +26,7 @@
   "spf": {
     "record": null,
     "valid": false,
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "error": "focuspyme.es does not have a SPF TXT record"
   },
   "dmarc": {
     "record": null,

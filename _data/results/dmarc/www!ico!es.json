@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "icodns.ico.es",
-      "dns2.comtenidos.com"
+      "dns2.comtenidos.com",
+      "icodns.ico.es"
     ],
     "warnings": []
   },
@@ -286,7 +286,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine;aspf=r;",
+    "record": "v=DMARC1;p=quarantine;aspf=r;",
     "valid": true,
     "location": "ico.es",
     "warnings": [

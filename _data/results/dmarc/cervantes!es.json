@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "machuca.cervantes.es",
-      "dns.cervantes.es"
+      "dns.cervantes.es",
+      "machuca.cervantes.es"
     ],
     "warnings": []
   },
@@ -14,12 +14,16 @@
       {
         "preference": 10,
         "hostname": "vela1.cervantes.es",
-        "addresses": []
+        "addresses": [
+          "193.146.3.230"
+        ]
       },
       {
         "preference": 10,
         "hostname": "vela2.cervantes.es",
-        "addresses": []
+        "addresses": [
+          "193.146.3.229"
+        ]
       },
       {
         "preference": 20,
@@ -31,13 +35,10 @@
         ]
       }
     ],
-    "warnings": [
-      "All nameservers failed to answer the query vela1.cervantes.es. IN AAAA: Server Do53:1.0.0.1@53 answered SERVFAIL",
-      "All nameservers failed to answer the query vela2.cervantes.es. IN AAAA: Server Do53:1.0.0.1@53 answered SERVFAIL"
-    ]
+    "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:spf.protection.outlook.com ip4:193.146.3.230 ip4:193.146.3.229 ip4:193.146.3.128 ip4:193.146.3.129 ip4:193.146.3.130 ip4:193.146.3.219 -all",
+    "record": "v=spf1 include:spf.protection.outlook.com ip4:193.146.3.230 ip4:193.146.3.229 ip4:193.146.3.128 ip4:193.146.3.129 ip4:193.146.3.130 ip4:193.146.3.219 ip4:193.146.3.141 ip4:193.146.3.142 -all",
     "valid": true,
     "dns_lookups": 1,
     "warnings": [],
@@ -65,6 +66,14 @@
         },
         {
           "value": "193.146.3.219",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "193.146.3.141",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "193.146.3.142",
           "mechanism": "ip4"
         }
       ],

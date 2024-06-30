@@ -17,17 +17,17 @@
         "preference": 0,
         "hostname": "aoc-cat.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.27",
-          "52.101.73.1",
-          "52.101.73.11",
-          "52.101.73.4"
+          "52.101.68.18",
+          "52.101.68.21",
+          "52.101.68.3",
+          "52.101.73.30"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx include:spf1.aoc.cat  include:spf2.aoc.cat include:spf.protection.outlook.com include:mail.zendesk.com include:spf-scd.aoc.cat ip4:185.86.34.136 ip4:157.97.64.126 ~all",
+    "record": "v=spf1 mx include:spf1.aoc.cat  include:spf2.aoc.cat include:spf.protection.outlook.com include:mail.zendesk.com include:spf-scd.aoc.cat ip4:185.86.34.136 ip4:57.133.98.126 ~all",
     "valid": true,
     "dns_lookups": 8,
     "warnings": [],
@@ -42,7 +42,7 @@
           "mechanism": "ip4"
         },
         {
-          "value": "157.97.64.126",
+          "value": "57.133.98.126",
           "mechanism": "ip4"
         }
       ],
@@ -52,7 +52,7 @@
       "include": [
         {
           "domain": "spf1.aoc.cat",
-          "record": "v=spf1 mx ip4:90.160.140.196/32 ip4:62.37.231.72/32 ip4:157.97.64.28/32 ip4:157.97.64.101/32 ip4:83.231.131.86/32 ip4:46.51.145.164/32 ip4:157.97.64.116/32 ip4:157.97.64.84/32 ip4:157.97.64.117/32 ip4:93.115.204.2/26 ~all",
+          "record": "v=spf1 mx ip4:90.160.140.196/32 ip4:62.37.231.72/32 ip4:57.133.98.28/32 ip4:57.133.98.101/32 ip4:83.231.131.86/32 ip4:46.51.145.164/32 ip4:57.133.98.116/32 ip4:57.133.98.84/32 ip4:57.133.98.117/32 ip4:93.115.204.2/26 ~all",
           "dns_lookups": 1,
           "parsed": {
             "pass": [
@@ -69,11 +69,11 @@
                 "mechanism": "ip4"
               },
               {
-                "value": "157.97.64.28/32",
+                "value": "57.133.98.28/32",
                 "mechanism": "ip4"
               },
               {
-                "value": "157.97.64.101/32",
+                "value": "57.133.98.101/32",
                 "mechanism": "ip4"
               },
               {
@@ -85,15 +85,15 @@
                 "mechanism": "ip4"
               },
               {
-                "value": "157.97.64.116/32",
+                "value": "57.133.98.116/32",
                 "mechanism": "ip4"
               },
               {
-                "value": "157.97.64.84/32",
+                "value": "57.133.98.84/32",
                 "mechanism": "ip4"
               },
               {
-                "value": "157.97.64.117/32",
+                "value": "57.133.98.117/32",
                 "mechanism": "ip4"
               },
               {
@@ -113,7 +113,7 @@
         },
         {
           "domain": "spf2.aoc.cat",
-          "record": "v=spf1 mx ip4:157.97.65.120/29 ip4:83.231.131.64/26 ip4:213.229.188.128/26 ip4:13.69.98.234/32 ip4:20.67.121.31/32 ip4:51.138.34.253/32 ip4:45.15.50.198/27 ~all",
+          "record": "v=spf1 mx ip4:57.133.96.192/29 ip4:83.231.131.64/26 ip4:213.229.188.128/26 ip4:13.69.98.234/32 ip4:20.67.121.31/32 ip4:51.138.34.253/32 ip4:45.15.50.198/27 ~all",
           "dns_lookups": 1,
           "parsed": {
             "pass": [
@@ -122,7 +122,7 @@
                 "mechanism": "mx"
               },
               {
-                "value": "157.97.65.120/29",
+                "value": "57.133.96.192/29",
                 "mechanism": "ip4"
               },
               {

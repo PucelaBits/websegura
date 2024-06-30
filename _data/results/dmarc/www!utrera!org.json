@@ -9,45 +9,82 @@
   "mx": {
     "hosts": [
       {
-        "preference": 10,
-        "hostname": "correo.utrera.org",
+        "preference": 1,
+        "hostname": "aspmx.l.google.com",
         "addresses": [
-          "195.53.27.99"
+          "142.250.101.26",
+          "2607:f8b0:4023:c0b::1b"
+        ]
+      },
+      {
+        "preference": 5,
+        "hostname": "alt1.aspmx.l.google.com",
+        "addresses": [
+          "108.177.104.27",
+          "2607:f8b0:4003:c04::1a"
+        ]
+      },
+      {
+        "preference": 5,
+        "hostname": "alt2.aspmx.l.google.com",
+        "addresses": [
+          "142.250.152.26",
+          "2607:f8b0:4001:c56::1a"
         ]
       },
       {
         "preference": 10,
-        "hostname": "smail.utrera.org",
+        "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "195.53.27.99"
+          "172.253.113.26",
+          "2607:f8b0:4023:1::1b"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "alt4.aspmx.l.google.com",
+        "addresses": [
+          "173.194.77.27",
+          "2607:f8b0:4023:401::1b"
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 195.53.27.99 is smail.utrera.org, but the A/AAAA DNS records for smail.utrera.org do not resolve to 195.53.27.99"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx ip4:195.53.27.99 a:smail.utrera.org include:_spf.google.com ~all",
     "valid": true,
     "dns_lookups": 6,
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ],
+    "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "correo.utrera.org",
+          "value": "aspmx.l.google.com",
           "mechanism": "mx"
         },
         {
-          "value": "smail.utrera.org",
+          "value": "alt1.aspmx.l.google.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "alt2.aspmx.l.google.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "alt3.aspmx.l.google.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "alt4.aspmx.l.google.com",
           "mechanism": "mx"
         },
         {
           "value": "195.53.27.99",
           "mechanism": "ip4"
+        },
+        {
+          "value": "195.53.27.99",
+          "mechanism": "a"
         }
       ],
       "neutral": [],
@@ -237,7 +274,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1;p=none;rua=mailto:dmarc@utrera.org",
+    "record": "v=DMARC1; p=none; rua=mailto:dmarc@utrera.org",
     "valid": true,
     "location": "utrera.org",
     "warnings": [],

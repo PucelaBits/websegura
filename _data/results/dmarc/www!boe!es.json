@@ -15,17 +15,17 @@
         "preference": 10,
         "hostname": "boe-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.15",
-          "52.101.68.3",
-          "52.101.68.8",
-          "52.101.73.2"
+          "52.101.68.18",
+          "52.101.73.11",
+          "52.101.73.19",
+          "52.101.73.6"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:81.89.32.208 ip4:81.89.33.140 include:spf.protection.outlook.com ~all",
+    "record": "v=spf1 ip4:81.89.32.208 ip4:81.89.33.140 ip4:54.229.2.165 ip4:52.30.130.201 include:spf.protection.outlook.com ~all",
     "valid": true,
     "dns_lookups": 1,
     "warnings": [],
@@ -37,6 +37,14 @@
         },
         {
           "value": "81.89.33.140",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "54.229.2.165",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "52.30.130.201",
           "mechanism": "ip4"
         }
       ],

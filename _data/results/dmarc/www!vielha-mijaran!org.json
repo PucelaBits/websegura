@@ -3,8 +3,11 @@
   "base_domain": "vielha-mijaran.org",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hostnames": [
+      "ns4.dondominio.com",
+      "ns2.dondominio.com"
+    ],
+    "warnings": []
   },
   "mx": {
     "hosts": [
@@ -14,8 +17,8 @@
         "addresses": [
           "52.101.68.16",
           "52.101.68.21",
-          "52.101.68.8",
-          "52.101.73.11"
+          "52.101.68.3",
+          "52.101.73.6"
         ]
       }
     ],

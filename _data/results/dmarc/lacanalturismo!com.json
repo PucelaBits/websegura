@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.acceseo.com",
+      "dns4.acceseo.com",
       "dns2.acceseo.com",
       "dns3.acceseo.com",
-      "dns4.acceseo.com"
+      "dns1.acceseo.com"
     ],
     "warnings": []
   },
@@ -77,7 +77,7 @@
       "include": [
         {
           "domain": "spf.perimeter.email",
-          "record": "v=spf1 ip4:178.255.228.76 ip4:178.255.228.162 ip4:178.255.229.254 ip4:178.255.230.2 ip4:178.255.228.64/28 ip6:2a00:a220:8000::0/64 ~all",
+          "record": "v=spf1 ip4:178.255.228.76 ip4:178.255.228.162 ip4:178.255.229.254 ip4:178.255.230.2 ip4:178.255.228.64/28 ip4:178.255.228.172 ip6:2a00:a220:8000::0/64 ~all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -99,6 +99,10 @@
               },
               {
                 "value": "178.255.228.64/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "178.255.228.172",
                 "mechanism": "ip4"
               },
               {

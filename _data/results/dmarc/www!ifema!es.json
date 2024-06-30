@@ -31,7 +31,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 exists:%{i}.spf.hc1008-19.eu.iphmx.com ip4:82.194.75.131/32 ip4:176.58.8.208/29 ip4:217.130.24.0/24 ip4:195.69.254.31 ip4:195.69.253.6 ip4:195.69.253.2 ip4:213.134.41.4 ip4:213.134.62.128/27 include:amazonses.com include:eu.mailgun.org include:spf.protection.outlook.com  include:spf.emailsignatures365.com include:msrv-smtp-01.aspl.es include:spf.sendinblue.com -all",
+    "record": "v=spf1 exists:%{i}.spf.hc1008-19.eu.iphmx.com ip4:82.194.75.131/32 ip4:176.58.8.208/29 ip4:195.69.254.31 ip4:195.69.253.6 ip4:195.69.253.2 ip4:213.134.41.4 ip4:213.134.62.128/27 include:amazonses.com include:eu.mailgun.org include:spf.protection.outlook.com  include:spf.emailsignatures365.com include:msrv-smtp-01.aspl.es include:spf.sendinblue.com -all",
     "valid": true,
     "dns_lookups": 8,
     "warnings": [],
@@ -47,10 +47,6 @@
         },
         {
           "value": "176.58.8.208/29",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "217.130.24.0/24",
           "mechanism": "ip4"
         },
         {
