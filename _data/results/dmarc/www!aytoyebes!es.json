@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.almazena.com",
       "ns2.almazena.com",
+      "ns1.almazena.com",
       "ns3.almazena.com"
     ],
     "warnings": []
@@ -14,7 +14,7 @@
     "hosts": [
       {
         "preference": 0,
-        "hostname": "aytoyebes.es",
+        "hostname": "mail.aytoyebes.es",
         "addresses": [
           "185.5.126.59"
         ]
@@ -36,7 +36,7 @@
           "mechanism": "a"
         },
         {
-          "value": "aytoyebes.es",
+          "value": "mail.aytoyebes.es",
           "mechanism": "mx"
         }
       ],

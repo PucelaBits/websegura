@@ -15,30 +15,22 @@
         "preference": 0,
         "hostname": "uclm-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.0",
-          "52.101.68.10",
-          "52.101.68.25",
-          "52.101.73.24"
+          "52.101.68.16",
+          "52.101.68.27",
+          "52.101.68.3",
+          "52.101.68.5"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:161.67.136.23 ip4:161.67.136.24 ip4:161.67.136.9 ip4:52.142.232.215 include:spf.protection.outlook.com ~all",
+    "record": "v=spf1 ip4:161.67.136.9 ip4:52.142.232.215 include:spf.protection.outlook.com -all",
     "valid": true,
     "dns_lookups": 1,
     "warnings": [],
     "parsed": {
       "pass": [
-        {
-          "value": "161.67.136.23",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "161.67.136.24",
-          "mechanism": "ip4"
-        },
         {
           "value": "161.67.136.9",
           "mechanism": "ip4"
@@ -108,7 +100,7 @@
       ],
       "redirect": null,
       "exp": null,
-      "all": "softfail"
+      "all": "fail"
     }
   },
   "dmarc": {

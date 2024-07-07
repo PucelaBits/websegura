@@ -1,12 +1,11 @@
 {
   "domain": "tourspain.es",
   "base_domain": "tourspain.es",
-  "dnssec": false,
+  "dnssec": true,
   "ns": {
     "hostnames": [
-      "dns.serviciosmin.gob.es",
-      "sun.rediris.es",
-      "chico.rediris.es"
+      "ns1.age.gob.es",
+      "ns2.age.gob.es"
     ],
     "warnings": []
   },

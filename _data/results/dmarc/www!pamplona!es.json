@@ -15,38 +15,44 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "correo.pamplona.es",
+        "hostname": "mx1.hc2198-46.eu.iphmx.com",
         "addresses": [
-          "213.0.38.185"
+          "194.165.202.148",
+          "194.165.205.217"
         ]
       },
       {
         "preference": 20,
-        "hostname": "correo2.pamplona.es",
+        "hostname": "mx2.hc2198-46.eu.iphmx.com",
         "addresses": [
-          "213.0.38.186"
+          "194.165.202.148",
+          "194.165.205.217"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:spf.ipzmarketing.com include:amazonses.com +a +mx +ip4:213.0.38.186 +ip4:213.0.38.185 -all",
+    "record": "v=spf1 include:spf.ipzmarketing.com include:amazonses.com exists:%{i}.spf.hc2198-46.eu.iphmx.com +a +mx +ip4:213.0.38.186 +ip4:213.0.38.185 +ip4:194.165.202.149 +ip4:194.165.205.237 -all",
     "valid": true,
-    "dns_lookups": 4,
+    "dns_lookups": 5,
     "warnings": [],
     "parsed": {
       "pass": [
+        {
+          "value": "%{i}.spf.hc2198-46.eu.iphmx.com",
+          "mechanism": "exists"
+        },
         {
           "value": "213.0.38.200",
           "mechanism": "a"
         },
         {
-          "value": "correo.pamplona.es",
+          "value": "mx1.hc2198-46.eu.iphmx.com",
           "mechanism": "mx"
         },
         {
-          "value": "correo2.pamplona.es",
+          "value": "mx2.hc2198-46.eu.iphmx.com",
           "mechanism": "mx"
         },
         {
@@ -55,6 +61,14 @@
         },
         {
           "value": "213.0.38.185",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "194.165.202.149",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "194.165.205.237",
           "mechanism": "ip4"
         }
       ],

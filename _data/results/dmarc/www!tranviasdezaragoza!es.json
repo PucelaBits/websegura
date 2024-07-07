@@ -4,11 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "pl1.solunet.es",
       "pl3.solunet.es",
-      "pl2.solunet.es",
-      "pluton.virtualsw.es",
-      "trole.lostranviasdezaragoza.es"
+      "trole.lostranviasdezaragoza.es",
+      "via1.tranviasdezaragoza.es",
+      "pl2.solunet.es"
     ],
     "warnings": []
   },
@@ -18,12 +17,13 @@
         "preference": 10,
         "hostname": "mail.tranviasdezaragoza.es",
         "addresses": [
-          "195.77.239.35"
+          "5.56.164.38"
         ]
       }
     ],
     "warnings": [
-      "The reverse DNS of 195.77.239.35 is trole.lostranviasdezaragoza.es, but the A/AAAA DNS records for trole.lostranviasdezaragoza.es do not resolve to 195.77.239.35"
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 5.56.164.38 is via1.tranviasdezaragoza.es, but the A/AAAA DNS records for via1.tranviasdezaragoza.es do not resolve to 5.56.164.38"
     ]
   },
   "spf": {
@@ -34,7 +34,7 @@
     "parsed": {
       "pass": [
         {
-          "value": "195.77.239.35",
+          "value": "5.56.164.38",
           "mechanism": "a"
         },
         {
@@ -52,9 +52,53 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=quarantine; adkim=s; aspf=s",
+    "valid": true,
+    "location": "tranviasdezaragoza.es",
+    "warnings": [
+      "rua tag (destination for aggregate reports) not found"
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "s",
+        "explicit": true
+      },
+      "aspf": {
+        "value": "s",
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "quarantine",
+        "explicit": false
+      }
+    }
   }
 }

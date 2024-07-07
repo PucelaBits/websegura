@@ -104,7 +104,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; aspf=s; adkim=r",
+    "record": "v=DMARC1; p=quarantine; aspf=s; adkim=r ",
     "valid": true,
     "location": "alginet.es",
     "warnings": [
@@ -116,7 +116,7 @@
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": true
       },
       "aspf": {
@@ -124,7 +124,7 @@
         "explicit": true
       },
       "adkim": {
-        "value": "r",
+        "value": "r ",
         "explicit": true
       },
       "fo": {
@@ -148,7 +148,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": false
       }
     }

@@ -36,14 +36,14 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 +a +mx +ip4:35.214.194.97  include:es-ue.org.spf.auto.dnssmarthost.net ~all",
+    "record": "v=spf1 +a +mx +ip4:34.175.200.170  include:es-ue.org.spf.auto.dnssmarthost.net ~all",
     "valid": true,
     "dns_lookups": 4,
     "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "35.214.189.91",
+          "value": "34.175.212.66",
           "mechanism": "a"
         },
         {
@@ -59,7 +59,7 @@
           "mechanism": "mx"
         },
         {
-          "value": "35.214.194.97",
+          "value": "34.175.200.170",
           "mechanism": "ip4"
         }
       ],

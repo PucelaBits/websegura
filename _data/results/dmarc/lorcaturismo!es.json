@@ -11,8 +11,19 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "lorcaturismo.es",
+        "addresses": [
+          "213.0.108.7"
+        ]
+      }
+    ],
+    "warnings": [
+      "The domain red213-7.lorca.es does not exist",
+      "The reverse DNS of 213.0.108.7 is red213-7.lorca.es, but the A/AAAA DNS records for red213-7.lorca.es do not resolve to 213.0.108.7"
+    ]
   },
   "spf": {
     "record": "v=spf1 a mx ptr -all",

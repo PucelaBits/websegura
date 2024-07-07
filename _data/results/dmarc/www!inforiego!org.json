@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns.itacyl.org",
-      "dns2.itacyl.org"
+      "dns2.itacyl.org",
+      "dns.itacyl.org"
     ],
     "warnings": []
   },
@@ -22,14 +22,99 @@
     ]
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "inforiego.org does not have a SPF TXT record"
+    "record": "v=spf1 ip4:185.179.105.195/32 ip4:195.76.182.230/32 ip4:195.76.182.224/32 ip4:195.76.182.225/32 mx -all",
+    "valid": true,
+    "dns_lookups": 1,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "185.179.105.195/32",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "195.76.182.230/32",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "195.76.182.224/32",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "195.76.182.225/32",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "mail.inforiego.org",
+          "mechanism": "mx"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=quarantine; pct=100; adkim=s; aspf=s; rua=mailto:dmarc@itacyl.es; ruf=mailto:dmarc@itacyl.es",
+    "valid": true,
+    "location": "inforiego.org",
+    "warnings": [
+      "itacyl.es does not indicate that it accepts DMARC reports about inforiego.org - Authorization record not found: inforiego.org._report._dmarc.itacyl.es IN TXT \"v=DMARC1\"",
+      "itacyl.es does not indicate that it accepts DMARC reports about inforiego.org - Authorization record not found: inforiego.org._report._dmarc.itacyl.es IN TXT \"v=DMARC1\""
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "pct": {
+        "value": 100,
+        "explicit": true
+      },
+      "adkim": {
+        "value": "s",
+        "explicit": true
+      },
+      "aspf": {
+        "value": "s",
+        "explicit": true
+      },
+      "rua": {
+        "value": "mailto:dmarc@itacyl.es",
+        "explicit": true
+      },
+      "ruf": {
+        "value": "mailto:dmarc@itacyl.es",
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "quarantine",
+        "explicit": false
+      }
+    }
   }
 }

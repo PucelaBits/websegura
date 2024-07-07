@@ -5,9 +5,9 @@
   "ns": {
     "hostnames": [
       "ns3.gestiondecuenta.com",
+      "ns.gestiondecuenta.com",
       "ns4.gestiondecuenta.com",
-      "ns2.gestiondecuenta.com",
-      "ns.gestiondecuenta.com"
+      "ns2.gestiondecuenta.com"
     ],
     "warnings": []
   },
@@ -23,12 +23,12 @@
       {
         "preference": 10,
         "hostname": "mx1.castello.es",
-        "addresses": []
+        "addresses": [
+          "195.76.253.211"
+        ]
       }
     ],
-    "warnings": [
-      "The domain mx1.castello.es does not exist"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx ip4:46.101.172.164 ip4:195.76.253.211 ip4:5.175.42.43 ip4:213.4.82.192/26 include:mailborder.net -all",

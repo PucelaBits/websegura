@@ -17,10 +17,10 @@
         "preference": 0,
         "hostname": "udl-cat.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.29",
-          "52.101.68.3",
-          "52.101.73.26",
-          "52.101.73.6"
+          "52.101.73.11",
+          "52.101.73.16",
+          "52.101.73.19",
+          "52.101.73.30"
         ]
       }
     ],
@@ -230,12 +230,10 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1;p=none;",
+    "record": "v=DMARC1;p=none;rua=mailto:dmarc.sic.opinfra@udl.cat;",
     "valid": true,
     "location": "udl.cat",
-    "warnings": [
-      "rua tag (destination for aggregate reports) not found"
-    ],
+    "warnings": [],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -243,6 +241,16 @@
       },
       "p": {
         "value": "none",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc.sic.opinfra@udl.cat",
+            "size_limit": null
+          }
+        ],
         "explicit": true
       },
       "adkim": {

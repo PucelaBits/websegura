@@ -25,12 +25,25 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:dnsxperta.com -all",
+    "record": "v=spf1 include:dnsxperta.com ip4:195.76.202.102 ip4:195.76.202.105 ip4:195.76.202.110 -all",
     "valid": true,
     "dns_lookups": 1,
     "warnings": [],
     "parsed": {
-      "pass": [],
+      "pass": [
+        {
+          "value": "195.76.202.102",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "195.76.202.105",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "195.76.202.110",
+          "mechanism": "ip4"
+        }
+      ],
       "neutral": [],
       "softfail": [],
       "fail": [],
