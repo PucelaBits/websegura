@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns3.dnsxperta.com",
       "ns1.dnsxperta.com",
-      "ns2.dnsxperta.com",
-      "ns3.dnsxperta.com"
+      "ns2.dnsxperta.com"
     ],
     "warnings": []
   },
@@ -15,25 +15,23 @@
       {
         "preference": 100,
         "hostname": "mx1.dnsxperta.com",
-        "addresses": [
-          "217.13.80.224",
-          "217.13.80.229",
-          "83.147.63.42"
-        ]
+        "addresses": []
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ]
   },
   "spf": {
     "record": "v=spf1 include:dnsxperta.com ip4:195.57.245.235 include:gva.es include:spf.srv.cat -all",
     "valid": false,
     "warnings": [],
-    "error": "The domain spf.srv.cat does not exist"
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "dmarc": {
     "record": null,
     "valid": false,
     "location": null,
-    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.godella.es\n\nv=spf1 include:dnsxperta.com ip4:195.57.245.235 include:gva.es include:spf.srv.cat -all\n\nMS=C8931B6AC89A37F13146FF90E070168A8A59C947\n\ngoogle-site-verification=gDnN7c9NKTM8j2YviZ-SW96vBBwmF7-DktkT4vSYUqE"
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.godella.es\n\nv=spf1 include:dnsxperta.com ip4:195.57.245.235 include:gva.es include:spf.srv.cat -all\n\ngoogle-site-verification=gDnN7c9NKTM8j2YviZ-SW96vBBwmF7-DktkT4vSYUqE\n\nMS=C8931B6AC89A37F13146FF90E070168A8A59C947"
   }
 }

@@ -15,14 +15,12 @@
       {
         "preference": 100,
         "hostname": "mx1.dnsxperta.com",
-        "addresses": [
-          "217.13.80.224",
-          "217.13.80.229",
-          "83.147.63.42"
-        ]
+        "addresses": []
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ]
   },
   "spf": {
     "record": "v=spf1 include:dnsxperta.com -all",

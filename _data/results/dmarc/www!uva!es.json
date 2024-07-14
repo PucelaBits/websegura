@@ -4,11 +4,11 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "sun.rediris.es",
-      "chico.rediris.es",
       "ns1.uva.es",
       "ns2.uva.es",
-      "ns3.uva.es"
+      "ns3.uva.es",
+      "sun.rediris.es",
+      "chico.rediris.es"
     ],
     "warnings": []
   },
@@ -18,10 +18,10 @@
         "preference": 10,
         "hostname": "uva-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.18",
+          "52.101.68.16",
+          "52.101.68.25",
           "52.101.68.27",
-          "52.101.68.29",
-          "52.101.68.36"
+          "52.101.73.26"
         ]
       }
     ],

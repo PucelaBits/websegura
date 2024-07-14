@@ -3,27 +3,12 @@
   "base_domain": "cortesaragon.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "dns03.ono.com",
-      "dns02.ono.com",
-      "dns01.ono.com"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 0,
-        "hostname": "cortesaragon-es.mail.protection.outlook.com",
-        "addresses": [
-          "52.101.68.12",
-          "52.101.68.15",
-          "52.101.68.21",
-          "52.101.68.27"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 a mx ip4:46.24.234.0/24 include:spf.protection.outlook.com include:emsd1.com -all",

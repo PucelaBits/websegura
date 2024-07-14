@@ -14,14 +14,14 @@
       {
         "preference": 10,
         "hostname": "vela1.cervantes.es",
-        "addresses": []
+        "addresses": [
+          "193.146.3.230"
+        ]
       },
       {
         "preference": 10,
         "hostname": "vela2.cervantes.es",
-        "addresses": [
-          "193.146.3.229"
-        ]
+        "addresses": []
       },
       {
         "preference": 20,
@@ -34,7 +34,7 @@
       }
     ],
     "warnings": [
-      "All nameservers failed to answer the query vela1.cervantes.es. IN A: Server Do53:1.0.0.1@53 answered SERVFAIL"
+      "All nameservers failed to answer the query vela2.cervantes.es. IN A: Server Do53:1.0.0.1@53 answered SERVFAIL"
     ]
   },
   "spf": {

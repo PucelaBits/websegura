@@ -13,16 +13,20 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "mx.tenerife.es",
+        "hostname": "d330208.a.ess.de.barracudanetworks.com",
         "addresses": [
-          "212.170.134.61"
+          "18.185.115.250",
+          "18.185.115.251",
+          "18.185.115.252"
         ]
       },
       {
         "preference": 10,
-        "hostname": "mx1.tenerife.es",
+        "hostname": "d330208.b.ess.de.barracudanetworks.com",
         "addresses": [
-          "212.170.134.62"
+          "18.185.115.250",
+          "18.185.115.251",
+          "18.185.115.252"
         ]
       }
     ],
@@ -40,11 +44,11 @@
           "mechanism": "a"
         },
         {
-          "value": "mx.tenerife.es",
+          "value": "d330208.a.ess.de.barracudanetworks.com",
           "mechanism": "mx"
         },
         {
-          "value": "mx1.tenerife.es",
+          "value": "d330208.b.ess.de.barracudanetworks.com",
           "mechanism": "mx"
         },
         {

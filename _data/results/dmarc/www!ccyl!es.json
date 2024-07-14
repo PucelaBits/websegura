@@ -4,19 +4,25 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "esifw1.tsai.es",
-      "esifw2.tsai.es"
+      "esifw2.tsai.es",
+      "esifw1.tsai.es"
     ],
     "warnings": []
   },
   "mx": {
     "hosts": [
       {
-        "preference": 100,
-        "hostname": "mail.ccyl.es",
+        "preference": 10,
+        "hostname": "ccyl-es-1.fortimailcloud.com",
         "addresses": [
-          "194.179.106.101",
-          "194.179.106.102"
+          "154.52.13.56"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "ccyl-es-2.fortimailcloud.com",
+        "addresses": [
+          "154.52.2.132"
         ]
       }
     ],
@@ -30,7 +36,11 @@
     "parsed": {
       "pass": [
         {
-          "value": "mail.ccyl.es",
+          "value": "ccyl-es-1.fortimailcloud.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "ccyl-es-2.fortimailcloud.com",
           "mechanism": "mx"
         },
         {

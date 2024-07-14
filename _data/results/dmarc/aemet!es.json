@@ -31,65 +31,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 a:spf.correo.gob.es -all",
-    "valid": true,
-    "dns_lookups": 1,
-    "warnings": [],
-    "parsed": {
-      "pass": [
-        {
-          "value": "185.73.172.122",
-          "mechanism": "a"
-        },
-        {
-          "value": "185.73.172.123",
-          "mechanism": "a"
-        },
-        {
-          "value": "185.73.172.124",
-          "mechanism": "a"
-        },
-        {
-          "value": "185.73.172.125",
-          "mechanism": "a"
-        },
-        {
-          "value": "185.73.172.147",
-          "mechanism": "a"
-        },
-        {
-          "value": "185.73.173.17",
-          "mechanism": "a"
-        },
-        {
-          "value": "185.73.173.18",
-          "mechanism": "a"
-        },
-        {
-          "value": "185.73.173.19",
-          "mechanism": "a"
-        },
-        {
-          "value": "185.73.173.20",
-          "mechanism": "a"
-        },
-        {
-          "value": "185.73.173.21",
-          "mechanism": "a"
-        },
-        {
-          "value": "185.73.173.22",
-          "mechanism": "a"
-        }
-      ],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [],
-      "redirect": null,
-      "exp": null,
-      "all": "fail"
-    }
+    "record": null,
+    "valid": false,
+    "error": "All nameservers failed to answer the query aemet.es. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "dmarc": {
     "record": "v=DMARC1; p=quarantine; rua=mailto:avisos.correo@correo.gob.es; ruf=mailto:avisos.correo@correo.gob.es; fo=1;",
