@@ -34,9 +34,37 @@
     ]
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "incibe.es does not have a SPF TXT record"
+    "record": "v=spf1 mx a:correo.inteco.es a:correo2.inteco.es -all",
+    "valid": true,
+    "dns_lookups": 3,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "correo.incibe.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "correo2.incibe.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "195.53.165.57",
+          "mechanism": "a"
+        },
+        {
+          "value": "195.53.165.57",
+          "mechanism": "a"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
     "record": "v=DMARC1;p=reject;fo=1;rua=mailto:dmarc@incibe.es;ruf=mailto:dmarc@incibe.es",

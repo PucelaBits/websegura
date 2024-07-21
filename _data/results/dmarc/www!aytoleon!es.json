@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.dnsrapido.com",
       "ns1.dnsrapido.com",
+      "ns2.dnsrapido.com",
       "ns3.dnsrapido.com"
     ],
     "warnings": []
@@ -44,15 +44,69 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx ip4:195.55.90.34/28 ip4:213.97.178.118/32 ip4:195.76.202.102/28 ip4:91.232.71.205/24 include:gtt.es include:correo.gtt.es include:spf.hornetsecurity.com include:spf.protection.outlook.com -all",
+    "record": "v=spf1 mx ip4:94.100.128.0/20 ip4:195.55.90.34/28 ip4:213.97.178.118/32 ip4:195.76.202.102/28 ip4:91.232.71.205/24 include:spf.hornetsecurity.com include:gtt.es include:correo.gtt.es include:spf.protection.outlook.com -all",
     "valid": false,
     "warnings": [],
     "error": "The domain correo.gtt.es does not exist"
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=none; rua=mailto:dmarc-reportes@aytoleon.es;",
+    "valid": true,
+    "location": "aytoleon.es",
+    "warnings": [
+      "DMARC record at root of aytoleon.es has no effect"
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc-reportes@aytoleon.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }

@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns3.correos.es",
-      "ns4.correos.es"
+      "ns4.correos.es",
+      "ns3.correos.es"
     ],
     "warnings": []
   },
@@ -37,7 +37,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1;p=reject;rua=mailto:dmarc.es@correos.com;pct=100;adkim=s;aspf=s",
+    "record": "v=DMARC1;p=reject;pct=100;adkim=s;aspf=s;fo=1;ri=3600;rua=mailto:948b80ba@inbox.eu.redsift.cloud,mailto:dmarc.es@correos.com;ruf=mailto:948b80ba@inbox.eu.redsift.cloud;",
     "valid": true,
     "location": "correos.es",
     "warnings": [
@@ -50,10 +50,6 @@
       },
       "p": {
         "value": "reject",
-        "explicit": true
-      },
-      "rua": {
-        "value": "mailto:dmarc.es@correos.com",
         "explicit": true
       },
       "pct": {
@@ -70,18 +66,43 @@
       },
       "fo": {
         "value": [
-          "0"
+          "1"
         ],
-        "explicit": false
+        "explicit": true
+      },
+      "ri": {
+        "value": 3600,
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "948b80ba@inbox.eu.redsift.cloud",
+            "size_limit": null
+          },
+          {
+            "scheme": "mailto",
+            "address": "dmarc.es@correos.com",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "948b80ba@inbox.eu.redsift.cloud",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
       },
       "rf": {
         "value": [
           "afrf"
         ],
-        "explicit": false
-      },
-      "ri": {
-        "value": 86400,
         "explicit": false
       },
       "sp": {

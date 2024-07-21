@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns2.dnsxperta.com",
       "ns3.dnsxperta.com",
-      "ns1.dnsxperta.com",
-      "ns2.dnsxperta.com"
+      "ns1.dnsxperta.com"
     ],
     "warnings": []
   },
@@ -15,18 +15,69 @@
       {
         "preference": 100,
         "hostname": "mx1.dnsxperta.com",
-        "addresses": []
+        "addresses": [
+          "217.13.80.224",
+          "217.13.80.229",
+          "83.147.63.42"
+        ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:213.4.82.201 include:dnsxperta.com -all",
-    "valid": false,
+    "valid": true,
+    "dns_lookups": 1,
     "warnings": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "parsed": {
+      "pass": [
+        {
+          "value": "213.4.82.201",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "dnsxperta.com",
+          "record": "v=spf1 ip4:217.13.80.0/20 ip4:194.143.202.166/28 ip4:194.143.202.194/28 ip4:83.147.63.0/24 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "217.13.80.0/20",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "194.143.202.166/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "194.143.202.194/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "83.147.63.0/24",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
     "record": null,

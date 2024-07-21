@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "acatife.gobiernodecanarias.org",
-      "seti.gobiernodecanarias.org"
+      "seti.gobiernodecanarias.org",
+      "acatife.gobiernodecanarias.org"
     ],
     "warnings": []
   },
@@ -70,71 +70,9 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=reject; sp=reject; adkim=r; aspf=r; rua=mailto:dmarc-rua.tic@gobiernodecanarias.org; ruf=mailto:dmarc-ruf.tic@gobiernodecanarias.org; fo=1;",
-    "valid": true,
-    "location": "gobiernodecanarias.org",
-    "warnings": [],
-    "tags": {
-      "v": {
-        "value": "DMARC1",
-        "explicit": true
-      },
-      "p": {
-        "value": "reject",
-        "explicit": true
-      },
-      "sp": {
-        "value": "reject",
-        "explicit": true
-      },
-      "adkim": {
-        "value": "r",
-        "explicit": true
-      },
-      "aspf": {
-        "value": "r",
-        "explicit": true
-      },
-      "rua": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "dmarc-rua.tic@gobiernodecanarias.org",
-            "size_limit": null
-          }
-        ],
-        "explicit": true
-      },
-      "ruf": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "dmarc-ruf.tic@gobiernodecanarias.org",
-            "size_limit": null
-          }
-        ],
-        "explicit": true
-      },
-      "fo": {
-        "value": [
-          "1"
-        ],
-        "explicit": true
-      },
-      "pct": {
-        "value": 100,
-        "explicit": false
-      },
-      "rf": {
-        "value": [
-          "afrf"
-        ],
-        "explicit": false
-      },
-      "ri": {
-        "value": 86400,
-        "explicit": false
-      }
-    }
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   }
 }

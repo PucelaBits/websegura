@@ -5,10 +5,10 @@
   "ns": {
     "hostnames": [
       "ns1.xunta.es",
-      "dns.dacoruna.gal",
-      "dns1.dacoruna.gal",
-      "dns1.dicoruna.es",
       "dns.dicoruna.es",
+      "dns.dacoruna.gal",
+      "dns1.dicoruna.es",
+      "dns1.dacoruna.gal",
       "ns2.xunta.es"
     ],
     "warnings": []
@@ -17,9 +17,17 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "smtp.dicoruna.es",
+        "hostname": "smtp.google.com",
         "addresses": [
-          "85.91.67.3"
+          "142.251.163.26",
+          "142.251.163.27",
+          "172.253.122.26",
+          "172.253.122.27",
+          "172.253.63.26",
+          "2607:f8b0:4004:c09::1a",
+          "2607:f8b0:4004:c09::1b",
+          "2607:f8b0:4004:c1b::1a",
+          "2607:f8b0:4004:c1b::1b"
         ]
       }
     ],
@@ -228,12 +236,10 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; pct=60; sp=none; adkim=r; aspf=r; rua=mailto:dmarc@dacoruna.gal; ruf=mailto:dmarc@dacoruna.gal; ",
+    "record": "v=DMARC1; p=quarantine; pct=100; sp=none; adkim=r; aspf=r; rua=mailto:dmarc@dacoruna.gal; ruf=mailto:dmarc@dacoruna.gal; ",
     "valid": true,
     "location": "dacoruna.gal",
-    "warnings": [
-      "pct value is less than 100. This leads to inconsistent and unpredictable policy enforcement. Consider using p=none to monitor results instead"
-    ],
+    "warnings": [],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -244,7 +250,7 @@
         "explicit": true
       },
       "pct": {
-        "value": 60,
+        "value": 100,
         "explicit": true
       },
       "sp": {

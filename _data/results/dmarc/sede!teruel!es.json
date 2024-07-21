@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.teruel.es",
-      "ns2.teruel.es"
+      "ns2.teruel.es",
+      "ns1.teruel.es"
     ],
     "warnings": []
   },
@@ -14,12 +14,12 @@
       {
         "preference": 10,
         "hostname": "mx10.teruel.es",
-        "addresses": []
+        "addresses": [
+          "195.53.63.198"
+        ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 +a +mx +ip4:185.45.72.125 +ip4:195.53.63.198 -all",

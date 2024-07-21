@@ -3,11 +3,8 @@
   "base_domain": "ine.es",
   "dnssec": true,
   "ns": {
-    "hostnames": [
-      "ns1.age.gob.es",
-      "ns2.age.gob.es"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "All nameservers failed to answer the query ine.es. IN NS: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "mx": {
     "hosts": [
@@ -15,7 +12,7 @@
         "preference": 10,
         "hostname": "mxa-006a4e02.gslb.pphosted.com",
         "addresses": [
-          "143.55.146.78"
+          "143.55.148.243"
         ]
       },
       {

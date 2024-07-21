@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.juntadeandalucia.es",
-      "ns4.juntadeandalucia.es",
       "ns.juntadeandalucia.es",
-      "ns3.juntadeandalucia.es"
+      "ns3.juntadeandalucia.es",
+      "ns4.juntadeandalucia.es",
+      "ns1.juntadeandalucia.es"
     ],
     "warnings": []
   },
@@ -28,7 +28,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 217.12.25.241 is 241.zone-217.12.25.juntadeandalucia.es, but the A/AAAA DNS records for 241.zone-217.12.25.juntadeandalucia.es do not resolve to 217.12.25.241"
+    ]
   },
   "spf": {
     "record": null,

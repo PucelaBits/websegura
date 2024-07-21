@@ -3,27 +3,22 @@
   "base_domain": "on5g.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "ns1.bodis.com",
-      "ns2.bodis.com"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "mx": {
     "hosts": [],
-    "warnings": [
-      "No MX records found. Is the domain parked?"
-    ]
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
     "record": null,
     "valid": false,
-    "error": "All nameservers failed to answer the query on5g.es. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "dmarc": {
     "record": null,
     "valid": false,
     "location": null,
-    "error": "All nameservers failed to answer the query _dmarc.on5g.es. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   }
 }
