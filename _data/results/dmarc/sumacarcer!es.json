@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.dnsxperta.com",
       "ns2.dnsxperta.com",
+      "ns1.dnsxperta.com",
       "ns3.dnsxperta.com"
     ],
     "warnings": []
@@ -16,8 +16,8 @@
         "preference": 10,
         "hostname": "mx.spamexperts.com",
         "addresses": [
-          "2001:550:2:9::280:100",
-          "38.89.254.156"
+          "2001:550:2:61::2fc:100",
+          "38.111.198.185"
         ]
       },
       {
@@ -48,6 +48,7 @@
       }
     ],
     "warnings": [
+      "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records",
       "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records",
       "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records"
     ]
@@ -203,14 +204,6 @@
                 "mechanism": "a"
               },
               {
-                "value": "149.13.73.12",
-                "mechanism": "a"
-              },
-              {
-                "value": "149.13.73.13",
-                "mechanism": "a"
-              },
-              {
                 "value": "149.13.73.29",
                 "mechanism": "a"
               },
@@ -244,14 +237,6 @@
               },
               {
                 "value": "149.13.73.37",
-                "mechanism": "a"
-              },
-              {
-                "value": "149.13.73.4",
-                "mechanism": "a"
-              },
-              {
-                "value": "149.13.73.6",
                 "mechanism": "a"
               },
               {
@@ -336,38 +321,6 @@
               },
               {
                 "value": "154.59.194.252",
-                "mechanism": "a"
-              },
-              {
-                "value": "154.61.86.40",
-                "mechanism": "a"
-              },
-              {
-                "value": "154.61.86.47",
-                "mechanism": "a"
-              },
-              {
-                "value": "154.61.86.49",
-                "mechanism": "a"
-              },
-              {
-                "value": "154.61.86.52",
-                "mechanism": "a"
-              },
-              {
-                "value": "154.61.86.53",
-                "mechanism": "a"
-              },
-              {
-                "value": "154.61.86.54",
-                "mechanism": "a"
-              },
-              {
-                "value": "154.61.86.55",
-                "mechanism": "a"
-              },
-              {
-                "value": "154.61.86.57",
                 "mechanism": "a"
               },
               {
@@ -776,22 +729,6 @@
               },
               {
                 "value": "2001:978:2:7::e7:11",
-                "mechanism": "a"
-              },
-              {
-                "value": "2001:978:2:7::e7:3",
-                "mechanism": "a"
-              },
-              {
-                "value": "2001:978:2:7::e7:4",
-                "mechanism": "a"
-              },
-              {
-                "value": "2001:978:2:7::e7:5",
-                "mechanism": "a"
-              },
-              {
-                "value": "2001:978:2:7::e7:6",
                 "mechanism": "a"
               },
               {

@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "sdns4.occentus.net",
       "sdns3.occentus.net",
-      "sdns2.occentus.net",
-      "sdns1.occentus.net"
+      "sdns1.occentus.net",
+      "sdns4.occentus.net",
+      "sdns2.occentus.net"
     ],
     "warnings": []
   },
@@ -21,7 +21,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 178.255.230.221 is corp.turismecv.es, but the A/AAAA DNS records for corp.turismecv.es do not resolve to 178.255.230.221"
+    ]
   },
   "spf": {
     "record": "v=spf1 +a +mx include:emailservice.cpd.as include:gva.ip-zone.com include:spf.ipzmarketing.com -all",

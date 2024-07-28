@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "pluton.dipcas.es",
-      "conex.dipcas.es"
+      "conex.dipcas.es",
+      "pluton.dipcas.es"
     ],
     "warnings": []
   },
@@ -26,10 +26,13 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 5.39.208.39 is smtpin2.dipcas.es, but the A/AAAA DNS records for smtpin2.dipcas.es do not resolve to 5.39.208.39"
+    ]
   },
   "spf": {
-    "record": "v=spf1 ip4:5.39.208.39 ip4:5.39.208.40 ip4:5.39.208.45 ip4:5.39.212.20 ip4:213.4.82.201 +a:dipcas.es +mx include:spf.protection.outlook.com -all",
+    "record": "v=spf1 ip4:5.39.208.39 ip4:5.39.208.40 ip4:5.39.208.45 ip4:5.39.212.20 ip4:213.4.82.201 ip4:212.36.83.138 +a:dipcas.es +mx include:spf.protection.outlook.com -all",
     "valid": true,
     "dns_lookups": 3,
     "warnings": [
@@ -55,6 +58,10 @@
         },
         {
           "value": "213.4.82.201",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "212.36.83.138",
           "mechanism": "ip4"
         },
         {

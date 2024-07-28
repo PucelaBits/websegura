@@ -5,9 +5,9 @@
   "ns": {
     "hostnames": [
       "mirzam.ccc.upv.es",
-      "vega.cc.upv.es",
       "sun.rediris.es",
-      "chico.rediris.es"
+      "chico.rediris.es",
+      "vega.cc.upv.es"
     ],
     "warnings": []
   },
@@ -35,7 +35,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 158.42.248.114 is mxv.cc.upv.es, but the A/AAAA DNS records for mxv.cc.upv.es do not resolve to 158.42.248.114"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:spf.upv.es include:spf.protection.outlook.com ~all",

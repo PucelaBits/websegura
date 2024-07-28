@@ -26,10 +26,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 85.119.193.4 is rmail2.caib.es, but the A/AAAA DNS records for rmail2.caib.es do not resolve to 85.119.193.4"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx ip4:85.119.193.2 ip4:85.119.198.6 ip4:85.119.198.16 -all",

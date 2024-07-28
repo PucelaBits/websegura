@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns06.ns-cloud4b.net",
       "ns08.ns-cloud4b.com",
-      "ns07.ns-cloud4b.org"
+      "ns07.ns-cloud4b.org",
+      "ns06.ns-cloud4b.net"
     ],
     "warnings": []
   },
@@ -14,18 +14,12 @@
     "hosts": [
       {
         "preference": 0,
-        "hostname": "mx1.hc348-91.eu.iphmx.com",
+        "hostname": "conselldeivissa-es.mail.protection.outlook.com",
         "addresses": [
-          "207.54.71.192",
-          "207.54.72.118"
-        ]
-      },
-      {
-        "preference": 1,
-        "hostname": "mx2.hc348-91.eu.iphmx.com",
-        "addresses": [
-          "207.54.71.192",
-          "207.54.72.118"
+          "52.101.91.0",
+          "52.101.91.1",
+          "52.101.91.2",
+          "52.101.91.3"
         ]
       }
     ],
@@ -67,11 +61,7 @@
           "mechanism": "a"
         },
         {
-          "value": "mx1.hc348-91.eu.iphmx.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "mx2.hc348-91.eu.iphmx.com",
+          "value": "conselldeivissa-es.mail.protection.outlook.com",
           "mechanism": "mx"
         },
         {

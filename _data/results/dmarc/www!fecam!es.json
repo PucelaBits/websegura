@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns.mad.idec.net",
-      "dns.lpa.idec.net"
+      "dns.lpa.idec.net",
+      "dns.mad.idec.net"
     ],
     "warnings": []
   },
@@ -26,7 +26,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 212.64.170.85 is mail.fecam.es, but the A/AAAA DNS records for mail.fecam.es do not resolve to 212.64.170.85"
+    ]
   },
   "spf": {
     "record": "v=spf1 ip4:212.64.170.195 ip4:212.64.170.94 ip4:212.64.170.85 a:fecam.es ~all",

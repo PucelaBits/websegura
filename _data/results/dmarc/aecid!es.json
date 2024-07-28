@@ -10,8 +10,25 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query aecid.es. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail1.correo.gob.es",
+        "addresses": [
+          "185.73.172.122",
+          "185.73.172.123"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mail2.correo.gob.es",
+        "addresses": [
+          "185.73.172.124",
+          "185.73.172.125"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:192.148.209.39 ip4:192.148.209.40 include:spf.protection.outlook.com a:spf.correo.gob.es -all",

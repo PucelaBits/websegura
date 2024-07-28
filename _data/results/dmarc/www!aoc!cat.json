@@ -18,20 +18,19 @@
         "hostname": "aoc-cat.mail.protection.outlook.com",
         "addresses": [
           "52.101.68.21",
-          "52.101.73.22",
-          "52.101.73.30",
-          "52.101.73.6"
+          "52.101.73.2",
+          "52.101.73.21",
+          "52.101.73.28"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx include:spf1.aoc.cat include:spf2.aoc.cat include:spf.protection.outlook.com include:mail.zendesk.co include:spf-scd.aoc.cat include:securityeducation.com include:ws02-securityeducation.com ip4:185.86.34.136 ip4:57.133.98.126 ~all",
+    "record": "v=spf1 mx include:spf1.aoc.cat include:spf2.aoc.cat include:spf3.aoc.cat include:spf.protection.outlook.com include:mail.zendesk.co ip4:185.86.34.136 ip4:57.133.98.126 ~all",
     "valid": false,
     "warnings": [],
-    "error": "Parsing the SPF record requires 14/10 maximum DNS lookups - https://tools.ietf.org/html/rfc7208#section-4.6.4",
-    "dns_lookups": 14
+    "error": "ws02-securityeducation.com does not have a SPF TXT record"
   },
   "dmarc": {
     "record": "v=DMARC1; p=none",

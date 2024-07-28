@@ -4,53 +4,15 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dpmdns01.ns-cloud4b.org",
       "dpmdns03.ns-cloud4b.net",
+      "dpmdns01.ns-cloud4b.org",
       "dpmdns02.ns-cloud4b.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mx.spamexperts.com",
-        "addresses": [
-          "2001:550:2:78::ca:100",
-          "38.111.198.185"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "fallbackmx.spamexperts.eu",
-        "addresses": [
-          "2001:550:2:61::2fc:100",
-          "2001:550:2:78::ca:100",
-          "2001:550:2:9::280:100",
-          "38.109.53.20",
-          "38.111.198.185",
-          "38.89.254.156"
-        ]
-      },
-      {
-        "preference": 30,
-        "hostname": "lastmx.spamexperts.net",
-        "addresses": [
-          "149.13.75.27",
-          "154.59.104.23",
-          "2001:550:2:61::2fc:100",
-          "2001:550:2:9::280:100",
-          "2001:978:2:2c::137:100",
-          "2001:978:2:7::162:100",
-          "38.111.198.185",
-          "38.89.254.156"
-        ]
-      }
-    ],
-    "warnings": [
-      "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records",
-      "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records"
-    ]
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 include:spf2.malaga.es -all",
@@ -126,14 +88,6 @@
                 "mechanism": "a"
               },
               {
-                "value": "149.13.73.12",
-                "mechanism": "a"
-              },
-              {
-                "value": "149.13.73.13",
-                "mechanism": "a"
-              },
-              {
                 "value": "149.13.73.29",
                 "mechanism": "a"
               },
@@ -167,14 +121,6 @@
               },
               {
                 "value": "149.13.73.37",
-                "mechanism": "a"
-              },
-              {
-                "value": "149.13.73.4",
-                "mechanism": "a"
-              },
-              {
-                "value": "149.13.73.6",
                 "mechanism": "a"
               },
               {
@@ -259,38 +205,6 @@
               },
               {
                 "value": "154.59.194.252",
-                "mechanism": "a"
-              },
-              {
-                "value": "154.61.86.40",
-                "mechanism": "a"
-              },
-              {
-                "value": "154.61.86.47",
-                "mechanism": "a"
-              },
-              {
-                "value": "154.61.86.49",
-                "mechanism": "a"
-              },
-              {
-                "value": "154.61.86.52",
-                "mechanism": "a"
-              },
-              {
-                "value": "154.61.86.53",
-                "mechanism": "a"
-              },
-              {
-                "value": "154.61.86.54",
-                "mechanism": "a"
-              },
-              {
-                "value": "154.61.86.55",
-                "mechanism": "a"
-              },
-              {
-                "value": "154.61.86.57",
                 "mechanism": "a"
               },
               {
@@ -699,22 +613,6 @@
               },
               {
                 "value": "2001:978:2:7::e7:11",
-                "mechanism": "a"
-              },
-              {
-                "value": "2001:978:2:7::e7:3",
-                "mechanism": "a"
-              },
-              {
-                "value": "2001:978:2:7::e7:4",
-                "mechanism": "a"
-              },
-              {
-                "value": "2001:978:2:7::e7:5",
-                "mechanism": "a"
-              },
-              {
-                "value": "2001:978:2:7::e7:6",
                 "mechanism": "a"
               },
               {
