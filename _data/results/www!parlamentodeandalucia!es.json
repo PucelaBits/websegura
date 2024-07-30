@@ -1,22 +1,25 @@
 {
   "algorithm_version": 3,
-  "end_time": "Thu, 18 Jul 2024 00:45:57 GMT",
+  "end_time": "Tue, 30 Jul 2024 00:12:48 GMT",
   "grade": "F",
   "hidden": false,
   "likelihood_indicator": "MEDIUM",
   "response_headers": {
-    "Content-Type": "text/html;charset=ISO-8859-1",
-    "Date": "Thu, 18 Jul 2024 00:45:53 GMT",
-    "Server": "Apache-Coyote/1.1",
-    "Set-Cookie": "JSESSIONID=E2043CAABE158CE2C5B03D66099BA14B; Path=/webdinamica; HttpOnly, ADC_CONN_539B3595F4E=87947802496E03879A744FF4218397589476D08D4B9136D1D14B249AE04A0FF4E48213F5DE631D7F; expires=Thu, 18 Jul 2024 01:45:53 GMT, ADC_REQ_2E94AF76E7=09BB9C537CD8F6D73ADAAD65A444FCF2A6984A8CBA08C26171A9DBA52888C1129BC5BD4E7C2B8D5B; expires=Thu, 18 Jul 2024 01:45:53 GMT; Path=/, LB_Fortiadc=rs1|Zphlx; path=/",
-    "Transfer-Encoding": "chunked"
+    "Accept-Ranges": "bytes",
+    "Content-Length": "74616",
+    "Content-Type": "text/html",
+    "Date": "Tue, 30 Jul 2024 00:12:44 GMT",
+    "ETag": "\"66a82f5b-12378\"",
+    "Last-Modified": "Tue, 30 Jul 2024 00:10:03 GMT",
+    "Server": "nginx/1.20.1",
+    "Set-Cookie": "ADC_CONN_539B3595F4E=BCF8EE670F56B545013908F35C5769D1197F702D9B5CBAF1488474A2AE3F6563A884391C754A89F6; expires=Tue, 30 Jul 2024 01:12:44 GMT, ADC_REQ_2E94AF76E7=81F872D63AE040157AD840A315FE4EA92042E63F5C78B248AA50FC8D64FAC0D500C2D3C46ACE9C58; expires=Tue, 30 Jul 2024 01:12:44 GMT; Path=/, LB_Fortiadc=rs1|Zqgv/; path=/"
   },
-  "scan_id": 53514466,
+  "scan_id": 53891209,
   "score": 0,
-  "start_time": "Thu, 18 Jul 2024 00:45:48 GMT",
+  "start_time": "Tue, 30 Jul 2024 00:12:42 GMT",
   "state": "FINISHED",
   "status_code": 200,
   "tests_failed": 6,
-  "tests_passed": 5,
-  "tests_quantity": 11
+  "tests_passed": 4,
+  "tests_quantity": 10
 }

@@ -1,27 +1,24 @@
 {
   "algorithm_version": 3,
-  "end_time": "Thu, 18 Jul 2024 00:46:04 GMT",
+  "end_time": "Tue, 30 Jul 2024 00:12:45 GMT",
   "grade": "F",
   "hidden": false,
   "likelihood_indicator": "MEDIUM",
   "response_headers": {
-    "cache-control": "private",
     "content-encoding": "gzip",
-    "content-type": "text/html;charset=utf-8",
-    "date": "Thu, 18 Jul 2024 00:46:05 GMT",
-    "set-cookie": "fe_typo_user=cb085cda723b7a34281b4bec22cb0e33; path=/, lb_9b758c85a72cdb131d41397a67782e28=i_e02352f5273612bb77abd842b4123133; path=/; HttpOnly",
-    "strict-transport-security": "max-age=15552000",
-    "transfer-encoding": "chunked",
-    "vary": "Accept-Encoding,",
-    "x-content-type-options": "nosniff",
-    "x-frame-options": "SAMEORIGIN"
+    "content-length": "191",
+    "content-type": "text/html;charset=UTF-8",
+    "date": "Tue, 30 Jul 2024 00:12:44 GMT",
+    "server": "Apache",
+    "set-cookie": "lb_9b758c85a72cdb131d41397a67782e28=i_d69295118f0db7383d3260b93c322b41; path=/; HttpOnly",
+    "vary": "Accept-Encoding,"
   },
-  "scan_id": 53514473,
-  "score": 10,
-  "start_time": "Thu, 18 Jul 2024 00:45:50 GMT",
+  "scan_id": 53891212,
+  "score": 0,
+  "start_time": "Tue, 30 Jul 2024 00:12:43 GMT",
   "state": "FINISHED",
-  "status_code": 200,
-  "tests_failed": 5,
-  "tests_passed": 6,
-  "tests_quantity": 11
+  "status_code": 403,
+  "tests_failed": 6,
+  "tests_passed": 4,
+  "tests_quantity": 10
 }
