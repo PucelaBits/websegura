@@ -1,25 +1,28 @@
 {
   "algorithm_version": 3,
-  "end_time": "Sun, 21 Jul 2024 00:14:05 GMT",
+  "end_time": "Wed, 31 Jul 2024 00:41:04 GMT",
   "grade": "F",
   "hidden": false,
   "likelihood_indicator": "MEDIUM",
   "response_headers": {
-    "Content-Length": "65635",
+    "Cache-Control": "private",
+    "Content-Encoding": "gzip",
     "Content-Security-Policy": "frame-ancestors 'self' *.gva.es ;",
     "Content-Type": "text/html;charset=UTF-8",
-    "Date": "Sun, 21 Jul 2024 00:14:02 GMT",
-    "ETag": "\"608b0a8d\"",
-    "Set-Cookie": "COOKIE_SUPPORT=true; Expires=Mon, 21-Jul-2025 00:14:02 GMT; Path=/, COOKIE_SUPPORT=true; Expires=Mon, 21-Jul-2025 00:14:02 GMT; Path=/, NSC_mc1_hwb_qpsubmft=ffffffffaf13981e45525d5f4f58455e445a4a4229a0;Version=1;Max-Age=1800;path=/;secure;httponly",
+    "Date": "Wed, 31 Jul 2024 00:41:00 GMT",
+    "ETag": "\"903f6d51\"",
+    "Set-Cookie": "COOKIE_SUPPORT=true; Expires=Thu, 31-Jul-2025 00:41:00 GMT; Path=/, COOKIE_SUPPORT=true; Expires=Thu, 31-Jul-2025 00:41:00 GMT; Path=/, NSC_mc1_hwb_qpsubmft=ffffffffaf13981e45525d5f4f58455e445a4a4229a0;Version=1;Max-Age=1800;path=/;secure;httponly",
+    "Transfer-Encoding": "chunked",
     "X-Content-Security-Policy": "frame-ancestors 'self' *.gva.es ;",
-    "X-Frame-Options": "SAMEORIGIN"
+    "X-Frame-Options": "SAMEORIGIN",
+    "ntCoent-Length": "65325"
   },
-  "scan_id": 53612717,
+  "scan_id": 53933726,
   "score": 10,
-  "start_time": "Sun, 21 Jul 2024 00:13:59 GMT",
+  "start_time": "Wed, 31 Jul 2024 00:40:57 GMT",
   "state": "FINISHED",
   "status_code": 200,
   "tests_failed": 5,
-  "tests_passed": 6,
-  "tests_quantity": 11
+  "tests_passed": 5,
+  "tests_quantity": 10
 }
