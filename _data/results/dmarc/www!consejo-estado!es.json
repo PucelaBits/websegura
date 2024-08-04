@@ -15,7 +15,7 @@
         "preference": 10,
         "hostname": "mxa-006a4e02.gslb.pphosted.com",
         "addresses": [
-          "143.55.146.78"
+          "143.55.148.243"
         ]
       },
       {
@@ -75,9 +75,71 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; rua=none; ruf=mailto:alertas@consejo-estado.es; sp=none; ri=86400",
-    "valid": false,
+    "record": "v=DMARC1;p=quarantine;rua=mailto:alertas@consejo-estado.es;ruf=mailto:alertas@consejo-estado.es;sp=none;ri=86400",
+    "valid": true,
     "location": "consejo-estado.es",
-    "error": "none is not a valid DMARC report URI"
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "alertas@consejo-estado.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "alertas@consejo-estado.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "sp": {
+        "value": "none",
+        "explicit": true
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      }
+    }
   }
 }

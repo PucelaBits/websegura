@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns5.cim.es",
       "dns7.cim.es",
-      "dns6.cim.es"
+      "dns6.cim.es",
+      "dns5.cim.es"
     ],
     "warnings": []
   },
@@ -20,7 +20,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 89.17.211.117 is m223.cim.es, but the A/AAAA DNS records for m223.cim.es do not resolve to 89.17.211.117"
+    ]
   },
   "spf": {
     "record": "v=spf1 mx ip4:89.17.211.96/27 ip4:195.77.144.160/28 ~all",

@@ -3,11 +3,8 @@
   "base_domain": "ayto-riberadearriba.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "silo.greencom.net",
-      "fruela.greencom.net"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "mx": {
     "hosts": [
@@ -25,13 +22,11 @@
     "record": "v=spf1 mx ip4:176.31.240.74 ~all",
     "valid": true,
     "dns_lookups": 1,
-    "warnings": [],
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ],
     "parsed": {
       "pass": [
-        {
-          "value": "silo.greencom.net",
-          "mechanism": "mx"
-        },
         {
           "value": "176.31.240.74",
           "mechanism": "ip4"

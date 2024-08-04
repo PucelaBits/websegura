@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns4.hostinger.es",
       "ns1.hostinger.es",
       "ns3.hostinger.es",
+      "ns4.hostinger.es",
       "ns2.hostinger.es"
     ],
     "warnings": []
@@ -17,27 +17,24 @@
         "preference": 10,
         "hostname": "mx.zoho.com",
         "addresses": [
-          "204.141.43.44"
+          "136.143.191.44"
         ]
       },
       {
         "preference": 20,
         "hostname": "mx2.zoho.com",
         "addresses": [
-          "204.141.33.44"
+          "136.143.183.44"
         ]
       }
     ],
     "warnings": [
-      "The reverse DNS of 204.141.43.44 is mx7.zoho.com, but the A/AAAA DNS records for mx7.zoho.com do not resolve to 204.141.43.44",
-      "The reverse DNS of 204.141.43.44 is mx2.zoho.com, but the A/AAAA DNS records for mx2.zoho.com do not resolve to 204.141.43.44",
-      "The reverse DNS of 204.141.33.44 is mx8.zoho.com, but the A/AAAA DNS records for mx8.zoho.com do not resolve to 204.141.33.44",
-      "The reverse DNS of 204.141.33.44 is mx6.zoho.com, but the A/AAAA DNS records for mx6.zoho.com do not resolve to 204.141.33.44",
-      "The reverse DNS of 204.141.33.44 is mx3.zohomail.com, but the A/AAAA DNS records for mx3.zohomail.com do not resolve to 204.141.33.44",
-      "The reverse DNS of 204.141.33.44 is mx2.zohomail.com, but the A/AAAA DNS records for mx2.zohomail.com do not resolve to 204.141.33.44",
-      "The reverse DNS of 204.141.33.44 is mx.zohomail.com, but the A/AAAA DNS records for mx.zohomail.com do not resolve to 204.141.33.44",
-      "The reverse DNS of 204.141.33.44 is mx.zoho.com, but the A/AAAA DNS records for mx.zoho.com do not resolve to 204.141.33.44",
-      "The reverse DNS of 204.141.33.44 is mx3.zoho.com, but the A/AAAA DNS records for mx3.zoho.com do not resolve to 204.141.33.44"
+      "The reverse DNS of 136.143.191.44 is mx2.zoho.com, but the A/AAAA DNS records for mx2.zoho.com do not resolve to 136.143.191.44",
+      "The reverse DNS of 136.143.183.44 is mx3.zohomail.com, but the A/AAAA DNS records for mx3.zohomail.com do not resolve to 136.143.183.44",
+      "The reverse DNS of 136.143.183.44 is mx2.zohomail.com, but the A/AAAA DNS records for mx2.zohomail.com do not resolve to 136.143.183.44",
+      "The reverse DNS of 136.143.183.44 is mx.zohomail.com, but the A/AAAA DNS records for mx.zohomail.com do not resolve to 136.143.183.44",
+      "The reverse DNS of 136.143.183.44 is mx.zoho.com, but the A/AAAA DNS records for mx.zoho.com do not resolve to 136.143.183.44",
+      "The reverse DNS of 136.143.183.44 is mx3.zoho.com, but the A/AAAA DNS records for mx3.zoho.com do not resolve to 136.143.183.44"
     ]
   },
   "spf": {

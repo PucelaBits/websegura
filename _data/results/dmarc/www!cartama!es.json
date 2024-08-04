@@ -4,15 +4,54 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dpmdns03.ns-cloud4b.net",
       "dpmdns02.ns-cloud4b.com",
-      "dpmdns01.ns-cloud4b.org"
+      "dpmdns01.ns-cloud4b.org",
+      "dpmdns03.ns-cloud4b.net"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx.spamexperts.com",
+        "addresses": [
+          "2001:550:2:61::2fc:100",
+          "38.111.198.185"
+        ]
+      },
+      {
+        "preference": 50,
+        "hostname": "fallbackmx.spamexperts.eu",
+        "addresses": [
+          "2001:550:2:61::2fc:100",
+          "2001:550:2:78::ca:100",
+          "2001:550:2:9::280:100",
+          "38.109.53.20",
+          "38.111.198.185",
+          "38.89.254.156"
+        ]
+      },
+      {
+        "preference": 100,
+        "hostname": "lastmx.spamexperts.net",
+        "addresses": [
+          "149.13.75.27",
+          "154.59.104.23",
+          "2001:550:2:61::2fc:100",
+          "2001:550:2:9::280:100",
+          "2001:978:2:2c::137:100",
+          "2001:978:2:7::162:100",
+          "38.111.198.185",
+          "38.89.254.156"
+        ]
+      }
+    ],
+    "warnings": [
+      "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records",
+      "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records",
+      "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:spf.qsemail.net include:spf.acumbamail.com include:spf1.mensagia.com -all",

@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.procuradordelcomun.org",
-      "ns1.procuradordelcomun.org"
+      "ns1.procuradordelcomun.org",
+      "ns2.procuradordelcomun.org"
     ],
     "warnings": []
   },
@@ -19,10 +19,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 185.23.36.35 is correo.tedra.es, but the A/AAAA DNS records for correo.tedra.es do not resolve to 185.23.36.35"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:185.23.36.35 -all",
