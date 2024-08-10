@@ -1,6 +1,6 @@
 {
   "algorithm_version": 3,
-  "end_time": "Thu, 08 Aug 2024 00:12:55 GMT",
+  "end_time": "Sat, 10 Aug 2024 00:49:53 GMT",
   "grade": "F",
   "hidden": false,
   "likelihood_indicator": "MEDIUM",
@@ -8,19 +8,20 @@
     "Connection": "Keep-Alive",
     "Content-Encoding": "gzip",
     "Content-Type": "text/html; charset=UTF-8",
-    "Date": "Thu, 08 Aug 2024 00:12:49 GMT",
+    "Date": "Sat, 10 Aug 2024 00:49:45 GMT",
     "Keep-Alive": "timeout=5, max=99",
-    "Link": "<https://avap.es/wp-json/>; rel=\"https://api.w.org/\", <https://avap.es/wp-json/wp/v2/pages/10567>; rel=\"alternate\"; type=\"application/json\", <https://avap.es/>; rel=shortlink",
+    "Link": "<https://avap.es/wp-json/>; rel=\"https://api.w.org/\", <https://avap.es/wp-json/wp/v2/pages/10567>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://avap.es/>; rel=shortlink",
     "Server": "Apache",
     "Transfer-Encoding": "chunked",
-    "Vary": "Accept-Encoding"
+    "Vary": "Accept-Encoding",
+    "X-Powered-By": "PHP/8.1.29"
   },
-  "scan_id": 54225507,
-  "score": 15,
-  "start_time": "Thu, 08 Aug 2024 00:12:46 GMT",
+  "scan_id": 54298179,
+  "score": 0,
+  "start_time": "Sat, 10 Aug 2024 00:49:41 GMT",
   "state": "FINISHED",
   "status_code": 200,
-  "tests_failed": 6,
-  "tests_passed": 4,
+  "tests_failed": 5,
+  "tests_passed": 5,
   "tests_quantity": 10
 }
