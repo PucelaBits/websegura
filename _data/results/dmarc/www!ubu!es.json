@@ -4,11 +4,11 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns1.ubu.es",
       "ns2.ubu.es",
       "sun.rediris.es",
-      "ns1.ubu.es",
-      "chico.rediris.es",
-      "ineco.nic.es"
+      "ineco.nic.es",
+      "chico.rediris.es"
     ],
     "warnings": []
   },
@@ -18,8 +18,8 @@
         "preference": 0,
         "hostname": "ubu-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.27",
           "52.101.73.1",
+          "52.101.73.12",
           "52.101.73.2",
           "52.101.73.6"
         ]

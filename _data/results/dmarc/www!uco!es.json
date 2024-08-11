@@ -4,13 +4,13 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.cica.es",
+      "dns2.cica.es",
+      "druuna.uco.es",
+      "chico.rediris.es",
+      "dns1.uco.es",
       "dns2.uco.es",
       "sun.rediris.es",
-      "druuna.uco.es",
-      "dns2.cica.es",
-      "dns1.uco.es",
-      "chico.rediris.es"
+      "dns1.cica.es"
     ],
     "warnings": []
   },
@@ -26,12 +26,12 @@
       {
         "preference": 5,
         "hostname": "mx04.puc.rediris.es",
-        "addresses": [
-          "143.55.148.243"
-        ]
+        "addresses": []
       }
     ],
-    "warnings": []
+    "warnings": [
+      "All nameservers failed to answer the query mx04.puc.rediris.es. IN AAAA: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    ]
   },
   "spf": {
     "record": null,

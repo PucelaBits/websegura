@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns1.dnsxperta.com",
       "ns2.dnsxperta.com",
-      "ns3.dnsxperta.com",
-      "ns1.dnsxperta.com"
+      "ns3.dnsxperta.com"
     ],
     "warnings": []
   },
@@ -16,10 +16,10 @@
         "preference": 0,
         "hostname": "elpuig-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.73.12",
-          "52.101.73.19",
-          "52.101.73.21",
-          "52.101.73.26"
+          "52.101.68.16",
+          "52.101.68.18",
+          "52.101.73.16",
+          "52.101.73.8"
         ]
       },
       {
@@ -122,6 +122,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.elpuig.es\n\ngoogle-site-verification=sxdCQ69pfxv6_pDK7zt97TizK6bqK-zL9xa1Y6AzZ18\n\nv=spf1 include:spf.protection.outlook.com a:mr-01.gestiona.espublico.com ip4:213.4.82.201 -all\n\nMS=ms20757193"
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.elpuig.es\n\ngoogle-site-verification=sxdCQ69pfxv6_pDK7zt97TizK6bqK-zL9xa1Y6AzZ18\n\nMS=ms20757193\n\nv=spf1 include:spf.protection.outlook.com a:mr-01.gestiona.espublico.com ip4:213.4.82.201 -all"
   }
 }

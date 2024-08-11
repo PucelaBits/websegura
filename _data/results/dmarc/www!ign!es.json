@@ -10,8 +10,16 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query 221.212.148.192.in-addr.arpa. IN PTR: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail01.fomento.es",
+        "addresses": [
+          "192.148.212.221"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:192.148.212.217 ip4:192.148.212.218 ip4:192.148.212.221 ip4:192.148.212.222 ip4:192.148.212.223 ip4:192.148.212.224 mx include:spf.protection.outlook.com -all",

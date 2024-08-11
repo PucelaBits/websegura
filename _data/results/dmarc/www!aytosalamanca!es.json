@@ -19,7 +19,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 194.224.19.202 is correo.aytosalamanca.es, but the A/AAAA DNS records for correo.aytosalamanca.es do not resolve to 194.224.19.202"
+    ]
   },
   "spf": {
     "record": "v=spf1 mx include:spf.protection.outlook.com ~all",
