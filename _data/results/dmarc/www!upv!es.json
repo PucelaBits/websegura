@@ -4,16 +4,38 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "sun.rediris.es",
       "mirzam.ccc.upv.es",
       "vega.cc.upv.es",
+      "sun.rediris.es",
       "chico.rediris.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 7,
+        "hostname": "mxv.cc.upv.es",
+        "addresses": [
+          "158.42.248.114"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mx2.cc.upv.es",
+        "addresses": [
+          "158.42.250.62"
+        ]
+      },
+      {
+        "preference": 40,
+        "hostname": "mx4.cc.upv.es",
+        "addresses": [
+          "158.42.250.194"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.upv.es include:spf.protection.outlook.com ~all",

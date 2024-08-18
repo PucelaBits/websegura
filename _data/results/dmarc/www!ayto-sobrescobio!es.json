@@ -3,22 +3,61 @@
   "base_domain": "ayto-sobrescobio.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "All nameservers failed to answer the query ayto-sobrescobio.es. IN NS: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "hostnames": [
+      "ns5.infofuturo.net",
+      "ns4.infofuturo.net"
+    ],
+    "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query ayto-sobrescobio.es. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 0,
+        "hostname": "correo.ayto-sobrescobio.es",
+        "addresses": [
+          "37.153.90.131"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "All nameservers failed to answer the query ayto-sobrescobio.es. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "record": "v=spf1 +a +mx +ip4:37.153.90.131 +ip4:37.153.90.139 ~all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "212.89.23.124",
+          "mechanism": "a"
+        },
+        {
+          "value": "correo.ayto-sobrescobio.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "37.153.90.131",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "37.153.90.139",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
   },
   "dmarc": {
     "record": null,
     "valid": false,
     "location": null,
-    "error": "All nameservers failed to answer the query _dmarc.ayto-sobrescobio.es. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "error": "A DMARC record does not exist for this domain or its base domain"
   }
 }

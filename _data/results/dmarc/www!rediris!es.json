@@ -17,18 +17,19 @@
       {
         "preference": 20,
         "hostname": "mx03.puc.rediris.es",
-        "addresses": []
+        "addresses": [
+          "143.55.146.78"
+        ]
       },
       {
         "preference": 20,
         "hostname": "mx04.puc.rediris.es",
-        "addresses": []
+        "addresses": [
+          "143.55.148.243"
+        ]
       }
     ],
-    "warnings": [
-      "All nameservers failed to answer the query mx03.puc.rediris.es. IN AAAA: Server Do53:1.0.0.1@53 answered SERVFAIL",
-      "All nameservers failed to answer the query mx04.puc.rediris.es. IN AAAA: Server Do53:1.0.0.1@53 answered SERVFAIL"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.puc.rediris.es ip4:130.206.24.0/30 -all",

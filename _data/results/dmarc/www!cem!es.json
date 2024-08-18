@@ -10,37 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mailin.serviciosmin.gob.es",
-        "addresses": [
-          "192.187.16.24"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "mailin1.serviciosmin.gob.es",
-        "addresses": [
-          "192.187.16.26"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mailin.minetad.es",
-        "addresses": [
-          "193.146.123.230"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mailin1.minetad.es",
-        "addresses": [
-          "193.146.123.234"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 mx include:spf.serviciosmin.gob.es ~all",

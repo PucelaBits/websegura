@@ -15,14 +15,14 @@
         "preference": 10,
         "hostname": "mxa-006a4e02.gslb.pphosted.com",
         "addresses": [
-          "143.55.148.243"
+          "143.55.146.78"
         ]
       },
       {
         "preference": 10,
         "hostname": "mxb-006a4e02.gslb.pphosted.com",
         "addresses": [
-          "143.55.146.78"
+          "143.55.148.243"
         ]
       }
     ],
@@ -75,10 +75,12 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1;p=quarantine;rua=mailto:alertas@consejo-estado.es;ruf=mailto:alertas@consejo-estado.es;sp=none;ri=86400",
+    "record": "v=DMARC1;p=quarantine;ruf=mailto:alertas@consejo-estado.es;sp=none;ri=86400",
     "valid": true,
     "location": "consejo-estado.es",
-    "warnings": [],
+    "warnings": [
+      "rua tag (destination for aggregate reports) not found"
+    ],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -86,16 +88,6 @@
       },
       "p": {
         "value": "quarantine",
-        "explicit": true
-      },
-      "rua": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "alertas@consejo-estado.es",
-            "size_limit": null
-          }
-        ],
         "explicit": true
       },
       "ruf": {

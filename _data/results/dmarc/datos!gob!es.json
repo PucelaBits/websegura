@@ -1,13 +1,13 @@
 {
   "domain": "datos.gob.es",
   "base_domain": "datos.gob.es",
-  "dnssec": false,
+  "dnssec": true,
   "ns": {
     "hostnames": [
-      "ns-1411.awsdns-48.org",
-      "ns-1618.awsdns-10.co.uk",
       "ns-59.awsdns-07.com",
-      "ns-703.awsdns-23.net"
+      "ns-703.awsdns-23.net",
+      "ns-1411.awsdns-48.org",
+      "ns-1618.awsdns-10.co.uk"
     ],
     "warnings": []
   },
@@ -17,10 +17,10 @@
         "preference": 10,
         "hostname": "datos-gob-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.21",
-          "52.101.68.29",
-          "52.101.73.1",
-          "52.101.73.15"
+          "52.101.68.3",
+          "52.101.73.15",
+          "52.101.73.24",
+          "52.101.73.26"
         ]
       }
     ],
