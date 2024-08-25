@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns10.servicio-online.net",
       "ns12.servicio-online.net",
-      "ns11.servicio-online.net",
-      "ns10.servicio-online.net"
+      "ns11.servicio-online.net"
     ],
     "warnings": []
   },
@@ -83,7 +83,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 81.47.205.124 is kelvin.correolimpio.telefonica.es, but the A/AAAA DNS records for kelvin.correolimpio.telefonica.es do not resolve to 81.47.205.124"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com -all",

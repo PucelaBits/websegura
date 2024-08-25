@@ -3,101 +3,19 @@
   "base_domain": "degania.org",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "dns1.abansys.net",
-      "dns2.abansys.net"
-    ],
+    "hostnames": [],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mail.degania.org",
-        "addresses": [
-          "86.109.178.134"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
   },
   "spf": {
-    "record": "v=spf1 include:spf.abansys.com -all",
-    "valid": true,
-    "dns_lookups": 1,
-    "warnings": [],
-    "parsed": {
-      "pass": [],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [
-        {
-          "domain": "spf.abansys.com",
-          "record": "v=spf1 ip4:86.109.160.0/24 ip4:86.109.162.0/24 ip4:86.109.161.0/24 ip4:86.109.163.0/24 ip4:86.109.165.0/24 ip4:86.109.166.0/24 ip4:86.109.167.0/24 ip4:86.109.177.0/24 ip4:86.109.178.0/24 ip4:86.109.179.0/24 ip4:86.109.180.0/24 -all",
-          "dns_lookups": 0,
-          "parsed": {
-            "pass": [
-              {
-                "value": "86.109.160.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "86.109.162.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "86.109.161.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "86.109.163.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "86.109.165.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "86.109.166.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "86.109.167.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "86.109.177.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "86.109.178.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "86.109.179.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "86.109.180.0/24",
-                "mechanism": "ip4"
-              }
-            ],
-            "neutral": [],
-            "softfail": [],
-            "fail": [],
-            "include": [],
-            "redirect": null,
-            "exp": null,
-            "all": "fail"
-          },
-          "warnings": []
-        }
-      ],
-      "redirect": null,
-      "exp": null,
-      "all": "fail"
-    }
+    "record": null,
+    "valid": false,
+    "error": "degania.org does not have a SPF TXT record"
   },
   "dmarc": {
     "record": null,

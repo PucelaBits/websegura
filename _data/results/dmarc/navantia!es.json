@@ -12,14 +12,28 @@
   "mx": {
     "hosts": [
       {
-        "preference": 15,
+        "preference": 5,
+        "hostname": "mxa-008a2202.gslb.pphosted.com",
+        "addresses": [
+          "66.159.234.83"
+        ]
+      },
+      {
+        "preference": 5,
+        "hostname": "mxb-008a2202.gslb.pphosted.com",
+        "addresses": [
+          "66.159.233.10"
+        ]
+      },
+      {
+        "preference": 50,
         "hostname": "mail.navantia.es",
         "addresses": [
           "195.235.188.81"
         ]
       },
       {
-        "preference": 20,
+        "preference": 50,
         "hostname": "mailizar.navantia.es",
         "addresses": [
           "195.235.188.81"
