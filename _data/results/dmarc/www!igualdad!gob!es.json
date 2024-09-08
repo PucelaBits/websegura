@@ -13,16 +13,18 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "mx.msc.es",
+        "hostname": "mail1.correo.gob.es",
         "addresses": [
-          "195.64.186.52"
+          "185.73.172.122",
+          "185.73.172.123"
         ]
       },
       {
         "preference": 10,
-        "hostname": "mxres.msc.es",
+        "hostname": "mail2.correo.gob.es",
         "addresses": [
-          "91.230.250.52"
+          "185.73.172.124",
+          "185.73.172.125"
         ]
       }
     ],

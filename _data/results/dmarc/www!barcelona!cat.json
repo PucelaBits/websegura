@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.bcn.cat",
       "ns3bcn.entorno.es",
-      "ns1.bcn.cat"
+      "ns1.bcn.cat",
+      "ns2.bcn.cat"
     ],
     "warnings": []
   },
@@ -15,12 +15,12 @@
       {
         "preference": 10,
         "hostname": "bcnweb11.bcn.es",
-        "addresses": [
-          "212.15.224.45"
-        ]
+        "addresses": []
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ]
   },
   "spf": {
     "record": null,

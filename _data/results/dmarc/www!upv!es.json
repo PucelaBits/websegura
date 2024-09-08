@@ -5,37 +5,15 @@
   "ns": {
     "hostnames": [
       "chico.rediris.es",
+      "vega.cc.upv.es",
       "sun.rediris.es",
-      "mirzam.ccc.upv.es",
-      "vega.cc.upv.es"
+      "mirzam.ccc.upv.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 7,
-        "hostname": "mxv.cc.upv.es",
-        "addresses": [
-          "158.42.248.114"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "mx2.cc.upv.es",
-        "addresses": [
-          "158.42.250.62"
-        ]
-      },
-      {
-        "preference": 40,
-        "hostname": "mx4.cc.upv.es",
-        "addresses": [
-          "158.42.250.194"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 include:spf.upv.es include:spf.protection.outlook.com ~all",
@@ -91,7 +69,7 @@
         },
         {
           "domain": "spf.protection.outlook.com",
-          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/51 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
+          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/15 ip4:52.102.0.0/16 ip4:52.103.0.0/17 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/51 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -104,7 +82,15 @@
                 "mechanism": "ip4"
               },
               {
-                "value": "52.100.0.0/14",
+                "value": "52.100.0.0/15",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.102.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.103.0.0/17",
                 "mechanism": "ip4"
               },
               {

@@ -13,12 +13,16 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "parcan-es.mail.protection.outlook.com",
+        "hostname": "mxa-008e9701.gslb.pphosted.com",
         "addresses": [
-          "52.101.73.1",
-          "52.101.73.22",
-          "52.101.73.26",
-          "52.101.73.8"
+          "66.159.232.95"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mxb-008e9701.gslb.pphosted.com",
+        "addresses": [
+          "143.55.149.243"
         ]
       }
     ],
@@ -36,11 +40,19 @@
           "mechanism": "ip4"
         },
         {
-          "value": "parcan-es.mail.protection.outlook.com",
+          "value": "mxa-008e9701.gslb.pphosted.com",
           "mechanism": "mx"
         },
         {
-          "value": "parcan-es.mail.protection.outlook.com",
+          "value": "mxb-008e9701.gslb.pphosted.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mxa-008e9701.gslb.pphosted.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mxb-008e9701.gslb.pphosted.com",
           "mechanism": "mx"
         }
       ],
@@ -50,7 +62,7 @@
       "include": [
         {
           "domain": "spf.protection.outlook.com",
-          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/51 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
+          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/15 ip4:52.102.0.0/16 ip4:52.103.0.0/17 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/51 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -63,7 +75,15 @@
                 "mechanism": "ip4"
               },
               {
-                "value": "52.100.0.0/14",
+                "value": "52.100.0.0/15",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.102.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.103.0.0/17",
                 "mechanism": "ip4"
               },
               {

@@ -4,16 +4,40 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns220.iservices4u.eu",
       "ns222.iservices4u.eu",
       "ns223.iservices4u.eu",
-      "ns221.iservices4u.eu"
+      "ns221.iservices4u.eu",
+      "ns220.iservices4u.eu"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mta-ger-222.iservices4u.eu",
+        "addresses": [
+          "2a01:4f8:1c17:57ff::1",
+          "78.46.212.107"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mta-ger-223.iservices4u.eu",
+        "addresses": [
+          "159.69.31.253",
+          "2a01:4f8:1c1c:3901::1"
+        ]
+      },
+      {
+        "preference": 30,
+        "hostname": "mta-ger-223.iservices4u.eu",
+        "addresses": []
+      }
+    ],
+    "warnings": [
+      "Hostname mta-ger-223.iservices4u.eu is listed in multiple MX records"
+    ]
   },
   "spf": {
     "record": "v=spf1 ip4:116.202.67.80/28 ip4:5.135.230.0/27 include:spf.iservices4u.eu a -all",

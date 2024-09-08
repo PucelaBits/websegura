@@ -1,60 +1,24 @@
 {
   "domain": "museodegrandas.es",
   "base_domain": "museodegrandas.es",
-  "dnssec": true,
+  "dnssec": false,
   "ns": {
-    "hostnames": [
-      "ns1.openprovider.nl",
-      "ns2.openprovider.be",
-      "ns3.openprovider.eu"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "All nameservers failed to answer the query museodegrandas.es. IN NS: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mail.museodegrandas.es",
-        "addresses": [
-          "82.98.149.3"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "All nameservers failed to answer the query museodegrandas.es. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "spf": {
-    "record": "v=spf1 a mx ip4:82.98.149.3 ~all",
-    "valid": true,
-    "dns_lookups": 2,
-    "warnings": [],
-    "parsed": {
-      "pass": [
-        {
-          "value": "54.36.27.77",
-          "mechanism": "a"
-        },
-        {
-          "value": "mail.museodegrandas.es",
-          "mechanism": "mx"
-        },
-        {
-          "value": "82.98.149.3",
-          "mechanism": "ip4"
-        }
-      ],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [],
-      "redirect": null,
-      "exp": null,
-      "all": "softfail"
-    }
+    "record": null,
+    "valid": false,
+    "error": "All nameservers failed to answer the query museodegrandas.es. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "dmarc": {
     "record": null,
     "valid": false,
     "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "error": "All nameservers failed to answer the query _dmarc.museodegrandas.es. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
   }
 }

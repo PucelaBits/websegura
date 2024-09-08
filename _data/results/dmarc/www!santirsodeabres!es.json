@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.nominalia.com",
-      "dns2.nominalia.com"
+      "dns2.nominalia.com",
+      "dns1.nominalia.com"
     ],
     "warnings": []
   },
@@ -24,8 +24,10 @@
   "spf": {
     "record": "v=spf1 include:spf.webapps.net ~all",
     "valid": true,
-    "dns_lookups": 5,
-    "warnings": [],
+    "dns_lookups": 6,
+    "warnings": [
+      "spf.webapps.net does not have any A/AAAA records"
+    ],
     "parsed": {
       "pass": [],
       "neutral": [],
@@ -34,8 +36,8 @@
       "include": [
         {
           "domain": "spf.webapps.net",
-          "record": "v=spf1 include:spf1.webapps.net include:spf2.webapps.net ~all",
-          "dns_lookups": 4,
+          "record": "v=spf1 a include:spf1.webapps.net include:spf2.webapps.net ~all",
+          "dns_lookups": 5,
           "parsed": {
             "pass": [],
             "neutral": [],
@@ -195,7 +197,9 @@
             "exp": null,
             "all": "softfail"
           },
-          "warnings": []
+          "warnings": [
+            "spf.webapps.net does not have any A/AAAA records"
+          ]
         }
       ],
       "redirect": null,

@@ -22,7 +22,7 @@
         "preference": 10,
         "hostname": "mxb-008fd801.gslb.pphosted.com",
         "addresses": [
-          "66.159.233.73"
+          "66.159.234.148"
         ]
       }
     ],
@@ -76,7 +76,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; rua=mailto:dmarcreports@bilbaotik.bilbao.eus; ruf=mailto:postmaster@bilbaotik.bilbao.eus; fo=1; adkim=s; aspf=s;",
+    "record": "v=DMARC1; p=reject; rua=mailto:dmarcreports@bilbaotik.bilbao.eus; ruf=mailto:postmaster@bilbaotik.bilbao.eus; fo=1; adkim=s; aspf=s;",
     "valid": true,
     "location": "bilbao.eus",
     "warnings": [],
@@ -86,7 +86,7 @@
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "reject",
         "explicit": true
       },
       "rua": {
@@ -138,7 +138,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "none",
+        "value": "reject",
         "explicit": false
       }
     }

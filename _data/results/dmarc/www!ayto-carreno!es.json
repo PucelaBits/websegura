@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1095.ui-dns.org",
       "ns1099.ui-dns.de",
+      "ns1109.ui-dns.biz",
       "ns1125.ui-dns.com",
-      "ns1109.ui-dns.biz"
+      "ns1095.ui-dns.org"
     ],
     "warnings": []
   },
@@ -17,10 +17,10 @@
         "preference": 10,
         "hostname": "aytocarreno-es01b.mail.protection.outlook.com",
         "addresses": [
+          "52.101.68.21",
           "52.101.68.25",
-          "52.101.73.12",
-          "52.101.73.24",
-          "52.101.73.6"
+          "52.101.68.29",
+          "52.101.73.26"
         ]
       }
     ],
@@ -29,8 +29,10 @@
   "spf": {
     "record": "v=spf1 ip4:188.171.42.145 include:spf.protection.outlook.com include:spf.webapps.net -all",
     "valid": true,
-    "dns_lookups": 6,
-    "warnings": [],
+    "dns_lookups": 7,
+    "warnings": [
+      "spf.webapps.net does not have any A/AAAA records"
+    ],
     "parsed": {
       "pass": [
         {
@@ -44,7 +46,7 @@
       "include": [
         {
           "domain": "spf.protection.outlook.com",
-          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/51 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
+          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/15 ip4:52.102.0.0/16 ip4:52.103.0.0/17 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/51 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -57,7 +59,15 @@
                 "mechanism": "ip4"
               },
               {
-                "value": "52.100.0.0/14",
+                "value": "52.100.0.0/15",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.102.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.103.0.0/17",
                 "mechanism": "ip4"
               },
               {
@@ -97,8 +107,8 @@
         },
         {
           "domain": "spf.webapps.net",
-          "record": "v=spf1 include:spf1.webapps.net include:spf2.webapps.net ~all",
-          "dns_lookups": 4,
+          "record": "v=spf1 a include:spf1.webapps.net include:spf2.webapps.net ~all",
+          "dns_lookups": 5,
           "parsed": {
             "pass": [],
             "neutral": [],
@@ -258,7 +268,9 @@
             "exp": null,
             "all": "softfail"
           },
-          "warnings": []
+          "warnings": [
+            "spf.webapps.net does not have any A/AAAA records"
+          ]
         }
       ],
       "redirect": null,
