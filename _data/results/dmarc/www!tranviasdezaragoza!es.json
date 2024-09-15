@@ -4,24 +4,16 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "pl2.solunet.es",
       "pl3.solunet.es",
+      "pl2.solunet.es",
       "via1.tranviasdezaragoza.es",
       "pl10.solunet.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mail.tranviasdezaragoza.es",
-        "addresses": [
-          "5.56.164.38"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 +a +mx  -all",

@@ -4,25 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.dpz.es",
-      "dns.dpz.es"
+      "dns.dpz.es",
+      "dns2.dpz.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "dpz-es.mail.protection.outlook.com",
-        "addresses": [
-          "52.101.68.36",
-          "52.101.73.11",
-          "52.101.73.12",
-          "52.101.73.24"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 mx ip4:213.4.82.254 a:espublico.com ip4:44.192.35.145 a:freshdesk.com include:spf.protection.outlook.com -all",
@@ -48,19 +37,19 @@
           "mechanism": "ip4"
         },
         {
-          "value": "3.167.69.119",
+          "value": "18.239.199.123",
           "mechanism": "a"
         },
         {
-          "value": "3.167.69.32",
+          "value": "18.239.199.24",
           "mechanism": "a"
         },
         {
-          "value": "3.167.69.38",
+          "value": "18.239.199.60",
           "mechanism": "a"
         },
         {
-          "value": "3.167.69.52",
+          "value": "18.239.199.94",
           "mechanism": "a"
         }
       ],

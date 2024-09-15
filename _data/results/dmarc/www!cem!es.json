@@ -11,7 +11,7 @@
   },
   "mx": {
     "hosts": [],
-    "error": "The DNS response does not contain an answer to the question: 230.123.146.193.in-addr.arpa. IN PTR"
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 mx include:spf.serviciosmin.gob.es ~all",

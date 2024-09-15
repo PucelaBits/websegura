@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "dpmdns01.ns-cloud4b.org",
       "dpmdns03.ns-cloud4b.net",
-      "dpmdns02.ns-cloud4b.com",
-      "dpmdns01.ns-cloud4b.org"
+      "dpmdns02.ns-cloud4b.com"
     ],
     "warnings": []
   },
@@ -16,8 +16,8 @@
         "preference": 10,
         "hostname": "mx.spamexperts.com",
         "addresses": [
-          "2001:550:2:9::280:100",
-          "38.109.53.20"
+          "2001:550:2:61::2fc:100",
+          "38.89.254.156"
         ]
       },
       {
@@ -38,14 +38,18 @@
         "addresses": [
           "149.13.75.27",
           "154.59.104.23",
+          "2001:550:2:61::2fc:100",
           "2001:550:2:9::280:100",
           "2001:978:2:2c::137:100",
           "2001:978:2:7::162:100",
-          "38.111.198.185"
+          "38.111.198.185",
+          "38.89.254.156"
         ]
       }
     ],
     "warnings": [
+      "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records",
+      "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records",
       "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records"
     ]
   },
@@ -675,7 +679,7 @@
                 "mechanism": "a"
               },
               {
-                "value": "2406:3400:280:8::20",
+                "value": "2406:3400:280:8::21",
                 "mechanism": "a"
               },
               {

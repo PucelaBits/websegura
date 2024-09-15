@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "dns3.raiolanetworks.es",
-      "dns1.raiolanetworks.es",
-      "dns2.raiolanetworks.es"
+      "dns2.raiolanetworks.es",
+      "dns1.raiolanetworks.es"
     ],
     "warnings": []
   },
@@ -159,7 +159,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; sp=quarantine; rf=afrf; pct=100; ri=86400;rua=mailto:dmarc@juntacentralvicentina.org",
+    "record": "v=DMARC1; p=none; rua=mailto:rua@dmarc.brevo.com",
     "valid": true,
     "location": "juntacentralvicentina.org",
     "warnings": [],
@@ -169,32 +169,14 @@
         "explicit": true
       },
       "p": {
-        "value": "quarantine",
-        "explicit": true
-      },
-      "sp": {
-        "value": "quarantine",
-        "explicit": true
-      },
-      "rf": {
-        "value": [
-          "afrf"
-        ],
-        "explicit": true
-      },
-      "pct": {
-        "value": 100,
-        "explicit": true
-      },
-      "ri": {
-        "value": 86400,
+        "value": "none",
         "explicit": true
       },
       "rua": {
         "value": [
           {
             "scheme": "mailto",
-            "address": "dmarc@juntacentralvicentina.org",
+            "address": "rua@dmarc.brevo.com",
             "size_limit": null
           }
         ],
@@ -212,6 +194,24 @@
         "value": [
           "0"
         ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
         "explicit": false
       }
     }
