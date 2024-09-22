@@ -4,11 +4,11 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.cdmon.net",
       "ns2.cdmon.net",
-      "ns3.cdmon.net",
+      "ns1.cdmon.net",
+      "ns4.cdmondns-01.org",
       "ns5.cdmondns-01.com",
-      "ns4.cdmondns-01.org"
+      "ns3.cdmon.net"
     ],
     "warnings": []
   },
@@ -33,115 +33,9 @@
   },
   "spf": {
     "record": "v=spf1 mx a include:spf.sentidocomun.es include:spf.ipzmarketing.com -all",
-    "valid": true,
-    "dns_lookups": 4,
+    "valid": false,
     "warnings": [],
-    "parsed": {
-      "pass": [
-        {
-          "value": "mx4.spamtador.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "mx5.spamtador.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "154.58.16.65",
-          "mechanism": "a"
-        }
-      ],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [
-        {
-          "domain": "spf.sentidocomun.es",
-          "record": "v=spf1 ip4:154.58.16.69 ip4:154.58.16.49 ip4:154.58.16.65 ip4:54.217.206.198 ip4:85.152.54.4 ip4:212.227.126.187 ip4:18.101.163.27 -all",
-          "dns_lookups": 0,
-          "parsed": {
-            "pass": [
-              {
-                "value": "154.58.16.69",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "154.58.16.49",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "154.58.16.65",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "54.217.206.198",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "85.152.54.4",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "212.227.126.187",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "18.101.163.27",
-                "mechanism": "ip4"
-              }
-            ],
-            "neutral": [],
-            "softfail": [],
-            "fail": [],
-            "include": [],
-            "redirect": null,
-            "exp": null,
-            "all": "fail"
-          },
-          "warnings": []
-        },
-        {
-          "domain": "spf.ipzmarketing.com",
-          "record": "v=spf1 ip4:93.159.208.0/21 ip4:185.103.8.0/22 ip4:5.56.22.0/24 ip4:82.199.156.0/24 ip4:91.194.237.0/24 -all",
-          "dns_lookups": 0,
-          "parsed": {
-            "pass": [
-              {
-                "value": "93.159.208.0/21",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "185.103.8.0/22",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "5.56.22.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "82.199.156.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "91.194.237.0/24",
-                "mechanism": "ip4"
-              }
-            ],
-            "neutral": [],
-            "softfail": [],
-            "fail": [],
-            "include": [],
-            "redirect": null,
-            "exp": null,
-            "all": "fail"
-          },
-          "warnings": []
-        }
-      ],
-      "redirect": null,
-      "exp": null,
-      "all": "fail"
-    }
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "dmarc": {
     "record": null,

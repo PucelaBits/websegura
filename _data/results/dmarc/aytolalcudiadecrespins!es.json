@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.alojared.com",
-      "dns2.alojared.com"
+      "dns2.dominiodns.com",
+      "dns1.dominiodns.com"
     ],
     "warnings": []
   },
@@ -15,21 +15,21 @@
         "preference": 10,
         "hostname": "mail.aytolalcudiadecrespins.es",
         "addresses": [
-          "164.132.155.176"
+          "188.165.135.230"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 a mx ip4:46.105.117.210 -all",
+    "record": "v=spf1 a mx ip4:51.210.215.65 ~all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "164.132.155.176",
+          "value": "188.165.135.230",
           "mechanism": "a"
         },
         {
@@ -37,7 +37,7 @@
           "mechanism": "mx"
         },
         {
-          "value": "46.105.117.210",
+          "value": "51.210.215.65",
           "mechanism": "ip4"
         }
       ],
@@ -47,7 +47,7 @@
       "include": [],
       "redirect": null,
       "exp": null,
-      "all": "fail"
+      "all": "softfail"
     }
   },
   "dmarc": {

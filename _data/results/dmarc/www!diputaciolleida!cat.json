@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "josa.diputaciolleida.es",
-      "baiasca.diputaciolleida.es"
+      "baiasca.diputaciolleida.es",
+      "josa.diputaciolleida.es"
     ],
     "warnings": []
   },
@@ -15,10 +15,10 @@
         "preference": 0,
         "hostname": "diputaciolleida-cat.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.0",
-          "52.101.68.16",
-          "52.101.68.8",
-          "52.101.73.24"
+          "52.101.68.27",
+          "52.101.73.12",
+          "52.101.73.22",
+          "52.101.73.4"
         ]
       }
     ],
@@ -311,9 +311,53 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "record": "v=DMARC1; p=none;",
+    "valid": true,
+    "location": "diputaciolleida.cat",
+    "warnings": [
+      "rua tag (destination for aggregate reports) not found"
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }

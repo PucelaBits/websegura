@@ -38,87 +38,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 +a +mx +ip4:35.214.246.15 include:_spf.mailspamprotection.com ~all",
-    "valid": true,
-    "dns_lookups": 3,
-    "warnings": [],
-    "parsed": {
-      "pass": [
-        {
-          "value": "13.35.122.108",
-          "mechanism": "a"
-        },
-        {
-          "value": "13.35.122.36",
-          "mechanism": "a"
-        },
-        {
-          "value": "13.35.122.79",
-          "mechanism": "a"
-        },
-        {
-          "value": "13.35.122.94",
-          "mechanism": "a"
-        },
-        {
-          "value": "mx10.mailspamprotection.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "mx20.mailspamprotection.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "mx30.mailspamprotection.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "35.214.246.15",
-          "mechanism": "ip4"
-        }
-      ],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [
-        {
-          "domain": "_spf.mailspamprotection.com",
-          "record": "v=spf1 ip4:185.56.84.0/24 ip4:185.56.85.0/24 ip4:185.56.86.0/24 ip4:185.56.87.0/24 ~all",
-          "dns_lookups": 0,
-          "parsed": {
-            "pass": [
-              {
-                "value": "185.56.84.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "185.56.85.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "185.56.86.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "185.56.87.0/24",
-                "mechanism": "ip4"
-              }
-            ],
-            "neutral": [],
-            "softfail": [],
-            "fail": [],
-            "include": [],
-            "redirect": null,
-            "exp": null,
-            "all": "softfail"
-          },
-          "warnings": []
-        }
-      ],
-      "redirect": null,
-      "exp": null,
-      "all": "softfail"
-    }
+    "record": null,
+    "valid": false,
+    "error": "All nameservers failed to answer the query rtvc.es. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "dmarc": {
     "record": "v=DMARC1; p=none; fo=1; rua=mailto:noreply@rtvc.es",

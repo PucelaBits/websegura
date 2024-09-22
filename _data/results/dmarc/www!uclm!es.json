@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "chico.rediris.es",
-      "sun.rediris.es"
+      "sun.rediris.es",
+      "chico.rediris.es"
     ],
     "warnings": []
   },
@@ -15,10 +15,10 @@
         "preference": 0,
         "hostname": "uclm-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.21",
-          "52.101.68.5",
-          "52.101.73.24",
-          "52.101.73.6"
+          "52.101.68.18",
+          "52.101.68.27",
+          "52.101.68.8",
+          "52.101.73.28"
         ]
       }
     ],
@@ -112,7 +112,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; pct=0; rua=mailto:dmarc_agg@vali.email,mailto:dmarc@6ja9e1cq.uriports.com; ruf=mailto:dmarc@6ja9e1cq.uriports.com; fo=1:d:s",
+    "record": "v=DMARC1; p=quarantine; pct=0; sp=reject; rua=mailto:dmarc@6ja9e1cq.uriports.com; ruf=mailto:dmarc@6ja9e1cq.uriports.com; fo=1:d:s",
     "valid": true,
     "location": "uclm.es",
     "warnings": [
@@ -131,13 +131,12 @@
         "value": 0,
         "explicit": true
       },
+      "sp": {
+        "value": "reject",
+        "explicit": true
+      },
       "rua": {
         "value": [
-          {
-            "scheme": "mailto",
-            "address": "dmarc_agg@vali.email",
-            "size_limit": null
-          },
           {
             "scheme": "mailto",
             "address": "dmarc@6ja9e1cq.uriports.com",
@@ -180,10 +179,6 @@
       },
       "ri": {
         "value": 86400,
-        "explicit": false
-      },
-      "sp": {
-        "value": "quarantine",
         "explicit": false
       }
     }

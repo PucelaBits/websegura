@@ -10,16 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 5,
-        "hostname": "mx.ddgi.cat",
-        "addresses": [
-          "195.93.170.80"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 mx include:spf.protection.outlook.com include:spf.mailjet.com ip4:157.97.64.101 ip4:195.93.170.5 ip4:80.64.47.207 -all",

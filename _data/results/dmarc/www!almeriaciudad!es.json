@@ -4,25 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.cp2gestion-dtc-ib.com",
-      "ns1.cp2gestion-dtc-ib.com"
+      "ns1.cp2gestion-dtc-ib.com",
+      "ns2.cp2gestion-dtc-ib.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 0,
-        "hostname": "almeriaciudad-es.mail.protection.outlook.com",
-        "addresses": [
-          "52.101.68.10",
-          "52.101.68.21",
-          "52.101.73.22",
-          "52.101.73.24"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com -all",

@@ -15,10 +15,10 @@
         "preference": 0,
         "hostname": "ajuntamentdetremp-cat.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.16",
-          "52.101.68.5",
-          "52.101.73.24",
-          "52.101.73.30"
+          "52.101.68.18",
+          "52.101.68.39",
+          "52.101.73.12",
+          "52.101.73.28"
         ]
       }
     ],
@@ -106,6 +106,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   }
 }

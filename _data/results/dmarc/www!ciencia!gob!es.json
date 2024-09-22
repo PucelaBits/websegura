@@ -280,7 +280,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; ruf=mailto:alertas.sistemas@ciencia.gob.es; rua=mailto:alertas.sistemas@ciencia.gob.es",
+    "record": "v=DMARC1; p=quarantine; ruf=mailto:sistemas@ciencia.gob.es; rua=mailto:alertas.sistemas@ciencia.gob.es",
     "valid": true,
     "location": "ciencia.gob.es",
     "warnings": [],
@@ -297,7 +297,7 @@
         "value": [
           {
             "scheme": "mailto",
-            "address": "alertas.sistemas@ciencia.gob.es",
+            "address": "sistemas@ciencia.gob.es",
             "size_limit": null
           }
         ],

@@ -21,12 +21,12 @@
       {
         "preference": 10,
         "hostname": "mx04.puc.rediris.es",
-        "addresses": []
+        "addresses": [
+          "143.55.148.243"
+        ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 a mx include:spf.puc.rediris.es ip4:212.128.118.39 include:spf.acumbamail.com include:spf.protection.outlook.com include:spf-eu.exlibrisgroup.com -all",

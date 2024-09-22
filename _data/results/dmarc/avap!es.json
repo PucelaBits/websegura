@@ -15,14 +15,14 @@
         "preference": 0,
         "hostname": "mail.avap.es",
         "addresses": [
-          "51.83.41.202"
+          "51.254.199.187"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 +mx +a +ip4:51.83.41.202 include:spf.protection.outlook.com -all",
+    "record": "v=spf1 +mx +a +ip4:51.254.199.187 include:spf.protection.outlook.com -all",
     "valid": true,
     "dns_lookups": 3,
     "warnings": [],
@@ -33,11 +33,11 @@
           "mechanism": "mx"
         },
         {
-          "value": "51.83.41.202",
+          "value": "51.254.199.187",
           "mechanism": "a"
         },
         {
-          "value": "51.83.41.202",
+          "value": "51.254.199.187",
           "mechanism": "ip4"
         }
       ],

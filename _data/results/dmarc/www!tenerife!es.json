@@ -12,30 +12,26 @@
   "mx": {
     "hosts": [
       {
-        "preference": 10,
-        "hostname": "d330208.a.ess.de.barracudanetworks.com",
+        "preference": 5,
+        "hostname": "mx07-00916601.pphosted.com",
         "addresses": [
-          "18.185.115.250",
-          "18.185.115.251",
-          "18.185.115.252"
+          "66.159.232.164"
         ]
       },
       {
-        "preference": 10,
-        "hostname": "d330208.b.ess.de.barracudanetworks.com",
+        "preference": 5,
+        "hostname": "mx08-00916601.pphosted.com",
         "addresses": [
-          "18.185.115.250",
-          "18.185.115.251",
-          "18.185.115.252"
+          "66.159.234.226"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 a mx  ip4:212.170.134.61/32 ip4:212.170.134.62/32 ip4:212.170.134.63/32 ip4:212.170.134.64/32 include:spf.protection.outlook.com ~all",
+    "record": "v=spf1 a mx  ip4:212.170.134.61/32 ip4:212.170.134.62/32 ip4:212.170.134.63/32 ip4:212.170.134.64/32 include:spf.protection.outlook.com include:spf-00916601.pphosted.com ~all",
     "valid": true,
-    "dns_lookups": 3,
+    "dns_lookups": 4,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -44,11 +40,11 @@
           "mechanism": "a"
         },
         {
-          "value": "d330208.a.ess.de.barracudanetworks.com",
+          "value": "mx07-00916601.pphosted.com",
           "mechanism": "mx"
         },
         {
-          "value": "d330208.b.ess.de.barracudanetworks.com",
+          "value": "mx08-00916601.pphosted.com",
           "mechanism": "mx"
         },
         {
@@ -130,6 +126,31 @@
             "redirect": null,
             "exp": null,
             "all": "fail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "spf-00916601.pphosted.com",
+          "record": "v=spf1 ip4:66.159.232.164 ip4:66.159.234.226",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "66.159.232.164",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "66.159.234.226",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "neutral"
           },
           "warnings": []
         }

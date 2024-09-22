@@ -55,7 +55,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=reject; ruf=mailto:informatica@teruel.es; fo=1; adkim=s; aspf=s; pct=100; rf=afrf; ri=86400; sp=reject",
+    "record": "v=DMARC1; p=quarantine; ruf=mailto:informatica@teruel.es; fo=1; adkim=s; aspf=s; pct=100; rf=afrf; ri=86400; sp=reject",
     "valid": true,
     "location": "teruel.es",
     "warnings": [
@@ -67,7 +67,7 @@
         "explicit": true
       },
       "p": {
-        "value": "reject",
+        "value": "quarantine",
         "explicit": true
       },
       "ruf": {
