@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "rekire1.dns-es.com",
-      "rekire2.dns-es.com"
+      "rekire2.dns-es.com",
+      "rekire1.dns-es.com"
     ],
     "warnings": []
   },
@@ -22,9 +22,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:85.208.102.137 +a +mx ~all",
+    "record": "v=spf1 ip4:85.208.102.137 +a +mx include:relay.mailchannels.net ~all",
     "valid": true,
-    "dns_lookups": 2,
+    "dns_lookups": 3,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -44,16 +44,110 @@
       "neutral": [],
       "softfail": [],
       "fail": [],
-      "include": [],
+      "include": [
+        {
+          "domain": "relay.mailchannels.net",
+          "record": "v=spf1 ip4:23.83.208.0/20 ip4:46.232.183.0/24 ip4:199.10.31.235/32 ip4:199.10.31.236/32 ip4:172.255.62.10/32 ip4:172.255.62.11/32 ip4:185.67.193.67/32 ip4:35.85.190.185/32 ~all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "23.83.208.0/20",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "46.232.183.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "199.10.31.235/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "199.10.31.236/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "172.255.62.10/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "172.255.62.11/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.67.193.67/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "35.85.190.185/32",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        }
+      ],
       "redirect": null,
       "exp": null,
       "all": "softfail"
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1;p=quarantine;sp=none;adkim=r;aspf=r;pct=100;fo=0;rf=afrf;ri=86400",
+    "valid": true,
+    "location": "museodelasidra.com",
+    "warnings": [
+      "rua tag (destination for aggregate reports) not found"
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "sp": {
+        "value": "none",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": true
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": true
+      },
+      "pct": {
+        "value": 100,
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": true
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": true
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": true
+      }
+    }
   }
 }

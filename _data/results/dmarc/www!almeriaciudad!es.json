@@ -10,8 +10,19 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 0,
+        "hostname": "almeriaciudad-es.mail.protection.outlook.com",
+        "addresses": [
+          "52.101.68.25",
+          "52.101.68.36",
+          "52.101.73.15",
+          "52.101.73.2"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com -all",

@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns4.itechselect.net",
-      "ns3.itechselect.net"
+      "dns1.itechselect.net",
+      "dns2.itechselect.net"
     ],
     "warnings": []
   },
@@ -15,19 +15,26 @@
         "preference": 0,
         "hostname": "correo.sanmartindeoscos.es",
         "addresses": [
-          "31.200.242.22"
+          "91.107.195.126"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 91.107.195.126 is server3.itechselect.net, but the A/AAAA DNS records for server3.itechselect.net do not resolve to 91.107.195.126"
+    ]
   },
   "spf": {
-    "record": "v=spf1 ip4:31.200.242.22 +a +mx +ip4:37.153.90.131 ~all",
+    "record": "v=spf1 ip4:91.107.195.126 ip4:31.200.242.22 +a +mx +ip4:37.153.90.131 ~all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
     "parsed": {
       "pass": [
+        {
+          "value": "91.107.195.126",
+          "mechanism": "ip4"
+        },
         {
           "value": "31.200.242.22",
           "mechanism": "ip4"

@@ -19,10 +19,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 194.179.55.12 is smtp.seg-social.es, but the A/AAAA DNS records for smtp.seg-social.es do not resolve to 194.179.55.12"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:212.128.108.46 ip4:212.128.108.45 ip4:194.179.55.96/28 ip4:213.99.40.96/28 include:spf.protection.outlook.com include:seg-social.es -all",

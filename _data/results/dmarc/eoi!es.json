@@ -17,8 +17,8 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.250.123.27",
-          "2607:f8b0:4023:1407::1b"
+          "2607:f8b0:4023:1415::1b",
+          "74.125.129.27"
         ]
       },
       {
@@ -33,15 +33,15 @@
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "172.253.62.27",
-          "2607:f8b0:4004:c07::1b"
+          "172.253.62.26",
+          "2607:f8b0:4004:c07::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "2800:3f0:4003:c00::1a",
+          "2800:3f0:4003:c00::1b",
           "64.233.186.27"
         ]
       },
@@ -49,13 +49,13 @@
         "preference": 10,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "209.85.202.26",
-          "2a00:1450:400b:c00::1a"
+          "209.85.202.27",
+          "2a00:1450:400b:c00::1b"
         ]
       }
     ],
     "warnings": [
-      "2800:3f0:4003:c00::1a does not have any reverse DNS (PTR) records"
+      "2800:3f0:4003:c00::1b does not have any reverse DNS (PTR) records"
     ]
   },
   "spf": {
@@ -66,11 +66,11 @@
     "parsed": {
       "pass": [
         {
-          "value": "52.51.246.67",
+          "value": "54.170.150.109",
           "mechanism": "a"
         },
         {
-          "value": "54.170.150.109",
+          "value": "54.72.77.2",
           "mechanism": "a"
         },
         {

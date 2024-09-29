@@ -3,11 +3,8 @@
   "base_domain": "ajuntamentdetremp.cat",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "ns2.dondominio.com",
-      "ns1.dondominio.com"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "mx": {
     "hosts": [
@@ -15,10 +12,10 @@
         "preference": 0,
         "hostname": "ajuntamentdetremp-cat.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.18",
-          "52.101.68.39",
+          "52.101.68.21",
+          "52.101.68.36",
           "52.101.73.12",
-          "52.101.73.28"
+          "52.101.73.4"
         ]
       }
     ],

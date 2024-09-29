@@ -15,9 +15,9 @@
         "preference": 0,
         "hostname": "diputadodelcomun-org.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.18",
-          "52.101.68.32",
-          "52.101.73.22",
+          "52.101.68.15",
+          "52.101.68.27",
+          "52.101.73.2",
           "52.101.73.28"
         ]
       }
@@ -106,6 +106,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   }
 }

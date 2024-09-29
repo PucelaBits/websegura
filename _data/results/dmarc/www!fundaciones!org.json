@@ -4,16 +4,27 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns-cloud-d2.googledomains.com",
-      "ns-cloud-d3.googledomains.com",
+      "ns-cloud-d1.googledomains.com",
       "ns-cloud-d4.googledomains.com",
-      "ns-cloud-d1.googledomains.com"
+      "ns-cloud-d2.googledomains.com",
+      "ns-cloud-d3.googledomains.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "fundaciones-org.mail.protection.outlook.com",
+        "addresses": [
+          "52.101.68.27",
+          "52.101.73.22",
+          "52.101.73.24",
+          "52.101.73.4"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 a mx ip4:54.155.102.133 include:outlook.com ~all",

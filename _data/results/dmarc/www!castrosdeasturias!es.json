@@ -3,24 +3,17 @@
   "base_domain": "castrosdeasturias.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "dns1.canaldominios.com",
-      "dns3.canaldominios.com",
-      "dns2.canaldominios.com",
-      "dns4.canaldominios.com"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The domain castrosdeasturias.es does not exist"
   },
   "mx": {
     "hosts": [],
-    "warnings": [
-      "No MX records found. Is the domain parked?"
-    ]
+    "error": "The domain castrosdeasturias.es does not exist"
   },
   "spf": {
     "record": null,
     "valid": false,
-    "error": "castrosdeasturias.es does not have a SPF TXT record"
+    "error": "The domain castrosdeasturias.es does not exist"
   },
   "dmarc": {
     "record": null,

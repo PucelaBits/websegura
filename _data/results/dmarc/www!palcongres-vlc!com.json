@@ -15,10 +15,10 @@
         "preference": 0,
         "hostname": "palcongresvlc-com02e.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.16",
-          "52.101.68.18",
-          "52.101.68.32",
-          "52.101.73.12"
+          "52.101.68.21",
+          "52.101.68.8",
+          "52.101.73.19",
+          "52.101.73.30"
         ]
       }
     ],
@@ -27,7 +27,7 @@
   "spf": {
     "record": null,
     "valid": false,
-    "error": "All nameservers failed to answer the query palcongres-vlc.com. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "dmarc": {
     "record": "v=DMARC1; p=quarantine; rua=mailto:soporte.pcv@civired.com; ruf=mailto:soporte.pcv@civired.com; fo=1; pct=5;",

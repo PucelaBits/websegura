@@ -4,11 +4,11 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns5.cdmondns-01.com",
       "ns1.cdmon.net",
-      "ns4.cdmondns-01.org",
+      "ns3.cdmon.net",
       "ns2.cdmon.net",
-      "ns3.cdmon.net"
+      "ns4.cdmondns-01.org",
+      "ns5.cdmondns-01.com"
     ],
     "warnings": []
   },
@@ -18,8 +18,8 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.250.111.27",
-          "2607:f8b0:4023:1401::1a"
+          "142.251.182.27",
+          "2607:f8b0:4023:1415::1b"
         ]
       },
       {
@@ -35,15 +35,15 @@
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
           "172.253.62.27",
-          "2607:f8b0:4004:c07::1a"
+          "2607:f8b0:4004:c07::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "2800:3f0:4003:c00::1a",
-          "64.233.186.26"
+          "2800:3f0:4003:c00::1b",
+          "64.233.186.27"
         ]
       },
       {
@@ -56,7 +56,7 @@
       }
     ],
     "warnings": [
-      "2800:3f0:4003:c00::1a does not have any reverse DNS (PTR) records"
+      "2800:3f0:4003:c00::1b does not have any reverse DNS (PTR) records"
     ]
   },
   "spf": {
