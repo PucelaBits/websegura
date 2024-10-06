@@ -4,31 +4,16 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1082.ui-dns.biz",
-      "ns1082.ui-dns.com",
       "ns1082.ui-dns.de",
+      "ns1082.ui-dns.com",
+      "ns1082.ui-dns.biz",
       "ns1082.ui-dns.org"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mx00.ionos.es",
-        "addresses": [
-          "212.227.15.41"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "mx01.ionos.es",
-        "addresses": [
-          "217.72.192.67"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 include:_spf-eu.ionos.com ~all",

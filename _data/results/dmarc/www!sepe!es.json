@@ -1,7 +1,7 @@
 {
   "domain": "sepe.es",
   "base_domain": "sepe.es",
-  "dnssec": false,
+  "dnssec": true,
   "ns": {
     "hostnames": [
       "ns1.age.gob.es",
@@ -15,9 +15,9 @@
         "preference": 10,
         "hostname": "sepe-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.0",
-          "52.101.68.25",
-          "52.101.73.2",
+          "52.101.68.12",
+          "52.101.68.27",
+          "52.101.73.26",
           "52.101.73.8"
         ]
       },
@@ -31,7 +31,9 @@
       {
         "preference": 30,
         "hostname": "correo1.sepe.es",
-        "addresses": []
+        "addresses": [
+          "192.187.23.240"
+        ]
       },
       {
         "preference": 50,
@@ -41,9 +43,7 @@
         ]
       }
     ],
-    "warnings": [
-      "All nameservers failed to answer the query correo1.sepe.es. IN A: Server Do53:1.0.0.1@53 answered SERVFAIL"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:192.187.23.248/31 ip4:192.187.23.240 include:spf.protection.outlook.com ~all",

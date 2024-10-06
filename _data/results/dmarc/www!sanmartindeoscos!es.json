@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.itechselect.net",
-      "dns2.itechselect.net"
+      "dns2.itechselect.net",
+      "dns1.itechselect.net"
     ],
     "warnings": []
   },
@@ -19,10 +19,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 91.107.195.126 is server3.itechselect.net, but the A/AAAA DNS records for server3.itechselect.net do not resolve to 91.107.195.126"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:91.107.195.126 ip4:31.200.242.22 +a +mx +ip4:37.153.90.131 ~all",

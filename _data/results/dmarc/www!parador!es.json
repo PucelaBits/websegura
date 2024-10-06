@@ -19,10 +19,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 93.174.5.137 is securecorreo.secureit.es, but the A/AAAA DNS records for securecorreo.secureit.es do not resolve to 93.174.5.137"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:81.201.101.195 ip4:154.52.0.195 ip4:195.76.48.66 ip4:195.76.48.76 include:spf.protection.outlook.com include:spf.mandrillapp.com include:139755417.spf06.hubspotemail.net -all",
