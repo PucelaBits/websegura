@@ -17,10 +17,10 @@
         "preference": 10,
         "hostname": "eitb-eus.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.10",
           "52.101.68.12",
-          "52.101.68.18",
-          "52.101.73.1"
+          "52.101.68.39",
+          "52.101.73.24",
+          "52.101.73.6"
         ]
       }
     ],
@@ -150,10 +150,12 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=reject; sp=reject; pct=100; adkim=s; aspf=s; rua=mailto:postmaster@eitb.eus;fo=1",
+    "record": "v=DMARC1; p=reject",
     "valid": true,
     "location": "eitb.eus",
-    "warnings": [],
+    "warnings": [
+      "rua tag (destination for aggregate reports) not found"
+    ],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -163,37 +165,23 @@
         "value": "reject",
         "explicit": true
       },
-      "sp": {
-        "value": "reject",
-        "explicit": true
-      },
-      "pct": {
-        "value": 100,
-        "explicit": true
-      },
       "adkim": {
-        "value": "s",
-        "explicit": true
+        "value": "r",
+        "explicit": false
       },
       "aspf": {
-        "value": "s",
-        "explicit": true
-      },
-      "rua": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "postmaster@eitb.eus",
-            "size_limit": null
-          }
-        ],
-        "explicit": true
+        "value": "r",
+        "explicit": false
       },
       "fo": {
         "value": [
-          "1"
+          "0"
         ],
-        "explicit": true
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
       },
       "rf": {
         "value": [
@@ -203,6 +191,10 @@
       },
       "ri": {
         "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "reject",
         "explicit": false
       }
     }

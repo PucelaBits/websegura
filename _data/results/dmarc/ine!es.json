@@ -10,23 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mxa-006a4e02.gslb.pphosted.com",
-        "addresses": [
-          "143.55.148.243"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "mxb-006a4e02.gslb.pphosted.com",
-        "addresses": [
-          "143.55.148.243"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "All nameservers failed to answer the query ine.es. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "spf": {
     "record": "v=spf1 include:spf.puc.rediris.es a:correo.ine.es a:smtpout.ine.es a:remesas.ine.es a:c.spf.service-now.com  -all",
@@ -61,6 +46,38 @@
         },
         {
           "value": "148.139.1.31",
+          "mechanism": "a"
+        },
+        {
+          "value": "148.139.142.17",
+          "mechanism": "a"
+        },
+        {
+          "value": "148.139.142.18",
+          "mechanism": "a"
+        },
+        {
+          "value": "148.139.142.19",
+          "mechanism": "a"
+        },
+        {
+          "value": "148.139.142.20",
+          "mechanism": "a"
+        },
+        {
+          "value": "148.139.143.17",
+          "mechanism": "a"
+        },
+        {
+          "value": "148.139.143.18",
+          "mechanism": "a"
+        },
+        {
+          "value": "148.139.143.19",
+          "mechanism": "a"
+        },
+        {
+          "value": "148.139.143.20",
           "mechanism": "a"
         },
         {

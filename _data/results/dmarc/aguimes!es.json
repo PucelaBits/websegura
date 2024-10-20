@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns.mad.idec.net",
-      "dns.lpa.idec.net"
+      "dns.lpa.idec.net",
+      "dns.mad.idec.net"
     ],
     "warnings": []
   },
@@ -22,11 +22,14 @@
         "preference": 15,
         "hostname": "smtp.aguimes.es",
         "addresses": [
-          "195.77.245.218"
+          "195.77.245.219"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The domain 219.red-195-77-245.customer.static.ccgg.telefonica.net does not exist",
+      "The reverse DNS of 195.77.245.219 is 219.red-195-77-245.customer.static.ccgg.telefonica.net, but the A/AAAA DNS records for 219.red-195-77-245.customer.static.ccgg.telefonica.net do not resolve to 195.77.245.219"
+    ]
   },
   "spf": {
     "record": "v=spf1 a mx ip4:185.201.0.0/19 ip4:82.98.157.184 a:correo.aguimes.es -all",

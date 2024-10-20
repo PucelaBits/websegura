@@ -41,7 +41,7 @@
     ]
   },
   "spf": {
-    "record": "v=spf1 include:zoho.eu ip4:213.0.82.32/27 ip4:90.166.146.32/27 -all",
+    "record": "v=spf1 include:zoho.eu ip4:213.0.82.32/27 ip4:90.160.146.32/27 ip4:90.166.25.128/27 -all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
@@ -52,7 +52,11 @@
           "mechanism": "ip4"
         },
         {
-          "value": "90.166.146.32/27",
+          "value": "90.160.146.32/27",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "90.166.25.128/27",
           "mechanism": "ip4"
         }
       ],

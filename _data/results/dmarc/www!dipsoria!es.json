@@ -16,10 +16,10 @@
         "preference": 0,
         "hostname": "dipsoria-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.21",
-          "52.101.68.39",
+          "52.101.68.32",
+          "52.101.68.8",
           "52.101.73.15",
-          "52.101.73.4"
+          "52.101.73.21"
         ]
       }
     ],
@@ -139,7 +139,7 @@
               },
               {
                 "domain": "spfb.domicenter.net",
-                "record": "v=spf1 ip4:82.223.196.37 ip4:212.227.153.147 ip4:212.227.229.166 ip4:217.160.102.141 ip4:82.165.14.163 ip4:82.223.82.153 -all",
+                "record": "v=spf1 ip4:82.223.196.37 ip4:212.227.153.147 ip4:212.227.229.166 ip4:217.160.102.141 ip4:82.165.14.163 ip4:82.223.82.153 ip4:213.165.80.69 -all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
@@ -165,6 +165,10 @@
                     },
                     {
                       "value": "82.223.82.153",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "213.165.80.69",
                       "mechanism": "ip4"
                     }
                   ],
@@ -195,6 +199,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.dipsoria.es\n\ngoogle-site-verification=UO_Zjzrkuy9DFgSF-sjOl_OYTXwnNpfuDeoKOBlCsjc\n\nv=spf1 include:spf.protection.outlook.com include:domicenter.net ip4:89.6.107.100/27 ~all\n\n*.redsara.dipsoria.es-980333532\n\n19503350\n\ndipsoria.es- 099451886\n\nMS=ms54615009\n\ndipsoria.es-099451886\n\nportaltramitador.dipsoria.es-145980782"
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.dipsoria.es\n\nportaltramitador.dipsoria.es-145980782\n\nMS=ms54615009\n\nv=spf1 include:spf.protection.outlook.com include:domicenter.net ip4:89.6.107.100/27 ~all\n\n19503350\n\ndipsoria.es-099451886\n\n*.redsara.dipsoria.es-980333532\n\ngoogle-site-verification=UO_Zjzrkuy9DFgSF-sjOl_OYTXwnNpfuDeoKOBlCsjc\n\ndipsoria.es- 099451886"
   }
 }

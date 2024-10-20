@@ -4,20 +4,20 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "srvcpdefficientipagr.gobex.pri",
-      "ns7.acens.net",
-      "ns2.dominioabsoluto.com",
-      "ns2.acens.net",
       "ns1.acens.net",
-      "ns1.dominioabsoluto.com",
-      "ip90.dominioabsoluto.com",
+      "ns2.dominioabsoluto.com",
+      "srvcpdefficientipagr.gobex.pri",
       "srvadmefficientipagr.gobex.pri",
-      "srvcpdefficientipmor.gobex.pri",
-      "ns4.acens.net",
-      "srvefficientipagr.educarex.pri",
       "ns3.acens.net",
-      "srvadmefficientipmor.gobex.pri",
-      "srvefficientipmor.educarex.pri"
+      "ns7.acens.net",
+      "ip90.dominioabsoluto.com",
+      "ns2.acens.net",
+      "srvefficientipmor.educarex.pri",
+      "srvefficientipagr.educarex.pri",
+      "ns4.acens.net",
+      "ns1.dominioabsoluto.com",
+      "srvcpdefficientipmor.gobex.pri",
+      "srvadmefficientipmor.gobex.pri"
     ],
     "warnings": []
   },
@@ -28,9 +28,9 @@
         "hostname": "juntaex-es.mail.protection.outlook.com",
         "addresses": [
           "52.101.68.15",
-          "52.101.73.15",
-          "52.101.73.16",
-          "52.101.73.19"
+          "52.101.68.25",
+          "52.101.68.3",
+          "52.101.73.16"
         ]
       }
     ],
@@ -124,7 +124,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; sp=none; rua=mailto:admexc.epinilla@juntaex.es; ruf=mailto:admexc.epinilla@juntaex.es; rf=afrf; pct=100; ri=8640",
+    "record": "v=DMARC1; p=quarantine; sp=none; rua=mailto:seguridadtic@juntaex.es; ruf=mailto:seguridadtic@juntaex.es; rf=afrf; pct=100; ri=8640",
     "valid": true,
     "location": "juntaex.es",
     "warnings": [],
@@ -145,7 +145,7 @@
         "value": [
           {
             "scheme": "mailto",
-            "address": "admexc.epinilla@juntaex.es",
+            "address": "seguridadtic@juntaex.es",
             "size_limit": null
           }
         ],
@@ -155,7 +155,7 @@
         "value": [
           {
             "scheme": "mailto",
-            "address": "admexc.epinilla@juntaex.es",
+            "address": "seguridadtic@juntaex.es",
             "size_limit": null
           }
         ],

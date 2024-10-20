@@ -5,9 +5,9 @@
   "ns": {
     "hostnames": [
       "ns1.unileon.es",
-      "chico.rediris.es",
+      "ns2.unileon.es",
       "sun.rediris.es",
-      "ns2.unileon.es"
+      "chico.rediris.es"
     ],
     "warnings": []
   },
@@ -17,40 +17,40 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "2607:f8b0:4023:c0d::1b",
-          "74.125.137.27"
+          "172.253.122.27",
+          "2607:f8b0:4004:c08::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "108.177.104.27",
-          "2607:f8b0:4003:c04::1b"
+          "209.85.202.26",
+          "2a00:1450:400b:c00::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "142.250.152.26",
-          "2607:f8b0:4001:c56::1b"
+          "2a00:1450:400c:c0b::1b",
+          "64.233.184.26"
         ]
       },
       {
         "preference": 10,
         "hostname": "aspmx2.googlemail.com",
         "addresses": [
-          "108.177.104.27",
-          "2607:f8b0:4003:c04::1a"
+          "209.85.202.26",
+          "2a00:1450:400b:c00::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "aspmx3.googlemail.com",
         "addresses": [
-          "142.250.152.26",
-          "2607:f8b0:4001:c56::1a"
+          "2a00:1450:400c:c0b::1b",
+          "64.233.184.27"
         ]
       }
     ],
@@ -60,19 +60,14 @@
     "record": "v=spf1 a:diana.unileon.es a:mailx1.unileon.es a:mailx2.unileon.es a:mailx.unileon.es a:mailx-dmi.unileon.es include:_spf.google.com include:spf.protection.outlook.com ~all",
     "valid": true,
     "dns_lookups": 10,
-    "warnings": [],
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out.",
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ],
     "parsed": {
       "pass": [
         {
           "value": "193.146.96.70",
-          "mechanism": "a"
-        },
-        {
-          "value": "193.146.96.69",
-          "mechanism": "a"
-        },
-        {
-          "value": "193.146.96.112",
           "mechanism": "a"
         },
         {

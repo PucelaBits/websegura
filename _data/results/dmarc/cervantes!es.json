@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns.cervantes.es",
-      "machuca.cervantes.es"
+      "machuca.cervantes.es",
+      "dns.cervantes.es"
     ],
     "warnings": []
   },
@@ -34,7 +34,7 @@
       }
     ],
     "warnings": [
-      "All nameservers failed to answer the query vela1.cervantes.es. IN AAAA: Server Do53:1.0.0.1@53 answered SERVFAIL"
+      "All nameservers failed to answer the query vela1.cervantes.es. IN A: Server Do53:1.0.0.1@53 answered SERVFAIL"
     ]
   },
   "spf": {

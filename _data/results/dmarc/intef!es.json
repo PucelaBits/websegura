@@ -1,7 +1,7 @@
 {
   "domain": "intef.es",
   "base_domain": "intef.es",
-  "dnssec": true,
+  "dnssec": false,
   "ns": {
     "hostnames": [
       "ns1.age.gob.es",
@@ -15,10 +15,10 @@
         "preference": 10,
         "hostname": "intef-es.mail.eo.outlook.com",
         "addresses": [
-          "52.101.68.0",
           "52.101.68.15",
-          "52.101.73.2",
-          "52.101.73.6"
+          "52.101.73.16",
+          "52.101.73.26",
+          "52.101.73.28"
         ]
       }
     ],

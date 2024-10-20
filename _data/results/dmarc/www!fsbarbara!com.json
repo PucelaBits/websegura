@@ -28,13 +28,11 @@
     "record": "v=spf1 a:mail.fsbarbara.com ip4:192.168.0.1 ip4:10.1.1.200  ip4:91.126.72.25 include:_spf.google.com ~all",
     "valid": true,
     "dns_lookups": 5,
-    "warnings": [],
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ],
     "parsed": {
       "pass": [
-        {
-          "value": "91.126.72.25",
-          "mechanism": "a"
-        },
         {
           "value": "192.168.0.1",
           "mechanism": "ip4"
@@ -235,57 +233,9 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1;p=none;rua=mailto:webmaster@primari.net",
-    "valid": true,
-    "location": "fsbarbara.com",
-    "warnings": [
-      "primari.net does not indicate that it accepts DMARC reports about fsbarbara.com - Authorization record not found: fsbarbara.com._report._dmarc.primari.net IN TXT \"v=DMARC1\""
-    ],
-    "tags": {
-      "v": {
-        "value": "DMARC1",
-        "explicit": true
-      },
-      "p": {
-        "value": "none",
-        "explicit": true
-      },
-      "rua": {
-        "value": "mailto:webmaster@primari.net",
-        "explicit": true
-      },
-      "adkim": {
-        "value": "r",
-        "explicit": false
-      },
-      "aspf": {
-        "value": "r",
-        "explicit": false
-      },
-      "fo": {
-        "value": [
-          "0"
-        ],
-        "explicit": false
-      },
-      "pct": {
-        "value": 100,
-        "explicit": false
-      },
-      "rf": {
-        "value": [
-          "afrf"
-        ],
-        "explicit": false
-      },
-      "ri": {
-        "value": 86400,
-        "explicit": false
-      },
-      "sp": {
-        "value": "none",
-        "explicit": false
-      }
-    }
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   }
 }
