@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns06.gigas.com",
-      "dns05.gigas.com"
+      "dns05.gigas.com",
+      "dns06.gigas.com"
     ],
     "warnings": []
   },
@@ -29,7 +29,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 a mx ip4:95.130.48.0/21 ip4:213.4.82.201 include:_spf.google.com ~all",
+    "record": "v=spf1 a mx ip4:95.130.48.0/21 ip4:213.4.82.201 ip4:95.130.52.198 include:_spf.google.com ~all",
     "valid": true,
     "dns_lookups": 6,
     "warnings": [],
@@ -53,6 +53,10 @@
         },
         {
           "value": "213.4.82.201",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "95.130.52.198",
           "mechanism": "ip4"
         }
       ],

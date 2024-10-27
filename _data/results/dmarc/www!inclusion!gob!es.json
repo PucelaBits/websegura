@@ -10,8 +10,18 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query 12.40.99.213.in-addr.arpa. IN PTR: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 100,
+        "hostname": "smtp.seg-social.es",
+        "addresses": [
+          "213.99.40.12"
+        ]
+      }
+    ],
+    "warnings": [
+      "The reverse DNS of 213.99.40.12 is smtp.seg-social.es, but the A/AAAA DNS records for smtp.seg-social.es do not resolve to 213.99.40.12"
+    ]
   },
   "spf": {
     "record": "v=spf1 ip4:212.128.108.46 ip4:212.128.108.45 ip4:194.179.55.96/28 ip4:213.99.40.96/28 include:spf.protection.outlook.com include:seg-social.es -all",

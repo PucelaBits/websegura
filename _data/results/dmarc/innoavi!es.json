@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ninot2.gva.es",
       "tirant.gva.es",
+      "tirant2.gva.es",
       "ninot.gva.es",
-      "tirant2.gva.es"
+      "ninot2.gva.es"
     ],
     "warnings": []
   },
@@ -15,16 +15,17 @@
     "hosts": [
       {
         "preference": 0,
-        "hostname": "innoavi-es.mail.protection.outlook.com",
+        "hostname": "mxext.gva.es",
         "addresses": [
-          "52.101.68.29",
-          "52.101.68.3",
-          "52.101.73.1",
-          "52.101.73.28"
+          "193.145.200.16",
+          "195.77.20.28"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The reverse DNS of 193.145.200.16 is mxext.gva.es, but the A/AAAA DNS records for mxext.gva.es do not resolve to 193.145.200.16",
+      "The reverse DNS of 195.77.20.28 is mxext.gva.es, but the A/AAAA DNS records for mxext.gva.es do not resolve to 195.77.20.28"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com -all",

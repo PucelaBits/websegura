@@ -5,9 +5,9 @@
   "ns": {
     "hostnames": [
       "atlantistecnologia.mercury.orderbox-dns.com",
-      "atlantistecnologia.mars.orderbox-dns.com",
       "atlantistecnologia.earth.orderbox-dns.com",
-      "atlantistecnologia.venus.orderbox-dns.com"
+      "atlantistecnologia.venus.orderbox-dns.com",
+      "atlantistecnologia.mars.orderbox-dns.com"
     ],
     "warnings": []
   },
@@ -17,10 +17,10 @@
         "preference": 0,
         "hostname": "consultivodecanarias-org.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.16",
-          "52.101.68.27",
-          "52.101.68.36",
-          "52.101.68.5"
+          "52.101.68.10",
+          "52.101.68.18",
+          "52.101.68.39",
+          "52.101.73.22"
         ]
       }
     ],
@@ -108,6 +108,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "All nameservers failed to answer the query _dmarc.consultivodecanarias.org. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "error": "A DMARC record does not exist for this domain or its base domain"
   }
 }

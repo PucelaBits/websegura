@@ -16,8 +16,8 @@
         "preference": 10,
         "hostname": "mx.spamexperts.com",
         "addresses": [
-          "2001:550:2:9::280:100",
-          "38.89.254.156"
+          "2001:550:2:61::2fc:100",
+          "38.109.53.20"
         ]
       },
       {
@@ -48,6 +48,7 @@
       }
     ],
     "warnings": [
+      "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records",
       "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records",
       "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records"
     ]

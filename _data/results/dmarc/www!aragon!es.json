@@ -22,7 +22,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:188.244.81.16/28 include:servers.mcsv.net include:spf.protection.outlook.com ~all",
+    "record": "v=spf1 ip4:188.244.81.16/28 include:servers.mcsv.net include:spf.protection.outlook.com -all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
@@ -130,7 +130,7 @@
       ],
       "redirect": null,
       "exp": null,
-      "all": "softfail"
+      "all": "fail"
     }
   },
   "dmarc": {

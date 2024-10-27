@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.dpz.es",
-      "dns.dpz.es"
+      "dns.dpz.es",
+      "dns2.dpz.es"
     ],
     "warnings": []
   },
@@ -15,10 +15,10 @@
         "preference": 10,
         "hostname": "dpz-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.0",
+          "52.101.68.10",
           "52.101.68.18",
-          "52.101.68.27",
-          "52.101.73.30"
+          "52.101.73.16",
+          "52.101.73.26"
         ]
       }
     ],
@@ -48,19 +48,19 @@
           "mechanism": "ip4"
         },
         {
-          "value": "3.167.69.119",
+          "value": "13.227.74.103",
           "mechanism": "a"
         },
         {
-          "value": "3.167.69.32",
+          "value": "13.227.74.75",
           "mechanism": "a"
         },
         {
-          "value": "3.167.69.38",
+          "value": "13.227.74.80",
           "mechanism": "a"
         },
         {
-          "value": "3.167.69.52",
+          "value": "13.227.74.85",
           "mechanism": "a"
         }
       ],

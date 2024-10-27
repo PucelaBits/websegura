@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns14.servidoresdns.net",
-      "dns13.servidoresdns.net"
+      "dns13.servidoresdns.net",
+      "dns14.servidoresdns.net"
     ],
     "warnings": []
   },
@@ -15,10 +15,10 @@
         "preference": 10,
         "hostname": "webtenerife-com.mail.protection.outlook.com",
         "addresses": [
+          "52.101.68.10",
           "52.101.68.27",
-          "52.101.68.39",
-          "52.101.73.11",
-          "52.101.73.26"
+          "52.101.73.12",
+          "52.101.73.19"
         ]
       }
     ],
@@ -220,7 +220,7 @@
         },
         {
           "domain": "one.zoho.eu",
-          "record": "v=spf1 include:spf.zoho.eu include:transmail.eu include:eu.zcsend.net -all",
+          "record": "v=spf1 include:spf.zoho.eu include:eu.zeptomail.net include:eu.zcsend.net -all",
           "dns_lookups": 3,
           "parsed": {
             "pass": [],
@@ -282,33 +282,37 @@
                 "warnings": []
               },
               {
-                "domain": "transmail.eu",
-                "record": "v=spf1 ip4:31.186.226.0/24 ip4:185.20.211.0/24 ip4:185.172.199.128/26 ip4:185.172.199.192/27 ip4:185.172.199.56/29 ip4:136.143.168.0/22 ~all",
+                "domain": "eu.zeptomail.net",
+                "record": "v=spf1 ip4:31.186.226.56/29 ip4:31.186.226.192/26 ip4:185.20.211.128/25 ip4:136.143.168.0/24 ip4:136.143.170.0/24 ip4:185.172.199.56/24 ip4:199.67.72.0/22 -all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
                     {
-                      "value": "31.186.226.0/24",
+                      "value": "31.186.226.56/29",
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "185.20.211.0/24",
+                      "value": "31.186.226.192/26",
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "185.172.199.128/26",
+                      "value": "185.20.211.128/25",
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "185.172.199.192/27",
+                      "value": "136.143.168.0/24",
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "185.172.199.56/29",
+                      "value": "136.143.170.0/24",
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "136.143.168.0/22",
+                      "value": "185.172.199.56/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "199.67.72.0/22",
                       "mechanism": "ip4"
                     }
                   ],
@@ -318,7 +322,7 @@
                   "include": [],
                   "redirect": null,
                   "exp": null,
-                  "all": "softfail"
+                  "all": "fail"
                 },
                 "warnings": []
               },

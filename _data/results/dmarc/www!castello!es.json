@@ -5,9 +5,9 @@
   "ns": {
     "hostnames": [
       "ns3.gestiondecuenta.com",
+      "ns4.gestiondecuenta.com",
       "ns.gestiondecuenta.com",
-      "ns2.gestiondecuenta.com",
-      "ns4.gestiondecuenta.com"
+      "ns2.gestiondecuenta.com"
     ],
     "warnings": []
   },
@@ -236,7 +236,7 @@
                     },
                     {
                       "domain": "zcsend.net",
-                      "record": "v=spf1 ip4:135.84.81.0/24 ip4:135.84.83.0/24 ip4:136.143.160.0/24 ip4:165.173.128.0/24 ip4:135.84.82.0/24 ip4:136.143.161.0/24 ip6:2607:13c0:0001:0000:0000:0000:0000:7000/116 ip6:2607:13c0:0002:0000:0000:0000:0000:1000/116 ~all",
+                      "record": "v=spf1 ip4:135.84.81.0/24 ip4:135.84.83.0/24 ip4:136.143.160.0/24 ip4:165.173.128.0/24 ip4:135.84.82.0/24 ip4:136.143.161.0/24 ip4:136.143.162.0/24 ip6:2607:13c0:0001:0000:0000:0000:0000:7000/116 ip6:2607:13c0:0002:0000:0000:0000:0000:1000/116 ~all",
                       "dns_lookups": 0,
                       "parsed": {
                         "pass": [
@@ -262,6 +262,10 @@
                           },
                           {
                             "value": "136.143.161.0/24",
+                            "mechanism": "ip4"
+                          },
+                          {
+                            "value": "136.143.162.0/24",
                             "mechanism": "ip4"
                           },
                           {

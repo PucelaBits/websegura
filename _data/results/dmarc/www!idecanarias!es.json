@@ -10,23 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 1,
-        "hostname": "grafcan-com-1.fortimailcloud.com",
-        "addresses": [
-          "154.52.13.56"
-        ]
-      },
-      {
-        "preference": 2,
-        "hostname": "grafcan-com-2.fortimailcloud.com",
-        "addresses": [
-          "154.52.2.132"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "All nameservers failed to answer the query 56.13.52.154.in-addr.arpa. IN PTR: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "spf": {
     "record": null,

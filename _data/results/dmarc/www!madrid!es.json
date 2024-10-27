@@ -4,12 +4,12 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "a12-67.akam.net",
-      "a26-67.akam.net",
-      "a1-25.akam.net",
       "a4-64.akam.net",
+      "a1-25.akam.net",
+      "a11-65.akam.net",
+      "a12-67.akam.net",
       "a7-65.akam.net",
-      "a11-65.akam.net"
+      "a26-67.akam.net"
     ],
     "warnings": []
   },
@@ -19,10 +19,10 @@
         "preference": 10,
         "hostname": "madrid-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.18",
-          "52.101.73.1",
-          "52.101.73.21",
-          "52.101.73.26"
+          "52.101.68.8",
+          "52.101.73.11",
+          "52.101.73.2",
+          "52.101.73.8"
         ]
       }
     ],
@@ -368,7 +368,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; rua=mailto:7091677fcff6.a@dmarcinput.com,mailto:informesdmarc@madrid.es; ruf=mailto:7091677fcff6.f@dmarcinput.com,mailto:informesdmarc@madrid.es; fo=1",
+    "record": "v=DMARC1; p=reject; rua=mailto:7091677fcff6.a@dmarcinput.com,mailto:informesdmarc@madrid.es; ruf=mailto:7091677fcff6.f@dmarcinput.com,mailto:informesdmarc@madrid.es; fo=1",
     "valid": true,
     "location": "madrid.es",
     "warnings": [],
@@ -378,7 +378,7 @@
         "explicit": true
       },
       "p": {
-        "value": "quarantine",
+        "value": "reject",
         "explicit": true
       },
       "rua": {
@@ -440,7 +440,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "quarantine",
+        "value": "reject",
         "explicit": false
       }
     }

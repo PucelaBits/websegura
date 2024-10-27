@@ -21,12 +21,12 @@
       {
         "preference": 20,
         "hostname": "mxres.msc.es",
-        "addresses": []
+        "addresses": [
+          "91.230.250.52"
+        ]
       }
     ],
-    "warnings": [
-      "All nameservers failed to answer the query mxres.msc.es. IN A: Server Do53:1.0.0.1@53 answered SERVFAIL"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:195.64.186.0/23 ip4:91.230.250.0/24 include:spf.acumbamail.com -all",

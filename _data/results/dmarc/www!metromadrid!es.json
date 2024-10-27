@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.metromadrid.es",
-      "artemis.ttd.net",
-      "rf-dns-cti.metromadrid.net",
       "dns1.metromadrid.es",
+      "rf-dns-cti.metromadrid.net",
+      "artemis.ttd.net",
+      "dns2.metromadrid.es",
       "rf-dns-ccs.metromadrid.net"
     ],
     "warnings": []
@@ -22,7 +22,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 185.89.60.50 is rxcsa.metromadrid.es, but the A/AAAA DNS records for rxcsa.metromadrid.es do not resolve to 185.89.60.50"
+    ]
   },
   "spf": {
     "record": "v=spf1 ip4:185.89.60.50/32 include:spf.protection.outlook.com -all",

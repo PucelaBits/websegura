@@ -33,10 +33,10 @@
         "preference": 40,
         "hostname": "cartv-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.12",
-          "52.101.68.16",
-          "52.101.68.27",
-          "52.101.68.32"
+          "52.101.68.15",
+          "52.101.73.30",
+          "52.101.73.6",
+          "52.101.73.8"
         ]
       }
     ],
@@ -126,9 +126,53 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1;p=none;",
+    "valid": true,
+    "location": "cartv.es",
+    "warnings": [
+      "rua tag (destination for aggregate reports) not found"
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }

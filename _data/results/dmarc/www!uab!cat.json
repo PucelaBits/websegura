@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.csuc.cat",
       "dns.uab.es",
       "ns1.csuc.cat",
+      "ns2.csuc.cat",
       "dns1.uab.es"
     ],
     "warnings": []
@@ -17,17 +17,17 @@
         "preference": 0,
         "hostname": "uab-cat.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.16",
-          "52.101.68.36",
-          "52.101.73.1",
-          "52.101.73.8"
+          "52.101.73.12",
+          "52.101.73.19",
+          "52.101.73.22",
+          "52.101.73.24"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:158.109.168.132 ip4:158.109.168.138  ip4:158.109.168.73 ip4:158.109.168.157 ip4:158.109.168.161 ip4:158.109.168.162 ip4:158.109.168.165 ip4:158.109.68.27 ip4:158.109.74.92  ip4:84.88.0.6 ip4:84.88.0.7 ip4:84.88.0.8 ip4:84.88.0.9 ip4:84.88.95.241 include:spf.protection.outlook.com include:servers.mcsv.net include:spf.ipzmarketing.com ~all",
+    "record": "v=spf1 ip4:158.109.168.132 ip4:158.109.168.138  ip4:158.109.168.73 ip4:158.109.168.157 ip4:158.109.168.161 ip4:158.109.168.162 ip4:158.109.168.165 ip4:158.109.68.27 ip4:158.109.74.92  ip4:84.88.0.6 ip4:84.88.0.7 ip4:84.88.0.8 ip4:84.88.0.9 ip4:84.88.95.241 ip4:80.94.2.87 include:spf.protection.outlook.com include:servers.mcsv.net include:spf.ipzmarketing.com ~all",
     "valid": true,
     "dns_lookups": 3,
     "warnings": [],
@@ -87,6 +87,10 @@
         },
         {
           "value": "84.88.95.241",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "80.94.2.87",
           "mechanism": "ip4"
         }
       ],

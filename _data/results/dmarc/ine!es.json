@@ -10,22 +10,35 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query ine.es. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mxa-006a4e02.gslb.pphosted.com",
+        "addresses": [
+          "143.55.146.78"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mxb-006a4e02.gslb.pphosted.com",
+        "addresses": [
+          "143.55.148.243"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.puc.rediris.es a:correo.ine.es a:smtpout.ine.es a:remesas.ine.es a:c.spf.service-now.com  -all",
     "valid": true,
     "dns_lookups": 5,
-    "warnings": [],
+    "warnings": [
+      "All nameservers failed to answer the query smtpout.ine.es. IN AAAA: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    ],
     "parsed": {
       "pass": [
         {
           "value": "195.254.149.7",
-          "mechanism": "a"
-        },
-        {
-          "value": "195.254.149.12",
           "mechanism": "a"
         },
         {
