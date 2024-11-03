@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "chico.rediris.es",
       "sun.rediris.es",
+      "chico.rediris.es",
       "ds3100.uib.es"
     ],
     "warnings": []
@@ -174,12 +174,10 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none",
+    "record": "v=DMARC1; p=none; rua=mailto:rua@uib.es; ruf=mailto:ruf@uib.es",
     "valid": true,
     "location": "uib.es",
-    "warnings": [
-      "rua tag (destination for aggregate reports) not found"
-    ],
+    "warnings": [],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -187,6 +185,26 @@
       },
       "p": {
         "value": "none",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "rua@uib.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "ruf@uib.es",
+            "size_limit": null
+          }
+        ],
         "explicit": true
       },
       "adkim": {

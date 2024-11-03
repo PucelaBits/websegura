@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "nil.fut.es",
-      "damia.altanet.org"
+      "damia.altanet.org",
+      "nil.fut.es"
     ],
     "warnings": []
   },
@@ -21,18 +21,13 @@
       {
         "preference": 10,
         "hostname": "mx1.tinet.org",
-        "addresses": [
-          "195.77.216.146"
-        ]
+        "addresses": []
       }
     ],
     "warnings": [
       "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 195.76.233.59 is mx1.dipta.cat, but the A/AAAA DNS records for mx1.dipta.cat do not resolve to 195.76.233.59",
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 195.77.216.146 is mx1.tinet.cat, but the A/AAAA DNS records for mx1.tinet.cat do not resolve to 195.77.216.146",
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 195.77.216.146 is mx1.tinet.org, but the A/AAAA DNS records for mx1.tinet.org do not resolve to 195.77.216.146"
+      "The reverse DNS of 195.76.233.59 is smtp.altanet.org, but the A/AAAA DNS records for smtp.altanet.org do not resolve to 195.76.233.59",
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
     ]
   },
   "spf": {

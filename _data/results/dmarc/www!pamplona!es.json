@@ -33,7 +33,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:spf.ipzmarketing.com include:amazonses.com exists:%{i}.spf.hc2198-46.eu.iphmx.com +a +mx +ip4:194.165.202.149 +ip4:194.165.205.237 -all",
+    "record": "v=spf1 include:spf.ipzmarketing.com include:amazonses.com exists:%{i}.spf.hc2198-46.eu.iphmx.com +a +mx +ip4:194.165.202.149 +ip4:194.165.205.237 +ip4:205.201.128.0/20 +ip4:198.2.128.0/18 +ip4:148.105.0.0/16 -all",
     "valid": true,
     "dns_lookups": 5,
     "warnings": [],
@@ -61,6 +61,18 @@
         },
         {
           "value": "194.165.205.237",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "205.201.128.0/20",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "198.2.128.0/18",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "148.105.0.0/16",
           "mechanism": "ip4"
         }
       ],

@@ -3,11 +3,8 @@
   "base_domain": "fsbarbara.com",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "b-ns.primari.net",
-      "a-ns.primari.net"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "mx": {
     "hosts": [
@@ -19,7 +16,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 91.126.72.25 is mail.fsbarbara.com, but the A/AAAA DNS records for mail.fsbarbara.com do not resolve to 91.126.72.25"
+    ]
   },
   "spf": {
     "record": "v=spf1 a:mail.fsbarbara.com ip4:192.168.0.1 ip4:10.1.1.200  ip4:91.126.72.25 include:_spf.google.com ~all",

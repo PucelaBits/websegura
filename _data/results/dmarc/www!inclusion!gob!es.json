@@ -15,12 +15,12 @@
         "preference": 100,
         "hostname": "smtp.seg-social.es",
         "addresses": [
-          "213.99.40.12"
+          "194.179.55.12"
         ]
       }
     ],
     "warnings": [
-      "The reverse DNS of 213.99.40.12 is smtp.seg-social.es, but the A/AAAA DNS records for smtp.seg-social.es do not resolve to 213.99.40.12"
+      "The reverse DNS of 194.179.55.12 is smtp.seg-social.es, but the A/AAAA DNS records for smtp.seg-social.es do not resolve to 194.179.55.12"
     ]
   },
   "spf": {
@@ -116,13 +116,21 @@
         },
         {
           "domain": "seg-social.es",
-          "record": "v=spf1 mx ip4:194.179.55.96/28 ip4:213.99.40.96/28 include:spf.protection.outlook.com ~all",
+          "record": "v=spf1 mx ip4:195.57.67.224/27 ip4:194.224.129.224/27 ip4:194.179.55.96/28 ip4:213.99.40.96/28 include:spf.protection.outlook.com ~all",
           "dns_lookups": 2,
           "parsed": {
             "pass": [
               {
                 "value": "smtp.seg-social.es",
                 "mechanism": "mx"
+              },
+              {
+                "value": "195.57.67.224/27",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "194.224.129.224/27",
+                "mechanism": "ip4"
               },
               {
                 "value": "194.179.55.96/28",

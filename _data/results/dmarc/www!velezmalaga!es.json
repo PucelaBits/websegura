@@ -4,11 +4,11 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns2.cdmon.net",
+      "ns3.cdmon.net",
       "ns5.cdmondns-01.com",
       "ns4.cdmondns-01.org",
-      "ns1.cdmon.net",
-      "ns2.cdmon.net",
-      "ns3.cdmon.net"
+      "ns1.cdmon.net"
     ],
     "warnings": []
   },
@@ -19,7 +19,7 @@
         "hostname": "mx.spamexperts.com",
         "addresses": [
           "2001:550:2:78::ca:100",
-          "38.111.198.185"
+          "38.89.254.156"
         ]
       },
       {
@@ -712,14 +712,6 @@
                 "mechanism": "a"
               },
               {
-                "value": "206.148.0.49",
-                "mechanism": "a"
-              },
-              {
-                "value": "2406:3400:280:8::18",
-                "mechanism": "a"
-              },
-              {
                 "value": "2406:3400:280:8::20",
                 "mechanism": "a"
               },
@@ -1160,7 +1152,7 @@
         },
         {
           "domain": "spf.mailjet.com",
-          "record": "v=spf1 ip4:87.253.232.0/21 ip4:185.189.236.0/22 ip4:185.211.120.0/22 ip4:185.250.236.0/22 ~all",
+          "record": "v=spf1 ip4:87.253.232.0/21 ip4:185.189.236.0/22 ip4:185.211.120.0/22 ip4:185.250.236.0/22 ip4:45.14.148.0/22 ~all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -1178,6 +1170,10 @@
               },
               {
                 "value": "185.250.236.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "45.14.148.0/22",
                 "mechanism": "ip4"
               }
             ],

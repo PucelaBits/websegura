@@ -4,12 +4,12 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "a4-65.akam.net",
+      "a11-67.akam.net",
       "a7-65.akam.net",
-      "a8-66.akam.net",
       "a1-103.akam.net",
       "a10-65.akam.net",
-      "a4-65.akam.net",
-      "a11-67.akam.net"
+      "a8-66.akam.net"
     ],
     "warnings": []
   },
@@ -100,7 +100,7 @@
             "include": [
               {
                 "domain": "spfb.tmes.trendmicro.com",
-                "record": "v=spf1 ip4:107.22.223.18 ip4:52.70.252.86 ip4:35.156.245.132 ip4:18.156.0.20 ip4:3.72.196.143 ip4:54.146.4.63 ip4:54.174.82.86 include:spfc.tmes.trendmicro.com ~all",
+                "record": "v=spf1 ip4:107.22.223.18 ip4:52.70.252.86 ip4:35.156.245.132 ip4:18.156.0.20 ip4:3.72.196.143 ip4:54.146.4.63 ip4:54.174.82.86 ip4:13.237.55.33 ip4:13.239.100.9 ip4:54.253.212.148 include:spfc.tmes.trendmicro.com ~all",
                 "dns_lookups": 1,
                 "parsed": {
                   "pass": [
@@ -131,6 +131,18 @@
                     {
                       "value": "54.174.82.86",
                       "mechanism": "ip4"
+                    },
+                    {
+                      "value": "13.237.55.33",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "13.239.100.9",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "54.253.212.148",
+                      "mechanism": "ip4"
                     }
                   ],
                   "neutral": [],
@@ -139,7 +151,7 @@
                   "include": [
                     {
                       "domain": "spfc.tmes.trendmicro.com",
-                      "record": "v=spf1 ip4:18.188.9.192/26 ip4:18.188.239.128/26 ip4:34.253.238.128/26 ip4:34.253.238.192/26 ip4:15.168.56.0/25 ip4:15.168.49.64/26 ip4:15.168.56.128/26 ~all",
+                      "record": "v=spf1 ip4:18.188.9.192/26 ip4:18.188.239.128/26 ip4:34.253.238.128/26 ip4:34.253.238.192/26 ip4:15.168.56.0/25 ip4:15.168.49.64/26 ip4:15.168.56.128/26 ip4:18.97.0.160/27 ip4:18.96.32.128/27 ~all",
                       "dns_lookups": 0,
                       "parsed": {
                         "pass": [
@@ -169,6 +181,14 @@
                           },
                           {
                             "value": "15.168.56.128/26",
+                            "mechanism": "ip4"
+                          },
+                          {
+                            "value": "18.97.0.160/27",
+                            "mechanism": "ip4"
+                          },
+                          {
+                            "value": "18.96.32.128/27",
                             "mechanism": "ip4"
                           }
                         ],

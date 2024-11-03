@@ -4,11 +4,11 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns52.cloudns.net",
-      "dns51.cloudns.net",
-      "dns54.cloudns.net",
       "dns53.cloudns.net",
-      "matagalls.lacuinadel.cat"
+      "dns54.cloudns.net",
+      "matagalls.lacuinadel.cat",
+      "dns51.cloudns.net",
+      "dns52.cloudns.net"
     ],
     "warnings": []
   },
@@ -18,10 +18,10 @@
         "preference": 0,
         "hostname": "domini-barcelona.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.27",
           "52.101.68.36",
+          "52.101.73.12",
           "52.101.73.22",
-          "52.101.73.6"
+          "52.101.73.26"
         ]
       }
     ],
@@ -243,7 +243,7 @@
         },
         {
           "domain": "eu.transmail.net",
-          "record": "v=spf1 ip4:31.186.226.0/24 ip4:185.20.211.0/24 ip4:185.172.199.128/26 ip4:185.172.199.192/27 ip4:185.172.199.56/29 ip4:136.143.168.0/22 ~all",
+          "record": "v=spf1 ip4:31.186.226.0/24 ip4:185.20.211.0/24 ip4:185.172.199.128/26 ip4:185.172.199.192/27 ip4:185.172.199.56/29 ip4:136.143.168.0/22 ip4:199.67.72.0/22 ~all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -269,6 +269,10 @@
               },
               {
                 "value": "136.143.168.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "199.67.72.0/22",
                 "mechanism": "ip4"
               }
             ],

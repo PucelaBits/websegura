@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dpmdns02.ns-cloud4b.com",
       "dpmdns01.ns-cloud4b.org",
-      "dpmdns03.ns-cloud4b.net"
+      "dpmdns03.ns-cloud4b.net",
+      "dpmdns02.ns-cloud4b.com"
     ],
     "warnings": []
   },
@@ -643,14 +643,6 @@
               },
               {
                 "value": "2001:df1:800:a009:12::2",
-                "mechanism": "a"
-              },
-              {
-                "value": "206.148.0.49",
-                "mechanism": "a"
-              },
-              {
-                "value": "2406:3400:280:8::18",
                 "mechanism": "a"
               },
               {

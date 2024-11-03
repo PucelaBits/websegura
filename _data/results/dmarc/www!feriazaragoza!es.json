@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "dns2.efor.es",
-      "aspe.efor.es",
-      "dns.efor.es"
+      "dns.efor.es",
+      "aspe.efor.es"
     ],
     "warnings": []
   },
@@ -37,12 +37,28 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:213.96.93.49 ip4:213.96.93.50 ip4:213.97.13.208 ip4:89.17.218.96/29 ip4:104.40.149.226 ip4:168.245.50.85 include:sendgrid.net ~all",
+    "record": "v=spf1 mx a ip4:213.96.93.49 ip4:213.96.93.50 ip4:213.97.13.208 ip4:89.17.218.96/29 ip4:104.40.149.226 ip4:168.245.50.85 include:spf.ipzmarketing.com include:sendgrid.net ~all",
     "valid": true,
-    "dns_lookups": 2,
+    "dns_lookups": 5,
     "warnings": [],
     "parsed": {
       "pass": [
+        {
+          "value": "mx1.feriazaragoza.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mx2.feriazaragoza.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mx3.feriazaragoza.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "20.50.182.59",
+          "mechanism": "a"
+        },
         {
           "value": "213.96.93.49",
           "mechanism": "ip4"
@@ -72,6 +88,43 @@
       "softfail": [],
       "fail": [],
       "include": [
+        {
+          "domain": "spf.ipzmarketing.com",
+          "record": "v=spf1 ip4:93.159.208.0/21 ip4:185.103.8.0/22 ip4:5.56.22.0/24 ip4:82.199.156.0/24 ip4:91.194.237.0/24 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "93.159.208.0/21",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.103.8.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "5.56.22.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "82.199.156.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "91.194.237.0/24",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        },
         {
           "domain": "sendgrid.net",
           "record": "v=spf1 ip4:167.89.0.0/17 ip4:208.117.48.0/20 ip4:50.31.32.0/19 ip4:198.37.144.0/20 ip4:198.21.0.0/21 ip4:192.254.112.0/20 ip4:168.245.0.0/17 ip4:149.72.0.0/16 ip4:159.183.0.0/16 include:ab.sendgrid.net ~all",
