@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns01.ono.com",
       "dns03.ono.com",
+      "dns01.ono.com",
       "dns02.ono.com"
     ],
     "warnings": []
@@ -16,19 +16,19 @@
         "preference": 0,
         "hostname": "cortesaragon-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.0",
-          "52.101.68.21",
-          "52.101.73.24",
-          "52.101.73.26"
+          "52.101.68.27",
+          "52.101.68.8",
+          "52.101.73.12",
+          "52.101.73.21"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 a mx ip4:46.24.234.0/24 include:spf.protection.outlook.com include:emsd1.com -all",
+    "record": "v=spf1 a mx ip4:46.24.234.0/24 include:spf.protection.outlook.com include:emsd1.com include:spf-009b1e01.pphosted.com -all",
     "valid": true,
-    "dns_lookups": 4,
+    "dns_lookups": 5,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -144,6 +144,31 @@
             "redirect": null,
             "exp": null,
             "all": "softfail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "spf-009b1e01.pphosted.com",
+          "record": "v=spf1 ip4:66.159.233.240 ip4:143.55.150.117",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "66.159.233.240",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "143.55.150.117",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "neutral"
           },
           "warnings": []
         }

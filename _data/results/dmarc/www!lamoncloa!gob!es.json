@@ -26,7 +26,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 212.128.108.45 is mail01.mpr.es, but the A/AAAA DNS records for mail01.mpr.es do not resolve to 212.128.108.45"
+    ]
   },
   "spf": {
     "record": "v=spf1 ip4:212.128.108.45 ip4:212.128.108.46 -all",

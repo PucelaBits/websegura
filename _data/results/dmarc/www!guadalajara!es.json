@@ -4,38 +4,22 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.alsitel.net",
-      "ns1.alsitel.net"
+      "ns1.alsitel.net",
+      "ns2.alsitel.net"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mail.guadalajara.es",
-        "addresses": [
-          "213.0.97.168"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mail01.guadalajara.es",
-        "addresses": [
-          "62.82.228.203"
-        ]
-      }
-    ],
-    "warnings": [
-      "The domain 168.red-213-0-97.customer.static.ccgg.telefonica.net does not exist",
-      "The reverse DNS of 213.0.97.168 is 168.red-213-0-97.customer.static.ccgg.telefonica.net, but the A/AAAA DNS records for 168.red-213-0-97.customer.static.ccgg.telefonica.net do not resolve to 213.0.97.168"
-    ]
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 mx a ip4:213.0.97.162/32 ip4:62.82.228.203/32 a:mail.guadalajara.es a:mail01.guadalajara.es a:correo.guadalajara.es ?all",
     "valid": true,
     "dns_lookups": 5,
-    "warnings": [],
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ],
     "parsed": {
       "pass": [
         {
@@ -57,10 +41,6 @@
         {
           "value": "62.82.228.203/32",
           "mechanism": "ip4"
-        },
-        {
-          "value": "213.0.97.168",
-          "mechanism": "a"
         },
         {
           "value": "62.82.228.203",

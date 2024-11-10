@@ -14,20 +14,17 @@
       {
         "preference": 10,
         "hostname": "smtp2.aytobadajoz.es",
-        "addresses": [
-          "195.55.246.162"
-        ]
+        "addresses": []
       },
       {
         "preference": 20,
         "hostname": "smtp.aytobadajoz.es",
-        "addresses": [
-          "217.76.135.156"
-        ]
+        "addresses": []
       }
     ],
     "warnings": [
-      "195.55.246.162 does not have any reverse DNS (PTR) records"
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out.",
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
     ]
   },
   "spf": {

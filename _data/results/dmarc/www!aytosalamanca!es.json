@@ -15,25 +15,41 @@
         "preference": 5,
         "hostname": "aytosalamanca-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.10",
-          "52.101.68.15",
-          "52.101.73.2",
-          "52.101.73.24"
+          "52.101.68.25",
+          "52.101.68.29",
+          "52.101.73.16",
+          "52.101.73.28"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx include:spf.protection.outlook.com ~all",
+    "record": "v=spf1 ip4:46.105.115.28 ip4:88.12.20.76 ip4:213.4.63.165 ip4:194.224.19.202 ip4:34.107.19.222 include:spf.protection.outlook.com -all",
     "valid": true,
-    "dns_lookups": 2,
+    "dns_lookups": 1,
     "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "aytosalamanca-es.mail.protection.outlook.com",
-          "mechanism": "mx"
+          "value": "46.105.115.28",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "88.12.20.76",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "213.4.63.165",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "194.224.19.202",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "34.107.19.222",
+          "mechanism": "ip4"
         }
       ],
       "neutral": [],
@@ -104,11 +120,11 @@
       ],
       "redirect": null,
       "exp": null,
-      "all": "softfail"
+      "all": "fail"
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; rua=mailto:sys@aytosalamanca.es",
+    "record": "v=DMARC1; p=quarantine; rua=mailto:sys@aytosalamanca.es",
     "valid": true,
     "location": "aytosalamanca.es",
     "warnings": [],
@@ -118,7 +134,7 @@
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": true
       },
       "rua": {
@@ -160,7 +176,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": false
       }
     }

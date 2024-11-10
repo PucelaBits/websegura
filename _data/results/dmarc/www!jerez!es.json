@@ -10,24 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "1694806815.pamx1.hotmail.com",
-        "addresses": [
-          "52.101.10.3",
-          "52.101.11.11",
-          "52.101.11.4",
-          "52.101.9.27"
-        ]
-      }
-    ],
-    "warnings": [
-      "52.101.10.3 does not have any reverse DNS (PTR) records",
-      "52.101.11.11 does not have any reverse DNS (PTR) records",
-      "52.101.11.4 does not have any reverse DNS (PTR) records",
-      "52.101.9.27 does not have any reverse DNS (PTR) records"
-    ]
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 include:hotmail.com ~all",

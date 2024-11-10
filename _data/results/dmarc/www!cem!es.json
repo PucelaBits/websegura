@@ -46,7 +46,7 @@
     ]
   },
   "spf": {
-    "record": "v=spf1 mx include:spf.serviciosmin.gob.es ~all",
+    "record": "v=spf1 mx include:spf.serviciosmin.gob.es -all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
@@ -109,7 +109,7 @@
       ],
       "redirect": null,
       "exp": null,
-      "all": "softfail"
+      "all": "fail"
     }
   },
   "dmarc": {

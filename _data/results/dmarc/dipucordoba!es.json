@@ -3,58 +3,12 @@
   "base_domain": "dipucordoba.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "ns-1028.awsdns-00.org",
-      "ns-145.awsdns-18.com",
-      "ns-1846.awsdns-38.co.uk",
-      "ns-718.awsdns-25.net"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 1,
-        "hostname": "aspmx.l.google.com",
-        "addresses": [
-          "142.250.101.26",
-          "2607:f8b0:4023:c0b::1b"
-        ]
-      },
-      {
-        "preference": 5,
-        "hostname": "alt1.aspmx.l.google.com",
-        "addresses": [
-          "108.177.104.26",
-          "2607:f8b0:4003:c04::1a"
-        ]
-      },
-      {
-        "preference": 5,
-        "hostname": "alt2.aspmx.l.google.com",
-        "addresses": [
-          "142.250.152.26",
-          "2607:f8b0:4001:c56::1a"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "aspmx2.googlemail.com",
-        "addresses": [
-          "108.177.104.27",
-          "2607:f8b0:4003:c04::1a"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "aspmx3.googlemail.com",
-        "addresses": [
-          "142.250.152.26",
-          "2607:f8b0:4001:c56::1b"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 ip4:195.57.20.245 include:_spf.google.com ~all",

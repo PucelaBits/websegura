@@ -4,55 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "sintlin1.caib.es",
-      "sintlin2.caib.es"
+      "sintlin2.caib.es",
+      "sintlin1.caib.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 1,
-        "hostname": "aspmx.l.google.com",
-        "addresses": [
-          "2607:f8b0:4023:c06::1b",
-          "74.125.137.26"
-        ]
-      },
-      {
-        "preference": 5,
-        "hostname": "alt1.aspmx.l.google.com",
-        "addresses": [
-          "108.177.104.27",
-          "2607:f8b0:4003:c04::1a"
-        ]
-      },
-      {
-        "preference": 5,
-        "hostname": "alt2.aspmx.l.google.com",
-        "addresses": [
-          "142.250.152.26",
-          "2607:f8b0:4001:c56::1b"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "aspmx2.googlemail.com",
-        "addresses": [
-          "108.177.104.26",
-          "2607:f8b0:4003:c04::1a"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "aspmx3.googlemail.com",
-        "addresses": [
-          "142.250.152.27",
-          "2607:f8b0:4001:c56::1b"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 include:google.com ~all",

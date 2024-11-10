@@ -3,12 +3,8 @@
   "base_domain": "parquenaturalsomiedo.com",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "ns12.servicio-online.net",
-      "ns10.servicio-online.net",
-      "ns11.servicio-online.net"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "mx": {
     "hosts": [

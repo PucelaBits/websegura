@@ -10,19 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 0,
-        "hostname": "artenara-es.mail.protection.outlook.com",
-        "addresses": [
-          "52.101.68.15",
-          "52.101.68.3",
-          "52.101.73.28",
-          "52.101.73.6"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com -all",

@@ -4,61 +4,19 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns8.servidoresdns.net",
-      "dns7.servidoresdns.net"
+      "dns7.servidoresdns.net",
+      "dns8.servidoresdns.net"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "correo.avila.es",
-        "addresses": [
-          "82.223.120.168"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "alt1.aspmx.l.google.com",
-        "addresses": [
-          "108.177.104.26",
-          "2607:f8b0:4003:c04::1b"
-        ]
-      }
-    ],
-    "warnings": [
-      "The reverse DNS of 82.223.120.168 is 168.120.223.82.in-addr.arpa, but the A/AAAA DNS records for 168.120.223.82.in-addr.arpa do not resolve to 82.223.120.168"
-    ]
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
-    "record": "v=spf1 mx:avila.es exists:avila.es ~all",
-    "valid": true,
-    "dns_lookups": 2,
-    "warnings": [],
-    "parsed": {
-      "pass": [
-        {
-          "value": "correo.avila.es",
-          "mechanism": "mx"
-        },
-        {
-          "value": "alt1.aspmx.l.google.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "avila.es",
-          "mechanism": "exists"
-        }
-      ],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [],
-      "redirect": null,
-      "exp": null,
-      "all": "softfail"
-    }
+    "record": null,
+    "valid": false,
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "dmarc": {
     "record": null,

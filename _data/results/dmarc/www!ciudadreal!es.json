@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "dns6.cim.es",
       "dns7.cim.es",
-      "dns5.cim.es",
-      "dns6.cim.es"
+      "dns5.cim.es"
     ],
     "warnings": []
   },
@@ -15,12 +15,12 @@
       {
         "preference": 10,
         "hostname": "mx1.cim.es",
-        "addresses": [
-          "89.17.211.117"
-        ]
+        "addresses": []
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ]
   },
   "spf": {
     "record": "v=spf1 mx ip4:89.17.211.96/27 ~all",

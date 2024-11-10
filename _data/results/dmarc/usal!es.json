@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "chico.rediris.es",
-      "topacio.usal.es",
-      "sun.rediris.es",
       "agata.usal.es",
+      "chico.rediris.es",
+      "sun.rediris.es",
+      "topacio.usal.es",
       "zafiro.usal.es"
     ],
     "warnings": []
@@ -18,8 +18,8 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.250.101.27",
-          "2607:f8b0:4023:c0b::1a"
+          "142.250.141.26",
+          "2607:f8b0:4023:c0d::1a"
         ]
       },
       {
@@ -43,15 +43,15 @@
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
           "172.253.113.27",
-          "2607:f8b0:4023:1::1b"
+          "2607:f8b0:4023:1::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "173.194.77.26",
-          "2607:f8b0:4023:401::1b"
+          "173.194.77.27",
+          "2607:f8b0:4023:401::1a"
         ]
       }
     ],

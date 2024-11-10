@@ -22,12 +22,12 @@
       {
         "preference": 20,
         "hostname": "mx04.puc.rediris.es",
-        "addresses": [
-          "143.55.148.243"
-        ]
+        "addresses": []
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ]
   },
   "spf": {
     "record": "v=spf1 ip4:130.206.30.205 ip4:130.206.30.206 ip4:130.206.30.225 ip4:130.206.30.226 ip4:130.206.31.249 ip4:130.206.30.210 ip4:130.206.30.227 ip4:10.80.82.41 ip4:10.80.82.42 include:spf.puc.rediris.es include:spf.protection.outlook.com -all",

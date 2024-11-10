@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns481.webempresa.eu",
-      "ns482.webempresa.eu"
+      "ns482.webempresa.eu",
+      "ns481.webempresa.eu"
     ],
     "warnings": []
   },
@@ -15,8 +15,8 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "2607:f8b0:4023:c0d::1b",
-          "74.125.137.26"
+          "142.250.141.27",
+          "2607:f8b0:4023:c03::1a"
         ]
       },
       {
@@ -39,16 +39,16 @@
         "preference": 10,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "172.253.113.26",
-          "2607:f8b0:4023:1::1b"
+          "172.253.113.27",
+          "2607:f8b0:4023:1::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "173.194.77.26",
-          "2607:f8b0:4023:401::1a"
+          "173.194.77.27",
+          "2607:f8b0:4023:401::1b"
         ]
       }
     ],

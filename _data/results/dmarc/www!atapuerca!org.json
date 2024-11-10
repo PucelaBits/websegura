@@ -4,55 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns28.servidoresdns.net",
-      "dns27.servidoresdns.net"
+      "dns27.servidoresdns.net",
+      "dns28.servidoresdns.net"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "aspmx.l.google.com",
-        "addresses": [
-          "142.250.101.26",
-          "2607:f8b0:4023:c06::1b"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "alt1.aspmx.l.google.com",
-        "addresses": [
-          "108.177.104.26",
-          "2607:f8b0:4003:c04::1a"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "alt2.aspmx.l.google.com",
-        "addresses": [
-          "142.250.152.27",
-          "2607:f8b0:4001:c56::1a"
-        ]
-      },
-      {
-        "preference": 30,
-        "hostname": "alt3.aspmx.l.google.com",
-        "addresses": [
-          "172.253.113.27",
-          "2607:f8b0:4023:1::1b"
-        ]
-      },
-      {
-        "preference": 30,
-        "hostname": "alt4.aspmx.l.google.com",
-        "addresses": [
-          "173.194.77.27",
-          "2607:f8b0:4023:401::1b"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 ip4:195.55.105.25 include:_spf.serviciodecorreo.es ~all",

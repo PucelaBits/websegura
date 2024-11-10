@@ -15,51 +15,67 @@
         "preference": 5,
         "hostname": "urv-cat.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.27",
-          "52.101.68.39",
-          "52.101.68.5",
-          "52.101.73.11"
+          "52.101.68.18",
+          "52.101.68.8",
+          "52.101.73.15",
+          "52.101.73.26"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:spf.protection.outlook.com a:mail1.cpd0.urv.cat a:mail2.cpd0.urv.cat a:mail1.cpd1.urv.cat a:mail2.cpd1.urv.cat ip4:84.88.0.7/32 ip4:84.88.0.6/32 -all",
+    "record": "v=spf1 include:spf.urv.cat include:spf.protection.outlook.com -all",
     "valid": true,
-    "dns_lookups": 5,
+    "dns_lookups": 2,
     "warnings": [],
     "parsed": {
-      "pass": [
-        {
-          "value": "84.88.196.31",
-          "mechanism": "a"
-        },
-        {
-          "value": "84.88.196.32",
-          "mechanism": "a"
-        },
-        {
-          "value": "84.88.194.11",
-          "mechanism": "a"
-        },
-        {
-          "value": "84.88.194.13",
-          "mechanism": "a"
-        },
-        {
-          "value": "84.88.0.7/32",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "84.88.0.6/32",
-          "mechanism": "ip4"
-        }
-      ],
+      "pass": [],
       "neutral": [],
       "softfail": [],
       "fail": [],
       "include": [
+        {
+          "domain": "spf.urv.cat",
+          "record": "v=spf1 ip4:84.88.196.31 ip4:84.88.196.32 ip4:84.88.194.11 ip4:84.88.194.13 ip4:84.88.0.7/32 ip4:84.88.0.6/32 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "84.88.196.31",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "84.88.196.32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "84.88.194.11",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "84.88.194.13",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "84.88.0.7/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "84.88.0.6/32",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        },
         {
           "domain": "spf.protection.outlook.com",
           "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/15 ip4:52.102.0.0/16 ip4:52.103.0.0/17 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/51 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",

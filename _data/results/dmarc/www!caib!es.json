@@ -14,9 +14,7 @@
       {
         "preference": 5,
         "hostname": "rmail1.caib.es",
-        "addresses": [
-          "85.119.193.3"
-        ]
+        "addresses": []
       },
       {
         "preference": 5,
@@ -26,44 +24,14 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ]
   },
   "spf": {
-    "record": "v=spf1 mx ip4:85.119.193.2 ip4:85.119.198.6 ip4:85.119.198.16 -all",
-    "valid": true,
-    "dns_lookups": 1,
-    "warnings": [],
-    "parsed": {
-      "pass": [
-        {
-          "value": "rmail1.caib.es",
-          "mechanism": "mx"
-        },
-        {
-          "value": "rmail2.caib.es",
-          "mechanism": "mx"
-        },
-        {
-          "value": "85.119.193.2",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "85.119.198.6",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "85.119.198.16",
-          "mechanism": "ip4"
-        }
-      ],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [],
-      "redirect": null,
-      "exp": null,
-      "all": "fail"
-    }
+    "record": null,
+    "valid": false,
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "dmarc": {
     "record": null,

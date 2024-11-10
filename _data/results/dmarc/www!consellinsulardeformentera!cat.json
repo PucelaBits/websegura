@@ -4,22 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.consellinsulardeformentera.net",
-      "ns1.consellinsulardeformentera.net"
+      "ns1.consellinsulardeformentera.net",
+      "ns2.consellinsulardeformentera.net"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 0,
-        "hostname": "consellinsulardeformentera.cat",
-        "addresses": [
-          "5.135.40.102"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 +a +mx +ip4:5.135.40.102 ~all",

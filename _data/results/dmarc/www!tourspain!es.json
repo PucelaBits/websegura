@@ -28,9 +28,7 @@
       {
         "preference": 20,
         "hostname": "mailin.minetad.es",
-        "addresses": [
-          "193.146.123.230"
-        ]
+        "addresses": []
       },
       {
         "preference": 20,
@@ -41,12 +39,12 @@
       }
     ],
     "warnings": [
-      "193.146.123.230 does not have any reverse DNS (PTR) records",
+      "All nameservers failed to answer the query mailin.minetad.es. IN A: Server Do53:1.0.0.1@53 answered SERVFAIL",
       "193.146.123.234 does not have any reverse DNS (PTR) records"
     ]
   },
   "spf": {
-    "record": "v=spf1 include:spf.serviciosmin.gob.es ip4:54.240.50.203 include:marketing.dynamics.com include:spf.protection.outlook.com ~all",
+    "record": "v=spf1 include:spf.serviciosmin.gob.es ip4:54.240.50.203 include:marketing.dynamics.com include:spf.protection.outlook.com -all",
     "valid": true,
     "dns_lookups": 3,
     "warnings": [],
@@ -231,7 +229,7 @@
       ],
       "redirect": null,
       "exp": null,
-      "all": "softfail"
+      "all": "fail"
     }
   },
   "dmarc": {
