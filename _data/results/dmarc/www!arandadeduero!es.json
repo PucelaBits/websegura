@@ -14,18 +14,49 @@
       {
         "preference": 10,
         "hostname": "mail.arandadeduero.es",
-        "addresses": []
+        "addresses": [
+          "34.241.94.54"
+        ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ]
+    "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx ip4:212.145.22.204 ip4:77.224.118.213 ip4:77.225.101.5 ipv4:82.98.134.241 -all",
-    "valid": false,
+    "record": "v=spf1 mx ip4:212.145.22.204 ip4:77.224.118.213 ip4:77.225.101.5 ip4:82.98.134.241 -all",
+    "valid": true,
+    "dns_lookups": 1,
     "warnings": [],
-    "error": "arandadeduero.es: Expected mechanism at position 65 in: v=spf1 mx ip4:212.145.22.204 ip4:77.224.118.213 ip4:77.225.101.5 ipv4:82.98.134.241 -all"
+    "parsed": {
+      "pass": [
+        {
+          "value": "mail.arandadeduero.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "212.145.22.204",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "77.224.118.213",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "77.225.101.5",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "82.98.134.241",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
     "record": "v=DMARC1; p=quarantine; rua=mailto:postmaster@arandadeduero.es; ruf=mailto:postmaster@arandadeduero.es;",

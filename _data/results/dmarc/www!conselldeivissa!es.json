@@ -5,14 +5,29 @@
   "ns": {
     "hostnames": [
       "ns07.ns-cloud4b.org",
-      "ns08.ns-cloud4b.com",
-      "ns06.ns-cloud4b.net"
+      "ns06.ns-cloud4b.net",
+      "ns08.ns-cloud4b.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 0,
+        "hostname": "conselldeivissa-es.mail.protection.outlook.com",
+        "addresses": [
+          "2a01:111:f403:ca21::",
+          "2a01:111:f403:ca21::1",
+          "2a01:111:f403:ca21::2",
+          "2a01:111:f403:ca21::3",
+          "52.101.91.0",
+          "52.101.91.1",
+          "52.101.91.2",
+          "52.101.91.3"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:46.24.200.236 ip4:46.24.200.225 ip4:46.24.200.224 ip4:46.24.200.225 ip4:2.139.232.242 ip4:46.24.200.250 a mx ip4:213.4.20.215 include:spf.protection.outlook.com include:spf.ipzmarketing.com exists:%{i}.spf.hc348-91.eu.iphmx.com ~all",

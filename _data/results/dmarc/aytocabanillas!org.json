@@ -4,16 +4,49 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1075.ui-dns.de",
-      "ns1075.ui-dns.com",
       "ns1075.ui-dns.org",
-      "ns1075.ui-dns.biz"
+      "ns1075.ui-dns.biz",
+      "ns1075.ui-dns.de",
+      "ns1075.ui-dns.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 1,
+        "hostname": "aspmx.l.google.com",
+        "addresses": [
+          "142.250.101.26",
+          "2607:f8b0:4023:c06::1a"
+        ]
+      },
+      {
+        "preference": 5,
+        "hostname": "alt1.aspmx.l.google.com",
+        "addresses": [
+          "108.177.104.26",
+          "2607:f8b0:4003:c04::1b"
+        ]
+      },
+      {
+        "preference": 5,
+        "hostname": "alt2.aspmx.l.google.com",
+        "addresses": [
+          "142.250.152.26",
+          "2607:f8b0:4001:c56::1b"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "aspmx2.googlemail.com",
+        "addresses": [
+          "108.177.104.27",
+          "2607:f8b0:4003:c04::1b"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": null,

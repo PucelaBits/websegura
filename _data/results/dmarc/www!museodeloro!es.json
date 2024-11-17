@@ -3,8 +3,13 @@
   "base_domain": "museodeloro.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hostnames": [
+      "ns1017.ui-dns.com",
+      "ns1042.ui-dns.org",
+      "ns1045.ui-dns.biz",
+      "ns1122.ui-dns.de"
+    ],
+    "warnings": []
   },
   "mx": {
     "hosts": [
@@ -18,12 +23,12 @@
       {
         "preference": 10,
         "hostname": "mx01.ionos.es",
-        "addresses": []
+        "addresses": [
+          "217.72.192.67"
+        ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:_spf-eu.ionos.com ~all",

@@ -15,10 +15,10 @@
         "preference": 10,
         "hostname": "puertoscanarios-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.27",
-          "52.101.73.11",
+          "52.101.68.15",
+          "52.101.68.21",
           "52.101.73.2",
-          "52.101.73.30"
+          "52.101.73.22"
         ]
       }
     ],
@@ -190,7 +190,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; pct=100",
+    "record": "v=DMARC1; p=quarantine; pct=100",
     "valid": true,
     "location": "puertoscanarios.es",
     "warnings": [
@@ -202,7 +202,7 @@
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": true
       },
       "pct": {
@@ -234,7 +234,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": false
       }
     }

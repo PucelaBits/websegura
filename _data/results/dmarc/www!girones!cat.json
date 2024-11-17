@@ -3,8 +3,11 @@
   "base_domain": "girones.cat",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hostnames": [
+      "dns2.grn.es",
+      "adns.grn.es"
+    ],
+    "warnings": []
   },
   "mx": {
     "hosts": [
@@ -12,10 +15,10 @@
         "preference": 0,
         "hostname": "girones-cat.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.0",
-          "52.101.68.18",
+          "52.101.68.29",
           "52.101.73.1",
-          "52.101.73.8"
+          "52.101.73.24",
+          "52.101.73.28"
         ]
       }
     ],

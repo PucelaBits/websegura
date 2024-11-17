@@ -13,12 +13,20 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "intef-es.mail.eo.outlook.com",
+        "hostname": "mail1.correo.gob.es",
         "addresses": [
-          "52.101.68.29",
-          "52.101.73.15",
-          "52.101.73.22",
-          "52.101.73.30"
+          "185.73.172.122",
+          "185.73.172.123",
+          "185.73.173.17",
+          "185.73.173.18"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mail2.correo.gob.es",
+        "addresses": [
+          "185.73.172.124",
+          "185.73.172.125"
         ]
       }
     ],

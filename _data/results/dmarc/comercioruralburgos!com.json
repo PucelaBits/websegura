@@ -5,15 +5,23 @@
   "ns": {
     "hostnames": [
       "ns4.gestiondecuenta.com",
+      "ns3.gestiondecuenta.com",
       "ns.gestiondecuenta.com",
-      "ns2.gestiondecuenta.com",
-      "ns3.gestiondecuenta.com"
+      "ns2.gestiondecuenta.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.comercioruralburgos.com",
+        "addresses": [
+          "82.98.145.113"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 a mx ~all",

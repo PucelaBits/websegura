@@ -4,14 +4,30 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.aytojerez.es",
-      "dns1.aytojerez.es"
+      "dns1.aytojerez.es",
+      "dns2.aytojerez.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "1694806815.pamx1.hotmail.com",
+        "addresses": [
+          "52.101.10.4",
+          "52.101.194.5",
+          "52.101.40.28",
+          "52.101.68.19"
+        ]
+      }
+    ],
+    "warnings": [
+      "52.101.10.4 does not have any reverse DNS (PTR) records",
+      "52.101.194.5 does not have any reverse DNS (PTR) records",
+      "52.101.40.28 does not have any reverse DNS (PTR) records",
+      "52.101.68.19 does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:hotmail.com ~all",

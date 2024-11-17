@@ -32,14 +32,23 @@
     "record": "v=spf1 mx a:saluetw2.conselldemallorca.net a:saluetw.conselldemallorca.net include:spf.protection.outlook.com ~all",
     "valid": true,
     "dns_lookups": 4,
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out.",
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ],
+    "warnings": [],
     "parsed": {
       "pass": [
         {
+          "value": "saluetw.conselldemallorca.net",
+          "mechanism": "mx"
+        },
+        {
+          "value": "saluetw2.conselldemallorca.net",
+          "mechanism": "mx"
+        },
+        {
           "value": "213.201.84.233",
+          "mechanism": "a"
+        },
+        {
+          "value": "213.201.84.232",
           "mechanism": "a"
         }
       ],

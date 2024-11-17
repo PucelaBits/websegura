@@ -3,8 +3,13 @@
   "base_domain": "puertogijon.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hostnames": [
+      "ns1112.ui-dns.biz",
+      "ns1096.ui-dns.de",
+      "ns1121.ui-dns.com",
+      "ns1108.ui-dns.org"
+    ],
+    "warnings": []
   },
   "mx": {
     "hosts": [
@@ -12,10 +17,10 @@
         "preference": 10,
         "hostname": "puertogijon-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.16",
-          "52.101.68.29",
-          "52.101.73.12",
-          "52.101.73.26"
+          "52.101.68.10",
+          "52.101.68.15",
+          "52.101.68.25",
+          "52.101.68.3"
         ]
       }
     ],

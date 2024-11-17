@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "dns01.ono.com",
-      "dns03.ono.com",
-      "dns02.ono.com"
+      "dns02.ono.com",
+      "dns03.ono.com"
     ],
     "warnings": []
   },
@@ -22,7 +22,9 @@
       {
         "preference": 5,
         "hostname": "correo2.dipujaen.es",
-        "addresses": []
+        "addresses": [
+          "77.228.205.37"
+        ]
       },
       {
         "preference": 10,
@@ -39,9 +41,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx ip4:77.228.205.160/28 include:spf.protection.outlook.com -all",

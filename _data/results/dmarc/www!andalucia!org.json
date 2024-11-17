@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns3.juntadeandalucia.es",
-      "ns.juntadeandalucia.es",
       "ns4.juntadeandalucia.es",
-      "ns1.juntadeandalucia.es"
+      "ns1.juntadeandalucia.es",
+      "ns3.juntadeandalucia.es",
+      "ns.juntadeandalucia.es"
     ],
     "warnings": []
   },
@@ -28,7 +28,12 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The domain 231.zone-217.12.25.juntadeandalucia.es does not exist",
+      "The reverse DNS of 217.12.25.231 is 231.zone-217.12.25.juntadeandalucia.es, but the A/AAAA DNS records for 231.zone-217.12.25.juntadeandalucia.es do not resolve to 217.12.25.231",
+      "The domain 241.zone-217.12.25.juntadeandalucia.es does not exist",
+      "The reverse DNS of 217.12.25.241 is 241.zone-217.12.25.juntadeandalucia.es, but the A/AAAA DNS records for 241.zone-217.12.25.juntadeandalucia.es do not resolve to 217.12.25.241"
+    ]
   },
   "spf": {
     "record": null,
@@ -36,53 +41,9 @@
     "error": "andalucia.org has multiple SPF TXT records"
   },
   "dmarc": {
-    "record": "v=DMARC1;p=none",
-    "valid": true,
-    "location": "andalucia.org",
-    "warnings": [
-      "rua tag (destination for aggregate reports) not found"
-    ],
-    "tags": {
-      "v": {
-        "value": "DMARC1",
-        "explicit": true
-      },
-      "p": {
-        "value": "none",
-        "explicit": true
-      },
-      "adkim": {
-        "value": "r",
-        "explicit": false
-      },
-      "aspf": {
-        "value": "r",
-        "explicit": false
-      },
-      "fo": {
-        "value": [
-          "0"
-        ],
-        "explicit": false
-      },
-      "pct": {
-        "value": 100,
-        "explicit": false
-      },
-      "rf": {
-        "value": [
-          "afrf"
-        ],
-        "explicit": false
-      },
-      "ri": {
-        "value": 86400,
-        "explicit": false
-      },
-      "sp": {
-        "value": "none",
-        "explicit": false
-      }
-    }
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "Multiple DMARC policy records are not permitted - https://tools.ietf.org/html/rfc7489#section-6.6.3"
   }
 }

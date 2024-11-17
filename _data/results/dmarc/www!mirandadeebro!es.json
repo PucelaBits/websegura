@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.serv632576.servidoresdns.net",
-      "dns2.serv632576.servidoresdns.net"
+      "dns2.serv632576.servidoresdns.net",
+      "dns1.serv632576.servidoresdns.net"
     ],
     "warnings": []
   },
@@ -23,14 +23,217 @@
   },
   "spf": {
     "record": "v=spf1 +mx +a +ip4:185.253.153.139 +ip4:178.33.237.180 +ip4:188.165.134.220 +ip4:46.24.0.159 +ip4:212.145.237.149 +ip4:217.130.101.165 +ip4:46.24.70.228 +ip4:46.24.70.229 +ip4:46.24.70.230 +ip4:46.24.70.231 +ip4:88.12.45.129 +ip4:119.28.100.245 +include:_spf.serviciodecorreo.es -all",
-    "valid": false,
+    "valid": true,
+    "dns_lookups": 5,
     "warnings": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "parsed": {
+      "pass": [
+        {
+          "value": "mx.serviciodecorreo.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "82.223.117.199",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.253.153.139",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "178.33.237.180",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "188.165.134.220",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "46.24.0.159",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "212.145.237.149",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "217.130.101.165",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "46.24.70.228",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "46.24.70.229",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "46.24.70.230",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "46.24.70.231",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "88.12.45.129",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "119.28.100.245",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "_spf.serviciodecorreo.es",
+          "record": "v=spf1 include:_netblock1.serviciodecorreo.es include:_netblock2.serviciodecorreo.es ~all",
+          "dns_lookups": 2,
+          "parsed": {
+            "pass": [],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [
+              {
+                "domain": "_netblock1.serviciodecorreo.es",
+                "record": "v=spf1 ip4:82.223.85.0/24 ip4:82.223.190.0/23 ip4:82.223.199.0/24 ip4:82.223.218.0/23 ip4:82.223.230.0/24 ip4:82.223.251.0/24 ip4:217.76.128.0/23 ip4:217.76.150.128/25 ip4:217.76.156.128/25 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "82.223.85.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "82.223.190.0/23",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "82.223.199.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "82.223.218.0/23",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "82.223.230.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "82.223.251.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "217.76.128.0/23",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "217.76.150.128/25",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "217.76.156.128/25",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              },
+              {
+                "domain": "_netblock2.serviciodecorreo.es",
+                "record": "v=spf1 ip4:82.223.56.0/23 ip4:82.223.113.0/24 ip4:82.223.119.0/24 ip4:82.223.226.0/24 ip4:217.76.130.0/23 ip4:217.76.148.0/23 ip4:217.76.143.0/24 ip4:217.76.150.0/25 ip4:217.76.156.0/25 ip4:217.76.132.128/25 ip4:82.223.208.0/24 ip4:82.223.212.0/23 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "82.223.56.0/23",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "82.223.113.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "82.223.119.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "82.223.226.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "217.76.130.0/23",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "217.76.148.0/23",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "217.76.143.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "217.76.150.0/25",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "217.76.156.0/25",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "217.76.132.128/25",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "82.223.208.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "82.223.212.0/23",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              }
+            ],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
     "record": null,
     "valid": false,
     "location": null,
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "error": "A DMARC record does not exist for this domain or its base domain"
   }
 }

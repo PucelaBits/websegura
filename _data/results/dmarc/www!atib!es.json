@@ -10,8 +10,23 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail8.atib.es",
+        "addresses": [
+          "195.53.227.133"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "correu4.atib.es",
+        "addresses": [
+          "195.53.227.133"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 a mx ip4:85.119.193.3 ip4:85.119.193.4 include:_spf.atlassian.net include:spf.sendinblue.com -all",

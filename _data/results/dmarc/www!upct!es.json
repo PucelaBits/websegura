@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.upct.es",
-      "ns2.upct.es",
       "sun.rediris.es",
-      "chico.rediris.es"
+      "chico.rediris.es",
+      "ns1.upct.es",
+      "ns2.upct.es"
     ],
     "warnings": []
   },
@@ -17,21 +17,21 @@
         "preference": 10,
         "hostname": "mxa-006a4e02.gslb.pphosted.com",
         "addresses": [
-          "143.55.148.243"
+          "143.55.146.78"
         ]
       },
       {
         "preference": 10,
         "hostname": "mxb-006a4e02.gslb.pphosted.com",
         "addresses": [
-          "143.55.148.243"
+          "143.55.146.78"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:spf.puc.rediris.es include:spf.protection.outlook.com ip4:212.128.20.42 ip4:212.128.20.115 ip4:212.128.20.211 ip4:212.128.20.254 ip4:212.128.20.86 a:eventos.upct.es -all",
+    "record": "v=spf1 include:spf.puc.rediris.es include:spf.protection.outlook.com include:_spf.symposium.events ip4:212.128.20.42 ip4:212.128.20.115 ip4:212.128.20.211 ip4:212.128.20.254 ip4:212.128.20.86 -all",
     "valid": true,
     "dns_lookups": 3,
     "warnings": [],
@@ -56,18 +56,6 @@
         {
           "value": "212.128.20.86",
           "mechanism": "ip4"
-        },
-        {
-          "value": "34.251.79.37",
-          "mechanism": "a"
-        },
-        {
-          "value": "52.213.233.173",
-          "mechanism": "a"
-        },
-        {
-          "value": "54.72.192.114",
-          "mechanism": "a"
         }
       ],
       "neutral": [],
@@ -161,6 +149,27 @@
             "redirect": null,
             "exp": null,
             "all": "fail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "_spf.symposium.events",
+          "record": "v=spf1 ip4:63.32.121.65 ~all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "63.32.121.65",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
           },
           "warnings": []
         }

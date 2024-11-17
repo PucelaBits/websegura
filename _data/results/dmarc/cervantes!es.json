@@ -3,20 +3,27 @@
   "base_domain": "cervantes.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "All nameservers failed to answer the query cervantes.es. IN NS: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "hostnames": [
+      "machuca.cervantes.es",
+      "dns.cervantes.es"
+    ],
+    "warnings": []
   },
   "mx": {
     "hosts": [
       {
         "preference": 10,
         "hostname": "vela1.cervantes.es",
-        "addresses": []
+        "addresses": [
+          "193.146.3.230"
+        ]
       },
       {
         "preference": 10,
         "hostname": "vela2.cervantes.es",
-        "addresses": []
+        "addresses": [
+          "193.146.3.229"
+        ]
       },
       {
         "preference": 20,
@@ -29,8 +36,8 @@
       }
     ],
     "warnings": [
-      "All nameservers failed to answer the query vela1.cervantes.es. IN AAAA: Server Do53:1.0.0.1@53 answered SERVFAIL",
-      "All nameservers failed to answer the query vela2.cervantes.es. IN A: Server Do53:1.0.0.1@53 answered SERVFAIL"
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 193.146.3.230 is vela1.cervantes.es, but the A/AAAA DNS records for vela1.cervantes.es do not resolve to 193.146.3.230"
     ]
   },
   "spf": {

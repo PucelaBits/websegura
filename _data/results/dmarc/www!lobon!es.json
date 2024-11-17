@@ -5,9 +5,9 @@
   "ns": {
     "hostnames": [
       "isabel.dip-badajoz.es",
-      "proxy.dip-badajoz.es",
+      "artemis.ttd.net",
       "ineco.nic.es",
-      "artemis.ttd.net"
+      "proxy.dip-badajoz.es"
     ],
     "warnings": []
   },
@@ -34,11 +34,13 @@
     "record": "v=spf1 a mx ip4:195.57.11.0/25 mx:lobon.es -all",
     "valid": true,
     "dns_lookups": 3,
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ],
+    "warnings": [],
     "parsed": {
       "pass": [
+        {
+          "value": "195.57.11.116",
+          "mechanism": "a"
+        },
         {
           "value": "dip-badajoz-es-1.fortimailcloud.com",
           "mechanism": "mx"

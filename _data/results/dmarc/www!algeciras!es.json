@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "dns03.ono.com",
       "dns02.ono.com",
-      "dns01.ono.com",
-      "dns03.ono.com"
+      "dns01.ono.com"
     ],
     "warnings": []
   },
@@ -15,7 +15,9 @@
       {
         "preference": 6,
         "hostname": "mailgw.algeciras.es",
-        "addresses": []
+        "addresses": [
+          "188.85.16.244"
+        ]
       },
       {
         "preference": 10,
@@ -25,9 +27,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx a ip4:188.85.16.242 ip4:188.85.16.244 -all",

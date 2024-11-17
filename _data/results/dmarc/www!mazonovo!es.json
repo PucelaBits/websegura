@@ -4,27 +4,41 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.dinahosting.com",
-      "ns4.dinahosting.com",
       "ns3.dinahosting.com",
-      "ns.dinahosting.com"
+      "ns.dinahosting.com",
+      "ns4.dinahosting.com",
+      "ns2.dinahosting.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.mazonovo.es",
+        "addresses": [
+          "82.98.132.179"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 a mx ~all",
     "valid": true,
     "dns_lookups": 2,
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out.",
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ],
+    "warnings": [],
     "parsed": {
-      "pass": [],
+      "pass": [
+        {
+          "value": "82.98.132.179",
+          "mechanism": "a"
+        },
+        {
+          "value": "mail.mazonovo.es",
+          "mechanism": "mx"
+        }
+      ],
       "neutral": [],
       "softfail": [],
       "fail": [],

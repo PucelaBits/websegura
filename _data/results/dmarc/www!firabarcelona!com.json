@@ -16,12 +16,15 @@
       {
         "preference": 0,
         "hostname": "firabarcelona-com.mail.protection.outlook.com",
-        "addresses": []
+        "addresses": [
+          "52.101.68.10",
+          "52.101.68.16",
+          "52.101.68.36",
+          "52.101.73.1"
+        ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:82.223.209.146/32 ip4:95.215.120.0/22 include:spf.mittum.com include:spf.protection.outlook.com include:_spf.evicertia.com include:spf.mandrillapp.com include:spf.mailjet.com include:servers.mcsv.net  include:amazonses.com a:sendmail.pimefactura.com include:sendgrid.net -all",
