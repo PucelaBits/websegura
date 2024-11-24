@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.um.es",
-      "chico.rediris.es",
+      "sun.rediris.es",
       "dns1.um.es",
-      "sun.rediris.es"
+      "chico.rediris.es",
+      "dns2.um.es"
     ],
     "warnings": []
   },
@@ -16,7 +16,9 @@
       {
         "preference": 10,
         "hostname": "mx03.puc.rediris.es",
-        "addresses": []
+        "addresses": [
+          "143.55.146.78"
+        ]
       },
       {
         "preference": 10,
@@ -26,9 +28,7 @@
         ]
       }
     ],
-    "warnings": [
-      "All nameservers failed to answer the query mx03.puc.rediris.es. IN AAAA: Server Do53:1.0.0.1@53 answered SERVFAIL"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.puc.rediris.es include:spf.protection.outlook.com ip4:155.54.212.160/28 ip4:155.54.211.128/28 ip6:2001:720:1710:601::/64 ip6:2001:720:1710:607::/64 a:mail.symposium.events -all",

@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "lanzarote1.servidoresdominios.com",
-      "lanzarote2.servidoresdominios.com"
+      "lanzarote2.servidoresdominios.com",
+      "lanzarote1.servidoresdominios.com"
     ],
     "warnings": []
   },
@@ -15,10 +15,10 @@
         "preference": 0,
         "hostname": "turismolanzarote-com.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.27",
-          "52.101.68.29",
-          "52.101.73.22",
-          "52.101.73.24"
+          "52.101.68.15",
+          "52.101.68.16",
+          "52.101.68.5",
+          "52.101.73.19"
         ]
       }
     ],
@@ -27,7 +27,7 @@
   "spf": {
     "record": "v=spf1 include:_spf.loading.es  include:spf.protection.outlook.com -all",
     "valid": true,
-    "dns_lookups": 2,
+    "dns_lookups": 3,
     "warnings": [],
     "parsed": {
       "pass": [],
@@ -37,8 +37,8 @@
       "include": [
         {
           "domain": "_spf.loading.es",
-          "record": "v=spf1 ip4:91.146.96.0/21 ip4:185.47.244.0/22 ip4:185.50.44.0/22 ip4:185.186.168.0/22 ip4:185.187.224.0/22 ip4:195.192.255.0/24 ip4:217.61.208.0/21 ip6:2a01:71c0::/31 ~all",
-          "dns_lookups": 0,
+          "record": "v=spf1 ip4:91.146.96.0/21 ip4:185.47.244.0/22 ip4:185.50.44.0/22 ip4:185.186.168.0/22 ip4:185.187.224.0/22 ip4:195.192.255.0/24 ip4:217.61.208.0/21 ip6:2a01:71c0::/31 include:relay.mailchannels.net ~all",
+          "dns_lookups": 1,
           "parsed": {
             "pass": [
               {
@@ -77,7 +77,45 @@
             "neutral": [],
             "softfail": [],
             "fail": [],
-            "include": [],
+            "include": [
+              {
+                "domain": "relay.mailchannels.net",
+                "record": "v=spf1 ip4:23.83.208.0/20 ip4:199.10.31.235/32 ip4:199.10.31.236/31 ip4:199.10.31.238/32 ip4:35.85.190.185/32 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "23.83.208.0/20",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "199.10.31.235/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "199.10.31.236/31",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "199.10.31.238/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "35.85.190.185/32",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              }
+            ],
             "redirect": null,
             "exp": null,
             "all": "softfail"

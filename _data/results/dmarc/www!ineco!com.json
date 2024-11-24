@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.ineco.es",
-      "ns1.ineco.es"
+      "ns1.ineco.es",
+      "ns2.ineco.es"
     ],
     "warnings": []
   },
@@ -15,10 +15,10 @@
         "preference": 1,
         "hostname": "ineco-com.mail.protection.outlook.com",
         "addresses": [
+          "52.101.68.0",
           "52.101.68.27",
-          "52.101.68.8",
-          "52.101.73.16",
-          "52.101.73.21"
+          "52.101.68.32",
+          "52.101.73.16"
         ]
       }
     ],

@@ -20,31 +20,31 @@
         "hostname": "aspmx.l.google.com",
         "addresses": [
           "142.250.141.26",
-          "2607:f8b0:4023:c0b::1a"
+          "2607:f8b0:4023:c0b::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "108.177.104.26",
-          "2607:f8b0:4003:c04::1b"
+          "108.177.104.27",
+          "2607:f8b0:4003:c04::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "142.250.152.26",
-          "2607:f8b0:4001:c56::1b"
+          "142.250.152.27",
+          "2607:f8b0:4001:c56::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "172.253.113.26",
-          "2607:f8b0:4023:1::1b"
+          "172.253.113.27",
+          "2607:f8b0:4023:1::1a"
         ]
       },
       {
@@ -62,13 +62,11 @@
     "record": "v=spf1 include:uimp.ip-zone.com include:_spf.google.com a mx -all",
     "valid": true,
     "dns_lookups": 7,
-    "warnings": [],
+    "warnings": [
+      "All nameservers failed to answer the query uimp.es. IN AAAA: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    ],
     "parsed": {
       "pass": [
-        {
-          "value": "212.128.111.246",
-          "mechanism": "a"
-        },
         {
           "value": "aspmx.l.google.com",
           "mechanism": "mx"

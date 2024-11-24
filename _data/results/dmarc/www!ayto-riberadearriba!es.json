@@ -7,79 +7,38 @@
     "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "silo.greencom.net",
-        "addresses": [
-          "176.31.240.74"
-        ]
-      }
-    ],
-    "warnings": []
-  },
-  "spf": {
-    "record": null,
-    "valid": false,
+    "hosts": [],
     "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
-  "dmarc": {
-    "record": "v=DMARC1; p=quarantine; rua=mailto:dmarc@greencom.net; ruf=mailto:dmarc@greencom.net",
+  "spf": {
+    "record": "v=spf1 mx ip4:176.31.240.74 ~all",
     "valid": true,
-    "location": "ayto-riberadearriba.es",
-    "warnings": [
-      "greencom.net does not indicate that it accepts DMARC reports about ayto-riberadearriba.es - Authorization record not found: ayto-riberadearriba.es._report._dmarc.greencom.net IN TXT \"v=DMARC1\"",
-      "greencom.net does not indicate that it accepts DMARC reports about ayto-riberadearriba.es - Authorization record not found: ayto-riberadearriba.es._report._dmarc.greencom.net IN TXT \"v=DMARC1\""
-    ],
-    "tags": {
-      "v": {
-        "value": "DMARC1",
-        "explicit": true
-      },
-      "p": {
-        "value": "quarantine",
-        "explicit": true
-      },
-      "rua": {
-        "value": "mailto:dmarc@greencom.net",
-        "explicit": true
-      },
-      "ruf": {
-        "value": "mailto:dmarc@greencom.net",
-        "explicit": true
-      },
-      "adkim": {
-        "value": "r",
-        "explicit": false
-      },
-      "aspf": {
-        "value": "r",
-        "explicit": false
-      },
-      "fo": {
-        "value": [
-          "0"
-        ],
-        "explicit": false
-      },
-      "pct": {
-        "value": 100,
-        "explicit": false
-      },
-      "rf": {
-        "value": [
-          "afrf"
-        ],
-        "explicit": false
-      },
-      "ri": {
-        "value": 86400,
-        "explicit": false
-      },
-      "sp": {
-        "value": "quarantine",
-        "explicit": false
-      }
+    "dns_lookups": 1,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "silo.greencom.net",
+          "mechanism": "mx"
+        },
+        {
+          "value": "176.31.240.74",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
     }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   }
 }

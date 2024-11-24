@@ -15,10 +15,10 @@
         "preference": 0,
         "hostname": "uclm-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.15",
-          "52.101.73.30",
-          "52.101.73.4",
-          "52.101.73.6"
+          "52.101.68.16",
+          "52.101.68.29",
+          "52.101.68.5",
+          "52.101.73.22"
         ]
       }
     ],
@@ -112,7 +112,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=reject; pct=0; sp=reject; rua=mailto:dmarc@6ja9e1cq.uriports.com; ruf=mailto:dmarc@6ja9e1cq.uriports.com; fo=1:d:s",
+    "record": "v=DMARC1; p=reject; pct=25; sp=reject; rua=mailto:dmarc@6ja9e1cq.uriports.com; ruf=mailto:dmarc@6ja9e1cq.uriports.com; fo=1:d:s",
     "valid": true,
     "location": "uclm.es",
     "warnings": [
@@ -128,7 +128,7 @@
         "explicit": true
       },
       "pct": {
-        "value": 0,
+        "value": 25,
         "explicit": true
       },
       "sp": {
