@@ -16,10 +16,10 @@
         "preference": 0,
         "hostname": "dipsoria-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.21",
-          "52.101.73.16",
-          "52.101.73.2",
-          "52.101.73.4"
+          "52.101.68.10",
+          "52.101.68.27",
+          "52.101.68.3",
+          "52.101.73.30"
         ]
       }
     ],
@@ -200,9 +200,53 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1",
-    "valid": false,
+    "record": "v=DMARC1; p=none;",
+    "valid": true,
     "location": "dipsoria.es",
-    "error": "Error: Expected version_tag at position 0 in: v=DMARC1"
+    "warnings": [
+      "rua tag (destination for aggregate reports) not found"
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }

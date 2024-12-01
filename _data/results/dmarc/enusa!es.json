@@ -15,17 +15,17 @@
         "preference": 10,
         "hostname": "enusa-es.mail.protection.outlook.com",
         "addresses": [
+          "52.101.68.0",
+          "52.101.68.16",
           "52.101.68.25",
-          "52.101.73.1",
-          "52.101.73.12",
-          "52.101.73.4"
+          "52.101.68.3"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:195.235.227.27 ip4:195.235.227.13 include:spf.protection.outlook.com include:mmalaga.enusa.es -all",
+    "record": "v=spf1 ip4:195.235.227.27 ip4:195.235.227.13 ip4:90.166.10.235 ip4:90.166.10.241 include:spf.protection.outlook.com include:mmalaga.enusa.es -all",
     "valid": false,
     "warnings": [],
     "error": "The domain mmalaga.enusa.es does not exist"

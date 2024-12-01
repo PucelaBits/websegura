@@ -3,29 +3,34 @@
   "base_domain": "ayto-riberadearriba.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hostnames": [
+      "adosinda.greencom.net",
+      "asturias.greencom.net"
+    ],
+    "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "asturias.greencom.net",
+        "addresses": [
+          "188.165.237.165"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx ip4:176.31.240.74 ~all",
+    "record": "v=spf1 mx a ~all",
     "valid": true,
-    "dns_lookups": 1,
-    "warnings": [],
+    "dns_lookups": 2,
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out.",
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ],
     "parsed": {
-      "pass": [
-        {
-          "value": "silo.greencom.net",
-          "mechanism": "mx"
-        },
-        {
-          "value": "176.31.240.74",
-          "mechanism": "ip4"
-        }
-      ],
+      "pass": [],
       "neutral": [],
       "softfail": [],
       "fail": [],

@@ -16,8 +16,8 @@
         "preference": 10,
         "hostname": "mx.spamexperts.com",
         "addresses": [
-          "2001:550:2:78::ca:100",
-          "38.89.254.156"
+          "2001:550:2:61::2fc:100",
+          "38.111.198.185"
         ]
       },
       {
@@ -49,13 +49,14 @@
     ],
     "warnings": [
       "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records",
+      "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records",
       "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records"
     ]
   },
   "spf": {
     "record": "v=spf1 include:spf2.malaga.es -all",
     "valid": true,
-    "dns_lookups": 6,
+    "dns_lookups": 7,
     "warnings": [],
     "parsed": {
       "pass": [],
@@ -65,8 +66,8 @@
       "include": [
         {
           "domain": "spf2.malaga.es",
-          "record": "v=spf1 a:delivery.antispamcloud.com ip4:185.76.214.20 ip4:185.76.214.21 include:spf.antispamcloud.com ~all",
-          "dns_lookups": 5,
+          "record": "v=spf1 a:delivery.antispamcloud.com ip4:185.76.214.20 ip4:185.76.214.21 include:spf.antispamcloud.com include:spf-00870b02.pphosted.com ~all",
+          "dns_lookups": 6,
           "parsed": {
             "pass": [
               {
@@ -410,22 +411,6 @@
                 "mechanism": "a"
               },
               {
-                "value": "2001:550:2:8::5f:106",
-                "mechanism": "a"
-              },
-              {
-                "value": "2001:550:2:8::5f:107",
-                "mechanism": "a"
-              },
-              {
-                "value": "2001:550:2:8::5f:108",
-                "mechanism": "a"
-              },
-              {
-                "value": "2001:550:2:8::5f:109",
-                "mechanism": "a"
-              },
-              {
                 "value": "2001:550:2:8::b0:18",
                 "mechanism": "a"
               },
@@ -723,22 +708,6 @@
               },
               {
                 "value": "38.133.191.232",
-                "mechanism": "a"
-              },
-              {
-                "value": "38.133.191.234",
-                "mechanism": "a"
-              },
-              {
-                "value": "38.133.191.237",
-                "mechanism": "a"
-              },
-              {
-                "value": "38.133.191.238",
-                "mechanism": "a"
-              },
-              {
-                "value": "38.133.191.243",
                 "mechanism": "a"
               },
               {
@@ -1082,6 +1051,31 @@
                   "redirect": null,
                   "exp": null,
                   "all": "fail"
+                },
+                "warnings": []
+              },
+              {
+                "domain": "spf-00870b02.pphosted.com",
+                "record": "v=spf1 ip4:66.159.235.119 ip4:143.55.150.246",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "66.159.235.119",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "143.55.150.246",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "neutral"
                 },
                 "warnings": []
               }

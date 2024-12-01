@@ -126,7 +126,11 @@
           "parsed": {
             "pass": [
               {
-                "value": "smtp.seg-social.es",
+                "value": "mx1.seg-social.es",
+                "mechanism": "mx"
+              },
+              {
+                "value": "mx2.seg-social.es",
                 "mechanism": "mx"
               },
               {

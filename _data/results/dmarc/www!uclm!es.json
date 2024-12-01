@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "chico.rediris.es",
-      "sun.rediris.es"
+      "sun.rediris.es",
+      "chico.rediris.es"
     ],
     "warnings": []
   },
@@ -15,10 +15,10 @@
         "preference": 0,
         "hostname": "uclm-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.16",
-          "52.101.68.29",
-          "52.101.68.5",
-          "52.101.73.22"
+          "52.101.68.27",
+          "52.101.68.8",
+          "52.101.73.24",
+          "52.101.73.28"
         ]
       }
     ],
@@ -112,7 +112,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=reject; pct=25; sp=reject; rua=mailto:dmarc@6ja9e1cq.uriports.com; ruf=mailto:dmarc@6ja9e1cq.uriports.com; fo=1:d:s",
+    "record": "v=DMARC1; p=reject; pct=50; sp=reject; rua=mailto:dmarc@6ja9e1cq.uriports.com; ruf=mailto:dmarc@6ja9e1cq.uriports.com; fo=1:d:s",
     "valid": true,
     "location": "uclm.es",
     "warnings": [
@@ -128,7 +128,7 @@
         "explicit": true
       },
       "pct": {
-        "value": 25,
+        "value": 50,
         "explicit": true
       },
       "sp": {

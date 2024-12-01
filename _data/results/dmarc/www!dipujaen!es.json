@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "dns02.ono.com",
-      "dns03.ono.com",
-      "dns01.ono.com"
+      "dns01.ono.com",
+      "dns03.ono.com"
     ],
     "warnings": []
   },
@@ -14,7 +14,7 @@
     "hosts": [
       {
         "preference": 0,
-        "hostname": "correo3.dipujaen.es",
+        "hostname": "correo.dipujaen.es",
         "addresses": [
           "77.228.205.36"
         ]
@@ -35,7 +35,7 @@
       },
       {
         "preference": 20,
-        "hostname": "correo.dipujaen.es",
+        "hostname": "correo3.dipujaen.es",
         "addresses": [
           "77.228.205.36"
         ]
@@ -51,7 +51,7 @@
     "parsed": {
       "pass": [
         {
-          "value": "correo3.dipujaen.es",
+          "value": "correo.dipujaen.es",
           "mechanism": "mx"
         },
         {
@@ -63,7 +63,7 @@
           "mechanism": "mx"
         },
         {
-          "value": "correo.dipujaen.es",
+          "value": "correo3.dipujaen.es",
           "mechanism": "mx"
         },
         {
