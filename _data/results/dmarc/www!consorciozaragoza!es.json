@@ -10,16 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "correo.consorciozaragoza.es",
-        "addresses": [
-          "2.139.174.72"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "All nameservers failed to answer the query 72.174.139.2.in-addr.arpa. IN PTR: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "spf": {
     "record": "v=spf1 ip4:2.139.174.72 ip4:213.4.82.201 a mx a:consorciozaragoza.es ~all",

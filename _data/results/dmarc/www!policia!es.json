@@ -13,34 +13,20 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "correo.policia.es",
+        "hostname": "mxa-00825801.gslb.pphosted.com",
         "addresses": [
-          "195.55.116.96"
+          "143.55.144.57"
         ]
       },
       {
-        "preference": 50,
-        "hostname": "correo11.policia.es",
+        "preference": 10,
+        "hostname": "mxb-00825801.gslb.pphosted.com",
         "addresses": [
-          "195.55.116.96"
-        ]
-      },
-      {
-        "preference": 70,
-        "hostname": "correo22.policia.es",
-        "addresses": [
-          "195.55.116.96"
+          "185.183.28.235"
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 195.55.116.96 is correo.policia.es, but the A/AAAA DNS records for correo.policia.es do not resolve to 195.55.116.96",
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 195.55.116.96 is correo.policia.es, but the A/AAAA DNS records for correo.policia.es do not resolve to 195.55.116.96",
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 195.55.116.96 is correo.policia.es, but the A/AAAA DNS records for correo.policia.es do not resolve to 195.55.116.96"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx -all",
@@ -50,15 +36,11 @@
     "parsed": {
       "pass": [
         {
-          "value": "correo.policia.es",
+          "value": "mxa-00825801.gslb.pphosted.com",
           "mechanism": "mx"
         },
         {
-          "value": "correo11.policia.es",
-          "mechanism": "mx"
-        },
-        {
-          "value": "correo22.policia.es",
+          "value": "mxb-00825801.gslb.pphosted.com",
           "mechanism": "mx"
         }
       ],

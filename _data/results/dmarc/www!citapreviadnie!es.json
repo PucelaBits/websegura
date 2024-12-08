@@ -3,22 +3,60 @@
   "base_domain": "citapreviadnie.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "All nameservers failed to answer the query citapreviadnie.es. IN NS: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "hostnames": [
+      "dns.policia.es",
+      "dns2.policia.es"
+    ],
+    "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query citapreviadnie.es. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mxa-00825801.gslb.pphosted.com",
+        "addresses": [
+          "143.55.144.57"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mxb-00825801.gslb.pphosted.com",
+        "addresses": [
+          "185.183.28.235"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "All nameservers failed to answer the query citapreviadnie.es. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "record": "v=spf1 mx -all",
+    "valid": true,
+    "dns_lookups": 1,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "mxa-00825801.gslb.pphosted.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mxb-00825801.gslb.pphosted.com",
+          "mechanism": "mx"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
     "record": null,
     "valid": false,
     "location": null,
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "error": "A DMARC record does not exist for this domain or its base domain"
   }
 }

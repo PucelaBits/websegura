@@ -4,20 +4,20 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns7.acens.net",
-      "ns1.acens.net",
       "srvefficientipmor.educarex.pri",
-      "srvcpdefficientipmor.gobex.pri",
+      "ns3.acens.net",
+      "ns1.acens.net",
       "ns4.acens.net",
+      "srvcpdefficientipagr.gobex.pri",
+      "ip90.dominioabsoluto.com",
       "ns2.dominioabsoluto.com",
       "ns2.acens.net",
-      "srvefficientipagr.educarex.pri",
-      "ip90.dominioabsoluto.com",
+      "ns7.acens.net",
       "srvadmefficientipagr.gobex.pri",
-      "ns3.acens.net",
-      "srvcpdefficientipagr.gobex.pri",
-      "ns1.dominioabsoluto.com",
-      "srvadmefficientipmor.gobex.pri"
+      "srvcpdefficientipmor.gobex.pri",
+      "srvadmefficientipmor.gobex.pri",
+      "srvefficientipagr.educarex.pri",
+      "ns1.dominioabsoluto.com"
     ],
     "warnings": []
   },
@@ -27,17 +27,17 @@
         "preference": 10,
         "hostname": "juntaex-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.73.12",
-          "52.101.73.30",
-          "52.101.73.4",
-          "52.101.73.8"
+          "52.101.68.29",
+          "52.101.73.2",
+          "52.101.73.28",
+          "52.101.73.6"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:178.255.110.89  ip4:217.124.182.92 ip4:178.255.108.128 include:spf.protection.outlook.com -all",
+    "record": "v=spf1 ip4:178.255.110.89 ip4:178.255.108.128 include:spf.protection.outlook.com -all",
     "valid": true,
     "dns_lookups": 1,
     "warnings": [],
@@ -45,10 +45,6 @@
       "pass": [
         {
           "value": "178.255.110.89",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "217.124.182.92",
           "mechanism": "ip4"
         },
         {

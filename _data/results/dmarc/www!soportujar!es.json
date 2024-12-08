@@ -4,71 +4,43 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns3.dnsxperta.com",
+      "ns2.dnsxperta.com",
       "ns1.dnsxperta.com",
-      "ns2.dnsxperta.com"
+      "ns3.dnsxperta.com"
     ],
     "warnings": []
   },
   "mx": {
     "hosts": [
       {
-        "preference": 100,
-        "hostname": "mx1.dnsxperta.com",
+        "preference": 10,
+        "hostname": "mail.soportujar.es",
         "addresses": [
-          "217.13.80.224",
-          "217.13.80.229",
-          "83.147.63.42"
+          "119.8.213.87"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The domain ecs-119-8-213-87.reverse.open-telekom-cloud.com does not exist",
+      "The reverse DNS of 119.8.213.87 is ecs-119-8-213-87.reverse.open-telekom-cloud.com, but the A/AAAA DNS records for ecs-119-8-213-87.reverse.open-telekom-cloud.com do not resolve to 119.8.213.87"
+    ]
   },
   "spf": {
-    "record": "v=spf1 include:dnsxperta.com -all",
+    "record": "v=spf1 ip4:119.8.213.87 -all",
     "valid": true,
-    "dns_lookups": 1,
+    "dns_lookups": 0,
     "warnings": [],
     "parsed": {
-      "pass": [],
+      "pass": [
+        {
+          "value": "119.8.213.87",
+          "mechanism": "ip4"
+        }
+      ],
       "neutral": [],
       "softfail": [],
       "fail": [],
-      "include": [
-        {
-          "domain": "dnsxperta.com",
-          "record": "v=spf1 ip4:217.13.80.0/20 ip4:194.143.202.166/28 ip4:194.143.202.194/28 ip4:83.147.63.0/24 -all",
-          "dns_lookups": 0,
-          "parsed": {
-            "pass": [
-              {
-                "value": "217.13.80.0/20",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "194.143.202.166/28",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "194.143.202.194/28",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "83.147.63.0/24",
-                "mechanism": "ip4"
-              }
-            ],
-            "neutral": [],
-            "softfail": [],
-            "fail": [],
-            "include": [],
-            "redirect": null,
-            "exp": null,
-            "all": "fail"
-          },
-          "warnings": []
-        }
-      ],
+      "include": [],
       "redirect": null,
       "exp": null,
       "all": "fail"
@@ -78,6 +50,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.soportujar.es\n\nv=spf1 include:dnsxperta.com -all"
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.soportujar.es\n\nv=spf1 ip4:119.8.213.87 -all"
   }
 }

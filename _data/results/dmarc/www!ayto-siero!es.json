@@ -240,7 +240,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=reject; rua=mailto:dmarc@ayto-siero.es; ruf=mailto:dmarc@ayto-siero.es",
+    "record": "v=DMARC1; p=quarantine; rua=mailto:dmarc@ayto-siero.es; ruf=mailto:dmarc@ayto-siero.es",
     "valid": true,
     "location": "ayto-siero.es",
     "warnings": [],
@@ -250,7 +250,7 @@
         "explicit": true
       },
       "p": {
-        "value": "reject",
+        "value": "quarantine",
         "explicit": true
       },
       "rua": {
@@ -302,7 +302,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "reject",
+        "value": "quarantine",
         "explicit": false
       }
     }
