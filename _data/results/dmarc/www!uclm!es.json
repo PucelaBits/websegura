@@ -15,10 +15,10 @@
         "preference": 0,
         "hostname": "uclm-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.3",
+          "52.101.68.29",
           "52.101.73.15",
-          "52.101.73.16",
-          "52.101.73.24"
+          "52.101.73.26",
+          "52.101.73.8"
         ]
       }
     ],
@@ -112,12 +112,10 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=reject; pct=75; sp=reject; rua=mailto:dmarc@6ja9e1cq.uriports.com; ruf=mailto:dmarc@6ja9e1cq.uriports.com; fo=1:d:s",
+    "record": "v=DMARC1; p=reject; sp=reject; rua=mailto:dmarc@6ja9e1cq.uriports.com; ruf=mailto:dmarc@6ja9e1cq.uriports.com; fo=1:d:s",
     "valid": true,
     "location": "uclm.es",
-    "warnings": [
-      "pct value is less than 100. This leads to inconsistent and unpredictable policy enforcement. Consider using p=none to monitor results instead"
-    ],
+    "warnings": [],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -125,10 +123,6 @@
       },
       "p": {
         "value": "reject",
-        "explicit": true
-      },
-      "pct": {
-        "value": 75,
         "explicit": true
       },
       "sp": {
@@ -169,6 +163,10 @@
       },
       "aspf": {
         "value": "r",
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
         "explicit": false
       },
       "rf": {

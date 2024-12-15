@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.serv513734.servidoresdns.net",
-      "dns2.serv513734.servidoresdns.net"
+      "dns2.serv513734.servidoresdns.net",
+      "dns1.serv513734.servidoresdns.net"
     ],
     "warnings": []
   },
@@ -36,7 +36,7 @@
     ]
   },
   "spf": {
-    "record": "v=spf1 a mx include:spf.protection.outlook.com include:spf.acumbamail.com a:smtp.mcp.es a:mail.mcp.es include:mail.zendesk.com ~all",
+    "record": "v=spf1 a mx include:spf.protection.outlook.com include:spf.acumbamail.com a:smtp.mcp.es a:mail.mcp.es include:mail.zendesk.com ip4:195.76.209.196 ~all",
     "valid": true,
     "dns_lookups": 7,
     "warnings": [
@@ -63,6 +63,10 @@
         {
           "value": "195.76.209.199",
           "mechanism": "a"
+        },
+        {
+          "value": "195.76.209.196",
+          "mechanism": "ip4"
         }
       ],
       "neutral": [],

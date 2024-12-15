@@ -3,8 +3,13 @@
   "base_domain": "codigotecnico.org",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hostnames": [
+      "chico.rediris.es",
+      "olmo.csic.es",
+      "sun.rediris.es",
+      "sabina.cti.csic.es"
+    ],
+    "warnings": []
   },
   "mx": {
     "hosts": [

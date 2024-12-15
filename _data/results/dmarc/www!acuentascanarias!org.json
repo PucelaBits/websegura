@@ -10,8 +10,26 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query 177.156.26.80.in-addr.arpa. IN PTR: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 0,
+        "hostname": "acuentascanarias-org.mail.protection.outlook.com",
+        "addresses": [
+          "52.101.68.15",
+          "52.101.68.5",
+          "52.101.73.12",
+          "52.101.73.24"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "correo.acuentascanarias.org",
+        "addresses": [
+          "80.26.156.177"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com -all",

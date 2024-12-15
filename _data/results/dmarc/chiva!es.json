@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "ns3.dnsxperta.com",
-      "ns1.dnsxperta.com",
-      "ns2.dnsxperta.com"
+      "ns2.dnsxperta.com",
+      "ns1.dnsxperta.com"
     ],
     "warnings": []
   },
@@ -16,14 +16,17 @@
         "preference": 0,
         "hostname": "chiva-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.25",
-          "52.101.68.3",
-          "52.101.68.36",
-          "52.101.73.21"
+          "52.101.68.15",
+          "52.101.68.29",
+          "52.101.73.1",
+          "52.101.73.11"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 52.101.73.1 is mail-am3pr04cu00501.inbound.protection.outlook.com, but the A/AAAA DNS records for mail-am3pr04cu00501.inbound.protection.outlook.com do not resolve to 52.101.73.1"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com ip4:213.4.82.254 ip4:213.4.82.201 -all",

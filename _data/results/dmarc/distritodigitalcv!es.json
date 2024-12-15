@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns10.ovh.net",
-      "ns10.ovh.net"
+      "ns10.ovh.net",
+      "dns10.ovh.net"
     ],
     "warnings": []
   },
@@ -15,9 +15,9 @@
         "preference": 0,
         "hostname": "distritodigitalcv-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.10",
-          "52.101.68.5",
-          "52.101.73.1",
+          "52.101.68.18",
+          "52.101.73.16",
+          "52.101.73.6",
           "52.101.73.8"
         ]
       }
@@ -109,7 +109,7 @@
         },
         {
           "domain": "eu.transmail.net",
-          "record": "v=spf1 ip4:136.143.168.0/24 ip4:136.143.170.0/24 ip4:185.172.198.0/24  ~all",
+          "record": "v=spf1 ip4:136.143.168.0/24 ip4:136.143.170.0/24 ip4:185.172.198.0/24 ip4:199.67.72.0/22 ~all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -123,6 +123,10 @@
               },
               {
                 "value": "185.172.198.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "199.67.72.0/22",
                 "mechanism": "ip4"
               }
             ],

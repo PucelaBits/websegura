@@ -17,14 +17,17 @@
         "preference": 10,
         "hostname": "paeria-cat.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.29",
+          "52.101.68.15",
           "52.101.73.1",
-          "52.101.73.2",
-          "52.101.73.28"
+          "52.101.73.21",
+          "52.101.73.6"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 52.101.73.1 is mail-am3pr04cu00501.inbound.protection.outlook.com, but the A/AAAA DNS records for mail-am3pr04cu00501.inbound.protection.outlook.com do not resolve to 52.101.73.1"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com include:_spf.atlassian.net ip4:13.69.76.22 ip4:91.103.148.82 ip4:40.85.130.75 ip4:195.57.245.235 ip4:194.224.186.128/27 ip4:195.77.85.128/26 ip4:77.246.188.131 ip4:13.80.72.161 ip4:13.88.200.22 -all",

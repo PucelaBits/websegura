@@ -14,6 +14,16 @@
   "mx": {
     "hosts": [
       {
+        "preference": 0,
+        "hostname": "animsa-es.mail.protection.outlook.com",
+        "addresses": [
+          "52.101.68.16",
+          "52.101.68.21",
+          "52.101.73.15",
+          "52.101.73.28"
+        ]
+      },
+      {
         "preference": 10,
         "hostname": "correo.animsa.es",
         "addresses": [
@@ -32,6 +42,10 @@
     ],
     "parsed": {
       "pass": [
+        {
+          "value": "animsa-es.mail.protection.outlook.com",
+          "mechanism": "mx"
+        },
         {
           "value": "correo.animsa.es",
           "mechanism": "mx"

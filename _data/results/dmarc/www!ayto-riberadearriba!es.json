@@ -4,19 +4,45 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "asturias.greencom.net",
-      "adosinda.greencom.net"
+      "adosinda.greencom.net",
+      "asturias.greencom.net"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "asturias.greencom.net",
+        "addresses": [
+          "188.165.237.165"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "record": "v=spf1 mx a ~all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ],
+    "parsed": {
+      "pass": [
+        {
+          "value": "asturias.greencom.net",
+          "mechanism": "mx"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
   },
   "dmarc": {
     "record": "v=DMARC1; p=none; rua=mailto:dmarc@greencom.net; ruf=mailto:dmarc@greencom.net",

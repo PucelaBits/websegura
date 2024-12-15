@@ -3,158 +3,22 @@
   "base_domain": "jccm.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "ns2.jccm.es",
-      "ns1.jccm.es"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mail.jccm.es",
-        "addresses": [
-          "89.107.242.26"
-        ]
-      },
-      {
-        "preference": 200,
-        "hostname": "mail2.jccm.es",
-        "addresses": [
-          "89.107.242.1"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
-    "record": "v=spf1 mx a:pop3.jccm.es a:smtp2.jccm.es a:mail1.jccm.es a:mail3.jccm.es a:mail4.jccm.es a:mail5.jccm.es a:mail6.jccm.es a:mail7.jccm.es a:mail8.jccm.es -all",
-    "valid": true,
-    "dns_lookups": 10,
-    "warnings": [],
-    "parsed": {
-      "pass": [
-        {
-          "value": "mail.jccm.es",
-          "mechanism": "mx"
-        },
-        {
-          "value": "mail2.jccm.es",
-          "mechanism": "mx"
-        },
-        {
-          "value": "89.107.242.28",
-          "mechanism": "a"
-        },
-        {
-          "value": "89.107.242.25",
-          "mechanism": "a"
-        },
-        {
-          "value": "89.107.245.11",
-          "mechanism": "a"
-        },
-        {
-          "value": "89.107.245.13",
-          "mechanism": "a"
-        },
-        {
-          "value": "89.107.245.14",
-          "mechanism": "a"
-        },
-        {
-          "value": "89.107.245.15",
-          "mechanism": "a"
-        },
-        {
-          "value": "89.107.245.16",
-          "mechanism": "a"
-        },
-        {
-          "value": "89.107.245.17",
-          "mechanism": "a"
-        },
-        {
-          "value": "89.107.245.18",
-          "mechanism": "a"
-        }
-      ],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [],
-      "redirect": null,
-      "exp": null,
-      "all": "fail"
-    }
+    "record": null,
+    "valid": false,
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; pct=100; fo=1; rua=mailto:dmarc@jccm.es; ruf=mailto:dmarc@jccm.es",
-    "valid": true,
-    "location": "jccm.es",
-    "warnings": [],
-    "tags": {
-      "v": {
-        "value": "DMARC1",
-        "explicit": true
-      },
-      "p": {
-        "value": "quarantine",
-        "explicit": true
-      },
-      "pct": {
-        "value": 100,
-        "explicit": true
-      },
-      "fo": {
-        "value": [
-          "1"
-        ],
-        "explicit": true
-      },
-      "rua": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "dmarc@jccm.es",
-            "size_limit": null
-          }
-        ],
-        "explicit": true
-      },
-      "ruf": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "dmarc@jccm.es",
-            "size_limit": null
-          }
-        ],
-        "explicit": true
-      },
-      "adkim": {
-        "value": "r",
-        "explicit": false
-      },
-      "aspf": {
-        "value": "r",
-        "explicit": false
-      },
-      "rf": {
-        "value": [
-          "afrf"
-        ],
-        "explicit": false
-      },
-      "ri": {
-        "value": 86400,
-        "explicit": false
-      },
-      "sp": {
-        "value": "quarantine",
-        "explicit": false
-      }
-    }
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   }
 }

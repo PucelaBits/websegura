@@ -4,14 +4,23 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "shades14.rzone.de",
-      "docks15.rzone.de"
+      "docks15.rzone.de",
+      "shades14.rzone.de"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 5,
+        "hostname": "smtp.rzone.de",
+        "addresses": [
+          "2a01:238:20a:202:50f0::2097",
+          "81.169.145.98"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 redirect=_spf.strato.com",

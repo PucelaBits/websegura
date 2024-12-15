@@ -15,14 +15,17 @@
         "preference": 0,
         "hostname": "manises-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.73.24",
-          "52.101.73.26",
-          "52.101.73.4",
-          "52.101.73.8"
+          "52.101.68.0",
+          "52.101.68.25",
+          "52.101.68.27",
+          "52.101.73.2"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 52.101.68.0 is mail-db3pr0202cu00100.inbound.protection.outlook.com, but the A/AAAA DNS records for mail-db3pr0202cu00100.inbound.protection.outlook.com do not resolve to 52.101.68.0"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com -all",
@@ -106,6 +109,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.manises.es\n\nv=spf1 include:spf.protection.outlook.com -all\n\ngoogle-site-verification=IDapQQ8AJ4al0WzrS2RLV9Xyh4jr6Q1HNnIpyLJsZ50\n\nMS=ms96836429"
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.manises.es\n\nv=spf1 include:spf.protection.outlook.com -all\n\nMS=ms96836429\n\ngoogle-site-verification=IDapQQ8AJ4al0WzrS2RLV9Xyh4jr6Q1HNnIpyLJsZ50"
   }
 }

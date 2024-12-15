@@ -3,35 +3,22 @@
   "base_domain": "malaga.eu",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "ns1.malaga.eu",
-      "ns2.malaga.eu"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "correo.malaga.eu",
-        "addresses": [
-          "95.129.152.241"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 mx ip4:95.129.152.235 include:spf.emdlv.net include:spf.mandrillapp.com include:_spf.google.com -all",
     "valid": true,
     "dns_lookups": 7,
-    "warnings": [],
+    "warnings": [
+      "All nameservers failed to answer the query gestrisam.malaga.eu. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    ],
     "parsed": {
       "pass": [
-        {
-          "value": "correo.malaga.eu",
-          "mechanism": "mx"
-        },
         {
           "value": "95.129.152.235",
           "mechanism": "ip4"
@@ -313,6 +300,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.gestrisam.malaga.eu\n\nv=spf1 mx ip4:95.129.152.235 include:spf.emdlv.net include:spf.mandrillapp.com include:_spf.google.com -all\n\ngoogle-site-verification=9ZNgjYS_7ZU5qz3F3bBs-F51L2VONCGAJBhtku_lZcY"
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   }
 }
