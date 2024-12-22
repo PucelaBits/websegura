@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns3.dinahosting.com",
-      "ns4.dinahosting.com",
+      "ns.dinahosting.com",
       "ns2.dinahosting.com",
-      "ns.dinahosting.com"
+      "ns3.dinahosting.com",
+      "ns4.dinahosting.com"
     ],
     "warnings": []
   },
@@ -45,14 +45,18 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:82.98.165.212 ip4:178.33.231.124 ip6:2001:41d0:8:287c::/64 a:vl22247.dinaserver.com a:mercavalencia.es include:spf.protection.outlook.com include:spf.hornetsecurity.com -all",
+    "record": "v=spf1 ip4:82.98.165.212 ip4:82.98.175.154 ip4:178.33.231.124 ip6:2001:41d0:8:287c::/64 a:vl22247.dinaserver.com a:vl27740.dinaserver.com a:mercavalencia.es include:spf.protection.outlook.com include:spf.hornetsecurity.com -all",
     "valid": true,
-    "dns_lookups": 4,
+    "dns_lookups": 5,
     "warnings": [],
     "parsed": {
       "pass": [
         {
           "value": "82.98.165.212",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "82.98.175.154",
           "mechanism": "ip4"
         },
         {
@@ -68,7 +72,11 @@
           "mechanism": "a"
         },
         {
-          "value": "82.98.165.212",
+          "value": "82.98.175.154",
+          "mechanism": "a"
+        },
+        {
+          "value": "82.98.175.154",
           "mechanism": "a"
         }
       ],

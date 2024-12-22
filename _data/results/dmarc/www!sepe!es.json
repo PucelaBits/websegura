@@ -10,40 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "sepe-es.mail.protection.outlook.com",
-        "addresses": [
-          "52.101.68.16",
-          "52.101.68.18",
-          "52.101.73.11",
-          "52.101.73.21"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "correo.sepe.es",
-        "addresses": [
-          "192.187.23.249"
-        ]
-      },
-      {
-        "preference": 30,
-        "hostname": "correo1.sepe.es",
-        "addresses": [
-          "192.187.23.240"
-        ]
-      },
-      {
-        "preference": 50,
-        "hostname": "correo2.sepe.es",
-        "addresses": [
-          "192.187.23.248"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "All nameservers failed to answer the query 248.23.187.192.in-addr.arpa. IN PTR: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "spf": {
     "record": "v=spf1 ip4:192.187.23.248/31 ip4:192.187.23.240 include:spf.protection.outlook.com ~all",

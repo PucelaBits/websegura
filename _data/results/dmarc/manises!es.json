@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.dnsxperta.com",
-      "ns2.dnsxperta.com"
+      "ns2.dnsxperta.com",
+      "ns1.dnsxperta.com"
     ],
     "warnings": []
   },
@@ -15,17 +15,14 @@
         "preference": 0,
         "hostname": "manises-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.0",
-          "52.101.68.25",
-          "52.101.68.27",
-          "52.101.73.2"
+          "52.101.68.8",
+          "52.101.73.16",
+          "52.101.73.19",
+          "52.101.73.6"
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 52.101.68.0 is mail-db3pr0202cu00100.inbound.protection.outlook.com, but the A/AAAA DNS records for mail-db3pr0202cu00100.inbound.protection.outlook.com do not resolve to 52.101.68.0"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com -all",

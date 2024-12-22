@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.dnsxperta.com",
+      "ns2.dnsxperta.com",
       "ns3.dnsxperta.com",
-      "ns2.dnsxperta.com"
+      "ns1.dnsxperta.com"
     ],
     "warnings": []
   },
@@ -16,9 +16,9 @@
         "preference": 200,
         "hostname": "vilamarxant-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.15",
-          "52.101.68.18",
-          "52.101.73.22",
+          "52.101.68.0",
+          "52.101.73.11",
+          "52.101.73.19",
           "52.101.73.24"
         ]
       }

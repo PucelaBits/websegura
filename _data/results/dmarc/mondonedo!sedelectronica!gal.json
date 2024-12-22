@@ -8,7 +8,9 @@
   },
   "mx": {
     "hosts": [],
-    "error": "All nameservers failed to answer the query mondonedo.sedelectronica.gal. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
   },
   "spf": {
     "record": null,
@@ -16,9 +18,81 @@
     "error": "mondonedo.sedelectronica.gal does not have a SPF TXT record"
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "record": "v=DMARC1; p=none; sp=none; rua=mailto:rua@espublico.com,mailto:75d5fbd79d2a605@for.dmarcanalyzer.com; ruf=mailto:ruf@espublico.com,mailto:75d5fbd79d2a605@for.dmarcanalyzer.com; fo=1; ri=3600",
+    "valid": true,
+    "location": "sedelectronica.gal",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "sp": {
+        "value": "none",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "rua@espublico.com",
+            "size_limit": null
+          },
+          {
+            "scheme": "mailto",
+            "address": "75d5fbd79d2a605@for.dmarcanalyzer.com",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "ruf@espublico.com",
+            "size_limit": null
+          },
+          {
+            "scheme": "mailto",
+            "address": "75d5fbd79d2a605@for.dmarcanalyzer.com",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "1"
+        ],
+        "explicit": true
+      },
+      "ri": {
+        "value": 3600,
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      }
+    }
   }
 }

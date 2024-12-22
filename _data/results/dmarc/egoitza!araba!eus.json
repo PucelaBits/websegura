@@ -22,7 +22,6 @@
     "valid": true,
     "location": "araba.eus",
     "warnings": [
-      "Failed to retrieve MX records for the domain of rua email address ruf@araba.eus - All nameservers failed to answer the query araba.eus. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL",
       "pct value is less than 100. This leads to inconsistent and unpredictable policy enforcement. Consider using p=none to monitor results instead"
     ],
     "tags": {
@@ -45,7 +44,13 @@
         "explicit": true
       },
       "rua": {
-        "value": "mailto:ruf@araba.eus",
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "ruf@araba.eus",
+            "size_limit": null
+          }
+        ],
         "explicit": true
       },
       "ruf": {
