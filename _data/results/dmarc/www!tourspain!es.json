@@ -28,9 +28,7 @@
       {
         "preference": 20,
         "hostname": "mailin.minetad.es",
-        "addresses": [
-          "193.146.123.230"
-        ]
+        "addresses": []
       },
       {
         "preference": 20,
@@ -41,7 +39,7 @@
       }
     ],
     "warnings": [
-      "193.146.123.230 does not have any reverse DNS (PTR) records",
+      "All nameservers failed to answer the query mailin.minetad.es. IN A: Server Do53:1.0.0.1@53 answered SERVFAIL",
       "193.146.123.234 does not have any reverse DNS (PTR) records"
     ]
   },

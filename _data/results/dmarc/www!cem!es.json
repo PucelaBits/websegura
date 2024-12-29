@@ -46,9 +46,71 @@
     ]
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "All nameservers failed to answer the query cem.es. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "record": "v=spf1 mx include:spf.serviciosmin.gob.es -all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "mailin.serviciosmin.gob.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mailin1.serviciosmin.gob.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mailin.minetad.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mailin1.minetad.es",
+          "mechanism": "mx"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "spf.serviciosmin.gob.es",
+          "record": "v=spf1 ip4:193.146.123.231/32 ip4:193.146.123.235/32 ip4:192.187.16.25/32 ip4:192.187.16.27/32  ~all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "193.146.123.231/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "193.146.123.235/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "192.187.16.25/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "192.187.16.27/32",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
     "record": null,

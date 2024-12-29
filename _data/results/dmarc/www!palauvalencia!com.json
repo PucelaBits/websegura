@@ -15,36 +15,18 @@
         "preference": 10,
         "hostname": "mx.palauvalencia.com",
         "addresses": [
-          "38.242.231.36"
+          "82.223.50.31"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "82.223.50.31 does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
-    "record": "v=spf1 a ip4:38.242.231.36 -all",
-    "valid": true,
-    "dns_lookups": 1,
-    "warnings": [],
-    "parsed": {
-      "pass": [
-        {
-          "value": "46.202.134.70",
-          "mechanism": "a"
-        },
-        {
-          "value": "38.242.231.36",
-          "mechanism": "ip4"
-        }
-      ],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [],
-      "redirect": null,
-      "exp": null,
-      "all": "fail"
-    }
+    "record": null,
+    "valid": false,
+    "error": "palauvalencia.com has multiple SPF TXT records"
   },
   "dmarc": {
     "record": null,

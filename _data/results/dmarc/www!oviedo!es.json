@@ -4,14 +4,31 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns.transparentedge.eu",
-      "ns.transparentedge.es"
+      "ns.transparentedge.es",
+      "ns.transparentedge.eu"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query 100.132.100.94.in-addr.arpa. IN PTR: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx10.oviedo.es",
+        "addresses": [
+          "94.100.134.100"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mx20.oviedo.es",
+        "addresses": [
+          "94.100.132.100"
+        ]
+      }
+    ],
+    "warnings": [
+      "The reverse DNS of 94.100.134.100 is nlb01-hz3.hornetsecurity.com, but the A/AAAA DNS records for nlb01-hz3.hornetsecurity.com do not resolve to 94.100.134.100"
+    ]
   },
   "spf": {
     "record": "v=spf1 ip4:154.58.19.132 include:emailservice.cpd.as include:spf.sendinblue.com include:servers.mcsv.net -all",

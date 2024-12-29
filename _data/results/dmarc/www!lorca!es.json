@@ -3,17 +3,59 @@
   "base_domain": "lorca.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hostnames": [
+      "dns.leader-network.com",
+      "dns1.leader-network.com"
+    ],
+    "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "correo.lorca.es",
+        "addresses": [
+          "213.0.108.5"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "correo2.lorca.es",
+        "addresses": [
+          "213.0.108.5"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "record": "v=spf1 mx a:pmx.lnm.es -all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "correo.lorca.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "correo2.lorca.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "194.140.143.72",
+          "mechanism": "a"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
     "record": null,

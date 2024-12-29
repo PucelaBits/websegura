@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns1.dnsrapido.com",
       "ns2.dnsrapido.com",
-      "ns3.dnsrapido.com",
-      "ns1.dnsrapido.com"
+      "ns3.dnsrapido.com"
     ],
     "warnings": []
   },
@@ -24,20 +24,6 @@
         "hostname": "mx02.hornetsecurity.com",
         "addresses": [
           "94.100.136.8"
-        ]
-      },
-      {
-        "preference": 30,
-        "hostname": "mx03.hornetsecurity.com",
-        "addresses": [
-          "94.100.134.8"
-        ]
-      },
-      {
-        "preference": 40,
-        "hostname": "mx04.hornetsecurity.com",
-        "addresses": [
-          "94.100.136.7"
         ]
       }
     ],
