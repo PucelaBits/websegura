@@ -10,22 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 0,
-        "hostname": "mx.msc.es",
-        "addresses": []
-      },
-      {
-        "preference": 20,
-        "hostname": "mxres.msc.es",
-        "addresses": []
-      }
-    ],
-    "warnings": [
-      "All nameservers failed to answer the query mx.msc.es. IN A: Server Do53:1.0.0.1@53 answered SERVFAIL",
-      "All nameservers failed to answer the query mxres.msc.es. IN AAAA: Server Do53:1.0.0.1@53 answered SERVFAIL"
-    ]
+    "hosts": [],
+    "error": "All nameservers failed to answer the query inmujer.es. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "spf": {
     "record": null,

@@ -15,32 +15,20 @@
         "preference": 10,
         "hostname": "sollana-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.18",
+          "52.101.68.12",
           "52.101.68.3",
-          "52.101.73.1",
-          "52.101.73.16"
+          "52.101.73.11",
+          "52.101.73.26"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1mx-all",
-    "valid": true,
-    "dns_lookups": 1,
-    "warnings": [
-      "The domain -all does not exist"
-    ],
-    "parsed": {
-      "pass": [],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [],
-      "redirect": null,
-      "exp": null,
-      "all": "neutral"
-    }
+    "record": "v=spf1include:spf.protection.outlook.com-all",
+    "valid": false,
+    "warnings": [],
+    "error": "The domain spf.protection.outlook.com-all does not exist"
   },
   "dmarc": {
     "record": "v=DMARC1",

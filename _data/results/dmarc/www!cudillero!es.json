@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns220.iservices4u.eu",
-      "ns221.iservices4u.eu",
       "ns222.iservices4u.eu",
-      "ns223.iservices4u.eu"
+      "ns223.iservices4u.eu",
+      "ns221.iservices4u.eu",
+      "ns220.iservices4u.eu"
     ],
     "warnings": []
   },
@@ -65,7 +65,7 @@
       "include": [
         {
           "domain": "spf.iservices4u.eu",
-          "record": "v=spf1 ip4:88.99.174.10 ip6:2a01:4f8:c2c:8c47::1 ip4:78.46.212.107 ip6:2a01:4f8:1c17:57ff::1 ip4:159.69.31.253 ip6:2a01:4f8:1c1c:3901::1 ip4:116.202.67.80/28 include:spf.antispamcloud.com -all",
+          "record": "v=spf1 ip4:88.99.174.10 ip6:2a01:4f8:c2c:8c47::1 ip4:78.46.212.107 ip6:2a01:4f8:1c17:57ff::1 ip4:159.69.31.253 ip6:2a01:4f8:1c1c:3901::1 ip4:116.202.67.80/28 ip4:167.235.5.151 include:spf.antispamcloud.com -all",
           "dns_lookups": 4,
           "parsed": {
             "pass": [
@@ -95,6 +95,10 @@
               },
               {
                 "value": "116.202.67.80/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "167.235.5.151",
                 "mechanism": "ip4"
               }
             ],

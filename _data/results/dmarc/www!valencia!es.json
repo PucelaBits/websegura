@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "dns03.ono.com",
-      "dns02.ono.com",
-      "dns01.ono.com"
+      "dns01.ono.com",
+      "dns02.ono.com"
     ],
     "warnings": []
   },
@@ -20,7 +20,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 213.201.83.247 is correo5.valencia.es, but the A/AAAA DNS records for correo5.valencia.es do not resolve to 213.201.83.247"
+    ]
   },
   "spf": {
     "record": "v=spf1 mx a:correo5.valencia.es ip4:213.201.83.247 ~all",

@@ -18,13 +18,10 @@
     "error": "pccyl.sedelectronica.es does not have a SPF TXT record"
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; sp=none; rua=mailto:rua@espublico.com,mailto:rua@espublico.cloud,mailto:75d5fbd79d2a605@for.dmarcanalyzer.com; ruf=mailto:ruf@espublico.com,mailto:ruf@espublico.cloud,mailto:75d5fbd79d2a605@for.dmarcanalyzer.com; fo=1; ri=3600",
+    "record": "v=DMARC1; p=none; sp=none; rua=mailto:rua@espublico.com,mailto:rua@espublico.cloud; ruf=mailto:ruf@espublico.com,mailto:ruf@espublico.cloud; fo=1:d:s; ri=3600",
     "valid": true,
     "location": "sedelectronica.es",
-    "warnings": [
-      "Some DMARC reporters might not send to more than two rua URIs",
-      "Some DMARC reporters might not send to more than two ruf URIs"
-    ],
+    "warnings": [],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -49,11 +46,6 @@
             "scheme": "mailto",
             "address": "rua@espublico.cloud",
             "size_limit": null
-          },
-          {
-            "scheme": "mailto",
-            "address": "75d5fbd79d2a605@for.dmarcanalyzer.com",
-            "size_limit": null
           }
         ],
         "explicit": true
@@ -69,18 +61,15 @@
             "scheme": "mailto",
             "address": "ruf@espublico.cloud",
             "size_limit": null
-          },
-          {
-            "scheme": "mailto",
-            "address": "75d5fbd79d2a605@for.dmarcanalyzer.com",
-            "size_limit": null
           }
         ],
         "explicit": true
       },
       "fo": {
         "value": [
-          "1"
+          "1",
+          "d",
+          "s"
         ],
         "explicit": true
       },

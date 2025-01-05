@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.dnsxperta.com",
       "ns3.dnsxperta.com",
-      "ns2.dnsxperta.com"
+      "ns2.dnsxperta.com",
+      "ns1.dnsxperta.com"
     ],
     "warnings": []
   },
@@ -16,10 +16,10 @@
         "preference": 0,
         "hostname": "dipsoria-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.27",
-          "52.101.68.36",
-          "52.101.73.22",
-          "52.101.73.26"
+          "52.101.68.0",
+          "52.101.68.12",
+          "52.101.68.25",
+          "52.101.73.22"
         ]
       }
     ],
