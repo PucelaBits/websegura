@@ -29,7 +29,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 a mx ip4:95.130.48.0/21 ip4:213.4.82.201 ip4:95.130.52.198 include:_spf.google.com ~all8a905947-0c22-4628-95d6-adebfcea9fa8",
+    "record": "v=spf1 a mx ip4:95.130.48.0/21 ip4:213.4.82.201 ip4:95.130.52.198 include:_spf.google.com ~all",
     "valid": true,
     "dns_lookups": 6,
     "warnings": [],
@@ -247,7 +247,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; adkim=s; aspf=s",
+    "record": "v=DMARC1;p=reject;sp=none;adkim=s;aspf=s;pct=100;fo=0;rf=afrf;ri=86400",
     "valid": true,
     "location": "ajsolsona.cat",
     "warnings": [
@@ -259,7 +259,11 @@
         "explicit": true
       },
       "p": {
-        "value": "quarantine",
+        "value": "reject",
+        "explicit": true
+      },
+      "sp": {
+        "value": "none",
         "explicit": true
       },
       "adkim": {
@@ -270,29 +274,25 @@
         "value": "s",
         "explicit": true
       },
+      "pct": {
+        "value": 100,
+        "explicit": true
+      },
       "fo": {
         "value": [
           "0"
         ],
-        "explicit": false
-      },
-      "pct": {
-        "value": 100,
-        "explicit": false
+        "explicit": true
       },
       "rf": {
         "value": [
           "afrf"
         ],
-        "explicit": false
+        "explicit": true
       },
       "ri": {
         "value": 86400,
-        "explicit": false
-      },
-      "sp": {
-        "value": "quarantine",
-        "explicit": false
+        "explicit": true
       }
     }
   }

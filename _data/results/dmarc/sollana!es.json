@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns3.dnsxperta.com",
-      "ns2.dnsxperta.com"
+      "ns2.dnsxperta.com",
+      "ns3.dnsxperta.com"
     ],
     "warnings": []
   },
@@ -15,25 +15,155 @@
         "preference": 10,
         "hostname": "sollana-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.12",
-          "52.101.68.3",
-          "52.101.73.11",
-          "52.101.73.26"
+          "2a01:111:f403:ca04::2",
+          "2a01:111:f403:ca04::5",
+          "2a01:111:f403:ca04::a",
+          "2a01:111:f403:ca09::e",
+          "52.101.68.16",
+          "52.101.73.21",
+          "52.101.73.28",
+          "52.101.73.4"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1include:spf.protection.outlook.com-all",
-    "valid": false,
+    "record": "v=spf1 include:spf.protection.outlook.com -all",
+    "valid": true,
+    "dns_lookups": 1,
     "warnings": [],
-    "error": "The domain spf.protection.outlook.com-all does not exist"
+    "parsed": {
+      "pass": [],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "spf.protection.outlook.com",
+          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/15 ip4:52.102.0.0/16 ip4:52.103.0.0/17 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/51 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "40.92.0.0/15",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "40.107.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.100.0.0/15",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.102.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.103.0.0/17",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "104.47.0.0/17",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "2a01:111:f400::/48",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403::/49",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:8000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:c000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:f000::/52",
+                "mechanism": "ip6"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
-    "record": "v=DMARC1",
-    "valid": false,
+    "record": "v=DMARC1; p=quarantine; ruf=mailto:postmaster@sollana.es; pct=100; sp=none; aspf=r",
+    "valid": true,
     "location": "sollana.es",
-    "error": "Error: Expected version_tag at position 0 in: v=DMARC1"
+    "warnings": [
+      "rua tag (destination for aggregate reports) not found"
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "postmaster@sollana.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "pct": {
+        "value": 100,
+        "explicit": true
+      },
+      "sp": {
+        "value": "none",
+        "explicit": true
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      }
+    }
   }
 }

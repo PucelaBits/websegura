@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns3.diba.cat",
-      "ns4.diba.cat"
+      "ns4.diba.cat",
+      "ns3.diba.cat"
     ],
     "warnings": []
   },
@@ -33,7 +33,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 45.15.50.200 is mx2.diba.cat, but the A/AAAA DNS records for mx2.diba.cat do not resolve to 45.15.50.200"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:spf.diba.cat include:spf.protection.outlook.com ~all",

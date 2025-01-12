@@ -10,8 +10,40 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query 24.16.187.192.in-addr.arpa. IN PTR: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mailin.serviciosmin.gob.es",
+        "addresses": [
+          "192.187.16.24"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mailin1.serviciosmin.gob.es",
+        "addresses": [
+          "192.187.16.26"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mailin.minetad.es",
+        "addresses": [
+          "193.146.123.230"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mailin1.minetad.es",
+        "addresses": [
+          "193.146.123.234"
+        ]
+      }
+    ],
+    "warnings": [
+      "193.146.123.230 does not have any reverse DNS (PTR) records",
+      "193.146.123.234 does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
     "record": "v=spf1 mx include:spf.serviciosmin.gob.es -all",

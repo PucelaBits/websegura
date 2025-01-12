@@ -10,16 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "smtp.mites.gob.es",
-        "addresses": [
-          "192.148.211.63"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "All nameservers failed to answer the query 63.211.148.192.in-addr.arpa. IN PTR: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "spf": {
     "record": "v=spf1 mx a:smtp.mites.gob.es include:spf.protection.outlook.com ip4:192.148.211.63 ~all",

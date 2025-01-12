@@ -13,13 +13,18 @@
     "hosts": [
       {
         "preference": 0,
-        "hostname": "mx.avap.es",
+        "hostname": "mxext.gva.es",
         "addresses": [
-          "51.254.199.187"
+          "193.145.200.16",
+          "195.77.20.28"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 193.145.200.16 is mxext.gva.es, but the A/AAAA DNS records for mxext.gva.es do not resolve to 193.145.200.16",
+      "The reverse DNS of 195.77.20.28 is mxext.gva.es, but the A/AAAA DNS records for mxext.gva.es do not resolve to 195.77.20.28"
+    ]
   },
   "spf": {
     "record": "v=spf1 +mx +a +ip4:51.254.199.187 include:spf.protection.outlook.com -all",
@@ -29,7 +34,7 @@
     "parsed": {
       "pass": [
         {
-          "value": "mx.avap.es",
+          "value": "mxext.gva.es",
           "mechanism": "mx"
         },
         {

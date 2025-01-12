@@ -3,13 +3,8 @@
   "base_domain": "defensa.gob.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "ns02.mde.es",
-      "ns04.mde.es",
-      "ns01.mde.es",
-      "ns03.mde.es"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "All nameservers failed to answer the query defensa.gob.es. IN NS: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "mx": {
     "hosts": [],
