@@ -15,10 +15,10 @@
         "preference": 10,
         "hostname": "aepd-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.0",
-          "52.101.73.26",
-          "52.101.73.4",
-          "52.101.73.8"
+          "52.101.68.15",
+          "52.101.68.3",
+          "52.101.73.16",
+          "52.101.73.21"
         ]
       }
     ],
@@ -120,7 +120,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=reject; rua=mailto:dmarc@aepd.es; ruf=mailto:dmarc_ruf@aepd.es; fo=1;",
+    "record": "v=DMARC1;p=reject;rua=mailto:042ecf5837@rua.easydmarc.eu,mailto:dmarc@aepd.es;ruf=mailto:042ecf5837@ruf.easydmarc.eu,mailto:dmarc_ruf@aepd.es;fo=1;",
     "valid": true,
     "location": "aepd.es",
     "warnings": [],
@@ -137,6 +137,11 @@
         "value": [
           {
             "scheme": "mailto",
+            "address": "042ecf5837@rua.easydmarc.eu",
+            "size_limit": null
+          },
+          {
+            "scheme": "mailto",
             "address": "dmarc@aepd.es",
             "size_limit": null
           }
@@ -145,6 +150,11 @@
       },
       "ruf": {
         "value": [
+          {
+            "scheme": "mailto",
+            "address": "042ecf5837@ruf.easydmarc.eu",
+            "size_limit": null
+          },
           {
             "scheme": "mailto",
             "address": "dmarc_ruf@aepd.es",

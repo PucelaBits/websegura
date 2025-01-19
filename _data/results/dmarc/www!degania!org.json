@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.abansys.net",
-      "dns2.abansys.net"
+      "dns2.abansys.net",
+      "dns1.abansys.net"
     ],
     "warnings": []
   },
@@ -25,7 +25,9 @@
     "record": "v=spf1 include:spf.abansys.com -all",
     "valid": true,
     "dns_lookups": 1,
-    "warnings": [],
+    "warnings": [
+      "SPF type DNS records found. Use of DNS Type SPF has been removed in the standards track version of SPF, RFC 7208. These records should be removed and replaced with TXT records: v=spf1 include:spf.abansys.com -all"
+    ],
     "parsed": {
       "pass": [],
       "neutral": [],

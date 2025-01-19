@@ -1,13 +1,13 @@
 {
   "domain": "dominios.es",
   "base_domain": "dominios.es",
-  "dnssec": false,
+  "dnssec": true,
   "ns": {
     "hostnames": [
-      "ns-1226.awsdns-25.org",
-      "ns-1810.awsdns-34.co.uk",
       "ns-206.awsdns-25.com",
-      "ns-931.awsdns-52.net"
+      "ns-931.awsdns-52.net",
+      "ns-1226.awsdns-25.org",
+      "ns-1810.awsdns-34.co.uk"
     ],
     "warnings": []
   },
@@ -17,10 +17,10 @@
         "preference": 0,
         "hostname": "dominios-es.mail.protection.outlook.com",
         "addresses": [
-          "52.101.68.0",
-          "52.101.68.12",
+          "52.101.68.16",
           "52.101.68.21",
-          "52.101.73.22"
+          "52.101.73.1",
+          "52.101.73.26"
         ]
       }
     ],

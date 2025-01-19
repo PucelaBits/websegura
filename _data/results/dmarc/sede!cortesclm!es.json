@@ -21,7 +21,9 @@
     "record": "v=DMARC1;p=none;pct=100;rua=mailto:343f4fe28a@rua.easydmarc.us,mailto:dmarc_a@cortesclm.es;ruf=mailto:343f4fe28a@ruf.easydmarc.us,mailto:dmarc_f@cortesclm.es;ri=86400;fo=s",
     "valid": true,
     "location": "cortesclm.es",
-    "warnings": [],
+    "warnings": [
+      "rua.easydmarc.us does not indicate that it accepts DMARC reports about cortesclm.es - Authorization record not found: cortesclm.es._report._dmarc.rua.easydmarc.us IN TXT \"v=DMARC1\""
+    ],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -36,18 +38,7 @@
         "explicit": true
       },
       "rua": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "343f4fe28a@rua.easydmarc.us",
-            "size_limit": null
-          },
-          {
-            "scheme": "mailto",
-            "address": "dmarc_a@cortesclm.es",
-            "size_limit": null
-          }
-        ],
+        "value": "mailto:343f4fe28a@rua.easydmarc.us,mailto:dmarc_a@cortesclm.es",
         "explicit": true
       },
       "ruf": {

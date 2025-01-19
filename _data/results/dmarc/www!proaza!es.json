@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns.gestiondecuenta.com",
       "ns3.gestiondecuenta.com",
       "ns4.gestiondecuenta.com",
-      "ns2.gestiondecuenta.com"
+      "ns2.gestiondecuenta.com",
+      "ns.gestiondecuenta.com"
     ],
     "warnings": []
   },
@@ -16,12 +16,12 @@
       {
         "preference": 10,
         "hostname": "mail.proaza.es",
-        "addresses": [
-          "82.98.165.95"
-        ]
+        "addresses": []
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ]
   },
   "spf": {
     "record": "v=spf1 a mx ip4:82.98.132.60 +all",

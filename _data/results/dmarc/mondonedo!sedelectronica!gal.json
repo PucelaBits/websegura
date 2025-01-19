@@ -18,7 +18,7 @@
     "error": "mondonedo.sedelectronica.gal does not have a SPF TXT record"
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; sp=none; rua=mailto:rua@espublico.com,mailto:75d5fbd79d2a605@for.dmarcanalyzer.com; ruf=mailto:ruf@espublico.com,mailto:75d5fbd79d2a605@for.dmarcanalyzer.com; fo=1; ri=3600",
+    "record": "v=DMARC1; p=quarantine; sp=none; rua=mailto:rua@espublico.com,mailto:75d5fbd79d2a605@for.dmarcanalyzer.com; ruf=mailto:ruf@espublico.com,mailto:75d5fbd79d2a605@for.dmarcanalyzer.com; fo=1; ri=3600",
     "valid": true,
     "location": "sedelectronica.gal",
     "warnings": [],
@@ -28,7 +28,7 @@
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": true
       },
       "sp": {

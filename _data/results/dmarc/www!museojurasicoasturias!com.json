@@ -14,9 +14,7 @@
       {
         "preference": 10,
         "hostname": "mx01.hornetsecurity.com",
-        "addresses": [
-          "94.100.132.8"
-        ]
+        "addresses": []
       },
       {
         "preference": 20,
@@ -40,7 +38,9 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ]
   },
   "spf": {
     "record": "v=spf1 include:spf.hornetsecurity.com ip4:88.151.16.0/22 -all",
