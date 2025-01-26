@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "machuca.cervantes.es",
-      "dns.cervantes.es"
+      "dns.cervantes.es",
+      "machuca.cervantes.es"
     ],
     "warnings": []
   },
@@ -21,7 +21,9 @@
       {
         "preference": 10,
         "hostname": "vela2.cervantes.es",
-        "addresses": []
+        "addresses": [
+          "193.146.3.229"
+        ]
       },
       {
         "preference": 20,
@@ -33,9 +35,7 @@
         ]
       }
     ],
-    "warnings": [
-      "All nameservers failed to answer the query vela2.cervantes.es. IN AAAA: Server Do53:1.0.0.1@53 answered SERVFAIL"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com ip4:193.146.3.230 ip4:193.146.3.229 ip4:193.146.3.128 ip4:193.146.3.129 ip4:193.146.3.130 ip4:193.146.3.219 ip4:193.146.3.141 ip4:193.146.3.142 -all",
@@ -149,9 +149,53 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "All nameservers failed to answer the query _dmarc.cervantes.es. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "record": "v=DMARC1; p=quarantine",
+    "valid": true,
+    "location": "cervantes.es",
+    "warnings": [
+      "rua tag (destination for aggregate reports) not found"
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "quarantine",
+        "explicit": false
+      }
+    }
   }
 }

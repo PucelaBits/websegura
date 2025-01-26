@@ -19,7 +19,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The domain cldedicado01.duonet.es does not exist",
+      "The reverse DNS of 89.17.204.80 is cldedicado01.duonet.es, but the A/AAAA DNS records for cldedicado01.duonet.es do not resolve to 89.17.204.80"
+    ]
   },
   "spf": {
     "record": "v=spf1 mx a ip4:89.17.204.80 ip4:89.17.204.220 ip4:89.17.204.215 -all",

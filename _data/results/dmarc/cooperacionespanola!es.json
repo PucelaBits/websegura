@@ -14,11 +14,14 @@
       {
         "preference": 10,
         "hostname": "mail.cooperacionespanola.es",
-        "addresses": []
+        "addresses": [
+          "185.34.194.41",
+          "193.27.9.141"
+        ]
       }
     ],
     "warnings": [
-      "All nameservers failed to answer the query mail.cooperacionespanola.es. IN A: Server Do53:1.0.0.1@53 answered SERVFAIL"
+      "193.27.9.141 does not have any reverse DNS (PTR) records"
     ]
   },
   "spf": {

@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "nso.nic.es",
       "halcon.icex.es",
-      "milano.icex.es",
-      "nso.nic.es"
+      "milano.icex.es"
     ],
     "warnings": []
   },
@@ -36,7 +36,7 @@
   "spf": {
     "record": "v=spf1 mx include:_listaip.icex.es include:_spfIcx.icex.es include:spf.protection.outlook.com -all",
     "valid": true,
-    "dns_lookups": 9,
+    "dns_lookups": 10,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -100,8 +100,8 @@
         },
         {
           "domain": "_spficx.icex.es",
-          "record": "v=spf1 include:_spfblock1.salesforce.com include:_spf.salesforce.com include:spf.ess.de.barracudanetworks.com include:cloud_eu-central-1_vpc.appiancloud.com ip4:185.76.214.129/32 ip4:185.76.214.186/32 ip4:141.94.7.30/32 ip4:141.94.7.31/32 ip4:141.94.7.32/27 -all",
-          "dns_lookups": 5,
+          "record": "v=spf1 include:_spfblock1.salesforce.com include:_spf.salesforce.com include:spf.ess.de.barracudanetworks.com include:cloud_eu-central-1_vpc.appiancloud.com include:eu-central-1.spf.outbound-mail.appian-customer.com ip4:185.76.214.129/32 ip4:185.76.214.186/32 ip4:141.94.7.30/32 ip4:141.94.7.31/32 ip4:141.94.7.32/27 -all",
+          "dns_lookups": 6,
           "parsed": {
             "pass": [
               {
@@ -248,6 +248,31 @@
                     },
                     {
                       "value": "52.28.0.224",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              },
+              {
+                "domain": "eu-central-1.spf.outbound-mail.appian-customer.com",
+                "record": "v=spf1 ip4:18.195.174.171 ip4:3.123.86.139 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "18.195.174.171",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "3.123.86.139",
                       "mechanism": "ip4"
                     }
                   ],
