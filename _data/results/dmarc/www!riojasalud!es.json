@@ -22,15 +22,15 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx include:spf.protection.outlook.com -all",
+    "record": "v=spf1 ip4:195.55.164.16 include:spf.protection.outlook.com -all",
     "valid": true,
-    "dns_lookups": 2,
+    "dns_lookups": 1,
     "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "mx2.riojasalud.es",
-          "mechanism": "mx"
+          "value": "195.55.164.16",
+          "mechanism": "ip4"
         }
       ],
       "neutral": [],

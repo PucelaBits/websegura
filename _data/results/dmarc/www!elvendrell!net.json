@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns4.dinahosting.com",
-      "ns2.dinahosting.com",
+      "ns.dinahosting.com",
       "ns3.dinahosting.com",
-      "ns.dinahosting.com"
+      "ns2.dinahosting.com",
+      "ns4.dinahosting.com"
     ],
     "warnings": []
   },
@@ -49,7 +49,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=reject; rua=mailto:dmarc@elvendrell.net; adkim=s; aspf=s; pct=100; fo=1; ruf=mailto:dmarc@elvendrell.net",
+    "record": "v=DMARC1; p=reject; rua=mailto:dmarc@elvendrell.net; adkim=s; aspf=s; pct=100; fo=1; ruf=mailto:dmarc@elvendrell.net; sp=none",
     "valid": true,
     "location": "elvendrell.net",
     "warnings": [],
@@ -100,6 +100,10 @@
         ],
         "explicit": true
       },
+      "sp": {
+        "value": "none",
+        "explicit": true
+      },
       "rf": {
         "value": [
           "afrf"
@@ -108,10 +112,6 @@
       },
       "ri": {
         "value": 86400,
-        "explicit": false
-      },
-      "sp": {
-        "value": "reject",
         "explicit": false
       }
     }

@@ -15,11 +15,14 @@
       {
         "preference": 10,
         "hostname": "mail.tranviasdezaragoza.es",
-        "addresses": []
+        "addresses": [
+          "5.56.164.38"
+        ]
       }
     ],
     "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 5.56.164.38 is via1.tranviasdezaragoza.es, but the A/AAAA DNS records for via1.tranviasdezaragoza.es do not resolve to 5.56.164.38"
     ]
   },
   "spf": {
@@ -48,53 +51,9 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; adkim=s; aspf=s",
-    "valid": true,
-    "location": "tranviasdezaragoza.es",
-    "warnings": [
-      "rua tag (destination for aggregate reports) not found"
-    ],
-    "tags": {
-      "v": {
-        "value": "DMARC1",
-        "explicit": true
-      },
-      "p": {
-        "value": "quarantine",
-        "explicit": true
-      },
-      "adkim": {
-        "value": "s",
-        "explicit": true
-      },
-      "aspf": {
-        "value": "s",
-        "explicit": true
-      },
-      "fo": {
-        "value": [
-          "0"
-        ],
-        "explicit": false
-      },
-      "pct": {
-        "value": 100,
-        "explicit": false
-      },
-      "rf": {
-        "value": [
-          "afrf"
-        ],
-        "explicit": false
-      },
-      "ri": {
-        "value": 86400,
-        "explicit": false
-      },
-      "sp": {
-        "value": "quarantine",
-        "explicit": false
-      }
-    }
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   }
 }

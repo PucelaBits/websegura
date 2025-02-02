@@ -15,14 +15,14 @@
         "preference": 10,
         "hostname": "mxa-00870b02.gslb.pphosted.com",
         "addresses": [
-          "143.55.150.246"
+          "66.159.235.119"
         ]
       },
       {
         "preference": 20,
         "hostname": "mxb-00870b02.gslb.pphosted.com",
         "addresses": [
-          "143.55.150.246"
+          "66.159.235.119"
         ]
       }
     ],
@@ -32,7 +32,9 @@
     "record": "v=spf1 include:spf2.malaga.es -all",
     "valid": true,
     "dns_lookups": 7,
-    "warnings": [],
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ],
     "parsed": {
       "pass": [],
       "neutral": [],
@@ -801,106 +803,6 @@
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "130.117.251.9",
-                      "mechanism": "a"
-                    },
-                    {
-                      "value": "138.201.61.140",
-                      "mechanism": "a"
-                    },
-                    {
-                      "value": "138.201.61.180",
-                      "mechanism": "a"
-                    },
-                    {
-                      "value": "138.201.61.182",
-                      "mechanism": "a"
-                    },
-                    {
-                      "value": "154.62.137.204",
-                      "mechanism": "a"
-                    },
-                    {
-                      "value": "154.62.137.205",
-                      "mechanism": "a"
-                    },
-                    {
-                      "value": "199.115.117.10",
-                      "mechanism": "a"
-                    },
-                    {
-                      "value": "199.115.117.11",
-                      "mechanism": "a"
-                    },
-                    {
-                      "value": "199.115.117.7",
-                      "mechanism": "a"
-                    },
-                    {
-                      "value": "2001:1af8:4400:a047:6::1",
-                      "mechanism": "a"
-                    },
-                    {
-                      "value": "2001:978:2:6::20:10",
-                      "mechanism": "a"
-                    },
-                    {
-                      "value": "207.244.64.180",
-                      "mechanism": "a"
-                    },
-                    {
-                      "value": "207.244.64.182",
-                      "mechanism": "a"
-                    },
-                    {
-                      "value": "209.126.110.250",
-                      "mechanism": "a"
-                    },
-                    {
-                      "value": "209.126.121.72",
-                      "mechanism": "a"
-                    },
-                    {
-                      "value": "209.126.121.73",
-                      "mechanism": "a"
-                    },
-                    {
-                      "value": "2604:9a00:2010:a024:21::1",
-                      "mechanism": "a"
-                    },
-                    {
-                      "value": "37.58.58.55",
-                      "mechanism": "a"
-                    },
-                    {
-                      "value": "46.165.223.16",
-                      "mechanism": "a"
-                    },
-                    {
-                      "value": "46.165.232.175",
-                      "mechanism": "a"
-                    },
-                    {
-                      "value": "46.165.233.176",
-                      "mechanism": "a"
-                    },
-                    {
-                      "value": "94.75.192.139",
-                      "mechanism": "a"
-                    },
-                    {
-                      "value": "94.75.244.176",
-                      "mechanism": "a"
-                    },
-                    {
-                      "value": "94.75.244.183",
-                      "mechanism": "a"
-                    },
-                    {
-                      "value": "94.75.244.184",
-                      "mechanism": "a"
-                    },
-                    {
                       "value": "130.117.53.18",
                       "mechanism": "a"
                     },
@@ -1023,7 +925,9 @@
                   "exp": null,
                   "all": "fail"
                 },
-                "warnings": []
+                "warnings": [
+                  "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+                ]
               },
               {
                 "domain": "spf-00870b02.pphosted.com",
@@ -1055,7 +959,9 @@
             "exp": null,
             "all": "softfail"
           },
-          "warnings": []
+          "warnings": [
+            "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+          ]
         }
       ],
       "redirect": null,

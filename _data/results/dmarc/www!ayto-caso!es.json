@@ -19,10 +19,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The domain cldedicado01.duonet.es does not exist",
-      "The reverse DNS of 89.17.204.80 is cldedicado01.duonet.es, but the A/AAAA DNS records for cldedicado01.duonet.es do not resolve to 89.17.204.80"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx a ip4:89.17.204.80 ip4:89.17.204.220 ip4:89.17.204.215 ip4:89.17.204.213 -all ",
@@ -68,7 +65,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none",
+    "record": "v=DMARC1; p=quarantine; adkim=s; aspf=s",
     "valid": true,
     "location": "ayto-caso.es",
     "warnings": [
@@ -80,16 +77,16 @@
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": true
       },
       "adkim": {
-        "value": "r",
-        "explicit": false
+        "value": "s",
+        "explicit": true
       },
       "aspf": {
-        "value": "r",
-        "explicit": false
+        "value": "s",
+        "explicit": true
       },
       "fo": {
         "value": [
@@ -112,7 +109,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": false
       }
     }

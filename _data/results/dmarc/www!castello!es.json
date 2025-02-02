@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns4.gestiondecuenta.com",
       "ns3.gestiondecuenta.com",
       "ns.gestiondecuenta.com",
-      "ns4.gestiondecuenta.com",
       "ns2.gestiondecuenta.com"
     ],
     "warnings": []
@@ -18,13 +18,6 @@
         "hostname": "castello.mailborder.net",
         "addresses": [
           "46.101.172.164"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "mx1.castello.es",
-        "addresses": [
-          "195.76.253.211"
         ]
       }
     ],
@@ -41,10 +34,6 @@
       "pass": [
         {
           "value": "castello.mailborder.net",
-          "mechanism": "mx"
-        },
-        {
-          "value": "mx1.castello.es",
           "mechanism": "mx"
         },
         {

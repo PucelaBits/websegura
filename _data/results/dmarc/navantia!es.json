@@ -22,28 +22,19 @@
         "preference": 5,
         "hostname": "mxb-008a2202.gslb.pphosted.com",
         "addresses": [
-          "66.159.233.10"
+          "66.159.234.83"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:195.235.188.81 ip4:195.235.188.141 include:spf.protection.outlook.com include:spf-008a2202.pphosted.com -all",
+    "record": "v=spf1 include:spf.protection.outlook.com include:spf-008a2202.pphosted.com -all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
     "parsed": {
-      "pass": [
-        {
-          "value": "195.235.188.81",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "195.235.188.141",
-          "mechanism": "ip4"
-        }
-      ],
+      "pass": [],
       "neutral": [],
       "softfail": [],
       "fail": [],

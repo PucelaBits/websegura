@@ -10,8 +10,23 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mxa-006a4e02.gslb.pphosted.com",
+        "addresses": [
+          "143.55.146.78"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mxb-006a4e02.gslb.pphosted.com",
+        "addresses": [
+          "143.55.148.243"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.puc.rediris.es ~all",

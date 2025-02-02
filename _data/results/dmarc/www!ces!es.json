@@ -10,16 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mail.ces.es",
-        "addresses": []
-      }
-    ],
-    "warnings": [
-      "All nameservers failed to answer the query mail.ces.es. IN A: Server Do53:1.0.0.1@53 answered SERVFAIL"
-    ]
+    "hosts": [],
+    "error": "The DNS response does not contain an answer to the question: 242.211.148.192.in-addr.arpa. IN PTR"
   },
   "spf": {
     "record": "v=spf1 mx include:spf.acumbamail.com a:smtp.mites.gob.es ip4:192.148.211.63 a:acmbems.com a:emlmkt.com include:spf.protection.outlook.com -all",
