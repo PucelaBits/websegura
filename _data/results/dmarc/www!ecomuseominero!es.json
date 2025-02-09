@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.cloudunificado.com",
-      "dns1.cloudunificado.com"
+      "dns1.cloudunificado.com",
+      "dns2.cloudunificado.com"
     ],
     "warnings": []
   },
@@ -14,9 +14,7 @@
       {
         "preference": 10,
         "hostname": "mx30.asaccomunicaciones.es",
-        "addresses": [
-          "94.100.134.8"
-        ]
+        "addresses": []
       },
       {
         "preference": 20,
@@ -26,7 +24,9 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ]
   },
   "spf": {
     "record": "v=spf1 +a +mx include:emailservice.cpd.as include:spf.hornetsecurity.com -all",

@@ -43,12 +43,17 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:spf.hornetsecurity.com include:spf.protection.outlook.com ~all",
+    "record": "v=spf1 ip4:195.235.112.177 include:spf.hornetsecurity.com include:spf.protection.outlook.com ~all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
     "parsed": {
-      "pass": [],
+      "pass": [
+        {
+          "value": "195.235.112.177",
+          "mechanism": "ip4"
+        }
+      ],
       "neutral": [],
       "softfail": [],
       "fail": [],
