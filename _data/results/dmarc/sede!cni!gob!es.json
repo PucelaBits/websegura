@@ -4,16 +4,18 @@
   "dnssec": false,
   "ns": {
     "hostnames": [],
-    "error": "The domain sede.cni.gob.es does not exist"
+    "warnings": []
   },
   "mx": {
     "hosts": [],
-    "error": "The domain sede.cni.gob.es does not exist"
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
   },
   "spf": {
     "record": null,
     "valid": false,
-    "error": "The domain sede.cni.gob.es does not exist"
+    "error": "sede.cni.gob.es does not have a SPF TXT record"
   },
   "dmarc": {
     "record": null,

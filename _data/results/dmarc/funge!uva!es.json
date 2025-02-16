@@ -3,178 +3,22 @@
   "base_domain": "uva.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "ns1.uva.es",
-      "ns1.funge.uva.es",
-      "ns3.uva.es",
-      "mapache.funge.uva.es",
-      "ns2.uva.es"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "All nameservers failed to answer the query funge.uva.es. IN NS: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mxa-006a4e02.gslb.pphosted.com",
-        "addresses": [
-          "143.55.148.243"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "mxb-006a4e02.gslb.pphosted.com",
-        "addresses": [
-          "143.55.148.243"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "All nameservers failed to answer the query funge.uva.es. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "spf": {
-    "record": "v=spf1 include:spf.ipzmarketing.com ip4:157.88.0.0/16 include:spf.puc.rediris.es -all",
-    "valid": true,
-    "dns_lookups": 2,
-    "warnings": [],
-    "parsed": {
-      "pass": [
-        {
-          "value": "157.88.0.0/16",
-          "mechanism": "ip4"
-        }
-      ],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [
-        {
-          "domain": "spf.ipzmarketing.com",
-          "record": "v=spf1 ip4:93.159.208.0/21 ip4:185.103.8.0/22 ip4:5.56.22.0/24 ip4:82.199.156.0/24 ip4:91.194.237.0/24 -all",
-          "dns_lookups": 0,
-          "parsed": {
-            "pass": [
-              {
-                "value": "93.159.208.0/21",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "185.103.8.0/22",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "5.56.22.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "82.199.156.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "91.194.237.0/24",
-                "mechanism": "ip4"
-              }
-            ],
-            "neutral": [],
-            "softfail": [],
-            "fail": [],
-            "include": [],
-            "redirect": null,
-            "exp": null,
-            "all": "fail"
-          },
-          "warnings": []
-        },
-        {
-          "domain": "spf.puc.rediris.es",
-          "record": "v=spf1 ip4:143.55.146.78 ip4:143.55.148.243 ip4:130.206.25.38 ~all",
-          "dns_lookups": 0,
-          "parsed": {
-            "pass": [
-              {
-                "value": "143.55.146.78",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "143.55.148.243",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "130.206.25.38",
-                "mechanism": "ip4"
-              }
-            ],
-            "neutral": [],
-            "softfail": [],
-            "fail": [],
-            "include": [],
-            "redirect": null,
-            "exp": null,
-            "all": "softfail"
-          },
-          "warnings": []
-        }
-      ],
-      "redirect": null,
-      "exp": null,
-      "all": "fail"
-    }
+    "record": null,
+    "valid": false,
+    "error": "All nameservers failed to answer the query funge.uva.es. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; rua=mailto:dmarc@fundacion.uva.es",
-    "valid": true,
-    "location": "funge.uva.es",
-    "warnings": [],
-    "tags": {
-      "v": {
-        "value": "DMARC1",
-        "explicit": true
-      },
-      "p": {
-        "value": "none",
-        "explicit": true
-      },
-      "rua": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "dmarc@fundacion.uva.es",
-            "size_limit": null
-          }
-        ],
-        "explicit": true
-      },
-      "adkim": {
-        "value": "r",
-        "explicit": false
-      },
-      "aspf": {
-        "value": "r",
-        "explicit": false
-      },
-      "fo": {
-        "value": [
-          "0"
-        ],
-        "explicit": false
-      },
-      "pct": {
-        "value": 100,
-        "explicit": false
-      },
-      "rf": {
-        "value": [
-          "afrf"
-        ],
-        "explicit": false
-      },
-      "ri": {
-        "value": 86400,
-        "explicit": false
-      },
-      "sp": {
-        "value": "none",
-        "explicit": false
-      }
-    }
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "All nameservers failed to answer the query _dmarc.funge.uva.es. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
   }
 }

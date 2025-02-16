@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.comtenidos.com",
-      "icodns.ico.es"
+      "icodns.ico.es",
+      "dns2.comtenidos.com"
     ],
     "warnings": []
   },
@@ -191,7 +191,7 @@
             "include": [
               {
                 "domain": "spfa.alinto.net",
-                "record": "v=spf1 ip4:81.88.178.30 ip4:83.145.109.0/24 ip4:31.172.161.0/24 ip4:78.153.243.64/26 ip4:91.212.152.0/24 ip4:195.167.226.128/26 ip4:195.167.228.208/28 ip4:212.97.142.160/27 ip4:51.77.185.250 ip4:51.159.179.247 ip4:51.15.137.26 ip4:178.33.104.94 ip4:46.22.203.174 include:spf6.alinto.net ~all",
+                "record": "v=spf1 ip4:81.88.178.30 ip4:83.145.109.0/24 ip4:31.172.161.0/24 ip4:91.212.152.0/24 ip4:195.167.226.128/26 ip4:195.167.228.208/28 ip4:212.97.142.160/27 ip4:51.77.185.250 ip4:51.159.179.247 ip4:51.15.137.26 ip4:178.33.104.94 ip4:46.22.203.174 include:spf6.alinto.net ~all",
                 "dns_lookups": 1,
                 "parsed": {
                   "pass": [
@@ -205,10 +205,6 @@
                     },
                     {
                       "value": "31.172.161.0/24",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "78.153.243.64/26",
                       "mechanism": "ip4"
                     },
                     {

@@ -19,7 +19,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "All nameservers failed to answer the query visitlapalma.vhost.interdominios.com. IN AAAA: Server Do53:127.0.0.53@53 answered SERVFAIL",
+      "The reverse DNS of 89.248.100.48 is visitlapalma.vhost.interdominios.com, but the A/AAAA DNS records for visitlapalma.vhost.interdominios.com do not resolve to 89.248.100.48"
+    ]
   },
   "spf": {
     "record": "v=spf1 a mx a:visitlapalma.vhost.interdominios.com ~all",

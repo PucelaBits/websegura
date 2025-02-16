@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns12.servicio-online.net",
       "ns11.servicio-online.net",
-      "ns10.servicio-online.net"
+      "ns10.servicio-online.net",
+      "ns12.servicio-online.net"
     ],
     "warnings": []
   },
@@ -35,6 +35,8 @@
       }
     ],
     "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 85.115.52.190 is cluster-a.mailcontrol.com, but the A/AAAA DNS records for cluster-a.mailcontrol.com do not resolve to 85.115.52.190",
       "The reverse DNS of 213.0.98.20 is correo.mogan.es, but the A/AAAA DNS records for correo.mogan.es do not resolve to 213.0.98.20"
     ]
   },

@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns3.interec.com",
       "ns2.interec.com",
+      "ns3.interec.com",
       "ns.interec.com",
       "ns1.interec.com"
     ],
@@ -17,7 +17,7 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.251.4.26",
+          "142.250.112.26",
           "2607:f8b0:4023:1404::1b"
         ]
       },
@@ -25,8 +25,8 @@
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "108.177.12.26",
-          "2607:f8b0:400c:c08::1a"
+          "108.177.12.27",
+          "2607:f8b0:400c:c08::1b"
         ]
       },
       {
@@ -49,8 +49,8 @@
         "preference": 10,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "209.85.202.26",
-          "2a00:1450:400b:c00::1b"
+          "209.85.202.27",
+          "2a00:1450:400b:c00::1a"
         ]
       },
       {

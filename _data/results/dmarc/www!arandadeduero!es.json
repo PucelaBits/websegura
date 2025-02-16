@@ -22,10 +22,10 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx ip4:212.145.22.204 ip4:77.224.118.213 ip4:77.225.101.5 ipv4:82.98.134.241 -all",
+    "record": "v=spf1 mx ip4:212.145.22.204 ip4:77.224.118.213 ip4:77.225.101.5 ipv4:82.98.134.241 ~all",
     "valid": false,
     "warnings": [],
-    "error": "arandadeduero.es: Expected mechanism at position 65 in: v=spf1 mx ip4:212.145.22.204 ip4:77.224.118.213 ip4:77.225.101.5 ipv4:82.98.134.241 -all"
+    "error": "arandadeduero.es: Expected mechanism at position 65 in: v=spf1 mx ip4:212.145.22.204 ip4:77.224.118.213 ip4:77.225.101.5 ipv4:82.98.134.241 ~all"
   },
   "dmarc": {
     "record": "v=DMARC1; p=quarantine; rua=mailto:postmaster@arandadeduero.es; ruf=mailto:postmaster@arandadeduero.es;",
