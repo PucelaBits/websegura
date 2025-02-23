@@ -4,11 +4,11 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "psi.cibelesdmz.local",
-      "ns1.es.colt.net",
       "zeta.cnmc.es",
+      "psi.cibelesdmz.local",
+      "zeta.cibelesdmz.local",
       "psi.cnmc.es",
-      "zeta.cibelesdmz.local"
+      "ns1.es.colt.net"
     ],
     "warnings": []
   },
@@ -26,22 +26,6 @@
         "hostname": "mxb-007a3601.gslb.pphosted.com",
         "addresses": [
           "66.159.235.239"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "mx1-eu1.ppe-hosted.com",
-        "addresses": [
-          "185.132.181.16",
-          "91.209.104.155"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "mx2-eu1.ppe-hosted.com",
-        "addresses": [
-          "185.132.181.17",
-          "91.209.104.156"
         ]
       }
     ],

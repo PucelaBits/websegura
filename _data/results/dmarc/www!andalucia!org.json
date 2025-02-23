@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns4.juntadeandalucia.es",
       "ns3.juntadeandalucia.es",
       "ns.juntadeandalucia.es",
-      "ns1.juntadeandalucia.es",
-      "ns4.juntadeandalucia.es"
+      "ns1.juntadeandalucia.es"
     ],
     "warnings": []
   },
@@ -34,9 +34,9 @@
     ]
   },
   "spf": {
-    "record": "v=spf1 ip4:217.12.27.153 ip4:217.12.27.75 ip4:217.12.26.60 ip4:217.12.26.61 ip4:217.12.27.157 ip4:217.12.27.158 ip4:217.12.27.159 ip4:217.12.27.160 include:spf.acumbamail.com ~all",
+    "record": "v=spf1 ip4:217.12.27.153 ip4:217.12.27.75 ip4:217.12.26.60 ip4:217.12.26.61 ip4:217.12.27.157 ip4:217.12.27.158 ip4:217.12.27.159 ip4:217.12.27.160 include:spf.andalucia.org include:spf.acumbamail.com ~all",
     "valid": true,
-    "dns_lookups": 1,
+    "dns_lookups": 2,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -77,6 +77,51 @@
       "softfail": [],
       "fail": [],
       "include": [
+        {
+          "domain": "spf.andalucia.org",
+          "record": "v=spf1 ip4:217.12.23.63 ip4:217.12.23.124 ip4:217.12.23.125 ip4:217.12.23.127 ip4:217.12.23.64 ip4:217.12.23.123 ip4:217.12.23.193 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "217.12.23.63",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "217.12.23.124",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "217.12.23.125",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "217.12.23.127",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "217.12.23.64",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "217.12.23.123",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "217.12.23.193",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        },
         {
           "domain": "spf.acumbamail.com",
           "record": "v=spf1 ip4:176.28.104.1/24 ip4:185.2.150.1/24 ip4:185.103.37.224/28 ip4:5.57.226.1/24 ip4:5.57.227.80/28 ip4:5.57.227.112/28 ip4:185.99.184.144/28 ip4:185.103.36.192/28 ~all",

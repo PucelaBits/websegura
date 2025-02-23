@@ -4,14 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "a8-65.akam.net",
-      "a4-65.akam.net",
+      "a11-64.akam.net",
       "ns2.adif.es",
       "ns1.adif.es",
       "a1-37.akam.net",
       "a9-67.akam.net",
-      "a11-64.akam.net",
-      "a22-65.akam.net"
+      "a4-65.akam.net",
+      "a22-65.akam.net",
+      "a8-65.akam.net"
     ],
     "warnings": []
   },
@@ -21,14 +21,14 @@
         "preference": 0,
         "hostname": "adifaltavelocidad-es.mail.protection.outlook.com",
         "addresses": [
-          "2a01:111:f403:ca04::2",
-          "2a01:111:f403:ca04::9",
+          "2a01:111:f403:ca09::5",
+          "2a01:111:f403:ca09::7",
           "2a01:111:f403:ca09::8",
-          "2a01:111:f403:ca09::e",
+          "2a01:111:f403:ca09::d",
+          "52.101.68.12",
           "52.101.68.25",
-          "52.101.73.12",
           "52.101.73.22",
-          "52.101.73.6"
+          "52.101.73.30"
         ]
       },
       {
@@ -191,9 +191,63 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=none; pct=100; rua=mailto:a.o4b3dizs@reports.hornetdmarc.com",
+    "valid": true,
+    "location": "adifaltavelocidad.es",
+    "warnings": [
+      "DMARC record at root of adifaltavelocidad.es has no effect"
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "pct": {
+        "value": 100,
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "a.o4b3dizs@reports.hornetdmarc.com",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }

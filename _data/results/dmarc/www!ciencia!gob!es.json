@@ -43,27 +43,71 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx include:spf.acumbamail.com include:spf.protection.outlook.com include:spf.hornetsecurity.com -all",
+    "record": "v=spf1 ip4:94.100.132.8 ip4:94.100.136.8 ip4:94.100.134.8 ip4:94.100.136.7 include:spf.acumbamail.com include:spf.protection.outlook.com include:spf.hornetsecurity.com a:spf.correo.gob.es -all",
     "valid": true,
     "dns_lookups": 4,
     "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "mx01.hornetsecurity.com",
-          "mechanism": "mx"
+          "value": "94.100.132.8",
+          "mechanism": "ip4"
         },
         {
-          "value": "mx02.hornetsecurity.com",
-          "mechanism": "mx"
+          "value": "94.100.136.8",
+          "mechanism": "ip4"
         },
         {
-          "value": "mx03.hornetsecurity.com",
-          "mechanism": "mx"
+          "value": "94.100.134.8",
+          "mechanism": "ip4"
         },
         {
-          "value": "mx04.hornetsecurity.com",
-          "mechanism": "mx"
+          "value": "94.100.136.7",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "185.73.172.122",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.172.123",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.172.124",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.172.125",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.172.147",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.173.17",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.173.18",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.173.19",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.173.20",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.173.21",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.173.22",
+          "mechanism": "a"
         }
       ],
       "neutral": [],

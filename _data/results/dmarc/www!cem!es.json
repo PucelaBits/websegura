@@ -13,37 +13,20 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "mailin.serviciosmin.gob.es",
-        "addresses": [
-          "192.187.16.24"
-        ]
-      },
-      {
-        "preference": 10,
         "hostname": "mailin1.serviciosmin.gob.es",
         "addresses": [
           "192.187.16.26"
         ]
       },
       {
-        "preference": 20,
-        "hostname": "mailin.minetad.es",
+        "preference": 15,
+        "hostname": "mailin.serviciosmin.gob.es",
         "addresses": [
-          "193.146.123.230"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mailin1.minetad.es",
-        "addresses": [
-          "193.146.123.234"
+          "192.187.16.24"
         ]
       }
     ],
-    "warnings": [
-      "193.146.123.230 does not have any reverse DNS (PTR) records",
-      "193.146.123.234 does not have any reverse DNS (PTR) records"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx include:spf.serviciosmin.gob.es -all",
@@ -53,19 +36,11 @@
     "parsed": {
       "pass": [
         {
-          "value": "mailin.serviciosmin.gob.es",
-          "mechanism": "mx"
-        },
-        {
           "value": "mailin1.serviciosmin.gob.es",
           "mechanism": "mx"
         },
         {
-          "value": "mailin.minetad.es",
-          "mechanism": "mx"
-        },
-        {
-          "value": "mailin1.minetad.es",
+          "value": "mailin.serviciosmin.gob.es",
           "mechanism": "mx"
         }
       ],

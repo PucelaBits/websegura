@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.cesca.cat",
+      "ns1.upc.edu",
       "ns2.upc.edu",
-      "ns2.cesca.cat",
-      "ns1.upc.edu"
+      "ns1.cesca.cat",
+      "ns2.cesca.cat"
     ],
     "warnings": []
   },
@@ -17,46 +17,44 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.250.123.26",
-          "2607:f8b0:4023:1413::1a"
+          "142.250.101.27",
+          "2607:f8b0:4023:c03::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "108.177.12.27",
-          "2607:f8b0:400c:c08::1b"
+          "108.177.104.27",
+          "2607:f8b0:4003:c04::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "172.253.62.27",
-          "2607:f8b0:4004:c07::1b"
+          "142.250.152.27",
+          "2607:f8b0:4001:c56::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "2800:3f0:4003:c00::1a",
-          "64.233.186.26"
+          "172.253.113.27",
+          "2607:f8b0:4023:1::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "209.85.202.26",
-          "2a00:1450:400b:c00::1a"
+          "173.194.77.27",
+          "2607:f8b0:4023:401::1b"
         ]
       }
     ],
-    "warnings": [
-      "2800:3f0:4003:c00::1a does not have any reverse DNS (PTR) records"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:_spf1main.upc.edu include:_spf1secondary.upc.edu  include:_spf2lsi.upc.edu include:_spf4fib.upc.edu ?all",

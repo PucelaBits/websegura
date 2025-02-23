@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "mortadelo.telecable.es",
-      "dns.asturias.es"
+      "dns.asturias.es",
+      "mortadelo.telecable.es"
     ],
     "warnings": []
   },
@@ -19,7 +19,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 51.38.237.179 is dns5.emarketers.com, but the A/AAAA DNS records for dns5.emarketers.com do not resolve to 51.38.237.179"
+    ]
   },
   "spf": {
     "record": "v=spf1 +a +mx +a:dns5.emarketers.com -all",

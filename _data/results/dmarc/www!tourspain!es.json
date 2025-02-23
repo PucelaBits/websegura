@@ -3,12 +3,30 @@
   "base_domain": "tourspain.es",
   "dnssec": true,
   "ns": {
-    "hostnames": [],
-    "error": "All nameservers failed to answer the query tourspain.es. IN NS: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "hostnames": [
+      "ns1.age.gob.es",
+      "ns2.age.gob.es"
+    ],
+    "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query 26.16.187.192.in-addr.arpa. IN PTR: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mailin1.serviciosmin.gob.es",
+        "addresses": [
+          "192.187.16.26"
+        ]
+      },
+      {
+        "preference": 15,
+        "hostname": "mailin.serviciosmin.gob.es",
+        "addresses": [
+          "192.187.16.24"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.serviciosmin.gob.es ip4:54.240.50.203 include:marketing.dynamics.com include:spf.protection.outlook.com -all",
