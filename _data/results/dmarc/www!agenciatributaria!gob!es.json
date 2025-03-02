@@ -3,8 +3,11 @@
   "base_domain": "agenciatributaria.gob.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "All nameservers failed to answer the query agenciatributaria.gob.es. IN NS: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "hostnames": [
+      "nsjc8hos01.telefonica-data.com",
+      "nsalchos01.telefonica-data.com"
+    ],
+    "warnings": []
   },
   "mx": {
     "hosts": [

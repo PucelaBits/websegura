@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "dns1.acceseo.com",
       "dns4.acceseo.com",
       "dns2.acceseo.com",
-      "dns3.acceseo.com",
-      "dns1.acceseo.com"
+      "dns3.acceseo.com"
     ],
     "warnings": []
   },
@@ -16,7 +16,11 @@
       {
         "preference": 0,
         "hostname": "mx00.perimeter.email",
-        "addresses": []
+        "addresses": [
+          "178.255.228.162",
+          "178.255.229.254",
+          "178.255.230.2"
+        ]
       },
       {
         "preference": 10,
@@ -35,9 +39,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 +a +mx +a:plesk6.acceseo.com include:spf.perimeter.email ~all",

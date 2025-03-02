@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "dns1.parlamentodeandalucia.es",
-      "dns2.parlamentodeandalucia.es",
-      "dns3.parlamentodeandalucia.es"
+      "dns3.parlamentodeandalucia.es",
+      "dns2.parlamentodeandalucia.es"
     ],
     "warnings": []
   },
@@ -28,6 +28,8 @@
       }
     ],
     "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 193.147.254.21 is smtp.parlamentodeandalucia.es, but the A/AAAA DNS records for smtp.parlamentodeandalucia.es do not resolve to 193.147.254.21",
       "The domain 228.pool90-161-143.static.orange.es does not exist",
       "The reverse DNS of 90.161.143.228 is 228.pool90-161-143.static.orange.es, but the A/AAAA DNS records for 228.pool90-161-143.static.orange.es do not resolve to 90.161.143.228"
     ]

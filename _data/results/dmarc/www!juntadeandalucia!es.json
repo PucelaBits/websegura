@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns.juntadeandalucia.es",
-      "ns1.juntadeandalucia.es",
       "ns4.juntadeandalucia.es",
-      "ns3.juntadeandalucia.es"
+      "ns3.juntadeandalucia.es",
+      "ns1.juntadeandalucia.es",
+      "ns.juntadeandalucia.es"
     ],
     "warnings": []
   },
@@ -34,9 +34,9 @@
     ]
   },
   "spf": {
-    "record": "v=spf1 include:spf.protection.outlook.com include:_spf.google.com ip4:217.12.27.153 ip4:217.12.27.75 ip4:217.12.26.60 ip4:217.12.26.61 ip4:217.12.27.157 ip4:217.12.27.158 ip4:217.12.27.159 ip4:217.12.27.160 ip4:217.12.27.210 -all",
+    "record": "v=spf1 include:spf.protection.outlook.com include:_spf.google.com ip4:217.12.27.153 ip4:217.12.27.75 ip4:217.12.26.60 ip4:217.12.26.61 ip4:217.12.27.157 ip4:217.12.27.158 ip4:217.12.27.159 ip4:217.12.27.160 include:spf.juntadeandalucia.es -all",
     "valid": true,
-    "dns_lookups": 5,
+    "dns_lookups": 6,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -70,10 +70,6 @@
         },
         {
           "value": "217.12.27.160",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "217.12.27.210",
           "mechanism": "ip4"
         }
       ],
@@ -315,6 +311,55 @@
             "redirect": null,
             "exp": null,
             "all": "softfail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "spf.juntadeandalucia.es",
+          "record": "v=spf1 ip4:217.12.23.63 ip4:217.12.23.124 ip4:217.12.23.125 ip4:217.12.23.127 ip4:217.12.23.64 ip4:217.12.23.123 ip4:217.12.23.193 ip4:217.12.27.210 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "217.12.23.63",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "217.12.23.124",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "217.12.23.125",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "217.12.23.127",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "217.12.23.64",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "217.12.23.123",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "217.12.23.193",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "217.12.27.210",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
           },
           "warnings": []
         }

@@ -16,8 +16,8 @@
         "preference": 10,
         "hostname": "mx.spamexperts.com",
         "addresses": [
-          "2001:550:2:78::ca:100",
-          "38.101.250.150"
+          "2001:550:2:61::2fc:100",
+          "38.111.198.185"
         ]
       },
       {
@@ -48,6 +48,7 @@
       }
     ],
     "warnings": [
+      "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records",
       "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records",
       "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records"
     ]
@@ -147,163 +148,19 @@
                 "mechanism": "ip4"
               },
               {
-                "value": "130.117.251.15",
+                "value": "130.117.251.10",
                 "mechanism": "a"
               },
               {
-                "value": "130.117.251.6",
+                "value": "130.117.251.9",
                 "mechanism": "a"
               },
               {
-                "value": "130.117.251.7",
+                "value": "185.201.16.1",
                 "mechanism": "a"
               },
               {
-                "value": "130.117.53.102",
-                "mechanism": "a"
-              },
-              {
-                "value": "130.117.53.103",
-                "mechanism": "a"
-              },
-              {
-                "value": "130.117.53.25",
-                "mechanism": "a"
-              },
-              {
-                "value": "130.117.53.26",
-                "mechanism": "a"
-              },
-              {
-                "value": "130.117.53.55",
-                "mechanism": "a"
-              },
-              {
-                "value": "130.117.53.57",
-                "mechanism": "a"
-              },
-              {
-                "value": "130.117.53.96",
-                "mechanism": "a"
-              },
-              {
-                "value": "130.117.53.97",
-                "mechanism": "a"
-              },
-              {
-                "value": "130.117.54.73",
-                "mechanism": "a"
-              },
-              {
-                "value": "130.117.54.74",
-                "mechanism": "a"
-              },
-              {
-                "value": "149.13.73.29",
-                "mechanism": "a"
-              },
-              {
-                "value": "149.13.73.30",
-                "mechanism": "a"
-              },
-              {
-                "value": "149.13.73.33",
-                "mechanism": "a"
-              },
-              {
-                "value": "149.13.73.34",
-                "mechanism": "a"
-              },
-              {
-                "value": "149.13.73.35",
-                "mechanism": "a"
-              },
-              {
-                "value": "149.13.73.36",
-                "mechanism": "a"
-              },
-              {
-                "value": "149.13.75.10",
-                "mechanism": "a"
-              },
-              {
-                "value": "149.13.75.11",
-                "mechanism": "a"
-              },
-              {
-                "value": "149.13.75.19",
-                "mechanism": "a"
-              },
-              {
-                "value": "149.13.75.20",
-                "mechanism": "a"
-              },
-              {
-                "value": "154.59.193.129",
-                "mechanism": "a"
-              },
-              {
-                "value": "154.59.193.130",
-                "mechanism": "a"
-              },
-              {
-                "value": "154.59.193.131",
-                "mechanism": "a"
-              },
-              {
-                "value": "154.59.193.132",
-                "mechanism": "a"
-              },
-              {
-                "value": "154.59.193.133",
-                "mechanism": "a"
-              },
-              {
-                "value": "154.59.193.134",
-                "mechanism": "a"
-              },
-              {
-                "value": "154.59.193.135",
-                "mechanism": "a"
-              },
-              {
-                "value": "154.59.193.136",
-                "mechanism": "a"
-              },
-              {
-                "value": "154.59.193.137",
-                "mechanism": "a"
-              },
-              {
-                "value": "154.59.193.138",
-                "mechanism": "a"
-              },
-              {
-                "value": "154.59.193.49",
-                "mechanism": "a"
-              },
-              {
-                "value": "154.59.193.50",
-                "mechanism": "a"
-              },
-              {
-                "value": "154.59.194.245",
-                "mechanism": "a"
-              },
-              {
-                "value": "154.59.194.248",
-                "mechanism": "a"
-              },
-              {
-                "value": "154.59.194.249",
-                "mechanism": "a"
-              },
-              {
-                "value": "154.59.194.251",
-                "mechanism": "a"
-              },
-              {
-                "value": "154.59.194.252",
+                "value": "185.201.16.2",
                 "mechanism": "a"
               },
               {
@@ -315,11 +172,35 @@
                 "mechanism": "a"
               },
               {
+                "value": "185.201.16.3",
+                "mechanism": "a"
+              },
+              {
+                "value": "185.201.17.1",
+                "mechanism": "a"
+              },
+              {
+                "value": "185.201.17.2",
+                "mechanism": "a"
+              },
+              {
                 "value": "185.201.17.200",
                 "mechanism": "a"
               },
               {
                 "value": "185.201.17.201",
+                "mechanism": "a"
+              },
+              {
+                "value": "185.201.17.3",
+                "mechanism": "a"
+              },
+              {
+                "value": "185.201.18.1",
+                "mechanism": "a"
+              },
+              {
+                "value": "185.201.18.2",
                 "mechanism": "a"
               },
               {
@@ -331,6 +212,18 @@
                 "mechanism": "a"
               },
               {
+                "value": "185.201.18.3",
+                "mechanism": "a"
+              },
+              {
+                "value": "185.201.19.1",
+                "mechanism": "a"
+              },
+              {
+                "value": "185.201.19.2",
+                "mechanism": "a"
+              },
+              {
                 "value": "185.201.19.200",
                 "mechanism": "a"
               },
@@ -339,39 +232,103 @@
                 "mechanism": "a"
               },
               {
-                "value": "193.200.214.134",
+                "value": "185.201.19.3",
                 "mechanism": "a"
               },
               {
-                "value": "193.200.214.136",
+                "value": "185.209.51.1",
                 "mechanism": "a"
               },
               {
-                "value": "193.200.214.137",
+                "value": "185.209.51.2",
                 "mechanism": "a"
               },
               {
-                "value": "193.200.214.138",
+                "value": "185.209.51.3",
                 "mechanism": "a"
               },
               {
-                "value": "196.192.175.60",
+                "value": "185.218.226.1",
                 "mechanism": "a"
               },
               {
-                "value": "196.192.175.61",
+                "value": "185.218.226.2",
                 "mechanism": "a"
               },
               {
-                "value": "196.192.175.63",
+                "value": "185.218.226.3",
                 "mechanism": "a"
               },
               {
-                "value": "196.192.175.64",
+                "value": "185.225.27.1",
                 "mechanism": "a"
               },
               {
-                "value": "196.192.175.66",
+                "value": "185.225.27.2",
+                "mechanism": "a"
+              },
+              {
+                "value": "185.225.27.3",
+                "mechanism": "a"
+              },
+              {
+                "value": "188.190.112.1",
+                "mechanism": "a"
+              },
+              {
+                "value": "188.190.112.2",
+                "mechanism": "a"
+              },
+              {
+                "value": "188.190.112.3",
+                "mechanism": "a"
+              },
+              {
+                "value": "188.190.113.1",
+                "mechanism": "a"
+              },
+              {
+                "value": "188.190.113.2",
+                "mechanism": "a"
+              },
+              {
+                "value": "188.190.113.3",
+                "mechanism": "a"
+              },
+              {
+                "value": "192.69.18.1",
+                "mechanism": "a"
+              },
+              {
+                "value": "192.69.18.2",
+                "mechanism": "a"
+              },
+              {
+                "value": "192.69.18.3",
+                "mechanism": "a"
+              },
+              {
+                "value": "192.69.19.1",
+                "mechanism": "a"
+              },
+              {
+                "value": "192.69.19.2",
+                "mechanism": "a"
+              },
+              {
+                "value": "192.69.19.3",
+                "mechanism": "a"
+              },
+              {
+                "value": "193.41.32.1",
+                "mechanism": "a"
+              },
+              {
+                "value": "193.41.32.2",
+                "mechanism": "a"
+              },
+              {
+                "value": "193.41.32.3",
                 "mechanism": "a"
               },
               {
@@ -707,6 +664,30 @@
                 "mechanism": "a"
               },
               {
+                "value": "208.70.90.1",
+                "mechanism": "a"
+              },
+              {
+                "value": "208.70.90.2",
+                "mechanism": "a"
+              },
+              {
+                "value": "208.70.90.3",
+                "mechanism": "a"
+              },
+              {
+                "value": "208.70.91.1",
+                "mechanism": "a"
+              },
+              {
+                "value": "208.70.91.2",
+                "mechanism": "a"
+              },
+              {
+                "value": "208.70.91.3",
+                "mechanism": "a"
+              },
+              {
                 "value": "2406:3400:280:8::20",
                 "mechanism": "a"
               },
@@ -775,95 +756,63 @@
                 "mechanism": "a"
               },
               {
-                "value": "38.107.142.46",
+                "value": "45.131.180.1",
                 "mechanism": "a"
               },
               {
-                "value": "38.133.190.182",
+                "value": "45.131.180.2",
                 "mechanism": "a"
               },
               {
-                "value": "38.71.17.10",
+                "value": "45.131.180.3",
                 "mechanism": "a"
               },
               {
-                "value": "38.71.17.12",
+                "value": "45.140.132.1",
                 "mechanism": "a"
               },
               {
-                "value": "38.71.17.13",
+                "value": "45.140.132.2",
                 "mechanism": "a"
               },
               {
-                "value": "38.71.17.15",
+                "value": "45.140.132.3",
                 "mechanism": "a"
               },
               {
-                "value": "38.71.17.16",
+                "value": "45.147.95.1",
                 "mechanism": "a"
               },
               {
-                "value": "38.71.17.21",
+                "value": "45.147.95.2",
                 "mechanism": "a"
               },
               {
-                "value": "38.71.17.22",
+                "value": "45.147.95.3",
                 "mechanism": "a"
               },
               {
-                "value": "38.71.17.24",
+                "value": "45.91.121.1",
                 "mechanism": "a"
               },
               {
-                "value": "38.71.17.247",
+                "value": "45.91.121.2",
                 "mechanism": "a"
               },
               {
-                "value": "38.71.17.25",
+                "value": "45.91.121.3",
                 "mechanism": "a"
               },
               {
-                "value": "38.71.17.42",
+                "value": "45.93.148.1",
                 "mechanism": "a"
               },
               {
-                "value": "38.71.17.43",
+                "value": "45.93.148.2",
                 "mechanism": "a"
               },
               {
-                "value": "38.71.17.45",
-                "mechanism": "a"
-              },
-              {
-                "value": "38.71.17.46",
-                "mechanism": "a"
-              },
-              {
-                "value": "38.71.17.6",
-                "mechanism": "a"
-              },
-              {
-                "value": "38.71.17.60",
-                "mechanism": "a"
-              },
-              {
-                "value": "38.71.17.61",
-                "mechanism": "a"
-              },
-              {
-                "value": "38.71.17.66",
-                "mechanism": "a"
-              },
-              {
-                "value": "38.71.17.67",
-                "mechanism": "a"
-              },
-              {
-                "value": "38.71.17.7",
-                "mechanism": "a"
-              },
-              {
-                "value": "38.71.17.9",
+                "value": "45.93.148.3",
                 "mechanism": "a"
               },
               {
@@ -871,7 +820,39 @@
                 "mechanism": "a"
               },
               {
-                "value": "62.138.14.204",
+                "value": "46.229.240.1",
+                "mechanism": "a"
+              },
+              {
+                "value": "46.229.240.2",
+                "mechanism": "a"
+              },
+              {
+                "value": "46.229.240.3",
+                "mechanism": "a"
+              },
+              {
+                "value": "80.91.219.1",
+                "mechanism": "a"
+              },
+              {
+                "value": "80.91.219.2",
+                "mechanism": "a"
+              },
+              {
+                "value": "80.91.219.3",
+                "mechanism": "a"
+              },
+              {
+                "value": "87.236.163.1",
+                "mechanism": "a"
+              },
+              {
+                "value": "87.236.163.2",
+                "mechanism": "a"
+              },
+              {
+                "value": "87.236.163.3",
                 "mechanism": "a"
               },
               {
@@ -895,18 +876,6 @@
                     },
                     {
                       "value": "130.117.251.9",
-                      "mechanism": "a"
-                    },
-                    {
-                      "value": "138.201.61.140",
-                      "mechanism": "a"
-                    },
-                    {
-                      "value": "138.201.61.180",
-                      "mechanism": "a"
-                    },
-                    {
-                      "value": "138.201.61.182",
                       "mechanism": "a"
                     },
                     {
@@ -935,26 +904,6 @@
                     },
                     {
                       "value": "2001:978:2:6::20:10",
-                      "mechanism": "a"
-                    },
-                    {
-                      "value": "207.244.64.180",
-                      "mechanism": "a"
-                    },
-                    {
-                      "value": "207.244.64.182",
-                      "mechanism": "a"
-                    },
-                    {
-                      "value": "209.126.110.250",
-                      "mechanism": "a"
-                    },
-                    {
-                      "value": "209.126.121.72",
-                      "mechanism": "a"
-                    },
-                    {
-                      "value": "209.126.121.73",
                       "mechanism": "a"
                     },
                     {

@@ -3,27 +3,22 @@
   "base_domain": "cbe.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "ns2.bodis.com",
-      "ns1.bodis.com"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The domain cbe.es does not exist"
   },
   "mx": {
     "hosts": [],
-    "warnings": [
-      "No MX records found. Is the domain parked?"
-    ]
+    "error": "The domain cbe.es does not exist"
   },
   "spf": {
     "record": null,
     "valid": false,
-    "error": "All nameservers failed to answer the query cbe.es. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "error": "The domain cbe.es does not exist"
   },
   "dmarc": {
     "record": null,
     "valid": false,
     "location": null,
-    "error": "All nameservers failed to answer the query _dmarc.cbe.es. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "error": "A DMARC record does not exist for this domain or its base domain"
   }
 }
