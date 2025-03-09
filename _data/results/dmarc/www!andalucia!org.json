@@ -5,9 +5,9 @@
   "ns": {
     "hostnames": [
       "ns4.juntadeandalucia.es",
+      "ns3.juntadeandalucia.es",
       "ns1.juntadeandalucia.es",
-      "ns.juntadeandalucia.es",
-      "ns3.juntadeandalucia.es"
+      "ns.juntadeandalucia.es"
     ],
     "warnings": []
   },
@@ -17,20 +17,20 @@
         "preference": 10,
         "hostname": "mx.juntadeandalucia.es",
         "addresses": [
-          "217.12.25.231"
+          "217.12.21.182"
         ]
       },
       {
         "preference": 20,
         "hostname": "mx2.juntadeandalucia.es",
         "addresses": [
-          "217.12.25.241"
+          "217.12.21.191"
         ]
       }
     ],
     "warnings": [
-      "217.12.25.231 does not have any reverse DNS (PTR) records",
-      "217.12.25.241 does not have any reverse DNS (PTR) records"
+      "217.12.21.182 does not have any reverse DNS (PTR) records",
+      "217.12.21.191 does not have any reverse DNS (PTR) records"
     ]
   },
   "spf": {

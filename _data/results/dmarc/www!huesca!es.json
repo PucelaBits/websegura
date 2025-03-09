@@ -13,37 +13,37 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "mx01.cloud.vadesecure.com",
+        "hostname": "mx01.hornetsecurity.com",
         "addresses": [
-          "163.172.240.110"
+          "94.100.132.8"
         ]
       },
       {
-        "preference": 10,
-        "hostname": "mx02.cloud.vadesecure.com",
+        "preference": 20,
+        "hostname": "mx02.hornetsecurity.com",
         "addresses": [
-          "163.172.240.111"
+          "94.100.136.8"
         ]
       },
       {
-        "preference": 10,
-        "hostname": "mx03.cloud.vadesecure.com",
+        "preference": 30,
+        "hostname": "mx03.hornetsecurity.com",
         "addresses": [
-          "135.125.122.66"
+          "94.100.134.8"
         ]
       },
       {
-        "preference": 10,
-        "hostname": "mx04.cloud.vadesecure.com",
+        "preference": 40,
+        "hostname": "mx04.hornetsecurity.com",
         "addresses": [
-          "135.125.122.67"
+          "94.100.136.7"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:spf.cloud.vadesecure.com include:spf.acumbamail.com -all",
+    "record": "v=spf1 include:spf.acumbamail.com include:spf.hornetsecurity.com -all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
@@ -53,87 +53,6 @@
       "softfail": [],
       "fail": [],
       "include": [
-        {
-          "domain": "spf.cloud.vadesecure.com",
-          "record": "v=spf1 ip4:109.197.246.0/26 ip4:217.74.103.0/24 ip4:52.47.203.24 ip4:35.180.3.224 ip4:52.143.185.155 ip4:52.143.133.92 ip4:195.154.80.82 ip4:163.172.55.8 ip4:51.15.159.199 ip4:52.143.144.224 ip4:52.143.151.82 ip4:163.172.240.98 ip4:163.172.240.110 ip4:163.172.240.111 ip4:135.125.122.66 ip4:135.125.122.67 -all",
-          "dns_lookups": 0,
-          "parsed": {
-            "pass": [
-              {
-                "value": "109.197.246.0/26",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "217.74.103.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "52.47.203.24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "35.180.3.224",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "52.143.185.155",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "52.143.133.92",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "195.154.80.82",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "163.172.55.8",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "51.15.159.199",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "52.143.144.224",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "52.143.151.82",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "163.172.240.98",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "163.172.240.110",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "163.172.240.111",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "135.125.122.66",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "135.125.122.67",
-                "mechanism": "ip4"
-              }
-            ],
-            "neutral": [],
-            "softfail": [],
-            "fail": [],
-            "include": [],
-            "redirect": null,
-            "exp": null,
-            "all": "fail"
-          },
-          "warnings": []
-        },
         {
           "domain": "spf.acumbamail.com",
           "record": "v=spf1 ip4:176.28.104.1/24 ip4:185.2.150.1/24 ip4:185.103.37.224/28 ip4:5.57.226.1/24 ip4:5.57.227.80/28 ip4:5.57.227.112/28 ip4:185.99.184.144/28 ip4:185.103.36.192/28 ~all",
@@ -182,6 +101,103 @@
             "all": "softfail"
           },
           "warnings": []
+        },
+        {
+          "domain": "spf.hornetsecurity.com",
+          "record": "v=spf1 ip4:83.246.65.0/24 ip4:185.140.204.0/22 ip4:94.100.128.0/20 ip4:81.20.94.0/24 ip4:173.45.18.0/24 ip4:52.62.123.207/32 ip4:52.62.108.212/32 ip4:129.232.203.80/28 ip4:209.172.38.64/27 ip4:108.163.133.224/27 ip4:193.135.100.0/27 ip4:199.27.221.76 ip4:216.46.11.238 ip4:216.46.11.244 ip4:199.27.221.81 ip4:199.27.221.82 ip4:52.62.114.130 ip4:52.62.125.178 ip4:92.54.27.0/24 ip4:174.142.136.160/27 ~all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "83.246.65.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.140.204.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "94.100.128.0/20",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "81.20.94.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "173.45.18.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.62.123.207/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.62.108.212/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "129.232.203.80/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "209.172.38.64/27",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "108.163.133.224/27",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "193.135.100.0/27",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "199.27.221.76",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "216.46.11.238",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "216.46.11.244",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "199.27.221.81",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "199.27.221.82",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.62.114.130",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.62.125.178",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "92.54.27.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "174.142.136.160/27",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
         }
       ],
       "redirect": null,
@@ -190,7 +206,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; rua=mailto:dmarc@huesca.es; ruf=mailto:dmarc@huesca.es; sp=quarantine",
+    "record": "v=DMARC1; p=quarantine; pct=100; rua=mailto:a.xfibio9p@reports.hornetdmarc.com,mailto:dmarc@huesca.es; ruf=mailto:dmarc@huesca.es",
     "valid": true,
     "location": "huesca.es",
     "warnings": [],
@@ -203,8 +219,17 @@
         "value": "quarantine",
         "explicit": true
       },
+      "pct": {
+        "value": 100,
+        "explicit": true
+      },
       "rua": {
         "value": [
+          {
+            "scheme": "mailto",
+            "address": "a.xfibio9p@reports.hornetdmarc.com",
+            "size_limit": null
+          },
           {
             "scheme": "mailto",
             "address": "dmarc@huesca.es",
@@ -223,10 +248,6 @@
         ],
         "explicit": true
       },
-      "sp": {
-        "value": "quarantine",
-        "explicit": true
-      },
       "adkim": {
         "value": "r",
         "explicit": false
@@ -241,10 +262,6 @@
         ],
         "explicit": false
       },
-      "pct": {
-        "value": 100,
-        "explicit": false
-      },
       "rf": {
         "value": [
           "afrf"
@@ -253,6 +270,10 @@
       },
       "ri": {
         "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "quarantine",
         "explicit": false
       }
     }

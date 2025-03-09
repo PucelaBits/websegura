@@ -3,17 +3,18 @@
   "base_domain": "injuve.es",
   "dnssec": true,
   "ns": {
-    "hostnames": [],
-    "error": "All nameservers failed to answer the query injuve.es. IN NS: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "hostnames": [
+      "ns1.age.gob.es",
+      "ns2.age.gob.es"
+    ],
+    "warnings": []
   },
   "mx": {
     "hosts": [
       {
         "preference": 10,
         "hostname": "mx.injuve.es",
-        "addresses": [
-          "195.64.186.52"
-        ]
+        "addresses": []
       },
       {
         "preference": 20,
@@ -23,7 +24,9 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "All nameservers failed to answer the query mx.injuve.es. IN A: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    ]
   },
   "spf": {
     "record": "v=spf1 ip4:195.64.186.0/23 ip4:91.230.250.0/24 include:spf.acumbamail.com -all",

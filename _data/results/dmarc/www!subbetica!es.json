@@ -406,24 +406,12 @@
             "include": [
               {
                 "domain": "relay.mailchannels.net",
-                "record": "v=spf1 ip4:23.83.208.0/20 ip4:199.10.31.235/32 ip4:199.10.31.236/31 ip4:199.10.31.238/32 ip4:35.85.190.185/32 ~all",
+                "record": "v=spf1 ip4:23.83.208.0/20 ip4:35.85.190.185/32 ~all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
                     {
                       "value": "23.83.208.0/20",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "199.10.31.235/32",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "199.10.31.236/31",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "199.10.31.238/32",
                       "mechanism": "ip4"
                     },
                     {

@@ -1,96 +1,259 @@
 {
-  "domain": "upc.edu",
-  "base_domain": "upc.edu",
+  "domain": "icgc.cat",
+  "base_domain": "icgc.cat",
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.cesca.cat",
-      "ns2.cesca.cat",
-      "ns2.upc.edu",
-      "ns1.upc.edu"
+      "ns1.csuc.cat",
+      "chico.rediris.es",
+      "sun.rediris.es",
+      "ns2.csuc.cat"
     ],
     "warnings": []
   },
   "mx": {
     "hosts": [
       {
-        "preference": 1,
-        "hostname": "aspmx.l.google.com",
-        "addresses": [
-          "142.251.167.26",
-          "2607:f8b0:4004:c1b::1b"
-        ]
-      },
-      {
         "preference": 5,
-        "hostname": "alt1.aspmx.l.google.com",
+        "hostname": "icgc-cat.mail.protection.outlook.com",
         "addresses": [
-          "209.85.202.26",
-          "2a00:1450:400b:c00::1a"
-        ]
-      },
-      {
-        "preference": 5,
-        "hostname": "alt2.aspmx.l.google.com",
-        "addresses": [
-          "2a00:1450:400c:c0b::1b",
-          "64.233.184.27"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "alt3.aspmx.l.google.com",
-        "addresses": [
-          "142.250.27.26",
-          "2a00:1450:4025:401::1b"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "alt4.aspmx.l.google.com",
-        "addresses": [
-          "142.250.153.27",
-          "2a00:1450:4013:c16::1a"
+          "2a01:111:f403:ca04::",
+          "2a01:111:f403:ca04::8",
+          "2a01:111:f403:ca09::",
+          "2a01:111:f403:ca09::5",
+          "52.101.68.10",
+          "52.101.73.12",
+          "52.101.73.21",
+          "52.101.73.30"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:_spf1main.upc.edu include:_spf1secondary.upc.edu  include:_spf2lsi.upc.edu include:_spf4fib.upc.edu ?all",
+    "record": "v=spf1 ip4:84.88.72.10 ip4:84.88.72.36 include:_spf.serviciodecorreo.es include:spf.puc.rediris.es include:teenvio.com include:spf.protection.outlook.com -all",
     "valid": true,
-    "dns_lookups": 8,
+    "dns_lookups": 10,
     "warnings": [],
     "parsed": {
-      "pass": [],
+      "pass": [
+        {
+          "value": "84.88.72.10",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "84.88.72.36",
+          "mechanism": "ip4"
+        }
+      ],
       "neutral": [],
       "softfail": [],
       "fail": [],
       "include": [
         {
-          "domain": "_spf1main.upc.edu",
-          "record": "v=spf1 ip4:147.83.194.63 ip4:147.83.194.64 ip4:147.83.2.50 ip4:147.83.2.51 ip4:147.83.2.77 include:_spf.google.com  ?all",
+          "domain": "_spf.serviciodecorreo.es",
+          "record": "v=spf1 include:_netblock1.serviciodecorreo.es include:_netblock2.serviciodecorreo.es ~all",
+          "dns_lookups": 2,
+          "parsed": {
+            "pass": [],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [
+              {
+                "domain": "_netblock1.serviciodecorreo.es",
+                "record": "v=spf1 ip4:82.223.85.0/24 ip4:82.223.190.0/23 ip4:82.223.199.0/24 ip4:82.223.218.0/23 ip4:82.223.230.0/24 ip4:82.223.251.0/24 ip4:217.76.128.0/23 ip4:217.76.150.128/25 ip4:217.76.156.128/25 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "82.223.85.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "82.223.190.0/23",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "82.223.199.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "82.223.218.0/23",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "82.223.230.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "82.223.251.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "217.76.128.0/23",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "217.76.150.128/25",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "217.76.156.128/25",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              },
+              {
+                "domain": "_netblock2.serviciodecorreo.es",
+                "record": "v=spf1 ip4:82.223.56.0/23 ip4:82.223.113.0/24 ip4:82.223.119.0/24 ip4:82.223.226.0/24 ip4:217.76.130.0/23 ip4:217.76.148.0/23 ip4:217.76.143.0/24 ip4:217.76.150.0/25 ip4:217.76.156.0/25 ip4:217.76.132.128/25 ip4:82.223.208.0/24 ip4:82.223.212.0/23 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "82.223.56.0/23",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "82.223.113.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "82.223.119.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "82.223.226.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "217.76.130.0/23",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "217.76.148.0/23",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "217.76.143.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "217.76.150.0/25",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "217.76.156.0/25",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "217.76.132.128/25",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "82.223.208.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "82.223.212.0/23",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              }
+            ],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "spf.puc.rediris.es",
+          "record": "v=spf1 ip4:143.55.146.78 ip4:143.55.148.243 ip4:130.206.25.38 ~all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "143.55.146.78",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "143.55.148.243",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "130.206.25.38",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "teenvio.com",
+          "record": "v=spf1 ip4:217.116.2.247 ip4:217.116.2.246 ip4:217.116.2.243 ip4:217.116.2.254 ip4:217.116.22.144/28 ip4:77.240.118.0/24 ip4:77.240.119.192/26 ip4:147.135.135.11 ip4:51.254.244.245 include:_spf.google.com -all",
           "dns_lookups": 4,
           "parsed": {
             "pass": [
               {
-                "value": "147.83.194.63",
+                "value": "217.116.2.247",
                 "mechanism": "ip4"
               },
               {
-                "value": "147.83.194.64",
+                "value": "217.116.2.246",
                 "mechanism": "ip4"
               },
               {
-                "value": "147.83.2.50",
+                "value": "217.116.2.243",
                 "mechanism": "ip4"
               },
               {
-                "value": "147.83.2.51",
+                "value": "217.116.2.254",
                 "mechanism": "ip4"
               },
               {
-                "value": "147.83.2.77",
+                "value": "217.116.22.144/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "77.240.118.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "77.240.119.192/26",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "147.135.135.11",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "51.254.244.245",
                 "mechanism": "ip4"
               }
             ],
@@ -277,31 +440,59 @@
             ],
             "redirect": null,
             "exp": null,
-            "all": "neutral"
+            "all": "fail"
           },
           "warnings": []
         },
         {
-          "domain": "_spf1secondary.upc.edu",
-          "record": "v=spf1 ip4:84.88.0.6 ip4:84.88.0.7 ip4:84.88.0.8  ip4:84.88.0.9 ?all",
+          "domain": "spf.protection.outlook.com",
+          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/15 ip4:52.102.0.0/16 ip4:52.103.0.0/17 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/51 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
               {
-                "value": "84.88.0.6",
+                "value": "40.92.0.0/15",
                 "mechanism": "ip4"
               },
               {
-                "value": "84.88.0.7",
+                "value": "40.107.0.0/16",
                 "mechanism": "ip4"
               },
               {
-                "value": "84.88.0.8",
+                "value": "52.100.0.0/15",
                 "mechanism": "ip4"
               },
               {
-                "value": "84.88.0.9",
+                "value": "52.102.0.0/16",
                 "mechanism": "ip4"
+              },
+              {
+                "value": "52.103.0.0/17",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "104.47.0.0/17",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "2a01:111:f400::/48",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403::/49",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:8000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:c000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:f000::/52",
+                "mechanism": "ip6"
               }
             ],
             "neutral": [],
@@ -310,131 +501,59 @@
             "include": [],
             "redirect": null,
             "exp": null,
-            "all": "neutral"
-          },
-          "warnings": []
-        },
-        {
-          "domain": "_spf2lsi.upc.edu",
-          "record": "v=spf1 ip4:147.83.20.13 ip4:147.83.20.25 ip4:147.83.20.29 ip4:147.83.20.30 ip4:147.83.29.3 ip4:147.83.29.5 ?all",
-          "dns_lookups": 0,
-          "parsed": {
-            "pass": [
-              {
-                "value": "147.83.20.13",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "147.83.20.25",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "147.83.20.29",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "147.83.20.30",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "147.83.29.3",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "147.83.29.5",
-                "mechanism": "ip4"
-              }
-            ],
-            "neutral": [],
-            "softfail": [],
-            "fail": [],
-            "include": [],
-            "redirect": null,
-            "exp": null,
-            "all": "neutral"
-          },
-          "warnings": []
-        },
-        {
-          "domain": "_spf4fib.upc.edu",
-          "record": "v=spf1 ip4:147.83.41.103 ip4:147.83.41.105 ip4:147.83.41.106 ip4:147.83.41.178 ip4:147.83.41.2 ip4:147.83.41.214 ip4:147.83.41.48 ip4:147.83.41.57 ?all",
-          "dns_lookups": 0,
-          "parsed": {
-            "pass": [
-              {
-                "value": "147.83.41.103",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "147.83.41.105",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "147.83.41.106",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "147.83.41.178",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "147.83.41.2",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "147.83.41.214",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "147.83.41.48",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "147.83.41.57",
-                "mechanism": "ip4"
-              }
-            ],
-            "neutral": [],
-            "softfail": [],
-            "fail": [],
-            "include": [],
-            "redirect": null,
-            "exp": null,
-            "all": "neutral"
+            "all": "fail"
           },
           "warnings": []
         }
       ],
       "redirect": null,
       "exp": null,
-      "all": "neutral"
+      "all": "fail"
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; pct=0; rua=mailto:dmarc.rua@upc.edu",
+    "record": "v=DMARC1; p=none; sp=none; fo=1; ri=86400; rua=mailto:dmarc_rua@icgc.cat; ruf=mailto:dmarc_ruf@icgc.cat",
     "valid": true,
-    "location": "upc.edu",
-    "warnings": [
-      "pct value is less than 100. This leads to inconsistent and unpredictable policy enforcement. Consider using p=none to monitor results instead"
-    ],
+    "location": "icgc.cat",
+    "warnings": [],
     "tags": {
       "v": {
         "value": "DMARC1",
         "explicit": true
       },
       "p": {
-        "value": "quarantine",
+        "value": "none",
         "explicit": true
       },
-      "pct": {
-        "value": 0,
+      "sp": {
+        "value": "none",
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "1"
+        ],
+        "explicit": true
+      },
+      "ri": {
+        "value": 86400,
         "explicit": true
       },
       "rua": {
         "value": [
           {
             "scheme": "mailto",
-            "address": "dmarc.rua@upc.edu",
+            "address": "dmarc_rua@icgc.cat",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc_ruf@icgc.cat",
             "size_limit": null
           }
         ],
@@ -448,24 +567,14 @@
         "value": "r",
         "explicit": false
       },
-      "fo": {
-        "value": [
-          "0"
-        ],
+      "pct": {
+        "value": 100,
         "explicit": false
       },
       "rf": {
         "value": [
           "afrf"
         ],
-        "explicit": false
-      },
-      "ri": {
-        "value": 86400,
-        "explicit": false
-      },
-      "sp": {
-        "value": "quarantine",
         "explicit": false
       }
     }

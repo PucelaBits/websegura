@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns02.mde.es",
       "ns03.mde.es",
       "ns04.mde.es",
-      "ns01.mde.es",
-      "ns02.mde.es"
+      "ns01.mde.es"
     ],
     "warnings": []
   },
@@ -26,6 +26,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "error": "All nameservers failed to answer the query _dmarc.defensa.gob.es. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
   }
 }

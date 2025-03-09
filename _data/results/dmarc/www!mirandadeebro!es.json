@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.serv632576.servidoresdns.net",
-      "dns2.serv632576.servidoresdns.net"
+      "aisha.ns.cloudflare.com",
+      "ignat.ns.cloudflare.com"
     ],
     "warnings": []
   },
@@ -33,7 +33,27 @@
           "mechanism": "mx"
         },
         {
-          "value": "82.223.117.199",
+          "value": "104.26.14.98",
+          "mechanism": "a"
+        },
+        {
+          "value": "104.26.15.98",
+          "mechanism": "a"
+        },
+        {
+          "value": "172.67.73.127",
+          "mechanism": "a"
+        },
+        {
+          "value": "2606:4700:20::681a:e62",
+          "mechanism": "a"
+        },
+        {
+          "value": "2606:4700:20::681a:f62",
+          "mechanism": "a"
+        },
+        {
+          "value": "2606:4700:20::ac43:497f",
           "mechanism": "a"
         },
         {
