@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "psi.cibelesdmz.local",
-      "zeta.cnmc.es",
-      "psi.cnmc.es",
       "ns1.es.colt.net",
+      "zeta.cnmc.es",
+      "psi.cibelesdmz.local",
+      "psi.cnmc.es",
       "zeta.cibelesdmz.local"
     ],
     "warnings": []
@@ -18,7 +18,7 @@
         "preference": 0,
         "hostname": "mxa-007a3601.gslb.pphosted.com",
         "addresses": [
-          "66.159.235.239"
+          "66.159.246.105"
         ]
       },
       {
@@ -32,87 +32,15 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:79.170.8.205 a:dispatch-eu.ppe-hosted.com include:spf.protection.outlook.com include:spf-007a3601.pphosted.com ~all",
+    "record": "v=spf1 ip4:79.170.8.205 include:spf.protection.outlook.com include:spf-007a3601.pphosted.com ~all",
     "valid": true,
-    "dns_lookups": 3,
+    "dns_lookups": 2,
     "warnings": [],
     "parsed": {
       "pass": [
         {
           "value": "79.170.8.205",
           "mechanism": "ip4"
-        },
-        {
-          "value": "185.132.181.10",
-          "mechanism": "a"
-        },
-        {
-          "value": "185.132.181.11",
-          "mechanism": "a"
-        },
-        {
-          "value": "185.132.181.12",
-          "mechanism": "a"
-        },
-        {
-          "value": "185.132.181.13",
-          "mechanism": "a"
-        },
-        {
-          "value": "185.132.181.6",
-          "mechanism": "a"
-        },
-        {
-          "value": "185.132.181.7",
-          "mechanism": "a"
-        },
-        {
-          "value": "185.132.181.8",
-          "mechanism": "a"
-        },
-        {
-          "value": "185.132.181.9",
-          "mechanism": "a"
-        },
-        {
-          "value": "185.183.29.32",
-          "mechanism": "a"
-        },
-        {
-          "value": "185.183.29.33",
-          "mechanism": "a"
-        },
-        {
-          "value": "185.183.29.34",
-          "mechanism": "a"
-        },
-        {
-          "value": "185.183.29.35",
-          "mechanism": "a"
-        },
-        {
-          "value": "185.183.29.36",
-          "mechanism": "a"
-        },
-        {
-          "value": "185.183.29.37",
-          "mechanism": "a"
-        },
-        {
-          "value": "185.183.29.38",
-          "mechanism": "a"
-        },
-        {
-          "value": "185.183.29.39",
-          "mechanism": "a"
-        },
-        {
-          "value": "91.209.104.157",
-          "mechanism": "a"
-        },
-        {
-          "value": "91.209.104.158",
-          "mechanism": "a"
         }
       ],
       "neutral": [],

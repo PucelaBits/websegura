@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns4.juntadeandalucia.es",
       "ns3.juntadeandalucia.es",
+      "ns.juntadeandalucia.es",
       "ns1.juntadeandalucia.es",
-      "ns.juntadeandalucia.es"
+      "ns4.juntadeandalucia.es"
     ],
     "warnings": []
   },
@@ -79,7 +79,7 @@
       "include": [
         {
           "domain": "spf.andalucia.org",
-          "record": "v=spf1 ip4:217.12.23.63 ip4:217.12.23.124 ip4:217.12.23.125 ip4:217.12.23.127 ip4:217.12.23.64 ip4:217.12.23.123 ip4:217.12.23.193 -all",
+          "record": "v=spf1 ip4:217.12.23.63 ip4:217.12.23.124 ip4:217.12.23.251 ip4:217.12.23.127 ip4:217.12.23.64 ip4:217.12.23.123 ip4:217.12.23.193 -all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -92,7 +92,7 @@
                 "mechanism": "ip4"
               },
               {
-                "value": "217.12.23.125",
+                "value": "217.12.23.251",
                 "mechanism": "ip4"
               },
               {

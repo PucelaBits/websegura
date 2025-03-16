@@ -1,10 +1,13 @@
 {
   "domain": "cooperacionespanola.es",
   "base_domain": "cooperacionespanola.es",
-  "dnssec": false,
+  "dnssec": true,
   "ns": {
-    "hostnames": [],
-    "error": "All nameservers failed to answer the query cooperacionespanola.es. IN NS: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "hostnames": [
+      "ns1.age.gob.es",
+      "ns2.age.gob.es"
+    ],
+    "warnings": []
   },
   "mx": {
     "hosts": [

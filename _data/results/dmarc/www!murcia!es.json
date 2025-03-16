@@ -13,28 +13,123 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "correo.murcia.es",
+        "hostname": "mx10.murcia.es",
         "addresses": [
-          "81.46.205.179"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "correo2.murcia.es",
-        "addresses": [
-          "81.46.205.178"
+          "2a01:111:f403:ca04::1",
+          "2a01:111:f403:ca04::10",
+          "2a01:111:f403:ca04::f",
+          "2a01:111:f403:ca09::2",
+          "52.101.68.36",
+          "52.101.73.4",
+          "52.101.73.6",
+          "52.101.73.8"
         ]
       }
     ],
-    "warnings": [
-      "The domain 81-46-205-178.redes.acens.net does not exist",
-      "The reverse DNS of 81.46.205.178 is 81-46-205-178.redes.acens.net, but the A/AAAA DNS records for 81-46-205-178.redes.acens.net do not resolve to 81.46.205.178"
-    ]
+    "warnings": []
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "murcia.es does not have a SPF TXT record"
+    "record": "v=spf1 a mx ip4:195.57.119.156 ip4:195.57.119.157 ip4:217.23.208.156 ip4:217.23.208.157 include:spf.protection.outlook.com -all",
+    "valid": true,
+    "dns_lookups": 3,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "195.57.119.131",
+          "mechanism": "a"
+        },
+        {
+          "value": "mx10.murcia.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "195.57.119.156",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "195.57.119.157",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "217.23.208.156",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "217.23.208.157",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "spf.protection.outlook.com",
+          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/15 ip4:52.102.0.0/16 ip4:52.103.0.0/17 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/51 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "40.92.0.0/15",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "40.107.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.100.0.0/15",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.102.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.103.0.0/17",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "104.47.0.0/17",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "2a01:111:f400::/48",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403::/49",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:8000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:c000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:f000::/52",
+                "mechanism": "ip6"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
     "record": null,
