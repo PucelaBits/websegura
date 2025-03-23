@@ -3,22 +3,291 @@
   "base_domain": "sepi.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hostnames": [
+      "ns.transparentedge.eu",
+      "ns.transparentedge.es"
+    ],
+    "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "smtp1.sepi.es",
+        "addresses": [
+          "94.100.132.100"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "smtp2.sepi.es",
+        "addresses": [
+          "83.246.65.100"
+        ]
+      }
+    ],
+    "warnings": [
+      "The domain nlb01-hz2.hornetsecurity.com.65.246.83.in-addr.arpa does not exist",
+      "The reverse DNS of 83.246.65.100 is nlb01-hz2.hornetsecurity.com.65.246.83.in-addr.arpa, but the A/AAAA DNS records for nlb01-hz2.hornetsecurity.com.65.246.83.in-addr.arpa do not resolve to 83.246.65.100"
+    ]
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "record": "v=spf1 ip4:93.159.211.185 ip4:194.140.77.185 ip4:194.140.77.186 ip4:154.58.19.206 a:spf.correo.gob.es include:emailservice.cpd.as -all",
+    "valid": true,
+    "dns_lookups": 3,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "93.159.211.185",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "194.140.77.185",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "194.140.77.186",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "154.58.19.206",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "185.73.172.122",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.172.123",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.172.124",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.172.125",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.172.147",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.173.17",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.173.18",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.173.19",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.173.20",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.173.21",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.173.22",
+          "mechanism": "a"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "emailservice.cpd.as",
+          "record": "v=spf1 +ip4:154.58.16.0/22 +ip4:185.79.128.0/22 +ip4:213.99.28.0/24 +ip4:46.24.172.0/25 +include:spf.hornetsecurity.com -all",
+          "dns_lookups": 1,
+          "parsed": {
+            "pass": [
+              {
+                "value": "154.58.16.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.79.128.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "213.99.28.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "46.24.172.0/25",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [
+              {
+                "domain": "spf.hornetsecurity.com",
+                "record": "v=spf1 ip4:83.246.65.0/24 ip4:185.140.204.0/22 ip4:94.100.128.0/20 ip4:81.20.94.0/24 ip4:173.45.18.0/24 ip4:52.62.123.207/32 ip4:52.62.108.212/32 ip4:129.232.203.80/28 ip4:209.172.38.64/27 ip4:108.163.133.224/27 ip4:193.135.100.0/27 ip4:199.27.221.76 ip4:216.46.11.238 ip4:216.46.11.244 ip4:199.27.221.81 ip4:199.27.221.82 ip4:52.62.114.130 ip4:52.62.125.178 ip4:92.54.27.0/24 ip4:174.142.136.160/27 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "83.246.65.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.140.204.0/22",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "94.100.128.0/20",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "81.20.94.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "173.45.18.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "52.62.123.207/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "52.62.108.212/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "129.232.203.80/28",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "209.172.38.64/27",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "108.163.133.224/27",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "193.135.100.0/27",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "199.27.221.76",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "216.46.11.238",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "216.46.11.244",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "199.27.221.81",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "199.27.221.82",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "52.62.114.130",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "52.62.125.178",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "92.54.27.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "174.142.136.160/27",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              }
+            ],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "record": "v=DMARC1; p=none",
+    "valid": true,
+    "location": "sepi.es",
+    "warnings": [
+      "rua tag (destination for aggregate reports) not found"
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }

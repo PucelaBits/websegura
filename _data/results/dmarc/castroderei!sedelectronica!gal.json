@@ -11,14 +11,12 @@
       {
         "preference": 10,
         "hostname": "inbound-smtp.eu-west-1.amazonaws.com",
-        "addresses": [
-          "18.200.203.69",
-          "54.155.140.59",
-          "54.76.31.185"
-        ]
+        "addresses": []
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ]
   },
   "spf": {
     "record": null,

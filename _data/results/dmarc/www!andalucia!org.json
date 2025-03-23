@@ -5,33 +5,15 @@
   "ns": {
     "hostnames": [
       "ns3.juntadeandalucia.es",
-      "ns.juntadeandalucia.es",
       "ns1.juntadeandalucia.es",
+      "ns.juntadeandalucia.es",
       "ns4.juntadeandalucia.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mx.juntadeandalucia.es",
-        "addresses": [
-          "217.12.21.182"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mx2.juntadeandalucia.es",
-        "addresses": [
-          "217.12.21.191"
-        ]
-      }
-    ],
-    "warnings": [
-      "217.12.21.182 does not have any reverse DNS (PTR) records",
-      "217.12.21.191 does not have any reverse DNS (PTR) records"
-    ]
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 ip4:217.12.27.153 ip4:217.12.27.75 ip4:217.12.26.60 ip4:217.12.26.61 ip4:217.12.27.157 ip4:217.12.27.158 ip4:217.12.27.159 ip4:217.12.27.160 include:spf.andalucia.org include:spf.acumbamail.com ~all",

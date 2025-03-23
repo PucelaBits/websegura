@@ -19,10 +19,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 188.245.164.207 is server4.infofuturo.net, but the A/AAAA DNS records for server4.infofuturo.net do not resolve to 188.245.164.207"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 +a +mx +ip4:188.245.164.207 +ip4:37.153.90.131 +ip4:37.153.90.139 ~all",

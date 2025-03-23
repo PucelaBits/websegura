@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns3.dnsxperta.com",
       "ns2.dnsxperta.com",
+      "ns3.dnsxperta.com",
       "ns1.dnsxperta.com"
     ],
     "warnings": []
@@ -65,7 +65,7 @@
       "include": [
         {
           "domain": "_kvm4.spf.srvdr.com",
-          "record": "v=spf1 ip4:178.33.30.217 ip4:37.187.8.158 ip4:51.178.68.2 ip4:51.178.178.202 -all",
+          "record": "v=spf1 ip4:178.33.30.217 ip4:217.182.92.139 ip4:51.178.68.2 ip4:51.178.178.202 -all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -74,7 +74,7 @@
                 "mechanism": "ip4"
               },
               {
-                "value": "37.187.8.158",
+                "value": "217.182.92.139",
                 "mechanism": "ip4"
               },
               {
