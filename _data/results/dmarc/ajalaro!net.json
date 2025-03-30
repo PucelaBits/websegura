@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "kelly.ns.cloudflare.com",
-      "kirk.ns.cloudflare.com",
       "ns10.ovh.net",
-      "dns10.ovh.net"
+      "dns10.ovh.net",
+      "kelly.ns.cloudflare.com",
+      "kirk.ns.cloudflare.com"
     ],
     "warnings": []
   },
@@ -17,15 +17,15 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.251.2.26",
-          "2607:f8b0:4023:c06::1a"
+          "142.250.141.26",
+          "2607:f8b0:4023:c06::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "108.177.104.27",
+          "108.177.104.26",
           "2607:f8b0:4003:c04::1b"
         ]
       },
@@ -42,15 +42,15 @@
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
           "172.253.113.27",
-          "2607:f8b0:4023:1::1a"
+          "2607:f8b0:4023:1::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "172.253.126.26",
-          "2607:f8b0:4023:400::1a"
+          "173.194.77.27",
+          "2607:f8b0:4023:401::1a"
         ]
       }
     ],

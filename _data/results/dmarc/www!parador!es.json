@@ -12,10 +12,17 @@
   "mx": {
     "hosts": [
       {
-        "preference": 5,
-        "hostname": "correo-paradores.secureit.es",
+        "preference": 10,
+        "hostname": "securemx1.secureit.es",
         "addresses": [
           "185.208.217.7"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "securemx2.secureit.es",
+        "addresses": [
+          "93.174.5.137"
         ]
       }
     ],

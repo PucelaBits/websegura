@@ -27,6 +27,13 @@
       },
       {
         "preference": 10,
+        "hostname": "antispam32.tragsa.es",
+        "addresses": [
+          "195.77.152.113"
+        ]
+      },
+      {
+        "preference": 10,
         "hostname": "antispam35.tragsa.es",
         "addresses": [
           "194.224.34.72"
@@ -37,13 +44,6 @@
         "hostname": "mailhost-antispam.ttd.net",
         "addresses": [
           "213.0.184.65"
-        ]
-      },
-      {
-        "preference": 51,
-        "hostname": "antispam32.tragsa.es",
-        "addresses": [
-          "195.77.152.113"
         ]
       }
     ],
@@ -67,15 +67,15 @@
           "mechanism": "mx"
         },
         {
+          "value": "antispam32.tragsa.es",
+          "mechanism": "mx"
+        },
+        {
           "value": "antispam35.tragsa.es",
           "mechanism": "mx"
         },
         {
           "value": "mailhost-antispam.ttd.net",
-          "mechanism": "mx"
-        },
-        {
-          "value": "antispam32.tragsa.es",
           "mechanism": "mx"
         },
         {

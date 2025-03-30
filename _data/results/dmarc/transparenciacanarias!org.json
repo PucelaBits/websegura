@@ -245,9 +245,53 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine ;rua=mailto:comunicados@transparenciacanarias.org",
-    "valid": false,
+    "record": "v=DMARC1; p=quarantine",
+    "valid": true,
     "location": "transparenciacanarias.org",
-    "error": "Tag p must have one of the following values: none,quarantine,reject - not quarantine "
+    "warnings": [
+      "rua tag (destination for aggregate reports) not found"
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "quarantine",
+        "explicit": false
+      }
+    }
   }
 }

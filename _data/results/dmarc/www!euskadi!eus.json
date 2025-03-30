@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.itbatera.euskadi.eus",
-      "ns2.itbatera.euskadi.eus"
+      "ns2.itbatera.euskadi.eus",
+      "ns1.itbatera.euskadi.eus"
     ],
     "warnings": []
   },
@@ -24,10 +24,12 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:176.28.98.112/28 include:spf.mandrillapp.com include:servers.mcsv.net include:euskadi.ip-zone.com include:eu.zcsend.net include:spf.batera.euskadi.eus -all",
+    "record": "v=spf1 ip4:176.28.98.112/28 include:spf.mandrillapp.com include:servers.mcsv.net include:euskadi.ip-zone.com include:eu.zcsend.net include:spf.batera.euskadi.eus -all include:_pmta2.antevenio.com -all",
     "valid": true,
     "dns_lookups": 7,
-    "warnings": [],
+    "warnings": [
+      "Any text after the all mechanism is ignored"
+    ],
     "parsed": {
       "pass": [
         {
