@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns01-tt01.okitup.net",
-      "ns02.okitup.net"
+      "ns02.okitup.net",
+      "ns01-tt01.okitup.net"
     ],
     "warnings": []
   },
@@ -15,15 +15,15 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.251.2.26",
-          "2607:f8b0:4023:c06::1b"
+          "2607:f8b0:4023:c03::1a",
+          "74.125.137.26"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "108.177.104.26",
+          "108.177.104.27",
           "2607:f8b0:4003:c04::1b"
         ]
       },
@@ -39,8 +39,8 @@
         "preference": 10,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "172.253.113.27",
-          "2607:f8b0:4023:1::1a"
+          "172.253.113.26",
+          "2607:f8b0:4023:1::1b"
         ]
       },
       {
@@ -48,7 +48,7 @@
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
           "173.194.77.26",
-          "2607:f8b0:4023:401::1a"
+          "2607:f8b0:4023:401::1b"
         ]
       }
     ],

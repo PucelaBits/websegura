@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns.tragsa.es",
-      "artemis.ttd.net"
+      "artemis.ttd.net",
+      "dns.tragsa.es"
     ],
     "warnings": []
   },
@@ -20,16 +20,16 @@
       },
       {
         "preference": 2,
-        "hostname": "antispam33.tragsa.es",
-        "addresses": [
-          "195.77.152.114"
-        ]
-      },
-      {
-        "preference": 10,
         "hostname": "antispam32.tragsa.es",
         "addresses": [
           "195.77.152.113"
+        ]
+      },
+      {
+        "preference": 2,
+        "hostname": "antispam33.tragsa.es",
+        "addresses": [
+          "195.77.152.114"
         ]
       },
       {
@@ -63,11 +63,11 @@
           "mechanism": "mx"
         },
         {
-          "value": "antispam33.tragsa.es",
+          "value": "antispam32.tragsa.es",
           "mechanism": "mx"
         },
         {
-          "value": "antispam32.tragsa.es",
+          "value": "antispam33.tragsa.es",
           "mechanism": "mx"
         },
         {

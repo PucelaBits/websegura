@@ -29,96 +29,16 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:212.128.108.46 ip4:212.128.108.45 ip4:194.179.55.96/28 ip4:213.99.40.96/28 include:spf.protection.outlook.com include:seg-social.es -all",
+    "record": "v=spf1 include:seg-social.es -all",
     "valid": true,
-    "dns_lookups": 4,
-    "warnings": [
-      "Duplicate include: spf.protection.outlook.com"
-    ],
+    "dns_lookups": 3,
+    "warnings": [],
     "parsed": {
-      "pass": [
-        {
-          "value": "212.128.108.46",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "212.128.108.45",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "194.179.55.96/28",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "213.99.40.96/28",
-          "mechanism": "ip4"
-        }
-      ],
+      "pass": [],
       "neutral": [],
       "softfail": [],
       "fail": [],
       "include": [
-        {
-          "domain": "spf.protection.outlook.com",
-          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/15 ip4:52.102.0.0/16 ip4:52.103.0.0/17 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/51 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
-          "dns_lookups": 0,
-          "parsed": {
-            "pass": [
-              {
-                "value": "40.92.0.0/15",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "40.107.0.0/16",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "52.100.0.0/15",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "52.102.0.0/16",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "52.103.0.0/17",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "104.47.0.0/17",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "2a01:111:f400::/48",
-                "mechanism": "ip6"
-              },
-              {
-                "value": "2a01:111:f403::/49",
-                "mechanism": "ip6"
-              },
-              {
-                "value": "2a01:111:f403:8000::/51",
-                "mechanism": "ip6"
-              },
-              {
-                "value": "2a01:111:f403:c000::/51",
-                "mechanism": "ip6"
-              },
-              {
-                "value": "2a01:111:f403:f000::/52",
-                "mechanism": "ip6"
-              }
-            ],
-            "neutral": [],
-            "softfail": [],
-            "fail": [],
-            "include": [],
-            "redirect": null,
-            "exp": null,
-            "all": "fail"
-          },
-          "warnings": []
-        },
         {
           "domain": "seg-social.es",
           "record": "v=spf1 mx ip4:195.57.67.224/27 ip4:194.224.129.224/27 ip4:194.179.55.96/28 ip4:213.99.40.96/28 include:spf.protection.outlook.com ~all",
@@ -153,14 +73,74 @@
             "neutral": [],
             "softfail": [],
             "fail": [],
-            "include": [],
+            "include": [
+              {
+                "domain": "spf.protection.outlook.com",
+                "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/15 ip4:52.102.0.0/16 ip4:52.103.0.0/17 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/51 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "40.92.0.0/15",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "40.107.0.0/16",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "52.100.0.0/15",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "52.102.0.0/16",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "52.103.0.0/17",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "104.47.0.0/17",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "2a01:111:f400::/48",
+                      "mechanism": "ip6"
+                    },
+                    {
+                      "value": "2a01:111:f403::/49",
+                      "mechanism": "ip6"
+                    },
+                    {
+                      "value": "2a01:111:f403:8000::/51",
+                      "mechanism": "ip6"
+                    },
+                    {
+                      "value": "2a01:111:f403:c000::/51",
+                      "mechanism": "ip6"
+                    },
+                    {
+                      "value": "2a01:111:f403:f000::/52",
+                      "mechanism": "ip6"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "fail"
+                },
+                "warnings": []
+              }
+            ],
             "redirect": null,
             "exp": null,
             "all": "softfail"
           },
-          "warnings": [
-            "Duplicate include: spf.protection.outlook.com"
-          ]
+          "warnings": []
         }
       ],
       "redirect": null,
@@ -169,9 +149,62 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=quarantine; sp=quarantine; fo=1; ri=3600; rua=mailto:postmaster@seg-social.es; ruf=mailto:postmaster@seg-social.es",
+    "valid": true,
+    "location": "inclusion.gob.es",
+    "warnings": [
+      "seg-social.es does not indicate that it accepts DMARC reports about inclusion.gob.es - Authorization record not found: inclusion.gob.es._report._dmarc.seg-social.es IN TXT \"v=DMARC1\"",
+      "seg-social.es does not indicate that it accepts DMARC reports about inclusion.gob.es - Authorization record not found: inclusion.gob.es._report._dmarc.seg-social.es IN TXT \"v=DMARC1\""
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "sp": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "1"
+        ],
+        "explicit": true
+      },
+      "ri": {
+        "value": 3600,
+        "explicit": true
+      },
+      "rua": {
+        "value": "mailto:postmaster@seg-social.es",
+        "explicit": true
+      },
+      "ruf": {
+        "value": "mailto:postmaster@seg-social.es",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      }
+    }
   }
 }

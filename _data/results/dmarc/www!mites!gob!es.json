@@ -113,7 +113,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1;p=none;fo=0;rua=mailto:dmarc_rua@emaildefense.proofpoint.com,mailto:dmarc.rua@mites.gob.es;ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com,mailto:dmarc.ruf@mites.gob.es; adkim=r; aspf=s",
+    "record": "v=DMARC1;p=none;fo=0;rua=mailto:dmarc.rua@mites.gob.es;ruf=mailto:dmarc.ruf@mites.gob.es; adkim=r; aspf=s",
     "valid": true,
     "location": "mites.gob.es",
     "warnings": [],
@@ -136,11 +136,6 @@
         "value": [
           {
             "scheme": "mailto",
-            "address": "dmarc_rua@emaildefense.proofpoint.com",
-            "size_limit": null
-          },
-          {
-            "scheme": "mailto",
             "address": "dmarc.rua@mites.gob.es",
             "size_limit": null
           }
@@ -149,11 +144,6 @@
       },
       "ruf": {
         "value": [
-          {
-            "scheme": "mailto",
-            "address": "dmarc_ruf@emaildefense.proofpoint.com",
-            "size_limit": null
-          },
           {
             "scheme": "mailto",
             "address": "dmarc.ruf@mites.gob.es",

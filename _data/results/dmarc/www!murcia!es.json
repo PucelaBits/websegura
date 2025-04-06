@@ -10,38 +10,23 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mx10.murcia.es",
-        "addresses": [
-          "2a01:111:f403:ca04::2",
-          "2a01:111:f403:ca04::8",
-          "2a01:111:f403:ca04::e",
-          "2a01:111:f403:ca09::5",
-          "52.101.68.12",
-          "52.101.68.21",
-          "52.101.68.27",
-          "52.101.68.5"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
   },
   "spf": {
     "record": "v=spf1 a mx ip4:195.57.119.156 ip4:195.57.119.157 ip4:217.23.208.156 ip4:217.23.208.157 include:spf.protection.outlook.com -all",
     "valid": true,
     "dns_lookups": 3,
-    "warnings": [],
+    "warnings": [
+      "murcia.es does not have any MX records"
+    ],
     "parsed": {
       "pass": [
         {
           "value": "195.57.119.131",
           "mechanism": "a"
-        },
-        {
-          "value": "mx10.murcia.es",
-          "mechanism": "mx"
         },
         {
           "value": "195.57.119.156",
