@@ -9,22 +9,21 @@
     </thead>
     <tbody>
       {% for web in webs | sort(reverse=true, attribute = "score") %}
-        {% if web.state === 'FINISHED' %}
-          <tr class="{{ web | color }}">
-            <td>
-              <a href="/w/{{ web.url | replace('.', '!') }}" title="{{ web | abbr }}">
-                {% if not web.url | dmarc_secure %}
-                  <span class="phishing" title="Vulnerable a suplantación de identidad de emails"><img src="/images/phishing.png"></span>
-                {% endif %}
-                {% if web.tests_passed < 5 %}☠️{% else %}{{ web.grade }}{% endif %}
-              </a>
-            </td>
-            <td>
-              <a href="/w/{{ web.url | replace('.', '!') }}" title="{{ web.name }}">{{ web.url | replace("www.", "") }}</a>
-            </td>
-            <td>
-              {% if (web.twitter) and (web.score < 70) %}
-                <a class="twitter-share-button" href="https://twitter.com/intent/tweet/?text={{ 'Hola @' + web.twitter + '
+        <tr class="{{ web | color }}">
+          <td>
+            <a href="/w/{{ web.url | replace('.', '!') }}" title="{{ web | abbr }}">
+              {% if not web.url | dmarc_secure %}
+                <span class="phishing" title="Vulnerable a suplantación de identidad de emails"><img src="/images/phishing.png"></span>
+              {% endif %}
+              {% if web.tests_passed < 5 %}☠️{% else %}{{ web.grade }}{% endif %}
+            </a>
+          </td>
+          <td>
+            <a href="/w/{{ web.url | replace('.', '!') }}" title="{{ web.name }}">{{ web.url | replace("www.", "") }}</a>
+          </td>
+          <td>
+            {% if (web.twitter) and (web.score < 70) %}
+              <a class="twitter-share-button" href="https://twitter.com/intent/tweet/?text={{ 'Hola @' + web.twitter + '
 
 🔒 La seguridad de vuestra web' | urlEncode}}{% if not web.url | dmarc_secure %}{{', correos '}}{% endif %}{{' y usuarios puede ser comprometida si no actualizáis vuestras conexiones seguras (HTTPS).
 ⚠️ ¡Por favor, revisadlo cuanto antes!
@@ -32,13 +31,13 @@
 https://websegura.pucelabits.org'| urlEncode }}{{ path }}{{ '?pk_campaign=HazseloSaber&pk_source=twitter
 
 #websegura /vía @PucelaBits' | urlEncode }}" target="_blank" rel="noopener" aria-label="Twitter">
-                <span class="icon brands fa-twitter" {% if web.twitter_mentions > 0 %}data-popularity="high" title="Sitio destacado. Súmate a quienes ya han tuiteado"{% endif %}>
-                  <span>Tuitear</span>
-                </a>
-              {% endif %}
-              {% if (web.twitter) and (web.score >= 70) %}
-              {% if not web.url | dmarc_secure %}
-                <a class="twitter-share-button" href="https://twitter.com/intent/tweet/?text={{ 'Hola @' + web.twitter + '
+              <span class="icon brands fa-twitter" {% if web.twitter_mentions > 0 %}data-popularity="high" title="Sitio destacado. Súmate a quienes ya han tuiteado"{% endif %}>
+                <span>Tuitear</span>
+              </a>
+            {% endif %}
+            {% if (web.twitter) and (web.score >= 70) %}
+            {% if not web.url | dmarc_secure %}
+              <a class="twitter-share-button" href="https://twitter.com/intent/tweet/?text={{ 'Hola @' + web.twitter + '
 
 ✉️ Los emails @'| urlEncode }}{{ web.url | canonical }}{{' son vulnerables a suplantación de identidad, cualquiera puede hacerse pasar por vosotros sin ser detectado.
 ⚠️ ¡Por favor, revisadlo cuanto antes!
@@ -46,22 +45,13 @@ https://websegura.pucelabits.org'| urlEncode }}{{ path }}{{ '?pk_campaign=Hazsel
 https://websegura.pucelabits.org'| urlEncode }}{{ path }}{{ '?pk_campaign=HazseloSaber&pk_source=twitter
 
 #emailseguro /vía @PucelaBits' | urlEncode }}" target="_blank" rel="noopener" aria-label="Twitter">
-                <span class="icon brands fa-twitter" {% if web.twitter_mentions > 0 %}data-popularity="high" title="Sitio destacado. Súmate a quienes ya han tuiteado"{% endif %}>
-                  <span>Tuitear</span>
-                </a>
-              {% endif %}
-              {% endif %}
-            </td>
-          </tr>
-        {% else %}
-          <tr class="unknown">
-            <td title="El análisis de seguridad está pendiente">🕐</td>
-            <td>
-              {{ web.url | replace("www.", "") }}
-            </td>
-            <td></td>
-          </tr>
-        {% endif %}
+              <span class="icon brands fa-twitter" {% if web.twitter_mentions > 0 %}data-popularity="high" title="Sitio destacado. Súmate a quienes ya han tuiteado"{% endif %}>
+                <span>Tuitear</span>
+              </a>
+            {% endif %}
+            {% endif %}
+          </td>
+        </tr>
       {% endfor %}
     </tbody>
   </table>

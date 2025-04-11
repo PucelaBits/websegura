@@ -11,8 +11,7 @@ const axios = require("axios");
 const Bottleneck = require("bottleneck");
 const parser = require("./sites-parser");
 
-const MOZILLA_API_BASE_URL =
-  "https://http-observatory.security.mozilla.org/api/v1";
+const MOZILLA_API_BASE_URL = "https://observatory-api.mdn.mozilla.net/api/v2";
 const MAX_CONCURRENT_REQUESTS = 20;
 
 const limiter = new Bottleneck({ maxConcurrent: MAX_CONCURRENT_REQUESTS });
@@ -24,12 +23,22 @@ async function analyze() {
     limiter.schedule(() => {
       console.log(`${i} Scanning ${site} using Mozilla HTTP Observatory API`);
       return axios.post(
-        `${MOZILLA_API_BASE_URL}/analyze?host=${site}&rescan=true`
+        `${MOZILLA_API_BASE_URL}/analyze?host=${site}&rescan=true` // XXX not sure if rescan is needed in api/v2
       );
     })
   );
 
-  await Promise.all(promises);
+  await Promise.allSettled(promises.map(async (promise) => {
+    try {
+      await promise;
+    } catch (e) {
+      if (e.response) {
+        console.error(`Failed (${e.response.status}): ${e.response.statusText}`);
+      } else {
+        console.error(e);
+      }
+    }
+  }));
 }
 
 analyze().catch((err) => {
