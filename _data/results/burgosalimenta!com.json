@@ -1,28 +1,21 @@
 {
-  "algorithm_version": 2,
-  "end_time": "Tue, 23 Jan 2024 00:12:03 GMT",
+  "id": 61173447,
+  "algorithm_version": 4,
+  "scanned_at": "2025-04-11T20:16:51.325Z",
+  "error": null,
   "grade": "F",
-  "hidden": false,
-  "likelihood_indicator": "MEDIUM",
   "response_headers": {
-    "Accept-Ranges": "bytes",
-    "Connection": "Keep-Alive",
-    "Content-Encoding": "gzip",
-    "Content-Length": "226",
-    "Content-Type": "text/html",
-    "Date": "Tue, 23 Jan 2024 00:12:02 GMT",
-    "ETag": "\"1a8-5b9b715f3b480-gzip\"",
-    "Keep-Alive": "timeout=5, max=100",
-    "Last-Modified": "Mon, 25 Jan 2021 10:34:42 GMT",
-    "Server": "Apache",
-    "Vary": "Accept-Encoding"
+    "date": "Fri, 11 Apr 2025 20:16:52 GMT",
+    "server": "Apache",
+    "connection": "close",
+    "content-type": "text/html; charset=UTF-8",
+    "transfer-encoding": "chunked",
+    "x-ws-ratelimit-limit": "1000",
+    "x-ws-ratelimit-remaining": "998"
   },
-  "scan_id": 46891077,
-  "score": 0,
-  "start_time": "Tue, 23 Jan 2024 00:11:58 GMT",
-  "state": "FINISHED",
+  "score": 10,
   "status_code": 200,
-  "tests_failed": 6,
-  "tests_passed": 6,
-  "tests_quantity": 12
+  "tests_failed": 5,
+  "tests_passed": 5,
+  "tests_quantity": 10
 }
