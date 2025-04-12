@@ -22,43 +22,6 @@ XXX this could be a macro or something like that to import it from the pages tha
 let suggestions = [
   {% for site in all %}{"name": "{{ site.name }} ({{ site.territorio }})", "href": "/w/{{ site.url | replace(".", "!") }}"}{{',' if not loop.last}}{% endfor %}
 ];
-
-const searchWrapper = document.querySelector(".search-input");
-const inputBox = searchWrapper.querySelector("input");
-const suggestionBox = searchWrapper.querySelector(".autocom-box");
-const icon = searchWrapper.querySelector(".icon");
-let linkTag = searchWrapper.querySelector("a");
-
-inputBox.onkeyup = (e) => {
-    const userData = e.target.value;
-    if (userData) {
-        const list = suggestions.filter((data) => data.name.toLowerCase().includes(userData.toLowerCase()))
-                              .map((data) => '<li class="whitespace-nowrap" onclick="select(this)">' + data.name + '</li>');
-        searchWrapper.classList.add("active");
-        showSuggestions(list);
-    } else {
-        searchWrapper.classList.remove("active");
-    }
-}
-function select(element) {
-    const selectData = element.textContent;
-    inputBox.value = selectData;
-    const site = suggestions.find((data) => data.name === selectData);
-    if (site) {
-      searchWrapper.classList.remove("active");
-      linkTag.setAttribute("href", site.href);
-      linkTag.click();
-    }
-}
-function showSuggestions(list) {
-    let listData;
-    if (!list.length) {
-        userValue = inputBox.value;
-        listData = '<li class="notfound">No encuentro ningún resultado</li>';
-    } else {
-        listData = list.join('');
-    }
-    suggestionBox.innerHTML = listData;
-}
 </script>
+<script src="/assets/js/searchbox.js" nonce="search"></script>
 {# END SEARCH #}
