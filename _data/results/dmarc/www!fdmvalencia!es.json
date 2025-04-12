@@ -4,39 +4,63 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.civicloud.net",
-      "ns2.civicloud.net"
+      "ns3.interec.com",
+      "ns.interec.com",
+      "ns2.interec.com",
+      "ns1.interec.com"
     ],
     "warnings": []
   },
   "mx": {
     "hosts": [
       {
-        "preference": 0,
+        "preference": 10,
         "hostname": "fdmvalencia-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.12.36",
-          "104.47.14.36"
+          "2a01:111:f403:ca04::1",
+          "2a01:111:f403:ca04::2",
+          "2a01:111:f403:ca04::6",
+          "2a01:111:f403:ca09::5",
+          "52.101.68.32",
+          "52.101.73.11",
+          "52.101.73.12",
+          "52.101.73.22"
         ]
+      },
+      {
+        "preference": 25,
+        "hostname": "fdmvalencia-es.mail.protection.outlook.com",
+        "addresses": []
       }
     ],
-    "warnings": []
+    "warnings": [
+      "Hostname fdmvalencia-es.mail.protection.outlook.com is listed in multiple MX records"
+    ]
   },
   "spf": {
-    "record": "v=spf1 include:spf.protection.outlook.com -all",
+    "record": "v=spf1 include:spf.protection.outlook.com mx:fdmvalencia.es -all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
     "parsed": {
-      "pass": [],
+      "pass": [
+        {
+          "value": "fdmvalencia-es.mail.protection.outlook.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "fdmvalencia-es.mail.protection.outlook.com",
+          "mechanism": "mx"
+        }
+      ],
       "neutral": [],
       "softfail": [],
       "fail": [],
       "include": [
         {
           "domain": "spf.protection.outlook.com",
-          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/48 include:spfd.protection.outlook.com -all",
-          "dns_lookups": 1,
+          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/15 ip4:52.102.0.0/16 ip4:52.103.0.0/17 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/51 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
+          "dns_lookups": 0,
           "parsed": {
             "pass": [
               {
@@ -48,7 +72,15 @@
                 "mechanism": "ip4"
               },
               {
-                "value": "52.100.0.0/14",
+                "value": "52.100.0.0/15",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.102.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.103.0.0/17",
                 "mechanism": "ip4"
               },
               {
@@ -60,68 +92,26 @@
                 "mechanism": "ip6"
               },
               {
-                "value": "2a01:111:f403::/48",
+                "value": "2a01:111:f403::/49",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:8000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:c000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:f000::/52",
                 "mechanism": "ip6"
               }
             ],
             "neutral": [],
             "softfail": [],
             "fail": [],
-            "include": [
-              {
-                "domain": "spfd.protection.outlook.com",
-                "record": "v=spf1 ip4:51.4.72.0/24 ip4:51.5.72.0/24 ip4:51.5.80.0/27 ip4:20.47.149.138/32 ip4:51.4.80.0/27 ip6:2a01:4180:4051:0800::/64 ip6:2a01:4180:4050:0800::/64 ip6:2a01:4180:4051:0400::/64 ip6:2a01:4180:4050:0400::/64 -all",
-                "dns_lookups": 0,
-                "parsed": {
-                  "pass": [
-                    {
-                      "value": "51.4.72.0/24",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "51.5.72.0/24",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "51.5.80.0/27",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "20.47.149.138/32",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "51.4.80.0/27",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "2a01:4180:4051:0800::/64",
-                      "mechanism": "ip6"
-                    },
-                    {
-                      "value": "2a01:4180:4050:0800::/64",
-                      "mechanism": "ip6"
-                    },
-                    {
-                      "value": "2a01:4180:4051:0400::/64",
-                      "mechanism": "ip6"
-                    },
-                    {
-                      "value": "2a01:4180:4050:0400::/64",
-                      "mechanism": "ip6"
-                    }
-                  ],
-                  "neutral": [],
-                  "softfail": [],
-                  "fail": [],
-                  "include": [],
-                  "redirect": null,
-                  "exp": null,
-                  "all": "fail"
-                },
-                "warnings": []
-              }
-            ],
+            "include": [],
             "redirect": null,
             "exp": null,
             "all": "fail"
@@ -135,12 +125,11 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; rua=mailto:no-reply@civicloud.es; ruf=mailto:no-reply@civicloud.es",
+    "record": "v=DMARC1;p=none;sp=none;pct=100;rua=mailto:rua@fdmvalencia.es;ruf=mailto:rua@fdmvalecia.es;ri=86400;aspf=r;adkim=r;fo=1;",
     "valid": true,
     "location": "fdmvalencia.es",
     "warnings": [
-      "civicloud.es does not indicate that it accepts DMARC reports about fdmvalencia.es - Authorization record not found: fdmvalencia.es._report._dmarc.civicloud.es IN TXT \"v=DMARC1\"",
-      "civicloud.es does not indicate that it accepts DMARC reports about fdmvalencia.es - Authorization record not found: fdmvalencia.es._report._dmarc.civicloud.es IN TXT \"v=DMARC1\""
+      "fdmvalecia.es does not indicate that it accepts DMARC reports about fdmvalencia.es - Authorization record not found: fdmvalencia.es._report._dmarc.fdmvalecia.es IN TXT \"v=DMARC1\""
     ],
     "tags": {
       "v": {
@@ -151,44 +140,50 @@
         "value": "none",
         "explicit": true
       },
+      "sp": {
+        "value": "none",
+        "explicit": true
+      },
+      "pct": {
+        "value": 100,
+        "explicit": true
+      },
       "rua": {
-        "value": "mailto:no-reply@civicloud.es",
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "rua@fdmvalencia.es",
+            "size_limit": null
+          }
+        ],
         "explicit": true
       },
       "ruf": {
-        "value": "mailto:no-reply@civicloud.es",
+        "value": "mailto:rua@fdmvalecia.es",
+        "explicit": true
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": true
+      },
+      "aspf": {
+        "value": "r",
         "explicit": true
       },
       "adkim": {
         "value": "r",
-        "explicit": false
-      },
-      "aspf": {
-        "value": "r",
-        "explicit": false
+        "explicit": true
       },
       "fo": {
         "value": [
-          "0"
+          "1"
         ],
-        "explicit": false
-      },
-      "pct": {
-        "value": 100,
-        "explicit": false
+        "explicit": true
       },
       "rf": {
         "value": [
           "afrf"
         ],
-        "explicit": false
-      },
-      "ri": {
-        "value": 86400,
-        "explicit": false
-      },
-      "sp": {
-        "value": "none",
         "explicit": false
       }
     }

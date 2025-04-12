@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns4.megaservidor.com",
-      "dns2.megaservidor.com",
+      "dns1.megaservidor.com",
       "dns3.megaservidor.com",
-      "dns1.megaservidor.com"
+      "dns4.megaservidor.com",
+      "dns2.megaservidor.com"
     ],
     "warnings": []
   },
@@ -17,7 +17,7 @@
         "preference": 10,
         "hostname": "mail.auva2030.es",
         "addresses": [
-          "82.98.154.95"
+          "82.98.176.50"
         ]
       }
     ],
@@ -31,7 +31,7 @@
     "parsed": {
       "pass": [
         {
-          "value": "82.98.154.95",
+          "value": "82.98.176.50",
           "mechanism": "a"
         },
         {

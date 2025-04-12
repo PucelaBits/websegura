@@ -10,22 +10,11 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "in1-smtp.messagingengine.com",
+        "hostname": "inbound-smtp.eu-west-1.amazonaws.com",
         "addresses": [
-          "66.111.4.70",
-          "66.111.4.71",
-          "66.111.4.72",
-          "66.111.4.73",
-          "66.111.4.74",
-          "66.111.4.75"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "in2-smtp.messagingengine.com",
-        "addresses": [
-          "64.147.123.51",
-          "64.147.123.52"
+          "18.200.203.69",
+          "54.155.140.59",
+          "54.76.31.185"
         ]
       }
     ],
@@ -37,9 +26,81 @@
     "error": "castroderei.sedelectronica.gal does not have a SPF TXT record"
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=quarantine; sp=none; rua=mailto:rua@espublico.com,mailto:75d5fbd79d2a605@for.dmarcanalyzer.com; ruf=mailto:ruf@espublico.com,mailto:75d5fbd79d2a605@for.dmarcanalyzer.com; fo=1; ri=3600",
+    "valid": true,
+    "location": "sedelectronica.gal",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "sp": {
+        "value": "none",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "rua@espublico.com",
+            "size_limit": null
+          },
+          {
+            "scheme": "mailto",
+            "address": "75d5fbd79d2a605@for.dmarcanalyzer.com",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "ruf@espublico.com",
+            "size_limit": null
+          },
+          {
+            "scheme": "mailto",
+            "address": "75d5fbd79d2a605@for.dmarcanalyzer.com",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "1"
+        ],
+        "explicit": true
+      },
+      "ri": {
+        "value": 3600,
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      }
+    }
   }
 }

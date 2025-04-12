@@ -1,29 +1,25 @@
 {
-  "algorithm_version": 2,
-  "end_time": "Thu, 25 Aug 2022 01:08:35 GMT",
+  "algorithm_version": 3,
+  "end_time": "Mon, 21 Oct 2024 00:57:50 GMT",
   "grade": "F",
   "hidden": false,
   "likelihood_indicator": "MEDIUM",
   "response_headers": {
-    "Cache-Control": "no-store, no-cache, must-revalidate",
-    "Connection": "Keep-Alive",
+    "Cache-Control": "max-age=3, must-revalidate",
+    "Connection": "close",
     "Content-Encoding": "gzip",
     "Content-Type": "text/html; charset=UTF-8",
-    "Date": "Thu, 25 Aug 2022 01:07:08 GMT",
-    "Expires": "Thu, 19 Nov 1981 08:52:00 GMT",
-    "Keep-Alive": "timeout=3, max=100",
-    "Link": "<https://www.feriavalencia.com/wp-json/>; rel=\"https://api.w.org/\", <https://www.feriavalencia.com/wp-json/wp/v2/pages/9440>; rel=\"alternate\"; type=\"application/json\", <https://www.feriavalencia.com/>; rel=shortlink",
-    "Pragma": "no-cache",
-    "Server": "nginx/1.18.0 (Ubuntu)",
-    "Set-Cookie": "PHPSESSID=0urgggh72qg2gavb34j9ttc3d2; path=/; secure; HttpOnly, pll_language=es; expires=Fri, 25-Aug-2023 01:07:07 GMT; Max-Age=31536000; path=/; secure; SameSite=Lax",
-    "Transfer-Encoding": "chunked"
+    "Date": "Mon, 21 Oct 2024 00:57:38 GMT",
+    "Server": "Apache",
+    "Transfer-Encoding": "chunked",
+    "Vary": "Accept-Encoding,Cookie,User-Agent"
   },
-  "scan_id": 28946258,
-  "score": 0,
-  "start_time": "Thu, 25 Aug 2022 01:07:00 GMT",
+  "scan_id": 57083054,
+  "score": 5,
+  "start_time": "Mon, 21 Oct 2024 00:57:37 GMT",
   "state": "FINISHED",
   "status_code": 200,
   "tests_failed": 6,
-  "tests_passed": 6,
-  "tests_quantity": 12
+  "tests_passed": 4,
+  "tests_quantity": 10
 }

@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.madridsalud.org",
-      "dns2.madridsalud.org"
+      "alice.ns.cloudflare.com",
+      "marek.ns.cloudflare.com"
     ],
     "warnings": []
   },
@@ -15,16 +15,106 @@
         "preference": 10,
         "hostname": "mail.madridsalud.es",
         "addresses": [
-          "146.255.96.10"
+          "82.223.71.99"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "madridsalud.es has multiple SPF TXT records"
+    "record": "v=spf1 a mx include:spf.acumbamail.com ~all",
+    "valid": true,
+    "dns_lookups": 3,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "104.26.8.44",
+          "mechanism": "a"
+        },
+        {
+          "value": "104.26.9.44",
+          "mechanism": "a"
+        },
+        {
+          "value": "172.67.69.226",
+          "mechanism": "a"
+        },
+        {
+          "value": "2606:4700:20::681a:82c",
+          "mechanism": "a"
+        },
+        {
+          "value": "2606:4700:20::681a:92c",
+          "mechanism": "a"
+        },
+        {
+          "value": "2606:4700:20::ac43:45e2",
+          "mechanism": "a"
+        },
+        {
+          "value": "mail.madridsalud.es",
+          "mechanism": "mx"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "spf.acumbamail.com",
+          "record": "v=spf1 ip4:176.28.104.1/24 ip4:185.2.150.1/24 ip4:185.103.37.224/28 ip4:5.57.226.1/24 ip4:5.57.227.80/28 ip4:5.57.227.112/28 ip4:185.99.184.144/28 ip4:185.103.36.192/28 ~all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "176.28.104.1/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.2.150.1/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.103.37.224/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "5.57.226.1/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "5.57.227.80/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "5.57.227.112/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.99.184.144/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.103.36.192/28",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
   },
   "dmarc": {
     "record": "v=DMARC1; p=none",

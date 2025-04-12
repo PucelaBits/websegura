@@ -1,22 +1,23 @@
 {
-  "algorithm_version": 2,
-  "end_time": "Thu, 25 Aug 2022 00:13:59 GMT",
+  "id": 61190804,
+  "algorithm_version": 4,
+  "scanned_at": "2025-04-12T01:00:18.505Z",
+  "error": null,
   "grade": "F",
-  "hidden": false,
-  "likelihood_indicator": "MEDIUM",
   "response_headers": {
-    "Connection": "close",
-    "Content-Length": "315",
-    "Content-Type": "text/html; charset=us-ascii",
-    "Date": "Thu, 25 Aug 2022 00:13:50 GMT",
-    "Server": "Microsoft-HTTPAPI/2.0"
+    "date": "Sat, 12 Apr 2025 01:00:21 GMT",
+    "link": "<https://www.olite.es/wp-json/>; rel=\"https://api.w.org/\"",
+    "vary": "Accept-Encoding",
+    "server": "Microsoft-IIS/10.0",
+    "connection": "close",
+    "content-type": "text/html; charset=UTF-8",
+    "x-powered-by": "PHP/8.0.30, ASP.NET",
+    "content-length": "31910",
+    "accept-encoding": "gzip"
   },
-  "scan_id": 28945304,
   "score": 0,
-  "start_time": "Thu, 25 Aug 2022 00:13:47 GMT",
-  "state": "FINISHED",
-  "status_code": 404,
-  "tests_failed": 6,
-  "tests_passed": 6,
-  "tests_quantity": 12
+  "status_code": 200,
+  "tests_failed": 5,
+  "tests_passed": 5,
+  "tests_quantity": 10
 }

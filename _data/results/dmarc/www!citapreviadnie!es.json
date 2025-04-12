@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.citapreviadnie.es",
-      "dns.citapreviadnie.es"
+      "dns2.policia.es",
+      "dns.policia.es"
     ],
     "warnings": []
   },
@@ -13,46 +13,39 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "correo.citapreviadnie.es",
+        "hostname": "mxa-00825801.gslb.pphosted.com",
         "addresses": [
-          "195.55.116.96"
+          "143.55.144.57"
         ]
       },
       {
-        "preference": 50,
-        "hostname": "correo11.citapreviadnie.es",
+        "preference": 10,
+        "hostname": "mxb-00825801.gslb.pphosted.com",
         "addresses": [
-          "195.55.116.96"
-        ]
-      },
-      {
-        "preference": 70,
-        "hostname": "correo22.citapreviadnie.es",
-        "addresses": [
-          "195.55.116.96"
+          "185.183.28.235"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx -all",
+    "record": "v=spf1 mx ip4:195.55.116.96 -all",
     "valid": true,
     "dns_lookups": 1,
     "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "correo.citapreviadnie.es",
+          "value": "mxa-00825801.gslb.pphosted.com",
           "mechanism": "mx"
         },
         {
-          "value": "correo11.citapreviadnie.es",
+          "value": "mxb-00825801.gslb.pphosted.com",
           "mechanism": "mx"
         },
         {
-          "value": "correo22.citapreviadnie.es",
-          "mechanism": "mx"
+          "value": "195.55.116.96",
+          "mechanism": "ip4"
         }
       ],
       "neutral": [],

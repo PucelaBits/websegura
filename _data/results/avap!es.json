@@ -1,26 +1,21 @@
 {
-  "algorithm_version": 2,
-  "end_time": "Fri, 26 Aug 2022 13:48:23 GMT",
+  "id": 61173413,
+  "algorithm_version": 4,
+  "scanned_at": "2025-04-11T20:16:41.644Z",
+  "error": null,
   "grade": "F",
-  "hidden": false,
-  "likelihood_indicator": "MEDIUM",
   "response_headers": {
-    "Connection": "Keep-Alive",
-    "Content-Encoding": "gzip",
-    "Content-Type": "text/html; charset=UTF-8",
-    "Date": "Fri, 26 Aug 2022 13:47:35 GMT",
-    "Keep-Alive": "timeout=5, max=99",
-    "Link": "<https://avap.es/wp-json/>; rel=\"https://api.w.org/\", <https://avap.es/wp-json/wp/v2/pages/363>; rel=\"alternate\"; type=\"application/json\", <https://avap.es/>; rel=shortlink",
-    "Server": "Apache",
-    "Transfer-Encoding": "chunked",
-    "Vary": "Accept-Encoding"
+    "date": "Fri, 11 Apr 2025 20:16:42 GMT",
+    "link": "<https://avap.es/wp-json/>; rel=\"https://api.w.org/\", <https://avap.es/wp-json/wp/v2/pages/10567>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://avap.es/>; rel=shortlink",
+    "vary": "Accept-Encoding",
+    "server": "Apache",
+    "connection": "close",
+    "content-type": "text/html; charset=UTF-8",
+    "transfer-encoding": "chunked"
   },
-  "scan_id": 28974839,
-  "score": 5,
-  "start_time": "Fri, 26 Aug 2022 13:47:27 GMT",
-  "state": "FINISHED",
+  "score": 0,
   "status_code": 200,
-  "tests_failed": 7,
+  "tests_failed": 5,
   "tests_passed": 5,
-  "tests_quantity": 12
+  "tests_quantity": 10
 }

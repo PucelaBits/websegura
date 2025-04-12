@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.dnsxperta.com",
       "ns1.dnsxperta.com",
+      "ns2.dnsxperta.com",
       "ns3.dnsxperta.com"
     ],
     "warnings": []
@@ -31,17 +31,15 @@
       }
     ],
     "warnings": [
-      "All nameservers failed to answer the query mx1.filterantispam.com. IN A: Server 1.0.0.1 UDP port 53 answered SERVFAIL",
-      "All nameservers failed to answer the query mx2.filterantispam.com. IN A: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+      "The domain mx1.filterantispam.com does not exist",
+      "The domain mx2.filterantispam.com does not exist"
     ]
   },
   "spf": {
     "record": "v=spf1 include:_spf.srv.cat ~all",
     "valid": true,
-    "dns_lookups": 3,
-    "warnings": [
-      "_netblocks.srv.cat does not have any A/AAAA records"
-    ],
+    "dns_lookups": 2,
+    "warnings": [],
     "parsed": {
       "pass": [],
       "neutral": [],
@@ -51,7 +49,7 @@
         {
           "domain": "_spf.srv.cat",
           "record": "v=spf1 include:_netblocks.srv.cat ~all",
-          "dns_lookups": 2,
+          "dns_lookups": 1,
           "parsed": {
             "pass": [],
             "neutral": [],
@@ -60,8 +58,8 @@
             "include": [
               {
                 "domain": "_netblocks.srv.cat",
-                "record": "v=spf1 a ip4:46.16.56.0/21 ip4:134.0.8.0/21 ip4:185.22.200.0/22 ip4:185.34.192.0/22 ip4:185.42.104.0/22 ip4:185.66.40.0/22 ip4:185.22.201.0/22 ~all",
-                "dns_lookups": 1,
+                "record": "v=spf1 ip4:46.16.56.0/21 ip4:134.0.8.0/21 ip4:185.22.200.0/22 ip4:185.34.192.0/22 ip4:185.42.104.0/22 ip4:185.66.40.0/22 ip4:185.22.201.0/22 ~all",
+                "dns_lookups": 0,
                 "parsed": {
                   "pass": [
                     {
@@ -101,18 +99,14 @@
                   "exp": null,
                   "all": "softfail"
                 },
-                "warnings": [
-                  "_netblocks.srv.cat does not have any A/AAAA records"
-                ]
+                "warnings": []
               }
             ],
             "redirect": null,
             "exp": null,
             "all": "softfail"
           },
-          "warnings": [
-            "_netblocks.srv.cat does not have any A/AAAA records"
-          ]
+          "warnings": []
         }
       ],
       "redirect": null,

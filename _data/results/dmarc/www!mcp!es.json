@@ -12,51 +12,55 @@
   "mx": {
     "hosts": [
       {
-        "preference": 10,
-        "hostname": "mail.mcp.es",
+        "preference": 1,
+        "hostname": "mcp-es.mail.protection.outlook.com",
         "addresses": [
-          "194.179.77.231"
+          "2a01:111:f403:ca04::10",
+          "2a01:111:f403:ca04::b",
+          "2a01:111:f403:ca09::",
+          "2a01:111:f403:ca09::4",
+          "52.101.73.11",
+          "52.101.73.12",
+          "52.101.73.15",
+          "52.101.73.26"
         ]
       },
       {
         "preference": 90,
-        "hostname": "as.solsenet.com",
+        "hostname": "mail.mcp.es",
         "addresses": [
-          "77.229.94.207"
+          "195.76.209.199"
         ]
       },
       {
         "preference": 100,
         "hostname": "pruebamx.mcp.es",
-        "addresses": [
-          "194.179.77.241"
-        ]
+        "addresses": []
       }
     ],
     "warnings": [
-      "The domain 241.red-194-179-77.customer.static.ccgg.telefonica.net does not exist",
-      "The reverse DNS of 194.179.77.241 is 241.red-194-179-77.customer.static.ccgg.telefonica.net, but the A/AAAA DNS records for 241.red-194-179-77.customer.static.ccgg.telefonica.net do not resolve to 194.179.77.241"
+      "The domain pruebamx.mcp.es does not exist"
     ]
   },
   "spf": {
-    "record": "v=spf1 a mx include:spf.acumbamail.com a:smtp.mcp.es a:mail.mcp.es ip4:194.179.77.241 include:mail.zendesk.com ~all",
+    "record": "v=spf1 a mx include:spf.protection.outlook.com include:spf.acumbamail.com a:smtp.mcp.es a:mail.mcp.es include:mail.zendesk.com ip4:195.76.209.196 ~all",
     "valid": true,
-    "dns_lookups": 6,
+    "dns_lookups": 7,
     "warnings": [
       "The domain smtp.mcp.es does not exist"
     ],
     "parsed": {
       "pass": [
         {
-          "value": "46.137.165.193",
+          "value": "185.246.55.26",
           "mechanism": "a"
         },
         {
-          "value": "mail.mcp.es",
+          "value": "mcp-es.mail.protection.outlook.com",
           "mechanism": "mx"
         },
         {
-          "value": "as.solsenet.com",
+          "value": "mail.mcp.es",
           "mechanism": "mx"
         },
         {
@@ -64,11 +68,11 @@
           "mechanism": "mx"
         },
         {
-          "value": "194.179.77.231",
+          "value": "195.76.209.199",
           "mechanism": "a"
         },
         {
-          "value": "194.179.77.241",
+          "value": "195.76.209.196",
           "mechanism": "ip4"
         }
       ],
@@ -77,8 +81,69 @@
       "fail": [],
       "include": [
         {
+          "domain": "spf.protection.outlook.com",
+          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/15 ip4:52.102.0.0/16 ip4:52.103.0.0/17 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/51 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "40.92.0.0/15",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "40.107.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.100.0.0/15",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.102.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.103.0.0/17",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "104.47.0.0/17",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "2a01:111:f400::/48",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403::/49",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:8000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:c000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:f000::/52",
+                "mechanism": "ip6"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        },
+        {
           "domain": "spf.acumbamail.com",
-          "record": "v=spf1 ip4:176.28.104.1/24 ip4:185.2.150.1/24 ip4:185.103.37.224/28 ip4:5.57.226.1/24 ip4:5.57.227.80/28 ip4:185.99.184.146/31 ip4:5.57.227.112/28 ip4:185.99.184.144/28 ip4:185.103.36.192/28 ~all",
+          "record": "v=spf1 ip4:176.28.104.1/24 ip4:185.2.150.1/24 ip4:185.103.37.224/28 ip4:5.57.226.1/24 ip4:5.57.227.80/28 ip4:5.57.227.112/28 ip4:185.99.184.144/28 ip4:185.103.36.192/28 ~all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -100,10 +165,6 @@
               },
               {
                 "value": "5.57.227.80/28",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "185.99.184.146/31",
                 "mechanism": "ip4"
               },
               {

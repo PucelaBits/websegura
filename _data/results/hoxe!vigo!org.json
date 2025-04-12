@@ -1,23 +1,26 @@
 {
-  "algorithm_version": 2,
-  "end_time": "Thu, 25 Aug 2022 01:07:37 GMT",
+  "id": 61190869,
+  "algorithm_version": 4,
+  "scanned_at": "2025-04-12T01:00:25.824Z",
+  "error": null,
   "grade": "F",
-  "hidden": false,
-  "likelihood_indicator": "MEDIUM",
   "response_headers": {
-    "Connection": "keep-alive",
-    "Content-Type": "text/html; charset=ISO-8859-1",
-    "Date": "Thu, 25 Aug 2022 01:07:02 GMT",
-    "Server": "nginx",
-    "Transfer-Encoding": "chunked",
-    "X-Powered-By": "PHP/5.6.40, PleskLin"
+    "date": "Sat, 12 Apr 2025 01:00:25 GMT",
+    "server": "nginx",
+    "connection": "close",
+    "content-type": "text/html; charset=ISO-8859-1",
+    "x-powered-by": "PHP/5.6.40, PleskLin",
+    "referrer-policy": "no-referrer-when-downgrade",
+    "x-frame-options": "SAMEORIGIN",
+    "x-xss-protection": "1; mode=block",
+    "transfer-encoding": "chunked",
+    "permissions-policy": "geolocation=(*), microphone=(*), camera=(*), autoplay=(*), speaker=(*)",
+    "content-security-policy": "default-src * data: blob:; script-src * 'unsafe-inline' 'unsafe-eval' blob:; style-src * 'unsafe-inline'; img-src * data: blob:; font-src * data:; frame-ancestors *;",
+    "strict-transport-security": "max-age=31536000; includeSubDomains; preload"
   },
-  "scan_id": 28946192,
-  "score": 0,
-  "start_time": "Thu, 25 Aug 2022 01:06:58 GMT",
-  "state": "FINISHED",
+  "score": 20,
   "status_code": 200,
-  "tests_failed": 6,
+  "tests_failed": 4,
   "tests_passed": 6,
-  "tests_quantity": 12
+  "tests_quantity": 10
 }

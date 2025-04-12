@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.dinahosting.com",
       "ns4.dinahosting.com",
-      "ns.dinahosting.com",
-      "ns3.dinahosting.com"
+      "ns2.dinahosting.com",
+      "ns3.dinahosting.com",
+      "ns.dinahosting.com"
     ],
     "warnings": []
   },
@@ -17,26 +17,30 @@
         "preference": 10,
         "hostname": "mail.ingenio.es",
         "addresses": [
-          "82.98.157.90"
+          "82.98.146.35"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 a mx ~all",
+    "record": "v=spf1 a mx ip4:213.4.82.201 -all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "82.98.157.90",
+          "value": "82.98.146.35",
           "mechanism": "a"
         },
         {
           "value": "mail.ingenio.es",
           "mechanism": "mx"
+        },
+        {
+          "value": "213.4.82.201",
+          "mechanism": "ip4"
         }
       ],
       "neutral": [],
@@ -45,7 +49,7 @@
       "include": [],
       "redirect": null,
       "exp": null,
-      "all": "softfail"
+      "all": "fail"
     }
   },
   "dmarc": {

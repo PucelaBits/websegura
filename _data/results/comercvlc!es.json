@@ -1,25 +1,27 @@
 {
-  "algorithm_version": 2,
-  "end_time": "Thu, 25 Aug 2022 01:08:17 GMT",
-  "grade": "F",
+  "algorithm_version": 3,
+  "end_time": "Tue, 22 Oct 2024 00:15:01 GMT",
+  "grade": "D",
   "hidden": false,
   "likelihood_indicator": "MEDIUM",
   "response_headers": {
-    "Connection": "keep-alive",
+    "Connection": "Keep-Alive",
     "Content-Encoding": "gzip",
+    "Content-Length": "42837",
     "Content-Type": "text/html; charset=UTF-8",
-    "Date": "Thu, 25 Aug 2022 01:07:07 GMT",
-    "Keep-Alive": "timeout=15",
-    "Link": "<https://comercvlc.es/wp-json/>; rel=\"https://api.w.org/\", <https://comercvlc.es/wp-json/wp/v2/pages/13464>; rel=\"alternate\"; type=\"application/json\", <https://wp.me/P8cDX4-3va>; rel=shortlink",
-    "Server": "Apache",
-    "Transfer-Encoding": "chunked"
+    "Date": "Tue, 22 Oct 2024 00:14:52 GMT",
+    "Keep-Alive": "timeout=5, max=100",
+    "Link": "<https://comercvlc.es/wp-json/>; rel=\"https://api.w.org/\", <https://comercvlc.es/wp-json/wp/v2/pages/13969>; rel=\"alternate\"; type=\"application/json\", <https://comercvlc.es/>; rel=shortlink",
+    "Referrer-Policy": "no-referrer-when-downgrade",
+    "Server": "Apache/2.4.52 (Ubuntu)",
+    "Vary": "Accept-Encoding"
   },
-  "scan_id": 28946271,
-  "score": 0,
-  "start_time": "Thu, 25 Aug 2022 01:07:01 GMT",
+  "scan_id": 57131594,
+  "score": 30,
+  "start_time": "Tue, 22 Oct 2024 00:14:50 GMT",
   "state": "FINISHED",
   "status_code": 200,
-  "tests_failed": 6,
+  "tests_failed": 4,
   "tests_passed": 6,
-  "tests_quantity": 12
+  "tests_quantity": 10
 }

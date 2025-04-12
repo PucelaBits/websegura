@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns.mad.idec.net",
-      "dns.lpa.idec.net"
+      "dns.lpa.idec.net",
+      "dns.mad.idec.net"
     ],
     "warnings": []
   },
@@ -13,25 +13,68 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "smtp-02.servidoresdns.net",
+        "hostname": "mx.serviciodecorreo.es",
         "addresses": [
-          "217.76.128.139"
+          "82.223.190.100"
         ]
       },
       {
         "preference": 15,
         "hostname": "smtp.aguimes.es",
         "addresses": [
-          "195.77.245.218"
+          "195.77.245.219"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The domain 219.red-195-77-245.customer.static.ccgg.telefonica.net does not exist",
+      "The reverse DNS of 195.77.245.219 is 219.red-195-77-245.customer.static.ccgg.telefonica.net, but the A/AAAA DNS records for 219.red-195-77-245.customer.static.ccgg.telefonica.net do not resolve to 195.77.245.219"
+    ]
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "aguimes.es does not have a SPF TXT record. SPF type DNS records found. Use of DNS Type SPF has been removed in the standards track version of SPF, RFC 7208. These records should be removed and replaced with TXT records: spf.mtaroutes.com"
+    "record": "v=spf1 a mx ip4:185.201.0.0/19 ip4:82.98.157.184 a:correo.aguimes.es a:mx.serviciodecorreo.es -all",
+    "valid": true,
+    "dns_lookups": 4,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "82.98.134.240",
+          "mechanism": "a"
+        },
+        {
+          "value": "mx.serviciodecorreo.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "smtp.aguimes.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "185.201.0.0/19",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "82.98.157.184",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "195.77.245.219",
+          "mechanism": "a"
+        },
+        {
+          "value": "82.223.190.100",
+          "mechanism": "a"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
     "record": null,

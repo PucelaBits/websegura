@@ -1,26 +1,22 @@
 {
-  "algorithm_version": 2,
-  "end_time": "Thu, 25 Aug 2022 01:08:09 GMT",
+  "id": 61190537,
+  "algorithm_version": 4,
+  "scanned_at": "2025-04-12T00:59:13.959Z",
+  "error": null,
   "grade": "F",
-  "hidden": false,
-  "likelihood_indicator": "MEDIUM",
   "response_headers": {
-    "Connection": "keep-alive",
-    "Content-Encoding": "gzip",
-    "Content-Type": "text/html; charset=utf-8",
-    "Date": "Thu, 25 Aug 2022 01:07:03 GMT",
-    "ETag": "W/\"1818b-orX9uxL57YW5fPTFinlZ5gL0A3k\"",
-    "Set-Cookie": "AWSALB=65zxNlymETVT4kDu7j/prNLRLttBPHfpQWeIL5LTFYsx9aBBhELVVkrbnEi3E+VxK3yU8ecTkn7FA1kX4h45KbGc1O+Mvr+zxwi1wEbJ8CmjiQQBdutAmONZLrIr; Expires=Thu, 01 Sep 2022 01:07:02 GMT; Path=/, AWSALBCORS=65zxNlymETVT4kDu7j/prNLRLttBPHfpQWeIL5LTFYsx9aBBhELVVkrbnEi3E+VxK3yU8ecTkn7FA1kX4h45KbGc1O+Mvr+zxwi1wEbJ8CmjiQQBdutAmONZLrIr; Expires=Thu, 01 Sep 2022 01:07:02 GMT; Path=/; SameSite=None; Secure",
-    "Transfer-Encoding": "chunked",
-    "Vary": "Accept-Encoding",
-    "X-Powered-By": "Express"
+    "date": "Sat, 12 Apr 2025 00:59:14 GMT",
+    "vary": "Accept-Encoding",
+    "server": "Apache/2.4.52 (Ubuntu)",
+    "connection": "close",
+    "set-cookie": "XSRF-TOKEN=eyJpdiI6ImVvdTlpN0h0ajhkMzJlTkFSNDNMNmc9PSIsInZhbHVlIjoiUUFWTTVRMFZBUXJqZVd6T211Qm5peEYwSzF3QVYzbVA5ditTcHhVQXRkcVJUL3ZyazF5anFQMzZvVHd1eS80ODBKMFB2TnpGamRhM0R1Z2JVdy80bDVXVk50WEhINC9DS0xoTFYzMk1jcFlaNTJRMUJIdk9jUGZKUFRKZUxkY1kiLCJtYWMiOiJiZDJiZjBkYWE1MjFjNTFlZTI4MGU2YTVjMWE5ZGE2NDFkZjU2NzQ5MjE3YWQ0NWI0NGZhNjE0NWYzMDRiYjQzIiwidGFnIjoiIn0%3D; expires=Sat, 12 Apr 2025 02:59:14 GMT; Max-Age=7200; path=/; samesite=lax,illes_balears_session=eyJpdiI6IkxMKzFQRmJSRGppajVIK3EraC9KOFE9PSIsInZhbHVlIjoiQ3lER2JIWW5TbDRWcWNIUGdDRnNpNnpiYXFpR0hOYTVFcDRjdkwwNmhEOXltK2lNWnRNS2xPQXNyVTZGaS9MMjFNNmJsY1liVmxkei9hUkpvY3RsZkJIbTM0WG1pb2duNmJhNitlL1JwQ0dPNjQvTXdtY01LWVI2OXF1MERPRkMiLCJtYWMiOiJjNjEyNjBjYWM3MWI2NDdlNzU5MDU5MDA2NWFkMzA2ODUwYmFjY2I5NGQ5YTA1YzNmM2E0MjNjMGY5YWE3NjFlIiwidGFnIjoiIn0%3D; expires=Sat, 12 Apr 2025 02:59:14 GMT; Max-Age=7200; path=/; httponly; samesite=lax",
+    "content-type": "text/html; charset=UTF-8",
+    "cache-control": "no-cache, private",
+    "transfer-encoding": "chunked"
   },
-  "scan_id": 28946187,
   "score": 0,
-  "start_time": "Thu, 25 Aug 2022 01:06:57 GMT",
-  "state": "FINISHED",
   "status_code": 200,
-  "tests_failed": 7,
-  "tests_passed": 5,
-  "tests_quantity": 12
+  "tests_failed": 6,
+  "tests_passed": 4,
+  "tests_quantity": 10
 }

@@ -13,21 +13,99 @@
     ]
   },
   "spf": {
-    "record": "v=spf1 ip4:95.168.169.96 ip4:95.168.169.97 ip4:37.48.92.140 ip4:37.48.92.146 +a +mx +ip4:81.171.28.98 +ip4:5.79.71.84 +ip4:37.48.92.141 -all",
+    "record": "v=spf1 ip4:85.17.20.99 ip4:85.17.20.69 +a:spf.theservercluster.com ip4:37.48.92.140 ip4:37.48.92.146 +ip4:81.171.28.98 +ip4:5.79.71.84 +ip4:37.48.92.141 -all",
     "valid": true,
-    "dns_lookups": 2,
-    "warnings": [
-      "ciudadano.firgas.es does not have any MX records"
-    ],
+    "dns_lookups": 1,
+    "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "95.168.169.96",
+          "value": "85.17.20.99",
           "mechanism": "ip4"
         },
         {
-          "value": "95.168.169.97",
+          "value": "85.17.20.69",
           "mechanism": "ip4"
+        },
+        {
+          "value": "213.227.131.210",
+          "mechanism": "a"
+        },
+        {
+          "value": "213.227.147.150",
+          "mechanism": "a"
+        },
+        {
+          "value": "213.227.147.151",
+          "mechanism": "a"
+        },
+        {
+          "value": "213.227.147.152",
+          "mechanism": "a"
+        },
+        {
+          "value": "213.227.147.153",
+          "mechanism": "a"
+        },
+        {
+          "value": "213.227.149.3",
+          "mechanism": "a"
+        },
+        {
+          "value": "213.227.149.49",
+          "mechanism": "a"
+        },
+        {
+          "value": "213.227.149.50",
+          "mechanism": "a"
+        },
+        {
+          "value": "213.227.149.51",
+          "mechanism": "a"
+        },
+        {
+          "value": "213.227.149.52",
+          "mechanism": "a"
+        },
+        {
+          "value": "85.17.20.113",
+          "mechanism": "a"
+        },
+        {
+          "value": "85.17.20.203",
+          "mechanism": "a"
+        },
+        {
+          "value": "85.17.20.69",
+          "mechanism": "a"
+        },
+        {
+          "value": "85.17.20.84",
+          "mechanism": "a"
+        },
+        {
+          "value": "85.17.20.99",
+          "mechanism": "a"
+        },
+        {
+          "value": "89.149.211.14",
+          "mechanism": "a"
+        },
+        {
+          "value": "89.149.211.32",
+          "mechanism": "a"
+        },
+        {
+          "value": "89.149.211.33",
+          "mechanism": "a"
+        },
+        {
+          "value": "89.149.211.48",
+          "mechanism": "a"
+        },
+        {
+          "value": "89.149.216.135",
+          "mechanism": "a"
         },
         {
           "value": "37.48.92.140",
@@ -36,10 +114,6 @@
         {
           "value": "37.48.92.146",
           "mechanism": "ip4"
-        },
-        {
-          "value": "95.168.169.96",
-          "mechanism": "a"
         },
         {
           "value": "81.171.28.98",
@@ -64,9 +138,53 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=none;",
+    "valid": true,
+    "location": "ciudadano.firgas.es",
+    "warnings": [
+      "rua tag (destination for aggregate reports) not found"
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }

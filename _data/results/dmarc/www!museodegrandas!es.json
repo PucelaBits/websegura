@@ -4,10 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.canaldominios.com",
-      "dns1.canaldominios.com",
-      "dns3.canaldominios.com",
-      "dns4.canaldominios.com"
+      "dns.asturias.es",
+      "mortadelo.telecable.es"
     ],
     "warnings": []
   },
@@ -24,9 +22,33 @@
     "warnings": []
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "museodegrandas.es does not have a SPF TXT record"
+    "record": "v=spf1 a mx ip4:82.98.149.3 ~all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "54.36.27.77",
+          "mechanism": "a"
+        },
+        {
+          "value": "mail.museodegrandas.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "82.98.149.3",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
   },
   "dmarc": {
     "record": null,

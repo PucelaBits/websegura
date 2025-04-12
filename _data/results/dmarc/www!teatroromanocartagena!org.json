@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.cetait.es",
-      "ns1.cetait.es"
+      "ns1.cetait.es",
+      "ns2.cetait.es"
     ],
     "warnings": []
   },
@@ -15,27 +15,29 @@
         "preference": 10,
         "hostname": "mail.teatroromanocartagena.org",
         "addresses": [
-          "144.76.70.232"
+          "82.223.54.207"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 a mx ip4:144.76.70.232 ~all",
+    "record": "v=spf1 a mx ip4:82.223.54.207 ~all",
     "valid": true,
     "dns_lookups": 2,
-    "warnings": [
-      "teatroromanocartagena.org does not have any A/AAAA records"
-    ],
+    "warnings": [],
     "parsed": {
       "pass": [
+        {
+          "value": "77.230.242.33",
+          "mechanism": "a"
+        },
         {
           "value": "mail.teatroromanocartagena.org",
           "mechanism": "mx"
         },
         {
-          "value": "144.76.70.232",
+          "value": "82.223.54.207",
           "mechanism": "ip4"
         }
       ],

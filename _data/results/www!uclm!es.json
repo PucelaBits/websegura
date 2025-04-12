@@ -1,25 +1,26 @@
 {
-  "algorithm_version": 2,
-  "end_time": "Thu, 25 Aug 2022 01:07:19 GMT",
+  "algorithm_version": 3,
+  "end_time": "Mon, 21 Oct 2024 00:15:16 GMT",
   "grade": "F",
   "hidden": false,
   "likelihood_indicator": "MEDIUM",
   "response_headers": {
     "Cache-Control": "no-cache, no-store",
-    "Content-Length": "114476",
+    "Connection": "keep-alive",
+    "Content-Length": "122642",
     "Content-Type": "text/html; charset=utf-8",
-    "Date": "Thu, 25 Aug 2022 01:07:05 GMT",
+    "Date": "Mon, 21 Oct 2024 00:15:14 GMT",
     "Expires": "-1",
     "Pragma": "no-cache",
     "Server": "Microsoft-IIS/10.0",
-    "Set-Cookie": "ASP.NET_SessionId=ri3vcp0mkpotcy4scqvxg2da; path=/; HttpOnly; SameSite=Lax, sto-id-47873=EOCABEKMFAAA; Path=/"
+    "Set-Cookie": "ApplicationGatewayAffinityCORS=b479c97ce1c6e39bfb61dd5e73b04d5b; Path=/; SameSite=None; Secure, ApplicationGatewayAffinity=b479c97ce1c6e39bfb61dd5e73b04d5b; Path=/, ASP.NET_SessionId=urwwwfjfwyihz1fsrgcgjdhc; path=/; HttpOnly; SameSite=Lax"
   },
-  "scan_id": 28946266,
+  "scan_id": 57081935,
   "score": 0,
-  "start_time": "Thu, 25 Aug 2022 01:07:00 GMT",
+  "start_time": "Mon, 21 Oct 2024 00:15:12 GMT",
   "state": "FINISHED",
   "status_code": 200,
   "tests_failed": 6,
-  "tests_passed": 6,
-  "tests_quantity": 12
+  "tests_passed": 4,
+  "tests_quantity": 10
 }

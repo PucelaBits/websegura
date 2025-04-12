@@ -1,23 +1,26 @@
 {
-  "algorithm_version": 2,
-  "end_time": "Thu, 25 Aug 2022 00:14:23 GMT",
+  "id": 61198696,
+  "algorithm_version": 4,
+  "scanned_at": "2025-04-12T03:40:14.275Z",
+  "error": null,
   "grade": "F",
-  "hidden": false,
-  "likelihood_indicator": "MEDIUM",
   "response_headers": {
-    "Content-Length": "124784",
-    "Content-Type": "text/html; charset=UTF-8",
-    "Date": "Thu, 25 Aug 2022 00:13:09 GMT",
-    "Link": "<https://www.villava.es/wp-json/>; rel=\"https://api.w.org/\"",
-    "Server": "Microsoft-IIS/8.5",
-    "X-Powered-By": "PHP/7.4.12, ASP.NET"
+    "date": "Sat, 12 Apr 2025 03:40:13 GMT",
+    "etag": "\"e441c3344991490ce6e757efd63a6895\"",
+    "vary": "Accept-Encoding",
+    "pragma": "public",
+    "server": "Microsoft-IIS/10.0",
+    "expires": "Sat, 12 Apr 2025 04:40:14 GMT",
+    "connection": "close",
+    "content-type": "text/html; charset=UTF-8",
+    "x-powered-by": "PHP/8.0.30, ASP.NET",
+    "cache-control": "max-age=3600, public",
+    "last-modified": "Sat, 12 Apr 2025 03:40:14 GMT",
+    "content-length": "24954"
   },
-  "scan_id": 28945313,
   "score": 0,
-  "start_time": "Thu, 25 Aug 2022 00:13:47 GMT",
-  "state": "FINISHED",
   "status_code": 200,
-  "tests_failed": 6,
-  "tests_passed": 6,
-  "tests_quantity": 12
+  "tests_failed": 5,
+  "tests_passed": 5,
+  "tests_quantity": 10
 }

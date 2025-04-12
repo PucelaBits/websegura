@@ -17,16 +17,16 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.251.2.27",
-          "2607:f8b0:4023:c03::1b"
+          "142.250.141.26",
+          "2607:f8b0:4023:c0d::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "2607:f8b0:4003:c15::1b",
-          "64.233.171.27"
+          "108.177.104.26",
+          "2607:f8b0:4003:c04::1b"
         ]
       },
       {
@@ -34,14 +34,14 @@
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
           "142.250.152.26",
-          "2607:f8b0:4001:c56::1b"
+          "2607:f8b0:4001:c56::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "172.253.113.27",
+          "172.253.113.26",
           "2607:f8b0:4023:1::1b"
         ]
       },
@@ -49,26 +49,26 @@
         "preference": 10,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "173.194.77.26",
-          "2607:f8b0:4023:401::1a"
+          "173.194.77.27",
+          "2607:f8b0:4023:401::1b"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 +a +mx ip4:195.235.115.46/32 +ip4:92.43.19.148 +ip4:92.43.18.128/26 +ip4:176.28.99.27/32 include:_spf.google.com include:servers.mcsv.net include:amazonses.com ip4:152.160.0.0/16 ip4:78.157.218.0/24 ip4:74.63.245.96/28 -all",
+    "record": "v=spf1 +a +mx ip4:92.43.19.148 +ip4:176.28.99.27/32 include:_spf.google.com include:servers.mcsv.net include:amazonses.com include:mh.blackboard.com ip4:152.160.0.0/16 ip4:78.157.218.0/24 ip4:74.63.245.96/28 -all",
     "valid": true,
-    "dns_lookups": 8,
+    "dns_lookups": 9,
     "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "34.249.211.46",
+          "value": "46.137.128.40",
           "mechanism": "a"
         },
         {
-          "value": "52.51.86.72",
+          "value": "52.48.136.236",
           "mechanism": "a"
         },
         {
@@ -92,15 +92,7 @@
           "mechanism": "mx"
         },
         {
-          "value": "195.235.115.46/32",
-          "mechanism": "ip4"
-        },
-        {
           "value": "92.43.19.148",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "92.43.18.128/26",
           "mechanism": "ip4"
         },
         {
@@ -331,7 +323,7 @@
         },
         {
           "domain": "amazonses.com",
-          "record": "v=spf1 ip4:199.255.192.0/22 ip4:199.127.232.0/22 ip4:54.240.0.0/18 ip4:69.169.224.0/20 ip4:23.249.208.0/20 ip4:23.251.224.0/19 ip4:76.223.176.0/20 ip4:54.240.64.0/19 ip4:54.240.96.0/19 ip4:52.82.172.0/22 -all",
+          "record": "v=spf1 ip4:199.255.192.0/22 ip4:199.127.232.0/22 ip4:54.240.0.0/18 ip4:69.169.224.0/20 ip4:23.249.208.0/20 ip4:23.251.224.0/19 ip4:76.223.176.0/20 ip4:54.240.64.0/19 ip4:54.240.96.0/19 ip4:76.223.128.0/19 ip4:216.221.160.0/19 ip4:206.55.144.0/20 -all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -372,7 +364,40 @@
                 "mechanism": "ip4"
               },
               {
-                "value": "52.82.172.0/22",
+                "value": "76.223.128.0/19",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "216.221.160.0/19",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "206.55.144.0/20",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "mh.blackboard.com",
+          "record": "v=spf1 ip4:69.196.241.0/24 ip4:37.216.222.128/28 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "69.196.241.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "37.216.222.128/28",
                 "mechanism": "ip4"
               }
             ],
@@ -393,9 +418,73 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=none; rua=mailto:dmarc@g364nbd4.uriports.com; ruf=mailto:dmarc@g364nbd4.uriports.com; fo=1:d:s",
+    "valid": true,
+    "location": "eoi.es",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc@g364nbd4.uriports.com",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc@g364nbd4.uriports.com",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "1",
+          "d",
+          "s"
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }

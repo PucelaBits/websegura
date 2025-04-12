@@ -4,8 +4,7 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.granadatur.com",
-      "ns2.granadatur.com"
+      "ns.granada.org"
     ],
     "warnings": []
   },
@@ -13,42 +12,19 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "mail.granadatur.com",
+        "hostname": "ciudad.granada.org",
         "addresses": [
-          "217.18.166.184"
+          "85.62.209.121"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 +a +mx +ip4:217.18.160.0/20 -all",
-    "valid": true,
-    "dns_lookups": 2,
+    "record": "v=spf1 ip4:85.62.209.121 include:ciudad.granada.org ~all",
+    "valid": false,
     "warnings": [],
-    "parsed": {
-      "pass": [
-        {
-          "value": "85.62.209.68",
-          "mechanism": "a"
-        },
-        {
-          "value": "mail.granadatur.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "217.18.160.0/20",
-          "mechanism": "ip4"
-        }
-      ],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [],
-      "redirect": null,
-      "exp": null,
-      "all": "fail"
-    }
+    "error": "ciudad.granada.org does not have a SPF TXT record"
   },
   "dmarc": {
     "record": null,

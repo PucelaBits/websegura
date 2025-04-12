@@ -5,24 +5,17 @@
   "ns": {
     "hostnames": [
       "tirant.gva.es",
+      "ninot2.gva.es",
+      "tirant2.gva.es",
       "ninot.gva.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 4,
-        "hostname": "gollum.gva.es",
-        "addresses": [
-          "193.145.200.16",
-          "193.145.206.215",
-          "195.77.18.230",
-          "195.77.20.28"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
   },
   "spf": {
     "record": null,

@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "description": "Misc tools to analyze websites and build websegura",
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "start": "npm run build:dev -- --serve --watch",
     "build:dev": "npm run build:sass && npx @11ty/eleventy",
@@ -25,13 +28,13 @@
   },
   "homepage": "https://github.com/PucelaBits/websegura#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.2",
+    "@11ty/eleventy": "^3.0.0",
     "array-find-duplicates": "^2.0.1",
-    "ava": "^4.3.3",
-    "axios": "^0.27.2",
+    "ava": "^6.2.0",
+    "axios": "^1.8.4",
     "bottleneck": "^2.19.5",
     "fast-glob": "^3.2.11",
-    "sass": "^1.54.5",
+    "sass": "^1.86.3",
     "twitter-lite": "^1.1.0"
   },
   "ava": {

@@ -5,9 +5,7 @@
   "ns": {
     "hostnames": [
       "dns1.um.es",
-      "sun.rediris.es",
-      "dns2.um.es",
-      "chico.rediris.es"
+      "dns2.um.es"
     ],
     "warnings": []
   },
@@ -15,31 +13,25 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "mx01.puc.rediris.es",
+        "hostname": "mx03.puc.rediris.es",
         "addresses": [
-          "130.206.19.130",
-          "130.206.19.162",
-          "2001:720:418:ca10::2",
-          "2001:720:418:ca11::2"
+          "143.55.146.78"
         ]
       },
       {
         "preference": 10,
-        "hostname": "mx02.puc.rediris.es",
+        "hostname": "mx04.puc.rediris.es",
         "addresses": [
-          "130.206.19.130",
-          "130.206.19.162",
-          "2001:720:418:ca10::2",
-          "2001:720:418:ca11::2"
+          "143.55.148.243"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:spf.puc.rediris.es include:spf.protection.outlook.com ip4:155.54.212.160/28 ip6:2001:720:1710:601::/64 a:mail.symposium.events -all",
+    "record": "v=spf1 include:spf.puc.rediris.es include:spf.protection.outlook.com ip4:155.54.212.160/28 ip4:155.54.211.128/28 ip6:2001:720:1710:601::/64 ip6:2001:720:1710:607::/64 a:mail.symposium.events -all",
     "valid": true,
-    "dns_lookups": 4,
+    "dns_lookups": 3,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -48,7 +40,15 @@
           "mechanism": "ip4"
         },
         {
+          "value": "155.54.211.128/28",
+          "mechanism": "ip4"
+        },
+        {
           "value": "2001:720:1710:601::/64",
+          "mechanism": "ip6"
+        },
+        {
+          "value": "2001:720:1710:607::/64",
           "mechanism": "ip6"
         },
         {
@@ -62,37 +62,21 @@
       "include": [
         {
           "domain": "spf.puc.rediris.es",
-          "record": "v=spf1 ip4:130.206.25.38 ip4:130.206.24.0/24 ip4:130.206.19.0/24 ip4:192.187.24.32/28 ip4:192.187.24.0/28 ip6:2001:720:418:ca10::/64 ip6:2001:720:418:ca11::/64 ~all",
+          "record": "v=spf1 ip4:143.55.146.78 ip4:143.55.148.243 ip4:130.206.25.38 ~all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
               {
+                "value": "143.55.146.78",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "143.55.148.243",
+                "mechanism": "ip4"
+              },
+              {
                 "value": "130.206.25.38",
                 "mechanism": "ip4"
-              },
-              {
-                "value": "130.206.24.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "130.206.19.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "192.187.24.32/28",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "192.187.24.0/28",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "2001:720:418:ca10::/64",
-                "mechanism": "ip6"
-              },
-              {
-                "value": "2001:720:418:ca11::/64",
-                "mechanism": "ip6"
               }
             ],
             "neutral": [],
@@ -107,8 +91,8 @@
         },
         {
           "domain": "spf.protection.outlook.com",
-          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/48 include:spfd.protection.outlook.com -all",
-          "dns_lookups": 1,
+          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/15 ip4:52.102.0.0/16 ip4:52.103.0.0/17 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/51 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
+          "dns_lookups": 0,
           "parsed": {
             "pass": [
               {
@@ -120,7 +104,15 @@
                 "mechanism": "ip4"
               },
               {
-                "value": "52.100.0.0/14",
+                "value": "52.100.0.0/15",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.102.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.103.0.0/17",
                 "mechanism": "ip4"
               },
               {
@@ -132,68 +124,26 @@
                 "mechanism": "ip6"
               },
               {
-                "value": "2a01:111:f403::/48",
+                "value": "2a01:111:f403::/49",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:8000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:c000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:f000::/52",
                 "mechanism": "ip6"
               }
             ],
             "neutral": [],
             "softfail": [],
             "fail": [],
-            "include": [
-              {
-                "domain": "spfd.protection.outlook.com",
-                "record": "v=spf1 ip4:51.4.72.0/24 ip4:51.5.72.0/24 ip4:51.5.80.0/27 ip4:20.47.149.138/32 ip4:51.4.80.0/27 ip6:2a01:4180:4051:0800::/64 ip6:2a01:4180:4050:0800::/64 ip6:2a01:4180:4051:0400::/64 ip6:2a01:4180:4050:0400::/64 -all",
-                "dns_lookups": 0,
-                "parsed": {
-                  "pass": [
-                    {
-                      "value": "51.4.72.0/24",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "51.5.72.0/24",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "51.5.80.0/27",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "20.47.149.138/32",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "51.4.80.0/27",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "2a01:4180:4051:0800::/64",
-                      "mechanism": "ip6"
-                    },
-                    {
-                      "value": "2a01:4180:4050:0800::/64",
-                      "mechanism": "ip6"
-                    },
-                    {
-                      "value": "2a01:4180:4051:0400::/64",
-                      "mechanism": "ip6"
-                    },
-                    {
-                      "value": "2a01:4180:4050:0400::/64",
-                      "mechanism": "ip6"
-                    }
-                  ],
-                  "neutral": [],
-                  "softfail": [],
-                  "fail": [],
-                  "include": [],
-                  "redirect": null,
-                  "exp": null,
-                  "all": "fail"
-                },
-                "warnings": []
-              }
-            ],
+            "include": [],
             "redirect": null,
             "exp": null,
             "all": "fail"
@@ -207,9 +157,81 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=none; rua=mailto:dmarc_rua@emaildefense.proofpoint.com,mailto:dmarcreport@um.es; ruf=mailto:dmarc_rua@emaildefense.proofpoint.com,mailto:dmarcreport@um.es; fo=1;",
+    "valid": true,
+    "location": "um.es",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc_rua@emaildefense.proofpoint.com",
+            "size_limit": null
+          },
+          {
+            "scheme": "mailto",
+            "address": "dmarcreport@um.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc_rua@emaildefense.proofpoint.com",
+            "size_limit": null
+          },
+          {
+            "scheme": "mailto",
+            "address": "dmarcreport@um.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "1"
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }

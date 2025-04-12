@@ -4,89 +4,241 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.virtualns.net",
-      "ns2.virtualns.net"
+      "ns8161.webempresa.eu",
+      "ns8162.webempresa.eu"
     ],
     "warnings": []
   },
   "mx": {
     "hosts": [
       {
-        "preference": 10,
-        "hostname": "mx1.spamcluster.com",
+        "preference": 0,
+        "hostname": "mail.aytovalverde.org",
         "addresses": [
-          "185.103.159.139",
-          "185.103.159.239",
-          "185.107.213.57",
-          "185.107.213.61",
-          "185.95.31.8",
-          "2a00:f10:121:b00:1c00:67ff:fe00:1b64",
-          "2a00:f10:121:b00:1c00:e4ff:fe00:1b60",
-          "2a00:f10:400:4:1c00:58ff:fe00:1689",
-          "2a00:f10:400:4:1c00:b6ff:fe00:16ed",
-          "2a00:f10:402:781:1c00:1eff:fe00:24b3"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mx2.spamcluster.com",
-        "addresses": [
-          "185.103.159.139",
-          "185.103.159.239",
-          "185.107.213.57",
-          "185.107.213.61",
-          "185.95.31.8",
-          "2a00:f10:121:b00:1c00:67ff:fe00:1b64",
-          "2a00:f10:121:b00:1c00:e4ff:fe00:1b60",
-          "2a00:f10:400:4:1c00:58ff:fe00:1689",
-          "2a00:f10:400:4:1c00:b6ff:fe00:16ed",
-          "2a00:f10:402:781:1c00:1eff:fe00:24b3"
+          "51.68.24.40"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx a ip4:91.142.220.126 a:tenerife.vservers.es -all",
+    "record": "v=spf1 +a +mx +ip4:51.91.107.224 include:_spf.webempresa.eu ~all",
     "valid": true,
-    "dns_lookups": 3,
+    "dns_lookups": 5,
     "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "mx1.spamcluster.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "mx2.spamcluster.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "217.182.198.173",
+          "value": "51.68.24.40",
           "mechanism": "a"
         },
         {
-          "value": "91.142.220.126",
+          "value": "mail.aytovalverde.org",
+          "mechanism": "mx"
+        },
+        {
+          "value": "51.91.107.224",
           "mechanism": "ip4"
-        },
-        {
-          "value": "91.142.220.126",
-          "mechanism": "a"
         }
       ],
       "neutral": [],
       "softfail": [],
       "fail": [],
-      "include": [],
+      "include": [
+        {
+          "domain": "_spf.webempresa.eu",
+          "record": "v=spf1 ip4:213.158.84.0/22 include:_spf2.webempresa.eu include:_spf3.webempresa.eu ~all",
+          "dns_lookups": 2,
+          "parsed": {
+            "pass": [
+              {
+                "value": "213.158.84.0/22",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [
+              {
+                "domain": "_spf2.webempresa.eu",
+                "record": "v=spf1 ip4:178.33.116.19/32 ip4:188.165.132.24/32 ip4:178.32.150.76/32 ip4:5.196.253.55/32 ip4:178.33.119.38/32 ip4:51.68.67.124/32 ip4:188.165.134.164/32 ip4:178.32.150.89/32 ip4:87.98.230.23/32 ip4:178.33.113.178/32 ip4:193.70.22.149/32 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "178.33.116.19/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "188.165.132.24/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "178.32.150.76/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "5.196.253.55/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "178.33.119.38/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "51.68.67.124/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "188.165.134.164/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "178.32.150.89/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "87.98.230.23/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "178.33.113.178/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "193.70.22.149/32",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              },
+              {
+                "domain": "_spf3.webempresa.eu",
+                "record": "v=spf1 ip4:54.37.172.205/32 ip4:87.98.227.61/32 ip4:178.32.150.70/32 ip4:188.165.126.169/32 ip4:147.135.246.19/32 ip4:5.135.63.183/32 ip4:178.33.166.217/32 ip4:5.39.109.65/32 ip4:87.98.229.233/32 ip4:5.39.109.72/32 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "54.37.172.205/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "87.98.227.61/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "178.32.150.70/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "188.165.126.169/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "147.135.246.19/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "5.135.63.183/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "178.33.166.217/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "5.39.109.65/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "87.98.229.233/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "5.39.109.72/32",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              }
+            ],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        }
+      ],
       "redirect": null,
       "exp": null,
-      "all": "fail"
+      "all": "softfail"
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1;p=none",
+    "valid": true,
+    "location": "aytovalverde.org",
+    "warnings": [
+      "rua tag (destination for aggregate reports) not found"
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }

@@ -1,0 +1,88 @@
+{
+  "domain": "serla.es",
+  "base_domain": "serla.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "dns2.cosmomedia.es",
+      "dns1.cosmomedia.es"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 5,
+        "hostname": "mx2.cosmomedia.es",
+        "addresses": [
+          "109.234.71.142"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mx3.cosmomedia.es",
+        "addresses": [
+          "109.234.71.143"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 mx ip4:109.234.71.141 ip4:109.234.71.142 ip4:88.27.246.176 ip4:213.201.115.187 mx:mx.cosmomedia.es mx:cosmomedia.es -all",
+    "valid": true,
+    "dns_lookups": 3,
+    "warnings": [
+      "mx.cosmomedia.es does not have any MX records"
+    ],
+    "parsed": {
+      "pass": [
+        {
+          "value": "mx2.cosmomedia.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mx3.cosmomedia.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "109.234.71.141",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "109.234.71.142",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "88.27.246.176",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "213.201.115.187",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "mx2.cosmomedia.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mx3.cosmomedia.es",
+          "mechanism": "mx"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

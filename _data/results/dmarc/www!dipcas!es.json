@@ -1,0 +1,212 @@
+{
+  "domain": "dipcas.es",
+  "base_domain": "dipcas.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "conex.dipcas.es",
+      "pluton.dipcas.es"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "smtpin1.dipcas.es",
+        "addresses": [
+          "5.39.208.40"
+        ]
+      },
+      {
+        "preference": 40,
+        "hostname": "smtpin2.dipcas.es",
+        "addresses": [
+          "5.39.208.39"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 ip4:5.39.208.39 ip4:5.39.208.40 ip4:5.39.208.45 ip4:5.39.212.20 ip4:213.4.82.201 ip4:212.36.83.138 +a:dipcas.es +mx include:spf.protection.outlook.com -all",
+    "valid": true,
+    "dns_lookups": 3,
+    "warnings": [
+      "dipcas.es does not have any A/AAAA records"
+    ],
+    "parsed": {
+      "pass": [
+        {
+          "value": "5.39.208.39",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "5.39.208.40",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "5.39.208.45",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "5.39.212.20",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "213.4.82.201",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "212.36.83.138",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "smtpin1.dipcas.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "smtpin2.dipcas.es",
+          "mechanism": "mx"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "spf.protection.outlook.com",
+          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/15 ip4:52.102.0.0/16 ip4:52.103.0.0/17 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/51 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "40.92.0.0/15",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "40.107.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.100.0.0/15",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.102.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.103.0.0/17",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "104.47.0.0/17",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "2a01:111:f400::/48",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403::/49",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:8000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:c000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:f000::/52",
+                "mechanism": "ip6"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": "v=DMARC1;p=quarantine;pct=100;adkim=r;aspf=r;fo=1;rua=mailto:oper@dipcas.es;ruf=mailto:oper@dipcas.es",
+    "valid": true,
+    "location": "dipcas.es",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "pct": {
+        "value": 100,
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": true
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "1"
+        ],
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "oper@dipcas.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "oper@dipcas.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "quarantine",
+        "explicit": false
+      }
+    }
+  }
+}

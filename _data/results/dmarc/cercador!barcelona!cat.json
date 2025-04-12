@@ -1,0 +1,31 @@
+{
+  "domain": "cercador.barcelona.cat",
+  "base_domain": "barcelona.cat",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns-1392.awsdns-46.org",
+      "ns-1619.awsdns-10.co.uk",
+      "ns-71.awsdns-08.com",
+      "ns-711.awsdns-24.net"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [],
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "cercador.barcelona.cat does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

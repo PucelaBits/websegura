@@ -4,57 +4,216 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.zonadns.com",
-      "dns3.zonadns.com",
-      "dns2.zonadns.com"
+      "dns2.raiolanetworks.es",
+      "dns3.raiolanetworks.es",
+      "dns1.raiolanetworks.es"
     ],
     "warnings": []
   },
   "mx": {
     "hosts": [
       {
-        "preference": 10,
+        "preference": 0,
         "hostname": "mail.juntacentralvicentina.org",
         "addresses": [
-          "193.42.143.170"
+          "178.211.133.77",
+          "2a12:d280:100:77::"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 a mx ip4:193.42.143.170 ~all",
+    "record": "v=spf1 a mx +include:spf.raiolanetworks.com -all",
     "valid": true,
-    "dns_lookups": 2,
+    "dns_lookups": 4,
     "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "193.42.143.170",
+          "value": "178.211.133.77",
+          "mechanism": "a"
+        },
+        {
+          "value": "2a12:d280:100:77::",
           "mechanism": "a"
         },
         {
           "value": "mail.juntacentralvicentina.org",
           "mechanism": "mx"
-        },
-        {
-          "value": "193.42.143.170",
-          "mechanism": "ip4"
         }
       ],
       "neutral": [],
       "softfail": [],
       "fail": [],
-      "include": [],
+      "include": [
+        {
+          "domain": "spf.raiolanetworks.com",
+          "record": "v=spf1 +a:spf.raiolanetworks.com ~all",
+          "dns_lookups": 1,
+          "parsed": {
+            "pass": [
+              {
+                "value": "141.95.251.123",
+                "mechanism": "a"
+              },
+              {
+                "value": "145.239.129.166",
+                "mechanism": "a"
+              },
+              {
+                "value": "149.202.98.105",
+                "mechanism": "a"
+              },
+              {
+                "value": "149.202.98.106",
+                "mechanism": "a"
+              },
+              {
+                "value": "149.202.98.107",
+                "mechanism": "a"
+              },
+              {
+                "value": "149.202.98.108",
+                "mechanism": "a"
+              },
+              {
+                "value": "151.80.177.216",
+                "mechanism": "a"
+              },
+              {
+                "value": "178.33.177.121",
+                "mechanism": "a"
+              },
+              {
+                "value": "178.33.177.123",
+                "mechanism": "a"
+              },
+              {
+                "value": "178.33.177.124",
+                "mechanism": "a"
+              },
+              {
+                "value": "193.70.65.184",
+                "mechanism": "a"
+              },
+              {
+                "value": "217.182.121.195",
+                "mechanism": "a"
+              },
+              {
+                "value": "217.182.121.196",
+                "mechanism": "a"
+              },
+              {
+                "value": "217.182.121.197",
+                "mechanism": "a"
+              },
+              {
+                "value": "5.135.120.86",
+                "mechanism": "a"
+              },
+              {
+                "value": "5.196.170.73",
+                "mechanism": "a"
+              },
+              {
+                "value": "5.196.239.25",
+                "mechanism": "a"
+              },
+              {
+                "value": "5.39.18.65",
+                "mechanism": "a"
+              },
+              {
+                "value": "51.255.120.212",
+                "mechanism": "a"
+              },
+              {
+                "value": "51.83.52.234",
+                "mechanism": "a"
+              },
+              {
+                "value": "79.137.45.64",
+                "mechanism": "a"
+              },
+              {
+                "value": "91.134.16.17",
+                "mechanism": "a"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        }
+      ],
       "redirect": null,
       "exp": null,
-      "all": "softfail"
+      "all": "fail"
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=none; rua=mailto:rua@dmarc.brevo.com",
+    "valid": true,
+    "location": "juntacentralvicentina.org",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "rua@dmarc.brevo.com",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }

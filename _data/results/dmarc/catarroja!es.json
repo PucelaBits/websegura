@@ -22,16 +22,14 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 a mx ip4:194.224.197.55 ip4:194.224.197.51 ip4:95.39.28.247 include:catarroja.ip-zone.com include:spf.ipzmarketing.com include:dnsxperta.com ~all",
+    "record": "v=spf1 a mx ip4:194.224.197.55 ip4:194.224.197.51 ip4:95.39.28.247 include:catarroja.ip-zone.com include:spf.ipzmarketing.com include:eps.catarroja.es include:dnsxperta.com ~all",
     "valid": true,
-    "dns_lookups": 7,
-    "warnings": [
-      "Duplicate include: spf.ipzmarketing.com"
-    ],
+    "dns_lookups": 9,
+    "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "217.13.85.28",
+          "value": "217.13.85.35",
           "mechanism": "a"
         },
         {
@@ -57,23 +55,92 @@
       "include": [
         {
           "domain": "catarroja.ip-zone.com",
-          "record": "v=spf1 ip4:93.159.208.0/21 include:spf.dyd.es",
-          "dns_lookups": 2,
+          "record": "v=spf1 ip4:93.159.208.0/21 ip4:185.103.8.0/22 ip4:5.56.22.0/24 ip4:82.199.156.0/24 ip4:91.194.237.0/24 ~all",
+          "dns_lookups": 0,
           "parsed": {
             "pass": [
               {
                 "value": "93.159.208.0/21",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.103.8.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "5.56.22.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "82.199.156.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "91.194.237.0/24",
                 "mechanism": "ip4"
               }
             ],
             "neutral": [],
             "softfail": [],
             "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "spf.ipzmarketing.com",
+          "record": "v=spf1 ip4:93.159.208.0/21 ip4:185.103.8.0/22 ip4:5.56.22.0/24 ip4:82.199.156.0/24 ip4:91.194.237.0/24 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "93.159.208.0/21",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.103.8.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "5.56.22.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "82.199.156.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "91.194.237.0/24",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "eps.catarroja.es",
+          "record": "v=spf1 include:_spf.serviciodecorreo.es ~all",
+          "dns_lookups": 3,
+          "parsed": {
+            "pass": [],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
             "include": [
               {
-                "domain": "spf.dyd.es",
-                "record": "v=spf1 include:spf.ipzmarketing.com ~all",
-                "dns_lookups": 1,
+                "domain": "_spf.serviciodecorreo.es",
+                "record": "v=spf1 include:_netblock1.serviciodecorreo.es include:_netblock2.serviciodecorreo.es ~all",
+                "dns_lookups": 2,
                 "parsed": {
                   "pass": [],
                   "neutral": [],
@@ -81,29 +148,110 @@
                   "fail": [],
                   "include": [
                     {
-                      "domain": "spf.ipzmarketing.com",
-                      "record": "v=spf1 ip4:93.159.208.0/21 ip4:185.103.8.0/22 ip4:5.56.22.0/24 ip4:82.199.156.0/24 ip4:212.192.13.0/24 ~all",
+                      "domain": "_netblock1.serviciodecorreo.es",
+                      "record": "v=spf1 ip4:82.223.85.0/24 ip4:82.223.190.0/23 ip4:82.223.199.0/24 ip4:82.223.218.0/23 ip4:82.223.230.0/24 ip4:82.223.251.0/24 ip4:217.76.128.0/23 ip4:217.76.150.128/25 ip4:217.76.156.128/25 ~all",
                       "dns_lookups": 0,
                       "parsed": {
                         "pass": [
                           {
-                            "value": "93.159.208.0/21",
+                            "value": "82.223.85.0/24",
                             "mechanism": "ip4"
                           },
                           {
-                            "value": "185.103.8.0/22",
+                            "value": "82.223.190.0/23",
                             "mechanism": "ip4"
                           },
                           {
-                            "value": "5.56.22.0/24",
+                            "value": "82.223.199.0/24",
                             "mechanism": "ip4"
                           },
                           {
-                            "value": "82.199.156.0/24",
+                            "value": "82.223.218.0/23",
                             "mechanism": "ip4"
                           },
                           {
-                            "value": "212.192.13.0/24",
+                            "value": "82.223.230.0/24",
+                            "mechanism": "ip4"
+                          },
+                          {
+                            "value": "82.223.251.0/24",
+                            "mechanism": "ip4"
+                          },
+                          {
+                            "value": "217.76.128.0/23",
+                            "mechanism": "ip4"
+                          },
+                          {
+                            "value": "217.76.150.128/25",
+                            "mechanism": "ip4"
+                          },
+                          {
+                            "value": "217.76.156.128/25",
+                            "mechanism": "ip4"
+                          }
+                        ],
+                        "neutral": [],
+                        "softfail": [],
+                        "fail": [],
+                        "include": [],
+                        "redirect": null,
+                        "exp": null,
+                        "all": "softfail"
+                      },
+                      "warnings": []
+                    },
+                    {
+                      "domain": "_netblock2.serviciodecorreo.es",
+                      "record": "v=spf1 ip4:82.223.56.0/23 ip4:82.223.113.0/24 ip4:82.223.119.0/24 ip4:82.223.226.0/24 ip4:217.76.130.0/23 ip4:217.76.148.0/23 ip4:217.76.143.0/24 ip4:217.76.150.0/25 ip4:217.76.156.0/25 ip4:217.76.132.128/25 ip4:82.223.208.0/24 ip4:82.223.212.0/23 ~all",
+                      "dns_lookups": 0,
+                      "parsed": {
+                        "pass": [
+                          {
+                            "value": "82.223.56.0/23",
+                            "mechanism": "ip4"
+                          },
+                          {
+                            "value": "82.223.113.0/24",
+                            "mechanism": "ip4"
+                          },
+                          {
+                            "value": "82.223.119.0/24",
+                            "mechanism": "ip4"
+                          },
+                          {
+                            "value": "82.223.226.0/24",
+                            "mechanism": "ip4"
+                          },
+                          {
+                            "value": "217.76.130.0/23",
+                            "mechanism": "ip4"
+                          },
+                          {
+                            "value": "217.76.148.0/23",
+                            "mechanism": "ip4"
+                          },
+                          {
+                            "value": "217.76.143.0/24",
+                            "mechanism": "ip4"
+                          },
+                          {
+                            "value": "217.76.150.0/25",
+                            "mechanism": "ip4"
+                          },
+                          {
+                            "value": "217.76.156.0/25",
+                            "mechanism": "ip4"
+                          },
+                          {
+                            "value": "217.76.132.128/25",
+                            "mechanism": "ip4"
+                          },
+                          {
+                            "value": "82.223.208.0/24",
+                            "mechanism": "ip4"
+                          },
+                          {
+                            "value": "82.223.212.0/23",
                             "mechanism": "ip4"
                           }
                         ],
@@ -127,7 +275,7 @@
             ],
             "redirect": null,
             "exp": null,
-            "all": "neutral"
+            "all": "softfail"
           },
           "warnings": []
         },

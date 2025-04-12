@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.viavoxinteractive.com",
-      "ns1.viavoxinteractive.com"
+      "ns1.viavoxinteractive.com",
+      "ns2.viavoxinteractive.com"
     ],
     "warnings": []
   },
@@ -22,7 +22,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx ip4:84.124.18.70 -all",
+    "record": "v=spf1 mx ip4:212.145.22.204 ip4:77.224.118.213 ip4:77.225.101.5 ip4:82.98.134.241 ~all",
     "valid": true,
     "dns_lookups": 1,
     "warnings": [],
@@ -33,7 +33,19 @@
           "mechanism": "mx"
         },
         {
-          "value": "84.124.18.70",
+          "value": "212.145.22.204",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "77.224.118.213",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "77.225.101.5",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "82.98.134.241",
           "mechanism": "ip4"
         }
       ],
@@ -43,17 +55,14 @@
       "include": [],
       "redirect": null,
       "exp": null,
-      "all": "fail"
+      "all": "softfail"
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; rua=mailto:postmaster@viavox.com; ruf=mailto:postmaster@viavox.com;",
+    "record": "v=DMARC1; p=quarantine; rua=mailto:postmaster@arandadeduero.es; ruf=mailto:postmaster@arandadeduero.es;",
     "valid": true,
     "location": "arandadeduero.es",
-    "warnings": [
-      "viavox.com does not indicate that it accepts DMARC reports about arandadeduero.es - Authorization record not found: arandadeduero.es._report._dmarc.viavox.com IN TXT \"v=DMARC1\"",
-      "viavox.com does not indicate that it accepts DMARC reports about arandadeduero.es - Authorization record not found: arandadeduero.es._report._dmarc.viavox.com IN TXT \"v=DMARC1\""
-    ],
+    "warnings": [],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -64,11 +73,23 @@
         "explicit": true
       },
       "rua": {
-        "value": "mailto:postmaster@viavox.com",
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "postmaster@arandadeduero.es",
+            "size_limit": null
+          }
+        ],
         "explicit": true
       },
       "ruf": {
-        "value": "mailto:postmaster@viavox.com",
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "postmaster@arandadeduero.es",
+            "size_limit": null
+          }
+        ],
         "explicit": true
       },
       "adkim": {

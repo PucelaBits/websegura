@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "escorpio.iteasoluciones.es",
-      "tauro.iteasoluciones.es"
+      "ns1.aytoteverga.org",
+      "ns2.aytoteverga.org"
     ],
     "warnings": []
   },
@@ -13,26 +13,99 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "tauro.iteasoluciones.es",
+        "hostname": "mail.aytoteverga.org",
         "addresses": [
-          "37.187.129.54"
+          "149.202.77.98"
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.",
-      "The reverse DNS of 37.187.129.54 is tauro.iteasoluciones.es, but the A/AAAA DNS records for tauro.iteasoluciones.es do not resolve to 37.187.129.54"
-    ]
+    "warnings": []
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "aytoteverga.org does not have a SPF TXT record"
+    "record": "v=spf1 +a +mx +a:clientesweb.es ip4:149.202.77.98 -all",
+    "valid": true,
+    "dns_lookups": 3,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "212.89.23.124",
+          "mechanism": "a"
+        },
+        {
+          "value": "mail.aytoteverga.org",
+          "mechanism": "mx"
+        },
+        {
+          "value": "149.202.77.98",
+          "mechanism": "a"
+        },
+        {
+          "value": "2001:41d0:d:3662::1",
+          "mechanism": "a"
+        },
+        {
+          "value": "149.202.77.98",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=quarantine; adkim=s; aspf=s",
+    "valid": true,
+    "location": "aytoteverga.org",
+    "warnings": [
+      "rua tag (destination for aggregate reports) not found"
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "s",
+        "explicit": true
+      },
+      "aspf": {
+        "value": "s",
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "quarantine",
+        "explicit": false
+      }
+    }
   }
 }

@@ -1,0 +1,33 @@
+{
+  "domain": "govern.cat",
+  "base_domain": "govern.cat",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns3.gencat.net",
+      "ns2.gencat.net",
+      "ns1.gencat.net",
+      "ns3.gencat.cat",
+      "ns2.gencat.cat",
+      "ns1.gencat.cat"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [],
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "govern.cat does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

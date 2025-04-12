@@ -1,25 +1,22 @@
 {
-  "algorithm_version": 2,
-  "end_time": "Tue, 23 Aug 2022 01:06:48 GMT",
+  "id": 61190701,
+  "algorithm_version": 4,
+  "scanned_at": "2025-04-12T00:59:59.672Z",
+  "error": null,
   "grade": "F",
-  "hidden": false,
-  "likelihood_indicator": "MEDIUM",
   "response_headers": {
-    "Cache-Control": "max-age=0, must-revalidate, no-cache, no-store",
-    "Connection": "close",
-    "Content-Length": "5640",
-    "Content-Type": "text/html;charset=UTF-8",
-    "Date": "Tue, 23 Aug 2022 01:06:37 GMT",
-    "Pragma": "no-cache",
-    "Server": "OpenCms/11.0.1",
-    "Set-Cookie": "JSESSIONID=C7A97D24A1C5F4CB707EF88718BCC64D; Path=/opencms; HttpOnly"
+    "date": "Sat, 12 Apr 2025 01:00:02 GMT",
+    "vary": "Accept-Encoding",
+    "server": "Apache",
+    "connection": "close",
+    "set-cookie": "JSESSIONID=4EF4AB23DCFF5609BA3925E1D235D15D; Path=/portal_localweb",
+    "content-type": "text/html;charset=ISO-8859-1",
+    "content-length": "5467",
+    "content-language": "gl"
   },
-  "scan_id": 28890141,
   "score": 0,
-  "start_time": "Tue, 23 Aug 2022 01:06:27 GMT",
-  "state": "FINISHED",
-  "status_code": 404,
+  "status_code": 200,
   "tests_failed": 7,
-  "tests_passed": 5,
-  "tests_quantity": 12
+  "tests_passed": 3,
+  "tests_quantity": 10
 }

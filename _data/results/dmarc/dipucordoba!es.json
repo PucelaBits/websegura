@@ -4,8 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "proxy.eprinsa.es",
-      "proxy2.eprinsa.es"
+      "ns-1028.awsdns-00.org",
+      "ns-145.awsdns-18.com",
+      "ns-1846.awsdns-38.co.uk",
+      "ns-718.awsdns-25.net"
     ],
     "warnings": []
   },
@@ -15,16 +17,16 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.250.141.26",
-          "2607:f8b0:4023:c0b::1a"
+          "142.250.141.27",
+          "2607:f8b0:4023:c0d::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "2607:f8b0:4003:c15::1a",
-          "64.233.171.26"
+          "108.177.104.27",
+          "2607:f8b0:4003:c04::1a"
         ]
       },
       {
@@ -32,15 +34,15 @@
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
           "142.250.152.27",
-          "2607:f8b0:4001:c56::1a"
+          "2607:f8b0:4001:c56::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "aspmx2.googlemail.com",
         "addresses": [
-          "2607:f8b0:4003:c15::1b",
-          "64.233.171.26"
+          "108.177.104.26",
+          "2607:f8b0:4003:c04::1b"
         ]
       },
       {
@@ -253,9 +255,53 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; pct=100; p=reject; adkim=r; aspf=s",
-    "valid": false,
+    "record": "v=DMARC1; p=reject; pct=100; adkim=r; aspf=r",
+    "valid": true,
     "location": "dipucordoba.es",
-    "error": "the p tag must immediately follow the v tag"
+    "warnings": [
+      "rua tag (destination for aggregate reports) not found"
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "reject",
+        "explicit": true
+      },
+      "pct": {
+        "value": 100,
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": true
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "reject",
+        "explicit": false
+      }
+    }
   }
 }

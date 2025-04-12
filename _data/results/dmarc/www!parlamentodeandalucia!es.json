@@ -4,8 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.parlamentodeandalucia.es",
-      "dns1.parlamentodeandalucia.es"
+      "dns1.parlamentodeandalucia.es",
+      "dns3.parlamentodeandalucia.es",
+      "dns2.parlamentodeandalucia.es"
     ],
     "warnings": []
   },
@@ -19,55 +20,103 @@
         ]
       },
       {
-        "preference": 20,
-        "hostname": "dns2.parlamentodeandalucia.es",
-        "addresses": [
-          "193.147.254.2"
-        ]
-      },
-      {
         "preference": 30,
         "hostname": "mx3.parlamentodeandalucia.es",
         "addresses": [
-          "195.55.47.130"
+          "90.161.143.228"
         ]
       }
     ],
     "warnings": [
-      "195.55.47.130 does not have any reverse DNS (PTR) records"
+      "The domain 228.pool90-161-143.static.orange.es does not exist",
+      "The reverse DNS of 90.161.143.228 is 228.pool90-161-143.static.orange.es, but the A/AAAA DNS records for 228.pool90-161-143.static.orange.es do not resolve to 90.161.143.228"
     ]
   },
   "spf": {
-    "record": "v=spf1 mx ip4:193.147.254.0/24 ?all",
+    "record": "v=spf1 ip4:193.147.254.0/24 ip4:90.161.143.224/28 include:spf.protection.outlook.com ~all",
     "valid": true,
     "dns_lookups": 1,
     "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "dns1.parlamentodeandalucia.es",
-          "mechanism": "mx"
-        },
-        {
-          "value": "dns2.parlamentodeandalucia.es",
-          "mechanism": "mx"
-        },
-        {
-          "value": "mx3.parlamentodeandalucia.es",
-          "mechanism": "mx"
-        },
-        {
           "value": "193.147.254.0/24",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "90.161.143.224/28",
           "mechanism": "ip4"
         }
       ],
       "neutral": [],
       "softfail": [],
       "fail": [],
-      "include": [],
+      "include": [
+        {
+          "domain": "spf.protection.outlook.com",
+          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/15 ip4:52.102.0.0/16 ip4:52.103.0.0/17 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/51 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "40.92.0.0/15",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "40.107.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.100.0.0/15",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.102.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.103.0.0/17",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "104.47.0.0/17",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "2a01:111:f400::/48",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403::/49",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:8000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:c000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:f000::/52",
+                "mechanism": "ip6"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        }
+      ],
       "redirect": null,
       "exp": null,
-      "all": "neutral"
+      "all": "softfail"
     }
   },
   "dmarc": {

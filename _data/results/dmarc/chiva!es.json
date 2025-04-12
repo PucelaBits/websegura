@@ -4,27 +4,33 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns2.dnsxperta.com",
       "ns3.dnsxperta.com",
-      "ns1.dnsxperta.com",
-      "ns2.dnsxperta.com"
+      "ns1.dnsxperta.com"
     ],
     "warnings": []
   },
   "mx": {
     "hosts": [
       {
-        "preference": 100,
-        "hostname": "mx1.dnsxperta.com",
+        "preference": 0,
+        "hostname": "chiva-es.mail.protection.outlook.com",
         "addresses": [
-          "217.13.80.229",
-          "83.147.63.42"
+          "2a01:111:f403:ca04::6",
+          "2a01:111:f403:ca04::b",
+          "2a01:111:f403:ca09::7",
+          "2a01:111:f403:ca09::c",
+          "52.101.68.0",
+          "52.101.68.25",
+          "52.101.73.15",
+          "52.101.73.8"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:dnsxperta.com ip4:213.4.82.254 ip4:213.4.82.201 -all",
+    "record": "v=spf1 include:spf.protection.outlook.com ip4:213.4.82.254 ip4:213.4.82.201 -all",
     "valid": true,
     "dns_lookups": 1,
     "warnings": [],
@@ -44,26 +50,54 @@
       "fail": [],
       "include": [
         {
-          "domain": "dnsxperta.com",
-          "record": "v=spf1 ip4:217.13.80.0/20 ip4:194.143.202.166/28 ip4:194.143.202.194/28 ip4:83.147.63.0/24 -all",
+          "domain": "spf.protection.outlook.com",
+          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/15 ip4:52.102.0.0/16 ip4:52.103.0.0/17 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/51 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
               {
-                "value": "217.13.80.0/20",
+                "value": "40.92.0.0/15",
                 "mechanism": "ip4"
               },
               {
-                "value": "194.143.202.166/28",
+                "value": "40.107.0.0/16",
                 "mechanism": "ip4"
               },
               {
-                "value": "194.143.202.194/28",
+                "value": "52.100.0.0/15",
                 "mechanism": "ip4"
               },
               {
-                "value": "83.147.63.0/24",
+                "value": "52.102.0.0/16",
                 "mechanism": "ip4"
+              },
+              {
+                "value": "52.103.0.0/17",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "104.47.0.0/17",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "2a01:111:f400::/48",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403::/49",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:8000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:c000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:f000::/52",
+                "mechanism": "ip6"
               }
             ],
             "neutral": [],
@@ -86,6 +120,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.chiva.es\n\nv=spf1 include:dnsxperta.com ip4:213.4.82.254 ip4:213.4.82.201 -all"
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.chiva.es\n\nv=spf1 include:spf.protection.outlook.com ip4:213.4.82.254 ip4:213.4.82.201 -all"
   }
 }

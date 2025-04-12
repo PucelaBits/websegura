@@ -4,8 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "dns01.ono.com",
       "dns02.ono.com",
-      "dns01.ono.com"
+      "dns03.ono.com"
     ],
     "warnings": []
   },
@@ -15,32 +16,32 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.250.141.26",
-          "2607:f8b0:4023:c0b::1a"
+          "142.251.2.27",
+          "2607:f8b0:4023:c06::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "2607:f8b0:4003:c15::1a",
-          "64.233.171.26"
+          "108.177.104.27",
+          "2607:f8b0:4003:c04::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "142.250.152.26",
-          "2607:f8b0:4001:c56::1b"
+          "142.250.152.27",
+          "2607:f8b0:4001:c56::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "aspmx2.googlemail.com",
         "addresses": [
-          "2607:f8b0:4003:c15::1b",
-          "64.233.171.27"
+          "108.177.104.27",
+          "2607:f8b0:4003:c04::1a"
         ]
       },
       {
@@ -48,14 +49,14 @@
         "hostname": "aspmx3.googlemail.com",
         "addresses": [
           "142.250.152.27",
-          "2607:f8b0:4001:c56::1a"
+          "2607:f8b0:4001:c56::1b"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:213.232.232.105 include:_spf.google.com ~all",
+    "record": "v=spf1 ip4:213.232.232.105 ip4:213.232.232.106 ip4:213.232.232.104 include:_spf.google.com ~all",
     "valid": true,
     "dns_lookups": 4,
     "warnings": [],
@@ -63,6 +64,14 @@
       "pass": [
         {
           "value": "213.232.232.105",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "213.232.232.106",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "213.232.232.104",
           "mechanism": "ip4"
         }
       ],
@@ -253,9 +262,61 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.aytopalencia.es\n\nglobalsign-domain-verification=GNKFNarF_ZJLtP-nPU94-sWOY-PvXsHN1JFqTrSGql"
+    "record": "v=DMARC1; p=none; rua=mailto:dmarc-informes@aytopalencia.es",
+    "valid": true,
+    "location": "aytopalencia.es",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc-informes@aytopalencia.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }

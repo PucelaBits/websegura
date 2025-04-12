@@ -1,23 +1,23 @@
 {
-  "algorithm_version": 2,
-  "end_time": "Thu, 25 Aug 2022 00:14:03 GMT",
+  "id": 61173595,
+  "algorithm_version": 4,
+  "scanned_at": "2025-04-11T20:17:24.315Z",
+  "error": null,
   "grade": "F",
-  "hidden": false,
-  "likelihood_indicator": "MEDIUM",
   "response_headers": {
-    "Connection": "close",
-    "Content-Type": "text/html;charset=ISO-8859-1",
-    "Date": "Thu, 25 Aug 2022 00:13:52 GMT",
-    "Server": "Apache-Coyote/1.1",
-    "Set-Cookie": "JSESSIONID=DA1A25DD73496DCA0622AB15CAD9415D; Path=/webdinamica/; HttpOnly",
-    "Transfer-Encoding": "chunked"
+    "date": "Fri, 11 Apr 2025 20:17:25 GMT",
+    "etag": "\"67f97847-1239e\"",
+    "server": "nginx/1.20.1",
+    "connection": "close",
+    "set-cookie": "ADC_CONN_539B3595F4E=D3E0943D0F8D33622524702E9233AE7D2A5AD7E2F63ECEA506077C8CC4C22989EE608D25314A78B1; expires=Fri, 11 Apr 2025 21:17:25 GMT,ADC_REQ_2E94AF76E7=9A25B0093A3BC632DFAD5B2A964950CEF4419EBC3A791F44F2FFCE322B0AB30C8385D28A25FC39EF; expires=Fri, 11 Apr 2025 21:17:25 GMT; Path=/,LB_Fortiadc=rs1|Z/l42; path=/",
+    "content-type": "text/html",
+    "accept-ranges": "bytes",
+    "last-modified": "Fri, 11 Apr 2025 20:15:03 GMT",
+    "content-length": "74654"
   },
-  "scan_id": 28945204,
-  "score": 0,
-  "start_time": "Thu, 25 Aug 2022 00:13:43 GMT",
-  "state": "FINISHED",
+  "score": 5,
   "status_code": 200,
-  "tests_failed": 7,
-  "tests_passed": 5,
-  "tests_quantity": 12
+  "tests_failed": 6,
+  "tests_passed": 4,
+  "tests_quantity": 10
 }

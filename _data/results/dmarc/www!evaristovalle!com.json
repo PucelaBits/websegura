@@ -4,31 +4,32 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "server.whatthemark.com"
+      "ns1.evaristovalle.com",
+      "ns2.evaristovalle.com"
     ],
     "warnings": []
   },
   "mx": {
     "hosts": [
       {
-        "preference": 5,
+        "preference": 10,
         "hostname": "mail.evaristovalle.com",
         "addresses": [
-          "91.121.161.128"
+          "46.105.28.14"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 a mx a:evaristovalle.com ip4:91.121.161.128 ip6:2001:41d0:0001:e280:: ?all",
+    "record": "v=spf1 +a +mx +a:srv003.cloudinhosting.com -all",
     "valid": true,
     "dns_lookups": 3,
     "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "91.121.161.128",
+          "value": "46.105.28.14",
           "mechanism": "a"
         },
         {
@@ -36,16 +37,8 @@
           "mechanism": "mx"
         },
         {
-          "value": "91.121.161.128",
+          "value": "46.105.28.14",
           "mechanism": "a"
-        },
-        {
-          "value": "91.121.161.128",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "2001:41d0:0001:e280::",
-          "mechanism": "ip6"
         }
       ],
       "neutral": [],
@@ -54,13 +47,57 @@
       "include": [],
       "redirect": null,
       "exp": null,
-      "all": "neutral"
+      "all": "fail"
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=quarantine; adkim=s; aspf=s",
+    "valid": true,
+    "location": "evaristovalle.com",
+    "warnings": [
+      "rua tag (destination for aggregate reports) not found"
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "s",
+        "explicit": true
+      },
+      "aspf": {
+        "value": "s",
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "quarantine",
+        "explicit": false
+      }
+    }
   }
 }

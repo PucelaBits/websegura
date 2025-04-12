@@ -18,7 +18,7 @@
     "error": "web.bizkaia.eus does not have a SPF TXT record"
   },
   "dmarc": {
-    "record": "v=DMARC1;p=none;rua=mailto:inaki.moreno@bizkaia.eus,mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com",
+    "record": "v=DMARC1;p=none;rua=mailto:soc@bizkaia.eus,mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com",
     "valid": true,
     "location": "bizkaia.eus",
     "warnings": [],
@@ -35,7 +35,7 @@
         "value": [
           {
             "scheme": "mailto",
-            "address": "inaki.moreno@bizkaia.eus",
+            "address": "soc@bizkaia.eus",
             "size_limit": null
           },
           {

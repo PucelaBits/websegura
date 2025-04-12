@@ -4,7 +4,6 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ineco.nic.es",
       "dns.policia.es",
       "dns2.policia.es"
     ],
@@ -14,46 +13,39 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "correo.policia.es",
+        "hostname": "mxa-00825801.gslb.pphosted.com",
         "addresses": [
-          "195.55.116.96"
+          "185.183.28.235"
         ]
       },
       {
-        "preference": 50,
-        "hostname": "correo11.policia.es",
+        "preference": 10,
+        "hostname": "mxb-00825801.gslb.pphosted.com",
         "addresses": [
-          "195.55.116.96"
-        ]
-      },
-      {
-        "preference": 70,
-        "hostname": "correo22.policia.es",
-        "addresses": [
-          "195.55.116.96"
+          "143.55.144.57"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx -all",
+    "record": "v=spf1 mx ip4:195.55.116.96 -all",
     "valid": true,
     "dns_lookups": 1,
     "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "correo.policia.es",
+          "value": "mxa-00825801.gslb.pphosted.com",
           "mechanism": "mx"
         },
         {
-          "value": "correo11.policia.es",
+          "value": "mxb-00825801.gslb.pphosted.com",
           "mechanism": "mx"
         },
         {
-          "value": "correo22.policia.es",
-          "mechanism": "mx"
+          "value": "195.55.116.96",
+          "mechanism": "ip4"
         }
       ],
       "neutral": [],
@@ -66,9 +58,61 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=none;rua=mailto:monitorizacion@policia.es;",
+    "valid": true,
+    "location": "policia.es",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "monitorizacion@policia.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }

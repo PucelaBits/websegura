@@ -1,7 +1,7 @@
 {
   "domain": "bne.es",
   "base_domain": "bne.es",
-  "dnssec": false,
+  "dnssec": true,
   "ns": {
     "hostnames": [
       "ns1.age.gob.es",
@@ -12,45 +12,39 @@
   "mx": {
     "hosts": [
       {
-        "preference": 20,
-        "hostname": "mx01.puc.rediris.es",
+        "preference": 10,
+        "hostname": "mx03.puc.rediris.es",
         "addresses": [
-          "130.206.19.130",
-          "130.206.19.162",
-          "2001:720:418:ca10::2",
-          "2001:720:418:ca11::2"
+          "143.55.146.78"
         ]
       },
       {
-        "preference": 20,
-        "hostname": "mx02.puc.rediris.es",
+        "preference": 10,
+        "hostname": "mx04.puc.rediris.es",
         "addresses": [
-          "130.206.19.130",
-          "130.206.19.162",
-          "2001:720:418:ca10::2",
-          "2001:720:418:ca11::2"
+          "143.55.148.243"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 a mx include:spf.puc.rediris.es ip4:212.128.118.39 include:spf.acumbamail.com -all",
+    "record": "v=spf1 a mx include:spf.puc.rediris.es ip4:212.128.118.39 include:spf.acumbamail.com include:spf.protection.outlook.com include:spf-eu.exlibrisgroup.com -all",
     "valid": true,
-    "dns_lookups": 4,
+    "dns_lookups": 6,
     "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "212.128.118.0",
+          "value": "212.128.119.9",
           "mechanism": "a"
         },
         {
-          "value": "mx01.puc.rediris.es",
+          "value": "mx03.puc.rediris.es",
           "mechanism": "mx"
         },
         {
-          "value": "mx02.puc.rediris.es",
+          "value": "mx04.puc.rediris.es",
           "mechanism": "mx"
         },
         {
@@ -64,37 +58,21 @@
       "include": [
         {
           "domain": "spf.puc.rediris.es",
-          "record": "v=spf1 ip4:130.206.25.38 ip4:130.206.24.0/24 ip4:130.206.19.0/24 ip4:192.187.24.32/28 ip4:192.187.24.0/28 ip6:2001:720:418:ca10::/64 ip6:2001:720:418:ca11::/64 ~all",
+          "record": "v=spf1 ip4:143.55.146.78 ip4:143.55.148.243 ip4:130.206.25.38 ~all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
               {
+                "value": "143.55.146.78",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "143.55.148.243",
+                "mechanism": "ip4"
+              },
+              {
                 "value": "130.206.25.38",
                 "mechanism": "ip4"
-              },
-              {
-                "value": "130.206.24.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "130.206.19.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "192.187.24.32/28",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "192.187.24.0/28",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "2001:720:418:ca10::/64",
-                "mechanism": "ip6"
-              },
-              {
-                "value": "2001:720:418:ca11::/64",
-                "mechanism": "ip6"
               }
             ],
             "neutral": [],
@@ -109,7 +87,7 @@
         },
         {
           "domain": "spf.acumbamail.com",
-          "record": "v=spf1 ip4:176.28.104.1/24 ip4:185.2.150.1/24 ip4:185.103.37.224/28 ip4:5.57.226.1/24 ip4:5.57.227.80/28 ip4:185.99.184.146/31 ip4:5.57.227.112/28 ip4:185.99.184.144/28 ip4:185.103.36.192/28 ~all",
+          "record": "v=spf1 ip4:176.28.104.1/24 ip4:185.2.150.1/24 ip4:185.103.37.224/28 ip4:5.57.226.1/24 ip4:5.57.227.80/28 ip4:5.57.227.112/28 ip4:185.99.184.144/28 ip4:185.103.36.192/28 ~all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -134,10 +112,6 @@
                 "mechanism": "ip4"
               },
               {
-                "value": "185.99.184.146/31",
-                "mechanism": "ip4"
-              },
-              {
                 "value": "5.57.227.112/28",
                 "mechanism": "ip4"
               },
@@ -159,6 +133,96 @@
             "all": "softfail"
           },
           "warnings": []
+        },
+        {
+          "domain": "spf.protection.outlook.com",
+          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/15 ip4:52.102.0.0/16 ip4:52.103.0.0/17 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/51 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "40.92.0.0/15",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "40.107.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.100.0.0/15",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.102.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.103.0.0/17",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "104.47.0.0/17",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "2a01:111:f400::/48",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403::/49",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:8000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:c000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:f000::/52",
+                "mechanism": "ip6"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "spf-eu.exlibrisgroup.com",
+          "record": "v=spf1 ip4:95.172.90.143 ip4:95.172.90.156 ip4:216.147.218.8/30 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "95.172.90.143",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "95.172.90.156",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "216.147.218.8/30",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
         }
       ],
       "redirect": null,
@@ -167,71 +231,9 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; sp=none; adkim=s; aspf=s; rua=mailto:dmarcadm@bne.es; ruf=mailto:dmarcadm@bne.es; rf=afrf; pct=100; ri=86400",
-    "valid": true,
-    "location": "bne.es",
-    "warnings": [],
-    "tags": {
-      "v": {
-        "value": "DMARC1",
-        "explicit": true
-      },
-      "p": {
-        "value": "none",
-        "explicit": true
-      },
-      "sp": {
-        "value": "none",
-        "explicit": true
-      },
-      "adkim": {
-        "value": "s",
-        "explicit": true
-      },
-      "aspf": {
-        "value": "s",
-        "explicit": true
-      },
-      "rua": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "dmarcadm@bne.es",
-            "size_limit": null
-          }
-        ],
-        "explicit": true
-      },
-      "ruf": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "dmarcadm@bne.es",
-            "size_limit": null
-          }
-        ],
-        "explicit": true
-      },
-      "rf": {
-        "value": [
-          "afrf"
-        ],
-        "explicit": true
-      },
-      "pct": {
-        "value": 100,
-        "explicit": true
-      },
-      "ri": {
-        "value": 86400,
-        "explicit": true
-      },
-      "fo": {
-        "value": [
-          "0"
-        ],
-        "explicit": false
-      }
-    }
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.bne.es\n\n748952321\n\ngoogle-site-verification=saMst-k33VwrMgDHW6BOmzssLFjgzGY3CJbblRjOJWc"
   }
 }

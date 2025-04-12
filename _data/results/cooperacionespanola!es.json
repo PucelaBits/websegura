@@ -1,23 +1,25 @@
 {
-  "algorithm_version": 2,
-  "end_time": "Wed, 26 Jan 2022 00:35:48 GMT",
-  "grade": "F",
-  "hidden": false,
-  "likelihood_indicator": "MEDIUM",
+  "id": 61173550,
+  "algorithm_version": 4,
+  "scanned_at": "2025-04-11T20:17:14.112Z",
+  "error": null,
+  "grade": "D+",
   "response_headers": {
-    "Content-Encoding": "gzip",
-    "Content-Type": "text/html; charset=utf-8",
-    "Date": "Wed, 26 Jan 2022 00:35:46 GMT",
-    "Set-Cookie": "galaxy-sticky=SeQD5ohpLGpLk2BjX-h3kyb; Path=/; HttpOnly; SameSite=Lax",
-    "Transfer-Encoding": "chunked",
-    "Vary": "Accept-Encoding"
+    "date": "Fri, 11 Apr 2025 20:17:16 GMT",
+    "link": "<https://www.cooperacionespanola.es/wp-json/>; rel=\"https://api.w.org/\", <https://www.cooperacionespanola.es/wp-json/wp/v2/pages/16413>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://www.cooperacionespanola.es/>; rel=shortlink",
+    "vary": "Accept-Encoding",
+    "server": "Apache",
+    "upgrade": "h2",
+    "connection": "Upgrade, close",
+    "content-type": "text/html; charset=UTF-8",
+    "content-length": "43553",
+    "x-ua-compatible": "IE=edge",
+    "x-content-type-options": "nosniff",
+    "content-security-policy": "upgrade-insecure-requests;"
   },
-  "scan_id": 24111284,
-  "score": 0,
-  "start_time": "Wed, 26 Jan 2022 00:35:42 GMT",
-  "state": "FINISHED",
+  "score": 40,
   "status_code": 200,
-  "tests_failed": 7,
-  "tests_passed": 5,
-  "tests_quantity": 12
+  "tests_failed": 3,
+  "tests_passed": 7,
+  "tests_quantity": 10
 }

@@ -1,26 +1,23 @@
 {
-  "algorithm_version": 2,
-  "end_time": "Fri, 26 Aug 2022 13:49:19 GMT",
+  "id": 61173882,
+  "algorithm_version": 4,
+  "scanned_at": "2025-04-11T20:18:30.623Z",
+  "error": null,
   "grade": "F",
-  "hidden": false,
-  "likelihood_indicator": "MEDIUM",
   "response_headers": {
-    "Cache-Control": "public, max-age=0",
-    "Connection": "Keep-Alive",
-    "Content-Length": "51474",
-    "Content-Type": "text/html;charset=UTF-8",
-    "Date": "Fri, 26 Aug 2022 13:49:03 GMT",
-    "Keep-Alive": "timeout=5, max=499",
-    "Last-Modified": "Fri, 26 Aug 2022 13:49:03 GMT",
-    "Server": "OpenCms/9.5.0",
-    "Strict-Transport-Security": "max-age=0; includeSubDomains"
+    "date": "Fri, 11 Apr 2025 20:18:31 GMT",
+    "server": "OpenCms/13.0",
+    "connection": "close",
+    "set-cookie": "JSESSIONID=22E9B5C36E012E15F3345DF906008079.ajp13_correa-ap02e_tomcat; Path=/; Secure; HttpOnly",
+    "content-type": "text/html;charset=UTF-8",
+    "cache-control": "public, max-age=0",
+    "last-modified": "Fri, 11 Apr 2025 20:18:31 GMT",
+    "transfer-encoding": "chunked",
+    "strict-transport-security": "max-age=0; includeSubDomains"
   },
-  "scan_id": 28974910,
   "score": 0,
-  "start_time": "Fri, 26 Aug 2022 13:47:28 GMT",
-  "state": "FINISHED",
   "status_code": 200,
-  "tests_failed": 7,
-  "tests_passed": 5,
-  "tests_quantity": 12
+  "tests_failed": 6,
+  "tests_passed": 4,
+  "tests_quantity": 10
 }

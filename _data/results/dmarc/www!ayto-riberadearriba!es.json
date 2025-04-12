@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "fruela.greencom.net",
-      "gaudiosa.greencom.net"
+      "asturias.greencom.net",
+      "adosinda.greencom.net"
     ],
     "warnings": []
   },
@@ -13,38 +13,28 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "fruela.greencom.net",
+        "hostname": "asturias.greencom.net",
         "addresses": [
-          "212.89.6.11"
+          "188.165.237.165"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 a mx ptr ip4:212.89.6.11 ~all",
+    "record": "v=spf1 mx a ~all",
     "valid": true,
     "dns_lookups": 2,
-    "warnings": [
-      "The ptr mechanism should not be used - https://tools.ietf.org/html/rfc7208#section-5.5"
-    ],
+    "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "212.89.23.93",
-          "mechanism": "a"
-        },
-        {
-          "value": "fruela.greencom.net",
+          "value": "asturias.greencom.net",
           "mechanism": "mx"
         },
         {
-          "value": "",
-          "mechanism": "ptr"
-        },
-        {
-          "value": "212.89.6.11",
-          "mechanism": "ip4"
+          "value": "212.89.23.124",
+          "mechanism": "a"
         }
       ],
       "neutral": [],
@@ -57,7 +47,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; rua=mailto:info@greencom.net; ruf=mailto:info@greencom.net",
+    "record": "v=DMARC1; p=none; rua=mailto:dmarc@greencom.net; ruf=mailto:dmarc@greencom.net",
     "valid": true,
     "location": "ayto-riberadearriba.es",
     "warnings": [
@@ -74,11 +64,11 @@
         "explicit": true
       },
       "rua": {
-        "value": "mailto:info@greencom.net",
+        "value": "mailto:dmarc@greencom.net",
         "explicit": true
       },
       "ruf": {
-        "value": "mailto:info@greencom.net",
+        "value": "mailto:dmarc@greencom.net",
         "explicit": true
       },
       "adkim": {

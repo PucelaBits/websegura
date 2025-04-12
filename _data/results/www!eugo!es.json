@@ -1,27 +1,21 @@
 {
-  "algorithm_version": 2,
-  "end_time": "Fri, 26 Aug 2022 02:10:10 GMT",
-  "grade": "F",
-  "hidden": false,
-  "likelihood_indicator": "MEDIUM",
+  "id": 61173531,
+  "algorithm_version": 4,
+  "scanned_at": "2025-04-11T20:17:09.736Z",
+  "error": null,
+  "grade": "D-",
   "response_headers": {
-    "Cache-Control": "private",
-    "Content-Length": "11297",
-    "Content-Type": "text/html; charset=utf-8",
-    "Date": "Fri, 26 Aug 2022 02:10:05 GMT",
-    "Server": "Microsoft-IIS/8.5",
-    "Set-Cookie": "__RequestVerificationToken=sUUqQBno_mFfjxDWvb5jyUunFIXH74SFjH3q-yFMMzyYYM50xi9R8xwNXljc3sfFBE4P3yBAmj7sB0RHX1q9qBs01DUDd6SC4O1kDFFfMuQ1; path=/; HttpOnly",
-    "Strict-Transport-Security": "max-age=31536000",
-    "X-AspNet-Version": "4.0.30319",
-    "X-AspNetMvc-Version": "5.2",
-    "X-Frame-Options": "SAMEORIGIN"
+    "date": "Fri, 11 Apr 2025 20:17:11 GMT",
+    "server": "Microsoft-IIS/10.0",
+    "connection": "close",
+    "set-cookie": ".AspNetCore.Mvc.CookieTempDataProvider=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/; samesite=lax; httponly",
+    "content-type": "text/html; charset=utf-8",
+    "x-powered-by": "ASP.NET",
+    "transfer-encoding": "chunked"
   },
-  "scan_id": 28966861,
-  "score": 0,
-  "start_time": "Fri, 26 Aug 2022 02:09:59 GMT",
-  "state": "FINISHED",
+  "score": 25,
   "status_code": 200,
-  "tests_failed": 7,
+  "tests_failed": 5,
   "tests_passed": 5,
-  "tests_quantity": 12
+  "tests_quantity": 10
 }

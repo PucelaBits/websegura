@@ -18,7 +18,7 @@
     "error": "rodalies.gencat.cat does not have a SPF TXT record"
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; sp=none; fo=1; ri=3600; rua=mailto:catalunya@rua.dmp.cisco.com,mailto:abuse@gencat.cat; ruf=mailto:catalunya@ruf.dmp.cisco.com,mailto:abuse@gencat.cat",
+    "record": "v=DMARC1; p=none; sp=none; fo=1; ri=3600; rua=mailto:abuse@gencat.cat; ruf=mailto:abuse@gencat.cat",
     "valid": true,
     "location": "gencat.cat",
     "warnings": [],
@@ -49,11 +49,6 @@
         "value": [
           {
             "scheme": "mailto",
-            "address": "catalunya@rua.dmp.cisco.com",
-            "size_limit": null
-          },
-          {
-            "scheme": "mailto",
             "address": "abuse@gencat.cat",
             "size_limit": null
           }
@@ -62,11 +57,6 @@
       },
       "ruf": {
         "value": [
-          {
-            "scheme": "mailto",
-            "address": "catalunya@ruf.dmp.cisco.com",
-            "size_limit": null
-          },
           {
             "scheme": "mailto",
             "address": "abuse@gencat.cat",

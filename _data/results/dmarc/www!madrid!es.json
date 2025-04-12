@@ -4,39 +4,41 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "minerva.ttd.net",
-      "artemis.ttd.net"
+      "a4-64.akam.net",
+      "a1-25.akam.net",
+      "a12-67.akam.net",
+      "a11-65.akam.net",
+      "a26-67.akam.net",
+      "a7-65.akam.net"
     ],
     "warnings": []
   },
   "mx": {
     "hosts": [
       {
-        "preference": 1,
+        "preference": 10,
         "hostname": "madrid-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.18.138",
-          "104.47.18.202"
+          "2a01:111:f403:ca04::c",
+          "2a01:111:f403:ca09::5",
+          "2a01:111:f403:ca09::6",
+          "2a01:111:f403:ca09::a",
+          "52.101.68.10",
+          "52.101.68.15",
+          "52.101.68.18",
+          "52.101.68.5"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:195.55.79.61 ip4:195.55.79.62 ip4:195.55.79.41 ip4:195.55.79.42 ip4:195.55.79.43 ip4:195.55.79.44 ip4:195.55.79.73 ip4:195.55.79.74 ip4:195.55.79.75 ip4:195.55.79.49 ip4:195.55.79.148 ip4:195.55.79.71 ip4:195.55.79.20 ip4:195.55.79.21 ip4:195.55.79.23 ip4:195.55.79.24 ip4:195.55.79.25 include:spf.protection.outlook.com ip4:195.55.79.72 include:spf.augure.com a:origen2.iam.akamai.c.mad.interhost.com ~all",
+    "record": "v=spf1 ip4:195.55.79.41 ip4:195.55.79.42 ip4:195.55.79.43 ip4:195.55.79.44 ip4:195.55.79.49 ip4:195.55.79.20 ip4:195.55.79.21 ip4:195.55.79.22 ip4:195.55.79.23 ip4:195.55.79.24 ip4:195.55.79.25 include:spf.protection.outlook.com include:spf.mailjet.com a:origen2.iam.akamai.c.mad.interhost.com a:origen.iam.akamai.c.mad.interhost.com a:origen3.iam.akamai.c.mad.interhost.com a:origen4.iam.akamai.c.mad.interhost.com include:servers.mcsv.net ip4:54.229.2.165 ip4:52.30.130.201 include:amazonses.com ~all",
     "valid": true,
-    "dns_lookups": 5,
+    "dns_lookups": 8,
     "warnings": [],
     "parsed": {
       "pass": [
-        {
-          "value": "195.55.79.61",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "195.55.79.62",
-          "mechanism": "ip4"
-        },
         {
           "value": "195.55.79.41",
           "mechanism": "ip4"
@@ -54,27 +56,7 @@
           "mechanism": "ip4"
         },
         {
-          "value": "195.55.79.73",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "195.55.79.74",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "195.55.79.75",
-          "mechanism": "ip4"
-        },
-        {
           "value": "195.55.79.49",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "195.55.79.148",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "195.55.79.71",
           "mechanism": "ip4"
         },
         {
@@ -83,6 +65,10 @@
         },
         {
           "value": "195.55.79.21",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "195.55.79.22",
           "mechanism": "ip4"
         },
         {
@@ -98,12 +84,28 @@
           "mechanism": "ip4"
         },
         {
-          "value": "195.55.79.72",
+          "value": "217.75.225.126",
+          "mechanism": "a"
+        },
+        {
+          "value": "217.75.225.125",
+          "mechanism": "a"
+        },
+        {
+          "value": "217.75.225.124",
+          "mechanism": "a"
+        },
+        {
+          "value": "217.75.225.123",
+          "mechanism": "a"
+        },
+        {
+          "value": "54.229.2.165",
           "mechanism": "ip4"
         },
         {
-          "value": "217.75.225.126",
-          "mechanism": "a"
+          "value": "52.30.130.201",
+          "mechanism": "ip4"
         }
       ],
       "neutral": [],
@@ -112,8 +114,8 @@
       "include": [
         {
           "domain": "spf.protection.outlook.com",
-          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/48 include:spfd.protection.outlook.com -all",
-          "dns_lookups": 1,
+          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/15 ip4:52.102.0.0/16 ip4:52.103.0.0/17 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/51 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
+          "dns_lookups": 0,
           "parsed": {
             "pass": [
               {
@@ -125,7 +127,15 @@
                 "mechanism": "ip4"
               },
               {
-                "value": "52.100.0.0/14",
+                "value": "52.100.0.0/15",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.102.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.103.0.0/17",
                 "mechanism": "ip4"
               },
               {
@@ -137,68 +147,26 @@
                 "mechanism": "ip6"
               },
               {
-                "value": "2a01:111:f403::/48",
+                "value": "2a01:111:f403::/49",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:8000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:c000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:f000::/52",
                 "mechanism": "ip6"
               }
             ],
             "neutral": [],
             "softfail": [],
             "fail": [],
-            "include": [
-              {
-                "domain": "spfd.protection.outlook.com",
-                "record": "v=spf1 ip4:51.4.72.0/24 ip4:51.5.72.0/24 ip4:51.5.80.0/27 ip4:20.47.149.138/32 ip4:51.4.80.0/27 ip6:2a01:4180:4051:0800::/64 ip6:2a01:4180:4050:0800::/64 ip6:2a01:4180:4051:0400::/64 ip6:2a01:4180:4050:0400::/64 -all",
-                "dns_lookups": 0,
-                "parsed": {
-                  "pass": [
-                    {
-                      "value": "51.4.72.0/24",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "51.5.72.0/24",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "51.5.80.0/27",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "20.47.149.138/32",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "51.4.80.0/27",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "2a01:4180:4051:0800::/64",
-                      "mechanism": "ip6"
-                    },
-                    {
-                      "value": "2a01:4180:4050:0800::/64",
-                      "mechanism": "ip6"
-                    },
-                    {
-                      "value": "2a01:4180:4051:0400::/64",
-                      "mechanism": "ip6"
-                    },
-                    {
-                      "value": "2a01:4180:4050:0400::/64",
-                      "mechanism": "ip6"
-                    }
-                  ],
-                  "neutral": [],
-                  "softfail": [],
-                  "fail": [],
-                  "include": [],
-                  "redirect": null,
-                  "exp": null,
-                  "all": "fail"
-                },
-                "warnings": []
-              }
-            ],
+            "include": [],
             "redirect": null,
             "exp": null,
             "all": "fail"
@@ -206,77 +174,133 @@
           "warnings": []
         },
         {
-          "domain": "spf.augure.com",
-          "record": "v=spf1 ip4:141.94.7.30 ip4:141.94.7.31 ip4:141.94.7.32/27 ip4:91.204.117.80/29 ip4:91.204.117.36 include:engage.augure.com ~all",
-          "dns_lookups": 1,
+          "domain": "spf.mailjet.com",
+          "record": "v=spf1 ip4:87.253.232.0/21 ip4:185.189.236.0/22 ip4:185.211.120.0/22 ip4:185.250.236.0/22 ip4:45.14.148.0/22 ~all",
+          "dns_lookups": 0,
           "parsed": {
             "pass": [
               {
-                "value": "141.94.7.30",
+                "value": "87.253.232.0/21",
                 "mechanism": "ip4"
               },
               {
-                "value": "141.94.7.31",
+                "value": "185.189.236.0/22",
                 "mechanism": "ip4"
               },
               {
-                "value": "141.94.7.32/27",
+                "value": "185.211.120.0/22",
                 "mechanism": "ip4"
               },
               {
-                "value": "91.204.117.80/29",
+                "value": "185.250.236.0/22",
                 "mechanism": "ip4"
               },
               {
-                "value": "91.204.117.36",
+                "value": "45.14.148.0/22",
                 "mechanism": "ip4"
               }
             ],
             "neutral": [],
             "softfail": [],
             "fail": [],
-            "include": [
-              {
-                "domain": "engage.augure.com",
-                "record": "v=spf1 ip4:91.204.117.4 ip4:91.204.117.10 ip4:91.204.117.11 ip4:91.204.117.12 ip4:91.204.117.13 ~all",
-                "dns_lookups": 0,
-                "parsed": {
-                  "pass": [
-                    {
-                      "value": "91.204.117.4",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "91.204.117.10",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "91.204.117.11",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "91.204.117.12",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "91.204.117.13",
-                      "mechanism": "ip4"
-                    }
-                  ],
-                  "neutral": [],
-                  "softfail": [],
-                  "fail": [],
-                  "include": [],
-                  "redirect": null,
-                  "exp": null,
-                  "all": "softfail"
-                },
-                "warnings": []
-              }
-            ],
+            "include": [],
             "redirect": null,
             "exp": null,
             "all": "softfail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "servers.mcsv.net",
+          "record": "v=spf1 ip4:205.201.128.0/20 ip4:198.2.128.0/18 ip4:148.105.8.0/21 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "205.201.128.0/20",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "198.2.128.0/18",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "148.105.8.0/21",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "amazonses.com",
+          "record": "v=spf1 ip4:199.255.192.0/22 ip4:199.127.232.0/22 ip4:54.240.0.0/18 ip4:69.169.224.0/20 ip4:23.249.208.0/20 ip4:23.251.224.0/19 ip4:76.223.176.0/20 ip4:54.240.64.0/19 ip4:54.240.96.0/19 ip4:76.223.128.0/19 ip4:216.221.160.0/19 ip4:206.55.144.0/20 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "199.255.192.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "199.127.232.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "54.240.0.0/18",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "69.169.224.0/20",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "23.249.208.0/20",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "23.251.224.0/19",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "76.223.176.0/20",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "54.240.64.0/19",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "54.240.96.0/19",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "76.223.128.0/19",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "216.221.160.0/19",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "206.55.144.0/20",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
           },
           "warnings": []
         }
@@ -287,7 +311,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; rua=mailto:informesdmarc@madrid.es; ruf=mailto:informesdmarc@madrid.es; fo=1",
+    "record": "v=DMARC1; p=reject; rua=mailto:7091677fcff6.a@dmarcinput.com,mailto:informesdmarc@madrid.es; ruf=mailto:7091677fcff6.f@dmarcinput.com,mailto:informesdmarc@madrid.es; fo=1",
     "valid": true,
     "location": "madrid.es",
     "warnings": [],
@@ -297,11 +321,16 @@
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "reject",
         "explicit": true
       },
       "rua": {
         "value": [
+          {
+            "scheme": "mailto",
+            "address": "7091677fcff6.a@dmarcinput.com",
+            "size_limit": null
+          },
           {
             "scheme": "mailto",
             "address": "informesdmarc@madrid.es",
@@ -312,6 +341,11 @@
       },
       "ruf": {
         "value": [
+          {
+            "scheme": "mailto",
+            "address": "7091677fcff6.f@dmarcinput.com",
+            "size_limit": null
+          },
           {
             "scheme": "mailto",
             "address": "informesdmarc@madrid.es",
@@ -349,7 +383,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "none",
+        "value": "reject",
         "explicit": false
       }
     }

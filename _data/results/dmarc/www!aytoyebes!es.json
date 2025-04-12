@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.almazena.com",
+      "ns3.almazena.com",
       "ns1.almazena.com",
-      "ns3.almazena.com"
+      "ns2.almazena.com"
     ],
     "warnings": []
   },
@@ -14,25 +14,69 @@
     "hosts": [
       {
         "preference": 0,
-        "hostname": "aytoyebes.es",
+        "hostname": "mail.aytoyebes.es",
         "addresses": [
-          "185.5.126.59"
+          "185.177.154.188"
         ]
       }
     ],
-    "warnings": [
-      "185.5.126.59 does not have any reverse DNS (PTR) records"
-    ]
+    "warnings": []
   },
   "spf": {
-    "record": null,
+    "record": "v=spf1 a mx include:almazena.com include:spf.profesionalhosting.com -all",
     "valid": false,
-    "error": "aytoyebes.es does not have a SPF TXT record"
+    "warnings": [],
+    "error": "Parsing the SPF record requires 11/10 maximum DNS lookups - https://tools.ietf.org/html/rfc7208#section-4.6.4",
+    "dns_lookups": 11
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=quarantine; adkim=s; aspf=s",
+    "valid": true,
+    "location": "aytoyebes.es",
+    "warnings": [
+      "rua tag (destination for aggregate reports) not found"
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "s",
+        "explicit": true
+      },
+      "aspf": {
+        "value": "s",
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "quarantine",
+        "explicit": false
+      }
+    }
   }
 }

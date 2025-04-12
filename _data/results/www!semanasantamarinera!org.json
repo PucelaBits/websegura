@@ -1,27 +1,27 @@
 {
-  "algorithm_version": 2,
-  "end_time": "Thu, 25 Aug 2022 01:08:41 GMT",
-  "grade": "F",
+  "algorithm_version": 3,
+  "end_time": "Tue, 22 Oct 2024 00:15:03 GMT",
+  "grade": "D-",
   "hidden": false,
   "likelihood_indicator": "MEDIUM",
   "response_headers": {
+    "Cache-Control": "max-age=3, must-revalidate",
     "Connection": "keep-alive",
+    "Content-Encoding": "gzip",
+    "Content-Length": "45130",
     "Content-Type": "text/html; charset=UTF-8",
-    "Date": "Thu, 25 Aug 2022 01:07:16 GMT",
-    "Link": "<https://www.semanasantamarinera.org/wp-json/>; rel=\"https://api.w.org/\", <https://www.semanasantamarinera.org/wp-json/wp/v2/pages/1856>; rel=\"alternate\"; type=\"application/json\", <https://www.semanasantamarinera.org/>; rel=shortlink",
+    "Date": "Tue, 22 Oct 2024 00:14:51 GMT",
+    "Last-Modified": "Tue, 22 Oct 2024 00:14:50 GMT",
     "Server": "nginx",
-    "Transfer-Encoding": "chunked",
-    "X-Powered-By": "PHP/7.3.33, PleskLin",
-    "X-TEC-API-ORIGIN": "https://www.semanasantamarinera.org",
-    "X-TEC-API-ROOT": "https://www.semanasantamarinera.org/wp-json/tribe/events/v1/",
-    "X-TEC-API-VERSION": "v1"
+    "Vary": "Accept-Encoding,Cookie",
+    "X-Powered-By": "PHP/7.4.33, PleskLin"
   },
-  "scan_id": 28946331,
-  "score": 15,
-  "start_time": "Thu, 25 Aug 2022 01:07:02 GMT",
+  "scan_id": 57131589,
+  "score": 25,
+  "start_time": "Tue, 22 Oct 2024 00:14:48 GMT",
   "state": "FINISHED",
   "status_code": 200,
-  "tests_failed": 6,
-  "tests_passed": 6,
-  "tests_quantity": 12
+  "tests_failed": 5,
+  "tests_passed": 5,
+  "tests_quantity": 10
 }

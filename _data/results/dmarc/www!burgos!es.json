@@ -4,57 +4,22 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "tapia.csa.es",
-      "clunia.csa.es",
-      "dns1.csanet.io",
-      "buniel.csa.es",
-      "nso.nic.es"
+      "ns07.ns-cloud4b.org",
+      "ns08.ns-cloud4b.com",
+      "ns06.ns-cloud4b.net"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "atapuerca.csa.es",
-        "addresses": [
-          "5.40.65.234"
-        ]
-      },
-      {
-        "preference": 80,
-        "hostname": "silos.csa.es",
-        "addresses": [
-          "5.40.65.34"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
   },
   "spf": {
-    "record": "v=spf1 mx -all",
-    "valid": true,
-    "dns_lookups": 1,
-    "warnings": [],
-    "parsed": {
-      "pass": [
-        {
-          "value": "atapuerca.csa.es",
-          "mechanism": "mx"
-        },
-        {
-          "value": "silos.csa.es",
-          "mechanism": "mx"
-        }
-      ],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [],
-      "redirect": null,
-      "exp": null,
-      "all": "fail"
-    }
+    "record": null,
+    "valid": false,
+    "error": "burgos.es does not have a SPF TXT record"
   },
   "dmarc": {
     "record": null,

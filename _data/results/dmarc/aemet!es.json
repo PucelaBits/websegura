@@ -1,7 +1,7 @@
 {
   "domain": "aemet.es",
   "base_domain": "aemet.es",
-  "dnssec": false,
+  "dnssec": true,
   "ns": {
     "hostnames": [
       "ns1.age.gob.es",
@@ -16,7 +16,9 @@
         "hostname": "mail1.correo.gob.es",
         "addresses": [
           "185.73.172.122",
-          "185.73.172.123"
+          "185.73.172.123",
+          "185.73.173.17",
+          "185.73.173.18"
         ]
       },
       {
@@ -58,39 +60,27 @@
           "mechanism": "a"
         },
         {
-          "value": "185.73.174.101",
+          "value": "185.73.173.17",
           "mechanism": "a"
         },
         {
-          "value": "185.73.174.102",
+          "value": "185.73.173.18",
           "mechanism": "a"
         },
         {
-          "value": "185.73.174.103",
+          "value": "185.73.173.19",
           "mechanism": "a"
         },
         {
-          "value": "185.73.174.220",
+          "value": "185.73.173.20",
           "mechanism": "a"
         },
         {
-          "value": "185.73.174.91",
+          "value": "185.73.173.21",
           "mechanism": "a"
         },
         {
-          "value": "185.73.174.92",
-          "mechanism": "a"
-        },
-        {
-          "value": "185.73.174.97",
-          "mechanism": "a"
-        },
-        {
-          "value": "185.73.174.98",
-          "mechanism": "a"
-        },
-        {
-          "value": "185.73.174.99",
+          "value": "185.73.173.22",
           "mechanism": "a"
         }
       ],
@@ -104,9 +94,71 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=quarantine; rua=mailto:avisos.correo@correo.gob.es; ruf=mailto:avisos.correo@correo.gob.es; fo=1;",
+    "valid": true,
+    "location": "aemet.es",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "avisos.correo@correo.gob.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "avisos.correo@correo.gob.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "1"
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "quarantine",
+        "explicit": false
+      }
+    }
   }
 }

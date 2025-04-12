@@ -3,23 +3,101 @@
   "base_domain": "lasregueras.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "All nameservers failed to answer the query lasregueras.es. IN NS: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "hostnames": [
+      "ns2.lasregueras.es",
+      "ns1.lasregueras.es"
+    ],
+    "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query lasregueras.es. IN MX: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.lasregueras.es",
+        "addresses": [
+          "5.56.167.57"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
-    "record": "v=spf1 +a +mx +include:dv4.digival.org -all",
-    "valid": false,
+    "record": "v=spf1 +a +mx +a:dv7.digival.biz -all",
+    "valid": true,
+    "dns_lookups": 3,
     "warnings": [],
-    "error": "dv4.digival.org does not have a SPF TXT record"
+    "parsed": {
+      "pass": [
+        {
+          "value": "212.89.23.124",
+          "mechanism": "a"
+        },
+        {
+          "value": "mail.lasregueras.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "5.56.167.57",
+          "mechanism": "a"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "All nameservers failed to answer the query _dmarc.lasregueras.es. IN TXT: Server 1.0.0.1 UDP port 53 answered SERVFAIL"
+    "record": "v=DMARC1; p=quarantine; adkim=s; aspf=s",
+    "valid": true,
+    "location": "lasregueras.es",
+    "warnings": [
+      "rua tag (destination for aggregate reports) not found"
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "s",
+        "explicit": true
+      },
+      "aspf": {
+        "value": "s",
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "quarantine",
+        "explicit": false
+      }
+    }
   }
 }

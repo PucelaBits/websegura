@@ -1,7 +1,7 @@
 {
   "domain": "reus.cat",
   "base_domain": "reus.cat",
-  "dnssec": true,
+  "dnssec": false,
   "ns": {
     "hostnames": [
       "chip.ns.cloudflare.com",
@@ -50,7 +50,7 @@
       "include": [
         {
           "domain": "spf.ipzmarketing.com",
-          "record": "v=spf1 ip4:93.159.208.0/21 ip4:185.103.8.0/22 ip4:5.56.22.0/24 ip4:82.199.156.0/24 ip4:212.192.13.0/24 ~all",
+          "record": "v=spf1 ip4:93.159.208.0/21 ip4:185.103.8.0/22 ip4:5.56.22.0/24 ip4:82.199.156.0/24 ip4:91.194.237.0/24 -all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -71,7 +71,7 @@
                 "mechanism": "ip4"
               },
               {
-                "value": "212.192.13.0/24",
+                "value": "91.194.237.0/24",
                 "mechanism": "ip4"
               }
             ],
@@ -81,34 +81,30 @@
             "include": [],
             "redirect": null,
             "exp": null,
-            "all": "softfail"
+            "all": "fail"
           },
           "warnings": []
         },
         {
           "domain": "eu.transmail.net",
-          "record": "v=spf1 ip4:31.186.226.0/24 ip4:185.20.211.0/24 ip4:185.172.199.128/26 ip4:185.172.199.192/27 ip4:185.172.199.56/29 ~all",
+          "record": "v=spf1 ip4:136.143.168.0/24 ip4:136.143.170.0/24 ip4:185.172.198.0/24 ip4:199.67.72.0/22 ~all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
               {
-                "value": "31.186.226.0/24",
+                "value": "136.143.168.0/24",
                 "mechanism": "ip4"
               },
               {
-                "value": "185.20.211.0/24",
+                "value": "136.143.170.0/24",
                 "mechanism": "ip4"
               },
               {
-                "value": "185.172.199.128/26",
+                "value": "185.172.198.0/24",
                 "mechanism": "ip4"
               },
               {
-                "value": "185.172.199.192/27",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "185.172.199.56/29",
+                "value": "199.67.72.0/22",
                 "mechanism": "ip4"
               }
             ],
@@ -129,7 +125,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=reject; rua=mailto:dmarc-reports@reus.cat; ruf=mailto:dmarc-forensics@reus.cat; fo=1",
+    "record": "v=DMARC1; p=reject; sp=reject; rua=mailto:dmarc-reports@reus.cat; ruf=mailto:dmarc-forensics@reus.cat; fo=1",
     "valid": true,
     "location": "reus.cat",
     "warnings": [],
@@ -139,6 +135,10 @@
         "explicit": true
       },
       "p": {
+        "value": "reject",
+        "explicit": true
+      },
+      "sp": {
         "value": "reject",
         "explicit": true
       },
@@ -188,10 +188,6 @@
       },
       "ri": {
         "value": 86400,
-        "explicit": false
-      },
-      "sp": {
-        "value": "reject",
         "explicit": false
       }
     }

@@ -4,12 +4,12 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.ibsalut.es",
-      "ns1.ibsalut.es",
-      "ns1.ssib.es",
-      "ns2.ibsalut.es",
-      "ns2.ssib.es",
-      "dns1.ibsalut.es"
+      "a28-66.akam.net",
+      "a13-66.akam.net",
+      "a5-64.akam.net",
+      "a1-171.akam.net",
+      "a24-66.akam.net",
+      "a2-66.akam.net"
     ],
     "warnings": []
   },
@@ -41,7 +41,7 @@
         {
           "domain": "spf.tmes.trendmicro.com",
           "record": "v=spf1 ip4:18.208.22.64/26 ip4:18.208.22.128/25 ip4:18.185.115.128/26 ip4:18.185.115.0/25 ip4:13.238.202.0/25 ip4:13.238.202.128/26 ip4:18.176.203.128/25 ip4:13.213.174.128/25 ip4:18.177.156.0/25 ip4:13.213.220.0/25 include:spfb.tmes.trendmicro.com ~all",
-          "dns_lookups": 1,
+          "dns_lookups": 2,
           "parsed": {
             "pass": [
               {
@@ -91,39 +91,97 @@
             "include": [
               {
                 "domain": "spfb.tmes.trendmicro.com",
-                "record": "v=spf1 ip4:18.188.9.192/26 ip4:18.188.239.128/26 ip4:34.253.238.128/26 ip4:34.253.238.192/26 ip4:52.202.71.114 ip4:54.145.52.119 ~all",
-                "dns_lookups": 0,
+                "record": "v=spf1 ip4:107.22.223.18 ip4:52.70.252.86 ip4:35.156.245.132 ip4:18.156.0.20 ip4:3.72.196.143 ip4:54.146.4.63 ip4:54.174.82.86 include:spfc.tmes.trendmicro.com ~all",
+                "dns_lookups": 1,
                 "parsed": {
                   "pass": [
                     {
-                      "value": "18.188.9.192/26",
+                      "value": "107.22.223.18",
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "18.188.239.128/26",
+                      "value": "52.70.252.86",
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "34.253.238.128/26",
+                      "value": "35.156.245.132",
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "34.253.238.192/26",
+                      "value": "18.156.0.20",
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "52.202.71.114",
+                      "value": "3.72.196.143",
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "54.145.52.119",
+                      "value": "54.146.4.63",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "54.174.82.86",
                       "mechanism": "ip4"
                     }
                   ],
                   "neutral": [],
                   "softfail": [],
                   "fail": [],
-                  "include": [],
+                  "include": [
+                    {
+                      "domain": "spfc.tmes.trendmicro.com",
+                      "record": "v=spf1 ip4:18.188.9.192/26 ip4:18.188.239.128/26 ip4:34.253.238.128/26 ip4:34.253.238.192/26 ip4:15.168.56.0/25 ip4:15.168.49.64/26 ip4:15.168.56.128/26 ip4:18.97.0.160/27 ip4:18.96.32.128/27 ~all",
+                      "dns_lookups": 0,
+                      "parsed": {
+                        "pass": [
+                          {
+                            "value": "18.188.9.192/26",
+                            "mechanism": "ip4"
+                          },
+                          {
+                            "value": "18.188.239.128/26",
+                            "mechanism": "ip4"
+                          },
+                          {
+                            "value": "34.253.238.128/26",
+                            "mechanism": "ip4"
+                          },
+                          {
+                            "value": "34.253.238.192/26",
+                            "mechanism": "ip4"
+                          },
+                          {
+                            "value": "15.168.56.0/25",
+                            "mechanism": "ip4"
+                          },
+                          {
+                            "value": "15.168.49.64/26",
+                            "mechanism": "ip4"
+                          },
+                          {
+                            "value": "15.168.56.128/26",
+                            "mechanism": "ip4"
+                          },
+                          {
+                            "value": "18.97.0.160/27",
+                            "mechanism": "ip4"
+                          },
+                          {
+                            "value": "18.96.32.128/27",
+                            "mechanism": "ip4"
+                          }
+                        ],
+                        "neutral": [],
+                        "softfail": [],
+                        "fail": [],
+                        "include": [],
+                        "redirect": null,
+                        "exp": null,
+                        "all": "softfail"
+                      },
+                      "warnings": []
+                    }
+                  ],
                   "redirect": null,
                   "exp": null,
                   "all": "softfail"
@@ -176,8 +234,8 @@
         },
         {
           "domain": "spf.protection.outlook.com",
-          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/48 include:spfd.protection.outlook.com -all",
-          "dns_lookups": 1,
+          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/15 ip4:52.102.0.0/16 ip4:52.103.0.0/17 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/51 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
+          "dns_lookups": 0,
           "parsed": {
             "pass": [
               {
@@ -189,7 +247,15 @@
                 "mechanism": "ip4"
               },
               {
-                "value": "52.100.0.0/14",
+                "value": "52.100.0.0/15",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.102.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.103.0.0/17",
                 "mechanism": "ip4"
               },
               {
@@ -201,68 +267,26 @@
                 "mechanism": "ip6"
               },
               {
-                "value": "2a01:111:f403::/48",
+                "value": "2a01:111:f403::/49",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:8000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:c000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:f000::/52",
                 "mechanism": "ip6"
               }
             ],
             "neutral": [],
             "softfail": [],
             "fail": [],
-            "include": [
-              {
-                "domain": "spfd.protection.outlook.com",
-                "record": "v=spf1 ip4:51.4.72.0/24 ip4:51.5.72.0/24 ip4:51.5.80.0/27 ip4:20.47.149.138/32 ip4:51.4.80.0/27 ip6:2a01:4180:4051:0800::/64 ip6:2a01:4180:4050:0800::/64 ip6:2a01:4180:4051:0400::/64 ip6:2a01:4180:4050:0400::/64 -all",
-                "dns_lookups": 0,
-                "parsed": {
-                  "pass": [
-                    {
-                      "value": "51.4.72.0/24",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "51.5.72.0/24",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "51.5.80.0/27",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "20.47.149.138/32",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "51.4.80.0/27",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "2a01:4180:4051:0800::/64",
-                      "mechanism": "ip6"
-                    },
-                    {
-                      "value": "2a01:4180:4050:0800::/64",
-                      "mechanism": "ip6"
-                    },
-                    {
-                      "value": "2a01:4180:4051:0400::/64",
-                      "mechanism": "ip6"
-                    },
-                    {
-                      "value": "2a01:4180:4050:0400::/64",
-                      "mechanism": "ip6"
-                    }
-                  ],
-                  "neutral": [],
-                  "softfail": [],
-                  "fail": [],
-                  "include": [],
-                  "redirect": null,
-                  "exp": null,
-                  "all": "fail"
-                },
-                "warnings": []
-              }
-            ],
+            "include": [],
             "redirect": null,
             "exp": null,
             "all": "fail"
@@ -276,7 +300,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; rua=mailto:dmarc.reports@ibsalut.es; ruf=mailto:dmarc.reports@ibsalut.es; fo=1:d:s; ri=3600",
+    "record": "v=DMARC1; p=quarantine; pct=100; ruf=mailto:dmarc.reports@ibsalut.es; rua=mailto:dmarc.reports@ibsalut.es; adkim=r; aspf=r; ri=3600",
     "valid": true,
     "location": "ibsalut.es",
     "warnings": [],
@@ -289,14 +313,8 @@
         "value": "quarantine",
         "explicit": true
       },
-      "rua": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "dmarc.reports@ibsalut.es",
-            "size_limit": null
-          }
-        ],
+      "pct": {
+        "value": 100,
         "explicit": true
       },
       "ruf": {
@@ -309,28 +327,32 @@
         ],
         "explicit": true
       },
-      "fo": {
+      "rua": {
         "value": [
-          "1",
-          "d",
-          "s"
+          {
+            "scheme": "mailto",
+            "address": "dmarc.reports@ibsalut.es",
+            "size_limit": null
+          }
         ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": true
+      },
+      "aspf": {
+        "value": "r",
         "explicit": true
       },
       "ri": {
         "value": 3600,
         "explicit": true
       },
-      "adkim": {
-        "value": "r",
-        "explicit": false
-      },
-      "aspf": {
-        "value": "r",
-        "explicit": false
-      },
-      "pct": {
-        "value": 100,
+      "fo": {
+        "value": [
+          "0"
+        ],
         "explicit": false
       },
       "rf": {

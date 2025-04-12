@@ -4,31 +4,61 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.7i-misdns.net",
-      "ns2.7i-misdns.net"
+      "ns1.visitlapalma.es",
+      "ns2.visitlapalma.es"
     ],
     "warnings": []
   },
   "mx": {
     "hosts": [
       {
-        "preference": 5,
+        "preference": 10,
         "hostname": "mail.visitlapalma.es",
         "addresses": [
-          "116.202.214.20"
+          "89.248.100.48"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "All nameservers failed to answer the query visitlapalma.vhost.interdominios.com. IN AAAA: Server Do53:127.0.0.53@53 answered SERVFAIL",
+      "The reverse DNS of 89.248.100.48 is visitlapalma.vhost.interdominios.com, but the A/AAAA DNS records for visitlapalma.vhost.interdominios.com do not resolve to 89.248.100.48"
+    ]
   },
   "spf": {
-    "record": "v=spf1 mx a ip4:116.202.0.0/15 mx include:visitlapalma.es -all",
-    "valid": false,
+    "record": "v=spf1 a mx a:visitlapalma.vhost.interdominios.com ~all",
+    "valid": true,
+    "dns_lookups": 3,
     "warnings": [],
-    "error": "Include loop: visitlapalma.es"
+    "parsed": {
+      "pass": [
+        {
+          "value": "185.79.128.155",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.79.128.156",
+          "mechanism": "a"
+        },
+        {
+          "value": "mail.visitlapalma.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "89.248.100.48",
+          "mechanism": "a"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none",
+    "record": "v=DMARC1; p=quarantine; adkim=s; aspf=s",
     "valid": true,
     "location": "visitlapalma.es",
     "warnings": [
@@ -40,16 +70,16 @@
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": true
       },
       "adkim": {
-        "value": "r",
-        "explicit": false
+        "value": "s",
+        "explicit": true
       },
       "aspf": {
-        "value": "r",
-        "explicit": false
+        "value": "s",
+        "explicit": true
       },
       "fo": {
         "value": [
@@ -72,7 +102,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": false
       }
     }

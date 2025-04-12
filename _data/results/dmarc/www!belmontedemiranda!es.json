@@ -15,14 +15,14 @@
         "preference": 10,
         "hostname": "mail.belmontedemiranda.es",
         "addresses": [
-          "212.89.13.125"
+          "89.17.204.80"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx a ip4:212.89.13.125  -all",
+    "record": "v=spf1 mx a ip4:89.17.204.80 ip4:89.17.204.220 ip4:89.17.204.215 -all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
@@ -33,11 +33,19 @@
           "mechanism": "mx"
         },
         {
-          "value": "212.89.23.82",
+          "value": "212.89.23.124",
           "mechanism": "a"
         },
         {
-          "value": "212.89.13.125",
+          "value": "89.17.204.80",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "89.17.204.220",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "89.17.204.215",
           "mechanism": "ip4"
         }
       ],

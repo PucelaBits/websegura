@@ -107,9 +107,8 @@ function outdated(site) {
       new Date(info.start_time).valueOf() >
       Date.now() - MAX_TIME_TO_REFRESH_MILLIS;
 
-    console.log('\tstate = ' + info.state + ' ' + info.start_time);
-    if (info.state === "FINISHED" && recent) {
-      console.log('\tNo need to analyze it');
+    if (recent) {
+      console.log('\tRecent result. No need to analyze it');
       return false;
     }
   }

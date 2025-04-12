@@ -1,11 +1,13 @@
 {
   "domain": "datos.gob.es",
   "base_domain": "datos.gob.es",
-  "dnssec": false,
+  "dnssec": true,
   "ns": {
     "hostnames": [
-      "ns2.red.es",
-      "ns1.red.es"
+      "ns-59.awsdns-07.com",
+      "ns-703.awsdns-23.net",
+      "ns-1411.awsdns-48.org",
+      "ns-1618.awsdns-10.co.uk"
     ],
     "warnings": []
   },
@@ -15,18 +17,182 @@
         "preference": 10,
         "hostname": "datos-gob-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.4.36",
-          "104.47.6.36"
+          "2a01:111:f403:ca04::e",
+          "2a01:111:f403:ca04::f",
+          "2a01:111:f403:ca09::",
+          "2a01:111:f403:ca09::b",
+          "52.101.68.18",
+          "52.101.68.21",
+          "52.101.68.29",
+          "52.101.73.11"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 MS=ms80108025 include:spf.red.es include:spf.protection.outlook.com include:spf.sendinblue.com -all",
-    "valid": false,
+    "record": "v=spf1 include:spf.red.es include:spf.protection.outlook.com include:spf.sendinblue.com -all",
+    "valid": true,
+    "dns_lookups": 3,
     "warnings": [],
-    "error": "datos.gob.es: Expected end_of_statement or mechanism at position 7 in: v=spf1 MS=ms80108025 include:spf.red.es include:spf.protection.outlook.com include:spf.sendinblue.com -all"
+    "parsed": {
+      "pass": [],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "spf.red.es",
+          "record": "v=spf1 ip4:194.69.254.0/24 ip4:193.146.142.168 ip4:130.206.1.3 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "194.69.254.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "193.146.142.168",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "130.206.1.3",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "spf.protection.outlook.com",
+          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/15 ip4:52.102.0.0/16 ip4:52.103.0.0/17 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/51 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "40.92.0.0/15",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "40.107.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.100.0.0/15",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.102.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.103.0.0/17",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "104.47.0.0/17",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "2a01:111:f400::/48",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403::/49",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:8000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:c000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:f000::/52",
+                "mechanism": "ip6"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "spf.sendinblue.com",
+          "record": "v=spf1 ip4:185.41.28.0/22 ip4:94.143.16.0/21 ip4:185.24.144.0/22 ip4:153.92.224.0/19 ip4:213.32.128.0/18 ip4:185.107.232.0/22 ip4:77.32.128.0/18 ip4:77.32.192.0/19 ip4:212.146.192.0/18 ip4:172.246.0.0/18 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "185.41.28.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "94.143.16.0/21",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.24.144.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "153.92.224.0/19",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "213.32.128.0/18",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.107.232.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "77.32.128.0/18",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "77.32.192.0/19",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "212.146.192.0/18",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "172.246.0.0/18",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
     "record": "v=DMARC1; p=none; fo=0; rua=mailto:abuse@datos.gob.es",

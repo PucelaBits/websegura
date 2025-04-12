@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.nominalia.com",
-      "dns2.nominalia.com"
+      "mortadelo.telecable.es",
+      "dns.asturias.es"
     ],
     "warnings": []
   },
@@ -13,18 +13,42 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "mail.nominalia.com",
+        "hostname": "mail.turismoasturias.es",
         "addresses": [
-          "195.110.124.132"
+          "51.38.237.179"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "turismoasturias.es does not have a SPF TXT record"
+    "record": "v=spf1 +a +mx +a:dns5.emarketers.com -all",
+    "valid": true,
+    "dns_lookups": 3,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "88.151.16.192",
+          "mechanism": "a"
+        },
+        {
+          "value": "mail.turismoasturias.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "51.38.237.179",
+          "mechanism": "a"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
     "record": null,

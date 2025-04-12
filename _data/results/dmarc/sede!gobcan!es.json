@@ -4,18 +4,16 @@
   "dnssec": false,
   "ns": {
     "hostnames": [],
-    "warnings": []
+    "error": "The domain sede.gobcan.es does not exist"
   },
   "mx": {
     "hosts": [],
-    "warnings": [
-      "No MX records found. Is the domain parked?"
-    ]
+    "error": "The domain sede.gobcan.es does not exist"
   },
   "spf": {
     "record": null,
     "valid": false,
-    "error": "sede.gobcan.es does not have a SPF TXT record"
+    "error": "The domain sede.gobcan.es does not exist"
   },
   "dmarc": {
     "record": null,

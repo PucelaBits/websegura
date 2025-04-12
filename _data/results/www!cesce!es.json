@@ -1,29 +1,29 @@
 {
-  "algorithm_version": 2,
-  "end_time": "Fri, 26 Aug 2022 02:10:30 GMT",
-  "grade": "C",
+  "algorithm_version": 3,
+  "end_time": "Tue, 22 Oct 2024 00:56:00 GMT",
+  "grade": "B",
   "hidden": false,
   "likelihood_indicator": "MEDIUM",
   "response_headers": {
     "Connection": "Keep-Alive",
     "Content-Encoding": "gzip",
+    "Content-Length": "43741",
     "Content-Type": "text/html;charset=UTF-8",
-    "Date": "Fri, 26 Aug 2022 02:10:07 GMT",
+    "Date": "Tue, 22 Oct 2024 00:55:47 GMT",
     "Keep-Alive": "timeout=5, max=99",
-    "Liferay-Portal": "Liferay Community Edition Portal 7.3.7 CE GA8 (Athanasius / Build 7307 / April 13, 2021)",
     "Server": "Apache",
-    "Set-Cookie": "JSESSIONID=BFF56F24D60BB372FE26453DC0FC51F6; Path=/; Secure; HttpOnly, GUEST_LANGUAGE_ID=es_ES; Max-Age=31536000; Expires=Sat, 26-Aug-2023 02:10:07 GMT; Path=/; Secure; HttpOnly, COOKIE_SUPPORT=true; Max-Age=31536000; Expires=Sat, 26-Aug-2023 02:10:07 GMT; Path=/; Secure; HttpOnly",
-    "Transfer-Encoding": "chunked",
+    "Set-Cookie": "JSESSIONID=75D98344DA8726D4E89BE8C7C1AF6353; Path=/; Secure; HttpOnly, GUEST_LANGUAGE_ID=syks8d8nDVrtBVPHzuRWZXudRrx7eCXPlMxYE5Fa6c+3aSiDc5GTyoV0qxdZ3PnzIUfa/UuguCpbJi/ZB5ZkBY6msNtf; Max-Age=31536000; Expires=Wed, 22-Oct-2025 00:55:47 GMT; Path=/; Secure; HttpOnly, COOKIE_SUPPORT=CaurlnB3l9CvT2XlfUaXn7ZZqodq9sVX1ahEoaPb1/Lu7qsufnXS6t3NQ99QxDFrp8LcyRj2U1lZGKY1FP9g9EwkYHM=; Max-Age=31536000; Expires=Wed, 22-Oct-2025 00:55:47 GMT; Path=/; Secure; HttpOnly",
+    "Strict-Transport-Security": "max-age=63072000; includeSubDomains",
     "X-Content-Type-Options": "nosniff",
     "X-Frame-Options": "SAMEORIGIN",
-    "X-XSS-Protection": "1"
+    "X-XSS-Protection": "1; mode=block"
   },
-  "scan_id": 28966958,
-  "score": 55,
-  "start_time": "Fri, 26 Aug 2022 02:10:02 GMT",
+  "scan_id": 57132732,
+  "score": 70,
+  "start_time": "Tue, 22 Oct 2024 00:55:44 GMT",
   "state": "FINISHED",
   "status_code": 200,
   "tests_failed": 2,
-  "tests_passed": 10,
-  "tests_quantity": 12
+  "tests_passed": 8,
+  "tests_quantity": 10
 }

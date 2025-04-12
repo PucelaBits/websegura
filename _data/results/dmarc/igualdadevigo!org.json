@@ -15,21 +15,21 @@
         "preference": 10,
         "hostname": "mail.igualdadevigo.org",
         "addresses": [
-          "95.211.243.170"
+          "164.138.208.95"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 a mx ip4:95.211.243.170 -all",
+    "record": "v=spf1 a mx ip4:164.138.208.100 -all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "95.211.243.170",
+          "value": "164.138.208.95",
           "mechanism": "a"
         },
         {
@@ -37,7 +37,7 @@
           "mechanism": "mx"
         },
         {
-          "value": "95.211.243.170",
+          "value": "164.138.208.100",
           "mechanism": "ip4"
         }
       ],

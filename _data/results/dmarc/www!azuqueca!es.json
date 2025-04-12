@@ -4,16 +4,23 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.redunda.com",
-      "ns.redunda.com"
+      "ns07.ns-cloud4b.org",
+      "ns06.ns-cloud4b.net",
+      "ns08.ns-cloud4b.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "warnings": [
-      "No MX records found. Is the domain parked?"
-    ]
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.azuqueca.es",
+        "addresses": [
+          "84.246.210.27"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": null,

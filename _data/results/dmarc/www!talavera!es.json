@@ -4,12 +4,11 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns12.dnsmadeeasy.com",
-      "ns14.dnsmadeeasy.com",
-      "ns10.dnsmadeeasy.com",
-      "ns15.dnsmadeeasy.com",
-      "ns11.dnsmadeeasy.com",
-      "ns13.dnsmadeeasy.com"
+      "ns5.cdmondns-01.com",
+      "ns1.cdmon.net",
+      "ns4.cdmondns-01.org",
+      "ns2.cdmon.net",
+      "ns3.cdmon.net"
     ],
     "warnings": []
   },
@@ -28,6 +27,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.talavera.es\n\nsolicitud.aytotalavera.es-946406596"
   }
 }

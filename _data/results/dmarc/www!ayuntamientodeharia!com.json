@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "shamlegger.rzone.de",
-      "ferrylane.rzone.de"
+      "shades14.rzone.de",
+      "docks15.rzone.de"
     ],
     "warnings": []
   },
@@ -79,11 +79,11 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; pct=100",
+    "record": "v=DMARC1; p=none; pct=10;rua=mailto:dmarc_nt@ayuntamientodeharia.com",
     "valid": true,
     "location": "ayuntamientodeharia.com",
     "warnings": [
-      "rua tag (destination for aggregate reports) not found"
+      "pct value is less than 100. This leads to inconsistent and unpredictable policy enforcement. Consider using p=none to monitor results instead"
     ],
     "tags": {
       "v": {
@@ -91,11 +91,21 @@
         "explicit": true
       },
       "p": {
-        "value": "quarantine",
+        "value": "none",
         "explicit": true
       },
       "pct": {
-        "value": 100,
+        "value": 10,
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc_nt@ayuntamientodeharia.com",
+            "size_limit": null
+          }
+        ],
         "explicit": true
       },
       "adkim": {
@@ -123,7 +133,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "quarantine",
+        "value": "none",
         "explicit": false
       }
     }

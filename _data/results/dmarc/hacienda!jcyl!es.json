@@ -18,7 +18,7 @@
     "error": "hacienda.jcyl.es does not have a SPF TXT record"
   },
   "dmarc": {
-    "record": "v=DMARC1; p=reject; sp=none; fo=1; ri=3600; rua=mailto:junta-de-castilla-y-leon-servicios-centrales@rua.dmp.cisco.com; ruf=mailto:junta-de-castilla-y-leon-servicios-centrales@ruf.dmp.cisco.com",
+    "record": "v=DMARC1; p=reject; sp=none; fo=1; ri=3600; rua=mailto:mailauth-reports@jcyl.es; ruf=mailto:mailauth-reports@jcyl.es",
     "valid": true,
     "location": "jcyl.es",
     "warnings": [],
@@ -49,7 +49,7 @@
         "value": [
           {
             "scheme": "mailto",
-            "address": "junta-de-castilla-y-leon-servicios-centrales@rua.dmp.cisco.com",
+            "address": "mailauth-reports@jcyl.es",
             "size_limit": null
           }
         ],
@@ -59,7 +59,7 @@
         "value": [
           {
             "scheme": "mailto",
-            "address": "junta-de-castilla-y-leon-servicios-centrales@ruf.dmp.cisco.com",
+            "address": "mailauth-reports@jcyl.es",
             "size_limit": null
           }
         ],

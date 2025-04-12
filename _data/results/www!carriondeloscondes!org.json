@@ -1,27 +1,22 @@
 {
-  "algorithm_version": 2,
-  "end_time": "Thu, 25 Aug 2022 00:14:20 GMT",
+  "id": 61190889,
+  "algorithm_version": 4,
+  "scanned_at": "2025-04-12T01:00:29.866Z",
+  "error": null,
   "grade": "F",
-  "hidden": false,
-  "likelihood_indicator": "MEDIUM",
   "response_headers": {
-    "Connection": "keep-alive",
-    "Content-Encoding": "gzip",
-    "Content-Type": "text/html; charset=UTF-8",
-    "Date": "Thu, 25 Aug 2022 00:13:52 GMT",
-    "Link": "<https://www.carriondeloscondes.org/>; rel=shortlink",
-    "Server": "nginx",
-    "Transfer-Encoding": "chunked",
-    "Vary": "Accept-Encoding",
-    "X-Pingback": "https://www.carriondeloscondes.org/xmlrpc.php",
-    "X-Powered-By": "PHP/5.6.40"
+    "date": "Sat, 12 Apr 2025 01:00:31 GMT",
+    "link": "<https://www.carriondeloscondes.org/wp-json/>; rel=\"https://api.w.org/\", <https://www.carriondeloscondes.org/wp-json/wp/v2/pages/324>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://www.carriondeloscondes.org/>; rel=shortlink",
+    "vary": "Accept-Encoding,User-Agent",
+    "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\"",
+    "connection": "close",
+    "x-pingback": "https://www.carriondeloscondes.org/xmlrpc.php",
+    "content-type": "text/html; charset=UTF-8",
+    "transfer-encoding": "chunked"
   },
-  "scan_id": 28945329,
   "score": 0,
-  "start_time": "Thu, 25 Aug 2022 00:13:48 GMT",
-  "state": "FINISHED",
   "status_code": 200,
-  "tests_failed": 7,
+  "tests_failed": 5,
   "tests_passed": 5,
-  "tests_quantity": 12
+  "tests_quantity": 10
 }

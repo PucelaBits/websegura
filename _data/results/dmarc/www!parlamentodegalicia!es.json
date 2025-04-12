@@ -13,17 +13,61 @@
     "hosts": [
       {
         "preference": 10,
+        "hostname": "poster1i.iberlayer.com",
+        "addresses": [
+          "130.117.89.21",
+          "130.117.89.26",
+          "130.117.89.30",
+          "130.117.89.4",
+          "130.117.89.5",
+          "130.117.89.6"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "poster4i.iberlayer.com",
+        "addresses": [
+          "80.169.225.36",
+          "80.169.225.37",
+          "80.169.225.38",
+          "80.169.225.44",
+          "80.169.225.56",
+          "80.169.225.57"
+        ]
+      },
+      {
+        "preference": 30,
+        "hostname": "poster2i.iberlayer.com",
+        "addresses": [
+          "185.136.219.26"
+        ]
+      },
+      {
+        "preference": 40,
+        "hostname": "poster3i.iberlayer.com",
+        "addresses": [
+          "185.136.218.5"
+        ]
+      },
+      {
+        "preference": 50,
         "hostname": "parlamentodegalicia-es.mail.protection.outlook.com",
         "addresses": [
-          "104.47.13.36",
-          "104.47.14.36"
+          "2a01:111:f403:ca04::f",
+          "2a01:111:f403:ca09::5",
+          "2a01:111:f403:ca09::6",
+          "2a01:111:f403:ca09::d",
+          "52.101.68.21",
+          "52.101.68.39",
+          "52.101.73.11",
+          "52.101.73.26"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:spf.protection.outlook.com -all",
+    "record": "v=spf1 include:spf.protection.outlook.com include:iberlayer.com -all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
@@ -35,8 +79,8 @@
       "include": [
         {
           "domain": "spf.protection.outlook.com",
-          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/48 include:spfd.protection.outlook.com -all",
-          "dns_lookups": 1,
+          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/15 ip4:52.102.0.0/16 ip4:52.103.0.0/17 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/51 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
+          "dns_lookups": 0,
           "parsed": {
             "pass": [
               {
@@ -48,7 +92,15 @@
                 "mechanism": "ip4"
               },
               {
-                "value": "52.100.0.0/14",
+                "value": "52.100.0.0/15",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.102.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.103.0.0/17",
                 "mechanism": "ip4"
               },
               {
@@ -60,68 +112,91 @@
                 "mechanism": "ip6"
               },
               {
-                "value": "2a01:111:f403::/48",
+                "value": "2a01:111:f403::/49",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:8000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:c000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:f000::/52",
                 "mechanism": "ip6"
               }
             ],
             "neutral": [],
             "softfail": [],
             "fail": [],
-            "include": [
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "iberlayer.com",
+          "record": "v=spf1 ip4:130.117.92.233 ip4:130.117.92.237 ip4:130.117.89.0/27 ip4:80.169.225.32/27 ip4:91.90.161.0/24 ip4:185.136.218.5 ip4:185.136.218.6 ip4:185.136.218.7 ip4:185.136.218.8 ip4:185.136.219.26 ip4:185.136.219.27 ip4:185.136.219.28 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
               {
-                "domain": "spfd.protection.outlook.com",
-                "record": "v=spf1 ip4:51.4.72.0/24 ip4:51.5.72.0/24 ip4:51.5.80.0/27 ip4:20.47.149.138/32 ip4:51.4.80.0/27 ip6:2a01:4180:4051:0800::/64 ip6:2a01:4180:4050:0800::/64 ip6:2a01:4180:4051:0400::/64 ip6:2a01:4180:4050:0400::/64 -all",
-                "dns_lookups": 0,
-                "parsed": {
-                  "pass": [
-                    {
-                      "value": "51.4.72.0/24",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "51.5.72.0/24",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "51.5.80.0/27",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "20.47.149.138/32",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "51.4.80.0/27",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "2a01:4180:4051:0800::/64",
-                      "mechanism": "ip6"
-                    },
-                    {
-                      "value": "2a01:4180:4050:0800::/64",
-                      "mechanism": "ip6"
-                    },
-                    {
-                      "value": "2a01:4180:4051:0400::/64",
-                      "mechanism": "ip6"
-                    },
-                    {
-                      "value": "2a01:4180:4050:0400::/64",
-                      "mechanism": "ip6"
-                    }
-                  ],
-                  "neutral": [],
-                  "softfail": [],
-                  "fail": [],
-                  "include": [],
-                  "redirect": null,
-                  "exp": null,
-                  "all": "fail"
-                },
-                "warnings": []
+                "value": "130.117.92.233",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "130.117.92.237",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "130.117.89.0/27",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "80.169.225.32/27",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "91.90.161.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.136.218.5",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.136.218.6",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.136.218.7",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.136.218.8",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.136.219.26",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.136.219.27",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.136.219.28",
+                "mechanism": "ip4"
               }
             ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
             "redirect": null,
             "exp": null,
             "all": "fail"
@@ -135,9 +210,71 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine ; ruf=mailto:dmarc@parlamentodegalicia.es; rua=mailto:dmarc@parlamentodegalicia.es",
-    "valid": false,
+    "record": "v=DMARC1; p=reject; ruf=mailto:dmarc@parlamentodegalicia.es; rua=mailto:dmarc@parlamentodegalicia.es",
+    "valid": true,
     "location": "parlamentodegalicia.es",
-    "error": "Tag p must have one of the following values: none,quarantine,reject - not quarantine "
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "reject",
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc@parlamentodegalicia.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc@parlamentodegalicia.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "reject",
+        "explicit": false
+      }
+    }
   }
 }

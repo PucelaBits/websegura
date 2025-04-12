@@ -4,22 +4,30 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns13.dnsmadeeasy.com",
-      "ns11.dnsmadeeasy.com",
-      "ns15.dnsmadeeasy.com",
-      "ns10.dnsmadeeasy.com",
-      "ns12.dnsmadeeasy.com",
-      "ns14.dnsmadeeasy.com"
+      "ns20.digicertdns.com",
+      "ns25.digicertdns.net",
+      "ns22.digicertdns.com",
+      "ns23.digicertdns.net",
+      "ns24.digicertdns.net",
+      "ns21.digicertdns.com"
     ],
     "warnings": []
   },
   "mx": {
     "hosts": [
       {
-        "preference": 10,
-        "hostname": "mail.illesbalears.travel",
+        "preference": 1,
+        "hostname": "smtp.google.com",
         "addresses": [
-          "52.208.247.234"
+          "142.250.101.26",
+          "142.250.101.27",
+          "142.251.2.26",
+          "142.251.2.27",
+          "2607:f8b0:4023:c06::1a",
+          "2607:f8b0:4023:c06::1b",
+          "2607:f8b0:4023:c0d::1a",
+          "2607:f8b0:4023:c0d::1b",
+          "74.125.137.27"
         ]
       }
     ],

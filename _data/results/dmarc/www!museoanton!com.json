@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns3.gestiondecuenta.com",
-      "ns2.gestiondecuenta.com",
       "ns4.gestiondecuenta.com",
-      "ns.gestiondecuenta.com"
+      "ns.gestiondecuenta.com",
+      "ns2.gestiondecuenta.com",
+      "ns3.gestiondecuenta.com"
     ],
     "warnings": []
   },
@@ -17,16 +17,36 @@
         "preference": 10,
         "hostname": "mail.museoanton.com",
         "addresses": [
-          "82.98.179.226"
+          "82.98.165.172"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "museoanton.com does not have a SPF TXT record"
+    "record": "v=spf1 a mx ~all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "82.98.165.172",
+          "mechanism": "a"
+        },
+        {
+          "value": "mail.museoanton.com",
+          "mechanism": "mx"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
   },
   "dmarc": {
     "record": null,

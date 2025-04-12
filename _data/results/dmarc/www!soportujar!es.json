@@ -4,26 +4,52 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "montero.dipgra.es",
-      "gate.dipgra.es"
+      "ns3.dnsxperta.com",
+      "ns2.dnsxperta.com",
+      "ns1.dnsxperta.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.soportujar.es",
+        "addresses": [
+          "119.8.213.87"
+        ]
+      }
+    ],
     "warnings": [
-      "No MX records found. Is the domain parked?"
+      "The domain ecs-119-8-213-87.reverse.open-telekom-cloud.com does not exist",
+      "The reverse DNS of 119.8.213.87 is ecs-119-8-213-87.reverse.open-telekom-cloud.com, but the A/AAAA DNS records for ecs-119-8-213-87.reverse.open-telekom-cloud.com do not resolve to 119.8.213.87"
     ]
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "soportujar.es does not have a SPF TXT record"
+    "record": "v=spf1 ip4:119.8.213.87 -all",
+    "valid": true,
+    "dns_lookups": 0,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "119.8.213.87",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
     "record": null,
     "valid": false,
     "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.soportujar.es\n\nv=spf1 ip4:119.8.213.87 -all"
   }
 }

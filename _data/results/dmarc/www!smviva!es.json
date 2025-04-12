@@ -4,10 +4,11 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1062.ui-dns.biz",
-      "ns1116.ui-dns.org",
-      "ns1070.ui-dns.com",
-      "ns1080.ui-dns.de"
+      "ns5.cdmondns-01.com",
+      "ns1.cdmon.net",
+      "ns4.cdmondns-01.org",
+      "ns2.cdmon.net",
+      "ns3.cdmon.net"
     ],
     "warnings": []
   },
@@ -15,23 +16,16 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "mx00.ionos.es",
+        "hostname": "mail.smviva.es",
         "addresses": [
-          "212.227.15.41"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "mx01.ionos.es",
-        "addresses": [
-          "217.72.192.67"
+          "134.0.13.174"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:_spf.perfora.net include:_spf.kundenserver.de ~all",
+    "record": "v=spf1 include:_spf.srv.cat ~all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
@@ -42,64 +36,64 @@
       "fail": [],
       "include": [
         {
-          "domain": "_spf.perfora.net",
-          "record": "v=spf1 ip4:74.208.4.192/26 ip4:82.165.159.128/27 -all",
-          "dns_lookups": 0,
+          "domain": "_spf.srv.cat",
+          "record": "v=spf1 include:_netblocks.srv.cat ~all",
+          "dns_lookups": 1,
           "parsed": {
-            "pass": [
-              {
-                "value": "74.208.4.192/26",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "82.165.159.128/27",
-                "mechanism": "ip4"
-              }
-            ],
+            "pass": [],
             "neutral": [],
             "softfail": [],
             "fail": [],
-            "include": [],
-            "redirect": null,
-            "exp": null,
-            "all": "fail"
-          },
-          "warnings": []
-        },
-        {
-          "domain": "_spf.kundenserver.de",
-          "record": "v=spf1 ip4:212.227.126.128/25 ip4:82.165.159.0/26 ip4:212.227.15.0/25 ip4:212.227.17.0/27 ip4:217.72.192.64/26 -all",
-          "dns_lookups": 0,
-          "parsed": {
-            "pass": [
+            "include": [
               {
-                "value": "212.227.126.128/25",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "82.165.159.0/26",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "212.227.15.0/25",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "212.227.17.0/27",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "217.72.192.64/26",
-                "mechanism": "ip4"
+                "domain": "_netblocks.srv.cat",
+                "record": "v=spf1 ip4:46.16.56.0/21 ip4:134.0.8.0/21 ip4:185.22.200.0/22 ip4:185.34.192.0/22 ip4:185.42.104.0/22 ip4:185.66.40.0/22 ip4:185.22.201.0/22 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "46.16.56.0/21",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "134.0.8.0/21",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.22.200.0/22",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.34.192.0/22",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.42.104.0/22",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.66.40.0/22",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.22.201.0/22",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
               }
             ],
-            "neutral": [],
-            "softfail": [],
-            "fail": [],
-            "include": [],
             "redirect": null,
             "exp": null,
-            "all": "fail"
+            "all": "softfail"
           },
           "warnings": []
         }
@@ -110,9 +104,53 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=quarantine; aspf=s; adkim=r",
+    "valid": true,
+    "location": "smviva.es",
+    "warnings": [
+      "rua tag (destination for aggregate reports) not found"
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "aspf": {
+        "value": "s",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "quarantine",
+        "explicit": false
+      }
+    }
   }
 }

@@ -47,7 +47,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; rua=mailto:dmarc@ccn-cert.cni.es;",
+    "record": "v=DMARC1; p=none; rua=mailto:dmarc@ccn-cert.cni.es;ruf=mailto:dmarcf@ccn-cert.cni.es;",
     "valid": true,
     "location": "ccn-cert.cni.es",
     "warnings": [],
@@ -65,6 +65,16 @@
           {
             "scheme": "mailto",
             "address": "dmarc@ccn-cert.cni.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarcf@ccn-cert.cni.es",
             "size_limit": null
           }
         ],

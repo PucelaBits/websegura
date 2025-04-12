@@ -1,17 +1,30 @@
 {
   "domain": "hacienda.gob.es",
   "base_domain": "hacienda.gob.es",
-  "dnssec": false,
+  "dnssec": true,
   "ns": {
     "hostnames": [
-      "dns.hacienda.gob.es",
-      "dns2.hacienda.gob.es",
-      "artemis.ttd.net"
+      "ns1.age.gob.es",
+      "ns2.age.gob.es"
     ],
     "warnings": []
   },
   "mx": {
     "hosts": [
+      {
+        "preference": 0,
+        "hostname": "hacienda-gob-es.mail.protection.outlook.com",
+        "addresses": [
+          "2a01:111:f403:ca04::10",
+          "2a01:111:f403:ca04::7",
+          "2a01:111:f403:ca09::6",
+          "2a01:111:f403:ca09::7",
+          "52.101.68.12",
+          "52.101.73.11",
+          "52.101.73.2",
+          "52.101.73.30"
+        ]
+      },
       {
         "preference": 5,
         "hostname": "smtp1.hacienda.gob.es",
@@ -44,12 +57,16 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx a:smtp1.hacienda.gob.es a:smtp2.hacienda.gob.es a:smtp3.hacienda.gob.es a:smtp4.hacienda.gob.es include:spf.protection.outlook.com -all",
+    "record": "v=spf1 mx a:smtp1.hacienda.gob.es a:smtp2.hacienda.gob.es a:smtp3.hacienda.gob.es a:smtp4.hacienda.gob.es a:smtp5.hacienda.gob.es include:spf.protection.outlook.com include:spfa.cpmails.com -all",
     "valid": true,
-    "dns_lookups": 7,
+    "dns_lookups": 8,
     "warnings": [],
     "parsed": {
       "pass": [
+        {
+          "value": "hacienda-gob-es.mail.protection.outlook.com",
+          "mechanism": "mx"
+        },
         {
           "value": "smtp1.hacienda.gob.es",
           "mechanism": "mx"
@@ -81,6 +98,10 @@
         {
           "value": "193.203.200.244",
           "mechanism": "a"
+        },
+        {
+          "value": "193.203.200.2",
+          "mechanism": "a"
         }
       ],
       "neutral": [],
@@ -89,8 +110,8 @@
       "include": [
         {
           "domain": "spf.protection.outlook.com",
-          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/48 include:spfd.protection.outlook.com -all",
-          "dns_lookups": 1,
+          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/15 ip4:52.102.0.0/16 ip4:52.103.0.0/17 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/51 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
+          "dns_lookups": 0,
           "parsed": {
             "pass": [
               {
@@ -102,7 +123,15 @@
                 "mechanism": "ip4"
               },
               {
-                "value": "52.100.0.0/14",
+                "value": "52.100.0.0/15",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.102.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.103.0.0/17",
                 "mechanism": "ip4"
               },
               {
@@ -114,68 +143,123 @@
                 "mechanism": "ip6"
               },
               {
-                "value": "2a01:111:f403::/48",
+                "value": "2a01:111:f403::/49",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:8000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:c000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:f000::/52",
                 "mechanism": "ip6"
               }
             ],
             "neutral": [],
             "softfail": [],
             "fail": [],
-            "include": [
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "spfa.cpmails.com",
+          "record": "v=spf1 ip4:35.174.145.124/32 ip4:3.214.204.181/32 ip4:52.212.19.177/32 ip4:52.17.62.50/32 ip4:15.222.110.90/32 ip4:52.60.189.48/32 ip4:13.211.69.231/32 ip4:3.105.224.60/32 ip4:3.109.187.96/32 ip4:43.204.62.184/32 ip4:44.211.178.96/27 ip4:3.101.216.128/27 ip4:3.252.108.160/27 ip4:13.39.103.0/27 ip4:3.99.253.64/27 ip4:3.27.51.160/27 ip4:43.205.150.240/28 ip4:18.143.136.64/27 ip4:3.29.194.128/27 ip4:13.42.61.32/27 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
               {
-                "domain": "spfd.protection.outlook.com",
-                "record": "v=spf1 ip4:51.4.72.0/24 ip4:51.5.72.0/24 ip4:51.5.80.0/27 ip4:20.47.149.138/32 ip4:51.4.80.0/27 ip6:2a01:4180:4051:0800::/64 ip6:2a01:4180:4050:0800::/64 ip6:2a01:4180:4051:0400::/64 ip6:2a01:4180:4050:0400::/64 -all",
-                "dns_lookups": 0,
-                "parsed": {
-                  "pass": [
-                    {
-                      "value": "51.4.72.0/24",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "51.5.72.0/24",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "51.5.80.0/27",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "20.47.149.138/32",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "51.4.80.0/27",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "2a01:4180:4051:0800::/64",
-                      "mechanism": "ip6"
-                    },
-                    {
-                      "value": "2a01:4180:4050:0800::/64",
-                      "mechanism": "ip6"
-                    },
-                    {
-                      "value": "2a01:4180:4051:0400::/64",
-                      "mechanism": "ip6"
-                    },
-                    {
-                      "value": "2a01:4180:4050:0400::/64",
-                      "mechanism": "ip6"
-                    }
-                  ],
-                  "neutral": [],
-                  "softfail": [],
-                  "fail": [],
-                  "include": [],
-                  "redirect": null,
-                  "exp": null,
-                  "all": "fail"
-                },
-                "warnings": []
+                "value": "35.174.145.124/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "3.214.204.181/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.212.19.177/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.17.62.50/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "15.222.110.90/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.60.189.48/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "13.211.69.231/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "3.105.224.60/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "3.109.187.96/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "43.204.62.184/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "44.211.178.96/27",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "3.101.216.128/27",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "3.252.108.160/27",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "13.39.103.0/27",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "3.99.253.64/27",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "3.27.51.160/27",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "43.205.150.240/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "18.143.136.64/27",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "3.29.194.128/27",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "13.42.61.32/27",
+                "mechanism": "ip4"
               }
             ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
             "redirect": null,
             "exp": null,
             "all": "fail"

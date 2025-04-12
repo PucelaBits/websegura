@@ -1,27 +1,23 @@
 {
-  "algorithm_version": 2,
-  "end_time": "Fri, 26 Aug 2022 01:27:07 GMT",
+  "id": 61173568,
+  "algorithm_version": 4,
+  "scanned_at": "2025-04-11T20:17:18.319Z",
+  "error": null,
   "grade": "F",
-  "hidden": false,
-  "likelihood_indicator": "MEDIUM",
   "response_headers": {
-    "Connection": "Keep-Alive",
-    "Content-Encoding": "gzip",
-    "Content-Length": "10971",
-    "Content-Type": "text/html; charset=UTF-8",
-    "Date": "Fri, 26 Aug 2022 01:26:29 GMT",
-    "Keep-Alive": "timeout=5, max=100",
-    "Link": "<https://intef.es/wp-json/>; rel=\"https://api.w.org/\", <https://intef.es/>; rel=shortlink",
-    "Server": "Apache",
-    "Set-Cookie": "cookiesession1=4F139B3106BJ5CZN4N2N8TYDO3ER6610;Path=/;HttpOnly",
-    "Vary": "Accept-Encoding,Cookie"
+    "date": "Fri, 11 Apr 2025 20:17:16 GMT",
+    "link": "<https://intef.es/wp-json/>; rel=\"https://api.w.org/\", <https://intef.es/wp-json/wp/v2/pages/440>; rel=\"alternate\"; type=\"application/json\", <https://intef.es/>; rel=shortlink",
+    "vary": "Accept-Encoding",
+    "server": "nginx/1.23.2",
+    "connection": "close",
+    "set-cookie": "cookiesession1=678B2918A90F8AD490FD8A743A65168C;Expires=Sat, 11 Apr 2026 20:17:19 GMT;Path=/;HttpOnly",
+    "content-type": "text/html; charset=UTF-8",
+    "x-powered-by": "PHP/8.2.15",
+    "content-length": "23543"
   },
-  "scan_id": 28966383,
   "score": 0,
-  "start_time": "Fri, 26 Aug 2022 01:26:27 GMT",
-  "state": "FINISHED",
   "status_code": 200,
-  "tests_failed": 8,
+  "tests_failed": 6,
   "tests_passed": 4,
-  "tests_quantity": 12
+  "tests_quantity": 10
 }

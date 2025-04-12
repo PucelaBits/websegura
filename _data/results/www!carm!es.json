@@ -1,26 +1,22 @@
 {
-  "algorithm_version": 2,
-  "end_time": "Fri, 26 Aug 2022 01:06:31 GMT",
+  "id": 61173624,
+  "algorithm_version": 4,
+  "scanned_at": "2025-04-11T20:17:33.989Z",
+  "error": null,
   "grade": "F",
-  "hidden": false,
-  "likelihood_indicator": "MEDIUM",
   "response_headers": {
-    "Cache-Control": "public, must-revalidate, s-maxage=300",
-    "Connection": "Keep-Alive",
-    "Content-Encoding": "gzip",
-    "Content-Type": "text/html;charset=UTF-8",
-    "Date": "Fri, 26 Aug 2022 01:06:13 GMT",
-    "Keep-Alive": "timeout=5, max=99",
-    "Server": "Apache",
-    "Transfer-Encoding": "chunked",
-    "Vary": "Accept-Encoding"
+    "date": "Fri, 11 Apr 2025 20:17:35 GMT",
+    "x-cdn": "Imperva",
+    "server": "Apache",
+    "x-iinfo": "11-46621474-46621479 NNYY CT(188 192 0) RT(1744402654938 35) q(0 0 0 -1) r(0 2) U12",
+    "connection": "close",
+    "content-type": "text/html;charset=UTF-8",
+    "cache-control": "public, must-revalidate, s-maxage=300",
+    "transfer-encoding": "chunked"
   },
-  "scan_id": 28965870,
   "score": 0,
-  "start_time": "Fri, 26 Aug 2022 01:06:08 GMT",
-  "state": "FINISHED",
   "status_code": 200,
-  "tests_failed": 7,
-  "tests_passed": 5,
-  "tests_quantity": 12
+  "tests_failed": 6,
+  "tests_passed": 4,
+  "tests_quantity": 10
 }

@@ -23,7 +23,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:195.55.43.227 ip4:195.55.43.230  ip4:195.55.43.236 ~all",
+    "record": "v=spf1 ip4:195.55.43.227  ip4:195.55.43.236  ip4:195.55.43.230 ~all",
     "valid": true,
     "dns_lookups": 0,
     "warnings": [],
@@ -34,11 +34,11 @@
           "mechanism": "ip4"
         },
         {
-          "value": "195.55.43.230",
+          "value": "195.55.43.236",
           "mechanism": "ip4"
         },
         {
-          "value": "195.55.43.236",
+          "value": "195.55.43.230",
           "mechanism": "ip4"
         }
       ],
@@ -52,9 +52,61 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=reject; rua=mailto:dmarc@santander.es",
+    "valid": true,
+    "location": "santander.es",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "reject",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc@santander.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "reject",
+        "explicit": false
+      }
+    }
   }
 }

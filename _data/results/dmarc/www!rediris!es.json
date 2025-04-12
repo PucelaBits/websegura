@@ -16,29 +16,23 @@
     "hosts": [
       {
         "preference": 20,
-        "hostname": "mx01.puc.rediris.es",
+        "hostname": "mx03.puc.rediris.es",
         "addresses": [
-          "130.206.19.130",
-          "130.206.19.162",
-          "2001:720:418:ca10::2",
-          "2001:720:418:ca11::2"
+          "143.55.146.78"
         ]
       },
       {
         "preference": 20,
-        "hostname": "mx02.puc.rediris.es",
+        "hostname": "mx04.puc.rediris.es",
         "addresses": [
-          "130.206.19.130",
-          "130.206.19.162",
-          "2001:720:418:ca10::2",
-          "2001:720:418:ca11::2"
+          "143.55.148.243"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:spf.puc.rediris.es ip4:130.206.24.0/30 ip6:2001:720:418:caf1::57 ip4:130.206.1.57 ip4:130.206.1.69 -all",
+    "record": "v=spf1 include:spf.puc.rediris.es ip4:130.206.24.0/30 -all",
     "valid": true,
     "dns_lookups": 1,
     "warnings": [],
@@ -46,18 +40,6 @@
       "pass": [
         {
           "value": "130.206.24.0/30",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "2001:720:418:caf1::57",
-          "mechanism": "ip6"
-        },
-        {
-          "value": "130.206.1.57",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "130.206.1.69",
           "mechanism": "ip4"
         }
       ],
@@ -67,37 +49,21 @@
       "include": [
         {
           "domain": "spf.puc.rediris.es",
-          "record": "v=spf1 ip4:130.206.25.38 ip4:130.206.24.0/24 ip4:130.206.19.0/24 ip4:192.187.24.32/28 ip4:192.187.24.0/28 ip6:2001:720:418:ca10::/64 ip6:2001:720:418:ca11::/64 ~all",
+          "record": "v=spf1 ip4:143.55.146.78 ip4:143.55.148.243 ip4:130.206.25.38 ~all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
               {
+                "value": "143.55.146.78",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "143.55.148.243",
+                "mechanism": "ip4"
+              },
+              {
                 "value": "130.206.25.38",
                 "mechanism": "ip4"
-              },
-              {
-                "value": "130.206.24.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "130.206.19.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "192.187.24.32/28",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "192.187.24.0/28",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "2001:720:418:ca10::/64",
-                "mechanism": "ip6"
-              },
-              {
-                "value": "2001:720:418:ca11::/64",
-                "mechanism": "ip6"
               }
             ],
             "neutral": [],
@@ -117,7 +83,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com",
+    "record": "v=DMARC1; p=quarantine; sp=none; fo=1; rua=mailto:dmarc@rediris.es; ruf=mailto:dmarc@rediris.es",
     "valid": true,
     "location": "rediris.es",
     "warnings": [],
@@ -127,6 +93,10 @@
         "explicit": true
       },
       "p": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "sp": {
         "value": "none",
         "explicit": true
       },
@@ -140,7 +110,7 @@
         "value": [
           {
             "scheme": "mailto",
-            "address": "dmarc_rua@emaildefense.proofpoint.com",
+            "address": "dmarc@rediris.es",
             "size_limit": null
           }
         ],
@@ -150,7 +120,7 @@
         "value": [
           {
             "scheme": "mailto",
-            "address": "dmarc_ruf@emaildefense.proofpoint.com",
+            "address": "dmarc@rediris.es",
             "size_limit": null
           }
         ],
@@ -176,10 +146,6 @@
       },
       "ri": {
         "value": 86400,
-        "explicit": false
-      },
-      "sp": {
-        "value": "none",
         "explicit": false
       }
     }

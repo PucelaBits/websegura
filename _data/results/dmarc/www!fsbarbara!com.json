@@ -1,0 +1,147 @@
+{
+  "domain": "fsbarbara.com",
+  "base_domain": "fsbarbara.com",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns2.dns-parking.com",
+      "ns1.dns-parking.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 5,
+        "hostname": "mx1.hostinger.com",
+        "addresses": [
+          "172.65.182.103",
+          "2606:4700:90:0:c1f8:f874:2386:b61f"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mx2.hostinger.com",
+        "addresses": [
+          "172.65.182.103",
+          "2606:4700:90:0:c1f8:f874:2386:b61f"
+        ]
+      }
+    ],
+    "warnings": [
+      "172.65.182.103 does not have any reverse DNS (PTR) records",
+      "2606:4700:90:0:c1f8:f874:2386:b61f does not have any reverse DNS (PTR) records",
+      "172.65.182.103 does not have any reverse DNS (PTR) records",
+      "2606:4700:90:0:c1f8:f874:2386:b61f does not have any reverse DNS (PTR) records"
+    ]
+  },
+  "spf": {
+    "record": "v=spf1 include:_spf.mail.hostinger.com ~all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [],
+    "parsed": {
+      "pass": [],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "_spf.mail.hostinger.com",
+          "record": "v=spf1 include:relay.mailchannels.net ~all",
+          "dns_lookups": 1,
+          "parsed": {
+            "pass": [],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [
+              {
+                "domain": "relay.mailchannels.net",
+                "record": "v=spf1 ip4:23.83.208.0/20 ip4:35.85.190.185/32 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "23.83.208.0/20",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "35.85.190.185/32",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              }
+            ],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
+  },
+  "dmarc": {
+    "record": "v=DMARC1; p=none",
+    "valid": true,
+    "location": "fsbarbara.com",
+    "warnings": [
+      "rua tag (destination for aggregate reports) not found"
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
+  }
+}

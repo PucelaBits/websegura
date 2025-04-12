@@ -16,31 +16,25 @@
     "hosts": [
       {
         "preference": 20,
-        "hostname": "mx01.puc.rediris.es",
+        "hostname": "mxa-006a4e02.gslb.pphosted.com",
         "addresses": [
-          "130.206.19.130",
-          "130.206.19.162",
-          "2001:720:418:ca10::2",
-          "2001:720:418:ca11::2"
+          "143.55.148.243"
         ]
       },
       {
         "preference": 20,
-        "hostname": "mx02.puc.rediris.es",
+        "hostname": "mxb-006a4e02.gslb.pphosted.com",
         "addresses": [
-          "130.206.19.130",
-          "130.206.19.162",
-          "2001:720:418:ca10::2",
-          "2001:720:418:ca11::2"
+          "143.55.148.243"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 a:postin.uv.es a:postin.ipv6.uv.es a:postilla.uv.es a:postilla.ipv6.uv.es a:hal.ific.uv.es a:ifmx.ific.uv.es a:glup.irobot.uv.es -all",
+    "record": "v=spf1 a:postin.uv.es a:postin.ipv6.uv.es a:postilla.uv.es a:hal.ific.uv.es a:ifmx.ific.uv.es a:glup.irobot.uv.es -all",
     "valid": true,
-    "dns_lookups": 7,
+    "dns_lookups": 6,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -65,15 +59,11 @@
           "mechanism": "a"
         },
         {
-          "value": "2001:720:1014:1::1:69",
-          "mechanism": "a"
-        },
-        {
           "value": "147.156.163.23",
           "mechanism": "a"
         },
         {
-          "value": "147.156.53.55",
+          "value": "147.156.49.55",
           "mechanism": "a"
         },
         {

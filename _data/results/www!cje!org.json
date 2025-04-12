@@ -1,24 +1,26 @@
 {
-  "algorithm_version": 2,
-  "end_time": "Fri, 26 Aug 2022 01:01:49 GMT",
-  "grade": "F",
+  "algorithm_version": 3,
+  "end_time": "Sun, 20 Oct 2024 00:59:52 GMT",
+  "grade": "C-",
   "hidden": false,
   "likelihood_indicator": "MEDIUM",
   "response_headers": {
-    "Connection": "close",
+    "Content-Encoding": "gzip",
     "Content-Type": "text/html; charset=UTF-8",
-    "Date": "Fri, 26 Aug 2022 01:01:07 GMT",
-    "Link": "<https://dialogojuventud.cje.org/wp-json/>; rel=\"https://api.w.org/\", <https://dialogojuventud.cje.org/>; rel=shortlink",
-    "Server": "Apache/2.2.34 (Unix) mod_ssl/2.2.34 OpenSSL/1.0.1e-fips mod_bwlimited/1.4",
+    "Date": "Sun, 20 Oct 2024 00:59:31 GMT",
+    "Link": "<https://www.cje.org/wp-json/>; rel=\"https://api.w.org/\", <https://www.cje.org/wp-json/wp/v2/pages/5002>; rel=\"alternate\"; type=\"application/json\", <https://www.cje.org/>; rel=shortlink",
+    "Server": "nginx",
+    "Strict-Transport-Security": "max-age=15768000; includeSubDomains",
     "Transfer-Encoding": "chunked",
-    "X-Powered-By": "PHP/5.4.45"
+    "X-Cache-Status": "UPDATING",
+    "X-Powered-By": "PHP/8.1.29, PleskLin"
   },
-  "scan_id": 28965615,
-  "score": 0,
-  "start_time": "Fri, 26 Aug 2022 01:00:58 GMT",
+  "scan_id": 57046218,
+  "score": 45,
+  "start_time": "Sun, 20 Oct 2024 00:59:29 GMT",
   "state": "FINISHED",
   "status_code": 200,
-  "tests_failed": 6,
+  "tests_failed": 4,
   "tests_passed": 6,
-  "tests_quantity": 12
+  "tests_quantity": 10
 }

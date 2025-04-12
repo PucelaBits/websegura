@@ -1,0 +1,122 @@
+{
+  "domain": "dipucr.es",
+  "base_domain": "dipucr.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "dns5.cim.es",
+      "dns7.cim.es",
+      "dns6.cim.es"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "correo.dipucr.es",
+        "addresses": [
+          "185.191.65.144"
+        ]
+      }
+    ],
+    "warnings": [
+      "185.191.65.144 does not have any reverse DNS (PTR) records"
+    ]
+  },
+  "spf": {
+    "record": "v=spf1 ip4:185.191.65.144 ip4:185.191.65.133 mx a:correo.dipucr.es a:montes4.cim.es ip4:89.17.211.96/27 ~all",
+    "valid": true,
+    "dns_lookups": 3,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "185.191.65.144",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "185.191.65.133",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "correo.dipucr.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "185.191.65.144",
+          "mechanism": "a"
+        },
+        {
+          "value": "89.17.211.101",
+          "mechanism": "a"
+        },
+        {
+          "value": "89.17.211.96/27",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
+  },
+  "dmarc": {
+    "record": "v=DMARC1; p=none; rua=mailto:spamreport@cim.es",
+    "valid": true,
+    "location": "dipucr.es",
+    "warnings": [
+      "cim.es does not indicate that it accepts DMARC reports about dipucr.es - Authorization record not found: dipucr.es._report._dmarc.cim.es IN TXT \"v=DMARC1\""
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "rua": {
+        "value": "mailto:spamreport@cim.es",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
+  }
+}

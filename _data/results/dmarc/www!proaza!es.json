@@ -6,8 +6,8 @@
     "hostnames": [
       "ns3.gestiondecuenta.com",
       "ns.gestiondecuenta.com",
-      "ns2.gestiondecuenta.com",
-      "ns4.gestiondecuenta.com"
+      "ns4.gestiondecuenta.com",
+      "ns2.gestiondecuenta.com"
     ],
     "warnings": []
   },
@@ -17,16 +17,38 @@
         "preference": 10,
         "hostname": "mail.proaza.es",
         "addresses": [
-          "82.98.132.60"
+          "82.98.165.95"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "proaza.es does not have a SPF TXT record"
+    "record": "v=spf1 a mx ip4:82.98.132.60 +all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [
+      "proaza.es does not have any A/AAAA records"
+    ],
+    "parsed": {
+      "pass": [
+        {
+          "value": "mail.proaza.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "82.98.132.60",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "pass"
+    }
   },
   "dmarc": {
     "record": null,

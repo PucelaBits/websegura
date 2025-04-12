@@ -1,0 +1,167 @@
+{
+  "domain": "udg.edu",
+  "base_domain": "udg.edu",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "nsext1.udg.edu",
+      "ns1.csuc.cat",
+      "ns2.csuc.cat",
+      "nsext2.udg.edu"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "imsva-in.udg.edu",
+        "addresses": [
+          "84.88.128.6"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 include:_spf.mlsend.com mx a:imsva-in.udg.edu a:mta-sortida.udg.edu a:imsva-out.udg.edu ip4:84.88.131.25 a:mta-sortida-alt.udg.edu a:peguera.xs.csuc.cat a:gabarro.xs.csuc.cat ~all",
+    "valid": true,
+    "dns_lookups": 8,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "imsva-in.udg.edu",
+          "mechanism": "mx"
+        },
+        {
+          "value": "84.88.128.6",
+          "mechanism": "a"
+        },
+        {
+          "value": "84.88.128.25",
+          "mechanism": "a"
+        },
+        {
+          "value": "84.88.128.5",
+          "mechanism": "a"
+        },
+        {
+          "value": "84.88.131.25",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "84.88.128.15",
+          "mechanism": "a"
+        },
+        {
+          "value": "2001:40b0:1:1122:ce5c:a000:0:7",
+          "mechanism": "a"
+        },
+        {
+          "value": "84.88.0.7",
+          "mechanism": "a"
+        },
+        {
+          "value": "2001:40b0:1:1122:ce5c:a000:0:6",
+          "mechanism": "a"
+        },
+        {
+          "value": "84.88.0.6",
+          "mechanism": "a"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "_spf.mlsend.com",
+          "record": "v=spf1 ip4:185.249.220.0/24 ip4:185.225.161.0/24 ~all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "185.249.220.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.225.161.0/24",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
+  },
+  "dmarc": {
+    "record": "v=DMARC1;p=none;rua=mailto:si.seguretat@udg.edu",
+    "valid": true,
+    "location": "udg.edu",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "si.seguretat@udg.edu",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
+  }
+}

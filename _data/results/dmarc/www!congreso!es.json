@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.congreso.es",
       "chico.rediris.es",
+      "dns1.congreso.es",
       "dns2.congreso.es",
       "sun.rediris.es"
     ],
@@ -15,22 +15,16 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "mx01.puc.rediris.es",
+        "hostname": "mxa-006a4e02.gslb.pphosted.com",
         "addresses": [
-          "130.206.19.130",
-          "130.206.19.162",
-          "2001:720:418:ca10::2",
-          "2001:720:418:ca11::2"
+          "143.55.148.243"
         ]
       },
       {
         "preference": 10,
-        "hostname": "mx02.puc.rediris.es",
+        "hostname": "mxb-006a4e02.gslb.pphosted.com",
         "addresses": [
-          "130.206.19.130",
-          "130.206.19.162",
-          "2001:720:418:ca10::2",
-          "2001:720:418:ca11::2"
+          "143.55.148.243"
         ]
       }
     ],
@@ -66,37 +60,21 @@
       "include": [
         {
           "domain": "spf.puc.rediris.es",
-          "record": "v=spf1 ip4:130.206.25.38 ip4:130.206.24.0/24 ip4:130.206.19.0/24 ip4:192.187.24.32/28 ip4:192.187.24.0/28 ip6:2001:720:418:ca10::/64 ip6:2001:720:418:ca11::/64 ~all",
+          "record": "v=spf1 ip4:143.55.146.78 ip4:143.55.148.243 ip4:130.206.25.38 ~all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
               {
+                "value": "143.55.146.78",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "143.55.148.243",
+                "mechanism": "ip4"
+              },
+              {
                 "value": "130.206.25.38",
                 "mechanism": "ip4"
-              },
-              {
-                "value": "130.206.24.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "130.206.19.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "192.187.24.32/28",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "192.187.24.0/28",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "2001:720:418:ca10::/64",
-                "mechanism": "ip6"
-              },
-              {
-                "value": "2001:720:418:ca11::/64",
-                "mechanism": "ip6"
               }
             ],
             "neutral": [],
@@ -116,7 +94,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=reject; sp=reject; pct=100; adkim=s; aspf=s; rua=mailto:postmaster@congreso.es; ruf=mailto:postmaster@congreso.es",
+    "record": "v=DMARC1; p=reject; sp=reject; pct=100; adkim=s; aspf=s; rua=mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com",
     "valid": true,
     "location": "congreso.es",
     "warnings": [],
@@ -149,7 +127,7 @@
         "value": [
           {
             "scheme": "mailto",
-            "address": "postmaster@congreso.es",
+            "address": "dmarc_rua@emaildefense.proofpoint.com",
             "size_limit": null
           }
         ],
@@ -159,7 +137,7 @@
         "value": [
           {
             "scheme": "mailto",
-            "address": "postmaster@congreso.es",
+            "address": "dmarc_ruf@emaildefense.proofpoint.com",
             "size_limit": null
           }
         ],

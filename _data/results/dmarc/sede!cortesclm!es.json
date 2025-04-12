@@ -18,9 +18,81 @@
     "error": "sede.cortesclm.es does not have a SPF TXT record"
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1;p=none;pct=100;rua=mailto:343f4fe28a@rua.easydmarc.us,mailto:dmarc_a@cortesclm.es;ruf=mailto:343f4fe28a@ruf.easydmarc.us,mailto:dmarc_f@cortesclm.es;ri=86400;fo=s",
+    "valid": true,
+    "location": "cortesclm.es",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "pct": {
+        "value": 100,
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "343f4fe28a@rua.easydmarc.us",
+            "size_limit": null
+          },
+          {
+            "scheme": "mailto",
+            "address": "dmarc_a@cortesclm.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "343f4fe28a@ruf.easydmarc.us",
+            "size_limit": null
+          },
+          {
+            "scheme": "mailto",
+            "address": "dmarc_f@cortesclm.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "s"
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }

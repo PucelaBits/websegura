@@ -1,0 +1,42 @@
+{
+  "domain": "ayto-morondelafrontera.org",
+  "base_domain": "ayto-morondelafrontera.org",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns2.neodigit.net",
+      "ns1.neodigit.net"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "bmx01.neodigit.net",
+        "addresses": [
+          "31.47.72.161"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "bmx02.neodigit.net",
+        "addresses": [
+          "31.47.72.162"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "ayto-morondelafrontera.org does not have a SPF TXT record"
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns01.santacruzdetenerife.es",
-      "dns02.santacruzdetenerife.es"
+      "dns02.santacruzdetenerife.es",
+      "dns01.santacruzdetenerife.es"
     ],
     "warnings": []
   },
@@ -15,16 +15,16 @@
         "preference": 10,
         "hostname": "mx-01-eu-central-1.prod.hydra.sophos.com",
         "addresses": [
-          "18.185.231.126",
-          "3.70.63.165"
+          "18.157.197.5",
+          "3.67.25.49"
         ]
       },
       {
         "preference": 10,
         "hostname": "mx-02-eu-central-1.prod.hydra.sophos.com",
         "addresses": [
-          "18.185.231.126",
-          "3.70.63.165"
+          "18.157.197.5",
+          "3.67.25.49"
         ]
       }
     ],
@@ -56,7 +56,7 @@
       "include": [
         {
           "domain": "_spf_eucentral1.prod.hydra.sophos.com",
-          "record": "v=spf1 ip4:94.140.18.0/24 ip4:35.159.27.0/26 ip4:35.159.27.64/26 ip4:35.159.27.128/26 ip4:35.159.27.192/26 ~all",
+          "record": "v=spf1 ip4:94.140.18.0/24 ip4:35.159.27.8/30 ip4:35.159.27.28/30 ip4:35.159.27.32/30 ip4:35.159.27.48/29 ip4:35.159.27.160/28 ~all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -65,19 +65,23 @@
                 "mechanism": "ip4"
               },
               {
-                "value": "35.159.27.0/26",
+                "value": "35.159.27.8/30",
                 "mechanism": "ip4"
               },
               {
-                "value": "35.159.27.64/26",
+                "value": "35.159.27.28/30",
                 "mechanism": "ip4"
               },
               {
-                "value": "35.159.27.128/26",
+                "value": "35.159.27.32/30",
                 "mechanism": "ip4"
               },
               {
-                "value": "35.159.27.192/26",
+                "value": "35.159.27.48/29",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "35.159.27.160/28",
                 "mechanism": "ip4"
               }
             ],
@@ -98,31 +102,23 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; rua=mailto:dmarcreports@santacruzdetenerife.es; sp=quarantine; pct=100; adkim=s; aspf=s",
+    "record": "v=DMARC1; p=reject; sp=reject; pct=100; adkim=s; aspf=s",
     "valid": true,
     "location": "santacruzdetenerife.es",
-    "warnings": [],
+    "warnings": [
+      "rua tag (destination for aggregate reports) not found"
+    ],
     "tags": {
       "v": {
         "value": "DMARC1",
         "explicit": true
       },
       "p": {
-        "value": "quarantine",
-        "explicit": true
-      },
-      "rua": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "dmarcreports@santacruzdetenerife.es",
-            "size_limit": null
-          }
-        ],
+        "value": "reject",
         "explicit": true
       },
       "sp": {
-        "value": "quarantine",
+        "value": "reject",
         "explicit": true
       },
       "pct": {

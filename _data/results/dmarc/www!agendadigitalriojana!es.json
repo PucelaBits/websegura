@@ -3,17 +3,22 @@
   "base_domain": "agendadigitalriojana.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "The domain agendadigitalriojana.es does not exist"
+    "hostnames": [
+      "annabel.ns.cloudflare.com",
+      "glen.ns.cloudflare.com"
+    ],
+    "warnings": []
   },
   "mx": {
     "hosts": [],
-    "error": "The domain agendadigitalriojana.es does not exist"
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
   },
   "spf": {
     "record": null,
     "valid": false,
-    "error": "The domain agendadigitalriojana.es does not exist"
+    "error": "agendadigitalriojana.es does not have a SPF TXT record"
   },
   "dmarc": {
     "record": null,

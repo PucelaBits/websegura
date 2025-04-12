@@ -4,50 +4,72 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ineco.nic.es",
+      "isabel.dip-badajoz.es",
       "proxy.dip-badajoz.es",
-      "artemis.ttd.net",
-      "isabel.dip-badajoz.es"
+      "ineco.nic.es",
+      "artemis.ttd.net"
     ],
     "warnings": []
   },
   "mx": {
     "hosts": [
       {
-        "preference": 100,
-        "hostname": "sdb-mta03.dip-badajoz.es",
+        "preference": 10,
+        "hostname": "dip-badajoz-es-1.fortimailcloud.com",
         "addresses": [
-          "195.57.11.113"
+          "154.52.13.56"
         ]
       },
       {
-        "preference": 100,
-        "hostname": "sdb-mta04.dip-badajoz.es",
+        "preference": 20,
+        "hostname": "dip-badajoz-es-2.fortimailcloud.com",
         "addresses": [
-          "195.57.11.114"
-        ]
-      },
-      {
-        "preference": 500,
-        "hostname": "sdb-mta01.dip-badajoz.es",
-        "addresses": [
-          "195.57.11.111"
-        ]
-      },
-      {
-        "preference": 500,
-        "hostname": "sdb-mta02.dip-badajoz.es",
-        "addresses": [
-          "195.57.11.112"
+          "154.52.2.132"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "lobon.es does not have a SPF TXT record"
+    "record": "v=spf1 a mx ip4:195.57.11.0/25 mx:lobon.es -all",
+    "valid": true,
+    "dns_lookups": 3,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "195.57.11.116",
+          "mechanism": "a"
+        },
+        {
+          "value": "dip-badajoz-es-1.fortimailcloud.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "dip-badajoz-es-2.fortimailcloud.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "195.57.11.0/25",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "dip-badajoz-es-1.fortimailcloud.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "dip-badajoz-es-2.fortimailcloud.com",
+          "mechanism": "mx"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
     "record": null,

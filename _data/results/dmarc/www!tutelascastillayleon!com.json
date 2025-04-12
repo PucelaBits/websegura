@@ -1,0 +1,75 @@
+{
+  "domain": "tutelascastillayleon.com",
+  "base_domain": "tutelascastillayleon.com",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns1.luceit.com",
+      "ns2.luceit.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 5,
+        "hostname": "mx-1.tutelascastillayleon.com",
+        "addresses": [
+          "37.46.75.209"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 a mx ip4:62.81.248.0/24 ip4:178.19.41.0/27 ip4:95.39.12.196  ip4:109.205.141.0/24 ip4:37.46.75.192/26 -all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "37.46.75.208",
+          "mechanism": "a"
+        },
+        {
+          "value": "mx-1.tutelascastillayleon.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "62.81.248.0/24",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "178.19.41.0/27",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "95.39.12.196",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "109.205.141.0/24",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "37.46.75.192/26",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

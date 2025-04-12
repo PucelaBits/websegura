@@ -1,26 +1,21 @@
 {
-  "algorithm_version": 2,
-  "end_time": "Fri, 26 Aug 2022 13:48:26 GMT",
-  "grade": "F",
-  "hidden": false,
-  "likelihood_indicator": "MEDIUM",
+  "id": 61190531,
+  "algorithm_version": 4,
+  "scanned_at": "2025-04-12T00:59:13.231Z",
+  "error": null,
+  "grade": "D-",
   "response_headers": {
-    "Connection": "Keep-Alive",
-    "Content-Encoding": "gzip",
-    "Content-Type": "text/html; charset=UTF-8",
-    "Date": "Fri, 26 Aug 2022 13:47:33 GMT",
-    "Keep-Alive": "timeout=5, max=100",
-    "Link": "<https://www.museodegrandas.es/wp-json/>; rel=\"https://api.w.org/\", <https://www.museodegrandas.es/wp-json/wp/v2/pages/3322>; rel=\"alternate\"; type=\"application/json\", <https://www.museodegrandas.es/>; rel=shortlink",
-    "Server": "Apache/2.4.18",
-    "Transfer-Encoding": "chunked",
-    "Vary": "Accept-Encoding"
+    "date": "Sat, 12 Apr 2025 00:59:13 GMT",
+    "link": "<https://www.museodegrandas.es/wp-json/>; rel=\"https://api.w.org/\", <https://www.museodegrandas.es/wp-json/wp/v2/pages/3322>; rel=\"alternate\"; type=\"application/json\", <https://www.museodegrandas.es/>; rel=shortlink",
+    "vary": "Accept-Encoding",
+    "server": "Apache/2.4.18",
+    "connection": "close",
+    "content-type": "text/html; charset=UTF-8",
+    "transfer-encoding": "chunked"
   },
-  "scan_id": 28974818,
-  "score": 0,
-  "start_time": "Fri, 26 Aug 2022 13:47:26 GMT",
-  "state": "FINISHED",
+  "score": 25,
   "status_code": 200,
-  "tests_failed": 7,
+  "tests_failed": 5,
   "tests_passed": 5,
-  "tests_quantity": 12
+  "tests_quantity": 10
 }

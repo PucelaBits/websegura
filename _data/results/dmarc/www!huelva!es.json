@@ -1,0 +1,150 @@
+{
+  "domain": "huelva.es",
+  "base_domain": "huelva.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "dominios.innovasur.com",
+      "dominios.innovasur.es"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx.zoho.eu",
+        "addresses": [
+          "185.230.212.166",
+          "185.230.214.166"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mx2.zoho.eu",
+        "addresses": [
+          "185.230.214.166"
+        ]
+      },
+      {
+        "preference": 40,
+        "hostname": "mx3.zoho.eu",
+        "addresses": [
+          "185.230.212.166"
+        ]
+      }
+    ],
+    "warnings": [
+      "The reverse DNS of 185.230.212.166 is mx2.zoho.eu, but the A/AAAA DNS records for mx2.zoho.eu do not resolve to 185.230.212.166",
+      "The reverse DNS of 185.230.214.166 is mx3.zoho.eu, but the A/AAAA DNS records for mx3.zoho.eu do not resolve to 185.230.214.166",
+      "The reverse DNS of 185.230.214.166 is mx3.zoho.eu, but the A/AAAA DNS records for mx3.zoho.eu do not resolve to 185.230.214.166",
+      "The reverse DNS of 185.230.212.166 is mx2.zoho.eu, but the A/AAAA DNS records for mx2.zoho.eu do not resolve to 185.230.212.166"
+    ]
+  },
+  "spf": {
+    "record": "v=spf1 include:zoho.eu ip4:213.0.82.32/27 ip4:90.160.146.32/27 ip4:90.166.25.128/27 -all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "213.0.82.32/27",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "90.160.146.32/27",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "90.166.25.128/27",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "zoho.eu",
+          "record": "v=spf1 include:spf.zoho.eu -all",
+          "dns_lookups": 1,
+          "parsed": {
+            "pass": [],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [
+              {
+                "domain": "spf.zoho.eu",
+                "record": "v=spf1 ip4:185.20.209.0/24 ip4:31.186.226.0/24 ip4:31.186.243.0/24 ip4:89.36.170.0/24 ip4:185.20.211.0/24 ip4:185.172.199.0/24 ip4:91.135.68.104/29 ip4:185.230.214.0/23 ip4:136.143.168.0/22 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "185.20.209.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "31.186.226.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "31.186.243.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "89.36.170.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.20.211.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.172.199.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "91.135.68.104/29",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.230.214.0/23",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "136.143.168.0/22",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              }
+            ],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

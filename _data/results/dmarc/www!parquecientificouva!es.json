@@ -1,0 +1,75 @@
+{
+  "domain": "parquecientificouva.es",
+  "base_domain": "parquecientificouva.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "ns3.serviciodns.es",
+      "ns1.serviciodns.es",
+      "ns2.serviciodns.es"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "esva2.nubecao.com",
+        "addresses": [
+          "109.234.71.136"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "esva1.nubecao.com",
+        "addresses": [
+          "109.234.71.135"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 ip4:62.82.178.94  ip4:62.82.178.90 ip4:62.82.178.66 ip4:109.234.71.137 ip4:109.234.71.72 -all",
+    "valid": true,
+    "dns_lookups": 0,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "62.82.178.94",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "62.82.178.90",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "62.82.178.66",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "109.234.71.137",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "109.234.71.72",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
+  }
+}

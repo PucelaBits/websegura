@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns.mundo-r.com",
-      "ns-cor.net.mundo-r.com"
+      "dns1.cloudunificado.com",
+      "dns2.cloudunificado.com"
     ],
     "warnings": []
   },
@@ -118,14 +118,6 @@
           "mechanism": "a"
         },
         {
-          "value": "62.209.50.28",
-          "mechanism": "a"
-        },
-        {
-          "value": "62.209.50.29",
-          "mechanism": "a"
-        },
-        {
           "value": "91.209.104.157",
           "mechanism": "a"
         },
@@ -140,7 +132,7 @@
       "include": [
         {
           "domain": "spf.ipzmarketing.com",
-          "record": "v=spf1 ip4:93.159.208.0/21 ip4:185.103.8.0/22 ip4:5.56.22.0/24 ip4:82.199.156.0/24 ip4:212.192.13.0/24 ~all",
+          "record": "v=spf1 ip4:93.159.208.0/21 ip4:185.103.8.0/22 ip4:5.56.22.0/24 ip4:82.199.156.0/24 ip4:91.194.237.0/24 -all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -161,7 +153,7 @@
                 "mechanism": "ip4"
               },
               {
-                "value": "212.192.13.0/24",
+                "value": "91.194.237.0/24",
                 "mechanism": "ip4"
               }
             ],
@@ -171,13 +163,13 @@
             "include": [],
             "redirect": null,
             "exp": null,
-            "all": "softfail"
+            "all": "fail"
           },
           "warnings": []
         },
         {
           "domain": "spf.sendinblue.com",
-          "record": "v=spf1 ip4:185.41.28.0/22 ip4:94.143.16.0/21 ip4:185.24.144.0/22 ip4:153.92.224.0/19 ip4:213.32.128.0/18 ip4:185.107.232.0/22 ip4:77.32.128.0/18 ip4:77.32.192.0/19 ip4:212.146.192.0/18 ip4:172.246.0.0/18 ~all",
+          "record": "v=spf1 ip4:185.41.28.0/22 ip4:94.143.16.0/21 ip4:185.24.144.0/22 ip4:153.92.224.0/19 ip4:213.32.128.0/18 ip4:185.107.232.0/22 ip4:77.32.128.0/18 ip4:77.32.192.0/19 ip4:212.146.192.0/18 ip4:172.246.0.0/18 -all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -228,7 +220,7 @@
             "include": [],
             "redirect": null,
             "exp": null,
-            "all": "softfail"
+            "all": "fail"
           },
           "warnings": []
         },

@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns4.infofuturo.net",
-      "ns5.infofuturo.net"
+      "dns1.infofuturo.net",
+      "dns2.infofuturo.net"
     ],
     "warnings": []
   },
@@ -15,30 +15,34 @@
         "preference": 0,
         "hostname": "correo.ayto-sobrescobio.es",
         "addresses": [
-          "37.153.90.131"
+          "188.245.164.207"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:37.153.90.131 +mx +a +ip4:37.153.90.139 ~all",
+    "record": "v=spf1 +a +mx +ip4:188.245.164.207 +ip4:37.153.90.131 +ip4:37.153.90.139 ~all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "37.153.90.131",
-          "mechanism": "ip4"
+          "value": "212.89.23.124",
+          "mechanism": "a"
         },
         {
           "value": "correo.ayto-sobrescobio.es",
           "mechanism": "mx"
         },
         {
-          "value": "212.89.23.78",
-          "mechanism": "a"
+          "value": "188.245.164.207",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "37.153.90.131",
+          "mechanism": "ip4"
         },
         {
           "value": "37.153.90.139",
@@ -55,9 +59,53 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=none;",
+    "valid": true,
+    "location": "ayto-sobrescobio.es",
+    "warnings": [
+      "rua tag (destination for aggregate reports) not found"
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }

@@ -1,0 +1,115 @@
+{
+  "domain": "valladolidcomercioproximo.es",
+  "base_domain": "valladolidcomercioproximo.es",
+  "dnssec": false,
+  "ns": {
+    "hostnames": [
+      "darl.ns.cloudflare.com",
+      "june.ns.cloudflare.com"
+    ],
+    "warnings": []
+  },
+  "mx": {
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.valladolidcomercioproximo.es",
+        "addresses": [
+          "5.56.167.58"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "spf": {
+    "record": "v=spf1 +a +mx +a:dv8.digival.biz -all",
+    "valid": true,
+    "dns_lookups": 3,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "104.21.77.2",
+          "mechanism": "a"
+        },
+        {
+          "value": "172.67.202.193",
+          "mechanism": "a"
+        },
+        {
+          "value": "2606:4700:3033::6815:4d02",
+          "mechanism": "a"
+        },
+        {
+          "value": "2606:4700:3034::ac43:cac1",
+          "mechanism": "a"
+        },
+        {
+          "value": "mail.valladolidcomercioproximo.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "5.56.167.58",
+          "mechanism": "a"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
+  },
+  "dmarc": {
+    "record": "v=DMARC1; p=quarantine; adkim=s; aspf=s",
+    "valid": true,
+    "location": "valladolidcomercioproximo.es",
+    "warnings": [
+      "rua tag (destination for aggregate reports) not found"
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "s",
+        "explicit": true
+      },
+      "aspf": {
+        "value": "s",
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "quarantine",
+        "explicit": false
+      }
+    }
+  }
+}

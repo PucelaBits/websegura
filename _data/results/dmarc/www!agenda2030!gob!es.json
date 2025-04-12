@@ -1,11 +1,11 @@
 {
   "domain": "agenda2030.gob.es",
   "base_domain": "agenda2030.gob.es",
-  "dnssec": false,
+  "dnssec": true,
   "ns": {
     "hostnames": [
-      "crdserver.msc.es",
-      "mailhost.msc.es"
+      "ns1.age.gob.es",
+      "ns2.age.gob.es"
     ],
     "warnings": []
   },

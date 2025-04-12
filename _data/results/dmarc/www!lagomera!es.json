@@ -4,8 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.lagomera.es",
-      "ns1.lagomera.es"
+      "ns.interec.com",
+      "ns1.interec.com",
+      "ns2.interec.com",
+      "ns3.interec.com"
     ],
     "warnings": []
   },
@@ -15,23 +17,16 @@
         "preference": 10,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.251.2.27",
-          "2607:f8b0:4023:c03::1a"
+          "142.250.101.26",
+          "2607:f8b0:4023:c0d::1a"
         ]
       },
       {
         "preference": 20,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "2607:f8b0:4003:c15::1a",
-          "64.233.171.26"
-        ]
-      },
-      {
-        "preference": 25,
-        "hostname": "mail.lagomera.es",
-        "addresses": [
-          "212.89.16.163"
+          "108.177.104.27",
+          "2607:f8b0:4003:c04::1b"
         ]
       },
       {
@@ -55,14 +50,14 @@
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
           "142.250.152.27",
-          "2607:f8b0:4001:c56::1a"
+          "2607:f8b0:4001:c56::1b"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:_spf.google.com ~all",
+    "record": "v=spf1 include:_spf.google.com -all",
     "valid": true,
     "dns_lookups": 4,
     "warnings": [],
@@ -251,11 +246,11 @@
       ],
       "redirect": null,
       "exp": null,
-      "all": "softfail"
+      "all": "fail"
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none",
+    "record": "v=DMARC1; p=quarantine; adkim=s; aspf=s",
     "valid": true,
     "location": "lagomera.es",
     "warnings": [
@@ -267,16 +262,16 @@
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": true
       },
       "adkim": {
-        "value": "r",
-        "explicit": false
+        "value": "s",
+        "explicit": true
       },
       "aspf": {
-        "value": "r",
-        "explicit": false
+        "value": "s",
+        "explicit": true
       },
       "fo": {
         "value": [
@@ -299,7 +294,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": false
       }
     }

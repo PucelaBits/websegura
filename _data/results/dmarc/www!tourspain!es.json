@@ -1,12 +1,11 @@
 {
   "domain": "tourspain.es",
   "base_domain": "tourspain.es",
-  "dnssec": false,
+  "dnssec": true,
   "ns": {
     "hostnames": [
-      "dns.serviciosmin.gob.es",
-      "sun.rediris.es",
-      "chico.rediris.es"
+      "ns1.age.gob.es",
+      "ns2.age.gob.es"
     ],
     "warnings": []
   },
@@ -14,34 +13,30 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "mailin.minetad.es",
+        "hostname": "mailin1.serviciosmin.gob.es",
         "addresses": [
-          "193.146.123.230"
+          "192.187.16.26"
         ]
       },
       {
-        "preference": 10,
-        "hostname": "mailin1.minetad.es",
+        "preference": 15,
+        "hostname": "mailin.serviciosmin.gob.es",
         "addresses": [
-          "193.146.123.234"
+          "192.187.16.24"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:193.146.123.231/32 ip4:193.146.123.235/32 include:marketing.dynamics.com ~all",
+    "record": "v=spf1 include:spf.serviciosmin.gob.es ip4:54.240.50.203 include:marketing.dynamics.com include:spf.protection.outlook.com -all",
     "valid": true,
-    "dns_lookups": 1,
+    "dns_lookups": 3,
     "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "193.146.123.231/32",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "193.146.123.235/32",
+          "value": "54.240.50.203",
           "mechanism": "ip4"
         }
       ],
@@ -49,6 +44,39 @@
       "softfail": [],
       "fail": [],
       "include": [
+        {
+          "domain": "spf.serviciosmin.gob.es",
+          "record": "v=spf1 ip4:193.146.123.231/32 ip4:193.146.123.235/32 ip4:192.187.16.25/32 ip4:192.187.16.27/32  ~all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "193.146.123.231/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "193.146.123.235/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "192.187.16.25/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "192.187.16.27/32",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        },
         {
           "domain": "marketing.dynamics.com",
           "record": "v=spf1 ip4:13.66.138.128/25 ip4:13.69.226.128/25 ip4:13.71.171.0/24 ip4:13.74.106.128/25 ip4:13.75.35.0/24 ip4:13.77.51.0/24 ip4:13.78.107.0/24 ip4:40.78.242.0/25 ip4:40.79.138.192/26 ip4:51.140.147.0/24 ip4:65.52.252.128/27 ip4:102.133.251.96/27 ip4:104.211.80.0/24 ip4:191.233.202.0/24 ~all",
@@ -121,17 +149,122 @@
             "all": "softfail"
           },
           "warnings": []
+        },
+        {
+          "domain": "spf.protection.outlook.com",
+          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/15 ip4:52.102.0.0/16 ip4:52.103.0.0/17 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/51 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "40.92.0.0/15",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "40.107.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.100.0.0/15",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.102.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.103.0.0/17",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "104.47.0.0/17",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "2a01:111:f400::/48",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403::/49",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:8000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:c000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:f000::/52",
+                "mechanism": "ip6"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
         }
       ],
       "redirect": null,
       "exp": null,
-      "all": "softfail"
+      "all": "fail"
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=none",
+    "valid": true,
+    "location": "tourspain.es",
+    "warnings": [
+      "rua tag (destination for aggregate reports) not found"
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }

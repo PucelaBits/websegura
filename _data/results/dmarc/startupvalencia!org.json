@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "europe2713.banahosting.com",
-      "europe2712.banahosting.com"
+      "dns42.servidoresdns.net",
+      "dns41.servidoresdns.net"
     ],
     "warnings": []
   },
@@ -15,24 +15,24 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.250.141.27",
-          "2607:f8b0:4023:c03::1b"
+          "142.250.101.26",
+          "2607:f8b0:4023:c0d::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "2607:f8b0:4003:c15::1a",
-          "64.233.171.27"
+          "108.177.104.26",
+          "2607:f8b0:4003:c04::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "142.250.152.26",
-          "2607:f8b0:4001:c56::1b"
+          "142.250.152.27",
+          "2607:f8b0:4001:c56::1a"
         ]
       },
       {
@@ -50,99 +50,39 @@
           "173.194.77.27",
           "2607:f8b0:4023:401::1a"
         ]
+      },
+      {
+        "preference": 10,
+        "hostname": "aspmx.l.google.com",
+        "addresses": []
+      },
+      {
+        "preference": 20,
+        "hostname": "alt1.aspmx.l.google.com",
+        "addresses": []
       }
     ],
-    "warnings": []
+    "warnings": [
+      "Hostname aspmx.l.google.com is listed in multiple MX records",
+      "Hostname alt1.aspmx.l.google.com is listed in multiple MX records"
+    ]
   },
   "spf": {
-    "record": "v=spf1 ip4:107.6.151.134 +a +mx include:relay.mailchannels.net include:_spf.google.com ~all",
+    "record": "v=spf1 ip4:204.93.189.130 include:_spf.google.com ~all",
     "valid": true,
-    "dns_lookups": 7,
+    "dns_lookups": 4,
     "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "107.6.151.134",
+          "value": "204.93.189.130",
           "mechanism": "ip4"
-        },
-        {
-          "value": "13.36.67.43",
-          "mechanism": "a"
-        },
-        {
-          "value": "aspmx.l.google.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "alt1.aspmx.l.google.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "alt2.aspmx.l.google.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "alt3.aspmx.l.google.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "alt4.aspmx.l.google.com",
-          "mechanism": "mx"
         }
       ],
       "neutral": [],
       "softfail": [],
       "fail": [],
       "include": [
-        {
-          "domain": "relay.mailchannels.net",
-          "record": "v=spf1 ip4:23.83.208.0/20 ip4:46.232.183.0/24 ip4:199.10.31.235/32 ip4:199.10.31.236/32 ip4:172.255.62.10/32 ip4:172.255.62.11/32 ip4:54.245.125.39/32 ip4:103.18.109.138/32 ~all",
-          "dns_lookups": 0,
-          "parsed": {
-            "pass": [
-              {
-                "value": "23.83.208.0/20",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "46.232.183.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "199.10.31.235/32",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "199.10.31.236/32",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "172.255.62.10/32",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "172.255.62.11/32",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "54.245.125.39/32",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "103.18.109.138/32",
-                "mechanism": "ip4"
-              }
-            ],
-            "neutral": [],
-            "softfail": [],
-            "fail": [],
-            "include": [],
-            "redirect": null,
-            "exp": null,
-            "all": "softfail"
-          },
-          "warnings": []
-        },
         {
           "domain": "_spf.google.com",
           "record": "v=spf1 include:_netblocks.google.com include:_netblocks2.google.com include:_netblocks3.google.com ~all",
@@ -326,52 +266,70 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none",
+    "record": "v=DMARC1;p=quarantine;sp=quarantine;adkim=r;aspf=r;pct=100;fo=0;rf=afrf;ri=86400;rua=mailto:hello@startupvalencia.org;ruf=mailto:hello@startupvalencia.org",
     "valid": true,
     "location": "startupvalencia.org",
-    "warnings": [
-      "rua tag (destination for aggregate reports) not found"
-    ],
+    "warnings": [],
     "tags": {
       "v": {
         "value": "DMARC1",
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "quarantine",
+        "explicit": true
+      },
+      "sp": {
+        "value": "quarantine",
         "explicit": true
       },
       "adkim": {
         "value": "r",
-        "explicit": false
+        "explicit": true
       },
       "aspf": {
         "value": "r",
-        "explicit": false
+        "explicit": true
+      },
+      "pct": {
+        "value": 100,
+        "explicit": true
       },
       "fo": {
         "value": [
           "0"
         ],
-        "explicit": false
-      },
-      "pct": {
-        "value": 100,
-        "explicit": false
+        "explicit": true
       },
       "rf": {
         "value": [
           "afrf"
         ],
-        "explicit": false
+        "explicit": true
       },
       "ri": {
         "value": 86400,
-        "explicit": false
+        "explicit": true
       },
-      "sp": {
-        "value": "none",
-        "explicit": false
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "hello@startupvalencia.org",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "hello@startupvalencia.org",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
       }
     }
   }

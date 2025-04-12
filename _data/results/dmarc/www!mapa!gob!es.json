@@ -1,12 +1,11 @@
 {
   "domain": "mapa.gob.es",
   "base_domain": "mapa.gob.es",
-  "dnssec": false,
+  "dnssec": true,
   "ns": {
     "hostnames": [
-      "artemis.ttd.net",
-      "dns1.mapa.es",
-      "dns2.mapa.es"
+      "ns1.age.gob.es",
+      "ns2.age.gob.es"
     ],
     "warnings": []
   },

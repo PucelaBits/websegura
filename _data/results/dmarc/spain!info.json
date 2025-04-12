@@ -4,103 +4,21 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns06.ns-cloud4b.com",
-      "ns03.ns-cloud4b.net",
-      "ns05.ns-cloud4b.org"
+      "ns.transparentedge.eu",
+      "ns.transparentedge.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mailin.minetad.es",
-        "addresses": [
-          "193.146.123.230"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "mailin1.minetad.es",
-        "addresses": [
-          "193.146.123.234"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
   },
   "spf": {
-    "record": "v=spf1 mx a:smtp1.tourspain.es a:smtp2.tourspain.es a:smtp3.tourspain.es a:mailout.minetad.es a:mailout1.minetad.es a:mta90.minetad.es ip4:195.53.180.101/32 ip4:195.53.180.102/32 ip4:195.53.180.103/32 ip4:193.146.1.50/32 ip4:193.146.123.231/32 ip4:193.146.123.235/32 ~all",
-    "valid": true,
-    "dns_lookups": 7,
-    "warnings": [],
-    "parsed": {
-      "pass": [
-        {
-          "value": "mailin.minetad.es",
-          "mechanism": "mx"
-        },
-        {
-          "value": "mailin1.minetad.es",
-          "mechanism": "mx"
-        },
-        {
-          "value": "195.53.180.101",
-          "mechanism": "a"
-        },
-        {
-          "value": "195.53.180.102",
-          "mechanism": "a"
-        },
-        {
-          "value": "195.53.180.103",
-          "mechanism": "a"
-        },
-        {
-          "value": "193.146.123.231",
-          "mechanism": "a"
-        },
-        {
-          "value": "193.146.123.235",
-          "mechanism": "a"
-        },
-        {
-          "value": "193.146.1.50",
-          "mechanism": "a"
-        },
-        {
-          "value": "195.53.180.101/32",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "195.53.180.102/32",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "195.53.180.103/32",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "193.146.1.50/32",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "193.146.123.231/32",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "193.146.123.235/32",
-          "mechanism": "ip4"
-        }
-      ],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [],
-      "redirect": null,
-      "exp": null,
-      "all": "softfail"
-    }
+    "record": null,
+    "valid": false,
+    "error": "spain.info does not have a SPF TXT record"
   },
   "dmarc": {
     "record": null,

@@ -1,26 +1,24 @@
 {
-  "algorithm_version": 2,
-  "end_time": "Fri, 26 Aug 2022 02:10:09 GMT",
+  "id": 61190520,
+  "algorithm_version": 4,
+  "scanned_at": "2025-04-12T00:59:10.782Z",
+  "error": null,
   "grade": "F",
-  "hidden": false,
-  "likelihood_indicator": "MEDIUM",
   "response_headers": {
-    "Cache-Control": "no-cache",
-    "Content-Encoding": "gzip",
-    "Content-Length": "5735",
-    "Content-Type": "text/html; charset=utf-8",
-    "Date": "Fri, 26 Aug 2022 02:10:05 GMT",
-    "Server": "Apache",
-    "Set-Cookie": "_cms_session_id=859d19e5c4a4406bb51662e7a106d2a3; path=/",
-    "Status": "200 OK",
-    "Vary": "Accept-Encoding"
+    "date": "Sat, 12 Apr 2025 00:59:12 GMT",
+    "link": "<https://www.mieres.es/wp-json/>; rel=\"https://api.w.org/\", <https://www.mieres.es/wp-json/wp/v2/pages/2352>; rel=\"alternate\"; type=\"application/json\", <https://www.mieres.es/?p=2352>; rel=shortlink",
+    "vary": "Accept-Encoding",
+    "server": "Apache/2.4.57 (Ubuntu)",
+    "connection": "close",
+    "content-type": "text/html; charset=UTF-8",
+    "content-length": "28111",
+    "x-tec-api-root": "https://www.mieres.es/wp-json/tribe/events/v1/",
+    "x-tec-api-origin": "https://www.mieres.es",
+    "x-tec-api-version": "v1"
   },
-  "scan_id": 28966934,
   "score": 0,
-  "start_time": "Fri, 26 Aug 2022 02:10:01 GMT",
-  "state": "FINISHED",
   "status_code": 200,
   "tests_failed": 6,
-  "tests_passed": 6,
-  "tests_quantity": 12
+  "tests_passed": 4,
+  "tests_quantity": 10
 }

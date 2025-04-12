@@ -12,7 +12,7 @@
   "mx": {
     "hosts": [
       {
-        "preference": 0,
+        "preference": 8,
         "hostname": "zimbra-oliva.digitalvalue.es",
         "addresses": [
           "217.13.93.4"
@@ -22,15 +22,124 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:oliva.es include:dnsxperta.com ip4:95.39.225.138 ip4:89.248.106.134 ip4:95.39.225.133 -all",
-    "valid": false,
+    "record": "v=spf1 include:dnsxperta.com ip4:95.39.225.138 ip4:89.248.106.134 ip4:95.39.225.133 -all",
+    "valid": true,
+    "dns_lookups": 1,
     "warnings": [],
-    "error": "Include loop: oliva.es"
+    "parsed": {
+      "pass": [
+        {
+          "value": "95.39.225.138",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "89.248.106.134",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "95.39.225.133",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "dnsxperta.com",
+          "record": "v=spf1 ip4:217.13.80.0/20 ip4:194.143.202.166/28 ip4:194.143.202.194/28 ip4:83.147.63.0/24 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "217.13.80.0/20",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "194.143.202.166/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "194.143.202.194/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "83.147.63.0/24",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.oliva.es\n\nv=spf1 ip4:217.13.80.0/20 ip4:194.143.202.166/28 ip4:194.143.202.194/28 ip4:83.147.63.0/24 -all"
+    "record": "v=DMARC1; p=none; rua=mailto:2fb3110ce055461d90a87905df7c8403@dmarc-reports.cloudflare.net",
+    "valid": true,
+    "location": "oliva.es",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "2fb3110ce055461d90a87905df7c8403@dmarc-reports.cloudflare.net",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }

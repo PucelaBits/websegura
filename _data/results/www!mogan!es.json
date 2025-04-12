@@ -1,27 +1,21 @@
 {
-  "algorithm_version": 2,
-  "end_time": "Thu, 25 Aug 2022 01:07:20 GMT",
+  "id": 61190675,
+  "algorithm_version": 4,
+  "scanned_at": "2025-04-12T00:59:53.815Z",
+  "error": null,
   "grade": "F",
-  "hidden": false,
-  "likelihood_indicator": "MEDIUM",
   "response_headers": {
-    "Cache-Control": "no-cache, private",
-    "Connection": "Keep-Alive",
-    "Content-Encoding": "gzip",
-    "Content-Length": "8668",
-    "Content-Type": "text/html; charset=UTF-8",
-    "Date": "Thu, 25 Aug 2022 01:07:06 GMT",
-    "Keep-Alive": "timeout=5, max=100",
-    "Server": "Apache/2.4.18 (Ubuntu)",
-    "Set-Cookie": "XSRF-TOKEN=eyJpdiI6InhFTTFzVG4wVHdBN3dlQjlUWWt5YlE9PSIsInZhbHVlIjoiOWFuMFVcL2ExQWw3c212SGYrd09SUW9jVVVcL051U2pleG94TnlqanpVS2NtUWZHVkxXcjgxZjlNaU9BRHE3MEQyWWVsbGNHaW9PbFg3dDFEM05KVndWQT09IiwibWFjIjoiYmE5NWM4OTNhMmY3NjdjYTMxYjM3ZWI1MmQ5NzIxY2Q2ZjM3YjE3ZTIwYWNkYTU5MTE4M2YxMGIxOTdjNTc4MiJ9; expires=Thu, 25-Aug-2022 03:07:06 GMT; Max-Age=7200; path=/, laravel_session=eyJpdiI6IndGTytYWWlENXQ4MzZIeThQOUcwcEE9PSIsInZhbHVlIjoia3dnNWQxNHhMYmdzWmxnRUZlWWhqR0NCT3gwTVR2bFRsSHpTalBUQ1pScENNMVdPaGl3N3hxRGthREdEaXFJc0Q5N2tDZ3dUWU5uWVM3bjdPZmdRS0E9PSIsIm1hYyI6ImQ5YzA0YzRkMzdjYjUyOWZjZDhlOGFiZThkNzE1ZTMwY2JmNDU2NzRmOGI4MzllZWFmMTEzZWMwNjcxNzhiZjkifQ%3D%3D; expires=Thu, 25-Aug-2022 03:07:06 GMT; Max-Age=7200; path=/; HttpOnly",
-    "Vary": "Accept-Encoding"
+    "date": "Sat, 12 Apr 2025 00:59:54 GMT",
+    "vary": "Accept-Encoding,",
+    "server": "Apache",
+    "connection": "close",
+    "set-cookie": "lb_c58084cf9f8261e24f499e6c6837e201=i_5ef77c1c3afb61741ec27a5c90299fcb; path=/; HttpOnly",
+    "content-type": "text/html;charset=UTF-8",
+    "content-length": "191"
   },
-  "scan_id": 28946327,
   "score": 0,
-  "start_time": "Thu, 25 Aug 2022 01:07:02 GMT",
-  "state": "FINISHED",
-  "status_code": 200,
-  "tests_failed": 8,
+  "status_code": 403,
+  "tests_failed": 6,
   "tests_passed": 4,
-  "tests_quantity": 12
+  "tests_quantity": 10
 }

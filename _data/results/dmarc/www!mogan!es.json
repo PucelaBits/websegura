@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns10.servicio-online.net",
       "ns12.servicio-online.net",
-      "ns11.servicio-online.net",
-      "ns10.servicio-online.net"
+      "ns11.servicio-online.net"
     ],
     "warnings": []
   },
@@ -14,31 +14,59 @@
     "hosts": [
       {
         "preference": 10,
+        "hostname": "cust80680-1.in.mailcontrol.com",
+        "addresses": [
+          "85.115.52.190"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "cust80680-2.in.mailcontrol.com",
+        "addresses": [
+          "85.115.60.190"
+        ]
+      },
+      {
+        "preference": 40,
         "hostname": "inf1.mogan.es",
         "addresses": [
           "213.0.98.20"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The reverse DNS of 213.0.98.20 is correo.mogan.es, but the A/AAAA DNS records for correo.mogan.es do not resolve to 213.0.98.20"
+    ]
   },
   "spf": {
-    "record": "v=spf1 mx a ip4:213.0.98.20 a:inf1.mogan.es -all",
+    "record": "v=spf1 mx a ip4:213.0.98.20 ip4:213.0.98.22 a:inf1.mogan.es -all",
     "valid": true,
     "dns_lookups": 3,
     "warnings": [],
     "parsed": {
       "pass": [
         {
+          "value": "cust80680-1.in.mailcontrol.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "cust80680-2.in.mailcontrol.com",
+          "mechanism": "mx"
+        },
+        {
           "value": "inf1.mogan.es",
           "mechanism": "mx"
         },
         {
-          "value": "95.85.35.19",
+          "value": "51.254.103.53",
           "mechanism": "a"
         },
         {
           "value": "213.0.98.20",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "213.0.98.22",
           "mechanism": "ip4"
         },
         {

@@ -4,8 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.redunda.com",
-      "ns.redunda.com"
+      "ns2.serviciodns.es",
+      "ns3.serviciodns.es",
+      "ns1.serviciodns.es"
     ],
     "warnings": []
   },
@@ -13,65 +14,230 @@
     "hosts": [
       {
         "preference": 5,
-        "hostname": "gollum.gva.es",
+        "hostname": "mxext.gva.es",
         "addresses": [
           "193.145.200.16",
-          "193.145.206.215",
-          "195.77.18.230",
           "195.77.20.28"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The reverse DNS of 193.145.200.16 is mxext.gva.es, but the A/AAAA DNS records for mxext.gva.es do not resolve to 193.145.200.16",
+      "The reverse DNS of 195.77.20.28 is mxext.gva.es, but the A/AAAA DNS records for mxext.gva.es do not resolve to 195.77.20.28"
+    ]
   },
   "spf": {
-    "record": "v=spf1 ip4:193.145.205.216/24 ip4:193.145.206.211/24  ip4:193.145.206.0/25 ip4:195.77.17.0/24 ip4:195.77.18.0/24 ip4:195.77.22.20/24 ip4:193.145.200.20/24 mx:bombersdv.es mx:bombers.dva.gva.es -all",
+    "record": "v=spf1 include:mta.gva.es include:mtallistes.gva.es include:spf.difusio.gva.es mx:bombersdv.es -all",
     "valid": true,
-    "dns_lookups": 2,
+    "dns_lookups": 6,
     "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "193.145.205.216/24",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "193.145.206.211/24",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "193.145.206.0/25",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "195.77.17.0/24",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "195.77.18.0/24",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "195.77.22.20/24",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "193.145.200.20/24",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "gollum.gva.es",
-          "mechanism": "mx"
-        },
-        {
-          "value": "gollum.gva.es",
+          "value": "mxext.gva.es",
           "mechanism": "mx"
         }
       ],
       "neutral": [],
       "softfail": [],
       "fail": [],
-      "include": [],
+      "include": [
+        {
+          "domain": "mta.gva.es",
+          "record": "v=spf1 ip4:195.77.18.227 ip4:193.145.206.211 ip4:195.77.18.228 ip4:193.145.206.212 ip4:195.77.18.229 ip4:193.145.206.213 ip4:195.77.20.21 ip4:193.145.200.17 ip4:195.77.20.22 ip4:193.145.200.18 ip4:195.77.20.23 ip4:193.145.200.19 ip4:193.145.201.30 ip4:195.77.18.41 ip4:193.145.200.173 ip4:195.77.20.175 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "195.77.18.227",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "193.145.206.211",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "195.77.18.228",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "193.145.206.212",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "195.77.18.229",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "193.145.206.213",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "195.77.20.21",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "193.145.200.17",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "195.77.20.22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "193.145.200.18",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "195.77.20.23",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "193.145.200.19",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "193.145.201.30",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "195.77.18.41",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "193.145.200.173",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "195.77.20.175",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "mtallistes.gva.es",
+          "record": "v=spf1 a:dunas.gva.es a:sarabi.gva.es -all",
+          "dns_lookups": 2,
+          "parsed": {
+            "pass": [
+              {
+                "value": "193.145.207.85",
+                "mechanism": "a"
+              },
+              {
+                "value": "195.77.19.105",
+                "mechanism": "a"
+              },
+              {
+                "value": "193.145.207.20",
+                "mechanism": "a"
+              },
+              {
+                "value": "193.145.207.21",
+                "mechanism": "a"
+              },
+              {
+                "value": "193.145.207.22",
+                "mechanism": "a"
+              },
+              {
+                "value": "193.145.207.23",
+                "mechanism": "a"
+              },
+              {
+                "value": "193.145.207.86",
+                "mechanism": "a"
+              },
+              {
+                "value": "195.77.19.106",
+                "mechanism": "a"
+              },
+              {
+                "value": "195.77.19.68",
+                "mechanism": "a"
+              },
+              {
+                "value": "195.77.19.69",
+                "mechanism": "a"
+              },
+              {
+                "value": "195.77.19.70",
+                "mechanism": "a"
+              },
+              {
+                "value": "195.77.19.71",
+                "mechanism": "a"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "spf.difusio.gva.es",
+          "record": "v=spf1 ip4:195.77.18.39 ip4:193.145.201.27 ip4:195.77.18.40 ip4:193.145.201.28 ip4:195.77.20.96 ip4:193.145.200.96 ip4:195.77.20.97 ip4:193.145.200.97 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "195.77.18.39",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "193.145.201.27",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "195.77.18.40",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "193.145.201.28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "195.77.20.96",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "193.145.200.96",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "195.77.20.97",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "193.145.200.97",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        }
+      ],
       "redirect": null,
       "exp": null,
       "all": "fail"
