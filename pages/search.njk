@@ -1,0 +1,27 @@
+---
+layout: base
+permalink: "/search/"
+title: "Buscador"
+---
+
+{#
+INIT SEARCH
+Local search, no backend involved.
+
+XXX this could go in the header.
+XXX this could be a macro or something like that to import it from the pages that need the search box.
+#}
+<div class="search-input">
+  <a href="#" class="hidden" hidden aria-hidden="true">enlace dinámico</a>
+  <input id="search" autocomplete="false" role="search" title="Nombre del sitio que quieres buscar" type="search" placeholder="Busca entre los {{ all | length }} sitios...">
+  <div class="autocom-box">
+  </div>
+</div>
+
+<script nonce="search">
+let suggestions = [
+  {% for site in all %}{"name": "{{ site.name }} ({{ site.territorio }})", "href": "/w/{{ site.url | replace(".", "!") }}"}{{',' if not loop.last}}{% endfor %}
+];
+</script>
+<script src="/assets/js/searchbox.js" nonce="search"></script>
+{# END SEARCH #}
