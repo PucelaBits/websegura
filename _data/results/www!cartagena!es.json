@@ -1,23 +1,25 @@
 {
-  "id": 62655606,
+  "id": 62730230,
   "algorithm_version": 4,
-  "scanned_at": "2025-04-30T01:02:48.223Z",
+  "scanned_at": "2025-05-01T01:08:32.221Z",
   "error": null,
-  "grade": "F",
+  "grade": "D-",
   "response_headers": {
-    "date": "Wed, 30 Apr 2025 01:02:49 GMT",
+    "date": "Thu, 01 May 2025 01:08:33 GMT",
     "server": "nginx",
     "connection": "close",
-    "set-cookie": "ASPSESSIONIDSQRAAQRS=BBMJDLCAPCMCMIBKMDIJFKLM; path=/; secure; HttpOnly",
+    "set-cookie": "ASPSESSIONIDQSRDBQQS=IOFOCHPAOACLPNAPLBILGMGJ; path=/; secure; HttpOnly",
     "content-type": "text/html",
     "x-powered-by": "ASP.NET",
     "cache-control": "private",
     "x-frame-options": "SAMEORIGIN",
-    "transfer-encoding": "chunked"
+    "transfer-encoding": "chunked",
+    "x-content-type-options": "nosniff",
+    "strict-transport-security": "max-age=31536000;includeSubDomains"
   },
-  "score": 0,
+  "score": 25,
   "status_code": 200,
-  "tests_failed": 4,
-  "tests_passed": 6,
+  "tests_failed": 2,
+  "tests_passed": 8,
   "tests_quantity": 10
 }
