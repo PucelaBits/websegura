@@ -17,14 +17,14 @@
         "preference": 10,
         "hostname": "datos-gob-es.mail.protection.outlook.com",
         "addresses": [
-          "2a01:111:f403:ca04::e",
-          "2a01:111:f403:ca04::f",
-          "2a01:111:f403:ca09::",
-          "2a01:111:f403:ca09::b",
-          "52.101.68.18",
+          "2a01:111:f403:ca04::8",
+          "2a01:111:f403:ca09::1",
+          "2a01:111:f403:ca09::a",
+          "2a01:111:f403:ca09::f",
+          "52.101.68.0",
+          "52.101.68.16",
           "52.101.68.21",
-          "52.101.68.29",
-          "52.101.73.11"
+          "52.101.73.21"
         ]
       }
     ],
@@ -195,7 +195,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; fo=0; rua=mailto:abuse@datos.gob.es",
+    "record": "v=DMARC1; p=quarantine; rua=mailto:abuse@datos.gob.es; ruf=mailto:abuse@datos.gob.es; fo=0; ri=86400; adkim=r; aspf=s",
     "valid": true,
     "location": "datos.gob.es",
     "warnings": [],
@@ -205,13 +205,7 @@
         "explicit": true
       },
       "p": {
-        "value": "none",
-        "explicit": true
-      },
-      "fo": {
-        "value": [
-          "0"
-        ],
+        "value": "quarantine",
         "explicit": true
       },
       "rua": {
@@ -224,13 +218,33 @@
         ],
         "explicit": true
       },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "abuse@datos.gob.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": true
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": true
+      },
       "adkim": {
         "value": "r",
-        "explicit": false
+        "explicit": true
       },
       "aspf": {
-        "value": "r",
-        "explicit": false
+        "value": "s",
+        "explicit": true
       },
       "pct": {
         "value": 100,
@@ -242,12 +256,8 @@
         ],
         "explicit": false
       },
-      "ri": {
-        "value": 86400,
-        "explicit": false
-      },
       "sp": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": false
       }
     }

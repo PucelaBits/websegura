@@ -41,7 +41,7 @@
       "include": [
         {
           "domain": "seg-social.es",
-          "record": "v=spf1 mx ip4:195.57.67.224/27 ip4:194.224.129.224/27 ip4:194.179.55.96/28 ip4:213.99.40.96/28 include:spf.protection.outlook.com ~all",
+          "record": "v=spf1 mx ip4:195.57.67.224/27 ip4:194.224.129.224/27 include:spf.protection.outlook.com ~all",
           "dns_lookups": 2,
           "parsed": {
             "pass": [
@@ -59,14 +59,6 @@
               },
               {
                 "value": "194.224.129.224/27",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "194.179.55.96/28",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "213.99.40.96/28",
                 "mechanism": "ip4"
               }
             ],

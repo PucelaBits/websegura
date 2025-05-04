@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "dpmdns01.ns-cloud4b.org",
-      "dpmdns02.ns-cloud4b.com",
-      "dpmdns03.ns-cloud4b.net"
+      "dpmdns03.ns-cloud4b.net",
+      "dpmdns02.ns-cloud4b.com"
     ],
     "warnings": []
   },
@@ -23,7 +23,7 @@
         "preference": 20,
         "hostname": "mxb-00870b02.gslb.pphosted.com",
         "addresses": [
-          "66.159.235.119"
+          "143.55.150.246"
         ]
       }
     ],
@@ -432,22 +432,6 @@
               },
               {
                 "value": "2001:978:2:2f::5:111",
-                "mechanism": "a"
-              },
-              {
-                "value": "2001:978:2:6::20:11",
-                "mechanism": "a"
-              },
-              {
-                "value": "2001:978:2:6::20:12",
-                "mechanism": "a"
-              },
-              {
-                "value": "2001:978:2:6::20:13",
-                "mechanism": "a"
-              },
-              {
-                "value": "2001:978:2:6::20:14",
                 "mechanism": "a"
               },
               {
@@ -996,7 +980,7 @@
     "location": "istan.es",
     "warnings": [
       "hispasec.com does not indicate that it accepts DMARC reports about istan.es - Authorization record not found: istan.es._report._dmarc.hispasec.com IN TXT \"v=DMARC1\"",
-      "Failed to retrieve MX records for the domain of ruf email address dmarc_ruf@emaildefense.proofpoint.com - The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+      "hispasec.com does not indicate that it accepts DMARC reports about istan.es - Authorization record not found: istan.es._report._dmarc.hispasec.com IN TXT \"v=DMARC1\""
     ],
     "tags": {
       "v": {
@@ -1023,7 +1007,18 @@
         "explicit": true
       },
       "ruf": {
-        "value": "mailto:dmarc_ruf@emaildefense.proofpoint.com,mailto:dmarc@hispasec.com",
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc_ruf@emaildefense.proofpoint.com",
+            "size_limit": null
+          },
+          {
+            "scheme": "mailto",
+            "address": "dmarc@hispasec.com",
+            "size_limit": null
+          }
+        ],
         "explicit": true
       },
       "sp": {

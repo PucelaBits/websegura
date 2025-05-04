@@ -1,7 +1,7 @@
 {
   "domain": "bne.es",
   "base_domain": "bne.es",
-  "dnssec": true,
+  "dnssec": false,
   "ns": {
     "hostnames": [
       "ns1.age.gob.es",
@@ -231,9 +231,61 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.bne.es\n\n748952321\n\ngoogle-site-verification=saMst-k33VwrMgDHW6BOmzssLFjgzGY3CJbblRjOJWc"
+    "record": "v=DMARC1; p=none; sp=none; rua=mailto:dmarcadm@bne.es",
+    "valid": true,
+    "location": "bne.es",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "sp": {
+        "value": "none",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarcadm@bne.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      }
+    }
   }
 }

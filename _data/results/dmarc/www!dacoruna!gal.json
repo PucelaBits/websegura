@@ -5,10 +5,10 @@
   "ns": {
     "hostnames": [
       "dns1.dicoruna.es",
-      "ns2.xunta.es",
+      "dns.dicoruna.es",
       "dns.dacoruna.gal",
       "ns1.xunta.es",
-      "dns.dicoruna.es",
+      "ns2.xunta.es",
       "dns1.dacoruna.gal"
     ],
     "warnings": []
@@ -19,22 +19,22 @@
         "preference": 10,
         "hostname": "smtp.google.com",
         "addresses": [
-          "142.250.101.26",
-          "142.250.101.27",
-          "142.250.141.27",
-          "2607:f8b0:4023:c06::1a",
-          "2607:f8b0:4023:c06::1b",
-          "2607:f8b0:4023:c0d::1a",
-          "2607:f8b0:4023:c0d::1b",
-          "74.125.137.26",
-          "74.125.137.27"
+          "142.250.123.26",
+          "142.250.123.27",
+          "192.178.130.26",
+          "2607:f8b0:4023:1407::1a",
+          "2607:f8b0:4023:1419::1a",
+          "2607:f8b0:4023:1419::1b",
+          "2607:f8b0:4023:141b::1b",
+          "74.125.129.26",
+          "74.125.129.27"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:85.91.67.3 ip4:85.91.67.133 include:_spf.google.com -all",
+    "record": "v=spf1 ip4:85.91.67.3 include:_spf.google.com -all",
     "valid": true,
     "dns_lookups": 4,
     "warnings": [],
@@ -42,10 +42,6 @@
       "pass": [
         {
           "value": "85.91.67.3",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "85.91.67.133",
           "mechanism": "ip4"
         }
       ],

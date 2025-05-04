@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns03.ono.com",
+      "dns01.ono.com",
       "dns02.ono.com",
-      "dns01.ono.com"
+      "dns03.ono.com"
     ],
     "warnings": []
   },
@@ -143,7 +143,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1;p=quarantine;sp=none;adkim=r;aspf=r;pct=100;fo=1;rf=afrf;ri=86400;rua=mailto:dmarc@dipujaen.es;ruf=mailto:dmarc@dipujaen.es",
+    "record": "v=DMARC1;p=quarantine;adkim=r;aspf=r;pct=100;fo=1;rf=afrf;ri=86400;rua=mailto:dmarc@dipujaen.es;ruf=mailto:dmarc@dipujaen.es",
     "valid": true,
     "location": "dipujaen.es",
     "warnings": [],
@@ -154,10 +154,6 @@
       },
       "p": {
         "value": "quarantine",
-        "explicit": true
-      },
-      "sp": {
-        "value": "none",
         "explicit": true
       },
       "adkim": {
@@ -207,6 +203,10 @@
           }
         ],
         "explicit": true
+      },
+      "sp": {
+        "value": "quarantine",
+        "explicit": false
       }
     }
   }

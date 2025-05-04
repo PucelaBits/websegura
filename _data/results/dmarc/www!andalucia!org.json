@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns3.juntadeandalucia.es",
       "ns1.juntadeandalucia.es",
+      "ns4.juntadeandalucia.es",
       "ns.juntadeandalucia.es",
-      "ns4.juntadeandalucia.es"
+      "ns3.juntadeandalucia.es"
     ],
     "warnings": []
   },
@@ -34,9 +34,9 @@
     ]
   },
   "spf": {
-    "record": "v=spf1 ip4:217.12.27.153 ip4:217.12.27.75 ip4:217.12.26.60 ip4:217.12.26.61 ip4:217.12.27.157 ip4:217.12.27.158 ip4:217.12.27.159 ip4:217.12.27.160 include:spf.andalucia.org include:spf.acumbamail.com ~all",
+    "record": "v=spf1 ip4:217.12.27.153 ip4:217.12.27.75 ip4:217.12.26.60 ip4:217.12.26.61 ip4:217.12.27.157 ip4:217.12.27.158 ip4:217.12.27.159 ip4:217.12.27.160 include:spf.andalucia.org include:spf.acumbamail.com include:_spf.act-on.net ~all",
     "valid": true,
-    "dns_lookups": 2,
+    "dns_lookups": 4,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -168,6 +168,80 @@
             "redirect": null,
             "exp": null,
             "all": "softfail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "_spf.act-on.net",
+          "record": "v=spf1 include:_netblocks.act-on.net -all",
+          "dns_lookups": 1,
+          "parsed": {
+            "pass": [],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [
+              {
+                "domain": "_netblocks.act-on.net",
+                "record": "v=spf1 ip4:72.46.76.0/22 ip4:204.156.176.0/23 ip4:204.156.178.0/24 ip4:209.222.65.0/24 ip4:209.222.66.0/23 ip4:209.162.194.0/24 ip4:216.41.143.0/24 ip4:54.194.14.170 ip4:54.93.34.201 ip4:35.183.73.63 -all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "72.46.76.0/22",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "204.156.176.0/23",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "204.156.178.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "209.222.65.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "209.222.66.0/23",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "209.162.194.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "216.41.143.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "54.194.14.170",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "54.93.34.201",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "35.183.73.63",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "fail"
+                },
+                "warnings": []
+              }
+            ],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
           },
           "warnings": []
         }

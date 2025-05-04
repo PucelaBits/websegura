@@ -15,136 +15,30 @@
         "preference": 10,
         "hostname": "mx-01-eu-central-1.prod.hydra.sophos.com",
         "addresses": [
-          "18.157.197.5",
-          "3.67.25.49"
+          "18.159.42.184",
+          "52.28.146.62"
         ]
       },
       {
         "preference": 10,
         "hostname": "mx-02-eu-central-1.prod.hydra.sophos.com",
         "addresses": [
-          "18.157.197.5",
-          "3.67.25.49"
+          "18.159.42.184",
+          "52.28.146.62"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:_spf_eucentral1.prod.hydra.sophos.com ~all",
-    "valid": true,
-    "dns_lookups": 1,
-    "warnings": [],
-    "parsed": {
-      "pass": [],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [
-        {
-          "domain": "_spf_eucentral1.prod.hydra.sophos.com",
-          "record": "v=spf1 ip4:94.140.18.0/24 ip4:35.159.27.8/30 ip4:35.159.27.28/30 ip4:35.159.27.32/30 ip4:35.159.27.48/29 ip4:35.159.27.160/28 ~all",
-          "dns_lookups": 0,
-          "parsed": {
-            "pass": [
-              {
-                "value": "94.140.18.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "35.159.27.8/30",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "35.159.27.28/30",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "35.159.27.32/30",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "35.159.27.48/29",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "35.159.27.160/28",
-                "mechanism": "ip4"
-              }
-            ],
-            "neutral": [],
-            "softfail": [],
-            "fail": [],
-            "include": [],
-            "redirect": null,
-            "exp": null,
-            "all": "softfail"
-          },
-          "warnings": []
-        }
-      ],
-      "redirect": null,
-      "exp": null,
-      "all": "softfail"
-    }
+    "record": null,
+    "valid": false,
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; fo=1; rua=mailto:agoney.cabrera@velorciosgroup.com; ruf=mailto:agoney.cabrera@velorciosgroup.com; pct=100",
-    "valid": true,
-    "location": "grancanaria.com",
-    "warnings": [
-      "velorciosgroup.com does not indicate that it accepts DMARC reports about grancanaria.com - Authorization record not found: grancanaria.com._report._dmarc.velorciosgroup.com IN TXT \"v=DMARC1\"",
-      "velorciosgroup.com does not indicate that it accepts DMARC reports about grancanaria.com - Authorization record not found: grancanaria.com._report._dmarc.velorciosgroup.com IN TXT \"v=DMARC1\""
-    ],
-    "tags": {
-      "v": {
-        "value": "DMARC1",
-        "explicit": true
-      },
-      "p": {
-        "value": "none",
-        "explicit": true
-      },
-      "fo": {
-        "value": [
-          "1"
-        ],
-        "explicit": true
-      },
-      "rua": {
-        "value": "mailto:agoney.cabrera@velorciosgroup.com",
-        "explicit": true
-      },
-      "ruf": {
-        "value": "mailto:agoney.cabrera@velorciosgroup.com",
-        "explicit": true
-      },
-      "pct": {
-        "value": 100,
-        "explicit": true
-      },
-      "adkim": {
-        "value": "r",
-        "explicit": false
-      },
-      "aspf": {
-        "value": "r",
-        "explicit": false
-      },
-      "rf": {
-        "value": [
-          "afrf"
-        ],
-        "explicit": false
-      },
-      "ri": {
-        "value": 86400,
-        "explicit": false
-      },
-      "sp": {
-        "value": "none",
-        "explicit": false
-      }
-    }
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   }
 }

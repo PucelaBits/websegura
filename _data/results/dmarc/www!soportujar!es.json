@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns3.dnsxperta.com",
+      "ns1.dnsxperta.com",
       "ns2.dnsxperta.com",
-      "ns1.dnsxperta.com"
+      "ns3.dnsxperta.com"
     ],
     "warnings": []
   },
@@ -21,8 +21,7 @@
       }
     ],
     "warnings": [
-      "The domain ecs-119-8-213-87.reverse.open-telekom-cloud.com does not exist",
-      "The reverse DNS of 119.8.213.87 is ecs-119-8-213-87.reverse.open-telekom-cloud.com, but the A/AAAA DNS records for ecs-119-8-213-87.reverse.open-telekom-cloud.com do not resolve to 119.8.213.87"
+      "The reverse DNS of 119.8.213.87 is ecs-119-8-213-87.compute.hwclouds-dns.eu, but the A/AAAA DNS records for ecs-119-8-213-87.compute.hwclouds-dns.eu do not resolve to 119.8.213.87"
     ]
   },
   "spf": {

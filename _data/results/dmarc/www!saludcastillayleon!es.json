@@ -14,16 +14,7 @@
       {
         "preference": 10,
         "hostname": "cluster5.eu.messagelabs.com",
-        "addresses": [
-          "195.245.230.201",
-          "195.245.230.202",
-          "195.245.231.69",
-          "195.245.231.72",
-          "195.245.231.75",
-          "85.158.142.210",
-          "85.158.142.214",
-          "85.158.142.215"
-        ]
+        "addresses": []
       },
       {
         "preference": 20,
@@ -33,7 +24,9 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ]
   },
   "spf": {
     "record": "v=spf1 ip4:194.179.53.235 include:spf.protection.outlook.com include:spf.messagelabs.com -all",
@@ -165,7 +158,7 @@
               },
               {
                 "domain": "nets2.spf.messagelabs.com",
-                "record": "v=spf1 ip4:216.82.240.0/20 ip4:67.219.240.0/20 ip4:117.120.16.0/21 ip4:103.9.96.0/22",
+                "record": "v=spf1 ip4:216.82.240.0/20 ip4:67.219.240.0/20 ip4:117.120.16.0/21 ip4:103.9.96.0/22 ip4:35.228.216.85 ip4:146.148.116.76 ip4:34.141.160.224 ip4:34.70.158.162 ip4:34.74.74.140 ip4:34.83.159.189",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
@@ -183,6 +176,30 @@
                     },
                     {
                       "value": "103.9.96.0/22",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "35.228.216.85",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "146.148.116.76",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "34.141.160.224",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "34.70.158.162",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "34.74.74.140",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "34.83.159.189",
                       "mechanism": "ip4"
                     }
                   ],

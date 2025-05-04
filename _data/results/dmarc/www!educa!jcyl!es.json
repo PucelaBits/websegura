@@ -15,14 +15,14 @@
         "preference": 10,
         "hostname": "educa-jcyl-es.mail.protection.outlook.com",
         "addresses": [
-          "2a01:111:f403:ca04::c",
-          "2a01:111:f403:ca04::e",
+          "2a01:111:f403:ca04::",
           "2a01:111:f403:ca09::1",
-          "2a01:111:f403:ca09::8",
-          "52.101.68.39",
-          "52.101.73.15",
-          "52.101.73.24",
-          "52.101.73.30"
+          "2a01:111:f403:ca09::7",
+          "2a01:111:f403:ca09::d",
+          "52.101.68.18",
+          "52.101.68.25",
+          "52.101.73.19",
+          "52.101.73.6"
         ]
       }
     ],
@@ -112,7 +112,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; sp=none; fo=1; ri=3600; rua=mailto:junta-de-castilla-y-leon-servicios-centrales@rua.dmp.cisco.com; ruf=mailto:junta-de-castilla-y-leon-servicios-centrales@ruf.dmp.cisco.com",
+    "record": "v=DMARC1; p=none; sp=none; fo=1; ri=3600; rua=mailto:reportes_dmarc@educa.jcyl.es; ruf=mailto:alertas_dmarc@educa.jcyl.es",
     "valid": true,
     "location": "educa.jcyl.es",
     "warnings": [],
@@ -143,7 +143,7 @@
         "value": [
           {
             "scheme": "mailto",
-            "address": "junta-de-castilla-y-leon-servicios-centrales@rua.dmp.cisco.com",
+            "address": "reportes_dmarc@educa.jcyl.es",
             "size_limit": null
           }
         ],
@@ -153,7 +153,7 @@
         "value": [
           {
             "scheme": "mailto",
-            "address": "junta-de-castilla-y-leon-servicios-centrales@ruf.dmp.cisco.com",
+            "address": "alertas_dmarc@educa.jcyl.es",
             "size_limit": null
           }
         ],

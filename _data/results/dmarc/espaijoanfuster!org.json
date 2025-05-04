@@ -15,29 +15,29 @@
         "preference": 0,
         "hostname": "espaijoanfuster.org",
         "addresses": [
-          "178.33.164.163"
+          "213.158.84.54"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:51.91.61.167 ip4:54.37.172.200 include:_spf.webempresa.eu +a +mx ~all",
+    "record": "v=spf1 ip4:213.158.84.54 ip4:213.158.84.54 include:_spf.webempresa.eu +a +mx ~all",
     "valid": true,
     "dns_lookups": 5,
     "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "51.91.61.167",
+          "value": "213.158.84.54",
           "mechanism": "ip4"
         },
         {
-          "value": "54.37.172.200",
+          "value": "213.158.84.54",
           "mechanism": "ip4"
         },
         {
-          "value": "178.33.164.163",
+          "value": "213.158.84.54",
           "mechanism": "a"
         },
         {

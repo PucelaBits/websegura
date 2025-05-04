@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dominios.innovasur.com",
-      "dominios.innovasur.es"
+      "dominios.innovasur.es",
+      "dominios.innovasur.com"
     ],
     "warnings": []
   },
@@ -23,7 +23,7 @@
         "preference": 20,
         "hostname": "mx2.zoho.eu",
         "addresses": [
-          "185.230.214.166"
+          "89.36.170.166"
         ]
       },
       {
@@ -37,12 +37,14 @@
     "warnings": [
       "The reverse DNS of 185.230.212.166 is mx2.zoho.eu, but the A/AAAA DNS records for mx2.zoho.eu do not resolve to 185.230.212.166",
       "The reverse DNS of 185.230.214.166 is mx3.zoho.eu, but the A/AAAA DNS records for mx3.zoho.eu do not resolve to 185.230.214.166",
-      "The reverse DNS of 185.230.214.166 is mx3.zoho.eu, but the A/AAAA DNS records for mx3.zoho.eu do not resolve to 185.230.214.166",
+      "The reverse DNS of 185.230.214.166 is mx2.zoho.eu, but the A/AAAA DNS records for mx2.zoho.eu do not resolve to 185.230.214.166",
+      "The reverse DNS of 89.36.170.166 is mx.zoho.eu, but the A/AAAA DNS records for mx.zoho.eu do not resolve to 89.36.170.166",
+      "The reverse DNS of 89.36.170.166 is mx3.zoho.eu, but the A/AAAA DNS records for mx3.zoho.eu do not resolve to 89.36.170.166",
       "The reverse DNS of 185.230.212.166 is mx2.zoho.eu, but the A/AAAA DNS records for mx2.zoho.eu do not resolve to 185.230.212.166"
     ]
   },
   "spf": {
-    "record": "v=spf1 include:zoho.eu ip4:213.0.82.32/27 ip4:90.160.146.32/27 ip4:90.166.25.128/27 -all",
+    "record": "v=spf1 include:zoho.eu ip4:213.0.82.32/27 ip4:90.160.146.32/27 ip4:90.166.25.128/27 ip4:85.48.223.83/32 -all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
@@ -58,6 +60,10 @@
         },
         {
           "value": "90.166.25.128/27",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "85.48.223.83/32",
           "mechanism": "ip4"
         }
       ],

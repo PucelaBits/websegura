@@ -13,48 +13,30 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "mxa-00825801.gslb.pphosted.com",
-        "addresses": [
-          "143.55.144.57"
-        ]
-      },
-      {
-        "preference": 10,
         "hostname": "mxb-00825801.gslb.pphosted.com",
         "addresses": [
-          "185.183.28.235"
+          "143.55.144.57"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx ip4:195.55.116.96 -all",
+    "record": "v=spf1mxip4:195.55.116.96-all",
     "valid": true,
     "dns_lookups": 1,
-    "warnings": [],
+    "warnings": [
+      "The domain ip4:195.55.116.96-all does not exist"
+    ],
     "parsed": {
-      "pass": [
-        {
-          "value": "mxa-00825801.gslb.pphosted.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "mxb-00825801.gslb.pphosted.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "195.55.116.96",
-          "mechanism": "ip4"
-        }
-      ],
+      "pass": [],
       "neutral": [],
       "softfail": [],
       "fail": [],
       "include": [],
       "redirect": null,
       "exp": null,
-      "all": "fail"
+      "all": "neutral"
     }
   },
   "dmarc": {

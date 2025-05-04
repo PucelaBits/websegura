@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.serv643886.servidoresdns.net",
-      "dns2.serv643886.servidoresdns.net"
+      "dns2.serv643886.servidoresdns.net",
+      "dns1.serv643886.servidoresdns.net"
     ],
     "warnings": []
   },
@@ -29,7 +29,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx a ip4:195.55.125.164 ip4:195.55.125.162 ip4:195.55.127.94 ~all",
+    "record": "v=spf1 mx a ip4:195.55.125.164 ip4:195.55.125.162 ip4:195.55.127.94 ip4:154.58.17.118 -all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
@@ -58,6 +58,10 @@
         {
           "value": "195.55.127.94",
           "mechanism": "ip4"
+        },
+        {
+          "value": "154.58.17.118",
+          "mechanism": "ip4"
         }
       ],
       "neutral": [],
@@ -66,7 +70,7 @@
       "include": [],
       "redirect": null,
       "exp": null,
-      "all": "softfail"
+      "all": "fail"
     }
   },
   "dmarc": {

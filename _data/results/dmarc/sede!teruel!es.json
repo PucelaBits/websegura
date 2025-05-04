@@ -3,56 +3,19 @@
   "base_domain": "teruel.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "ns2.teruel.es",
-      "ns1.teruel.es"
-    ],
+    "hostnames": [],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mx10.teruel.es",
-        "addresses": [
-          "195.53.63.198"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
   },
   "spf": {
-    "record": "v=spf1 +a +mx +ip4:185.45.72.125 +ip4:195.53.63.198 -all",
-    "valid": true,
-    "dns_lookups": 2,
-    "warnings": [],
-    "parsed": {
-      "pass": [
-        {
-          "value": "195.53.63.197",
-          "mechanism": "a"
-        },
-        {
-          "value": "mx10.teruel.es",
-          "mechanism": "mx"
-        },
-        {
-          "value": "185.45.72.125",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "195.53.63.198",
-          "mechanism": "ip4"
-        }
-      ],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [],
-      "redirect": null,
-      "exp": null,
-      "all": "fail"
-    }
+    "record": null,
+    "valid": false,
+    "error": "sede.teruel.es does not have a SPF TXT record"
   },
   "dmarc": {
     "record": "v=DMARC1; p=reject; ruf=mailto:informatica@teruel.es; fo=1; adkim=s; aspf=s; pct=100; rf=afrf; ri=86400; sp=reject",

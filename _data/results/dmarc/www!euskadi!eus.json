@@ -24,12 +24,10 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:176.28.98.112/28 include:spf.mandrillapp.com include:servers.mcsv.net include:euskadi.ip-zone.com include:eu.zcsend.net include:spf.batera.euskadi.eus -all include:_pmta2.antevenio.com -all",
+    "record": "v=spf1 ip4:176.28.98.112/28 include:spf.mandrillapp.com include:servers.mcsv.net include:euskadi.ip-zone.com include:eu.zcsend.net include:spf.batera.euskadi.eus include:_pmta2.antevenio.com -all",
     "valid": true,
-    "dns_lookups": 7,
-    "warnings": [
-      "Any text after the all mechanism is ignored"
-    ],
+    "dns_lookups": 8,
+    "warnings": [],
     "parsed": {
       "pass": [
         {
@@ -347,6 +345,63 @@
                 "warnings": []
               }
             ],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "_pmta2.antevenio.com",
+          "record": "v=spf1 ip4:62.97.141.0/24 ip4:62.97.140.0/24 ip4:62.97.130.0/25 ip4:62.97.133.0/28 ip4:212.101.74.32/28 ip4:212.101.90.80/28 ip4:212.101.77.132 ip4:185.214.212.0/22 ip4:159.8.104.48/28 ip4:159.8.108.240/28 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "62.97.141.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "62.97.140.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "62.97.130.0/25",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "62.97.133.0/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "212.101.74.32/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "212.101.90.80/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "212.101.77.132",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.214.212.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "159.8.104.48/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "159.8.108.240/28",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
             "redirect": null,
             "exp": null,
             "all": "fail"

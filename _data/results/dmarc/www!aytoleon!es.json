@@ -3,12 +3,8 @@
   "base_domain": "aytoleon.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "ns2.dnsrapido.com",
-      "ns1.dnsrapido.com",
-      "ns3.dnsrapido.com"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "mx": {
     "hosts": [
@@ -36,63 +32,9 @@
     "error": "The domain correo.gtt.es does not exist"
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; rua=mailto:dmarc-reportes@aytoleon.es;",
-    "valid": true,
-    "location": "aytoleon.es",
-    "warnings": [
-      "DMARC record at root of aytoleon.es has no effect"
-    ],
-    "tags": {
-      "v": {
-        "value": "DMARC1",
-        "explicit": true
-      },
-      "p": {
-        "value": "none",
-        "explicit": true
-      },
-      "rua": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "dmarc-reportes@aytoleon.es",
-            "size_limit": null
-          }
-        ],
-        "explicit": true
-      },
-      "adkim": {
-        "value": "r",
-        "explicit": false
-      },
-      "aspf": {
-        "value": "r",
-        "explicit": false
-      },
-      "fo": {
-        "value": [
-          "0"
-        ],
-        "explicit": false
-      },
-      "pct": {
-        "value": 100,
-        "explicit": false
-      },
-      "rf": {
-        "value": [
-          "afrf"
-        ],
-        "explicit": false
-      },
-      "ri": {
-        "value": 86400,
-        "explicit": false
-      },
-      "sp": {
-        "value": "none",
-        "explicit": false
-      }
-    }
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   }
 }
