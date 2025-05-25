@@ -15,29 +15,29 @@
         "preference": 0,
         "hostname": "guadajoz.org",
         "addresses": [
-          "94.23.87.86"
+          "213.158.86.86"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:51.91.61.104 ip4:94.23.87.86 include:_spf.webempresa.eu +a +mx ~all",
+    "record": "v=spf1 ip4:213.158.86.86 ip4:213.158.86.86 include:_spf.webempresa.eu +a +mx ~all",
     "valid": true,
     "dns_lookups": 5,
     "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "51.91.61.104",
+          "value": "213.158.86.86",
           "mechanism": "ip4"
         },
         {
-          "value": "94.23.87.86",
+          "value": "213.158.86.86",
           "mechanism": "ip4"
         },
         {
-          "value": "94.23.87.86",
+          "value": "213.158.86.86",
           "mechanism": "a"
         },
         {

@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns8162.webempresa.eu",
-      "ns8161.webempresa.eu"
+      "ns8161.webempresa.eu",
+      "ns8162.webempresa.eu"
     ],
     "warnings": []
   },
@@ -15,21 +15,21 @@
         "preference": 0,
         "hostname": "mail.aytovalverde.org",
         "addresses": [
-          "51.68.24.40"
+          "213.158.86.43"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 +a +mx +ip4:51.91.107.224 include:_spf.webempresa.eu ~all",
+    "record": "v=spf1 +a +mx +ip4:213.158.86.43 include:_spf.webempresa.eu ~all",
     "valid": true,
     "dns_lookups": 5,
     "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "51.68.24.40",
+          "value": "213.158.86.43",
           "mechanism": "a"
         },
         {
@@ -37,7 +37,7 @@
           "mechanism": "mx"
         },
         {
-          "value": "51.91.107.224",
+          "value": "213.158.86.43",
           "mechanism": "ip4"
         }
       ],

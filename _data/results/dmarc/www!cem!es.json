@@ -1,7 +1,7 @@
 {
   "domain": "cem.es",
   "base_domain": "cem.es",
-  "dnssec": true,
+  "dnssec": false,
   "ns": {
     "hostnames": [
       "ns1.age.gob.es",
@@ -13,16 +13,16 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "mailin1.serviciosmin.gob.es",
-        "addresses": [
-          "192.187.16.26"
-        ]
-      },
-      {
-        "preference": 15,
         "hostname": "mailin.serviciosmin.gob.es",
         "addresses": [
           "192.187.16.24"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mailin1.serviciosmin.gob.es",
+        "addresses": [
+          "192.187.16.26"
         ]
       }
     ],
@@ -36,11 +36,11 @@
     "parsed": {
       "pass": [
         {
-          "value": "mailin1.serviciosmin.gob.es",
+          "value": "mailin.serviciosmin.gob.es",
           "mechanism": "mx"
         },
         {
-          "value": "mailin.serviciosmin.gob.es",
+          "value": "mailin1.serviciosmin.gob.es",
           "mechanism": "mx"
         }
       ],

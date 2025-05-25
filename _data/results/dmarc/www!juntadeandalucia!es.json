@@ -150,12 +150,12 @@
             "include": [
               {
                 "domain": "_netblocks.google.com",
-                "record": "v=spf1 ip4:35.190.247.0/24 ip4:64.233.160.0/19 ip4:66.102.0.0/20 ip4:66.249.80.0/20 ip4:72.14.192.0/18 ip4:74.125.0.0/16 ip4:108.177.8.0/21 ip4:173.194.0.0/16 ip4:209.85.128.0/17 ip4:216.58.192.0/19 ip4:216.239.32.0/19 ~all",
+                "record": "v=spf1 ip4:35.190.247.0/25 ip4:64.233.160.0/19 ip4:66.102.0.0/20 ip4:66.249.80.0/20 ip4:72.14.192.0/18 ip4:74.125.0.0/16 ip4:108.177.8.0/21 ip4:173.194.0.0/16 ip4:209.85.128.0/17 ip4:216.58.192.0/19 ip4:216.239.32.0/19 ~all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
                     {
-                      "value": "35.190.247.0/24",
+                      "value": "35.190.247.0/25",
                       "mechanism": "ip4"
                     },
                     {
@@ -370,7 +370,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; rua=mailto:dmarc.soc@juntadeandalucia.es; ruf=mailto:dmarc.soc@juntadeandalucia.es; fo=1;",
+    "record": "v=DMARC1; p=none; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com,mailto:dmarc.soc@juntadeandalucia.es; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com,mailto:dmarc.soc@juntadeandalucia.es",
     "valid": true,
     "location": "juntadeandalucia.es",
     "warnings": [],
@@ -383,8 +383,19 @@
         "value": "none",
         "explicit": true
       },
+      "fo": {
+        "value": [
+          "1"
+        ],
+        "explicit": true
+      },
       "rua": {
         "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc_rua@emaildefense.proofpoint.com",
+            "size_limit": null
+          },
           {
             "scheme": "mailto",
             "address": "dmarc.soc@juntadeandalucia.es",
@@ -397,15 +408,14 @@
         "value": [
           {
             "scheme": "mailto",
+            "address": "dmarc_ruf@emaildefense.proofpoint.com",
+            "size_limit": null
+          },
+          {
+            "scheme": "mailto",
             "address": "dmarc.soc@juntadeandalucia.es",
             "size_limit": null
           }
-        ],
-        "explicit": true
-      },
-      "fo": {
-        "value": [
-          "1"
         ],
         "explicit": true
       },

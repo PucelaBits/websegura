@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns06.ns-cloud4b.net",
       "ns08.ns-cloud4b.com",
-      "ns07.ns-cloud4b.org"
+      "ns07.ns-cloud4b.org",
+      "ns06.ns-cloud4b.net"
     ],
     "warnings": []
   },
@@ -30,7 +30,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:46.24.200.236 ip4:46.24.200.225 ip4:46.24.200.224 ip4:46.24.200.225 ip4:2.139.232.242 ip4:46.24.200.250 a mx ip4:213.4.20.215 include:spf.protection.outlook.com include:spf.ipzmarketing.com exists:%{i}.spf.hc348-91.eu.iphmx.com ~all",
+    "record": "v=spf1 ip4:46.24.200.236 ip4:46.24.200.225 ip4:46.24.200.224 ip4:46.24.200.250 a mx include:spf.protection.outlook.com include:spf.ipzmarketing.com exists:%{i}.spf.hc348-91.eu.iphmx.com ~all",
     "valid": true,
     "dns_lookups": 5,
     "warnings": [],
@@ -49,14 +49,6 @@
           "mechanism": "ip4"
         },
         {
-          "value": "46.24.200.225",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "2.139.232.242",
-          "mechanism": "ip4"
-        },
-        {
           "value": "46.24.200.250",
           "mechanism": "ip4"
         },
@@ -67,10 +59,6 @@
         {
           "value": "conselldeivissa-es.mail.protection.outlook.com",
           "mechanism": "mx"
-        },
-        {
-          "value": "213.4.20.215",
-          "mechanism": "ip4"
         },
         {
           "value": "%{i}.spf.hc348-91.eu.iphmx.com",
@@ -186,9 +174,61 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=quarantine; rua=mailto:informatica@conselldeivissa.es; sp=quarantine; aspf=r;",
+    "valid": true,
+    "location": "conselldeivissa.es",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "informatica@conselldeivissa.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "sp": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      }
+    }
   }
 }

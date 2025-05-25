@@ -4,33 +4,19 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns2.adif.es",
       "ns1.adif.es",
-      "a11-64.akam.net",
-      "a4-65.akam.net",
-      "a9-67.akam.net",
-      "a22-65.akam.net",
       "a1-37.akam.net",
       "a8-65.akam.net",
-      "ns2.adif.es"
+      "a9-67.akam.net",
+      "a4-65.akam.net",
+      "a11-64.akam.net",
+      "a22-65.akam.net"
     ],
     "warnings": []
   },
   "mx": {
     "hosts": [
-      {
-        "preference": 0,
-        "hostname": "adifaltavelocidad-es.mail.protection.outlook.com",
-        "addresses": [
-          "2a01:111:f403:ca04::d",
-          "2a01:111:f403:ca04::e",
-          "2a01:111:f403:ca09::1",
-          "2a01:111:f403:ca09::f",
-          "52.101.68.10",
-          "52.101.68.12",
-          "52.101.68.39",
-          "52.101.73.11"
-        ]
-      },
       {
         "preference": 10,
         "hostname": "mx1.hc1197-70.eu.iphmx.com",
@@ -46,27 +32,6 @@
           "23.90.119.224",
           "23.90.122.66"
         ]
-      },
-      {
-        "preference": 40,
-        "hostname": "smtp.adif.es",
-        "addresses": [
-          "213.144.33.142"
-        ]
-      },
-      {
-        "preference": 50,
-        "hostname": "ebro.adif.es",
-        "addresses": [
-          "213.144.33.148"
-        ]
-      },
-      {
-        "preference": 60,
-        "hostname": "duero.adif.es",
-        "addresses": [
-          "213.144.33.149"
-        ]
       }
     ],
     "warnings": []
@@ -79,27 +44,11 @@
     "parsed": {
       "pass": [
         {
-          "value": "adifaltavelocidad-es.mail.protection.outlook.com",
-          "mechanism": "mx"
-        },
-        {
           "value": "mx1.hc1197-70.eu.iphmx.com",
           "mechanism": "mx"
         },
         {
           "value": "mx2.hc1197-70.eu.iphmx.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "smtp.adif.es",
-          "mechanism": "mx"
-        },
-        {
-          "value": "ebro.adif.es",
-          "mechanism": "mx"
-        },
-        {
-          "value": "duero.adif.es",
           "mechanism": "mx"
         },
         {
@@ -191,7 +140,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; pct=100; rua=mailto:a.o4b3dizs@reports.hornetdmarc.com",
+    "record": "v=DMARC1; p=reject; sp=none; pct=100; rua=mailto:a.o4b3dizs@reports.hornetdmarc.com",
     "valid": true,
     "location": "adifaltavelocidad.es",
     "warnings": [
@@ -203,6 +152,10 @@
         "explicit": true
       },
       "p": {
+        "value": "reject",
+        "explicit": true
+      },
+      "sp": {
         "value": "none",
         "explicit": true
       },
@@ -242,10 +195,6 @@
       },
       "ri": {
         "value": 86400,
-        "explicit": false
-      },
-      "sp": {
-        "value": "none",
         "explicit": false
       }
     }

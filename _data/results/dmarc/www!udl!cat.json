@@ -17,21 +17,21 @@
         "preference": 0,
         "hostname": "udl-cat.mail.protection.outlook.com",
         "addresses": [
-          "2a01:111:f403:ca04::",
-          "2a01:111:f403:ca04::d",
-          "2a01:111:f403:ca09::3",
-          "2a01:111:f403:ca09::e",
-          "52.101.68.10",
-          "52.101.68.3",
-          "52.101.73.1",
-          "52.101.73.26"
+          "2a01:111:f403:ca04::7",
+          "2a01:111:f403:ca09::",
+          "2a01:111:f403:ca09::5",
+          "2a01:111:f403:ca09::8",
+          "52.101.68.29",
+          "52.101.73.12",
+          "52.101.73.15",
+          "52.101.73.19"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx ptr a:relayout.udl.cat a:relayout01.udl.cat a:relayout02.udl.cat a:peguera.xs.csuc.cat a:peguera.xs.cesca.cat include:spf.sendinblue.com include:spf.protection.outlook.com include:spf.ipzmarketing.com -all",
+    "record": "v=spf1 mx ptr a:relayout.udl.cat a:relayout01.udl.cat a:relayout02.udl.cat a:peguera.xs.csuc.cat a:gabarro.xs.csuc.cat include:spf.sendinblue.com include:spf.protection.outlook.com include:spf.ipzmarketing.com -all",
     "valid": true,
     "dns_lookups": 9,
     "warnings": [
@@ -68,11 +68,11 @@
           "mechanism": "a"
         },
         {
-          "value": "2001:40b0:1:1122:ce5c:a000:0:7",
+          "value": "2001:40b0:1:1122:ce5c:a000:0:6",
           "mechanism": "a"
         },
         {
-          "value": "84.88.0.7",
+          "value": "84.88.0.6",
           "mechanism": "a"
         }
       ],

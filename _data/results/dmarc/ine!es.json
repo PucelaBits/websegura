@@ -22,7 +22,7 @@
         "preference": 10,
         "hostname": "mxb-006a4e02.gslb.pphosted.com",
         "addresses": [
-          "143.55.146.78"
+          "143.55.148.243"
         ]
       }
     ],
@@ -32,13 +32,15 @@
     "record": "v=spf1 include:spf.puc.rediris.es a:correo.ine.es a:smtpout.ine.es a:remesas.ine.es a:c.spf.service-now.com  -all",
     "valid": true,
     "dns_lookups": 5,
-    "warnings": [
-      "All nameservers failed to answer the query smtpout.ine.es. IN A: Server Do53:1.0.0.1@53 answered SERVFAIL"
-    ],
+    "warnings": [],
     "parsed": {
       "pass": [
         {
           "value": "195.254.149.7",
+          "mechanism": "a"
+        },
+        {
+          "value": "195.254.149.12",
           "mechanism": "a"
         },
         {

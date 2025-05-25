@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "artemis.ttd.net",
       "dns1.guardiacivil.es",
+      "artemis.ttd.net",
       "dns2.guardiacivil.es"
     ],
     "warnings": []
@@ -163,6 +163,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.guardiacivil.es\n\n915155437\n\nv=spf1 -all"
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.guardiacivil.es\n\nv=spf1 -all\n\n915155437"
   }
 }

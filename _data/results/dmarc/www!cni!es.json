@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.interdomain.net",
+      "ns2.interdomain.net",
       "ns3.interdomain.es",
-      "ns2.interdomain.net"
+      "ns1.interdomain.net"
     ],
     "warnings": []
   },
@@ -26,7 +26,7 @@
     ]
   },
   "spf": {
-    "record": "v=spf1 a ip4:217.124.174.13/32 ip4:62.42.233.151/32 ip4:212.170.35.96/27 mx:cni.es ~all",
+    "record": "v=spf1 a ip4:217.124.174.13/32 ip4:62.42.233.151/32 ip4:212.170.35.96/27 mx:cni.es -all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
@@ -59,11 +59,11 @@
       "include": [],
       "redirect": null,
       "exp": null,
-      "all": "softfail"
+      "all": "fail"
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; rua=mailto:reports_dmarc@cni.es; sp=none;",
+    "record": "v=DMARC1; p=quarantine; rua=mailto:reports_dmarc@cni.es; ruf=mailto:reports_dmarc@cni.es; adkim=s; aspf=s;",
     "valid": true,
     "location": "cni.es",
     "warnings": [],
@@ -73,7 +73,7 @@
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": true
       },
       "rua": {
@@ -86,17 +86,23 @@
         ],
         "explicit": true
       },
-      "sp": {
-        "value": "none",
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "reports_dmarc@cni.es",
+            "size_limit": null
+          }
+        ],
         "explicit": true
       },
       "adkim": {
-        "value": "r",
-        "explicit": false
+        "value": "s",
+        "explicit": true
       },
       "aspf": {
-        "value": "r",
-        "explicit": false
+        "value": "s",
+        "explicit": true
       },
       "fo": {
         "value": [
@@ -116,6 +122,10 @@
       },
       "ri": {
         "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "quarantine",
         "explicit": false
       }
     }

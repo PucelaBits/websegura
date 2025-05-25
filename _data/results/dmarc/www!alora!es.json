@@ -26,7 +26,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 143.55.150.246 is mx08-00870b02.pphosted.com, but the A/AAAA DNS records for mx08-00870b02.pphosted.com do not resolve to 143.55.150.246"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:spf2.malaga.es -all",

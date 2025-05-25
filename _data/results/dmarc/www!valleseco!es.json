@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1080.ui-dns.biz",
-      "ns1080.ui-dns.org",
+      "ns1080.ui-dns.com",
       "ns1080.ui-dns.de",
-      "ns1080.ui-dns.com"
+      "ns1080.ui-dns.org",
+      "ns1080.ui-dns.biz"
     ],
     "warnings": []
   },
@@ -15,16 +15,18 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "mx00.ionos.es",
+        "hostname": "mx-01-eu-central-1.prod.hydra.sophos.com",
         "addresses": [
-          "212.227.15.41"
+          "18.158.80.223",
+          "35.158.46.38"
         ]
       },
       {
-        "preference": 10,
-        "hostname": "mx01.ionos.es",
+        "preference": 20,
+        "hostname": "mx-02-eu-central-1.prod.hydra.sophos.com",
         "addresses": [
-          "217.72.192.67"
+          "18.158.80.223",
+          "35.158.46.38"
         ]
       }
     ],
@@ -38,11 +40,11 @@
     "parsed": {
       "pass": [
         {
-          "value": "mx00.ionos.es",
+          "value": "mx-01-eu-central-1.prod.hydra.sophos.com",
           "mechanism": "mx"
         },
         {
-          "value": "mx01.ionos.es",
+          "value": "mx-02-eu-central-1.prod.hydra.sophos.com",
           "mechanism": "mx"
         },
         {

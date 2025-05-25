@@ -4,8 +4,7 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.policia.es",
-      "dns.policia.es"
+      "dns2.policia.es"
     ],
     "warnings": []
   },
@@ -15,7 +14,7 @@
         "preference": 10,
         "hostname": "mxa-00825801.gslb.pphosted.com",
         "addresses": [
-          "143.55.144.57"
+          "185.183.28.235"
         ]
       },
       {
@@ -58,7 +57,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none;rua=mailto:monitorizacion@policia.es;",
+    "record": "v=DMARC1; p=none; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com,mailto:monitorizacion@policia.es; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com",
     "valid": true,
     "location": "policia.es",
     "warnings": [],
@@ -71,11 +70,32 @@
         "value": "none",
         "explicit": true
       },
+      "fo": {
+        "value": [
+          "1"
+        ],
+        "explicit": true
+      },
       "rua": {
         "value": [
           {
             "scheme": "mailto",
+            "address": "dmarc_rua@emaildefense.proofpoint.com",
+            "size_limit": null
+          },
+          {
+            "scheme": "mailto",
             "address": "monitorizacion@policia.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc_ruf@emaildefense.proofpoint.com",
             "size_limit": null
           }
         ],
@@ -87,12 +107,6 @@
       },
       "aspf": {
         "value": "r",
-        "explicit": false
-      },
-      "fo": {
-        "value": [
-          "0"
-        ],
         "explicit": false
       },
       "pct": {

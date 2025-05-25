@@ -26,7 +26,7 @@
     ]
   },
   "spf": {
-    "record": "v=spf1 +mx +a +ip4:51.254.199.187 include:spf.protection.outlook.com include:mta.gva.es include:mtallistes.gva.es include:spf.difusio.gva.es -all",
+    "record": "v=spf1 +mx +a +ip4:57.129.24.189 include:spf.protection.outlook.com include:mta.gva.es include:mtallistes.gva.es include:spf.difusio.gva.es -all",
     "valid": true,
     "dns_lookups": 8,
     "warnings": [],
@@ -37,11 +37,11 @@
           "mechanism": "mx"
         },
         {
-          "value": "51.254.199.187",
+          "value": "57.129.24.189",
           "mechanism": "a"
         },
         {
-          "value": "51.254.199.187",
+          "value": "57.129.24.189",
           "mechanism": "ip4"
         }
       ],

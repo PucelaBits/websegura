@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns25.servidoresdns.net",
-      "dns26.servidoresdns.net"
+      "dns26.servidoresdns.net",
+      "dns25.servidoresdns.net"
     ],
     "warnings": []
   },
@@ -13,22 +13,27 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "smtp2.aytobadajoz.es",
+        "hostname": "aytobadajoz-es-1.fortimailcloud.com",
         "addresses": [
-          "195.55.246.162"
+          "154.52.13.56"
         ]
       },
       {
         "preference": 20,
+        "hostname": "aytobadajoz-es-2.fortimailcloud.com",
+        "addresses": [
+          "154.52.2.132"
+        ]
+      },
+      {
+        "preference": 30,
         "hostname": "smtp.aytobadajoz.es",
         "addresses": [
           "217.76.135.156"
         ]
       }
     ],
-    "warnings": [
-      "195.55.246.162 does not have any reverse DNS (PTR) records"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 a mx ip4:217.76.135.156 ip4:195.55.246.162 ip4:87.106.243.27 include:spf.protection.outlook.com include:_spf.fortimailcloud.com ~all",
@@ -42,7 +47,11 @@
           "mechanism": "a"
         },
         {
-          "value": "smtp2.aytobadajoz.es",
+          "value": "aytobadajoz-es-1.fortimailcloud.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "aytobadajoz-es-2.fortimailcloud.com",
           "mechanism": "mx"
         },
         {

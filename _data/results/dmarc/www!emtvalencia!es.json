@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns.leader-network.com",
-      "dns1.leader-network.com"
+      "dns1.leader-network.com",
+      "dns.leader-network.com"
     ],
     "warnings": []
   },
@@ -29,7 +29,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx ip4:195.55.76.77 ip4:185.79.131.202 ip4:185.79.131.206 ip4:195.53.78.101 ip4:195.53.78.102 ip4:154.52.2.131 include:_spf.fortimailcloud.com include:spf.protection.outlook.com include:_spf.cmail.ondemand.com include:_spf.cloudmail.net.sap include:amazonses.com -all",
+    "record": "v=spf1 mx ip4:85.48.194.228 ip4:185.79.131.202 ip4:185.79.131.206 ip4:154.52.2.131 include:_spf.fortimailcloud.com include:spf.protection.outlook.com include:_spf.cmail.ondemand.com include:_spf.cloudmail.net.sap include:amazonses.com -all",
     "valid": true,
     "dns_lookups": 6,
     "warnings": [],
@@ -44,7 +44,7 @@
           "mechanism": "mx"
         },
         {
-          "value": "195.55.76.77",
+          "value": "85.48.194.228",
           "mechanism": "ip4"
         },
         {
@@ -53,14 +53,6 @@
         },
         {
           "value": "185.79.131.206",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "195.53.78.101",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "195.53.78.102",
           "mechanism": "ip4"
         },
         {

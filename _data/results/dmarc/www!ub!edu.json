@@ -5,11 +5,11 @@
   "ns": {
     "hostnames": [
       "sun.rediris.es",
-      "chico.rediris.es",
-      "rnpro01.com.ub.edu",
-      "rnpro04.com.ub.edu",
       "rnpro07.com.ub.edu",
+      "rnpro04.com.ub.edu",
+      "chico.rediris.es",
       "sbx06.ub.edu",
+      "rnpro01.com.ub.edu",
       "sbx05.ub.edu"
     ],
     "warnings": []
@@ -17,24 +17,24 @@
   "mx": {
     "hosts": [
       {
-        "preference": 5,
-        "hostname": "ub-edu.mail.protection.outlook.com",
+        "preference": 10,
+        "hostname": "mxa-006a4e02.gslb.pphosted.com",
         "addresses": [
-          "2a01:111:f403:ca04::1",
-          "2a01:111:f403:ca04::e",
-          "2a01:111:f403:ca09::3",
-          "2a01:111:f403:ca09::d",
-          "52.101.68.21",
-          "52.101.68.3",
-          "52.101.73.2",
-          "52.101.73.30"
+          "143.55.148.243"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mxb-006a4e02.gslb.pphosted.com",
+        "addresses": [
+          "143.55.148.243"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1  ip4:161.116.234.11 ip4:161.116.234.12 ip4:161.116.234.17 ip4:161.116.234.18 ip4:161.116.110.133 ip4:161.116.110.132 ip4:161.116.230.24 ip4:84.88.0.6/31 ip4:161.116.171.128/25 ip4:149.72.91.62 ip4:168.245.57.151 include:spf.puc.rediris.es include:spf.protection.outlook.com include:myopenlms.net -all",
+    "record": "v=spf1 ip4:161.116.234.11 ip4:161.116.234.12 ip4:161.116.234.17 ip4:161.116.234.18 ip4:161.116.110.133 ip4:161.116.110.132 ip4:161.116.230.24 ip4:84.88.0.6/31 ip4:161.116.171.128/25 ip4:149.72.91.62 ip4:168.245.57.151 include:spf.puc.rediris.es include:spf.protection.outlook.com include:myopenlms.net -all",
     "valid": true,
     "dns_lookups": 4,
     "warnings": [],
