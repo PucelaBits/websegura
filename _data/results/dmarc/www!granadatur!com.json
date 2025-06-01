@@ -14,11 +14,19 @@
         "preference": 10,
         "hostname": "ciudad.granada.org",
         "addresses": [
-          "85.62.209.121"
+          "23.73.207.13",
+          "23.73.207.5",
+          "2600:1408:ec00:2e::1735:baf",
+          "2600:1408:ec00:2e::1735:bb3"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The domain g2600-1408-ec00-002e-0000-0000-1735-0baf.deploy.static.akamaitechnologies.com does not exist",
+      "The reverse DNS of 2600:1408:ec00:2e::1735:baf is g2600-1408-ec00-002e-0000-0000-1735-0baf.deploy.static.akamaitechnologies.com, but the A/AAAA DNS records for g2600-1408-ec00-002e-0000-0000-1735-0baf.deploy.static.akamaitechnologies.com do not resolve to 2600:1408:ec00:2e::1735:baf",
+      "The domain g2600-1408-ec00-002e-0000-0000-1735-0bb3.deploy.static.akamaitechnologies.com does not exist",
+      "The reverse DNS of 2600:1408:ec00:2e::1735:bb3 is g2600-1408-ec00-002e-0000-0000-1735-0bb3.deploy.static.akamaitechnologies.com, but the A/AAAA DNS records for g2600-1408-ec00-002e-0000-0000-1735-0bb3.deploy.static.akamaitechnologies.com do not resolve to 2600:1408:ec00:2e::1735:bb3"
+    ]
   },
   "spf": {
     "record": "v=spf1 ip4:85.62.209.121 include:ciudad.granada.org ~all",

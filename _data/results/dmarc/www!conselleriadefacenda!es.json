@@ -4,12 +4,12 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "a4-66.akam.net",
-      "a9-66.akam.net",
-      "a26-66.akam.net",
-      "a1-47.akam.net",
       "a16-64.akam.net",
-      "a13-65.akam.net"
+      "a4-66.akam.net",
+      "a13-65.akam.net",
+      "a26-66.akam.net",
+      "a9-66.akam.net",
+      "a1-47.akam.net"
     ],
     "warnings": []
   },
@@ -23,7 +23,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 85.91.64.136 is mail.xunta.es, but the A/AAAA DNS records for mail.xunta.es do not resolve to 85.91.64.136"
+    ]
   },
   "spf": {
     "record": "v=spf1 ip4:85.91.71.0/24 ip4:85.91.64.213 ip4:85.91.64.214 ip4:85.91.64.217 ip4:85.91.64.218 -all",

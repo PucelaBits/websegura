@@ -15,14 +15,14 @@
         "preference": 10,
         "hostname": "ign-es.mail.protection.outlook.com",
         "addresses": [
-          "2a01:111:f403:ca04::",
-          "2a01:111:f403:ca04::b",
-          "2a01:111:f403:ca04::c",
-          "2a01:111:f403:ca09::c",
-          "52.101.68.12",
-          "52.101.68.27",
-          "52.101.73.15",
-          "52.101.73.30"
+          "2a01:111:f403:ca04::2",
+          "2a01:111:f403:ca04::5",
+          "2a01:111:f403:ca04::e",
+          "2a01:111:f403:ca09::3",
+          "52.101.68.25",
+          "52.101.68.29",
+          "52.101.73.21",
+          "52.101.73.4"
         ]
       }
     ],
@@ -32,7 +32,9 @@
     "record": "v=spf1 ip4:192.148.212.217 ip4:192.148.212.218 ip4:192.148.212.221 ip4:192.148.212.222 ip4:192.148.212.223 ip4:192.148.212.224 mx include:spf.protection.outlook.com -all",
     "valid": true,
     "dns_lookups": 2,
-    "warnings": [],
+    "warnings": [
+      "All nameservers failed to answer the query ign.es. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    ],
     "parsed": {
       "pass": [
         {
@@ -58,10 +60,6 @@
         {
           "value": "192.148.212.224",
           "mechanism": "ip4"
-        },
-        {
-          "value": "ign-es.mail.protection.outlook.com",
-          "mechanism": "mx"
         }
       ],
       "neutral": [],

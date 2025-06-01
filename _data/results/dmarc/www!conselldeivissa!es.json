@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns08.ns-cloud4b.com",
       "ns07.ns-cloud4b.org",
+      "ns08.ns-cloud4b.com",
       "ns06.ns-cloud4b.net"
     ],
     "warnings": []
@@ -174,7 +174,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; rua=mailto:informatica@conselldeivissa.es; sp=quarantine; aspf=r;",
+    "record": "v=DMARC1; p=quarantine; rua=mailto:postmaster@conselldeivissa.es; sp=quarantine; aspf=r;",
     "valid": true,
     "location": "conselldeivissa.es",
     "warnings": [],
@@ -191,7 +191,7 @@
         "value": [
           {
             "scheme": "mailto",
-            "address": "informatica@conselldeivissa.es",
+            "address": "postmaster@conselldeivissa.es",
             "size_limit": null
           }
         ],

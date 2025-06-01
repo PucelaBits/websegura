@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "sdns3.occentus.net",
       "sdns4.occentus.net",
-      "sdns1.occentus.net",
-      "sdns2.occentus.net"
+      "sdns3.occentus.net",
+      "sdns2.occentus.net",
+      "sdns1.occentus.net"
     ],
     "warnings": []
   },
@@ -259,19 +259,27 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none;",
+    "record": "v=DMARC1; p=quarantine; rua=mailto:dmarc@comunitatvalenciana.com",
     "valid": true,
     "location": "comunitatvalenciana.com",
-    "warnings": [
-      "rua tag (destination for aggregate reports) not found"
-    ],
+    "warnings": [],
     "tags": {
       "v": {
         "value": "DMARC1",
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "quarantine",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc@comunitatvalenciana.com",
+            "size_limit": null
+          }
+        ],
         "explicit": true
       },
       "adkim": {
@@ -303,7 +311,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": false
       }
     }

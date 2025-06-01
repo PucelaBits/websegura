@@ -110,9 +110,9 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; rua=mailto:informes.correo@dgt.es;ruf=mailto:alertas.correo@dgt.es; fo=0:1:d:s;",
+    "record": null,
     "valid": false,
-    "location": "dgt.es",
-    "error": "fo DMARC tag options 0 and 1 are mutually exclusive"
+    "location": null,
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   }
 }

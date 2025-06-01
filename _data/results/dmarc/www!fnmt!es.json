@@ -19,7 +19,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 195.235.252.91 is correo.fnmt.es, but the A/AAAA DNS records for correo.fnmt.es do not resolve to 195.235.252.91"
+    ]
   },
   "spf": {
     "record": "v=spf1 ip4:195.235.252.89 ip4:195.235.252.92 ip4:193.104.0.132 ip4:82.223.79.172 ip4:185.25.114.146 include:spf.ivcert.net mx ~all",

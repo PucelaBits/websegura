@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "srv-dns2.scayle.es",
-      "srv-dns1.scayle.es"
+      "srv-dns1.scayle.es",
+      "srv-dns2.scayle.es"
     ],
     "warnings": []
   },
@@ -58,7 +58,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; rua=mailto:dmarcreport@scayle.es",
+    "record": "v=DMARC1; p=quarantine; rua=mailto:dmarcreport@scayle.es",
     "valid": true,
     "location": "scayle.es",
     "warnings": [],
@@ -68,7 +68,7 @@
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": true
       },
       "rua": {
@@ -110,7 +110,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": false
       }
     }
