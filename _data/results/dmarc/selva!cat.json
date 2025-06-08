@@ -10,8 +10,19 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 5,
+        "hostname": "mx.ddgi.cat",
+        "addresses": [
+          "195.93.170.80"
+        ]
+      }
+    ],
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 195.93.170.80 is mx.ddgi.cat, but the A/AAAA DNS records for mx.ddgi.cat do not resolve to 195.93.170.80"
+    ]
   },
   "spf": {
     "record": "v=spf1 mx ip4:213.0.55.194 ip4:195.93.170.5 ip4:195.93.170.139 include:_spf.google.com ~all",
@@ -151,7 +162,7 @@
               },
               {
                 "domain": "_netblocks3.google.com",
-                "record": "v=spf1 ip4:172.217.0.0/19 ip4:172.217.32.0/20 ip4:172.217.128.0/19 ip4:172.217.160.0/20 ip4:172.217.192.0/19 ip4:172.253.56.0/21 ip4:172.253.112.0/20 ip4:108.177.96.0/19 ip4:35.191.0.0/16 ip4:130.211.0.0/22 ~all",
+                "record": "v=spf1 ip4:172.217.0.0/19 ip4:172.217.32.0/20 ip4:172.217.128.0/19 ip4:172.217.160.0/20 ip4:172.217.192.0/19 ip4:172.253.56.0/21 ip4:172.253.112.0/20 ip4:108.177.96.0/19 ip4:35.191.0.0/17 ip4:130.211.0.0/22 ~all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
@@ -188,7 +199,7 @@
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "35.191.0.0/16",
+                      "value": "35.191.0.0/17",
                       "mechanism": "ip4"
                     },
                     {

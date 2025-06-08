@@ -110,9 +110,9 @@
     }
   },
   "dmarc": {
-    "record": null,
+    "record": "v=DMARC1; p=none; rua=avisos.correo@correo.gob.es,mailto:xxxxxx@oepm.es; ruf=avisos.correo@correo.gob.es,mailto:xxxxxx@oepm.es; fo=1",
     "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "location": "oepm.es",
+    "error": "avisos.correo@correo.gob.es is not a valid DMARC report URI"
   }
 }

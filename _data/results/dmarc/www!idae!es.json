@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns26.servidoresdns.net",
-      "dns25.servidoresdns.net"
+      "dns25.servidoresdns.net",
+      "dns26.servidoresdns.net"
     ],
     "warnings": []
   },
@@ -15,14 +15,14 @@
         "preference": 20,
         "hostname": "idae-es.mail.protection.outlook.com",
         "addresses": [
-          "2a01:111:f403:ca04::9",
-          "2a01:111:f403:ca09::5",
-          "2a01:111:f403:ca09::6",
-          "2a01:111:f403:ca09::e",
-          "52.101.68.16",
-          "52.101.68.18",
-          "52.101.68.25",
-          "52.101.73.2"
+          "2a01:111:f403:ca09::",
+          "2a01:111:f403:ca09::2",
+          "2a01:111:f403:ca09::8",
+          "2a01:111:f403:ca09::c",
+          "52.101.68.21",
+          "52.101.68.3",
+          "52.101.68.36",
+          "52.101.73.19"
         ]
       }
     ],
@@ -110,7 +110,9 @@
     "record": "v=DMARC1; p=none; rua=mailto:dmarc@idae.es; ruf=mailto:dmarc@idae.es; fo=1",
     "valid": true,
     "location": "idae.es",
-    "warnings": [],
+    "warnings": [
+      "Failed to retrieve MX records for the domain of ruf email address dmarc@idae.es - The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -131,13 +133,7 @@
         "explicit": true
       },
       "ruf": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "dmarc@idae.es",
-            "size_limit": null
-          }
-        ],
+        "value": "mailto:dmarc@idae.es",
         "explicit": true
       },
       "fo": {

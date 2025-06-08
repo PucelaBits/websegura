@@ -22,12 +22,16 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx include:spf.protection.outlook.com -all",
+    "record": "v=spf1 ip4:195.55.43.202 mx include:spf.protection.outlook.com -all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
     "parsed": {
       "pass": [
+        {
+          "value": "195.55.43.202",
+          "mechanism": "ip4"
+        },
         {
           "value": "gw117238.fortimail.com",
           "mechanism": "mx"

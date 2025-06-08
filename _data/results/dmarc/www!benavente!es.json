@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.nds.es",
-      "ns2.nds.es"
+      "ns2.nds.es",
+      "ns1.nds.es"
     ],
     "warnings": []
   },
@@ -19,16 +19,14 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 185.253.153.139 is omicron.nds.es, but the A/AAAA DNS records for omicron.nds.es do not resolve to 185.253.153.139"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:185.253.153.139 mx a ptr ip4:188.165.133.185/32 include:spf.protection.outlook.com -all",
     "valid": true,
     "dns_lookups": 3,
     "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out.",
       "The ptr mechanism should not be used - https://tools.ietf.org/html/rfc7208#section-5.5"
     ],
     "parsed": {
@@ -40,10 +38,6 @@
         {
           "value": "mail.benavente.es",
           "mechanism": "mx"
-        },
-        {
-          "value": "213.165.93.56",
-          "mechanism": "a"
         },
         {
           "value": "",

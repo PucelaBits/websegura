@@ -10,19 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "correo.fnmt.es",
-        "addresses": [
-          "195.235.252.91"
-        ]
-      }
-    ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 195.235.252.91 is correo.fnmt.es, but the A/AAAA DNS records for correo.fnmt.es do not resolve to 195.235.252.91"
-    ]
+    "hosts": [],
+    "error": "All nameservers failed to answer the query 91.252.235.195.in-addr.arpa. IN PTR: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "spf": {
     "record": "v=spf1 ip4:195.235.252.89 ip4:195.235.252.92 ip4:193.104.0.132 ip4:82.223.79.172 ip4:185.25.114.146 include:spf.ivcert.net mx ~all",
