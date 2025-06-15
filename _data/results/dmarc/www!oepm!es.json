@@ -10,27 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mail1.correo.gob.es",
-        "addresses": [
-          "185.73.172.122",
-          "185.73.172.123",
-          "185.73.173.17",
-          "185.73.173.18"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "mail2.correo.gob.es",
-        "addresses": [
-          "185.73.172.124",
-          "185.73.172.125"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "All nameservers failed to answer the query 18.173.73.185.in-addr.arpa. IN PTR: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "spf": {
     "record": "v=spf1 mx a:spf.correo.gob.es ip4:192.187.18.186 ip4:192.187.18.139 -all",
@@ -110,9 +91,62 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; rua=avisos.correo@correo.gob.es,mailto:xxxxxx@oepm.es; ruf=avisos.correo@correo.gob.es,mailto:xxxxxx@oepm.es; fo=1",
-    "valid": false,
+    "record": "v=DMARC1; p=none; rua=mailto:avisos.correo@correo.gob.es,mailto:xxxxxx@oepm.es; ruf=mailto:avisos.correo@correo.gob.es,mailto:xxxxxx@oepm.es; fo=1",
+    "valid": true,
     "location": "oepm.es",
-    "error": "avisos.correo@correo.gob.es is not a valid DMARC report URI"
+    "warnings": [
+      "correo.gob.es does not indicate that it accepts DMARC reports about oepm.es - Authorization record not found: oepm.es._report._dmarc.correo.gob.es IN TXT \"v=DMARC1\"",
+      "correo.gob.es does not indicate that it accepts DMARC reports about oepm.es - Authorization record not found: oepm.es._report._dmarc.correo.gob.es IN TXT \"v=DMARC1\""
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "rua": {
+        "value": "mailto:avisos.correo@correo.gob.es,mailto:xxxxxx@oepm.es",
+        "explicit": true
+      },
+      "ruf": {
+        "value": "mailto:avisos.correo@correo.gob.es,mailto:xxxxxx@oepm.es",
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "1"
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }

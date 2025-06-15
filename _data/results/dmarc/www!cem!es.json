@@ -10,23 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mailin.serviciosmin.gob.es",
-        "addresses": [
-          "192.187.16.24"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "mailin1.serviciosmin.gob.es",
-        "addresses": [
-          "192.187.16.26"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "All nameservers failed to answer the query 24.16.187.192.in-addr.arpa. IN PTR: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "spf": {
     "record": "v=spf1 mx include:spf.serviciosmin.gob.es -all",

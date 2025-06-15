@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.nds.es",
-      "ns1.nds.es"
+      "ns1.nds.es",
+      "ns2.nds.es"
     ],
     "warnings": []
   },
@@ -26,7 +26,6 @@
     "valid": true,
     "dns_lookups": 3,
     "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out.",
       "The ptr mechanism should not be used - https://tools.ietf.org/html/rfc7208#section-5.5"
     ],
     "parsed": {
@@ -38,6 +37,10 @@
         {
           "value": "mail.benavente.es",
           "mechanism": "mx"
+        },
+        {
+          "value": "213.165.93.56",
+          "mechanism": "a"
         },
         {
           "value": "",

@@ -22,12 +22,20 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:195.55.43.202 mx include:spf.protection.outlook.com -all",
+    "record": "v=spf1 ip4:213.0.30.216/29 ip4:194.179.69.0/24 ip4:195.55.43.202 mx include:spf.protection.outlook.com -all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
     "parsed": {
       "pass": [
+        {
+          "value": "213.0.30.216/29",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "194.179.69.0/24",
+          "mechanism": "ip4"
+        },
         {
           "value": "195.55.43.202",
           "mechanism": "ip4"
@@ -109,7 +117,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1;p=none;rua=mailto:sistemas@alicante.es",
+    "record": "v=DMARC1;p=quarantine;rua=mailto:sistemas@alicante.es",
     "valid": true,
     "location": "alicante.es",
     "warnings": [],
@@ -119,7 +127,7 @@
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": true
       },
       "rua": {
@@ -161,7 +169,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": false
       }
     }

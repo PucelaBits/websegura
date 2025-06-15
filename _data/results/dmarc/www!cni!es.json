@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.interdomain.net",
       "ns3.interdomain.es",
-      "ns1.interdomain.net"
+      "ns1.interdomain.net",
+      "ns2.interdomain.net"
     ],
     "warnings": []
   },
@@ -63,7 +63,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; rua=mailto:reports_dmarc@cni.es; ruf=mailto:reports_dmarc@cni.es; adkim=s; aspf=s;",
+    "record": "v=DMARC1; p=reject; rua=mailto:reports_dmarc@cni.es; ruf=mailto:reports_dmarc@cni.es; adkim=s; aspf=s;",
     "valid": true,
     "location": "cni.es",
     "warnings": [],
@@ -73,7 +73,7 @@
         "explicit": true
       },
       "p": {
-        "value": "quarantine",
+        "value": "reject",
         "explicit": true
       },
       "rua": {
@@ -125,7 +125,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "quarantine",
+        "value": "reject",
         "explicit": false
       }
     }

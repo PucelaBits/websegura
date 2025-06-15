@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns3.digitalocean.com",
       "ns1.digitalocean.com",
-      "ns2.digitalocean.com",
-      "ns3.digitalocean.com"
+      "ns2.digitalocean.com"
     ],
     "warnings": []
   },
@@ -36,6 +36,10 @@
         {
           "value": "mail.museoph.org",
           "mechanism": "mx"
+        },
+        {
+          "value": "2a02:be8:2:d00:2eea:7fff:fee0:6960",
+          "mechanism": "a"
         },
         {
           "value": "82.98.162.131",

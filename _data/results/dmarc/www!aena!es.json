@@ -4,11 +4,11 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns7.aena.es",
-      "dns12.aena.es",
-      "dns13.aena.es",
+      "dns6.aena.es",
       "artemis.ttd.net",
-      "dns6.aena.es"
+      "dns12.aena.es",
+      "dns7.aena.es",
+      "dns13.aena.es"
     ],
     "warnings": []
   },
@@ -24,24 +24,24 @@
       }
     ],
     "warnings": [
-      "The domain spf.aena.es does not exist",
-      "The reverse DNS of 194.224.177.201 is spf.aena.es, but the A/AAAA DNS records for spf.aena.es do not resolve to 194.224.177.201",
       "The domain meg02.aena.es does not exist",
       "The reverse DNS of 194.224.177.201 is meg02.aena.es, but the A/AAAA DNS records for meg02.aena.es do not resolve to 194.224.177.201",
       "The domain meg04.aena.es does not exist",
       "The reverse DNS of 194.224.177.201 is meg04.aena.es, but the A/AAAA DNS records for meg04.aena.es do not resolve to 194.224.177.201",
-      "The domain meg02.aena.es does not exist",
-      "The reverse DNS of 217.130.124.201 is meg02.aena.es, but the A/AAAA DNS records for meg02.aena.es do not resolve to 217.130.124.201",
+      "The domain spf.aena.es does not exist",
+      "The reverse DNS of 194.224.177.201 is spf.aena.es, but the A/AAAA DNS records for spf.aena.es do not resolve to 194.224.177.201",
       "The domain spf.aena.es does not exist",
       "The reverse DNS of 217.130.124.201 is spf.aena.es, but the A/AAAA DNS records for spf.aena.es do not resolve to 217.130.124.201",
       "The domain meg04.aena.es does not exist",
-      "The reverse DNS of 217.130.124.201 is meg04.aena.es, but the A/AAAA DNS records for meg04.aena.es do not resolve to 217.130.124.201"
+      "The reverse DNS of 217.130.124.201 is meg04.aena.es, but the A/AAAA DNS records for meg04.aena.es do not resolve to 217.130.124.201",
+      "The domain meg02.aena.es does not exist",
+      "The reverse DNS of 217.130.124.201 is meg02.aena.es, but the A/AAAA DNS records for meg02.aena.es do not resolve to 217.130.124.201"
     ]
   },
   "spf": {
-    "record": "v=spf1 include:spf-a.aena.es  include:spf.protection.outlook.com include:_spf-dc33.sapsf.eu -all",
+    "record": "v=spf1 include:spf-a.aena.es include:spf.fromdoppler.com include:spf.protection.outlook.com include:_spf-dc33.sapsf.eu -all",
     "valid": true,
-    "dns_lookups": 3,
+    "dns_lookups": 4,
     "warnings": [],
     "parsed": {
       "pass": [],
@@ -111,6 +111,79 @@
             "redirect": null,
             "exp": null,
             "all": "fail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "spf.fromdoppler.com",
+          "record": "v=spf1 ip4:161.47.111.64/27 ip4:161.47.105.224/27 ip4:204.9.188.0/24 ip4:161.47.119.160/28 ip4:184.106.28.221/32 ip4:161.47.142.48/28 ip4:161.47.109.192/27 ip4:161.47.110.128/27 ip4:161.47.110.96/27 ip4:158.69.100.191 ip4:149.56.38.57 ip4:149.56.38.189 ip4:149.56.85.224 ip4:192.99.207.46 ~all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "161.47.111.64/27",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "161.47.105.224/27",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "204.9.188.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "161.47.119.160/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "184.106.28.221/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "161.47.142.48/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "161.47.109.192/27",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "161.47.110.128/27",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "161.47.110.96/27",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "158.69.100.191",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "149.56.38.57",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "149.56.38.189",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "149.56.85.224",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "192.99.207.46",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
           },
           "warnings": []
         },

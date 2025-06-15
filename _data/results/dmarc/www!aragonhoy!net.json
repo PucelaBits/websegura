@@ -3,8 +3,11 @@
   "base_domain": "aragonhoy.net",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hostnames": [
+      "codos.aragon.es",
+      "calatayud.aragon.es"
+    ],
+    "warnings": []
   },
   "mx": {
     "hosts": [

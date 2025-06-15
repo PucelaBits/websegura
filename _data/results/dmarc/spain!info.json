@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns.transparentedge.es",
-      "ns.transparentedge.eu"
+      "ns.transparentedge.eu",
+      "ns.transparentedge.es"
     ],
     "warnings": []
   },
@@ -24,6 +24,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "error": "A DMARC record does not exist for this domain or its base domain"
   }
 }

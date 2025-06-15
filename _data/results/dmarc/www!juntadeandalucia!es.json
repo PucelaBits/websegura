@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns3.juntadeandalucia.es",
       "ns.juntadeandalucia.es",
       "ns1.juntadeandalucia.es",
+      "ns3.juntadeandalucia.es",
       "ns4.juntadeandalucia.es"
     ],
     "warnings": []
@@ -248,7 +248,7 @@
               },
               {
                 "domain": "_netblocks3.google.com",
-                "record": "v=spf1 ip4:172.217.0.0/19 ip4:172.217.32.0/20 ip4:172.217.128.0/19 ip4:172.217.160.0/20 ip4:172.217.192.0/19 ip4:172.253.56.0/21 ip4:172.253.112.0/20 ip4:108.177.96.0/19 ip4:35.191.0.0/17 ip4:130.211.0.0/22 ~all",
+                "record": "v=spf1 ip4:172.217.0.0/19 ip4:172.217.32.0/20 ip4:172.217.128.0/19 ip4:172.217.160.0/20 ip4:172.217.192.0/19 ip4:172.253.56.0/21 ip4:172.253.112.0/20 ip4:108.177.96.0/19 ~all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
@@ -282,14 +282,6 @@
                     },
                     {
                       "value": "108.177.96.0/19",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "35.191.0.0/17",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "130.211.0.0/22",
                       "mechanism": "ip4"
                     }
                   ],
@@ -366,10 +358,13 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com,mailto:dmarc.soc@juntadeandalucia.es; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com,mailto:dmarc.soc@juntadeandalucia.es",
+    "record": "v=DMARC1;p=none;pct=100;fo=1;ri=3600;rua=mailto:cb2d4471@inbox.ondmarc.com,mailto:dmarc_rua@emaildefense.proofpoint.com,mailto:dmarc.soc@juntadeandalucia.es;ruf=mailto:cb2d4471@inbox.ondmarc.com,mailto:dmarc_ruf@emaildefense.proofpoint.com,mailto:dmarc.soc@juntadeandalucia.es",
     "valid": true,
     "location": "juntadeandalucia.es",
-    "warnings": [],
+    "warnings": [
+      "Some DMARC reporters might not send to more than two rua URIs",
+      "Some DMARC reporters might not send to more than two ruf URIs"
+    ],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -379,14 +374,27 @@
         "value": "none",
         "explicit": true
       },
+      "pct": {
+        "value": 100,
+        "explicit": true
+      },
       "fo": {
         "value": [
           "1"
         ],
         "explicit": true
       },
+      "ri": {
+        "value": 3600,
+        "explicit": true
+      },
       "rua": {
         "value": [
+          {
+            "scheme": "mailto",
+            "address": "cb2d4471@inbox.ondmarc.com",
+            "size_limit": null
+          },
           {
             "scheme": "mailto",
             "address": "dmarc_rua@emaildefense.proofpoint.com",
@@ -402,6 +410,11 @@
       },
       "ruf": {
         "value": [
+          {
+            "scheme": "mailto",
+            "address": "cb2d4471@inbox.ondmarc.com",
+            "size_limit": null
+          },
           {
             "scheme": "mailto",
             "address": "dmarc_ruf@emaildefense.proofpoint.com",
@@ -423,18 +436,10 @@
         "value": "r",
         "explicit": false
       },
-      "pct": {
-        "value": 100,
-        "explicit": false
-      },
       "rf": {
         "value": [
           "afrf"
         ],
-        "explicit": false
-      },
-      "ri": {
-        "value": 86400,
         "explicit": false
       },
       "sp": {

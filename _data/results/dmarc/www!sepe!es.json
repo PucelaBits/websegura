@@ -15,14 +15,14 @@
         "preference": 10,
         "hostname": "sepe-es.mail.protection.outlook.com",
         "addresses": [
-          "2a01:111:f403:ca04::6",
-          "2a01:111:f403:ca04::7",
+          "2a01:111:f403:ca04::5",
           "2a01:111:f403:ca04::a",
-          "2a01:111:f403:ca04::f",
-          "52.101.68.15",
-          "52.101.68.5",
-          "52.101.73.21",
-          "52.101.73.6"
+          "2a01:111:f403:ca09::",
+          "2a01:111:f403:ca09::1",
+          "52.101.68.18",
+          "52.101.73.15",
+          "52.101.73.2",
+          "52.101.73.22"
         ]
       },
       {
@@ -140,7 +140,9 @@
     "record": "v=DMARC1; p=none; sp=none; fo=1; ri=3600; rua=mailto:dmarc@sepe.es; ruf=mailto:dmarc@sepe.es",
     "valid": true,
     "location": "sepe.es",
-    "warnings": [],
+    "warnings": [
+      "Failed to retrieve MX records for the domain of ruf email address dmarc@sepe.es - The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -175,13 +177,7 @@
         "explicit": true
       },
       "ruf": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "dmarc@sepe.es",
-            "size_limit": null
-          }
-        ],
+        "value": "mailto:dmarc@sepe.es",
         "explicit": true
       },
       "adkim": {
