@@ -4,12 +4,12 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.uco.es",
-      "dns2.uco.es",
-      "druuna.uco.es",
-      "sun.rediris.es",
       "chico.rediris.es",
+      "sun.rediris.es",
+      "dns1.uco.es",
+      "druuna.uco.es",
       "dns1.cica.es",
+      "dns2.uco.es",
       "dns2.cica.es"
     ],
     "warnings": []
@@ -34,9 +34,41 @@
     "warnings": []
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "uco.es does not have a SPF TXT record"
+    "record": "v=spf1 a:smtpout.uco.es a:leercorreo.uco.es a:mandarcorreo.uco.es a:sicsis02.uco.es ~all",
+    "valid": true,
+    "dns_lookups": 4,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "150.214.110.141",
+          "mechanism": "a"
+        },
+        {
+          "value": "150.214.110.219",
+          "mechanism": "a"
+        },
+        {
+          "value": "150.214.110.151",
+          "mechanism": "a"
+        },
+        {
+          "value": "150.214.110.218",
+          "mechanism": "a"
+        },
+        {
+          "value": "150.214.110.92",
+          "mechanism": "a"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
   },
   "dmarc": {
     "record": null,

@@ -31,7 +31,7 @@
   "spf": {
     "record": "v=spf1 mx ip4:85.48.194.228 ip4:185.79.131.202 ip4:185.79.131.206 ip4:154.52.2.131 include:_spf.fortimailcloud.com include:spf.protection.outlook.com include:_spf.cmail.ondemand.com include:_spf.cloudmail.net.sap include:amazonses.com -all",
     "valid": true,
-    "dns_lookups": 6,
+    "dns_lookups": 7,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -268,8 +268,8 @@
         },
         {
           "domain": "_spf.cmail.ondemand.com",
-          "record": "v=spf1 ip4:155.56.208.100/30 ip4:157.133.97.216/30 ip4:169.145.66.70/31 ip4:169.145.66.72/31 ip4:130.214.105.240/28 ip4:130.214.163.240/28 ip4:130.214.134.192/28 ip4:130.214.240.208/28 ~all",
-          "dns_lookups": 0,
+          "record": "v=spf1 ip4:155.56.208.100/30 ip4:157.133.97.216/30 ip4:169.145.66.70/31 ip4:169.145.66.72/31 ip4:130.214.105.240/28 ip4:130.214.163.240/28 ip4:130.214.134.192/28 ip4:130.214.240.208/28 include:_spf.eu-de-1.cm.net.sap ~all",
+          "dns_lookups": 1,
           "parsed": {
             "pass": [
               {
@@ -308,7 +308,37 @@
             "neutral": [],
             "softfail": [],
             "fail": [],
-            "include": [],
+            "include": [
+              {
+                "domain": "_spf.eu-de-1.cm.net.sap",
+                "record": "v=spf1 ip4:130.214.133.130/31 ip4:130.214.133.132/30 ip4:130.214.133.136/29 -all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "130.214.133.130/31",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "130.214.133.132/30",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "130.214.133.136/29",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "fail"
+                },
+                "warnings": []
+              }
+            ],
             "redirect": null,
             "exp": null,
             "all": "softfail"

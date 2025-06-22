@@ -18,23 +18,23 @@
         "preference": 20,
         "hostname": "mxa-006a4e02.gslb.pphosted.com",
         "addresses": [
-          "143.55.148.243"
+          "143.55.146.78"
         ]
       },
       {
         "preference": 20,
         "hostname": "mxb-006a4e02.gslb.pphosted.com",
         "addresses": [
-          "143.55.148.243"
+          "143.55.146.78"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 a:postin.uv.es a:postin.ipv6.uv.es a:postilla.uv.es a:hal.ific.uv.es a:ifmx.ific.uv.es a:glup.irobot.uv.es -all",
+    "record": "v=spf1 a:postin.uv.es a:postin.ipv6.uv.es a:postilla.uv.es a:hal.ific.uv.es a:ifmx.ific.uv.es a:glup.irobot.uv.es include:spf.puc.rediris.es -all",
     "valid": true,
-    "dns_lookups": 6,
+    "dns_lookups": 7,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -78,7 +78,37 @@
       "neutral": [],
       "softfail": [],
       "fail": [],
-      "include": [],
+      "include": [
+        {
+          "domain": "spf.puc.rediris.es",
+          "record": "v=spf1 ip4:143.55.146.78 ip4:143.55.148.243 ip4:130.206.25.38 ~all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "143.55.146.78",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "143.55.148.243",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "130.206.25.38",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        }
+      ],
       "redirect": null,
       "exp": null,
       "all": "fail"

@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.cibir.es",
-      "ns2.cibir.es"
+      "ns2.cibir.es",
+      "ns1.cibir.es"
     ],
     "warnings": []
   },
@@ -13,9 +13,16 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "mx2.riojasalud.es",
+        "hostname": "mxa-00a22601.gslb.pphosted.com",
         "addresses": [
-          "195.55.164.16"
+          "66.159.244.88"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mxb-00a22601.gslb.pphosted.com",
+        "addresses": [
+          "66.159.244.88"
         ]
       }
     ],

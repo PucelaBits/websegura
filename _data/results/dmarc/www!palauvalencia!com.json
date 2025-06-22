@@ -22,9 +22,33 @@
     "warnings": []
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "palauvalencia.com has multiple SPF TXT records"
+    "record": "v=spf1 a mx ip4:82.223.50.31 ~all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "82.223.50.31",
+          "mechanism": "a"
+        },
+        {
+          "value": "mx.palauvalencia.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "82.223.50.31",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
   },
   "dmarc": {
     "record": "v=DMARC1; p=quarantine; adkim=s; aspf=s",

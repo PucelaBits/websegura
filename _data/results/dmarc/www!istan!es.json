@@ -3,12 +3,8 @@
   "base_domain": "istan.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "dpmdns02.ns-cloud4b.com",
-      "dpmdns03.ns-cloud4b.net",
-      "dpmdns01.ns-cloud4b.org"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "mx": {
     "hosts": [
@@ -16,14 +12,14 @@
         "preference": 10,
         "hostname": "mxa-00870b02.gslb.pphosted.com",
         "addresses": [
-          "66.159.235.119"
+          "143.55.150.246"
         ]
       },
       {
         "preference": 20,
         "hostname": "mxb-00870b02.gslb.pphosted.com",
         "addresses": [
-          "66.159.235.119"
+          "143.55.150.246"
         ]
       }
     ],

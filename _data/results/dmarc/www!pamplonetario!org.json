@@ -15,14 +15,14 @@
         "preference": 10,
         "hostname": "pamplonetario-org.mail.protection.outlook.com",
         "addresses": [
-          "2a01:111:f403:ca04::",
-          "2a01:111:f403:ca04::d",
-          "2a01:111:f403:ca09::a",
-          "2a01:111:f403:ca09::b",
+          "2a01:111:f403:ca04::8",
+          "2a01:111:f403:ca04::c",
+          "2a01:111:f403:ca04::f",
+          "2a01:111:f403:ca09::",
+          "52.101.68.16",
           "52.101.68.18",
-          "52.101.68.36",
-          "52.101.73.12",
-          "52.101.73.4"
+          "52.101.68.27",
+          "52.101.68.5"
         ]
       }
     ],
@@ -144,12 +144,10 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none",
+    "record": "v=DMARC1; p=none; rua=mailto:rua@dmarc.brevo.com",
     "valid": true,
     "location": "pamplonetario.org",
-    "warnings": [
-      "rua tag (destination for aggregate reports) not found"
-    ],
+    "warnings": [],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -157,6 +155,16 @@
       },
       "p": {
         "value": "none",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "rua@dmarc.brevo.com",
+            "size_limit": null
+          }
+        ],
         "explicit": true
       },
       "adkim": {

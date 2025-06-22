@@ -34,6 +34,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.godella.es\n\nMS=C8931B6AC89A37F13146FF90E070168A8A59C947\n\ngoogle-site-verification=gDnN7c9NKTM8j2YviZ-SW96vBBwmF7-DktkT4vSYUqE\n\nv=spf1 include:dnsxperta.com ip4:195.57.245.235 include:gva.es include:spf.srv.cat -all"
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.godella.es\n\nv=spf1 include:dnsxperta.com ip4:195.57.245.235 include:gva.es include:spf.srv.cat -all\n\nMS=C8931B6AC89A37F13146FF90E070168A8A59C947\n\ngoogle-site-verification=gDnN7c9NKTM8j2YviZ-SW96vBBwmF7-DktkT4vSYUqE"
   }
 }
