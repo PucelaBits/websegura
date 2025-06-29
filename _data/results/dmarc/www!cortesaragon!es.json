@@ -3,17 +3,206 @@
   "base_domain": "cortesaragon.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hostnames": [
+      "dns03.ono.com",
+      "dns01.ono.com",
+      "dns02.ono.com"
+    ],
+    "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 0,
+        "hostname": "mxa-009b1e01.gslb.pphosted.com",
+        "addresses": [
+          "66.159.233.240"
+        ]
+      },
+      {
+        "preference": 0,
+        "hostname": "mxb-009b1e01.gslb.pphosted.com",
+        "addresses": [
+          "66.159.233.240"
+        ]
+      },
+      {
+        "preference": 100,
+        "hostname": "cortesaragon-es.mail.protection.outlook.com",
+        "addresses": [
+          "2a01:111:f403:ca04::5",
+          "2a01:111:f403:ca04::8",
+          "2a01:111:f403:ca04::d",
+          "2a01:111:f403:ca09::9",
+          "52.101.68.15",
+          "52.101.68.25",
+          "52.101.68.36",
+          "52.101.68.5"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "record": "v=spf1 a mx ip4:46.24.234.0/24 include:spf.protection.outlook.com include:emsd1.com include:spf-009b1e01.pphosted.com -all",
+    "valid": true,
+    "dns_lookups": 5,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "46.24.234.100",
+          "mechanism": "a"
+        },
+        {
+          "value": "mxa-009b1e01.gslb.pphosted.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mxb-009b1e01.gslb.pphosted.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "cortesaragon-es.mail.protection.outlook.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "46.24.234.0/24",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "spf.protection.outlook.com",
+          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/15 ip4:52.102.0.0/16 ip4:52.103.0.0/17 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/51 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "40.92.0.0/15",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "40.107.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.100.0.0/15",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.102.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.103.0.0/17",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "104.47.0.0/17",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "2a01:111:f400::/48",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403::/49",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:8000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:c000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:f000::/52",
+                "mechanism": "ip6"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "emsd1.com",
+          "record": "v=spf1 ip4:173.236.20.0/24 ip4:192.92.97.0/24 ip4:52.128.40.0/21 ip4:217.8.118.0/24 ip4:103.229.233.0/24 ~all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "173.236.20.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "192.92.97.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.128.40.0/21",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "217.8.118.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "103.229.233.0/24",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "spf-009b1e01.pphosted.com",
+          "record": "v=spf1 ip4:66.159.233.240 ip4:143.55.150.117",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "66.159.233.240",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "143.55.150.117",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "neutral"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
     "record": "v=DMARC1;p=none;",

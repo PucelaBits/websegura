@@ -86,7 +86,9 @@
     "record": "v=DMARC1;p=reject;fo=1;rua=mailto:dmarc@incibe.es;ruf=mailto:dmarc@incibe.es",
     "valid": true,
     "location": "osi.es",
-    "warnings": [],
+    "warnings": [
+      "Failed to retrieve MX records for the domain of ruf email address dmarc@incibe.es - The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -113,13 +115,7 @@
         "explicit": true
       },
       "ruf": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "dmarc@incibe.es",
-            "size_limit": null
-          }
-        ],
+        "value": "mailto:dmarc@incibe.es",
         "explicit": true
       },
       "adkim": {

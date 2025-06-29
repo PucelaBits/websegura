@@ -4,11 +4,11 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "a1-171.akam.net",
-      "a2-66.akam.net",
       "a13-66.akam.net",
-      "a28-66.akam.net",
+      "a2-66.akam.net",
+      "a1-171.akam.net",
       "a24-66.akam.net",
+      "a28-66.akam.net",
       "a5-64.akam.net"
     ],
     "warnings": []
@@ -30,7 +30,7 @@
   "spf": {
     "record": "v=spf1 include:spf.tmes.trendmicro.com include:caib.es include:spf.protection.outlook.com -all",
     "valid": true,
-    "dns_lookups": 6,
+    "dns_lookups": 7,
     "warnings": [],
     "parsed": {
       "pass": [],
@@ -197,8 +197,8 @@
         },
         {
           "domain": "caib.es",
-          "record": "v=spf1 mx ip4:85.119.193.2 ip4:85.119.198.6 ip4:85.119.198.16 -all",
-          "dns_lookups": 1,
+          "record": "v=spf1 mx include:spf-00a20601.pphosted.com ip4:85.119.193.2  -all",
+          "dns_lookups": 2,
           "parsed": {
             "pass": [
               {
@@ -212,20 +212,38 @@
               {
                 "value": "85.119.193.2",
                 "mechanism": "ip4"
-              },
-              {
-                "value": "85.119.198.6",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "85.119.198.16",
-                "mechanism": "ip4"
               }
             ],
             "neutral": [],
             "softfail": [],
             "fail": [],
-            "include": [],
+            "include": [
+              {
+                "domain": "spf-00a20601.pphosted.com",
+                "record": "v=spf1 ip4:66.159.233.57 ip4:66.159.234.127",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "66.159.233.57",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "66.159.234.127",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "neutral"
+                },
+                "warnings": []
+              }
+            ],
             "redirect": null,
             "exp": null,
             "all": "fail"

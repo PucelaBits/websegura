@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1080.ui-dns.com",
-      "ns1080.ui-dns.de",
+      "ns1080.ui-dns.biz",
       "ns1080.ui-dns.org",
-      "ns1080.ui-dns.biz"
+      "ns1080.ui-dns.de",
+      "ns1080.ui-dns.com"
     ],
     "warnings": []
   },
@@ -33,9 +33,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx ip4:80.28.208.248 a:mail.valleseco.es a:mail0.valleseco.es include:_spf-eu.ionos.com ~all",
+    "record": "v=spf1 mx ip4:80.28.208.248 a:mail.valleseco.es a:mail0.valleseco.es include:_spf-eu.ionos.com include:_spf_eucentral1.prod.hydra.sophos.com ~all",
     "valid": true,
-    "dns_lookups": 4,
+    "dns_lookups": 5,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -98,6 +98,47 @@
             "redirect": null,
             "exp": null,
             "all": "neutral"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "_spf_eucentral1.prod.hydra.sophos.com",
+          "record": "v=spf1 ip4:94.140.18.0/24 ip4:35.159.27.8/30 ip4:35.159.27.28/30 ip4:35.159.27.32/30 ip4:35.159.27.48/29 ip4:35.159.27.160/28 ~all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "94.140.18.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "35.159.27.8/30",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "35.159.27.28/30",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "35.159.27.32/30",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "35.159.27.48/29",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "35.159.27.160/28",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
           },
           "warnings": []
         }

@@ -10,20 +10,111 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx.turismoriasbaixas.com",
+        "addresses": [
+          "195.55.239.221"
+        ]
+      }
+    ],
     "warnings": [
-      "No MX records found. Is the domain parked?"
+      "The domain 221.red-195-55-239.customer.static.ccgg.telefonica.net does not exist",
+      "The reverse DNS of 195.55.239.221 is 221.red-195-55-239.customer.static.ccgg.telefonica.net, but the A/AAAA DNS records for 221.red-195-55-239.customer.static.ccgg.telefonica.net do not resolve to 195.55.239.221"
     ]
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "turismoriasbaixas.com does not have a SPF TXT record"
+    "record": "v=spf1 mx a:mx.turismoriasbaixas.com ~all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "mx.turismoriasbaixas.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "195.55.239.221",
+          "mechanism": "a"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=reject; rua=mailto:postmaster@turismoriasbaixas.com; ruf=mailto:postmaster@turismoriasbaixas.com; adkim=s; aspf=s",
+    "valid": true,
+    "location": "turismoriasbaixas.com",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "reject",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "postmaster@turismoriasbaixas.com",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "postmaster@turismoriasbaixas.com",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "s",
+        "explicit": true
+      },
+      "aspf": {
+        "value": "s",
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "reject",
+        "explicit": false
+      }
+    }
   }
 }

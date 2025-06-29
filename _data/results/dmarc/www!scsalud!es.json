@@ -3,22 +3,375 @@
   "base_domain": "scsalud.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hostnames": [
+      "dns01.ono.com",
+      "dns02.ono.com",
+      "dns03.ono.com"
+    ],
+    "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx01.hornetsecurity.com",
+        "addresses": [
+          "94.100.132.8"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mx02.hornetsecurity.com",
+        "addresses": [
+          "94.100.136.8"
+        ]
+      },
+      {
+        "preference": 30,
+        "hostname": "mx03.hornetsecurity.com",
+        "addresses": [
+          "94.100.134.8"
+        ]
+      },
+      {
+        "preference": 40,
+        "hostname": "mx04.hornetsecurity.com",
+        "addresses": [
+          "94.100.136.7"
+        ]
+      },
+      {
+        "preference": 50,
+        "hostname": "mx01.correolimpio.telefonica.es",
+        "addresses": [
+          "213.99.38.71",
+          "213.99.38.76",
+          "213.99.38.77",
+          "213.99.38.78",
+          "217.124.240.201",
+          "81.47.205.101",
+          "81.47.205.107",
+          "81.47.205.108",
+          "81.47.205.113",
+          "81.47.205.114",
+          "81.47.205.118",
+          "81.47.205.119",
+          "81.47.205.122",
+          "81.47.205.124",
+          "81.47.205.99"
+        ]
+      },
+      {
+        "preference": 60,
+        "hostname": "mx02.correolimpio.telefonica.es",
+        "addresses": [
+          "213.99.38.71",
+          "213.99.38.76",
+          "213.99.38.77",
+          "213.99.38.78",
+          "217.124.240.201",
+          "81.47.205.101",
+          "81.47.205.107",
+          "81.47.205.108",
+          "81.47.205.113",
+          "81.47.205.114",
+          "81.47.205.118",
+          "81.47.205.119",
+          "81.47.205.122",
+          "81.47.205.124",
+          "81.47.205.99"
+        ]
+      },
+      {
+        "preference": 70,
+        "hostname": "mx03.correolimpio.telefonica.es",
+        "addresses": [
+          "217.124.240.196",
+          "217.124.240.197",
+          "217.124.240.198",
+          "217.124.240.199",
+          "217.124.240.200"
+        ]
+      }
+    ],
+    "warnings": [
+      "The domain 196.red-217-124-240.customer.static.ccgg.telefonica.net does not exist",
+      "The reverse DNS of 217.124.240.196 is 196.red-217-124-240.customer.static.ccgg.telefonica.net, but the A/AAAA DNS records for 196.red-217-124-240.customer.static.ccgg.telefonica.net do not resolve to 217.124.240.196"
+    ]
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "record": "v=spf1 include:spf.protection.outlook.com include:spf.correolimpio.telefonica.es ip4:195.77.245.225 ip4:213.99.38.0/24 ip4:95.60.26.127 include:spf.hornetsecurity.com -all",
+    "valid": true,
+    "dns_lookups": 3,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "195.77.245.225",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "213.99.38.0/24",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "95.60.26.127",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "spf.protection.outlook.com",
+          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/15 ip4:52.102.0.0/16 ip4:52.103.0.0/17 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/51 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "40.92.0.0/15",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "40.107.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.100.0.0/15",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.102.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.103.0.0/17",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "104.47.0.0/17",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "2a01:111:f400::/48",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403::/49",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:8000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:c000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:f000::/52",
+                "mechanism": "ip6"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "spf.correolimpio.telefonica.es",
+          "record": "v=spf1 ip4:213.99.38.64/28 ip4:81.47.205.96/27 ip4:217.124.240.192/28 ~all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "213.99.38.64/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "81.47.205.96/27",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "217.124.240.192/28",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "spf.hornetsecurity.com",
+          "record": "v=spf1 ip4:83.246.65.0/24 ip4:185.140.204.0/22 ip4:94.100.128.0/20 ip4:81.20.94.0/24 ip4:173.45.18.0/24 ip4:52.62.123.207/32 ip4:52.62.108.212/32 ip4:129.232.203.80/28 ip4:209.172.38.64/27 ip4:108.163.133.224/27 ip4:193.135.100.0/27 ip4:199.27.221.76 ip4:216.46.11.238 ip4:216.46.11.244 ip4:199.27.221.81 ip4:199.27.221.82 ip4:52.62.114.130 ip4:52.62.125.178 ip4:92.54.27.0/24 ip4:174.142.136.160/27 ~all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "83.246.65.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.140.204.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "94.100.128.0/20",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "81.20.94.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "173.45.18.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.62.123.207/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.62.108.212/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "129.232.203.80/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "209.172.38.64/27",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "108.163.133.224/27",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "193.135.100.0/27",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "199.27.221.76",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "216.46.11.238",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "216.46.11.244",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "199.27.221.81",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "199.27.221.82",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.62.114.130",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.62.125.178",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "92.54.27.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "174.142.136.160/27",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "record": "v=DMARC1;p=none;pct=100;rua=mailto:dmarc@scsalud.es",
+    "valid": true,
+    "location": "scsalud.es",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "pct": {
+        "value": 100,
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc@scsalud.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }

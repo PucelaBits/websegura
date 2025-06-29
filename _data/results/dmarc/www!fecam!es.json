@@ -29,12 +29,20 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:212.64.170.195 ip4:212.64.170.94 ip4:212.64.170.85 a:fecam.es ~all",
+    "record": "v=spf1 +mx ip4:212.64.170.195 ip4:212.64.170.94 ip4:212.64.170.85 a:fecam.es a:mail.fecam.es ~all",
     "valid": true,
-    "dns_lookups": 1,
+    "dns_lookups": 3,
     "warnings": [],
     "parsed": {
       "pass": [
+        {
+          "value": "mail.fecam.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mxdomain.mad.idec.net",
+          "mechanism": "mx"
+        },
         {
           "value": "212.64.170.195",
           "mechanism": "ip4"
@@ -49,6 +57,10 @@
         },
         {
           "value": "212.64.170.195",
+          "mechanism": "a"
+        },
+        {
+          "value": "212.64.170.85",
           "mechanism": "a"
         }
       ],

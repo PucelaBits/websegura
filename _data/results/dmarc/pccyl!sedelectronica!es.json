@@ -21,7 +21,10 @@
     "record": "v=DMARC1; p=quarantine; sp=none; rua=mailto:rua@espublico.com,mailto:rua@espublico.cloud; ruf=mailto:ruf@espublico.com,mailto:ruf@espublico.cloud; fo=1:d:s; ri=3600",
     "valid": true,
     "location": "sedelectronica.es",
-    "warnings": [],
+    "warnings": [
+      "espublico.cloud does not indicate that it accepts DMARC reports about sedelectronica.es - Authorization record not found: sedelectronica.es._report._dmarc.espublico.cloud IN TXT \"v=DMARC1\"",
+      "espublico.cloud does not indicate that it accepts DMARC reports about sedelectronica.es - Authorization record not found: sedelectronica.es._report._dmarc.espublico.cloud IN TXT \"v=DMARC1\""
+    ],
     "tags": {
       "v": {
         "value": "DMARC1",

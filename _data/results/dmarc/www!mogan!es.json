@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns11.servicio-online.net",
       "ns10.servicio-online.net",
+      "ns11.servicio-online.net",
       "ns12.servicio-online.net"
     ],
     "warnings": []
@@ -84,7 +84,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; sp=none; aspf=s; rua=mailto:rua@mogan.es; ruf=mailto:ruf@mogan.es; fo=1",
+    "record": "v=DMARC1; p=quarantine; sp=none; aspf=s; rua=mailto:rua@mogan.es; ruf=mailto:ruf@mogan.es; fo=1",
     "valid": true,
     "location": "mogan.es",
     "warnings": [],
@@ -94,7 +94,7 @@
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": true
       },
       "sp": {

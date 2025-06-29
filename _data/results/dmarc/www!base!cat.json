@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.nominalia.com",
-      "dns1.nominalia.com"
+      "dns1.nominalia.com",
+      "dns2.nominalia.com"
     ],
     "warnings": []
   },
@@ -26,15 +26,12 @@
       {
         "preference": 30,
         "hostname": "mx1.dipta.cat",
-        "addresses": [
-          "195.76.233.59"
-        ]
+        "addresses": []
       }
     ],
     "warnings": [
       "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out.",
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 195.76.233.59 is mx1.dipta.cat, but the A/AAAA DNS records for mx1.dipta.cat do not resolve to 195.76.233.59"
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
     ]
   },
   "spf": {
