@@ -24,7 +24,7 @@
         "preference": 10,
         "hostname": "mxb-006a4e02.gslb.pphosted.com",
         "addresses": [
-          "143.55.148.243"
+          "143.55.146.78"
         ]
       }
     ],
@@ -32,9 +32,127 @@
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com include:spf.puc.rediris.es ip4:193.145.227.0/24 ip4:213.27.204.0/25 ip6:2001:720:440::/64 ip6:2001:920:580a::/64 -all",
-    "valid": false,
+    "valid": true,
+    "dns_lookups": 2,
     "warnings": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "parsed": {
+      "pass": [
+        {
+          "value": "193.145.227.0/24",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "213.27.204.0/25",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "2001:720:440::/64",
+          "mechanism": "ip6"
+        },
+        {
+          "value": "2001:920:580a::/64",
+          "mechanism": "ip6"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "spf.protection.outlook.com",
+          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/15 ip4:52.102.0.0/16 ip4:52.103.0.0/17 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/51 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "40.92.0.0/15",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "40.107.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.100.0.0/15",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.102.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.103.0.0/17",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "104.47.0.0/17",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "2a01:111:f400::/48",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403::/49",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:8000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:c000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:f000::/52",
+                "mechanism": "ip6"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "spf.puc.rediris.es",
+          "record": "v=spf1 ip4:143.55.146.78 ip4:143.55.148.243 ip4:130.206.25.38 ~all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "143.55.146.78",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "143.55.148.243",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "130.206.25.38",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
     "record": "v=DMARC1; p=reject; sp=reject; pct=100; adkim=s; aspf=s; rua=mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com",

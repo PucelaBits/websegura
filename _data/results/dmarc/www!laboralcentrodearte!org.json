@@ -5,9 +5,9 @@
   "ns": {
     "hostnames": [
       "ns1067.ui-dns.com",
+      "ns1079.ui-dns.biz",
       "ns1065.ui-dns.de",
-      "ns1019.ui-dns.org",
-      "ns1079.ui-dns.biz"
+      "ns1019.ui-dns.org"
     ],
     "warnings": []
   },
@@ -32,9 +32,320 @@
   },
   "spf": {
     "record": "v=spf1 a mx include:amazonses.com include:_spf.google.com include:_spf.perfora.net include:_spf-eu.ionos.com -all",
-    "valid": false,
+    "valid": true,
+    "dns_lookups": 9,
     "warnings": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "parsed": {
+      "pass": [
+        {
+          "value": "2001:8d8:100f:f000::222",
+          "mechanism": "a"
+        },
+        {
+          "value": "217.160.0.137",
+          "mechanism": "a"
+        },
+        {
+          "value": "mx00.ionos.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mx01.ionos.es",
+          "mechanism": "mx"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "amazonses.com",
+          "record": "v=spf1 ip4:199.255.192.0/22 ip4:199.127.232.0/22 ip4:54.240.0.0/18 ip4:69.169.224.0/20 ip4:23.249.208.0/20 ip4:23.251.224.0/19 ip4:76.223.176.0/20 ip4:54.240.64.0/18 ip4:76.223.128.0/19 ip4:216.221.160.0/19 ip4:206.55.144.0/20 ip4:24.110.64.0/18 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "199.255.192.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "199.127.232.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "54.240.0.0/18",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "69.169.224.0/20",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "23.249.208.0/20",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "23.251.224.0/19",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "76.223.176.0/20",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "54.240.64.0/18",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "76.223.128.0/19",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "216.221.160.0/19",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "206.55.144.0/20",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "24.110.64.0/18",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "_spf.google.com",
+          "record": "v=spf1 include:_netblocks.google.com include:_netblocks2.google.com include:_netblocks3.google.com ~all",
+          "dns_lookups": 3,
+          "parsed": {
+            "pass": [],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [
+              {
+                "domain": "_netblocks.google.com",
+                "record": "v=spf1 ip4:66.249.80.0/20 ip4:72.14.192.0/18 ip4:74.125.0.0/16 ip4:108.177.8.0/21 ip4:173.194.0.0/16 ip4:209.85.128.0/17 ip4:216.58.192.0/19 ip4:216.239.32.0/19 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "66.249.80.0/20",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "72.14.192.0/18",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "74.125.0.0/16",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "108.177.8.0/21",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "173.194.0.0/16",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "209.85.128.0/17",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "216.58.192.0/19",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "216.239.32.0/19",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              },
+              {
+                "domain": "_netblocks2.google.com",
+                "record": "v=spf1 ip6:2001:4860:4000::/36 ip6:2404:6800:4000::/36 ip6:2607:f8b0:4000::/36 ip6:2800:3f0:4000::/36 ip6:2a00:1450:4000::/36 ip6:2c0f:fb50:4000::/36 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "2001:4860:4000::/36",
+                      "mechanism": "ip6"
+                    },
+                    {
+                      "value": "2404:6800:4000::/36",
+                      "mechanism": "ip6"
+                    },
+                    {
+                      "value": "2607:f8b0:4000::/36",
+                      "mechanism": "ip6"
+                    },
+                    {
+                      "value": "2800:3f0:4000::/36",
+                      "mechanism": "ip6"
+                    },
+                    {
+                      "value": "2a00:1450:4000::/36",
+                      "mechanism": "ip6"
+                    },
+                    {
+                      "value": "2c0f:fb50:4000::/36",
+                      "mechanism": "ip6"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              },
+              {
+                "domain": "_netblocks3.google.com",
+                "record": "v=spf1 ip4:172.217.0.0/19 ip4:172.217.32.0/20 ip4:172.217.128.0/19 ip4:172.217.160.0/20 ip4:172.217.192.0/19 ip4:172.253.56.0/21 ip4:172.253.112.0/20 ip4:108.177.96.0/19 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "172.217.0.0/19",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "172.217.32.0/20",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "172.217.128.0/19",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "172.217.160.0/20",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "172.217.192.0/19",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "172.253.56.0/21",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "172.253.112.0/20",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "108.177.96.0/19",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              }
+            ],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "_spf.perfora.net",
+          "record": "v=spf1 ip4:74.208.4.192/26 ip4:82.165.159.128/27 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "74.208.4.192/26",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "82.165.159.128/27",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "_spf-eu.ionos.com",
+          "record": "v=spf1 ip4:212.227.126.128/25 ip4:82.165.159.0/26 ip4:212.227.15.0/25 ip4:212.227.17.0/27 ip4:217.72.192.64/26 ?all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "212.227.126.128/25",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "82.165.159.0/26",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "212.227.15.0/25",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "212.227.17.0/27",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "217.72.192.64/26",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "neutral"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
     "record": null,

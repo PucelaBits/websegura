@@ -15,14 +15,14 @@
         "preference": 10,
         "hostname": "aepd-es.mail.protection.outlook.com",
         "addresses": [
-          "2a01:111:f403:ca04::4",
-          "2a01:111:f403:ca04::a",
-          "2a01:111:f403:ca09::5",
-          "2a01:111:f403:ca09::7",
-          "52.101.73.1",
-          "52.101.73.15",
-          "52.101.73.22",
-          "52.101.73.30"
+          "2a01:111:f403:ca04::10",
+          "2a01:111:f403:ca04::6",
+          "2a01:111:f403:ca04::c",
+          "2a01:111:f403:ca04::e",
+          "52.101.68.10",
+          "52.101.73.11",
+          "52.101.73.12",
+          "52.101.73.24"
         ]
       }
     ],
@@ -127,10 +127,7 @@
     "record": "v=DMARC1;p=reject;rua=mailto:042ecf5837@rua.easydmarc.eu,mailto:dmarc@aepd.es;ruf=mailto:042ecf5837@ruf.easydmarc.eu,mailto:dmarc_ruf@aepd.es;fo=1;",
     "valid": true,
     "location": "aepd.es",
-    "warnings": [
-      "rua.easydmarc.eu does not indicate that it accepts DMARC reports about aepd.es - Authorization record not found: aepd.es._report._dmarc.rua.easydmarc.eu IN TXT \"v=DMARC1\"",
-      "ruf.easydmarc.eu does not indicate that it accepts DMARC reports about aepd.es - Authorization record not found: aepd.es._report._dmarc.ruf.easydmarc.eu IN TXT \"v=DMARC1\""
-    ],
+    "warnings": [],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -141,11 +138,33 @@
         "explicit": true
       },
       "rua": {
-        "value": "mailto:042ecf5837@rua.easydmarc.eu,mailto:dmarc@aepd.es",
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "042ecf5837@rua.easydmarc.eu",
+            "size_limit": null
+          },
+          {
+            "scheme": "mailto",
+            "address": "dmarc@aepd.es",
+            "size_limit": null
+          }
+        ],
         "explicit": true
       },
       "ruf": {
-        "value": "mailto:042ecf5837@ruf.easydmarc.eu,mailto:dmarc_ruf@aepd.es",
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "042ecf5837@ruf.easydmarc.eu",
+            "size_limit": null
+          },
+          {
+            "scheme": "mailto",
+            "address": "dmarc_ruf@aepd.es",
+            "size_limit": null
+          }
+        ],
         "explicit": true
       },
       "fo": {

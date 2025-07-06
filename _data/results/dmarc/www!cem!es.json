@@ -1,7 +1,7 @@
 {
   "domain": "cem.es",
   "base_domain": "cem.es",
-  "dnssec": false,
+  "dnssec": true,
   "ns": {
     "hostnames": [
       "ns1.age.gob.es",
@@ -14,9 +14,7 @@
       {
         "preference": 10,
         "hostname": "mailin.serviciosmin.gob.es",
-        "addresses": [
-          "192.187.16.24"
-        ]
+        "addresses": []
       },
       {
         "preference": 10,
@@ -26,7 +24,9 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "All nameservers failed to answer the query mailin.serviciosmin.gob.es. IN AAAA: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    ]
   },
   "spf": {
     "record": "v=spf1 mx include:spf.serviciosmin.gob.es -all",

@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "ns3.gestiondecuenta.com",
-      "ns4.gestiondecuenta.com",
       "ns2.gestiondecuenta.com",
+      "ns4.gestiondecuenta.com",
       "ns.gestiondecuenta.com"
     ],
     "warnings": []
@@ -104,6 +104,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "error": "Multiple DMARC policy records are not permitted - https://tools.ietf.org/html/rfc7489#section-6.6.3"
   }
 }

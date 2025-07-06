@@ -25,11 +25,13 @@
     "record": "v=spf1 a mx include:spf.smtp2go.com -all",
     "valid": true,
     "dns_lookups": 3,
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ],
+    "warnings": [],
     "parsed": {
       "pass": [
+        {
+          "value": "176.34.179.218",
+          "mechanism": "a"
+        },
         {
           "value": "mail.apuntmedia.es",
           "mechanism": "mx"

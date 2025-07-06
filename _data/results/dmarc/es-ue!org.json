@@ -3,40 +3,100 @@
   "base_domain": "es-ue.org",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "ns1.siteground.net",
-      "ns2.siteground.net"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mx10.mailspamprotection.com",
-        "addresses": []
-      },
-      {
-        "preference": 20,
-        "hostname": "mx20.mailspamprotection.com",
-        "addresses": []
-      },
-      {
-        "preference": 30,
-        "hostname": "mx30.mailspamprotection.com",
-        "addresses": []
-      }
-    ],
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out.",
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out.",
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ]
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "record": "v=spf1 +a +mx +ip4:34.175.200.170  include:es-ue.org.spf.auto.dnssmarthost.net ~all",
+    "valid": true,
+    "dns_lookups": 4,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "34.175.212.66",
+          "mechanism": "a"
+        },
+        {
+          "value": "mx10.mailspamprotection.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mx20.mailspamprotection.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mx30.mailspamprotection.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "34.175.200.170",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "es-ue.org.spf.auto.dnssmarthost.net",
+          "record": "v=spf1 include:_spf.mailspamprotection.com ~all",
+          "dns_lookups": 1,
+          "parsed": {
+            "pass": [],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [
+              {
+                "domain": "_spf.mailspamprotection.com",
+                "record": "v=spf1 ip4:185.56.84.0/24 ip4:185.56.85.0/24 ip4:185.56.86.0/24 ip4:185.56.87.0/24 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "185.56.84.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.56.85.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.56.86.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.56.87.0/24",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              }
+            ],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
   },
   "dmarc": {
     "record": "v=DMARC1; p=none; aspf=r; adkim=r;",

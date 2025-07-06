@@ -10,8 +10,23 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx1.seg-social.es",
+        "addresses": [
+          "195.77.180.66"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mx2.seg-social.es",
+        "addresses": [
+          "195.77.178.130"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:seg-social.es -all",

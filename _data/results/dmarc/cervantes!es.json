@@ -125,53 +125,9 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine",
-    "valid": true,
-    "location": "cervantes.es",
-    "warnings": [
-      "rua tag (destination for aggregate reports) not found"
-    ],
-    "tags": {
-      "v": {
-        "value": "DMARC1",
-        "explicit": true
-      },
-      "p": {
-        "value": "quarantine",
-        "explicit": true
-      },
-      "adkim": {
-        "value": "r",
-        "explicit": false
-      },
-      "aspf": {
-        "value": "r",
-        "explicit": false
-      },
-      "fo": {
-        "value": [
-          "0"
-        ],
-        "explicit": false
-      },
-      "pct": {
-        "value": 100,
-        "explicit": false
-      },
-      "rf": {
-        "value": [
-          "afrf"
-        ],
-        "explicit": false
-      },
-      "ri": {
-        "value": 86400,
-        "explicit": false
-      },
-      "sp": {
-        "value": "quarantine",
-        "explicit": false
-      }
-    }
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "All nameservers failed to answer the query _dmarc.cervantes.es. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
   }
 }
