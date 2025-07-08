@@ -1,16 +1,17 @@
 {
-  "id": 68130516,
+  "id": 68200963,
   "algorithm_version": 4,
-  "scanned_at": "2025-07-07T01:10:32.018Z",
+  "scanned_at": "2025-07-08T01:06:40.754Z",
   "error": null,
-  "grade": "C",
+  "grade": "D",
   "response_headers": {
     "age": "0",
     "via": "1.1 varnish (Varnish/7.1)",
-    "date": "Mon, 07 Jul 2025 01:10:36 GMT",
+    "date": "Tue, 08 Jul 2025 01:06:43 GMT",
+    "vary": "Accept-Encoding",
     "server": "nginx",
     "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
-    "x-varnish": "325259511",
+    "x-varnish": "380900036",
     "cache-tags": "MISS",
     "connection": "close",
     "x-generator": "Drupal 10 (https://www.drupal.org)",
@@ -24,9 +25,9 @@
     "x-content-type-options": "nosniff",
     "x-drupal-dynamic-cache": "UNCACHEABLE (response policy)"
   },
-  "score": 50,
+  "score": 30,
   "status_code": 200,
-  "tests_failed": 3,
-  "tests_passed": 7,
+  "tests_failed": 4,
+  "tests_passed": 6,
   "tests_quantity": 10
 }
