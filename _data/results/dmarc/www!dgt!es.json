@@ -36,9 +36,7 @@
     "record": "v=spf1 mx ip4:212.128.100.149 ip4:212.128.100.150 a:spf.correo.gob.es -all",
     "valid": true,
     "dns_lookups": 2,
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ],
+    "warnings": [],
     "parsed": {
       "pass": [
         {
@@ -56,6 +54,50 @@
         {
           "value": "212.128.100.150",
           "mechanism": "ip4"
+        },
+        {
+          "value": "185.73.172.122",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.172.123",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.172.124",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.172.125",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.172.147",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.173.17",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.173.18",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.173.19",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.173.20",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.173.21",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.173.22",
+          "mechanism": "a"
         }
       ],
       "neutral": [],
@@ -68,9 +110,9 @@
     }
   },
   "dmarc": {
-    "record": null,
+    "record": "v=DMARC1; p=quarantine; rua=mailto:informes.correo@dgt.es;ruf=mailto:alertas.correo@dgt.es; fo=0:1:d:s;",
     "valid": false,
-    "location": null,
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "location": "dgt.es",
+    "error": "fo DMARC tag options 0 and 1 are mutually exclusive"
   }
 }

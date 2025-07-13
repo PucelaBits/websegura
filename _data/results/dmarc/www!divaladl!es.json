@@ -16,40 +16,40 @@
         "preference": 10,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.251.179.26",
-          "2607:f8b0:4004:c19::1a"
+          "2607:f8b0:4023:c06::1a",
+          "74.125.137.26"
         ]
       },
       {
         "preference": 20,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "172.253.116.27",
-          "2a00:1450:400b:c02::1a"
+          "173.194.208.27",
+          "2607:f8b0:4023:100d::1a"
         ]
       },
       {
         "preference": 30,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "173.194.76.27",
-          "2a00:1450:400c:c00::1b"
+          "142.251.190.27",
+          "2607:f8b0:4003:c0a::1b"
         ]
       },
       {
         "preference": 40,
         "hostname": "aspmx2.googlemail.com",
         "addresses": [
-          "172.253.116.26",
-          "2a00:1450:400b:c02::1b"
+          "173.194.208.27",
+          "2607:f8b0:4023:100d::1b"
         ]
       },
       {
         "preference": 40,
         "hostname": "aspmx3.googlemail.com",
         "addresses": [
-          "173.194.76.27",
-          "2a00:1450:400c:c00::1b"
+          "142.251.190.26",
+          "2607:f8b0:4003:c0a::1b"
         ]
       }
     ],
@@ -103,12 +103,12 @@
             "include": [
               {
                 "domain": "_netblocks.google.com",
-                "record": "v=spf1 ip4:66.249.80.0/20 ip4:72.14.192.0/18 ip4:74.125.0.0/16 ip4:108.177.8.0/21 ip4:173.194.0.0/16 ip4:209.85.128.0/17 ip4:216.58.192.0/19 ip4:216.239.32.0/19 ~all",
+                "record": "v=spf1 ip4:66.249.80.0/21 ip4:72.14.192.0/18 ip4:74.125.0.0/16 ip4:108.177.8.0/21 ip4:173.194.0.0/16 ip4:209.85.128.0/17 ip4:216.58.192.0/19 ip4:216.239.32.0/19 ~all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
                     {
-                      "value": "66.249.80.0/20",
+                      "value": "66.249.80.0/21",
                       "mechanism": "ip4"
                     },
                     {

@@ -33,7 +33,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:192.148.209.39 ip4:192.148.209.40 include:spf.protection.outlook.com a:spf.correo.gob.es -all",
+    "record": "v=spf1 ip4:192.148.209.39 ip4:192.148.209.40 include:spf.protection.outlook.com a:spf.correo.gob.es ip4:192.148.209.5 -all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
@@ -90,6 +90,10 @@
         {
           "value": "185.73.173.22",
           "mechanism": "a"
+        },
+        {
+          "value": "192.148.209.5",
+          "mechanism": "ip4"
         }
       ],
       "neutral": [],

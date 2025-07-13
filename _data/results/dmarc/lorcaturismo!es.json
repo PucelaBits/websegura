@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "alfa.lobocom.es",
       "ns3.lobocom.es",
-      "beta.lobocom.es"
+      "beta.lobocom.es",
+      "alfa.lobocom.es"
     ],
     "warnings": []
   },
@@ -16,14 +16,11 @@
         "preference": 10,
         "hostname": "lorcaturismo.es",
         "addresses": [
-          "213.0.108.7"
+          "77.228.41.7"
         ]
       }
     ],
-    "warnings": [
-      "The domain red213-7.lorca.es does not exist",
-      "The reverse DNS of 213.0.108.7 is red213-7.lorca.es, but the A/AAAA DNS records for red213-7.lorca.es do not resolve to 213.0.108.7"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 a mx ptr -all",
@@ -35,7 +32,7 @@
     "parsed": {
       "pass": [
         {
-          "value": "213.0.108.7",
+          "value": "77.228.41.7",
           "mechanism": "a"
         },
         {

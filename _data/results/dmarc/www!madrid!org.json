@@ -10,35 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mx1.hc1855-42.eu.iphmx.com",
-        "addresses": [
-          "194.165.193.239",
-          "23.90.123.185"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "mx2.hc1855-42.eu.iphmx.com",
-        "addresses": [
-          "194.165.193.239",
-          "23.90.123.185"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mail.madrid.org",
-        "addresses": [
-          "195.77.128.11"
-        ]
-      }
-    ],
-    "warnings": [
-      "The domain mail.comadrid.es does not exist",
-      "The reverse DNS of 195.77.128.11 is mail.comadrid.es, but the A/AAAA DNS records for mail.comadrid.es do not resolve to 195.77.128.11"
-    ]
+    "hosts": [],
+    "error": "The DNS response does not contain an answer to the question: 11.128.77.195.in-addr.arpa. IN PTR"
   },
   "spf": {
     "record": "v=spf1 exists:%{i}.spf.hc1855-42.eu.iphmx.com ip4:195.77.128.128/25 ip4:195.77.128.55/32 ip4:194.165.202.24/32 ip4:23.90.123.197/32 include:spf.protection.outlook.com ~all",

@@ -3,12 +3,37 @@
   "base_domain": "es-ue.org",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hostnames": [
+      "ns1.siteground.net",
+      "ns2.siteground.net"
+    ],
+    "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx10.mailspamprotection.com",
+        "addresses": [
+          "34.149.79.66"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mx20.mailspamprotection.com",
+        "addresses": [
+          "34.120.156.61"
+        ]
+      },
+      {
+        "preference": 30,
+        "hostname": "mx30.mailspamprotection.com",
+        "addresses": [
+          "34.111.121.216"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 +a +mx +ip4:34.175.200.170  include:es-ue.org.spf.auto.dnssmarthost.net ~all",

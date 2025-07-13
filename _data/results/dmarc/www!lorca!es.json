@@ -29,7 +29,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx a:pmx.lnm.es -all",
+    "record": "v=spf1 mx ip4:77.228.41.5 a:pmx.lnm.es -all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
@@ -42,6 +42,10 @@
         {
           "value": "correo2.lorca.es",
           "mechanism": "mx"
+        },
+        {
+          "value": "77.228.41.5",
+          "mechanism": "ip4"
         },
         {
           "value": "194.140.143.72",

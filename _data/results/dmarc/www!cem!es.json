@@ -14,7 +14,9 @@
       {
         "preference": 10,
         "hostname": "mailin.serviciosmin.gob.es",
-        "addresses": []
+        "addresses": [
+          "192.187.16.24"
+        ]
       },
       {
         "preference": 10,
@@ -24,9 +26,7 @@
         ]
       }
     ],
-    "warnings": [
-      "All nameservers failed to answer the query mailin.serviciosmin.gob.es. IN AAAA: Server Do53:1.0.0.1@53 answered SERVFAIL"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx include:spf.serviciosmin.gob.es -all",

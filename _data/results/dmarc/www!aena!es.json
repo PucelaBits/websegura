@@ -4,11 +4,11 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "artemis.ttd.net",
+      "dns12.aena.es",
       "dns7.aena.es",
       "dns6.aena.es",
-      "dns13.aena.es",
-      "dns12.aena.es",
-      "artemis.ttd.net"
+      "dns13.aena.es"
     ],
     "warnings": []
   },
@@ -24,10 +24,10 @@
       }
     ],
     "warnings": [
-      "The domain spf.aena.es does not exist",
-      "The reverse DNS of 194.224.177.201 is spf.aena.es, but the A/AAAA DNS records for spf.aena.es do not resolve to 194.224.177.201",
       "The domain meg02.aena.es does not exist",
       "The reverse DNS of 194.224.177.201 is meg02.aena.es, but the A/AAAA DNS records for meg02.aena.es do not resolve to 194.224.177.201",
+      "The domain spf.aena.es does not exist",
+      "The reverse DNS of 194.224.177.201 is spf.aena.es, but the A/AAAA DNS records for spf.aena.es do not resolve to 194.224.177.201",
       "The domain meg04.aena.es does not exist",
       "The reverse DNS of 194.224.177.201 is meg04.aena.es, but the A/AAAA DNS records for meg04.aena.es do not resolve to 194.224.177.201",
       "The domain spf.aena.es does not exist",
@@ -296,7 +296,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1;p=reject;fo=1;pct=100;ri=3600;rua=mailto:xu8vmvw7@ag.c2.dmarcian.com,mailto:DMARCManagement@aena.es;ruf=mailto:DMARCManagement@aena.es",
+    "record": "v=DMARC1; p=reject; pct=100; fo=1; rua=mailto:74a91578@inbox.eu.redsift.cloud,mailto:DMARCManagement@aena.es; ruf=mailto:74a91578@inbox.eu.redsift.cloud,mailto:DMARCManagement@aena.es;",
     "valid": true,
     "location": "aena.es",
     "warnings": [],
@@ -309,25 +309,21 @@
         "value": "reject",
         "explicit": true
       },
+      "pct": {
+        "value": 100,
+        "explicit": true
+      },
       "fo": {
         "value": [
           "1"
         ],
         "explicit": true
       },
-      "pct": {
-        "value": 100,
-        "explicit": true
-      },
-      "ri": {
-        "value": 3600,
-        "explicit": true
-      },
       "rua": {
         "value": [
           {
             "scheme": "mailto",
-            "address": "xu8vmvw7@ag.c2.dmarcian.com",
+            "address": "74a91578@inbox.eu.redsift.cloud",
             "size_limit": null
           },
           {
@@ -340,6 +336,11 @@
       },
       "ruf": {
         "value": [
+          {
+            "scheme": "mailto",
+            "address": "74a91578@inbox.eu.redsift.cloud",
+            "size_limit": null
+          },
           {
             "scheme": "mailto",
             "address": "DMARCManagement@aena.es",
@@ -360,6 +361,10 @@
         "value": [
           "afrf"
         ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
         "explicit": false
       },
       "sp": {

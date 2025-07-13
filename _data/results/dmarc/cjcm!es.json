@@ -4,26 +4,70 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.bodis.com",
-      "ns1.bodis.com"
+      "algin.ns.cloudflare.com",
+      "ryleigh.ns.cloudflare.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "_dc-mx.efb6bbe44fd4.cjcm.es",
+        "addresses": [
+          "38.180.196.19"
+        ]
+      }
+    ],
     "warnings": [
-      "No MX records found. Is the domain parked?"
+      "38.180.196.19 does not have any reverse DNS (PTR) records"
     ]
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "record": "v=spf1 ip4:38.180.196.19 a mx ~all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "38.180.196.19",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "104.21.7.17",
+          "mechanism": "a"
+        },
+        {
+          "value": "172.67.155.97",
+          "mechanism": "a"
+        },
+        {
+          "value": "2606:4700:3033::ac43:9b61",
+          "mechanism": "a"
+        },
+        {
+          "value": "2606:4700:3035::6815:711",
+          "mechanism": "a"
+        },
+        {
+          "value": "_dc-mx.efb6bbe44fd4.cjcm.es",
+          "mechanism": "mx"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
   },
   "dmarc": {
     "record": null,
     "valid": false,
     "location": null,
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "error": "A DMARC record does not exist for this domain or its base domain"
   }
 }
