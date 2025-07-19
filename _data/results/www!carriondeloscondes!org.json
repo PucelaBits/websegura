@@ -1,22 +1,24 @@
 {
-  "id": 68760110,
+  "id": 68805277,
   "algorithm_version": 4,
-  "scanned_at": "2025-07-18T01:10:07.486Z",
+  "scanned_at": "2025-07-19T01:08:26.808Z",
   "error": null,
-  "grade": "D",
+  "grade": "F",
   "response_headers": {
-    "date": "Fri, 18 Jul 2025 01:10:08 GMT",
+    "date": "Sat, 19 Jul 2025 01:08:27 GMT",
+    "etag": "\"150-1752849491;br\"",
     "link": "<https://www.carriondeloscondes.org/wp-json/>; rel=\"https://api.w.org/\", <https://www.carriondeloscondes.org/wp-json/wp/v2/pages/324>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://www.carriondeloscondes.org/>; rel=shortlink",
     "vary": "Accept-Encoding,User-Agent",
     "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\"",
     "connection": "close",
     "x-pingback": "https://www.carriondeloscondes.org/xmlrpc.php",
     "content-type": "text/html; charset=UTF-8",
-    "transfer-encoding": "chunked"
+    "transfer-encoding": "chunked",
+    "x-litespeed-cache": "hit"
   },
-  "score": 30,
+  "score": 0,
   "status_code": 200,
-  "tests_failed": 4,
-  "tests_passed": 6,
+  "tests_failed": 5,
+  "tests_passed": 5,
   "tests_quantity": 10
 }
