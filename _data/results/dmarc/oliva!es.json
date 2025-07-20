@@ -19,10 +19,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 217.13.93.4 is zimbra-oliva.digitalvalue.es, but the A/AAAA DNS records for zimbra-oliva.digitalvalue.es do not resolve to 217.13.93.4"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:dnsxperta.com ip4:95.39.225.138 ip4:89.248.106.134 ip4:95.39.225.133 -all",

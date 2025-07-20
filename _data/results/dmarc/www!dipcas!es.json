@@ -29,7 +29,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:5.39.208.39 ip4:5.39.208.40 ip4:5.39.208.45 ip4:5.39.212.20 ip4:213.4.82.201 ip4:51.68.96.178 +a:dipcas.es +mx include:spf.protection.outlook.com -all",
+    "record": "v=spf1 ip4:5.39.208.39 ip4:5.39.208.40 ip4:5.39.208.45 ip4:5.39.208.46 ip4:5.39.212.20 ip4:213.4.82.201 ip4:51.68.96.178 +a:dipcas.es +mx include:spf.protection.outlook.com -all",
     "valid": true,
     "dns_lookups": 3,
     "warnings": [
@@ -47,6 +47,10 @@
         },
         {
           "value": "5.39.208.45",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "5.39.208.46",
           "mechanism": "ip4"
         },
         {

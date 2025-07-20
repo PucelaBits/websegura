@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.hostinet.com",
-      "dns2.hostinet.com"
+      "dns2.hostinet.com",
+      "dns1.hostinet.com"
     ],
     "warnings": []
   },
@@ -47,7 +47,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1;p=reject;sp=none;adkim=r;aspf=r;pct=100;fo=1;rf=afrf;ri=86400;rua=mailto:00ce08b769@rua.easydmarc.eu;ruf=mailto:00ce08b769@ruf.easydmarc.eu",
+    "record": "v=DMARC1; p=reject; sp=none; adkim=s; aspf=s; rua=mailto:2rer39753w@rua.powerdmarc.com; ruf=mailto:2rer39753w@ruf.powerdmarc.com; pct=100; fo=1;",
     "valid": true,
     "location": "aytopenamelleraalta.es",
     "warnings": [],
@@ -65,11 +65,31 @@
         "explicit": true
       },
       "adkim": {
-        "value": "r",
+        "value": "s",
         "explicit": true
       },
       "aspf": {
-        "value": "r",
+        "value": "s",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "2rer39753w@rua.powerdmarc.com",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "2rer39753w@ruf.powerdmarc.com",
+            "size_limit": null
+          }
+        ],
         "explicit": true
       },
       "pct": {
@@ -86,31 +106,11 @@
         "value": [
           "afrf"
         ],
-        "explicit": true
+        "explicit": false
       },
       "ri": {
         "value": 86400,
-        "explicit": true
-      },
-      "rua": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "00ce08b769@rua.easydmarc.eu",
-            "size_limit": null
-          }
-        ],
-        "explicit": true
-      },
-      "ruf": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "00ce08b769@ruf.easydmarc.eu",
-            "size_limit": null
-          }
-        ],
-        "explicit": true
+        "explicit": false
       }
     }
   }

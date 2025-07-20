@@ -21,22 +21,92 @@
       {
         "preference": 20,
         "hostname": "mxres.msc.es",
-        "addresses": []
+        "addresses": [
+          "91.230.250.52"
+        ]
       }
     ],
-    "warnings": [
-      "All nameservers failed to answer the query mxres.msc.es. IN AAAA: Server Do53:1.0.0.1@53 answered SERVFAIL"
-    ]
+    "warnings": []
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "record": "v=spf1 ip4:195.64.186.0/23 ip4:91.230.250.0/24 include:spf.acumbamail.com -all",
+    "valid": true,
+    "dns_lookups": 1,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "195.64.186.0/23",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "91.230.250.0/24",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "spf.acumbamail.com",
+          "record": "v=spf1 ip4:176.28.104.1/24 ip4:185.2.150.1/24 ip4:185.103.37.224/28 ip4:5.57.226.1/24 ip4:5.57.227.80/28 ip4:5.57.227.112/28 ip4:185.99.184.144/28 ip4:185.103.36.192/28 ~all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "176.28.104.1/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.2.150.1/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.103.37.224/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "5.57.226.1/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "5.57.227.80/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "5.57.227.112/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.99.184.144/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.103.36.192/28",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
     "record": null,
     "valid": false,
     "location": null,
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.injuve.es\n\n514671114"
   }
 }

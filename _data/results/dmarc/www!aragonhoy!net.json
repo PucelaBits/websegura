@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "calatayud.aragon.es",
-      "codos.aragon.es"
+      "codos.aragon.es",
+      "calatayud.aragon.es"
     ],
     "warnings": []
   },
@@ -32,6 +32,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   }
 }

@@ -24,29 +24,103 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx ip4:77.227.178.0/24 ip4:46.25.84.232 include:spf.ipzmarketing.com include:eu.transmail.net -all",
+    "record": "v=spf1 include:_spf.reus.cat include:spf.ipzmarketing.com include:eu.transmail.net -all",
     "valid": true,
-    "dns_lookups": 3,
+    "dns_lookups": 4,
     "warnings": [],
     "parsed": {
-      "pass": [
-        {
-          "value": "ajreus.in.tmes.trendmicro.eu",
-          "mechanism": "mx"
-        },
-        {
-          "value": "77.227.178.0/24",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "46.25.84.232",
-          "mechanism": "ip4"
-        }
-      ],
+      "pass": [],
       "neutral": [],
       "softfail": [],
       "fail": [],
       "include": [
+        {
+          "domain": "_spf.reus.cat",
+          "record": "v=spf1 ip4:77.227.178.12 ip4:77.227.178.25 ip4:46.25.84.232 include:spf.tmes.trendmicro.eu -all",
+          "dns_lookups": 1,
+          "parsed": {
+            "pass": [
+              {
+                "value": "77.227.178.12",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "77.227.178.25",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "46.25.84.232",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [
+              {
+                "domain": "spf.tmes.trendmicro.eu",
+                "record": "v=spf1 ip4:18.185.115.0/25 ip4:18.185.115.128/26 ip4:34.253.238.128/26 ip4:34.253.238.192/26 ip4:3.72.196.143 ip4:18.156.0.20 ip4:35.156.245.132 ip4:18.208.22.124 ip4:18.208.22.125 ip4:18.96.32.128/27 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "18.185.115.0/25",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "18.185.115.128/26",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "34.253.238.128/26",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "34.253.238.192/26",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "3.72.196.143",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "18.156.0.20",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "35.156.245.132",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "18.208.22.124",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "18.208.22.125",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "18.96.32.128/27",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              }
+            ],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        },
         {
           "domain": "spf.ipzmarketing.com",
           "record": "v=spf1 ip4:93.159.208.0/21 ip4:185.103.8.0/22 ip4:5.56.22.0/24 ip4:82.199.156.0/24 ip4:91.194.237.0/24 -all",

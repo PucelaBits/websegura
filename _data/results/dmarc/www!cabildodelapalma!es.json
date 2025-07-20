@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns13.servidoresdns.net",
-      "dns14.servidoresdns.net"
+      "dns14.servidoresdns.net",
+      "dns13.servidoresdns.net"
     ],
     "warnings": []
   },
@@ -15,40 +15,40 @@
         "preference": 10,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.251.2.26",
-          "2607:f8b0:4023:c0b::1b"
+          "142.251.165.26",
+          "2607:f8b0:4023:1413::1a"
         ]
       },
       {
         "preference": 20,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "173.194.208.27",
-          "2607:f8b0:4023:100d::1a"
+          "108.177.11.26",
+          "2607:f8b0:400c:c01::1b"
         ]
       },
       {
         "preference": 20,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "142.251.190.26",
-          "2607:f8b0:4003:c0a::1b"
+          "192.178.218.26",
+          "2607:f8b0:4004:c25::1b"
         ]
       },
       {
         "preference": 30,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "192.178.212.27",
-          "2607:f8b0:4001:c74::1a"
+          "108.177.123.26",
+          "2800:3f0:4003:c0f::1b"
         ]
       },
       {
         "preference": 30,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "192.178.162.26",
-          "2607:f8b0:4024:c0b::1a"
+          "172.253.116.26",
+          "2a00:1450:400b:c02::1b"
         ]
       },
       {
@@ -58,6 +58,7 @@
       }
     ],
     "warnings": [
+      "2800:3f0:4003:c0f::1b does not have any reverse DNS (PTR) records",
       "The domain fd74xvjn6iyddr2vmlahveq636i6thbr56ve3wp4n4zjgi7qracq.mx-verification.google.com does not exist"
     ]
   },

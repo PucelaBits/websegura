@@ -19,7 +19,9 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The reverse DNS of 89.17.204.80 is mail.duosoluciones.com, but the A/AAAA DNS records for mail.duosoluciones.com do not resolve to 89.17.204.80"
+    ]
   },
   "spf": {
     "record": "v=spf1 mx a ip4:89.17.204.80 ip4:89.17.204.220 ip4:89.17.204.215 -all",

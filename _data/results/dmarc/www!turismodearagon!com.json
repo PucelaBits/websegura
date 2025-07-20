@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "calatayud.aragon.es",
-      "codos.aragon.es"
+      "codos.aragon.es",
+      "calatayud.aragon.es"
     ],
     "warnings": []
   },
@@ -14,27 +14,23 @@
       {
         "preference": 10,
         "hostname": "mx.turismodearagon.com",
-        "addresses": [
-          "51.255.126.193"
-        ]
+        "addresses": []
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ]
   },
   "spf": {
     "record": "v=spf1 mx include:spf.ipzmarketing.com -all ",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [
-      "Any text after the all mechanism is ignored"
+      "Any text after the all mechanism is ignored",
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
     ],
     "parsed": {
-      "pass": [
-        {
-          "value": "mx.turismodearagon.com",
-          "mechanism": "mx"
-        }
-      ],
+      "pass": [],
       "neutral": [],
       "softfail": [],
       "fail": [],

@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "silmail.silme.es",
-      "servdns2.silme.es"
+      "servdns2.silme.es",
+      "silmail.silme.es"
     ],
     "warnings": []
   },
@@ -22,12 +22,17 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:spf.ipzmarketing.com include:cime.onice.io ~all",
+    "record": "v=spf1 ip4:185.68.189.0/25 include:spf.ipzmarketing.com include:_spf.google.com include:cime.onice.io ~all",
     "valid": true,
-    "dns_lookups": 6,
+    "dns_lookups": 10,
     "warnings": [],
     "parsed": {
-      "pass": [],
+      "pass": [
+        {
+          "value": "185.68.189.0/25",
+          "mechanism": "ip4"
+        }
+      ],
       "neutral": [],
       "softfail": [],
       "fail": [],
@@ -66,6 +71,154 @@
             "redirect": null,
             "exp": null,
             "all": "fail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "_spf.google.com",
+          "record": "v=spf1 include:_netblocks.google.com include:_netblocks2.google.com include:_netblocks3.google.com ~all",
+          "dns_lookups": 3,
+          "parsed": {
+            "pass": [],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [
+              {
+                "domain": "_netblocks.google.com",
+                "record": "v=spf1 ip4:74.125.0.0/16 ip4:108.177.8.0/21 ip4:173.194.0.0/16 ip4:209.85.128.0/17 ip4:216.58.192.0/19 ip4:216.239.32.0/19 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "74.125.0.0/16",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "108.177.8.0/21",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "173.194.0.0/16",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "209.85.128.0/17",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "216.58.192.0/19",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "216.239.32.0/19",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              },
+              {
+                "domain": "_netblocks2.google.com",
+                "record": "v=spf1 ip6:2001:4860:4000::/36 ip6:2404:6800:4000::/36 ip6:2607:f8b0:4000::/36 ip6:2800:3f0:4000::/36 ip6:2a00:1450:4000::/36 ip6:2c0f:fb50:4000::/36 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "2001:4860:4000::/36",
+                      "mechanism": "ip6"
+                    },
+                    {
+                      "value": "2404:6800:4000::/36",
+                      "mechanism": "ip6"
+                    },
+                    {
+                      "value": "2607:f8b0:4000::/36",
+                      "mechanism": "ip6"
+                    },
+                    {
+                      "value": "2800:3f0:4000::/36",
+                      "mechanism": "ip6"
+                    },
+                    {
+                      "value": "2a00:1450:4000::/36",
+                      "mechanism": "ip6"
+                    },
+                    {
+                      "value": "2c0f:fb50:4000::/36",
+                      "mechanism": "ip6"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              },
+              {
+                "domain": "_netblocks3.google.com",
+                "record": "v=spf1 ip4:172.217.0.0/19 ip4:172.217.32.0/20 ip4:172.217.128.0/19 ip4:172.217.160.0/20 ip4:172.217.192.0/19 ip4:172.253.56.0/21 ip4:172.253.112.0/20 ip4:108.177.96.0/19 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "172.217.0.0/19",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "172.217.32.0/20",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "172.217.128.0/19",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "172.217.160.0/20",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "172.217.192.0/19",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "172.253.56.0/21",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "172.253.112.0/20",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "108.177.96.0/19",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              }
+            ],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
           },
           "warnings": []
         },

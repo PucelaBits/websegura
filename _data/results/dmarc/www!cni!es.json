@@ -20,10 +20,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The domain 12.red-217-124-174.customer.static.ccgg.telefonica.net does not exist",
-      "The reverse DNS of 217.124.174.12 is 12.red-217-124-174.customer.static.ccgg.telefonica.net, but the A/AAAA DNS records for 12.red-217-124-174.customer.static.ccgg.telefonica.net do not resolve to 217.124.174.12"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 a ip4:217.124.174.13/32 ip4:62.42.233.151/32 ip4:212.170.35.96/27 mx:cni.es -all",

@@ -13,36 +13,25 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "mx1.hc1219-48.eu.iphmx.com",
+        "hostname": "ayuntamientocuenca.in.tmes.trendmicro.eu",
         "addresses": [
-          "23.90.122.78",
-          "23.90.123.21"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mx2.hc1219-48.eu.iphmx.com",
-        "addresses": [
-          "23.90.122.78",
-          "23.90.123.21"
+          "18.185.115.145",
+          "18.185.115.146",
+          "18.185.115.147"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx a ip4:195.235.198.106/29 ip4:213.0.99.234/29 ip4:2.139.249.8/32 a:correo.cuenca.es include:spf.ipzmarketing.com include:spf.protection.outlook.com exists:%{i}.spf.hc1219-48.eu.iphmx.com -all",
+    "record": "v=spf1 mx a ip4:195.235.198.106/29 ip4:213.0.99.234/29 ip4:2.139.249.8/32 ip4:18.185.115.0/25 ip4:18.185.115.128/26 ip4:34.253.238.128/26 ip4:34.253.238.192/26 a:correo.cuenca.es include:spf.ipzmarketing.com include:spf.protection.outlook.com include:spf.tmes.trendmicro.eu exists:%{i}.spf.hc1219-48.eu.iphmx.com -all",
     "valid": true,
-    "dns_lookups": 6,
+    "dns_lookups": 7,
     "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "mx1.hc1219-48.eu.iphmx.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "mx2.hc1219-48.eu.iphmx.com",
+          "value": "ayuntamientocuenca.in.tmes.trendmicro.eu",
           "mechanism": "mx"
         },
         {
@@ -59,6 +48,22 @@
         },
         {
           "value": "2.139.249.8/32",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "18.185.115.0/25",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "18.185.115.128/26",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "34.253.238.128/26",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "34.253.238.192/26",
           "mechanism": "ip4"
         },
         {
@@ -169,6 +174,63 @@
             "redirect": null,
             "exp": null,
             "all": "fail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "spf.tmes.trendmicro.eu",
+          "record": "v=spf1 ip4:18.185.115.0/25 ip4:18.185.115.128/26 ip4:34.253.238.128/26 ip4:34.253.238.192/26 ip4:3.72.196.143 ip4:18.156.0.20 ip4:35.156.245.132 ip4:18.208.22.124 ip4:18.208.22.125 ip4:18.96.32.128/27 ~all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "18.185.115.0/25",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "18.185.115.128/26",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "34.253.238.128/26",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "34.253.238.192/26",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "3.72.196.143",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "18.156.0.20",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "35.156.245.132",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "18.208.22.124",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "18.208.22.125",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "18.96.32.128/27",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
           },
           "warnings": []
         }

@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns0.intervia.com",
-      "ns3.intervia.com",
       "ns2.intervia.com",
-      "ns1.intervia.com"
+      "ns0.intervia.com",
+      "ns1.intervia.com",
+      "ns3.intervia.com"
     ],
     "warnings": []
   },
@@ -120,7 +120,7 @@
               },
               {
                 "domain": "_spf_cli.intervia.com",
-                "record": "v=spf1 ip4:95.211.174.101 ip4:95.211.148.229 ip4:212.95.51.139 ip4:89.149.211.53 ip4:5.79.73.7 ip4:37.48.64.153 ip4:84.16.232.198 ip4:213.227.134.136 ip4:84.16.232.198 ip4:212.32.240.7 -all",
+                "record": "v=spf1 ip4:95.211.174.101 ip4:95.211.148.229 ip4:212.95.51.139 ip4:89.149.211.53 ip4:5.79.73.7 ip4:213.227.134.136 ip4:212.32.240.7 ip4:95.211.63.224 ip4:82.192.72.209 ip4:82.192.72.210 -all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
@@ -145,23 +145,23 @@
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "37.48.64.153",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "84.16.232.198",
-                      "mechanism": "ip4"
-                    },
-                    {
                       "value": "213.227.134.136",
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "84.16.232.198",
+                      "value": "212.32.240.7",
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "212.32.240.7",
+                      "value": "95.211.63.224",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "82.192.72.209",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "82.192.72.210",
                       "mechanism": "ip4"
                     }
                   ],
