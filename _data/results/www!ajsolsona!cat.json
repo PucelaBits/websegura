@@ -1,12 +1,12 @@
 {
-  "id": 69031730,
+  "id": 69077749,
   "algorithm_version": 4,
-  "scanned_at": "2025-07-24T01:10:38.827Z",
+  "scanned_at": "2025-07-25T01:10:08.591Z",
   "error": null,
-  "grade": "F",
+  "grade": "C",
   "response_headers": {
     "age": "0",
-    "date": "Thu, 24 Jul 2025 01:10:39 GMT",
+    "date": "Fri, 25 Jul 2025 01:10:10 GMT",
     "vary": "Accept-Encoding",
     "server": "Apache",
     "expires": "Sat, 01 Jan 2000 00:00:00 GMT",
@@ -16,13 +16,19 @@
     "x-cache-hits": "0",
     "x-cache-rule": "plone.content.itemView",
     "accept-ranges": "bytes",
-    "content-length": "26425",
+    "content-length": "27091",
+    "referrer-policy": "no-referrer",
+    "x-frame-options": "SAMEORIGIN",
     "x-ua-compatible": "IE=edge",
-    "content-language": "ca"
+    "content-language": "ca",
+    "x-xss-protection": "1; mode=block",
+    "x-content-type-options": "nosniff",
+    "content-security-policy": "object-src 'none';         script-src * 'unsafe-inline' 'unsafe-eval';         base-uri 'none';",
+    "strict-transport-security": "max-age=15768000;includeSubDomains"
   },
-  "score": 5,
+  "score": 55,
   "status_code": 200,
-  "tests_failed": 6,
-  "tests_passed": 4,
+  "tests_failed": 3,
+  "tests_passed": 7,
   "tests_quantity": 10
 }
