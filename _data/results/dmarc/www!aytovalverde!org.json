@@ -24,7 +24,7 @@
   "spf": {
     "record": "v=spf1 +a +mx +ip4:213.158.86.43 include:_spf.webempresa.eu ~all",
     "valid": true,
-    "dns_lookups": 5,
+    "dns_lookups": 6,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -47,8 +47,8 @@
       "include": [
         {
           "domain": "_spf.webempresa.eu",
-          "record": "v=spf1 ip4:213.158.84.0/22 include:_spf2.webempresa.eu include:_spf3.webempresa.eu ~all",
-          "dns_lookups": 2,
+          "record": "v=spf1 ip4:213.158.84.0/22 include:_spf2.webempresa.eu include:_spf3.webempresa.eu include:_spf4.webempresa.eu ~all",
+          "dns_lookups": 3,
           "parsed": {
             "pass": [
               {
@@ -165,6 +165,27 @@
                     },
                     {
                       "value": "5.39.109.72/32",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              },
+              {
+                "domain": "_spf4.webempresa.eu",
+                "record": "v=spf1 ip4:51.178.111.35/32 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "51.178.111.35/32",
                       "mechanism": "ip4"
                     }
                   ],

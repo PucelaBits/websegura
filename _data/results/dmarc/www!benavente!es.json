@@ -14,17 +14,20 @@
       {
         "preference": 0,
         "hostname": "mail.benavente.es",
-        "addresses": []
+        "addresses": [
+          "185.253.153.139"
+        ]
       }
     ],
     "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 185.253.153.139 is omicron.nds.es, but the A/AAAA DNS records for omicron.nds.es do not resolve to 185.253.153.139"
     ]
   },
   "spf": {
-    "record": "v=spf1 ip4:185.253.153.139 mx a ptr ip4:188.165.133.185/32 include:spf.protection.outlook.com -all",
+    "record": "v=spf1 ip4:185.253.153.139 mx a ptr ip4:188.165.133.185/32 include:spf.protection.outlook.com include:spf.nds.es -all",
     "valid": true,
-    "dns_lookups": 3,
+    "dns_lookups": 4,
     "warnings": [
       "The ptr mechanism should not be used - https://tools.ietf.org/html/rfc7208#section-5.5"
     ],
@@ -115,6 +118,35 @@
             "all": "fail"
           },
           "warnings": []
+        },
+        {
+          "domain": "spf.nds.es",
+          "record": "v=spf1 ip4:185.253.153.139 ip4:187.33.159.59 ip4:57.128.96.235 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "185.253.153.139",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "187.33.159.59",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "57.128.96.235",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
         }
       ],
       "redirect": null,
@@ -123,9 +155,71 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1;p=quarantine;sp=none;adkim=s;aspf=s;pct=100;fo=1;rf=afrf;ri=86400;rua=mailto:dmarc-report@nds.es;ruf=mailto:dmarc-report@nds.es",
+    "valid": true,
+    "location": "benavente.es",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "sp": {
+        "value": "none",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "s",
+        "explicit": true
+      },
+      "aspf": {
+        "value": "s",
+        "explicit": true
+      },
+      "pct": {
+        "value": 100,
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "1"
+        ],
+        "explicit": true
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": true
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc-report@nds.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc-report@nds.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      }
+    }
   }
 }

@@ -14,23 +14,27 @@
       {
         "preference": 10,
         "hostname": "mx.turismodearagon.com",
-        "addresses": []
+        "addresses": [
+          "51.255.126.193"
+        ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx include:spf.ipzmarketing.com -all ",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [
-      "Any text after the all mechanism is ignored",
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+      "Any text after the all mechanism is ignored"
     ],
     "parsed": {
-      "pass": [],
+      "pass": [
+        {
+          "value": "mx.turismodearagon.com",
+          "mechanism": "mx"
+        }
+      ],
       "neutral": [],
       "softfail": [],
       "fail": [],

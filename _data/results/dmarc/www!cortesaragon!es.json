@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns03.ono.com",
       "dns02.ono.com",
-      "dns01.ono.com"
+      "dns01.ono.com",
+      "dns03.ono.com"
     ],
     "warnings": []
   },
@@ -23,21 +23,21 @@
         "preference": 0,
         "hostname": "mxb-009b1e01.gslb.pphosted.com",
         "addresses": [
-          "143.55.150.117"
+          "66.159.233.240"
         ]
       },
       {
         "preference": 100,
         "hostname": "cortesaragon-es.mail.protection.outlook.com",
         "addresses": [
-          "2a01:111:f403:ca04::1",
-          "2a01:111:f403:ca04::2",
-          "2a01:111:f403:ca04::8",
-          "2a01:111:f403:ca09::8",
-          "52.101.68.18",
-          "52.101.73.19",
-          "52.101.73.30",
-          "52.101.73.8"
+          "2a01:111:f403:ca04::",
+          "2a01:111:f403:ca04::10",
+          "2a01:111:f403:ca04::e",
+          "2a01:111:f403:ca09::7",
+          "52.101.68.10",
+          "52.101.68.16",
+          "52.101.68.8",
+          "52.101.73.15"
         ]
       }
     ],

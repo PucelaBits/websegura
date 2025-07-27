@@ -4,12 +4,12 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns24.digicertdns.net",
+      "ns25.digicertdns.net",
+      "ns23.digicertdns.net",
+      "ns20.digicertdns.com",
       "ns22.digicertdns.com",
       "ns21.digicertdns.com",
-      "ns20.digicertdns.com",
-      "ns23.digicertdns.net",
-      "ns25.digicertdns.net"
+      "ns24.digicertdns.net"
     ],
     "warnings": []
   },
@@ -19,15 +19,15 @@
         "preference": 1,
         "hostname": "smtp.google.com",
         "addresses": [
-          "192.178.130.26",
-          "192.178.130.27",
-          "192.178.214.26",
-          "192.178.214.27",
-          "2607:f8b0:4023:141f::1a",
-          "2607:f8b0:4023:141f::1b",
-          "2607:f8b0:4023:1421::1a",
-          "2607:f8b0:4023:1421::1b",
-          "74.125.129.27"
+          "192.178.155.26",
+          "192.178.155.27",
+          "192.178.218.26",
+          "192.178.218.27",
+          "2607:f8b0:4004:c0b::1a",
+          "2607:f8b0:4004:c0b::1b",
+          "2607:f8b0:4004:c19::1a",
+          "2607:f8b0:4004:c19::1b",
+          "64.233.180.27"
         ]
       }
     ],

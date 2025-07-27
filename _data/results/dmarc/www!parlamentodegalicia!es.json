@@ -10,8 +10,60 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "poster1i.iberlayer.com",
+        "addresses": [
+          "130.117.89.21",
+          "130.117.89.26",
+          "130.117.89.30",
+          "130.117.89.4",
+          "130.117.89.5",
+          "130.117.89.6"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "poster4i.iberlayer.com",
+        "addresses": [
+          "80.169.225.36",
+          "80.169.225.37",
+          "80.169.225.38",
+          "80.169.225.56",
+          "80.169.225.57"
+        ]
+      },
+      {
+        "preference": 30,
+        "hostname": "poster2i.iberlayer.com",
+        "addresses": [
+          "185.136.219.26"
+        ]
+      },
+      {
+        "preference": 40,
+        "hostname": "poster3i.iberlayer.com",
+        "addresses": [
+          "185.136.218.5"
+        ]
+      },
+      {
+        "preference": 50,
+        "hostname": "parlamentodegalicia-es.mail.protection.outlook.com",
+        "addresses": [
+          "2a01:111:f403:ca04::c",
+          "2a01:111:f403:ca09::9",
+          "2a01:111:f403:ca09::c",
+          "2a01:111:f403:ca09::f",
+          "52.101.68.0",
+          "52.101.68.16",
+          "52.101.68.21",
+          "52.101.73.12"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com include:iberlayer.com -all",
