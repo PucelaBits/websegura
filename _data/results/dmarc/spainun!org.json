@@ -4,23 +4,21 @@
   "dnssec": false,
   "ns": {
     "hostnames": [],
-    "warnings": []
+    "error": "All nameservers failed to answer the query spainun.org. IN NS: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "mx": {
     "hosts": [],
-    "warnings": [
-      "No MX records found. Is the domain parked?"
-    ]
+    "error": "All nameservers failed to answer the query spainun.org. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "spf": {
     "record": null,
     "valid": false,
-    "error": "spainun.org does not have a SPF TXT record"
+    "error": "All nameservers failed to answer the query spainun.org. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "dmarc": {
     "record": null,
     "valid": false,
     "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "error": "All nameservers failed to answer the query _dmarc.spainun.org. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
   }
 }

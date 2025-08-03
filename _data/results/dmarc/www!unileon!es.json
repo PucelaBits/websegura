@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.unileon.es",
-      "ns2.unileon.es",
       "sun.rediris.es",
+      "ns2.unileon.es",
+      "ns1.unileon.es",
       "chico.rediris.es"
     ],
     "warnings": []
@@ -17,40 +17,40 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "172.253.115.26",
-          "2607:f8b0:4004:c06::1b"
+          "142.250.142.27",
+          "2607:f8b0:4023:1c01::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "172.253.116.26",
-          "2a00:1450:400b:c02::1a"
+          "192.178.164.26",
+          "2607:f8b0:4023:2009::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "173.194.76.26",
-          "2a00:1450:400c:c00::1b"
+          "192.178.220.27",
+          "2607:f8b0:4023:100f::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "aspmx2.googlemail.com",
         "addresses": [
-          "172.253.116.26",
-          "2a00:1450:400b:c02::1a"
+          "192.178.164.27",
+          "2607:f8b0:4023:2009::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "aspmx3.googlemail.com",
         "addresses": [
-          "173.194.76.26",
-          "2a00:1450:400c:c00::1b"
+          "192.178.220.26",
+          "2607:f8b0:4023:100f::1b"
         ]
       }
     ],
@@ -100,16 +100,12 @@
             "include": [
               {
                 "domain": "_netblocks.google.com",
-                "record": "v=spf1 ip4:74.125.0.0/16 ip4:108.177.8.0/21 ip4:173.194.0.0/16 ip4:209.85.128.0/17 ip4:216.58.192.0/19 ip4:216.239.32.0/19 ~all",
+                "record": "v=spf1 ip4:74.125.0.0/16 ip4:173.194.0.0/16 ip4:209.85.128.0/17 ip4:216.58.192.0/19 ip4:216.239.32.0/19 ~all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
                     {
                       "value": "74.125.0.0/16",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "108.177.8.0/21",
                       "mechanism": "ip4"
                     },
                     {

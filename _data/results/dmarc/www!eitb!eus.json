@@ -17,26 +17,24 @@
         "preference": 10,
         "hostname": "eitb-eus.mail.protection.outlook.com",
         "addresses": [
-          "2a01:111:f403:ca04::1",
           "2a01:111:f403:ca04::10",
-          "2a01:111:f403:ca09::2",
-          "2a01:111:f403:ca09::c",
-          "52.101.68.27",
-          "52.101.73.12",
-          "52.101.73.19",
-          "52.101.73.6"
+          "2a01:111:f403:ca04::7",
+          "2a01:111:f403:ca09::a",
+          "2a01:111:f403:ca09::d",
+          "52.101.68.32",
+          "52.101.68.39",
+          "52.101.73.2",
+          "52.101.73.8"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:mailgun.org include:spf.eitb.eus include:spf.protection.outlook.com include:_pmta2.antevenio.com -all",
+    "record": "v=spf1 include:spf.eitb.eus include:spf.protection.outlook.com include:_pmta2.antevenio.com -all",
     "valid": true,
-    "dns_lookups": 9,
-    "warnings": [
-      "Duplicate include: mailgun.org"
-    ],
+    "dns_lookups": 4,
+    "warnings": [],
     "parsed": {
       "pass": [],
       "neutral": [],
@@ -44,145 +42,47 @@
       "fail": [],
       "include": [
         {
-          "domain": "mailgun.org",
-          "record": "v=spf1 include:_spf.mailgun.org include:_spf.eu.mailgun.org -all",
-          "dns_lookups": 4,
+          "domain": "spf.eitb.eus",
+          "record": "v=spf1 include:spf.mailgun.eitb.eus ip4:195.77.243.16 ip4:212.142.140.202 ip4:212.142.140.223 ip4:195.77.243.23 ip4:77.227.173.47 ip4:212.81.131.175 ip4:212.81.131.176 -all",
+          "dns_lookups": 1,
           "parsed": {
-            "pass": [],
+            "pass": [
+              {
+                "value": "195.77.243.16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "212.142.140.202",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "212.142.140.223",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "195.77.243.23",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "77.227.173.47",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "212.81.131.175",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "212.81.131.176",
+                "mechanism": "ip4"
+              }
+            ],
             "neutral": [],
             "softfail": [],
             "fail": [],
             "include": [
               {
-                "domain": "_spf.mailgun.org",
-                "record": "v=spf1 include:_spf1.mailgun.org include:_spf2.mailgun.org ~all",
-                "dns_lookups": 2,
-                "parsed": {
-                  "pass": [],
-                  "neutral": [],
-                  "softfail": [],
-                  "fail": [],
-                  "include": [
-                    {
-                      "domain": "_spf1.mailgun.org",
-                      "record": "v=spf1 ip4:209.61.151.0/24 ip4:166.78.68.0/22 ip4:198.61.254.0/23 ip4:192.237.158.0/23 ip4:23.253.182.0/23 ip4:104.130.96.0/28 ip4:146.20.113.0/24 ip4:146.20.191.0/24 ip4:159.135.224.0/20 ip4:69.72.32.0/20 ~all",
-                      "dns_lookups": 0,
-                      "parsed": {
-                        "pass": [
-                          {
-                            "value": "209.61.151.0/24",
-                            "mechanism": "ip4"
-                          },
-                          {
-                            "value": "166.78.68.0/22",
-                            "mechanism": "ip4"
-                          },
-                          {
-                            "value": "198.61.254.0/23",
-                            "mechanism": "ip4"
-                          },
-                          {
-                            "value": "192.237.158.0/23",
-                            "mechanism": "ip4"
-                          },
-                          {
-                            "value": "23.253.182.0/23",
-                            "mechanism": "ip4"
-                          },
-                          {
-                            "value": "104.130.96.0/28",
-                            "mechanism": "ip4"
-                          },
-                          {
-                            "value": "146.20.113.0/24",
-                            "mechanism": "ip4"
-                          },
-                          {
-                            "value": "146.20.191.0/24",
-                            "mechanism": "ip4"
-                          },
-                          {
-                            "value": "159.135.224.0/20",
-                            "mechanism": "ip4"
-                          },
-                          {
-                            "value": "69.72.32.0/20",
-                            "mechanism": "ip4"
-                          }
-                        ],
-                        "neutral": [],
-                        "softfail": [],
-                        "fail": [],
-                        "include": [],
-                        "redirect": null,
-                        "exp": null,
-                        "all": "softfail"
-                      },
-                      "warnings": []
-                    },
-                    {
-                      "domain": "_spf2.mailgun.org",
-                      "record": "v=spf1 ip4:104.130.122.0/23 ip4:146.20.112.0/26 ip4:161.38.192.0/20 ip4:143.55.224.0/21 ip4:143.55.232.0/22 ip4:159.112.240.0/20 ip4:198.244.48.0/20 ip4:204.220.168.0/21 ip4:204.220.176.0/20 ~all",
-                      "dns_lookups": 0,
-                      "parsed": {
-                        "pass": [
-                          {
-                            "value": "104.130.122.0/23",
-                            "mechanism": "ip4"
-                          },
-                          {
-                            "value": "146.20.112.0/26",
-                            "mechanism": "ip4"
-                          },
-                          {
-                            "value": "161.38.192.0/20",
-                            "mechanism": "ip4"
-                          },
-                          {
-                            "value": "143.55.224.0/21",
-                            "mechanism": "ip4"
-                          },
-                          {
-                            "value": "143.55.232.0/22",
-                            "mechanism": "ip4"
-                          },
-                          {
-                            "value": "159.112.240.0/20",
-                            "mechanism": "ip4"
-                          },
-                          {
-                            "value": "198.244.48.0/20",
-                            "mechanism": "ip4"
-                          },
-                          {
-                            "value": "204.220.168.0/21",
-                            "mechanism": "ip4"
-                          },
-                          {
-                            "value": "204.220.176.0/20",
-                            "mechanism": "ip4"
-                          }
-                        ],
-                        "neutral": [],
-                        "softfail": [],
-                        "fail": [],
-                        "include": [],
-                        "redirect": null,
-                        "exp": null,
-                        "all": "softfail"
-                      },
-                      "warnings": []
-                    }
-                  ],
-                  "redirect": null,
-                  "exp": null,
-                  "all": "softfail"
-                },
-                "warnings": []
-              },
-              {
-                "domain": "_spf.eu.mailgun.org",
-                "record": "v=spf1 ip4:141.193.32.0/23 ip4:159.135.140.80/29 ip4:159.135.132.128/25 ip4:161.38.204.0/22 ip4:87.253.232.0/21 ip4:185.189.236.0/22 ip4:185.211.120.0/22 ip4:185.250.236.0/22 ip4:143.55.236.0/22 ip4:198.244.60.0/22 ip4:204.220.160.0/21 ~all",
+                "domain": "spf.mailgun.eitb.eus",
+                "record": "v=spf1 ip4:141.193.32.0/23 ip4:159.135.140.80/29 ip4:159.135.132.128/25 ip4:161.38.204.0/22 ip4:87.253.232.0/21 ip4:185.189.236.0/22 ip4:185.211.120.0/22 ip4:185.250.236.0/22 ip4:143.55.236.0/22 ip4:198.244.60.0/22 ip4:204.220.160.0/21 ip4:209.61.151.0/24 ip4:166.78.68.0/22 ip4:198.61.254.0/23 ip4:192.237.158.0/23 ip4:23.253.182.0/23 ip4:104.130.96.0/28 ip4:146.20.113.0/24 ip4:146.20.191.0/24 ip4:159.135.224.0/20 ip4:69.72.32.0/20 ip4:104.130.122.0/23 ip4:146.20.112.0/26 ip4:161.38.192.0/20 ip4:143.55.224.0/21 ip4:143.55.232.0/22 ip4:159.112.240.0/20 ip4:198.244.48.0/20 ip4:204.220.168.0/21 ip4:204.220.176.0/20 -all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
@@ -229,6 +129,82 @@
                     {
                       "value": "204.220.160.0/21",
                       "mechanism": "ip4"
+                    },
+                    {
+                      "value": "209.61.151.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "166.78.68.0/22",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "198.61.254.0/23",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "192.237.158.0/23",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "23.253.182.0/23",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "104.130.96.0/28",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "146.20.113.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "146.20.191.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "159.135.224.0/20",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "69.72.32.0/20",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "104.130.122.0/23",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "146.20.112.0/26",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "161.38.192.0/20",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "143.55.224.0/21",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "143.55.232.0/22",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "159.112.240.0/20",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "198.244.48.0/20",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "204.220.168.0/21",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "204.220.176.0/20",
+                      "mechanism": "ip4"
                     }
                   ],
                   "neutral": [],
@@ -237,7 +213,7 @@
                   "include": [],
                   "redirect": null,
                   "exp": null,
-                  "all": "softfail"
+                  "all": "fail"
                 },
                 "warnings": []
               }
@@ -247,53 +223,6 @@
             "all": "fail"
           },
           "warnings": []
-        },
-        {
-          "domain": "spf.eitb.eus",
-          "record": "v=spf1 include:mailgun.org  ip4:195.77.243.16 ip4:212.142.140.202 ip4:212.142.140.223 ip4:195.77.243.23 ip4:77.227.173.47 ip4:212.81.131.175 ip4:212.81.131.176 -all",
-          "dns_lookups": 1,
-          "parsed": {
-            "pass": [
-              {
-                "value": "195.77.243.16",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "212.142.140.202",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "212.142.140.223",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "195.77.243.23",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "77.227.173.47",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "212.81.131.175",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "212.81.131.176",
-                "mechanism": "ip4"
-              }
-            ],
-            "neutral": [],
-            "softfail": [],
-            "fail": [],
-            "include": [],
-            "redirect": null,
-            "exp": null,
-            "all": "fail"
-          },
-          "warnings": [
-            "Duplicate include: mailgun.org"
-          ]
         },
         {
           "domain": "spf.protection.outlook.com",

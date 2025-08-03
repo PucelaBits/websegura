@@ -6,8 +6,8 @@
     "hostnames": [
       "dns2.jcyl.es",
       "ns2.f5clouddns.com",
-      "dns1.jcyl.es",
-      "ns1.f5clouddns.com"
+      "ns1.f5clouddns.com",
+      "dns1.jcyl.es"
     ],
     "warnings": []
   },
@@ -28,10 +28,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 217.71.16.5 is correo1.jcyl.es, but the A/AAAA DNS records for correo1.jcyl.es do not resolve to 217.71.16.5"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:217.71.16.5/32 ip4:217.71.16.6/32 ip4:217.71.16.7/32 ip4:217.71.16.160/27 ip4:217.71.16.192/29 ip4:217.71.21.22/32 ip4:217.71.22.22/32 mx -all",

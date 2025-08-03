@@ -10,62 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 1,
-        "hostname": "aspmx.l.google.com",
-        "addresses": [
-          "142.251.111.27",
-          "2607:f8b0:4004:c19::1b"
-        ]
-      },
-      {
-        "preference": 5,
-        "hostname": "alt1.aspmx.l.google.com",
-        "addresses": [
-          "172.253.116.27",
-          "2a00:1450:400b:c02::1a"
-        ]
-      },
-      {
-        "preference": 5,
-        "hostname": "alt2.aspmx.l.google.com",
-        "addresses": [
-          "173.194.76.27",
-          "2a00:1450:400c:c00::1b"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "alt3.aspmx.l.google.com",
-        "addresses": [
-          "142.250.102.26",
-          "2a00:1450:4025:402::1b"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "alt4.aspmx.l.google.com",
-        "addresses": [
-          "192.178.156.27",
-          "2a00:1450:4013:c1c::1a"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "aspmx.l.google.com",
-        "addresses": []
-      },
-      {
-        "preference": 20,
-        "hostname": "alt1.aspmx.l.google.com",
-        "addresses": []
-      }
-    ],
-    "warnings": [
-      "Hostname aspmx.l.google.com is listed in multiple MX records",
-      "Hostname alt1.aspmx.l.google.com is listed in multiple MX records"
-    ]
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 ip4:204.93.189.130 include:_spf.google.com ~all",
@@ -95,16 +41,12 @@
             "include": [
               {
                 "domain": "_netblocks.google.com",
-                "record": "v=spf1 ip4:74.125.0.0/16 ip4:108.177.8.0/21 ip4:173.194.0.0/16 ip4:209.85.128.0/17 ip4:216.58.192.0/19 ip4:216.239.32.0/19 ~all",
+                "record": "v=spf1 ip4:74.125.0.0/16 ip4:173.194.0.0/16 ip4:209.85.128.0/17 ip4:216.58.192.0/19 ip4:216.239.32.0/19 ~all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
                     {
                       "value": "74.125.0.0/16",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "108.177.8.0/21",
                       "mechanism": "ip4"
                     },
                     {

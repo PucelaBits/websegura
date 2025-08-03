@@ -13,25 +13,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "correo.incibe.es",
-        "addresses": [
-          "195.53.165.148"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "correo2.incibe.es",
-        "addresses": [
-          "193.146.253.148"
-        ]
-      }
-    ],
-    "warnings": [
-      "193.146.253.148 does not have any reverse DNS (PTR) records"
-    ]
+    "hosts": [],
+    "error": "All nameservers failed to answer the query 148.253.146.193.in-addr.arpa. IN PTR: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "spf": {
     "record": "v=spf1 mx a:correo.incibe.es a:correo.inteco.es a:correo2.inteco.es ip4:195.53.165.148/32 ip4:195.53.165.57/32 ip4:195.53.165.45/32 -all",

@@ -10,19 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 5,
-        "hostname": "mx-1.tutelascastillayleon.com",
-        "addresses": [
-          "37.46.75.209"
-        ]
-      }
-    ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 37.46.75.209 is smtp.luceit.com, but the A/AAAA DNS records for smtp.luceit.com do not resolve to 37.46.75.209"
-    ]
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 a mx ip4:62.81.248.0/24 ip4:178.19.41.0/27 ip4:95.39.12.196  ip4:109.205.141.0/24 ip4:37.46.75.192/26 -all",
