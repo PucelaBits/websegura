@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1093.ui-dns.biz",
       "ns1093.ui-dns.com",
       "ns1093.ui-dns.org",
+      "ns1093.ui-dns.biz",
       "ns1093.ui-dns.de"
     ],
     "warnings": []
@@ -32,9 +32,180 @@
   },
   "spf": {
     "record": "v=spf1 include:_spf.perfora.net include:_spf-eu.ionos.com include:_spf.kundenserver.de include:spf.protection.outlook.com ~all",
-    "valid": false,
+    "valid": true,
+    "dns_lookups": 4,
     "warnings": [],
-    "error": "All nameservers failed to answer the query _spf.kundenserver.de. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "parsed": {
+      "pass": [],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "_spf.perfora.net",
+          "record": "v=spf1 ip4:74.208.4.192/26 ip4:82.165.159.128/27 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "74.208.4.192/26",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "82.165.159.128/27",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "_spf-eu.ionos.com",
+          "record": "v=spf1 ip4:212.227.126.128/25 ip4:82.165.159.0/26 ip4:212.227.15.0/25 ip4:212.227.17.0/27 ip4:217.72.192.64/26 ?all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "212.227.126.128/25",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "82.165.159.0/26",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "212.227.15.0/25",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "212.227.17.0/27",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "217.72.192.64/26",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "neutral"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "_spf.kundenserver.de",
+          "record": "v=spf1 ip4:212.227.126.128/25 ip4:82.165.159.0/26 ip4:212.227.15.0/25 ip4:212.227.17.0/27 ip4:217.72.192.64/26 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "212.227.126.128/25",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "82.165.159.0/26",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "212.227.15.0/25",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "212.227.17.0/27",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "217.72.192.64/26",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "spf.protection.outlook.com",
+          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/15 ip4:52.102.0.0/16 ip4:52.103.0.0/17 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/51 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "40.92.0.0/15",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "40.107.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.100.0.0/15",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.102.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.103.0.0/17",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "104.47.0.0/17",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "2a01:111:f400::/48",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403::/49",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:8000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:c000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:f000::/52",
+                "mechanism": "ip6"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
   },
   "dmarc": {
     "record": null,

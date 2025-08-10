@@ -32,11 +32,17 @@
     "record": "v=spf1 +mx +a:mail.ccyl.es +include:_spf.fortimailcloud.com ~ip4:194.179.106.0/24 -all",
     "valid": true,
     "dns_lookups": 3,
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ],
+    "warnings": [],
     "parsed": {
       "pass": [
+        {
+          "value": "ccyl-es-1.fortimailcloud.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "ccyl-es-2.fortimailcloud.com",
+          "mechanism": "mx"
+        },
         {
           "value": "194.179.106.101",
           "mechanism": "a"

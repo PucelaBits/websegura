@@ -3,92 +3,22 @@
   "base_domain": "cescyl.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "ns1.stinet.net",
-      "ns2.stinet.net",
-      "ns3.stinet.net"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 5,
-        "hostname": "i-mail.cescyl.es",
-        "addresses": [
-          "195.55.85.205"
-        ]
-      }
-    ],
-    "warnings": [
-      "195.55.85.205 does not have any reverse DNS (PTR) records"
-    ]
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
-    "record": "v=spf1 a mx ip4:217.127.94.52 ip4:84.124.24.70  ip4:84.124.24.89/29 ip4:213.201.115.187 ip4:213.201.115.186 ip4:213.4.82.254 ip4:109.234.71.22 ip4:212.183.202.239 ip4:195.55.85.202 -all",
-    "valid": true,
-    "dns_lookups": 2,
-    "warnings": [],
-    "parsed": {
-      "pass": [
-        {
-          "value": "109.234.71.22",
-          "mechanism": "a"
-        },
-        {
-          "value": "i-mail.cescyl.es",
-          "mechanism": "mx"
-        },
-        {
-          "value": "217.127.94.52",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "84.124.24.70",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "84.124.24.89/29",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "213.201.115.187",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "213.201.115.186",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "213.4.82.254",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "109.234.71.22",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "212.183.202.239",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "195.55.85.202",
-          "mechanism": "ip4"
-        }
-      ],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [],
-      "redirect": null,
-      "exp": null,
-      "all": "fail"
-    }
+    "record": null,
+    "valid": false,
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "dmarc": {
     "record": null,
     "valid": false,
     "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   }
 }

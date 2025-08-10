@@ -6,8 +6,8 @@
     "hostnames": [
       "ns4.gestiondecuenta.com",
       "ns2.gestiondecuenta.com",
-      "ns.gestiondecuenta.com",
-      "ns3.gestiondecuenta.com"
+      "ns3.gestiondecuenta.com",
+      "ns.gestiondecuenta.com"
     ],
     "warnings": []
   },
@@ -21,7 +21,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 82.98.136.74 is correoredir03.dinaserver.com, but the A/AAAA DNS records for correoredir03.dinaserver.com do not resolve to 82.98.136.74"
+    ]
   },
   "spf": {
     "record": null,

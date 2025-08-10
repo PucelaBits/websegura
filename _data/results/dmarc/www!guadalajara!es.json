@@ -14,7 +14,9 @@
       {
         "preference": 10,
         "hostname": "mail.guadalajara.es",
-        "addresses": []
+        "addresses": [
+          "213.0.97.168"
+        ]
       },
       {
         "preference": 20,
@@ -25,7 +27,8 @@
       }
     ],
     "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+      "The domain 168.red-213-0-97.customer.static.ccgg.telefonica.net does not exist",
+      "The reverse DNS of 213.0.97.168 is 168.red-213-0-97.customer.static.ccgg.telefonica.net, but the A/AAAA DNS records for 168.red-213-0-97.customer.static.ccgg.telefonica.net do not resolve to 213.0.97.168"
     ]
   },
   "spf": {

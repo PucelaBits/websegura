@@ -1,19 +1,14 @@
 {
   "domain": "administracion.gob.es",
   "base_domain": "administracion.gob.es",
-  "dnssec": true,
+  "dnssec": false,
   "ns": {
-    "hostnames": [
-      "ns1.age.gob.es",
-      "ns2.age.gob.es"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "mx": {
     "hosts": [],
-    "warnings": [
-      "No MX records found. Is the domain parked?"
-    ]
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 mx ~all",

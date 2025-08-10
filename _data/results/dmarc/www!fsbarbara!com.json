@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.dns-parking.com",
-      "ns2.dns-parking.com"
+      "ns2.dns-parking.com",
+      "ns1.dns-parking.com"
     ],
     "warnings": []
   },
@@ -38,7 +38,7 @@
   "spf": {
     "record": "v=spf1 include:_spf.mail.hostinger.com ~all",
     "valid": true,
-    "dns_lookups": 2,
+    "dns_lookups": 3,
     "warnings": [],
     "parsed": {
       "pass": [],
@@ -48,14 +48,47 @@
       "include": [
         {
           "domain": "_spf.mail.hostinger.com",
-          "record": "v=spf1 include:relay.mailchannels.net ~all",
-          "dns_lookups": 1,
+          "record": "v=spf1 include:relay.mail.hostinger.com include:relay.mailchannels.net ~all",
+          "dns_lookups": 2,
           "parsed": {
             "pass": [],
             "neutral": [],
             "softfail": [],
             "fail": [],
             "include": [
+              {
+                "domain": "relay.mail.hostinger.com",
+                "record": "v=spf1 ip4:148.222.54.0/24 ip4:148.222.55.0/24 ip6:2a02:4780:5a:c0de::/64 ip6:2a02:4780:5b:c0de::/64 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "148.222.54.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "148.222.55.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "2a02:4780:5a:c0de::/64",
+                      "mechanism": "ip6"
+                    },
+                    {
+                      "value": "2a02:4780:5b:c0de::/64",
+                      "mechanism": "ip6"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              },
               {
                 "domain": "relay.mailchannels.net",
                 "record": "v=spf1 ip4:23.83.208.0/20 ip4:35.85.190.185/32 ~all",

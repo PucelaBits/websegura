@@ -16,14 +16,14 @@
         "preference": 0,
         "hostname": "elpuig-es.mail.protection.outlook.com",
         "addresses": [
-          "2a01:111:f403:ca09::4",
-          "2a01:111:f403:ca09::6",
-          "2a01:111:f403:ca09::8",
+          "2a01:111:f403:ca04::10",
+          "2a01:111:f403:ca04::d",
+          "2a01:111:f403:ca09::c",
           "2a01:111:f403:ca09::d",
-          "52.101.68.36",
-          "52.101.73.1",
-          "52.101.73.2",
-          "52.101.73.21"
+          "52.101.68.12",
+          "52.101.68.27",
+          "52.101.68.3",
+          "52.101.68.5"
         ]
       },
       {
@@ -40,7 +40,9 @@
       }
     ],
     "warnings": [
-      "The domain elpuig.prored.es does not exist"
+      "The domain elpuig.prored.es does not exist",
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 5.35.200.131 is wcp1.prored.es, but the A/AAAA DNS records for wcp1.prored.es do not resolve to 5.35.200.131"
     ]
   },
   "spf": {
@@ -134,6 +136,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.elpuig.es\n\nv=spf1 include:spf.protection.outlook.com a:mr-01.gestiona.espublico.com ip4:213.4.82.201 -all\n\nMS=ms20757193\n\ngoogle-site-verification=sxdCQ69pfxv6_pDK7zt97TizK6bqK-zL9xa1Y6AzZ18"
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.elpuig.es\n\nMS=ms20757193\n\ngoogle-site-verification=sxdCQ69pfxv6_pDK7zt97TizK6bqK-zL9xa1Y6AzZ18\n\nv=spf1 include:spf.protection.outlook.com a:mr-01.gestiona.espublico.com ip4:213.4.82.201 -all"
   }
 }

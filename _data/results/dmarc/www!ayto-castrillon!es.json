@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns10.servicio-online.net",
       "ns12.servicio-online.net",
+      "ns10.servicio-online.net",
       "ns11.servicio-online.net"
     ],
     "warnings": []
@@ -16,40 +16,40 @@
         "preference": 10,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.250.142.26",
-          "2607:f8b0:4023:1c01::1a"
+          "142.251.111.26",
+          "2607:f8b0:4004:c1f::1a"
         ]
       },
       {
         "preference": 20,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "192.178.164.26",
-          "2607:f8b0:4023:2009::1b"
+          "172.253.116.27",
+          "2a00:1450:400b:c02::1b"
         ]
       },
       {
         "preference": 20,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "192.178.220.27",
-          "2607:f8b0:4023:100f::1a"
+          "173.194.76.27",
+          "2a00:1450:400c:c00::1a"
         ]
       },
       {
         "preference": 30,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "142.251.190.26",
-          "2607:f8b0:4003:c0a::1b"
+          "142.250.102.27",
+          "2a00:1450:4025:402::1b"
         ]
       },
       {
         "preference": 40,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "192.178.212.26",
-          "2607:f8b0:4001:c74::1b"
+          "192.178.156.27",
+          "2a00:1450:4013:c1c::1b"
         ]
       }
     ],
@@ -161,7 +161,7 @@
               },
               {
                 "domain": "_netblocks3.google.com",
-                "record": "v=spf1 ip4:172.217.0.0/19 ip4:172.217.32.0/20 ip4:172.217.128.0/19 ip4:172.217.160.0/20 ip4:172.217.192.0/19 ip4:172.253.56.0/21 ip4:172.253.112.0/20 ip4:108.177.96.0/19 ~all",
+                "record": "v=spf1 ip4:172.217.0.0/19 ip4:172.217.32.0/20 ip4:172.217.128.0/19 ip4:172.217.160.0/20 ip4:172.217.192.0/19 ip4:172.253.56.0/21 ip4:172.253.112.0/20 ip4:108.177.96.0/20 ~all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
@@ -194,7 +194,7 @@
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "108.177.96.0/19",
+                      "value": "108.177.96.0/20",
                       "mechanism": "ip4"
                     }
                   ],
@@ -222,7 +222,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=reject; rua=mailto:informatica@ayto-castrillon.es; sp=quarantine; ri=86400",
+    "record": "v=DMARC1; p=quarantine; adkim=r; aspf=r;rua=mailto:luis@ayto-castrillon.es;",
     "valid": true,
     "location": "ayto-castrillon.es",
     "warnings": [],
@@ -232,34 +232,26 @@
         "explicit": true
       },
       "p": {
-        "value": "reject",
+        "value": "quarantine",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": true
+      },
+      "aspf": {
+        "value": "r",
         "explicit": true
       },
       "rua": {
         "value": [
           {
             "scheme": "mailto",
-            "address": "informatica@ayto-castrillon.es",
+            "address": "luis@ayto-castrillon.es",
             "size_limit": null
           }
         ],
         "explicit": true
-      },
-      "sp": {
-        "value": "quarantine",
-        "explicit": true
-      },
-      "ri": {
-        "value": 86400,
-        "explicit": true
-      },
-      "adkim": {
-        "value": "r",
-        "explicit": false
-      },
-      "aspf": {
-        "value": "r",
-        "explicit": false
       },
       "fo": {
         "value": [
@@ -275,6 +267,14 @@
         "value": [
           "afrf"
         ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "quarantine",
         "explicit": false
       }
     }

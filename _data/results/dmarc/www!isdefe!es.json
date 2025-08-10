@@ -10,8 +10,23 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "cust13082-1.in.mailcontrol.com",
+        "addresses": [
+          "85.115.60.190"
+        ]
+      },
+      {
+        "preference": 30,
+        "hostname": "cust13082-2.in.mailcontrol.com",
+        "addresses": [
+          "85.115.54.190"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx a:mail1.isdefe.es a:mail6.isdefe.es a:mail33.isdefe.es a:vw-cmnmail-dmz.isdefe.es a:vw-cmnfree-dmz.isdefe.es ip4:194.15.213.10 ip4:194.15.213.230 ip4:194.15.213.103 ip4:194.15.213.106 include:spf.protection.outlook.com -all",

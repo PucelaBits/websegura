@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns4.gestiondecuenta.com",
-      "ns.gestiondecuenta.com",
       "ns3.gestiondecuenta.com",
-      "ns2.gestiondecuenta.com"
+      "ns2.gestiondecuenta.com",
+      "ns.gestiondecuenta.com",
+      "ns4.gestiondecuenta.com"
     ],
     "warnings": []
   },
@@ -28,7 +28,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 81.43.101.123 is bustia.scf.cat, but the A/AAAA DNS records for bustia.scf.cat do not resolve to 81.43.101.123"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:_spf.mlsend.com +a +mx +ip4:194.107.136.90 +ip4:81.43.101.123 +a:bustia.scf.cat ~all",

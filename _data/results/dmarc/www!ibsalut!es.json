@@ -4,11 +4,11 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "a13-66.akam.net",
       "a2-66.akam.net",
-      "a28-66.akam.net",
-      "a1-171.akam.net",
       "a5-64.akam.net",
+      "a28-66.akam.net",
+      "a13-66.akam.net",
+      "a1-171.akam.net",
       "a24-66.akam.net"
     ],
     "warnings": []
@@ -30,7 +30,7 @@
   "spf": {
     "record": "v=spf1 include:spf.tmes.trendmicro.com include:caib.es include:spf.protection.outlook.com -all",
     "valid": true,
-    "dns_lookups": 7,
+    "dns_lookups": 6,
     "warnings": [],
     "parsed": {
       "pass": [],
@@ -197,20 +197,20 @@
         },
         {
           "domain": "caib.es",
-          "record": "v=spf1 mx include:spf-00a20601.pphosted.com ip4:85.119.193.2  -all",
-          "dns_lookups": 2,
+          "record": "v=spf1 include:spf-00a20601.pphosted.com ip4:85.119.193.2 ip4:85.119.193.3 ip4:85.119.193.4 -all",
+          "dns_lookups": 1,
           "parsed": {
             "pass": [
               {
-                "value": "rmail1.caib.es",
-                "mechanism": "mx"
-              },
-              {
-                "value": "rmail2.caib.es",
-                "mechanism": "mx"
-              },
-              {
                 "value": "85.119.193.2",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "85.119.193.3",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "85.119.193.4",
                 "mechanism": "ip4"
               }
             ],
