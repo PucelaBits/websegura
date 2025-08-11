@@ -1,19 +1,18 @@
 {
-  "id": 70093891,
+  "id": 70148384,
   "algorithm_version": 4,
-  "scanned_at": "2025-08-10T01:16:03.280Z",
+  "scanned_at": "2025-08-11T01:13:17.319Z",
   "error": null,
-  "grade": "F",
+  "grade": "D-",
   "response_headers": {
-    "date": "Sun, 10 Aug 2025 01:16:04 GMT",
+    "date": "Mon, 11 Aug 2025 01:13:17 GMT",
     "vary": "Accept-Encoding",
     "alt-svc": "h3=\":443\"; ma=93600",
     "connection": "close",
-    "set-cookie": "JSESSIONID=6D621DE3B1156A425EAF11A515DA30F7.app03; Path=/; Secure; HttpOnly,ROUTEID=.app03; path=/",
     "content-type": "text/html;charset=UTF-8",
     "cache-control": "no-cache",
-    "server-timing": "cdn-cache; desc=REVALIDATE, edge; dur=531, origin; dur=193, ak_p; desc=\"1754788563339_389411460_304924825_72246_4165_10_6_-\";dur=1",
-    "content-length": "11773",
+    "server-timing": "cdn-cache; desc=HIT, edge; dur=545, origin; dur=0, ak_p; desc=\"1754874797384_388125508_542172793_54451_6422_11_8_-\";dur=1",
+    "content-length": "11774",
     "x-frame-options": "SAMEORIGIN",
     "x-ua-compatible": "IE=8",
     "x-xss-protection": "1; mode=block",
@@ -22,9 +21,9 @@
     "ot-force-account-verify": "true",
     "strict-transport-security": "max-age=15768000"
   },
-  "score": 20,
+  "score": 25,
   "status_code": 200,
-  "tests_failed": 3,
-  "tests_passed": 7,
+  "tests_failed": 2,
+  "tests_passed": 8,
   "tests_quantity": 10
 }
