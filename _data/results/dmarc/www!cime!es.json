@@ -4,18 +4,21 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "servdns2.silme.es",
-      "silmail.silme.es"
+      "silmail.silme.es",
+      "servdns2.silme.es"
     ],
     "warnings": []
   },
   "mx": {
     "hosts": [
       {
-        "preference": 5,
-        "hostname": "cime.onice.io",
+        "preference": 1,
+        "hostname": "smtp.google.com",
         "addresses": [
-          "185.138.223.182"
+          "172.253.132.26",
+          "172.253.132.27",
+          "2607:f8b0:4023:2c03::1a",
+          "2607:f8b0:4023:2c03::1b"
         ]
       }
     ],

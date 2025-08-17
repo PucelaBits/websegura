@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.raiolanetworks.es",
       "dns3.raiolanetworks.es",
+      "dns1.raiolanetworks.es",
       "dns2.raiolanetworks.es"
     ],
     "warnings": []
@@ -20,7 +20,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 178.211.133.13 is com1003.raiolanetworks.es, but the A/AAAA DNS records for com1003.raiolanetworks.es do not resolve to 178.211.133.13"
+    ]
   },
   "spf": {
     "record": "v=spf1 a mx +include:spf.raiolanetworks.com +ip4:5.196.132.144 ~all",

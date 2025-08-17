@@ -3,33 +3,22 @@
   "base_domain": "granadatur.com",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "ns.granada.org"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "ciudad.granada.org",
-        "addresses": [
-          "85.62.209.121"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
-    "record": "v=spf1 ip4:85.62.209.121 include:ciudad.granada.org ~all",
+    "record": null,
     "valid": false,
-    "warnings": [],
-    "error": "ciudad.granada.org does not have a SPF TXT record"
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "dmarc": {
     "record": null,
     "valid": false,
     "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   }
 }

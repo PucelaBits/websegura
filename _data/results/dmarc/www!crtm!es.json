@@ -10,8 +10,75 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The DNS response does not contain an answer to the question: 11.128.77.195.in-addr.arpa. IN PTR"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx1.hc1855-42.eu.iphmx.com",
+        "addresses": [
+          "194.165.193.239",
+          "23.90.123.185"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mx2.hc1855-42.eu.iphmx.com",
+        "addresses": [
+          "194.165.193.239",
+          "23.90.123.185"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "aspmx.l.google.com",
+        "addresses": [
+          "172.253.132.26",
+          "2607:f8b0:4023:2c03::1b"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mail.madrid.org",
+        "addresses": [
+          "195.77.128.11"
+        ]
+      },
+      {
+        "preference": 30,
+        "hostname": "alt1.aspmx.l.google.com",
+        "addresses": [
+          "209.85.144.27",
+          "2607:f8b0:400d:c0e::1a"
+        ]
+      },
+      {
+        "preference": 30,
+        "hostname": "alt2.aspmx.l.google.com",
+        "addresses": [
+          "108.177.11.27",
+          "2607:f8b0:400c:c01::1b"
+        ]
+      },
+      {
+        "preference": 40,
+        "hostname": "aspmx2.googlemail.com",
+        "addresses": [
+          "209.85.144.26",
+          "2607:f8b0:400d:c0e::1a"
+        ]
+      },
+      {
+        "preference": 40,
+        "hostname": "aspmx3.googlemail.com",
+        "addresses": [
+          "108.177.11.26",
+          "2607:f8b0:400c:c01::1b"
+        ]
+      }
+    ],
+    "warnings": [
+      "The domain mail.comadrid.es does not exist",
+      "The reverse DNS of 195.77.128.11 is mail.comadrid.es, but the A/AAAA DNS records for mail.comadrid.es do not resolve to 195.77.128.11"
+    ]
   },
   "spf": {
     "record": "v=spf1 exists:%{i}.spf.hc1855-42.eu.iphmx.com ip4:195.77.128.128/25 ip4:195.77.128.55/32 ip4:194.165.202.24/32 ip4:23.90.123.197/32 include:spf.protection.outlook.com ~all",

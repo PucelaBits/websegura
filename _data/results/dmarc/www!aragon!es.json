@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "codos.aragon.es",
-      "calatayud.aragon.es"
+      "calatayud.aragon.es",
+      "codos.aragon.es"
     ],
     "warnings": []
   },
@@ -14,19 +14,18 @@
       {
         "preference": 10,
         "hostname": "mx01.aragon.es",
-        "addresses": [
-          "188.244.81.194"
-        ]
+        "addresses": []
       },
       {
         "preference": 20,
         "hostname": "mx02.aragon.es",
-        "addresses": [
-          "188.244.81.195"
-        ]
+        "addresses": []
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out.",
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ]
   },
   "spf": {
     "record": "v=spf1 ip4:188.244.81.16/28 include:servers.mcsv.net include:spf.protection.outlook.com  ip4:188.244.81.192/29 -all",

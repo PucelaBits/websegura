@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns08.ns-cloud4b.com",
-      "ns06.ns-cloud4b.net"
+      "ns06.ns-cloud4b.net",
+      "ns08.ns-cloud4b.com"
     ],
     "warnings": []
   },
@@ -23,36 +23,38 @@
         "preference": 10,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "172.253.116.26",
-          "2a00:1450:400b:c02::1a"
+          "209.85.144.27",
+          "2607:f8b0:400d:c0e::1b"
         ]
       },
       {
         "preference": 20,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "173.194.76.26",
-          "2a00:1450:400c:c00::1a"
+          "108.177.11.27",
+          "2607:f8b0:400c:c01::1b"
         ]
       },
       {
         "preference": 25,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "142.250.102.27",
-          "2a00:1450:4025:402::1a"
+          "192.178.218.26",
+          "2607:f8b0:4004:c25::1b"
         ]
       },
       {
         "preference": 30,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "192.178.156.27",
-          "2a00:1450:4013:c1c::1b"
+          "108.177.123.27",
+          "2800:3f0:4003:c0f::1a"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "2800:3f0:4003:c0f::1a does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
     "record": "v=spf1 a mx a:espublico.com ip4:213.4.82.201 ip4:185.73.173.32/28 include:_spf.google.com -all",

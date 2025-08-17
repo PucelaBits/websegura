@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.aytojerez.es",
-      "dns1.aytojerez.es"
+      "dns1.aytojerez.es",
+      "dns2.aytojerez.es"
     ],
     "warnings": []
   },
@@ -15,18 +15,18 @@
         "preference": 10,
         "hostname": "1694806815.pamx1.hotmail.com",
         "addresses": [
-          "52.101.11.8",
-          "52.101.73.10",
-          "52.101.8.37",
-          "52.101.9.16"
+          "52.101.10.0",
+          "52.101.10.13",
+          "52.101.41.184",
+          "52.101.8.53"
         ]
       }
     ],
     "warnings": [
-      "52.101.11.8 does not have any reverse DNS (PTR) records",
-      "52.101.73.10 does not have any reverse DNS (PTR) records",
-      "52.101.8.37 does not have any reverse DNS (PTR) records",
-      "52.101.9.16 does not have any reverse DNS (PTR) records"
+      "52.101.10.0 does not have any reverse DNS (PTR) records",
+      "52.101.10.13 does not have any reverse DNS (PTR) records",
+      "52.101.41.184 does not have any reverse DNS (PTR) records",
+      "52.101.8.53 does not have any reverse DNS (PTR) records"
     ]
   },
   "spf": {

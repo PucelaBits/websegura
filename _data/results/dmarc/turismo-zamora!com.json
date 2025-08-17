@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns3.guebs.com",
+      "dns4.guebs.com",
       "dns2.guebs.com",
-      "dns4.guebs.com"
+      "dns3.guebs.com"
     ],
     "warnings": []
   },
@@ -16,21 +16,21 @@
         "preference": 0,
         "hostname": "mail.turismo-zamora.com",
         "addresses": [
-          "188.95.113.133"
+          "5.175.45.111"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:188.95.113.133 ip4:185.23.70.108 ip4:54.171.143.22 ip4:52.16.203.74 include:_spf.guebs.net a mx ~all",
+    "record": "v=spf1 ip4:5.175.45.111 ip4:185.23.70.108 ip4:54.171.143.22 ip4:52.16.203.74 include:_spf.guebs.net a mx ~all",
     "valid": true,
     "dns_lookups": 3,
     "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "188.95.113.133",
+          "value": "5.175.45.111",
           "mechanism": "ip4"
         },
         {
@@ -46,7 +46,7 @@
           "mechanism": "ip4"
         },
         {
-          "value": "188.95.113.133",
+          "value": "5.175.45.111",
           "mechanism": "a"
         },
         {
