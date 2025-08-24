@@ -13,10 +13,11 @@
     ]
   },
   "spf": {
-    "record": "v=spf1 ip4:188.95.113.133 ip4:185.23.70.11 +a +mx +ip4:63.35.133.186 ~all",
+    "record": "v=spf1 ip4:188.95.113.133 ip4:5.175.45.111 ip4:185.23.70.11 +a +mx +ip4:63.35.133.186 ~all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out.",
       "apuntame.lineazamora.es does not have any MX records"
     ],
     "parsed": {
@@ -26,12 +27,12 @@
           "mechanism": "ip4"
         },
         {
-          "value": "185.23.70.11",
+          "value": "5.175.45.111",
           "mechanism": "ip4"
         },
         {
-          "value": "188.95.113.133",
-          "mechanism": "a"
+          "value": "185.23.70.11",
+          "mechanism": "ip4"
         },
         {
           "value": "63.35.133.186",

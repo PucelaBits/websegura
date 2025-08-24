@@ -6,8 +6,8 @@
     "hostnames": [
       "ns1.intervia.com",
       "ns2.intervia.com",
-      "ns0.intervia.com",
-      "ns3.intervia.com"
+      "ns3.intervia.com",
+      "ns0.intervia.com"
     ],
     "warnings": []
   },
@@ -25,9 +25,176 @@
   },
   "spf": {
     "record": "v=spf1 include:_spf.intervia.com ip4:88.2.101.45 ip4:82.223.4.210 -all",
-    "valid": false,
+    "valid": true,
+    "dns_lookups": 3,
     "warnings": [],
-    "error": "_spf_cli.intervia.com: Expected mechanism at position 186 in: v=spf1 ip4:95.211.174.101 ip4:95.211.148.229 ip4:212.95.51.139 ip4:89.149.211.53 ip4:5.79.73.7 ip4:213.227.134.136 ip4:212.32.240.7 ip4:95.211.63.224 ip4:82.192.72.209 ip4:82.192.72.210 95.211.44.142 -all"
+    "parsed": {
+      "pass": [
+        {
+          "value": "88.2.101.45",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "82.223.4.210",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "_spf.intervia.com",
+          "record": "v=spf1 include:_spf_iv.intervia.com include:_spf_cli.intervia.com -all",
+          "dns_lookups": 2,
+          "parsed": {
+            "pass": [],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [
+              {
+                "domain": "_spf_iv.intervia.com",
+                "record": "v=spf1 ip4:95.211.205.16 ip4:95.211.136.209 ip4:81.171.6.164 ip4:5.79.75.205 ip4:95.211.214.95 ip4:37.48.116.53 ip4:78.159.100.245 ip4:213.227.129.169 ip4:193.70.38.251 ip4:193.70.39.201 ip4:167.86.120.185 ip4:95.211.126.104 -all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "95.211.205.16",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "95.211.136.209",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "81.171.6.164",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "5.79.75.205",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "95.211.214.95",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "37.48.116.53",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "78.159.100.245",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "213.227.129.169",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "193.70.38.251",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "193.70.39.201",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "167.86.120.185",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "95.211.126.104",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "fail"
+                },
+                "warnings": []
+              },
+              {
+                "domain": "_spf_cli.intervia.com",
+                "record": "v=spf1 ip4:95.211.174.101 ip4:95.211.148.229 ip4:212.95.51.139 ip4:89.149.211.53 ip4:5.79.73.7 ip4:213.227.134.136 ip4:212.32.240.7 ip4:95.211.63.224 ip4:82.192.72.209 ip4:82.192.72.210 ip4:95.211.44.142 ip4:85.17.236.163 -all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "95.211.174.101",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "95.211.148.229",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "212.95.51.139",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "89.149.211.53",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "5.79.73.7",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "213.227.134.136",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "212.32.240.7",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "95.211.63.224",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "82.192.72.209",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "82.192.72.210",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "95.211.44.142",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "85.17.236.163",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "fail"
+                },
+                "warnings": []
+              }
+            ],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
     "record": "v=DMARC1; p=quarantine;",

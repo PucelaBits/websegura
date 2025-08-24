@@ -28,7 +28,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 193.104.51.123 is smtp2.ccma.cat, but the A/AAAA DNS records for smtp2.ccma.cat do not resolve to 193.104.51.123"
+    ]
   },
   "spf": {
     "record": "v=spf1 mx a include:spf1.ccma.cat include:_spf.salesforce.com include:spf.protection.outlook.com -all",

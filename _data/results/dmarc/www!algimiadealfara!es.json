@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.dnsxperta.com",
       "ns3.dnsxperta.com",
-      "ns1.dnsxperta.com"
+      "ns1.dnsxperta.com",
+      "ns2.dnsxperta.com"
     ],
     "warnings": []
   },
@@ -22,7 +22,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 217.13.80.224 is mx5.dnsxperta.com, but the A/AAAA DNS records for mx5.dnsxperta.com do not resolve to 217.13.80.224"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:dnsxperta.com -all",

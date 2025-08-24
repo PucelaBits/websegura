@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns13.a1.impervasecuredns.net",
-      "ns8.a0.impervasecuredns.net"
+      "ns8.a0.impervasecuredns.net",
+      "ns13.a1.impervasecuredns.net"
     ],
     "warnings": []
   },
@@ -15,25 +15,25 @@
         "preference": 10,
         "hostname": "mx-01-eu-central-1.prod.hydra.sophos.com",
         "addresses": [
-          "3.67.208.150",
-          "52.29.42.109"
+          "3.124.124.140",
+          "3.68.131.126"
         ]
       },
       {
         "preference": 10,
         "hostname": "mx-02-eu-central-1.prod.hydra.sophos.com",
         "addresses": [
-          "3.67.208.150",
-          "52.29.42.109"
+          "3.124.124.140",
+          "3.68.131.126"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:_spf_eucentral1.prod.hydra.sophos.com ~all",
+    "record": "v=spf1 include:_spf_eucentral1.prod.hydra.sophos.com include:spf-00a46c01.pphosted.com ~all",
     "valid": true,
-    "dns_lookups": 1,
+    "dns_lookups": 2,
     "warnings": [],
     "parsed": {
       "pass": [],
@@ -79,6 +79,31 @@
             "redirect": null,
             "exp": null,
             "all": "softfail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "spf-00a46c01.pphosted.com",
+          "record": "v=spf1 ip4:66.159.244.181 ip4:66.159.243.36",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "66.159.244.181",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "66.159.243.36",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "neutral"
           },
           "warnings": []
         }

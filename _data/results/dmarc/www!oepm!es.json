@@ -36,17 +36,11 @@
     "record": "v=spf1 mx a:spf.correo.gob.es ip4:192.187.18.186 ip4:192.187.18.139 -all",
     "valid": true,
     "dns_lookups": 2,
-    "warnings": [],
+    "warnings": [
+      "All nameservers failed to answer the query oepm.es. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    ],
     "parsed": {
       "pass": [
-        {
-          "value": "mail1.correo.gob.es",
-          "mechanism": "mx"
-        },
-        {
-          "value": "mail2.correo.gob.es",
-          "mechanism": "mx"
-        },
         {
           "value": "185.73.172.122",
           "mechanism": "a"

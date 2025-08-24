@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "ns2.stinet.net",
-      "ns3.stinet.net",
-      "ns1.stinet.net"
+      "ns1.stinet.net",
+      "ns3.stinet.net"
     ],
     "warnings": []
   },
@@ -15,11 +15,13 @@
       {
         "preference": 5,
         "hostname": "i-mail.cescyl.es",
-        "addresses": []
+        "addresses": [
+          "195.55.85.205"
+        ]
       }
     ],
     "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+      "195.55.85.205 does not have any reverse DNS (PTR) records"
     ]
   },
   "spf": {

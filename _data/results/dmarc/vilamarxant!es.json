@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "ns1.dnsxperta.com",
-      "ns2.dnsxperta.com",
-      "ns3.dnsxperta.com"
+      "ns3.dnsxperta.com",
+      "ns2.dnsxperta.com"
     ],
     "warnings": []
   },
@@ -16,14 +16,14 @@
         "preference": 200,
         "hostname": "vilamarxant-es.mail.protection.outlook.com",
         "addresses": [
-          "2a01:111:f403:ca04::",
-          "2a01:111:f403:ca04::1",
           "2a01:111:f403:ca04::9",
-          "2a01:111:f403:ca09::a",
-          "52.101.68.0",
-          "52.101.68.8",
-          "52.101.73.16",
-          "52.101.73.26"
+          "2a01:111:f403:ca04::a",
+          "2a01:111:f403:ca09::2",
+          "2a01:111:f403:ca09::6",
+          "52.101.68.15",
+          "52.101.68.25",
+          "52.101.68.29",
+          "52.101.73.6"
         ]
       }
     ],
@@ -33,16 +33,14 @@
     "record": "v=spf1 mx a ip4:217.13.93.146 a:zimbra.vilamarxant.es include:spf.protection.outlook.com include:dnsxperta.com ~all",
     "valid": true,
     "dns_lookups": 5,
-    "warnings": [],
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ],
     "parsed": {
       "pass": [
         {
           "value": "vilamarxant-es.mail.protection.outlook.com",
           "mechanism": "mx"
-        },
-        {
-          "value": "217.13.85.35",
-          "mechanism": "a"
         },
         {
           "value": "217.13.93.146",

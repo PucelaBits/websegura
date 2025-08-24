@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "sun.rediris.es",
       "olmo.csic.es",
-      "chico.rediris.es",
-      "sabina.cti.csic.es"
+      "sun.rediris.es",
+      "sabina.cti.csic.es",
+      "chico.rediris.es"
     ],
     "warnings": []
   },
@@ -22,9 +22,7 @@
       }
     ],
     "warnings": [
-      "The reverse DNS of 161.111.10.17 is smtpin.csic.es, but the A/AAAA DNS records for smtpin.csic.es do not resolve to 161.111.10.17",
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 161.111.10.17 is calendario.csic.es, but the A/AAAA DNS records for calendario.csic.es do not resolve to 161.111.10.17"
+      "The reverse DNS of 161.111.10.17 is smtpin.csic.es, but the A/AAAA DNS records for smtpin.csic.es do not resolve to 161.111.10.17"
     ]
   },
   "spf": {

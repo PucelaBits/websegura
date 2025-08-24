@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns481.webempresa.eu",
-      "ns482.webempresa.eu"
+      "ns482.webempresa.eu",
+      "ns481.webempresa.eu"
     ],
     "warnings": []
   },
@@ -15,46 +15,44 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "172.253.132.27",
-          "2607:f8b0:4023:2c03::1a"
+          "2607:f8b0:4023:c0b::1b",
+          "74.125.137.27"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "209.85.144.27",
-          "2607:f8b0:400d:c0e::1a"
+          "192.178.220.27",
+          "2607:f8b0:4023:100f::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "108.177.11.26",
-          "2607:f8b0:400c:c01::1a"
+          "142.251.190.26",
+          "2607:f8b0:4003:c0a::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "192.178.218.26",
-          "2607:f8b0:4004:c25::1b"
+          "192.178.212.27",
+          "2607:f8b0:4001:c74::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "108.177.123.27",
-          "2800:3f0:4003:c0f::1b"
+          "192.178.152.26",
+          "2607:f8b0:4024:c0d::1a"
         ]
       }
     ],
-    "warnings": [
-      "2800:3f0:4003:c0f::1b does not have any reverse DNS (PTR) records"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:213.158.86.116 ip4:213.158.86.116 include:_spf.webempresa.eu ip4:151.80.24.226 +a +mx +include:_spf.google.com ~all",

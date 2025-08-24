@@ -10,23 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mxa-00a22601.gslb.pphosted.com",
-        "addresses": [
-          "66.159.246.198"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "mxb-00a22601.gslb.pphosted.com",
-        "addresses": [
-          "66.159.244.88"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 ip4:195.55.164.16 include:spf.protection.outlook.com -all",

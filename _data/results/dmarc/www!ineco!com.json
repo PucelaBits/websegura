@@ -12,29 +12,113 @@
         "preference": 1,
         "hostname": "ineco-com.mail.protection.outlook.com",
         "addresses": [
-          "2a01:111:f403:ca04::2",
-          "2a01:111:f403:ca09::5",
-          "2a01:111:f403:ca09::e",
-          "2a01:111:f403:ca09::f",
-          "52.101.68.12",
-          "52.101.68.21",
-          "52.101.73.11",
-          "52.101.73.19"
+          "2a01:111:f403:ca04::4",
+          "2a01:111:f403:ca09::4",
+          "2a01:111:f403:ca09::7",
+          "2a01:111:f403:ca09::8",
+          "52.101.68.36",
+          "52.101.73.15",
+          "52.101.73.24",
+          "52.101.73.26"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "record": "v=spf1 mx include:spf.protection.outlook.com  ip4:193.201.107.0/24 -all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "ineco-com.mail.protection.outlook.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "193.201.107.0/24",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "spf.protection.outlook.com",
+          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/15 ip4:52.102.0.0/16 ip4:52.103.0.0/17 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/51 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "40.92.0.0/15",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "40.107.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.100.0.0/15",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.102.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.103.0.0/17",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "104.47.0.0/17",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "2a01:111:f400::/48",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403::/49",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:8000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:c000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:f000::/52",
+                "mechanism": "ip6"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
     "record": "v=DMARC1; p=reject; sp=reject; rua=mailto:dmarc@ineco.com; ruf=mailto:dmarc@ineco.com; pct=100; fo=1",
     "valid": true,
     "location": "ineco.com",
-    "warnings": [],
+    "warnings": [
+      "Failed to retrieve MX records for the domain of rua email address dmarc@ineco.com - The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -49,13 +133,7 @@
         "explicit": true
       },
       "rua": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "dmarc@ineco.com",
-            "size_limit": null
-          }
-        ],
+        "value": "mailto:dmarc@ineco.com",
         "explicit": true
       },
       "ruf": {

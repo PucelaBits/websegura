@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.zaragoza.es",
-      "dns.zaragoza.es"
+      "dns.zaragoza.es",
+      "dns2.zaragoza.es"
     ],
     "warnings": []
   },
@@ -15,10 +15,15 @@
         "preference": 10,
         "hostname": "smtp.google.com",
         "addresses": [
-          "172.253.132.26",
-          "172.253.132.27",
-          "2607:f8b0:4023:2c03::1a",
-          "2607:f8b0:4023:2c03::1b"
+          "142.250.141.26",
+          "142.250.141.27",
+          "142.251.2.27",
+          "2607:f8b0:4023:c06::1a",
+          "2607:f8b0:4023:c0b::1b",
+          "2607:f8b0:4023:c0d::1a",
+          "2607:f8b0:4023:c0d::1b",
+          "74.125.137.26",
+          "74.125.137.27"
         ]
       },
       {

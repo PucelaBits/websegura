@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns1080.ui-dns.com",
       "ns1080.ui-dns.de",
       "ns1080.ui-dns.org",
-      "ns1080.ui-dns.com",
       "ns1080.ui-dns.biz"
     ],
     "warnings": []
@@ -17,16 +17,16 @@
         "preference": 10,
         "hostname": "mx-01-eu-central-1.prod.hydra.sophos.com",
         "addresses": [
-          "3.67.208.150",
-          "52.29.42.109"
+          "3.124.124.140",
+          "3.68.131.126"
         ]
       },
       {
         "preference": 20,
         "hostname": "mx-02-eu-central-1.prod.hydra.sophos.com",
         "addresses": [
-          "3.67.208.150",
-          "52.29.42.109"
+          "3.124.124.140",
+          "3.68.131.126"
         ]
       }
     ],
