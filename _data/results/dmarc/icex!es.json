@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "milano.icex.es",
       "halcon.icex.es",
+      "milano.icex.es",
       "nso.nic.es"
     ],
     "warnings": []
@@ -234,20 +234,24 @@
               },
               {
                 "domain": "cloud_eu-central-1_vpc.appiancloud.com",
-                "record": "v=spf1 ip4:52.29.254.78 ip4:52.58.1.166 ip4:52.28.0.224 ~all",
+                "record": "v=spf1 ip4:54.209.19.9 ip4:54.208.15.54 ip4:54.209.19.148 ip4:54.209.20.112 ~all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
                     {
-                      "value": "52.29.254.78",
+                      "value": "54.209.19.9",
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "52.58.1.166",
+                      "value": "54.208.15.54",
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "52.28.0.224",
+                      "value": "54.209.19.148",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "54.209.20.112",
                       "mechanism": "ip4"
                     }
                   ],

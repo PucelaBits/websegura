@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns8.a0.impervasecuredns.net",
-      "ns13.a1.impervasecuredns.net"
+      "ns13.a1.impervasecuredns.net",
+      "ns8.a0.impervasecuredns.net"
     ],
     "warnings": []
   },
@@ -13,18 +13,16 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "mx-01-eu-central-1.prod.hydra.sophos.com",
+        "hostname": "mxa-00a46c01.gslb.pphosted.com",
         "addresses": [
-          "3.124.124.140",
-          "3.68.131.126"
+          "66.159.244.181"
         ]
       },
       {
         "preference": 10,
-        "hostname": "mx-02-eu-central-1.prod.hydra.sophos.com",
+        "hostname": "mxb-00a46c01.gslb.pphosted.com",
         "addresses": [
-          "3.124.124.140",
-          "3.68.131.126"
+          "66.159.243.36"
         ]
       }
     ],

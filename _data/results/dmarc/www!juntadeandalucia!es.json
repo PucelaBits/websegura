@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.juntadeandalucia.es",
-      "ns4.juntadeandalucia.es",
+      "ns3.juntadeandalucia.es",
       "ns.juntadeandalucia.es",
-      "ns3.juntadeandalucia.es"
+      "ns1.juntadeandalucia.es",
+      "ns4.juntadeandalucia.es"
     ],
     "warnings": []
   },
@@ -228,12 +228,12 @@
               },
               {
                 "domain": "_netblocks3.google.com",
-                "record": "v=spf1 ip4:172.217.0.0/19 ip4:172.217.32.0/20 ip4:172.217.128.0/19 ip4:172.217.160.0/20 ip4:172.217.192.0/19 ip4:172.253.56.0/21 ip4:172.253.112.0/20 ip4:108.177.96.0/20 ~all",
+                "record": "v=spf1 ip4:172.217.0.0/20 ip4:172.217.32.0/20 ip4:172.217.128.0/19 ip4:172.217.160.0/20 ip4:172.217.192.0/19 ip4:172.253.56.0/21 ip4:172.253.112.0/20 ip4:108.177.96.0/20 ~all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
                     {
-                      "value": "172.217.0.0/19",
+                      "value": "172.217.0.0/20",
                       "mechanism": "ip4"
                     },
                     {

@@ -17,7 +17,6 @@
     "valid": true,
     "dns_lookups": 2,
     "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out.",
       "apuntame.lineazamora.es does not have any MX records"
     ],
     "parsed": {
@@ -33,6 +32,10 @@
         {
           "value": "185.23.70.11",
           "mechanism": "ip4"
+        },
+        {
+          "value": "5.175.45.111",
+          "mechanism": "a"
         },
         {
           "value": "63.35.133.186",

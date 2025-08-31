@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns26.servidoresdns.net",
-      "dns25.servidoresdns.net"
+      "dns25.servidoresdns.net",
+      "dns26.servidoresdns.net"
     ],
     "warnings": []
   },
@@ -33,10 +33,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 217.76.135.156 is llma672.servidoresdns.net, but the A/AAAA DNS records for llma672.servidoresdns.net do not resolve to 217.76.135.156"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 a mx ip4:217.76.135.156 ip4:195.55.246.162 ip4:87.106.243.27 include:spf.protection.outlook.com include:_spf.fortimailcloud.com ~all",

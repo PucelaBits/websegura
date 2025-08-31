@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.dipualba.es",
-      "dns2.dipualba.es"
+      "dns2.dipualba.es",
+      "dns1.dipualba.es"
     ],
     "warnings": []
   },
@@ -19,7 +19,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 195.235.95.25 is mx.dipualba.es, but the A/AAAA DNS records for mx.dipualba.es do not resolve to 195.235.95.25"
+    ]
   },
   "spf": {
     "record": null,

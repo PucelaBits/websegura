@@ -25,9 +25,83 @@
     ]
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "All nameservers failed to answer the query cooperacionespanola.es. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "record": "v=spf1 include:_spf.srv.cat ~all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [],
+    "parsed": {
+      "pass": [],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "_spf.srv.cat",
+          "record": "v=spf1 include:_netblocks.srv.cat ~all",
+          "dns_lookups": 1,
+          "parsed": {
+            "pass": [],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [
+              {
+                "domain": "_netblocks.srv.cat",
+                "record": "v=spf1 ip4:46.16.56.0/21 ip4:134.0.8.0/21 ip4:185.22.200.0/22 ip4:185.34.192.0/22 ip4:185.42.104.0/22 ip4:185.66.40.0/22 ip4:185.22.201.0/22 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "46.16.56.0/21",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "134.0.8.0/21",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.22.200.0/22",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.34.192.0/22",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.42.104.0/22",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.66.40.0/22",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.22.201.0/22",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              }
+            ],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
   },
   "dmarc": {
     "record": null,

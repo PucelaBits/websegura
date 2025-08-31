@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.dinahosting.com",
+      "ns.dinahosting.com",
       "ns4.dinahosting.com",
-      "ns3.dinahosting.com",
-      "ns.dinahosting.com"
+      "ns2.dinahosting.com",
+      "ns3.dinahosting.com"
     ],
     "warnings": []
   },
@@ -17,8 +17,8 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.250.141.27",
-          "2607:f8b0:4023:c03::1a"
+          "142.250.101.27",
+          "2607:f8b0:4023:c0b::1b"
         ]
       },
       {
@@ -26,30 +26,30 @@
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
           "192.178.220.27",
-          "2607:f8b0:4023:100f::1a"
+          "2607:f8b0:4023:100f::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "142.251.190.27",
-          "2607:f8b0:4003:c0a::1a"
+          "142.251.190.26",
+          "2607:f8b0:4003:c0a::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "192.178.212.26",
-          "2607:f8b0:4001:c74::1b"
+          "192.178.212.27",
+          "2607:f8b0:4001:c74::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "192.178.152.26",
+          "192.178.152.27",
           "2607:f8b0:4024:c0d::1b"
         ]
       }
@@ -207,12 +207,12 @@
               },
               {
                 "domain": "_netblocks3.google.com",
-                "record": "v=spf1 ip4:172.217.0.0/19 ip4:172.217.32.0/20 ip4:172.217.128.0/19 ip4:172.217.160.0/20 ip4:172.217.192.0/19 ip4:172.253.56.0/21 ip4:172.253.112.0/20 ip4:108.177.96.0/20 ~all",
+                "record": "v=spf1 ip4:172.217.0.0/20 ip4:172.217.32.0/20 ip4:172.217.128.0/19 ip4:172.217.160.0/20 ip4:172.217.192.0/19 ip4:172.253.56.0/21 ip4:172.253.112.0/20 ip4:108.177.96.0/20 ~all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
                     {
-                      "value": "172.217.0.0/19",
+                      "value": "172.217.0.0/20",
                       "mechanism": "ip4"
                     },
                     {
