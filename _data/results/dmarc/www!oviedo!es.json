@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns.transparentedge.eu",
-      "ns.transparentedge.es"
+      "ns.transparentedge.es",
+      "ns.transparentedge.eu"
     ],
     "warnings": []
   },
@@ -236,7 +236,7 @@
         },
         {
           "domain": "servers.mcsv.net",
-          "record": "v=spf1 ip4:205.201.128.0/20 ip4:198.2.128.0/18 ip4:148.105.8.0/21 -all",
+          "record": "v=spf1 ip4:205.201.128.0/20 ip4:198.2.128.0/18 ip4:148.105.0.0/16 -all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -249,7 +249,7 @@
                 "mechanism": "ip4"
               },
               {
-                "value": "148.105.8.0/21",
+                "value": "148.105.0.0/16",
                 "mechanism": "ip4"
               }
             ],

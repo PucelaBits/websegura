@@ -17,67 +17,454 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.251.2.26",
-          "2607:f8b0:4023:c06::1b"
+          "172.253.132.26",
+          "2607:f8b0:4023:2c03::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "192.178.220.26",
-          "2607:f8b0:4023:100f::1b"
+          "209.85.144.26",
+          "2607:f8b0:400d:c0e::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "142.251.190.27",
-          "2607:f8b0:4003:c0a::1a"
+          "108.177.11.27",
+          "2607:f8b0:400c:c01::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "aspmx2.googlemail.com",
         "addresses": [
-          "192.178.220.26",
-          "2607:f8b0:4023:100f::1a"
+          "209.85.144.27",
+          "2607:f8b0:400d:c0e::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "aspmx3.googlemail.com",
         "addresses": [
-          "142.251.190.27",
-          "2607:f8b0:4003:c0a::1a"
+          "108.177.11.27",
+          "2607:f8b0:400c:c01::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "aspmx4.googlemail.com",
         "addresses": [
-          "192.178.212.27",
-          "2607:f8b0:4001:c74::1a"
+          "192.178.218.27",
+          "2607:f8b0:4004:c25::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "aspmx5.googlemail.com",
         "addresses": [
-          "192.178.152.26",
-          "2607:f8b0:4024:c0d::1a"
+          "108.177.123.26",
+          "2800:3f0:4003:c0f::1b"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "2800:3f0:4003:c0f::1b does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
-    "record": "v=spf1 a:legacy.uoc.edu include:_spf.google.com include:in1.uoc.edu include:ex1.uoc.edu ~all",
-    "valid": false,
+    "record": "v=spf1 include:_spf.google.com include:ex1.uoc.edu ip4:84.88.0.6 ip4:3.248.238.191 ip4:34.248.212.113 ip4:54.155.47.62 ~all",
+    "valid": true,
+    "dns_lookups": 10,
     "warnings": [],
-    "error": "Parsing the SPF record requires 12/10 maximum DNS lookups - https://tools.ietf.org/html/rfc7208#section-4.6.4",
-    "dns_lookups": 12
+    "parsed": {
+      "pass": [
+        {
+          "value": "84.88.0.6",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "3.248.238.191",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "34.248.212.113",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "54.155.47.62",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "_spf.google.com",
+          "record": "v=spf1 include:_netblocks.google.com include:_netblocks2.google.com include:_netblocks3.google.com ~all",
+          "dns_lookups": 3,
+          "parsed": {
+            "pass": [],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [
+              {
+                "domain": "_netblocks.google.com",
+                "record": "v=spf1 ip4:74.125.0.0/16 ip4:173.194.0.0/16 ip4:209.85.128.0/17 ip4:216.58.192.0/19 ip4:216.239.32.0/19 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "74.125.0.0/16",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "173.194.0.0/16",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "209.85.128.0/17",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "216.58.192.0/19",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "216.239.32.0/19",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              },
+              {
+                "domain": "_netblocks2.google.com",
+                "record": "v=spf1 ip6:2001:4860:4000::/36 ip6:2404:6800:4000::/36 ip6:2607:f8b0:4000::/36 ip6:2800:3f0:4000::/36 ip6:2a00:1450:4000::/36 ip6:2c0f:fb50:4000::/36 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "2001:4860:4000::/36",
+                      "mechanism": "ip6"
+                    },
+                    {
+                      "value": "2404:6800:4000::/36",
+                      "mechanism": "ip6"
+                    },
+                    {
+                      "value": "2607:f8b0:4000::/36",
+                      "mechanism": "ip6"
+                    },
+                    {
+                      "value": "2800:3f0:4000::/36",
+                      "mechanism": "ip6"
+                    },
+                    {
+                      "value": "2a00:1450:4000::/36",
+                      "mechanism": "ip6"
+                    },
+                    {
+                      "value": "2c0f:fb50:4000::/36",
+                      "mechanism": "ip6"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              },
+              {
+                "domain": "_netblocks3.google.com",
+                "record": "v=spf1 ip4:172.217.32.0/20 ip4:172.217.128.0/19 ip4:172.217.160.0/20 ip4:172.217.192.0/19 ip4:172.253.56.0/21 ip4:172.253.112.0/20 ip4:108.177.96.0/20 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "172.217.32.0/20",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "172.217.128.0/19",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "172.217.160.0/20",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "172.217.192.0/19",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "172.253.56.0/21",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "172.253.112.0/20",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "108.177.96.0/20",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              }
+            ],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "ex1.uoc.edu",
+          "record": "v=spf1 include:eevid.com include:amazonses.com include:spf.mailjet.com include:_spf.salesforce.com ip4:13.111.22.169 ip4:83.169.91.142 ip4:83.169.91.143 ip4:83.169.91.144 ip4:83.169.91.145 ip4:83.169.91.146 ip4:83.169.91.147 ip4:84.88.0.7 ~all",
+          "dns_lookups": 5,
+          "parsed": {
+            "pass": [
+              {
+                "value": "13.111.22.169",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "83.169.91.142",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "83.169.91.143",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "83.169.91.144",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "83.169.91.145",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "83.169.91.146",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "83.169.91.147",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "84.88.0.7",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [
+              {
+                "domain": "eevid.com",
+                "record": "v=spf1 ip4:212.36.72.16/28 ip4:176.53.156.0/24 ip4:130.162.53.12 ip4:130.162.53.16 ip4:130.162.53.17 ip4:130.162.53.20 ip4:130.162.53.21 -all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "212.36.72.16/28",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "176.53.156.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "130.162.53.12",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "130.162.53.16",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "130.162.53.17",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "130.162.53.20",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "130.162.53.21",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "fail"
+                },
+                "warnings": []
+              },
+              {
+                "domain": "amazonses.com",
+                "record": "v=spf1 ip4:199.255.192.0/22 ip4:199.127.232.0/22 ip4:54.240.0.0/18 ip4:69.169.224.0/20 ip4:23.249.208.0/20 ip4:23.251.224.0/19 ip4:76.223.176.0/20 ip4:54.240.64.0/18 ip4:76.223.128.0/19 ip4:216.221.160.0/19 ip4:206.55.144.0/20 ip4:24.110.64.0/18 -all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "199.255.192.0/22",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "199.127.232.0/22",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "54.240.0.0/18",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "69.169.224.0/20",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "23.249.208.0/20",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "23.251.224.0/19",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "76.223.176.0/20",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "54.240.64.0/18",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "76.223.128.0/19",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "216.221.160.0/19",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "206.55.144.0/20",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "24.110.64.0/18",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "fail"
+                },
+                "warnings": []
+              },
+              {
+                "domain": "spf.mailjet.com",
+                "record": "v=spf1 ip4:87.253.232.0/21 ip4:185.189.236.0/22 ip4:185.211.120.0/22 ip4:185.250.236.0/22 ip4:45.14.148.0/22 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "87.253.232.0/21",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.189.236.0/22",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.211.120.0/22",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.250.236.0/22",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "45.14.148.0/22",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              },
+              {
+                "domain": "_spf.salesforce.com",
+                "record": "v=spf1 exists:%{i}._spf.mta.salesforce.com -all",
+                "dns_lookups": 1,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "%{i}._spf.mta.salesforce.com",
+                      "mechanism": "exists"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "fail"
+                },
+                "warnings": []
+              }
+            ],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
   },
   "dmarc": {
     "record": "v=DMARC1; p=none; rua=mailto:informes.generales@uoc.edu; ruf=mailto:informes.forenses@uoc.edu",

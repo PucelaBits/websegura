@@ -29,9 +29,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:81.201.101.195 ip4:154.52.0.195 ip4:195.76.48.66 ip4:195.76.48.76 include:spf.protection.outlook.com include:spf.mandrillapp.com include:139755417.spf06.hubspotemail.net -all",
+    "record": "v=spf1 ip4:81.201.101.195 ip4:154.52.0.195 ip4:195.76.48.66 ip4:195.76.48.76 include:spf.protection.outlook.com include:spf.mandrillapp.com include:139755417.spf06.hubspotemail.net include:_spf.goskope.com -all",
     "valid": true,
-    "dns_lookups": 3,
+    "dns_lookups": 4,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -272,6 +272,39 @@
             "redirect": null,
             "exp": null,
             "all": "fail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "_spf.goskope.com",
+          "record": "v=spf1 ip4:8.36.116.0/24 ip4:8.39.144.0/24 ip4:31.186.239.0/24 ip4:163.116.128.0/17 ~all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "8.36.116.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "8.39.144.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "31.186.239.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "163.116.128.0/17",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
           },
           "warnings": []
         }

@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.nominalia.com",
-      "dns2.nominalia.com"
+      "dns2.nominalia.com",
+      "dns1.nominalia.com"
     ],
     "warnings": []
   },
@@ -19,10 +19,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 195.110.124.132 is mail.register.it, but the A/AAAA DNS records for mail.register.it do not resolve to 195.110.124.132"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.webapps.net ~all",
