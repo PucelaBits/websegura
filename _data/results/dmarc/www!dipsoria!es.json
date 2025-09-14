@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.dnsxperta.com",
       "ns3.dnsxperta.com",
+      "ns1.dnsxperta.com",
       "ns2.dnsxperta.com"
     ],
     "warnings": []
@@ -16,14 +16,14 @@
         "preference": 0,
         "hostname": "dipsoria-es.mail.protection.outlook.com",
         "addresses": [
-          "2a01:111:f403:ca04::10",
-          "2a01:111:f403:ca04::c",
-          "2a01:111:f403:ca09::9",
-          "2a01:111:f403:ca09::d",
-          "52.101.68.21",
-          "52.101.73.2",
+          "2a01:111:f403:ca04::",
+          "2a01:111:f403:ca09::2",
+          "2a01:111:f403:ca09::b",
+          "2a01:111:f403:ca09::f",
+          "52.101.68.3",
           "52.101.73.21",
-          "52.101.73.30"
+          "52.101.73.4",
+          "52.101.73.8"
         ]
       }
     ],
@@ -220,7 +220,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com",
+    "record": "v=DMARC1; p=quarantine; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com,mailto:dmarc@dipsoria.es; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com,mailto:dmarc@dipsoria.es",
     "valid": true,
     "location": "dipsoria.es",
     "warnings": [],
@@ -230,7 +230,7 @@
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": true
       },
       "fo": {
@@ -245,6 +245,11 @@
             "scheme": "mailto",
             "address": "dmarc_rua@emaildefense.proofpoint.com",
             "size_limit": null
+          },
+          {
+            "scheme": "mailto",
+            "address": "dmarc@dipsoria.es",
+            "size_limit": null
           }
         ],
         "explicit": true
@@ -254,6 +259,11 @@
           {
             "scheme": "mailto",
             "address": "dmarc_ruf@emaildefense.proofpoint.com",
+            "size_limit": null
+          },
+          {
+            "scheme": "mailto",
+            "address": "dmarc@dipsoria.es",
             "size_limit": null
           }
         ],
@@ -282,7 +292,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": false
       }
     }

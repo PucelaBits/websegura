@@ -19,7 +19,9 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The reverse DNS of 217.116.0.227 is mariskalrock.com, but the A/AAAA DNS records for mariskalrock.com do not resolve to 217.116.0.227"
+    ]
   },
   "spf": {
     "record": "v=spf1 ip4:212.89.23.3 redirect=spf.dominioabsoluto.net",

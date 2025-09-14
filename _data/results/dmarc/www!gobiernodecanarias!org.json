@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "acatife.gobiernodecanarias.org",
-      "seti.gobiernodecanarias.org"
+      "seti.gobiernodecanarias.org",
+      "acatife.gobiernodecanarias.org"
     ],
     "warnings": []
   },
@@ -29,7 +29,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx a:correo.gobiernodecanarias.org a:correomasivo.gobiernodecanarias.org -all",
+    "record": "v=spf1 mx a:correo.gobiernodecanarias.org a:correomasivo.gobiernodecanarias.org ip4:93.188.136.122 ip4:93.188.137.42 -all",
     "valid": true,
     "dns_lookups": 3,
     "warnings": [],
@@ -58,6 +58,14 @@
         {
           "value": "93.188.137.128",
           "mechanism": "a"
+        },
+        {
+          "value": "93.188.136.122",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "93.188.137.42",
+          "mechanism": "ip4"
         }
       ],
       "neutral": [],

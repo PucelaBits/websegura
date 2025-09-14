@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns08.ns-cloud4b.com",
       "ns07.ns-cloud4b.org",
+      "ns08.ns-cloud4b.com",
       "ns06.ns-cloud4b.net"
     ],
     "warnings": []
@@ -16,13 +16,13 @@
         "preference": 10,
         "hostname": "camara-es.mail.protection.outlook.com",
         "addresses": [
-          "2a01:111:f403:ca04::9",
+          "2a01:111:f403:ca04::5",
           "2a01:111:f403:ca04::b",
-          "2a01:111:f403:ca04::f",
-          "2a01:111:f403:ca09::8",
-          "52.101.68.16",
-          "52.101.68.3",
-          "52.101.68.8",
+          "2a01:111:f403:ca09::2",
+          "2a01:111:f403:ca09::a",
+          "52.101.68.10",
+          "52.101.68.15",
+          "52.101.73.26",
           "52.101.73.4"
         ]
       }
@@ -30,9 +30,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 a mx include:spf.protection.outlook.com include:servers.mcsv.net include:spf.sendinblue.com a:mailsrv.camaras.es a:jupiter.camaras.es a:vulcano.camaras.es ~all",
+    "record": "v=spf1 a mx include:spf.protection.outlook.com include:servers.mcsv.net a:mailsrv.camaras.es a:jupiter.camaras.es a:vulcano.camaras.es ~all",
     "valid": true,
-    "dns_lookups": 8,
+    "dns_lookups": 7,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -138,63 +138,6 @@
               },
               {
                 "value": "148.105.0.0/16",
-                "mechanism": "ip4"
-              }
-            ],
-            "neutral": [],
-            "softfail": [],
-            "fail": [],
-            "include": [],
-            "redirect": null,
-            "exp": null,
-            "all": "fail"
-          },
-          "warnings": []
-        },
-        {
-          "domain": "spf.sendinblue.com",
-          "record": "v=spf1 ip4:185.41.28.0/22 ip4:94.143.16.0/21 ip4:185.24.144.0/22 ip4:153.92.224.0/19 ip4:213.32.128.0/18 ip4:185.107.232.0/22 ip4:77.32.128.0/18 ip4:77.32.192.0/19 ip4:212.146.192.0/18 ip4:172.246.0.0/18 -all",
-          "dns_lookups": 0,
-          "parsed": {
-            "pass": [
-              {
-                "value": "185.41.28.0/22",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "94.143.16.0/21",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "185.24.144.0/22",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "153.92.224.0/19",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "213.32.128.0/18",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "185.107.232.0/22",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "77.32.128.0/18",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "77.32.192.0/19",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "212.146.192.0/18",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "172.246.0.0/18",
                 "mechanism": "ip4"
               }
             ],

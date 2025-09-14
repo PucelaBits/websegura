@@ -4,18 +4,16 @@
   "dnssec": false,
   "ns": {
     "hostnames": [],
-    "warnings": []
+    "error": "The domain mambiente.madrid.es does not exist"
   },
   "mx": {
     "hosts": [],
-    "warnings": [
-      "No MX records found. Is the domain parked?"
-    ]
+    "error": "The domain mambiente.madrid.es does not exist"
   },
   "spf": {
     "record": null,
     "valid": false,
-    "error": "mambiente.madrid.es does not have a SPF TXT record"
+    "error": "The domain mambiente.madrid.es does not exist"
   },
   "dmarc": {
     "record": "v=DMARC1; p=reject; rua=mailto:7091677fcff6.a@dmarcinput.com,mailto:informesdmarc@madrid.es; ruf=mailto:7091677fcff6.f@dmarcinput.com,mailto:informesdmarc@madrid.es; fo=1",

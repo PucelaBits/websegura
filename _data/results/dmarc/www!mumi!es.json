@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns.gestiondecuenta.com",
       "ns2.gestiondecuenta.com",
-      "ns4.gestiondecuenta.com",
-      "ns3.gestiondecuenta.com"
+      "ns3.gestiondecuenta.com",
+      "ns.gestiondecuenta.com",
+      "ns4.gestiondecuenta.com"
     ],
     "warnings": []
   },
@@ -17,14 +17,14 @@
         "preference": 10,
         "hostname": "mumi-es.mail.protection.outlook.com",
         "addresses": [
-          "2a01:111:f403:ca04::",
-          "2a01:111:f403:ca04::9",
+          "2a01:111:f403:ca04::10",
           "2a01:111:f403:ca04::c",
-          "2a01:111:f403:ca04::e",
-          "52.101.68.18",
-          "52.101.73.19",
+          "2a01:111:f403:ca09::",
+          "2a01:111:f403:ca09::6",
+          "52.101.68.10",
+          "52.101.73.12",
           "52.101.73.28",
-          "52.101.73.30"
+          "52.101.73.8"
         ]
       }
     ],

@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns3.dinahosting.com",
       "ns.dinahosting.com",
       "ns2.dinahosting.com",
-      "ns4.dinahosting.com",
-      "ns3.dinahosting.com"
+      "ns4.dinahosting.com"
     ],
     "warnings": []
   },
@@ -17,24 +17,24 @@
         "preference": 10,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "108.177.11.27",
-          "2607:f8b0:400c:c01::1b"
+          "173.194.76.26",
+          "2a00:1450:400c:c00::1b"
         ]
       },
       {
         "preference": 20,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "172.253.132.26",
-          "2607:f8b0:4023:2c03::1a"
+          "192.178.218.27",
+          "2607:f8b0:4004:c06::1a"
         ]
       },
       {
         "preference": 30,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "209.85.144.26",
-          "2607:f8b0:400d:c0e::1b"
+          "172.253.116.27",
+          "2a00:1450:400b:c02::1b"
         ]
       }
     ],
@@ -141,16 +141,12 @@
               },
               {
                 "domain": "_netblocks3.google.com",
-                "record": "v=spf1 ip4:172.217.32.0/20 ip4:172.217.128.0/19 ip4:172.217.160.0/20 ip4:172.217.192.0/19 ip4:172.253.56.0/21 ip4:172.253.112.0/20 ip4:108.177.96.0/20 ~all",
+                "record": "v=spf1 ip4:172.217.32.0/20 ip4:172.217.160.0/20 ip4:172.217.192.0/19 ip4:172.253.56.0/21 ip4:172.253.112.0/20 ~all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
                     {
                       "value": "172.217.32.0/20",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "172.217.128.0/19",
                       "mechanism": "ip4"
                     },
                     {
@@ -167,10 +163,6 @@
                     },
                     {
                       "value": "172.253.112.0/20",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "108.177.96.0/20",
                       "mechanism": "ip4"
                     }
                   ],
