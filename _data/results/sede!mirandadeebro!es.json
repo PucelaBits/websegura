@@ -1,14 +1,14 @@
 {
-  "id": 69984626,
+  "id": 72493473,
   "algorithm_version": 4,
-  "scanned_at": "2025-08-08T01:11:55.570Z",
+  "scanned_at": "2025-09-16T00:58:26.479Z",
   "error": null,
   "grade": "B",
   "response_headers": {
-    "date": "Fri, 08 Aug 2025 01:11:57 GMT",
+    "date": "Tue, 16 Sep 2025 00:58:28 GMT",
     "vary": "User-Agent",
     "pragma": "no-cache",
-    "server": "Apache/2.4.62 (Unix) OpenSSL/3.2.2 mod_jk/1.2.49",
+    "server": "volt-adc",
     "expires": "Thu, 01 Jan 1970 00:00:00 GMT",
     "connection": "close",
     "content-type": "text/html;charset=UTF-8",
@@ -18,12 +18,14 @@
     "x-frame-options": "SAMEORIGIN, SAMEORIGIN",
     "x-xss-protection": "1; mode=block",
     "transfer-encoding": "chunked",
+    "x-volterra-location": "wes-sea",
     "content-security-policy": "default-src 'self' afirma://*; img-src 'self' *.google.com *.googleapis.com data:; media-src 'self'; script-src *.google.com *.googleapis.com 'unsafe-eval' 'unsafe-inline' 'self'; style-src *.google.com *.googleapis.com 'self' 'unsafe-inline' data:; font-src 'self' *.gstatic.com *.google.com *.googleapis.com data:; object-src 'self'; base-uri 'self'; connect-src 'self' api.amplitude.com wss://127.0.0.1:63117; frame-ancestors 'self'",
-    "strict-transport-security": "max-age=31536000; includeSubDomains"
+    "strict-transport-security": "max-age=31536000; includeSubDomains",
+    "x-envoy-upstream-service-time": "630"
   },
-  "score": 75,
+  "score": 70,
   "status_code": 200,
-  "tests_failed": 2,
-  "tests_passed": 8,
+  "tests_failed": 3,
+  "tests_passed": 7,
   "tests_quantity": 10
 }
