@@ -22,65 +22,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx include:spf.ipzmarketing.com -all ",
-    "valid": true,
-    "dns_lookups": 2,
-    "warnings": [
-      "Any text after the all mechanism is ignored"
-    ],
-    "parsed": {
-      "pass": [
-        {
-          "value": "mx.turismodearagon.com",
-          "mechanism": "mx"
-        }
-      ],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [
-        {
-          "domain": "spf.ipzmarketing.com",
-          "record": "v=spf1 ip4:93.159.208.0/21 ip4:185.103.8.0/22 ip4:5.56.22.0/24 ip4:82.199.156.0/24 ip4:91.194.237.0/24 -all",
-          "dns_lookups": 0,
-          "parsed": {
-            "pass": [
-              {
-                "value": "93.159.208.0/21",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "185.103.8.0/22",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "5.56.22.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "82.199.156.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "91.194.237.0/24",
-                "mechanism": "ip4"
-              }
-            ],
-            "neutral": [],
-            "softfail": [],
-            "fail": [],
-            "include": [],
-            "redirect": null,
-            "exp": null,
-            "all": "fail"
-          },
-          "warnings": []
-        }
-      ],
-      "redirect": null,
-      "exp": null,
-      "all": "fail"
-    }
+    "record": null,
+    "valid": false,
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "dmarc": {
     "record": "v=DMARC1; p=none; ",

@@ -17,44 +17,46 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.251.111.26",
-          "2607:f8b0:4004:c0b::1b"
+          "172.253.132.27",
+          "2607:f8b0:4023:2c03::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "172.253.116.27",
-          "2a00:1450:400b:c02::1a"
+          "209.85.144.27",
+          "2607:f8b0:400d:c0e::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "173.194.76.27",
-          "2a00:1450:400c:c00::1b"
+          "108.177.11.27",
+          "2607:f8b0:400c:c01::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "142.250.102.27",
-          "2a00:1450:4025:402::1a"
+          "192.178.218.27",
+          "2607:f8b0:4004:c25::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "192.178.156.27",
-          "2a00:1450:4013:c1c::1b"
+          "108.177.123.26",
+          "2800:3f0:4003:c0f::1b"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "2800:3f0:4003:c0f::1b does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
     "record": "v=spf1 +a +mx ip4:92.43.19.148 +ip4:176.28.99.27/32 include:_spf.google.com  include:servers.mcsv.net include:amazonses.com include:mh.blackboard.com ~all ",
@@ -66,11 +68,11 @@
     "parsed": {
       "pass": [
         {
-          "value": "108.129.0.13",
+          "value": "34.249.52.184",
           "mechanism": "a"
         },
         {
-          "value": "34.248.77.146",
+          "value": "54.247.16.155",
           "mechanism": "a"
         },
         {
@@ -196,7 +198,7 @@
               },
               {
                 "domain": "_netblocks3.google.com",
-                "record": "v=spf1 ip4:172.217.32.0/20 ip4:172.217.160.0/20 ip4:172.217.192.0/19 ip4:172.253.56.0/21 ip4:172.253.112.0/20 ~all",
+                "record": "v=spf1 ip4:172.217.32.0/20 ip4:172.217.160.0/21 ip4:172.217.192.0/19 ip4:172.253.56.0/21 ip4:172.253.112.0/20 ~all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
@@ -205,7 +207,7 @@
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "172.217.160.0/20",
+                      "value": "172.217.160.0/21",
                       "mechanism": "ip4"
                     },
                     {

@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.dnsxperta.com",
       "ns3.dnsxperta.com",
-      "ns1.dnsxperta.com"
+      "ns1.dnsxperta.com",
+      "ns2.dnsxperta.com"
     ],
     "warnings": []
   },
@@ -15,12 +15,14 @@
       {
         "preference": 100,
         "hostname": "mx1.dnsxperta.com",
-        "addresses": []
+        "addresses": [
+          "217.13.80.224",
+          "217.13.80.229",
+          "83.147.63.42"
+        ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:dnsxperta.com include:_spf.google.com -all",
@@ -156,16 +158,12 @@
               },
               {
                 "domain": "_netblocks3.google.com",
-                "record": "v=spf1 ip4:172.217.32.0/20 ip4:172.217.160.0/20 ip4:172.217.192.0/19 ip4:172.253.56.0/21 ip4:172.253.112.0/20 ~all",
+                "record": "v=spf1 ip4:172.217.32.0/20 ip4:172.217.192.0/19 ip4:172.253.56.0/21 ip4:172.253.112.0/20 ~all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
                     {
                       "value": "172.217.32.0/20",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "172.217.160.0/20",
                       "mechanism": "ip4"
                     },
                     {
@@ -208,6 +206,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.moncada.es\n\nMS=ms98609977\n\nMS=ms58949900.\n\nv=spf1 include:dnsxperta.com include:_spf.google.com -all"
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.moncada.es\n\nv=spf1 include:dnsxperta.com include:_spf.google.com -all\n\nMS=ms58949900.\n\nMS=ms98609977"
   }
 }

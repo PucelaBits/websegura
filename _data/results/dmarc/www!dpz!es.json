@@ -3,8 +3,11 @@
   "base_domain": "dpz.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hostnames": [
+      "dns.dpz.es",
+      "dns2.dpz.es"
+    ],
+    "warnings": []
   },
   "mx": {
     "hosts": [
@@ -12,14 +15,14 @@
         "preference": 10,
         "hostname": "dpz-es.mail.protection.outlook.com",
         "addresses": [
-          "2a01:111:f403:ca04::",
-          "2a01:111:f403:ca04::5",
-          "2a01:111:f403:ca09::9",
-          "2a01:111:f403:ca09::d",
-          "52.101.68.0",
-          "52.101.68.10",
-          "52.101.68.15",
-          "52.101.68.39"
+          "2a01:111:f403:ca04::a",
+          "2a01:111:f403:ca09::7",
+          "2a01:111:f403:ca09::8",
+          "2a01:111:f403:ca09::e",
+          "52.101.68.12",
+          "52.101.73.16",
+          "52.101.73.21",
+          "52.101.73.4"
         ]
       }
     ],
@@ -49,19 +52,19 @@
           "mechanism": "ip4"
         },
         {
-          "value": "18.67.76.119",
+          "value": "54.192.55.113",
           "mechanism": "a"
         },
         {
-          "value": "18.67.76.34",
+          "value": "54.192.55.121",
           "mechanism": "a"
         },
         {
-          "value": "18.67.76.45",
+          "value": "54.192.55.31",
           "mechanism": "a"
         },
         {
-          "value": "18.67.76.60",
+          "value": "54.192.55.63",
           "mechanism": "a"
         }
       ],

@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.aytojerez.es",
-      "dns2.aytojerez.es"
+      "dns2.aytojerez.es",
+      "dns1.aytojerez.es"
     ],
     "warnings": []
   },
@@ -15,24 +15,24 @@
         "preference": 10,
         "hostname": "1694806815.pamx1.hotmail.com",
         "addresses": [
-          "52.101.11.4",
-          "52.101.194.18",
-          "52.101.41.59",
-          "52.101.73.0"
+          "52.101.41.5",
+          "52.101.41.7",
+          "52.101.68.13",
+          "52.101.73.10"
         ]
       }
     ],
     "warnings": [
-      "52.101.11.4 does not have any reverse DNS (PTR) records",
-      "52.101.194.18 does not have any reverse DNS (PTR) records",
-      "52.101.41.59 does not have any reverse DNS (PTR) records",
-      "52.101.73.0 does not have any reverse DNS (PTR) records"
+      "52.101.41.5 does not have any reverse DNS (PTR) records",
+      "52.101.41.7 does not have any reverse DNS (PTR) records",
+      "52.101.68.13 does not have any reverse DNS (PTR) records",
+      "52.101.73.10 does not have any reverse DNS (PTR) records"
     ]
   },
   "spf": {
     "record": "v=spf1 include:hotmail.com ~all",
     "valid": true,
-    "dns_lookups": 7,
+    "dns_lookups": 6,
     "warnings": [],
     "parsed": {
       "pass": [],
@@ -42,8 +42,8 @@
       "include": [
         {
           "domain": "hotmail.com",
-          "record": "v=spf1 ip4:157.55.9.128/25 include:spf-a.outlook.com include:spf-b.hotmail.com include:spf-b.outlook.com include:spf-a.hotmail.com include:_spf-ssg-b.microsoft.com include:_spf-ssg-c.microsoft.com -all",
-          "dns_lookups": 6,
+          "record": "v=spf1 ip4:157.55.9.128/25 include:spf-a.outlook.com include:spf-b.outlook.com include:spf2.outlook.com include:_spf-ssg-b.microsoft.com include:_spf-ssg-c.microsoft.com -all",
+          "dns_lookups": 5,
           "parsed": {
             "pass": [
               {
@@ -121,71 +121,6 @@
                 "warnings": []
               },
               {
-                "domain": "spf-b.hotmail.com",
-                "record": "v=spf1 ip4:52.103.0.0/17 ip4:104.47.0.0/17 ip4:40.92.0.0/16 ip4:104.47.20.0/23 ip4:104.47.108.0/23 ip4:104.47.75.0/24 ip4:104.47.53.50/24 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/50 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
-                "dns_lookups": 0,
-                "parsed": {
-                  "pass": [
-                    {
-                      "value": "52.103.0.0/17",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "104.47.0.0/17",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "40.92.0.0/16",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "104.47.20.0/23",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "104.47.108.0/23",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "104.47.75.0/24",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "104.47.53.50/24",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "2a01:111:f400::/48",
-                      "mechanism": "ip6"
-                    },
-                    {
-                      "value": "2a01:111:f403::/49",
-                      "mechanism": "ip6"
-                    },
-                    {
-                      "value": "2a01:111:f403:8000::/50",
-                      "mechanism": "ip6"
-                    },
-                    {
-                      "value": "2a01:111:f403:c000::/51",
-                      "mechanism": "ip6"
-                    },
-                    {
-                      "value": "2a01:111:f403:f000::/52",
-                      "mechanism": "ip6"
-                    }
-                  ],
-                  "neutral": [],
-                  "softfail": [],
-                  "fail": [],
-                  "include": [],
-                  "redirect": null,
-                  "exp": null,
-                  "all": "fail"
-                },
-                "warnings": []
-              },
-              {
                 "domain": "spf-b.outlook.com",
                 "record": "v=spf1 ip4:65.55.78.128/25 ip4:111.221.112.0/21 ip4:207.46.58.128/25 ip4:111.221.69.128/25 ip4:111.221.66.0/25 ip4:111.221.23.128/25 ip4:70.37.151.128/25 ip4:157.56.248.0/21 ip4:213.199.177.0/26 ip4:157.55.225.0/25 ip4:157.55.11.0/25 -all",
                 "dns_lookups": 0,
@@ -247,58 +182,26 @@
                 "warnings": []
               },
               {
-                "domain": "spf-a.hotmail.com",
-                "record": "v=spf1 ip4:157.55.0.192/26 ip4:157.55.1.128/26 ip4:157.55.2.0/25 ip4:65.54.190.0/24 ip4:65.54.51.64/26 ip4:65.54.61.64/26 ip4:65.55.111.0/24 ip4:65.55.116.0/25 ip4:65.55.34.0/24 ip4:65.55.90.0/24 ip4:65.54.241.0/24 ip4:207.46.117.0/24 ~all",
+                "domain": "spf2.outlook.com",
+                "record": "v=spf1 ip4:40.92.0.0/16 ip4:52.103.0.0/17 ip6:2a01:111:f403:2800::/53 ip6:2a01:111:f403:d000::/53 -all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
                     {
-                      "value": "157.55.0.192/26",
+                      "value": "40.92.0.0/16",
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "157.55.1.128/26",
+                      "value": "52.103.0.0/17",
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "157.55.2.0/25",
-                      "mechanism": "ip4"
+                      "value": "2a01:111:f403:2800::/53",
+                      "mechanism": "ip6"
                     },
                     {
-                      "value": "65.54.190.0/24",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "65.54.51.64/26",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "65.54.61.64/26",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "65.55.111.0/24",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "65.55.116.0/25",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "65.55.34.0/24",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "65.55.90.0/24",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "65.54.241.0/24",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "207.46.117.0/24",
-                      "mechanism": "ip4"
+                      "value": "2a01:111:f403:d000::/53",
+                      "mechanism": "ip6"
                     }
                   ],
                   "neutral": [],
@@ -307,7 +210,7 @@
                   "include": [],
                   "redirect": null,
                   "exp": null,
-                  "all": "softfail"
+                  "all": "fail"
                 },
                 "warnings": []
               },

@@ -14,40 +14,40 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "172.253.62.27",
-          "2607:f8b0:4004:c23::1a"
+          "172.253.132.27",
+          "2607:f8b0:4023:2c03::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "172.253.116.26",
-          "2a00:1450:400b:c02::1a"
+          "209.85.144.27",
+          "2607:f8b0:400d:c0e::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "173.194.76.27",
-          "2a00:1450:400c:c00::1b"
+          "108.177.11.27",
+          "2607:f8b0:400c:c01::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "aspmx2.googlemail.com",
         "addresses": [
-          "172.253.116.26",
-          "2a00:1450:400b:c02::1b"
+          "209.85.144.27",
+          "2607:f8b0:400d:c0e::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "aspmx3.googlemail.com",
         "addresses": [
-          "173.194.76.27",
-          "2a00:1450:400c:c00::1a"
+          "108.177.11.27",
+          "2607:f8b0:400c:c01::1a"
         ]
       }
     ],
@@ -154,7 +154,7 @@
               },
               {
                 "domain": "_netblocks3.google.com",
-                "record": "v=spf1 ip4:172.217.32.0/20 ip4:172.217.160.0/20 ip4:172.217.192.0/19 ip4:172.253.56.0/21 ip4:172.253.112.0/20 ~all",
+                "record": "v=spf1 ip4:172.217.32.0/20 ip4:172.217.160.0/21 ip4:172.217.192.0/19 ip4:172.253.56.0/21 ip4:172.253.112.0/20 ~all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
@@ -163,7 +163,7 @@
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "172.217.160.0/20",
+                      "value": "172.217.160.0/21",
                       "mechanism": "ip4"
                     },
                     {

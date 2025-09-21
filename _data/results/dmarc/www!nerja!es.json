@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns3.dinahosting.com",
+      "ns4.dinahosting.com",
       "ns.dinahosting.com",
-      "ns2.dinahosting.com",
-      "ns4.dinahosting.com"
+      "ns3.dinahosting.com",
+      "ns2.dinahosting.com"
     ],
     "warnings": []
   },
@@ -180,7 +180,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; pct=100; rua=mailto:a.v2lqdjkr@reports.hornetdmarc.com",
+    "record": "v=DMARC1; p=quarantine; pct=100; rua=mailto:a.v2lqdjkr@reports.hornetdmarc.com",
     "valid": true,
     "location": "nerja.es",
     "warnings": [],
@@ -190,7 +190,7 @@
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": true
       },
       "pct": {
@@ -232,7 +232,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": false
       }
     }

@@ -26,10 +26,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 195.53.227.133 is mail8.atib.es, but the A/AAAA DNS records for mail8.atib.es do not resolve to 195.53.227.133"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 a mx ip4:85.119.193.3 ip4:85.119.193.4 include:_spf.atlassian.net include:spf.sendinblue.com -all",
