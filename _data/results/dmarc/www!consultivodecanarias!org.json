@@ -3,22 +3,115 @@
   "base_domain": "consultivodecanarias.org",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "All nameservers failed to answer the query consultivodecanarias.org. IN NS: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "hostnames": [
+      "atlantistecnologia.mercury.orderbox-dns.com",
+      "atlantistecnologia.earth.orderbox-dns.com",
+      "atlantistecnologia.mars.orderbox-dns.com",
+      "atlantistecnologia.venus.orderbox-dns.com"
+    ],
+    "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query consultivodecanarias.org. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 0,
+        "hostname": "consultivodecanarias-org.mail.protection.outlook.com",
+        "addresses": [
+          "2a01:111:f403:ca04::1",
+          "2a01:111:f403:ca04::5",
+          "2a01:111:f403:ca04::7",
+          "2a01:111:f403:ca04::e",
+          "52.101.68.8",
+          "52.101.73.16",
+          "52.101.73.19",
+          "52.101.73.30"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "All nameservers failed to answer the query consultivodecanarias.org. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "record": "v=spf1 include:spf.protection.outlook.com -all",
+    "valid": true,
+    "dns_lookups": 1,
+    "warnings": [],
+    "parsed": {
+      "pass": [],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "spf.protection.outlook.com",
+          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/15 ip4:52.102.0.0/16 ip4:52.103.0.0/17 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/51 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "40.92.0.0/15",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "40.107.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.100.0.0/15",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.102.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.103.0.0/17",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "104.47.0.0/17",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "2a01:111:f400::/48",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403::/49",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:8000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:c000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:f000::/52",
+                "mechanism": "ip6"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
     "record": null,
     "valid": false,
     "location": null,
-    "error": "All nameservers failed to answer the query _dmarc.consultivodecanarias.org. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "error": "A DMARC record does not exist for this domain or its base domain"
   }
 }

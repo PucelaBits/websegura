@@ -17,21 +17,18 @@
         "preference": 10,
         "hostname": "cdti-es.mail.protection.outlook.com",
         "addresses": [
-          "2a01:111:f403:ca04::a",
-          "2a01:111:f403:ca04::c",
-          "2a01:111:f403:ca04::e",
-          "2a01:111:f403:ca09::5",
-          "52.101.68.12",
-          "52.101.68.15",
-          "52.101.73.11",
-          "52.101.73.8"
+          "2a01:111:f403:ca04::",
+          "2a01:111:f403:ca04::8",
+          "2a01:111:f403:ca04::d",
+          "2a01:111:f403:ca09::f",
+          "52.101.68.0",
+          "52.101.73.2",
+          "52.101.73.24",
+          "52.101.73.28"
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 2a01:111:f403:ca09::5 is mail-am1pr04cu00105.inbound.protection.outlook.com, but the A/AAAA DNS records for mail-am1pr04cu00105.inbound.protection.outlook.com do not resolve to 2a01:111:f403:ca09::5"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com ip4:212.163.54.0/25 ip4:172.246.37.201 include:amazonses.com include:spf.sendinblue.com -all",

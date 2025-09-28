@@ -4,15 +4,23 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns3.almazena.com",
       "ns1.almazena.com",
-      "ns2.almazena.com"
+      "ns2.almazena.com",
+      "ns3.almazena.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 0,
+        "hostname": "mail.aytoyebes.es",
+        "addresses": [
+          "185.177.154.188"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 a mx include:almazena.com include:spf.profesionalhosting.com -all",

@@ -1,10 +1,17 @@
 {
   "domain": "uimp.es",
   "base_domain": "uimp.es",
-  "dnssec": false,
+  "dnssec": true,
   "ns": {
-    "hostnames": [],
-    "error": "All nameservers failed to answer the query uimp.es. IN NS: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "hostnames": [
+      "ns1.age.gob.es",
+      "ns2.age.gob.es",
+      "artemis.ttd.net",
+      "cloudflare",
+      "offcorrmad.uimp.es",
+      "suimpdnsmad01.uimp.es"
+    ],
+    "warnings": []
   },
   "mx": {
     "hosts": [
@@ -12,46 +19,44 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "172.253.132.26",
-          "2607:f8b0:4023:2c03::1b"
+          "172.217.217.27",
+          "2607:f8b0:4023:1c01::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "209.85.144.26",
-          "2607:f8b0:400d:c0e::1b"
+          "192.178.164.27",
+          "2607:f8b0:4023:2009::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "108.177.11.27",
-          "2607:f8b0:400c:c01::1a"
+          "192.178.220.27",
+          "2607:f8b0:4023:100f::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "192.178.218.27",
-          "2607:f8b0:4004:c25::1a"
+          "2607:f8b0:4003:c30::1b",
+          "74.125.27.26"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "108.177.123.27",
-          "2800:3f0:4003:c0f::1b"
+          "192.178.209.26",
+          "2607:f8b0:4001:c70::1a"
         ]
       }
     ],
-    "warnings": [
-      "2800:3f0:4003:c0f::1b does not have any reverse DNS (PTR) records"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:uimp.ip-zone.com include:_spf.google.com a mx -all",
@@ -216,20 +221,12 @@
               },
               {
                 "domain": "_netblocks3.google.com",
-                "record": "v=spf1 ip4:172.217.32.0/20 ip4:172.217.160.0/21 ip4:172.217.192.0/19 ip4:172.253.56.0/21 ip4:172.253.112.0/20 ~all",
+                "record": "v=spf1 ip4:172.217.32.0/20 ip4:172.253.56.0/21 ip4:172.253.112.0/20 ~all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
                     {
                       "value": "172.217.32.0/20",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "172.217.160.0/21",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "172.217.192.0/19",
                       "mechanism": "ip4"
                     },
                     {

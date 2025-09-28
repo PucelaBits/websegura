@@ -18,9 +18,62 @@
     "error": "abengibre.sedipualba.es does not have a SPF TXT record"
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=reject; rua=mailto:dmarc@dipualba.es,mailto:re+mrte4f8aqdg@dmarc.postmarkapp.com; ruf=mailto:dmarc@dipualba.es",
+    "valid": true,
+    "location": "sedipualba.es",
+    "warnings": [
+      "dipualba.es does not indicate that it accepts DMARC reports about sedipualba.es - Authorization record not found: sedipualba.es._report._dmarc.dipualba.es IN TXT \"v=DMARC1\"",
+      "dipualba.es does not indicate that it accepts DMARC reports about sedipualba.es - Authorization record not found: sedipualba.es._report._dmarc.dipualba.es IN TXT \"v=DMARC1\""
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "reject",
+        "explicit": true
+      },
+      "rua": {
+        "value": "mailto:dmarc@dipualba.es,mailto:re+mrte4f8aqdg@dmarc.postmarkapp.com",
+        "explicit": true
+      },
+      "ruf": {
+        "value": "mailto:dmarc@dipualba.es",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "reject",
+        "explicit": false
+      }
+    }
   }
 }
