@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "ns4.cdmondns-01.org",
-      "ns1.cdmon.net",
       "ns5.cdmondns-01.com",
+      "ns1.cdmon.net",
       "ns2.cdmon.net",
       "ns3.cdmon.net"
     ],
@@ -18,8 +18,8 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "173.194.65.27",
-          "2607:f8b0:4023:1c05::1b"
+          "172.217.78.26",
+          "2607:f8b0:4023:1c07::1b"
         ]
       },
       {
@@ -42,8 +42,8 @@
         "preference": 10,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "2607:f8b0:4003:c30::1b",
-          "74.125.27.27"
+          "2607:f8b0:4003:c30::1a",
+          "74.125.27.26"
         ]
       },
       {
@@ -51,7 +51,7 @@
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
           "192.178.209.27",
-          "2607:f8b0:4001:c70::1a"
+          "2607:f8b0:4001:c70::1b"
         ]
       }
     ],
@@ -80,7 +80,7 @@
             "include": [
               {
                 "domain": "_netblocks.google.com",
-                "record": "v=spf1 ip4:74.125.0.0/16 ip4:173.194.0.0/16 ip4:209.85.128.0/17 ip4:216.58.192.0/19 ip4:216.239.32.0/19 ~all",
+                "record": "v=spf1 ip4:74.125.0.0/16 ip4:173.194.0.0/16 ip4:209.85.128.0/17 ip4:216.58.192.0/19 ip4:216.239.32.0/19 ip4:172.253.56.0/21 ip4:172.253.112.0/20 ~all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
@@ -102,6 +102,14 @@
                     },
                     {
                       "value": "216.239.32.0/19",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "172.253.56.0/21",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "172.253.112.0/20",
                       "mechanism": "ip4"
                     }
                   ],
@@ -158,12 +166,12 @@
               },
               {
                 "domain": "_netblocks3.google.com",
-                "record": "v=spf1 ip4:172.217.32.0/20 ip4:172.253.56.0/21 ip4:172.253.112.0/20 ~all",
+                "record": "v=spf1 ip4:172.217.32.0/21 ip4:172.253.56.0/21 ip4:172.253.112.0/20 ~all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
                     {
-                      "value": "172.217.32.0/20",
+                      "value": "172.217.32.0/21",
                       "mechanism": "ip4"
                     },
                     {

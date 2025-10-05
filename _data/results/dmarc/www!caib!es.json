@@ -15,7 +15,7 @@
         "preference": 5,
         "hostname": "mxa-00a20601.gslb.pphosted.com",
         "addresses": [
-          "66.159.233.57"
+          "66.159.234.127"
         ]
       },
       {
@@ -29,7 +29,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:spf-00a20601.pphosted.com ip4:85.119.193.2 ip4:85.119.193.3 ip4:85.119.193.4 -all",
+    "record": "v=spf1 include:spf-00a20601.pphosted.com ip4:85.119.193.2 ip4:85.119.193.3 ip4:85.119.193.4 ip4:85.119.193.95 -all",
     "valid": true,
     "dns_lookups": 1,
     "warnings": [],
@@ -45,6 +45,10 @@
         },
         {
           "value": "85.119.193.4",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "85.119.193.95",
           "mechanism": "ip4"
         }
       ],

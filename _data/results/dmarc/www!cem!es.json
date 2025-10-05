@@ -10,18 +10,40 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query 24.16.187.192.in-addr.arpa. IN PTR: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mailin.serviciosmin.gob.es",
+        "addresses": [
+          "192.187.16.24"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mailin1.serviciosmin.gob.es",
+        "addresses": [
+          "192.187.16.26"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx include:spf.serviciosmin.gob.es -all",
     "valid": true,
     "dns_lookups": 2,
-    "warnings": [
-      "All nameservers failed to answer the query cem.es. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
-    ],
+    "warnings": [],
     "parsed": {
-      "pass": [],
+      "pass": [
+        {
+          "value": "mailin.serviciosmin.gob.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mailin1.serviciosmin.gob.es",
+          "mechanism": "mx"
+        }
+      ],
       "neutral": [],
       "softfail": [],
       "fail": [],

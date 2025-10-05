@@ -4,12 +4,12 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "a1-171.akam.net",
-      "a2-66.akam.net",
-      "a24-66.akam.net",
       "a5-64.akam.net",
+      "a1-171.akam.net",
+      "a24-66.akam.net",
+      "a28-66.akam.net",
       "a13-66.akam.net",
-      "a28-66.akam.net"
+      "a2-66.akam.net"
     ],
     "warnings": []
   },
@@ -197,7 +197,7 @@
         },
         {
           "domain": "caib.es",
-          "record": "v=spf1 include:spf-00a20601.pphosted.com ip4:85.119.193.2 ip4:85.119.193.3 ip4:85.119.193.4 -all",
+          "record": "v=spf1 include:spf-00a20601.pphosted.com ip4:85.119.193.2 ip4:85.119.193.3 ip4:85.119.193.4 ip4:85.119.193.95 -all",
           "dns_lookups": 1,
           "parsed": {
             "pass": [
@@ -211,6 +211,10 @@
               },
               {
                 "value": "85.119.193.4",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "85.119.193.95",
                 "mechanism": "ip4"
               }
             ],

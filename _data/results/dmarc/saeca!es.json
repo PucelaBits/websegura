@@ -5,9 +5,9 @@
   "ns": {
     "hostnames": [
       "ns0.intervia.com",
+      "ns3.intervia.com",
       "ns2.intervia.com",
-      "ns1.intervia.com",
-      "ns3.intervia.com"
+      "ns1.intervia.com"
     ],
     "warnings": []
   },
@@ -55,7 +55,7 @@
             "include": [
               {
                 "domain": "_spf_iv.intervia.com",
-                "record": "v=spf1 ip4:95.211.205.16 ip4:95.211.136.209 ip4:81.171.6.164 ip4:5.79.75.205 ip4:95.211.214.95 ip4:37.48.116.53 ip4:78.159.100.245 ip4:213.227.129.169 ip4:193.70.38.251 ip4:193.70.39.201 ip4:167.86.120.185 ip4:95.211.126.104 -all",
+                "record": "v=spf1 ip4:95.211.205.16 ip4:95.211.136.209 ip4:81.171.6.164 ip4:5.79.75.205 ip4:95.211.214.95 ip4:78.159.100.245 ip4:213.227.129.169 ip4:193.70.38.251 ip4:193.70.39.201 ip4:167.86.120.185 ip4:95.211.126.104 -all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
@@ -77,10 +77,6 @@
                     },
                     {
                       "value": "95.211.214.95",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "37.48.116.53",
                       "mechanism": "ip4"
                     },
                     {

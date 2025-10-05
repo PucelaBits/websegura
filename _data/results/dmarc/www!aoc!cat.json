@@ -17,23 +17,23 @@
         "preference": 0,
         "hostname": "aoc-cat.mail.protection.outlook.com",
         "addresses": [
-          "2a01:111:f403:ca04::",
-          "2a01:111:f403:ca04::7",
-          "2a01:111:f403:ca09::8",
-          "2a01:111:f403:ca09::9",
-          "52.101.68.0",
-          "52.101.68.36",
-          "52.101.68.5",
-          "52.101.73.6"
+          "2a01:111:f403:ca04::4",
+          "2a01:111:f403:ca04::a",
+          "2a01:111:f403:ca04::c",
+          "2a01:111:f403:ca09::a",
+          "52.101.68.10",
+          "52.101.68.18",
+          "52.101.68.29",
+          "52.101.68.5"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx include:spf1.aoc.cat include:spf2.aoc.cat include:spf.protection.outlook.com include:mail.zendesk.com include:securityeducation.com ip4:52.209.241.125 ip4:54.73.107.84 ip4:185.86.34.136 ~all",
+    "record": "v=spf1 mx include:spf1.aoc.cat include:spf2.aoc.cat include:spf.protection.outlook.com include:securityeducation.com ip4:52.209.241.125 ip4:54.73.107.84 ip4:185.86.34.136 ~all",
     "valid": true,
-    "dns_lookups": 10,
+    "dns_lookups": 9,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -60,14 +60,10 @@
       "include": [
         {
           "domain": "spf1.aoc.cat",
-          "record": "v=spf1 ip4:90.160.140.196/32 ip4:62.37.231.72/32 ip4:57.133.98.28/32 ip4:57.133.98.101/32 ip4:83.231.131.86/32 ip4:46.51.145.164/32 ip4:57.133.98.116/32 ip4:57.133.98.84/32 ip4:57.133.98.117/32 ip4:93.115.204.2/26 ~all",
+          "record": "v=spf1 ip4:62.37.231.72/32 ip4:57.133.98.28/32 ip4:57.133.98.101/32 ip4:46.51.145.164/32 ip4:93.115.204.32/32 ip4:93.115.204.2/32 ip4:57.133.98.116/32 ip4:57.133.98.84/32 ip4:57.133.98.117/32  ~all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
-              {
-                "value": "90.160.140.196/32",
-                "mechanism": "ip4"
-              },
               {
                 "value": "62.37.231.72/32",
                 "mechanism": "ip4"
@@ -81,11 +77,15 @@
                 "mechanism": "ip4"
               },
               {
-                "value": "83.231.131.86/32",
+                "value": "46.51.145.164/32",
                 "mechanism": "ip4"
               },
               {
-                "value": "46.51.145.164/32",
+                "value": "93.115.204.32/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "93.115.204.2/32",
                 "mechanism": "ip4"
               },
               {
@@ -98,10 +98,6 @@
               },
               {
                 "value": "57.133.98.117/32",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "93.115.204.2/26",
                 "mechanism": "ip4"
               }
             ],
@@ -117,16 +113,12 @@
         },
         {
           "domain": "spf2.aoc.cat",
-          "record": "v=spf1 ip4:57.133.96.192/29 ip4:83.231.131.64/26 ip4:213.229.188.128/26 ip4:13.69.98.234/32 ip4:20.67.121.31/32 ip4:51.138.34.253/32 ip4:45.15.50.198/27 ip4:52.17.45.98 ip4:52.16.190.81 ip4:52.49.23.78 ~all",
+          "record": "v=spf1 ip4:57.133.96.192/29 ip4:213.229.188.128/26 ip4:13.69.98.234/32 ip4:20.67.121.31/32 ip4:51.138.34.253/32 ip4:45.15.50.198/27 ip4:52.17.45.98 ip4:52.16.190.81 ip4:52.49.23.78 ~all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
               {
                 "value": "57.133.96.192/29",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "83.231.131.64/26",
                 "mechanism": "ip4"
               },
               {
@@ -230,43 +222,6 @@
             "redirect": null,
             "exp": null,
             "all": "fail"
-          },
-          "warnings": []
-        },
-        {
-          "domain": "mail.zendesk.com",
-          "record": "v=spf1 ip4:103.151.192.0/23 ip4:185.12.80.0/22 ip4:188.172.128.0/20 ip4:192.161.144.0/20 ip4:216.198.0.0/18 ~all",
-          "dns_lookups": 0,
-          "parsed": {
-            "pass": [
-              {
-                "value": "103.151.192.0/23",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "185.12.80.0/22",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "188.172.128.0/20",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "192.161.144.0/20",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "216.198.0.0/18",
-                "mechanism": "ip4"
-              }
-            ],
-            "neutral": [],
-            "softfail": [],
-            "fail": [],
-            "include": [],
-            "redirect": null,
-            "exp": null,
-            "all": "softfail"
           },
           "warnings": []
         },

@@ -29,7 +29,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 a mx include:host0v1b25-a115.neodigit.net -all",
+    "record": "v=spf1 a mx include:host551d56-a38.neodigit.net -all",
     "valid": true,
     "dns_lookups": 3,
     "warnings": [],
@@ -53,17 +53,17 @@
       "fail": [],
       "include": [
         {
-          "domain": "host0v1b25-a115.neodigit.net",
-          "record": "v=spf1 ip4:31.47.77.115 ip6:2a01:a940:446:6e::1 -all",
+          "domain": "host551d56-a38.neodigit.net",
+          "record": "v=spf1 ip4:185.49.186.38 ip6:2a01:a940:455:23::1 -all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
               {
-                "value": "31.47.77.115",
+                "value": "185.49.186.38",
                 "mechanism": "ip4"
               },
               {
-                "value": "2a01:a940:446:6e::1",
+                "value": "2a01:a940:455:23::1",
                 "mechanism": "ip6"
               }
             ],

@@ -29,7 +29,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 a mx ip4:212.128.118.17 ip4:212.128.118.39 include:spf.puc.rediris.es include:spf.acumbamail.com include:spf.protection.outlook.com include:spf-eu.exlibrisgroup.com -all",
+    "record": "v=spf1 a mx ip4:212.128.118.17 ip4:212.128.118.39 ip4:3.123.94.133 ip4:35.158.225.191 ip4:51.250.124.67 ip4:51.250.52.197 include:spf.puc.rediris.es include:spf.acumbamail.com include:spf.protection.outlook.com include:spf-eu.exlibrisgroup.com -all",
     "valid": true,
     "dns_lookups": 6,
     "warnings": [],
@@ -53,6 +53,22 @@
         },
         {
           "value": "212.128.118.39",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "3.123.94.133",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "35.158.225.191",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "51.250.124.67",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "51.250.52.197",
           "mechanism": "ip4"
         }
       ],
