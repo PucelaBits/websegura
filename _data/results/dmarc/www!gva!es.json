@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "tirant.gva.es",
       "ninot.gva.es",
       "ninot2.gva.es",
+      "tirant.gva.es",
       "tirant2.gva.es"
     ],
     "warnings": []
@@ -23,6 +23,7 @@
       }
     ],
     "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
       "The reverse DNS of 193.145.200.16 is mxext.gva.es, but the A/AAAA DNS records for mxext.gva.es do not resolve to 193.145.200.16",
       "The reverse DNS of 195.77.20.28 is mxext.gva.es, but the A/AAAA DNS records for mxext.gva.es do not resolve to 195.77.20.28"
     ]

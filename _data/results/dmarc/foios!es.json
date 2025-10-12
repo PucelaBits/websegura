@@ -32,8 +32,8 @@
     "record": "v=spf1 include:spf.protection.outlook.com include:dnsxperta.com include:espublico.com ip4:213.4.82.254 -all",
     "valid": false,
     "warnings": [],
-    "error": "Parsing the SPF record requires 12/10 maximum DNS lookups - https://tools.ietf.org/html/rfc7208#section-4.6.4",
-    "dns_lookups": 12
+    "error": "Parsing the SPF record requires 11/10 maximum DNS lookups - https://tools.ietf.org/html/rfc7208#section-4.6.4",
+    "dns_lookups": 11
   },
   "dmarc": {
     "record": null,

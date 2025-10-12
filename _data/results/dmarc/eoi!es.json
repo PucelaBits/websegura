@@ -17,40 +17,40 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.250.142.26",
-          "2607:f8b0:4023:1c03::1a"
+          "172.253.62.26",
+          "2607:f8b0:4004:c09::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "192.178.164.26",
-          "2607:f8b0:4023:2009::1a"
+          "172.253.116.27",
+          "2a00:1450:400b:c02::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "192.178.220.26",
-          "2607:f8b0:4023:100f::1b"
+          "173.194.76.26",
+          "2a00:1450:400c:c00::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "2607:f8b0:4003:c30::1a",
-          "74.125.27.27"
+          "142.250.102.27",
+          "2a00:1450:4025:402::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "192.178.209.27",
-          "2607:f8b0:4001:c70::1a"
+          "192.178.213.26",
+          "2a00:1450:4013:c1e::1b"
         ]
       }
     ],
@@ -59,18 +59,18 @@
   "spf": {
     "record": "v=spf1 +a +mx ip4:92.43.19.148 +ip4:176.28.99.27/32 include:_spf.google.com  include:servers.mcsv.net include:amazonses.com include:mh.blackboard.com ~all ",
     "valid": true,
-    "dns_lookups": 9,
+    "dns_lookups": 8,
     "warnings": [
       "Any text after the all mechanism is ignored"
     ],
     "parsed": {
       "pass": [
         {
-          "value": "34.249.64.179",
+          "value": "52.17.74.151",
           "mechanism": "a"
         },
         {
-          "value": "63.35.140.89",
+          "value": "52.209.13.200",
           "mechanism": "a"
         },
         {
@@ -108,8 +108,8 @@
       "include": [
         {
           "domain": "_spf.google.com",
-          "record": "v=spf1 include:_netblocks.google.com include:_netblocks2.google.com include:_netblocks3.google.com ~all",
-          "dns_lookups": 3,
+          "record": "v=spf1 include:_netblocks.google.com include:_netblocks2.google.com ~all",
+          "dns_lookups": 2,
           "parsed": {
             "pass": [],
             "neutral": [],
@@ -118,7 +118,7 @@
             "include": [
               {
                 "domain": "_netblocks.google.com",
-                "record": "v=spf1 ip4:74.125.0.0/16 ip4:173.194.0.0/16 ip4:209.85.128.0/17 ip4:216.58.192.0/19 ip4:216.239.32.0/19 ip4:172.253.56.0/21 ip4:172.253.112.0/20 ~all",
+                "record": "v=spf1 ip4:74.125.0.0/16 ip4:173.194.0.0/16 ip4:209.85.128.0/17 ip4:216.58.192.0/19 ip4:216.239.32.0/19 ip4:172.217.32.0/21 ip4:172.253.56.0/21 ip4:172.253.112.0/20 ~all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
@@ -140,6 +140,10 @@
                     },
                     {
                       "value": "216.239.32.0/19",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "172.217.32.0/21",
                       "mechanism": "ip4"
                     },
                     {
@@ -190,35 +194,6 @@
                     {
                       "value": "2c0f:fb50:4000::/36",
                       "mechanism": "ip6"
-                    }
-                  ],
-                  "neutral": [],
-                  "softfail": [],
-                  "fail": [],
-                  "include": [],
-                  "redirect": null,
-                  "exp": null,
-                  "all": "softfail"
-                },
-                "warnings": []
-              },
-              {
-                "domain": "_netblocks3.google.com",
-                "record": "v=spf1 ip4:172.217.32.0/21 ip4:172.253.56.0/21 ip4:172.253.112.0/20 ~all",
-                "dns_lookups": 0,
-                "parsed": {
-                  "pass": [
-                    {
-                      "value": "172.217.32.0/21",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "172.253.56.0/21",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "172.253.112.0/20",
-                      "mechanism": "ip4"
                     }
                   ],
                   "neutral": [],

@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.consellinsulardeformentera.net",
-      "ns2.consellinsulardeformentera.net"
+      "ns2.consellinsulardeformentera.net",
+      "ns1.consellinsulardeformentera.net"
     ],
     "warnings": []
   },
@@ -13,16 +13,17 @@
     "hosts": [
       {
         "preference": 0,
-        "hostname": "consellinsulardeformentera.cat",
+        "hostname": "mail1.consellinsulardeformentera.cat",
         "addresses": [
-          "5.135.40.102"
+          "185.73.173.33",
+          "185.73.173.41"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 +a +mx +ip4:5.135.40.102 ~all",
+    "record": "v=spf1 ip4:5.135.40.102 +a +mx ip4:185.73.173.32/28 -all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
@@ -30,14 +31,18 @@
       "pass": [
         {
           "value": "5.135.40.102",
-          "mechanism": "a"
-        },
-        {
-          "value": "consellinsulardeformentera.cat",
-          "mechanism": "mx"
+          "mechanism": "ip4"
         },
         {
           "value": "5.135.40.102",
+          "mechanism": "a"
+        },
+        {
+          "value": "mail1.consellinsulardeformentera.cat",
+          "mechanism": "mx"
+        },
+        {
+          "value": "185.73.173.32/28",
           "mechanism": "ip4"
         }
       ],
@@ -47,7 +52,7 @@
       "include": [],
       "redirect": null,
       "exp": null,
-      "all": "softfail"
+      "all": "fail"
     }
   },
   "dmarc": {

@@ -4,58 +4,72 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns.granada.org",
-      "ns2.granada.org"
+      "ns2.granada.org",
+      "ns.granada.org"
     ],
     "warnings": []
   },
   "mx": {
     "hosts": [
       {
-        "preference": 1,
+        "preference": 10,
+        "hostname": "mxa-00835901.gslb.pphosted.com",
+        "addresses": [
+          "66.159.244.54"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mxb-00835901.gslb.pphosted.com",
+        "addresses": [
+          "66.159.244.54"
+        ]
+      },
+      {
+        "preference": 15,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "172.217.78.26",
-          "2607:f8b0:4023:1c01::1b"
+          "2607:f8b0:4004:c17::1b",
+          "64.233.180.26"
         ]
       },
       {
-        "preference": 5,
+        "preference": 20,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "192.178.164.27",
-          "2607:f8b0:4023:2009::1b"
+          "172.253.116.27",
+          "2a00:1450:400b:c02::1a"
         ]
       },
       {
-        "preference": 5,
+        "preference": 20,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "192.178.220.26",
-          "2607:f8b0:4023:100f::1b"
+          "173.194.76.26",
+          "2a00:1450:400c:c00::1b"
         ]
       },
       {
-        "preference": 10,
-        "hostname": "alt3.aspmx.l.google.com",
-        "addresses": [
-          "2607:f8b0:4003:c30::1a",
-          "74.125.27.27"
-        ]
-      },
-      {
-        "preference": 10,
+        "preference": 20,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "192.178.209.27",
-          "2607:f8b0:4001:c70::1a"
+          "192.178.213.26",
+          "2a00:1450:4013:c1e::1b"
+        ]
+      },
+      {
+        "preference": 25,
+        "hostname": "alt3.aspmx.l.google.com",
+        "addresses": [
+          "142.250.102.26",
+          "2a00:1450:4025:402::1a"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:_spf.google.com ~all",
+    "record": "v=spf1 include:_spf.google.com include:spf-00835901.pphosted.com ~all",
     "valid": true,
     "dns_lookups": 4,
     "warnings": [],
@@ -67,8 +81,8 @@
       "include": [
         {
           "domain": "_spf.google.com",
-          "record": "v=spf1 include:_netblocks.google.com include:_netblocks2.google.com include:_netblocks3.google.com ~all",
-          "dns_lookups": 3,
+          "record": "v=spf1 include:_netblocks.google.com include:_netblocks2.google.com ~all",
+          "dns_lookups": 2,
           "parsed": {
             "pass": [],
             "neutral": [],
@@ -77,7 +91,7 @@
             "include": [
               {
                 "domain": "_netblocks.google.com",
-                "record": "v=spf1 ip4:74.125.0.0/16 ip4:173.194.0.0/16 ip4:209.85.128.0/17 ip4:216.58.192.0/19 ip4:216.239.32.0/19 ip4:172.253.56.0/21 ip4:172.253.112.0/20 ~all",
+                "record": "v=spf1 ip4:74.125.0.0/16 ip4:173.194.0.0/16 ip4:209.85.128.0/17 ip4:216.58.192.0/19 ip4:216.239.32.0/19 ip4:172.217.32.0/21 ip4:172.253.56.0/21 ip4:172.253.112.0/20 ~all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
@@ -99,6 +113,10 @@
                     },
                     {
                       "value": "216.239.32.0/19",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "172.217.32.0/21",
                       "mechanism": "ip4"
                     },
                     {
@@ -160,40 +178,36 @@
                   "all": "softfail"
                 },
                 "warnings": []
-              },
-              {
-                "domain": "_netblocks3.google.com",
-                "record": "v=spf1 ip4:172.217.32.0/21 ip4:172.253.56.0/21 ip4:172.253.112.0/20 ~all",
-                "dns_lookups": 0,
-                "parsed": {
-                  "pass": [
-                    {
-                      "value": "172.217.32.0/21",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "172.253.56.0/21",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "172.253.112.0/20",
-                      "mechanism": "ip4"
-                    }
-                  ],
-                  "neutral": [],
-                  "softfail": [],
-                  "fail": [],
-                  "include": [],
-                  "redirect": null,
-                  "exp": null,
-                  "all": "softfail"
-                },
-                "warnings": []
               }
             ],
             "redirect": null,
             "exp": null,
             "all": "softfail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "spf-00835901.pphosted.com",
+          "record": "v=spf1 ip4:66.159.244.54 ip4:66.159.246.167",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "66.159.244.54",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "66.159.246.167",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "neutral"
           },
           "warnings": []
         }

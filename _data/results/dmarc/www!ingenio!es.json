@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns.dinahosting.com",
-      "ns2.dinahosting.com"
+      "ns2.dinahosting.com",
+      "ns.dinahosting.com"
     ],
     "warnings": []
   },
@@ -22,7 +22,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 a mx ip4:213.4.82.201 -all",
+    "record": "v=spf1 a mx ip4:213.4.82.201 ip4:83.56.41.149 -all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
@@ -38,6 +38,10 @@
         },
         {
           "value": "213.4.82.201",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "83.56.41.149",
           "mechanism": "ip4"
         }
       ],

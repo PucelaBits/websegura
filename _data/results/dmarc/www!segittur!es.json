@@ -15,7 +15,7 @@
         "preference": 10,
         "hostname": "mxa-006a4e02.gslb.pphosted.com",
         "addresses": [
-          "143.55.146.78"
+          "143.55.148.243"
         ]
       },
       {
@@ -31,7 +31,7 @@
   "spf": {
     "record": "v=spf1 mx ip4:154.58.16.80/32 ip4:213.170.50.16 ip4:213.170.50.19 ip4:195.114.216.138 ip4:195.114.216.146 ip4:212.63.109.135 ip4:194.224.6.145 include:spf.protection.outlook.com include:teenvio.com include:emailservice.cpd.as include:_spf.wolfcrm.es ~all",
     "valid": true,
-    "dns_lookups": 10,
+    "dns_lookups": 9,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -140,7 +140,7 @@
         {
           "domain": "teenvio.com",
           "record": "v=spf1 ip4:217.116.2.247 ip4:217.116.2.246 ip4:217.116.2.243 ip4:217.116.2.254 ip4:217.116.22.144/28 ip4:77.240.118.0/24 ip4:77.240.119.192/26 ip4:147.135.135.11 ip4:51.254.244.245 include:_spf.google.com -all",
-          "dns_lookups": 4,
+          "dns_lookups": 3,
           "parsed": {
             "pass": [
               {
@@ -186,8 +186,8 @@
             "include": [
               {
                 "domain": "_spf.google.com",
-                "record": "v=spf1 include:_netblocks.google.com include:_netblocks2.google.com include:_netblocks3.google.com ~all",
-                "dns_lookups": 3,
+                "record": "v=spf1 include:_netblocks.google.com include:_netblocks2.google.com ~all",
+                "dns_lookups": 2,
                 "parsed": {
                   "pass": [],
                   "neutral": [],
@@ -196,7 +196,7 @@
                   "include": [
                     {
                       "domain": "_netblocks.google.com",
-                      "record": "v=spf1 ip4:74.125.0.0/16 ip4:173.194.0.0/16 ip4:209.85.128.0/17 ip4:216.58.192.0/19 ip4:216.239.32.0/19 ip4:172.253.56.0/21 ip4:172.253.112.0/20 ~all",
+                      "record": "v=spf1 ip4:74.125.0.0/16 ip4:173.194.0.0/16 ip4:209.85.128.0/17 ip4:216.58.192.0/19 ip4:216.239.32.0/19 ip4:172.217.32.0/21 ip4:172.253.56.0/21 ip4:172.253.112.0/20 ~all",
                       "dns_lookups": 0,
                       "parsed": {
                         "pass": [
@@ -218,6 +218,10 @@
                           },
                           {
                             "value": "216.239.32.0/19",
+                            "mechanism": "ip4"
+                          },
+                          {
+                            "value": "172.217.32.0/21",
                             "mechanism": "ip4"
                           },
                           {
@@ -268,35 +272,6 @@
                           {
                             "value": "2c0f:fb50:4000::/36",
                             "mechanism": "ip6"
-                          }
-                        ],
-                        "neutral": [],
-                        "softfail": [],
-                        "fail": [],
-                        "include": [],
-                        "redirect": null,
-                        "exp": null,
-                        "all": "softfail"
-                      },
-                      "warnings": []
-                    },
-                    {
-                      "domain": "_netblocks3.google.com",
-                      "record": "v=spf1 ip4:172.217.32.0/21 ip4:172.253.56.0/21 ip4:172.253.112.0/20 ~all",
-                      "dns_lookups": 0,
-                      "parsed": {
-                        "pass": [
-                          {
-                            "value": "172.217.32.0/21",
-                            "mechanism": "ip4"
-                          },
-                          {
-                            "value": "172.253.56.0/21",
-                            "mechanism": "ip4"
-                          },
-                          {
-                            "value": "172.253.112.0/20",
-                            "mechanism": "ip4"
                           }
                         ],
                         "neutral": [],
