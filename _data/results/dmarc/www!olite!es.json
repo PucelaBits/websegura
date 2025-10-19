@@ -21,10 +21,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 195.53.90.200 is correo.animsa.es, but the A/AAAA DNS records for correo.animsa.es do not resolve to 195.53.90.200"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 +a +mx +ip4:195.53.90.200 ~all",

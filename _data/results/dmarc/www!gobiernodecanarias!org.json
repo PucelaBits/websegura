@@ -29,9 +29,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx a:correo.gobiernodecanarias.org a:correomasivo.gobiernodecanarias.org a:smtp-lp.gobiernodecanarias.org a:smtp-tf.gobiernodecanarias.org ip4:93.188.136.122 ip4:93.188.137.42 -all",
+    "record": "v=spf1 mx a:correo.gobiernodecanarias.org a:correomasivo.gobiernodecanarias.org -all",
     "valid": true,
-    "dns_lookups": 5,
+    "dns_lookups": 3,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -58,22 +58,6 @@
         {
           "value": "93.188.137.128",
           "mechanism": "a"
-        },
-        {
-          "value": "93.188.136.122",
-          "mechanism": "a"
-        },
-        {
-          "value": "93.188.137.42",
-          "mechanism": "a"
-        },
-        {
-          "value": "93.188.136.122",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "93.188.137.42",
-          "mechanism": "ip4"
         }
       ],
       "neutral": [],

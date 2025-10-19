@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "artemis.ttd.net",
-      "minerva.ttd.net"
+      "minerva.ttd.net",
+      "artemis.ttd.net"
     ],
     "warnings": []
   },
@@ -16,14 +16,14 @@
         "hostname": "aspmx.l.google.com",
         "addresses": [
           "142.250.31.27",
-          "2607:f8b0:4004:c17::1a"
+          "2607:f8b0:4004:c21::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "172.253.116.27",
+          "172.253.116.26",
           "2a00:1450:400b:c02::1a"
         ]
       },
@@ -40,7 +40,7 @@
         "hostname": "aspmx2.googlemail.com",
         "addresses": [
           "172.253.116.27",
-          "2a00:1450:400b:c02::1b"
+          "2a00:1450:400b:c02::1a"
         ]
       },
       {
@@ -48,7 +48,7 @@
         "hostname": "aspmx3.googlemail.com",
         "addresses": [
           "173.194.76.27",
-          "2a00:1450:400c:c00::1a"
+          "2a00:1450:400c:c00::1b"
         ]
       }
     ],

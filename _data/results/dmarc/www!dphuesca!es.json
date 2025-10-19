@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "artemis.ttd.net",
-      "dns3.dphuesca.es"
+      "dns3.dphuesca.es",
+      "artemis.ttd.net"
     ],
     "warnings": []
   },
@@ -15,8 +15,8 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "2607:f8b0:4004:c21::1b",
-          "64.233.180.27"
+          "172.253.63.26",
+          "2607:f8b0:4004:c1d::1b"
         ]
       },
       {
@@ -24,14 +24,14 @@
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
           "172.253.116.27",
-          "2a00:1450:400b:c02::1b"
+          "2a00:1450:400b:c02::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "173.194.76.27",
+          "173.194.76.26",
           "2a00:1450:400c:c00::1a"
         ]
       },
@@ -39,8 +39,8 @@
         "preference": 10,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "142.250.102.27",
-          "2a00:1450:4025:402::1b"
+          "142.250.102.26",
+          "2a00:1450:4025:402::1a"
         ]
       },
       {
@@ -55,7 +55,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:_spf.google.com include:spf.protection.outlook.com ip6:2a02:9010:1c::/48 ip4:194.224.40.48/28 ip4:212.170.255.0/24 ip4:188.244.81.16/28 ip4:10.252.0.0/15 -all",
+    "record": "v=spf1 include:_spf.google.com include:spf.protection.outlook.com ip6:2a02:9010:1c::/48 ip4:194.224.40.48/28 ip4:212.170.255.0/24 ip4:188.244.81.0/24 ip4:10.252.0.0/15 -all",
     "valid": true,
     "dns_lookups": 4,
     "warnings": [],
@@ -74,7 +74,7 @@
           "mechanism": "ip4"
         },
         {
-          "value": "188.244.81.16/28",
+          "value": "188.244.81.0/24",
           "mechanism": "ip4"
         },
         {

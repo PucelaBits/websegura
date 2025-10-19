@@ -18,7 +18,7 @@
     "error": "abengibre.sedipualba.es does not have a SPF TXT record"
   },
   "dmarc": {
-    "record": "v=DMARC1; p=reject; rua=mailto:dmarc@dipualba.es,mailto:re+mrte4f8aqdg@dmarc.postmarkapp.com; ruf=mailto:dmarc@dipualba.es",
+    "record": "v=DMARC1; p=none; rua=mailto:dmarc@dipualba.es,mailto:rua.dmarc@ccn-cert.cni.es; ruf=mailto:dmarc@dipualba.es",
     "valid": true,
     "location": "sedipualba.es",
     "warnings": [
@@ -31,11 +31,11 @@
         "explicit": true
       },
       "p": {
-        "value": "reject",
+        "value": "none",
         "explicit": true
       },
       "rua": {
-        "value": "mailto:dmarc@dipualba.es,mailto:re+mrte4f8aqdg@dmarc.postmarkapp.com",
+        "value": "mailto:dmarc@dipualba.es,mailto:rua.dmarc@ccn-cert.cni.es",
         "explicit": true
       },
       "ruf": {
@@ -71,7 +71,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "reject",
+        "value": "none",
         "explicit": false
       }
     }

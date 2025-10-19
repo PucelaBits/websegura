@@ -26,7 +26,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 89.107.242.1 is mail2.jccm.es, but the A/AAAA DNS records for mail2.jccm.es do not resolve to 89.107.242.1"
+    ]
   },
   "spf": {
     "record": "v=spf1 mx a:pop3.jccm.es a:smtp2.jccm.es a:mail1.jccm.es a:mail3.jccm.es a:mail4.jccm.es a:mail5.jccm.es a:mail6.jccm.es a:mail7.jccm.es a:mail8.jccm.es -all",

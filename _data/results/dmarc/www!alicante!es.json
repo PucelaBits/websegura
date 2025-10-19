@@ -117,10 +117,12 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1;p=quarantine;rua=mailto:sistemas@alicante.es",
+    "record": "v=DMARC1;p=quarantine;rua=mailto:sistemas@alicante.es,mailto:rua.dmarc@ccn-cert.cni.es",
     "valid": true,
     "location": "alicante.es",
-    "warnings": [],
+    "warnings": [
+      "ccn-cert.cni.es does not indicate that it accepts DMARC reports about alicante.es - Authorization record not found: alicante.es._report._dmarc.ccn-cert.cni.es IN TXT \"v=DMARC1\""
+    ],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -135,6 +137,11 @@
           {
             "scheme": "mailto",
             "address": "sistemas@alicante.es",
+            "size_limit": null
+          },
+          {
+            "scheme": "mailto",
+            "address": "rua.dmarc@ccn-cert.cni.es",
             "size_limit": null
           }
         ],

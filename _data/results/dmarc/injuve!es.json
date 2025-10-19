@@ -107,9 +107,7 @@
     "record": "v=DMARC1; p=none; rua=mailto:postmaster@injuve.es",
     "valid": true,
     "location": "injuve.es",
-    "warnings": [
-      "Failed to retrieve MX records for the domain of rua email address postmaster@injuve.es - All nameservers failed to answer the query injuve.es. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
-    ],
+    "warnings": [],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -120,7 +118,13 @@
         "explicit": true
       },
       "rua": {
-        "value": "mailto:postmaster@injuve.es",
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "postmaster@injuve.es",
+            "size_limit": null
+          }
+        ],
         "explicit": true
       },
       "adkim": {

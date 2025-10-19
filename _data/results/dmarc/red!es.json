@@ -17,23 +17,23 @@
         "preference": 10,
         "hostname": "red-es.mail.protection.outlook.com",
         "addresses": [
-          "2a01:111:f403:ca04::c",
+          "2a01:111:f403:ca04::7",
+          "2a01:111:f403:ca04::b",
+          "2a01:111:f403:ca04::e",
           "2a01:111:f403:ca04::f",
-          "2a01:111:f403:ca09::6",
-          "2a01:111:f403:ca09::a",
-          "52.101.68.18",
-          "52.101.73.12",
-          "52.101.73.2",
-          "52.101.73.6"
+          "52.101.68.36",
+          "52.101.73.22",
+          "52.101.73.24",
+          "52.101.73.8"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 a mx a:smtp.red.es include:spf.protection.outlook.com include:spf.sendinblue.com include:spf.mandrillapp.com include:_spf.salesforce.com -all",
+    "record": "v=spf1 a mx a:smtp.red.es include:spf.protection.outlook.com include:spf.sendinblue.com include:spf.mandrillapp.com include:_spf.salesforce.com  include:amazonses.com -all",
     "valid": true,
-    "dns_lookups": 8,
+    "dns_lookups": 9,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -258,6 +258,71 @@
               {
                 "value": "%{i}._spf.mta.salesforce.com",
                 "mechanism": "exists"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "amazonses.com",
+          "record": "v=spf1 ip4:199.255.192.0/22 ip4:199.127.232.0/22 ip4:54.240.0.0/18 ip4:69.169.224.0/20 ip4:23.249.208.0/20 ip4:23.251.224.0/19 ip4:76.223.176.0/20 ip4:54.240.64.0/18 ip4:76.223.128.0/19 ip4:216.221.160.0/19 ip4:206.55.144.0/20 ip4:24.110.64.0/18 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "199.255.192.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "199.127.232.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "54.240.0.0/18",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "69.169.224.0/20",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "23.249.208.0/20",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "23.251.224.0/19",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "76.223.176.0/20",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "54.240.64.0/18",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "76.223.128.0/19",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "216.221.160.0/19",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "206.55.144.0/20",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "24.110.64.0/18",
+                "mechanism": "ip4"
               }
             ],
             "neutral": [],

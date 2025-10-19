@@ -4,12 +4,12 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.dacoruna.gal",
-      "dns.dacoruna.gal",
       "ns1.xunta.es",
-      "dns.dicoruna.es",
+      "ns1.dacoruna.gal",
       "ns2.xunta.es",
-      "dns1.dicoruna.es"
+      "ns2.dacoruna.gal",
+      "dns1.dicoruna.es",
+      "dns.dicoruna.es"
     ],
     "warnings": []
   },
@@ -19,15 +19,15 @@
         "preference": 10,
         "hostname": "smtp.google.com",
         "addresses": [
-          "142.251.179.26",
-          "142.251.179.27",
-          "172.253.62.26",
-          "172.253.62.27",
+          "142.250.31.26",
+          "142.251.111.26",
+          "142.251.111.27",
+          "142.251.16.26",
+          "142.251.16.27",
           "2607:f8b0:4004:c06::1a",
           "2607:f8b0:4004:c06::1b",
-          "2607:f8b0:4004:c09::1a",
-          "2607:f8b0:4004:c09::1b",
-          "64.233.180.26"
+          "2607:f8b0:4004:c07::1a",
+          "2607:f8b0:4004:c07::1b"
         ]
       }
     ],
@@ -163,7 +163,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; pct=100; sp=none; adkim=r; aspf=r; rua=mailto:dmarc@dacoruna.gal; ruf=mailto:dmarc@dacoruna.gal; ",
+    "record": "v=DMARC1; p=reject; sp=reject; adkim=s; aspf=s; rua=mailto:dmarc@dacoruna.gal; ruf=mailto:dmarc@dacoruna.gal; ",
     "valid": true,
     "location": "dacoruna.gal",
     "warnings": [],
@@ -173,23 +173,19 @@
         "explicit": true
       },
       "p": {
-        "value": "quarantine",
-        "explicit": true
-      },
-      "pct": {
-        "value": 100,
+        "value": "reject",
         "explicit": true
       },
       "sp": {
-        "value": "none",
+        "value": "reject",
         "explicit": true
       },
       "adkim": {
-        "value": "r",
+        "value": "s",
         "explicit": true
       },
       "aspf": {
-        "value": "r",
+        "value": "s",
         "explicit": true
       },
       "rua": {
@@ -216,6 +212,10 @@
         "value": [
           "0"
         ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
         "explicit": false
       },
       "rf": {

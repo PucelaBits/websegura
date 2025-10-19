@@ -18,10 +18,12 @@
     "error": "datosabiertos.jcyl.es does not have a SPF TXT record"
   },
   "dmarc": {
-    "record": "v=DMARC1; p=reject; sp=none; fo=1; ri=3600; rua=mailto:mailauth-reports@jcyl.es; ruf=mailto:mailauth-reports@jcyl.es",
+    "record": "v=DMARC1; p=reject; sp=none; fo=1; ri=3600; rua=mailto:mailauth-reports@jcyl.es,mailto:rua.dmarc@ccn-cert.cni.es; ruf=mailto:mailauth-reports@jcyl.es",
     "valid": true,
     "location": "jcyl.es",
-    "warnings": [],
+    "warnings": [
+      "ccn-cert.cni.es does not indicate that it accepts DMARC reports about jcyl.es - Authorization record not found: jcyl.es._report._dmarc.ccn-cert.cni.es IN TXT \"v=DMARC1\""
+    ],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -50,6 +52,11 @@
           {
             "scheme": "mailto",
             "address": "mailauth-reports@jcyl.es",
+            "size_limit": null
+          },
+          {
+            "scheme": "mailto",
+            "address": "rua.dmarc@ccn-cert.cni.es",
             "size_limit": null
           }
         ],

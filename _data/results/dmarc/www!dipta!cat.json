@@ -10,102 +10,33 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-  },
-  "spf": {
-    "record": "v=spf1 ip4:195.77.216.146 ip4:195.76.233.59 a mx ?all",
-    "valid": true,
-    "dns_lookups": 2,
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx1.dipta.cat",
+        "addresses": [
+          "195.76.233.59"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mx1.tinet.org",
+        "addresses": []
+      }
+    ],
     "warnings": [
       "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ],
-    "parsed": {
-      "pass": [
-        {
-          "value": "195.77.216.146",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "195.76.233.59",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "mx1.dipta.cat",
-          "mechanism": "mx"
-        },
-        {
-          "value": "mx1.tinet.org",
-          "mechanism": "mx"
-        }
-      ],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [],
-      "redirect": null,
-      "exp": null,
-      "all": "neutral"
-    }
+    ]
+  },
+  "spf": {
+    "record": null,
+    "valid": false,
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "dmarc": {
-    "record": "v=DMARC1;p=none;ruf=mailto:postmaster@dipta.cat;",
-    "valid": true,
-    "location": "dipta.cat",
-    "warnings": [
-      "rua tag (destination for aggregate reports) not found"
-    ],
-    "tags": {
-      "v": {
-        "value": "DMARC1",
-        "explicit": true
-      },
-      "p": {
-        "value": "none",
-        "explicit": true
-      },
-      "ruf": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "postmaster@dipta.cat",
-            "size_limit": null
-          }
-        ],
-        "explicit": true
-      },
-      "adkim": {
-        "value": "r",
-        "explicit": false
-      },
-      "aspf": {
-        "value": "r",
-        "explicit": false
-      },
-      "fo": {
-        "value": [
-          "0"
-        ],
-        "explicit": false
-      },
-      "pct": {
-        "value": 100,
-        "explicit": false
-      },
-      "rf": {
-        "value": [
-          "afrf"
-        ],
-        "explicit": false
-      },
-      "ri": {
-        "value": 86400,
-        "explicit": false
-      },
-      "sp": {
-        "value": "none",
-        "explicit": false
-      }
-    }
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   }
 }
