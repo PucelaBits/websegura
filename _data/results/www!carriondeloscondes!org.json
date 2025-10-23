@@ -1,23 +1,28 @@
 {
-  "id": 75747889,
+  "id": 75925352,
   "algorithm_version": 4,
-  "scanned_at": "2025-10-21T01:02:53.252Z",
+  "scanned_at": "2025-10-23T01:02:30.738Z",
   "error": null,
   "grade": "F",
   "response_headers": {
-    "date": "Tue, 21 Oct 2025 01:02:55 GMT",
+    "date": "Thu, 23 Oct 2025 01:02:32 GMT",
     "link": "<https://www.carriondeloscondes.org/wp-json/>; rel=\"https://api.w.org/\", <https://www.carriondeloscondes.org/wp-json/wp/v2/pages/324>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://www.carriondeloscondes.org/>; rel=shortlink",
-    "vary": "Accept-Encoding,User-Agent",
-    "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\"",
+    "vary": "Accept-Encoding",
+    "server": "nginx",
     "connection": "close",
     "x-pingback": "https://www.carriondeloscondes.org/xmlrpc.php",
-    "content-type": "text/html; charset=UTF-8",
-    "x-powered-by": "PHP/8.2.29",
-    "transfer-encoding": "chunked"
+    "content-type": "text/html; charset=utf-8",
+    "cache-control": "max-age=0, no-cache, s-maxage=10",
+    "x-mod-pagespeed": "1.13.35.2-0",
+    "x-xss-protection": "1; mode=block",
+    "transfer-encoding": "chunked",
+    "x-server-powered-by": "Engintron",
+    "x-content-type-options": "nosniff",
+    "x-nginx-upstream-cache-status": "MISS"
   },
   "score": 0,
   "status_code": 200,
-  "tests_failed": 5,
-  "tests_passed": 5,
+  "tests_failed": 4,
+  "tests_passed": 6,
   "tests_quantity": 10
 }
