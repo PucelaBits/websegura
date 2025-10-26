@@ -4,12 +4,12 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.xunta.es",
-      "ns1.dacoruna.gal",
       "ns2.xunta.es",
       "ns2.dacoruna.gal",
+      "dns.dicoruna.es",
+      "ns1.dacoruna.gal",
       "dns1.dicoruna.es",
-      "dns.dicoruna.es"
+      "ns1.xunta.es"
     ],
     "warnings": []
   },
@@ -19,15 +19,15 @@
         "preference": 10,
         "hostname": "smtp.google.com",
         "addresses": [
-          "142.250.31.26",
-          "142.251.111.26",
-          "142.251.111.27",
-          "142.251.16.26",
-          "142.251.16.27",
-          "2607:f8b0:4004:c06::1a",
-          "2607:f8b0:4004:c06::1b",
-          "2607:f8b0:4004:c07::1a",
-          "2607:f8b0:4004:c07::1b"
+          "142.250.142.26",
+          "172.217.217.26",
+          "172.217.217.27",
+          "172.217.78.26",
+          "172.217.78.27",
+          "2607:f8b0:4023:1c01::1a",
+          "2607:f8b0:4023:1c05::1a",
+          "2607:f8b0:4023:1c07::1a",
+          "2607:f8b0:4023:1c07::1b"
         ]
       }
     ],
@@ -163,10 +163,12 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=reject; sp=reject; adkim=s; aspf=s; rua=mailto:dmarc@dacoruna.gal; ruf=mailto:dmarc@dacoruna.gal; ",
+    "record": "v=DMARC1; p=reject; sp=reject; adkim=s; aspf=s; rua=mailto:dmarc@dacoruna.gal,mailto:rua.dmarc@ccn-cert.cni.es; ruf=mailto:dmarc@dacoruna.gal; ",
     "valid": true,
     "location": "dacoruna.gal",
-    "warnings": [],
+    "warnings": [
+      "ccn-cert.cni.es does not indicate that it accepts DMARC reports about dacoruna.gal - Authorization record not found: dacoruna.gal._report._dmarc.ccn-cert.cni.es IN TXT \"v=DMARC1\""
+    ],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -193,6 +195,11 @@
           {
             "scheme": "mailto",
             "address": "dmarc@dacoruna.gal",
+            "size_limit": null
+          },
+          {
+            "scheme": "mailto",
+            "address": "rua.dmarc@ccn-cert.cni.es",
             "size_limit": null
           }
         ],

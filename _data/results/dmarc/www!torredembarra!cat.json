@@ -19,10 +19,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 91.126.32.67 is correu.torredembarra.cat, but the A/AAAA DNS records for correu.torredembarra.cat do not resolve to 91.126.32.67"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:195.235.183.113/29 ip4:91.126.32.64/28 ip4:83.42.242.191 a:correu.torredembarra.cat ~all",

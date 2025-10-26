@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "artemis.ttd.net",
-      "minerva.ttd.net"
+      "minerva.ttd.net",
+      "artemis.ttd.net"
     ],
     "warnings": []
   },
@@ -29,12 +29,17 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:spf-00916601.pphosted.com -all",
+    "record": "v=spf1 ip4:212.170.134.61 include:spf-00916601.pphosted.com -all",
     "valid": true,
     "dns_lookups": 1,
     "warnings": [],
     "parsed": {
-      "pass": [],
+      "pass": [
+        {
+          "value": "212.170.134.61",
+          "mechanism": "ip4"
+        }
+      ],
       "neutral": [],
       "softfail": [],
       "fail": [],

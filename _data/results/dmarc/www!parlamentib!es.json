@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.parlamentib.es",
-      "ns2.parlamentib.es"
+      "ns2.parlamentib.es",
+      "ns1.parlamentib.es"
     ],
     "warnings": []
   },
@@ -15,14 +15,14 @@
         "preference": 10,
         "hostname": "parlamentib-es.mail.protection.outlook.com",
         "addresses": [
-          "2a01:111:f403:ca04::1",
-          "2a01:111:f403:ca04::5",
-          "2a01:111:f403:ca09::",
-          "2a01:111:f403:ca09::5",
-          "52.101.68.10",
-          "52.101.68.16",
-          "52.101.68.21",
-          "52.101.73.16"
+          "2a01:111:f403:ca04::9",
+          "2a01:111:f403:ca09::4",
+          "2a01:111:f403:ca09::e",
+          "2a01:111:f403:ca09::f",
+          "52.101.68.0",
+          "52.101.68.8",
+          "52.101.73.15",
+          "52.101.73.21"
         ]
       }
     ],
@@ -112,10 +112,12 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; rua=mailto:postmaster@parlamentib.es; ruf=mailto:postmaster@parlamentib.es; adkim=s; aspf=s; rf=afrf",
+    "record": "v=DMARC1; p=quarantine;rua=mailto:postmaster@parlamentib.es,mailto:rua.dmarc@ccn-cert.cni.es; adkim=s; aspf=s; rf=afrf",
     "valid": true,
     "location": "parlamentib.es",
-    "warnings": [],
+    "warnings": [
+      "ccn-cert.cni.es does not indicate that it accepts DMARC reports about parlamentib.es - Authorization record not found: parlamentib.es._report._dmarc.ccn-cert.cni.es IN TXT \"v=DMARC1\""
+    ],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -131,15 +133,10 @@
             "scheme": "mailto",
             "address": "postmaster@parlamentib.es",
             "size_limit": null
-          }
-        ],
-        "explicit": true
-      },
-      "ruf": {
-        "value": [
+          },
           {
             "scheme": "mailto",
-            "address": "postmaster@parlamentib.es",
+            "address": "rua.dmarc@ccn-cert.cni.es",
             "size_limit": null
           }
         ],

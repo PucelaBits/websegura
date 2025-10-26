@@ -15,40 +15,40 @@
         "preference": 10,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "2607:f8b0:4004:c1f::1b",
-          "64.233.180.27"
+          "173.194.65.27",
+          "2607:f8b0:4023:1c03::1a"
         ]
       },
       {
         "preference": 20,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "172.253.116.26",
-          "2a00:1450:400b:c02::1a"
+          "192.178.164.27",
+          "2607:f8b0:4023:2009::1a"
         ]
       },
       {
         "preference": 20,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "173.194.76.27",
-          "2a00:1450:400c:c00::1a"
+          "192.178.220.27",
+          "2607:f8b0:4023:100f::1b"
         ]
       },
       {
         "preference": 30,
         "hostname": "aspmx2.googlemail.com",
         "addresses": [
-          "172.253.116.26",
-          "2a00:1450:400b:c02::1a"
+          "192.178.164.26",
+          "2607:f8b0:4023:2009::1b"
         ]
       },
       {
         "preference": 30,
         "hostname": "aspmx3.googlemail.com",
         "addresses": [
-          "173.194.76.26",
-          "2a00:1450:400c:c00::1a"
+          "192.178.220.26",
+          "2607:f8b0:4023:100f::1a"
         ]
       }
     ],
@@ -179,10 +179,12 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; ruf=mailto:informatica@diputaciondepalencia.es; rua=mailto:informatica@diputaciondepalencia.es;adkim=r;aspf=r;",
+    "record": "v=DMARC1; p=quarantine; rua=mailto:informatica@diputaciondepalencia.es,mailto:rua.dmarc@ccn-cert.cni.es;adkim=r;aspf=r;",
     "valid": true,
     "location": "diputaciondepalencia.es",
-    "warnings": [],
+    "warnings": [
+      "ccn-cert.cni.es does not indicate that it accepts DMARC reports about diputaciondepalencia.es - Authorization record not found: diputaciondepalencia.es._report._dmarc.ccn-cert.cni.es IN TXT \"v=DMARC1\""
+    ],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -192,21 +194,16 @@
         "value": "quarantine",
         "explicit": true
       },
-      "ruf": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "informatica@diputaciondepalencia.es",
-            "size_limit": null
-          }
-        ],
-        "explicit": true
-      },
       "rua": {
         "value": [
           {
             "scheme": "mailto",
             "address": "informatica@diputaciondepalencia.es",
+            "size_limit": null
+          },
+          {
+            "scheme": "mailto",
+            "address": "rua.dmarc@ccn-cert.cni.es",
             "size_limit": null
           }
         ],

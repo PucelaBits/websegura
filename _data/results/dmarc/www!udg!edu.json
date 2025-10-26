@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.csuc.cat",
-      "ns1.csuc.cat",
       "nsext2.udg.edu",
+      "ns1.csuc.cat",
+      "ns2.csuc.cat",
       "nsext1.udg.edu"
     ],
     "warnings": []
@@ -21,7 +21,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 84.88.128.6 is imsva-in.udg.edu, but the A/AAAA DNS records for imsva-in.udg.edu do not resolve to 84.88.128.6"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:_spf.mlsend.com mx a:imsva-in.udg.edu a:mta-sortida.udg.edu a:imsva-out.udg.edu ip4:84.88.131.25 a:mta-sortida-alt.udg.edu a:peguera.xs.csuc.cat a:gabarro.xs.csuc.cat ~all",

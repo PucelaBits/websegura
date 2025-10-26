@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.dinahosting.com",
+      "ns4.dinahosting.com",
       "ns.dinahosting.com",
       "ns3.dinahosting.com",
-      "ns4.dinahosting.com"
+      "ns2.dinahosting.com"
     ],
     "warnings": []
   },
@@ -64,12 +64,10 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; sp=quarantine",
+    "record": "v=DMARC1; p=quarantine; sp=quarantine; rua=mailto:testnom1_testnom2@donostia.eus",
     "valid": true,
     "location": "donostia.eus",
-    "warnings": [
-      "rua tag (destination for aggregate reports) not found"
-    ],
+    "warnings": [],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -81,6 +79,16 @@
       },
       "sp": {
         "value": "quarantine",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "testnom1_testnom2@donostia.eus",
+            "size_limit": null
+          }
+        ],
         "explicit": true
       },
       "adkim": {

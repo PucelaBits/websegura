@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "sun.rediris.es",
-      "ds3100.uib.es",
-      "chico.rediris.es"
+      "chico.rediris.es",
+      "ds3100.uib.es"
     ],
     "warnings": []
   },
@@ -174,7 +174,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=reject; rua=mailto:rua@uib.es; ruf=mailto:ruf@uib.es",
+    "record": "v=DMARC1; p=reject; rua=mailto:rua@uib.es",
     "valid": true,
     "location": "uib.es",
     "warnings": [],
@@ -192,16 +192,6 @@
           {
             "scheme": "mailto",
             "address": "rua@uib.es",
-            "size_limit": null
-          }
-        ],
-        "explicit": true
-      },
-      "ruf": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "ruf@uib.es",
             "size_limit": null
           }
         ],

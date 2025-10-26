@@ -18,17 +18,19 @@
     "error": "institucional.cadiz.es does not have a SPF TXT record"
   },
   "dmarc": {
-    "record": "v=DMARC1; p=reject; pct=100; rua=mailto:IGNACIO.DIAZTRUYO@cadiz.es; ruf=mailto:IGNACIO.DIAZTRUYO@cadiz.es; aspf=s; adkim=s",
+    "record": "v=DMARC1; p=none; pct=100; rua=mailto:IGNACIO.DIAZTRUYO@cadiz.es, mailto:rua.dmarc@ccn-cert.cni.es; ruf=mailto:IGNACIO.DIAZTRUYO@cadiz.es; aspf=s; adkim=s",
     "valid": true,
     "location": "cadiz.es",
-    "warnings": [],
+    "warnings": [
+      "ccn-cert.cni.es does not indicate that it accepts DMARC reports about cadiz.es - Authorization record not found: cadiz.es._report._dmarc.ccn-cert.cni.es IN TXT \"v=DMARC1\""
+    ],
     "tags": {
       "v": {
         "value": "DMARC1",
         "explicit": true
       },
       "p": {
-        "value": "reject",
+        "value": "none",
         "explicit": true
       },
       "pct": {
@@ -40,6 +42,11 @@
           {
             "scheme": "mailto",
             "address": "IGNACIO.DIAZTRUYO@cadiz.es",
+            "size_limit": null
+          },
+          {
+            "scheme": "mailto",
+            "address": "rua.dmarc@ccn-cert.cni.es",
             "size_limit": null
           }
         ],
@@ -80,7 +87,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "reject",
+        "value": "none",
         "explicit": false
       }
     }
