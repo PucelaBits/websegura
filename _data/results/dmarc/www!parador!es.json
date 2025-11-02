@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "artemis.ttd.net",
-      "minerva.ttd.net"
+      "minerva.ttd.net",
+      "artemis.ttd.net"
     ],
     "warnings": []
   },
@@ -315,12 +315,10 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none;",
+    "record": "v=DMARC1; p=none; rua=mailto:dmarc@parador.es",
     "valid": true,
     "location": "parador.es",
-    "warnings": [
-      "rua tag (destination for aggregate reports) not found"
-    ],
+    "warnings": [],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -328,6 +326,16 @@
       },
       "p": {
         "value": "none",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc@parador.es",
+            "size_limit": null
+          }
+        ],
         "explicit": true
       },
       "adkim": {

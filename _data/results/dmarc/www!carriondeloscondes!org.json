@@ -3,22 +3,90 @@
   "base_domain": "carriondeloscondes.org",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "All nameservers failed to answer the query carriondeloscondes.org. IN NS: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "hostnames": [
+      "ns3.andaina.net",
+      "ns2.andaina.net",
+      "ns1.andaina.net"
+    ],
+    "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query carriondeloscondes.org. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 0,
+        "hostname": "carriondeloscondes.org",
+        "addresses": [
+          "185.140.32.71"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "All nameservers failed to answer the query carriondeloscondes.org. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "record": "v=spf1 +a +mx +ip4:185.140.32.91 +ip4:185.140.32.71 +ip4:185.140.32.25 +ip4:185.140.32.61 +ip4:185.140.32.34 +ip4:178.60.205.23 +ip4:178.60.205.61 +ip4:178.60.205.32 +ip4:178.60.205.61 ~all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "185.140.32.71",
+          "mechanism": "a"
+        },
+        {
+          "value": "carriondeloscondes.org",
+          "mechanism": "mx"
+        },
+        {
+          "value": "185.140.32.91",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "185.140.32.71",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "185.140.32.25",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "185.140.32.61",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "185.140.32.34",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "178.60.205.23",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "178.60.205.61",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "178.60.205.32",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "178.60.205.61",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
   },
   "dmarc": {
     "record": null,
     "valid": false,
     "location": null,
-    "error": "All nameservers failed to answer the query _dmarc.carriondeloscondes.org. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "error": "A DMARC record does not exist for this domain or its base domain"
   }
 }

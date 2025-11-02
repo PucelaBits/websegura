@@ -174,53 +174,9 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1;p=reject",
-    "valid": true,
+    "record": "v=DMARC1;p=reject; ; sp=reject ; rua=mailto:rua.dmarc@ccn-cert.cni.es",
+    "valid": false,
     "location": "ourense.gal",
-    "warnings": [
-      "rua tag (destination for aggregate reports) not found"
-    ],
-    "tags": {
-      "v": {
-        "value": "DMARC1",
-        "explicit": true
-      },
-      "p": {
-        "value": "reject",
-        "explicit": true
-      },
-      "adkim": {
-        "value": "r",
-        "explicit": false
-      },
-      "aspf": {
-        "value": "r",
-        "explicit": false
-      },
-      "fo": {
-        "value": [
-          "0"
-        ],
-        "explicit": false
-      },
-      "pct": {
-        "value": 100,
-        "explicit": false
-      },
-      "rf": {
-        "value": [
-          "afrf"
-        ],
-        "explicit": false
-      },
-      "ri": {
-        "value": 86400,
-        "explicit": false
-      },
-      "sp": {
-        "value": "reject",
-        "explicit": false
-      }
-    }
+    "error": "Error: Expected tag_value at position 19 in: v=DMARC1;p=reject; ; sp=reject ; rua=mailto:rua.dmarc@ccn-cert.cni.es"
   }
 }

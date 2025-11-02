@@ -15,77 +15,52 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.250.142.27",
-          "2607:f8b0:4023:1c05::1a"
+          "172.253.132.26",
+          "2607:f8b0:4023:2c03::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "192.178.164.26",
-          "2607:f8b0:4023:2009::1b"
+          "209.85.144.26",
+          "2607:f8b0:400d:c0e::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "192.178.220.26",
-          "2607:f8b0:4023:100f::1a"
+          "108.177.11.27",
+          "2607:f8b0:400c:c01::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "aspmx2.googlemail.com",
         "addresses": [
-          "192.178.164.27",
-          "2607:f8b0:4023:2009::1a"
+          "209.85.144.27",
+          "2607:f8b0:400d:c0e::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "aspmx3.googlemail.com",
         "addresses": [
-          "192.178.220.27",
-          "2607:f8b0:4023:100f::1b"
+          "108.177.11.26",
+          "2607:f8b0:400c:c01::1b"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:spf1.cesce.es ip4:195.53.154.168/29 ip4:195.53.197.128/25 ip4:195.53.197.153 ip4:185.20.116.0/22 ip4:194.140.17.67 ip4:194.140.17.70 include:_spf.google.com include:aspmx.pardot.com -all",
+    "record": "v=spf1 include:spf1.cesce.es include:_spf.google.com include:aspmx.pardot.com include:spf-00a71501.pphosted.com -all",
     "valid": true,
-    "dns_lookups": 7,
+    "dns_lookups": 8,
     "warnings": [],
     "parsed": {
-      "pass": [
-        {
-          "value": "195.53.154.168/29",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "195.53.197.128/25",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "195.53.197.153",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "185.20.116.0/22",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "194.140.17.67",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "194.140.17.70",
-          "mechanism": "ip4"
-        }
-      ],
+      "pass": [],
       "neutral": [],
       "softfail": [],
       "fail": [],
@@ -345,6 +320,31 @@
             "all": "fail"
           },
           "warnings": []
+        },
+        {
+          "domain": "spf-00a71501.pphosted.com",
+          "record": "v=spf1 ip4:66.159.245.20 ip4:66.159.243.124",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "66.159.245.20",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "66.159.243.124",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "neutral"
+          },
+          "warnings": []
         }
       ],
       "redirect": null,
@@ -353,7 +353,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; rua=mailto:ipm29za@ar.glockapps.com,mailto:dmarc-reports@cesce.es; ruf=mailto:ipm29za@fr.glockapps.com; adkim=r; aspf=r; fo=1;",
+    "record": "v=DMARC1; p=quarantine; rua=mailto:ipm29za@ar.glockapps.com,mailto:dmarc-reports@cesce.es; ruf=mailto:ipm29za@fr.glockapps.com; adkim=r; aspf=r; fo=1;",
     "valid": true,
     "location": "cesce.es",
     "warnings": [],
@@ -363,7 +363,7 @@
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": true
       },
       "rua": {
@@ -420,7 +420,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": false
       }
     }

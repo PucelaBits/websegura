@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns3.interec.com",
-      "ns.interec.com",
       "ns1.interec.com",
+      "ns.interec.com",
+      "ns3.interec.com",
       "ns2.interec.com"
     ],
     "warnings": []
@@ -17,40 +17,40 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "172.217.217.26",
-          "2607:f8b0:4023:1c03::1a"
+          "172.253.132.27",
+          "2607:f8b0:4023:2c03::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "192.178.164.27",
-          "2607:f8b0:4023:2009::1a"
+          "209.85.144.27",
+          "2607:f8b0:400d:c0e::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "192.178.220.26",
-          "2607:f8b0:4023:100f::1b"
+          "108.177.11.27",
+          "2607:f8b0:400c:c01::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "172.217.74.27",
-          "2607:f8b0:4023:3001::1a"
+          "192.178.218.27",
+          "2607:f8b0:4004:c25::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "2607:f8b0:4003:c30::1b",
-          "74.125.27.27"
+          "108.177.123.26",
+          "2800:3f0:4003:c0f::1a"
         ]
       },
       {
@@ -61,7 +61,9 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "2800:3f0:4003:c0f::1a does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:_spf.google.com ~all",

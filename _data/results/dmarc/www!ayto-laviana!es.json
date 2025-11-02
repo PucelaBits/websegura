@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.interdomain.net",
       "ns3.interdomain.es",
-      "ns1.interdomain.net"
+      "ns1.interdomain.net",
+      "ns2.interdomain.net"
     ],
     "warnings": []
   },
@@ -18,14 +18,33 @@
         "addresses": [
           "185.54.195.145"
         ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mail2.ayto-laviana.es",
+        "addresses": [
+          "185.54.195.145"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mail2.ayto-laviana.es",
+        "addresses": []
+      },
+      {
+        "preference": 30,
+        "hostname": "mail2.ayto-laviana.es",
+        "addresses": []
       }
     ],
-    "warnings": []
+    "warnings": [
+      "Hostname mail2.ayto-laviana.es is listed in multiple MX records"
+    ]
   },
   "spf": {
-    "record": "v=spf1 +mx ip4:185.54.195.145 ip4:185.54.195.146 ip4:185.54.195.147 ip4:185.54.195.149 -all",
+    "record": "v=spf1 mx a ip4:185.54.195.145/32 ip4:81.45.42.202/32 ~all",
     "valid": true,
-    "dns_lookups": 1,
+    "dns_lookups": 2,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -34,19 +53,27 @@
           "mechanism": "mx"
         },
         {
+          "value": "mail2.ayto-laviana.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mail2.ayto-laviana.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mail2.ayto-laviana.es",
+          "mechanism": "mx"
+        },
+        {
           "value": "185.54.195.145",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.54.195.145/32",
           "mechanism": "ip4"
         },
         {
-          "value": "185.54.195.146",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "185.54.195.147",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "185.54.195.149",
+          "value": "81.45.42.202/32",
           "mechanism": "ip4"
         }
       ],
@@ -56,13 +83,82 @@
       "include": [],
       "redirect": null,
       "exp": null,
-      "all": "fail"
+      "all": "softfail"
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=quarantine; rua=mailto:postmaster@ayto-laviana.es, mailto:dmarc@ayto-laviana.com; ruf=mailto:ipm7hdp@fr.glockapps.com; fo=1; pct=100;",
+    "valid": true,
+    "location": "ayto-laviana.es",
+    "warnings": [
+      "ayto-laviana.com does not indicate that it accepts DMARC reports about ayto-laviana.es - Authorization record not found: ayto-laviana.es._report._dmarc.ayto-laviana.com IN TXT \"v=DMARC1\""
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "postmaster@ayto-laviana.es",
+            "size_limit": null
+          },
+          {
+            "scheme": "mailto",
+            "address": "dmarc@ayto-laviana.com",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "ipm7hdp@fr.glockapps.com",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "1"
+        ],
+        "explicit": true
+      },
+      "pct": {
+        "value": 100,
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "quarantine",
+        "explicit": false
+      }
+    }
   }
 }

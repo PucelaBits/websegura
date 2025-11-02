@@ -89,10 +89,12 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=reject; rua=mailto:postmaster@vitoria-gasteiz.org; ruf=mailto:postmaster@vitoria-gasteiz.org; adkim=r; aspf=r",
+    "record": "v=DMARC1; p=reject; rua=mailto:postmaster@vitoria-gasteiz.org,mailto:rua.dmarc@ccn-cert.cni.es; ruf=mailto:postmaster@vitoria-gasteiz.org; adkim=r; aspf=r",
     "valid": true,
     "location": "vitoria-gasteiz.org",
-    "warnings": [],
+    "warnings": [
+      "ccn-cert.cni.es does not indicate that it accepts DMARC reports about vitoria-gasteiz.org - Authorization record not found: vitoria-gasteiz.org._report._dmarc.ccn-cert.cni.es IN TXT \"v=DMARC1\""
+    ],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -107,6 +109,11 @@
           {
             "scheme": "mailto",
             "address": "postmaster@vitoria-gasteiz.org",
+            "size_limit": null
+          },
+          {
+            "scheme": "mailto",
+            "address": "rua.dmarc@ccn-cert.cni.es",
             "size_limit": null
           }
         ],

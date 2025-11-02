@@ -17,14 +17,14 @@
         "preference": 5,
         "hostname": "circuitricardotormo-com.mail.protection.outlook.com",
         "addresses": [
-          "2a01:111:f403:ca04::",
           "2a01:111:f403:ca04::4",
-          "2a01:111:f403:ca09::b",
-          "2a01:111:f403:ca09::d",
-          "52.101.68.15",
-          "52.101.68.29",
-          "52.101.68.32",
-          "52.101.73.19"
+          "2a01:111:f403:ca04::9",
+          "2a01:111:f403:ca04::b",
+          "2a01:111:f403:ca09::f",
+          "52.101.68.12",
+          "52.101.73.15",
+          "52.101.73.19",
+          "52.101.73.6"
         ]
       },
       {
@@ -47,10 +47,184 @@
     ]
   },
   "spf": {
-    "record": "v=spf1 include:spf.protection.outlook.com  mx ip4:194.224.2.180 ip4:217.127.33.86 ip4:95.128.153.25 ip4:212.101.67.25 ip4:212.170.152.71 ip4:194.224.2.180 ipv4:212.170.152.110 a:amazonses.com -all",
-    "valid": false,
+    "record": "v=spf1 include:spf.protection.outlook.com include:amazonses.com mx ip4:194.224.2.180 ip4:217.127.33.86 ip4:95.128.153.25 ip4:212.101.67.25 ip4:212.170.152.71 ip4:212.170.152.110 -all",
+    "valid": true,
+    "dns_lookups": 3,
     "warnings": [],
-    "error": "circuitricardotormo.com: Expected mechanism at position 155 in: v=spf1 include:spf.protection.outlook.com  mx ip4:194.224.2.180 ip4:217.127.33.86 ip4:95.128.153.25 ip4:212.101.67.25 ip4:212.170.152.71 ip4:194.224.2.180 ipv4:212.170.152.110 a:amazonses.com -all"
+    "parsed": {
+      "pass": [
+        {
+          "value": "circuitricardotormo-com.mail.protection.outlook.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mail.circuitvalencia.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mail2.circuitvalencia.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "194.224.2.180",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "217.127.33.86",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "95.128.153.25",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "212.101.67.25",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "212.170.152.71",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "212.170.152.110",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "spf.protection.outlook.com",
+          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/15 ip4:52.102.0.0/16 ip4:52.103.0.0/17 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/51 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "40.92.0.0/15",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "40.107.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.100.0.0/15",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.102.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.103.0.0/17",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "104.47.0.0/17",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "2a01:111:f400::/48",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403::/49",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:8000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:c000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:f000::/52",
+                "mechanism": "ip6"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "amazonses.com",
+          "record": "v=spf1 ip4:199.255.192.0/22 ip4:199.127.232.0/22 ip4:54.240.0.0/18 ip4:69.169.224.0/20 ip4:23.249.208.0/20 ip4:23.251.224.0/19 ip4:76.223.176.0/20 ip4:54.240.64.0/18 ip4:76.223.128.0/19 ip4:216.221.160.0/19 ip4:206.55.144.0/20 ip4:24.110.64.0/18 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "199.255.192.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "199.127.232.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "54.240.0.0/18",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "69.169.224.0/20",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "23.249.208.0/20",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "23.251.224.0/19",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "76.223.176.0/20",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "54.240.64.0/18",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "76.223.128.0/19",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "216.221.160.0/19",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "206.55.144.0/20",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "24.110.64.0/18",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
     "record": null,

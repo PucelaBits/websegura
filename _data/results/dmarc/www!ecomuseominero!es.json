@@ -13,9 +13,10 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "mx30.asaccomunicaciones.es",
+        "hostname": "mail3.ecomuseominero.es",
         "addresses": [
-          "94.100.134.8"
+          "185.73.173.33",
+          "185.73.173.41"
         ]
       },
       {
@@ -29,9 +30,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 +a +mx include:emailservice.cpd.as include:spf.hornetsecurity.com -all",
+    "record": "v=spf1 +a +mx include:emailservice.cpd.as include:spf.hornetsecurity.com ip4:185.79.129.137 ip4:185.73.173.32/28 a mx -all",
     "valid": true,
-    "dns_lookups": 5,
+    "dns_lookups": 7,
     "warnings": [
       "Duplicate include: spf.hornetsecurity.com"
     ],
@@ -42,7 +43,27 @@
           "mechanism": "a"
         },
         {
-          "value": "mx30.asaccomunicaciones.es",
+          "value": "mail3.ecomuseominero.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mx40.asaccomunicaciones.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "185.79.129.137",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "185.73.173.32/28",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "185.79.129.239",
+          "mechanism": "a"
+        },
+        {
+          "value": "mail3.ecomuseominero.es",
           "mechanism": "mx"
         },
         {

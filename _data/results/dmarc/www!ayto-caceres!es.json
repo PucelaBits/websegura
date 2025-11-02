@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "ns03.ns-cloud4b.net",
-      "ns06.ns-cloud4b.com",
-      "ns05.ns-cloud4b.org"
+      "ns05.ns-cloud4b.org",
+      "ns06.ns-cloud4b.com"
     ],
     "warnings": []
   },
@@ -191,71 +191,9 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=reject; rua=mailto:dmarc@ayto-caceres.es; ruf=mailto:dmarc@ayto-caceres.es; fo=1; adkim=s; aspf=s; pct=100; rf=afrf; ri=86400; sp=reject",
-    "valid": true,
-    "location": "ayto-caceres.es",
-    "warnings": [],
-    "tags": {
-      "v": {
-        "value": "DMARC1",
-        "explicit": true
-      },
-      "p": {
-        "value": "reject",
-        "explicit": true
-      },
-      "rua": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "dmarc@ayto-caceres.es",
-            "size_limit": null
-          }
-        ],
-        "explicit": true
-      },
-      "ruf": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "dmarc@ayto-caceres.es",
-            "size_limit": null
-          }
-        ],
-        "explicit": true
-      },
-      "fo": {
-        "value": [
-          "1"
-        ],
-        "explicit": true
-      },
-      "adkim": {
-        "value": "s",
-        "explicit": true
-      },
-      "aspf": {
-        "value": "s",
-        "explicit": true
-      },
-      "pct": {
-        "value": 100,
-        "explicit": true
-      },
-      "rf": {
-        "value": [
-          "afrf"
-        ],
-        "explicit": true
-      },
-      "ri": {
-        "value": 86400,
-        "explicit": true
-      },
-      "sp": {
-        "value": "reject",
-        "explicit": true
-      }
-    }
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "Multiple DMARC policy records are not permitted - https://tools.ietf.org/html/rfc7489#section-6.6.3"
   }
 }

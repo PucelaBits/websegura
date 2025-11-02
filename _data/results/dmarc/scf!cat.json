@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "ns.gestiondecuenta.com",
-      "ns2.gestiondecuenta.com",
       "ns4.gestiondecuenta.com",
+      "ns2.gestiondecuenta.com",
       "ns3.gestiondecuenta.com"
     ],
     "warnings": []
@@ -98,9 +98,66 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "Multiple DMARC policy records are not permitted - https://tools.ietf.org/html/rfc7489#section-6.6.3"
+    "record": "v=DMARC1; p=quarantine; sp=none; aspf=r; rua=mailto:it@scf.cat,mailto:re+sofxnouxplt@dmarc.postmarkapp.com; pct=100;",
+    "valid": true,
+    "location": "scf.cat",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "sp": {
+        "value": "none",
+        "explicit": true
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "it@scf.cat",
+            "size_limit": null
+          },
+          {
+            "scheme": "mailto",
+            "address": "re+sofxnouxplt@dmarc.postmarkapp.com",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "pct": {
+        "value": 100,
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      }
+    }
   }
 }

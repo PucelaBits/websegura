@@ -18,10 +18,12 @@
     "error": "web.bizkaia.eus does not have a SPF TXT record"
   },
   "dmarc": {
-    "record": "v=DMARC1;p=none;rua=mailto:soc@bizkaia.eus,mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com",
+    "record": "v=DMARC1;p=none;rua=mailto:rua.dmarc@ccn-cert.cni.es,mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com",
     "valid": true,
     "location": "bizkaia.eus",
-    "warnings": [],
+    "warnings": [
+      "ccn-cert.cni.es does not indicate that it accepts DMARC reports about bizkaia.eus - Authorization record not found: bizkaia.eus._report._dmarc.ccn-cert.cni.es IN TXT \"v=DMARC1\""
+    ],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -32,18 +34,7 @@
         "explicit": true
       },
       "rua": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "soc@bizkaia.eus",
-            "size_limit": null
-          },
-          {
-            "scheme": "mailto",
-            "address": "dmarc_rua@emaildefense.proofpoint.com",
-            "size_limit": null
-          }
-        ],
+        "value": "mailto:rua.dmarc@ccn-cert.cni.es,mailto:dmarc_rua@emaildefense.proofpoint.com",
         "explicit": true
       },
       "ruf": {

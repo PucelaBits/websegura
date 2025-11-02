@@ -57,7 +57,7 @@
             "include": [
               {
                 "domain": "eig.spf.a.cloudfilter.net",
-                "record": "v=spf1 ip4:35.89.44.32/29 ip4:44.202.169.32/29 ~all",
+                "record": "v=spf1 ip4:35.89.44.32/29 ip4:44.202.169.32/29 ip4:34.226.25.166/32 ~all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
@@ -67,6 +67,10 @@
                     },
                     {
                       "value": "44.202.169.32/29",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "34.226.25.166/32",
                       "mechanism": "ip4"
                     }
                   ],

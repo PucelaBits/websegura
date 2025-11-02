@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "ns2.dinahosting.com",
-      "ns.dinahosting.com",
       "ns3.dinahosting.com",
+      "ns.dinahosting.com",
       "ns4.dinahosting.com"
     ],
     "warnings": []
@@ -17,24 +17,24 @@
         "preference": 10,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "192.178.220.27",
-          "2607:f8b0:4023:100f::1b"
+          "108.177.11.26",
+          "2607:f8b0:400c:c01::1b"
         ]
       },
       {
         "preference": 20,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.250.142.27",
-          "2607:f8b0:4023:1c03::1b"
+          "172.253.132.27",
+          "2607:f8b0:4023:2c03::1a"
         ]
       },
       {
         "preference": 30,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "192.178.164.27",
-          "2607:f8b0:4023:2009::1b"
+          "209.85.144.27",
+          "2607:f8b0:400d:c0e::1a"
         ]
       }
     ],
@@ -168,6 +168,6 @@
     "record": "v=DMARC1; p=quarantine; rua=mailto:info@visit-pontevedra.com ruf=mailto:info@visit-pontevedra.com",
     "valid": false,
     "location": "visit-pontevedra.com",
-    "error": "Error: Expected end_of_statement or ; at position 64 in: v=DMARC1; p=quarantine; rua=mailto:info@visit-pontevedra.com ruf=mailto:info@visit-pontevedra.com"
+    "error": "Error: Expected ; or end_of_statement at position 64 in: v=DMARC1; p=quarantine; rua=mailto:info@visit-pontevedra.com ruf=mailto:info@visit-pontevedra.com"
   }
 }

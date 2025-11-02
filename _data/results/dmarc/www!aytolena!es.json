@@ -10,18 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mx.aytolena.es",
-        "addresses": [
-          "217.116.0.227"
-        ]
-      }
-    ],
-    "warnings": [
-      "The reverse DNS of 217.116.0.227 is mariskalrock.com, but the A/AAAA DNS records for mariskalrock.com do not resolve to 217.116.0.227"
-    ]
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 ip4:212.89.23.3 redirect=spf.dominioabsoluto.net",

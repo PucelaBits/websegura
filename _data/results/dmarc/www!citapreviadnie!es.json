@@ -28,21 +28,32 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1mxip4:195.55.116.96-all",
+    "record": "v=spf1 mx ip4:195.55.116.96 -all",
     "valid": true,
     "dns_lookups": 1,
-    "warnings": [
-      "The domain ip4:195.55.116.96-all does not exist"
-    ],
+    "warnings": [],
     "parsed": {
-      "pass": [],
+      "pass": [
+        {
+          "value": "mxa-00825801.gslb.pphosted.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mxb-00825801.gslb.pphosted.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "195.55.116.96",
+          "mechanism": "ip4"
+        }
+      ],
       "neutral": [],
       "softfail": [],
       "fail": [],
       "include": [],
       "redirect": null,
       "exp": null,
-      "all": "neutral"
+      "all": "fail"
     }
   },
   "dmarc": {
