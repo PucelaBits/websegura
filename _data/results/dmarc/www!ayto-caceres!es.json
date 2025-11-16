@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns03.ns-cloud4b.net",
       "ns05.ns-cloud4b.org",
-      "ns06.ns-cloud4b.com"
+      "ns06.ns-cloud4b.com",
+      "ns03.ns-cloud4b.net"
     ],
     "warnings": []
   },
@@ -191,9 +191,9 @@
     }
   },
   "dmarc": {
-    "record": null,
+    "record": "v=DMARC1; p=reject; pct=100; ruf=mailto:dmarc@ayto-caceres.es; rua=mailto:dmarc@ayto-caceres.es,rua.dmarc@ccn-cert.cni.es; sp=reject; adkim=r; aspf=r; rf=afrf; ri=86400",
     "valid": false,
-    "location": null,
-    "error": "Multiple DMARC policy records are not permitted - https://tools.ietf.org/html/rfc7489#section-6.6.3"
+    "location": "ayto-caceres.es",
+    "error": "rua.dmarc@ccn-cert.cni.es is not a valid DMARC report URI"
   }
 }

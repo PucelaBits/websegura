@@ -29,9 +29,29 @@
     "warnings": []
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "agenciatributaria.gob.es does not have a SPF TXT record"
+    "record": "v=spf1 ip4:195.77.198.96/32 ip4:195.77.198.97/32 -all",
+    "valid": true,
+    "dns_lookups": 0,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "195.77.198.96/32",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "195.77.198.97/32",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
     "record": "v=DMARC1; p=reject; fo=1; ri=3600; rua=mailto:informesdmarc@correo.aeat.es; ruf=mailto:informesdmarc@correo.aeat.es",

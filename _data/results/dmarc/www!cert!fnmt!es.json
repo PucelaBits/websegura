@@ -4,12 +4,12 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "a11-64.akam.net",
       "a22-66.akam.net",
-      "a18-65.akam.net",
-      "a16-65.akam.net",
       "a9-67.akam.net",
-      "a1-200.akam.net"
+      "a1-200.akam.net",
+      "a16-65.akam.net",
+      "a11-64.akam.net",
+      "a18-65.akam.net"
     ],
     "warnings": []
   },
@@ -25,10 +25,12 @@
     "error": "cert.fnmt.es does not have a SPF TXT record"
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; fo=1; rua=mailto:dmarc.rua@fnmt.es; ruf=mailto:dmarc.ruf@fnmt.es",
+    "record": "v=DMARC1; p=quarantine; fo=1; rua=mailto:dmarc.rua@fnmt.es,mailto:rua.dmarc@ccn-cert.cni.es; ruf=mailto:dmarc.ruf@fnmt.es",
     "valid": true,
     "location": "fnmt.es",
-    "warnings": [],
+    "warnings": [
+      "ccn-cert.cni.es does not indicate that it accepts DMARC reports about fnmt.es - Authorization record not found: fnmt.es._report._dmarc.ccn-cert.cni.es IN TXT \"v=DMARC1\""
+    ],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -49,6 +51,11 @@
           {
             "scheme": "mailto",
             "address": "dmarc.rua@fnmt.es",
+            "size_limit": null
+          },
+          {
+            "scheme": "mailto",
+            "address": "rua.dmarc@ccn-cert.cni.es",
             "size_limit": null
           }
         ],

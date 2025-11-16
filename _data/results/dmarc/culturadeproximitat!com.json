@@ -11,29 +11,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 5,
-        "hostname": "mx1.filterantispam.com",
-        "addresses": []
-      },
-      {
-        "preference": 5,
-        "hostname": "mx2.filterantispam.com",
-        "addresses": []
-      },
-      {
-        "preference": 10,
-        "hostname": "mail.culturadeproximitat.com",
-        "addresses": [
-          "134.0.12.251"
-        ]
-      }
-    ],
-    "warnings": [
-      "The domain mx1.filterantispam.com does not exist",
-      "The domain mx2.filterantispam.com does not exist"
-    ]
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 include:_spf.srv.cat ~all",

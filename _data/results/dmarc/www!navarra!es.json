@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "dns1.navarra.es",
-      "dns2.navarra.es",
-      "dns1.nasertic.es"
+      "dns1.nasertic.es",
+      "dns2.navarra.es"
     ],
     "warnings": []
   },
@@ -27,10 +27,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 176.12.85.138 is smtp2.navarra.es, but the A/AAAA DNS records for smtp2.navarra.es do not resolve to 176.12.85.138"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx -all",

@@ -4,11 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.csanet.io",
-      "dns2.csanet.io",
-      "tapia.csa.es",
-      "clunia.csa.es",
-      "buniel.csa.es"
+      "ns2.dondominio.com",
+      "ns1.dondominio.com"
     ],
     "warnings": []
   },
@@ -46,28 +43,12 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx a:correo.aytoburgos.es include:spf-relay.sarenet.es include:emailservice.cpd.as -all",
+    "record": "v=spf1 a:correo.aytoburgos.es include:spf-relay.sarenet.es include:emailservice.cpd.as -all",
     "valid": true,
-    "dns_lookups": 5,
+    "dns_lookups": 4,
     "warnings": [],
     "parsed": {
       "pass": [
-        {
-          "value": "mx01.hornetsecurity.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "mx02.hornetsecurity.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "mx03.hornetsecurity.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "mx04.hornetsecurity.com",
-          "mechanism": "mx"
-        },
         {
           "value": "195.53.84.178",
           "mechanism": "a"

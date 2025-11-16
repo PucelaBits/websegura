@@ -43,9 +43,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx ip4:90.160.63.192/26 include:_pmta2.antevenio.com include:spf.protection.outlook.com include:spf.hornetsecurity.com ~all",
+    "record": "v=spf1 mx ip4:90.160.63.192/26 include:_pmta2.antevenio.com include:spf.protection.outlook.com include:spf.hornetsecurity.com include:cajarural.es ~all",
     "valid": true,
-    "dns_lookups": 4,
+    "dns_lookups": 5,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -286,6 +286,71 @@
             "redirect": null,
             "exp": null,
             "all": "softfail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "cajarural.es",
+          "record": "v=spf1 ip4:195.53.82.194   ip4:195.53.82.198 ip4:195.53.82.211 ip4:195.53.82.212 ip4:195.53.82.196 ip4:195.53.82.197 ip4:195.53.82.159 ip4:195.53.82.160 ip4:195.53.82.219 ip4:195.53.82.142 ip4:195.53.82.143 ip4:195.53.82.144 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "195.53.82.194",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "195.53.82.198",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "195.53.82.211",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "195.53.82.212",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "195.53.82.196",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "195.53.82.197",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "195.53.82.159",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "195.53.82.160",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "195.53.82.219",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "195.53.82.142",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "195.53.82.143",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "195.53.82.144",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
           },
           "warnings": []
         }

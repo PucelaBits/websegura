@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.stinet.net",
       "ns1.stinet.net",
+      "ns2.stinet.net",
       "ns3.stinet.net"
     ],
     "warnings": []
@@ -21,7 +21,8 @@
       }
     ],
     "warnings": [
-      "195.55.85.205 does not have any reverse DNS (PTR) records"
+      "The domain server205.cescyl.es does not exist",
+      "The reverse DNS of 195.55.85.205 is server205.cescyl.es, but the A/AAAA DNS records for server205.cescyl.es do not resolve to 195.55.85.205"
     ]
   },
   "spf": {

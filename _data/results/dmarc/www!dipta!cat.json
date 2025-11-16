@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "nil.fut.es",
-      "damia.altanet.org"
+      "damia.altanet.org",
+      "nil.fut.es"
     ],
     "warnings": []
   },
@@ -14,7 +14,9 @@
       {
         "preference": 10,
         "hostname": "mx1.dipta.cat",
-        "addresses": []
+        "addresses": [
+          "195.76.233.59"
+        ]
       },
       {
         "preference": 10,
@@ -25,7 +27,8 @@
       }
     ],
     "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 195.76.233.59 is mx1.dipta.cat, but the A/AAAA DNS records for mx1.dipta.cat do not resolve to 195.76.233.59"
     ]
   },
   "spf": {

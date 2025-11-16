@@ -5,9 +5,9 @@
   "ns": {
     "hostnames": [
       "sbx05.ub.edu",
-      "sbx06.ub.edu",
       "sun.rediris.es",
-      "chico.rediris.es"
+      "chico.rediris.es",
+      "sbx06.ub.edu"
     ],
     "warnings": []
   },
@@ -31,9 +31,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:161.116.234.11 ip4:161.116.234.12 ip4:161.116.234.17 ip4:161.116.234.18 ip4:161.116.110.133 ip4:161.116.110.132 ip4:161.116.230.24 ip4:84.88.0.6/31 ip4:161.116.171.128/25 ip4:149.72.91.62 ip4:168.245.57.151 include:spf.puc.rediris.es include:spf.protection.outlook.com include:myopenlms.net -all",
+    "record": "v=spf1 ip4:161.116.234.11 ip4:161.116.234.12 ip4:161.116.234.17 ip4:161.116.234.18 ip4:161.116.110.133 ip4:161.116.110.132 ip4:161.116.230.24 ip4:84.88.0.6/31 ip4:161.116.171.128/25 ip4:149.72.91.62 ip4:168.245.57.151 include:spf.protection.outlook.com include:myopenlms.net -all",
     "valid": true,
-    "dns_lookups": 4,
+    "dns_lookups": 3,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -86,35 +86,6 @@
       "softfail": [],
       "fail": [],
       "include": [
-        {
-          "domain": "spf.puc.rediris.es",
-          "record": "v=spf1 ip4:143.55.146.78 ip4:143.55.148.243 ip4:130.206.25.38 ~all",
-          "dns_lookups": 0,
-          "parsed": {
-            "pass": [
-              {
-                "value": "143.55.146.78",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "143.55.148.243",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "130.206.25.38",
-                "mechanism": "ip4"
-              }
-            ],
-            "neutral": [],
-            "softfail": [],
-            "fail": [],
-            "include": [],
-            "redirect": null,
-            "exp": null,
-            "all": "softfail"
-          },
-          "warnings": []
-        },
         {
           "domain": "spf.protection.outlook.com",
           "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/15 ip4:52.102.0.0/16 ip4:52.103.0.0/17 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/51 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",

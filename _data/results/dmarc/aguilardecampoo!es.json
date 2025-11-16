@@ -14,40 +14,40 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "172.253.132.27",
-          "2607:f8b0:4023:2c03::1b"
+          "172.217.78.26",
+          "2607:f8b0:4023:1c05::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "209.85.144.27",
-          "2607:f8b0:400d:c0e::1b"
+          "192.178.164.27",
+          "2607:f8b0:4023:2009::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "108.177.11.27",
-          "2607:f8b0:400c:c01::1a"
+          "192.178.220.27",
+          "2607:f8b0:4023:100f::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "aspmx2.googlemail.com",
         "addresses": [
-          "209.85.144.26",
-          "2607:f8b0:400d:c0e::1b"
+          "192.178.164.26",
+          "2607:f8b0:4023:2009::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "aspmx3.googlemail.com",
         "addresses": [
-          "108.177.11.26",
-          "2607:f8b0:400c:c01::1b"
+          "192.178.220.26",
+          "2607:f8b0:4023:100f::1a"
         ]
       }
     ],
@@ -76,7 +76,7 @@
             "include": [
               {
                 "domain": "_netblocks.google.com",
-                "record": "v=spf1 ip4:74.125.0.0/16 ip4:173.194.0.0/16 ip4:209.85.128.0/17 ip4:216.58.192.0/19 ip4:216.239.32.0/19 ip4:172.217.32.0/21 ip4:172.253.56.0/21 ip4:172.253.112.0/20 ~all",
+                "record": "v=spf1 ip4:74.125.0.0/16 ip4:173.194.0.0/16 ip4:209.85.128.0/17 ip4:216.58.192.0/19 ip4:216.239.32.0/19 ip4:172.217.32.0/21 ~all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
@@ -102,14 +102,6 @@
                     },
                     {
                       "value": "172.217.32.0/21",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "172.253.56.0/21",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "172.253.112.0/20",
                       "mechanism": "ip4"
                     }
                   ],
@@ -178,9 +170,57 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=none; rua=mailto:informatica@diputaciondepalencia.es,mailto:rua.dmarc@ccn-cert.cni.es; adkim=r;aspf=r;",
+    "valid": true,
+    "location": "aguilardecampoo.es",
+    "warnings": [
+      "diputaciondepalencia.es does not indicate that it accepts DMARC reports about aguilardecampoo.es - Authorization record not found: aguilardecampoo.es._report._dmarc.diputaciondepalencia.es IN TXT \"v=DMARC1\""
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "rua": {
+        "value": "mailto:informatica@diputaciondepalencia.es,mailto:rua.dmarc@ccn-cert.cni.es",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": true
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }

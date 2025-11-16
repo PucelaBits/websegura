@@ -17,28 +17,24 @@
         "addresses": [
           "2a01:111:f403:ca04::2",
           "2a01:111:f403:ca04::c",
-          "2a01:111:f403:ca09::6",
-          "2a01:111:f403:ca09::8",
-          "52.101.68.0",
-          "52.101.68.21",
-          "52.101.73.1",
-          "52.101.73.30"
+          "2a01:111:f403:ca04::e",
+          "2a01:111:f403:ca09::f",
+          "52.101.73.12",
+          "52.101.73.15",
+          "52.101.73.2",
+          "52.101.73.21"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:192.148.209.198 ip4:192.148.209.182 ip4:54.229.2.165 ip4:52.30.130.201 include:spf.protection.outlook.com ~all",
+    "record": "v=spf1 ip4:192.148.209.182 ip4:54.229.2.165 ip4:52.30.130.201 include:spf.protection.outlook.com include:_spf.atlassian.net ~all",
     "valid": true,
-    "dns_lookups": 1,
+    "dns_lookups": 3,
     "warnings": [],
     "parsed": {
       "pass": [
-        {
-          "value": "192.148.209.198",
-          "mechanism": "ip4"
-        },
         {
           "value": "192.148.209.182",
           "mechanism": "ip4"
@@ -111,6 +107,97 @@
             "softfail": [],
             "fail": [],
             "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "_spf.atlassian.net",
+          "record": "v=spf1 ip4:167.89.0.0/17 ip4:168.245.0.0/17 include:amazonses.com -all",
+          "dns_lookups": 1,
+          "parsed": {
+            "pass": [
+              {
+                "value": "167.89.0.0/17",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "168.245.0.0/17",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [
+              {
+                "domain": "amazonses.com",
+                "record": "v=spf1 ip4:199.255.192.0/22 ip4:199.127.232.0/22 ip4:54.240.0.0/18 ip4:69.169.224.0/20 ip4:23.249.208.0/20 ip4:23.251.224.0/19 ip4:76.223.176.0/20 ip4:54.240.64.0/18 ip4:76.223.128.0/19 ip4:216.221.160.0/19 ip4:206.55.144.0/20 ip4:24.110.64.0/18 -all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "199.255.192.0/22",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "199.127.232.0/22",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "54.240.0.0/18",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "69.169.224.0/20",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "23.249.208.0/20",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "23.251.224.0/19",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "76.223.176.0/20",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "54.240.64.0/18",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "76.223.128.0/19",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "216.221.160.0/19",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "206.55.144.0/20",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "24.110.64.0/18",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "fail"
+                },
+                "warnings": []
+              }
+            ],
             "redirect": null,
             "exp": null,
             "all": "fail"

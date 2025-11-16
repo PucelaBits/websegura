@@ -174,9 +174,57 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1;p=reject; ; sp=reject ; rua=mailto:rua.dmarc@ccn-cert.cni.es",
-    "valid": false,
+    "record": "v=DMARC1; p=reject; sp=reject; rua=mailto:rua.dmarc@ccn-cert.cni.es",
+    "valid": true,
     "location": "ourense.gal",
-    "error": "Error: Expected tag_value at position 19 in: v=DMARC1;p=reject; ; sp=reject ; rua=mailto:rua.dmarc@ccn-cert.cni.es"
+    "warnings": [
+      "ccn-cert.cni.es does not indicate that it accepts DMARC reports about ourense.gal - Authorization record not found: ourense.gal._report._dmarc.ccn-cert.cni.es IN TXT \"v=DMARC1\""
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "reject",
+        "explicit": true
+      },
+      "sp": {
+        "value": "reject",
+        "explicit": true
+      },
+      "rua": {
+        "value": "mailto:rua.dmarc@ccn-cert.cni.es",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      }
+    }
   }
 }

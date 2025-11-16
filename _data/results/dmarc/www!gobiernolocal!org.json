@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns3.diba.cat",
-      "ns4.diba.cat"
+      "ns4.diba.cat",
+      "ns3.diba.cat"
     ],
     "warnings": []
   },
@@ -33,7 +33,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 45.15.50.202 is mx3.diba.cat, but the A/AAAA DNS records for mx3.diba.cat do not resolve to 45.15.50.202"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:spf.diba.cat include:spf.protection.outlook.com ~all",
@@ -135,57 +138,9 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; rua=mailto:sgot.seguretat@diba.cat",
-    "valid": true,
+    "record": "v=DMARC1; p=none; rua=mailto:sgot.seguretat@diba.cat; mailto:rua.dmarc@ccn-cert.cni.es",
+    "valid": false,
     "location": "gobiernolocal.org",
-    "warnings": [
-      "diba.cat does not indicate that it accepts DMARC reports about gobiernolocal.org - Authorization record not found: gobiernolocal.org._report._dmarc.diba.cat IN TXT \"v=DMARC1\""
-    ],
-    "tags": {
-      "v": {
-        "value": "DMARC1",
-        "explicit": true
-      },
-      "p": {
-        "value": "none",
-        "explicit": true
-      },
-      "rua": {
-        "value": "mailto:sgot.seguretat@diba.cat",
-        "explicit": true
-      },
-      "adkim": {
-        "value": "r",
-        "explicit": false
-      },
-      "aspf": {
-        "value": "r",
-        "explicit": false
-      },
-      "fo": {
-        "value": [
-          "0"
-        ],
-        "explicit": false
-      },
-      "pct": {
-        "value": 100,
-        "explicit": false
-      },
-      "rf": {
-        "value": [
-          "afrf"
-        ],
-        "explicit": false
-      },
-      "ri": {
-        "value": 86400,
-        "explicit": false
-      },
-      "sp": {
-        "value": "none",
-        "explicit": false
-      }
-    }
+    "error": "Error: Expected tag_value at position 54 in: v=DMARC1; p=none; rua=mailto:sgot.seguretat@diba.cat; mailto:rua.dmarc@ccn-cert.cni.es"
   }
 }

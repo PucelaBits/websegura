@@ -31,12 +31,16 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx include:spf.protection.outlook.com -all",
+    "record": "v=spf1 ip4:195.76.21.10 mx include:spf.protection.outlook.com -all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
     "parsed": {
       "pass": [
+        {
+          "value": "195.76.21.10",
+          "mechanism": "ip4"
+        },
         {
           "value": "mx1.hc550-23.c3s2.iphmx.com",
           "mechanism": "mx"
