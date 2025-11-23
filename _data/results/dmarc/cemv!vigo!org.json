@@ -18,10 +18,12 @@
     "error": "cemv.vigo.org does not have a SPF TXT record"
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; rua=mailto:postmaster@vigo.org; ruf=mailto:postmaster@vigo.org; sp=quarantine",
+    "record": "v=DMARC1; p=quarantine; rua=mailto:postmaster@vigo.org,mailto:rua.dmarc@ccn-cert.cni.es; ruf=mailto:postmaster@vigo.org; sp=quarantine",
     "valid": true,
     "location": "vigo.org",
-    "warnings": [],
+    "warnings": [
+      "ccn-cert.cni.es does not indicate that it accepts DMARC reports about vigo.org - Authorization record not found: vigo.org._report._dmarc.ccn-cert.cni.es IN TXT \"v=DMARC1\""
+    ],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -36,6 +38,11 @@
           {
             "scheme": "mailto",
             "address": "postmaster@vigo.org",
+            "size_limit": null
+          },
+          {
+            "scheme": "mailto",
+            "address": "rua.dmarc@ccn-cert.cni.es",
             "size_limit": null
           }
         ],

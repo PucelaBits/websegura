@@ -51,7 +51,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; rua=mailto:reports_dmarc@csic.es; ruf=mailto:forensic@csic.es;  adkim=r; fo=1;",
+    "record": "v=DMARC1; p=none; sp=none; rua=mailto:reports_dmarc@csic.es; ruf=mailto:forensic@csic.es;  adkim=r; fo=1;",
     "valid": true,
     "location": "csic.es",
     "warnings": [],
@@ -61,6 +61,10 @@
         "explicit": true
       },
       "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "sp": {
         "value": "none",
         "explicit": true
       },
@@ -110,10 +114,6 @@
       },
       "ri": {
         "value": 86400,
-        "explicit": false
-      },
-      "sp": {
-        "value": "none",
         "explicit": false
       }
     }

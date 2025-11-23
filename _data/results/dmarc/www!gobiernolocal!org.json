@@ -33,10 +33,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 45.15.50.202 is mx3.diba.cat, but the A/AAAA DNS records for mx3.diba.cat do not resolve to 45.15.50.202"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.diba.cat include:spf.protection.outlook.com ~all",

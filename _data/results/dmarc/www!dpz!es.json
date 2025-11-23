@@ -3,22 +3,208 @@
   "base_domain": "dpz.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hostnames": [
+      "dns.dpz.es",
+      "dns2.dpz.es"
+    ],
+    "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "dpz-es.mail.protection.outlook.com",
+        "addresses": [
+          "2a01:111:f403:ca04::5",
+          "2a01:111:f403:ca04::c",
+          "2a01:111:f403:ca09::6",
+          "2a01:111:f403:ca09::9",
+          "52.101.68.36",
+          "52.101.68.8",
+          "52.101.73.2",
+          "52.101.73.22"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "record": "v=spf1 mx ip4:213.4.82.254 a:espublico.com ip4:44.192.35.145 a:freshdesk.com include:spf.protection.outlook.com -all",
+    "valid": true,
+    "dns_lookups": 4,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "dpz-es.mail.protection.outlook.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "213.4.82.254",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "185.128.8.1",
+          "mechanism": "a"
+        },
+        {
+          "value": "44.192.35.145",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "54.192.55.113",
+          "mechanism": "a"
+        },
+        {
+          "value": "54.192.55.121",
+          "mechanism": "a"
+        },
+        {
+          "value": "54.192.55.31",
+          "mechanism": "a"
+        },
+        {
+          "value": "54.192.55.63",
+          "mechanism": "a"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "spf.protection.outlook.com",
+          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/15 ip4:52.102.0.0/16 ip4:52.103.0.0/17 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/51 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "40.92.0.0/15",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "40.107.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.100.0.0/15",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.102.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.103.0.0/17",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "104.47.0.0/17",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "2a01:111:f400::/48",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403::/49",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:8000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:c000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:f000::/52",
+                "mechanism": "ip6"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "record": "v=DMARC1; p=quarantine; rua=mailto:admin@dpz.es; ruf=mailto:admin@dpz.es; sp=quarantine",
+    "valid": true,
+    "location": "dpz.es",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "admin@dpz.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "admin@dpz.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "sp": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      }
+    }
   }
 }

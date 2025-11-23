@@ -17,12 +17,12 @@
         "addresses": [
           "2a01:111:f403:ca04::2",
           "2a01:111:f403:ca04::d",
-          "2a01:111:f403:ca09::5",
-          "2a01:111:f403:ca09::b",
-          "52.101.68.16",
-          "52.101.73.15",
-          "52.101.73.19",
-          "52.101.73.30"
+          "2a01:111:f403:ca04::e",
+          "2a01:111:f403:ca09::d",
+          "52.101.68.25",
+          "52.101.73.24",
+          "52.101.73.30",
+          "52.101.73.6"
         ]
       }
     ],
@@ -32,8 +32,7 @@
     "record": "v=spf1 include:spf.protection.outlook.com mx include:_spf.evicertia.com mx include:trackglobe.com -all",
     "valid": false,
     "warnings": [],
-    "error": "Parsing the SPF record requires 14/10 maximum DNS lookups - https://tools.ietf.org/html/rfc7208#section-4.6.4",
-    "dns_lookups": 14
+    "error": "All nameservers failed to answer the query trackglobe.email. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "dmarc": {
     "record": "v=DMARC1; p=none;",

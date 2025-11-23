@@ -4,12 +4,12 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "a16-64.akam.net",
-      "a4-66.akam.net",
       "a1-47.akam.net",
+      "a16-64.akam.net",
       "a9-66.akam.net",
       "a13-65.akam.net",
-      "a26-66.akam.net"
+      "a26-66.akam.net",
+      "a4-66.akam.net"
     ],
     "warnings": []
   },
@@ -67,7 +67,7 @@
       "include": [
         {
           "domain": "mundo-r.com",
-          "record": "v=spf1 mx include:spf.hornetsecurity.com ip4:212.51.32.0/23 ip4:213.60.252.118 ip4:212.142.145.30 ip4:212.142.145.31 ip4:212.142.145.32 ip4:212.142.145.37 ip4:213.60.113.180 ip4:212.142.144.0/27 ip4:217.168.2.92 -all",
+          "record": "v=spf1 mx include:spf.hornetsecurity.com ip4:212.51.32.0/23 ip4:213.60.252.118 ip4:212.142.145.30 ip4:212.142.145.31 ip4:212.142.145.32 ip4:212.142.145.37 ip4:213.60.113.180 ip4:212.142.144.0/27 ip4:217.168.2.92 ip4:212.51.43.219 -all",
           "dns_lookups": 2,
           "parsed": {
             "pass": [
@@ -109,6 +109,10 @@
               },
               {
                 "value": "217.168.2.92",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "212.51.43.219",
                 "mechanism": "ip4"
               }
             ],

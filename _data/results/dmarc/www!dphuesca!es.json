@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "artemis.ttd.net",
-      "dns3.dphuesca.es"
+      "dns3.dphuesca.es",
+      "artemis.ttd.net"
     ],
     "warnings": []
   },
@@ -15,44 +15,46 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "172.217.217.27",
-          "2607:f8b0:4023:1c01::1a"
+          "172.253.132.26",
+          "2607:f8b0:4023:2c03::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "192.178.164.26",
-          "2607:f8b0:4023:2009::1b"
+          "209.85.144.26",
+          "2607:f8b0:400d:c0e::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "192.178.220.26",
-          "2607:f8b0:4023:100f::1b"
+          "108.177.11.26",
+          "2607:f8b0:400c:c01::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "172.253.135.27",
-          "2607:f8b0:4023:1015::1a"
+          "192.178.218.27",
+          "2607:f8b0:4004:c25::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "172.217.74.26",
-          "2607:f8b0:4023:3001::1b"
+          "108.177.123.26",
+          "2800:3f0:4003:c0f::1a"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "2800:3f0:4003:c0f::1a does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:_spf.google.com include:spf.protection.outlook.com ip6:2a02:9010:1c::/48 ip4:194.224.40.48/28 ip4:212.170.255.0/24 ip4:188.244.81.0/24 ip4:10.252.0.0/15 -all",
@@ -98,7 +100,7 @@
             "include": [
               {
                 "domain": "_netblocks.google.com",
-                "record": "v=spf1 ip4:74.125.0.0/16 ip4:173.194.0.0/16 ip4:209.85.128.0/17 ip4:216.58.192.0/19 ip4:216.239.32.0/19 ip4:172.217.32.0/21 ~all",
+                "record": "v=spf1 ip4:74.125.0.0/16 ip4:173.194.0.0/17 ip4:209.85.128.0/17 ip4:216.58.192.0/19 ip4:216.239.32.0/19 ~all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
@@ -107,7 +109,7 @@
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "173.194.0.0/16",
+                      "value": "173.194.0.0/17",
                       "mechanism": "ip4"
                     },
                     {
@@ -120,10 +122,6 @@
                     },
                     {
                       "value": "216.239.32.0/19",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "172.217.32.0/21",
                       "mechanism": "ip4"
                     }
                   ],

@@ -26,10 +26,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 195.76.233.59 is mx1.dipta.cat, but the A/AAAA DNS records for mx1.dipta.cat do not resolve to 195.76.233.59"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:195.77.216.146 ip4:195.76.233.59 a mx ?all",

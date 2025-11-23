@@ -15,44 +15,46 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.250.142.26",
-          "2607:f8b0:4023:1c05::1b"
+          "172.253.132.27",
+          "2607:f8b0:4023:2c03::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "192.178.164.27",
-          "2607:f8b0:4023:2009::1a"
+          "209.85.144.27",
+          "2607:f8b0:400d:c0e::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "192.178.220.26",
-          "2607:f8b0:4023:100f::1a"
+          "108.177.11.26",
+          "2607:f8b0:400c:c01::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "172.253.135.27",
-          "2607:f8b0:4023:1015::1b"
+          "192.178.218.26",
+          "2607:f8b0:4004:c25::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "172.217.74.27",
-          "2607:f8b0:4023:3001::1b"
+          "108.177.123.27",
+          "2800:3f0:4003:c0f::1a"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "2800:3f0:4003:c0f::1a does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
     "record": "v=spf1 +a +mx +ip4:85.208.100.77 +ip4:185.206.62.80 +include:_spf.google.com ~all",
@@ -110,7 +112,7 @@
             "include": [
               {
                 "domain": "_netblocks.google.com",
-                "record": "v=spf1 ip4:74.125.0.0/16 ip4:173.194.0.0/16 ip4:209.85.128.0/17 ip4:216.58.192.0/19 ip4:216.239.32.0/19 ip4:172.217.32.0/21 ~all",
+                "record": "v=spf1 ip4:74.125.0.0/16 ip4:173.194.0.0/17 ip4:209.85.128.0/17 ip4:216.58.192.0/19 ip4:216.239.32.0/19 ~all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
@@ -119,7 +121,7 @@
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "173.194.0.0/16",
+                      "value": "173.194.0.0/17",
                       "mechanism": "ip4"
                     },
                     {
@@ -132,10 +134,6 @@
                     },
                     {
                       "value": "216.239.32.0/19",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "172.217.32.0/21",
                       "mechanism": "ip4"
                     }
                   ],

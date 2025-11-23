@@ -4,57 +4,29 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.parkingcrew.net",
-      "ns2.parkingcrew.net"
+      "ns.inwx.de",
+      "ns3.inwx.eu",
+      "ns2.inwx.de"
     ],
     "warnings": []
   },
   "mx": {
     "hosts": [
       {
-        "preference": 5,
-        "hostname": "mail.h-email.net",
+        "preference": 10,
+        "hostname": "smtp-in0.prod0.webspace.bz",
         "addresses": [
-          "162.55.164.116",
-          "165.227.156.49",
-          "165.227.159.144",
-          "167.235.143.33",
-          "178.62.199.248",
-          "49.13.4.90",
-          "5.161.194.135",
-          "5.161.98.212",
-          "5.75.171.74",
-          "91.107.214.206"
+          "185.181.105.62",
+          "2a0a:c980:6:3e::"
         ]
       }
     ],
-    "warnings": [
-      "The domain mail3.h-email.net does not exist",
-      "The reverse DNS of 165.227.156.49 is mail3.h-email.net, but the A/AAAA DNS records for mail3.h-email.net do not resolve to 165.227.156.49",
-      "The domain mail2.h-email.net does not exist",
-      "The reverse DNS of 165.227.159.144 is mail2.h-email.net, but the A/AAAA DNS records for mail2.h-email.net do not resolve to 165.227.159.144"
-    ]
+    "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip6:fd1b:212c:a5f9::/48 -all",
-    "valid": true,
-    "dns_lookups": 0,
-    "warnings": [],
-    "parsed": {
-      "pass": [
-        {
-          "value": "fd1b:212c:a5f9::/48",
-          "mechanism": "ip6"
-        }
-      ],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [],
-      "redirect": null,
-      "exp": null,
-      "all": "fail"
-    }
+    "record": null,
+    "valid": false,
+    "error": "comercvlc.es does not have a SPF TXT record"
   },
   "dmarc": {
     "record": null,
