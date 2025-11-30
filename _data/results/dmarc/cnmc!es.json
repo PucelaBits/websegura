@@ -6,9 +6,9 @@
     "hostnames": [
       "zeta.cibelesdmz.local",
       "psi.cnmc.es",
-      "zeta.cnmc.es",
+      "psi.cibelesdmz.local",
       "ns1.es.colt.net",
-      "psi.cibelesdmz.local"
+      "zeta.cnmc.es"
     ],
     "warnings": []
   },
@@ -25,7 +25,7 @@
         "preference": 0,
         "hostname": "mxb-007a3601.gslb.pphosted.com",
         "addresses": [
-          "66.159.246.105"
+          "66.159.235.239"
         ]
       }
     ],
@@ -140,7 +140,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1;p=none;fo=1;rua=mailto:dmarc_rua@emaildefense.proofpoint.com,mailto:alertas.seguridad@cnmc.es,mailto:rua.dmarc@ccn-cert.cni.es,mailto:sstic.sistemas@cnmc.es;ruf=mailto:sstic.sistemas@cnmc.es,mailto:alertas.seguridad@cnmc.es",
+    "record": "v=DMARC1;p=none;fo=1;rua=mailto:dmarc_rua@emaildefense.proofpoint.com,mailto:rua.dmarc@cnmc.es,mailto:rua.dmarc@ccn-cert.cni.es;ruf=mailto:ruf.dmarc@cnmc.es",
     "valid": true,
     "location": "cnmc.es",
     "warnings": [
@@ -170,7 +170,7 @@
           },
           {
             "scheme": "mailto",
-            "address": "alertas.seguridad@cnmc.es",
+            "address": "rua.dmarc@cnmc.es",
             "size_limit": null
           },
           {
@@ -185,12 +185,7 @@
         "value": [
           {
             "scheme": "mailto",
-            "address": "sstic.sistemas@cnmc.es",
-            "size_limit": null
-          },
-          {
-            "scheme": "mailto",
-            "address": "alertas.seguridad@cnmc.es",
+            "address": "ruf.dmarc@cnmc.es",
             "size_limit": null
           }
         ],

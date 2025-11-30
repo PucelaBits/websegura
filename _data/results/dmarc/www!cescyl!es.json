@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.stinet.net",
+      "ns3.stinet.net",
       "ns1.stinet.net",
-      "ns3.stinet.net"
+      "ns2.stinet.net"
     ],
     "warnings": []
   },
@@ -20,10 +20,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The domain server205.cescyl.es does not exist",
-      "The reverse DNS of 195.55.85.205 is server205.cescyl.es, but the A/AAAA DNS records for server205.cescyl.es do not resolve to 195.55.85.205"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 a mx ip4:217.127.94.52 ip4:84.124.24.70  ip4:84.124.24.89/29 ip4:213.201.115.187 ip4:213.201.115.186 ip4:213.4.82.254 ip4:109.234.71.22 ip4:212.183.202.239 ip4:195.55.85.202 -all",

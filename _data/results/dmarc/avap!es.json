@@ -15,18 +15,17 @@
         "preference": 0,
         "hostname": "mxext.gva.es",
         "addresses": [
-          "193.145.200.16",
-          "195.77.20.28"
+          "193.145.200.16"
         ]
       }
     ],
     "warnings": [
-      "The reverse DNS of 193.145.200.16 is mxext.gva.es, but the A/AAAA DNS records for mxext.gva.es do not resolve to 193.145.200.16",
-      "The reverse DNS of 195.77.20.28 is mxext.gva.es, but the A/AAAA DNS records for mxext.gva.es do not resolve to 195.77.20.28"
+      "All nameservers failed to answer the query mxext.gva.es. IN AAAA: Server Do53:127.0.0.53@53 answered SERVFAIL",
+      "The reverse DNS of 193.145.200.16 is mxext.gva.es, but the A/AAAA DNS records for mxext.gva.es do not resolve to 193.145.200.16"
     ]
   },
   "spf": {
-    "record": "v=spf1 +mx +a +ip4:51.254.199.187 include:spf.protection.outlook.com include:mta.gva.es include:mtallistes.gva.es include:spf.difusio.gva.es -all",
+    "record": "v=spf1 +mx +a +ip4:57.129.24.189 include:spf.protection.outlook.com include:mta.gva.es include:mtallistes.gva.es include:spf.difusio.gva.es -all",
     "valid": true,
     "dns_lookups": 8,
     "warnings": [],
@@ -37,11 +36,11 @@
           "mechanism": "mx"
         },
         {
-          "value": "51.254.199.187",
+          "value": "57.129.24.189",
           "mechanism": "a"
         },
         {
-          "value": "51.254.199.187",
+          "value": "57.129.24.189",
           "mechanism": "ip4"
         }
       ],

@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns05.ns-cloud4b.org",
       "ns06.ns-cloud4b.com",
-      "ns03.ns-cloud4b.net"
+      "ns03.ns-cloud4b.net",
+      "ns05.ns-cloud4b.org"
     ],
     "warnings": []
   },
@@ -191,9 +191,78 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=reject; pct=100; ruf=mailto:dmarc@ayto-caceres.es; rua=mailto:dmarc@ayto-caceres.es,rua.dmarc@ccn-cert.cni.es; sp=reject; adkim=r; aspf=r; rf=afrf; ri=86400",
-    "valid": false,
+    "record": "v=DMARC1; p=reject; pct=100; ruf=mailto:dmarc@ayto-caceres.es; rua=mailto:dmarc@ayto-caceres.es,mailto:rua.dmarc@ccn-cert.cni.es; sp=reject; adkim=r; aspf=r; ri=86400",
+    "valid": true,
     "location": "ayto-caceres.es",
-    "error": "rua.dmarc@ccn-cert.cni.es is not a valid DMARC report URI"
+    "warnings": [
+      "ccn-cert.cni.es does not indicate that it accepts DMARC reports about ayto-caceres.es - Authorization record not found: ayto-caceres.es._report._dmarc.ccn-cert.cni.es IN TXT \"v=DMARC1\""
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "reject",
+        "explicit": true
+      },
+      "pct": {
+        "value": 100,
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc@ayto-caceres.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc@ayto-caceres.es",
+            "size_limit": null
+          },
+          {
+            "scheme": "mailto",
+            "address": "rua.dmarc@ccn-cert.cni.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "sp": {
+        "value": "reject",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": true
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": true
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      }
+    }
   }
 }

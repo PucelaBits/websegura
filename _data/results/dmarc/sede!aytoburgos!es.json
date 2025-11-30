@@ -18,11 +18,11 @@
     "error": "sede.aytoburgos.es does not have a SPF TXT record"
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; adkim=r; aspf=r",
+    "record": "v=DMARC1; p=none; rua=mailto:rua.dmarc@ccn-cert.cni.es",
     "valid": true,
     "location": "aytoburgos.es",
     "warnings": [
-      "rua tag (destination for aggregate reports) not found"
+      "ccn-cert.cni.es does not indicate that it accepts DMARC reports about aytoburgos.es - Authorization record not found: aytoburgos.es._report._dmarc.ccn-cert.cni.es IN TXT \"v=DMARC1\""
     ],
     "tags": {
       "v": {
@@ -33,13 +33,17 @@
         "value": "none",
         "explicit": true
       },
+      "rua": {
+        "value": "mailto:rua.dmarc@ccn-cert.cni.es",
+        "explicit": true
+      },
       "adkim": {
         "value": "r",
-        "explicit": true
+        "explicit": false
       },
       "aspf": {
         "value": "r",
-        "explicit": true
+        "explicit": false
       },
       "fo": {
         "value": [

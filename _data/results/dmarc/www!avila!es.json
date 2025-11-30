@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns8.servidoresdns.net",
-      "dns7.servidoresdns.net"
+      "dns7.servidoresdns.net",
+      "dns8.servidoresdns.net"
     ],
     "warnings": []
   },
@@ -15,21 +15,19 @@
         "preference": 10,
         "hostname": "correo.avila.es",
         "addresses": [
-          "82.223.120.168"
+          "185.61.204.74"
         ]
       },
       {
         "preference": 20,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "209.85.144.26",
-          "2607:f8b0:400d:c0e::1b"
+          "192.178.220.26",
+          "2607:f8b0:4023:100f::1a"
         ]
       }
     ],
-    "warnings": [
-      "The reverse DNS of 82.223.120.168 is 168.120.223.82.in-addr.arpa, but the A/AAAA DNS records for 168.120.223.82.in-addr.arpa do not resolve to 82.223.120.168"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx:avila.es exists:avila.es ~all",

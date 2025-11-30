@@ -40,10 +40,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 178.33.252.245 is mx0.mail.ovh.net, but the A/AAAA DNS records for mx0.mail.ovh.net do not resolve to 178.33.252.245"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:mx.ovh.com include:amazonses.com ~all",

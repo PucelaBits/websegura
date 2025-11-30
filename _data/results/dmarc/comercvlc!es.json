@@ -4,24 +4,16 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns.inwx.de",
-      "ns3.inwx.eu",
-      "ns2.inwx.de"
+      "daphne.ns.cloudflare.com",
+      "mitch.ns.cloudflare.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "smtp-in0.prod0.webspace.bz",
-        "addresses": [
-          "185.181.105.62",
-          "2a0a:c980:6:3e::"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
   },
   "spf": {
     "record": null,

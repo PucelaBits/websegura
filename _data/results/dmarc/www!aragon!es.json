@@ -4,14 +4,29 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "codos.aragon.es",
-      "calatayud.aragon.es"
+      "calatayud.aragon.es",
+      "codos.aragon.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx01.aragon.es",
+        "addresses": [
+          "188.244.81.194"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mx02.aragon.es",
+        "addresses": [
+          "188.244.81.195"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:188.244.81.16/28 include:servers.mcsv.net include:spf.protection.outlook.com  ip4:188.244.81.192/29 -all",
@@ -133,9 +148,7 @@
     "record": "v=DMARC1; p=none; rua=mailto:dmarc@aragon.es; ruf=mailto:dmarc@aragon.es; fo=1",
     "valid": true,
     "location": "aragon.es",
-    "warnings": [
-      "Failed to retrieve MX records for the domain of ruf email address dmarc@aragon.es - The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ],
+    "warnings": [],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -156,7 +169,13 @@
         "explicit": true
       },
       "ruf": {
-        "value": "mailto:dmarc@aragon.es",
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc@aragon.es",
+            "size_limit": null
+          }
+        ],
         "explicit": true
       },
       "fo": {

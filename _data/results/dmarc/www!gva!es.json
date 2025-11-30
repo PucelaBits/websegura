@@ -17,14 +17,13 @@
         "preference": 10,
         "hostname": "pro-lbvs0-gva-i-mxexterno.gva.es",
         "addresses": [
-          "193.145.200.16",
-          "195.77.20.28"
+          "193.145.200.16"
         ]
       }
     ],
     "warnings": [
-      "The reverse DNS of 193.145.200.16 is mxext.gva.es, but the A/AAAA DNS records for mxext.gva.es do not resolve to 193.145.200.16",
-      "The reverse DNS of 195.77.20.28 is mxext.gva.es, but the A/AAAA DNS records for mxext.gva.es do not resolve to 195.77.20.28"
+      "All nameservers failed to answer the query mxext.gva.es. IN AAAA: Server Do53:127.0.0.53@53 answered SERVFAIL",
+      "The reverse DNS of 193.145.200.16 is mxext.gva.es, but the A/AAAA DNS records for mxext.gva.es do not resolve to 193.145.200.16"
     ]
   },
   "spf": {

@@ -87,7 +87,7 @@
       "include": [
         {
           "domain": "spf.ironport.gencat.cat",
-          "record": "v=spf1 ip4:83.247.135.20 ip4:83.247.135.21 ip4:83.247.135.22 -all",
+          "record": "v=spf1 ip4:83.247.135.20 ip4:83.247.135.21 ip4:83.247.135.22 ip4:66.159.245.120 ip4:66.159.247.41 -all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -101,6 +101,14 @@
               },
               {
                 "value": "83.247.135.22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "66.159.245.120",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "66.159.247.41",
                 "mechanism": "ip4"
               }
             ],

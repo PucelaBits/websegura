@@ -15,40 +15,40 @@
         "preference": 10,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "172.253.132.26",
-          "2607:f8b0:4023:2c03::1a"
+          "2607:f8b0:4023:c0b::1a",
+          "74.125.137.26"
         ]
       },
       {
         "preference": 20,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "209.85.144.26",
-          "2607:f8b0:400d:c0e::1b"
+          "192.178.220.26",
+          "2607:f8b0:4023:100f::1a"
         ]
       },
       {
         "preference": 20,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "108.177.11.27",
-          "2607:f8b0:400c:c01::1a"
+          "172.253.135.26",
+          "2607:f8b0:4023:1015::1a"
         ]
       },
       {
         "preference": 30,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "192.178.218.27",
-          "2607:f8b0:4004:c25::1a"
+          "172.217.74.27",
+          "2607:f8b0:4023:3001::1b"
         ]
       },
       {
         "preference": 30,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "108.177.123.27",
-          "2800:3f0:4003:c0f::1a"
+          "2607:f8b0:4003:c30::1b",
+          "74.125.27.27"
         ]
       },
       {
@@ -58,7 +58,6 @@
       }
     ],
     "warnings": [
-      "2800:3f0:4003:c0f::1a does not have any reverse DNS (PTR) records",
       "The domain fd74xvjn6iyddr2vmlahveq636i6thbr56ve3wp4n4zjgi7qracq.mx-verification.google.com does not exist"
     ]
   },

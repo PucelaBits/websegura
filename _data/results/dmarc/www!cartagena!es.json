@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns5.servidoresdns.net",
-      "dns6.servidoresdns.net"
+      "dns6.servidoresdns.net",
+      "dns5.servidoresdns.net"
     ],
     "warnings": []
   },
@@ -95,7 +95,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; rua=mailto:raul.pizarro@ayto-cartagena.es",
+    "record": "v=DMARC1; p=none; rua=mailto:raul.pizarro@ayto-cartagena.es,mailto:rua.dmarc@ccn-cert.cni.es",
     "valid": true,
     "location": "cartagena.es",
     "warnings": [
@@ -111,7 +111,7 @@
         "explicit": true
       },
       "rua": {
-        "value": "mailto:raul.pizarro@ayto-cartagena.es",
+        "value": "mailto:raul.pizarro@ayto-cartagena.es,mailto:rua.dmarc@ccn-cert.cni.es",
         "explicit": true
       },
       "adkim": {

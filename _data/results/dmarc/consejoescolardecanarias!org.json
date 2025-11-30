@@ -17,46 +17,44 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "172.253.132.26",
-          "2607:f8b0:4023:2c03::1a"
+          "142.251.2.26",
+          "2607:f8b0:4023:c03::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "209.85.144.26",
-          "2607:f8b0:400d:c0e::1a"
+          "192.178.220.26",
+          "2607:f8b0:4023:100f::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "108.177.11.26",
-          "2607:f8b0:400c:c01::1a"
+          "172.253.135.26",
+          "2607:f8b0:4023:1015::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "192.178.218.26",
-          "2607:f8b0:4004:c25::1a"
+          "172.217.74.27",
+          "2607:f8b0:4023:3001::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "108.177.123.26",
-          "2800:3f0:4003:c0f::1b"
+          "2607:f8b0:4003:c30::1a",
+          "74.125.27.26"
         ]
       }
     ],
-    "warnings": [
-      "2800:3f0:4003:c0f::1b does not have any reverse DNS (PTR) records"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:_spf.google.com include:amazonses.com -all",
