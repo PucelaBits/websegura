@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.nombresweb.net",
-      "ns1.galiciadigital.net"
+      "ns1.galiciadigital.net",
+      "ns1.nombresweb.net"
     ],
     "warnings": []
   },
@@ -19,7 +19,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 94.23.86.245 is mail1.nombresweb.net, but the A/AAAA DNS records for mail1.nombresweb.net do not resolve to 94.23.86.245"
+    ]
   },
   "spf": {
     "record": "v=spf1 a mx ptr ~all",

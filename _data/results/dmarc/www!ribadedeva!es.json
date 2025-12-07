@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.noc.softec-internet.com",
       "ns2.noc.softec-internet.com",
+      "ns1.noc.softec-internet.com",
       "ns4.noc.softec-internet.com"
     ],
     "warnings": []
@@ -16,14 +16,14 @@
         "preference": 0,
         "hostname": "ribadedeva-es.mail.protection.outlook.com",
         "addresses": [
-          "2a01:111:f403:ca04::7",
-          "2a01:111:f403:ca09::2",
+          "2a01:111:f403:ca04::8",
+          "2a01:111:f403:ca04::c",
           "2a01:111:f403:ca09::6",
           "2a01:111:f403:ca09::a",
-          "52.101.68.27",
-          "52.101.68.8",
-          "52.101.73.15",
-          "52.101.73.2"
+          "52.101.68.0",
+          "52.101.68.16",
+          "52.101.68.36",
+          "52.101.73.4"
         ]
       }
     ],

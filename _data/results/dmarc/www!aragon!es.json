@@ -29,12 +29,16 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:188.244.81.16/28 include:servers.mcsv.net include:spf.protection.outlook.com  ip4:188.244.81.192/29 -all",
+    "record": "v=spf1 ip4:188.244.91.1/32 ip4:188.244.81.16/28 include:servers.mcsv.net include:spf.protection.outlook.com  ip4:188.244.81.192/29 -all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
     "parsed": {
       "pass": [
+        {
+          "value": "188.244.91.1/32",
+          "mechanism": "ip4"
+        },
         {
           "value": "188.244.81.16/28",
           "mechanism": "ip4"

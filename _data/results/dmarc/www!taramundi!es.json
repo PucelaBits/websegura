@@ -4,15 +4,42 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.interdomain.net",
+      "ns1.interdomain.net",
       "ns3.interdomain.es",
-      "ns1.interdomain.net"
+      "ns2.interdomain.net"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.taramundi.es",
+        "addresses": [
+          "217.116.0.206"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mail2.taramundi.es",
+        "addresses": [
+          "86.109.99.246"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mail2.taramundi.es",
+        "addresses": []
+      },
+      {
+        "preference": 30,
+        "hostname": "mail2.taramundi.es",
+        "addresses": []
+      }
+    ],
+    "warnings": [
+      "Hostname mail2.taramundi.es is listed in multiple MX records"
+    ]
   },
   "spf": {
     "record": null,

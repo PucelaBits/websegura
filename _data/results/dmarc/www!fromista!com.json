@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns4.hostinger.es",
       "ns1.hostinger.es",
       "ns3.hostinger.es",
-      "ns2.hostinger.es",
-      "ns4.hostinger.es"
+      "ns2.hostinger.es"
     ],
     "warnings": []
   },
@@ -24,16 +24,26 @@
         "preference": 20,
         "hostname": "mx2.zoho.com",
         "addresses": [
-          "136.143.183.44"
+          "204.141.43.44"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The reverse DNS of 136.143.183.44 is mx2.zoho.com, but the A/AAAA DNS records for mx2.zoho.com do not resolve to 136.143.183.44",
+      "The reverse DNS of 204.141.43.44 is mx8.zoho.com, but the A/AAAA DNS records for mx8.zoho.com do not resolve to 204.141.43.44",
+      "The reverse DNS of 204.141.43.44 is mx7.zoho.com, but the A/AAAA DNS records for mx7.zoho.com do not resolve to 204.141.43.44",
+      "The reverse DNS of 204.141.43.44 is mx6.zoho.com, but the A/AAAA DNS records for mx6.zoho.com do not resolve to 204.141.43.44",
+      "The reverse DNS of 204.141.43.44 is mx3.zohomail.com, but the A/AAAA DNS records for mx3.zohomail.com do not resolve to 204.141.43.44",
+      "The reverse DNS of 204.141.43.44 is mx2.zohomail.com, but the A/AAAA DNS records for mx2.zohomail.com do not resolve to 204.141.43.44",
+      "The reverse DNS of 204.141.43.44 is mx.zohomail.com, but the A/AAAA DNS records for mx.zohomail.com do not resolve to 204.141.43.44",
+      "The reverse DNS of 204.141.43.44 is mx.zoho.com, but the A/AAAA DNS records for mx.zoho.com do not resolve to 204.141.43.44",
+      "The reverse DNS of 204.141.43.44 is mx3.zoho.com, but the A/AAAA DNS records for mx3.zoho.com do not resolve to 204.141.43.44"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:zoho.com ~all",
     "valid": true,
-    "dns_lookups": 3,
+    "dns_lookups": 4,
     "warnings": [],
     "parsed": {
       "pass": [],
@@ -43,8 +53,8 @@
       "include": [
         {
           "domain": "zoho.com",
-          "record": "v=spf1 include:spf.zoho.com include:zcsend.net -all",
-          "dns_lookups": 2,
+          "record": "v=spf1 include:spf.zoho.com include:zcsend.net include:spf.zohomail.com -all",
+          "dns_lookups": 3,
           "parsed": {
             "pass": [],
             "neutral": [],
@@ -53,7 +63,7 @@
             "include": [
               {
                 "domain": "spf.zoho.com",
-                "record": "v=spf1 ip4:136.143.188.0/24 ip4:136.143.184.0/24 ip4:135.84.80.0/24 ip4:135.84.82.0/24 ip4:8.39.54.0/23 ip4:204.141.32.0/23 ip4:136.143.182.0/23 ip4:204.141.42.0/23 ip4:8.40.222.0/23 ip4:65.154.166.0/24 ip4:199.67.84.0/24 ip4:199.67.86.0/24 ip4:169.148.129.0/24 ip4:169.148.131.0/24 ip4:121.244.91.48/32 ip4:199.67.88.0/24 ip4:122.15.156.182/32 ip4:169.148.144.0/25 ip4:199.34.22.36/32 ip4:199.67.80.2/32 ip4:169.148.142.10/32 ip4:136.143.190.0/23 ip4:199.67.82.2/32 ip4:136.143.178.49/32 ip4:169.148.144.10/32 ip4:199.67.82.20/32 ip4:199.67.80.20/32 ip4:121.244.91.52/32 ip4:139.167.79.86/32 ip4:165.173.180.250/31 ip4:165.173.182.250/31 ip4:8.40.222.250/31 ip4:8.39.54.250/31 ip4:136.143.177.0/24 ip4:169.148.146.0/23 ip4:136.143.176.0/24  ip4:56.124.6.228/32 ip4:199.67.90.0/24 ip4:169.148.188.182/32 ip4:103.84.217.238/32 ip4:52.6.74.205/32 ip4:34.241.242.183/32 ip4:169.148.175.3/32 ip4:43.239.212.33/32 ip4:169.148.138.0/24 ip4:169.148.188.0/24 ip4:103.89.75.238/32 ip4:169.148.142.33/32 ip4:13.247.164.219/32 -all",
+                "record": "v=spf1 ip4:136.143.188.0/24 ip4:136.143.184.0/24 ip4:135.84.80.0/24 ip4:135.84.82.0/24 ip4:8.39.54.0/23 ip4:204.141.32.0/23 ip4:136.143.182.0/23 ip4:204.141.42.0/23 ip4:8.40.222.0/23 ip4:65.154.166.0/24 ip4:199.67.84.0/24 ip4:199.67.86.0/24 ip4:169.148.129.0/24 ip4:169.148.131.0/24 ip4:121.244.91.48/32 ip4:199.67.88.0/24 ip4:122.15.156.182/32 ip4:169.148.144.0/25 ip4:199.34.22.36/32 ip4:199.67.80.2/32 ip4:169.148.142.10/32 ip4:136.143.190.0/23 ip4:199.67.82.2/32 ip4:136.143.178.49/32 ip4:169.148.144.10/32 ip4:199.67.82.20/32 ip4:199.67.80.20/32 ip4:121.244.91.52/32 ip4:139.167.79.86/32 ip4:165.173.180.250/31 ip4:165.173.182.250/31 ip4:8.40.222.250/31 ip4:8.39.54.250/31 ip4:136.143.177.0/24 ip4:169.148.146.0/23 ip4:136.143.176.0/24  ip4:56.124.6.228/32 ip4:199.67.90.0/24 ip4:169.148.188.182/32 ip4:103.84.217.238/32 ip4:52.6.74.205/32 ip4:34.241.242.183/32 ip4:169.148.175.3/32 ip4:169.148.179.3/32 ip4:43.239.212.33/32 ip4:169.148.138.0/24 ip4:169.148.188.0/24 ip4:103.89.75.238/32 ip4:169.148.142.33/32 ip4:13.247.164.219/32 -all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
@@ -230,6 +240,10 @@
                       "mechanism": "ip4"
                     },
                     {
+                      "value": "169.148.179.3/32",
+                      "mechanism": "ip4"
+                    },
+                    {
                       "value": "43.239.212.33/32",
                       "mechanism": "ip4"
                     },
@@ -318,6 +332,43 @@
                   "redirect": null,
                   "exp": null,
                   "all": "softfail"
+                },
+                "warnings": []
+              },
+              {
+                "domain": "spf.zohomail.com",
+                "record": "v=spf1 ip4:136.143.188.0/24 ip4:136.143.184.0/24 ip4:8.40.222.250/31 ip4:8.39.54.250/31 ip4:165.173.180.1/32 -all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "136.143.188.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "136.143.184.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "8.40.222.250/31",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "8.39.54.250/31",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "165.173.180.1/32",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "fail"
                 },
                 "warnings": []
               }

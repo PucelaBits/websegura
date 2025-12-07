@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns3.interec.com",
       "ns.interec.com",
       "ns1.interec.com",
-      "ns3.interec.com",
       "ns2.interec.com"
     ],
     "warnings": []
@@ -17,40 +17,40 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.250.141.26",
-          "2607:f8b0:4023:c0b::1b"
+          "142.251.116.27",
+          "2607:f8b0:4023:100d::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "192.178.220.26",
-          "2607:f8b0:4023:100f::1a"
+          "2607:f8b0:4003:c30::1a",
+          "74.125.27.26"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "172.253.135.26",
-          "2607:f8b0:4023:1015::1b"
+          "192.178.209.27",
+          "2607:f8b0:4001:c70::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "172.217.74.27",
-          "2607:f8b0:4023:3001::1b"
+          "192.178.152.27",
+          "2607:f8b0:4024:c0d::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "2607:f8b0:4003:c30::1b",
-          "74.125.27.27"
+          "142.250.96.27",
+          "2607:f8b0:4023:403::1b"
         ]
       },
       {
@@ -86,7 +86,7 @@
             "include": [
               {
                 "domain": "_netblocks.google.com",
-                "record": "v=spf1 ip4:74.125.0.0/16 ip4:173.194.0.0/17 ip4:209.85.128.0/17 ip4:216.58.192.0/19 ip4:216.239.32.0/19 ~all",
+                "record": "v=spf1 ip4:74.125.0.0/16 ip4:209.85.128.0/17 ip4:216.58.192.0/20 ~all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
@@ -95,19 +95,11 @@
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "173.194.0.0/17",
-                      "mechanism": "ip4"
-                    },
-                    {
                       "value": "209.85.128.0/17",
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "216.58.192.0/19",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "216.239.32.0/19",
+                      "value": "216.58.192.0/20",
                       "mechanism": "ip4"
                     }
                   ],

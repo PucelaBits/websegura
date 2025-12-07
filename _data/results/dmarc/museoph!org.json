@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns3.digitalocean.com",
       "ns2.digitalocean.com",
+      "ns3.digitalocean.com",
       "ns1.digitalocean.com"
     ],
     "warnings": []
@@ -38,7 +38,7 @@
           "mechanism": "mx"
         },
         {
-          "value": "2a02:be8:2:d00:2eea:7fff:fee0:6960",
+          "value": "2a02:be8:2:d00:bacb:29ff:fea9:5798",
           "mechanism": "a"
         },
         {

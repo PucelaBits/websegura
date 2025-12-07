@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.dinahosting.com",
       "ns.dinahosting.com",
-      "ns3.dinahosting.com",
-      "ns4.dinahosting.com"
+      "ns4.dinahosting.com",
+      "ns2.dinahosting.com",
+      "ns3.dinahosting.com"
     ],
     "warnings": []
   },
@@ -17,52 +17,50 @@
         "preference": 10,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.250.101.27",
-          "2607:f8b0:4023:c06::1a"
+          "142.251.186.27",
+          "2607:f8b0:4023:100d::1b"
         ]
       },
       {
         "preference": 20,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "192.178.220.27",
-          "2607:f8b0:4023:100f::1a"
+          "2607:f8b0:4003:c30::1a",
+          "74.125.27.27"
         ]
       },
       {
         "preference": 30,
         "hostname": "aspmx2.googlemail.com",
         "addresses": [
-          "192.178.220.26",
-          "2607:f8b0:4023:100f::1a"
+          "2607:f8b0:4003:c30::1b",
+          "74.125.27.26"
         ]
       },
       {
         "preference": 40,
         "hostname": "aspmx3.googlemail.com",
         "addresses": [
-          "172.253.135.27",
-          "2607:f8b0:4023:1015::1b"
+          "192.178.209.26",
+          "2607:f8b0:4001:c70::1b"
         ]
       },
       {
         "preference": 50,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "172.253.135.26",
-          "2607:f8b0:4023:1015::1b"
+          "192.178.209.27",
+          "2607:f8b0:4001:c70::1a"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:_spf.mailersend.net mx ptr ip4:62.81.130.130 ip4:62.81.130.131 include:_spf.google.com ~all",
+    "record": "v=spf1 include:_spf.mailersend.net mx ip4:62.81.130.130 ip4:62.81.130.131 include:_spf.google.com ~all",
     "valid": true,
     "dns_lookups": 5,
-    "warnings": [
-      "The ptr mechanism should not be used - https://tools.ietf.org/html/rfc7208#section-5.5"
-    ],
+    "warnings": [],
     "parsed": {
       "pass": [
         {
@@ -84,10 +82,6 @@
         {
           "value": "alt2.aspmx.l.google.com",
           "mechanism": "mx"
-        },
-        {
-          "value": "",
-          "mechanism": "ptr"
         },
         {
           "value": "62.81.130.130",
@@ -135,7 +129,7 @@
             "include": [
               {
                 "domain": "_netblocks.google.com",
-                "record": "v=spf1 ip4:74.125.0.0/16 ip4:173.194.0.0/17 ip4:209.85.128.0/17 ip4:216.58.192.0/19 ip4:216.239.32.0/19 ~all",
+                "record": "v=spf1 ip4:74.125.0.0/16 ip4:209.85.128.0/17 ip4:216.58.192.0/20 ~all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
@@ -144,19 +138,11 @@
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "173.194.0.0/17",
-                      "mechanism": "ip4"
-                    },
-                    {
                       "value": "209.85.128.0/17",
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "216.58.192.0/19",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "216.239.32.0/19",
+                      "value": "216.58.192.0/20",
                       "mechanism": "ip4"
                     }
                   ],
@@ -225,9 +211,61 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1;p=quarantine;sp=none;adkim=r;aspf=r;pct=100;fo=0;rf=afrf;ri=86400;rua=mailto:dmarc@tudela.es",
+    "valid": true,
+    "location": "tudela.es",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "sp": {
+        "value": "none",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": true
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": true
+      },
+      "pct": {
+        "value": 100,
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": true
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": true
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc@tudela.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      }
+    }
   }
 }

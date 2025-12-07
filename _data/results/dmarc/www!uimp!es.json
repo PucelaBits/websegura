@@ -3,8 +3,15 @@
   "base_domain": "uimp.es",
   "dnssec": true,
   "ns": {
-    "hostnames": [],
-    "error": "All nameservers failed to answer the query uimp.es. IN NS: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "hostnames": [
+      "ns1.age.gob.es",
+      "ns2.age.gob.es",
+      "artemis.ttd.net",
+      "cloudflare",
+      "offcorrmad.uimp.es",
+      "suimpdnsmad01.uimp.es"
+    ],
+    "warnings": []
   },
   "mx": {
     "hosts": [
@@ -12,40 +19,40 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.251.2.27",
-          "2607:f8b0:4023:c03::1a"
+          "142.250.114.27",
+          "2607:f8b0:4023:1000::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "192.178.220.27",
-          "2607:f8b0:4023:100f::1b"
+          "2607:f8b0:4003:c30::1b",
+          "74.125.27.27"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "172.253.135.27",
-          "2607:f8b0:4023:1015::1b"
+          "192.178.209.27",
+          "2607:f8b0:4001:c70::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "172.217.74.26",
-          "2607:f8b0:4023:3001::1b"
+          "192.178.152.26",
+          "2607:f8b0:4024:c0d::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "2607:f8b0:4003:c30::1a",
-          "74.125.27.26"
+          "142.250.96.27",
+          "2607:f8b0:4023:403::1b"
         ]
       }
     ],
@@ -55,32 +62,14 @@
     "record": "v=spf1 include:uimp.ip-zone.com include:_spf.google.com a mx -all",
     "valid": true,
     "dns_lookups": 6,
-    "warnings": [],
+    "warnings": [
+      "All nameservers failed to answer the query uimp.es. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    ],
     "parsed": {
       "pass": [
         {
           "value": "212.128.111.246",
           "mechanism": "a"
-        },
-        {
-          "value": "aspmx.l.google.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "alt1.aspmx.l.google.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "alt2.aspmx.l.google.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "alt3.aspmx.l.google.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "alt4.aspmx.l.google.com",
-          "mechanism": "mx"
         }
       ],
       "neutral": [],
@@ -136,7 +125,7 @@
             "include": [
               {
                 "domain": "_netblocks.google.com",
-                "record": "v=spf1 ip4:74.125.0.0/16 ip4:173.194.0.0/17 ip4:209.85.128.0/17 ip4:216.58.192.0/19 ip4:216.239.32.0/19 ~all",
+                "record": "v=spf1 ip4:74.125.0.0/16 ip4:209.85.128.0/17 ip4:216.58.192.0/20 ~all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
@@ -145,19 +134,11 @@
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "173.194.0.0/17",
-                      "mechanism": "ip4"
-                    },
-                    {
                       "value": "209.85.128.0/17",
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "216.58.192.0/19",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "216.239.32.0/19",
+                      "value": "216.58.192.0/20",
                       "mechanism": "ip4"
                     }
                   ],
@@ -229,6 +210,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "error": "All nameservers failed to answer the query _dmarc.uimp.es. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
   }
 }

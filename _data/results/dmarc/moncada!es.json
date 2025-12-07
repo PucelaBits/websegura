@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "ns1.dnsxperta.com",
-      "ns3.dnsxperta.com",
-      "ns2.dnsxperta.com"
+      "ns2.dnsxperta.com",
+      "ns3.dnsxperta.com"
     ],
     "warnings": []
   },
@@ -80,7 +80,7 @@
             "include": [
               {
                 "domain": "_netblocks.google.com",
-                "record": "v=spf1 ip4:74.125.0.0/16 ip4:173.194.0.0/17 ip4:209.85.128.0/17 ip4:216.58.192.0/19 ip4:216.239.32.0/19 ~all",
+                "record": "v=spf1 ip4:74.125.0.0/16 ip4:209.85.128.0/17 ip4:216.58.192.0/20 ~all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
@@ -89,19 +89,11 @@
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "173.194.0.0/17",
-                      "mechanism": "ip4"
-                    },
-                    {
                       "value": "209.85.128.0/17",
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "216.58.192.0/19",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "216.239.32.0/19",
+                      "value": "216.58.192.0/20",
                       "mechanism": "ip4"
                     }
                   ],
@@ -173,6 +165,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.moncada.es\n\nv=spf1 include:dnsxperta.com include:_spf.google.com -all\n\nMS=ms58949900.\n\nMS=ms98609977"
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.moncada.es\n\nMS=ms58949900.\n\nMS=ms98609977\n\nv=spf1 include:dnsxperta.com include:_spf.google.com -all"
   }
 }

@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns4.dinahosting.com",
-      "ns.dinahosting.com",
+      "ns2.dinahosting.com",
       "ns3.dinahosting.com",
-      "ns2.dinahosting.com"
+      "ns4.dinahosting.com",
+      "ns.dinahosting.com"
     ],
     "warnings": []
   },
@@ -17,24 +17,24 @@
         "preference": 10,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "172.253.135.26",
-          "2607:f8b0:4023:1015::1b"
+          "192.178.209.26",
+          "2607:f8b0:4001:c70::1a"
         ]
       },
       {
         "preference": 20,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.250.101.27",
-          "2607:f8b0:4023:c03::1a"
+          "142.251.186.26",
+          "2607:f8b0:4023:100b::1a"
         ]
       },
       {
         "preference": 30,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "192.178.220.27",
-          "2607:f8b0:4023:100f::1b"
+          "2607:f8b0:4003:c30::1b",
+          "74.125.27.27"
         ]
       }
     ],
@@ -63,7 +63,7 @@
             "include": [
               {
                 "domain": "_netblocks.google.com",
-                "record": "v=spf1 ip4:74.125.0.0/16 ip4:173.194.0.0/17 ip4:209.85.128.0/17 ip4:216.58.192.0/19 ip4:216.239.32.0/19 ~all",
+                "record": "v=spf1 ip4:74.125.0.0/16 ip4:209.85.128.0/17 ip4:216.58.192.0/20 ~all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
@@ -72,19 +72,11 @@
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "173.194.0.0/17",
-                      "mechanism": "ip4"
-                    },
-                    {
                       "value": "209.85.128.0/17",
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "216.58.192.0/19",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "216.239.32.0/19",
+                      "value": "216.58.192.0/20",
                       "mechanism": "ip4"
                     }
                   ],
@@ -156,6 +148,6 @@
     "record": "v=DMARC1; p=quarantine; rua=mailto:info@visit-pontevedra.com ruf=mailto:info@visit-pontevedra.com",
     "valid": false,
     "location": "visit-pontevedra.com",
-    "error": "Error: Expected ; or end_of_statement at position 64 in: v=DMARC1; p=quarantine; rua=mailto:info@visit-pontevedra.com ruf=mailto:info@visit-pontevedra.com"
+    "error": "Error: Expected end_of_statement or ; at position 64 in: v=DMARC1; p=quarantine; rua=mailto:info@visit-pontevedra.com ruf=mailto:info@visit-pontevedra.com"
   }
 }

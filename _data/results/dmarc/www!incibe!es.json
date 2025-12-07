@@ -32,9 +32,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx a:correo.inteco.es a:correo2.inteco.es -all",
+    "record": "v=spf1 mx ip4:193.146.253.148 ip4:195.53.165.57 -all",
     "valid": true,
-    "dns_lookups": 3,
+    "dns_lookups": 1,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -47,12 +47,12 @@
           "mechanism": "mx"
         },
         {
-          "value": "195.53.165.57",
-          "mechanism": "a"
+          "value": "193.146.253.148",
+          "mechanism": "ip4"
         },
         {
-          "value": "193.146.253.57",
-          "mechanism": "a"
+          "value": "195.53.165.57",
+          "mechanism": "ip4"
         }
       ],
       "neutral": [],

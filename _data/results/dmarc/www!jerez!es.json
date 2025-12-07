@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.aytojerez.es",
-      "dns1.aytojerez.es"
+      "dns1.aytojerez.es",
+      "dns2.aytojerez.es"
     ],
     "warnings": []
   },
@@ -15,24 +15,24 @@
         "preference": 10,
         "hostname": "1694806815.pamx1.hotmail.com",
         "addresses": [
-          "52.101.10.17",
-          "52.101.41.1",
-          "52.101.73.5",
-          "52.101.8.45"
+          "52.101.194.5",
+          "52.101.40.7",
+          "52.101.68.2",
+          "52.101.73.20"
         ]
       }
     ],
     "warnings": [
-      "52.101.10.17 does not have any reverse DNS (PTR) records",
-      "52.101.41.1 does not have any reverse DNS (PTR) records",
-      "52.101.73.5 does not have any reverse DNS (PTR) records",
-      "52.101.8.45 does not have any reverse DNS (PTR) records"
+      "52.101.194.5 does not have any reverse DNS (PTR) records",
+      "52.101.40.7 does not have any reverse DNS (PTR) records",
+      "52.101.68.2 does not have any reverse DNS (PTR) records",
+      "52.101.73.20 does not have any reverse DNS (PTR) records"
     ]
   },
   "spf": {
     "record": "v=spf1 include:hotmail.com -all",
     "valid": true,
-    "dns_lookups": 6,
+    "dns_lookups": 2,
     "warnings": [],
     "parsed": {
       "pass": [],
@@ -42,145 +42,14 @@
       "include": [
         {
           "domain": "hotmail.com",
-          "record": "v=spf1 ip4:157.55.9.128/25 include:spf-a.outlook.com include:spf-b.outlook.com include:spf2.outlook.com include:_spf-ssg-b.microsoft.com include:_spf-ssg-c.microsoft.com -all",
-          "dns_lookups": 5,
+          "record": "v=spf1 include:spf2.outlook.com -all",
+          "dns_lookups": 1,
           "parsed": {
-            "pass": [
-              {
-                "value": "157.55.9.128/25",
-                "mechanism": "ip4"
-              }
-            ],
+            "pass": [],
             "neutral": [],
             "softfail": [],
             "fail": [],
             "include": [
-              {
-                "domain": "spf-a.outlook.com",
-                "record": "v=spf1 ip4:157.56.232.0/21 ip4:157.56.240.0/20 ip4:207.46.198.0/25 ip4:207.46.4.128/25 ip4:157.56.24.0/25 ip4:157.55.157.128/25 ip4:157.55.61.0/24 ip4:157.55.49.0/25 ip4:65.55.174.0/25 ip4:65.55.126.0/25 ip4:65.55.113.64/26 ip4:65.55.94.0/25 -all",
-                "dns_lookups": 0,
-                "parsed": {
-                  "pass": [
-                    {
-                      "value": "157.56.232.0/21",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "157.56.240.0/20",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "207.46.198.0/25",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "207.46.4.128/25",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "157.56.24.0/25",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "157.55.157.128/25",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "157.55.61.0/24",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "157.55.49.0/25",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "65.55.174.0/25",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "65.55.126.0/25",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "65.55.113.64/26",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "65.55.94.0/25",
-                      "mechanism": "ip4"
-                    }
-                  ],
-                  "neutral": [],
-                  "softfail": [],
-                  "fail": [],
-                  "include": [],
-                  "redirect": null,
-                  "exp": null,
-                  "all": "fail"
-                },
-                "warnings": []
-              },
-              {
-                "domain": "spf-b.outlook.com",
-                "record": "v=spf1 ip4:65.55.78.128/25 ip4:111.221.112.0/21 ip4:207.46.58.128/25 ip4:111.221.69.128/25 ip4:111.221.66.0/25 ip4:111.221.23.128/25 ip4:70.37.151.128/25 ip4:157.56.248.0/21 ip4:213.199.177.0/26 ip4:157.55.225.0/25 ip4:157.55.11.0/25 -all",
-                "dns_lookups": 0,
-                "parsed": {
-                  "pass": [
-                    {
-                      "value": "65.55.78.128/25",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "111.221.112.0/21",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "207.46.58.128/25",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "111.221.69.128/25",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "111.221.66.0/25",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "111.221.23.128/25",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "70.37.151.128/25",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "157.56.248.0/21",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "213.199.177.0/26",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "157.55.225.0/25",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "157.55.11.0/25",
-                      "mechanism": "ip4"
-                    }
-                  ],
-                  "neutral": [],
-                  "softfail": [],
-                  "fail": [],
-                  "include": [],
-                  "redirect": null,
-                  "exp": null,
-                  "all": "fail"
-                },
-                "warnings": []
-              },
               {
                 "domain": "spf2.outlook.com",
                 "record": "v=spf1 ip4:40.92.0.0/16 ip4:52.103.0.0/17 ip6:2a01:111:f403:2800::/53 ip6:2a01:111:f403:d000::/53 -all",
@@ -211,120 +80,6 @@
                   "redirect": null,
                   "exp": null,
                   "all": "fail"
-                },
-                "warnings": []
-              },
-              {
-                "domain": "_spf-ssg-b.microsoft.com",
-                "record": "v=spf1 ip4:207.68.169.173/30 ip4:207.68.176.0/26 ip4:207.46.132.128/27 ip4:207.68.176.96/27 ip4:65.55.238.129/26 ip4:65.55.238.129/26 ip4:207.46.116.128/29 ip4:65.55.178.128/27 ip4:213.199.161.128/27 ip4:65.55.33.64/28 ~all",
-                "dns_lookups": 0,
-                "parsed": {
-                  "pass": [
-                    {
-                      "value": "207.68.169.173/30",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "207.68.176.0/26",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "207.46.132.128/27",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "207.68.176.96/27",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "65.55.238.129/26",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "65.55.238.129/26",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "207.46.116.128/29",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "65.55.178.128/27",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "213.199.161.128/27",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "65.55.33.64/28",
-                      "mechanism": "ip4"
-                    }
-                  ],
-                  "neutral": [],
-                  "softfail": [],
-                  "fail": [],
-                  "include": [],
-                  "redirect": null,
-                  "exp": null,
-                  "all": "softfail"
-                },
-                "warnings": []
-              },
-              {
-                "domain": "_spf-ssg-c.microsoft.com",
-                "record": "v=spf1 ip4:65.54.121.120/29 ip4:65.55.81.48/28 ip4:65.55.234.192/26 ip4:207.46.200.0/27 ip4:65.55.52.224/27 ip4:94.245.112.10/31 ip4:94.245.112.0/27 ip4:111.221.26.0/27 ip4:207.46.50.192/26 ip4:207.46.50.224 ~all",
-                "dns_lookups": 0,
-                "parsed": {
-                  "pass": [
-                    {
-                      "value": "65.54.121.120/29",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "65.55.81.48/28",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "65.55.234.192/26",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "207.46.200.0/27",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "65.55.52.224/27",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "94.245.112.10/31",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "94.245.112.0/27",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "111.221.26.0/27",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "207.46.50.192/26",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "207.46.50.224",
-                      "mechanism": "ip4"
-                    }
-                  ],
-                  "neutral": [],
-                  "softfail": [],
-                  "fail": [],
-                  "include": [],
-                  "redirect": null,
-                  "exp": null,
-                  "all": "softfail"
                 },
                 "warnings": []
               }
