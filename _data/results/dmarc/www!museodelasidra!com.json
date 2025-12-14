@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "rekire2.dns-es.com",
-      "rekire1.dns-es.com"
+      "rekire1.dns-es.com",
+      "rekire2.dns-es.com"
     ],
     "warnings": []
   },
@@ -15,25 +15,29 @@
         "preference": 0,
         "hostname": "museodelasidra.com",
         "addresses": [
-          "85.208.102.137"
+          "92.60.32.85"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:85.208.102.137 +a +mx include:relay.mailchannels.net ~all",
+    "record": "v=spf1 ip4:92.60.32.85 ip4:85.208.102.137 +a +mx include:relay.mailchannels.net ~all",
     "valid": true,
     "dns_lookups": 3,
     "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "85.208.102.137",
+          "value": "92.60.32.85",
           "mechanism": "ip4"
         },
         {
           "value": "85.208.102.137",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "92.60.32.85",
           "mechanism": "a"
         },
         {

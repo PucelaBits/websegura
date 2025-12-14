@@ -4,11 +4,11 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "sun.rediris.es",
       "ns3.unizar.es",
-      "ns.unizar.es",
-      "chico.rediris.es",
       "ns2.unizar.es",
-      "sun.rediris.es"
+      "chico.rediris.es",
+      "ns.unizar.es"
     ],
     "warnings": []
   },
@@ -18,14 +18,14 @@
         "preference": 10,
         "hostname": "mxa-006a4e02.gslb.pphosted.com",
         "addresses": [
-          "143.55.146.78"
+          "143.55.148.243"
         ]
       },
       {
         "preference": 10,
         "hostname": "mxb-006a4e02.gslb.pphosted.com",
         "addresses": [
-          "143.55.146.78"
+          "143.55.148.243"
         ]
       }
     ],
@@ -59,7 +59,7 @@
             "include": [
               {
                 "domain": "_netblocks.google.com",
-                "record": "v=spf1 ip4:74.125.0.0/16 ip4:209.85.128.0/17 ip4:216.58.192.0/20 ~all",
+                "record": "v=spf1 ip4:74.125.0.0/16 ip4:209.85.128.0/17 ~all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
@@ -69,10 +69,6 @@
                     },
                     {
                       "value": "209.85.128.0/17",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "216.58.192.0/20",
                       "mechanism": "ip4"
                     }
                   ],

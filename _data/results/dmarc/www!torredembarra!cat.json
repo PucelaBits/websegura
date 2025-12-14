@@ -13,46 +13,20 @@
     "hosts": [
       {
         "preference": 0,
-        "hostname": "correu.torredembarra.cat",
+        "hostname": "mail1.torredembarra.cat",
         "addresses": [
-          "91.126.32.67"
+          "185.73.173.33",
+          "185.73.173.41"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:195.235.183.113/29 ip4:91.126.32.64/28 ip4:83.42.242.191 a:correu.torredembarra.cat ~all",
-    "valid": true,
-    "dns_lookups": 1,
+    "record": "v=spf1 ip4:195.235.183.113/29 ip4:91.126.32.64/28 ip4:83.42.242.191 ip4.185.73.173.32/28 a:correu.torredembarra.cat ~all",
+    "valid": false,
     "warnings": [],
-    "parsed": {
-      "pass": [
-        {
-          "value": "195.235.183.113/29",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "91.126.32.64/28",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "83.42.242.191",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "91.126.32.67",
-          "mechanism": "a"
-        }
-      ],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [],
-      "redirect": null,
-      "exp": null,
-      "all": "softfail"
-    }
+    "error": ".185.73.173.32/28 is not a valid ipv4/ipv6 value"
   },
   "dmarc": {
     "record": "v=DMARC1; p=quarantine; sp=quarantine; rua=mailto:admin@torredembarra.cat ; pct=100; adkim=r; aspf=r",

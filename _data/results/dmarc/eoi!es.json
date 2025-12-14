@@ -17,40 +17,40 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.250.114.26",
-          "2607:f8b0:4023:1004::1a"
+          "172.217.217.26",
+          "2607:f8b0:4023:1c03::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "2607:f8b0:4003:c30::1a",
-          "74.125.27.27"
+          "192.178.164.26",
+          "2607:f8b0:4023:2009::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "192.178.209.27",
-          "2607:f8b0:4001:c70::1b"
+          "172.253.135.26",
+          "2607:f8b0:4023:1015::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "192.178.152.27",
-          "2607:f8b0:4024:c0d::1b"
+          "172.217.74.27",
+          "2607:f8b0:4023:3001::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "142.250.96.26",
-          "2607:f8b0:4023:403::1a"
+          "2607:f8b0:4003:c30::1a",
+          "74.125.27.27"
         ]
       }
     ],
@@ -59,9 +59,10 @@
   "spf": {
     "record": "v=spf1 +a +mx ip4:92.43.19.148 +ip4:176.28.99.27/32 include:_spf.google.com  include:servers.mcsv.net include:amazonses.com include:mh.blackboard.com ~all ",
     "valid": true,
-    "dns_lookups": 8,
+    "dns_lookups": 9,
     "warnings": [
-      "Any text after the all mechanism is ignored"
+      "Any text after the all mechanism is ignored",
+      "Duplicate include: amazonses.com"
     ],
     "parsed": {
       "pass": [
@@ -70,11 +71,11 @@
           "mechanism": "a"
         },
         {
-          "value": "51.94.156.180",
+          "value": "51.49.182.253",
           "mechanism": "a"
         },
         {
-          "value": "51.94.18.11",
+          "value": "51.94.156.180",
           "mechanism": "a"
         },
         {
@@ -122,7 +123,7 @@
             "include": [
               {
                 "domain": "_netblocks.google.com",
-                "record": "v=spf1 ip4:74.125.0.0/16 ip4:209.85.128.0/17 ip4:216.58.192.0/20 ~all",
+                "record": "v=spf1 ip4:74.125.0.0/16 ip4:209.85.128.0/17 ~all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
@@ -132,10 +133,6 @@
                     },
                     {
                       "value": "209.85.128.0/17",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "216.58.192.0/20",
                       "mechanism": "ip4"
                     }
                   ],
@@ -293,8 +290,8 @@
         },
         {
           "domain": "mh.blackboard.com",
-          "record": "v=spf1 ip4:69.196.241.0/24 -all",
-          "dns_lookups": 0,
+          "record": "v=spf1 ip4:69.196.241.0/24 include:amazonses.com -all",
+          "dns_lookups": 1,
           "parsed": {
             "pass": [
               {
@@ -310,7 +307,9 @@
             "exp": null,
             "all": "fail"
           },
-          "warnings": []
+          "warnings": [
+            "Duplicate include: amazonses.com"
+          ]
         }
       ],
       "redirect": null,

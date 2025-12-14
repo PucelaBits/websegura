@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns3.dnsxperta.com",
       "ns2.dnsxperta.com",
+      "ns3.dnsxperta.com",
       "ns1.dnsxperta.com"
     ],
     "warnings": []
@@ -52,7 +52,7 @@
             "include": [
               {
                 "domain": "_netblocks.google.com",
-                "record": "v=spf1 ip4:74.125.0.0/16 ip4:209.85.128.0/17 ip4:216.58.192.0/20 ~all",
+                "record": "v=spf1 ip4:74.125.0.0/16 ip4:209.85.128.0/17 ~all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
@@ -62,10 +62,6 @@
                     },
                     {
                       "value": "209.85.128.0/17",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "216.58.192.0/20",
                       "mechanism": "ip4"
                     }
                   ],
@@ -170,6 +166,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.bocairent.es\n\nMS=ms28925670\n\nv=spf1 ip4:192.168.0.0/16 include:_spf.google.com include:dnsxperta.com ~all"
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.bocairent.es\n\nv=spf1 ip4:192.168.0.0/16 include:_spf.google.com include:dnsxperta.com ~all\n\nMS=ms28925670"
   }
 }

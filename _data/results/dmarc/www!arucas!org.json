@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns10.servidoresdns.net",
-      "dns9.servidoresdns.net"
+      "dns9.servidoresdns.net",
+      "dns10.servidoresdns.net"
     ],
     "warnings": []
   },
@@ -15,8 +15,8 @@
         "preference": 10,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.250.113.26",
-          "2607:f8b0:4023:1000::1b"
+          "173.194.65.27",
+          "2607:f8b0:4023:1c07::1b"
         ]
       }
     ],
@@ -47,7 +47,7 @@
             "include": [
               {
                 "domain": "_netblocks.google.com",
-                "record": "v=spf1 ip4:74.125.0.0/16 ip4:209.85.128.0/17 ip4:216.58.192.0/20 ~all",
+                "record": "v=spf1 ip4:74.125.0.0/16 ip4:209.85.128.0/17 ~all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
@@ -57,10 +57,6 @@
                     },
                     {
                       "value": "209.85.128.0/17",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "216.58.192.0/20",
                       "mechanism": "ip4"
                     }
                   ],
