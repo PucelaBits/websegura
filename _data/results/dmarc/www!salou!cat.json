@@ -4,52 +4,29 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns14.servidoresdns.net",
-      "dns13.servidoresdns.net"
+      "dns13.servidoresdns.net",
+      "dns14.servidoresdns.net"
     ],
     "warnings": []
   },
   "mx": {
     "hosts": [
       {
-        "preference": 10,
-        "hostname": "mx.spamexperts.com",
+        "preference": 1,
+        "hostname": "salou-cat.mail.protection.outlook.com",
         "addresses": [
-          "2001:550:2:3::62:100",
-          "38.101.250.150"
-        ]
-      },
-      {
-        "preference": 50,
-        "hostname": "fallbackmx.spamexperts.eu",
-        "addresses": [
-          "2001:550:2:3::62:100",
-          "2001:550:2:61::2fc:100",
-          "2001:550:2:78::ca:100",
-          "38.101.250.150",
-          "38.71.16.244",
-          "38.89.254.156"
-        ]
-      },
-      {
-        "preference": 100,
-        "hostname": "lastmx.spamexperts.net",
-        "addresses": [
-          "149.13.75.27",
-          "154.59.104.23",
-          "2001:550:2:3::62:100",
-          "2001:550:2:61::2fc:100",
-          "2001:978:2:2c::137:100",
-          "2001:978:2:7::162:100",
-          "38.71.16.244",
-          "38.89.254.156"
+          "2a01:111:f403:ca04::2",
+          "2a01:111:f403:ca04::a",
+          "2a01:111:f403:ca09::3",
+          "2a01:111:f403:ca09::5",
+          "52.101.68.15",
+          "52.101.73.16",
+          "52.101.73.21",
+          "52.101.73.6"
         ]
       }
     ],
-    "warnings": [
-      "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records",
-      "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:91.126.71.230 ip4:195.76.183.90 ip4:195.76.183.91 ip4:195.76.183.92 ip4:195.76.183.93 ip4:195.76.183.94 include:spf.antispamcloud.com a:delivery.antispamcloud.com include:spf.protection.outlook.com ~all",

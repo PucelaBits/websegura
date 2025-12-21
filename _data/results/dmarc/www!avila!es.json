@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns8.servidoresdns.net",
-      "dns7.servidoresdns.net"
+      "dns7.servidoresdns.net",
+      "dns8.servidoresdns.net"
     ],
     "warnings": []
   },
@@ -20,14 +20,15 @@
       },
       {
         "preference": 20,
-        "hostname": "alt1.aspmx.l.google.com",
+        "hostname": "info.avila.es",
         "addresses": [
-          "192.178.164.27",
-          "2607:f8b0:4023:2009::1b"
+          "82.223.120.168"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The reverse DNS of 82.223.120.168 is 168.120.223.82.in-addr.arpa, but the A/AAAA DNS records for 168.120.223.82.in-addr.arpa do not resolve to 82.223.120.168"
+    ]
   },
   "spf": {
     "record": "v=spf1 mx:avila.es exists:avila.es ~all",
@@ -41,7 +42,7 @@
           "mechanism": "mx"
         },
         {
-          "value": "alt1.aspmx.l.google.com",
+          "value": "info.avila.es",
           "mechanism": "mx"
         },
         {

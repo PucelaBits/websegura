@@ -10,8 +10,22 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query hablamosdeeuropa.es. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "smtp4.maec.es",
+        "addresses": []
+      },
+      {
+        "preference": 20,
+        "hostname": "smtp3.maec.es",
+        "addresses": []
+      }
+    ],
+    "warnings": [
+      "smtp4.maec.es does not have any A or AAAA DNS records",
+      "smtp3.maec.es does not have any A or AAAA DNS records"
+    ]
   },
   "spf": {
     "record": "v=spf1 mx ~all",

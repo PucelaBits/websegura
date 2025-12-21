@@ -3,108 +3,22 @@
   "base_domain": "visitlapalma.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "ns1.visitlapalma.es",
-      "ns2.visitlapalma.es"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mail.visitlapalma.es",
-        "addresses": [
-          "89.248.100.48"
-        ]
-      }
-    ],
-    "warnings": [
-      "All nameservers failed to answer the query visitlapalma.vhost.interdominios.com. IN AAAA: Server Do53:127.0.0.53@53 answered SERVFAIL",
-      "The reverse DNS of 89.248.100.48 is visitlapalma.vhost.interdominios.com, but the A/AAAA DNS records for visitlapalma.vhost.interdominios.com do not resolve to 89.248.100.48"
-    ]
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
-    "record": "v=spf1 a mx a:visitlapalma.vhost.interdominios.com ~all",
-    "valid": true,
-    "dns_lookups": 3,
-    "warnings": [],
-    "parsed": {
-      "pass": [
-        {
-          "value": "185.79.128.155",
-          "mechanism": "a"
-        },
-        {
-          "value": "185.79.128.156",
-          "mechanism": "a"
-        },
-        {
-          "value": "mail.visitlapalma.es",
-          "mechanism": "mx"
-        },
-        {
-          "value": "89.248.100.48",
-          "mechanism": "a"
-        }
-      ],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [],
-      "redirect": null,
-      "exp": null,
-      "all": "softfail"
-    }
+    "record": null,
+    "valid": false,
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; adkim=s; aspf=s",
-    "valid": true,
-    "location": "visitlapalma.es",
-    "warnings": [
-      "rua tag (destination for aggregate reports) not found"
-    ],
-    "tags": {
-      "v": {
-        "value": "DMARC1",
-        "explicit": true
-      },
-      "p": {
-        "value": "quarantine",
-        "explicit": true
-      },
-      "adkim": {
-        "value": "s",
-        "explicit": true
-      },
-      "aspf": {
-        "value": "s",
-        "explicit": true
-      },
-      "fo": {
-        "value": [
-          "0"
-        ],
-        "explicit": false
-      },
-      "pct": {
-        "value": 100,
-        "explicit": false
-      },
-      "rf": {
-        "value": [
-          "afrf"
-        ],
-        "explicit": false
-      },
-      "ri": {
-        "value": 86400,
-        "explicit": false
-      },
-      "sp": {
-        "value": "quarantine",
-        "explicit": false
-      }
-    }
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   }
 }

@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns1.almazena.com",
       "ns2.almazena.com",
-      "ns3.almazena.com",
-      "ns1.almazena.com"
+      "ns3.almazena.com"
     ],
     "warnings": []
   },
@@ -26,8 +26,7 @@
     "record": "v=spf1 a mx include:almazena.com include:spf.profesionalhosting.com -all",
     "valid": false,
     "warnings": [],
-    "error": "Parsing the SPF record requires 11/10 maximum DNS lookups - https://tools.ietf.org/html/rfc7208#section-4.6.4",
-    "dns_lookups": 11
+    "error": "colaboras.cloud: Expected mechanism at position 113 in: v=spf1 ip4:89.140.186.0/24 ip4:5.56.160.0/21 ip4:185.5.124.0/22 ip4:5.181.44.0/22 include:relay.mailchannels.net spf.antispamcloud.com -all"
   },
   "dmarc": {
     "record": "v=DMARC1; p=quarantine; adkim=s; aspf=s",

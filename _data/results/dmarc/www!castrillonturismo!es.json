@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns10.servicio-online.net",
       "ns11.servicio-online.net",
-      "ns12.servicio-online.net"
+      "ns12.servicio-online.net",
+      "ns10.servicio-online.net"
     ],
     "warnings": []
   },
@@ -20,9 +20,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The reverse DNS of 217.116.0.227 is zixom.com, but the A/AAAA DNS records for zixom.com do not resolve to 217.116.0.227"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 redirect=spf.dominioabsoluto.net",

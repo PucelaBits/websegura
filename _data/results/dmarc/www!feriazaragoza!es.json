@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "dns.efor.es",
       "aspe.efor.es",
-      "dns2.efor.es",
-      "dns.efor.es"
+      "dns2.efor.es"
     ],
     "warnings": []
   },
@@ -16,14 +16,14 @@
         "preference": 0,
         "hostname": "feriazaragoza-es.mail.protection.outlook.com",
         "addresses": [
-          "2a01:111:f403:ca04::10",
-          "2a01:111:f403:ca04::c",
-          "2a01:111:f403:ca09::3",
-          "2a01:111:f403:ca09::a",
-          "52.101.68.10",
-          "52.101.68.12",
-          "52.101.68.3",
-          "52.101.73.11"
+          "2a01:111:f403:ca04::2",
+          "2a01:111:f403:ca09::",
+          "2a01:111:f403:ca09::8",
+          "2a01:111:f403:ca09::b",
+          "52.101.73.11",
+          "52.101.73.15",
+          "52.101.73.21",
+          "52.101.73.26"
         ]
       }
     ],
@@ -41,7 +41,7 @@
           "mechanism": "mx"
         },
         {
-          "value": "20.50.182.59",
+          "value": "51.45.9.36",
           "mechanism": "a"
         },
         {

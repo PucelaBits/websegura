@@ -4,11 +4,11 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "a2-66.akam.net",
+      "a1-15.akam.net",
       "a7-64.akam.net",
       "a20-67.akam.net",
-      "a2-66.akam.net",
-      "a9-66.akam.net",
-      "a1-15.akam.net"
+      "a9-66.akam.net"
     ],
     "warnings": []
   },
@@ -66,10 +66,12 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1;p=none; aspf=s; adkim=s;rua=mailto:dmarc@xunta.gal;ruf=mailto:dmarc@xunta.gal;fo=1",
+    "record": "v=DMARC1;p=none; aspf=s; adkim=s;rua=mailto:dmarc@xunta.gal,mailto:rua.dmarc@ccn-cert.cni.es;ruf=mailto:dmarc@xunta.gal;fo=1",
     "valid": true,
     "location": "xunta.gal",
-    "warnings": [],
+    "warnings": [
+      "ccn-cert.cni.es does not indicate that it accepts DMARC reports about xunta.gal - Authorization record not found: xunta.gal._report._dmarc.ccn-cert.cni.es IN TXT \"v=DMARC1\""
+    ],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -92,6 +94,11 @@
           {
             "scheme": "mailto",
             "address": "dmarc@xunta.gal",
+            "size_limit": null
+          },
+          {
+            "scheme": "mailto",
+            "address": "rua.dmarc@ccn-cert.cni.es",
             "size_limit": null
           }
         ],

@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.gestiondecuenta.com",
       "ns4.gestiondecuenta.com",
-      "ns3.gestiondecuenta.com",
-      "ns.gestiondecuenta.com"
+      "ns.gestiondecuenta.com",
+      "ns2.gestiondecuenta.com",
+      "ns3.gestiondecuenta.com"
     ],
     "warnings": []
   },
@@ -17,23 +17,23 @@
         "preference": 10,
         "hostname": "mx-01-eu-central-1.prod.hydra.sophos.com",
         "addresses": [
-          "18.158.149.52",
-          "3.122.50.44"
+          "3.120.226.31",
+          "52.28.93.207"
         ]
       },
       {
         "preference": 20,
         "hostname": "mx-02-eu-central-1.prod.hydra.sophos.com",
         "addresses": [
-          "18.158.149.52",
-          "3.122.50.44"
+          "3.120.226.31",
+          "52.28.93.207"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx ip4:80.28.208.248 a:mail.valleseco.es a:mail0.valleseco.es include:_spf-eu.ionos.com include:_spf_eucentral1.prod.hydra.sophos.com ~all",
+    "record": "v=spf1 mx ip4:79.148.230.214 a:mail.valleseco.es a:mail0.valleseco.es include:_spf-eu.ionos.com include:_spf_eucentral1.prod.hydra.sophos.com ~all",
     "valid": true,
     "dns_lookups": 5,
     "warnings": [],
@@ -48,15 +48,15 @@
           "mechanism": "mx"
         },
         {
-          "value": "80.28.208.248",
+          "value": "79.148.230.214",
           "mechanism": "ip4"
         },
         {
-          "value": "80.28.208.248",
+          "value": "79.148.230.214",
           "mechanism": "a"
         },
         {
-          "value": "80.28.208.248",
+          "value": "79.148.230.214",
           "mechanism": "a"
         }
       ],

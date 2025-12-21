@@ -3,24 +3,17 @@
   "base_domain": "festesdevalencia.org",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "ns3.dinahosting.com",
-      "ns4.dinahosting.com",
-      "ns2.dinahosting.com",
-      "ns.dinahosting.com"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The domain festesdevalencia.org does not exist"
   },
   "mx": {
     "hosts": [],
-    "warnings": [
-      "No MX records found. Is the domain parked?"
-    ]
+    "error": "The domain festesdevalencia.org does not exist"
   },
   "spf": {
     "record": null,
     "valid": false,
-    "error": "festesdevalencia.org does not have a SPF TXT record"
+    "error": "The domain festesdevalencia.org does not exist"
   },
   "dmarc": {
     "record": null,

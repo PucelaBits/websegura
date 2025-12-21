@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns12.servicio-online.net",
+      "ns11.servicio-online.net",
       "ns10.servicio-online.net",
-      "ns11.servicio-online.net"
+      "ns12.servicio-online.net"
     ],
     "warnings": []
   },
@@ -16,8 +16,8 @@
         "preference": 10,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.250.142.26",
-          "2607:f8b0:4023:1c01::1b"
+          "172.217.217.26",
+          "2607:f8b0:4023:1c07::1a"
         ]
       },
       {
@@ -25,7 +25,7 @@
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
           "192.178.164.27",
-          "2607:f8b0:4023:2009::1b"
+          "2607:f8b0:4023:2009::1a"
         ]
       },
       {
@@ -33,15 +33,15 @@
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
           "172.253.135.27",
-          "2607:f8b0:4023:1015::1a"
+          "2607:f8b0:4023:1015::1b"
         ]
       },
       {
         "preference": 30,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "172.217.74.27",
-          "2607:f8b0:4023:3001::1b"
+          "172.217.74.26",
+          "2607:f8b0:4023:3001::1a"
         ]
       },
       {

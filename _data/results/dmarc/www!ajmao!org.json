@@ -16,13 +16,13 @@
         "hostname": "smtp.google.com",
         "addresses": [
           "142.250.142.26",
-          "142.250.142.27",
+          "172.217.78.26",
           "172.217.78.27",
           "173.194.65.26",
           "173.194.65.27",
-          "2607:f8b0:4023:1c01::1a",
-          "2607:f8b0:4023:1c01::1b",
-          "2607:f8b0:4023:1c03::1b",
+          "2607:f8b0:4023:1c05::1a",
+          "2607:f8b0:4023:1c05::1b",
+          "2607:f8b0:4023:1c07::1a",
           "2607:f8b0:4023:1c07::1b"
         ]
       }
@@ -30,9 +30,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:185.68.189.0/25 include:spf.ipzmarketing.com include:_spf.google.com include:cime.onice.io ~all",
+    "record": "v=spf1 ip4:185.68.189.0/25 include:spf.ipzmarketing.com include:_spf.google.com ~all",
     "valid": true,
-    "dns_lookups": 9,
+    "dns_lookups": 4,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -162,113 +162,6 @@
             "redirect": null,
             "exp": null,
             "all": "softfail"
-          },
-          "warnings": []
-        },
-        {
-          "domain": "cime.onice.io",
-          "record": "v=spf1 a mx a:cime.onice.io include:spf.onice.io -all",
-          "dns_lookups": 4,
-          "parsed": {
-            "pass": [
-              {
-                "value": "185.138.223.182",
-                "mechanism": "a"
-              },
-              {
-                "value": "cime.onice.io",
-                "mechanism": "mx"
-              },
-              {
-                "value": "185.138.223.182",
-                "mechanism": "a"
-              }
-            ],
-            "neutral": [],
-            "softfail": [],
-            "fail": [],
-            "include": [
-              {
-                "domain": "spf.onice.io",
-                "record": "v=spf1 ip4:185.119.216.219/32 ip4:185.138.223.208/32 ip4:130.185.182.208/32 ip4:130.185.182.156/32 ip4:185.119.218.173/32 ip4:185.119.219.138/32 ip4:185.108.31.142/32 ip4:185.108.30.132/32 ip4:185.108.28.180/32 ip4:185.108.29.132/32 ip4:185.119.219.132/32 ip4:130.185.182.95/32 ip4:185.119.217.114/32 ip4:185.119.217.111/32 ip4:185.119.217.139/32  ~all",
-                "dns_lookups": 0,
-                "parsed": {
-                  "pass": [
-                    {
-                      "value": "185.119.216.219/32",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "185.138.223.208/32",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "130.185.182.208/32",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "130.185.182.156/32",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "185.119.218.173/32",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "185.119.219.138/32",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "185.108.31.142/32",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "185.108.30.132/32",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "185.108.28.180/32",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "185.108.29.132/32",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "185.119.219.132/32",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "130.185.182.95/32",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "185.119.217.114/32",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "185.119.217.111/32",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "185.119.217.139/32",
-                      "mechanism": "ip4"
-                    }
-                  ],
-                  "neutral": [],
-                  "softfail": [],
-                  "fail": [],
-                  "include": [],
-                  "redirect": null,
-                  "exp": null,
-                  "all": "softfail"
-                },
-                "warnings": []
-              }
-            ],
-            "redirect": null,
-            "exp": null,
-            "all": "fail"
           },
           "warnings": []
         }

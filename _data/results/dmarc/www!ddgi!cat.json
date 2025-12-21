@@ -19,10 +19,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 195.93.170.80 is mx.ddgi.cat, but the A/AAAA DNS records for mx.ddgi.cat do not resolve to 195.93.170.80"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx include:spf.protection.outlook.com include:spf.mailjet.com ip4:157.97.64.101 ip4:195.93.170.5 ip4:80.64.47.207 -all",

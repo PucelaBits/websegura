@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "sun.rediris.es",
-      "chico.rediris.es",
+      "aitana.cpd.ua.es",
       "tabarca.cpd.ua.es",
-      "aitana.cpd.ua.es"
+      "chico.rediris.es",
+      "sun.rediris.es"
     ],
     "warnings": []
   },
@@ -49,10 +49,12 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; rua=mailto:dmarc-rua@ua.es; ruf=mailto:dmarc-ruf@ua.es; fo=1; sp=none",
+    "record": "v=DMARC1; p=none; rua=mailto:dmarc-rua@ua.es,mailto:rua.dmarc@ccn-cert.cni.es; ruf=mailto:dmarc-ruf@ua.es; fo=1; sp=none",
     "valid": true,
     "location": "ua.es",
-    "warnings": [],
+    "warnings": [
+      "ccn-cert.cni.es does not indicate that it accepts DMARC reports about ua.es - Authorization record not found: ua.es._report._dmarc.ccn-cert.cni.es IN TXT \"v=DMARC1\""
+    ],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -67,6 +69,11 @@
           {
             "scheme": "mailto",
             "address": "dmarc-rua@ua.es",
+            "size_limit": null
+          },
+          {
+            "scheme": "mailto",
+            "address": "rua.dmarc@ccn-cert.cni.es",
             "size_limit": null
           }
         ],

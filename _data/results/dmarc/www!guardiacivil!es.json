@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.guardiacivil.es",
       "artemis.ttd.net",
+      "dns1.guardiacivil.es",
       "dns2.guardiacivil.es"
     ],
     "warnings": []
@@ -163,6 +163,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.guardiacivil.es\n\n915155437"
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.guardiacivil.es\n\n915155437\n\nv=spf1 -all\n\nguardiacivil.es._domainkey\tIN\tTXT\t(\"k=rsa; p=\" \"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA24zRkKPXAbU2QeLBWjSO6UN3zzPGqSmoBmhM1pznuVdO/oggP1Nc5y3bbS366vT4BjFlT7t6KBxVoqjfnR4j1ZaeMZc9juKCIQHAfhAX16hUeTGvpa+eF5827ZcxUd7fUUoJhBvOT4t1CSX1bR4TkI+qIKGS\" \"pJN9PGJFPcKlVjTh/KOgnu81//IW07mWvSIemF28DA9PR98aWGbF9ZiLvXnHp9G0LtAy0H5SmLT047hoaMDuAuMvV2uRDTl+09yBmOL2uHZ0pOW2v2jsm22MZA4aoVUeBUTcIS8h9+kp0Ith+D3OuxhB7zM5EGdtLbBPqpcYwfq39Lp15L5rhQYndwIDAQAB\")"
   }
 }

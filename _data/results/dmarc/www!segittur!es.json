@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns.transparentedge.eu",
-      "ns.transparentedge.es"
+      "ns.transparentedge.es",
+      "ns.transparentedge.eu"
     ],
     "warnings": []
   },
@@ -29,7 +29,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx ip4:154.58.16.80/32 ip4:213.170.50.16 ip4:213.170.50.19 ip4:195.114.216.138 ip4:195.114.216.146 ip4:212.63.109.135 ip4:194.224.6.145 include:spf.protection.outlook.com include:teenvio.com include:emailservice.cpd.as include:_spf.wolfcrm.es ~all",
+    "record": "v=spf1 mx ip4:154.58.16.80/32 ip4:213.170.50.16 ip4:213.170.50.19 ip4:195.114.216.138 ip4:195.114.216.146 ip4:212.63.109.135 ip4:212.4.110.70  include:spf.protection.outlook.com include:teenvio.com include:emailservice.cpd.as include:_spf.wolfcrm.es ~all",
     "valid": true,
     "dns_lookups": 9,
     "warnings": [],
@@ -68,7 +68,7 @@
           "mechanism": "ip4"
         },
         {
-          "value": "194.224.6.145",
+          "value": "212.4.110.70",
           "mechanism": "ip4"
         }
       ],

@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "dns03.ono.com",
       "dns02.ono.com",
-      "dns01.ono.com",
-      "dns03.ono.com"
+      "dns01.ono.com"
     ],
     "warnings": []
   },
@@ -16,8 +16,8 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.250.142.27",
-          "2607:f8b0:4023:1c07::1b"
+          "172.217.78.27",
+          "2607:f8b0:4023:1c03::1a"
         ]
       },
       {
@@ -25,7 +25,7 @@
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
           "192.178.164.27",
-          "2607:f8b0:4023:2009::1a"
+          "2607:f8b0:4023:2009::1b"
         ]
       },
       {
@@ -41,7 +41,7 @@
         "hostname": "aspmx2.googlemail.com",
         "addresses": [
           "192.178.164.26",
-          "2607:f8b0:4023:2009::1b"
+          "2607:f8b0:4023:2009::1a"
         ]
       },
       {

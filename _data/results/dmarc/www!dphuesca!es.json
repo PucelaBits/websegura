@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns3.dphuesca.es",
-      "artemis.ttd.net"
+      "artemis.ttd.net",
+      "dns3.dphuesca.es"
     ],
     "warnings": []
   },
@@ -15,16 +15,16 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "172.217.217.26",
-          "2607:f8b0:4023:1c03::1a"
+          "172.217.78.26",
+          "2607:f8b0:4023:1c07::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "192.178.164.26",
-          "2607:f8b0:4023:2009::1a"
+          "192.178.164.27",
+          "2607:f8b0:4023:2009::1b"
         ]
       },
       {
@@ -48,7 +48,7 @@
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
           "2607:f8b0:4003:c30::1b",
-          "74.125.27.26"
+          "74.125.27.27"
         ]
       }
     ],

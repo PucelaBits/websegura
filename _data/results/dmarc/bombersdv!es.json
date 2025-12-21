@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.serviciodns.es",
+      "ns3.serviciodns.es",
       "ns2.serviciodns.es",
-      "ns3.serviciodns.es"
+      "ns1.serviciodns.es"
     ],
     "warnings": []
   },
@@ -21,7 +21,7 @@
       }
     ],
     "warnings": [
-      "All nameservers failed to answer the query mxext.gva.es. IN AAAA: Server Do53:127.0.0.53@53 answered SERVFAIL",
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
       "The reverse DNS of 195.77.20.28 is mxext.gva.es, but the A/AAAA DNS records for mxext.gva.es do not resolve to 195.77.20.28"
     ]
   },

@@ -3,22 +3,98 @@
   "base_domain": "tranviasdezaragoza.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hostnames": [
+      "pl2.solunet.es",
+      "pl10.solunet.es",
+      "via1.tranviasdezaragoza.es"
+    ],
+    "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query tranviasdezaragoza.es. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.tranviasdezaragoza.es",
+        "addresses": [
+          "5.56.164.38"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "record": "v=spf1 +a +mx  -all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "5.56.164.38",
+          "mechanism": "a"
+        },
+        {
+          "value": "mail.tranviasdezaragoza.es",
+          "mechanism": "mx"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "record": "v=DMARC1; p=quarantine; adkim=s; aspf=s",
+    "valid": true,
+    "location": "tranviasdezaragoza.es",
+    "warnings": [
+      "rua tag (destination for aggregate reports) not found"
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "s",
+        "explicit": true
+      },
+      "aspf": {
+        "value": "s",
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "quarantine",
+        "explicit": false
+      }
+    }
   }
 }

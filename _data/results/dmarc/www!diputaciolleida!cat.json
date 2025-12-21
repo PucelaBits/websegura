@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "josa.diputaciolleida.es",
-      "baiasca.diputaciolleida.es"
+      "baiasca.diputaciolleida.es",
+      "josa.diputaciolleida.es"
     ],
     "warnings": []
   },
@@ -16,22 +16,22 @@
         "hostname": "diputaciolleida-cat.mail.protection.outlook.com",
         "addresses": [
           "2a01:111:f403:ca04::10",
-          "2a01:111:f403:ca04::5",
-          "2a01:111:f403:ca09::",
+          "2a01:111:f403:ca04::7",
           "2a01:111:f403:ca09::c",
-          "52.101.68.0",
-          "52.101.68.18",
-          "52.101.68.25",
-          "52.101.73.16"
+          "2a01:111:f403:ca09::e",
+          "52.101.68.16",
+          "52.101.68.29",
+          "52.101.73.21",
+          "52.101.73.8"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:95.130.48.0/21 ip4:194.179.98.44/30 ip4:194.179.98.48/30 ip4:95.130.54.241 ip4:195.77.149.54 ip4:194.224.55.98 include:spf.protection.outlook.com  include:spf.ipzmarketing.com include:one.zoho.eu include:eu.zcsend.net -all",
+    "record": "v=spf1 ip4:95.130.48.0/21 ip4:194.179.98.44/30 ip4:194.179.98.48/30 ip4:95.130.54.241 ip4:195.77.149.54 ip4:194.224.55.98 include:spf.protection.outlook.com  include:spf.ipzmarketing.com include:one.zoho.eu include:eu.zcsend.net include:sendersrv.com -all",
     "valid": true,
-    "dns_lookups": 7,
+    "dns_lookups": 9,
     "warnings": [
       "Duplicate include: eu.zcsend.net"
     ],
@@ -285,6 +285,89 @@
                     {
                       "value": "91.103.152.0/24",
                       "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              }
+            ],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "sendersrv.com",
+          "record": "v=spf1 ip4:185.3.229.125 ip4:185.3.229.126 ip4:185.3.229.127 ip4:185.3.229.128/27 ip4:141.136.38.0/24 ip4:141.136.40.0/24 ip4:195.191.140.0/24 ip4:195.191.176.0/24 ip4:134.209.89.39 ip4:167.172.239.16 include:_spf.mx.cloudflare.net -all",
+          "dns_lookups": 1,
+          "parsed": {
+            "pass": [
+              {
+                "value": "185.3.229.125",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.3.229.126",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.3.229.127",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.3.229.128/27",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "141.136.38.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "141.136.40.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "195.191.140.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "195.191.176.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "134.209.89.39",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "167.172.239.16",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [
+              {
+                "domain": "_spf.mx.cloudflare.net",
+                "record": "v=spf1 ip4:104.30.0.0/19 ip6:2405:8100:c000::/38 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "104.30.0.0/19",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "2405:8100:c000::/38",
+                      "mechanism": "ip6"
                     }
                   ],
                   "neutral": [],
