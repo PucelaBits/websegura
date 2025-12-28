@@ -3,17 +3,58 @@
   "base_domain": "agendadigitalriojana.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "The domain agendadigitalriojana.es does not exist"
+    "hostnames": [
+      "ns1.parkingcrew.net",
+      "ns2.parkingcrew.net"
+    ],
+    "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The domain agendadigitalriojana.es does not exist"
+    "hosts": [
+      {
+        "preference": 5,
+        "hostname": "mail.h-email.net",
+        "addresses": [
+          "162.55.164.116",
+          "165.227.156.49",
+          "165.227.159.144",
+          "167.235.143.33",
+          "178.62.199.248",
+          "49.13.4.90",
+          "5.161.194.135",
+          "5.161.98.212",
+          "5.75.171.74",
+          "91.107.214.206"
+        ]
+      }
+    ],
+    "warnings": [
+      "The domain mail3.h-email.net does not exist",
+      "The reverse DNS of 165.227.156.49 is mail3.h-email.net, but the A/AAAA DNS records for mail3.h-email.net do not resolve to 165.227.156.49",
+      "The domain mail2.h-email.net does not exist",
+      "The reverse DNS of 165.227.159.144 is mail2.h-email.net, but the A/AAAA DNS records for mail2.h-email.net do not resolve to 165.227.159.144"
+    ]
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "The domain agendadigitalriojana.es does not exist"
+    "record": "v=spf1 ip6:fd1b:212c:a5f9::/48 -all",
+    "valid": true,
+    "dns_lookups": 0,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "fd1b:212c:a5f9::/48",
+          "mechanism": "ip6"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
     "record": null,

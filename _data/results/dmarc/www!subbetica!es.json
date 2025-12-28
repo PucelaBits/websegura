@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.merkaweb.com",
-      "ns1.merkaweb.com"
+      "ns1.merkaweb.com",
+      "ns2.merkaweb.com"
     ],
     "warnings": []
   },
@@ -55,7 +55,7 @@
       "include": [
         {
           "domain": "spf.profesionalhosting.com",
-          "record": "v=spf1 a:a1.profesionalhosting.com a:a2.profesionalhosting.com a:a3.profesionalhosting.com a:a4.profesionalhosting.com ip4:154.53.134.0/24 ip4:79.99.129.0/25 ip4:89.46.90.96 ip4:212.63.110.178/31 include:relay.mailchannels.net  -all",
+          "record": "v=spf1 a:a1.profesionalhosting.com a:a2.profesionalhosting.com a:a3.profesionalhosting.com a:a4.profesionalhosting.com ip4:154.53.134.0/24 ip4:79.99.129.0/25 ip4:89.46.90.96 ip4:212.63.110.178/31 include:relay.mailchannels.net -all",
           "dns_lookups": 5,
           "parsed": {
             "pass": [

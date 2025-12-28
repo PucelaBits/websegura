@@ -22,7 +22,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx ip4:194.30.117.79 ip4:46.25.57.207 include:mail.zendesk.com -all",
+    "record": "v=spf1 mx ip4:194.30.117.79 include:mail.zendesk.com -all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
@@ -34,10 +34,6 @@
         },
         {
           "value": "194.30.117.79",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "46.25.57.207",
           "mechanism": "ip4"
         }
       ],

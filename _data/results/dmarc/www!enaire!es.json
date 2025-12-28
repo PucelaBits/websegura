@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.comtenidos.com",
-      "dns.comtenidos.com"
+      "dns.comtenidos.com",
+      "dns2.comtenidos.com"
     ],
     "warnings": []
   },
@@ -15,14 +15,14 @@
         "preference": 10,
         "hostname": "enaire-es.mail.protection.outlook.com",
         "addresses": [
-          "2a01:111:f403:ca04::a",
-          "2a01:111:f403:ca09::1",
-          "2a01:111:f403:ca09::6",
-          "2a01:111:f403:ca09::f",
-          "52.101.68.10",
-          "52.101.68.8",
-          "52.101.73.12",
-          "52.101.73.30"
+          "2a01:111:f403:ca04::1",
+          "2a01:111:f403:ca04::c",
+          "2a01:111:f403:ca09::5",
+          "2a01:111:f403:ca09::b",
+          "52.101.68.0",
+          "52.101.68.12",
+          "52.101.68.39",
+          "52.101.73.2"
         ]
       }
     ],
@@ -124,7 +124,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1;p=quarantine;sp=none;pct=100;rua=mailto:rua.dmarc@ccn-cert.cni.es",
+    "record": "v=DMARC1; p=none; rua=mailto:rua.dmarc@ccn-cert.cni.es",
     "valid": true,
     "location": "enaire.es",
     "warnings": [
@@ -136,15 +136,7 @@
         "explicit": true
       },
       "p": {
-        "value": "quarantine",
-        "explicit": true
-      },
-      "sp": {
         "value": "none",
-        "explicit": true
-      },
-      "pct": {
-        "value": 100,
         "explicit": true
       },
       "rua": {
@@ -165,6 +157,10 @@
         ],
         "explicit": false
       },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
       "rf": {
         "value": [
           "afrf"
@@ -173,6 +169,10 @@
       },
       "ri": {
         "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
         "explicit": false
       }
     }

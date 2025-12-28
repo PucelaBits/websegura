@@ -24,6 +24,14 @@
         "addresses": [
           "82.223.120.168"
         ]
+      },
+      {
+        "preference": 30,
+        "hostname": "alt1.aspmx.l.google.com",
+        "addresses": [
+          "172.253.116.26",
+          "2a00:1450:400b:c02::1a"
+        ]
       }
     ],
     "warnings": [
@@ -43,6 +51,10 @@
         },
         {
           "value": "info.avila.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "alt1.aspmx.l.google.com",
           "mechanism": "mx"
         },
         {

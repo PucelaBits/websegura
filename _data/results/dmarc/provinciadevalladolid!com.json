@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns02.ono.com",
       "dns03.ono.com",
-      "dns01.ono.com"
+      "dns01.ono.com",
+      "dns02.ono.com"
     ],
     "warnings": []
   },
@@ -15,12 +15,12 @@
       {
         "preference": 5,
         "hostname": "correo1.dipvalladolid.es",
-        "addresses": []
+        "addresses": [
+          "89.6.103.180"
+        ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx include:spf.protection.outlook.com ip4:89.6.103.145 -all",

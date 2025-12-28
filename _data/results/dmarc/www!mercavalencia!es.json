@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.dinahosting.com",
+      "ns3.dinahosting.com",
       "ns4.dinahosting.com",
       "ns.dinahosting.com",
-      "ns3.dinahosting.com"
+      "ns2.dinahosting.com"
     ],
     "warnings": []
   },
@@ -49,7 +49,8 @@
     "valid": true,
     "dns_lookups": 5,
     "warnings": [
-      "The domain vl22247.dinaserver.com does not exist"
+      "The domain vl22247.dinaserver.com does not exist",
+      "The domain vl27740.dinaserver.com does not exist"
     ],
     "parsed": {
       "pass": [
@@ -68,10 +69,6 @@
         {
           "value": "2001:41d0:8:287c::/64",
           "mechanism": "ip6"
-        },
-        {
-          "value": "82.98.175.154",
-          "mechanism": "a"
         },
         {
           "value": "82.98.132.124",

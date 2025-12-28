@@ -5,14 +5,54 @@
   "ns": {
     "hostnames": [
       "ns2.dnsxperta.com",
-      "ns1.dnsxperta.com",
-      "ns3.dnsxperta.com"
+      "ns3.dnsxperta.com",
+      "ns1.dnsxperta.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 5,
+        "hostname": "mx1.filterantispam.com",
+        "addresses": [
+          "178.238.41.106",
+          "185.83.145.44",
+          "193.226.76.64",
+          "45.8.47.67",
+          "5.189.154.222",
+          "67.198.205.88",
+          "81.181.107.16",
+          "85.121.170.2",
+          "89.185.250.138",
+          "98.126.31.120"
+        ]
+      },
+      {
+        "preference": 5,
+        "hostname": "mx2.filterantispam.com",
+        "addresses": [
+          "178.238.41.106",
+          "185.83.145.44",
+          "193.226.76.64",
+          "45.8.47.67",
+          "5.189.154.222",
+          "67.198.205.88",
+          "81.181.107.16",
+          "85.121.170.2",
+          "89.185.250.138",
+          "98.126.31.120"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mail.culturadeproximitat.com",
+        "addresses": [
+          "134.0.12.251"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:_spf.srv.cat ~all",

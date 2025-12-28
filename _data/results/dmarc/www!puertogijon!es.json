@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns1121.ui-dns.com",
       "ns1112.ui-dns.biz",
       "ns1096.ui-dns.de",
-      "ns1108.ui-dns.org",
-      "ns1121.ui-dns.com"
+      "ns1108.ui-dns.org"
     ],
     "warnings": []
   },
@@ -17,21 +17,18 @@
         "preference": 10,
         "hostname": "puertogijon-es.mail.protection.outlook.com",
         "addresses": [
-          "2a01:111:f403:ca04::10",
-          "2a01:111:f403:ca04::2",
-          "2a01:111:f403:ca04::4",
-          "2a01:111:f403:ca09::f",
-          "52.101.68.0",
-          "52.101.73.1",
-          "52.101.73.15",
-          "52.101.73.24"
+          "2a01:111:f403:ca04::6",
+          "2a01:111:f403:ca04::8",
+          "2a01:111:f403:ca04::f",
+          "2a01:111:f403:ca09::5",
+          "52.101.68.27",
+          "52.101.73.19",
+          "52.101.73.26",
+          "52.101.73.6"
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 2a01:111:f403:ca04::4 is mail-db4pr02cu00204.inbound.protection.outlook.com, but the A/AAAA DNS records for mail-db4pr02cu00204.inbound.protection.outlook.com do not resolve to 2a01:111:f403:ca04::4"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:213.0.96.226 ip4:195.53.242.107 include:spf.protection.outlook.com include:spf.emailsignatures365.com -all",

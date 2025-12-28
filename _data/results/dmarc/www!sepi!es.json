@@ -4,33 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns.transparentedge.eu",
-      "ns.transparentedge.es"
+      "ns.transparentedge.es",
+      "ns.transparentedge.eu"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mail1.correo.gob.es",
-        "addresses": [
-          "185.73.172.122",
-          "185.73.172.123",
-          "185.73.173.17",
-          "185.73.173.18"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mail2.correo.gob.es",
-        "addresses": [
-          "185.73.172.124",
-          "185.73.172.125"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "All nameservers failed to answer the query 123.172.73.185.in-addr.arpa. IN PTR: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "spf": {
     "record": "v=spf1 ip4:93.159.211.185 ip4:194.140.77.185 ip4:194.140.77.186 ip4:154.58.19.206 ip4:154.58.19.204 a:spf.correo.gob.es include:emailservice.cpd.as include:spf.protection.outlook.com -all",

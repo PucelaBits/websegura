@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "artemis.ttd.net",
-      "minerva.ttd.net"
+      "minerva.ttd.net",
+      "artemis.ttd.net"
     ],
     "warnings": []
   },
@@ -15,23 +15,23 @@
         "preference": 10,
         "hostname": "saludcastillayleon-es.mail.protection.outlook.com",
         "addresses": [
-          "2a01:111:f403:ca04::",
-          "2a01:111:f403:ca04::b",
-          "2a01:111:f403:ca09::d",
-          "2a01:111:f403:ca09::e",
-          "52.101.68.16",
+          "2a01:111:f403:ca04::10",
+          "2a01:111:f403:ca04::4",
+          "2a01:111:f403:ca09::4",
+          "2a01:111:f403:ca09::c",
           "52.101.68.36",
-          "52.101.68.39",
-          "52.101.68.5"
+          "52.101.73.24",
+          "52.101.73.28",
+          "52.101.73.6"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:194.179.53.235 include:spf.protection.outlook.com include:spf.messagelabs.com -all",
+    "record": "v=spf1 ip4:194.179.53.235 include:spf.protection.outlook.com -all",
     "valid": true,
-    "dns_lookups": 4,
+    "dns_lookups": 1,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -102,121 +102,6 @@
             "redirect": null,
             "exp": null,
             "all": "fail"
-          },
-          "warnings": []
-        },
-        {
-          "domain": "spf.messagelabs.com",
-          "record": "v=spf1 include:nets1.spf.messagelabs.com include:nets2.spf.messagelabs.com ~all",
-          "dns_lookups": 2,
-          "parsed": {
-            "pass": [],
-            "neutral": [],
-            "softfail": [],
-            "fail": [],
-            "include": [
-              {
-                "domain": "nets1.spf.messagelabs.com",
-                "record": "v=spf1 ip4:85.158.136.0/21 ip4:193.109.254.0/23 ip4:194.106.220.0/23 ip4:195.245.230.0/23 ip4:95.131.104.0/21 ip4:46.226.48.0/21",
-                "dns_lookups": 0,
-                "parsed": {
-                  "pass": [
-                    {
-                      "value": "85.158.136.0/21",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "193.109.254.0/23",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "194.106.220.0/23",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "195.245.230.0/23",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "95.131.104.0/21",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "46.226.48.0/21",
-                      "mechanism": "ip4"
-                    }
-                  ],
-                  "neutral": [],
-                  "softfail": [],
-                  "fail": [],
-                  "include": [],
-                  "redirect": null,
-                  "exp": null,
-                  "all": "neutral"
-                },
-                "warnings": []
-              },
-              {
-                "domain": "nets2.spf.messagelabs.com",
-                "record": "v=spf1 ip4:216.82.240.0/20 ip4:67.219.240.0/20 ip4:117.120.16.0/21 ip4:103.9.96.0/22 ip4:35.228.216.85 ip4:146.148.116.76 ip4:34.141.160.224 ip4:34.70.158.162 ip4:34.74.74.140 ip4:34.83.159.189",
-                "dns_lookups": 0,
-                "parsed": {
-                  "pass": [
-                    {
-                      "value": "216.82.240.0/20",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "67.219.240.0/20",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "117.120.16.0/21",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "103.9.96.0/22",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "35.228.216.85",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "146.148.116.76",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "34.141.160.224",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "34.70.158.162",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "34.74.74.140",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "34.83.159.189",
-                      "mechanism": "ip4"
-                    }
-                  ],
-                  "neutral": [],
-                  "softfail": [],
-                  "fail": [],
-                  "include": [],
-                  "redirect": null,
-                  "exp": null,
-                  "all": "neutral"
-                },
-                "warnings": []
-              }
-            ],
-            "redirect": null,
-            "exp": null,
-            "all": "softfail"
           },
           "warnings": []
         }
