@@ -3,146 +3,22 @@
   "base_domain": "granada.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "ns.granada.org",
-      "ns2.granada.org"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mxa-00835901.gslb.pphosted.com",
-        "addresses": [
-          "66.159.246.167"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "mxb-00835901.gslb.pphosted.com",
-        "addresses": [
-          "66.159.244.54"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
-    "record": "v=spf1 include:spf-00835901.pphosted.com ~all",
-    "valid": true,
-    "dns_lookups": 1,
-    "warnings": [],
-    "parsed": {
-      "pass": [],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [
-        {
-          "domain": "spf-00835901.pphosted.com",
-          "record": "v=spf1 ip4:66.159.244.54 ip4:66.159.246.167",
-          "dns_lookups": 0,
-          "parsed": {
-            "pass": [
-              {
-                "value": "66.159.244.54",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "66.159.246.167",
-                "mechanism": "ip4"
-              }
-            ],
-            "neutral": [],
-            "softfail": [],
-            "fail": [],
-            "include": [],
-            "redirect": null,
-            "exp": null,
-            "all": "neutral"
-          },
-          "warnings": []
-        }
-      ],
-      "redirect": null,
-      "exp": null,
-      "all": "softfail"
-    }
+    "record": null,
+    "valid": false,
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com,mailto:rua.dmarc@ccn-cert.cni.es; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com",
-    "valid": true,
-    "location": "granada.es",
-    "warnings": [
-      "ccn-cert.cni.es does not indicate that it accepts DMARC reports about granada.es - Authorization record not found: granada.es._report._dmarc.ccn-cert.cni.es IN TXT \"v=DMARC1\""
-    ],
-    "tags": {
-      "v": {
-        "value": "DMARC1",
-        "explicit": true
-      },
-      "p": {
-        "value": "none",
-        "explicit": true
-      },
-      "fo": {
-        "value": [
-          "1"
-        ],
-        "explicit": true
-      },
-      "rua": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "dmarc_rua@emaildefense.proofpoint.com",
-            "size_limit": null
-          },
-          {
-            "scheme": "mailto",
-            "address": "rua.dmarc@ccn-cert.cni.es",
-            "size_limit": null
-          }
-        ],
-        "explicit": true
-      },
-      "ruf": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "dmarc_ruf@emaildefense.proofpoint.com",
-            "size_limit": null
-          }
-        ],
-        "explicit": true
-      },
-      "adkim": {
-        "value": "r",
-        "explicit": false
-      },
-      "aspf": {
-        "value": "r",
-        "explicit": false
-      },
-      "pct": {
-        "value": 100,
-        "explicit": false
-      },
-      "rf": {
-        "value": [
-          "afrf"
-        ],
-        "explicit": false
-      },
-      "ri": {
-        "value": 86400,
-        "explicit": false
-      },
-      "sp": {
-        "value": "none",
-        "explicit": false
-      }
-    }
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   }
 }

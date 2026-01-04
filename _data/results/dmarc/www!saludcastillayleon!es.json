@@ -15,23 +15,23 @@
         "preference": 10,
         "hostname": "saludcastillayleon-es.mail.protection.outlook.com",
         "addresses": [
-          "2a01:111:f403:ca04::10",
-          "2a01:111:f403:ca04::4",
-          "2a01:111:f403:ca09::4",
+          "2a01:111:f403:ca04::",
+          "2a01:111:f403:ca04::2",
+          "2a01:111:f403:ca09::8",
           "2a01:111:f403:ca09::c",
-          "52.101.68.36",
-          "52.101.73.24",
-          "52.101.73.28",
-          "52.101.73.6"
+          "52.101.68.8",
+          "52.101.73.12",
+          "52.101.73.26",
+          "52.101.73.30"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:194.179.53.235 include:spf.protection.outlook.com -all",
+    "record": "v=spf1 ip4:194.179.53.235 include:spf.protection.outlook.com include:spfa.cpmails.com -all",
     "valid": true,
-    "dns_lookups": 1,
+    "dns_lookups": 2,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -93,6 +93,115 @@
               {
                 "value": "2a01:111:f403:f000::/52",
                 "mechanism": "ip6"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "spfa.cpmails.com",
+          "record": "v=spf1 ip4:35.174.145.124/32 ip4:3.214.204.181/32 ip4:52.212.19.177/32 ip4:52.17.62.50/32 ip4:15.222.110.90/32 ip4:52.60.189.48/32 ip4:13.211.69.231/32 ip4:3.105.224.60/32 ip4:3.109.187.96/32 ip4:43.204.62.184/32 ip4:44.211.178.96/27 ip4:3.101.216.128/27 ip4:3.252.108.160/27 ip4:13.39.103.0/27 ip4:3.99.253.64/27 ip4:3.27.51.160/27 ip4:43.205.150.240/28 ip4:18.143.136.64/27 ip4:3.29.194.128/27 ip4:13.42.61.32/27 ip4:18.99.40.64/27 ip4:15.200.44.18/32 ip4:96.127.72.218/32 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "35.174.145.124/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "3.214.204.181/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.212.19.177/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.17.62.50/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "15.222.110.90/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.60.189.48/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "13.211.69.231/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "3.105.224.60/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "3.109.187.96/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "43.204.62.184/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "44.211.178.96/27",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "3.101.216.128/27",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "3.252.108.160/27",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "13.39.103.0/27",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "3.99.253.64/27",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "3.27.51.160/27",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "43.205.150.240/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "18.143.136.64/27",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "3.29.194.128/27",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "13.42.61.32/27",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "18.99.40.64/27",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "15.200.44.18/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "96.127.72.218/32",
+                "mechanism": "ip4"
               }
             ],
             "neutral": [],

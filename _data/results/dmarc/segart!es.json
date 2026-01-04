@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns2.dnsxperta.com",
       "ns1.dnsxperta.com",
-      "ns3.dnsxperta.com",
-      "ns2.dnsxperta.com"
+      "ns3.dnsxperta.com"
     ],
     "warnings": []
   },
@@ -25,12 +25,21 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:dnsxperta.com ~all",
+    "record": "v=spf1 include:dnsxperta.com ip4:195.110.124.132 ip4:194.143.202.194 -all",
     "valid": true,
     "dns_lookups": 1,
     "warnings": [],
     "parsed": {
-      "pass": [],
+      "pass": [
+        {
+          "value": "195.110.124.132",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "194.143.202.194",
+          "mechanism": "ip4"
+        }
+      ],
       "neutral": [],
       "softfail": [],
       "fail": [],
@@ -71,13 +80,13 @@
       ],
       "redirect": null,
       "exp": null,
-      "all": "softfail"
+      "all": "fail"
     }
   },
   "dmarc": {
     "record": null,
     "valid": false,
     "location": null,
-    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.segart.es\n\nv=spf1 include:dnsxperta.com ~all"
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.segart.es\n\nv=spf1 include:dnsxperta.com ip4:195.110.124.132 ip4:194.143.202.194 -all"
   }
 }

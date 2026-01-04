@@ -34,9 +34,132 @@
   },
   "spf": {
     "record": "v=spf1 a mx ip4:185.201.0.0/19 ip4:82.98.157.184 a:correo.aguimes.es a:mx.serviciodecorreo.es include:_spf.google.com -all",
-    "valid": false,
+    "valid": true,
+    "dns_lookups": 7,
     "warnings": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "parsed": {
+      "pass": [
+        {
+          "value": "82.98.134.240",
+          "mechanism": "a"
+        },
+        {
+          "value": "mx.serviciodecorreo.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "smtp.aguimes.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "185.201.0.0/19",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "82.98.157.184",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "195.77.245.219",
+          "mechanism": "a"
+        },
+        {
+          "value": "82.223.190.100",
+          "mechanism": "a"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "_spf.google.com",
+          "record": "v=spf1 include:_netblocks.google.com include:_netblocks2.google.com ~all",
+          "dns_lookups": 2,
+          "parsed": {
+            "pass": [],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [
+              {
+                "domain": "_netblocks.google.com",
+                "record": "v=spf1 ip4:74.125.0.0/16 ip4:209.85.128.0/17 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "74.125.0.0/16",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "209.85.128.0/17",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              },
+              {
+                "domain": "_netblocks2.google.com",
+                "record": "v=spf1 ip6:2001:4860:4000::/36 ip6:2404:6800:4000::/36 ip6:2607:f8b0:4000::/36 ip6:2800:3f0:4000::/36 ip6:2a00:1450:4000::/36 ip6:2c0f:fb50:4000::/36 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "2001:4860:4000::/36",
+                      "mechanism": "ip6"
+                    },
+                    {
+                      "value": "2404:6800:4000::/36",
+                      "mechanism": "ip6"
+                    },
+                    {
+                      "value": "2607:f8b0:4000::/36",
+                      "mechanism": "ip6"
+                    },
+                    {
+                      "value": "2800:3f0:4000::/36",
+                      "mechanism": "ip6"
+                    },
+                    {
+                      "value": "2a00:1450:4000::/36",
+                      "mechanism": "ip6"
+                    },
+                    {
+                      "value": "2c0f:fb50:4000::/36",
+                      "mechanism": "ip6"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              }
+            ],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
     "record": null,
