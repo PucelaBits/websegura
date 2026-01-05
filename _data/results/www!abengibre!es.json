@@ -1,21 +1,26 @@
 {
-  "id": 81840904,
+  "id": 82149835,
   "algorithm_version": 5,
-  "scanned_at": "2026-01-02T01:08:52.057Z",
+  "scanned_at": "2026-01-05T04:20:03.948Z",
   "error": null,
-  "grade": "D",
+  "grade": "D-",
   "response_headers": {
-    "date": "Fri, 02 Jan 2026 01:08:53 GMT",
+    "date": "Mon, 05 Jan 2026 04:20:08 GMT",
+    "link": "<https://abengibre.es/wp-json/>; rel=\"https://api.w.org/\"",
     "server": "volt-adc",
     "connection": "close",
     "content-type": "text/html; charset=UTF-8",
-    "content-length": "0",
+    "x-powered-by": "PHP/8.3.29",
+    "x-tec-api-root": "https://abengibre.es/wp-json/tribe/events/v1/",
+    "x-tec-api-origin": "https://abengibre.es",
+    "transfer-encoding": "chunked",
+    "x-tec-api-version": "v1",
     "x-volterra-location": "wes-sea",
-    "x-envoy-upstream-service-time": "895"
+    "x-envoy-upstream-service-time": "5073"
   },
-  "score": 30,
+  "score": 25,
   "status_code": 200,
-  "tests_failed": 4,
-  "tests_passed": 6,
+  "tests_failed": 5,
+  "tests_passed": 5,
   "tests_quantity": 10
 }
