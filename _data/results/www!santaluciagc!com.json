@@ -1,21 +1,22 @@
 {
-  "id": 82345173,
+  "id": 82426026,
   "algorithm_version": 5,
-  "scanned_at": "2026-01-07T01:10:07.169Z",
+  "scanned_at": "2026-01-08T01:10:06.263Z",
   "error": null,
-  "grade": "C",
+  "grade": "F",
   "response_headers": {
-    "date": "Wed, 07 Jan 2026 01:10:07 GMT",
+    "age": "0",
+    "date": "Thu, 08 Jan 2026 01:10:07 GMT",
     "vary": "Accept-Encoding",
+    "server": "HTTPd",
     "connection": "close",
-    "set-cookie": "sl-session=fHiWI+8DX2njSgD57j7Nhg==; SameSite=None; Secure; Path=/; Max-Age=86400; HttpOnly",
     "content-type": "text/html; charset=UTF-8",
-    "content-length": "99",
-    "strict-transport-security": "max-age=15768000;"
+    "accept-ranges": "bytes",
+    "content-length": "22713"
   },
-  "score": 50,
+  "score": 0,
   "status_code": 200,
-  "tests_failed": 3,
-  "tests_passed": 7,
+  "tests_failed": 5,
+  "tests_passed": 5,
   "tests_quantity": 10
 }

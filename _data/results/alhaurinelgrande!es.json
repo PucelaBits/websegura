@@ -1,23 +1,22 @@
 {
-  "id": 82345236,
+  "id": 82426080,
   "algorithm_version": 5,
-  "scanned_at": "2026-01-07T01:10:20.699Z",
+  "scanned_at": "2026-01-08T01:10:19.561Z",
   "error": null,
-  "grade": "F",
+  "grade": "D-",
   "response_headers": {
-    "date": "Wed, 07 Jan 2026 01:10:22 GMT",
+    "date": "Thu, 08 Jan 2026 01:10:21 GMT",
     "link": "<https://alhaurinelgrande.es/wp-json/>; rel=\"https://api.w.org/\", <https://alhaurinelgrande.es/wp-json/wp/v2/pages/202175>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://alhaurinelgrande.es/>; rel=shortlink",
     "vary": "Accept-Encoding",
-    "server": "volt-adc",
+    "server": "nginx",
     "connection": "close",
     "content-type": "text/html; charset=UTF-8",
-    "content-length": "42713",
-    "x-volterra-location": "wes-sea",
-    "x-envoy-upstream-service-time": "2179"
+    "x-powered-by": "PHP/8.0.30, PleskLin",
+    "content-length": "42439"
   },
-  "score": 5,
+  "score": 25,
   "status_code": 200,
-  "tests_failed": 6,
-  "tests_passed": 4,
+  "tests_failed": 5,
+  "tests_passed": 5,
   "tests_quantity": 10
 }
