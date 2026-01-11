@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "dns01.ono.com",
-      "dns02.ono.com",
-      "dns03.ono.com"
+      "dns03.ono.com",
+      "dns02.ono.com"
     ],
     "warnings": []
   },
@@ -16,40 +16,40 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "172.217.217.26",
-          "2607:f8b0:4023:1c01::1b"
+          "142.251.179.27",
+          "2607:f8b0:4004:c19::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "192.178.164.26",
-          "2607:f8b0:4023:2009::1a"
+          "172.253.116.27",
+          "2a00:1450:400b:c02::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "172.253.135.26",
-          "2607:f8b0:4023:1015::1b"
+          "192.178.223.27",
+          "2a00:1450:4009:c0f::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "aspmx2.googlemail.com",
         "addresses": [
-          "192.178.164.26",
-          "2607:f8b0:4023:2009::1a"
+          "172.253.116.27",
+          "2a00:1450:400b:c02::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "aspmx3.googlemail.com",
         "addresses": [
-          "172.253.135.26",
-          "2607:f8b0:4023:1015::1a"
+          "192.178.223.26",
+          "2a00:1450:4009:c0f::1b"
         ]
       }
     ],
@@ -58,7 +58,7 @@
   "spf": {
     "record": "v=spf1 ip4:213.232.232.105 ip4:213.232.232.106 ip4:213.232.232.104 ip4:82.223.66.21 include:_spf.google.com ~all",
     "valid": true,
-    "dns_lookups": 3,
+    "dns_lookups": 1,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -85,81 +85,47 @@
       "include": [
         {
           "domain": "_spf.google.com",
-          "record": "v=spf1 include:_netblocks.google.com include:_netblocks2.google.com ~all",
-          "dns_lookups": 2,
+          "record": "v=spf1 ip4:74.125.0.0/16 ip4:209.85.128.0/17 ip6:2001:4860:4000::/36 ip6:2404:6800:4000::/36 ip6:2607:f8b0:4000::/36 ip6:2800:3f0:4000::/36 ip6:2a00:1450:4000::/36 ip6:2c0f:fb50:4000::/36 ~all",
+          "dns_lookups": 0,
           "parsed": {
-            "pass": [],
+            "pass": [
+              {
+                "value": "74.125.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "209.85.128.0/17",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "2001:4860:4000::/36",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2404:6800:4000::/36",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2607:f8b0:4000::/36",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2800:3f0:4000::/36",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a00:1450:4000::/36",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2c0f:fb50:4000::/36",
+                "mechanism": "ip6"
+              }
+            ],
             "neutral": [],
             "softfail": [],
             "fail": [],
-            "include": [
-              {
-                "domain": "_netblocks.google.com",
-                "record": "v=spf1 ip4:74.125.0.0/16 ip4:209.85.128.0/17 ~all",
-                "dns_lookups": 0,
-                "parsed": {
-                  "pass": [
-                    {
-                      "value": "74.125.0.0/16",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "209.85.128.0/17",
-                      "mechanism": "ip4"
-                    }
-                  ],
-                  "neutral": [],
-                  "softfail": [],
-                  "fail": [],
-                  "include": [],
-                  "redirect": null,
-                  "exp": null,
-                  "all": "softfail"
-                },
-                "warnings": []
-              },
-              {
-                "domain": "_netblocks2.google.com",
-                "record": "v=spf1 ip6:2001:4860:4000::/36 ip6:2404:6800:4000::/36 ip6:2607:f8b0:4000::/36 ip6:2800:3f0:4000::/36 ip6:2a00:1450:4000::/36 ip6:2c0f:fb50:4000::/36 ~all",
-                "dns_lookups": 0,
-                "parsed": {
-                  "pass": [
-                    {
-                      "value": "2001:4860:4000::/36",
-                      "mechanism": "ip6"
-                    },
-                    {
-                      "value": "2404:6800:4000::/36",
-                      "mechanism": "ip6"
-                    },
-                    {
-                      "value": "2607:f8b0:4000::/36",
-                      "mechanism": "ip6"
-                    },
-                    {
-                      "value": "2800:3f0:4000::/36",
-                      "mechanism": "ip6"
-                    },
-                    {
-                      "value": "2a00:1450:4000::/36",
-                      "mechanism": "ip6"
-                    },
-                    {
-                      "value": "2c0f:fb50:4000::/36",
-                      "mechanism": "ip6"
-                    }
-                  ],
-                  "neutral": [],
-                  "softfail": [],
-                  "fail": [],
-                  "include": [],
-                  "redirect": null,
-                  "exp": null,
-                  "all": "softfail"
-                },
-                "warnings": []
-              }
-            ],
+            "include": [],
             "redirect": null,
             "exp": null,
             "all": "softfail"

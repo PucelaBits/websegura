@@ -10,41 +10,15 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "_dc-mx.9f36c7eef951.visit-cullera.es",
-        "addresses": [
-          "185.31.236.108"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
   },
   "spf": {
-    "record": "v=spf1 mx a -all",
-    "valid": true,
-    "dns_lookups": 2,
-    "warnings": [],
-    "parsed": {
-      "pass": [
-        {
-          "value": "_dc-mx.9f36c7eef951.visit-cullera.es",
-          "mechanism": "mx"
-        },
-        {
-          "value": "185.31.236.108",
-          "mechanism": "a"
-        }
-      ],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [],
-      "redirect": null,
-      "exp": null,
-      "all": "fail"
-    }
+    "record": null,
+    "valid": false,
+    "error": "visit-cullera.es does not have a SPF TXT record"
   },
   "dmarc": {
     "record": null,

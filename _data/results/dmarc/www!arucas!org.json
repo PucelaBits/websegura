@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns9.servidoresdns.net",
-      "dns10.servidoresdns.net"
+      "dns10.servidoresdns.net",
+      "dns9.servidoresdns.net"
     ],
     "warnings": []
   },
@@ -15,8 +15,8 @@
         "preference": 10,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "172.217.78.27",
-          "2607:f8b0:4023:1c01::1b"
+          "172.253.122.26",
+          "2607:f8b0:4004:c09::1b"
         ]
       }
     ],
@@ -25,7 +25,7 @@
   "spf": {
     "record": "v=spf1 include:_spf.google.com ~all include:juventud.arucas.org ~all",
     "valid": true,
-    "dns_lookups": 3,
+    "dns_lookups": 1,
     "warnings": [
       "Any text after the all mechanism is ignored"
     ],
@@ -37,81 +37,47 @@
       "include": [
         {
           "domain": "_spf.google.com",
-          "record": "v=spf1 include:_netblocks.google.com include:_netblocks2.google.com ~all",
-          "dns_lookups": 2,
+          "record": "v=spf1 ip4:74.125.0.0/16 ip4:209.85.128.0/17 ip6:2001:4860:4000::/36 ip6:2404:6800:4000::/36 ip6:2607:f8b0:4000::/36 ip6:2800:3f0:4000::/36 ip6:2a00:1450:4000::/36 ip6:2c0f:fb50:4000::/36 ~all",
+          "dns_lookups": 0,
           "parsed": {
-            "pass": [],
+            "pass": [
+              {
+                "value": "74.125.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "209.85.128.0/17",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "2001:4860:4000::/36",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2404:6800:4000::/36",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2607:f8b0:4000::/36",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2800:3f0:4000::/36",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a00:1450:4000::/36",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2c0f:fb50:4000::/36",
+                "mechanism": "ip6"
+              }
+            ],
             "neutral": [],
             "softfail": [],
             "fail": [],
-            "include": [
-              {
-                "domain": "_netblocks.google.com",
-                "record": "v=spf1 ip4:74.125.0.0/16 ip4:209.85.128.0/17 ~all",
-                "dns_lookups": 0,
-                "parsed": {
-                  "pass": [
-                    {
-                      "value": "74.125.0.0/16",
-                      "mechanism": "ip4"
-                    },
-                    {
-                      "value": "209.85.128.0/17",
-                      "mechanism": "ip4"
-                    }
-                  ],
-                  "neutral": [],
-                  "softfail": [],
-                  "fail": [],
-                  "include": [],
-                  "redirect": null,
-                  "exp": null,
-                  "all": "softfail"
-                },
-                "warnings": []
-              },
-              {
-                "domain": "_netblocks2.google.com",
-                "record": "v=spf1 ip6:2001:4860:4000::/36 ip6:2404:6800:4000::/36 ip6:2607:f8b0:4000::/36 ip6:2800:3f0:4000::/36 ip6:2a00:1450:4000::/36 ip6:2c0f:fb50:4000::/36 ~all",
-                "dns_lookups": 0,
-                "parsed": {
-                  "pass": [
-                    {
-                      "value": "2001:4860:4000::/36",
-                      "mechanism": "ip6"
-                    },
-                    {
-                      "value": "2404:6800:4000::/36",
-                      "mechanism": "ip6"
-                    },
-                    {
-                      "value": "2607:f8b0:4000::/36",
-                      "mechanism": "ip6"
-                    },
-                    {
-                      "value": "2800:3f0:4000::/36",
-                      "mechanism": "ip6"
-                    },
-                    {
-                      "value": "2a00:1450:4000::/36",
-                      "mechanism": "ip6"
-                    },
-                    {
-                      "value": "2c0f:fb50:4000::/36",
-                      "mechanism": "ip6"
-                    }
-                  ],
-                  "neutral": [],
-                  "softfail": [],
-                  "fail": [],
-                  "include": [],
-                  "redirect": null,
-                  "exp": null,
-                  "all": "softfail"
-                },
-                "warnings": []
-              }
-            ],
+            "include": [],
             "redirect": null,
             "exp": null,
             "all": "softfail"

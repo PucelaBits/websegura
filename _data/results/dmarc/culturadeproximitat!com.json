@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "ns3.dnsxperta.com",
-      "ns2.dnsxperta.com",
-      "ns1.dnsxperta.com"
+      "ns1.dnsxperta.com",
+      "ns2.dnsxperta.com"
     ],
     "warnings": []
   },
@@ -52,7 +52,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "81.181.107.16 does not have any reverse DNS (PTR) records",
+      "81.181.107.16 does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:_spf.srv.cat ~all",
