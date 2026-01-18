@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.dnsxperta.com",
+      "ns3.dnsxperta.com",
       "ns1.dnsxperta.com",
-      "ns3.dnsxperta.com"
+      "ns2.dnsxperta.com"
     ],
     "warnings": []
   },
@@ -21,6 +21,7 @@
       }
     ],
     "warnings": [
+      "The domain ecs-119-8-213-87.compute.hwclouds-dns.eu does not exist",
       "The reverse DNS of 119.8.213.87 is ecs-119-8-213-87.compute.hwclouds-dns.eu, but the A/AAAA DNS records for ecs-119-8-213-87.compute.hwclouds-dns.eu do not resolve to 119.8.213.87"
     ]
   },

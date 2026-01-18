@@ -53,9 +53,7 @@
     "record": "v=spf1 mx:tragsa.es a:mail00.tragsa.es a:mail20.tragsa.es a:mail35.tragsa.es ip4:195.77.152.0/24 include:spf.protection.outlook.com -all",
     "valid": true,
     "dns_lookups": 5,
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ],
+    "warnings": [],
     "parsed": {
       "pass": [
         {
@@ -77,6 +75,10 @@
         {
           "value": "mailhost-antispam.ttd.net",
           "mechanism": "mx"
+        },
+        {
+          "value": "195.77.152.24",
+          "mechanism": "a"
         },
         {
           "value": "195.77.152.35",

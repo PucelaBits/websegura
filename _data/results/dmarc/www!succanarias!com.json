@@ -3,11 +3,8 @@
   "base_domain": "succanarias.com",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "ns1.dns-servicios.es",
-      "ns2.dns-servicios.es"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "mx": {
     "hosts": [

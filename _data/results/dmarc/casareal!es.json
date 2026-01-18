@@ -26,10 +26,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 66.159.234.208 is mx08-0085c402.pphosted.com, but the A/AAAA DNS records for mx08-0085c402.pphosted.com do not resolve to 66.159.234.208"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com ip4:217.124.155.49/32 ip4:194.179.47.226/32 include:spf-0085c402.pphosted.com ~all",

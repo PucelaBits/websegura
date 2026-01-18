@@ -4,11 +4,11 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "sun.rediris.es",
-      "chico.rediris.es",
-      "agata.usal.es",
       "topacio.usal.es",
-      "zafiro.usal.es"
+      "chico.rediris.es",
+      "zafiro.usal.es",
+      "sun.rediris.es",
+      "agata.usal.es"
     ],
     "warnings": []
   },
@@ -18,44 +18,46 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.251.111.27",
-          "2607:f8b0:4004:c25::1a"
+          "172.253.132.26",
+          "2607:f8b0:4023:2c03::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "172.253.116.27",
-          "2a00:1450:400b:c02::1b"
+          "2607:f8b0:4003:c30::1b",
+          "74.125.27.26"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "192.178.223.27",
-          "2a00:1450:4009:c0f::1b"
+          "192.178.209.26",
+          "2607:f8b0:4001:c70::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "173.194.76.27",
-          "2a00:1450:400c:c00::1a"
+          "192.178.218.27",
+          "2607:f8b0:4004:c25::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "142.250.102.26",
-          "2a00:1450:4025:402::1b"
+          "142.250.96.27",
+          "2800:3f0:4003:c0f::1a"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "2800:3f0:4003:c0f::1a does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:_spf.google.com ~all",

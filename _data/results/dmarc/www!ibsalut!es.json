@@ -4,11 +4,11 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "a24-66.akam.net",
-      "a2-66.akam.net",
       "a13-66.akam.net",
-      "a5-64.akam.net",
       "a1-171.akam.net",
+      "a24-66.akam.net",
+      "a5-64.akam.net",
+      "a2-66.akam.net",
       "a28-66.akam.net"
     ],
     "warnings": []
@@ -91,7 +91,7 @@
             "include": [
               {
                 "domain": "spfb.tmes.trendmicro.com",
-                "record": "v=spf1 ip4:107.22.223.18 ip4:52.70.252.86 ip4:35.156.245.132 ip4:18.156.0.20 ip4:3.72.196.143 ip4:54.146.4.63 ip4:54.174.82.86 include:spfc.tmes.trendmicro.com ~all",
+                "record": "v=spf1 ip4:107.22.223.18 ip4:52.70.252.86 ip4:35.156.245.132 ip4:18.156.0.20 ip4:3.72.196.143 ip4:54.146.4.63 ip4:54.174.82.86 ip6:2600:1f18:42fe:5c00::/60 ip6:2a05:d014:10e:d900::/60 ip6:2406:da1c:1ef6:1c00::/60 include:spfc.tmes.trendmicro.com ~all",
                 "dns_lookups": 1,
                 "parsed": {
                   "pass": [
@@ -122,6 +122,18 @@
                     {
                       "value": "54.174.82.86",
                       "mechanism": "ip4"
+                    },
+                    {
+                      "value": "2600:1f18:42fe:5c00::/60",
+                      "mechanism": "ip6"
+                    },
+                    {
+                      "value": "2a05:d014:10e:d900::/60",
+                      "mechanism": "ip6"
+                    },
+                    {
+                      "value": "2406:da1c:1ef6:1c00::/60",
+                      "mechanism": "ip6"
                     }
                   ],
                   "neutral": [],
@@ -130,7 +142,7 @@
                   "include": [
                     {
                       "domain": "spfc.tmes.trendmicro.com",
-                      "record": "v=spf1 ip4:18.188.9.192/26 ip4:18.188.239.128/26 ip4:34.253.238.128/26 ip4:34.253.238.192/26 ip4:15.168.56.0/25 ip4:15.168.49.64/26 ip4:15.168.56.128/26 ip4:18.97.0.160/27 ip4:18.96.32.128/27 ~all",
+                      "record": "v=spf1 ip4:18.188.9.192/26 ip4:18.188.239.128/26 ip4:34.253.238.128/26 ip4:34.253.238.192/26 ip4:15.168.56.0/25 ip4:15.168.49.64/26 ip4:15.168.56.128/26 ip4:18.97.0.160/27 ip4:18.96.32.128/27 ip6:2406:da14:194d:a200::/60 ~all",
                       "dns_lookups": 0,
                       "parsed": {
                         "pass": [
@@ -169,6 +181,10 @@
                           {
                             "value": "18.96.32.128/27",
                             "mechanism": "ip4"
+                          },
+                          {
+                            "value": "2406:da14:194d:a200::/60",
+                            "mechanism": "ip6"
                           }
                         ],
                         "neutral": [],

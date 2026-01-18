@@ -3,213 +3,22 @@
   "base_domain": "utrera.org",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "b-ns.primari.net",
-      "a-ns.primari.net"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 1,
-        "hostname": "aspmx.l.google.com",
-        "addresses": [
-          "142.251.111.27",
-          "2607:f8b0:4004:c08::1b"
-        ]
-      },
-      {
-        "preference": 5,
-        "hostname": "alt1.aspmx.l.google.com",
-        "addresses": [
-          "172.253.116.27",
-          "2a00:1450:400b:c02::1a"
-        ]
-      },
-      {
-        "preference": 5,
-        "hostname": "alt2.aspmx.l.google.com",
-        "addresses": [
-          "192.178.223.26",
-          "2a00:1450:4009:c0f::1b"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "alt3.aspmx.l.google.com",
-        "addresses": [
-          "173.194.76.27",
-          "2a00:1450:400c:c00::1a"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "alt4.aspmx.l.google.com",
-        "addresses": [
-          "142.250.102.26",
-          "2a00:1450:4025:402::1a"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
-    "record": "v=spf1 mx ip4:195.53.27.99 a:smail.utrera.org include:_spf.google.com ~all",
-    "valid": true,
-    "dns_lookups": 3,
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ],
-    "parsed": {
-      "pass": [
-        {
-          "value": "aspmx.l.google.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "alt1.aspmx.l.google.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "alt2.aspmx.l.google.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "alt3.aspmx.l.google.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "alt4.aspmx.l.google.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "195.53.27.99",
-          "mechanism": "ip4"
-        }
-      ],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [
-        {
-          "domain": "_spf.google.com",
-          "record": "v=spf1 ip4:74.125.0.0/16 ip4:209.85.128.0/17 ip6:2001:4860:4000::/36 ip6:2404:6800:4000::/36 ip6:2607:f8b0:4000::/36 ip6:2800:3f0:4000::/36 ip6:2a00:1450:4000::/36 ip6:2c0f:fb50:4000::/36 ~all",
-          "dns_lookups": 0,
-          "parsed": {
-            "pass": [
-              {
-                "value": "74.125.0.0/16",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "209.85.128.0/17",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "2001:4860:4000::/36",
-                "mechanism": "ip6"
-              },
-              {
-                "value": "2404:6800:4000::/36",
-                "mechanism": "ip6"
-              },
-              {
-                "value": "2607:f8b0:4000::/36",
-                "mechanism": "ip6"
-              },
-              {
-                "value": "2800:3f0:4000::/36",
-                "mechanism": "ip6"
-              },
-              {
-                "value": "2a00:1450:4000::/36",
-                "mechanism": "ip6"
-              },
-              {
-                "value": "2c0f:fb50:4000::/36",
-                "mechanism": "ip6"
-              }
-            ],
-            "neutral": [],
-            "softfail": [],
-            "fail": [],
-            "include": [],
-            "redirect": null,
-            "exp": null,
-            "all": "softfail"
-          },
-          "warnings": []
-        }
-      ],
-      "redirect": null,
-      "exp": null,
-      "all": "softfail"
-    }
+    "record": null,
+    "valid": false,
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; rua=mailto:dmarc@utrera.org,mailto:rua.dmarc@ccn-cert.cni.es",
-    "valid": true,
-    "location": "utrera.org",
-    "warnings": [
-      "ccn-cert.cni.es does not indicate that it accepts DMARC reports about utrera.org - Authorization record not found: utrera.org._report._dmarc.ccn-cert.cni.es IN TXT \"v=DMARC1\""
-    ],
-    "tags": {
-      "v": {
-        "value": "DMARC1",
-        "explicit": true
-      },
-      "p": {
-        "value": "none",
-        "explicit": true
-      },
-      "rua": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "dmarc@utrera.org",
-            "size_limit": null
-          },
-          {
-            "scheme": "mailto",
-            "address": "rua.dmarc@ccn-cert.cni.es",
-            "size_limit": null
-          }
-        ],
-        "explicit": true
-      },
-      "adkim": {
-        "value": "r",
-        "explicit": false
-      },
-      "aspf": {
-        "value": "r",
-        "explicit": false
-      },
-      "fo": {
-        "value": [
-          "0"
-        ],
-        "explicit": false
-      },
-      "pct": {
-        "value": 100,
-        "explicit": false
-      },
-      "rf": {
-        "value": [
-          "afrf"
-        ],
-        "explicit": false
-      },
-      "ri": {
-        "value": 86400,
-        "explicit": false
-      },
-      "sp": {
-        "value": "none",
-        "explicit": false
-      }
-    }
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   }
 }

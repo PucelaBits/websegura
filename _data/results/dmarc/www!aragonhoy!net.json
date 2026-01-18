@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "calatayud.aragon.es",
-      "codos.aragon.es"
+      "codos.aragon.es",
+      "calatayud.aragon.es"
     ],
     "warnings": []
   },
@@ -26,7 +26,7 @@
   "spf": {
     "record": null,
     "valid": false,
-    "error": "aragonhoy.net does not have a SPF TXT record"
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "dmarc": {
     "record": null,
