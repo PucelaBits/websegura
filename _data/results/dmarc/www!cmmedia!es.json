@@ -31,7 +31,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:195.76.21.10 mx include:spf.protection.outlook.com -all",
+    "record": "v=spf1 ip4:195.76.21.10 ip4:216.71.156.65 ip4:68.232.156.58 mx include:spf.protection.outlook.com -all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
@@ -39,6 +39,14 @@
       "pass": [
         {
           "value": "195.76.21.10",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "216.71.156.65",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "68.232.156.58",
           "mechanism": "ip4"
         },
         {

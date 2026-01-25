@@ -31,99 +31,23 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx ip4:212.51.32.0/24 ip4:91.116.137.208/28 include:spf.ipzmarketing.com include:spf.sendinblue.com include:mailcontrol.com a:dispatch-eu.ppe-hosted.com -all",
+    "record": "v=spf1 ip4:91.209.104.0/24 ip4:185.132.180.0/22 ip4:185.183.28.0/22 include:spf.ipzmarketing.com include:spf.sendinblue.com include:mailcontrol.com -all",
     "valid": true,
-    "dns_lookups": 5,
+    "dns_lookups": 3,
     "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "mx1-eu1.ppe-hosted.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "mx2-eu1.ppe-hosted.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "212.51.32.0/24",
+          "value": "91.209.104.0/24",
           "mechanism": "ip4"
         },
         {
-          "value": "91.116.137.208/28",
+          "value": "185.132.180.0/22",
           "mechanism": "ip4"
         },
         {
-          "value": "185.132.181.10",
-          "mechanism": "a"
-        },
-        {
-          "value": "185.132.181.11",
-          "mechanism": "a"
-        },
-        {
-          "value": "185.132.181.12",
-          "mechanism": "a"
-        },
-        {
-          "value": "185.132.181.13",
-          "mechanism": "a"
-        },
-        {
-          "value": "185.132.181.6",
-          "mechanism": "a"
-        },
-        {
-          "value": "185.132.181.7",
-          "mechanism": "a"
-        },
-        {
-          "value": "185.132.181.8",
-          "mechanism": "a"
-        },
-        {
-          "value": "185.132.181.9",
-          "mechanism": "a"
-        },
-        {
-          "value": "185.183.29.32",
-          "mechanism": "a"
-        },
-        {
-          "value": "185.183.29.33",
-          "mechanism": "a"
-        },
-        {
-          "value": "185.183.29.34",
-          "mechanism": "a"
-        },
-        {
-          "value": "185.183.29.35",
-          "mechanism": "a"
-        },
-        {
-          "value": "185.183.29.36",
-          "mechanism": "a"
-        },
-        {
-          "value": "185.183.29.37",
-          "mechanism": "a"
-        },
-        {
-          "value": "185.183.29.38",
-          "mechanism": "a"
-        },
-        {
-          "value": "185.183.29.39",
-          "mechanism": "a"
-        },
-        {
-          "value": "91.209.104.157",
-          "mechanism": "a"
-        },
-        {
-          "value": "91.209.104.158",
-          "mechanism": "a"
+          "value": "185.183.28.0/22",
+          "mechanism": "ip4"
         }
       ],
       "neutral": [],

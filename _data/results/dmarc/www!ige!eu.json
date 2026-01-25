@@ -4,12 +4,12 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "a1-47.akam.net",
-      "a4-66.akam.net",
+      "a26-66.akam.net",
       "a13-65.akam.net",
-      "a16-64.akam.net",
       "a9-66.akam.net",
-      "a26-66.akam.net"
+      "a4-66.akam.net",
+      "a1-47.akam.net",
+      "a16-64.akam.net"
     ],
     "warnings": []
   },
@@ -231,11 +231,12 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1;p=none; aspf=s; adkim=s;rua=mailto:dmarc@ige.eu.es;ruf=mailto:dmarc@ige.eu;fo=1",
+    "record": "v=DMARC1;p=none; aspf=s; adkim=s;rua=mailto:dmarc@xunta.gal,mailto:rua.dmarc@ccn-cert.cni.es;ruf=mailto:dmarc@xunta.gal;fo=1",
     "valid": true,
     "location": "ige.eu",
     "warnings": [
-      "ige.eu.es does not indicate that it accepts DMARC reports about ige.eu - Authorization record not found: ige.eu._report._dmarc.ige.eu.es IN TXT \"v=DMARC1\""
+      "xunta.gal does not indicate that it accepts DMARC reports about ige.eu - Authorization record not found: ige.eu._report._dmarc.xunta.gal IN TXT \"v=DMARC1\"",
+      "xunta.gal does not indicate that it accepts DMARC reports about ige.eu - Authorization record not found: ige.eu._report._dmarc.xunta.gal IN TXT \"v=DMARC1\""
     ],
     "tags": {
       "v": {
@@ -255,17 +256,11 @@
         "explicit": true
       },
       "rua": {
-        "value": "mailto:dmarc@ige.eu.es",
+        "value": "mailto:dmarc@xunta.gal,mailto:rua.dmarc@ccn-cert.cni.es",
         "explicit": true
       },
       "ruf": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "dmarc@ige.eu",
-            "size_limit": null
-          }
-        ],
+        "value": "mailto:dmarc@xunta.gal",
         "explicit": true
       },
       "fo": {

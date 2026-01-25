@@ -15,14 +15,14 @@
         "preference": 10,
         "hostname": "mxa-00764502.gslb.pphosted.com",
         "addresses": [
-          "66.159.244.66"
+          "66.159.246.179"
         ]
       },
       {
         "preference": 10,
         "hostname": "mxb-00764502.gslb.pphosted.com",
         "addresses": [
-          "66.159.246.179"
+          "66.159.244.66"
         ]
       }
     ],
@@ -84,11 +84,11 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=reject; sp=reject; pct=100; adkim=s; aspf=s",
+    "record": "v=DMARC1; p=reject; sp=reject; pct=100; adkim=s; aspf=s; rua=mailto:rua.dmarc@ccn-cert.cni.es",
     "valid": true,
     "location": "santacruzdetenerife.es",
     "warnings": [
-      "rua tag (destination for aggregate reports) not found"
+      "ccn-cert.cni.es does not indicate that it accepts DMARC reports about santacruzdetenerife.es - Authorization record not found: santacruzdetenerife.es._report._dmarc.ccn-cert.cni.es IN TXT \"v=DMARC1\""
     ],
     "tags": {
       "v": {
@@ -113,6 +113,10 @@
       },
       "aspf": {
         "value": "s",
+        "explicit": true
+      },
+      "rua": {
+        "value": "mailto:rua.dmarc@ccn-cert.cni.es",
         "explicit": true
       },
       "fo": {

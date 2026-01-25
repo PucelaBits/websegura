@@ -3,17 +3,22 @@
   "base_domain": "festesdevalencia.org",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "The domain festesdevalencia.org does not exist"
+    "hostnames": [
+      "gannon.ns.cloudflare.com",
+      "rosalyn.ns.cloudflare.com"
+    ],
+    "warnings": []
   },
   "mx": {
     "hosts": [],
-    "error": "The domain festesdevalencia.org does not exist"
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
   },
   "spf": {
     "record": null,
     "valid": false,
-    "error": "The domain festesdevalencia.org does not exist"
+    "error": "festesdevalencia.org does not have a SPF TXT record"
   },
   "dmarc": {
     "record": null,

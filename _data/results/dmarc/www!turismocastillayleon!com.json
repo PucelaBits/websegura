@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.jcyl.es",
-      "ns2.f5clouddns.com",
       "dns1.jcyl.es",
+      "ns2.f5clouddns.com",
+      "dns2.jcyl.es",
       "ns1.f5clouddns.com"
     ],
     "warnings": []
@@ -18,14 +18,73 @@
     ]
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "turismocastillayleon.com does not have a SPF TXT record"
+    "record": "v=spf1-all",
+    "valid": true,
+    "dns_lookups": 0,
+    "warnings": [],
+    "parsed": {
+      "pass": [],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1;p=reject;sp=reject;adkim=s;aspf=s;rua=mailto:rua.dmarc@ccn-cert.cni.es,mailto:informatica.cct@jcyl.es",
+    "valid": true,
+    "location": "turismocastillayleon.com",
+    "warnings": [
+      "ccn-cert.cni.es does not indicate that it accepts DMARC reports about turismocastillayleon.com - Authorization record not found: turismocastillayleon.com._report._dmarc.ccn-cert.cni.es IN TXT \"v=DMARC1\""
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "reject",
+        "explicit": true
+      },
+      "sp": {
+        "value": "reject",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "s",
+        "explicit": true
+      },
+      "aspf": {
+        "value": "s",
+        "explicit": true
+      },
+      "rua": {
+        "value": "mailto:rua.dmarc@ccn-cert.cni.es,mailto:informatica.cct@jcyl.es",
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      }
+    }
   }
 }

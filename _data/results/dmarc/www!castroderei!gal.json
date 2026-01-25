@@ -3,38 +3,33 @@
   "base_domain": "castroderei.gal",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "ns1.imglohosting.com",
-      "ns2.imglohosting.com"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "mx": {
     "hosts": [
       {
         "preference": 0,
         "hostname": "mail.castroderei.gal",
-        "addresses": [
-          "146.59.163.116"
-        ]
+        "addresses": []
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ]
   },
   "spf": {
     "record": "v=spf1 ip4:51.68.36.3 include:correo00.imglohosting.com include:hl901.imglohosting.com +a +mx +ip4:5.39.27.158 +include:spf.raiolanetworks.com +ip4:91.134.184.232 ~all",
     "valid": true,
     "dns_lookups": 7,
-    "warnings": [],
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ],
     "parsed": {
       "pass": [
         {
           "value": "51.68.36.3",
           "mechanism": "ip4"
-        },
-        {
-          "value": "146.59.163.116",
-          "mechanism": "a"
         },
         {
           "value": "mail.castroderei.gal",
@@ -251,61 +246,9 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; sp=none; rf=afrf; pct=100; ri=86400;rua=mailto:dmarc@castroderei.gal",
-    "valid": true,
-    "location": "castroderei.gal",
-    "warnings": [],
-    "tags": {
-      "v": {
-        "value": "DMARC1",
-        "explicit": true
-      },
-      "p": {
-        "value": "none",
-        "explicit": true
-      },
-      "sp": {
-        "value": "none",
-        "explicit": true
-      },
-      "rf": {
-        "value": [
-          "afrf"
-        ],
-        "explicit": true
-      },
-      "pct": {
-        "value": 100,
-        "explicit": true
-      },
-      "ri": {
-        "value": 86400,
-        "explicit": true
-      },
-      "rua": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "dmarc@castroderei.gal",
-            "size_limit": null
-          }
-        ],
-        "explicit": true
-      },
-      "adkim": {
-        "value": "r",
-        "explicit": false
-      },
-      "aspf": {
-        "value": "r",
-        "explicit": false
-      },
-      "fo": {
-        "value": [
-          "0"
-        ],
-        "explicit": false
-      }
-    }
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   }
 }

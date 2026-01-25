@@ -11,7 +11,7 @@
   },
   "mx": {
     "hosts": [],
-    "error": "All nameservers failed to answer the query 52.186.64.195.in-addr.arpa. IN PTR: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "error": "All nameservers failed to answer the query 52.250.230.91.in-addr.arpa. IN PTR: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "spf": {
     "record": "v=spf1 ip4:195.64.186.0/23 ip4:91.230.250.0/24 include:spf.acumbamail.com -all",
@@ -92,9 +92,7 @@
     "record": "v=DMARC1; p=none; rua=mailto:postmaster@injuve.es",
     "valid": true,
     "location": "injuve.es",
-    "warnings": [
-      "Failed to retrieve MX records for the domain of rua email address postmaster@injuve.es - All nameservers failed to answer the query injuve.es. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
-    ],
+    "warnings": [],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -105,7 +103,13 @@
         "explicit": true
       },
       "rua": {
-        "value": "mailto:postmaster@injuve.es",
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "postmaster@injuve.es",
+            "size_limit": null
+          }
+        ],
         "explicit": true
       },
       "adkim": {

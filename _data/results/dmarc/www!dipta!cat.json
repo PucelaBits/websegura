@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "nil.fut.es",
-      "damia.altanet.org"
+      "damia.altanet.org",
+      "nil.fut.es"
     ],
     "warnings": []
   },
@@ -14,9 +14,7 @@
       {
         "preference": 10,
         "hostname": "mx1.dipta.cat",
-        "addresses": [
-          "195.76.233.59"
-        ]
+        "addresses": []
       },
       {
         "preference": 10,
@@ -26,7 +24,9 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ]
   },
   "spf": {
     "record": "v=spf1 ip4:195.77.216.146 ip4:195.76.233.59 a mx ?all",
@@ -66,7 +66,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1;p=none;ruf=mailto:postmaster@dipta.cat;",
+    "record": "v=DMARC1;p=none;ruf=mailto:dmarc@dipta.cat;",
     "valid": true,
     "location": "dipta.cat",
     "warnings": [
@@ -85,7 +85,7 @@
         "value": [
           {
             "scheme": "mailto",
-            "address": "postmaster@dipta.cat",
+            "address": "dmarc@dipta.cat",
             "size_limit": null
           }
         ],
