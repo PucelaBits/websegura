@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "damia.altanet.org",
-      "nil.fut.es"
+      "nil.fut.es",
+      "damia.altanet.org"
     ],
     "warnings": []
   },
@@ -14,7 +14,9 @@
       {
         "preference": 10,
         "hostname": "mx1.dipta.cat",
-        "addresses": []
+        "addresses": [
+          "195.76.233.59"
+        ]
       },
       {
         "preference": 10,
@@ -24,9 +26,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:195.77.216.146 ip4:195.76.233.59 a mx ?all",

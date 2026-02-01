@@ -30,9 +30,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx a ip4:188.85.16.242 ip4:188.85.16.244 -all",
+    "record": "v=spf1 mx a ip4:188.85.16.242 ip4:188.85.16.244 include:altia.es -all",
     "valid": true,
-    "dns_lookups": 2,
+    "dns_lookups": 9,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -60,7 +60,152 @@
       "neutral": [],
       "softfail": [],
       "fail": [],
-      "include": [],
+      "include": [
+        {
+          "domain": "altia.es",
+          "record": "v=spf1 mx a ip4:176.58.14.11/32 ip4:217.130.24.0/24 ip4:176.58.8.113 ip4:176.58.8.114 a:smtp.altia.es a:relaydc.altia.es include:servers.mcsv.net include:spf.protection.outlook.com ~all",
+          "dns_lookups": 6,
+          "parsed": {
+            "pass": [
+              {
+                "value": "vmail.altia.es",
+                "mechanism": "mx"
+              },
+              {
+                "value": "altia-es.mail.protection.outlook.com",
+                "mechanism": "mx"
+              },
+              {
+                "value": "176.58.9.133",
+                "mechanism": "a"
+              },
+              {
+                "value": "176.58.14.11/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "217.130.24.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "176.58.8.113",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "176.58.8.114",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "176.58.14.122",
+                "mechanism": "a"
+              },
+              {
+                "value": "176.58.14.11",
+                "mechanism": "a"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [
+              {
+                "domain": "servers.mcsv.net",
+                "record": "v=spf1 ip4:205.201.128.0/20 ip4:198.2.128.0/18 ip4:148.105.0.0/16 -all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "205.201.128.0/20",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "198.2.128.0/18",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "148.105.0.0/16",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "fail"
+                },
+                "warnings": []
+              },
+              {
+                "domain": "spf.protection.outlook.com",
+                "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/15 ip4:52.102.0.0/16 ip4:52.103.0.0/17 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/51 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "40.92.0.0/15",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "40.107.0.0/16",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "52.100.0.0/15",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "52.102.0.0/16",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "52.103.0.0/17",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "104.47.0.0/17",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "2a01:111:f400::/48",
+                      "mechanism": "ip6"
+                    },
+                    {
+                      "value": "2a01:111:f403::/49",
+                      "mechanism": "ip6"
+                    },
+                    {
+                      "value": "2a01:111:f403:8000::/51",
+                      "mechanism": "ip6"
+                    },
+                    {
+                      "value": "2a01:111:f403:c000::/51",
+                      "mechanism": "ip6"
+                    },
+                    {
+                      "value": "2a01:111:f403:f000::/52",
+                      "mechanism": "ip6"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "fail"
+                },
+                "warnings": []
+              }
+            ],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        }
+      ],
       "redirect": null,
       "exp": null,
       "all": "fail"

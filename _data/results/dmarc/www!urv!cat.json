@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns.urv.cat",
-      "aliga.urv.cat"
+      "aliga.urv.cat",
+      "dns.urv.cat"
     ],
     "warnings": []
   },
@@ -15,14 +15,14 @@
         "preference": 5,
         "hostname": "urv-cat.mail.protection.outlook.com",
         "addresses": [
-          "2a01:111:f403:ca04::",
-          "2a01:111:f403:ca09::2",
-          "2a01:111:f403:ca09::3",
-          "2a01:111:f403:ca09::8",
-          "52.101.68.16",
-          "52.101.68.25",
-          "52.101.73.1",
-          "52.101.73.24"
+          "2a01:111:f403:ca04::7",
+          "2a01:111:f403:ca04::a",
+          "2a01:111:f403:ca04::d",
+          "2a01:111:f403:ca04::f",
+          "52.101.68.18",
+          "52.101.73.16",
+          "52.101.73.30",
+          "52.101.73.6"
         ]
       }
     ],
@@ -151,7 +151,9 @@
     "record": "v=DMARC1; p=none; pct=100; rua=mailto:dmarc-rua@urv.cat; ruf=mailto:dmarc-ruf@urv.cat",
     "valid": true,
     "location": "urv.cat",
-    "warnings": [],
+    "warnings": [
+      "Failed to retrieve MX records for the domain of ruf email address dmarc-ruf@urv.cat - The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -176,13 +178,7 @@
         "explicit": true
       },
       "ruf": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "dmarc-ruf@urv.cat",
-            "size_limit": null
-          }
-        ],
+        "value": "mailto:dmarc-ruf@urv.cat",
         "explicit": true
       },
       "adkim": {

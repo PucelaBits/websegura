@@ -28,12 +28,12 @@
       {
         "preference": 30,
         "hostname": "mx1.dipta.cat",
-        "addresses": []
+        "addresses": [
+          "195.76.233.59"
+        ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.antispamcloud.com ip4:217.130.125.204/32 -all",

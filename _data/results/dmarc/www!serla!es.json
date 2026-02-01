@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.cosmomedia.es",
-      "dns1.cosmomedia.es"
+      "dns1.cosmomedia.es",
+      "dns2.cosmomedia.es"
     ],
     "warnings": []
   },
@@ -26,10 +26,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 109.234.71.143 is mx3.cosmomedia.es, but the A/AAAA DNS records for mx3.cosmomedia.es do not resolve to 109.234.71.143"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx ip4:109.234.71.141 ip4:109.234.71.142 ip4:88.27.246.176 ip4:213.201.115.187 mx:mx.cosmomedia.es mx:cosmomedia.es -all",

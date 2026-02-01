@@ -21,12 +21,12 @@
       {
         "preference": 5,
         "hostname": "mxb-008a2202.gslb.pphosted.com",
-        "addresses": [
-          "66.159.234.83"
-        ]
+        "addresses": []
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ]
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com include:spf-008a2202.pphosted.com -all",

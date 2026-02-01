@@ -36,7 +36,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:188.165.35.127 include:mx.ovh.com ~all",
+    "record": "v=spf1 ip4:37.59.172.103 include:mx.ovh.com ~all",
     "valid": true,
     "dns_lookups": 1,
     "warnings": [
@@ -46,7 +46,7 @@
     "parsed": {
       "pass": [
         {
-          "value": "188.165.35.127",
+          "value": "37.59.172.103",
           "mechanism": "ip4"
         }
       ],

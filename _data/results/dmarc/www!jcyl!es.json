@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.f5clouddns.com",
-      "ns1.f5clouddns.com",
       "dns2.jcyl.es",
-      "dns1.jcyl.es"
+      "ns2.f5clouddns.com",
+      "dns1.jcyl.es",
+      "ns1.f5clouddns.com"
     ],
     "warnings": []
   },
@@ -31,7 +31,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:217.71.16.5/32 ip4:217.71.16.6/32 ip4:217.71.16.7/32 ip4:217.71.16.160/27 ip4:217.71.16.192/29 ip4:217.71.21.22/32 ip4:217.71.22.22/32 mx -all",
+    "record": "v=spf1 ip4:217.71.16.5/32 ip4:217.71.16.6/32 ip4:217.71.16.7/32 ip4:217.71.16.160/27 ip4:217.71.16.192/29 ip4:217.71.21.21/32 ip4:217.71.22.21/32 mx -all",
     "valid": true,
     "dns_lookups": 1,
     "warnings": [],
@@ -58,11 +58,11 @@
           "mechanism": "ip4"
         },
         {
-          "value": "217.71.21.22/32",
+          "value": "217.71.21.21/32",
           "mechanism": "ip4"
         },
         {
-          "value": "217.71.22.22/32",
+          "value": "217.71.22.21/32",
           "mechanism": "ip4"
         },
         {
