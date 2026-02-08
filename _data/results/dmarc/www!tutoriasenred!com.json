@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1082.ui-dns.de",
       "ns1082.ui-dns.org",
-      "ns1082.ui-dns.com",
-      "ns1082.ui-dns.biz"
+      "ns1082.ui-dns.biz",
+      "ns1082.ui-dns.de",
+      "ns1082.ui-dns.com"
     ],
     "warnings": []
   },
@@ -88,6 +88,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.tutoriasenred.com\n\nv=DMARCv1; p=none;"
   }
 }

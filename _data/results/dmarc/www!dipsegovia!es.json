@@ -4,24 +4,15 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns06.ns-cloud4b.net",
       "ns07.ns-cloud4b.org",
-      "ns08.ns-cloud4b.com"
+      "ns08.ns-cloud4b.com",
+      "ns06.ns-cloud4b.net"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 0,
-        "hostname": "mail2.dipsegovia.es",
-        "addresses": [
-          "185.73.173.33",
-          "185.73.173.41"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "All nameservers failed to answer the query 33.173.73.185.in-addr.arpa. IN PTR: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "spf": {
     "record": "v=spf1 a mx a:espublico.com ip4:185.79.128.238 ip4:213.4.82.201 ip4:185.73.173.32/28 include:_spf.google.com -all",

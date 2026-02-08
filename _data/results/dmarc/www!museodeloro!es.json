@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns1122.ui-dns.de",
       "ns1042.ui-dns.org",
       "ns1045.ui-dns.biz",
-      "ns1122.ui-dns.de",
       "ns1017.ui-dns.com"
     ],
     "warnings": []
@@ -88,6 +88,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.museodeloro.es\n\nv=DMARCv1; p=none;"
   }
 }

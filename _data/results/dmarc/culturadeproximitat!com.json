@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns1.dnsxperta.com",
       "ns3.dnsxperta.com",
-      "ns2.dnsxperta.com",
-      "ns1.dnsxperta.com"
+      "ns2.dnsxperta.com"
     ],
     "warnings": []
   },
@@ -54,9 +54,11 @@
     ],
     "warnings": [
       "193.226.76.64 does not have any reverse DNS (PTR) records",
+      "The reverse DNS of 67.198.205.88 is start.hesma.harvard.edu, but the A/AAAA DNS records for start.hesma.harvard.edu do not resolve to 67.198.205.88",
       "81.181.107.16 does not have any reverse DNS (PTR) records",
       "85.121.170.2 does not have any reverse DNS (PTR) records",
       "193.226.76.64 does not have any reverse DNS (PTR) records",
+      "The reverse DNS of 67.198.205.88 is start.hesma.harvard.edu, but the A/AAAA DNS records for start.hesma.harvard.edu do not resolve to 67.198.205.88",
       "81.181.107.16 does not have any reverse DNS (PTR) records",
       "85.121.170.2 does not have any reverse DNS (PTR) records"
     ]

@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "nsalchos11.telefonica-data.com",
-      "nsjc8hos21.telefonica-data.com"
+      "nsjc8hos21.telefonica-data.com",
+      "nsalchos11.telefonica-data.com"
     ],
     "warnings": []
   },
@@ -16,9 +16,20 @@
     ]
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "ccasa.eus does not have a SPF TXT record"
+    "record": "v=spf1 -all",
+    "valid": true,
+    "dns_lookups": 0,
+    "warnings": [],
+    "parsed": {
+      "pass": [],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
     "record": null,

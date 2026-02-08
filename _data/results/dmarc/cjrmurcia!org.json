@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1102.ui-dns.org",
-      "ns1019.ui-dns.biz",
       "ns1031.ui-dns.com",
-      "ns1109.ui-dns.de"
+      "ns1109.ui-dns.de",
+      "ns1019.ui-dns.biz",
+      "ns1102.ui-dns.org"
     ],
     "warnings": []
   },
@@ -88,6 +88,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.cjrmurcia.org\n\nv=DMARCv1; p=none;"
   }
 }

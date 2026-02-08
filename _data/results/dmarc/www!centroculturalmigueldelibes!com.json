@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns1032.ui-dns.de",
       "ns1032.ui-dns.org",
-      "ns1032.ui-dns.biz",
       "ns1032.ui-dns.com",
-      "ns1032.ui-dns.de"
+      "ns1032.ui-dns.biz"
     ],
     "warnings": []
   },
@@ -88,6 +88,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.centroculturalmigueldelibes.com\n\nv=DMARCv1; p=none;"
   }
 }

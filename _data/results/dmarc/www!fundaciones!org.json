@@ -4,10 +4,11 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns-cloud-d3.googledomains.com",
-      "ns-cloud-d1.googledomains.com",
-      "ns-cloud-d2.googledomains.com",
-      "ns-cloud-d4.googledomains.com"
+      "ns3.cdmon.net",
+      "ns2.cdmon.net",
+      "ns4.cdmondns-01.org",
+      "ns1.cdmon.net",
+      "ns5.cdmondns-01.com"
     ],
     "warnings": []
   },
@@ -17,109 +18,23 @@
         "preference": 10,
         "hostname": "fundaciones-org.mail.protection.outlook.com",
         "addresses": [
-          "2a01:111:f403:ca04::4",
-          "2a01:111:f403:ca04::6",
-          "2a01:111:f403:ca04::d",
-          "2a01:111:f403:ca09::3",
-          "52.101.68.0",
-          "52.101.73.16",
-          "52.101.73.21",
-          "52.101.73.6"
+          "2a01:111:f403:ca04::10",
+          "2a01:111:f403:ca04::a",
+          "2a01:111:f403:ca09::a",
+          "2a01:111:f403:ca09::f",
+          "52.101.68.12",
+          "52.101.68.15",
+          "52.101.68.21",
+          "52.101.73.19"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 a mx ip4:54.155.102.133 include:spf.protection.outlook.com -all",
-    "valid": true,
-    "dns_lookups": 3,
-    "warnings": [],
-    "parsed": {
-      "pass": [
-        {
-          "value": "107.178.255.169",
-          "mechanism": "a"
-        },
-        {
-          "value": "fundaciones-org.mail.protection.outlook.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "54.155.102.133",
-          "mechanism": "ip4"
-        }
-      ],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [
-        {
-          "domain": "spf.protection.outlook.com",
-          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/15 ip4:52.102.0.0/16 ip4:52.103.0.0/17 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/51 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
-          "dns_lookups": 0,
-          "parsed": {
-            "pass": [
-              {
-                "value": "40.92.0.0/15",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "40.107.0.0/16",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "52.100.0.0/15",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "52.102.0.0/16",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "52.103.0.0/17",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "104.47.0.0/17",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "2a01:111:f400::/48",
-                "mechanism": "ip6"
-              },
-              {
-                "value": "2a01:111:f403::/49",
-                "mechanism": "ip6"
-              },
-              {
-                "value": "2a01:111:f403:8000::/51",
-                "mechanism": "ip6"
-              },
-              {
-                "value": "2a01:111:f403:c000::/51",
-                "mechanism": "ip6"
-              },
-              {
-                "value": "2a01:111:f403:f000::/52",
-                "mechanism": "ip6"
-              }
-            ],
-            "neutral": [],
-            "softfail": [],
-            "fail": [],
-            "include": [],
-            "redirect": null,
-            "exp": null,
-            "all": "fail"
-          },
-          "warnings": []
-        }
-      ],
-      "redirect": null,
-      "exp": null,
-      "all": "fail"
-    }
+    "record": null,
+    "valid": false,
+    "error": "fundaciones.org does not have a SPF TXT record"
   },
   "dmarc": {
     "record": "v=DMARC1; p=none",
