@@ -1,18 +1,23 @@
 {
-  "id": 85623183,
+  "id": 85693096,
   "algorithm_version": 5,
-  "scanned_at": "2026-02-13T01:29:37.109Z",
+  "scanned_at": "2026-02-14T01:21:40.999Z",
   "error": null,
-  "grade": "F",
+  "grade": "D+",
   "response_headers": {
-    "date": "Fri, 13 Feb 2026 01:29:37 GMT",
-    "server": "HTTPd",
+    "date": "Sat, 14 Feb 2026 01:21:42 GMT",
+    "vary": "Accept-Encoding,User-Agent",
+    "server": "Zope/(2.13.27, python 2.7.14, linux2) ZServer/1.1",
+    "expires": "Sat, 01 Jan 2000 00:00:00 GMT",
     "connection": "close",
-    "content-type": "text/html; charset=utf-8",
-    "content-length": "329"
+    "content-type": "text/html;charset=utf-8",
+    "x-frame-options": "SAMEORIGIN",
+    "x-ua-compatible": "IE=edge",
+    "content-language": "ca",
+    "transfer-encoding": "chunked"
   },
-  "score": 10,
-  "status_code": 202,
+  "score": 40,
+  "status_code": 200,
   "tests_failed": 5,
   "tests_passed": 5,
   "tests_quantity": 10
