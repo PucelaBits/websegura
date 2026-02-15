@@ -10,9 +10,15 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "",
+        "addresses": []
+      }
+    ],
     "warnings": [
-      "No MX records found. Is the domain parked?"
+      " does not have any A or AAAA DNS records"
     ]
   },
   "spf": {
@@ -32,9 +38,9 @@
     }
   },
   "dmarc": {
-    "record": null,
+    "record": "v=DMARC1; p=reject; rua=mailto:ruf.araba.eus,rua.dmarc@ccn-cert.cni.es",
     "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "location": "ccasa.eus",
+    "error": "mailto:ruf.araba.eus is not a valid DMARC report URI"
   }
 }

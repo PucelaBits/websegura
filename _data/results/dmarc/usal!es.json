@@ -4,11 +4,11 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "agata.usal.es",
-      "zafiro.usal.es",
       "topacio.usal.es",
+      "chico.rediris.es",
+      "zafiro.usal.es",
       "sun.rediris.es",
-      "chico.rediris.es"
+      "agata.usal.es"
     ],
     "warnings": []
   },
@@ -18,52 +18,63 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "172.217.78.26",
-          "2607:f8b0:4023:1c01::1a"
+          "142.251.163.26",
+          "2607:f8b0:4004:c0b::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "192.178.164.27",
-          "2607:f8b0:4023:2009::1b"
+          "108.177.123.26",
+          "2800:3f0:4003:c0f::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "192.178.128.26",
-          "2607:f8b0:4023:2801::1a"
+          "172.253.116.27",
+          "2a00:1450:400b:c02::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "172.253.135.27",
-          "2607:f8b0:4023:1015::1a"
+          "192.178.223.26",
+          "2a00:1450:4009:c0f::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "172.253.145.27",
-          "2607:f8b0:4023:3003::1a"
+          "173.194.76.26",
+          "2a00:1450:400c:c00::1a"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "2800:3f0:4003:c0f::1a does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
-    "record": "v=spf1 include:_spf.google.com ~all",
+    "record": "v=spf1 a:listas.usal.es a:aida.usal.es include:_spf.google.com ~all",
     "valid": true,
-    "dns_lookups": 1,
+    "dns_lookups": 3,
     "warnings": [],
     "parsed": {
-      "pass": [],
+      "pass": [
+        {
+          "value": "212.128.131.13",
+          "mechanism": "a"
+        },
+        {
+          "value": "212.128.130.103",
+          "mechanism": "a"
+        }
+      ],
       "neutral": [],
       "softfail": [],
       "fail": [],
@@ -124,61 +135,9 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; rua=mailto:postmaster@usal.es",
-    "valid": true,
+    "record": "v=DMARC1; p=quarantine; adkim=r; aspf=r; rua=postmaster@usal.es",
+    "valid": false,
     "location": "usal.es",
-    "warnings": [],
-    "tags": {
-      "v": {
-        "value": "DMARC1",
-        "explicit": true
-      },
-      "p": {
-        "value": "none",
-        "explicit": true
-      },
-      "rua": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "postmaster@usal.es",
-            "size_limit": null
-          }
-        ],
-        "explicit": true
-      },
-      "adkim": {
-        "value": "r",
-        "explicit": false
-      },
-      "aspf": {
-        "value": "r",
-        "explicit": false
-      },
-      "fo": {
-        "value": [
-          "0"
-        ],
-        "explicit": false
-      },
-      "pct": {
-        "value": 100,
-        "explicit": false
-      },
-      "rf": {
-        "value": [
-          "afrf"
-        ],
-        "explicit": false
-      },
-      "ri": {
-        "value": 86400,
-        "explicit": false
-      },
-      "sp": {
-        "value": "none",
-        "explicit": false
-      }
-    }
+    "error": "postmaster@usal.es is not a valid DMARC report URI"
   }
 }

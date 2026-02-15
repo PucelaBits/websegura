@@ -4,10 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns-1300.awsdns-34.org",
-      "ns-1672.awsdns-17.co.uk",
-      "ns-410.awsdns-51.com",
-      "ns-517.awsdns-00.net"
+      "ns1.civicloud.net",
+      "ns2.civicloud.net"
     ],
     "warnings": []
   },
@@ -15,32 +13,32 @@
     "hosts": [
       {
         "preference": 0,
-        "hostname": "lasnaves-com.mail.protection.outlook.com",
-        "addresses": [
-          "2a01:111:f403:ca04::8",
-          "2a01:111:f403:ca09::5",
-          "2a01:111:f403:ca09::b",
-          "2a01:111:f403:ca09::f",
-          "52.101.68.32",
-          "52.101.73.28",
-          "52.101.73.6",
-          "52.101.73.8"
-        ]
-      },
-      {
-        "preference": 10,
         "hostname": "inbound-smtp.eu-west-1.amazonaws.com",
         "addresses": [
           "18.200.203.69",
           "54.155.140.59",
           "54.76.31.185"
         ]
+      },
+      {
+        "preference": 0,
+        "hostname": "lasnaves-com.mail.protection.outlook.com",
+        "addresses": [
+          "2a01:111:f403:ca04::",
+          "2a01:111:f403:ca04::e",
+          "2a01:111:f403:ca09::7",
+          "2a01:111:f403:ca09::b",
+          "52.101.68.0",
+          "52.101.68.25",
+          "52.101.73.21",
+          "52.101.73.26"
+        ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:spf.ipzmarketing.com include:spf.protection.outlook.com -all",
+    "record": "v=spf1 include:spf.mailjet.com include:spf.protection.outlook.com -all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
@@ -51,29 +49,29 @@
       "fail": [],
       "include": [
         {
-          "domain": "spf.ipzmarketing.com",
-          "record": "v=spf1 ip4:93.159.208.0/21 ip4:185.103.8.0/22 ip4:5.56.22.0/24 ip4:82.199.156.0/24 ip4:91.194.237.0/24 -all",
+          "domain": "spf.mailjet.com",
+          "record": "v=spf1 ip4:87.253.232.0/21 ip4:185.189.236.0/22 ip4:185.211.120.0/22 ip4:185.250.236.0/22 ip4:45.14.148.0/22 ~all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
               {
-                "value": "93.159.208.0/21",
+                "value": "87.253.232.0/21",
                 "mechanism": "ip4"
               },
               {
-                "value": "185.103.8.0/22",
+                "value": "185.189.236.0/22",
                 "mechanism": "ip4"
               },
               {
-                "value": "5.56.22.0/24",
+                "value": "185.211.120.0/22",
                 "mechanism": "ip4"
               },
               {
-                "value": "82.199.156.0/24",
+                "value": "185.250.236.0/22",
                 "mechanism": "ip4"
               },
               {
-                "value": "91.194.237.0/24",
+                "value": "45.14.148.0/22",
                 "mechanism": "ip4"
               }
             ],
@@ -83,7 +81,7 @@
             "include": [],
             "redirect": null,
             "exp": null,
-            "all": "fail"
+            "all": "softfail"
           },
           "warnings": []
         },
@@ -155,11 +153,11 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none;",
+    "record": "v=DMARC1; p=none; rua=mailto:soporte.lasnaves@civired.com",
     "valid": true,
     "location": "lasnaves.com",
     "warnings": [
-      "rua tag (destination for aggregate reports) not found"
+      "civired.com does not indicate that it accepts DMARC reports about lasnaves.com - Authorization record not found: lasnaves.com._report._dmarc.civired.com IN TXT \"v=DMARC1\""
     ],
     "tags": {
       "v": {
@@ -168,6 +166,10 @@
       },
       "p": {
         "value": "none",
+        "explicit": true
+      },
+      "rua": {
+        "value": "mailto:soporte.lasnaves@civired.com",
         "explicit": true
       },
       "adkim": {

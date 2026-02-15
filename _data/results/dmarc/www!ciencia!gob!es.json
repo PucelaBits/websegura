@@ -205,7 +205,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; ruf=mailto:sistemas@ciencia.gob.es; rua=mailto:alertas.sistemas@ciencia.gob.es",
+    "record": "v=DMARC1; p=quarantine; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com,mailto:sistemas@ciencia.gob.es; rua=mailto:dmarc_rua@emaildefense.proofpoint.com,mailto:alertas.sistemas@ciencia.gob.es",
     "valid": true,
     "location": "ciencia.gob.es",
     "warnings": [],
@@ -222,6 +222,11 @@
         "value": [
           {
             "scheme": "mailto",
+            "address": "dmarc_ruf@emaildefense.proofpoint.com",
+            "size_limit": null
+          },
+          {
+            "scheme": "mailto",
             "address": "sistemas@ciencia.gob.es",
             "size_limit": null
           }
@@ -230,6 +235,11 @@
       },
       "rua": {
         "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc_rua@emaildefense.proofpoint.com",
+            "size_limit": null
+          },
           {
             "scheme": "mailto",
             "address": "alertas.sistemas@ciencia.gob.es",

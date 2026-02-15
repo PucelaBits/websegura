@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1093.ui-dns.com",
       "ns1093.ui-dns.org",
-      "ns1093.ui-dns.biz",
-      "ns1093.ui-dns.de"
+      "ns1093.ui-dns.de",
+      "ns1093.ui-dns.com",
+      "ns1093.ui-dns.biz"
     ],
     "warnings": []
   },
@@ -16,12 +16,19 @@
       {
         "preference": 0,
         "hostname": "rocafort-es.mail.protection.outlook.com",
-        "addresses": []
+        "addresses": [
+          "2a01:111:f403:ca21::",
+          "2a01:111:f403:ca21::1",
+          "2a01:111:f403:ca21::2",
+          "2a01:111:f403:ca21::3",
+          "52.101.91.0",
+          "52.101.91.1",
+          "52.101.91.2",
+          "52.101.91.3"
+        ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:_spf.perfora.net include:_spf-eu.ionos.com include:_spf.kundenserver.de include:spf.protection.outlook.com ~all",

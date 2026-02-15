@@ -4,11 +4,11 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns1.cdmon.net",
       "ns3.cdmon.net",
       "ns2.cdmon.net",
-      "ns1.cdmon.net",
-      "ns4.cdmondns-01.org",
-      "ns5.cdmondns-01.com"
+      "ns5.cdmondns-01.com",
+      "ns4.cdmondns-01.org"
     ],
     "warnings": []
   },
@@ -18,7 +18,7 @@
         "preference": 10,
         "hostname": "mx.spamexperts.com",
         "addresses": [
-          "2001:550:2:61::2fc:100",
+          "2001:550:2:78::ca:100",
           "38.71.16.244"
         ]
       },
@@ -50,7 +50,6 @@
       }
     ],
     "warnings": [
-      "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records",
       "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records",
       "2001:550:2:61::2fc:100 does not have any reverse DNS (PTR) records"
     ]

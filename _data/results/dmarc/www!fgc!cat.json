@@ -30,12 +30,19 @@
       {
         "preference": 20,
         "hostname": "fgc-cat.mail.protection.outlook.com",
-        "addresses": []
+        "addresses": [
+          "2a01:111:f403:ca04::1",
+          "2a01:111:f403:ca04::4",
+          "2a01:111:f403:ca04::8",
+          "2a01:111:f403:ca09::6",
+          "52.101.68.0",
+          "52.101.68.5",
+          "52.101.73.2",
+          "52.101.73.4"
+        ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx include:_spf.elasticemail.com ip4:213.0.92.96/29 ip4:34.249.133.35 ip4:46.4.94.111 ip4:217.11.123.50 ip4:83.247.130.253 ip4:83.247.130.41 include:spf.fgc.cat -all",

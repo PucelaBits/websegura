@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.csuc.cat",
-      "dns.uab.es",
+      "ns2.csuc.cat",
       "dns1.uab.es",
-      "ns2.csuc.cat"
+      "dns.uab.es",
+      "ns1.csuc.cat"
     ],
     "warnings": []
   },
@@ -16,12 +16,19 @@
       {
         "preference": 0,
         "hostname": "uab-cat.mail.protection.outlook.com",
-        "addresses": []
+        "addresses": [
+          "2a01:111:f403:ca04::2",
+          "2a01:111:f403:ca09::3",
+          "2a01:111:f403:ca09::8",
+          "2a01:111:f403:ca09::e",
+          "52.101.68.18",
+          "52.101.68.27",
+          "52.101.68.36",
+          "52.101.68.39"
+        ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:158.109.168.132 ip4:158.109.168.138  ip4:158.109.168.73 ip4:158.109.168.157 ip4:158.109.168.161 ip4:158.109.168.162 ip4:158.109.168.165 ip4:158.109.68.27 ip4:158.109.74.92  ip4:84.88.0.6 ip4:84.88.0.7 ip4:84.88.0.8 ip4:84.88.0.9 ip4:80.94.2.87 include:spf.protection.outlook.com include:servers.mcsv.net include:_spf.alchemer.eu include:spf.ipzmarketing.com ~all",

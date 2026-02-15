@@ -18,6 +18,20 @@
         "addresses": [
           "82.116.160.138"
         ]
+      },
+      {
+        "preference": 200,
+        "hostname": "mxa-00a9a302.gslb.pphosted.com",
+        "addresses": [
+          "66.159.245.176"
+        ]
+      },
+      {
+        "preference": 200,
+        "hostname": "mxb-00a9a302.gslb.pphosted.com",
+        "addresses": [
+          "66.159.247.98"
+        ]
       }
     ],
     "warnings": [
@@ -34,6 +48,14 @@
       "pass": [
         {
           "value": "barracuda-ls.gipuzkoa.net",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mxa-00a9a302.gslb.pphosted.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mxb-00a9a302.gslb.pphosted.com",
           "mechanism": "mx"
         },
         {

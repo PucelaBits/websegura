@@ -14,12 +14,19 @@
       {
         "preference": 0,
         "hostname": "benavente-es.mail.protection.outlook.com",
-        "addresses": []
+        "addresses": [
+          "2a01:111:f403:ca21::",
+          "2a01:111:f403:ca21::1",
+          "2a01:111:f403:ca21::2",
+          "2a01:111:f403:ca21::3",
+          "52.101.91.0",
+          "52.101.91.1",
+          "52.101.91.2",
+          "52.101.91.3"
+        ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:185.253.153.139 mx a ptr ip4:188.165.133.185/32 include:spf.protection.outlook.com include:spf.nds.es -all",

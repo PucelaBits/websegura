@@ -29,13 +29,14 @@
         "preference": 30,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "192.178.164.27",
-          "2607:f8b0:4023:2009::1b"
+          "108.177.123.26",
+          "2800:3f0:4003:c0f::1a"
         ]
       }
     ],
     "warnings": [
-      "The reverse DNS of 82.223.120.168 is 168.120.223.82.in-addr.arpa, but the A/AAAA DNS records for 168.120.223.82.in-addr.arpa do not resolve to 82.223.120.168"
+      "The reverse DNS of 82.223.120.168 is 168.120.223.82.in-addr.arpa, but the A/AAAA DNS records for 168.120.223.82.in-addr.arpa do not resolve to 82.223.120.168",
+      "2800:3f0:4003:c0f::1a does not have any reverse DNS (PTR) records"
     ]
   },
   "spf": {

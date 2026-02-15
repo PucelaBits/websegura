@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns3.dinahosting.com",
       "ns.dinahosting.com",
-      "ns4.dinahosting.com",
-      "ns2.dinahosting.com"
+      "ns2.dinahosting.com",
+      "ns3.dinahosting.com",
+      "ns4.dinahosting.com"
     ],
     "warnings": []
   },
@@ -17,28 +17,30 @@
         "preference": 10,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "192.178.128.26",
-          "2607:f8b0:4023:2801::1a"
+          "172.253.116.26",
+          "2a00:1450:400b:c02::1a"
         ]
       },
       {
         "preference": 20,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.250.142.26",
-          "2607:f8b0:4023:1c05::1b"
+          "142.251.163.26",
+          "2607:f8b0:4004:c1f::1b"
         ]
       },
       {
         "preference": 30,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "192.178.164.26",
-          "2607:f8b0:4023:2009::1b"
+          "108.177.123.26",
+          "2800:3f0:4003:c0f::1a"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "2800:3f0:4003:c0f::1a does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:_spf.google.com ~all",

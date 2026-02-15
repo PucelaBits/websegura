@@ -40,10 +40,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 94.100.134.8 is mx03.hornetsecurity.com, but the A/AAAA DNS records for mx03.hornetsecurity.com do not resolve to 94.100.134.8"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 a:correo.aytoburgos.es include:spf-relay.sarenet.es include:emailservice.cpd.as -all",

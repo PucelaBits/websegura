@@ -3,49 +3,22 @@
   "base_domain": "on5g.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "ns2.abovedomains.com",
-      "ns1.abovedomains.com"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "All nameservers failed to answer the query on5g.es. IN NS: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "park-mx.above.com",
-        "addresses": [
-          "103.224.212.34"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "All nameservers failed to answer the query on5g.es. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "spf": {
-    "record": "v=spf1 ip6:fdcf:abda:4154::/48 -all",
-    "valid": true,
-    "dns_lookups": 0,
-    "warnings": [],
-    "parsed": {
-      "pass": [
-        {
-          "value": "fdcf:abda:4154::/48",
-          "mechanism": "ip6"
-        }
-      ],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [],
-      "redirect": null,
-      "exp": null,
-      "all": "fail"
-    }
+    "record": null,
+    "valid": false,
+    "error": "All nameservers failed to answer the query on5g.es. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "dmarc": {
     "record": null,
     "valid": false,
     "location": null,
-    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.on5g.es\n\n0ad094978b47130a6a809a0396525cae21191ed6\n\nv=spf1 ip6:fdcf:abda:4154::/48 -all"
+    "error": "All nameservers failed to answer the query _dmarc.on5g.es. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
   }
 }

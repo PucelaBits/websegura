@@ -15,60 +15,63 @@
         "preference": 10,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "173.194.65.26",
-          "2607:f8b0:4023:1c07::1b"
+          "172.253.62.27",
+          "2607:f8b0:4004:c19::1b"
         ]
       },
       {
         "preference": 20,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "192.178.164.27",
-          "2607:f8b0:4023:2009::1b"
+          "108.177.123.26",
+          "2800:3f0:4003:c0f::1b"
         ]
       },
       {
         "preference": 20,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "192.178.128.27",
-          "2607:f8b0:4023:2801::1b"
+          "172.253.116.27",
+          "2a00:1450:400b:c02::1a"
         ]
       },
       {
         "preference": 30,
         "hostname": "aspmx2.googlemail.com",
         "addresses": [
-          "192.178.164.26",
-          "2607:f8b0:4023:2009::1b"
+          "108.177.123.27",
+          "2800:3f0:4003:c0f::1a"
         ]
       },
       {
         "preference": 30,
         "hostname": "aspmx3.googlemail.com",
         "addresses": [
-          "192.178.128.26",
-          "2607:f8b0:4023:2801::1b"
+          "172.253.116.26",
+          "2a00:1450:400b:c02::1b"
         ]
       },
       {
         "preference": 30,
         "hostname": "aspmx4.googlemail.com",
         "addresses": [
-          "172.253.135.26",
-          "2607:f8b0:4023:1015::1a"
+          "192.178.223.26",
+          "2a00:1450:4009:c0f::1b"
         ]
       },
       {
         "preference": 30,
         "hostname": "aspmx5.googlemail.com",
         "addresses": [
-          "172.253.145.27",
-          "2607:f8b0:4023:3003::1a"
+          "173.194.76.27",
+          "2a00:1450:400c:c00::1a"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "2800:3f0:4003:c0f::1b does not have any reverse DNS (PTR) records",
+      "2800:3f0:4003:c0f::1a does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
     "record": "v=spf1 ip4:193.41.227.0/24 include:_spf.google.com ~all",
