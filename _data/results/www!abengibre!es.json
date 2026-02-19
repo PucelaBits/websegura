@@ -1,21 +1,27 @@
 {
-  "id": 85921762,
+  "id": 86069063,
   "algorithm_version": 5,
-  "scanned_at": "2026-02-17T01:24:04.703Z",
+  "scanned_at": "2026-02-19T01:25:43.960Z",
   "error": null,
-  "grade": "D",
+  "grade": "F",
   "response_headers": {
-    "date": "Tue, 17 Feb 2026 01:24:05 GMT",
+    "date": "Thu, 19 Feb 2026 01:25:47 GMT",
+    "vary": "User-Agent,Accept-Encoding",
+    "pragma": "no-cache",
     "server": "volt-adc",
+    "expires": "Mon, 29 Oct 1923 20:30:00 GMT",
     "connection": "close",
     "content-type": "text/html; charset=UTF-8",
-    "content-length": "0",
+    "accept-ranges": "bytes",
+    "cache-control": "max-age=0, no-cache, no-store, must-revalidate",
+    "last-modified": "Mon, 02 Feb 2026 02:44:52 GMT",
+    "content-length": "20458",
     "x-volterra-location": "wes-sea",
-    "x-envoy-upstream-service-time": "1080"
+    "x-envoy-upstream-service-time": "1198"
   },
-  "score": 30,
+  "score": 0,
   "status_code": 200,
-  "tests_failed": 4,
-  "tests_passed": 6,
+  "tests_failed": 5,
+  "tests_passed": 5,
   "tests_quantity": 10
 }

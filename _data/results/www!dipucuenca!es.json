@@ -1,26 +1,20 @@
 {
-  "id": 85549020,
+  "id": 86069269,
   "algorithm_version": 5,
-  "scanned_at": "2026-02-12T01:26:57.109Z",
+  "scanned_at": "2026-02-19T01:26:20.351Z",
   "error": null,
-  "grade": "C",
+  "grade": "F",
   "response_headers": {
-    "date": "Thu, 12 Feb 2026 01:26:59 GMT",
-    "vary": "Accept-Encoding",
-    "pragma": "no-cache",
-    "server": "Apache",
-    "expires": "Thu, 01 Jan 1970 00:00:00 GMT",
+    "date": "Thu, 19 Feb 2026 01:26:20 GMT",
+    "server": "volt-adc",
     "connection": "close",
-    "set-cookie": "JSESSIONID=A30DBF0B3FFFF90BA1AC4B6E962E4BF6.02; Path=/; Secure; HttpOnly,COOKIE_SUPPORT=true; Max-Age=31536000; Expires=Fri, 12 Feb 2027 01:27:00 GMT; Path=/; Secure; HttpOnly,GUEST_LANGUAGE_ID=es_ES; Max-Age=31536000; Expires=Fri, 12 Feb 2027 01:27:00 GMT; Path=/; Secure; HttpOnly",
-    "content-type": "text/html;charset=UTF-8",
-    "cache-control": "private, no-cache, no-store, must-revalidate",
-    "content-length": "25640",
-    "x-frame-options": "SAMEORIGIN",
-    "x-content-type-options": "nosniff"
+    "content-type": "text/html; charset=UTF-8",
+    "content-length": "309",
+    "x-volterra-location": "wes-sea"
   },
-  "score": 50,
-  "status_code": 200,
-  "tests_failed": 3,
-  "tests_passed": 7,
+  "score": 10,
+  "status_code": 403,
+  "tests_failed": 5,
+  "tests_passed": 5,
   "tests_quantity": 10
 }
