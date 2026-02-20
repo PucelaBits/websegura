@@ -1,29 +1,29 @@
 {
-  "id": 86069367,
+  "id": 86141354,
   "algorithm_version": 5,
-  "scanned_at": "2026-02-19T01:26:40.914Z",
+  "scanned_at": "2026-02-20T01:22:26.651Z",
   "error": null,
   "grade": "F",
   "response_headers": {
     "age": "0",
     "via": "1.1 varnish (Varnish/6.2)",
-    "date": "Thu, 19 Feb 2026 01:28:07 GMT",
+    "date": "Fri, 20 Feb 2026 01:23:54 GMT",
     "link": "<https://www.diputaciolleida.cat/wp-json/>; rel=\"https://api.w.org/\", <https://www.diputaciolleida.cat/wp-json/wp/v2/pages/55798>; rel=\"alternate\"; type=\"application/json\", <https://www.diputaciolleida.cat/>; rel=shortlink",
     "vary": "Accept-Encoding",
     "server": "volt-adc",
-    "expires": "Thu, 19 Feb 2026 01:33:06 GMT",
-    "x-varnish": "HIT",
+    "expires": "Fri, 20 Feb 2026 01:28:53 GMT",
+    "x-varnish": "MISS",
     "connection": "close",
     "content-type": "text/html; charset=UTF-8",
     "accept-ranges": "bytes",
     "cache-control": "max-age=300",
-    "content-length": "17310",
+    "content-length": "17278",
     "x-volterra-location": "wes-sea",
-    "x-envoy-upstream-service-time": "1250"
+    "x-envoy-upstream-service-time": "1399"
   },
   "score": 0,
   "status_code": 200,
-  "tests_failed": 6,
-  "tests_passed": 4,
+  "tests_failed": 5,
+  "tests_passed": 5,
   "tests_quantity": 10
 }
