@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "nsjc8hos21.telefonica-data.com",
-      "nsalchos11.telefonica-data.com"
+      "nsalchos11.telefonica-data.com",
+      "nsjc8hos21.telefonica-data.com"
     ],
     "warnings": []
   },
@@ -38,9 +38,57 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=reject; rua=mailto:ruf.araba.eus,rua.dmarc@ccn-cert.cni.es",
-    "valid": false,
+    "record": "v=DMARC1; p=reject; rua=mailto:ruf@araba.eus,rua.dmarc@ccn-cert.cni.es",
+    "valid": true,
     "location": "ccasa.eus",
-    "error": "mailto:ruf.araba.eus is not a valid DMARC report URI"
+    "warnings": [
+      "araba.eus does not indicate that it accepts DMARC reports about ccasa.eus - Authorization record not found: ccasa.eus._report._dmarc.araba.eus IN TXT \"v=DMARC1\""
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "reject",
+        "explicit": true
+      },
+      "rua": {
+        "value": "mailto:ruf@araba.eus,rua.dmarc@ccn-cert.cni.es",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "reject",
+        "explicit": false
+      }
+    }
   }
 }

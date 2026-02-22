@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns0.intervia.com",
-      "ns3.intervia.com",
       "ns2.intervia.com",
-      "ns1.intervia.com"
+      "ns0.intervia.com",
+      "ns1.intervia.com",
+      "ns3.intervia.com"
     ],
     "warnings": []
   },
@@ -26,7 +26,7 @@
   "spf": {
     "record": "v=spf1 include:_spf.intervia.com ip4:88.2.101.45 ip4:82.223.4.210 -all",
     "valid": true,
-    "dns_lookups": 3,
+    "dns_lookups": 4,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -45,8 +45,8 @@
       "include": [
         {
           "domain": "_spf.intervia.com",
-          "record": "v=spf1 include:_spf_iv.intervia.com include:_spf_cli.intervia.com -all",
-          "dns_lookups": 2,
+          "record": "v=spf1 include:_spf_iv.intervia.com include:_spf_cli1.intervia.com include:_spf_cli2.intervia.com -all",
+          "dns_lookups": 3,
           "parsed": {
             "pass": [],
             "neutral": [],
@@ -111,7 +111,7 @@
                 "warnings": []
               },
               {
-                "domain": "_spf_cli.intervia.com",
+                "domain": "_spf_cli1.intervia.com",
                 "record": "v=spf1 ip4:95.211.174.101 ip4:95.211.148.229 ip4:212.95.51.139 ip4:89.149.211.53 ip4:5.79.73.7 ip4:212.32.240.7 ip4:95.211.63.224 ip4:82.192.72.209 ip4:82.192.72.210 ip4:95.211.44.142 ip4:85.17.236.163 ip4:85.17.179.25 ip4:95.211.41.137 -all",
                 "dns_lookups": 0,
                 "parsed": {
@@ -176,6 +176,27 @@
                   "redirect": null,
                   "exp": null,
                   "all": "fail"
+                },
+                "warnings": []
+              },
+              {
+                "domain": "_spf_cli2.intervia.com",
+                "record": "v=spf1 ip4:94.75.223.147",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "94.75.223.147",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "neutral"
                 },
                 "warnings": []
               }

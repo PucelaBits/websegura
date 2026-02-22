@@ -13,81 +13,103 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "mail.guadalajara.es",
+        "hostname": "guadalajara-es.mail.protection.outlook.com",
         "addresses": [
-          "213.0.97.168"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mail01.guadalajara.es",
-        "addresses": [
-          "62.82.228.203"
+          "2a01:111:f403:ca04::1",
+          "2a01:111:f403:ca04::10",
+          "2a01:111:f403:ca04::2",
+          "2a01:111:f403:ca04::a",
+          "52.101.68.15",
+          "52.101.68.39",
+          "52.101.68.8",
+          "52.101.73.26"
         ]
       }
     ],
-    "warnings": [
-      "The domain 168.red-213-0-97.customer.static.ccgg.telefonica.net does not exist",
-      "The reverse DNS of 213.0.97.168 is 168.red-213-0-97.customer.static.ccgg.telefonica.net, but the A/AAAA DNS records for 168.red-213-0-97.customer.static.ccgg.telefonica.net do not resolve to 213.0.97.168"
-    ]
+    "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx a ip4:213.0.97.162/32 ip4:62.82.228.203/32 a:mail.guadalajara.es a:mail01.guadalajara.es a:correo.guadalajara.es ?all",
+    "record": "v=spf1 include:spf.protection.outlook.com -all",
     "valid": true,
-    "dns_lookups": 5,
+    "dns_lookups": 1,
     "warnings": [],
     "parsed": {
-      "pass": [
-        {
-          "value": "mail.guadalajara.es",
-          "mechanism": "mx"
-        },
-        {
-          "value": "mail01.guadalajara.es",
-          "mechanism": "mx"
-        },
-        {
-          "value": "51.145.176.223",
-          "mechanism": "a"
-        },
-        {
-          "value": "213.0.97.162/32",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "62.82.228.203/32",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "213.0.97.168",
-          "mechanism": "a"
-        },
-        {
-          "value": "62.82.228.203",
-          "mechanism": "a"
-        },
-        {
-          "value": "213.0.97.162",
-          "mechanism": "a"
-        },
-        {
-          "value": "62.82.228.203",
-          "mechanism": "a"
-        }
-      ],
+      "pass": [],
       "neutral": [],
       "softfail": [],
       "fail": [],
-      "include": [],
+      "include": [
+        {
+          "domain": "spf.protection.outlook.com",
+          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/15 ip4:52.102.0.0/16 ip4:52.103.0.0/17 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/51 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "40.92.0.0/15",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "40.107.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.100.0.0/15",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.102.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.103.0.0/17",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "104.47.0.0/17",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "2a01:111:f400::/48",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403::/49",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:8000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:c000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:f000::/52",
+                "mechanism": "ip6"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        }
+      ],
       "redirect": null,
       "exp": null,
-      "all": "neutral"
+      "all": "fail"
     }
   },
   "dmarc": {
     "record": null,
     "valid": false,
     "location": null,
-    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.guadalajara.es\n\nV=DMARC1; p=none"
+    "error": "A DMARC record does not exist for this domain or its base domain"
   }
 }

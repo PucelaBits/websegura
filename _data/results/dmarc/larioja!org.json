@@ -10,8 +10,16 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mx2.riojasalud.es",
+        "addresses": [
+          "195.55.164.16"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:195.55.164.16 include:spf.protection.outlook.com ip4:54.229.2.165 ip4:52.30.130.201 ip4:52.17.45.98 ip4:52.16.190.81 ip4:34.252.12.130 ip4:52.30.8.165 ip4:54.229.14.146 -all",

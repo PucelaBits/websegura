@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "icmcom.madrid.org",
-      "olimpia.madrid.org"
+      "olimpia.madrid.org",
+      "icmcom.madrid.org"
     ],
     "warnings": []
   },
@@ -31,8 +31,8 @@
         "preference": 20,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "2607:f8b0:4004:c1d::1a",
-          "64.233.180.27"
+          "142.250.113.26",
+          "2607:f8b0:4023:100b::1a"
         ]
       },
       {
@@ -46,40 +46,38 @@
         "preference": 30,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "108.177.123.27",
-          "2800:3f0:4003:c0f::1a"
+          "2607:f8b0:4003:c30::1a",
+          "74.125.27.26"
         ]
       },
       {
         "preference": 30,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "172.253.116.26",
-          "2a00:1450:400b:c02::1b"
+          "192.178.209.26",
+          "2607:f8b0:4001:c70::1a"
         ]
       },
       {
         "preference": 40,
         "hostname": "aspmx2.googlemail.com",
         "addresses": [
-          "108.177.123.26",
-          "2800:3f0:4003:c0f::1b"
+          "2607:f8b0:4003:c30::1a",
+          "74.125.27.26"
         ]
       },
       {
         "preference": 40,
         "hostname": "aspmx3.googlemail.com",
         "addresses": [
-          "172.253.116.26",
-          "2a00:1450:400b:c02::1b"
+          "192.178.209.26",
+          "2607:f8b0:4001:c70::1b"
         ]
       }
     ],
     "warnings": [
       "The domain mail.comadrid.es does not exist",
-      "The reverse DNS of 195.77.128.11 is mail.comadrid.es, but the A/AAAA DNS records for mail.comadrid.es do not resolve to 195.77.128.11",
-      "2800:3f0:4003:c0f::1a does not have any reverse DNS (PTR) records",
-      "2800:3f0:4003:c0f::1b does not have any reverse DNS (PTR) records"
+      "The reverse DNS of 195.77.128.11 is mail.comadrid.es, but the A/AAAA DNS records for mail.comadrid.es do not resolve to 195.77.128.11"
     ]
   },
   "spf": {

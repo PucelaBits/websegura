@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns4.dinahosting.com",
       "ns3.dinahosting.com",
-      "ns2.dinahosting.com",
-      "ns.dinahosting.com"
+      "ns4.dinahosting.com",
+      "ns.dinahosting.com",
+      "ns2.dinahosting.com"
     ],
     "warnings": []
   },
@@ -17,46 +17,44 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.251.163.27",
-          "2607:f8b0:4004:c07::1b"
+          "142.250.114.27",
+          "2607:f8b0:4023:1004::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "108.177.123.26",
-          "2800:3f0:4003:c0f::1a"
+          "2607:f8b0:4003:c30::1b",
+          "74.125.27.26"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "172.253.116.26",
-          "2a00:1450:400b:c02::1a"
+          "192.178.209.26",
+          "2607:f8b0:4001:c70::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "192.178.223.27",
-          "2a00:1450:4009:c0f::1b"
+          "192.178.152.27",
+          "2607:f8b0:4024:c0d::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "173.194.76.27",
-          "2a00:1450:400c:c00::1b"
+          "142.250.96.26",
+          "2607:f8b0:4023:403::1b"
         ]
       }
     ],
-    "warnings": [
-      "2800:3f0:4003:c0f::1a does not have any reverse DNS (PTR) records"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.ipzmarketing.com ip4:77.227.0.32/32 ip4:213.236.6.0/24 ip4:213.236.3.0/24 include:_spf.google.com include:spf.acumbamail.com ~all",

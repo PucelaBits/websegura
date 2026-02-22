@@ -17,47 +17,44 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "2607:f8b0:4004:c21::1a",
-          "64.233.180.26"
+          "142.250.26.26",
+          "2607:f8b0:4023:1002::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "108.177.123.27",
-          "2800:3f0:4003:c0f::1b"
+          "2607:f8b0:4003:c30::1b",
+          "74.125.27.26"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "172.253.116.27",
-          "2a00:1450:400b:c02::1a"
+          "192.178.209.26",
+          "2607:f8b0:4001:c70::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "aspmx2.googlemail.com",
         "addresses": [
-          "108.177.123.27",
-          "2800:3f0:4003:c0f::1b"
+          "2607:f8b0:4003:c30::1a",
+          "74.125.27.27"
         ]
       },
       {
         "preference": 10,
         "hostname": "aspmx3.googlemail.com",
         "addresses": [
-          "172.253.116.26",
-          "2a00:1450:400b:c02::1b"
+          "192.178.209.26",
+          "2607:f8b0:4001:c70::1b"
         ]
       }
     ],
-    "warnings": [
-      "2800:3f0:4003:c0f::1b does not have any reverse DNS (PTR) records",
-      "2800:3f0:4003:c0f::1b does not have any reverse DNS (PTR) records"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 a:diana.unileon.es a:mailx1.unileon.es a:mailx2.unileon.es a:mailx.unileon.es a:mailx-dmi.unileon.es include:_spf.google.com include:spf.protection.outlook.com ~all",

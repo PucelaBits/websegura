@@ -189,7 +189,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; fo=1; rua=mailto:rua@pamplona.es; ruf=mailto:ruf@pamplona.es",
+    "record": "v=DMARC1; p=quarantine; fo=1; rua=mailto:rua@pamplona.es; ruf=mailto:ruf@pamplona.es",
     "valid": true,
     "location": "pamplona.es",
     "warnings": [],
@@ -199,7 +199,7 @@
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": true
       },
       "fo": {
@@ -251,7 +251,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": false
       }
     }

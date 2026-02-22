@@ -6,8 +6,8 @@
     "hostnames": [
       "a9-67.akam.net",
       "a22-66.akam.net",
-      "a18-65.akam.net",
       "a1-200.akam.net",
+      "a18-65.akam.net",
       "a16-65.akam.net",
       "a11-64.akam.net"
     ],
@@ -21,9 +21,19 @@
         "addresses": [
           "195.235.252.91"
         ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mx2.correo.fnmt.es",
+        "addresses": [
+          "195.235.252.93"
+        ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The domain 93.fnmt.es does not exist",
+      "The reverse DNS of 195.235.252.93 is 93.fnmt.es, but the A/AAAA DNS records for 93.fnmt.es do not resolve to 195.235.252.93"
+    ]
   },
   "spf": {
     "record": "v=spf1 ip4:195.235.252.89 ip4:195.235.252.92 ip4:193.104.0.132 ip4:82.223.79.172 ip4:185.25.114.146 include:spf.ivcert.net mx ~all",
@@ -54,6 +64,10 @@
         },
         {
           "value": "correo.fnmt.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mx2.correo.fnmt.es",
           "mechanism": "mx"
         }
       ],

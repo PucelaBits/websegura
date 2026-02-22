@@ -1,13 +1,10 @@
 {
   "domain": "ces.es",
   "base_domain": "ces.es",
-  "dnssec": true,
+  "dnssec": false,
   "ns": {
-    "hostnames": [
-      "ns1.age.gob.es",
-      "ns2.age.gob.es"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "All nameservers failed to answer the query ces.es. IN NS: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "mx": {
     "hosts": [],

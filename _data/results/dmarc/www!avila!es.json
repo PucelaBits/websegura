@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns8.servidoresdns.net",
-      "dns7.servidoresdns.net"
+      "dns7.servidoresdns.net",
+      "dns8.servidoresdns.net"
     ],
     "warnings": []
   },
@@ -29,14 +29,13 @@
         "preference": 30,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "108.177.123.26",
-          "2800:3f0:4003:c0f::1a"
+          "2607:f8b0:4003:c30::1b",
+          "74.125.27.26"
         ]
       }
     ],
     "warnings": [
-      "The reverse DNS of 82.223.120.168 is 168.120.223.82.in-addr.arpa, but the A/AAAA DNS records for 168.120.223.82.in-addr.arpa do not resolve to 82.223.120.168",
-      "2800:3f0:4003:c0f::1a does not have any reverse DNS (PTR) records"
+      "The reverse DNS of 82.223.120.168 is 168.120.223.82.in-addr.arpa, but the A/AAAA DNS records for 168.120.223.82.in-addr.arpa do not resolve to 82.223.120.168"
     ]
   },
   "spf": {

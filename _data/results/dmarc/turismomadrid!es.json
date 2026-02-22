@@ -3,27 +3,22 @@
   "base_domain": "turismomadrid.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "olimpia.madrid.org",
-      "icmcom.madrid.org"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "All nameservers failed to answer the query turismomadrid.es. IN NS: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "mx": {
     "hosts": [],
-    "warnings": [
-      "No MX records found. Is the domain parked?"
-    ]
+    "error": "All nameservers failed to answer the query turismomadrid.es. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "spf": {
     "record": null,
     "valid": false,
-    "error": "turismomadrid.es does not have a SPF TXT record"
+    "error": "All nameservers failed to answer the query turismomadrid.es. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "dmarc": {
     "record": null,
     "valid": false,
     "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "error": "All nameservers failed to answer the query _dmarc.turismomadrid.es. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
   }
 }

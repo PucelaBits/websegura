@@ -5,39 +5,29 @@
   "ns": {
     "hostnames": [
       "dns2.gipuzkoa.net",
-      "dns.gipuzkoa.eus",
-      "dns.gipuzkoa.net"
+      "dns.gipuzkoa.net",
+      "dns.gipuzkoa.eus"
     ],
     "warnings": []
   },
   "mx": {
     "hosts": [
       {
-        "preference": 100,
-        "hostname": "barracuda-ls.gipuzkoa.net",
-        "addresses": [
-          "82.116.160.138"
-        ]
-      },
-      {
-        "preference": 200,
+        "preference": 5,
         "hostname": "mxa-00a9a302.gslb.pphosted.com",
         "addresses": [
           "66.159.245.176"
         ]
       },
       {
-        "preference": 200,
+        "preference": 5,
         "hostname": "mxb-00a9a302.gslb.pphosted.com",
         "addresses": [
-          "66.159.247.98"
+          "66.159.245.176"
         ]
       }
     ],
-    "warnings": [
-      "The domain barraspam-ls.gipuzkoa.net does not exist",
-      "The reverse DNS of 82.116.160.138 is barraspam-ls.gipuzkoa.net, but the A/AAAA DNS records for barraspam-ls.gipuzkoa.net do not resolve to 82.116.160.138"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx ip4:82.116.160.145/32 ip4:82.116.160.138/32 ip4:82.116.160.225/32 include:spf.protection.outlook.com include:spf-00a9a302.pphosted.com -all",
@@ -46,10 +36,6 @@
     "warnings": [],
     "parsed": {
       "pass": [
-        {
-          "value": "barracuda-ls.gipuzkoa.net",
-          "mechanism": "mx"
-        },
         {
           "value": "mxa-00a9a302.gslb.pphosted.com",
           "mechanism": "mx"

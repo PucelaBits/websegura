@@ -29,9 +29,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx:santacruzdetenerife.es ip4:195.76.166.0/24 include:spf-00764502.pphosted.com -all",
+    "record": "v=spf1 mx:santacruzdetenerife.es ip4:195.76.166.0/24 include:spf-00764502.pphosted.com include:spf-00764503.pphosted.com -all",
     "valid": true,
-    "dns_lookups": 2,
+    "dns_lookups": 3,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -64,6 +64,31 @@
               },
               {
                 "value": "66.159.246.179",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "neutral"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "spf-00764503.pphosted.com",
+          "record": "v=spf1 ip4:185.132.182.248 ip4:185.183.28.159",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "185.132.182.248",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.183.28.159",
                 "mechanism": "ip4"
               }
             ],
