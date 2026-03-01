@@ -3,22 +3,17 @@
   "base_domain": "cbe.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "ns1.nidomans.com",
-      "ns2.nidomans.com"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The domain cbe.es does not exist"
   },
   "mx": {
     "hosts": [],
-    "warnings": [
-      "No MX records found. Is the domain parked?"
-    ]
+    "error": "The domain cbe.es does not exist"
   },
   "spf": {
     "record": null,
     "valid": false,
-    "error": "cbe.es does not have a SPF TXT record"
+    "error": "The domain cbe.es does not exist"
   },
   "dmarc": {
     "record": null,

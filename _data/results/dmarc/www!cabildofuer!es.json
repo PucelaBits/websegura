@@ -15,47 +15,47 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.251.116.27",
-          "2607:f8b0:4023:1002::1b"
+          "172.253.132.26",
+          "2607:f8b0:4023:2c03::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "2607:f8b0:4003:c30::1a",
-          "74.125.27.26"
+          "209.85.144.27",
+          "2607:f8b0:400d:c0e::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "192.178.209.27",
-          "2607:f8b0:4001:c70::1a"
+          "108.177.11.27",
+          "2607:f8b0:400c:c01::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "aspmx2.googlemail.com",
         "addresses": [
-          "2607:f8b0:4003:c30::1b",
-          "74.125.27.27"
+          "209.85.144.27",
+          "2607:f8b0:400d:c0e::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "aspmx3.googlemail.com",
         "addresses": [
-          "192.178.209.27",
-          "2607:f8b0:4001:c70::1b"
+          "108.177.11.27",
+          "2607:f8b0:400c:c01::1a"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:194.224.243.22 include:_spf.google.com ~all",
+    "record": "v=spf1 ip4:194.224.243.22 ip4:185.73.173.32/28 include:_spf.google.com ~all",
     "valid": true,
     "dns_lookups": 1,
     "warnings": [],
@@ -63,6 +63,10 @@
       "pass": [
         {
           "value": "194.224.243.22",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "185.73.173.32/28",
           "mechanism": "ip4"
         }
       ],

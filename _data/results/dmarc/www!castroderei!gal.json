@@ -14,12 +14,12 @@
       {
         "preference": 0,
         "hostname": "mail.castroderei.gal",
-        "addresses": []
+        "addresses": [
+          "146.59.163.116"
+        ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:51.68.36.3 include:correo00.imglohosting.com include:hl901.imglohosting.com +a +mx +ip4:5.39.27.158 +include:spf.raiolanetworks.com +ip4:91.134.184.232 ~all",
@@ -55,12 +55,12 @@
       "include": [
         {
           "domain": "correo00.imglohosting.com",
-          "record": "v=spf1 ip4:54.38.228.194 ~all",
+          "record": "v=spf1 ip4:164.132.155.246 ~all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
               {
-                "value": "54.38.228.194",
+                "value": "164.132.155.246",
                 "mechanism": "ip4"
               }
             ],

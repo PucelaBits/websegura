@@ -13,9 +13,10 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "mail.mirandadeebro.es",
+        "hostname": "mail1.mirandadeebro.es",
         "addresses": [
-          "94.143.140.189"
+          "185.73.173.33",
+          "185.73.173.41"
         ]
       }
     ],
@@ -29,7 +30,7 @@
     "parsed": {
       "pass": [
         {
-          "value": "mail.mirandadeebro.es",
+          "value": "mail1.mirandadeebro.es",
           "mechanism": "mx"
         },
         {

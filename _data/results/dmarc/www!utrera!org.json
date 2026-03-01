@@ -15,40 +15,40 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.251.186.26",
-          "2607:f8b0:4023:1002::1b"
+          "172.253.132.27",
+          "2607:f8b0:4023:2c03::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "2607:f8b0:4003:c30::1b",
-          "74.125.27.27"
+          "209.85.144.26",
+          "2607:f8b0:400d:c0e::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "192.178.209.26",
-          "2607:f8b0:4001:c70::1b"
+          "108.177.11.27",
+          "2607:f8b0:400c:c01::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "192.178.152.26",
-          "2607:f8b0:4024:c0d::1a"
+          "192.178.218.26",
+          "2607:f8b0:4004:c25::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "142.250.96.26",
-          "2607:f8b0:4023:403::1a"
+          "2607:f8b0:4020:c07::1b",
+          "64.233.178.26"
         ]
       }
     ],
@@ -58,36 +58,15 @@
     "record": "v=spf1 mx ip4:195.53.27.99 a:smail.utrera.org include:_spf.google.com ~all",
     "valid": true,
     "dns_lookups": 3,
-    "warnings": [],
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out.",
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ],
     "parsed": {
       "pass": [
         {
-          "value": "aspmx.l.google.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "alt1.aspmx.l.google.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "alt2.aspmx.l.google.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "alt3.aspmx.l.google.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "alt4.aspmx.l.google.com",
-          "mechanism": "mx"
-        },
-        {
           "value": "195.53.27.99",
           "mechanism": "ip4"
-        },
-        {
-          "value": "195.53.27.99",
-          "mechanism": "a"
         }
       ],
       "neutral": [],

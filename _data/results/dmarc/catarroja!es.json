@@ -19,10 +19,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 95.39.28.247 is mail.catarroja.es, but the A/AAAA DNS records for mail.catarroja.es do not resolve to 95.39.28.247"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 a mx ip4:194.224.197.55 ip4:194.224.197.51 ip4:95.39.28.247 include:catarroja.ip-zone.com include:spf.ipzmarketing.com include:eps.catarroja.es include:dnsxperta.com include:spf.protection.outlook.com ~all",

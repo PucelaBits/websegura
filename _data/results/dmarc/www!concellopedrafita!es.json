@@ -19,10 +19,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 213.134.40.75 is id00218-mail3-3.c.mad.interhost.com, but the A/AAAA DNS records for id00218-mail3-3.c.mad.interhost.com do not resolve to 213.134.40.75"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:213.134.40.0/24 ip4:195.76.97.35/32 ip4:195.76.97.30/32  ~all",

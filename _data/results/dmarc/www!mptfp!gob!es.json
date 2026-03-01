@@ -105,7 +105,10 @@
     "record": "v=DMARC1; p=quarantine; rua=mailto:avisos.correo@correo.gob.es; ruf=mailto:avisos.correo@correo.gob.es; fo=1;",
     "valid": true,
     "location": "mptfp.gob.es",
-    "warnings": [],
+    "warnings": [
+      "correo.gob.es does not indicate that it accepts DMARC reports about mptfp.gob.es - Authorization record not found: mptfp.gob.es._report._dmarc.correo.gob.es IN TXT \"v=DMARC1\"",
+      "correo.gob.es does not indicate that it accepts DMARC reports about mptfp.gob.es - Authorization record not found: mptfp.gob.es._report._dmarc.correo.gob.es IN TXT \"v=DMARC1\""
+    ],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -116,23 +119,11 @@
         "explicit": true
       },
       "rua": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "avisos.correo@correo.gob.es",
-            "size_limit": null
-          }
-        ],
+        "value": "mailto:avisos.correo@correo.gob.es",
         "explicit": true
       },
       "ruf": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "avisos.correo@correo.gob.es",
-            "size_limit": null
-          }
-        ],
+        "value": "mailto:avisos.correo@correo.gob.es",
         "explicit": true
       },
       "fo": {

@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns2.cdmon.net",
       "ns1.cdmon.net",
       "ns5.cdmondns-01.com",
-      "ns2.cdmon.net",
       "ns3.cdmon.net",
       "ns4.cdmondns-01.org"
     ],
@@ -37,7 +37,7 @@
       "include": [
         {
           "domain": "spf.sentidocomun.es",
-          "record": "v=spf1 ip4:154.58.16.69 ip4:154.58.16.49 ip4:154.58.16.65 ip4:54.217.206.198 ip4:85.152.54.4 ip4:154.58.194.183 ip4:212.227.126.187 ip4:18.101.163.27 -all",
+          "record": "v=spf1 ip4:154.58.16.69 ip4:154.58.16.49 ip4:154.58.16.65 ip4:54.217.206.198 ip4:85.152.54.4 ip4:154.58.194.183 ip4:154.58.192.202 ip4:154.58.192.189 ip4:212.227.126.187 ip4:18.101.163.27 -all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -63,6 +63,14 @@
               },
               {
                 "value": "154.58.194.183",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "154.58.192.202",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "154.58.192.189",
                 "mechanism": "ip4"
               },
               {

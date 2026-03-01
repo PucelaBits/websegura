@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.merkaweb.com",
-      "ns1.merkaweb.com"
+      "ns1.merkaweb.com",
+      "ns2.merkaweb.com"
     ],
     "warnings": []
   },
@@ -22,12 +22,18 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 +a +mx +ip4:185.92.244.178 +ip4:89.187.85.5 +ip4:89.187.86.111 +include:spf.profesionalhosting.com ~all",
+    "record": "v=spf1 ip4:185.92.244.178 +a +mx +ip4:89.187.85.5 +ip4:89.187.86.111 +include:spf.profesionalhosting.com include:relay.mailchannels.net ~all",
     "valid": true,
-    "dns_lookups": 8,
-    "warnings": [],
+    "dns_lookups": 9,
+    "warnings": [
+      "Duplicate include: relay.mailchannels.net"
+    ],
     "parsed": {
       "pass": [
+        {
+          "value": "185.92.244.178",
+          "mechanism": "ip4"
+        },
         {
           "value": "185.92.244.178",
           "mechanism": "a"
@@ -35,10 +41,6 @@
         {
           "value": "subbetica.es",
           "mechanism": "mx"
-        },
-        {
-          "value": "185.92.244.178",
-          "mechanism": "ip4"
         },
         {
           "value": "89.187.85.5",
