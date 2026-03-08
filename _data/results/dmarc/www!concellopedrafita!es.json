@@ -3,11 +3,8 @@
   "base_domain": "concellopedrafita.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "ns2.interhost.com",
-      "iria.alsernet.es"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "mx": {
     "hosts": [
@@ -22,7 +19,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:213.134.40.0/24 ip4:195.76.97.35/32 ip4:195.76.97.30/32  ~all",
+    "record": "v=spf1 ip4:213.134.40.0/24 ip4:195.55.27.6 ip4:195.76.97.35/32 ip4:195.76.97.30/32  ~all",
     "valid": true,
     "dns_lookups": 0,
     "warnings": [],
@@ -30,6 +27,10 @@
       "pass": [
         {
           "value": "213.134.40.0/24",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "195.55.27.6",
           "mechanism": "ip4"
         },
         {

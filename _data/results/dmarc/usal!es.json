@@ -4,11 +4,11 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "topacio.usal.es",
       "agata.usal.es",
+      "sun.rediris.es",
       "chico.rediris.es",
       "zafiro.usal.es",
-      "sun.rediris.es"
+      "topacio.usal.es"
     ],
     "warnings": []
   },
@@ -26,7 +26,7 @@
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "209.85.144.26",
+          "209.85.144.27",
           "2607:f8b0:400d:c0e::1b"
         ]
       },
@@ -35,7 +35,7 @@
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
           "108.177.11.27",
-          "2607:f8b0:400c:c01::1a"
+          "2607:f8b0:400c:c01::1b"
         ]
       },
       {
@@ -50,17 +50,17 @@
         "preference": 10,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "2607:f8b0:4020:c07::1a",
-          "64.233.178.26"
+          "2607:f8b0:4020:c07::1b",
+          "64.233.178.27"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 a:listas.usal.es a:aida.usal.es include:_spf.google.com ~all",
+    "record": "v=spf1 a:listas.usal.es a:aida.usal.es include:_spf.google.com include:spf.protection.outlook.com ~all",
     "valid": true,
-    "dns_lookups": 3,
+    "dns_lookups": 4,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -79,7 +79,7 @@
       "include": [
         {
           "domain": "_spf.google.com",
-          "record": "v=spf1 ip4:74.125.0.0/16 ip4:209.85.128.0/17 ip6:2001:4860:4000::/36 ip6:2404:6800:4000::/36 ip6:2607:f8b0:4000::/36 ip6:2800:3f0:4000::/36 ip6:2a00:1450:4000::/36 ip6:2c0f:fb50:4000::/36 ~all",
+          "record": "v=spf1 ip4:74.125.0.0/16 ip4:209.85.128.0/17 ip6:2001:4860:4864::/56 ip6:2404:6800:4000::/36 ip6:2607:f8b0:4000::/36 ip6:2800:3f0:4000::/36 ip6:2a00:1450:4000::/36 ip6:2c0f:fb50:4000::/36 ~all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -92,7 +92,7 @@
                 "mechanism": "ip4"
               },
               {
-                "value": "2001:4860:4000::/36",
+                "value": "2001:4860:4864::/56",
                 "mechanism": "ip6"
               },
               {
@@ -125,6 +125,67 @@
             "all": "softfail"
           },
           "warnings": []
+        },
+        {
+          "domain": "spf.protection.outlook.com",
+          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/15 ip4:52.102.0.0/16 ip4:52.103.0.0/17 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/51 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "40.92.0.0/15",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "40.107.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.100.0.0/15",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.102.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.103.0.0/17",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "104.47.0.0/17",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "2a01:111:f400::/48",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403::/49",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:8000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:c000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:f000::/52",
+                "mechanism": "ip6"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
         }
       ],
       "redirect": null,
@@ -133,9 +194,63 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; adkim=r; aspf=r; rua=postmaster@usal.es",
-    "valid": false,
+    "record": "v=DMARC1; p=quarantine; adkim=r; aspf=r; rua=mailto:postmaster@usal.es; pct=25",
+    "valid": true,
     "location": "usal.es",
-    "error": "postmaster@usal.es is not a valid DMARC report URI"
+    "warnings": [
+      "pct value is less than 100. This leads to inconsistent and unpredictable policy enforcement. Consider using p=none to monitor results instead"
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": true
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "postmaster@usal.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "pct": {
+        "value": 25,
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "quarantine",
+        "explicit": false
+      }
+    }
   }
 }

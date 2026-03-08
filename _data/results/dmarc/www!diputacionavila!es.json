@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns1.diputacionavila.es",
       "ns4.diputacionavila.es",
       "ns3.diputacionavila.es",
-      "ns1.diputacionavila.es",
       "ns2.diputacionavila.es"
     ],
     "warnings": []
@@ -24,7 +24,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx ip4:194.224.225.128/29  ip4:91.205.126.0/24 -all",
+    "record": "v=spf1 mx ip4:91.205.126.0/24 -all",
     "valid": true,
     "dns_lookups": 1,
     "warnings": [],
@@ -33,10 +33,6 @@
         {
           "value": "correo.diputacionavila.es",
           "mechanism": "mx"
-        },
-        {
-          "value": "194.224.225.128/29",
-          "mechanism": "ip4"
         },
         {
           "value": "91.205.126.0/24",
@@ -53,9 +49,61 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=none; adkim=r; aspf=r; rua=mailto:postmaster@diputacionavila.es; fo=1; pct=100",
+    "valid": true,
+    "location": "diputacionavila.es",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": true
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "postmaster@diputacionavila.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "1"
+        ],
+        "explicit": true
+      },
+      "pct": {
+        "value": 100,
+        "explicit": true
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }

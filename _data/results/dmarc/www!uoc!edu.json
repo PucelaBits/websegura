@@ -17,7 +17,7 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "172.253.132.26",
+          "172.253.132.27",
           "2607:f8b0:4023:2c03::1b"
         ]
       },
@@ -33,7 +33,7 @@
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "108.177.11.27",
+          "108.177.11.26",
           "2607:f8b0:400c:c01::1b"
         ]
       },
@@ -49,24 +49,24 @@
         "preference": 10,
         "hostname": "aspmx3.googlemail.com",
         "addresses": [
-          "108.177.11.27",
-          "2607:f8b0:400c:c01::1b"
+          "108.177.11.26",
+          "2607:f8b0:400c:c01::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "aspmx4.googlemail.com",
         "addresses": [
-          "192.178.218.26",
-          "2607:f8b0:4004:c25::1a"
+          "192.178.218.27",
+          "2607:f8b0:4004:c25::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "aspmx5.googlemail.com",
         "addresses": [
-          "2607:f8b0:4020:c07::1b",
-          "64.233.178.27"
+          "2607:f8b0:4020:c07::1a",
+          "64.233.178.26"
         ]
       }
     ],
@@ -102,7 +102,7 @@
       "include": [
         {
           "domain": "_spf.google.com",
-          "record": "v=spf1 ip4:74.125.0.0/16 ip4:209.85.128.0/17 ip6:2001:4860:4000::/36 ip6:2404:6800:4000::/36 ip6:2607:f8b0:4000::/36 ip6:2800:3f0:4000::/36 ip6:2a00:1450:4000::/36 ip6:2c0f:fb50:4000::/36 ~all",
+          "record": "v=spf1 ip4:74.125.0.0/16 ip4:209.85.128.0/17 ip6:2001:4860:4864::/56 ip6:2404:6800:4000::/36 ip6:2607:f8b0:4000::/36 ip6:2800:3f0:4000::/36 ip6:2a00:1450:4000::/36 ip6:2c0f:fb50:4000::/36 ~all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -115,7 +115,7 @@
                 "mechanism": "ip4"
               },
               {
-                "value": "2001:4860:4000::/36",
+                "value": "2001:4860:4864::/56",
                 "mechanism": "ip6"
               },
               {

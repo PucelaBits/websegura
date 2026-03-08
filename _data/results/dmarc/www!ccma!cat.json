@@ -200,11 +200,12 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none;",
+    "record": "v=DMARC1; p=none; rua=mailto:dmarc-reports@3cat.cat; ruf=mailto:dmarc-reports@3cat.cat; fo=1; adkim=s; aspf=s; pct=100",
     "valid": true,
     "location": "ccma.cat",
     "warnings": [
-      "rua tag (destination for aggregate reports) not found"
+      "3cat.cat does not indicate that it accepts DMARC reports about ccma.cat - Authorization record not found: ccma.cat._report._dmarc.3cat.cat IN TXT \"v=DMARC1\"",
+      "3cat.cat does not indicate that it accepts DMARC reports about ccma.cat - Authorization record not found: ccma.cat._report._dmarc.3cat.cat IN TXT \"v=DMARC1\""
     ],
     "tags": {
       "v": {
@@ -215,23 +216,31 @@
         "value": "none",
         "explicit": true
       },
-      "adkim": {
-        "value": "r",
-        "explicit": false
+      "rua": {
+        "value": "mailto:dmarc-reports@3cat.cat",
+        "explicit": true
       },
-      "aspf": {
-        "value": "r",
-        "explicit": false
+      "ruf": {
+        "value": "mailto:dmarc-reports@3cat.cat",
+        "explicit": true
       },
       "fo": {
         "value": [
-          "0"
+          "1"
         ],
-        "explicit": false
+        "explicit": true
+      },
+      "adkim": {
+        "value": "s",
+        "explicit": true
+      },
+      "aspf": {
+        "value": "s",
+        "explicit": true
       },
       "pct": {
         "value": 100,
-        "explicit": false
+        "explicit": true
       },
       "rf": {
         "value": [

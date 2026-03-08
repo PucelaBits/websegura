@@ -4,21 +4,21 @@
   "dnssec": false,
   "ns": {
     "hostnames": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "error": "All nameservers failed to answer the query tramalicante.es. IN NS: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "mx": {
     "hosts": [],
-    "error": "All nameservers failed to answer the query tramalicante.es. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
     "record": null,
     "valid": false,
-    "error": "All nameservers failed to answer the query tramalicante.es. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "dmarc": {
     "record": null,
     "valid": false,
     "location": null,
-    "error": "All nameservers failed to answer the query _dmarc.tramalicante.es. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   }
 }
