@@ -1,27 +1,28 @@
 {
-  "id": 87778593,
+  "id": 87877282,
   "algorithm_version": 5,
-  "scanned_at": "2026-03-10T01:18:33.626Z",
+  "scanned_at": "2026-03-11T01:18:36.867Z",
   "error": null,
-  "grade": "F",
+  "grade": "C+",
   "response_headers": {
-    "date": "Tue, 10 Mar 2026 01:18:38 GMT",
+    "date": "Wed, 11 Mar 2026 01:18:41 GMT",
     "pragma": "no-cache",
     "server": "Apache",
     "expires": "Thu, 01 Jan 1970 00:00:00 GMT",
     "connection": "close",
-    "set-cookie": "JSESSIONID=AC0FE39A6F49087810CE7A9597E0D37F.srt2; Path=/; Secure; HttpOnly,COOKIE_SUPPORT=true; Max-Age=31536000; Expires=Wed, 10 Mar 2027 01:18:34 GMT; Path=/; Secure; HttpOnly,GUEST_LANGUAGE_ID=es_ES; Max-Age=31536000; Expires=Wed, 10 Mar 2027 01:18:34 GMT; Path=/; Secure; HttpOnly,cookiesession1=678B28DD3CC9EAA60DF0789DC227B08A;Expires=Wed, 10 Mar 2027 01:18:38 GMT;Path=/;HttpOnly",
+    "set-cookie": "JSESSIONID=D268D0C7220D04042F9387994FBC3552.srt1; Path=/; Secure; HttpOnly,COOKIE_SUPPORT=true; Max-Age=31536000; Expires=Thu, 11 Mar 2027 01:18:37 GMT; Path=/; Secure; HttpOnly,GUEST_LANGUAGE_ID=es_ES; Max-Age=31536000; Expires=Thu, 11 Mar 2027 01:18:37 GMT; Path=/; Secure; HttpOnly,cookiesession1=678B28DD46113E20CB60088F83669AA6;Expires=Thu, 11 Mar 2027 01:18:41 GMT;Path=/;HttpOnly",
     "content-type": "text/html;charset=UTF-8",
     "cache-control": "private, no-cache, no-store, must-revalidate",
-    "content-length": "118870",
+    "content-length": "118176",
     "liferay-portal": "Liferay Digital Experience Platform",
     "x-frame-options": "SAMEORIGIN",
     "x-xss-protection": "1",
-    "x-content-type-options": "nosniff"
+    "x-content-type-options": "nosniff",
+    "strict-transport-security": "max-age=31536000; includeSubDomains; preload"
   },
-  "score": 10,
+  "score": 60,
   "status_code": 200,
-  "tests_failed": 4,
-  "tests_passed": 6,
+  "tests_failed": 3,
+  "tests_passed": 7,
   "tests_quantity": 10
 }
