@@ -29,39 +29,22 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx include:spf.serviciosmin.gob.es -all",
+    "record": "v=spf1 include:spf.serviciosmin.gob.es -all",
     "valid": true,
-    "dns_lookups": 2,
+    "dns_lookups": 1,
     "warnings": [],
     "parsed": {
-      "pass": [
-        {
-          "value": "mailin.serviciosmin.gob.es",
-          "mechanism": "mx"
-        },
-        {
-          "value": "mailin1.serviciosmin.gob.es",
-          "mechanism": "mx"
-        }
-      ],
+      "pass": [],
       "neutral": [],
       "softfail": [],
       "fail": [],
       "include": [
         {
           "domain": "spf.serviciosmin.gob.es",
-          "record": "v=spf1 ip4:193.146.123.231/32 ip4:193.146.123.235/32 ip4:192.187.16.25/32 ip4:192.187.16.27/32  ~all",
+          "record": "v=spf1 ip4:192.187.16.25/32 ip4:192.187.16.27/32  ~all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
-              {
-                "value": "193.146.123.231/32",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "193.146.123.235/32",
-                "mechanism": "ip4"
-              },
               {
                 "value": "192.187.16.25/32",
                 "mechanism": "ip4"

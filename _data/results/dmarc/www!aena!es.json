@@ -5,16 +5,25 @@
   "ns": {
     "hostnames": [
       "dns6.aena.es",
+      "dns12.aena.es",
       "artemis.ttd.net",
       "dns7.aena.es",
-      "dns12.aena.es",
       "dns13.aena.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "correosmtp.aena.es",
+        "addresses": [
+          "194.224.177.201",
+          "217.130.124.201"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf-a.aena.es include:spf.fromdoppler.com include:spf.protection.outlook.com include:_spf-dc33.sapsf.eu -all",

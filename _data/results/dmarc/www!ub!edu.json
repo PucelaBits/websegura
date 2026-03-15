@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "chico.rediris.es",
       "sun.rediris.es",
       "sbx06.ub.edu",
-      "sbx05.ub.edu",
-      "chico.rediris.es"
+      "sbx05.ub.edu"
     ],
     "warnings": []
   },
@@ -236,12 +236,10 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none;",
+    "record": "v=DMARC1; p=none; rua=mailto:masterdns@ub.edu",
     "valid": true,
     "location": "ub.edu",
-    "warnings": [
-      "rua tag (destination for aggregate reports) not found"
-    ],
+    "warnings": [],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -249,6 +247,16 @@
       },
       "p": {
         "value": "none",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "masterdns@ub.edu",
+            "size_limit": null
+          }
+        ],
         "explicit": true
       },
       "adkim": {

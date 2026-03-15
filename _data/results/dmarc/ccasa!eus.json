@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "nsalchos11.telefonica-data.com",
-      "nsjc8hos21.telefonica-data.com"
+      "nsjc8hos21.telefonica-data.com",
+      "nsalchos11.telefonica-data.com"
     ],
     "warnings": []
   },
@@ -38,7 +38,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=reject; rua=mailto:ruf@araba.eus,rua.dmarc@ccn-cert.cni.es",
+    "record": "v=DMARC1;p=reject;rua=mailto:ruf@araba.eus,mailto:rua.dmarc@ccn-cert.cni.es",
     "valid": true,
     "location": "ccasa.eus",
     "warnings": [
@@ -54,7 +54,7 @@
         "explicit": true
       },
       "rua": {
-        "value": "mailto:ruf@araba.eus,rua.dmarc@ccn-cert.cni.es",
+        "value": "mailto:ruf@araba.eus,mailto:rua.dmarc@ccn-cert.cni.es",
         "explicit": true
       },
       "adkim": {

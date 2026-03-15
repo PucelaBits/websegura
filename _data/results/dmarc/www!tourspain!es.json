@@ -46,18 +46,10 @@
       "include": [
         {
           "domain": "spf.serviciosmin.gob.es",
-          "record": "v=spf1 ip4:193.146.123.231/32 ip4:193.146.123.235/32 ip4:192.187.16.25/32 ip4:192.187.16.27/32  ~all",
+          "record": "v=spf1 ip4:192.187.16.25/32 ip4:192.187.16.27/32  ~all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
-              {
-                "value": "193.146.123.231/32",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "193.146.123.235/32",
-                "mechanism": "ip4"
-              },
               {
                 "value": "192.187.16.25/32",
                 "mechanism": "ip4"

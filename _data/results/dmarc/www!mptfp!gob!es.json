@@ -36,9 +36,7 @@
     "record": "v=spf1 mx a:spf.correo.gob.es ~all",
     "valid": true,
     "dns_lookups": 2,
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ],
+    "warnings": [],
     "parsed": {
       "pass": [
         {
@@ -48,6 +46,50 @@
         {
           "value": "mail2.correo.gob.es",
           "mechanism": "mx"
+        },
+        {
+          "value": "185.73.172.122",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.172.123",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.172.124",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.172.125",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.172.147",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.173.17",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.173.18",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.173.19",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.173.20",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.173.21",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.173.22",
+          "mechanism": "a"
         }
       ],
       "neutral": [],
@@ -76,10 +118,6 @@
         "explicit": true
       },
       "rua": {
-        "value": "mailto:avisos.correo@correo.gob.es",
-        "explicit": true
-      },
-      "ruf": {
         "value": [
           {
             "scheme": "mailto",
@@ -87,6 +125,10 @@
             "size_limit": null
           }
         ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": "mailto:avisos.correo@correo.gob.es",
         "explicit": true
       },
       "fo": {

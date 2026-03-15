@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "neo.dpteruel.es",
-      "morpheo.dpteruel.es"
+      "morpheo.dpteruel.es",
+      "neo.dpteruel.es"
     ],
     "warnings": []
   },
@@ -162,11 +162,11 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; sp=none; pct=100; adkim=r; aspf=r;",
+    "record": "v=DMARC1; p=none; rua=mailto:rua.dmarc@ccn-cert.cni.es; sp=none; pct=100; adkim=r; aspf=r;",
     "valid": true,
     "location": "dpteruel.es",
     "warnings": [
-      "rua tag (destination for aggregate reports) not found"
+      "ccn-cert.cni.es does not indicate that it accepts DMARC reports about dpteruel.es - Authorization record not found: dpteruel.es._report._dmarc.ccn-cert.cni.es IN TXT \"v=DMARC1\""
     ],
     "tags": {
       "v": {
@@ -175,6 +175,10 @@
       },
       "p": {
         "value": "none",
+        "explicit": true
+      },
+      "rua": {
+        "value": "mailto:rua.dmarc@ccn-cert.cni.es",
         "explicit": true
       },
       "sp": {

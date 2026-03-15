@@ -12,17 +12,17 @@
   "mx": {
     "hosts": [
       {
-        "preference": 10,
-        "hostname": "mail.tuineje.es",
+        "preference": 0,
+        "hostname": "tuineje-es.mail.protection.outlook.com",
         "addresses": [
-          "188.165.207.97"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "correo.tuineje.es",
-        "addresses": [
-          "188.165.207.97"
+          "2a01:111:f403:ca21::",
+          "2a01:111:f403:ca21::1",
+          "2a01:111:f403:ca21::2",
+          "2a01:111:f403:ca21::3",
+          "52.101.91.0",
+          "52.101.91.1",
+          "52.101.91.2",
+          "52.101.91.3"
         ]
       }
     ],
@@ -40,15 +40,11 @@
           "mechanism": "a"
         },
         {
-          "value": "mail.tuineje.es",
+          "value": "tuineje-es.mail.protection.outlook.com",
           "mechanism": "mx"
         },
         {
-          "value": "correo.tuineje.es",
-          "mechanism": "mx"
-        },
-        {
-          "value": "188.165.207.97",
+          "value": "213.186.33.5",
           "mechanism": "a"
         },
         {

@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "dns02.ono.com",
       "dns03.ono.com",
-      "dns01.ono.com",
-      "dns02.ono.com"
+      "dns01.ono.com"
     ],
     "warnings": []
   },
@@ -32,7 +32,7 @@
   "spf": {
     "record": "v=spf1 mx a ip4:188.85.16.242 ip4:188.85.16.244 include:altia.es -all",
     "valid": true,
-    "dns_lookups": 9,
+    "dns_lookups": 10,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -63,8 +63,8 @@
       "include": [
         {
           "domain": "altia.es",
-          "record": "v=spf1 mx a ip4:176.58.14.11/32 ip4:217.130.24.0/24 ip4:176.58.8.113 ip4:176.58.8.114 a:smtp.altia.es a:relaydc.altia.es include:servers.mcsv.net include:spf.protection.outlook.com ~all",
-          "dns_lookups": 6,
+          "record": "v=spf1 mx a ip4:176.58.14.11/32 ip4:217.130.24.0/24 ip4:176.58.8.113 ip4:176.58.8.114 a:smtp.altia.es a:relaydc.altia.es include:servers.mcsv.net include:spf.protection.outlook.com include:_spf-dc55.sapsf.eu ~all",
+          "dns_lookups": 7,
           "parsed": {
             "pass": [
               {
@@ -186,6 +186,43 @@
                     {
                       "value": "2a01:111:f403:f000::/52",
                       "mechanism": "ip6"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "fail"
+                },
+                "warnings": []
+              },
+              {
+                "domain": "_spf-dc55.sapsf.eu",
+                "record": "v=spf1 ip4:35.242.247.107/32 ip4:34.107.8.58/32 ip4:35.234.108.85/32 ip4:34.90.200.156/32 ip4:35.204.47.209/32 -all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "35.242.247.107/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "34.107.8.58/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "35.234.108.85/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "34.90.200.156/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "35.204.47.209/32",
+                      "mechanism": "ip4"
                     }
                   ],
                   "neutral": [],
