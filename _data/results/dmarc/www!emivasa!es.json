@@ -33,20 +33,12 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:84.124.28.165 ip4:46.25.190.229 include:_spf.google.com include:_spf.innovatelecom.es include:spf.protection.outlook.com exists:%{i}.spf.hc782-58.eu.iphmx.com ~all",
+    "record": "v=spf1 include:_spf.globalomnium.com include:_spf.google.com include:spf.protection.outlook.com exists:%{i}.spf.hc782-58.eu.iphmx.com ~all",
     "valid": true,
-    "dns_lookups": 4,
+    "dns_lookups": 6,
     "warnings": [],
     "parsed": {
       "pass": [
-        {
-          "value": "84.124.28.165",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "46.25.190.229",
-          "mechanism": "ip4"
-        },
         {
           "value": "%{i}.spf.hc782-58.eu.iphmx.com",
           "mechanism": "exists"
@@ -57,8 +49,141 @@
       "fail": [],
       "include": [
         {
+          "domain": "_spf.globalomnium.com",
+          "record": "v=spf1 include:_netblocks1.globalomnium.com ip4:62.82.171.74 ip4:84.124.28.190 ip4:90.160.57.78 ip4:46.25.190.228 ip4:46.25.190.229 ip4:195.76.136.4 ip4:195.76.136.5 ip4:34.175.80.220 ip4:34.175.246.55 ip4:83.48.120.30 ~all",
+          "dns_lookups": 2,
+          "parsed": {
+            "pass": [
+              {
+                "value": "62.82.171.74",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "84.124.28.190",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "90.160.57.78",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "46.25.190.228",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "46.25.190.229",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "195.76.136.4",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "195.76.136.5",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "34.175.80.220",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "34.175.246.55",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "83.48.120.30",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [
+              {
+                "domain": "_netblocks1.globalomnium.com",
+                "record": "v=spf1 include:spf.mtasv.net ip4:52.57.200.142 ip4:52.29.179.127 ip4:52.58.4.167 ip4:18.157.232.83 ip4:18.157.244.91 ip4:18.157.246.109 ~all",
+                "dns_lookups": 1,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "52.57.200.142",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "52.29.179.127",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "52.58.4.167",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "18.157.232.83",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "18.157.244.91",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "18.157.246.109",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [
+                    {
+                      "domain": "spf.mtasv.net",
+                      "record": "v=spf1 ip4:50.31.156.96/27 ip4:104.245.209.192/26 ip4:50.31.205.0/24 ip4:147.160.158.0/24 -all",
+                      "dns_lookups": 0,
+                      "parsed": {
+                        "pass": [
+                          {
+                            "value": "50.31.156.96/27",
+                            "mechanism": "ip4"
+                          },
+                          {
+                            "value": "104.245.209.192/26",
+                            "mechanism": "ip4"
+                          },
+                          {
+                            "value": "50.31.205.0/24",
+                            "mechanism": "ip4"
+                          },
+                          {
+                            "value": "147.160.158.0/24",
+                            "mechanism": "ip4"
+                          }
+                        ],
+                        "neutral": [],
+                        "softfail": [],
+                        "fail": [],
+                        "include": [],
+                        "redirect": null,
+                        "exp": null,
+                        "all": "fail"
+                      },
+                      "warnings": []
+                    }
+                  ],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              }
+            ],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        },
+        {
           "domain": "_spf.google.com",
-          "record": "v=spf1 ip4:74.125.0.0/16 ip4:209.85.128.0/17 ip6:2001:4860:4864::/56 ip6:2404:6800:4864::/56 ip6:2607:f8b0:4000::/36 ip6:2800:3f0:4000::/36 ip6:2a00:1450:4000::/36 ip6:2c0f:fb50:4000::/36 ~all",
+          "record": "v=spf1 ip4:74.125.0.0/16 ip4:209.85.128.0/17 ip6:2001:4860:4864::/56 ip6:2404:6800:4864::/56 ip6:2607:f8b0:4864::/56 ip6:2800:3f0:4000::/36 ip6:2a00:1450:4000::/36 ip6:2c0f:fb50:4000::/36 ~all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -79,7 +204,7 @@
                 "mechanism": "ip6"
               },
               {
-                "value": "2607:f8b0:4000::/36",
+                "value": "2607:f8b0:4864::/56",
                 "mechanism": "ip6"
               },
               {
@@ -93,75 +218,6 @@
               {
                 "value": "2c0f:fb50:4000::/36",
                 "mechanism": "ip6"
-              }
-            ],
-            "neutral": [],
-            "softfail": [],
-            "fail": [],
-            "include": [],
-            "redirect": null,
-            "exp": null,
-            "all": "softfail"
-          },
-          "warnings": []
-        },
-        {
-          "domain": "_spf.innovatelecom.es",
-          "record": "v=spf1 ip4:217.160.130.228/32 ip4:87.106.243.167/32 ip4:46.24.171.0/24 ip4:217.160.133.209/32 ip4:82.165.147.26/32 ip4:87.235.171.0/24 ip4:40.69.5.117/32 ip4:52.138.175.112/32 ip4:82.223.10.84/32 ip4:95.60.236.97/32 ip4:20.103.168.183/32 ip4:20.103.168.98/32 ip4:20.4.227.4/32 ~all",
-          "dns_lookups": 0,
-          "parsed": {
-            "pass": [
-              {
-                "value": "217.160.130.228/32",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "87.106.243.167/32",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "46.24.171.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "217.160.133.209/32",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "82.165.147.26/32",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "87.235.171.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "40.69.5.117/32",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "52.138.175.112/32",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "82.223.10.84/32",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "95.60.236.97/32",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "20.103.168.183/32",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "20.103.168.98/32",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "20.4.227.4/32",
-                "mechanism": "ip4"
               }
             ],
             "neutral": [],

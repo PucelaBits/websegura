@@ -4,25 +4,15 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns3.dnsxperta.com",
       "ns1.dnsxperta.com",
-      "ns2.dnsxperta.com",
-      "ns3.dnsxperta.com"
+      "ns2.dnsxperta.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 100,
-        "hostname": "mx1.dnsxperta.com",
-        "addresses": [
-          "217.13.80.224",
-          "217.13.80.229",
-          "83.147.63.42"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 include:dnsxperta.com include:_spf.google.com -all",
@@ -70,7 +60,7 @@
         },
         {
           "domain": "_spf.google.com",
-          "record": "v=spf1 ip4:74.125.0.0/16 ip4:209.85.128.0/17 ip6:2001:4860:4864::/56 ip6:2404:6800:4864::/56 ip6:2607:f8b0:4000::/36 ip6:2800:3f0:4000::/36 ip6:2a00:1450:4000::/36 ip6:2c0f:fb50:4000::/36 ~all",
+          "record": "v=spf1 ip4:74.125.0.0/16 ip4:209.85.128.0/17 ip6:2001:4860:4864::/56 ip6:2404:6800:4864::/56 ip6:2607:f8b0:4864::/56 ip6:2800:3f0:4000::/36 ip6:2a00:1450:4000::/36 ip6:2c0f:fb50:4000::/36 ~all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -91,7 +81,7 @@
                 "mechanism": "ip6"
               },
               {
-                "value": "2607:f8b0:4000::/36",
+                "value": "2607:f8b0:4864::/56",
                 "mechanism": "ip6"
               },
               {
@@ -127,6 +117,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.moncada.es\n\nMS=ms58949900.\n\nMS=ms98609977\n\nv=spf1 include:dnsxperta.com include:_spf.google.com -all"
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.moncada.es\n\nMS=ms58949900.\n\nv=spf1 include:dnsxperta.com include:_spf.google.com -all\n\nMS=ms98609977"
   }
 }

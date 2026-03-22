@@ -4,20 +4,33 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.imglohosting.com",
-      "ns1.imglohosting.com"
+      "ns1.imglohosting.com",
+      "ns2.imglohosting.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 0,
+        "hostname": "mail.castroderei.gal",
+        "addresses": [
+          "146.59.163.116"
+        ]
+      }
+    ],
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 146.59.163.116 is hl901.imglohosting.com, but the A/AAAA DNS records for hl901.imglohosting.com do not resolve to 146.59.163.116"
+    ]
   },
   "spf": {
     "record": "v=spf1 ip4:51.68.36.3 include:correo00.imglohosting.com include:hl901.imglohosting.com +a +mx +ip4:5.39.27.158 +include:spf.raiolanetworks.com +ip4:91.134.184.232 ~all",
     "valid": true,
     "dns_lookups": 7,
-    "warnings": [],
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ],
     "parsed": {
       "pass": [
         {
@@ -27,10 +40,6 @@
         {
           "value": "146.59.163.116",
           "mechanism": "a"
-        },
-        {
-          "value": "mail.castroderei.gal",
-          "mechanism": "mx"
         },
         {
           "value": "5.39.27.158",

@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "dns2.gipuzkoa.net",
-      "dns.gipuzkoa.net",
-      "dns.gipuzkoa.eus"
+      "dns.gipuzkoa.eus",
+      "dns.gipuzkoa.net"
     ],
     "warnings": []
   },
@@ -30,9 +30,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx ip4:82.116.160.145/32 ip4:82.116.160.138/32 ip4:82.116.160.225/32 include:spf.protection.outlook.com include:spf-00a9a302.pphosted.com -all",
+    "record": "v=spf1 mx ip4:82.116.160.145/32 ip4:82.116.160.138/32 ip4:82.116.160.225/32 include:spf.protection.outlook.com include:spf-00a9a302.pphosted.com include:spf-00a9a303.pphosted.com -all",
     "valid": true,
-    "dns_lookups": 3,
+    "dns_lookups": 4,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -134,6 +134,31 @@
               },
               {
                 "value": "66.159.247.98",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "neutral"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "spf-00a9a303.pphosted.com",
+          "record": "v=spf1 ip4:66.159.245.177 ip4:66.159.247.99",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "66.159.245.177",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "66.159.247.99",
                 "mechanism": "ip4"
               }
             ],

@@ -10,8 +10,23 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query 45.108.128.212.in-addr.arpa. IN PTR: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 20,
+        "hostname": "mail01.mpr.es",
+        "addresses": [
+          "212.128.108.45"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mail02.mpr.es",
+        "addresses": [
+          "212.128.108.46"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:212.128.108.45 ip4:212.128.108.46 -all",

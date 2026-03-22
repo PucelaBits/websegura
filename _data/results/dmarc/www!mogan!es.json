@@ -13,13 +13,6 @@
   "mx": {
     "hosts": [
       {
-        "preference": 5,
-        "hostname": "inf1.mogan.es",
-        "addresses": [
-          "213.0.98.20"
-        ]
-      },
-      {
         "preference": 10,
         "hostname": "cust80680-1.in.mailcontrol.com",
         "addresses": [
@@ -31,6 +24,13 @@
         "hostname": "cust80680-2.in.mailcontrol.com",
         "addresses": [
           "85.115.60.190"
+        ]
+      },
+      {
+        "preference": 40,
+        "hostname": "inf1.mogan.es",
+        "addresses": [
+          "213.0.98.20"
         ]
       }
     ],
@@ -46,15 +46,15 @@
     "parsed": {
       "pass": [
         {
-          "value": "inf1.mogan.es",
-          "mechanism": "mx"
-        },
-        {
           "value": "cust80680-1.in.mailcontrol.com",
           "mechanism": "mx"
         },
         {
           "value": "cust80680-2.in.mailcontrol.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "inf1.mogan.es",
           "mechanism": "mx"
         },
         {

@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns.transparentedge.eu",
-      "ns.transparentedge.es"
+      "ns.transparentedge.es",
+      "ns.transparentedge.eu"
     ],
     "warnings": []
   },
@@ -15,14 +15,14 @@
         "preference": 10,
         "hostname": "mxa-006a4e02.gslb.pphosted.com",
         "addresses": [
-          "143.55.148.243"
+          "143.55.146.78"
         ]
       },
       {
         "preference": 20,
         "hostname": "mxb-006a4e02.gslb.pphosted.com",
         "addresses": [
-          "143.55.146.78"
+          "143.55.148.243"
         ]
       }
     ],
@@ -186,7 +186,7 @@
             "include": [
               {
                 "domain": "_spf.google.com",
-                "record": "v=spf1 ip4:74.125.0.0/16 ip4:209.85.128.0/17 ip6:2001:4860:4864::/56 ip6:2404:6800:4864::/56 ip6:2607:f8b0:4000::/36 ip6:2800:3f0:4000::/36 ip6:2a00:1450:4000::/36 ip6:2c0f:fb50:4000::/36 ~all",
+                "record": "v=spf1 ip4:74.125.0.0/16 ip4:209.85.128.0/17 ip6:2001:4860:4864::/56 ip6:2404:6800:4864::/56 ip6:2607:f8b0:4864::/56 ip6:2800:3f0:4000::/36 ip6:2a00:1450:4000::/36 ip6:2c0f:fb50:4000::/36 ~all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
@@ -207,7 +207,7 @@
                       "mechanism": "ip6"
                     },
                     {
-                      "value": "2607:f8b0:4000::/36",
+                      "value": "2607:f8b0:4864::/56",
                       "mechanism": "ip6"
                     },
                     {

@@ -200,7 +200,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; rua=mailto:dmarc-reports@3cat.cat; ruf=mailto:dmarc-reports@3cat.cat; fo=1; adkim=s; aspf=s; pct=100",
+    "record": "v=DMARC1; p=quarantine; rua=mailto:dmarc-reports@3cat.cat; ruf=mailto:dmarc-reports@3cat.cat; fo=1; adkim=s; aspf=s; pct=100",
     "valid": true,
     "location": "ccma.cat",
     "warnings": [
@@ -213,7 +213,7 @@
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": true
       },
       "rua": {
@@ -253,7 +253,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": false
       }
     }

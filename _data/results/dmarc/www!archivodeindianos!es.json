@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "ns3.gestiondecuenta.com",
-      "ns.gestiondecuenta.com",
       "ns2.gestiondecuenta.com",
+      "ns.gestiondecuenta.com",
       "ns4.gestiondecuenta.com"
     ],
     "warnings": []
@@ -17,14 +17,14 @@
         "preference": 10,
         "hostname": "archivodeindianos-es.mail.protection.outlook.com",
         "addresses": [
-          "2a01:111:f403:ca04::7",
-          "2a01:111:f403:ca09::2",
-          "2a01:111:f403:ca09::20",
-          "2a01:111:f403:ca09::9",
-          "52.101.68.16",
-          "52.101.68.3",
+          "2a01:111:f403:ca04::c",
+          "2a01:111:f403:ca04::f",
+          "2a01:111:f403:ca09::",
+          "2a01:111:f403:ca09::d",
+          "52.101.68.21",
+          "52.101.68.8",
           "52.101.73.1",
-          "52.101.73.26"
+          "52.101.73.28"
         ]
       }
     ],
@@ -56,7 +56,7 @@
       "include": [
         {
           "domain": "_spf.google.com",
-          "record": "v=spf1 ip4:74.125.0.0/16 ip4:209.85.128.0/17 ip6:2001:4860:4864::/56 ip6:2404:6800:4864::/56 ip6:2607:f8b0:4000::/36 ip6:2800:3f0:4000::/36 ip6:2a00:1450:4000::/36 ip6:2c0f:fb50:4000::/36 ~all",
+          "record": "v=spf1 ip4:74.125.0.0/16 ip4:209.85.128.0/17 ip6:2001:4860:4864::/56 ip6:2404:6800:4864::/56 ip6:2607:f8b0:4864::/56 ip6:2800:3f0:4000::/36 ip6:2a00:1450:4000::/36 ip6:2c0f:fb50:4000::/36 ~all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -77,7 +77,7 @@
                 "mechanism": "ip6"
               },
               {
-                "value": "2607:f8b0:4000::/36",
+                "value": "2607:f8b0:4864::/56",
                 "mechanism": "ip6"
               },
               {
