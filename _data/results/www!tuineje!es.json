@@ -1,22 +1,24 @@
 {
-  "id": 89384406,
+  "id": 89488768,
   "algorithm_version": 5,
-  "scanned_at": "2026-03-26T01:46:09.775Z",
+  "scanned_at": "2026-03-27T01:46:34.876Z",
   "error": null,
   "grade": "F",
   "response_headers": {
-    "age": "0",
-    "date": "Thu, 26 Mar 2026 01:46:11 GMT",
+    "date": "Fri, 27 Mar 2026 01:46:35 GMT",
+    "etag": "W/\"69bc29a5-32f2\"",
     "vary": "Accept-Encoding",
-    "server": "HTTPd",
+    "allow": "GET, POST, HEAD",
+    "server": "nginx",
     "connection": "close",
-    "content-type": "text/html; charset=UTF-8",
-    "accept-ranges": "bytes",
-    "content-length": "14574"
+    "content-type": "text/html",
+    "x-powered-by": "PleskLin",
+    "last-modified": "Thu, 19 Mar 2026 16:51:49 GMT",
+    "transfer-encoding": "chunked"
   },
-  "score": 20,
+  "score": 10,
   "status_code": 200,
-  "tests_failed": 6,
-  "tests_passed": 4,
+  "tests_failed": 5,
+  "tests_passed": 5,
   "tests_quantity": 10
 }
