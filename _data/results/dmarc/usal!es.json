@@ -4,11 +4,11 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "topacio.usal.es",
-      "agata.usal.es",
-      "zafiro.usal.es",
       "chico.rediris.es",
-      "sun.rediris.es"
+      "sun.rediris.es",
+      "zafiro.usal.es",
+      "topacio.usal.es",
+      "agata.usal.es"
     ],
     "warnings": []
   },
@@ -18,51 +18,180 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.251.179.26",
-          "2607:f8b0:4004:c08::1a"
+          "142.250.113.26",
+          "2607:f8b0:4023:1009::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "108.177.123.26",
-          "2800:3f0:4003:c0f::1a"
+          "142.251.96.26",
+          "2607:f8b0:4003:c4a::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "172.253.116.27",
-          "2a00:1450:400b:c02::1a"
+          "192.178.209.26",
+          "2607:f8b0:4001:c70::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "192.178.223.27",
-          "2a00:1450:4009:c0f::1a"
+          "172.253.149.26",
+          "2607:f8b0:4024:c0f::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "173.194.76.26",
-          "2a00:1450:400c:c00::1a"
+          "142.250.96.27",
+          "2607:f8b0:4023:403::1a"
         ]
       }
     ],
-    "warnings": [
-      "2800:3f0:4003:c0f::1a does not have any reverse DNS (PTR) records"
-    ]
+    "warnings": []
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "usal.es does not have a SPF TXT record"
+    "record": "v=spf1 a:listas.usal.es a:aida.usal.es include:_spf.google.com include:spf.protection.outlook.com ~all",
+    "valid": true,
+    "dns_lookups": 4,
+    "warnings": [],
+    "parsed": {
+      "pass": [
+        {
+          "value": "212.128.131.13",
+          "mechanism": "a"
+        },
+        {
+          "value": "212.128.130.103",
+          "mechanism": "a"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "_spf.google.com",
+          "record": "v=spf1 ip4:74.125.0.0/16 ip4:209.85.128.0/17 ip6:2001:4860:4864::/56 ip6:2404:6800:4864::/56 ip6:2607:f8b0:4864::/56 ip6:2800:3f0:4000::/36 ip6:2a00:1450:4000::/36 ip6:2c0f:fb50:4000::/36 ~all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "74.125.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "209.85.128.0/17",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "2001:4860:4864::/56",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2404:6800:4864::/56",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2607:f8b0:4864::/56",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2800:3f0:4000::/36",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a00:1450:4000::/36",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2c0f:fb50:4000::/36",
+                "mechanism": "ip6"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "spf.protection.outlook.com",
+          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/15 ip4:52.102.0.0/16 ip4:52.103.0.0/17 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/51 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "40.92.0.0/15",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "40.107.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.100.0.0/15",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.102.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.103.0.0/17",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "104.47.0.0/17",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "2a01:111:f400::/48",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403::/49",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:8000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:c000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:f000::/52",
+                "mechanism": "ip6"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
   },
   "dmarc": {
     "record": "v=DMARC1; p=quarantine; adkim=r; aspf=r; rua=mailto:postmaster@usal.es; pct=25",

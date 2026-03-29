@@ -4,14 +4,55 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "a-ns.primari.net",
-      "b-ns.primari.net"
+      "b-ns.primari.net",
+      "a-ns.primari.net"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 1,
+        "hostname": "aspmx.l.google.com",
+        "addresses": [
+          "142.250.115.27",
+          "2607:f8b0:4023:1006::1a"
+        ]
+      },
+      {
+        "preference": 5,
+        "hostname": "alt1.aspmx.l.google.com",
+        "addresses": [
+          "142.251.96.27",
+          "2607:f8b0:4003:c4a::1b"
+        ]
+      },
+      {
+        "preference": 5,
+        "hostname": "alt2.aspmx.l.google.com",
+        "addresses": [
+          "192.178.209.27",
+          "2607:f8b0:4001:c70::1a"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "alt3.aspmx.l.google.com",
+        "addresses": [
+          "172.253.149.27",
+          "2607:f8b0:4024:c0f::1a"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "alt4.aspmx.l.google.com",
+        "addresses": [
+          "142.250.96.27",
+          "2607:f8b0:4023:403::1a"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx ip4:195.53.27.99 a:smail.utrera.org include:_spf.google.com ~all",

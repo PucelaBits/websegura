@@ -4,17 +4,25 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.cdmon.net",
-      "ns2.cdmon.net",
-      "ns4.cdmondns-01.org",
       "ns3.cdmon.net",
-      "ns5.cdmondns-01.com"
+      "ns1.cdmon.net",
+      "ns5.cdmondns-01.com",
+      "ns4.cdmondns-01.org",
+      "ns2.cdmon.net"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.smviva.es",
+        "addresses": [
+          "134.0.13.174"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:_spf.srv.cat ~all",

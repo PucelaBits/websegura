@@ -4,15 +4,16 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns111.ovh.net",
-      "ns111.ovh.net"
+      "ns12.servicio-online.net",
+      "ns10.servicio-online.net",
+      "ns11.servicio-online.net"
     ],
     "warnings": []
   },
   "mx": {
     "hosts": [
       {
-        "preference": 0,
+        "preference": 1,
         "hostname": "tuineje-es.mail.protection.outlook.com",
         "addresses": [
           "2a01:111:f403:ca21::",
@@ -32,20 +33,18 @@
     "record": "v=spf1 a mx a:correo.tuineje.es ip4:188.165.207.97 include:spf.protection.outlook.com ~all",
     "valid": true,
     "dns_lookups": 4,
-    "warnings": [],
+    "warnings": [
+      "The domain correo.tuineje.es does not exist"
+    ],
     "parsed": {
       "pass": [
         {
-          "value": "188.165.207.97",
+          "value": "82.194.68.108",
           "mechanism": "a"
         },
         {
           "value": "tuineje-es.mail.protection.outlook.com",
           "mechanism": "mx"
-        },
-        {
-          "value": "213.186.33.5",
-          "mechanism": "a"
         },
         {
           "value": "188.165.207.97",
@@ -124,71 +123,9 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=reject; rua=mailto:dmarc@tuineje.es; ruf=mailto:dmarc@tuineje.es; adkim=s; aspf=s; rf=afrf; sp=reject",
-    "valid": true,
-    "location": "tuineje.es",
-    "warnings": [],
-    "tags": {
-      "v": {
-        "value": "DMARC1",
-        "explicit": true
-      },
-      "p": {
-        "value": "reject",
-        "explicit": true
-      },
-      "rua": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "dmarc@tuineje.es",
-            "size_limit": null
-          }
-        ],
-        "explicit": true
-      },
-      "ruf": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "dmarc@tuineje.es",
-            "size_limit": null
-          }
-        ],
-        "explicit": true
-      },
-      "adkim": {
-        "value": "s",
-        "explicit": true
-      },
-      "aspf": {
-        "value": "s",
-        "explicit": true
-      },
-      "rf": {
-        "value": [
-          "afrf"
-        ],
-        "explicit": true
-      },
-      "sp": {
-        "value": "reject",
-        "explicit": true
-      },
-      "fo": {
-        "value": [
-          "0"
-        ],
-        "explicit": false
-      },
-      "pct": {
-        "value": 100,
-        "explicit": false
-      },
-      "ri": {
-        "value": 86400,
-        "explicit": false
-      }
-    }
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "A DMARC record does not exist for this domain or its base domain"
   }
 }

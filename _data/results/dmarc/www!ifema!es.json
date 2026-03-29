@@ -31,23 +31,15 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 exists:%{i}.spf.hc1008-19.eu.iphmx.com ip4:82.194.75.131/32 ip4:176.58.8.208/29 ip4:195.69.254.31 ip4:195.69.253.6 ip4:195.69.253.2 ip4:213.134.41.4 ip6:2001:b90:a:13:250:56ff:fe9c:2462 ip4:213.134.62.128/27 ip4:35.181.156.191 ip4:13.36.253.151 ip4:3.123.206.219 ip4:3.68.129.51 include:amazonses.com include:eu.mailgun.org include:spf.protection.outlook.com  include:spf.emailsignatures365.com include:msrv-smtp-01.aspl.es include:mail.zendesk.com -all",
+    "record": "v=spf1 exists:%{i}.spf.hc1008-19.eu.iphmx.com ip4:195.69.254.31 ip4:195.69.253.6 ip4:195.69.253.2 ip4:213.134.41.4 ip6:2001:b90:a:13:250:56ff:fe9c:2462 ip4:213.134.62.128/27 ip4:35.181.156.191 ip4:13.36.253.151 ip4:3.123.206.219 ip4:3.68.129.51 include:amazonses.com include:eu.mailgun.org include:spf.protection.outlook.com  include:spf.emailsignatures365.com include:mail.zendesk.com -all",
     "valid": true,
-    "dns_lookups": 8,
+    "dns_lookups": 7,
     "warnings": [],
     "parsed": {
       "pass": [
         {
           "value": "%{i}.spf.hc1008-19.eu.iphmx.com",
           "mechanism": "exists"
-        },
-        {
-          "value": "82.194.75.131/32",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "176.58.8.208/29",
-          "mechanism": "ip4"
         },
         {
           "value": "195.69.254.31",
@@ -402,27 +394,6 @@
               },
               {
                 "value": "51.11.109.172",
-                "mechanism": "ip4"
-              }
-            ],
-            "neutral": [],
-            "softfail": [],
-            "fail": [],
-            "include": [],
-            "redirect": null,
-            "exp": null,
-            "all": "fail"
-          },
-          "warnings": []
-        },
-        {
-          "domain": "msrv-smtp-01.aspl.es",
-          "record": "v=spf1 ip4:185.195.96.0/25 -all",
-          "dns_lookups": 0,
-          "parsed": {
-            "pass": [
-              {
-                "value": "185.195.96.0/25",
                 "mechanism": "ip4"
               }
             ],

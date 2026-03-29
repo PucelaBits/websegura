@@ -10,59 +10,15 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "_dc-mx.efb6bbe44fd4.cjcm.es",
-        "addresses": [
-          "38.180.196.19"
-        ]
-      }
-    ],
+    "hosts": [],
     "warnings": [
-      "38.180.196.19 does not have any reverse DNS (PTR) records"
+      "No MX records found. Is the domain parked?"
     ]
   },
   "spf": {
-    "record": "v=spf1 ip4:38.180.196.19 a mx ~all",
-    "valid": true,
-    "dns_lookups": 2,
-    "warnings": [],
-    "parsed": {
-      "pass": [
-        {
-          "value": "38.180.196.19",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "104.21.7.17",
-          "mechanism": "a"
-        },
-        {
-          "value": "172.67.155.97",
-          "mechanism": "a"
-        },
-        {
-          "value": "2606:4700:3033::ac43:9b61",
-          "mechanism": "a"
-        },
-        {
-          "value": "2606:4700:3035::6815:711",
-          "mechanism": "a"
-        },
-        {
-          "value": "_dc-mx.efb6bbe44fd4.cjcm.es",
-          "mechanism": "mx"
-        }
-      ],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [],
-      "redirect": null,
-      "exp": null,
-      "all": "softfail"
-    }
+    "record": null,
+    "valid": false,
+    "error": "cjcm.es does not have a SPF TXT record"
   },
   "dmarc": {
     "record": null,

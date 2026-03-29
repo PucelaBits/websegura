@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "acatife.gobiernodecanarias.org",
-      "seti.gobiernodecanarias.org"
+      "seti.gobiernodecanarias.org",
+      "acatife.gobiernodecanarias.org"
     ],
     "warnings": []
   },
@@ -70,10 +70,12 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=reject; sp=reject; adkim=r; aspf=r; rua=mailto:dmarc-rua.tic@gobiernodecanarias.org; ruf=mailto:dmarc-ruf.tic@gobiernodecanarias.org; fo=1;",
+    "record": "v=DMARC1; p=reject; sp=reject; adkim=r; aspf=r; rua=mailto:dmarc-rua.tic@gobiernodecanarias.org,mailto:rua.dmarc@ccn-cert.cni.es; ruf=mailto:dmarc-ruf.tic@gobiernodecanarias.org; fo=1;",
     "valid": true,
     "location": "gobiernodecanarias.org",
-    "warnings": [],
+    "warnings": [
+      "ccn-cert.cni.es does not indicate that it accepts DMARC reports about gobiernodecanarias.org - Authorization record not found: gobiernodecanarias.org._report._dmarc.ccn-cert.cni.es IN TXT \"v=DMARC1\""
+    ],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -100,6 +102,11 @@
           {
             "scheme": "mailto",
             "address": "dmarc-rua.tic@gobiernodecanarias.org",
+            "size_limit": null
+          },
+          {
+            "scheme": "mailto",
+            "address": "rua.dmarc@ccn-cert.cni.es",
             "size_limit": null
           }
         ],

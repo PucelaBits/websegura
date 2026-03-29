@@ -4,11 +4,11 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns3.cdmon.net",
       "ns1.cdmon.net",
+      "ns3.cdmon.net",
+      "ns2.cdmon.net",
       "ns5.cdmondns-01.com",
-      "ns4.cdmondns-01.org",
-      "ns2.cdmon.net"
+      "ns4.cdmondns-01.org"
     ],
     "warnings": []
   },
@@ -18,14 +18,14 @@
         "preference": 10,
         "hostname": "fundaciones-org.mail.protection.outlook.com",
         "addresses": [
-          "2a01:111:f403:ca04::6",
-          "2a01:111:f403:ca04::8",
           "2a01:111:f403:ca04::c",
-          "2a01:111:f403:ca09::e",
-          "52.101.68.21",
-          "52.101.73.15",
+          "2a01:111:f403:ca09::20",
+          "2a01:111:f403:ca09::4",
+          "2a01:111:f403:ca09::6",
+          "52.101.68.10",
+          "52.101.68.16",
           "52.101.73.153",
-          "52.101.73.24"
+          "52.101.73.22"
         ]
       }
     ],

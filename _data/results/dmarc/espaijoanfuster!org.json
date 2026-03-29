@@ -184,12 +184,20 @@
               },
               {
                 "domain": "_spf4.webempresa.eu",
-                "record": "v=spf1 ip4:51.178.111.35/32 ~all",
+                "record": "v=spf1 ip4:51.178.111.35/32 ip4:176.31.197.54/32 ip4:164.132.249.238/32 ~all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
                     {
                       "value": "51.178.111.35/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "176.31.197.54/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "164.132.249.238/32",
                       "mechanism": "ip4"
                     }
                   ],

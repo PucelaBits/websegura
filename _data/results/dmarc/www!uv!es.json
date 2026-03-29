@@ -25,7 +25,7 @@
         "preference": 20,
         "hostname": "mxb-006a4e02.gslb.pphosted.com",
         "addresses": [
-          "143.55.148.243"
+          "143.55.146.78"
         ]
       }
     ],
@@ -115,7 +115,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; rua=mailto:dmarc.report@uv.es; ruf=mailto:dmarc.report@uv.es; sp=none; fo=1",
+    "record": "v=DMARC1; p=quarantine; rua=mailto:dmarc.report@uv.es; ruf=mailto:dmarc.report@uv.es; sp=none; fo=1",
     "valid": true,
     "location": "uv.es",
     "warnings": [],
@@ -125,7 +125,7 @@
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": true
       },
       "rua": {
