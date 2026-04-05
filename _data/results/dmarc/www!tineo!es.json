@@ -15,44 +15,46 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "192.178.220.26",
-          "2607:f8b0:4023:100d::1a"
+          "172.253.115.26",
+          "2607:f8b0:4004:c0b::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "142.251.96.26",
-          "2607:f8b0:4003:c4a::1a"
+          "108.177.123.26",
+          "2800:3f0:4003:c0f::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "192.178.209.27",
-          "2607:f8b0:4001:c70::1b"
+          "172.253.116.26",
+          "2a00:1450:400b:c02::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "172.253.149.27",
-          "2607:f8b0:4024:c0f::1a"
+          "192.178.223.27",
+          "2a00:1450:4009:c0f::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "142.250.96.27",
-          "2607:f8b0:4023:403::1b"
+          "173.194.76.26",
+          "2a00:1450:400c:c00::1a"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "2800:3f0:4003:c0f::1b does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
     "record": "v=spf1 mx redirect=_spf.google.com",
@@ -88,7 +90,7 @@
       "include": [],
       "redirect": {
         "domain": "_spf.google.com",
-        "record": "v=spf1 ip4:74.125.0.0/16 ip4:209.85.128.0/17 ip6:2001:4860:4864::/56 ip6:2404:6800:4864::/56 ip6:2607:f8b0:4864::/56 ip6:2800:3f0:4000::/36 ip6:2a00:1450:4000::/36 ip6:2c0f:fb50:4000::/36 ~all",
+        "record": "v=spf1 ip4:74.125.0.0/16 ip4:209.85.128.0/17 ip6:2001:4860:4864::/56 ip6:2404:6800:4864::/56 ip6:2607:f8b0:4864::/56 ip6:2800:3f0:4864::/56 ip6:2a00:1450:4000::/36 ip6:2c0f:fb50:4000::/36 ~all",
         "dns_lookups": 0,
         "parsed": {
           "pass": [
@@ -113,7 +115,7 @@
               "mechanism": "ip6"
             },
             {
-              "value": "2800:3f0:4000::/36",
+              "value": "2800:3f0:4864::/56",
               "mechanism": "ip6"
             },
             {

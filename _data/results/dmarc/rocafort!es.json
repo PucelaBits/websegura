@@ -4,10 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1093.ui-dns.biz",
-      "ns1093.ui-dns.com",
-      "ns1093.ui-dns.org",
-      "ns1093.ui-dns.de"
+      "ns1.dnsxperta.com",
+      "ns2.dnsxperta.com"
     ],
     "warnings": []
   },
@@ -211,6 +209,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.rocafort.es\n\nv=spf1 include:_spf.perfora.net include:_spf-eu.ionos.com include:_spf.kundenserver.de include:spf.protection.outlook.com ~all\n\nMS=ms95753927\n\nMS=462CE3CCF4D6E0FDB3B7C5B4E5B471F6BFC14A39\n\nvaerifydomain MS=3886707\n\nasv=8e28d47c41b4c5504188a08c1e8e47a5"
   }
 }

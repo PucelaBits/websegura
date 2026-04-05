@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "ns2.dnsxperta.com",
-      "ns1.dnsxperta.com",
-      "ns3.dnsxperta.com"
+      "ns3.dnsxperta.com",
+      "ns1.dnsxperta.com"
     ],
     "warnings": []
   },
@@ -48,7 +48,12 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The reverse DNS of 45.15.21.21 is epigenomics.columbia.edu, but the A/AAAA DNS records for epigenomics.columbia.edu do not resolve to 45.15.21.21",
+      "The reverse DNS of 80.97.45.116 is epigenomics.columbia.edu, but the A/AAAA DNS records for epigenomics.columbia.edu do not resolve to 80.97.45.116",
+      "The reverse DNS of 45.15.21.21 is epigenomics.columbia.edu, but the A/AAAA DNS records for epigenomics.columbia.edu do not resolve to 45.15.21.21",
+      "The reverse DNS of 80.97.45.116 is epigenomics.columbia.edu, but the A/AAAA DNS records for epigenomics.columbia.edu do not resolve to 80.97.45.116"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:_spf.srv.cat ~all",
