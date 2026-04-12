@@ -30,27 +30,12 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 a mx a:correo.tuineje.es ip4:188.165.207.97 include:spf.protection.outlook.com ~all",
+    "record": "v=spf1 include:spf.protection.outlook.com -all",
     "valid": true,
-    "dns_lookups": 4,
-    "warnings": [
-      "The domain correo.tuineje.es does not exist"
-    ],
+    "dns_lookups": 1,
+    "warnings": [],
     "parsed": {
-      "pass": [
-        {
-          "value": "82.194.68.108",
-          "mechanism": "a"
-        },
-        {
-          "value": "tuineje-es.mail.protection.outlook.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "188.165.207.97",
-          "mechanism": "ip4"
-        }
-      ],
+      "pass": [],
       "neutral": [],
       "softfail": [],
       "fail": [],
@@ -119,7 +104,7 @@
       ],
       "redirect": null,
       "exp": null,
-      "all": "softfail"
+      "all": "fail"
     }
   },
   "dmarc": {

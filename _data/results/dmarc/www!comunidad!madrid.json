@@ -5,13 +5,13 @@
   "ns": {
     "hostnames": [
       "a11-64.akam.net",
-      "a20-66.akam.net",
+      "a12-64.akam.net",
       "a24-64.akam.net",
       "a7-65.akam.net",
-      "ns2.comunidad.madrid",
       "ns1.comunidad.madrid",
       "a1-232.akam.net",
-      "a12-64.akam.net"
+      "a20-66.akam.net",
+      "ns2.comunidad.madrid"
     ],
     "warnings": []
   },
@@ -47,7 +47,7 @@
     ]
   },
   "spf": {
-    "record": "v=spf1 exists:%{i}.spf.hc1855-42.eu.iphmx.com ip4:195.77.128.128/25 ip4:195.77.128.55/32 ip4:194.165.202.24/32 ip4:23.90.123.197/32 include:spf.protection.outlook.com ~all",
+    "record": "v=spf1 exists:%{i}.spf.hc1855-42.eu.iphmx.com ip4:195.77.128.128/25 ip4:195.77.128.55/32 ip4:194.165.202.24/32 ip4:23.90.123.197/32 include:spf.protection.outlook.com -all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
@@ -142,7 +142,7 @@
       ],
       "redirect": null,
       "exp": null,
-      "all": "softfail"
+      "all": "fail"
     }
   },
   "dmarc": {

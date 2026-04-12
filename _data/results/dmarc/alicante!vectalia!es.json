@@ -18,7 +18,7 @@
     "error": "alicante.vectalia.es does not have a SPF TXT record"
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none;",
+    "record": "v=DMARC1; p=quarantine",
     "valid": true,
     "location": "vectalia.es",
     "warnings": [
@@ -30,7 +30,7 @@
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": true
       },
       "adkim": {
@@ -62,7 +62,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": false
       }
     }

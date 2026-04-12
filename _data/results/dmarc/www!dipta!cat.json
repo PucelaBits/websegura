@@ -10,23 +10,8 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mx1.dipta.cat",
-        "addresses": [
-          "195.76.233.59"
-        ]
-      },
-      {
-        "preference": 10,
-        "hostname": "mx1.tinet.org",
-        "addresses": [
-          "195.77.216.146"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 ip4:195.77.216.146 ip4:195.76.233.59 a mx ?all",
