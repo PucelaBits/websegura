@@ -4,12 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.intracampus.unileon.es",
-      "ns1.intracampus.unileon.es",
       "ns1.unileon.es",
       "ns2.unileon.es",
-      "chico.rediris.es",
-      "sun.rediris.es"
+      "sunrelay.rediris.es",
+      "chicorelay.rediris.es"
     ],
     "warnings": []
   },
@@ -19,46 +17,44 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.251.111.27",
-          "2607:f8b0:4004:c21::1b"
+          "173.194.65.27",
+          "2607:f8b0:4023:1c03::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "108.177.123.27",
-          "2800:3f0:4003:c0f::1b"
+          "192.178.164.27",
+          "2607:f8b0:4023:2009::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "172.253.116.27"
+          "192.178.128.27",
+          "2607:f8b0:4023:2801::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "aspmx2.googlemail.com",
         "addresses": [
-          "108.177.123.27",
-          "2800:3f0:4003:c0f::1b"
+          "192.178.164.27",
+          "2607:f8b0:4023:2009::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "aspmx3.googlemail.com",
         "addresses": [
-          "172.253.116.26",
-          "2a00:1450:400b:c02::1b"
+          "192.178.128.27",
+          "2607:f8b0:4023:2801::1a"
         ]
       }
     ],
-    "warnings": [
-      "2800:3f0:4003:c0f::1b does not have any reverse DNS (PTR) records",
-      "2800:3f0:4003:c0f::1b does not have any reverse DNS (PTR) records"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 a:diana.unileon.es a:mailx1.unileon.es a:mailx2.unileon.es a:mailx.unileon.es a:mailx-dmi.unileon.es include:_spf.google.com include:spf.protection.outlook.com ~all",

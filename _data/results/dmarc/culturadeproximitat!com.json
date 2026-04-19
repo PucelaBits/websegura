@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns2.dnsxperta.com",
       "ns3.dnsxperta.com",
-      "ns1.dnsxperta.com",
-      "ns2.dnsxperta.com"
+      "ns1.dnsxperta.com"
     ],
     "warnings": []
   },
@@ -51,8 +51,10 @@
     "warnings": [
       "The reverse DNS of 45.15.21.21 is epigenomics.columbia.edu, but the A/AAAA DNS records for epigenomics.columbia.edu do not resolve to 45.15.21.21",
       "The reverse DNS of 80.97.45.116 is epigenomics.columbia.edu, but the A/AAAA DNS records for epigenomics.columbia.edu do not resolve to 80.97.45.116",
+      "The reverse DNS of 89.185.250.138 is 89-185-250-134.static.masterinter.net, but the A/AAAA DNS records for 89-185-250-134.static.masterinter.net do not resolve to 89.185.250.138",
       "The reverse DNS of 45.15.21.21 is epigenomics.columbia.edu, but the A/AAAA DNS records for epigenomics.columbia.edu do not resolve to 45.15.21.21",
-      "The reverse DNS of 80.97.45.116 is epigenomics.columbia.edu, but the A/AAAA DNS records for epigenomics.columbia.edu do not resolve to 80.97.45.116"
+      "The reverse DNS of 80.97.45.116 is epigenomics.columbia.edu, but the A/AAAA DNS records for epigenomics.columbia.edu do not resolve to 80.97.45.116",
+      "The reverse DNS of 89.185.250.138 is 89-185-250-134.static.masterinter.net, but the A/AAAA DNS records for 89-185-250-134.static.masterinter.net do not resolve to 89.185.250.138"
     ]
   },
   "spf": {

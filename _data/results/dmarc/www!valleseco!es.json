@@ -5,9 +5,9 @@
   "ns": {
     "hostnames": [
       "ns.gestiondecuenta.com",
+      "ns4.gestiondecuenta.com",
       "ns2.gestiondecuenta.com",
-      "ns3.gestiondecuenta.com",
-      "ns4.gestiondecuenta.com"
+      "ns3.gestiondecuenta.com"
     ],
     "warnings": []
   },
@@ -17,16 +17,16 @@
         "preference": 10,
         "hostname": "mx-01-eu-central-1.prod.hydra.sophos.com",
         "addresses": [
-          "18.194.186.139",
-          "52.28.39.216"
+          "18.196.185.102",
+          "3.72.183.147"
         ]
       },
       {
         "preference": 20,
         "hostname": "mx-02-eu-central-1.prod.hydra.sophos.com",
         "addresses": [
-          "18.194.186.139",
-          "52.28.39.216"
+          "18.196.185.102",
+          "3.72.183.147"
         ]
       }
     ],
@@ -149,9 +149,53 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.valleseco.es\n\nVALOR: v=DMARC1; p=none; pct=100"
+    "record": "v=DMARC1; p=none; pct=100",
+    "valid": true,
+    "location": "valleseco.es",
+    "warnings": [
+      "rua tag (destination for aggregate reports) not found"
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "pct": {
+        "value": 100,
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }

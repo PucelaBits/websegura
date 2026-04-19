@@ -10,8 +10,17 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query 33.173.73.185.in-addr.arpa. IN PTR: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 0,
+        "hostname": "mail1.consellinsulardeformentera.cat",
+        "addresses": [
+          "185.73.173.33",
+          "185.73.173.41"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:5.135.40.102 +a +mx ip4:185.73.173.32/28 -all",
