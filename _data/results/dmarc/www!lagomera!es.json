@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.interec.com",
-      "ns2.interec.com",
       "ns3.interec.com",
-      "ns.interec.com"
+      "ns.interec.com",
+      "ns2.interec.com",
+      "ns1.interec.com"
     ],
     "warnings": []
   },
@@ -15,54 +15,27 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "aspmx.l.google.com",
+        "hostname": "mail3.lagomera.es",
         "addresses": [
-          "142.250.142.26",
-          "2607:f8b0:4023:1c07::1b"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "alt1.aspmx.l.google.com",
-        "addresses": [
-          "192.178.164.26",
-          "2607:f8b0:4023:2009::1a"
-        ]
-      },
-      {
-        "preference": 30,
-        "hostname": "alt3.aspmx.l.google.com",
-        "addresses": [
-          "172.253.145.26",
-          "2607:f8b0:4023:3003::1a"
-        ]
-      },
-      {
-        "preference": 40,
-        "hostname": "alt4.aspmx.l.google.com",
-        "addresses": [
-          "172.253.135.26",
-          "2607:f8b0:4023:1015::1a"
-        ]
-      },
-      {
-        "preference": 50,
-        "hostname": "alt2.aspmx.l.google.com",
-        "addresses": [
-          "192.178.128.26",
-          "2607:f8b0:4023:2801::1b"
+          "185.73.173.33",
+          "185.73.173.41"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:_spf.google.com -all",
+    "record": "v=spf1 ip4:185.73.173.32/28 include:_spf.google.com -all",
     "valid": true,
     "dns_lookups": 1,
     "warnings": [],
     "parsed": {
-      "pass": [],
+      "pass": [
+        {
+          "value": "185.73.173.32/28",
+          "mechanism": "ip4"
+        }
+      ],
       "neutral": [],
       "softfail": [],
       "fail": [],

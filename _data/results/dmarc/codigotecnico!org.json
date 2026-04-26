@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "sabina.cti.csic.es",
-      "chico.rediris.es",
       "sun.rediris.es",
-      "olmo.csic.es"
+      "olmo.csic.es",
+      "chico.rediris.es",
+      "sabina.cti.csic.es"
     ],
     "warnings": []
   },
@@ -26,25 +26,42 @@
     ]
   },
   "spf": {
-    "record": "v=spf1 ip4:161.111.10.57 ip4:161.111.10.60 -all",
+    "record": "v=spf1 include:_spf.csic.es -all",
     "valid": true,
-    "dns_lookups": 0,
+    "dns_lookups": 1,
     "warnings": [],
     "parsed": {
-      "pass": [
-        {
-          "value": "161.111.10.57",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "161.111.10.60",
-          "mechanism": "ip4"
-        }
-      ],
+      "pass": [],
       "neutral": [],
       "softfail": [],
       "fail": [],
-      "include": [],
+      "include": [
+        {
+          "domain": "_spf.csic.es",
+          "record": "v=spf1 ip4:161.111.10.57 ip4:161.111.10.60 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "161.111.10.57",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "161.111.10.60",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        }
+      ],
       "redirect": null,
       "exp": null,
       "all": "fail"

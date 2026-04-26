@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "ns06.ns-cloud4b.net",
-      "ns07.ns-cloud4b.org",
-      "ns08.ns-cloud4b.com"
+      "ns08.ns-cloud4b.com",
+      "ns07.ns-cloud4b.org"
     ],
     "warnings": []
   },
@@ -21,7 +21,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 185.73.173.41 is mail3.correo.proteccion.cocseell.redsara.es, but the A/AAAA DNS records for mail3.correo.proteccion.cocseell.redsara.es do not resolve to 185.73.173.41"
+    ]
   },
   "spf": {
     "record": "v=spf1 a mx a:espublico.com ip4:185.79.128.238 ip4:213.4.82.201 ip4:185.73.173.32/28 include:_spf.google.com -all",

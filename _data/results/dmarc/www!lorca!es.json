@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.leader-network.com",
-      "dns.leader-network.com"
+      "dns.leader-network.com",
+      "dns1.leader-network.com"
     ],
     "warnings": []
   },
@@ -62,61 +62,9 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1;p=none;rua=mailto:dmarc-informes@lorca.es",
-    "valid": true,
+    "record": "v=DMARC1; p=quarantine; pct:100; rua=mailto:dmarc-informes@lorca.es",
+    "valid": false,
     "location": "lorca.es",
-    "warnings": [],
-    "tags": {
-      "v": {
-        "value": "DMARC1",
-        "explicit": true
-      },
-      "p": {
-        "value": "none",
-        "explicit": true
-      },
-      "rua": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "dmarc-informes@lorca.es",
-            "size_limit": null
-          }
-        ],
-        "explicit": true
-      },
-      "adkim": {
-        "value": "r",
-        "explicit": false
-      },
-      "aspf": {
-        "value": "r",
-        "explicit": false
-      },
-      "fo": {
-        "value": [
-          "0"
-        ],
-        "explicit": false
-      },
-      "pct": {
-        "value": 100,
-        "explicit": false
-      },
-      "rf": {
-        "value": [
-          "afrf"
-        ],
-        "explicit": false
-      },
-      "ri": {
-        "value": 86400,
-        "explicit": false
-      },
-      "sp": {
-        "value": "none",
-        "explicit": false
-      }
-    }
+    "error": "Error: Expected tag_value at position 24 in: v=DMARC1; p=quarantine; pct:100; rua=mailto:dmarc-informes@lorca.es"
   }
 }

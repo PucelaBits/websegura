@@ -22,7 +22,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 +mx +include:spf.protection.outlook.com -all",
+    "record": "v=spf1 mx ip4:195.235.57.7 include:spf.protection.outlook.com -all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
@@ -31,6 +31,10 @@
         {
           "value": "smtp01.gijon.es",
           "mechanism": "mx"
+        },
+        {
+          "value": "195.235.57.7",
+          "mechanism": "ip4"
         }
       ],
       "neutral": [],

@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns3.almazena.com",
       "ns1.almazena.com",
-      "ns2.almazena.com"
+      "ns2.almazena.com",
+      "ns3.almazena.com"
     ],
     "warnings": []
   },
@@ -20,10 +20,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 185.177.154.188 is dns154188.phdns15.es, but the A/AAAA DNS records for dns154188.phdns15.es do not resolve to 185.177.154.188"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 a mx include:almazena.com include:spf.profesionalhosting.com -all",

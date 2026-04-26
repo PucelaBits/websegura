@@ -4,11 +4,11 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "zeta.cibelesdmz.local",
-      "zeta.cnmc.es",
       "psi.cibelesdmz.local",
-      "psi.cnmc.es",
-      "ns1.es.colt.net"
+      "zeta.cibelesdmz.local",
+      "ns1.es.colt.net",
+      "zeta.cnmc.es",
+      "psi.cnmc.es"
     ],
     "warnings": []
   },
@@ -18,7 +18,7 @@
         "preference": 0,
         "hostname": "mxa-007a3601.gslb.pphosted.com",
         "addresses": [
-          "66.159.235.239"
+          "66.159.246.105"
         ]
       },
       {
@@ -32,9 +32,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:79.170.8.205 include:spf.protection.outlook.com include:spf-007a3601.pphosted.com ~all",
+    "record": "v=spf1 ip4:79.170.8.205 include:spf.protection.outlook.com include:spf-007a3601.pphosted.com include:servers.mcsv.net ~all",
     "valid": true,
-    "dns_lookups": 2,
+    "dns_lookups": 3,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -130,6 +130,35 @@
             "redirect": null,
             "exp": null,
             "all": "neutral"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "servers.mcsv.net",
+          "record": "v=spf1 ip4:205.201.128.0/20 ip4:198.2.128.0/18 ip4:148.105.0.0/16 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "205.201.128.0/20",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "198.2.128.0/18",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "148.105.0.0/16",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
           },
           "warnings": []
         }

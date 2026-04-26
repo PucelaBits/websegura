@@ -209,6 +209,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.rocafort.es\n\nzone-ownership-verification-cf441710662f701576b97ebe994b35dd64595a94a2a73fb4c96648ac003c01e5\n\nMS=462CE3CCF4D6E0FDB3B7C5B4E5B471F6BFC14A39\n\nMS=ms95753927\n\nv=spf1 include:_spf.perfora.net include:_spf-eu.ionos.com include:_spf.kundenserver.de include:spf.protection.outlook.com ~all\n\nvaerifydomain MS=3886707\n\nasv=8e28d47c41b4c5504188a08c1e8e47a5"
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.rocafort.es\n\nMS=462CE3CCF4D6E0FDB3B7C5B4E5B471F6BFC14A39\n\nzone-ownership-verification-cf441710662f701576b97ebe994b35dd64595a94a2a73fb4c96648ac003c01e5\n\nMS=ms95753927\n\nv=spf1 include:_spf.perfora.net include:_spf-eu.ionos.com include:_spf.kundenserver.de include:spf.protection.outlook.com ~all\n\nasv=8e28d47c41b4c5504188a08c1e8e47a5\n\nvaerifydomain MS=3886707"
   }
 }

@@ -15,15 +15,15 @@
         "preference": 1,
         "hostname": "smtp.google.com",
         "addresses": [
-          "142.250.142.26",
-          "142.250.142.27",
-          "172.217.78.26",
-          "173.194.65.26",
-          "173.194.65.27",
-          "2607:f8b0:4023:1c01::1a",
-          "2607:f8b0:4023:1c01::1b",
-          "2607:f8b0:4023:1c03::1a",
-          "2607:f8b0:4023:1c03::1b"
+          "142.250.115.27",
+          "142.250.26.26",
+          "142.250.26.27",
+          "172.253.135.26",
+          "172.253.135.27",
+          "2607:f8b0:4023:1002::1a",
+          "2607:f8b0:4023:1002::1b",
+          "2607:f8b0:4023:1004::1a",
+          "2607:f8b0:4023:1004::1b"
         ]
       }
     ],
@@ -138,11 +138,10 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1;p=quarantine;sp=quarantine;rua=mailto:dmarc@silme.es;ruf=mailto:dmarc@silme.es",
+    "record": "v=DMARC1; p=quarantine; rua=mailto:dmarc@silme.es, mailto:rua.dmarc@ccn-cert.cni.es;",
     "valid": true,
     "location": "cime.es",
     "warnings": [
-      "silme.es does not indicate that it accepts DMARC reports about cime.es - Authorization record not found: cime.es._report._dmarc.silme.es IN TXT \"v=DMARC1\"",
       "silme.es does not indicate that it accepts DMARC reports about cime.es - Authorization record not found: cime.es._report._dmarc.silme.es IN TXT \"v=DMARC1\""
     ],
     "tags": {
@@ -154,16 +153,8 @@
         "value": "quarantine",
         "explicit": true
       },
-      "sp": {
-        "value": "quarantine",
-        "explicit": true
-      },
       "rua": {
-        "value": "mailto:dmarc@silme.es",
-        "explicit": true
-      },
-      "ruf": {
-        "value": "mailto:dmarc@silme.es",
+        "value": "mailto:dmarc@silme.es, mailto:rua.dmarc@ccn-cert.cni.es",
         "explicit": true
       },
       "adkim": {
@@ -192,6 +183,10 @@
       },
       "ri": {
         "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "quarantine",
         "explicit": false
       }
     }
