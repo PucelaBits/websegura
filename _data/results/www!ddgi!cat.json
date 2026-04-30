@@ -1,11 +1,11 @@
 {
-  "id": 93824567,
+  "id": 93956912,
   "algorithm_version": 5,
-  "scanned_at": "2026-04-29T02:11:50.538Z",
+  "scanned_at": "2026-04-30T02:12:12.000Z",
   "error": null,
-  "grade": "D",
+  "grade": "B",
   "response_headers": {
-    "date": "Wed, 29 Apr 2026 02:11:50 GMT",
+    "date": "Thu, 30 Apr 2026 02:12:12 GMT",
     "etag": "\"f5-5d59e557805ab-gzip\"",
     "vary": "Accept-Encoding",
     "server": "Apache",
@@ -13,11 +13,18 @@
     "content-type": "text/html",
     "accept-ranges": "bytes",
     "last-modified": "Sat, 15 Jan 2022 12:48:19 GMT",
-    "content-length": "142"
+    "content-length": "142",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "x-frame-options": "SAMEORIGIN",
+    "permissions-policy": "geolocation=(), microphone=(), camera=()",
+    "x-content-type-options": "nosniff",
+    "strict-transport-security": "max-age=31536000; includeSubDomains",
+    "cross-origin-opener-policy": "same-origin",
+    "cross-origin-embedder-policy": "unsafe-none"
   },
-  "score": 30,
+  "score": 75,
   "status_code": 200,
-  "tests_failed": 4,
-  "tests_passed": 6,
+  "tests_failed": 1,
+  "tests_passed": 9,
   "tests_quantity": 10
 }
