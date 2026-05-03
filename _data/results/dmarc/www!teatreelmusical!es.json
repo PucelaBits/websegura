@@ -3,17 +3,22 @@
   "base_domain": "teatreelmusical.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "The domain teatreelmusical.es does not exist"
+    "hostnames": [
+      "ns1.nicsell.com",
+      "ns2.nicsell.com"
+    ],
+    "warnings": []
   },
   "mx": {
     "hosts": [],
-    "error": "The domain teatreelmusical.es does not exist"
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
   },
   "spf": {
     "record": null,
     "valid": false,
-    "error": "The domain teatreelmusical.es does not exist"
+    "error": "teatreelmusical.es does not have a SPF TXT record"
   },
   "dmarc": {
     "record": null,

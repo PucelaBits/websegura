@@ -33,7 +33,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:_spf.globalomnium.com include:_spf.google.com include:spf.protection.outlook.com exists:%{i}.spf.hc782-58.eu.iphmx.com ~all",
+    "record": "v=spf1 include:_spf.globalomnium.com include:_spf.google.com include:spf.protection.outlook.com exists:%{i}.spf.hc782-58.eu.iphmx.com -all",
     "valid": true,
     "dns_lookups": 6,
     "warnings": [],
@@ -294,7 +294,7 @@
       ],
       "redirect": null,
       "exp": null,
-      "all": "softfail"
+      "all": "fail"
     }
   },
   "dmarc": {

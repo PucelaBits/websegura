@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.nominalia.com",
-      "dns1.nominalia.com"
+      "dns1.nominalia.com",
+      "dns2.nominalia.com"
     ],
     "warnings": []
   },
@@ -294,10 +294,12 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; rua=mailto:comunicados@transparenciacanarias.org",
+    "record": "v=DMARC1; p=quarantine",
     "valid": true,
     "location": "transparenciacanarias.org",
-    "warnings": [],
+    "warnings": [
+      "rua tag (destination for aggregate reports) not found"
+    ],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -305,16 +307,6 @@
       },
       "p": {
         "value": "quarantine",
-        "explicit": true
-      },
-      "rua": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "comunicados@transparenciacanarias.org",
-            "size_limit": null
-          }
-        ],
         "explicit": true
       },
       "adkim": {

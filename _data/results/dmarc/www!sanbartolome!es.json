@@ -15,30 +15,22 @@
         "preference": 1,
         "hostname": "mail.sanbartolome.es",
         "addresses": [
-          "51.91.11.136"
+          "49.12.146.169"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 +a +mx +ip4:51.91.11.136 ~all",
+    "record": "v=spf1 mx ~all",
     "valid": true,
-    "dns_lookups": 2,
+    "dns_lookups": 1,
     "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "51.91.11.136",
-          "mechanism": "a"
-        },
-        {
           "value": "mail.sanbartolome.es",
           "mechanism": "mx"
-        },
-        {
-          "value": "51.91.11.136",
-          "mechanism": "ip4"
         }
       ],
       "neutral": [],
@@ -51,12 +43,10 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none",
+    "record": "v=DMARC1; p=none; rua=mailto:postmaster@sanbartolome.es; ruf=mailto:postmaster@sanbartolome.es; fo=1; adkim=r; aspf=r",
     "valid": true,
     "location": "sanbartolome.es",
-    "warnings": [
-      "rua tag (destination for aggregate reports) not found"
-    ],
+    "warnings": [],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -66,19 +56,39 @@
         "value": "none",
         "explicit": true
       },
-      "adkim": {
-        "value": "r",
-        "explicit": false
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "postmaster@sanbartolome.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
       },
-      "aspf": {
-        "value": "r",
-        "explicit": false
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "postmaster@sanbartolome.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
       },
       "fo": {
         "value": [
-          "0"
+          "1"
         ],
-        "explicit": false
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": true
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": true
       },
       "pct": {
         "value": 100,

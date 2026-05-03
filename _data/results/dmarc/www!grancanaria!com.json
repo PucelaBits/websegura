@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns13.a1.impervasecuredns.net",
-      "ns8.a0.impervasecuredns.net"
+      "ns8.a0.impervasecuredns.net",
+      "ns13.a1.impervasecuredns.net"
     ],
     "warnings": []
   },
@@ -22,93 +22,26 @@
         "preference": 10,
         "hostname": "mxb-00a46c01.gslb.pphosted.com",
         "addresses": [
-          "66.159.244.181"
+          "66.159.243.36"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:_spf_eucentral1.prod.hydra.sophos.com include:spf-00a46c01.pphosted.com ~all",
+    "record": "v=spf1",
     "valid": true,
-    "dns_lookups": 2,
+    "dns_lookups": 0,
     "warnings": [],
     "parsed": {
       "pass": [],
       "neutral": [],
       "softfail": [],
       "fail": [],
-      "include": [
-        {
-          "domain": "_spf_eucentral1.prod.hydra.sophos.com",
-          "record": "v=spf1 ip4:94.140.18.0/24 ip4:35.159.27.8/30 ip4:35.159.27.28/30 ip4:35.159.27.32/30 ip4:35.159.27.48/29 ip4:35.159.27.160/28 ~all",
-          "dns_lookups": 0,
-          "parsed": {
-            "pass": [
-              {
-                "value": "94.140.18.0/24",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "35.159.27.8/30",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "35.159.27.28/30",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "35.159.27.32/30",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "35.159.27.48/29",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "35.159.27.160/28",
-                "mechanism": "ip4"
-              }
-            ],
-            "neutral": [],
-            "softfail": [],
-            "fail": [],
-            "include": [],
-            "redirect": null,
-            "exp": null,
-            "all": "softfail"
-          },
-          "warnings": []
-        },
-        {
-          "domain": "spf-00a46c01.pphosted.com",
-          "record": "v=spf1 ip4:66.159.244.181 ip4:66.159.243.36",
-          "dns_lookups": 0,
-          "parsed": {
-            "pass": [
-              {
-                "value": "66.159.244.181",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "66.159.243.36",
-                "mechanism": "ip4"
-              }
-            ],
-            "neutral": [],
-            "softfail": [],
-            "fail": [],
-            "include": [],
-            "redirect": null,
-            "exp": null,
-            "all": "neutral"
-          },
-          "warnings": []
-        }
-      ],
+      "include": [],
       "redirect": null,
       "exp": null,
-      "all": "softfail"
+      "all": "neutral"
     }
   },
   "dmarc": {

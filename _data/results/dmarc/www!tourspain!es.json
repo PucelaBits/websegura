@@ -10,8 +10,23 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "All nameservers failed to answer the query tourspain.es. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mailin.serviciosmin.gob.es",
+        "addresses": [
+          "192.187.16.24"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mailin1.serviciosmin.gob.es",
+        "addresses": [
+          "192.187.16.26"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.serviciosmin.gob.es ip4:54.240.50.203 include:marketing.dynamics.com include:spf.protection.outlook.com -all",

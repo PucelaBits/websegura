@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns5.grupocesce.es",
-      "ns4.grupocesce.es"
+      "ns4.grupocesce.es",
+      "ns5.grupocesce.es"
     ],
     "warnings": []
   },
@@ -15,54 +15,54 @@
         "preference": 1,
         "hostname": "mxa-00a71501.gslb.pphosted.com",
         "addresses": [
-          "66.159.243.124"
+          "66.159.245.20"
         ]
       },
       {
         "preference": 1,
         "hostname": "mxb-00a71501.gslb.pphosted.com",
         "addresses": [
-          "66.159.245.20"
+          "66.159.243.124"
         ]
       },
       {
         "preference": 100,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "142.251.96.27",
-          "2607:f8b0:4003:c4a::1b"
+          "192.178.164.26",
+          "2607:f8b0:4023:2009::1b"
         ]
       },
       {
         "preference": 100,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "172.253.149.27",
-          "2607:f8b0:4024:c0f::1a"
+          "192.178.128.27",
+          "2607:f8b0:4023:2801::1a"
         ]
       },
       {
         "preference": 100,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "172.217.72.26",
-          "2607:f8b0:4023:1002::1a"
+          "173.194.65.27",
+          "2607:f8b0:4023:1c03::1b"
         ]
       },
       {
         "preference": 100,
         "hostname": "aspmx2.googlemail.com",
         "addresses": [
-          "142.251.96.26",
-          "2607:f8b0:4003:c4a::1b"
+          "192.178.164.27",
+          "2607:f8b0:4023:2009::1a"
         ]
       },
       {
         "preference": 100,
         "hostname": "aspmx3.googlemail.com",
         "addresses": [
-          "172.253.149.26",
-          "2607:f8b0:4024:c0f::1a"
+          "192.178.128.26",
+          "2607:f8b0:4023:2801::1b"
         ]
       }
     ],
@@ -81,7 +81,7 @@
       "include": [
         {
           "domain": "spf1.cesce.es",
-          "record": "v=spf1 ip4:185.20.116.0/22 ip4:207.126.144.0/20 ip4:194.140.3.48/28 include:spf.protection.outlook.com -all",
+          "record": "v=spf1 ip4:185.20.116.0/22 ip4:207.126.144.0/20 ip4:194.140.3.48/28 ip4:195.50.76.198 include:spf.protection.outlook.com -all",
           "dns_lookups": 1,
           "parsed": {
             "pass": [
@@ -95,6 +95,10 @@
               },
               {
                 "value": "194.140.3.48/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "195.50.76.198",
                 "mechanism": "ip4"
               }
             ],
@@ -309,7 +313,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; rua=mailto:ipm29za@ar.glockapps.com,mailto:dmarc-reports@cesce.es; ruf=mailto:ipm29za@fr.glockapps.com; adkim=r; aspf=r; fo=1;",
+    "record": "v=DMARC1; p=quarantine; rua=mailto:dmarc-reports@cesce.es; ruf=mailto:dmarc-reports@cesce.es; adkim=r; aspf=r; fo=1;",
     "valid": true,
     "location": "cesce.es",
     "warnings": [],
@@ -326,11 +330,6 @@
         "value": [
           {
             "scheme": "mailto",
-            "address": "ipm29za@ar.glockapps.com",
-            "size_limit": null
-          },
-          {
-            "scheme": "mailto",
             "address": "dmarc-reports@cesce.es",
             "size_limit": null
           }
@@ -341,7 +340,7 @@
         "value": [
           {
             "scheme": "mailto",
-            "address": "ipm29za@fr.glockapps.com",
+            "address": "dmarc-reports@cesce.es",
             "size_limit": null
           }
         ],

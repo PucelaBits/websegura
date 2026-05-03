@@ -3,7 +3,12 @@
   "base_domain": "toledo.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
+    "hostnames": [
+      "ns2.binariaweb.net",
+      "ns3.binariaweb.net",
+      "ns1.binariaweb.net",
+      "ns4.binariaweb.net"
+    ],
     "warnings": []
   },
   "mx": {

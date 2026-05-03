@@ -22,16 +22,12 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx a:smtp.mites.gob.es include:spf.protection.outlook.com ip4:192.148.211.63 ~all",
+    "record": "v=spf1 a:smtp.mites.gob.es include:spf.protection.outlook.com ip4:192.148.211.63 a:spf.correo.gob.es -all",
     "valid": true,
     "dns_lookups": 3,
     "warnings": [],
     "parsed": {
       "pass": [
-        {
-          "value": "smtp.mites.gob.es",
-          "mechanism": "mx"
-        },
         {
           "value": "192.148.211.63",
           "mechanism": "a"
@@ -39,6 +35,50 @@
         {
           "value": "192.148.211.63",
           "mechanism": "ip4"
+        },
+        {
+          "value": "185.73.172.122",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.172.123",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.172.124",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.172.125",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.172.147",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.173.17",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.173.18",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.173.19",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.173.20",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.173.21",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.73.173.22",
+          "mechanism": "a"
         }
       ],
       "neutral": [],
@@ -109,7 +149,7 @@
       ],
       "redirect": null,
       "exp": null,
-      "all": "softfail"
+      "all": "fail"
     }
   },
   "dmarc": {

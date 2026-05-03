@@ -15,20 +15,23 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "smtp1.ccma.cat",
+        "hostname": "smtp1.3cat.cat",
         "addresses": [
-          "193.104.51.122"
+          "193.104.51.124"
         ]
       },
       {
         "preference": 10,
-        "hostname": "smtp2.ccma.cat",
+        "hostname": "smtp2.3cat.cat",
         "addresses": [
-          "193.104.51.123"
+          "193.104.51.125"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "193.104.51.124 does not have any reverse DNS (PTR) records",
+      "193.104.51.125 does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
     "record": "v=spf1 mx a include:spf1.ccma.cat include:_spf.salesforce.com include:spf.protection.outlook.com -all",
@@ -38,11 +41,11 @@
     "parsed": {
       "pass": [
         {
-          "value": "smtp1.ccma.cat",
+          "value": "smtp1.3cat.cat",
           "mechanism": "mx"
         },
         {
-          "value": "smtp2.ccma.cat",
+          "value": "smtp2.3cat.cat",
           "mechanism": "mx"
         },
         {
