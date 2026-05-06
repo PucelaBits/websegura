@@ -1,25 +1,24 @@
 {
-  "id": 94516363,
+  "id": 94650262,
   "algorithm_version": 5,
-  "scanned_at": "2026-05-05T02:07:30.644Z",
+  "scanned_at": "2026-05-06T02:07:19.350Z",
   "error": null,
   "grade": "F",
   "response_headers": {
-    "p3p": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
-    "date": "Tue, 05 May 2026 02:07:31 GMT",
+    "date": "Wed, 06 May 2026 02:07:20 GMT",
+    "etag": "\"dc-4b50065991000-gzip\"",
     "vary": "Accept-Encoding,User-Agent",
-    "pragma": "no-cache",
     "server": "Apache",
-    "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
     "upgrade": "h2,h2c",
     "connection": "Upgrade, close",
-    "content-type": "text/html; charset=UTF-8",
-    "cache-control": "private",
-    "transfer-encoding": "chunked"
+    "content-type": "text/html",
+    "accept-ranges": "bytes",
+    "last-modified": "Mon, 26 Dec 2011 15:26:56 GMT",
+    "content-length": "169"
   },
-  "score": 0,
+  "score": 10,
   "status_code": 200,
-  "tests_failed": 7,
-  "tests_passed": 3,
+  "tests_failed": 5,
+  "tests_passed": 5,
   "tests_quantity": 10
 }
