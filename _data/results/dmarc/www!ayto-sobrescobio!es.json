@@ -59,7 +59,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none;",
+    "record": "v=DMARC1;p=quarantine;sp=none;adkim=r;aspf=r;pct=100;fo=0;rf=afrf;ri=86400",
     "valid": true,
     "location": "ayto-sobrescobio.es",
     "warnings": [
@@ -71,40 +71,40 @@
         "explicit": true
       },
       "p": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "sp": {
         "value": "none",
         "explicit": true
       },
       "adkim": {
         "value": "r",
-        "explicit": false
+        "explicit": true
       },
       "aspf": {
         "value": "r",
-        "explicit": false
+        "explicit": true
+      },
+      "pct": {
+        "value": 100,
+        "explicit": true
       },
       "fo": {
         "value": [
           "0"
         ],
-        "explicit": false
-      },
-      "pct": {
-        "value": 100,
-        "explicit": false
+        "explicit": true
       },
       "rf": {
         "value": [
           "afrf"
         ],
-        "explicit": false
+        "explicit": true
       },
       "ri": {
         "value": 86400,
-        "explicit": false
-      },
-      "sp": {
-        "value": "none",
-        "explicit": false
+        "explicit": true
       }
     }
   }

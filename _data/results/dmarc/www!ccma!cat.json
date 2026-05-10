@@ -28,29 +28,24 @@
         ]
       }
     ],
-    "warnings": [
-      "193.104.51.124 does not have any reverse DNS (PTR) records",
-      "193.104.51.125 does not have any reverse DNS (PTR) records"
-    ]
+    "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx a include:spf1.ccma.cat include:_spf.salesforce.com include:spf.protection.outlook.com -all",
+    "record": "v=spf1 include:_spf.3cat.cat ip4:144.76.18.140 ip4:35.181.25.130 include:_spf.salesforce.com -all",
     "valid": true,
-    "dns_lookups": 6,
-    "warnings": [],
+    "dns_lookups": 5,
+    "warnings": [
+      "_spf.3cat.cat does not have any MX records"
+    ],
     "parsed": {
       "pass": [
         {
-          "value": "smtp1.3cat.cat",
-          "mechanism": "mx"
+          "value": "144.76.18.140",
+          "mechanism": "ip4"
         },
         {
-          "value": "smtp2.3cat.cat",
-          "mechanism": "mx"
-        },
-        {
-          "value": "185.104.134.129",
-          "mechanism": "a"
+          "value": "35.181.25.130",
+          "mechanism": "ip4"
         }
       ],
       "neutral": [],
@@ -58,9 +53,9 @@
       "fail": [],
       "include": [
         {
-          "domain": "spf1.ccma.cat",
-          "record": "v=spf1 ip4:193.104.51.0/24 ip4:193.47.145.126/26 ip4:213.0.81.160/29 ip4:62.97.117.0/27 ip4:62.97.120.205 ip4:213.27.151.167 ip4:91.121.92.208 ip4:144.76.18.140 ip4:35.181.25.130 ip4:159.183.83.89",
-          "dns_lookups": 0,
+          "domain": "_spf.3cat.cat",
+          "record": "v=spf1 mx ip4:193.104.51.0/24 ip4:193.47.145.0/24 ip4:91.121.92.208 ip4:213.0.81.160/29 ip4:159.183.83.89 include:spf.protection.outlook.com",
+          "dns_lookups": 2,
           "parsed": {
             "pass": [
               {
@@ -68,23 +63,7 @@
                 "mechanism": "ip4"
               },
               {
-                "value": "193.47.145.126/26",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "213.0.81.160/29",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "62.97.117.0/27",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "62.97.120.205",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "213.27.151.167",
+                "value": "193.47.145.0/24",
                 "mechanism": "ip4"
               },
               {
@@ -92,11 +71,7 @@
                 "mechanism": "ip4"
               },
               {
-                "value": "144.76.18.140",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "35.181.25.130",
+                "value": "213.0.81.160/29",
                 "mechanism": "ip4"
               },
               {
@@ -107,12 +82,76 @@
             "neutral": [],
             "softfail": [],
             "fail": [],
-            "include": [],
+            "include": [
+              {
+                "domain": "spf.protection.outlook.com",
+                "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/15 ip4:52.102.0.0/16 ip4:52.103.0.0/17 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/51 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "40.92.0.0/15",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "40.107.0.0/16",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "52.100.0.0/15",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "52.102.0.0/16",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "52.103.0.0/17",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "104.47.0.0/17",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "2a01:111:f400::/48",
+                      "mechanism": "ip6"
+                    },
+                    {
+                      "value": "2a01:111:f403::/49",
+                      "mechanism": "ip6"
+                    },
+                    {
+                      "value": "2a01:111:f403:8000::/51",
+                      "mechanism": "ip6"
+                    },
+                    {
+                      "value": "2a01:111:f403:c000::/51",
+                      "mechanism": "ip6"
+                    },
+                    {
+                      "value": "2a01:111:f403:f000::/52",
+                      "mechanism": "ip6"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "fail"
+                },
+                "warnings": []
+              }
+            ],
             "redirect": null,
             "exp": null,
             "all": "neutral"
           },
-          "warnings": []
+          "warnings": [
+            "_spf.3cat.cat does not have any MX records"
+          ]
         },
         {
           "domain": "_spf.salesforce.com",
@@ -134,67 +173,6 @@
             "all": "fail"
           },
           "warnings": []
-        },
-        {
-          "domain": "spf.protection.outlook.com",
-          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/15 ip4:52.102.0.0/16 ip4:52.103.0.0/17 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/51 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
-          "dns_lookups": 0,
-          "parsed": {
-            "pass": [
-              {
-                "value": "40.92.0.0/15",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "40.107.0.0/16",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "52.100.0.0/15",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "52.102.0.0/16",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "52.103.0.0/17",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "104.47.0.0/17",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "2a01:111:f400::/48",
-                "mechanism": "ip6"
-              },
-              {
-                "value": "2a01:111:f403::/49",
-                "mechanism": "ip6"
-              },
-              {
-                "value": "2a01:111:f403:8000::/51",
-                "mechanism": "ip6"
-              },
-              {
-                "value": "2a01:111:f403:c000::/51",
-                "mechanism": "ip6"
-              },
-              {
-                "value": "2a01:111:f403:f000::/52",
-                "mechanism": "ip6"
-              }
-            ],
-            "neutral": [],
-            "softfail": [],
-            "fail": [],
-            "include": [],
-            "redirect": null,
-            "exp": null,
-            "all": "fail"
-          },
-          "warnings": []
         }
       ],
       "redirect": null,
@@ -203,7 +181,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; rua=mailto:dmarc-reports@3cat.cat; ruf=mailto:dmarc-reports@3cat.cat; fo=1; adkim=s; aspf=s; pct=100",
+    "record": "v=DMARC1; p=quarantine; rua=mailto:dmarc-reports@3cat.cat; ruf=mailto:dmarc-reports@3cat.cat; fo=1; adkim=r; aspf=r; pct=100",
     "valid": true,
     "location": "ccma.cat",
     "warnings": [
@@ -234,11 +212,11 @@
         "explicit": true
       },
       "adkim": {
-        "value": "s",
+        "value": "r",
         "explicit": true
       },
       "aspf": {
-        "value": "s",
+        "value": "r",
         "explicit": true
       },
       "pct": {

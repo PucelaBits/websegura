@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "milano.icex.es",
-      "nso.nic.es",
-      "halcon.icex.es"
+      "halcon.icex.es",
+      "nso.nic.es"
     ],
     "warnings": []
   },
@@ -365,11 +365,11 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none",
+    "record": "v=DMARC1; p=none; pct=25; sp=none; rua=mailto:buzon.o365correo@icex.es; ruf=mailto:buzon.o365correo@icex.es; fo=1",
     "valid": true,
     "location": "icex.es",
     "warnings": [
-      "rua tag (destination for aggregate reports) not found"
+      "pct value is less than 100. This leads to inconsistent and unpredictable policy enforcement. Consider using p=none to monitor results instead"
     ],
     "tags": {
       "v": {
@@ -380,22 +380,46 @@
         "value": "none",
         "explicit": true
       },
+      "pct": {
+        "value": 25,
+        "explicit": true
+      },
+      "sp": {
+        "value": "none",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "buzon.o365correo@icex.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "buzon.o365correo@icex.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "1"
+        ],
+        "explicit": true
+      },
       "adkim": {
         "value": "r",
         "explicit": false
       },
       "aspf": {
         "value": "r",
-        "explicit": false
-      },
-      "fo": {
-        "value": [
-          "0"
-        ],
-        "explicit": false
-      },
-      "pct": {
-        "value": 100,
         "explicit": false
       },
       "rf": {
@@ -406,10 +430,6 @@
       },
       "ri": {
         "value": 86400,
-        "explicit": false
-      },
-      "sp": {
-        "value": "none",
         "explicit": false
       }
     }

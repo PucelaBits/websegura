@@ -17,14 +17,14 @@
         "preference": 10,
         "hostname": "visitvalencia-com.mail.protection.outlook.com",
         "addresses": [
-          "2a01:111:f403:ca04::2",
-          "2a01:111:f403:ca04::8",
+          "2a01:111:f403:ca04::4",
           "2a01:111:f403:ca04::c",
-          "2a01:111:f403:ca04::e",
-          "52.101.68.0",
+          "2a01:111:f403:ca09::5",
+          "2a01:111:f403:ca09::8",
+          "52.101.68.8",
           "52.101.73.11",
-          "52.101.73.12",
-          "52.101.73.15"
+          "52.101.73.24",
+          "52.101.73.4"
         ]
       }
     ],
@@ -244,7 +244,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none",
+    "record": "v=DMARC1; p=quarantine",
     "valid": true,
     "location": "visitvalencia.com",
     "warnings": [
@@ -256,7 +256,7 @@
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": true
       },
       "adkim": {
@@ -288,7 +288,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": false
       }
     }

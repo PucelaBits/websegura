@@ -18,7 +18,7 @@
     "error": "lamevasalut.gencat.cat does not have a SPF TXT record"
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; sp=none; fo=1; ri=3600; rua=mailto:abuse@gencat.cat; ruf=mailto:abuse@gencat.cat",
+    "record": "v=DMARC1; p=quarantine; sp=quarantine; fo=1; ri=3600; rua=mailto:abuse@gencat.cat; ruf=mailto:abuse@gencat.cat",
     "valid": true,
     "location": "gencat.cat",
     "warnings": [],
@@ -28,11 +28,11 @@
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": true
       },
       "sp": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": true
       },
       "fo": {

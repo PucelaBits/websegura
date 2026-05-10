@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns3.dnsxperta.com",
       "ns2.dnsxperta.com",
-      "ns1.dnsxperta.com",
-      "ns3.dnsxperta.com"
+      "ns1.dnsxperta.com"
     ],
     "warnings": []
   },
@@ -16,13 +16,13 @@
         "preference": 5,
         "hostname": "mx1.filterantispam.com",
         "addresses": [
-          "178.238.41.106",
-          "45.15.21.21",
+          "192.36.176.216",
+          "193.29.12.65",
+          "193.32.161.45",
+          "194.246.100.59",
           "5.189.154.222",
-          "80.97.45.116",
-          "83.167.253.136",
-          "83.167.253.174",
-          "89.185.250.138",
+          "66.116.211.232",
+          "89.33.247.52",
           "98.126.31.120"
         ]
       },
@@ -30,13 +30,13 @@
         "preference": 5,
         "hostname": "mx2.filterantispam.com",
         "addresses": [
-          "178.238.41.106",
-          "45.15.21.21",
+          "192.36.176.216",
+          "193.29.12.65",
+          "193.32.161.45",
+          "194.246.100.59",
           "5.189.154.222",
-          "80.97.45.116",
-          "83.167.253.136",
-          "83.167.253.174",
-          "89.185.250.138",
+          "66.116.211.232",
+          "89.33.247.52",
           "98.126.31.120"
         ]
       },
@@ -49,16 +49,8 @@
       }
     ],
     "warnings": [
-      "The reverse DNS of 45.15.21.21 is epigenomics.columbia.edu, but the A/AAAA DNS records for epigenomics.columbia.edu do not resolve to 45.15.21.21",
-      "The reverse DNS of 80.97.45.116 is epigenomics.columbia.edu, but the A/AAAA DNS records for epigenomics.columbia.edu do not resolve to 80.97.45.116",
-      "The reverse DNS of 83.167.253.136 is 136.253.167.83.in-addr.arpa, but the A/AAAA DNS records for 136.253.167.83.in-addr.arpa do not resolve to 83.167.253.136",
-      "The reverse DNS of 83.167.253.174 is 174.253.167.83.in-addr.arpa, but the A/AAAA DNS records for 174.253.167.83.in-addr.arpa do not resolve to 83.167.253.174",
-      "The reverse DNS of 89.185.250.138 is 89-185-250-134.static.masterinter.net, but the A/AAAA DNS records for 89-185-250-134.static.masterinter.net do not resolve to 89.185.250.138",
-      "The reverse DNS of 45.15.21.21 is epigenomics.columbia.edu, but the A/AAAA DNS records for epigenomics.columbia.edu do not resolve to 45.15.21.21",
-      "The reverse DNS of 80.97.45.116 is epigenomics.columbia.edu, but the A/AAAA DNS records for epigenomics.columbia.edu do not resolve to 80.97.45.116",
-      "The reverse DNS of 83.167.253.136 is 136.253.167.83.in-addr.arpa, but the A/AAAA DNS records for 136.253.167.83.in-addr.arpa do not resolve to 83.167.253.136",
-      "The reverse DNS of 83.167.253.174 is 174.253.167.83.in-addr.arpa, but the A/AAAA DNS records for 174.253.167.83.in-addr.arpa do not resolve to 83.167.253.174",
-      "The reverse DNS of 89.185.250.138 is 89-185-250-134.static.masterinter.net, but the A/AAAA DNS records for 89-185-250-134.static.masterinter.net do not resolve to 89.185.250.138"
+      "The reverse DNS of 66.116.211.232 is start.hesma.harvard.edu, but the A/AAAA DNS records for start.hesma.harvard.edu do not resolve to 66.116.211.232",
+      "The reverse DNS of 66.116.211.232 is start.hesma.harvard.edu, but the A/AAAA DNS records for start.hesma.harvard.edu do not resolve to 66.116.211.232"
     ]
   },
   "spf": {

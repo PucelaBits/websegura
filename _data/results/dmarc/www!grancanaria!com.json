@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns8.a0.impervasecuredns.net",
-      "ns13.a1.impervasecuredns.net"
+      "ns13.a1.impervasecuredns.net",
+      "ns8.a0.impervasecuredns.net"
     ],
     "warnings": []
   },
@@ -29,19 +29,45 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1",
+    "record": "v=spf1 include:spf-00a46c01.pphosted.com ~all",
     "valid": true,
-    "dns_lookups": 0,
+    "dns_lookups": 1,
     "warnings": [],
     "parsed": {
       "pass": [],
       "neutral": [],
       "softfail": [],
       "fail": [],
-      "include": [],
+      "include": [
+        {
+          "domain": "spf-00a46c01.pphosted.com",
+          "record": "v=spf1 ip4:66.159.244.181 ip4:66.159.243.36",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "66.159.244.181",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "66.159.243.36",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "neutral"
+          },
+          "warnings": []
+        }
+      ],
       "redirect": null,
       "exp": null,
-      "all": "neutral"
+      "all": "softfail"
     }
   },
   "dmarc": {
