@@ -1,27 +1,28 @@
 {
-  "id": 95581822,
+  "id": 95700886,
   "algorithm_version": 5,
-  "scanned_at": "2026-05-13T02:29:55.186Z",
+  "scanned_at": "2026-05-14T02:31:19.745Z",
   "error": null,
-  "grade": "D",
+  "grade": "B-",
   "response_headers": {
-    "date": "Wed, 13 May 2026 02:29:56 GMT",
+    "date": "Thu, 14 May 2026 02:31:21 GMT",
     "vary": "Accept-Encoding",
     "pragma": "no-cache",
     "server": "Apache",
     "expires": "Thu, 01 Jan 1970 00:00:00 GMT",
     "connection": "close",
-    "set-cookie": "JSESSIONID=F0D12062A7571B072EB45F315D9D1238; Path=/; Secure; HttpOnly,COOKIE_SUPPORT=true; Max-Age=31536000; Expires=Thu, 13 May 2027 02:29:56 GMT; Path=/; Secure; HttpOnly,GUEST_LANGUAGE_ID=ca_ES; Max-Age=31536000; Expires=Thu, 13 May 2027 02:29:56 GMT; Path=/; Secure; HttpOnly",
+    "set-cookie": "JSESSIONID=265521F700239014925DC3102F7CA62A; Path=/; Secure; HttpOnly,COOKIE_SUPPORT=true; Max-Age=31536000; Expires=Fri, 14 May 2027 02:31:21 GMT; Path=/; Secure; HttpOnly,GUEST_LANGUAGE_ID=ca_ES; Max-Age=31536000; Expires=Fri, 14 May 2027 02:31:21 GMT; Path=/; Secure; HttpOnly",
     "content-type": "text/html;charset=UTF-8",
     "cache-control": "private, no-cache, no-store, must-revalidate",
     "liferay-portal": "Liferay Digital Experience Platform",
     "x-frame-options": "SAMEORIGIN",
     "transfer-encoding": "chunked",
-    "x-content-type-options": "nosniff"
+    "x-content-type-options": "nosniff",
+    "strict-transport-security": "max-age=63072000"
   },
-  "score": 30,
+  "score": 65,
   "status_code": 200,
-  "tests_failed": 4,
-  "tests_passed": 6,
+  "tests_failed": 3,
+  "tests_passed": 7,
   "tests_quantity": 10
 }
