@@ -22,7 +22,7 @@
         "preference": 5,
         "hostname": "mxb-00a20601.gslb.pphosted.com",
         "addresses": [
-          "66.159.234.127"
+          "66.159.233.57"
         ]
       }
     ],
@@ -88,7 +88,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com",
+    "record": "v=DMARC1; p=reject; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com",
     "valid": true,
     "location": "caib.es",
     "warnings": [],
@@ -98,7 +98,7 @@
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "reject",
         "explicit": true
       },
       "fo": {
@@ -150,7 +150,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "none",
+        "value": "reject",
         "explicit": false
       }
     }

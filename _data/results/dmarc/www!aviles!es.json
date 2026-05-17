@@ -15,14 +15,14 @@
         "preference": 1,
         "hostname": "aviles-es.mail.protection.outlook.com",
         "addresses": [
-          "2a01:111:f403:ca09::1",
-          "2a01:111:f403:ca09::3",
-          "2a01:111:f403:ca09::7",
-          "2a01:111:f403:ca09::e",
-          "52.101.68.29",
-          "52.101.73.24",
-          "52.101.73.6",
-          "52.101.73.8"
+          "2a01:111:f403:ca04::d",
+          "2a01:111:f403:ca09::",
+          "2a01:111:f403:ca09::6",
+          "2a01:111:f403:ca09::f",
+          "52.101.68.12",
+          "52.101.73.11",
+          "52.101.73.153",
+          "52.101.73.2"
         ]
       }
     ],
@@ -112,9 +112,54 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=none;",
+    "valid": true,
+    "location": "aviles.es",
+    "warnings": [
+      "DMARC record at root of aviles.es has no effect",
+      "rua tag (destination for aggregate reports) not found"
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }

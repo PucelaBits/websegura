@@ -3,22 +3,27 @@
   "base_domain": "teatreelmusical.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "All nameservers failed to answer the query teatreelmusical.es. IN NS: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "hostnames": [
+      "bart.ns.cloudflare.com",
+      "lana.ns.cloudflare.com"
+    ],
+    "warnings": []
   },
   "mx": {
     "hosts": [],
-    "error": "All nameservers failed to answer the query teatreelmusical.es. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
   },
   "spf": {
     "record": null,
     "valid": false,
-    "error": "All nameservers failed to answer the query teatreelmusical.es. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "error": "teatreelmusical.es does not have a SPF TXT record"
   },
   "dmarc": {
     "record": null,
     "valid": false,
     "location": null,
-    "error": "All nameservers failed to answer the query _dmarc.teatreelmusical.es. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "error": "A DMARC record does not exist for this domain or its base domain"
   }
 }

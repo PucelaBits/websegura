@@ -164,7 +164,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1;p=none;fo=0;rua=mailto:dmarc.rua@mites.gob.es;ruf=mailto:dmarc.ruf@mites.gob.es; adkim=r; aspf=s",
+    "record": "v=DMARC1;p=quarantine;fo=0;rua=mailto:dmarc.rua@mites.gob.es;ruf=mailto:dmarc.ruf@mites.gob.es; adkim=r; aspf=s",
     "valid": true,
     "location": "mites.gob.es",
     "warnings": [],
@@ -174,7 +174,7 @@
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": true
       },
       "fo": {
@@ -226,7 +226,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": false
       }
     }

@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1045.ui-dns.de",
-      "ns1045.ui-dns.biz",
       "ns1045.ui-dns.com",
-      "ns1045.ui-dns.org"
+      "ns1045.ui-dns.org",
+      "ns1045.ui-dns.biz",
+      "ns1045.ui-dns.de"
     ],
     "warnings": []
   },
@@ -28,10 +28,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 2a01:111:f403:ca21::3 is mail-ma2p292cu00303.inbound.protection.outlook.com, but the A/AAAA DNS records for mail-ma2p292cu00303.inbound.protection.outlook.com do not resolve to 2a01:111:f403:ca21::3"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 a mx +ip4:178.211.133.69 +include:spf.webcloud.es +include:spf.protection.outlook.com ~all",

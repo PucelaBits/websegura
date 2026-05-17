@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.dnsxperta.com",
       "ns1.dnsxperta.com",
-      "ns3.dnsxperta.com"
+      "ns3.dnsxperta.com",
+      "ns2.dnsxperta.com"
     ],
     "warnings": []
   },
@@ -226,10 +226,12 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; fo=1; rua=mailto:dmarc@dipsoria.es; ruf=mailto:dmarc@dipsoria.es",
+    "record": "v=DMARC1; p=quarantine;",
     "valid": true,
     "location": "dipsoria.es",
-    "warnings": [],
+    "warnings": [
+      "rua tag (destination for aggregate reports) not found"
+    ],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -239,38 +241,18 @@
         "value": "quarantine",
         "explicit": true
       },
-      "fo": {
-        "value": [
-          "1"
-        ],
-        "explicit": true
-      },
-      "rua": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "dmarc@dipsoria.es",
-            "size_limit": null
-          }
-        ],
-        "explicit": true
-      },
-      "ruf": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "dmarc@dipsoria.es",
-            "size_limit": null
-          }
-        ],
-        "explicit": true
-      },
       "adkim": {
         "value": "r",
         "explicit": false
       },
       "aspf": {
         "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
         "explicit": false
       },
       "pct": {

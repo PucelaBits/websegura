@@ -17,49 +17,49 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "173.194.208.26",
-          "2607:f8b0:4023:1002::1a"
+          "2607:f8b0:4023:c06::1b",
+          "74.125.137.26"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "142.251.96.27",
-          "2607:f8b0:4003:c4a::1a"
+          "192.178.128.26",
+          "2607:f8b0:4023:2801::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "172.253.149.27",
-          "2607:f8b0:4024:c0f::1b"
+          "172.253.145.27",
+          "2607:f8b0:4023:3003::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "142.250.96.26",
-          "2607:f8b0:4023:403::1b"
+          "172.253.135.27",
+          "2607:f8b0:4023:1015::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "2607:f8b0:4002:c08::1a",
-          "64.233.177.26"
+          "192.178.209.26",
+          "2607:f8b0:4001:c70::1b"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:_spf.google.com include:amazonses.com include:servers.mcsv.net include:_spf.explore-blue.com ip4:52.212.173.198 ip4:52.212.180.100 ip4:35.156.80.209 ip4:84.88.0.0/28 ip4:84.89.128.83 ip4:84.89.128.88 ip4:62.97.112.196 ip4:149.72.245.97 ~all",
+    "record": "v=spf1 include:_spf.salesforce.com include:_spf.google.com include:amazonses.com include:servers.mcsv.net include:_spf.explore-blue.com ip4:52.212.173.198 ip4:52.212.180.100 ip4:35.156.80.209 ip4:84.88.0.0/28 ip4:84.89.128.88 ip4:62.97.112.196 ip4:149.72.245.97 ~all",
     "valid": true,
-    "dns_lookups": 4,
+    "dns_lookups": 6,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -80,10 +80,6 @@
           "mechanism": "ip4"
         },
         {
-          "value": "84.89.128.83",
-          "mechanism": "ip4"
-        },
-        {
           "value": "84.89.128.88",
           "mechanism": "ip4"
         },
@@ -100,6 +96,27 @@
       "softfail": [],
       "fail": [],
       "include": [
+        {
+          "domain": "_spf.salesforce.com",
+          "record": "v=spf1 exists:%{i}._spf.mta.salesforce.com -all",
+          "dns_lookups": 1,
+          "parsed": {
+            "pass": [
+              {
+                "value": "%{i}._spf.mta.salesforce.com",
+                "mechanism": "exists"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        },
         {
           "domain": "_spf.google.com",
           "record": "v=spf1 ip4:74.125.0.0/16 ip4:209.85.128.0/17 ip6:2001:4860:4864::/56 ip6:2404:6800:4864::/56 ip6:2607:f8b0:4864::/56 ip6:2800:3f0:4864::/56 ip6:2a00:1450:4864::/56 ip6:2c0f:fb50:4864::/56 ~all",
