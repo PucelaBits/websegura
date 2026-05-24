@@ -15,18 +15,21 @@
         "preference": 0,
         "hostname": "diputaciolleida-cat.mail.protection.outlook.com",
         "addresses": [
-          "2a01:111:f403:ca04::10",
-          "2a01:111:f403:ca04::d",
-          "2a01:111:f403:ca09::",
-          "2a01:111:f403:ca09::9",
-          "52.101.68.0",
+          "2a01:111:f403:ca04::5",
+          "2a01:111:f403:ca09::1",
+          "2a01:111:f403:ca09::2",
+          "2a01:111:f403:ca09::3",
           "52.101.68.10",
-          "52.101.68.29",
-          "52.101.73.153"
+          "52.101.68.15",
+          "52.101.68.16",
+          "52.101.68.36"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 52.101.68.15 is mail-db6pr03cu00107.inbound.protection.outlook.com, but the A/AAAA DNS records for mail-db6pr03cu00107.inbound.protection.outlook.com do not resolve to 52.101.68.15"
+    ]
   },
   "spf": {
     "record": "v=spf1 ip4:95.130.48.0/21 ip4:194.179.98.44/30 ip4:194.179.98.48/30 ip4:95.130.54.241 ip4:195.77.149.54 ip4:194.224.55.98 include:spf.protection.outlook.com  include:spf.ipzmarketing.com include:one.zoho.eu include:eu.zcsend.net include:sendersrv.com -all",

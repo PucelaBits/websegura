@@ -33,10 +33,8 @@
   "spf": {
     "record": "v=spf1 include:_spf.3cat.cat ip4:144.76.18.140 ip4:35.181.25.130 include:_spf.salesforce.com -all",
     "valid": true,
-    "dns_lookups": 5,
-    "warnings": [
-      "_spf.3cat.cat does not have any MX records"
-    ],
+    "dns_lookups": 4,
+    "warnings": [],
     "parsed": {
       "pass": [
         {
@@ -54,8 +52,8 @@
       "include": [
         {
           "domain": "_spf.3cat.cat",
-          "record": "v=spf1 mx ip4:193.104.51.0/24 ip4:193.47.145.0/24 ip4:91.121.92.208 ip4:213.0.81.160/29 ip4:159.183.83.89 include:spf.protection.outlook.com",
-          "dns_lookups": 2,
+          "record": "v=spf1 ip4:193.104.51.0/24 ip4:193.47.145.0/24 ip4:91.121.92.208 ip4:213.0.81.160/29 ip4:159.183.83.89 include:spf.protection.outlook.com",
+          "dns_lookups": 1,
           "parsed": {
             "pass": [
               {
@@ -149,9 +147,7 @@
             "exp": null,
             "all": "neutral"
           },
-          "warnings": [
-            "_spf.3cat.cat does not have any MX records"
-          ]
+          "warnings": []
         },
         {
           "domain": "_spf.salesforce.com",

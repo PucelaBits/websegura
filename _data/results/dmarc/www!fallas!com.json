@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.serviciodns.es",
       "ns3.serviciodns.es",
-      "ns1.serviciodns.es"
+      "ns1.serviciodns.es",
+      "ns2.serviciodns.es"
     ],
     "warnings": []
   },
@@ -243,7 +243,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; pct=100; fo=1; ri=3600; rua=mailto:de8294cf@inbox.ondmarc.com; ruf=mailto:de8294cf@inbox.ondmarc.com;",
+    "record": "v=DMARC1; p=reject; pct=100; fo=1; ri=3600; rua=mailto:de8294cf@inbox.ondmarc.com; ruf=mailto:de8294cf@inbox.ondmarc.com;",
     "valid": true,
     "location": "fallas.com",
     "warnings": [],
@@ -253,7 +253,7 @@
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "reject",
         "explicit": true
       },
       "pct": {
@@ -305,7 +305,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "none",
+        "value": "reject",
         "explicit": false
       }
     }

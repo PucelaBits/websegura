@@ -19,10 +19,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 213.158.86.43 is ns8161.webempresa.eu, but the A/AAAA DNS records for ns8161.webempresa.eu do not resolve to 213.158.86.43"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 +a +mx +ip4:213.158.86.43 include:_spf.webempresa.eu ~all",

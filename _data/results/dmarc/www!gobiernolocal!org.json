@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns3.diba.cat",
-      "ns4.diba.cat"
+      "ns4.diba.cat",
+      "ns3.diba.cat"
     ],
     "warnings": []
   },
@@ -33,28 +33,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 45.15.50.199 is relay.diba.cat, but the A/AAAA DNS records for relay.diba.cat do not resolve to 45.15.50.199",
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 45.15.50.199 is mx1.diba.cat, but the A/AAAA DNS records for mx1.diba.cat do not resolve to 45.15.50.199",
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 45.15.50.199 is mx11.diba.cat, but the A/AAAA DNS records for mx11.diba.cat do not resolve to 45.15.50.199",
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 45.15.50.199 is mx3.diba.cat, but the A/AAAA DNS records for mx3.diba.cat do not resolve to 45.15.50.199",
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 45.15.50.204 is mx2.diba.cat, but the A/AAAA DNS records for mx2.diba.cat do not resolve to 45.15.50.204",
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 45.15.50.204 is mx21.diba.cat, but the A/AAAA DNS records for mx21.diba.cat do not resolve to 45.15.50.204",
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 45.15.50.199 is mx3.diba.cat, but the A/AAAA DNS records for mx3.diba.cat do not resolve to 45.15.50.199",
-      "All nameservers failed to answer the query mx1.diba.cat. IN AAAA: Server Do53:127.0.0.53@53 answered SERVFAIL",
-      "The reverse DNS of 45.15.50.199 is mx1.diba.cat, but the A/AAAA DNS records for mx1.diba.cat do not resolve to 45.15.50.199",
-      "All nameservers failed to answer the query relay.diba.cat. IN AAAA: Server Do53:127.0.0.53@53 answered SERVFAIL",
-      "The reverse DNS of 45.15.50.199 is relay.diba.cat, but the A/AAAA DNS records for relay.diba.cat do not resolve to 45.15.50.199",
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 45.15.50.199 is mx11.diba.cat, but the A/AAAA DNS records for mx11.diba.cat do not resolve to 45.15.50.199"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.diba.cat include:spf.protection.outlook.com ~all",
