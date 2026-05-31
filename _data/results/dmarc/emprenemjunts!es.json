@@ -22,13 +22,10 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 a mx ip4:185.31.236.43 ip4:185.31.236.37 mx:mail.emprenemjunts.es mx:pegaso.emprenemjunts.es -all",
+    "record": "v=spf1 a mx ip4:185.31.236.43 ip4:185.31.236.37 -all",
     "valid": true,
-    "dns_lookups": 4,
-    "warnings": [
-      "mail.emprenemjunts.es does not have any MX records",
-      "pegaso.emprenemjunts.es does not have any MX records"
-    ],
+    "dns_lookups": 2,
+    "warnings": [],
     "parsed": {
       "pass": [
         {

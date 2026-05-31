@@ -100,12 +100,16 @@
         },
         {
           "domain": "_spficx.icex.es",
-          "record": "v=spf1 include:_spfblock1.salesforce.com include:_spf.salesforce.com include:spf.ess.de.barracudanetworks.com include:cloud_eu-central-1_vpc.appiancloud.com include:eu-central-1.spf.outbound-mail.appian-customer.com ip4:185.76.214.129/32 ip4:185.76.214.186/32 ip4:141.94.7.30/32 ip4:141.94.7.31/32 ip4:141.94.7.32/27 -all",
+          "record": "v=spf1 include:_spfblock1.salesforce.com include:_spf.salesforce.com include:spf.ess.de.barracudanetworks.com include:cloud_eu-central-1_vpc.appiancloud.com include:eu-central-1.spf.outbound-mail.appian-customer.com ip4:185.76.214.129/32 ip4:185.76.214.184/32  ip4:185.76.214.186/32 ip4:141.94.7.30/32 ip4:141.94.7.31/32 ip4:141.94.7.32/27 -all",
           "dns_lookups": 6,
           "parsed": {
             "pass": [
               {
                 "value": "185.76.214.129/32",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.76.214.184/32",
                 "mechanism": "ip4"
               },
               {

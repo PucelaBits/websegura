@@ -14,12 +14,12 @@
       {
         "preference": 10,
         "hostname": "zorba.ayto-mieres.es",
-        "addresses": [
-          "212.89.6.110"
-        ]
+        "addresses": []
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ]
   },
   "spf": {
     "record": null,

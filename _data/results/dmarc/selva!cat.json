@@ -22,9 +22,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx ip4:213.0.55.194 ip4:195.93.170.5 ip4:195.93.170.139 include:_spf.google.com ~all",
+    "record": "v=spf1 mx ip4:213.0.55.194 ip4:195.93.170.5 ip4:195.93.170.139 include:synectia.email include:_spf.google.com ~all",
     "valid": true,
-    "dns_lookups": 2,
+    "dns_lookups": 5,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -49,6 +49,31 @@
       "softfail": [],
       "fail": [],
       "include": [
+        {
+          "domain": "synectia.email",
+          "record": "v=spf1 a mx -all",
+          "dns_lookups": 2,
+          "parsed": {
+            "pass": [
+              {
+                "value": "178.33.210.42",
+                "mechanism": "a"
+              },
+              {
+                "value": "mail.synectia.email",
+                "mechanism": "mx"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        },
         {
           "domain": "_spf.google.com",
           "record": "v=spf1 ip4:74.125.0.0/16 ip4:209.85.128.0/17 ip6:2001:4860:4864::/56 ip6:2404:6800:4864::/56 ip6:2607:f8b0:4864::/56 ip6:2800:3f0:4864::/56 ip6:2a00:1450:4864::/56 ip6:2c0f:fb50:4864::/56 ~all",
