@@ -1,17 +1,18 @@
 {
-  "id": 98177894,
+  "id": 98374113,
   "algorithm_version": 5,
-  "scanned_at": "2026-06-01T02:53:32.115Z",
+  "scanned_at": "2026-06-02T02:50:32.844Z",
   "error": null,
-  "grade": "B+",
+  "grade": "B",
   "response_headers": {
-    "date": "Mon, 01 Jun 2026 02:53:32 GMT",
-    "link": "<https://www.portsib.es/>; rel=shortlink",
+    "date": "Tue, 02 Jun 2026 02:50:33 GMT",
     "vary": "Accept-Encoding,Cookie",
     "server": "Apache",
     "connection": "close",
     "content-type": "text/html; charset=UTF-8",
-    "content-length": "37774",
+    "cache-control": "max-age=3, must-revalidate",
+    "last-modified": "Tue, 02 Jun 2026 02:33:59 GMT",
+    "content-length": "37937",
     "referrer-policy": "strict-origin-when-cross-origin",
     "x-frame-options": "SAMEORIGIN",
     "x-xss-protection": "1; mode=block",
@@ -22,9 +23,9 @@
     "access-control-allow-headers": "append, delete, entries, foreach, get, has, keys, set, values, Authorization",
     "access-control-allow-methods": "POST, GET, OPTIONS, DELETE, PUT"
   },
-  "score": 80,
+  "score": 75,
   "status_code": 200,
-  "tests_failed": 1,
-  "tests_passed": 9,
+  "tests_failed": 2,
+  "tests_passed": 8,
   "tests_quantity": 10
 }
