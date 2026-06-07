@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1043.ui-dns.de",
       "ns1113.ui-dns.com",
       "ns1022.ui-dns.biz",
-      "ns1091.ui-dns.org"
+      "ns1091.ui-dns.org",
+      "ns1043.ui-dns.de"
     ],
     "warnings": []
   },
@@ -46,12 +46,16 @@
       "include": [
         {
           "domain": "_spf1.dipuleon.es",
-          "record": "v=spf1 ip4:185.73.173.32/28 -all",
+          "record": "v=spf1 ip4:185.73.173.32/28 ip4:77.227.0.11/32 -all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
               {
                 "value": "185.73.173.32/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "77.227.0.11/32",
                 "mechanism": "ip4"
               }
             ],

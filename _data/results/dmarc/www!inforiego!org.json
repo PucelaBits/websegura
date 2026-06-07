@@ -4,14 +4,22 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.itacyl.org",
-      "dns.itacyl.org"
+      "dns.itacyl.org",
+      "dns2.itacyl.org"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.inforiego.org",
+        "addresses": []
+      }
+    ],
+    "warnings": [
+      "The domain mail.inforiego.org does not exist"
+    ]
   },
   "spf": {
     "record": "v=spf1 ip4:185.179.105.195/32 ip4:195.76.182.230/32 ip4:195.76.182.224/32 ip4:195.76.182.225/32 mx -all",

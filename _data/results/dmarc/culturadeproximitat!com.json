@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "ns1.dnsxperta.com",
-      "ns2.dnsxperta.com",
-      "ns3.dnsxperta.com"
+      "ns3.dnsxperta.com",
+      "ns2.dnsxperta.com"
     ],
     "warnings": []
   },
@@ -16,12 +16,14 @@
         "preference": 5,
         "hostname": "mx1.filterantispam.com",
         "addresses": [
+          "141.98.51.35",
           "192.36.176.216",
           "193.29.12.65",
           "193.32.161.45",
           "194.246.100.59",
           "5.189.154.222",
           "66.116.211.232",
+          "78.135.85.201",
           "89.33.247.52",
           "98.126.31.120"
         ]
@@ -30,12 +32,14 @@
         "preference": 5,
         "hostname": "mx2.filterantispam.com",
         "addresses": [
+          "141.98.51.35",
           "192.36.176.216",
           "193.29.12.65",
           "193.32.161.45",
           "194.246.100.59",
           "5.189.154.222",
           "66.116.211.232",
+          "78.135.85.201",
           "89.33.247.52",
           "98.126.31.120"
         ]
@@ -51,13 +55,19 @@
     "warnings": [
       "The reverse DNS of 193.29.12.65 is playthegame.puma.com, but the A/AAAA DNS records for playthegame.puma.com do not resolve to 193.29.12.65",
       "The reverse DNS of 193.32.161.45 is playthegame.puma.com, but the A/AAAA DNS records for playthegame.puma.com do not resolve to 193.32.161.45",
+      "The domain ne-vpn01.net.virginia.edu does not exist",
       "The reverse DNS of 194.246.100.59 is ne-vpn01.net.virginia.edu, but the A/AAAA DNS records for ne-vpn01.net.virginia.edu do not resolve to 194.246.100.59",
-      "The reverse DNS of 66.116.211.232 is start.hesma.harvard.edu, but the A/AAAA DNS records for start.hesma.harvard.edu do not resolve to 66.116.211.232",
+      "The domain 66-116-211-232.unifiedlayer.com does not exist",
+      "The reverse DNS of 66.116.211.232 is 66-116-211-232.unifiedlayer.com, but the A/AAAA DNS records for 66-116-211-232.unifiedlayer.com do not resolve to 66.116.211.232",
+      "The domain ne-vpn01.net.virginia.edu does not exist",
       "The reverse DNS of 89.33.247.52 is ne-vpn01.net.virginia.edu, but the A/AAAA DNS records for ne-vpn01.net.virginia.edu do not resolve to 89.33.247.52",
       "The reverse DNS of 193.29.12.65 is playthegame.puma.com, but the A/AAAA DNS records for playthegame.puma.com do not resolve to 193.29.12.65",
       "The reverse DNS of 193.32.161.45 is playthegame.puma.com, but the A/AAAA DNS records for playthegame.puma.com do not resolve to 193.32.161.45",
+      "The domain ne-vpn01.net.virginia.edu does not exist",
       "The reverse DNS of 194.246.100.59 is ne-vpn01.net.virginia.edu, but the A/AAAA DNS records for ne-vpn01.net.virginia.edu do not resolve to 194.246.100.59",
-      "The reverse DNS of 66.116.211.232 is start.hesma.harvard.edu, but the A/AAAA DNS records for start.hesma.harvard.edu do not resolve to 66.116.211.232",
+      "The domain 66-116-211-232.unifiedlayer.com does not exist",
+      "The reverse DNS of 66.116.211.232 is 66-116-211-232.unifiedlayer.com, but the A/AAAA DNS records for 66-116-211-232.unifiedlayer.com do not resolve to 66.116.211.232",
+      "The domain ne-vpn01.net.virginia.edu does not exist",
       "The reverse DNS of 89.33.247.52 is ne-vpn01.net.virginia.edu, but the A/AAAA DNS records for ne-vpn01.net.virginia.edu do not resolve to 89.33.247.52"
     ]
   },

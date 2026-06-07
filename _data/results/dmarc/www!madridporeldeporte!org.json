@@ -4,43 +4,130 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "docks19.rzone.de",
-      "shades18.rzone.de"
+      "shades18.rzone.de",
+      "docks19.rzone.de"
     ],
     "warnings": []
   },
   "mx": {
     "hosts": [
       {
-        "preference": 5,
-        "hostname": "smtp.rzone.de",
+        "preference": 10,
+        "hostname": "madridporeldeporte-org.mail.protection.outlook.com",
         "addresses": [
-          "2a01:238:20a:202:50f0::2097",
-          "81.169.145.98"
+          "2a01:111:f403:ca21::",
+          "2a01:111:f403:ca21::1",
+          "2a01:111:f403:ca21::2",
+          "2a01:111:f403:ca21::3",
+          "52.101.91.0",
+          "52.101.91.1",
+          "52.101.91.2",
+          "52.101.91.3"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "madridporeldeporte.org does not have a SPF TXT record"
+    "record": "v=spf1 include:spf.protection.outlook.com -all",
+    "valid": true,
+    "dns_lookups": 1,
+    "warnings": [],
+    "parsed": {
+      "pass": [],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "spf.protection.outlook.com",
+          "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/15 ip4:52.102.0.0/16 ip4:52.103.0.0/17 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/51 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "40.92.0.0/15",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "40.107.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.100.0.0/15",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.102.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "52.103.0.0/17",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "104.47.0.0/17",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "2a01:111:f400::/48",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403::/49",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:8000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:c000::/51",
+                "mechanism": "ip6"
+              },
+              {
+                "value": "2a01:111:f403:f000::/52",
+                "mechanism": "ip6"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
-    "record": "v=DMARC1;p=reject;",
+    "record": "v=DMARC1; p=none; rua=mailto:postmaster@madridporeldeporte.org",
     "valid": true,
     "location": "madridporeldeporte.org",
-    "warnings": [
-      "rua tag (destination for aggregate reports) not found"
-    ],
+    "warnings": [],
     "tags": {
       "v": {
         "value": "DMARC1",
         "explicit": true
       },
       "p": {
-        "value": "reject",
+        "value": "none",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "postmaster@madridporeldeporte.org",
+            "size_limit": null
+          }
+        ],
         "explicit": true
       },
       "adkim": {
@@ -72,7 +159,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "reject",
+        "value": "none",
         "explicit": false
       }
     }

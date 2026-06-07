@@ -15,14 +15,14 @@
         "preference": 10,
         "hostname": "mxa-00626c01.gslb.pphosted.com",
         "addresses": [
-          "205.220.185.106"
+          "143.55.144.49"
         ]
       },
       {
         "preference": 10,
         "hostname": "mxb-00626c01.gslb.pphosted.com",
         "addresses": [
-          "143.55.144.49"
+          "205.220.185.106"
         ]
       }
     ],
@@ -32,7 +32,7 @@
     "record": "v=spf1 include:%{ir}.%{v}.%{d}.spf.has.pphosted.com -all",
     "valid": false,
     "warnings": [],
-    "error": "The domain %{ir}.%{v}.%{d}.spf.has.pphosted.com does not exist"
+    "error": "All nameservers failed to answer the query %{ir}.%{v}.%{d}.spf.has.pphosted.com. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "dmarc": {
     "record": "v=DMARC1; p=reject; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com",

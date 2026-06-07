@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.nds.es",
-      "ns2.nds.es"
+      "ns2.nds.es",
+      "ns1.nds.es"
     ],
     "warnings": []
   },
@@ -125,7 +125,7 @@
         },
         {
           "domain": "spf.nds.es",
-          "record": "v=spf1 ip4:185.253.153.139 ip4:187.33.159.59 ip4:57.128.96.235 ip4:200.234.230.154  -all",
+          "record": "v=spf1 ip4:185.253.153.139 ip4:187.33.159.59 ip4:57.128.96.235 ip4:200.234.224.117 -all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -142,7 +142,7 @@
                 "mechanism": "ip4"
               },
               {
-                "value": "200.234.230.154",
+                "value": "200.234.224.117",
                 "mechanism": "ip4"
               }
             ],
