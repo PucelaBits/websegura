@@ -17,44 +17,46 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "172.253.132.27",
-          "2607:f8b0:4023:2c03::1a"
+          "172.253.63.26",
+          "2607:f8b0:4004:c23::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "192.178.131.26",
-          "2607:f8b0:4023:141f::1a"
+          "108.177.123.26",
+          "2800:3f0:4003:c0f::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "209.85.144.27",
-          "2607:f8b0:400d:c0e::1b"
+          "172.253.116.26",
+          "2a00:1450:400b:c02::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "172.253.147.26",
-          "2607:f8b0:400c:c28::1b"
+          "192.178.223.26",
+          "2a00:1450:4009:c0f::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "173.194.45.26",
-          "2607:f8b0:4004:c29::1a"
+          "172.253.157.27",
+          "2a00:1450:400c:c23::1a"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "2800:3f0:4003:c0f::1a does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
     "record": "v=spf1 +a +mx ip4:92.43.19.148 +ip4:176.28.99.27/32 include:_spf.google.com  include:servers.mcsv.net include:amazonses.com include:mh.blackboard.com ~all ",
@@ -67,15 +69,15 @@
     "parsed": {
       "pass": [
         {
-          "value": "15.216.132.42",
+          "value": "15.216.104.69",
           "mechanism": "a"
         },
         {
-          "value": "15.217.184.190",
+          "value": "15.217.241.157",
           "mechanism": "a"
         },
         {
-          "value": "35.42.50.97",
+          "value": "35.42.69.155",
           "mechanism": "a"
         },
         {

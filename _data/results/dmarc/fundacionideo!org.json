@@ -4,16 +4,27 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1096.ui-dns.de",
-      "ns1071.ui-dns.org",
       "ns1080.ui-dns.com",
-      "ns1069.ui-dns.biz"
+      "ns1071.ui-dns.org",
+      "ns1069.ui-dns.biz",
+      "ns1096.ui-dns.de"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.fundacionideo.org",
+        "addresses": [
+          "95.60.60.120"
+        ]
+      }
+    ],
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 95.60.60.120 is static-120-60-60-95.ipcom.comunitel.net, but the A/AAAA DNS records for static-120-60-60-95.ipcom.comunitel.net do not resolve to 95.60.60.120"
+    ]
   },
   "spf": {
     "record": "v=spf1 +a +mx +a:mail.fundacionideo.org -all",

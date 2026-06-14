@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.cloudunificado.com",
-      "dns1.cloudunificado.com"
+      "dns1.cloudunificado.com",
+      "dns2.cloudunificado.com"
     ],
     "warnings": []
   },
@@ -14,12 +14,12 @@
       {
         "preference": 10,
         "hostname": "zorba.ayto-mieres.es",
-        "addresses": []
+        "addresses": [
+          "212.89.6.110"
+        ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ]
+    "warnings": []
   },
   "spf": {
     "record": null,

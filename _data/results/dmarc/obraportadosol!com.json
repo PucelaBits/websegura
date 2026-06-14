@@ -4,7 +4,7 @@
   "dnssec": false,
   "ns": {
     "hostnames": [],
-    "error": "All nameservers failed to answer the query obraportadosol.com. IN NS: Server Do53:1.0.0.1@53 answered ; Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "error": "All nameservers failed to answer the query obraportadosol.com. IN NS: Server Do53:1.0.0.1@53 answered SERVFAIL"
   },
   "mx": {
     "hosts": [],
@@ -19,6 +19,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "All nameservers failed to answer the query _dmarc.obraportadosol.com. IN TXT: Server Do53:1.0.0.1@53 answered ; Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "error": "All nameservers failed to answer the query _dmarc.obraportadosol.com. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
   }
 }

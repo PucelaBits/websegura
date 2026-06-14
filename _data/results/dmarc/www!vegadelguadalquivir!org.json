@@ -19,7 +19,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 77.81.119.103 is mailh01.netwan.es, but the A/AAAA DNS records for mailh01.netwan.es do not resolve to 77.81.119.103"
+    ]
   },
   "spf": {
     "record": "v=spf1 ip4:77.81.119.103/32 -all",

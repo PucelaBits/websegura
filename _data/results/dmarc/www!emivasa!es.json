@@ -35,7 +35,7 @@
   "spf": {
     "record": "v=spf1 include:_spf.globalomnium.com include:_spf.google.com include:spf.protection.outlook.com exists:%{i}.spf.hc782-58.eu.iphmx.com -all",
     "valid": true,
-    "dns_lookups": 7,
+    "dns_lookups": 9,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -50,55 +50,79 @@
       "include": [
         {
           "domain": "_spf.globalomnium.com",
-          "record": "v=spf1 include:_netblocks1.globalomnium.com ip4:62.82.171.74 ip4:90.160.57.78 ip4:84.124.28.190 ip4:46.25.190.228 ip4:46.25.190.229 ip4:195.76.136.4 ip4:34.175.80.220 ip4:34.175.246.55 ip4:34.175.149.226 ip4:83.48.120.30 ~all",
-          "dns_lookups": 3,
+          "record": "v=spf1 include:_netblocks2.globalomnium.com include:_netblocks1.globalomnium.com ~all",
+          "dns_lookups": 5,
           "parsed": {
-            "pass": [
-              {
-                "value": "62.82.171.74",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "90.160.57.78",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "84.124.28.190",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "46.25.190.228",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "46.25.190.229",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "195.76.136.4",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "34.175.80.220",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "34.175.246.55",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "34.175.149.226",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "83.48.120.30",
-                "mechanism": "ip4"
-              }
-            ],
+            "pass": [],
             "neutral": [],
             "softfail": [],
             "fail": [],
             "include": [
+              {
+                "domain": "_netblocks2.globalomnium.com",
+                "record": "v=spf1 ip4:195.76.136.5 a:mail2.aguasdevalencia.es ip4:62.82.171.74 ip4:90.160.57.78 ip4:84.124.28.190 ip4:46.25.190.228 ip4:46.25.190.229 ip4:195.76.136.4 ip4:34.175.80.220 ip4:34.175.246.55 ip4:34.175.149.226 ip4:83.48.120.30 ~all",
+                "dns_lookups": 1,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "195.76.136.5",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "195.76.136.5",
+                      "mechanism": "a"
+                    },
+                    {
+                      "value": "62.82.171.74",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "90.160.57.78",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "84.124.28.190",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "46.25.190.228",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "46.25.190.229",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "195.76.136.4",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "34.175.80.220",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "34.175.246.55",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "34.175.149.226",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "83.48.120.30",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              },
               {
                 "domain": "_netblocks1.globalomnium.com",
                 "record": "v=spf1 include:spf.mtasv.net include:spf.mailjet.com ip4:52.57.200.142 ip4:52.29.179.127 ip4:52.58.4.167 ip4:18.157.232.83 ip4:18.157.244.91 ip4:18.157.246.109 ip4:54.229.2.165 ip4:52.30.130.201 ~all",

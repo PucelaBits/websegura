@@ -15,25 +15,25 @@
         "preference": 0,
         "hostname": "tarragona-cat.mail.protection.outlook.com",
         "addresses": [
-          "2a01:111:f403:ca04::5",
+          "2a01:111:f403:ca04::4",
           "2a01:111:f403:ca04::6",
+          "2a01:111:f403:ca04::f",
           "2a01:111:f403:ca09::4",
-          "2a01:111:f403:ca09::c",
           "52.101.68.0",
-          "52.101.68.10",
-          "52.101.68.39",
-          "52.101.73.26"
+          "52.101.73.15",
+          "52.101.73.24",
+          "52.101.73.30"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 a mx include:spf.protection.outlook.com include:spf.ipzmarketing.com include:amazonses.com include:spf.secutix.com include:_spf.eu.sparkpostmail.com include:atlassian.net ip4:87.98.230.191 ip4:217.160.207.239 ip4:92.54.14.18 -all",
+    "record": "v=spf1 a mx include:spf.protection.outlook.com include:spf.ipzmarketing.com include:amazonses.com include:spf.secutix.com include:_spf.eu.sparkpostmail.com include:atlassian.net include:_spf.firebasemail.com ip4:87.98.230.191 ip4:217.160.207.239 ip4:92.54.14.18 -all",
     "valid": false,
     "warnings": [],
-    "error": "Parsing the SPF record requires 15/10 maximum DNS lookups - https://tools.ietf.org/html/rfc7208#section-4.6.4",
-    "dns_lookups": 15
+    "error": "Parsing the SPF record requires 16/10 maximum DNS lookups - https://tools.ietf.org/html/rfc7208#section-4.6.4",
+    "dns_lookups": 16
   },
   "dmarc": {
     "record": "v=DMARC1;p=quarantine;sp=none;rua=mailto:postmaster@tarragona.cat;ruf=mailto:postmaster@tarragona.cat",
