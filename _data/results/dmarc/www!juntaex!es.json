@@ -4,14 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.dominioabsoluto.com",
-      "ns4.acens.net",
-      "ns1.acens.net",
-      "ns3.acens.net",
-      "ns7.acens.net",
       "ip90.dominioabsoluto.com",
+      "ns1.dominioabsoluto.com",
+      "ns2.dominioabsoluto.com",
+      "ns4.acens.net",
+      "ns7.acens.net",
+      "ns3.acens.net",
       "ns2.acens.net",
-      "ns2.dominioabsoluto.com"
+      "ns1.acens.net"
     ],
     "warnings": []
   },
@@ -21,21 +21,21 @@
         "preference": 10,
         "hostname": "juntaex-es.mail.protection.outlook.com",
         "addresses": [
-          "2a01:111:f403:ca04::2",
-          "2a01:111:f403:ca04::b",
-          "2a01:111:f403:ca04::c",
-          "2a01:111:f403:ca09::2",
-          "52.101.68.25",
+          "2a01:111:f403:ca09::3",
+          "2a01:111:f403:ca09::5",
+          "2a01:111:f403:ca09::c",
+          "2a01:111:f403:ca09::e",
+          "52.101.68.10",
+          "52.101.68.3",
           "52.101.73.153",
-          "52.101.73.22",
-          "52.101.73.24"
+          "52.101.73.26"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:178.255.110.89 ip4:178.255.108.128 include:spf.protection.outlook.com -all",
+    "record": "v=spf1 ip4:178.255.110.89 ip4:178.255.108.128 ip4:185.136.189.88 ip4:185.136.189.108 ip4:185.136.188.88 ip4:185.136.188.108  include:spf.protection.outlook.com -all",
     "valid": true,
     "dns_lookups": 1,
     "warnings": [],
@@ -47,6 +47,22 @@
         },
         {
           "value": "178.255.108.128",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "185.136.189.88",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "185.136.189.108",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "185.136.188.88",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "185.136.188.108",
           "mechanism": "ip4"
         }
       ],

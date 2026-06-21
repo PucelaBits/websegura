@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns5.cdmondns-01.com",
       "ns1.cdmon.net",
       "ns3.cdmon.net",
       "ns4.cdmondns-01.org",
+      "ns5.cdmondns-01.com",
       "ns2.cdmon.net"
     ],
     "warnings": []
@@ -18,23 +18,100 @@
         "preference": 10,
         "hostname": "fundaciones-org.mail.protection.outlook.com",
         "addresses": [
-          "2a01:111:f403:ca04::1",
-          "2a01:111:f403:ca04::c",
-          "2a01:111:f403:ca04::e",
-          "2a01:111:f403:ca09::7",
-          "52.101.68.15",
-          "52.101.68.25",
-          "52.101.68.29",
-          "52.101.68.5"
+          "2a01:111:f403:ca04::4",
+          "2a01:111:f403:ca04::8",
+          "2a01:111:f403:ca09::2",
+          "2a01:111:f403:ca09::c",
+          "52.101.68.36",
+          "52.101.73.15",
+          "52.101.73.2",
+          "52.101.73.22"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "fundaciones.org does not have a SPF TXT record"
+    "record": "v=spf1 include:amazonses.com ~all",
+    "valid": true,
+    "dns_lookups": 1,
+    "warnings": [],
+    "parsed": {
+      "pass": [],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "amazonses.com",
+          "record": "v=spf1 ip4:199.255.192.0/22 ip4:199.127.232.0/22 ip4:54.240.0.0/18 ip4:69.169.224.0/20 ip4:23.249.208.0/20 ip4:23.251.224.0/19 ip4:76.223.176.0/20 ip4:54.240.64.0/18 ip4:76.223.128.0/19 ip4:216.221.160.0/19 ip4:206.55.144.0/20 ip4:24.110.64.0/18 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "199.255.192.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "199.127.232.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "54.240.0.0/18",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "69.169.224.0/20",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "23.249.208.0/20",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "23.251.224.0/19",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "76.223.176.0/20",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "54.240.64.0/18",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "76.223.128.0/19",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "216.221.160.0/19",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "206.55.144.0/20",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "24.110.64.0/18",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
   },
   "dmarc": {
     "record": "v=DMARC1; p=none",

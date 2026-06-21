@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.unileon.es",
       "ns2.unileon.es",
       "sunrelay.rediris.es",
-      "chicorelay.rediris.es"
+      "chicorelay.rediris.es",
+      "ns1.unileon.es"
     ],
     "warnings": []
   },
@@ -17,8 +17,8 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "172.253.115.27",
-          "2607:f8b0:4004:c06::1a"
+          "2607:f8b0:4004:c29::1b",
+          "64.233.180.26"
         ]
       },
       {
@@ -26,22 +26,22 @@
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
           "108.177.123.27",
-          "2800:3f0:4003:c0f::1b"
+          "2800:3f0:4003:c0f::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "172.253.116.27",
-          "2a00:1450:400b:c02::1a"
+          "172.253.116.26",
+          "2a00:1450:400b:c02::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "aspmx2.googlemail.com",
         "addresses": [
-          "108.177.123.27",
+          "108.177.123.26",
           "2800:3f0:4003:c0f::1a"
         ]
       },
@@ -50,12 +50,12 @@
         "hostname": "aspmx3.googlemail.com",
         "addresses": [
           "172.253.116.26",
-          "2a00:1450:400b:c02::1a"
+          "2a00:1450:400b:c02::1b"
         ]
       }
     ],
     "warnings": [
-      "2800:3f0:4003:c0f::1b does not have any reverse DNS (PTR) records",
+      "2800:3f0:4003:c0f::1a does not have any reverse DNS (PTR) records",
       "2800:3f0:4003:c0f::1a does not have any reverse DNS (PTR) records"
     ]
   },

@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "cdj11.cgpj.es",
-      "ns2.cp2gestion-dtc-ib.com"
+      "ns2.cp2gestion-dtc-ib.com",
+      "cdj11.cgpj.es"
     ],
     "warnings": []
   },
@@ -16,13 +16,13 @@
         "hostname": "poderjudicial-es.mail.protection.outlook.com",
         "addresses": [
           "2a01:111:f403:ca04::7",
+          "2a01:111:f403:ca09::6",
           "2a01:111:f403:ca09::7",
           "2a01:111:f403:ca09::9",
-          "2a01:111:f403:ca09::e",
-          "52.101.68.25",
-          "52.101.68.27",
-          "52.101.68.36",
-          "52.101.73.8"
+          "52.101.68.10",
+          "52.101.68.12",
+          "52.101.68.8",
+          "52.101.73.1"
         ]
       }
     ],
@@ -32,13 +32,11 @@
     "record": "v=spf1 mx ip4:62.37.232.37 ip4:62.37.232.39 ip4:62.37.233.240 include:spf.protection.outlook.com -all",
     "valid": true,
     "dns_lookups": 2,
-    "warnings": [],
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ],
     "parsed": {
       "pass": [
-        {
-          "value": "poderjudicial-es.mail.protection.outlook.com",
-          "mechanism": "mx"
-        },
         {
           "value": "62.37.232.37",
           "mechanism": "ip4"

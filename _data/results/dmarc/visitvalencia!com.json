@@ -17,21 +17,21 @@
         "preference": 10,
         "hostname": "visitvalencia-com.mail.protection.outlook.com",
         "addresses": [
-          "2a01:111:f403:ca04::a",
-          "2a01:111:f403:ca09::b",
-          "2a01:111:f403:ca09::d",
-          "2a01:111:f403:ca09::e",
-          "52.101.68.21",
-          "52.101.68.39",
-          "52.101.73.15",
-          "52.101.73.8"
+          "2a01:111:f403:ca04::6",
+          "2a01:111:f403:ca04::b",
+          "2a01:111:f403:ca09::3",
+          "2a01:111:f403:ca09::8",
+          "52.101.68.10",
+          "52.101.68.29",
+          "52.101.68.32",
+          "52.101.68.36"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:spf.protection.outlook.com include:spf.ymlp.com include:5897040.spf07.hubspotemail.net a:email-smtp.eu-west-1.amazonaws.com -all",
+    "record": "v=spf1 include:spf.protection.outlook.com include:spf.ymlp.com include:5897040.spf07.hubspotemail.net a:email-smtp.eu-west-1.amazonaws.com ip4:167.89.103.188 ip4:159.183.225.232 -all",
     "valid": true,
     "dns_lookups": 4,
     "warnings": [],
@@ -48,6 +48,14 @@
         {
           "value": "99.81.178.80",
           "mechanism": "a"
+        },
+        {
+          "value": "167.89.103.188",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "159.183.225.232",
+          "mechanism": "ip4"
         }
       ],
       "neutral": [],
