@@ -1,11 +1,11 @@
 {
-  "id": 103384272,
+  "id": 103604652,
   "algorithm_version": 5,
-  "scanned_at": "2026-06-26T02:38:41.732Z",
+  "scanned_at": "2026-06-27T02:31:28.802Z",
   "error": null,
   "grade": "D",
   "response_headers": {
-    "date": "Fri, 26 Jun 2026 02:38:42 GMT",
+    "date": "Sat, 27 Jun 2026 02:31:29 GMT",
     "etag": "W/\"6a27ee03-2ebbc\"",
     "vary": "Accept-Encoding",
     "server": "nginx",
@@ -13,7 +13,10 @@
     "content-type": "text/html",
     "x-powered-by": "PleskLin",
     "last-modified": "Tue, 09 Jun 2026 10:42:11 GMT",
-    "transfer-encoding": "chunked"
+    "transfer-encoding": "chunked",
+    "access-control-allow-origin": "*",
+    "access-control-allow-headers": "DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range",
+    "access-control-allow-methods": "GET, POST, OPTIONS"
   },
   "score": 30,
   "status_code": 200,
