@@ -28,7 +28,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 193.104.51.124 is smtp1.3cat.cat, but the A/AAAA DNS records for smtp1.3cat.cat do not resolve to 193.104.51.124"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:_spf.3cat.cat ip4:144.76.18.140 ip4:35.181.25.130 include:_spf.salesforce.com -all",

@@ -24,9 +24,124 @@
   },
   "spf": {
     "record": "v=spf1 ip4:5.135.40.102 include:conselldeformentera.cat ip4:5.135.40.250 +a +mx ip4:185.73.173.32/28 -all",
-    "valid": false,
+    "valid": true,
+    "dns_lookups": 6,
     "warnings": [],
-    "error": "Include loop: conselldeformentera.cat"
+    "parsed": {
+      "pass": [
+        {
+          "value": "5.135.40.102",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "5.135.40.250",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "5.135.40.102",
+          "mechanism": "a"
+        },
+        {
+          "value": "mail1.consellinsulardeformentera.cat",
+          "mechanism": "mx"
+        },
+        {
+          "value": "185.73.173.32/28",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "conselldeformentera.cat",
+          "record": "v=spf1 +mx +a +ip4:5.135.40.102 +ip4:185.73.173.32/28 +include:_spf.google.com -all",
+          "dns_lookups": 3,
+          "parsed": {
+            "pass": [
+              {
+                "value": "mail1.conselldeformentera.cat",
+                "mechanism": "mx"
+              },
+              {
+                "value": "5.135.40.102",
+                "mechanism": "a"
+              },
+              {
+                "value": "5.135.40.102",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.73.173.32/28",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [
+              {
+                "domain": "_spf.google.com",
+                "record": "v=spf1 ip4:74.125.0.0/16 ip4:209.85.128.0/17 ip6:2001:4860:4864::/56 ip6:2404:6800:4864::/56 ip6:2607:f8b0:4864::/56 ip6:2800:3f0:4864::/56 ip6:2a00:1450:4864::/56 ip6:2c0f:fb50:4864::/56 ~all",
+                "dns_lookups": 0,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "74.125.0.0/16",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "209.85.128.0/17",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "2001:4860:4864::/56",
+                      "mechanism": "ip6"
+                    },
+                    {
+                      "value": "2404:6800:4864::/56",
+                      "mechanism": "ip6"
+                    },
+                    {
+                      "value": "2607:f8b0:4864::/56",
+                      "mechanism": "ip6"
+                    },
+                    {
+                      "value": "2800:3f0:4864::/56",
+                      "mechanism": "ip6"
+                    },
+                    {
+                      "value": "2a00:1450:4864::/56",
+                      "mechanism": "ip6"
+                    },
+                    {
+                      "value": "2c0f:fb50:4864::/56",
+                      "mechanism": "ip6"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              }
+            ],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
     "record": null,

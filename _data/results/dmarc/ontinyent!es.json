@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.dnsxperta.com",
       "ns3.dnsxperta.com",
-      "ns2.dnsxperta.com"
+      "ns2.dnsxperta.com",
+      "ns1.dnsxperta.com"
     ],
     "warnings": []
   },
@@ -16,23 +16,23 @@
         "preference": 0,
         "hostname": "ontinyent-es.mail.protection.outlook.com",
         "addresses": [
-          "2a01:111:f403:ca04::2",
-          "2a01:111:f403:ca04::e",
           "2a01:111:f403:ca09::4",
           "2a01:111:f403:ca09::7",
-          "52.101.68.12",
-          "52.101.73.2",
-          "52.101.73.24",
-          "52.101.73.28"
+          "2a01:111:f403:ca09::8",
+          "2a01:111:f403:ca09::d",
+          "52.101.68.15",
+          "52.101.68.3",
+          "52.101.73.1",
+          "52.101.73.8"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:spf.protection.outlook.com ip4:85.62.142.226 ip4:85.62.142.227 ip4:85.62.142.228 ip4:85.62.142.229 ip4:185.59.48.10 ip4:194.142.202.195 include:dnsxperta.com -all",
+    "record": "v=spf1 include:spf.ipzmarketing.com include:spf.protection.outlook.com ip4:85.62.142.226 ip4:85.62.142.227 ip4:85.62.142.228 ip4:85.62.142.229 ip4:185.59.48.10 ip4:194.142.202.195 include:dnsxperta.com -all",
     "valid": true,
-    "dns_lookups": 2,
+    "dns_lookups": 3,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -65,6 +65,43 @@
       "softfail": [],
       "fail": [],
       "include": [
+        {
+          "domain": "spf.ipzmarketing.com",
+          "record": "v=spf1 ip4:93.159.208.0/21 ip4:185.103.8.0/22 ip4:5.56.22.0/24 ip4:82.199.156.0/24 ip4:91.194.237.0/24 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "93.159.208.0/21",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.103.8.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "5.56.22.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "82.199.156.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "91.194.237.0/24",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        },
         {
           "domain": "spf.protection.outlook.com",
           "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/15 ip4:52.102.0.0/16 ip4:52.103.0.0/17 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/51 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
@@ -169,6 +206,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.ontinyent.es\n\nMS=ms72276810\n\nv=spf1 include:spf.protection.outlook.com ip4:85.62.142.226 ip4:85.62.142.227 ip4:85.62.142.228 ip4:85.62.142.229 ip4:185.59.48.10 ip4:194.142.202.195 include:dnsxperta.com -all"
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.ontinyent.es\n\nv=spf1 include:spf.ipzmarketing.com include:spf.protection.outlook.com ip4:85.62.142.226 ip4:85.62.142.227 ip4:85.62.142.228 ip4:85.62.142.229 ip4:185.59.48.10 ip4:194.142.202.195 include:dnsxperta.com -all\n\nMS=ms72276810"
   }
 }
