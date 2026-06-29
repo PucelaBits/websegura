@@ -1,11 +1,12 @@
 {
-  "id": 103826496,
+  "id": 104051249,
   "algorithm_version": 5,
-  "scanned_at": "2026-06-28T02:45:21.926Z",
+  "scanned_at": "2026-06-29T02:46:03.973Z",
   "error": null,
   "grade": "F",
   "response_headers": {
-    "date": "Sun, 28 Jun 2026 02:45:24 GMT",
+    "date": "Mon, 29 Jun 2026 02:46:06 GMT",
+    "etag": "\"70-1782701166;br\"",
     "link": "<https://www.carriondeloscondes.org/wp-json/>; rel=\"https://api.w.org/\", <https://www.carriondeloscondes.org/wp-json/wp/v2/pages/324>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://www.carriondeloscondes.org/>; rel=shortlink",
     "vary": "Accept-Encoding,User-Agent",
     "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\"",
@@ -13,7 +14,10 @@
     "x-pingback": "https://www.carriondeloscondes.org/xmlrpc.php",
     "content-type": "text/html; charset=UTF-8",
     "x-powered-by": "PHP/8.2.31",
-    "transfer-encoding": "chunked"
+    "x-litespeed-tag": "987_front,987_URL.6666cd76f96956469e7be39d750cc7d9,987_F,987_Po.324,987_PGS,987_",
+    "transfer-encoding": "chunked",
+    "x-litespeed-cache": "miss",
+    "x-litespeed-cache-control": "public,max-age=604800"
   },
   "score": 0,
   "status_code": 200,
