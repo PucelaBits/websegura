@@ -6,8 +6,8 @@
     "hostnames": [
       "ns2.hostinger.es",
       "ns4.hostinger.es",
-      "ns1.hostinger.es",
-      "ns3.hostinger.es"
+      "ns3.hostinger.es",
+      "ns1.hostinger.es"
     ],
     "warnings": []
   },
@@ -349,7 +349,7 @@
               },
               {
                 "domain": "spf.zohomail.com",
-                "record": "v=spf1 ip4:136.143.188.0/24 ip4:136.143.184.0/24 ip4:8.40.222.250/31 ip4:8.39.54.250/31 ip4:165.173.180.1/32 -all",
+                "record": "v=spf1 ip4:136.143.188.0/24 ip4:136.143.184.0/24 ip4:8.40.222.250/31 ip4:8.39.54.250/31 ip4:165.173.182.0/24 ip4:165.173.180.0/24 -all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
@@ -370,7 +370,11 @@
                       "mechanism": "ip4"
                     },
                     {
-                      "value": "165.173.180.1/32",
+                      "value": "165.173.182.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "165.173.180.0/24",
                       "mechanism": "ip4"
                     }
                   ],

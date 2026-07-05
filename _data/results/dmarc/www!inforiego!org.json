@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns.itacyl.org",
-      "dns2.itacyl.org"
+      "dns2.itacyl.org",
+      "dns.itacyl.org"
     ],
     "warnings": []
   },
@@ -25,9 +25,7 @@
     "record": "v=spf1 ip4:185.179.105.195/32 ip4:195.76.182.230/32 ip4:195.76.182.224/32 ip4:195.76.182.225/32 mx -all",
     "valid": true,
     "dns_lookups": 1,
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ],
+    "warnings": [],
     "parsed": {
       "pass": [
         {
@@ -45,6 +43,10 @@
         {
           "value": "195.76.182.225/32",
           "mechanism": "ip4"
+        },
+        {
+          "value": "mail.inforiego.org",
+          "mechanism": "mx"
         }
       ],
       "neutral": [],

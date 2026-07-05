@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dominios.innovasur.es",
-      "dominios.innovasur.com"
+      "dominios.innovasur.com",
+      "dominios.innovasur.es"
     ],
     "warnings": []
   },
@@ -13,28 +13,6 @@
     "hosts": [
       {
         "preference": 10,
-        "hostname": "mx.zoho.eu",
-        "addresses": [
-          "185.20.209.166",
-          "185.230.214.166"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mx2.zoho.eu",
-        "addresses": [
-          "185.230.214.166"
-        ]
-      },
-      {
-        "preference": 40,
-        "hostname": "mx3.zoho.eu",
-        "addresses": [
-          "185.230.212.166"
-        ]
-      },
-      {
-        "preference": 40,
         "hostname": "poster1i.iberlayer.com",
         "addresses": [
           "130.117.89.21",
@@ -44,16 +22,34 @@
           "130.117.89.5",
           "130.117.89.6"
         ]
+      },
+      {
+        "preference": 20,
+        "hostname": "poster4i.iberlayer.com",
+        "addresses": [
+          "80.169.225.36",
+          "80.169.225.37",
+          "80.169.225.38",
+          "80.169.225.56",
+          "80.169.225.57"
+        ]
+      },
+      {
+        "preference": 30,
+        "hostname": "poster2i.iberlayer.com",
+        "addresses": [
+          "185.136.219.26"
+        ]
+      },
+      {
+        "preference": 40,
+        "hostname": "poster3i.iberlayer.com",
+        "addresses": [
+          "185.136.218.5"
+        ]
       }
     ],
-    "warnings": [
-      "The reverse DNS of 185.20.209.166 is mx3.zoho.eu, but the A/AAAA DNS records for mx3.zoho.eu do not resolve to 185.20.209.166",
-      "The reverse DNS of 185.20.209.166 is mx2.zoho.eu, but the A/AAAA DNS records for mx2.zoho.eu do not resolve to 185.20.209.166",
-      "The reverse DNS of 185.230.214.166 is mx3.zoho.eu, but the A/AAAA DNS records for mx3.zoho.eu do not resolve to 185.230.214.166",
-      "The reverse DNS of 185.230.214.166 is mx3.zoho.eu, but the A/AAAA DNS records for mx3.zoho.eu do not resolve to 185.230.214.166",
-      "The reverse DNS of 185.230.212.166 is mx.zoho.eu, but the A/AAAA DNS records for mx.zoho.eu do not resolve to 185.230.212.166",
-      "The reverse DNS of 185.230.212.166 is mx2.zoho.eu, but the A/AAAA DNS records for mx2.zoho.eu do not resolve to 185.230.212.166"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:zoho.eu ip4:90.160.146.32/27 ip4:90.166.25.128/27 ip4:85.48.223.83/32 include:_spf.google.com -all",

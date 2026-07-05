@@ -12,44 +12,42 @@
   "mx": {
     "hosts": [
       {
-        "preference": 30,
-        "hostname": "saluetw.conselldemallorca.net",
+        "preference": 10,
+        "hostname": "mx1.hc2636-28.eu.iphmx.com",
         "addresses": [
-          "213.201.84.232"
+          "207.54.70.246",
+          "23.90.117.151"
         ]
       },
       {
-        "preference": 50,
-        "hostname": "saluetw2.conselldemallorca.net",
+        "preference": 20,
+        "hostname": "mx2.hc2636-28.eu.iphmx.com",
         "addresses": [
-          "213.201.84.233"
+          "207.54.70.246",
+          "23.90.117.151"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx a:saluetw2.conselldemallorca.net a:saluetw.conselldemallorca.net include:spf.protection.outlook.com ~all",
+    "record": "v=spf1 mx exists:%{i}.spf.hc2636-28.eu.iphmx.com include:spf.protection.outlook.com ~all",
     "valid": true,
-    "dns_lookups": 4,
+    "dns_lookups": 3,
     "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "saluetw.conselldemallorca.net",
+          "value": "mx1.hc2636-28.eu.iphmx.com",
           "mechanism": "mx"
         },
         {
-          "value": "saluetw2.conselldemallorca.net",
+          "value": "mx2.hc2636-28.eu.iphmx.com",
           "mechanism": "mx"
         },
         {
-          "value": "213.201.84.233",
-          "mechanism": "a"
-        },
-        {
-          "value": "213.201.84.232",
-          "mechanism": "a"
+          "value": "%{i}.spf.hc2636-28.eu.iphmx.com",
+          "mechanism": "exists"
         }
       ],
       "neutral": [],
