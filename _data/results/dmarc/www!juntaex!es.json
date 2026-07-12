@@ -4,14 +4,14 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.acens.net",
-      "ip90.dominioabsoluto.com",
-      "ns7.acens.net",
-      "ns1.dominioabsoluto.com",
       "ns4.acens.net",
-      "ns1.acens.net",
       "ns3.acens.net",
-      "ns2.dominioabsoluto.com"
+      "ns1.acens.net",
+      "ns1.dominioabsoluto.com",
+      "ip90.dominioabsoluto.com",
+      "ns2.dominioabsoluto.com",
+      "ns7.acens.net",
+      "ns2.acens.net"
     ],
     "warnings": []
   },
@@ -22,22 +22,22 @@
         "hostname": "juntaex-es.mail.protection.outlook.com",
         "addresses": [
           "2a01:111:f403:ca04::4",
-          "2a01:111:f403:ca04::d",
-          "2a01:111:f403:ca09::5",
-          "2a01:111:f403:ca09::6",
-          "52.101.68.15",
-          "52.101.68.18",
-          "52.101.73.1",
-          "52.101.73.12"
+          "2a01:111:f403:ca04::c",
+          "2a01:111:f403:ca09::2",
+          "2a01:111:f403:ca09::4",
+          "52.101.68.12",
+          "52.101.68.29",
+          "52.101.68.5",
+          "52.101.73.8"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:178.255.110.89 ip4:178.255.108.128 ip4:185.136.189.88 ip4:185.136.189.108 ip4:185.136.188.88 ip4:185.136.188.108  include:spf.protection.outlook.com -all",
+    "record": "v=spf1 ip4:178.255.110.89 ip4:178.255.108.128 ip4:185.136.189.88 ip4:185.136.189.108 ip4:185.136.188.88 ip4:185.136.188.108  include:spf.protection.outlook.com include:spf-009d9602.pphosted.com -all",
     "valid": true,
-    "dns_lookups": 1,
+    "dns_lookups": 2,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -128,6 +128,31 @@
             "redirect": null,
             "exp": null,
             "all": "fail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "spf-009d9602.pphosted.com",
+          "record": "v=spf1 ip4:66.159.245.103 ip4:66.159.247.27",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "66.159.245.103",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "66.159.247.27",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "neutral"
           },
           "warnings": []
         }

@@ -4,11 +4,11 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "topacio.usal.es",
-      "sun.rediris.es",
-      "agata.usal.es",
       "chico.rediris.es",
-      "zafiro.usal.es"
+      "topacio.usal.es",
+      "zafiro.usal.es",
+      "agata.usal.es",
+      "sun.rediris.es"
     ],
     "warnings": []
   },
@@ -18,21 +18,29 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.251.2.27",
-          "2607:f8b0:4023:c0b::1a"
+          "172.217.78.26",
+          "2607:f8b0:4023:1c07::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "172.217.216.26",
-          "2607:f8b0:4023:2803::1a"
+          "192.178.231.26",
+          "2607:f8b0:4023:200d::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
+        "addresses": [
+          "172.217.216.26",
+          "2607:f8b0:4023:2803::1a"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
           "172.253.145.26",
           "2607:f8b0:4023:3003::1a"
@@ -40,18 +48,10 @@
       },
       {
         "preference": 10,
-        "hostname": "alt3.aspmx.l.google.com",
-        "addresses": [
-          "172.253.135.26",
-          "2607:f8b0:4023:1015::1a"
-        ]
-      },
-      {
-        "preference": 10,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "173.194.42.27",
-          "2607:f8b0:4001:c79::1b"
+          "172.253.135.27",
+          "2607:f8b0:4023:1015::1a"
         ]
       }
     ],
@@ -194,19 +194,17 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; adkim=r; aspf=r; rua=mailto:postmaster@usal.es; pct=25",
+    "record": "v=DMARC1; p=quarantine; adkim=r; aspf=r; rua=mailto:postmaster@usal.es",
     "valid": true,
     "location": "usal.es",
-    "warnings": [
-      "pct value is less than 100. This leads to inconsistent and unpredictable policy enforcement. Consider using p=none to monitor results instead"
-    ],
+    "warnings": [],
     "tags": {
       "v": {
         "value": "DMARC1",
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": true
       },
       "adkim": {
@@ -227,14 +225,14 @@
         ],
         "explicit": true
       },
-      "pct": {
-        "value": 25,
-        "explicit": true
-      },
       "fo": {
         "value": [
           "0"
         ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
         "explicit": false
       },
       "rf": {
@@ -248,7 +246,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "none",
+        "value": "quarantine",
         "explicit": false
       }
     }

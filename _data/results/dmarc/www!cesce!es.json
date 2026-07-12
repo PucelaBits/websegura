@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns5.grupocesce.es",
-      "ns4.grupocesce.es"
+      "ns4.grupocesce.es",
+      "ns5.grupocesce.es"
     ],
     "warnings": []
   },
@@ -15,43 +15,27 @@
         "preference": 1,
         "hostname": "mxa-00a71501.gslb.pphosted.com",
         "addresses": [
-          "66.159.245.20"
+          "66.159.243.124"
         ]
       },
       {
         "preference": 1,
         "hostname": "mxb-00a71501.gslb.pphosted.com",
         "addresses": [
-          "66.159.245.20"
+          "66.159.243.124"
         ]
       },
       {
         "preference": 100,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "172.217.216.27",
-          "2607:f8b0:4023:2803::1b"
+          "192.178.231.26",
+          "2607:f8b0:4023:200d::1a"
         ]
       },
       {
         "preference": 100,
         "hostname": "alt2.aspmx.l.google.com",
-        "addresses": [
-          "172.253.145.27",
-          "2607:f8b0:4023:3003::1b"
-        ]
-      },
-      {
-        "preference": 100,
-        "hostname": "aspmx.l.google.com",
-        "addresses": [
-          "142.250.141.27",
-          "2607:f8b0:4023:c06::1b"
-        ]
-      },
-      {
-        "preference": 100,
-        "hostname": "aspmx2.googlemail.com",
         "addresses": [
           "172.217.216.27",
           "2607:f8b0:4023:2803::1a"
@@ -59,10 +43,26 @@
       },
       {
         "preference": 100,
+        "hostname": "aspmx.l.google.com",
+        "addresses": [
+          "172.217.78.27",
+          "2607:f8b0:4023:1c07::1a"
+        ]
+      },
+      {
+        "preference": 100,
+        "hostname": "aspmx2.googlemail.com",
+        "addresses": [
+          "192.178.231.26",
+          "2607:f8b0:4023:200d::1a"
+        ]
+      },
+      {
+        "preference": 100,
         "hostname": "aspmx3.googlemail.com",
         "addresses": [
-          "172.253.145.26",
-          "2607:f8b0:4023:3003::1b"
+          "172.217.216.26",
+          "2607:f8b0:4023:2803::1b"
         ]
       }
     ],

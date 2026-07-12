@@ -3,17 +3,22 @@
   "base_domain": "cjcm.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "The domain cjcm.es does not exist"
+    "hostnames": [
+      "ns2.park-my-domain.net",
+      "ns1.park-my-domain.net"
+    ],
+    "warnings": []
   },
   "mx": {
     "hosts": [],
-    "error": "The domain cjcm.es does not exist"
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
   },
   "spf": {
     "record": null,
     "valid": false,
-    "error": "The domain cjcm.es does not exist"
+    "error": "cjcm.es does not have a SPF TXT record"
   },
   "dmarc": {
     "record": null,

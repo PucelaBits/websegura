@@ -31,8 +31,8 @@
         "preference": 20,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "2607:f8b0:4023:c06::1a",
-          "74.125.137.27"
+          "172.217.217.26",
+          "2607:f8b0:4023:1c07::1a"
         ]
       },
       {
@@ -46,21 +46,13 @@
         "preference": 30,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "172.217.216.26",
-          "2607:f8b0:4023:2803::1a"
+          "192.178.231.26",
+          "2607:f8b0:4023:200d::1a"
         ]
       },
       {
         "preference": 30,
         "hostname": "alt2.aspmx.l.google.com",
-        "addresses": [
-          "172.253.145.27",
-          "2607:f8b0:4023:3003::1b"
-        ]
-      },
-      {
-        "preference": 40,
-        "hostname": "aspmx2.googlemail.com",
         "addresses": [
           "172.217.216.26",
           "2607:f8b0:4023:2803::1b"
@@ -68,10 +60,18 @@
       },
       {
         "preference": 40,
+        "hostname": "aspmx2.googlemail.com",
+        "addresses": [
+          "192.178.231.26",
+          "2607:f8b0:4023:200d::1a"
+        ]
+      },
+      {
+        "preference": 40,
         "hostname": "aspmx3.googlemail.com",
         "addresses": [
-          "172.253.145.27",
-          "2607:f8b0:4023:3003::1a"
+          "172.217.216.27",
+          "2607:f8b0:4023:2803::1a"
         ]
       }
     ],

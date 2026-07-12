@@ -3,8 +3,11 @@
   "base_domain": "gobiernolocal.org",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hostnames": [
+      "ns4.diba.cat",
+      "ns3.diba.cat"
+    ],
+    "warnings": []
   },
   "mx": {
     "hosts": [

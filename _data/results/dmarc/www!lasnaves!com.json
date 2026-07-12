@@ -15,25 +15,25 @@
         "preference": 0,
         "hostname": "lasnaves-com.mail.protection.outlook.com",
         "addresses": [
-          "2a01:111:f403:ca04::10",
-          "2a01:111:f403:ca04::5",
-          "2a01:111:f403:ca04::b",
-          "2a01:111:f403:ca09::8",
-          "52.101.68.10",
+          "2a01:111:f403:ca04::4",
+          "2a01:111:f403:ca04::d",
+          "2a01:111:f403:ca04::f",
+          "2a01:111:f403:ca09::2",
+          "52.101.68.0",
           "52.101.68.12",
-          "52.101.68.5",
-          "52.101.73.11"
+          "52.101.68.16",
+          "52.101.73.30"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:ipzmarketing.com include:mailjet.com include:spf.protection.outlook.com -all",
+    "record": "v=spf1 include:ipzmarketing.com include:mailjet.com include:amazonses.com include:spf.protection.outlook.com -all",
     "valid": false,
     "warnings": [],
-    "error": "Parsing the SPF record requires 15/10 maximum DNS lookups - https://tools.ietf.org/html/rfc7208#section-4.6.4",
-    "dns_lookups": 15
+    "error": "Parsing the SPF record requires 16/10 maximum DNS lookups - https://tools.ietf.org/html/rfc7208#section-4.6.4",
+    "dns_lookups": 16
   },
   "dmarc": {
     "record": "v=DMARC1; p=none; rua=mailto:soporte.lasnaves@civired.com",
