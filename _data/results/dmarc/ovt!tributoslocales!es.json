@@ -18,28 +18,45 @@
     "error": "ovt.tributoslocales.es does not have a SPF TXT record"
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; rua=mailto:dmarctributoslocales@gtt.es,mailto:dmarc_agg@vali.email; ruf=mailto:dmarctributoslocales@gtt.es,mailto:dmarc_agg@vali.email; fo=1;",
+    "record": "v=DMARC1; p=reject; sp=quarantine; pct=100; rua=mailto:dmarctributoslocales@tributoslocales.es; ruf=mailto:dmarctributoslocales@tributoslocales.es; fo=1; aspf=s; adkim=s;",
     "valid": true,
     "location": "tributoslocales.es",
-    "warnings": [
-      "gtt.es does not indicate that it accepts DMARC reports about tributoslocales.es - Authorization record not found: tributoslocales.es._report._dmarc.gtt.es IN TXT \"v=DMARC1\"",
-      "gtt.es does not indicate that it accepts DMARC reports about tributoslocales.es - Authorization record not found: tributoslocales.es._report._dmarc.gtt.es IN TXT \"v=DMARC1\""
-    ],
+    "warnings": [],
     "tags": {
       "v": {
         "value": "DMARC1",
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "reject",
+        "explicit": true
+      },
+      "sp": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "pct": {
+        "value": 100,
         "explicit": true
       },
       "rua": {
-        "value": "mailto:dmarctributoslocales@gtt.es,mailto:dmarc_agg@vali.email",
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarctributoslocales@tributoslocales.es",
+            "size_limit": null
+          }
+        ],
         "explicit": true
       },
       "ruf": {
-        "value": "mailto:dmarctributoslocales@gtt.es,mailto:dmarc_agg@vali.email",
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarctributoslocales@tributoslocales.es",
+            "size_limit": null
+          }
+        ],
         "explicit": true
       },
       "fo": {
@@ -48,17 +65,13 @@
         ],
         "explicit": true
       },
-      "adkim": {
-        "value": "r",
-        "explicit": false
-      },
       "aspf": {
-        "value": "r",
-        "explicit": false
+        "value": "s",
+        "explicit": true
       },
-      "pct": {
-        "value": 100,
-        "explicit": false
+      "adkim": {
+        "value": "s",
+        "explicit": true
       },
       "rf": {
         "value": [
@@ -68,10 +81,6 @@
       },
       "ri": {
         "value": 86400,
-        "explicit": false
-      },
-      "sp": {
-        "value": "none",
         "explicit": false
       }
     }

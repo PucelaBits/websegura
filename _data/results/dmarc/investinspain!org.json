@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "milano.icex.es",
-      "halcon.icex.es"
+      "halcon.icex.es",
+      "milano.icex.es"
     ],
     "warnings": []
   },
@@ -20,7 +20,7 @@
     "valid": true,
     "dns_lookups": 2,
     "warnings": [
-      "investinspain.org does not have any MX records"
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
     ],
     "parsed": {
       "pass": [],

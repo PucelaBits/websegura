@@ -15,25 +15,23 @@
         "preference": 0,
         "hostname": "lasnaves-com.mail.protection.outlook.com",
         "addresses": [
-          "2a01:111:f403:ca04::4",
-          "2a01:111:f403:ca04::d",
-          "2a01:111:f403:ca04::f",
-          "2a01:111:f403:ca09::2",
-          "52.101.68.0",
-          "52.101.68.12",
+          "2a01:111:f403:ca04::c",
+          "2a01:111:f403:ca09::d",
+          "2a01:111:f403:ca09::e",
+          "2a01:111:f403:ca09::f",
           "52.101.68.16",
-          "52.101.73.30"
+          "52.101.68.32",
+          "52.101.73.16",
+          "52.101.73.28"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:ipzmarketing.com include:mailjet.com include:amazonses.com include:spf.protection.outlook.com -all",
+    "record": null,
     "valid": false,
-    "warnings": [],
-    "error": "Parsing the SPF record requires 16/10 maximum DNS lookups - https://tools.ietf.org/html/rfc7208#section-4.6.4",
-    "dns_lookups": 16
+    "error": "lasnaves.com has multiple SPF TXT records"
   },
   "dmarc": {
     "record": "v=DMARC1; p=none; rua=mailto:soporte.lasnaves@civired.com",

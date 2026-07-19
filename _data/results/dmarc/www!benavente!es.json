@@ -12,24 +12,18 @@
   "mx": {
     "hosts": [
       {
-        "preference": 0,
-        "hostname": "benavente-es.mail.protection.outlook.com",
+        "preference": 5,
+        "hostname": "mail3.benavente.es",
         "addresses": [
-          "2a01:111:f403:ca21::",
-          "2a01:111:f403:ca21::1",
-          "2a01:111:f403:ca21::2",
-          "2a01:111:f403:ca21::3",
-          "52.101.91.0",
-          "52.101.91.1",
-          "52.101.91.2",
-          "52.101.91.3"
+          "185.73.173.33",
+          "185.73.173.41"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:185.253.153.139 mx a ptr ip4:188.165.133.185/32 include:spf.protection.outlook.com include:spf.nds.es -all",
+    "record": "v=spf1 ip4:185.253.153.139 mx a ptr ip4:188.165.133.185/32 include:spf.protection.outlook.com include:spf.nds.es ip4:185.73.173.32/28 -all",
     "valid": true,
     "dns_lookups": 4,
     "warnings": [
@@ -42,7 +36,7 @@
           "mechanism": "ip4"
         },
         {
-          "value": "benavente-es.mail.protection.outlook.com",
+          "value": "mail3.benavente.es",
           "mechanism": "mx"
         },
         {
@@ -55,6 +49,10 @@
         },
         {
           "value": "188.165.133.185/32",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "185.73.173.32/28",
           "mechanism": "ip4"
         }
       ],

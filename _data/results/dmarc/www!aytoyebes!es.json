@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.almazena.com",
       "ns1.almazena.com",
+      "ns2.almazena.com",
       "ns3.almazena.com"
     ],
     "warnings": []
@@ -26,8 +26,8 @@
     "record": "v=spf1 a mx include:almazena.com include:spf.profesionalhosting.com -all",
     "valid": false,
     "warnings": [],
-    "error": "Parsing the SPF record requires 12/10 maximum DNS lookups - https://tools.ietf.org/html/rfc7208#section-4.6.4",
-    "dns_lookups": 12
+    "error": "Parsing the SPF record requires 14/10 maximum DNS lookups - https://tools.ietf.org/html/rfc7208#section-4.6.4",
+    "dns_lookups": 14
   },
   "dmarc": {
     "record": "v=DMARC1; p=quarantine; adkim=s; aspf=s",
