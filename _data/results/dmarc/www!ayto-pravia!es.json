@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.neodigit.net",
-      "ns2.neodigit.net"
+      "ns2.neodigit.net",
+      "ns1.neodigit.net"
     ],
     "warnings": []
   },
@@ -73,7 +73,7 @@
             "include": [
               {
                 "domain": "_spf.tecnocratica.net",
-                "record": "v=spf1 ip4:185.203.227.0/27 ip6:2a01:a940:459::/48 ~all",
+                "record": "v=spf1 ip4:185.203.227.0/27 ip6:2a01:a940:459::/48",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
@@ -92,7 +92,7 @@
                   "include": [],
                   "redirect": null,
                   "exp": null,
-                  "all": "softfail"
+                  "all": "neutral"
                 },
                 "warnings": []
               }

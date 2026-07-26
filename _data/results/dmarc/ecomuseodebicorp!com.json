@@ -24,7 +24,7 @@
   "spf": {
     "record": "v=spf1 ip4:184.173.239.120 a mx include:websitewelcome.com ~all",
     "valid": true,
-    "dns_lookups": 7,
+    "dns_lookups": 10,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -48,7 +48,7 @@
         {
           "domain": "websitewelcome.com",
           "record": "v=spf1 include:eig.spf.a.cloudfilter.net include:spf.websitewelcome.com include:_spf.google.com include:spf.protection.outlook.com -all",
-          "dns_lookups": 4,
+          "dns_lookups": 7,
           "parsed": {
             "pass": [],
             "neutral": [],
@@ -86,8 +86,8 @@
               },
               {
                 "domain": "spf.websitewelcome.com",
-                "record": "v=spf1 ip4:209.17.115.0/24 ip4:64.69.218.0/24 ip4:65.254.253.0/24 ip4:65.254.254.0/24 ip4:162.210.50.0/23 ip4:162.210.48.0/23 ip4:206.188.220.0/23 ip4:206.188.222.0/23 ~all",
-                "dns_lookups": 0,
+                "record": "v=spf1 include:_spf.nfco-mailout.com ip4:209.17.115.0/24 ip4:64.69.218.0/24 ip4:65.254.253.0/24 ip4:65.254.254.0/24 ip4:162.210.50.0/23 ip4:162.210.48.0/23 ip4:206.188.220.0/23 ip4:206.188.222.0/23 ip4:72.22.75.0/24 ip4:66.235.215.0/24 ~all",
+                "dns_lookups": 3,
                 "parsed": {
                   "pass": [
                     {
@@ -121,12 +121,108 @@
                     {
                       "value": "206.188.222.0/23",
                       "mechanism": "ip4"
+                    },
+                    {
+                      "value": "72.22.75.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "66.235.215.0/24",
+                      "mechanism": "ip4"
                     }
                   ],
                   "neutral": [],
                   "softfail": [],
                   "fail": [],
-                  "include": [],
+                  "include": [
+                    {
+                      "domain": "_spf.nfco-mailout.com",
+                      "record": "v=spf1 include:_netblocks-pro.nfco-mailout.com include:_netblocks-atl.nfco-mailout.com ~all",
+                      "dns_lookups": 2,
+                      "parsed": {
+                        "pass": [],
+                        "neutral": [],
+                        "softfail": [],
+                        "fail": [],
+                        "include": [
+                          {
+                            "domain": "_netblocks-pro.nfco-mailout.com",
+                            "record": "v=spf1 ip4:67.20.127.0/27 ip4:50.87.255.32/27 ip4:66.147.243.192/27 ip4:162.241.146.0/23 ip4:162.215.244.0/23 ~all",
+                            "dns_lookups": 0,
+                            "parsed": {
+                              "pass": [
+                                {
+                                  "value": "67.20.127.0/27",
+                                  "mechanism": "ip4"
+                                },
+                                {
+                                  "value": "50.87.255.32/27",
+                                  "mechanism": "ip4"
+                                },
+                                {
+                                  "value": "66.147.243.192/27",
+                                  "mechanism": "ip4"
+                                },
+                                {
+                                  "value": "162.241.146.0/23",
+                                  "mechanism": "ip4"
+                                },
+                                {
+                                  "value": "162.215.244.0/23",
+                                  "mechanism": "ip4"
+                                }
+                              ],
+                              "neutral": [],
+                              "softfail": [],
+                              "fail": [],
+                              "include": [],
+                              "redirect": null,
+                              "exp": null,
+                              "all": "softfail"
+                            },
+                            "warnings": []
+                          },
+                          {
+                            "domain": "_netblocks-atl.nfco-mailout.com",
+                            "record": "v=spf1 ip4:192.185.0.0/16 ip4:50.116.64.0/18 ip4:162.210.50.0/23 ip4:162.210.48.0/23 ~all",
+                            "dns_lookups": 0,
+                            "parsed": {
+                              "pass": [
+                                {
+                                  "value": "192.185.0.0/16",
+                                  "mechanism": "ip4"
+                                },
+                                {
+                                  "value": "50.116.64.0/18",
+                                  "mechanism": "ip4"
+                                },
+                                {
+                                  "value": "162.210.50.0/23",
+                                  "mechanism": "ip4"
+                                },
+                                {
+                                  "value": "162.210.48.0/23",
+                                  "mechanism": "ip4"
+                                }
+                              ],
+                              "neutral": [],
+                              "softfail": [],
+                              "fail": [],
+                              "include": [],
+                              "redirect": null,
+                              "exp": null,
+                              "all": "softfail"
+                            },
+                            "warnings": []
+                          }
+                        ],
+                        "redirect": null,
+                        "exp": null,
+                        "all": "softfail"
+                      },
+                      "warnings": []
+                    }
+                  ],
                   "redirect": null,
                   "exp": null,
                   "all": "softfail"

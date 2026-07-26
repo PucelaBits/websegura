@@ -1,24 +1,42 @@
 {
   "domain": "administracion.gob.es",
   "base_domain": "administracion.gob.es",
-  "dnssec": false,
+  "dnssec": true,
   "ns": {
-    "hostnames": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hostnames": [
+      "ns1.age.gob.es",
+      "ns2.age.gob.es"
+    ],
+    "warnings": []
   },
   "mx": {
     "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "record": "v=spf1 mx ~all",
+    "valid": true,
+    "dns_lookups": 1,
+    "warnings": [
+      "administracion.gob.es does not have any MX records"
+    ],
+    "parsed": {
+      "pass": [],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
   },
   "dmarc": {
     "record": null,
     "valid": false,
     "location": null,
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.administracion.gob.es\n\n*.administracion.gob.es-604508755"
   }
 }

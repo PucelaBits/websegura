@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "ns12.servicio-online.net",
-      "ns11.servicio-online.net",
-      "ns10.servicio-online.net"
+      "ns10.servicio-online.net",
+      "ns11.servicio-online.net"
     ],
     "warnings": []
   },
@@ -39,9 +39,9 @@
     ]
   },
   "spf": {
-    "record": "v=spf1 mx a ip4:213.0.98.20 ip4:213.0.98.22 a:inf1.mogan.es include:mailcontrol.com -all",
+    "record": "v=spf1 mx a ip4:213.0.98.20 ip4:213.0.98.22 a:inf1.mogan.es a:mail.mogan.es include:mailcontrol.com -all",
     "valid": true,
-    "dns_lookups": 4,
+    "dns_lookups": 5,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -68,6 +68,10 @@
         {
           "value": "213.0.98.22",
           "mechanism": "ip4"
+        },
+        {
+          "value": "213.0.98.20",
+          "mechanism": "a"
         },
         {
           "value": "213.0.98.20",

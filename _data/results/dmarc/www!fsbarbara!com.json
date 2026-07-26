@@ -58,7 +58,7 @@
             "include": [
               {
                 "domain": "relay.mail.hostinger.com",
-                "record": "v=spf1 ip4:148.222.54.0/24 ip4:148.222.55.0/24 ip6:2a02:4780:5a:c0de::/64 ip6:2a02:4780:5b:c0de::/64 ~all",
+                "record": "v=spf1 ip4:148.222.54.0/24 ip4:148.222.55.0/24 ip4:189.12.192.0/22 ip6:2a02:4780:5a:c0de::/64 ip6:2a02:4780:5b:c0de::/64 ~all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
@@ -68,6 +68,10 @@
                     },
                     {
                       "value": "148.222.55.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "189.12.192.0/22",
                       "mechanism": "ip4"
                     },
                     {

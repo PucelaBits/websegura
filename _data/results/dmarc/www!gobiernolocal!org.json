@@ -21,21 +21,17 @@
       {
         "preference": 10,
         "hostname": "mx2.diba.cat",
-        "addresses": [
-          "45.15.50.204"
-        ]
+        "addresses": []
       },
       {
         "preference": 10,
         "hostname": "mx3.diba.cat",
-        "addresses": [
-          "45.15.50.199"
-        ]
+        "addresses": []
       }
     ],
     "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 45.15.50.199 is mx11.diba.cat, but the A/AAAA DNS records for mx11.diba.cat do not resolve to 45.15.50.199"
+      "All nameservers failed to answer the query mx2.diba.cat. IN A: Server Do53:1.0.0.1@53 answered SERVFAIL",
+      "All nameservers failed to answer the query mx3.diba.cat. IN A: Server Do53:1.0.0.1@53 answered SERVFAIL"
     ]
   },
   "spf": {
