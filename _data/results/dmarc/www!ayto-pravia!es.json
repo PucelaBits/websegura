@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.neodigit.net",
-      "ns1.neodigit.net"
+      "ns1.neodigit.net",
+      "ns2.neodigit.net"
     ],
     "warnings": []
   },
@@ -29,32 +29,19 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 a mx include:host551d56-a38.neodigit.net -all",
+    "record": "v=spf1 include:host551d56-a38.neodigit.net -all",
     "valid": true,
-    "dns_lookups": 4,
+    "dns_lookups": 2,
     "warnings": [],
     "parsed": {
-      "pass": [
-        {
-          "value": "88.151.19.226",
-          "mechanism": "a"
-        },
-        {
-          "value": "bmx01.neodigit.net",
-          "mechanism": "mx"
-        },
-        {
-          "value": "bmx02.neodigit.net",
-          "mechanism": "mx"
-        }
-      ],
+      "pass": [],
       "neutral": [],
       "softfail": [],
       "fail": [],
       "include": [
         {
           "domain": "host551d56-a38.neodigit.net",
-          "record": "v=spf1 ip4:185.49.186.38 ip6:2a01:a940:455:23::1 include:_spf.tecnocratica.net -all",
+          "record": "v=spf1 ip4:185.49.186.38 ip6:2a01:a940:455:23::1 include:_spf.correo-seguro.net",
           "dns_lookups": 1,
           "parsed": {
             "pass": [
@@ -72,7 +59,7 @@
             "fail": [],
             "include": [
               {
-                "domain": "_spf.tecnocratica.net",
+                "domain": "_spf.correo-seguro.net",
                 "record": "v=spf1 ip4:185.203.227.0/27 ip6:2a01:a940:459::/48",
                 "dns_lookups": 0,
                 "parsed": {
@@ -99,7 +86,7 @@
             ],
             "redirect": null,
             "exp": null,
-            "all": "fail"
+            "all": "neutral"
           },
           "warnings": []
         }

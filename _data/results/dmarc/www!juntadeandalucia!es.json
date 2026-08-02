@@ -4,37 +4,29 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns4.juntadeandalucia.es",
       "ns3.juntadeandalucia.es",
       "ns1.juntadeandalucia.es",
-      "ns.juntadeandalucia.es",
-      "ns4.juntadeandalucia.es"
+      "ns.juntadeandalucia.es"
     ],
     "warnings": []
   },
   "mx": {
     "hosts": [
       {
-        "preference": 10,
-        "hostname": "mx.juntadeandalucia.es",
+        "preference": 5,
+        "hostname": "juntadeandalucia.in.tmes.trendmicro.eu",
         "addresses": [
-          "217.12.21.182"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mx2.juntadeandalucia.es",
-        "addresses": [
-          "217.12.21.191"
+          "18.185.115.145",
+          "18.185.115.146",
+          "18.185.115.147"
         ]
       }
     ],
-    "warnings": [
-      "217.12.21.182 does not have any reverse DNS (PTR) records",
-      "217.12.21.191 does not have any reverse DNS (PTR) records"
-    ]
+    "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:spf.protection.outlook.com include:_spf.google.com ip4:217.12.27.153 ip4:217.12.27.75 ip4:217.12.26.60 ip4:217.12.26.61 ip4:217.12.27.157 ip4:217.12.27.158 ip4:217.12.27.159 ip4:217.12.27.160 include:spf.juntadeandalucia.es -all",
+    "record": "v=spf1 include:spf.protection.outlook.com ip4:217.12.27.153 ip4:217.12.27.75 ip4:217.12.26.60 ip4:217.12.26.61 ip4:217.12.27.157 ip4:217.12.27.158 ip4:217.12.27.160 ip4:217.12.27.210 include:spf.juntadeandalucia.es include:spf.tmes.trendmicro.eu -all",
     "valid": true,
     "dns_lookups": 3,
     "warnings": [],
@@ -65,11 +57,11 @@
           "mechanism": "ip4"
         },
         {
-          "value": "217.12.27.159",
+          "value": "217.12.27.160",
           "mechanism": "ip4"
         },
         {
-          "value": "217.12.27.160",
+          "value": "217.12.27.210",
           "mechanism": "ip4"
         }
       ],
@@ -139,55 +131,6 @@
           "warnings": []
         },
         {
-          "domain": "_spf.google.com",
-          "record": "v=spf1 ip4:74.125.0.0/16 ip4:209.85.128.0/17 ip6:2001:4860:4864::/56 ip6:2404:6800:4864::/56 ip6:2607:f8b0:4864::/56 ip6:2800:3f0:4864::/56 ip6:2a00:1450:4864::/56 ip6:2c0f:fb50:4864::/56 ~all",
-          "dns_lookups": 0,
-          "parsed": {
-            "pass": [
-              {
-                "value": "74.125.0.0/16",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "209.85.128.0/17",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "2001:4860:4864::/56",
-                "mechanism": "ip6"
-              },
-              {
-                "value": "2404:6800:4864::/56",
-                "mechanism": "ip6"
-              },
-              {
-                "value": "2607:f8b0:4864::/56",
-                "mechanism": "ip6"
-              },
-              {
-                "value": "2800:3f0:4864::/56",
-                "mechanism": "ip6"
-              },
-              {
-                "value": "2a00:1450:4864::/56",
-                "mechanism": "ip6"
-              },
-              {
-                "value": "2c0f:fb50:4864::/56",
-                "mechanism": "ip6"
-              }
-            ],
-            "neutral": [],
-            "softfail": [],
-            "fail": [],
-            "include": [],
-            "redirect": null,
-            "exp": null,
-            "all": "softfail"
-          },
-          "warnings": []
-        },
-        {
           "domain": "spf.juntadeandalucia.es",
           "record": "v=spf1 ip4:217.12.23.63 ip4:217.12.23.124 ip4:217.12.23.251 ip4:217.12.23.127 ip4:217.12.23.64 ip4:217.12.23.123 ip4:217.12.23.193 ip4:217.12.27.210 ip4:185.136.189.88 ip4:185.136.189.108 ip4:185.136.188.88 ip4:185.136.188.108 -all",
           "dns_lookups": 0,
@@ -249,6 +192,67 @@
             "redirect": null,
             "exp": null,
             "all": "fail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "spf.tmes.trendmicro.eu",
+          "record": "v=spf1 ip4:18.185.115.0/25 ip4:18.185.115.128/26 ip4:34.253.238.128/26 ip4:34.253.238.192/26 ip4:3.72.196.143 ip4:18.156.0.20 ip4:35.156.245.132 ip4:18.208.22.124 ip4:18.208.22.125 ip4:18.96.32.128/27 ip6:2a05:d014:10e:d900::/60 ~all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "18.185.115.0/25",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "18.185.115.128/26",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "34.253.238.128/26",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "34.253.238.192/26",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "3.72.196.143",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "18.156.0.20",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "35.156.245.132",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "18.208.22.124",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "18.208.22.125",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "18.96.32.128/27",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "2a05:d014:10e:d900::/60",
+                "mechanism": "ip6"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
           },
           "warnings": []
         }

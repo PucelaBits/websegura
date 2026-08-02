@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns3.serviciodns.es",
       "ns1.serviciodns.es",
-      "ns2.serviciodns.es",
-      "ns3.serviciodns.es"
+      "ns2.serviciodns.es"
     ],
     "warnings": []
   },
@@ -35,10 +35,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 91.200.140.13 is mx13.axarnet.es, but the A/AAAA DNS records for mx13.axarnet.es do not resolve to 91.200.140.13"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 a mx a:mail.semanasantamarinera.org include:_sh.axarnet.es ~all",

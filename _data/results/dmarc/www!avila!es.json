@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns8.servidoresdns.net",
-      "dns7.servidoresdns.net"
+      "dns7.servidoresdns.net",
+      "dns8.servidoresdns.net"
     ],
     "warnings": []
   },
@@ -29,8 +29,8 @@
         "preference": 30,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "172.217.216.26",
-          "2607:f8b0:4023:2803::1a"
+          "192.178.131.27",
+          "2607:f8b0:4023:141f::1b"
         ]
       }
     ],
@@ -39,27 +39,23 @@
     ]
   },
   "spf": {
-    "record": "v=spf1 mx:avila.es exists:avila.es ~all",
+    "record": "v=spf1 ip4:185.61.204.73 ip4:185.61.204.74 ip4:82.223.120.168 -all",
     "valid": true,
-    "dns_lookups": 2,
+    "dns_lookups": 0,
     "warnings": [],
     "parsed": {
       "pass": [
         {
-          "value": "correo.avila.es",
-          "mechanism": "mx"
+          "value": "185.61.204.73",
+          "mechanism": "ip4"
         },
         {
-          "value": "info.avila.es",
-          "mechanism": "mx"
+          "value": "185.61.204.74",
+          "mechanism": "ip4"
         },
         {
-          "value": "alt1.aspmx.l.google.com",
-          "mechanism": "mx"
-        },
-        {
-          "value": "avila.es",
-          "mechanism": "exists"
+          "value": "82.223.120.168",
+          "mechanism": "ip4"
         }
       ],
       "neutral": [],
@@ -68,13 +64,65 @@
       "include": [],
       "redirect": null,
       "exp": null,
-      "all": "softfail"
+      "all": "fail"
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=none; rua=mailto:dmarc@avila.es; fo=1; adkim=s; aspf=s; pct=100",
+    "valid": true,
+    "location": "avila.es",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc@avila.es",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "1"
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "s",
+        "explicit": true
+      },
+      "aspf": {
+        "value": "s",
+        "explicit": true
+      },
+      "pct": {
+        "value": 100,
+        "explicit": true
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }

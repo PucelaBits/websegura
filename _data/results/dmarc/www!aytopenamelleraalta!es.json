@@ -47,7 +47,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=reject; sp=none; adkim=s; aspf=s; rua=mailto:2rer39753w@rua.powerdmarc.com; ruf=mailto:2rer39753w@ruf.powerdmarc.com; pct=100; fo=1;",
+    "record": "v=DMARC1;p=reject;sp=none;rua=mailto:ef27dc4458@rua.easydmarc.eu;ruf=mailto:ef27dc4458@ruf.easydmarc.eu;aspf=s;adkim=s;fo=1;",
     "valid": true,
     "location": "aytopenamelleraalta.es",
     "warnings": [],
@@ -64,19 +64,11 @@
         "value": "none",
         "explicit": true
       },
-      "adkim": {
-        "value": "s",
-        "explicit": true
-      },
-      "aspf": {
-        "value": "s",
-        "explicit": true
-      },
       "rua": {
         "value": [
           {
             "scheme": "mailto",
-            "address": "2rer39753w@rua.powerdmarc.com",
+            "address": "ef27dc4458@rua.easydmarc.eu",
             "size_limit": null
           }
         ],
@@ -86,14 +78,18 @@
         "value": [
           {
             "scheme": "mailto",
-            "address": "2rer39753w@ruf.powerdmarc.com",
+            "address": "ef27dc4458@ruf.easydmarc.eu",
             "size_limit": null
           }
         ],
         "explicit": true
       },
-      "pct": {
-        "value": 100,
+      "aspf": {
+        "value": "s",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "s",
         "explicit": true
       },
       "fo": {
@@ -101,6 +97,10 @@
           "1"
         ],
         "explicit": true
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
       },
       "rf": {
         "value": [

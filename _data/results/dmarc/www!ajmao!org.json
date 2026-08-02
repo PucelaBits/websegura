@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "servdns1.silme.es",
-      "servdns2.silme.es"
+      "servdns2.silme.es",
+      "servdns1.silme.es"
     ],
     "warnings": []
   },
@@ -15,15 +15,10 @@
         "preference": 1,
         "hostname": "smtp.google.com",
         "addresses": [
-          "142.250.141.26",
-          "142.250.141.27",
-          "142.251.2.26",
-          "142.251.2.27",
-          "2607:f8b0:4023:c03::1a",
-          "2607:f8b0:4023:c03::1b",
-          "2607:f8b0:4023:c06::1b",
-          "2607:f8b0:4023:c0d::1b",
-          "74.125.137.27"
+          "172.253.132.26",
+          "172.253.132.27",
+          "2607:f8b0:4023:2c03::1a",
+          "2607:f8b0:4023:2c03::1b"
         ]
       }
     ],
