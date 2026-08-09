@@ -29,13 +29,14 @@
         "preference": 30,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "192.178.131.27",
-          "2607:f8b0:4023:141f::1b"
+          "192.178.234.27",
+          "2800:3f0:4003:c14::1b"
         ]
       }
     ],
     "warnings": [
-      "The reverse DNS of 82.223.120.168 is 168.120.223.82.in-addr.arpa, but the A/AAAA DNS records for 168.120.223.82.in-addr.arpa do not resolve to 82.223.120.168"
+      "The reverse DNS of 82.223.120.168 is 168.120.223.82.in-addr.arpa, but the A/AAAA DNS records for 168.120.223.82.in-addr.arpa do not resolve to 82.223.120.168",
+      "2800:3f0:4003:c14::1b does not have any reverse DNS (PTR) records"
     ]
   },
   "spf": {
@@ -68,10 +69,12 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; rua=mailto:dmarc@avila.es; fo=1; adkim=s; aspf=s; pct=100",
+    "record": "v=DMARC1; p=none; fo=1; adkim=s; aspf=s; pct=100",
     "valid": true,
     "location": "avila.es",
-    "warnings": [],
+    "warnings": [
+      "rua tag (destination for aggregate reports) not found"
+    ],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -79,16 +82,6 @@
       },
       "p": {
         "value": "none",
-        "explicit": true
-      },
-      "rua": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "dmarc@avila.es",
-            "size_limit": null
-          }
-        ],
         "explicit": true
       },
       "fo": {

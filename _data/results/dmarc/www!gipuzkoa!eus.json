@@ -3,8 +3,12 @@
   "base_domain": "gipuzkoa.eus",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "All nameservers failed to answer the query gipuzkoa.eus. IN NS: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "hostnames": [
+      "dns2.gipuzkoa.net",
+      "dns.gipuzkoa.eus",
+      "dns.gipuzkoa.net"
+    ],
+    "warnings": []
   },
   "mx": {
     "hosts": [
@@ -12,14 +16,14 @@
         "preference": 5,
         "hostname": "mxa-00a9a302.gslb.pphosted.com",
         "addresses": [
-          "66.159.247.98"
+          "66.159.245.176"
         ]
       },
       {
         "preference": 5,
         "hostname": "mxb-00a9a302.gslb.pphosted.com",
         "addresses": [
-          "66.159.245.176"
+          "66.159.247.98"
         ]
       }
     ],

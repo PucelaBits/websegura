@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns2.dnsxperta.com",
       "ns1.dnsxperta.com",
-      "ns3.dnsxperta.com",
-      "ns2.dnsxperta.com"
+      "ns3.dnsxperta.com"
     ],
     "warnings": []
   },
@@ -52,7 +52,10 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The reverse DNS of 172.86.117.35 is www.yana.dhl.com, but the A/AAAA DNS records for www.yana.dhl.com do not resolve to 172.86.117.35",
+      "The reverse DNS of 172.86.117.35 is www.yana.dhl.com, but the A/AAAA DNS records for www.yana.dhl.com do not resolve to 172.86.117.35"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:_spf.srv.cat ~all",

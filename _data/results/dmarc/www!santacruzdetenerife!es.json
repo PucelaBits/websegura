@@ -14,18 +14,19 @@
       {
         "preference": 10,
         "hostname": "mxa-00764502.gslb.pphosted.com",
-        "addresses": []
+        "addresses": [
+          "66.159.246.179"
+        ]
       },
       {
         "preference": 10,
         "hostname": "mxb-00764502.gslb.pphosted.com",
-        "addresses": []
+        "addresses": [
+          "66.159.244.66"
+        ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out.",
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx:santacruzdetenerife.es ip4:195.76.166.0/24 include:spf-00764502.pphosted.com include:spf-00764503.pphosted.com -all",

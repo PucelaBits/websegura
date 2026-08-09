@@ -13,15 +13,15 @@
     "hosts": [
       {
         "preference": 25,
-        "hostname": "ajreus.in.tmes.trendmicro.eu",
+        "hostname": "smtp0.reus.cat",
         "addresses": [
-          "18.185.115.145",
-          "18.185.115.146",
-          "18.185.115.147"
+          "84.38.252.25"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The reverse DNS of 84.38.252.25 is relay.reus.cat, but the A/AAAA DNS records for relay.reus.cat do not resolve to 84.38.252.25"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:_spf.reus.cat include:spf.ipzmarketing.com include:eu.transmail.net -all",

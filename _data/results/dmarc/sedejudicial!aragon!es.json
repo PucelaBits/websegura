@@ -8,20 +8,20 @@
   },
   "mx": {
     "hosts": [],
-    "error": "All nameservers failed to answer the query sedejudicial.aragon.es. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
   },
   "spf": {
     "record": null,
     "valid": false,
-    "error": "All nameservers failed to answer the query sedejudicial.aragon.es. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "error": "sedejudicial.aragon.es does not have a SPF TXT record"
   },
   "dmarc": {
     "record": "v=DMARC1; p=none; rua=mailto:dmarc@aragon.es; ruf=mailto:dmarc@aragon.es; fo=1",
     "valid": true,
     "location": "aragon.es",
-    "warnings": [
-      "Failed to retrieve MX records for the domain of rua email address dmarc@aragon.es - All nameservers failed to answer the query aragon.es. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
-    ],
+    "warnings": [],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -32,7 +32,13 @@
         "explicit": true
       },
       "rua": {
-        "value": "mailto:dmarc@aragon.es",
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc@aragon.es",
+            "size_limit": null
+          }
+        ],
         "explicit": true
       },
       "ruf": {

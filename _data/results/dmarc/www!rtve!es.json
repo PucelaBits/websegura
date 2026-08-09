@@ -21,12 +21,12 @@
       {
         "preference": 10,
         "hostname": "mxb-00626c01.gslb.pphosted.com",
-        "addresses": []
+        "addresses": [
+          "143.55.144.49"
+        ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:%{ir}.%{v}.%{d}.spf.has.pphosted.com -all",
