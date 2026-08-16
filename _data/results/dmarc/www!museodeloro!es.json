@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns1017.ui-dns.com",
       "ns1042.ui-dns.org",
       "ns1045.ui-dns.biz",
-      "ns1122.ui-dns.de",
-      "ns1017.ui-dns.com"
+      "ns1122.ui-dns.de"
     ],
     "warnings": []
   },
@@ -17,16 +17,14 @@
         "preference": 10,
         "hostname": "mx00.ionos.es",
         "addresses": [
-          "212.227.15.171",
-          "212.227.15.41"
+          "212.227.15.171"
         ]
       },
       {
         "preference": 10,
         "hostname": "mx01.ionos.es",
         "addresses": [
-          "212.227.15.188",
-          "217.72.192.67"
+          "212.227.15.188"
         ]
       }
     ],

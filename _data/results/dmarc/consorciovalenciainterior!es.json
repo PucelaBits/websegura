@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1107.ui-dns.org",
-      "ns1107.ui-dns.biz",
       "ns1107.ui-dns.com",
-      "ns1107.ui-dns.de"
+      "ns1107.ui-dns.de",
+      "ns1107.ui-dns.biz",
+      "ns1107.ui-dns.org"
     ],
     "warnings": []
   },
@@ -17,39 +17,36 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "172.253.63.27",
-          "2607:f8b0:4004:c1b::1a"
+          "142.250.125.26",
+          "2607:f8b0:4001:c11::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "192.178.234.27",
-          "2800:3f0:4003:c14::1a"
+          "142.250.100.26",
+          "2607:f8b0:4023:3801::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "172.253.116.26",
-          "2a00:1450:400b:c02::1a"
+          "172.253.149.26",
+          "2607:f8b0:4024:c0f::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "aspmx2.googlemail.com",
         "addresses": [
-          "192.178.234.26",
-          "2800:3f0:4003:c14::1a"
+          "142.250.100.27",
+          "2607:f8b0:4023:3801::1a"
         ]
       }
     ],
-    "warnings": [
-      "2800:3f0:4003:c14::1a does not have any reverse DNS (PTR) records",
-      "2800:3f0:4003:c14::1a does not have any reverse DNS (PTR) records"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": null,

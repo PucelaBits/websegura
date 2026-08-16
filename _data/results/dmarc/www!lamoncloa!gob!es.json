@@ -21,12 +21,12 @@
       {
         "preference": 20,
         "hostname": "mail02.mpr.es",
-        "addresses": [
-          "212.128.108.46"
-        ]
+        "addresses": []
       }
     ],
-    "warnings": []
+    "warnings": [
+      "All nameservers failed to answer the query mail02.mpr.es. IN AAAA: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    ]
   },
   "spf": {
     "record": "v=spf1 ip4:212.128.108.45 ip4:212.128.108.46 -all",

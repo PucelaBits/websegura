@@ -36,7 +36,7 @@
       "include": [
         {
           "domain": "_spf.reus.cat",
-          "record": "v=spf1 ip4:77.227.178.25 include:spf.tmes.trendmicro.eu include:spf.protection.outlook.com -all",
+          "record": "v=spf1 ip4:77.227.178.25 include:spf.tmes.trendmicro.eu include:spf.protection.outlook.com  -all",
           "dns_lookups": 2,
           "parsed": {
             "pass": [

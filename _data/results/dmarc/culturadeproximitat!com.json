@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.dnsxperta.com",
+      "ns3.dnsxperta.com",
       "ns1.dnsxperta.com",
-      "ns3.dnsxperta.com"
+      "ns2.dnsxperta.com"
     ],
     "warnings": []
   },
@@ -16,32 +16,36 @@
         "preference": 5,
         "hostname": "mx1.filterantispam.com",
         "addresses": [
-          "172.86.117.35",
-          "185.126.114.131",
-          "185.174.29.19",
-          "192.36.176.216",
-          "193.111.78.251",
-          "193.169.240.241",
-          "193.169.240.97",
+          "144.172.116.207",
+          "144.172.116.75",
+          "157.85.97.77",
+          "172.86.126.200",
+          "172.86.88.255",
+          "172.86.89.105",
+          "192.36.176.202",
           "194.62.55.117",
-          "194.62.55.182",
-          "45.61.150.137"
+          "194.62.55.183",
+          "2.59.119.110",
+          "23.254.229.157",
+          "45.147.47.125"
         ]
       },
       {
         "preference": 5,
         "hostname": "mx2.filterantispam.com",
         "addresses": [
-          "172.86.117.35",
-          "185.126.114.131",
-          "185.174.29.19",
-          "192.36.176.216",
-          "193.111.78.251",
-          "193.169.240.241",
-          "193.169.240.97",
+          "144.172.116.207",
+          "144.172.116.75",
+          "157.85.97.77",
+          "172.86.126.200",
+          "172.86.88.255",
+          "172.86.89.105",
+          "192.36.176.202",
           "194.62.55.117",
-          "194.62.55.182",
-          "45.61.150.137"
+          "194.62.55.183",
+          "2.59.119.110",
+          "23.254.229.157",
+          "45.147.47.125"
         ]
       },
       {
@@ -53,8 +57,8 @@
       }
     ],
     "warnings": [
-      "The reverse DNS of 172.86.117.35 is www.yana.dhl.com, but the A/AAAA DNS records for www.yana.dhl.com do not resolve to 172.86.117.35",
-      "The reverse DNS of 172.86.117.35 is www.yana.dhl.com, but the A/AAAA DNS records for www.yana.dhl.com do not resolve to 172.86.117.35"
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 194.62.55.117 is www.yana.dhl.com, but the A/AAAA DNS records for www.yana.dhl.com do not resolve to 194.62.55.117"
     ]
   },
   "spf": {

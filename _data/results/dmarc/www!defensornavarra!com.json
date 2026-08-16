@@ -4,27 +4,289 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ina2.registrar.eu",
-      "ina1.registrar.eu",
-      "ina3.registrar.eu"
+      "ns2.vdeploy.net",
+      "ns1.vdeploy.net"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "warnings": [
-      "No MX records found. Is the domain parked?"
-    ]
+    "hosts": [
+      {
+        "preference": 10,
+        "hostname": "mail.defensornavarra.com",
+        "addresses": [
+          "188.95.113.122"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "defensornavarra.com does not have a SPF TXT record"
+    "record": "v=spf1 include:spf.ipzmarketing.com a mx a:mail.defensornavarra.es a:ilune02.vdeploy.net include:relay.vdeploy.net ip4:185.226.232.48 ip4:188.95.113.122 -all ",
+    "valid": true,
+    "dns_lookups": 8,
+    "warnings": [
+      "Any text after the all mechanism is ignored"
+    ],
+    "parsed": {
+      "pass": [
+        {
+          "value": "185.226.232.48",
+          "mechanism": "a"
+        },
+        {
+          "value": "mail.defensornavarra.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "188.95.113.122",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.226.232.48",
+          "mechanism": "a"
+        },
+        {
+          "value": "185.226.232.48",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "188.95.113.122",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [
+        {
+          "domain": "spf.ipzmarketing.com",
+          "record": "v=spf1 ip4:93.159.208.0/21 ip4:185.103.8.0/22 ip4:5.56.22.0/24 ip4:82.199.156.0/24 ip4:91.194.237.0/24 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "93.159.208.0/21",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.103.8.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "5.56.22.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "82.199.156.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "91.194.237.0/24",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "relay.vdeploy.net",
+          "record": "v=spf1 ip4:199.231.189.152/29 ip4:64.20.38.24/29 ip4:174.138.190.32/29 ip4:64.20.36.192/29 ip4:199.231.189.96/29 ip4:206.72.200.40/29 ip4:66.45.229.224/28 ip4:174.138.180.168/29 ip4:174.138.180.160/29 ip4:174.138.180.152/29 ip4:67.217.53.0/24 include:spf1.flat.mailbaby.net ~all",
+          "dns_lookups": 2,
+          "parsed": {
+            "pass": [
+              {
+                "value": "199.231.189.152/29",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "64.20.38.24/29",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "174.138.190.32/29",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "64.20.36.192/29",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "199.231.189.96/29",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "206.72.200.40/29",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "66.45.229.224/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "174.138.180.168/29",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "174.138.180.160/29",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "174.138.180.152/29",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "67.217.53.0/24",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [
+              {
+                "domain": "spf1.flat.mailbaby.net",
+                "record": "v=spf1 ip4:205.209.124.0/24 ip4:68.168.211.160/28 ip4:66.45.233.16/29 ip4:209.159.153.232/29 ip4:208.73.205.248/29 ip4:67.217.63.248/29 ip4:23.83.208.0/20 ip4:35.85.190.185/32 include:spf2.flat.mailbaby.net ~all",
+                "dns_lookups": 1,
+                "parsed": {
+                  "pass": [
+                    {
+                      "value": "205.209.124.0/24",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "68.168.211.160/28",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "66.45.233.16/29",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "209.159.153.232/29",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "208.73.205.248/29",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "67.217.63.248/29",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "23.83.208.0/20",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "35.85.190.185/32",
+                      "mechanism": "ip4"
+                    }
+                  ],
+                  "neutral": [],
+                  "softfail": [],
+                  "fail": [],
+                  "include": [
+                    {
+                      "domain": "spf2.flat.mailbaby.net",
+                      "record": "v=spf1 ip4:205.209.127.0/24 ip4:68.168.210.0/24 ~all",
+                      "dns_lookups": 0,
+                      "parsed": {
+                        "pass": [
+                          {
+                            "value": "205.209.127.0/24",
+                            "mechanism": "ip4"
+                          },
+                          {
+                            "value": "68.168.210.0/24",
+                            "mechanism": "ip4"
+                          }
+                        ],
+                        "neutral": [],
+                        "softfail": [],
+                        "fail": [],
+                        "include": [],
+                        "redirect": null,
+                        "exp": null,
+                        "all": "softfail"
+                      },
+                      "warnings": []
+                    }
+                  ],
+                  "redirect": null,
+                  "exp": null,
+                  "all": "softfail"
+                },
+                "warnings": []
+              }
+            ],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        }
+      ],
+      "redirect": null,
+      "exp": null,
+      "all": "fail"
+    }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=none;",
+    "valid": true,
+    "location": "defensornavarra.com",
+    "warnings": [
+      "rua tag (destination for aggregate reports) not found"
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }
