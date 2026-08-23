@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.dinahosting.com",
       "ns4.dinahosting.com",
       "ns.dinahosting.com",
-      "ns3.dinahosting.com"
+      "ns3.dinahosting.com",
+      "ns2.dinahosting.com"
     ],
     "warnings": []
   },
@@ -17,28 +17,30 @@
         "preference": 10,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "172.253.149.26",
-          "2607:f8b0:4024:c0f::1b"
+          "172.253.116.27",
+          "2a00:1450:400b:c02::1b"
         ]
       },
       {
         "preference": 20,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "2607:f8b0:4001:c05::1b",
-          "74.125.201.26"
+          "2607:f8b0:4004:c23::1b",
+          "64.233.180.26"
         ]
       },
       {
         "preference": 30,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "142.250.100.26",
-          "2607:f8b0:4023:3801::1a"
+          "192.178.234.27",
+          "2800:3f0:4003:c14::1b"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "2800:3f0:4003:c14::1b does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:_spf.google.com ~all",
@@ -110,6 +112,6 @@
     "record": "v=DMARC1; p=quarantine; rua=mailto:info@visit-pontevedra.com ruf=mailto:info@visit-pontevedra.com",
     "valid": false,
     "location": "visit-pontevedra.com",
-    "error": "Error: Expected ; or end_of_statement at position 64 in: v=DMARC1; p=quarantine; rua=mailto:info@visit-pontevedra.com ruf=mailto:info@visit-pontevedra.com"
+    "error": "Error: Expected end_of_statement or ; at position 64 in: v=DMARC1; p=quarantine; rua=mailto:info@visit-pontevedra.com ruf=mailto:info@visit-pontevedra.com"
   }
 }

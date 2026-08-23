@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "tirant2.gva.es",
-      "tirant.gva.es",
       "ninot.gva.es",
-      "ninot2.gva.es"
+      "tirant2.gva.es",
+      "ninot2.gva.es",
+      "tirant.gva.es"
     ],
     "warnings": []
   },
@@ -17,13 +17,13 @@
         "preference": 0,
         "hostname": "mxext.gva.es",
         "addresses": [
-          "195.77.20.28"
+          "193.145.200.16"
         ]
       }
     ],
     "warnings": [
       "All nameservers failed to answer the query mxext.gva.es. IN AAAA: Server Do53:127.0.0.53@53 answered SERVFAIL",
-      "The reverse DNS of 195.77.20.28 is mxext.gva.es, but the A/AAAA DNS records for mxext.gva.es do not resolve to 195.77.20.28"
+      "The reverse DNS of 193.145.200.16 is mxext.gva.es, but the A/AAAA DNS records for mxext.gva.es do not resolve to 193.145.200.16"
     ]
   },
   "spf": {
@@ -100,7 +100,7 @@
         },
         {
           "domain": "mta.gva.es",
-          "record": "v=spf1 ip4:195.77.18.227 ip4:193.145.206.211 ip4:195.77.18.228 ip4:193.145.206.212 ip4:195.77.18.229 ip4:193.145.206.213 ip4:195.77.20.21 ip4:193.145.200.217 ip4:195.77.20.22 ip4:193.145.200.18 ip4:195.77.20.23 ip4:193.145.200.19 ip4:193.145.201.30 ip4:195.77.18.41 ip4:193.145.200.173 ip4:195.77.20.175 -all",
+          "record": "v=spf1 ip4:195.77.18.227 ip4:193.145.206.211 ip4:195.77.18.228 ip4:193.145.206.212 ip4:195.77.18.229 ip4:193.145.206.213 ip4:195.77.20.21 ip4:193.145.200.217 ip4:195.77.20.22 ip4:193.145.200.218 ip4:195.77.20.23 ip4:193.145.200.19 ip4:193.145.201.30 ip4:195.77.18.41 ip4:193.145.200.219 ip4:195.77.20.175 -all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -141,7 +141,7 @@
                 "mechanism": "ip4"
               },
               {
-                "value": "193.145.200.18",
+                "value": "193.145.200.218",
                 "mechanism": "ip4"
               },
               {
@@ -161,7 +161,7 @@
                 "mechanism": "ip4"
               },
               {
-                "value": "193.145.200.173",
+                "value": "193.145.200.219",
                 "mechanism": "ip4"
               },
               {

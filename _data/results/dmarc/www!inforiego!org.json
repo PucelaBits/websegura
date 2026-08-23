@@ -59,62 +59,9 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; pct=100; adkim=s; aspf=s; rua=mailto:dmarc@itacyl.es; ruf=mailto:dmarc@itacyl.es",
-    "valid": true,
-    "location": "inforiego.org",
-    "warnings": [
-      "itacyl.es does not indicate that it accepts DMARC reports about inforiego.org - Authorization record not found: inforiego.org._report._dmarc.itacyl.es IN TXT \"v=DMARC1\"",
-      "itacyl.es does not indicate that it accepts DMARC reports about inforiego.org - Authorization record not found: inforiego.org._report._dmarc.itacyl.es IN TXT \"v=DMARC1\""
-    ],
-    "tags": {
-      "v": {
-        "value": "DMARC1",
-        "explicit": true
-      },
-      "p": {
-        "value": "quarantine",
-        "explicit": true
-      },
-      "pct": {
-        "value": 100,
-        "explicit": true
-      },
-      "adkim": {
-        "value": "s",
-        "explicit": true
-      },
-      "aspf": {
-        "value": "s",
-        "explicit": true
-      },
-      "rua": {
-        "value": "mailto:dmarc@itacyl.es",
-        "explicit": true
-      },
-      "ruf": {
-        "value": "mailto:dmarc@itacyl.es",
-        "explicit": true
-      },
-      "fo": {
-        "value": [
-          "0"
-        ],
-        "explicit": false
-      },
-      "rf": {
-        "value": [
-          "afrf"
-        ],
-        "explicit": false
-      },
-      "ri": {
-        "value": 86400,
-        "explicit": false
-      },
-      "sp": {
-        "value": "quarantine",
-        "explicit": false
-      }
-    }
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   }
 }

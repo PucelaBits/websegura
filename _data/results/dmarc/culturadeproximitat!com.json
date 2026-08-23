@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns2.dnsxperta.com",
       "ns3.dnsxperta.com",
-      "ns1.dnsxperta.com",
-      "ns2.dnsxperta.com"
+      "ns1.dnsxperta.com"
     ],
     "warnings": []
   },
@@ -16,6 +16,7 @@
         "preference": 5,
         "hostname": "mx1.filterantispam.com",
         "addresses": [
+          "104.168.136.152",
           "144.172.116.207",
           "144.172.116.75",
           "157.85.97.77",
@@ -34,6 +35,7 @@
         "preference": 5,
         "hostname": "mx2.filterantispam.com",
         "addresses": [
+          "104.168.136.152",
           "144.172.116.207",
           "144.172.116.75",
           "157.85.97.77",
@@ -57,8 +59,10 @@
       }
     ],
     "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 194.62.55.117 is www.yana.dhl.com, but the A/AAAA DNS records for www.yana.dhl.com do not resolve to 194.62.55.117"
+      "The domain 105.89.86.172.static.cloudzy.com does not exist",
+      "The reverse DNS of 172.86.89.105 is 105.89.86.172.static.cloudzy.com, but the A/AAAA DNS records for 105.89.86.172.static.cloudzy.com do not resolve to 172.86.89.105",
+      "The domain 105.89.86.172.static.cloudzy.com does not exist",
+      "The reverse DNS of 172.86.89.105 is 105.89.86.172.static.cloudzy.com, but the A/AAAA DNS records for 105.89.86.172.static.cloudzy.com do not resolve to 172.86.89.105"
     ]
   },
   "spf": {
