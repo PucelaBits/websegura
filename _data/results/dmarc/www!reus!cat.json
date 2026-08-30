@@ -19,9 +19,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The reverse DNS of 84.38.252.25 is relay.reus.cat, but the A/AAAA DNS records for relay.reus.cat do not resolve to 84.38.252.25"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:_spf.reus.cat include:spf.ipzmarketing.com include:eu.transmail.net -all",

@@ -47,7 +47,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; rua=mailto:dmarc@ccn-cert.cni.es;ruf=mailto:dmarcf@ccn-cert.cni.es;",
+    "record": "v=DMARC1; p=reject; rua=mailto:dmarc@ccn-cert.cni.es;ruf=mailto:dmarcf@ccn-cert.cni.es;",
     "valid": true,
     "location": "ccn-cert.cni.es",
     "warnings": [],
@@ -57,7 +57,7 @@
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "reject",
         "explicit": true
       },
       "rua": {
@@ -109,7 +109,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "none",
+        "value": "reject",
         "explicit": false
       }
     }

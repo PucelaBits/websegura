@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.dnsxperta.com",
+      "ns3.dnsxperta.com",
       "ns1.dnsxperta.com",
-      "ns3.dnsxperta.com"
+      "ns2.dnsxperta.com"
     ],
     "warnings": []
   },
@@ -16,22 +16,20 @@
         "preference": 10,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.251.167.26",
-          "2607:f8b0:4004:c19::1b"
+          "172.217.78.27",
+          "2607:f8b0:4023:1c01::1a"
         ]
       },
       {
         "preference": 20,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "192.178.234.26",
-          "2800:3f0:4003:c14::1b"
+          "192.178.231.26",
+          "2607:f8b0:4023:200d::1a"
         ]
       }
     ],
-    "warnings": [
-      "2800:3f0:4003:c14::1b does not have any reverse DNS (PTR) records"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": null,
