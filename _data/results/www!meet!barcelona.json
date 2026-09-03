@@ -1,19 +1,20 @@
 {
-  "id": 118422623,
-  "algorithm_version": 5,
-  "scanned_at": "2026-09-02T02:14:54.573Z",
+  "id": 118636681,
+  "algorithm_version": 6,
+  "scanned_at": "2026-09-03T02:22:22.618Z",
   "error": null,
   "grade": "C+",
   "response_headers": {
-    "via": "1.1 05717f654525d5f71688fb57ace6362a.cloudfront.net (CloudFront)",
-    "date": "Wed, 02 Sep 2026 02:14:54 GMT",
+    "age": "275",
+    "via": "1.1 5e599a9eda8861379cfef6a522da18e4.cloudfront.net (CloudFront)",
+    "date": "Thu, 03 Sep 2026 02:17:48 GMT",
     "etag": "\"1788266423-gzip\"",
     "vary": "Cookie,Accept-Encoding",
     "server": "nginx",
     "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
-    "x-cache": "Miss from cloudfront",
+    "x-cache": "Hit from cloudfront",
     "connection": "close",
-    "x-amz-cf-id": "OQxKFdIEapntCUg-wO-VWVEpABQqeCFFgw4YW9P6vo2TxyBglSeCEQ==",
+    "x-amz-cf-id": "9hPVYundqv6pDrxzquVkXEEOGjo8dgVmHgbcsL9bBY0p4xozUKEOtQ==",
     "x-generator": "Drupal 10 (https://www.drupal.org)",
     "content-type": "text/html; charset=UTF-8",
     "x-amz-cf-pop": "SEA900-P1",
@@ -31,6 +32,6 @@
   "score": 60,
   "status_code": 200,
   "tests_failed": 3,
-  "tests_passed": 7,
-  "tests_quantity": 10
+  "tests_passed": 9,
+  "tests_quantity": 12
 }
