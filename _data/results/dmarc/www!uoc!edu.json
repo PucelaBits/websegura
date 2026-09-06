@@ -17,60 +17,62 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "172.217.78.26",
-          "2607:f8b0:4023:1c03::1b"
+          "192.178.214.26",
+          "2607:f8b0:4023:1429::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "192.178.231.27",
-          "2607:f8b0:4023:200d::1b"
+          "172.253.147.27",
+          "2607:f8b0:400c:c28::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "172.217.216.27",
-          "2607:f8b0:4023:2803::1a"
+          "173.194.45.26",
+          "2607:f8b0:4004:c29::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "aspmx2.googlemail.com",
         "addresses": [
-          "192.178.231.27",
-          "2607:f8b0:4023:200d::1a"
+          "172.253.147.27",
+          "2607:f8b0:400c:c28::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "aspmx3.googlemail.com",
         "addresses": [
-          "172.217.216.26",
-          "2607:f8b0:4023:2803::1b"
+          "173.194.45.27",
+          "2607:f8b0:4004:c29::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "aspmx4.googlemail.com",
         "addresses": [
-          "172.253.145.26",
-          "2607:f8b0:4023:3003::1b"
+          "2607:f8b0:4020:c0b::1a",
+          "74.125.197.27"
         ]
       },
       {
         "preference": 10,
         "hostname": "aspmx5.googlemail.com",
         "addresses": [
-          "172.253.135.27",
-          "2607:f8b0:4023:1015::1b"
+          "192.178.234.27",
+          "2800:3f0:4003:c14::1a"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "2800:3f0:4003:c14::1a does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:_spf.google.com include:ex1.uoc.edu ip4:84.88.0.6 ip4:3.248.238.191 ip4:34.248.212.113 ip4:54.155.47.62 ~all",

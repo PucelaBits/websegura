@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.dnsxperta.com",
       "ns3.dnsxperta.com",
-      "ns1.dnsxperta.com"
+      "ns1.dnsxperta.com",
+      "ns2.dnsxperta.com"
     ],
     "warnings": []
   },
@@ -59,8 +59,12 @@
       }
     ],
     "warnings": [
+      "The domain 200.126.86.172.static.cloudzy.com does not exist",
+      "The reverse DNS of 172.86.126.200 is 200.126.86.172.static.cloudzy.com, but the A/AAAA DNS records for 200.126.86.172.static.cloudzy.com do not resolve to 172.86.126.200",
       "The domain 105.89.86.172.static.cloudzy.com does not exist",
       "The reverse DNS of 172.86.89.105 is 105.89.86.172.static.cloudzy.com, but the A/AAAA DNS records for 105.89.86.172.static.cloudzy.com do not resolve to 172.86.89.105",
+      "The domain 200.126.86.172.static.cloudzy.com does not exist",
+      "The reverse DNS of 172.86.126.200 is 200.126.86.172.static.cloudzy.com, but the A/AAAA DNS records for 200.126.86.172.static.cloudzy.com do not resolve to 172.86.126.200",
       "The domain 105.89.86.172.static.cloudzy.com does not exist",
       "The reverse DNS of 172.86.89.105 is 105.89.86.172.static.cloudzy.com, but the A/AAAA DNS records for 105.89.86.172.static.cloudzy.com do not resolve to 172.86.89.105"
     ]

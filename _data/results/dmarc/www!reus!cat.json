@@ -15,7 +15,7 @@
         "preference": 25,
         "hostname": "smtp0.reus.cat",
         "addresses": [
-          "84.38.252.25"
+          "84.38.252.6"
         ]
       }
     ],
@@ -34,12 +34,16 @@
       "include": [
         {
           "domain": "_spf.reus.cat",
-          "record": "v=spf1 ip4:77.227.178.25 include:spf.tmes.trendmicro.eu include:spf.protection.outlook.com  -all",
+          "record": "v=spf1 ip4:84.38.252.5 ip4:84.38.252.6 include:spf.tmes.trendmicro.eu include:spf.protection.outlook.com  -all",
           "dns_lookups": 2,
           "parsed": {
             "pass": [
               {
-                "value": "77.227.178.25",
+                "value": "84.38.252.5",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "84.38.252.6",
                 "mechanism": "ip4"
               }
             ],

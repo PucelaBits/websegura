@@ -15,23 +15,23 @@
         "preference": 10,
         "hostname": "mxa-00a30b02.gslb.pphosted.com",
         "addresses": [
-          "208.56.4.59"
+          "66.159.243.113"
         ]
       },
       {
         "preference": 10,
         "hostname": "mxb-00a30b02.gslb.pphosted.com",
         "addresses": [
-          "208.56.4.59"
+          "66.159.243.113"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:176.28.98.112/28 include:spf.mandrillapp.com include:servers.mcsv.net include:euskadi.ip-zone.com include:eu.zcsend.net include:_pmta2.antevenio.com include:spf.batera.euskadi.eus -all",
+    "record": "v=spf1 ip4:176.28.98.112/28 include:_spf.salesforce.com include:spf.mandrillapp.com include:servers.mcsv.net include:euskadi.ip-zone.com include:eu.zcsend.net include:_pmta2.antevenio.com include:spf.batera.euskadi.eus -all",
     "valid": true,
-    "dns_lookups": 8,
+    "dns_lookups": 10,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -44,6 +44,27 @@
       "softfail": [],
       "fail": [],
       "include": [
+        {
+          "domain": "_spf.salesforce.com",
+          "record": "v=spf1 exists:%{i}._spf.mta.salesforce.com -all",
+          "dns_lookups": 1,
+          "parsed": {
+            "pass": [
+              {
+                "value": "%{i}._spf.mta.salesforce.com",
+                "mechanism": "exists"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
+          },
+          "warnings": []
+        },
         {
           "domain": "spf.mandrillapp.com",
           "record": "v=spf1 ip4:198.2.128.0/24 ip4:198.2.132.0/22 ip4:198.2.136.0/23 ip4:198.2.145.0/24 ip4:198.2.186.0/23 ip4:205.201.131.0/24 ip4:205.201.134.128/25 ip4:205.201.136.0/23 ip4:205.201.139.0/24 ip4:198.2.177.0/24 ip4:198.2.178.0/23 ip4:198.2.180.0/24 ~all",

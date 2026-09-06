@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns2.dnsxperta.com",
       "ns3.dnsxperta.com",
-      "ns1.dnsxperta.com",
-      "ns2.dnsxperta.com"
+      "ns1.dnsxperta.com"
     ],
     "warnings": []
   },
@@ -17,7 +17,7 @@
         "hostname": "mx.spamexperts.com",
         "addresses": [
           "2001:550:2:3::62:100",
-          "38.71.16.244"
+          "38.89.254.156"
         ]
       },
       {
@@ -65,7 +65,7 @@
       "include": [
         {
           "domain": "_kvm4.spf.srvdr.com",
-          "record": "v=spf1 ip4:178.33.30.217 ip4:217.182.92.139 ip4:51.178.68.2 ip4:51.178.178.202 ip4:217.182.92.139",
+          "record": "v=spf1 ip4:178.33.30.217 ip4:217.182.92.139 ip4:178.33.30.216",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -78,15 +78,7 @@
                 "mechanism": "ip4"
               },
               {
-                "value": "51.178.68.2",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "51.178.178.202",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "217.182.92.139",
+                "value": "178.33.30.216",
                 "mechanism": "ip4"
               }
             ],

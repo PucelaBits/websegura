@@ -14,48 +14,22 @@
   "mx": {
     "hosts": [
       {
-        "preference": 10,
-        "hostname": "mx1.smtp.goog",
+        "preference": 1,
+        "hostname": "smtp.google.com",
         "addresses": [
-          "2001:4860:4802:32::97",
-          "216.239.32.151"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mx2.smtp.goog",
-        "addresses": [
-          "2001:4860:4802:34::97",
-          "216.239.34.151"
-        ]
-      },
-      {
-        "preference": 30,
-        "hostname": "mx3.smtp.goog",
-        "addresses": [
-          "2001:4860:4802:36::97",
-          "216.239.36.151"
-        ]
-      },
-      {
-        "preference": 40,
-        "hostname": "mx4.smtp.goog",
-        "addresses": [
-          "2001:4860:4802:38::97",
-          "216.239.38.151"
+          "142.250.123.26",
+          "142.250.123.27",
+          "172.217.71.26",
+          "172.217.71.27",
+          "173.194.40.26",
+          "2607:f8b0:4023:140f::1a",
+          "2607:f8b0:4023:140f::1b",
+          "2607:f8b0:4023:141b::1a",
+          "2607:f8b0:4023:141b::1b"
         ]
       }
     ],
-    "warnings": [
-      "2001:4860:4802:32::97 does not have any reverse DNS (PTR) records",
-      "216.239.32.151 does not have any reverse DNS (PTR) records",
-      "2001:4860:4802:34::97 does not have any reverse DNS (PTR) records",
-      "216.239.34.151 does not have any reverse DNS (PTR) records",
-      "2001:4860:4802:36::97 does not have any reverse DNS (PTR) records",
-      "216.239.36.151 does not have any reverse DNS (PTR) records",
-      "2001:4860:4802:38::97 does not have any reverse DNS (PTR) records",
-      "216.239.38.151 does not have any reverse DNS (PTR) records"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:_spf.google.com include:_spf.atlassian.net -all",
