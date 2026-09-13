@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "artemis.ttd.net",
-      "dns2.guardiacivil.es",
-      "dns1.guardiacivil.es"
+      "dns1.guardiacivil.es",
+      "dns2.guardiacivil.es"
     ],
     "warnings": []
   },
@@ -49,7 +49,7 @@
     ]
   },
   "spf": {
-    "record": "v=spf1 mx ip4:62.36.55.12 ip4:62.36.55.13 ip4:194.179.107.37 ip4:194.179.107.17 include:spf.protection.outlook.com ~all",
+    "record": "v=spf1 mx ip4:62.36.55.12 ip4:62.36.55.13 ip4:194.179.107.37 ip4:194.179.107.17 ip4:62.36.55.17 ip4:62.36.55.37 include:spf.protection.outlook.com ~all",
     "valid": true,
     "dns_lookups": 2,
     "warnings": [],
@@ -85,6 +85,14 @@
         },
         {
           "value": "194.179.107.17",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "62.36.55.17",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "62.36.55.37",
           "mechanism": "ip4"
         }
       ],

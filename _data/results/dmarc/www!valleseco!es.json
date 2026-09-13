@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns.gestiondecuenta.com",
+      "ns3.gestiondecuenta.com",
       "ns2.gestiondecuenta.com",
       "ns4.gestiondecuenta.com",
-      "ns3.gestiondecuenta.com"
+      "ns.gestiondecuenta.com"
     ],
     "warnings": []
   },
@@ -17,25 +17,25 @@
         "preference": 10,
         "hostname": "mx-01-eu-central-1.prod.hydra.sophos.com",
         "addresses": [
-          "3.120.89.189",
-          "3.73.46.24"
+          "18.193.99.65",
+          "3.120.66.191"
         ]
       },
       {
         "preference": 20,
         "hostname": "mx-02-eu-central-1.prod.hydra.sophos.com",
         "addresses": [
-          "3.120.89.189",
-          "3.73.46.24"
+          "18.193.99.65",
+          "3.120.66.191"
         ]
       }
     ],
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx ip4:79.148.230.214 a:mail.valleseco.es a:mail0.valleseco.es include:_spf-eu.ionos.com include:_spf_eucentral1.prod.hydra.sophos.com ~all",
+    "record": "v=spf1 mx ip4:79.148.230.214 a:mail.valleseco.es a:mail0.valleseco.es include:_spf-eu.ionos.com include:_spf_eucentral1.prod.hydra.sophos.com include:amazonses.com ~all",
     "valid": true,
-    "dns_lookups": 5,
+    "dns_lookups": 6,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -66,7 +66,7 @@
       "include": [
         {
           "domain": "_spf-eu.ionos.com",
-          "record": "v=spf1 ip4:212.227.126.128/25 ip4:82.165.159.0/26 ip4:212.227.15.0/25 ip4:212.227.17.0/27 ip4:217.72.192.64/26 ip4:212.227.25.128/25 ip6:2001:8d8:5c2::/64 ip6:2001:8d8:5c5::/64 ?all",
+          "record": "v=spf1 ip4:212.227.126.128/25 ip4:82.165.159.0/26 ip4:212.227.15.0/25 ip4:212.227.17.0/27 ip4:217.72.192.64/26 ip4:185.48.116.13/32 ip4:212.227.25.128/25 ip6:2001:8d8:5c2::/64 ip6:2001:8d8:5c5::/64 ?all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
@@ -88,6 +88,10 @@
               },
               {
                 "value": "217.72.192.64/26",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "185.48.116.13/32",
                 "mechanism": "ip4"
               },
               {
@@ -151,6 +155,75 @@
             "redirect": null,
             "exp": null,
             "all": "softfail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "amazonses.com",
+          "record": "v=spf1 ip4:199.255.192.0/22 ip4:199.127.232.0/22 ip4:54.240.0.0/18 ip4:69.169.224.0/20 ip4:23.249.208.0/20 ip4:23.251.224.0/19 ip4:76.223.176.0/20 ip4:54.240.64.0/18 ip4:76.223.128.0/19 ip4:216.221.160.0/19 ip4:206.55.144.0/20 ip4:24.110.64.0/18 ip4:98.77.0.0/16 -all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "199.255.192.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "199.127.232.0/22",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "54.240.0.0/18",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "69.169.224.0/20",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "23.249.208.0/20",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "23.251.224.0/19",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "76.223.176.0/20",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "54.240.64.0/18",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "76.223.128.0/19",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "216.221.160.0/19",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "206.55.144.0/20",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "24.110.64.0/18",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "98.77.0.0/16",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "fail"
           },
           "warnings": []
         }

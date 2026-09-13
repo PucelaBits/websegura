@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.dominioabsoluto.com",
-      "ns2.dominioabsoluto.com"
+      "ns2.dominioabsoluto.com",
+      "ns1.dominioabsoluto.com"
     ],
     "warnings": []
   },
@@ -174,9 +174,9 @@
     }
   },
   "dmarc": {
-    "record": null,
+    "record": "v=DMARC1; p-none",
     "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "location": "alegria-dulantzi.eus",
+    "error": "Error: Expected end_of_statement or tag_value at position 10 in: v=DMARC1; p-none"
   }
 }

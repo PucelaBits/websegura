@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.dns-servicios.es",
-      "ns2.dns-servicios.es"
+      "ns2.dns-servicios.es",
+      "ns1.dns-servicios.es"
     ],
     "warnings": []
   },
@@ -89,6 +89,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "All nameservers failed to answer the query _dmarc.112canarias.com. IN TXT: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    "error": "A DMARC record does not exist for this domain or its base domain"
   }
 }
