@@ -1,19 +1,29 @@
 {
-  "id": 118003239,
-  "algorithm_version": 5,
-  "scanned_at": "2026-08-31T02:42:12.557Z",
+  "id": 121364957,
+  "algorithm_version": 6,
+  "scanned_at": "2026-09-16T08:28:27.259Z",
   "error": null,
-  "grade": "F",
+  "grade": "C+",
   "response_headers": {
-    "date": "Mon, 31 Aug 2026 02:42:13 GMT",
-    "tp-cache": "hit",
+    "age": "0",
+    "date": "Wed, 16 Sep 2026 08:28:29 GMT",
+    "vary": "Accept-Encoding, X-Vary-TCDN",
+    "pragma": "no-cache",
+    "expires": "Thu, 01 Jan 1970 00:00:00 GMT",
+    "tp-cache": "pass",
     "connection": "close",
-    "content-type": "text/html; charset=utf-8",
-    "content-length": "3362"
+    "set-cookie": "JSESSIONID=54DFA7C08DCC77FBCE1A2C03BDC41E8C; Path=/; Secure; HttpOnly,COOKIE_SUPPORT=true; Max-Age=31536000; Expires=Thu, 16 Sep 2027 08:28:27 GMT; Path=/; Secure; HttpOnly",
+    "content-type": "text/html;charset=UTF-8",
+    "accept-ranges": "bytes",
+    "cache-control": "max-age=60, s-maxage=120",
+    "content-length": "42747",
+    "x-frame-options": "SAMEORIGIN",
+    "x-content-type-options": "nosniff",
+    "content-security-policy": "default-src * 'unsafe-inline' 'unsafe-eval' data: blob:; frame-ancestors 'self'; upgrade-insecure-requests;"
   },
-  "score": 10,
-  "status_code": 403,
-  "tests_failed": 5,
-  "tests_passed": 5,
-  "tests_quantity": 10
+  "score": 60,
+  "status_code": 200,
+  "tests_failed": 2,
+  "tests_passed": 10,
+  "tests_quantity": 12
 }
