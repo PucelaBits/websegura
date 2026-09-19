@@ -1,11 +1,11 @@
 {
-  "id": 121743970,
+  "id": 121941264,
   "algorithm_version": 6,
-  "scanned_at": "2026-09-18T02:32:23.476Z",
+  "scanned_at": "2026-09-19T02:31:24.035Z",
   "error": null,
-  "grade": "D-",
+  "grade": "D",
   "response_headers": {
-    "date": "Fri, 18 Sep 2026 02:32:23 GMT",
+    "date": "Sat, 19 Sep 2026 02:31:24 GMT",
     "link": "<https://teguise.es/wp-json/>; rel=\"https://api.w.org/\", <https://teguise.es/wp-json/wp/v2/pages/72>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://teguise.es/>; rel=shortlink",
     "vary": "Accept-Encoding",
     "server": "Apache/2.4.67 (Debian)",
@@ -20,19 +20,15 @@
     "x-content-type-options": "nosniff",
     "content-security-policy": "upgrade-insecure-requests;",
     "strict-transport-security": "max-age=63072000",
-    "x-content-security-policy": "default-src 'self'; img-src *; media-src * data:;",
     "cross-origin-opener-policy": "unsafe-none",
     "access-control-allow-headers": "Content-Type, Authorization",
     "access-control-allow-methods": "GET,POST",
-    "cross-origin-embedder-policy": "unsafe-none; report-to='default'",
     "cross-origin-resource-policy": "cross-origin",
-    "x-permitted-cross-domain-policies": "none",
-    "cross-origin-opener-policy-report-only": "unsafe-none; report-to='default'",
-    "cross-origin-embedder-policy-report-only": "unsafe-none; report-to='default'"
+    "x-permitted-cross-domain-policies": "none"
   },
-  "score": 25,
+  "score": 30,
   "status_code": 200,
-  "tests_failed": 3,
-  "tests_passed": 9,
+  "tests_failed": 2,
+  "tests_passed": 10,
   "tests_quantity": 12
 }
