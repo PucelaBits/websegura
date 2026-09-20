@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.tragsa.es",
-      "artemis.ttd.net"
+      "artemis.ttd.net",
+      "dns1.tragsa.es"
     ],
     "warnings": []
   },
@@ -165,7 +165,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com",
+    "record": "v=DMARC1; p=reject; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com",
     "valid": true,
     "location": "tragsa.es",
     "warnings": [],
@@ -175,7 +175,7 @@
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "reject",
         "explicit": true
       },
       "fo": {
@@ -227,7 +227,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "none",
+        "value": "reject",
         "explicit": false
       }
     }

@@ -17,8 +17,8 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.251.163.26",
-          "2607:f8b0:4004:c1b::1b"
+          "192.178.155.26",
+          "2607:f8b0:4004:c23::1b"
         ]
       },
       {
@@ -26,14 +26,14 @@
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
           "192.178.234.26",
-          "2800:3f0:4003:c14::1a"
+          "2800:3f0:4003:c14::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "172.253.116.26",
+          "172.253.116.27",
           "2a00:1450:400b:c02::1a"
         ]
       },
@@ -49,7 +49,7 @@
         "preference": 10,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "172.253.157.27",
+          "172.253.157.26",
           "2a00:1450:400c:c23::1b"
         ]
       },
@@ -60,7 +60,7 @@
       }
     ],
     "warnings": [
-      "2800:3f0:4003:c14::1a does not have any reverse DNS (PTR) records",
+      "2800:3f0:4003:c14::1b does not have any reverse DNS (PTR) records",
       "The domain c2f7gejjrnflylkqfbjeefub4ucleo6c3lqmlzbmn3siv5abe5fa.mx-verification.google.com does not exist"
     ]
   },

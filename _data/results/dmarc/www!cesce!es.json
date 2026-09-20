@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns5.grupocesce.es",
-      "ns4.grupocesce.es"
+      "ns4.grupocesce.es",
+      "ns5.grupocesce.es"
     ],
     "warnings": []
   },
@@ -22,22 +22,22 @@
         "preference": 1,
         "hostname": "mxb-00a71501.gslb.pphosted.com",
         "addresses": [
-          "66.159.245.20"
+          "66.159.243.124"
         ]
       },
       {
         "preference": 100,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "192.178.234.26",
-          "2800:3f0:4003:c14::1a"
+          "192.178.234.27",
+          "2800:3f0:4003:c14::1b"
         ]
       },
       {
         "preference": 100,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "172.253.116.27",
+          "172.253.116.26",
           "2a00:1450:400b:c02::1b"
         ]
       },
@@ -45,8 +45,8 @@
         "preference": 100,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.251.167.27",
-          "2607:f8b0:4004:c07::1a"
+          "142.250.31.26",
+          "2607:f8b0:4004:c1d::1a"
         ]
       },
       {
@@ -67,7 +67,7 @@
       }
     ],
     "warnings": [
-      "2800:3f0:4003:c14::1a does not have any reverse DNS (PTR) records",
+      "2800:3f0:4003:c14::1b does not have any reverse DNS (PTR) records",
       "2800:3f0:4003:c14::1b does not have any reverse DNS (PTR) records"
     ]
   },

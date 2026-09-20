@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "sec1.rcode0.net",
-      "sec2.rcode0.net"
+      "sec2.rcode0.net",
+      "sec1.rcode0.net"
     ],
     "warnings": []
   },
@@ -15,14 +15,14 @@
         "preference": 10,
         "hostname": "ucjc-edu.mail.protection.outlook.com",
         "addresses": [
-          "2a01:111:f403:ca04::9",
+          "2a01:111:f403:ca04::7",
           "2a01:111:f403:ca04::f",
-          "2a01:111:f403:ca21::8",
-          "2a01:111:f403:ca3c::8",
-          "52.101.68.18",
-          "52.101.68.25",
-          "52.101.68.27",
-          "52.101.68.39"
+          "2a01:111:f403:ca09::20",
+          "2a01:111:f403:ca09::26",
+          "52.101.68.10",
+          "52.101.68.16",
+          "52.101.68.8",
+          "52.101.91.162"
         ]
       }
     ],
@@ -36,9 +36,53 @@
     "dns_lookups": 11
   },
   "dmarc": {
-    "record": "v=DMARC1; p= quarantine; sp=none; rua=mailto:dmarc@mailinblue.com; ruf=mailto:dmarc@mailinblue.com; rf=afrf; pct=100; ri=86400",
-    "valid": false,
+    "record": "v=DMARC1; p=quarantine; pct=100",
+    "valid": true,
     "location": "ucjc.edu",
-    "error": "Tag p must have one of the following values: none,quarantine,reject - not  quarantine"
+    "warnings": [
+      "rua tag (destination for aggregate reports) not found"
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "pct": {
+        "value": 100,
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "quarantine",
+        "explicit": false
+      }
+    }
   }
 }

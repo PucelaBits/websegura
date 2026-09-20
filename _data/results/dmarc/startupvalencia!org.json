@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns41.servidoresdns.net",
-      "dns42.servidoresdns.net"
+      "dns42.servidoresdns.net",
+      "dns41.servidoresdns.net"
     ],
     "warnings": []
   },
@@ -15,8 +15,8 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "173.194.45.27",
-          "2607:f8b0:4004:c23::1b"
+          "192.178.155.27",
+          "2607:f8b0:4004:c0b::1a"
         ]
       },
       {
@@ -24,7 +24,7 @@
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
           "192.178.234.27",
-          "2800:3f0:4003:c14::1a"
+          "2800:3f0:4003:c14::1b"
         ]
       },
       {
@@ -40,7 +40,7 @@
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
           "192.178.223.26",
-          "2a00:1450:4009:c0f::1a"
+          "2a00:1450:4009:c0f::1b"
         ]
       },
       {
@@ -63,7 +63,7 @@
       }
     ],
     "warnings": [
-      "2800:3f0:4003:c14::1a does not have any reverse DNS (PTR) records",
+      "2800:3f0:4003:c14::1b does not have any reverse DNS (PTR) records",
       "Hostname aspmx.l.google.com is listed in multiple MX records",
       "Hostname alt1.aspmx.l.google.com is listed in multiple MX records"
     ]

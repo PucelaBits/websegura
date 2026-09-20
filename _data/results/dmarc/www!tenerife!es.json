@@ -132,7 +132,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=reject; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com;",
+    "record": "v=DMARC1; p=reject; rua=mailto:cabildotenerife@dmarcrua.tmes.trendmicro.eu",
     "valid": true,
     "location": "tenerife.es",
     "warnings": [],
@@ -145,27 +145,11 @@
         "value": "reject",
         "explicit": true
       },
-      "fo": {
-        "value": [
-          "1"
-        ],
-        "explicit": true
-      },
       "rua": {
         "value": [
           {
             "scheme": "mailto",
-            "address": "dmarc_rua@emaildefense.proofpoint.com",
-            "size_limit": null
-          }
-        ],
-        "explicit": true
-      },
-      "ruf": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "dmarc_ruf@emaildefense.proofpoint.com",
+            "address": "cabildotenerife@dmarcrua.tmes.trendmicro.eu",
             "size_limit": null
           }
         ],
@@ -177,6 +161,12 @@
       },
       "aspf": {
         "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
         "explicit": false
       },
       "pct": {

@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns12.servicio-online.net",
+      "ns10.servicio-online.net",
       "ns11.servicio-online.net",
-      "ns10.servicio-online.net"
+      "ns12.servicio-online.net"
     ],
     "warnings": []
   },
@@ -16,16 +16,16 @@
         "preference": 10,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "172.253.115.27",
-          "2607:f8b0:4004:c06::1b"
+          "172.253.139.27",
+          "2607:f8b0:4004:c1d::1b"
         ]
       },
       {
         "preference": 20,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "192.178.234.27",
-          "2800:3f0:4003:c14::1b"
+          "192.178.234.26",
+          "2800:3f0:4003:c14::1a"
         ]
       },
       {
@@ -41,7 +41,7 @@
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
           "192.178.223.26",
-          "2a00:1450:4009:c0f::1a"
+          "2a00:1450:4009:c0f::1b"
         ]
       },
       {
@@ -54,7 +54,7 @@
       }
     ],
     "warnings": [
-      "2800:3f0:4003:c14::1b does not have any reverse DNS (PTR) records"
+      "2800:3f0:4003:c14::1a does not have any reverse DNS (PTR) records"
     ]
   },
   "spf": {

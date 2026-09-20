@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "ns2.upc.edu",
-      "ns1.cesca.cat",
       "ns2.cesca.cat",
+      "ns1.cesca.cat",
       "ns1.upc.edu"
     ],
     "warnings": []
@@ -17,15 +17,15 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "172.253.115.26",
-          "2607:f8b0:4004:c29::1b"
+          "192.178.218.27",
+          "2607:f8b0:4004:c1b::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "192.178.234.27",
+          "192.178.234.26",
           "2800:3f0:4003:c14::1a"
         ]
       },
@@ -50,7 +50,7 @@
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
           "172.253.157.26",
-          "2a00:1450:400c:c23::1b"
+          "2a00:1450:400c:c23::1a"
         ]
       }
     ],

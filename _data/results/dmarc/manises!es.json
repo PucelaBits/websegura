@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.dnsxperta.com",
-      "ns2.dnsxperta.com"
+      "ns2.dnsxperta.com",
+      "ns1.dnsxperta.com"
     ],
     "warnings": []
   },
@@ -15,14 +15,14 @@
         "preference": 0,
         "hostname": "manises-es.mail.protection.outlook.com",
         "addresses": [
-          "2a01:111:f403:ca04::e",
-          "2a01:111:f403:ca38::a",
+          "2a01:111:f403:ca04::9",
+          "2a01:111:f403:ca21::e",
           "2a01:111:f403:ca3c::8",
-          "2a01:111:f403:ca48::10",
-          "52.101.181.156",
+          "2a01:111:f403:ca3c::a",
+          "52.101.103.39",
           "52.101.209.153",
-          "52.101.73.126",
-          "52.101.91.153"
+          "52.101.68.12",
+          "52.101.91.156"
         ]
       }
     ],
@@ -135,6 +135,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.manises.es\n\nMS=ms96836429\n\nv=spf1 include:spf.protection.outlook.com include:synectia.email -all\n\ngoogle-site-verification=IDapQQ8AJ4al0WzrS2RLV9Xyh4jr6Q1HNnIpyLJsZ50"
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.manises.es\n\nMS=ms96836429\n\ngoogle-site-verification=IDapQQ8AJ4al0WzrS2RLV9Xyh4jr6Q1HNnIpyLJsZ50\n\nv=spf1 include:spf.protection.outlook.com include:synectia.email -all"
   }
 }

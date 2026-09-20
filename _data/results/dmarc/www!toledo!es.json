@@ -15,18 +15,21 @@
         "preference": 1,
         "hostname": "toledo-es.mail.protection.outlook.com",
         "addresses": [
+          "2a01:111:f403:ca04::a",
+          "2a01:111:f403:ca21::8",
+          "2a01:111:f403:ca21::a",
           "2a01:111:f403:ca21::e",
-          "2a01:111:f403:ca3c::6",
-          "2a01:111:f403:ca3c::8",
-          "2a01:111:f403:ca48::10",
-          "52.101.103.140",
-          "52.101.185.21",
-          "52.101.209.28",
-          "52.101.73.126"
+          "52.101.185.24",
+          "52.101.68.25",
+          "52.101.68.27",
+          "52.101.91.156"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
+      "The reverse DNS of 52.101.91.156 is mail-maspr04cu00104.inbound.protection.outlook.com, but the A/AAAA DNS records for mail-maspr04cu00104.inbound.protection.outlook.com do not resolve to 52.101.91.156"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com ip4:195.76.170.140 ip4:81.46.222.157 -all",

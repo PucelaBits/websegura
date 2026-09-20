@@ -3,11 +3,8 @@
   "base_domain": "inforiego.org",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "dns.itacyl.org",
-      "dns2.itacyl.org"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "mx": {
     "hosts": [
@@ -22,41 +19,9 @@
     ]
   },
   "spf": {
-    "record": "v=spf1 ip4:185.179.105.195/32 ip4:195.76.182.230/32 ip4:195.76.182.224/32 ip4:195.76.182.225/32 mx -all",
-    "valid": true,
-    "dns_lookups": 1,
-    "warnings": [],
-    "parsed": {
-      "pass": [
-        {
-          "value": "185.179.105.195/32",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "195.76.182.230/32",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "195.76.182.224/32",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "195.76.182.225/32",
-          "mechanism": "ip4"
-        },
-        {
-          "value": "mail.inforiego.org",
-          "mechanism": "mx"
-        }
-      ],
-      "neutral": [],
-      "softfail": [],
-      "fail": [],
-      "include": [],
-      "redirect": null,
-      "exp": null,
-      "all": "fail"
-    }
+    "record": null,
+    "valid": false,
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "dmarc": {
     "record": "v=DMARC1; p=quarantine; pct=100; adkim=s; aspf=s; rua=mailto:dmarc@itacyl.es; ruf=mailto:dmarc@itacyl.es",

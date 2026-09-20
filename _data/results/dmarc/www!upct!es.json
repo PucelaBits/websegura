@@ -23,12 +23,12 @@
       {
         "preference": 10,
         "hostname": "mxb-006a4e02.gslb.pphosted.com",
-        "addresses": [
-          "143.55.148.243"
-        ]
+        "addresses": []
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ]
   },
   "spf": {
     "record": "v=spf1 include:spf.puc.rediris.es include:spf.protection.outlook.com include:_spf.symposium.events ip4:212.128.20.42 ip4:212.128.20.115 ip4:212.128.20.211 ip4:212.128.20.254 ip4:212.128.20.86 -all",

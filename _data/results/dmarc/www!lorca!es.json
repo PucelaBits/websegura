@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.leader-network.com",
-      "dns.leader-network.com"
+      "dns.leader-network.com",
+      "dns1.leader-network.com"
     ],
     "warnings": []
   },
@@ -29,9 +29,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx ip4:77.228.41.5 a:pmx.lnm.es -all",
+    "record": "v=spf1 mx ip4:77.228.41.5 -all",
     "valid": true,
-    "dns_lookups": 2,
+    "dns_lookups": 1,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -46,10 +46,6 @@
         {
           "value": "77.228.41.5",
           "mechanism": "ip4"
-        },
-        {
-          "value": "194.140.143.72",
-          "mechanism": "a"
         }
       ],
       "neutral": [],

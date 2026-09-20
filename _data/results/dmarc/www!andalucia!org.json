@@ -5,9 +5,9 @@
   "ns": {
     "hostnames": [
       "ns1.juntadeandalucia.es",
-      "ns3.juntadeandalucia.es",
+      "ns.juntadeandalucia.es",
       "ns4.juntadeandalucia.es",
-      "ns.juntadeandalucia.es"
+      "ns3.juntadeandalucia.es"
     ],
     "warnings": []
   },
@@ -26,7 +26,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:217.12.27.153 ip4:217.12.27.75 ip4:217.12.26.60 ip4:217.12.26.61 ip4:217.12.27.157 ip4:217.12.27.158 ip4:217.12.27.159 ip4:217.12.27.160 include:spf.andalucia.org include:_spf.act-on.net include:amazonses.com include:spf.protection.outlook.com include:spf.tmes.trendmicro.eu ~all",
+    "record": "v=spf1 ip4:217.12.27.153 ip4:217.12.27.75 ip4:217.12.26.60 ip4:217.12.26.61 ip4:217.12.27.157 ip4:217.12.27.158 ip4:217.12.27.159 ip4:217.12.27.160 ip4:208.77.244.240 ip4:152.55.184.241 ip4:152.55.185.190 include:spf.andalucia.org include:_spf.act-on.net include:amazonses.com include:spf.protection.outlook.com include:spf.tmes.trendmicro.eu ~all",
     "valid": true,
     "dns_lookups": 7,
     "warnings": [
@@ -65,6 +65,18 @@
         {
           "value": "217.12.27.160",
           "mechanism": "ip4"
+        },
+        {
+          "value": "208.77.244.240",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "152.55.184.241",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "152.55.185.190",
+          "mechanism": "ip4"
         }
       ],
       "neutral": [],
@@ -73,7 +85,7 @@
       "include": [
         {
           "domain": "spf.andalucia.org",
-          "record": "v=spf1 ip4:217.12.23.63 ip4:217.12.23.124 ip4:217.12.23.251 ip4:217.12.23.127 ip4:217.12.23.64 ip4:217.12.23.123 ip4:217.12.23.193 ip4:208.77.244.240 ip4:152.55.184.241 ip4:152.55.185.190 include:spf.tmes.trendmicro.eu -all",
+          "record": "v=spf1 ip4:217.12.23.63 ip4:217.12.23.124 ip4:217.12.23.251 ip4:217.12.23.127 ip4:217.12.23.64 ip4:217.12.23.123 ip4:217.12.23.193 include:spf.tmes.trendmicro.eu -all",
           "dns_lookups": 1,
           "parsed": {
             "pass": [
@@ -103,18 +115,6 @@
               },
               {
                 "value": "217.12.23.193",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "208.77.244.240",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "152.55.184.241",
-                "mechanism": "ip4"
-              },
-              {
-                "value": "152.55.185.190",
                 "mechanism": "ip4"
               }
             ],
