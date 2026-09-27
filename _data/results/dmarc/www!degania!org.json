@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.abansys.net",
-      "dns2.abansys.net"
+      "dns2.abansys.net",
+      "dns1.abansys.net"
     ],
     "warnings": []
   },
@@ -19,10 +19,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 2.100 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.",
-      "The reverse DNS of 86.109.178.134 is a0219.abansys.com, but the A/AAAA DNS records for a0219.abansys.com do not resolve to 86.109.178.134"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.abansys.com -all",

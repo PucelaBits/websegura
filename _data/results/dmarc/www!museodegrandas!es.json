@@ -3,40 +3,31 @@
   "base_domain": "museodegrandas.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "dns1.cloudunificado.com",
-      "dns.asturias.es",
-      "dns2.cloudunificado.com"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "mx": {
     "hosts": [
       {
         "preference": 10,
         "hostname": "mail.museodegrandas.es",
-        "addresses": [
-          "82.98.149.3"
-        ]
+        "addresses": []
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ]
   },
   "spf": {
     "record": "v=spf1 a mx ip4:82.98.149.3 ~all",
     "valid": true,
     "dns_lookups": 2,
-    "warnings": [],
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out.",
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ],
     "parsed": {
       "pass": [
-        {
-          "value": "54.36.27.77",
-          "mechanism": "a"
-        },
-        {
-          "value": "mail.museodegrandas.es",
-          "mechanism": "mx"
-        },
         {
           "value": "82.98.149.3",
           "mechanism": "ip4"
@@ -55,6 +46,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   }
 }

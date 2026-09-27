@@ -4,27 +4,27 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.csuc.cat",
+      "nsext1.udg.edu",
       "ns1.csuc.cat",
-      "nsext2.udg.edu",
-      "nsext1.udg.edu"
+      "ns2.csuc.cat",
+      "nsext2.udg.edu"
     ],
     "warnings": []
   },
   "mx": {
     "hosts": [
       {
-        "preference": 0,
-        "hostname": "udg-edu.mail.protection.outlook.com",
+        "preference": 10,
+        "hostname": "mxa-006a4e02.gslb.pphosted.com",
         "addresses": [
-          "2a01:111:f403:ca04::8",
-          "2a01:111:f403:ca04::e",
-          "2a01:111:f403:ca38::8",
-          "2a01:111:f403:ca48::12",
-          "52.101.103.162",
-          "52.101.68.21",
-          "52.101.73.145",
-          "52.101.91.153"
+          "143.55.148.243"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mxb-006a4e02.gslb.pphosted.com",
+        "addresses": [
+          "143.55.146.78"
         ]
       }
     ],

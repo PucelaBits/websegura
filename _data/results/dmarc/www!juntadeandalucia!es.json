@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.juntadeandalucia.es",
       "ns4.juntadeandalucia.es",
       "ns.juntadeandalucia.es",
+      "ns1.juntadeandalucia.es",
       "ns3.juntadeandalucia.es"
     ],
     "warnings": []
@@ -263,7 +263,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1;p=none;rua=mailto:rua.dmarc@ccn-cert.cni.es,mailto:dmarc.soc@juntadeandalucia.es;ruf=mailto:dmarc.soc@juntadeandalucia.es",
+    "record": "v=DMARC1;p=none;rua=mailto:rua.dmarc@ccn-cert.cni.es,mailto:dmarc.soc@juntadeandalucia.es,mailto:juntadeandalucia@dmarcrua.tmes.trendmicro.eu;ruf=mailto:dmarc.soc@juntadeandalucia.es",
     "valid": true,
     "location": "juntadeandalucia.es",
     "warnings": [
@@ -279,7 +279,7 @@
         "explicit": true
       },
       "rua": {
-        "value": "mailto:rua.dmarc@ccn-cert.cni.es,mailto:dmarc.soc@juntadeandalucia.es",
+        "value": "mailto:rua.dmarc@ccn-cert.cni.es,mailto:dmarc.soc@juntadeandalucia.es,mailto:juntadeandalucia@dmarcrua.tmes.trendmicro.eu",
         "explicit": true
       },
       "ruf": {

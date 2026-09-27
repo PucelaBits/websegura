@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "ns3.juntadeandalucia.es",
       "ns1.juntadeandalucia.es",
       "ns.juntadeandalucia.es",
-      "ns4.juntadeandalucia.es",
-      "ns3.juntadeandalucia.es"
+      "ns4.juntadeandalucia.es"
     ],
     "warnings": []
   },
@@ -401,12 +401,10 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1;p=none",
+    "record": "v=DMARC1;p=none;rua=mailto:juntadeandalucia@dmarcrua.tmes.trendmicro.eu",
     "valid": true,
     "location": "andalucia.org",
-    "warnings": [
-      "rua tag (destination for aggregate reports) not found"
-    ],
+    "warnings": [],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -414,6 +412,16 @@
       },
       "p": {
         "value": "none",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "juntadeandalucia@dmarcrua.tmes.trendmicro.eu",
+            "size_limit": null
+          }
+        ],
         "explicit": true
       },
       "adkim": {
