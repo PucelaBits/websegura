@@ -4,11 +4,11 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "zafiro.usal.es",
-      "chico.rediris.es",
-      "sun.rediris.es",
       "topacio.usal.es",
-      "agata.usal.es"
+      "agata.usal.es",
+      "chico.rediris.es",
+      "zafiro.usal.es",
+      "sun.rediris.es"
     ],
     "warnings": []
   },
@@ -18,40 +18,40 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "172.217.217.27",
-          "2607:f8b0:4023:1c03::1a"
+          "142.251.2.27",
+          "2607:f8b0:4023:c03::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "192.178.231.26",
-          "2607:f8b0:4023:200d::1b"
+          "172.217.216.27",
+          "2607:f8b0:4023:2803::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "172.217.216.26",
-          "2607:f8b0:4023:2803::1a"
+          "172.253.145.26",
+          "2607:f8b0:4023:3003::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "172.253.145.27",
-          "2607:f8b0:4023:3003::1a"
+          "172.253.135.27",
+          "2607:f8b0:4023:1015::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "172.253.135.27",
-          "2607:f8b0:4023:1015::1a"
+          "173.194.42.27",
+          "2607:f8b0:4001:c79::1b"
         ]
       }
     ],
@@ -194,7 +194,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; adkim=r; aspf=r; rua=mailto:postmaster@usal.es",
+    "record": "v=DMARC1; p=quarantine; sp=quarantine; adkim=r; aspf=r; rua=mailto:dmarc-rua@usal.es",
     "valid": true,
     "location": "usal.es",
     "warnings": [],
@@ -204,6 +204,10 @@
         "explicit": true
       },
       "p": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "sp": {
         "value": "quarantine",
         "explicit": true
       },
@@ -219,7 +223,7 @@
         "value": [
           {
             "scheme": "mailto",
-            "address": "postmaster@usal.es",
+            "address": "dmarc-rua@usal.es",
             "size_limit": null
           }
         ],
@@ -243,10 +247,6 @@
       },
       "ri": {
         "value": 86400,
-        "explicit": false
-      },
-      "sp": {
-        "value": "quarantine",
         "explicit": false
       }
     }

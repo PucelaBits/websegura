@@ -4,13 +4,13 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.adif.es",
       "a4-65.akam.net",
-      "a9-67.akam.net",
       "a11-64.akam.net",
-      "a8-65.akam.net",
-      "a22-65.akam.net",
+      "a9-67.akam.net",
       "a1-37.akam.net",
+      "ns1.adif.es",
+      "a22-65.akam.net",
+      "a8-65.akam.net",
       "ns2.adif.es"
     ],
     "warnings": []
@@ -37,9 +37,9 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 mx a:smtp.adif.es a:ebro.adif.es a:duero.adif.es include:spf.protection.outlook.com exists:%{i}.spf.hc1197-70.eu.iphmx.com ~all",
+    "record": "v=spf1 mx a:smtp.adif.es a:ebro.adif.es a:duero.adif.es a:caronte.adif.es a:estigia.adif.es include:spf.protection.outlook.com exists:%{i}.spf.hc1197-70.eu.iphmx.com ~all",
     "valid": true,
-    "dns_lookups": 6,
+    "dns_lookups": 8,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -61,6 +61,14 @@
         },
         {
           "value": "213.144.33.149",
+          "mechanism": "a"
+        },
+        {
+          "value": "213.144.35.44",
+          "mechanism": "a"
+        },
+        {
+          "value": "213.144.35.45",
           "mechanism": "a"
         },
         {

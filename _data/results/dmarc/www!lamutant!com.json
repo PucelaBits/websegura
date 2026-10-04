@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns50212.webempresa.eu",
-      "ns50211.webempresa.eu"
+      "ns50211.webempresa.eu",
+      "ns50212.webempresa.eu"
     ],
     "warnings": []
   },
@@ -14,12 +14,12 @@
       {
         "preference": 0,
         "hostname": "lamutant.com",
-        "addresses": []
+        "addresses": [
+          "213.158.86.54"
+        ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:213.158.86.54 ip4:213.158.86.54 include:_spf.webempresa.eu +a +mx ~all",

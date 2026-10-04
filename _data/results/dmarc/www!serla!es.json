@@ -10,8 +10,23 @@
     "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 5,
+        "hostname": "mx2.cosmomedia.es",
+        "addresses": [
+          "109.234.71.142"
+        ]
+      },
+      {
+        "preference": 10,
+        "hostname": "mx3.cosmomedia.es",
+        "addresses": [
+          "109.234.71.143"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx ip4:109.234.71.141 ip4:109.234.71.142 ip4:88.27.246.176 ip4:213.201.115.187 mx:mx.cosmomedia.es mx:cosmomedia.es -all",

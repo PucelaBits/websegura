@@ -177,6 +177,6 @@
     "record": "v=DMARC1; p-none",
     "valid": false,
     "location": "alegria-dulantzi.eus",
-    "error": "Error: Expected end_of_statement or tag_value at position 10 in: v=DMARC1; p-none"
+    "error": "Error: Expected tag_value or end_of_statement at position 10 in: v=DMARC1; p-none"
   }
 }

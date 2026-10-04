@@ -3,8 +3,12 @@
   "base_domain": "conselldeivissa.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hostnames": [
+      "ns07.ns-cloud4b.org",
+      "ns08.ns-cloud4b.com",
+      "ns06.ns-cloud4b.net"
+    ],
+    "warnings": []
   },
   "mx": {
     "hosts": [
