@@ -1,13 +1,13 @@
 {
-  "id": 126704300,
+  "id": 126952986,
   "algorithm_version": 6,
-  "scanned_at": "2026-10-09T03:56:26.666Z",
+  "scanned_at": "2026-10-10T03:41:25.725Z",
   "error": null,
-  "grade": "F",
+  "grade": "C-",
   "response_headers": {
-    "age": "3318",
-    "date": "Fri, 09 Oct 2026 03:01:07 GMT",
-    "etag": "W/\"1fa2f-65d5f8f23b4cf\"",
+    "age": "2957",
+    "date": "Sat, 10 Oct 2026 02:52:08 GMT",
+    "etag": "W/\"1fa2f-65d7389482b53\"",
     "vary": "Accept-Encoding, Accept-Encoding,Cookie, X-Vary-TCDN",
     "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
     "tp-cache": "hit",
@@ -16,12 +16,13 @@
     "content-type": "text/html; charset=utf-8",
     "accept-ranges": "bytes",
     "cache-control": "max-age=3600, s-maxage=3600",
-    "content-length": "37770",
-    "x-content-type-options": "nosniff"
+    "content-length": "37777",
+    "x-content-type-options": "nosniff",
+    "strict-transport-security": "max-age=31536000; includeSubDomains; preload"
   },
-  "score": 5,
+  "score": 45,
   "status_code": 200,
-  "tests_failed": 6,
-  "tests_passed": 6,
+  "tests_failed": 4,
+  "tests_passed": 8,
   "tests_quantity": 12
 }
