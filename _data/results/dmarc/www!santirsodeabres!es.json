@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.nominalia.com",
-      "dns1.nominalia.com"
+      "dns1.nominalia.com",
+      "dns2.nominalia.com"
     ],
     "warnings": []
   },
@@ -46,7 +46,7 @@
             "include": [
               {
                 "domain": "spf1.webapps.net",
-                "record": "v=spf1 ip4:81.88.48.32/27 ip4:81.88.50.224/27 ip4:81.88.54.64/27 ip4:81.88.55.96/27 ip4:81.88.56.0/27 ip4:81.88.62.160/27 ip4:81.88.63.128/27 ip4:195.7.249.16/29 include:dominiando.email ~all",
+                "record": "v=spf1 ip4:81.88.48.32/27 ip4:81.88.50.224/27 ip4:81.88.54.64/27 ip4:81.88.55.96/27 ip4:81.88.56.0/27 ip4:81.88.62.160/27 ip4:81.88.63.128/27 ip4:195.7.249.16/29 ip4:176.62.171.32/27 ip4:176.62.171.64/28 include:dominiando.email ~all",
                 "dns_lookups": 2,
                 "parsed": {
                   "pass": [
@@ -80,6 +80,14 @@
                     },
                     {
                       "value": "195.7.249.16/29",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "176.62.171.32/27",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "176.62.171.64/28",
                       "mechanism": "ip4"
                     }
                   ],

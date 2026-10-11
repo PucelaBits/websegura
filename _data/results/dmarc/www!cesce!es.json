@@ -29,44 +29,47 @@
         "preference": 100,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "172.217.216.26",
-          "2607:f8b0:4023:2803::1a"
+          "192.178.234.27",
+          "2800:3f0:4003:c14::1a"
         ]
       },
       {
         "preference": 100,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "172.253.145.27",
-          "2607:f8b0:4023:3003::1b"
+          "172.253.116.26",
+          "2a00:1450:400b:c02::1b"
         ]
       },
       {
         "preference": 100,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "142.251.2.27",
-          "2607:f8b0:4023:c0d::1b"
+          "172.253.63.27",
+          "2607:f8b0:4004:c29::1b"
         ]
       },
       {
         "preference": 100,
         "hostname": "aspmx2.googlemail.com",
         "addresses": [
-          "172.217.216.26",
-          "2607:f8b0:4023:2803::1b"
+          "192.178.234.27",
+          "2800:3f0:4003:c14::1b"
         ]
       },
       {
         "preference": 100,
         "hostname": "aspmx3.googlemail.com",
         "addresses": [
-          "172.253.145.27",
-          "2607:f8b0:4023:3003::1b"
+          "172.253.116.26",
+          "2a00:1450:400b:c02::1a"
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "2800:3f0:4003:c14::1a does not have any reverse DNS (PTR) records",
+      "2800:3f0:4003:c14::1b does not have any reverse DNS (PTR) records"
+    ]
   },
   "spf": {
     "record": "v=spf1 include:spf1.cesce.es include:_spf.google.com include:aspmx.pardot.com include:spf-00a71501.pphosted.com -all",

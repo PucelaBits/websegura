@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "chico.rediris.es",
+      "ns2.csuc.cat",
       "sun.rediris.es",
-      "ns1.csuc.cat",
-      "ns2.csuc.cat"
+      "chico.rediris.es",
+      "ns1.csuc.cat"
     ],
     "warnings": []
   },
@@ -17,14 +17,14 @@
         "preference": 5,
         "hostname": "icgc-cat.mail.protection.outlook.com",
         "addresses": [
-          "2a01:111:f403:ca09::24",
+          "2a01:111:f403:ca04::c",
           "2a01:111:f403:ca3c::6",
-          "2a01:111:f403:ca3c::8",
-          "2a01:111:f403:ca48::c",
-          "52.101.103.137",
+          "2a01:111:f403:ca48::10",
+          "2a01:111:f403:ca48::e",
           "52.101.103.36",
-          "52.101.185.24",
-          "52.101.73.123"
+          "52.101.185.114",
+          "52.101.73.153",
+          "52.101.91.162"
         ]
       }
     ],
@@ -385,9 +385,76 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; sp=none; fo=1; ri=86400; rua=mailto:weapa1c7@rua.eu.dmarcmanager.app,mailto:dmarc_rua@icgc.cat; ruf=mailto:mailto:dmarc_ruf@icgc.cat",
-    "valid": false,
+    "record": "v=DMARC1; p=none; sp=none; fo=1; ri=86400; rua=mailto:weapa1c7@rua.eu.dmarcmanager.app,mailto:dmarc_rua@icgc.cat; ruf=mailto:dmarc_ruf@icgc.cat",
+    "valid": true,
     "location": "icgc.cat",
-    "error": "mailto:mailto:dmarc_ruf@icgc.cat is not a valid DMARC report URI"
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "sp": {
+        "value": "none",
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "1"
+        ],
+        "explicit": true
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "weapa1c7@rua.eu.dmarcmanager.app",
+            "size_limit": null
+          },
+          {
+            "scheme": "mailto",
+            "address": "dmarc_rua@icgc.cat",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc_ruf@icgc.cat",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      }
+    }
   }
 }

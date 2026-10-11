@@ -4,23 +4,15 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.cloudunificado.com",
       "dns2.cloudunificado.com",
+      "dns1.cloudunificado.com",
       "dns.asturias.es"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mail.turismoasturias.es",
-        "addresses": []
-      }
-    ],
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ]
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 +a +mx +a:dns5.emarketers.com -all",
