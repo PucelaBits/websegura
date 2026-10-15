@@ -1,19 +1,27 @@
 {
-  "id": 127694682,
+  "id": 128180578,
   "algorithm_version": 6,
-  "scanned_at": "2026-10-13T04:50:11.535Z",
+  "scanned_at": "2026-10-15T02:37:13.542Z",
   "error": null,
-  "grade": "D",
+  "grade": "F",
   "response_headers": {
-    "date": "Tue, 13 Oct 2026 04:50:12 GMT",
+    "p3p": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
+    "date": "Thu, 15 Oct 2026 02:37:14 GMT",
+    "vary": "User-Agent",
+    "pragma": "no-cache",
     "server": "Apache",
-    "connection": "close",
-    "content-type": "text/html; charset=iso-8859-1",
-    "content-length": "318"
+    "expires": "Wed, 17 Aug 2005 00:00:00 GMT",
+    "upgrade": "h2,h2c",
+    "connection": "Upgrade, close",
+    "set-cookie": "d5809dca51cb61a57aa04102e480a39d=4q2hgit74b4derm5bsv8vlmjs5; path=/; HttpOnly",
+    "content-type": "text/html; charset=utf-8",
+    "cache-control": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+    "last-modified": "Thu, 15 Oct 2026 02:37:18 GMT",
+    "transfer-encoding": "chunked"
   },
-  "score": 30,
-  "status_code": 403,
-  "tests_failed": 4,
-  "tests_passed": 8,
+  "score": 10,
+  "status_code": 200,
+  "tests_failed": 5,
+  "tests_passed": 7,
   "tests_quantity": 12
 }
