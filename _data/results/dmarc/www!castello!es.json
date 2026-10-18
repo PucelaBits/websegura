@@ -4,10 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.gestiondecuenta.com",
-      "ns3.gestiondecuenta.com",
-      "ns.gestiondecuenta.com",
-      "ns4.gestiondecuenta.com"
+      "julian.ns.cloudflare.com",
+      "olga.ns.cloudflare.com"
     ],
     "warnings": []
   },
@@ -194,7 +192,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1;p=none;rua=mailto:0adsofghaortysdghdmarc@castello.es;",
+    "record": "v=DMARC1;p=none;rua=mailto:ad102b66939841309d32bf7ad8af4cd2@dmarc-reports.cloudflare.net,mailto:0adsofghaortysdghdmarc@castello.es;",
     "valid": true,
     "location": "castello.es",
     "warnings": [],
@@ -209,6 +207,11 @@
       },
       "rua": {
         "value": [
+          {
+            "scheme": "mailto",
+            "address": "ad102b66939841309d32bf7ad8af4cd2@dmarc-reports.cloudflare.net",
+            "size_limit": null
+          },
           {
             "scheme": "mailto",
             "address": "0adsofghaortysdghdmarc@castello.es",

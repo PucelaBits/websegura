@@ -3,17 +3,22 @@
   "base_domain": "benestaranimal-valencia.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "The domain benestaranimal-valencia.es does not exist"
+    "hostnames": [
+      "lakas.ns.cloudflare.com",
+      "ophelia.ns.cloudflare.com"
+    ],
+    "warnings": []
   },
   "mx": {
     "hosts": [],
-    "error": "The domain benestaranimal-valencia.es does not exist"
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
   },
   "spf": {
     "record": null,
     "valid": false,
-    "error": "The domain benestaranimal-valencia.es does not exist"
+    "error": "benestaranimal-valencia.es does not have a SPF TXT record"
   },
   "dmarc": {
     "record": null,

@@ -4,12 +4,12 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.xunta.es",
-      "ns2.dacoruna.gal",
-      "dns1.dicoruna.es",
+      "ns2.xunta.es",
       "dns.dicoruna.es",
+      "dns1.dicoruna.es",
+      "ns1.xunta.es",
       "ns1.dacoruna.gal",
-      "ns2.xunta.es"
+      "ns2.dacoruna.gal"
     ],
     "warnings": []
   },
@@ -19,15 +19,15 @@
         "preference": 10,
         "hostname": "smtp.google.com",
         "addresses": [
-          "142.250.31.26",
-          "142.250.31.27",
-          "142.251.111.26",
-          "142.251.111.27",
-          "172.253.63.26",
-          "2607:f8b0:4004:c17::1a",
-          "2607:f8b0:4004:c17::1b",
-          "2607:f8b0:4004:c1f::1a",
-          "2607:f8b0:4004:c1f::1b"
+          "142.250.107.27",
+          "142.250.99.26",
+          "172.253.117.26",
+          "172.253.117.27",
+          "2607:f8b0:400e:c00::1a",
+          "2607:f8b0:400e:c05::1b",
+          "2607:f8b0:400e:c1b::1b",
+          "2607:f8b0:400e:c1e::1b",
+          "74.125.142.26"
         ]
       }
     ],

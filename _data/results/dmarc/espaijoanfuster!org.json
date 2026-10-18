@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.dnsxperta.com",
       "ns1.dnsxperta.com",
+      "ns2.dnsxperta.com",
       "ns3.dnsxperta.com"
     ],
     "warnings": []
@@ -78,6 +78,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.espaijoanfuster.org\n\nv=spf1 ip4:217.13.80.0/20 ip4:194.143.202.166/28 ip4:194.143.202.194/28 ip4:83.147.63.0/24 -all"
+    "error": "A DMARC record does not exist for this domain or its base domain"
   }
 }
