@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "ns2.binariaweb.net",
-      "ns3.binariaweb.net",
       "ns4.binariaweb.net",
+      "ns3.binariaweb.net",
       "ns1.binariaweb.net"
     ],
     "warnings": []
@@ -20,7 +20,7 @@
   "spf": {
     "record": null,
     "valid": false,
-    "error": "turismo.toledo.es does not have a SPF TXT record"
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "dmarc": {
     "record": "v=DMARC1; p=reject; pct=100; rua=mailto:informatica@toledo.es,mailto:rua.dmarc@ccn-cert.cni.es; fo=1",

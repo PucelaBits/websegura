@@ -4,21 +4,101 @@
   "dnssec": false,
   "ns": {
     "hostnames": [],
-    "error": "The domain apuntame.lineazamora.es does not exist"
+    "warnings": []
   },
   "mx": {
     "hosts": [],
-    "error": "The domain apuntame.lineazamora.es does not exist"
+    "warnings": [
+      "No MX records found. Is the domain parked?"
+    ]
   },
   "spf": {
-    "record": null,
-    "valid": false,
-    "error": "The domain apuntame.lineazamora.es does not exist"
+    "record": "v=spf1 ip4:188.95.113.133 ip4:5.175.45.111 ip4:185.23.70.11 +a +mx +ip4:63.35.133.186 ~all",
+    "valid": true,
+    "dns_lookups": 2,
+    "warnings": [
+      "apuntame.lineazamora.es does not have any MX records"
+    ],
+    "parsed": {
+      "pass": [
+        {
+          "value": "188.95.113.133",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "5.175.45.111",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "185.23.70.11",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "5.175.45.111",
+          "mechanism": "a"
+        },
+        {
+          "value": "63.35.133.186",
+          "mechanism": "ip4"
+        }
+      ],
+      "neutral": [],
+      "softfail": [],
+      "fail": [],
+      "include": [],
+      "redirect": null,
+      "exp": null,
+      "all": "softfail"
+    }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=none",
+    "valid": true,
+    "location": "lineazamora.es",
+    "warnings": [
+      "rua tag (destination for aggregate reports) not found"
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }

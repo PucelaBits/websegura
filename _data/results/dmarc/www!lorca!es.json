@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns.leader-network.com",
-      "dns1.leader-network.com"
+      "dns1.leader-network.com",
+      "dns.leader-network.com"
     ],
     "warnings": []
   },
@@ -58,9 +58,9 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; pct:100; rua=mailto:dmarc-informes@lorca.es",
+    "record": "v=DMARC1; p=quarantine; pct:100;",
     "valid": false,
     "location": "lorca.es",
-    "error": "Error: Expected tag_value at position 24 in: v=DMARC1; p=quarantine; pct:100; rua=mailto:dmarc-informes@lorca.es"
+    "error": "Error: Expected tag_value at position 24 in: v=DMARC1; p=quarantine; pct:100;"
   }
 }

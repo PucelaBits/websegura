@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dominios.innovasur.com",
-      "dominios.innovasur.es"
+      "dominios.innovasur.es",
+      "dominios.innovasur.com"
     ],
     "warnings": []
   },
@@ -87,7 +87,7 @@
             "include": [
               {
                 "domain": "spf.zoho.eu",
-                "record": "v=spf1 ip4:185.20.209.0/24 ip4:31.186.226.0/24 ip4:31.186.243.0/24 ip4:89.36.170.0/24 ip4:185.20.211.0/24 ip4:185.172.199.0/24 ip4:91.135.68.104/29 ip4:185.230.214.0/23 ip4:136.143.168.0/22 ip4:34.241.242.183/32 ~all",
+                "record": "v=spf1 ip4:185.20.209.0/24 ip4:31.186.226.0/24 ip4:31.186.243.0/24 ip4:89.36.170.0/24 ip4:185.20.211.0/24 ip4:185.172.199.0/24 ip4:91.135.68.104/29 ip4:185.230.214.0/23 ip4:136.143.168.0/22 ip4:34.241.242.183/32 ip4:185.230.212.0/24 ~all",
                 "dns_lookups": 0,
                 "parsed": {
                   "pass": [
@@ -129,6 +129,10 @@
                     },
                     {
                       "value": "34.241.242.183/32",
+                      "mechanism": "ip4"
+                    },
+                    {
+                      "value": "185.230.212.0/24",
                       "mechanism": "ip4"
                     }
                   ],

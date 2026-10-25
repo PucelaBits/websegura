@@ -31,18 +31,11 @@
     "record": "v=spf1 mx ~all",
     "valid": true,
     "dns_lookups": 1,
-    "warnings": [],
+    "warnings": [
+      "All nameservers failed to answer the query hablamosdeeuropa.es. IN MX: Server Do53:1.0.0.1@53 answered SERVFAIL"
+    ],
     "parsed": {
-      "pass": [
-        {
-          "value": "smtp4.maec.es",
-          "mechanism": "mx"
-        },
-        {
-          "value": "smtp3.maec.es",
-          "mechanism": "mx"
-        }
-      ],
+      "pass": [],
       "neutral": [],
       "softfail": [],
       "fail": [],

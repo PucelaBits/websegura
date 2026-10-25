@@ -4,10 +4,10 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns2.gestiondecuenta.com",
       "ns4.gestiondecuenta.com",
-      "ns3.gestiondecuenta.com",
-      "ns.gestiondecuenta.com"
+      "ns.gestiondecuenta.com",
+      "ns2.gestiondecuenta.com",
+      "ns3.gestiondecuenta.com"
     ],
     "warnings": []
   },
@@ -17,7 +17,7 @@
         "preference": 10,
         "hostname": "mail.museoanton.com",
         "addresses": [
-          "82.98.165.172"
+          "82.98.164.114"
         ]
       }
     ],
@@ -31,7 +31,7 @@
     "parsed": {
       "pass": [
         {
-          "value": "82.98.165.172",
+          "value": "82.98.164.114",
           "mechanism": "a"
         },
         {

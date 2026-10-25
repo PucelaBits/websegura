@@ -14,13 +14,31 @@
     "hosts": [
       {
         "preference": 10,
+        "hostname": "mx-01-eu-west-1.prod.hydra.sophos.com",
+        "addresses": [
+          "34.243.165.154",
+          "54.194.20.87",
+          "54.246.158.212"
+        ]
+      },
+      {
+        "preference": 20,
+        "hostname": "mx-02-eu-west-1.prod.hydra.sophos.com",
+        "addresses": [
+          "34.243.165.154",
+          "54.194.20.87",
+          "54.246.158.212"
+        ]
+      },
+      {
+        "preference": 50,
         "hostname": "mx.serviciodecorreo.es",
         "addresses": [
           "82.223.190.100"
         ]
       },
       {
-        "preference": 15,
+        "preference": 100,
         "hostname": "smtp.aguimes.es",
         "addresses": [
           "195.77.245.219"
@@ -42,6 +60,14 @@
         {
           "value": "82.98.134.240",
           "mechanism": "a"
+        },
+        {
+          "value": "mx-01-eu-west-1.prod.hydra.sophos.com",
+          "mechanism": "mx"
+        },
+        {
+          "value": "mx-02-eu-west-1.prod.hydra.sophos.com",
+          "mechanism": "mx"
         },
         {
           "value": "mx.serviciodecorreo.es",
