@@ -15,14 +15,14 @@
         "preference": 10,
         "hostname": "enusa-es.mail.protection.outlook.com",
         "addresses": [
-          "2a01:111:f403:c967::a",
-          "2a01:111:f403:ca04::10",
-          "2a01:111:f403:ca04::a",
-          "2a01:111:f403:ca48::a",
-          "52.101.103.36",
-          "52.101.68.39",
-          "52.101.73.126",
-          "52.101.91.162"
+          "2a01:111:f403:ca09::20",
+          "2a01:111:f403:ca09::26",
+          "2a01:111:f403:ca21::e",
+          "2a01:111:f403:ca48::8",
+          "52.101.103.143",
+          "52.101.181.156",
+          "52.101.209.28",
+          "52.101.68.27"
         ]
       }
     ],
@@ -120,57 +120,9 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; rua=mailto:rua.dmarc@ccn-cert.cni.es",
-    "valid": true,
+    "record": "v=DMARC1; p=quarantine (pct=25); rua=mailto:rua.dmarc@ccn-cert.cni.es",
+    "valid": false,
     "location": "enusa.es",
-    "warnings": [
-      "ccn-cert.cni.es does not indicate that it accepts DMARC reports about enusa.es - Authorization record not found: enusa.es._report._dmarc.ccn-cert.cni.es IN TXT \"v=DMARC1\""
-    ],
-    "tags": {
-      "v": {
-        "value": "DMARC1",
-        "explicit": true
-      },
-      "p": {
-        "value": "none",
-        "explicit": true
-      },
-      "rua": {
-        "value": "mailto:rua.dmarc@ccn-cert.cni.es",
-        "explicit": true
-      },
-      "adkim": {
-        "value": "r",
-        "explicit": false
-      },
-      "aspf": {
-        "value": "r",
-        "explicit": false
-      },
-      "fo": {
-        "value": [
-          "0"
-        ],
-        "explicit": false
-      },
-      "pct": {
-        "value": 100,
-        "explicit": false
-      },
-      "rf": {
-        "value": [
-          "afrf"
-        ],
-        "explicit": false
-      },
-      "ri": {
-        "value": 86400,
-        "explicit": false
-      },
-      "sp": {
-        "value": "none",
-        "explicit": false
-      }
-    }
+    "error": "Error: Expected ; or end_of_statement at position 23 in: v=DMARC1; p=quarantine (pct=25); rua=mailto:rua.dmarc@ccn-cert.cni.es"
   }
 }

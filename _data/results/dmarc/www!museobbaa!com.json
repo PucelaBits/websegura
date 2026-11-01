@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns4.cdmondns-01.org",
-      "ns5.cdmondns-01.com",
       "ns3.cdmon.net",
+      "ns5.cdmondns-01.com",
+      "ns4.cdmondns-01.org",
       "ns2.cdmon.net",
       "ns1.cdmon.net"
     ],
@@ -47,7 +47,7 @@
           "mechanism": "mx"
         },
         {
-          "value": "154.58.16.65",
+          "value": "154.58.16.125",
           "mechanism": "a"
         }
       ],

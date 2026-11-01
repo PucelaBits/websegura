@@ -12,7 +12,7 @@
   "mx": {
     "hosts": [
       {
-        "preference": 10,
+        "preference": 1,
         "hostname": "mail3.lagomera.es",
         "addresses": [
           "185.73.173.33",
@@ -23,15 +23,23 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:185.73.173.32/28 include:_spf.google.com -all",
+    "record": "v=spf1 ip4:185.73.173.32/28 a mx include:_spf.google.com -all",
     "valid": true,
-    "dns_lookups": 1,
+    "dns_lookups": 3,
     "warnings": [],
     "parsed": {
       "pass": [
         {
           "value": "185.73.173.32/28",
           "mechanism": "ip4"
+        },
+        {
+          "value": "159.60.154.251",
+          "mechanism": "a"
+        },
+        {
+          "value": "mail3.lagomera.es",
+          "mechanism": "mx"
         }
       ],
       "neutral": [],

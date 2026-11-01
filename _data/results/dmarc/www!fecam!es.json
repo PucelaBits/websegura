@@ -30,7 +30,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 +mx ip4:212.64.170.195 ip4:212.64.170.94 ip4:212.64.170.85 a:fecam.es a:mail.fecam.es ~all",
+    "record": "v=spf1 +mx ip4:212.64.170.195 ip4:212.64.170.94 ip4:212.64.170.85  ip4:212.64.180.191 a:fecam.es a:mail.fecam.es ~all",
     "valid": true,
     "dns_lookups": 3,
     "warnings": [],
@@ -57,7 +57,11 @@
           "mechanism": "ip4"
         },
         {
-          "value": "212.64.170.195",
+          "value": "212.64.180.191",
+          "mechanism": "ip4"
+        },
+        {
+          "value": "212.64.180.191",
           "mechanism": "a"
         },
         {
