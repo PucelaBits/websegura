@@ -1,25 +1,28 @@
 {
-  "id": 88521615,
-  "algorithm_version": 5,
-  "scanned_at": "2026-03-17T01:24:51.959Z",
+  "id": 133864072,
+  "algorithm_version": 6,
+  "scanned_at": "2026-11-06T10:50:00.796Z",
   "error": null,
-  "grade": "D-",
+  "grade": "C-",
   "response_headers": {
-    "date": "Tue, 17 Mar 2026 01:24:53 GMT",
+    "date": "Fri, 06 Nov 2026 10:50:02 GMT",
+    "cf-ray": "a56388f0dbde985d-SEA",
     "pragma": "no-cache",
-    "server": "Apache/2.4.37 (Red Hat Enterprise Linux) OpenSSL/1.1.1k",
+    "server": "cloudflare",
     "expires": "Wed, 17 Aug 2005 00:00:00 GMT",
     "connection": "close",
-    "set-cookie": "f35c9a975b9469f08920f4b535cc126f=k67ob0keo8loopdfv9anppc8fl; path=/; secure; HttpOnly",
+    "set-cookie": "f35c9a975b9469f08920f4b535cc126f=932si2bprhvek5mgvdngph4vqo; path=/; secure; HttpOnly",
     "content-type": "text/html; charset=utf-8",
-    "x-powered-by": "PHP/7.4.30",
+    "x-powered-by": "PHP/7.4.33",
     "cache-control": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
-    "last-modified": "Tue, 17 Mar 2026 01:24:53 GMT",
-    "transfer-encoding": "chunked"
+    "last-modified": "Fri, 06 Nov 2026 10:50:02 GMT",
+    "cf-cache-status": "DYNAMIC",
+    "transfer-encoding": "chunked",
+    "strict-transport-security": "max-age=15768000"
   },
-  "score": 25,
+  "score": 45,
   "status_code": 200,
-  "tests_failed": 5,
-  "tests_passed": 5,
-  "tests_quantity": 10
+  "tests_failed": 4,
+  "tests_passed": 8,
+  "tests_quantity": 12
 }
