@@ -23,52 +23,49 @@
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "192.178.234.26",
-          "2800:3f0:4003:c14::1b"
+          "142.251.96.27",
+          "2607:f8b0:4003:c4a::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "172.253.116.27",
-          "2a00:1450:400b:c02::1a"
+          "142.250.100.26",
+          "2607:f8b0:4023:3801::1a"
         ]
       },
       {
         "preference": 5,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "172.253.115.26",
-          "2607:f8b0:4004:c1f::1a"
+          "142.250.115.26",
+          "2607:f8b0:4023:100b::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "aspmx2.googlemail.com",
         "addresses": [
-          "192.178.234.27",
-          "2800:3f0:4003:c14::1a"
+          "142.251.96.26",
+          "2607:f8b0:4003:c4a::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "aspmx3.googlemail.com",
         "addresses": [
-          "172.253.116.26",
-          "2a00:1450:400b:c02::1b"
+          "142.250.100.27",
+          "2607:f8b0:4023:3801::1b"
         ]
       }
     ],
-    "warnings": [
-      "2800:3f0:4003:c14::1b does not have any reverse DNS (PTR) records",
-      "2800:3f0:4003:c14::1a does not have any reverse DNS (PTR) records"
-    ]
+    "warnings": []
   },
   "spf": {
-    "record": "v=spf1 ip4:194.224.243.22 ip4:185.73.173.32/28 include:_spf.google.com ~all",
+    "record": "v=spf1 ip4:194.224.243.22 ip4:185.73.173.32/28 include:_spf.google.com include:spf-009df901.pphosted.com ~all",
     "valid": true,
-    "dns_lookups": 1,
+    "dns_lookups": 2,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -131,6 +128,31 @@
             "redirect": null,
             "exp": null,
             "all": "softfail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "spf-009df901.pphosted.com",
+          "record": "v=spf1 ip4:66.159.235.163 ip4:66.159.246.35",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "66.159.235.163",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "66.159.246.35",
+                "mechanism": "ip4"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "neutral"
           },
           "warnings": []
         }

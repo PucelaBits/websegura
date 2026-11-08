@@ -24,7 +24,9 @@
     "record": "v=DMARC1; p=reject; rua=mailto:dmarc@madrid.org; ruf=mailto:dmarc@madrid.org",
     "valid": true,
     "location": "madrid.org",
-    "warnings": [],
+    "warnings": [
+      "Failed to retrieve MX records for the domain of ruf email address dmarc@madrid.org - The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -45,13 +47,7 @@
         "explicit": true
       },
       "ruf": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "dmarc@madrid.org",
-            "size_limit": null
-          }
-        ],
+        "value": "mailto:dmarc@madrid.org",
         "explicit": true
       },
       "adkim": {

@@ -3,30 +3,12 @@
   "base_domain": "madridporeldeporte.org",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "shades18.rzone.de",
-      "docks19.rzone.de"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "madridporeldeporte-org.mail.protection.outlook.com",
-        "addresses": [
-          "2a01:111:f403:ca21::",
-          "2a01:111:f403:ca21::1",
-          "2a01:111:f403:ca21::2",
-          "2a01:111:f403:ca21::3",
-          "52.101.91.0",
-          "52.101.91.1",
-          "52.101.91.2",
-          "52.101.91.3"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com -all",
@@ -107,61 +89,9 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none; rua=mailto:postmaster@madridporeldeporte.org",
-    "valid": true,
-    "location": "madridporeldeporte.org",
-    "warnings": [],
-    "tags": {
-      "v": {
-        "value": "DMARC1",
-        "explicit": true
-      },
-      "p": {
-        "value": "none",
-        "explicit": true
-      },
-      "rua": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "postmaster@madridporeldeporte.org",
-            "size_limit": null
-          }
-        ],
-        "explicit": true
-      },
-      "adkim": {
-        "value": "r",
-        "explicit": false
-      },
-      "aspf": {
-        "value": "r",
-        "explicit": false
-      },
-      "fo": {
-        "value": [
-          "0"
-        ],
-        "explicit": false
-      },
-      "pct": {
-        "value": 100,
-        "explicit": false
-      },
-      "rf": {
-        "value": [
-          "afrf"
-        ],
-        "explicit": false
-      },
-      "ri": {
-        "value": 86400,
-        "explicit": false
-      },
-      "sp": {
-        "value": "none",
-        "explicit": false
-      }
-    }
+    "record": null,
+    "valid": false,
+    "location": null,
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   }
 }

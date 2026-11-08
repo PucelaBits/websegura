@@ -25,33 +25,11 @@
     "record": "v=spf1 a mx include:spf.acumbamail.com ~all",
     "valid": true,
     "dns_lookups": 3,
-    "warnings": [],
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ],
     "parsed": {
       "pass": [
-        {
-          "value": "104.26.8.44",
-          "mechanism": "a"
-        },
-        {
-          "value": "104.26.9.44",
-          "mechanism": "a"
-        },
-        {
-          "value": "172.67.69.226",
-          "mechanism": "a"
-        },
-        {
-          "value": "2606:4700:20::681a:82c",
-          "mechanism": "a"
-        },
-        {
-          "value": "2606:4700:20::681a:92c",
-          "mechanism": "a"
-        },
-        {
-          "value": "2606:4700:20::ac43:45e2",
-          "mechanism": "a"
-        },
         {
           "value": "mail.madridsalud.es",
           "mechanism": "mx"

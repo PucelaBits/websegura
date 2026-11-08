@@ -4,31 +4,16 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns.dinahosting.com",
       "ns4.dinahosting.com",
       "ns2.dinahosting.com",
+      "ns.dinahosting.com",
       "ns3.dinahosting.com"
     ],
     "warnings": []
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "mail.donostia.eus",
-        "addresses": [
-          "82.130.212.7"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "mail2.donostia.eus",
-        "addresses": [
-          "82.130.212.18"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 mx ip4:82.130.212.3 ip4:82.130.212.9 -all",

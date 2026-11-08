@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns2.telemadrid.es",
       "dns.telemadrid.es",
-      "dns2.comtenidos.com"
+      "dns2.comtenidos.com",
+      "dns2.telemadrid.es"
     ],
     "warnings": []
   },
@@ -15,9 +15,7 @@
       {
         "preference": 10,
         "hostname": "mx01.hornetsecurity.com",
-        "addresses": [
-          "94.100.132.8"
-        ]
+        "addresses": []
       },
       {
         "preference": 10,
@@ -41,7 +39,9 @@
         ]
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ]
   },
   "spf": {
     "record": "v=spf1 ip4:195.254.164.51 ip4:195.254.164.51 ip4:195.55.85.60 ip4:195.55.85.12 ip4:195.55.85.13 ip4:195.55.87.140 ip4:195.55.87.141 include:spf.hornetsecurity.com include:_spf.google.com ~all",

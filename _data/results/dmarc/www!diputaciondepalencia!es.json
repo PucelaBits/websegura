@@ -3,59 +3,12 @@
   "base_domain": "diputaciondepalencia.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "dns2.diputaciondepalencia.es",
-      "dns1.diputaciondepalencia.es"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 10,
-        "hostname": "aspmx.l.google.com",
-        "addresses": [
-          "142.251.179.27",
-          "2607:f8b0:4004:c1d::1a"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "alt1.aspmx.l.google.com",
-        "addresses": [
-          "192.178.234.27",
-          "2800:3f0:4003:c14::1a"
-        ]
-      },
-      {
-        "preference": 20,
-        "hostname": "alt2.aspmx.l.google.com",
-        "addresses": [
-          "172.253.116.26",
-          "2a00:1450:400b:c02::1a"
-        ]
-      },
-      {
-        "preference": 30,
-        "hostname": "aspmx2.googlemail.com",
-        "addresses": [
-          "192.178.234.27",
-          "2800:3f0:4003:c14::1b"
-        ]
-      },
-      {
-        "preference": 30,
-        "hostname": "aspmx3.googlemail.com",
-        "addresses": [
-          "172.253.116.26",
-          "2a00:1450:400b:c02::1b"
-        ]
-      }
-    ],
-    "warnings": [
-      "2800:3f0:4003:c14::1a does not have any reverse DNS (PTR) records",
-      "2800:3f0:4003:c14::1b does not have any reverse DNS (PTR) records"
-    ]
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 include:_spf.google.com ~all",

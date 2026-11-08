@@ -4,11 +4,11 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "zafiro.usal.es",
       "chico.rediris.es",
-      "topacio.usal.es",
-      "sun.rediris.es",
       "agata.usal.es",
-      "zafiro.usal.es"
+      "topacio.usal.es",
+      "sun.rediris.es"
     ],
     "warnings": []
   },
@@ -18,46 +18,44 @@
         "preference": 1,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "192.178.218.26",
-          "2607:f8b0:4004:c29::1a"
+          "173.194.208.27",
+          "2607:f8b0:4023:1011::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "192.178.234.27",
-          "2800:3f0:4003:c14::1a"
+          "142.251.96.27",
+          "2607:f8b0:4003:c4a::1b"
         ]
       },
       {
         "preference": 5,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
-          "172.253.116.27",
-          "2a00:1450:400b:c02::1b"
+          "142.250.100.27",
+          "2607:f8b0:4023:3801::1a"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt3.aspmx.l.google.com",
         "addresses": [
-          "192.178.223.26",
-          "2a00:1450:4009:c0f::1a"
+          "172.253.149.26",
+          "2607:f8b0:4024:c0f::1b"
         ]
       },
       {
         "preference": 10,
         "hostname": "alt4.aspmx.l.google.com",
         "addresses": [
-          "172.253.157.27",
-          "2a00:1450:400c:c23::1a"
+          "142.250.96.26",
+          "2607:f8b0:4023:403::1a"
         ]
       }
     ],
-    "warnings": [
-      "2800:3f0:4003:c14::1a does not have any reverse DNS (PTR) records"
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 a:listas.usal.es a:aida.usal.es include:_spf.google.com include:spf.protection.outlook.com ~all",
@@ -196,7 +194,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=reject; sp=reject; pct=25; adkim=r; aspf=r; rua=mailto:dmarc-rua@usal.es",
+    "record": "v=DMARC1; p=reject; sp=reject; pct=50; adkim=r; aspf=r; rua=mailto:dmarc-rua@usal.es",
     "valid": true,
     "location": "usal.es",
     "warnings": [
@@ -216,7 +214,7 @@
         "explicit": true
       },
       "pct": {
-        "value": 25,
+        "value": 50,
         "explicit": true
       },
       "adkim": {

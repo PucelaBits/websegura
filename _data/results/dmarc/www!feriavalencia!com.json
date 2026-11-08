@@ -17,14 +17,14 @@
         "preference": 10,
         "hostname": "feriavalencia-com.mail.protection.outlook.com",
         "addresses": [
-          "2a01:111:f403:ca04::b",
-          "2a01:111:f403:ca38::8",
-          "2a01:111:f403:ca3c::a",
-          "2a01:111:f403:ca48::c",
-          "52.101.103.140",
-          "52.101.68.8",
-          "52.101.73.153",
-          "52.101.91.156"
+          "2a01:111:f403:ca04::d",
+          "2a01:111:f403:ca21::a",
+          "2a01:111:f403:ca21::e",
+          "2a01:111:f403:ca48::12",
+          "52.101.103.162",
+          "52.101.103.39",
+          "52.101.181.156",
+          "52.101.73.145"
         ]
       }
     ],
@@ -137,7 +137,9 @@
     "record": "v=DMARC1; p=none; rua=mailto:reporte-dmarc@feriavalencia.com; ruf=mailto:reporte-dmarc@feriavalencia.com; rf=afrf; fo=1; ri=86400",
     "valid": true,
     "location": "feriavalencia.com",
-    "warnings": [],
+    "warnings": [
+      "Failed to retrieve MX records for the domain of ruf email address reporte-dmarc@feriavalencia.com - The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -158,13 +160,7 @@
         "explicit": true
       },
       "ruf": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "reporte-dmarc@feriavalencia.com",
-            "size_limit": null
-          }
-        ],
+        "value": "mailto:reporte-dmarc@feriavalencia.com",
         "explicit": true
       },
       "rf": {

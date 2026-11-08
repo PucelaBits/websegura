@@ -29,7 +29,7 @@
     "warnings": []
   },
   "spf": {
-    "record": "v=spf1 include:spf.protection.outlook.com ip4:130.162.242.53 ~all",
+    "record": "v=spf1 include:spf.protection.outlook.com ip4:130.162.242.53 -all",
     "valid": true,
     "dns_lookups": 1,
     "warnings": [],
@@ -108,7 +108,7 @@
       ],
       "redirect": null,
       "exp": null,
-      "all": "softfail"
+      "all": "fail"
     }
   },
   "dmarc": {
