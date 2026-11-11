@@ -1,15 +1,15 @@
 {
-  "id": 134394358,
+  "id": 134828226,
   "algorithm_version": 6,
-  "scanned_at": "2026-11-09T11:25:02.636Z",
+  "scanned_at": "2026-11-11T10:48:35.033Z",
   "error": null,
   "grade": "B",
   "response_headers": {
-    "date": "Mon, 09 Nov 2026 11:25:03 GMT",
+    "date": "Wed, 11 Nov 2026 10:48:36 GMT",
     "pragma": "no-cache",
     "expires": "Thu, 01 Jan 1970 00:00:00 GMT",
     "connection": "close",
-    "set-cookie": "COOKIE_SUPPORT=true; Max-Age=31536000; Expires=Tue, 09 Nov 2027 11:25:03 GMT; Path=/; Secure; HttpOnly,TS011b0901=01c8257ef1f774db3c5a558f5388273164061c7bc13ee975a2929365c12a532ea8a0a800a2424ee7ca22d172d86e62fc9f5a4fa7c4085e8e7e423b491ffda6608facefce5efcb9c3240380092c0223c71b234688a4; Path=/; Domain=.www.donostia.eus",
+    "set-cookie": "COOKIE_SUPPORT=true; Max-Age=31536000; Expires=Thu, 11 Nov 2027 10:48:36 GMT; Path=/; Secure; HttpOnly,TS011b0901=01c8257ef1e06ef4254ac422e33a012a6ba9ecbc0d1efa4d42952a6444be00dceda1864bba9ef7328b5f017c5067c1caecf558f76baa3d5337e781f6caa3b9a84e90a5cfe8585fe44d1d8479de8d2e6836dcbc11e6; Path=/; Domain=.www.donostia.eus",
     "content-type": "text/html;charset=UTF-8",
     "cache-control": "private, no-cache, no-store, must-revalidate",
     "referrer-policy": "strict-origin-when-cross-origin",
@@ -18,7 +18,8 @@
     "permissions-policy": "microphone=(), usb=(), payment=()",
     "service-worker-allowed": "/, /, /",
     "x-content-type-options": "nosniff",
-    "strict-transport-security": "max-age=16070400; includeSubDomains"
+    "strict-transport-security": "max-age=16070400; includeSubDomains",
+    "content-security-policy-report-only": "default-src 'self'; style-src 'self' 'unsafe-inline' www.geo.euskadi.eus; script-src 'self' 'unsafe-inline' 'unsafe-eval' www.geo.euskadi.eus www.googletagmanager.com *.google-analytics.com maps.googleapis.com; img-src 'self' data: www.geo.euskadi.eus services.arcgisonline.com; connect-src 'self' *.google-analytics.com maps.googleapis.com; frame-ancestors 'self'; form-action 'self'"
   },
   "score": 70,
   "status_code": 200,
