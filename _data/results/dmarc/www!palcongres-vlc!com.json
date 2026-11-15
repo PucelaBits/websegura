@@ -14,12 +14,19 @@
       {
         "preference": 0,
         "hostname": "palcongresvlc-com02e.mail.protection.outlook.com",
-        "addresses": []
+        "addresses": [
+          "2a01:111:f403:ca21::a",
+          "2a01:111:f403:ca38::a",
+          "2a01:111:f403:ca3c::8",
+          "2a01:111:f403:ca3c::a",
+          "52.101.181.153",
+          "52.101.185.114",
+          "52.101.73.123",
+          "52.101.73.126"
+        ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com  -all",
@@ -100,9 +107,62 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "record": "v=DMARC1; p=quarantine; rua=mailto:soporte.pcv@civired.com; ruf=mailto:soporte.pcv@civired.com; fo=1; pct=5;",
+    "valid": true,
+    "location": "palcongres-vlc.com",
+    "warnings": [
+      "civired.com does not indicate that it accepts DMARC reports about palcongres-vlc.com - Authorization record not found: palcongres-vlc.com._report._dmarc.civired.com IN TXT \"v=DMARC1\"",
+      "civired.com does not indicate that it accepts DMARC reports about palcongres-vlc.com - Authorization record not found: palcongres-vlc.com._report._dmarc.civired.com IN TXT \"v=DMARC1\""
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "quarantine",
+        "explicit": true
+      },
+      "rua": {
+        "value": "mailto:soporte.pcv@civired.com",
+        "explicit": true
+      },
+      "ruf": {
+        "value": "mailto:soporte.pcv@civired.com",
+        "explicit": true
+      },
+      "fo": {
+        "value": [
+          "1"
+        ],
+        "explicit": true
+      },
+      "pct": {
+        "value": 5,
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "quarantine",
+        "explicit": false
+      }
+    }
   }
 }

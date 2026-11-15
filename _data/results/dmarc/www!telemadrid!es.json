@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "dns.telemadrid.es",
-      "dns2.comtenidos.com",
-      "dns2.telemadrid.es"
+      "dns2.telemadrid.es",
+      "dns2.comtenidos.com"
     ],
     "warnings": []
   },
@@ -15,7 +15,9 @@
       {
         "preference": 10,
         "hostname": "mx01.hornetsecurity.com",
-        "addresses": []
+        "addresses": [
+          "94.100.132.8"
+        ]
       },
       {
         "preference": 10,
@@ -39,9 +41,7 @@
         ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 ip4:195.254.164.51 ip4:195.254.164.51 ip4:195.55.85.60 ip4:195.55.85.12 ip4:195.55.85.13 ip4:195.55.87.140 ip4:195.55.87.141 include:spf.hornetsecurity.com include:_spf.google.com ~all",
@@ -186,12 +186,20 @@
         },
         {
           "domain": "_spf.google.com",
-          "record": "v=spf1 ip4:74.125.0.0/16 ip4:209.85.128.0/17 ip6:2001:4860:4864::/56 ip6:2404:6800:4864::/56 ip6:2607:f8b0:4864::/56 ip6:2800:3f0:4864::/56 ip6:2a00:1450:4864::/56 ip6:2c0f:fb50:4864::/56 ~all",
+          "record": "v=spf1 ip4:74.125.0.0/16 ip4:192.178.47.0/24 ip4:192.179.92.0/22 ip4:209.85.128.0/17 ip6:2001:4860:4864::/56 ip6:2404:6800:4864::/56 ip6:2607:f8b0:4864::/56 ip6:2800:3f0:4864::/56 ip6:2a00:1450:4864::/56 ip6:2c0f:fb50:4864::/56 ~all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
               {
                 "value": "74.125.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "192.178.47.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "192.179.92.0/22",
                 "mechanism": "ip4"
               },
               {

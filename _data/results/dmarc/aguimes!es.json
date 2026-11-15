@@ -16,18 +16,18 @@
         "preference": 10,
         "hostname": "mx-01-eu-west-1.prod.hydra.sophos.com",
         "addresses": [
+          "3.248.101.21",
           "3.248.117.51",
-          "34.243.165.154",
-          "34.246.2.103"
+          "54.72.42.233"
         ]
       },
       {
         "preference": 20,
         "hostname": "mx-02-eu-west-1.prod.hydra.sophos.com",
         "addresses": [
+          "3.248.101.21",
           "3.248.117.51",
-          "34.243.165.154",
-          "34.246.2.103"
+          "54.72.42.233"
         ]
       },
       {
@@ -51,9 +51,9 @@
     ]
   },
   "spf": {
-    "record": "v=spf1 a mx ip4:185.201.0.0/19 ip4:82.98.157.184 a:correo.aguimes.es a:mx.serviciodecorreo.es include:_spf.google.com -all",
+    "record": "v=spf1 a mx ip4:185.201.0.0/19 ip4:82.98.157.184 a:correo.aguimes.es a:mx.serviciodecorreo.es include:_spf.google.com include:_spf_euwest1.prod.hydra.sophos.com -all",
     "valid": true,
-    "dns_lookups": 5,
+    "dns_lookups": 6,
     "warnings": [],
     "parsed": {
       "pass": [
@@ -100,12 +100,20 @@
       "include": [
         {
           "domain": "_spf.google.com",
-          "record": "v=spf1 ip4:74.125.0.0/16 ip4:209.85.128.0/17 ip6:2001:4860:4864::/56 ip6:2404:6800:4864::/56 ip6:2607:f8b0:4864::/56 ip6:2800:3f0:4864::/56 ip6:2a00:1450:4864::/56 ip6:2c0f:fb50:4864::/56 ~all",
+          "record": "v=spf1 ip4:74.125.0.0/16 ip4:192.178.47.0/24 ip4:192.179.92.0/22 ip4:209.85.128.0/17 ip6:2001:4860:4864::/56 ip6:2404:6800:4864::/56 ip6:2607:f8b0:4864::/56 ip6:2800:3f0:4864::/56 ip6:2a00:1450:4864::/56 ip6:2c0f:fb50:4864::/56 ~all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
               {
                 "value": "74.125.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "192.178.47.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "192.179.92.0/22",
                 "mechanism": "ip4"
               },
               {
@@ -135,6 +143,47 @@
               {
                 "value": "2c0f:fb50:4864::/56",
                 "mechanism": "ip6"
+              }
+            ],
+            "neutral": [],
+            "softfail": [],
+            "fail": [],
+            "include": [],
+            "redirect": null,
+            "exp": null,
+            "all": "softfail"
+          },
+          "warnings": []
+        },
+        {
+          "domain": "_spf_euwest1.prod.hydra.sophos.com",
+          "record": "v=spf1 ip4:198.154.180.0/24 ip4:34.253.219.128/28 ip4:34.253.219.152/29 ip4:34.253.219.160/29 ip4:34.253.219.248/30 ip4:34.253.219.144/32 ~all",
+          "dns_lookups": 0,
+          "parsed": {
+            "pass": [
+              {
+                "value": "198.154.180.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "34.253.219.128/28",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "34.253.219.152/29",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "34.253.219.160/29",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "34.253.219.248/30",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "34.253.219.144/32",
+                "mechanism": "ip4"
               }
             ],
             "neutral": [],

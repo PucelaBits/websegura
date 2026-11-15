@@ -82,10 +82,12 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=quarantine; sp=none; fo=1; rua=mailto:dmarc@rediris.es; ruf=mailto:dmarc@rediris.es",
+    "record": "v=DMARC1; p=quarantine; sp=none; fo=1;",
     "valid": true,
     "location": "rediris.es",
-    "warnings": [],
+    "warnings": [
+      "rua tag (destination for aggregate reports) not found"
+    ],
     "tags": {
       "v": {
         "value": "DMARC1",
@@ -102,26 +104,6 @@
       "fo": {
         "value": [
           "1"
-        ],
-        "explicit": true
-      },
-      "rua": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "dmarc@rediris.es",
-            "size_limit": null
-          }
-        ],
-        "explicit": true
-      },
-      "ruf": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "dmarc@rediris.es",
-            "size_limit": null
-          }
         ],
         "explicit": true
       },

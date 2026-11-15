@@ -3,42 +3,22 @@
   "base_domain": "poderjudicial.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [
-      "cdj11.cgpj.es",
-      "ns2.cp2gestion-dtc-ib.com"
-    ],
-    "warnings": []
+    "hostnames": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "mx": {
-    "hosts": [
-      {
-        "preference": 5,
-        "hostname": "poderjudicial-es.mail.protection.outlook.com",
-        "addresses": [
-          "2a01:111:f403:c967::c",
-          "2a01:111:f403:ca21::a",
-          "2a01:111:f403:ca3c::8",
-          "2a01:111:f403:ca48::a",
-          "52.101.185.24",
-          "52.101.73.120",
-          "52.101.73.126",
-          "52.101.91.162"
-        ]
-      }
-    ],
-    "warnings": []
+    "hosts": [],
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   },
   "spf": {
     "record": "v=spf1 mx ip4:62.37.232.37 ip4:62.37.232.39 ip4:62.37.233.240 include:spf.protection.outlook.com -all",
     "valid": true,
     "dns_lookups": 2,
-    "warnings": [],
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ],
     "parsed": {
       "pass": [
-        {
-          "value": "poderjudicial-es.mail.protection.outlook.com",
-          "mechanism": "mx"
-        },
         {
           "value": "62.37.232.37",
           "mechanism": "ip4"
@@ -127,6 +107,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.poderjudicial.es\n\n255630697"
   }
 }

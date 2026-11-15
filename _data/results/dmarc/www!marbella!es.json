@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.marbella.es",
-      "ns2.marbella.es"
+      "ns2.marbella.es",
+      "ns1.marbella.es"
     ],
     "warnings": []
   },
@@ -14,12 +14,19 @@
       {
         "preference": 0,
         "hostname": "marbella-es.mail.protection.outlook.com",
-        "addresses": []
+        "addresses": [
+          "2a01:111:f403:c967::c",
+          "2a01:111:f403:ca04::c",
+          "2a01:111:f403:ca04::f",
+          "2a01:111:f403:ca48::a",
+          "52.101.185.21",
+          "52.101.185.24",
+          "52.101.91.153",
+          "52.101.91.159"
+        ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 include:spf.protection.outlook.com include:mail.zendesk.com include:spf.ymlp.com include:spfa.cpmails.com include:synectia.email ip4:88.12.45.129 -all ",

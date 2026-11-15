@@ -22,8 +22,7 @@
     "valid": true,
     "location": "sedipualba.es",
     "warnings": [
-      "dipualba.es does not indicate that it accepts DMARC reports about sedipualba.es - Authorization record not found: sedipualba.es._report._dmarc.dipualba.es IN TXT \"v=DMARC1\"",
-      "dipualba.es does not indicate that it accepts DMARC reports about sedipualba.es - Authorization record not found: sedipualba.es._report._dmarc.dipualba.es IN TXT \"v=DMARC1\""
+      "ccn-cert.cni.es does not indicate that it accepts DMARC reports about sedipualba.es - Authorization record not found: sedipualba.es._report._dmarc.ccn-cert.cni.es IN TXT \"v=DMARC1\""
     ],
     "tags": {
       "v": {
@@ -35,11 +34,28 @@
         "explicit": true
       },
       "rua": {
-        "value": "mailto:dmarc@dipualba.es,mailto:rua.dmarc@ccn-cert.cni.es",
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc@dipualba.es",
+            "size_limit": null
+          },
+          {
+            "scheme": "mailto",
+            "address": "rua.dmarc@ccn-cert.cni.es",
+            "size_limit": null
+          }
+        ],
         "explicit": true
       },
       "ruf": {
-        "value": "mailto:dmarc@dipualba.es",
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc@dipualba.es",
+            "size_limit": null
+          }
+        ],
         "explicit": true
       },
       "adkim": {

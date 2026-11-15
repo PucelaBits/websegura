@@ -17,14 +17,14 @@
         "preference": 0,
         "hostname": "ib3-org.mail.protection.outlook.com",
         "addresses": [
-          "2a01:111:f403:ca04::10",
-          "2a01:111:f403:ca3c::a",
-          "2a01:111:f403:ca48::10",
-          "2a01:111:f403:ca48::a",
-          "52.101.103.39",
-          "52.101.181.153",
-          "52.101.209.31",
-          "52.101.68.29"
+          "2a01:111:f403:c967::8",
+          "2a01:111:f403:ca04::a",
+          "2a01:111:f403:ca09::24",
+          "2a01:111:f403:ca09::28",
+          "52.101.103.140",
+          "52.101.185.21",
+          "52.101.209.28",
+          "52.101.73.126"
         ]
       }
     ],
@@ -109,9 +109,57 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=none; rua=mailto:sistemes-corporatius@ib3tv.com",
+    "valid": true,
+    "location": "ib3.org",
+    "warnings": [
+      "ib3tv.com does not indicate that it accepts DMARC reports about ib3.org - Authorization record not found: ib3.org._report._dmarc.ib3tv.com IN TXT \"v=DMARC1\""
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "rua": {
+        "value": "mailto:sistemes-corporatius@ib3tv.com",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }

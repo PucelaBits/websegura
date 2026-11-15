@@ -129,12 +129,20 @@
         },
         {
           "domain": "_spf.google.com",
-          "record": "v=spf1 ip4:74.125.0.0/16 ip4:209.85.128.0/17 ip6:2001:4860:4864::/56 ip6:2404:6800:4864::/56 ip6:2607:f8b0:4864::/56 ip6:2800:3f0:4864::/56 ip6:2a00:1450:4864::/56 ip6:2c0f:fb50:4864::/56 ~all",
+          "record": "v=spf1 ip4:74.125.0.0/16 ip4:192.178.47.0/24 ip4:192.179.92.0/22 ip4:209.85.128.0/17 ip6:2001:4860:4864::/56 ip6:2404:6800:4864::/56 ip6:2607:f8b0:4864::/56 ip6:2800:3f0:4864::/56 ip6:2a00:1450:4864::/56 ip6:2c0f:fb50:4864::/56 ~all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
               {
                 "value": "74.125.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "192.178.47.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "192.179.92.0/22",
                 "mechanism": "ip4"
               },
               {
@@ -186,6 +194,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.gestrisam.malaga.eu\n\nv=spf1 mx ip4:95.129.152.235 include:spf.emdlv.net include:spf.mandrillapp.com include:_spf.google.com -all\n\ngoogle-site-verification=9ZNgjYS_7ZU5qz3F3bBs-F51L2VONCGAJBhtku_lZcY\n\ngoogle-site-verification=GFiygGyQN6VBLetylY-qa5m6WY8MP_u9zrM0-6sYnEw"
+    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.gestrisam.malaga.eu\n\nv=spf1 mx ip4:95.129.152.235 include:spf.emdlv.net include:spf.mandrillapp.com include:_spf.google.com -all\n\ngoogle-site-verification=9ZNgjYS_7ZU5qz3F3bBs-F51L2VONCGAJBhtku_lZcY\n\ngoogle-site-verification=GFiygGyQN6VBLetylY-qa5m6WY8MP_u9zrM0-6sYnEw\n\n'191171285'"
   }
 }

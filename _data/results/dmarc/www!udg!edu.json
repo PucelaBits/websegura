@@ -5,9 +5,9 @@
   "ns": {
     "hostnames": [
       "nsext1.udg.edu",
-      "ns2.csuc.cat",
+      "nsext2.udg.edu",
       "ns1.csuc.cat",
-      "nsext2.udg.edu"
+      "ns2.csuc.cat"
     ],
     "warnings": []
   },
@@ -17,14 +17,14 @@
         "preference": 10,
         "hostname": "mxa-006a4e02.gslb.pphosted.com",
         "addresses": [
-          "143.55.146.78"
+          "143.55.148.243"
         ]
       },
       {
         "preference": 10,
         "hostname": "mxb-006a4e02.gslb.pphosted.com",
         "addresses": [
-          "143.55.148.243"
+          "143.55.146.78"
         ]
       }
     ],
@@ -179,7 +179,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1;p=none;rua=mailto:si.seguretat@udg.edu",
+    "record": "v=DMARC1; p=none; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com",
     "valid": true,
     "location": "udg.edu",
     "warnings": [],
@@ -192,11 +192,27 @@
         "value": "none",
         "explicit": true
       },
+      "fo": {
+        "value": [
+          "1"
+        ],
+        "explicit": true
+      },
       "rua": {
         "value": [
           {
             "scheme": "mailto",
-            "address": "si.seguretat@udg.edu",
+            "address": "dmarc_rua@emaildefense.proofpoint.com",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "ruf": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc_ruf@emaildefense.proofpoint.com",
             "size_limit": null
           }
         ],
@@ -208,12 +224,6 @@
       },
       "aspf": {
         "value": "r",
-        "explicit": false
-      },
-      "fo": {
-        "value": [
-          "0"
-        ],
         "explicit": false
       },
       "pct": {

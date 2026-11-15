@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
+      "dns1.nasertic.es",
       "dns2.navarra.es",
-      "dns1.navarra.es",
-      "dns1.nasertic.es"
+      "dns1.navarra.es"
     ],
     "warnings": []
   },
@@ -22,22 +22,29 @@
       {
         "preference": 10,
         "hostname": "smtp6.navarra.es",
-        "addresses": []
+        "addresses": [
+          "176.12.85.141"
+        ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx -all",
     "valid": true,
     "dns_lookups": 1,
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ],
+    "warnings": [],
     "parsed": {
-      "pass": [],
+      "pass": [
+        {
+          "value": "smtp5.navarra.es",
+          "mechanism": "mx"
+        },
+        {
+          "value": "smtp6.navarra.es",
+          "mechanism": "mx"
+        }
+      ],
       "neutral": [],
       "softfail": [],
       "fail": [],

@@ -15,14 +15,14 @@
         "preference": 0,
         "hostname": "girones-cat.mail.protection.outlook.com",
         "addresses": [
-          "2a01:111:f403:ca04::e",
-          "2a01:111:f403:ca21::c",
+          "2a01:111:f403:ca09::26",
+          "2a01:111:f403:ca21::10",
+          "2a01:111:f403:ca21::8",
           "2a01:111:f403:ca3c::8",
-          "2a01:111:f403:ca48::a",
-          "52.101.209.31",
-          "52.101.73.123",
-          "52.101.73.155",
-          "52.101.91.156"
+          "52.101.181.156",
+          "52.101.68.25",
+          "52.101.91.156",
+          "52.101.91.159"
         ]
       }
     ],
@@ -124,9 +124,61 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=none; rua=mailto:dmarc@girones.cat",
+    "valid": true,
+    "location": "girones.cat",
+    "warnings": [],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "rua": {
+        "value": [
+          {
+            "scheme": "mailto",
+            "address": "dmarc@girones.cat",
+            "size_limit": null
+          }
+        ],
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }

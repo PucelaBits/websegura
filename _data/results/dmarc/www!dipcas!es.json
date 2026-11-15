@@ -426,7 +426,7 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1;p=quarantine;pct=100;fo=1;rua=mailto:oper@dipcas.es",
+    "record": "v=DMARC1;p=quarantine;pct=100;fo=1;rua=mailto:dmarc@dipcas.es",
     "valid": true,
     "location": "dipcas.es",
     "warnings": [],
@@ -453,7 +453,7 @@
         "value": [
           {
             "scheme": "mailto",
-            "address": "oper@dipcas.es",
+            "address": "dmarc@dipcas.es",
             "size_limit": null
           }
         ],

@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "artemis.ttd.net",
-      "dns2.guardiacivil.es",
-      "dns1.guardiacivil.es"
+      "dns1.guardiacivil.es",
+      "dns2.guardiacivil.es"
     ],
     "warnings": []
   },
@@ -163,9 +163,57 @@
     }
   },
   "dmarc": {
-    "record": null,
-    "valid": false,
-    "location": null,
-    "error": "A DMARC record does not exist for this domain or its base domain"
+    "record": "v=DMARC1; p=none; rua=mailto:dg-telecomunicaciones-soc@guardiacivil.org",
+    "valid": true,
+    "location": "guardiacivil.es",
+    "warnings": [
+      "guardiacivil.org does not indicate that it accepts DMARC reports about guardiacivil.es - Authorization record not found: guardiacivil.es._report._dmarc.guardiacivil.org IN TXT \"v=DMARC1\""
+    ],
+    "tags": {
+      "v": {
+        "value": "DMARC1",
+        "explicit": true
+      },
+      "p": {
+        "value": "none",
+        "explicit": true
+      },
+      "rua": {
+        "value": "mailto:dg-telecomunicaciones-soc@guardiacivil.org",
+        "explicit": true
+      },
+      "adkim": {
+        "value": "r",
+        "explicit": false
+      },
+      "aspf": {
+        "value": "r",
+        "explicit": false
+      },
+      "fo": {
+        "value": [
+          "0"
+        ],
+        "explicit": false
+      },
+      "pct": {
+        "value": 100,
+        "explicit": false
+      },
+      "rf": {
+        "value": [
+          "afrf"
+        ],
+        "explicit": false
+      },
+      "ri": {
+        "value": 86400,
+        "explicit": false
+      },
+      "sp": {
+        "value": "none",
+        "explicit": false
+      }
+    }
   }
 }

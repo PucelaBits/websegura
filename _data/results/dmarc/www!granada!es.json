@@ -4,12 +4,12 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "a9-67.akam.net",
-      "a5-64.akam.net",
       "a1-202.akam.net",
-      "a16-64.akam.net",
+      "a9-67.akam.net",
       "a18-65.akam.net",
-      "a10-66.akam.net"
+      "a10-66.akam.net",
+      "a5-64.akam.net",
+      "a16-64.akam.net"
     ],
     "warnings": []
   },
@@ -19,7 +19,7 @@
         "preference": 10,
         "hostname": "mxa-00835901.gslb.pphosted.com",
         "addresses": [
-          "66.159.246.167"
+          "66.159.244.54"
         ]
       },
       {
@@ -45,12 +45,20 @@
       "include": [
         {
           "domain": "_spf.google.com",
-          "record": "v=spf1 ip4:74.125.0.0/16 ip4:209.85.128.0/17 ip6:2001:4860:4864::/56 ip6:2404:6800:4864::/56 ip6:2607:f8b0:4864::/56 ip6:2800:3f0:4864::/56 ip6:2a00:1450:4864::/56 ip6:2c0f:fb50:4864::/56 ~all",
+          "record": "v=spf1 ip4:74.125.0.0/16 ip4:192.178.47.0/24 ip4:192.179.92.0/22 ip4:209.85.128.0/17 ip6:2001:4860:4864::/56 ip6:2404:6800:4864::/56 ip6:2607:f8b0:4864::/56 ip6:2800:3f0:4864::/56 ip6:2a00:1450:4864::/56 ip6:2c0f:fb50:4864::/56 ~all",
           "dns_lookups": 0,
           "parsed": {
             "pass": [
               {
                 "value": "74.125.0.0/16",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "192.178.47.0/24",
+                "mechanism": "ip4"
+              },
+              {
+                "value": "192.179.92.0/22",
                 "mechanism": "ip4"
               },
               {
