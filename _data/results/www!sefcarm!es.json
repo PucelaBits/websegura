@@ -1,20 +1,25 @@
 {
-  "id": 135814977,
+  "id": 136020589,
   "algorithm_version": 6,
-  "scanned_at": "2026-11-16T11:13:43.859Z",
+  "scanned_at": "2026-11-17T11:48:33.965Z",
   "error": null,
-  "grade": "D-",
+  "grade": "B-",
   "response_headers": {
-    "date": "Mon, 16 Nov 2026 11:13:44 GMT",
-    "server": "Apache",
+    "date": "Tue, 17 Nov 2026 11:48:33 GMT",
+    "pragma": "no-cache",
+    "expires": "Thu, 01 Jan 1970 00:00:00 GMT",
     "connection": "close",
+    "set-cookie": "__uzma=402c7827-f906-4e3e-bacf-f16cdae869a1; HttpOnly; path=/; Expires=Tue, 18-May-27 11:48:34 GMT; Max-Age=15724800; SameSite=Lax,__uzmb=1794916114; HttpOnly; path=/; Expires=Tue, 18-May-27 11:48:34 GMT; Max-Age=15724800; SameSite=Lax,__uzme=9647; HttpOnly; path=/; Expires=Tue, 18-May-27 11:48:34 GMT; Max-Age=15724800; SameSite=Lax,__uzmc=782681091892; HttpOnly; path=/; Expires=Tue, 18-May-27 11:48:34 GMT; Max-Age=15724800; SameSite=Lax,__uzmd=1794916114; HttpOnly; path=/; Expires=Tue, 18-May-27 11:48:34 GMT; Max-Age=15724800; SameSite=Lax,JSESSIONID=F9540C888C32469810F93C6A205148A9; Path=/; HttpOnly,COOKIE_SUPPORT=true; Max-Age=31536000; Expires=Wed, 17 Nov 2027 11:48:34 GMT; Path=/; Secure; HttpOnly,GUEST_LANGUAGE_ID=es_ES; Max-Age=31536000; Expires=Wed, 17 Nov 2027 11:48:34 GMT; Path=/; Secure; HttpOnly,ROUTEID=.102; path=/",
     "content-type": "text/html;charset=UTF-8",
-    "cache-control": "public, must-revalidate, s-maxage=300",
-    "transfer-encoding": "chunked"
+    "cache-control": "private, no-cache, no-store, must-revalidate",
+    "x-frame-options": "SAMEORIGIN",
+    "transfer-encoding": "chunked",
+    "x-content-type-options": "nosniff",
+    "strict-transport-security": "max-age=31536000"
   },
-  "score": 25,
+  "score": 65,
   "status_code": 200,
-  "tests_failed": 5,
-  "tests_passed": 7,
+  "tests_failed": 2,
+  "tests_passed": 10,
   "tests_quantity": 12
 }
