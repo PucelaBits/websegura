@@ -1,21 +1,26 @@
 {
-  "id": 125474564,
+  "id": 136575360,
   "algorithm_version": 6,
-  "scanned_at": "2026-10-04T09:37:16.934Z",
+  "scanned_at": "2026-11-20T05:06:53.065Z",
   "error": null,
-  "grade": "D-",
+  "grade": "F",
   "response_headers": {
-    "date": "Sun, 04 Oct 2026 09:37:17 GMT",
-    "link": "<https://www.museodegrandas.es/wp-json/>; rel=\"https://api.w.org/\", <https://www.museodegrandas.es/wp-json/wp/v2/pages/3322>; rel=\"alternate\"; type=\"application/json\", <https://www.museodegrandas.es/>; rel=shortlink",
-    "vary": "Accept-Encoding",
-    "server": "Apache/2.4.18",
+    "date": "Fri, 20 Nov 2026 05:06:54 GMT",
+    "pragma": "no-cache",
+    "server": "Apache",
+    "expires": "Thu, 01 Jan 1970 00:00:00 GMT",
     "connection": "close",
-    "content-type": "text/html; charset=UTF-8",
-    "transfer-encoding": "chunked"
+    "set-cookie": "JSESSIONID=D6044A68817454BEEBF5021556B022C7.apa2; Path=/; Secure; HttpOnly,COOKIE_SUPPORT=true; Max-Age=31536000; Expires=Sat, 20 Nov 2027 05:06:54 GMT; Path=/; Secure; HttpOnly,GUEST_LANGUAGE_ID=es_ES; Max-Age=31536000; Expires=Sat, 20 Nov 2027 05:06:54 GMT; Path=/; Secure; HttpOnly,cookiesession1=678B2914A80FCCC5D6DE479449E2EF74;Expires=Sat, 20 Nov 2027 05:06:54 GMT;Path=/;HttpOnly",
+    "content-type": "text/html;charset=UTF-8",
+    "cache-control": "private, no-cache, no-store, must-revalidate",
+    "content-length": "193202",
+    "liferay-portal": "Liferay Digital Experience Platform",
+    "x-frame-options": "SAMEORIGIN",
+    "x-content-type-options": "nosniff"
   },
-  "score": 25,
+  "score": 10,
   "status_code": 200,
-  "tests_failed": 5,
-  "tests_passed": 7,
+  "tests_failed": 4,
+  "tests_passed": 8,
   "tests_quantity": 12
 }
