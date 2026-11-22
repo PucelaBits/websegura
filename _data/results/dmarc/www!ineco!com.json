@@ -4,8 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns1.ineco.es",
-      "ns2.ineco.es"
+      "ns2.ineco.es",
+      "ns1.ineco.es"
     ],
     "warnings": []
   },
@@ -14,19 +14,12 @@
       {
         "preference": 1,
         "hostname": "ineco-com.mail.protection.outlook.com",
-        "addresses": [
-          "2a01:111:f403:c967::c",
-          "2a01:111:f403:ca04::a",
-          "2a01:111:f403:ca04::e",
-          "2a01:111:f403:ca09::20",
-          "52.101.103.137",
-          "52.101.103.140",
-          "52.101.103.143",
-          "52.101.103.162"
-        ]
+        "addresses": []
       }
     ],
-    "warnings": []
+    "warnings": [
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    ]
   },
   "spf": {
     "record": "v=spf1 mx include:spf.protection.outlook.com  ip4:193.201.107.0/24 -all",

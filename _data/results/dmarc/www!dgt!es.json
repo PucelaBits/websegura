@@ -24,12 +24,13 @@
       {
         "preference": 10,
         "hostname": "mail2.correo.gob.es",
-        "addresses": []
+        "addresses": [
+          "185.73.172.124",
+          "185.73.172.125"
+        ]
       }
     ],
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ]
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx ip4:212.128.100.149 ip4:212.128.100.150 ip4:212.128.100.155 a:spf.correo.gob.es include:spf.protection.outlook.com -all",
@@ -100,6 +101,62 @@
         },
         {
           "value": "185.73.173.22",
+          "mechanism": "a"
+        },
+        {
+          "value": "192.187.20.33",
+          "mechanism": "a"
+        },
+        {
+          "value": "192.187.20.34",
+          "mechanism": "a"
+        },
+        {
+          "value": "192.187.20.35",
+          "mechanism": "a"
+        },
+        {
+          "value": "192.187.20.36",
+          "mechanism": "a"
+        },
+        {
+          "value": "192.187.20.37",
+          "mechanism": "a"
+        },
+        {
+          "value": "192.187.20.38",
+          "mechanism": "a"
+        },
+        {
+          "value": "192.187.20.39",
+          "mechanism": "a"
+        },
+        {
+          "value": "192.187.20.40",
+          "mechanism": "a"
+        },
+        {
+          "value": "192.187.20.41",
+          "mechanism": "a"
+        },
+        {
+          "value": "192.187.20.42",
+          "mechanism": "a"
+        },
+        {
+          "value": "192.187.20.43",
+          "mechanism": "a"
+        },
+        {
+          "value": "192.187.20.44",
+          "mechanism": "a"
+        },
+        {
+          "value": "192.187.20.45",
+          "mechanism": "a"
+        },
+        {
+          "value": "192.187.20.46",
           "mechanism": "a"
         }
       ],

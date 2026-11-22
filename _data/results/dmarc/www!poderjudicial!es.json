@@ -3,22 +3,42 @@
   "base_domain": "poderjudicial.es",
   "dnssec": false,
   "ns": {
-    "hostnames": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hostnames": [
+      "ns2.cp2gestion-dtc-ib.com",
+      "cdj11.cgpj.es"
+    ],
+    "warnings": []
   },
   "mx": {
-    "hosts": [],
-    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
+    "hosts": [
+      {
+        "preference": 5,
+        "hostname": "poderjudicial-es.mail.protection.outlook.com",
+        "addresses": [
+          "2a01:111:f403:ca04::f",
+          "2a01:111:f403:ca21::a",
+          "2a01:111:f403:ca21::c",
+          "2a01:111:f403:ca3c::a",
+          "52.101.68.29",
+          "52.101.68.8",
+          "52.101.73.120",
+          "52.101.73.123"
+        ]
+      }
+    ],
+    "warnings": []
   },
   "spf": {
     "record": "v=spf1 mx ip4:62.37.232.37 ip4:62.37.232.39 ip4:62.37.233.240 include:spf.protection.outlook.com -all",
     "valid": true,
     "dns_lookups": 2,
-    "warnings": [
-      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
-    ],
+    "warnings": [],
     "parsed": {
       "pass": [
+        {
+          "value": "poderjudicial-es.mail.protection.outlook.com",
+          "mechanism": "mx"
+        },
         {
           "value": "62.37.232.37",
           "mechanism": "ip4"
@@ -107,6 +127,6 @@
     "record": null,
     "valid": false,
     "location": null,
-    "error": "Unrelated TXT records were discovered. These should be removed, as some receivers may not expect to find unrelated TXT records at _dmarc.poderjudicial.es\n\n255630697"
+    "error": "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
   }
 }

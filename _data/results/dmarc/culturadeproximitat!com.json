@@ -5,8 +5,8 @@
   "ns": {
     "hostnames": [
       "ns3.dnsxperta.com",
-      "ns2.dnsxperta.com",
-      "ns1.dnsxperta.com"
+      "ns1.dnsxperta.com",
+      "ns2.dnsxperta.com"
     ],
     "warnings": []
   },
@@ -15,16 +15,12 @@
       {
         "preference": 5,
         "hostname": "mx1.filterantispam.com",
-        "addresses": [
-          "104.219.250.37"
-        ]
+        "addresses": []
       },
       {
         "preference": 5,
         "hostname": "mx2.filterantispam.com",
-        "addresses": [
-          "104.219.250.37"
-        ]
+        "addresses": []
       },
       {
         "preference": 10,
@@ -35,8 +31,8 @@
       }
     ],
     "warnings": [
-      "The reverse DNS of 104.219.250.37 is nc-ph-3812.web-hosting.com, but the A/AAAA DNS records for nc-ph-3812.web-hosting.com do not resolve to 104.219.250.37",
-      "The reverse DNS of 104.219.250.37 is nc-ph-3812.web-hosting.com, but the A/AAAA DNS records for nc-ph-3812.web-hosting.com do not resolve to 104.219.250.37"
+      "All nameservers failed to answer the query mx1.filterantispam.com. IN A: Server Do53:1.0.0.1@53 answered SERVFAIL",
+      "The resolution lifetime expired after 3.100 seconds: Server Do53:1.0.0.1@53 answered The DNS operation timed out."
     ]
   },
   "spf": {

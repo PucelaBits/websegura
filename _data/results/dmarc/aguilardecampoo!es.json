@@ -4,7 +4,8 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "dns1.diputaciondepalencia.es"
+      "dns1.diputaciondepalencia.es",
+      "dns2.diputaciondepalencia.es"
     ],
     "warnings": []
   },
@@ -12,22 +13,37 @@
     "hosts": [
       {
         "preference": 1,
+        "hostname": "smtp.google.com",
+        "addresses": [
+          "142.251.111.26",
+          "142.251.111.27",
+          "142.251.16.26",
+          "142.251.16.27",
+          "173.194.45.27",
+          "2607:f8b0:4004:c1b::1a",
+          "2607:f8b0:4004:c1b::1b",
+          "2607:f8b0:4004:c1d::1a",
+          "2607:f8b0:4004:c23::1b"
+        ]
+      },
+      {
+        "preference": 10,
         "hostname": "aspmx.l.google.com",
         "addresses": [
-          "192.178.155.27",
-          "2607:f8b0:4004:c21::1a"
+          "172.253.122.27",
+          "2607:f8b0:4004:c06::1b"
         ]
       },
       {
-        "preference": 5,
+        "preference": 20,
         "hostname": "alt1.aspmx.l.google.com",
         "addresses": [
-          "192.178.234.27",
-          "2800:3f0:4003:c14::1a"
+          "192.178.234.26",
+          "2800:3f0:4003:c14::1b"
         ]
       },
       {
-        "preference": 5,
+        "preference": 20,
         "hostname": "alt2.aspmx.l.google.com",
         "addresses": [
           "172.253.116.27",
@@ -35,7 +51,7 @@
         ]
       },
       {
-        "preference": 10,
+        "preference": 30,
         "hostname": "aspmx2.googlemail.com",
         "addresses": [
           "192.178.234.27",
@@ -43,16 +59,16 @@
         ]
       },
       {
-        "preference": 10,
+        "preference": 30,
         "hostname": "aspmx3.googlemail.com",
         "addresses": [
-          "172.253.116.27",
+          "172.253.116.26",
           "2a00:1450:400b:c02::1b"
         ]
       }
     ],
     "warnings": [
-      "2800:3f0:4003:c14::1a does not have any reverse DNS (PTR) records",
+      "2800:3f0:4003:c14::1b does not have any reverse DNS (PTR) records",
       "2800:3f0:4003:c14::1b does not have any reverse DNS (PTR) records"
     ]
   },

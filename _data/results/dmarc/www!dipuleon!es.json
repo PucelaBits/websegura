@@ -5,9 +5,9 @@
   "ns": {
     "hostnames": [
       "ns1043.ui-dns.de",
-      "ns1022.ui-dns.biz",
       "ns1113.ui-dns.com",
-      "ns1091.ui-dns.org"
+      "ns1091.ui-dns.org",
+      "ns1022.ui-dns.biz"
     ],
     "warnings": []
   },
@@ -76,55 +76,37 @@
     }
   },
   "dmarc": {
-    "record": "v=DMARC1; p=none;  ruf=mailto:dmarc.ruf@dipuleon.es; rua=mailto:dmarc.rua@dipuleon.es;",
+    "record": "v=DMARC1; p=reject; pct=100; adkim=s; aspf=s",
     "valid": true,
     "location": "dipuleon.es",
-    "warnings": [],
+    "warnings": [
+      "rua tag (destination for aggregate reports) not found"
+    ],
     "tags": {
       "v": {
         "value": "DMARC1",
         "explicit": true
       },
       "p": {
-        "value": "none",
+        "value": "reject",
         "explicit": true
       },
-      "ruf": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "dmarc.ruf@dipuleon.es",
-            "size_limit": null
-          }
-        ],
-        "explicit": true
-      },
-      "rua": {
-        "value": [
-          {
-            "scheme": "mailto",
-            "address": "dmarc.rua@dipuleon.es",
-            "size_limit": null
-          }
-        ],
+      "pct": {
+        "value": 100,
         "explicit": true
       },
       "adkim": {
-        "value": "r",
-        "explicit": false
+        "value": "s",
+        "explicit": true
       },
       "aspf": {
-        "value": "r",
-        "explicit": false
+        "value": "s",
+        "explicit": true
       },
       "fo": {
         "value": [
           "0"
         ],
-        "explicit": false
-      },
-      "pct": {
-        "value": 100,
         "explicit": false
       },
       "rf": {
@@ -138,7 +120,7 @@
         "explicit": false
       },
       "sp": {
-        "value": "none",
+        "value": "reject",
         "explicit": false
       }
     }

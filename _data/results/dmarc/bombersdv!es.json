@@ -4,9 +4,9 @@
   "dnssec": false,
   "ns": {
     "hostnames": [
-      "ns3.serviciodns.es",
       "ns2.serviciodns.es",
-      "ns1.serviciodns.es"
+      "ns1.serviciodns.es",
+      "ns3.serviciodns.es"
     ],
     "warnings": []
   },
@@ -14,7 +14,7 @@
     "hosts": [
       {
         "preference": 5,
-        "hostname": "pro-lbvs0-gva-i-mxexterno.gva.es",
+        "hostname": "mxext.gva.es",
         "addresses": [
           "193.145.200.16"
         ]
@@ -32,7 +32,7 @@
     "parsed": {
       "pass": [
         {
-          "value": "pro-lbvs0-gva-i-mxexterno.gva.es",
+          "value": "mxext.gva.es",
           "mechanism": "mx"
         }
       ],
